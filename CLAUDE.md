@@ -62,6 +62,7 @@ gemini-scribe/
 - Cybersecurity
 - Fintech & E-Commerce
 - Photonics & Optical
+- Robotics & Edge AI
 - Semiconductors
 - Space & Comms
 
