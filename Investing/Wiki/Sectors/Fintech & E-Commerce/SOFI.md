@@ -115,6 +115,14 @@ The bull case is the Financial Services Productivity Loop (FSPL): 75% of new SoF
 
 ---
 
+## Social Mentions
+
+| Date | Signal | Source |
+|------|--------|--------|
+| 2026-05-18 | [[2026-05-18-sofi-top-3-position]] | tweet |
+
+---
+
 ## Research Log
 *(Reverse-chron append log — newest at bottom)*
 

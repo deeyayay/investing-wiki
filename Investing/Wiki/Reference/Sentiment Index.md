@@ -14,6 +14,7 @@
 | INTC | [[INTC]] | stub | 2 | 2026-05-18 |
 | LITE | [[LITE]] | monitored | 2 | 2026-05-17 |
 | MRVL | [[MRVL]] | monitored | 2 | 2026-05-17 |
+| SOFI | [[SOFI]] | monitored | 1 | 2026-05-18 |
 | AAOI | [[AAOI]] | monitored | 1 | 2026-05-17 |
 | AAPL | [[AAPL]] | stub | 1 | 2026-05-18 |
 | AMZN | [[AMZN]] | stub | 1 | 2026-05-17 |
@@ -43,6 +44,7 @@
 *Newest first. Max 30 entries.*
 
 <!-- signals appended here by /ingest-sentiment -->
+2026-05-18 · tweet · [[2026-05-18-sofi-top-3-position]] · SOFI
 2026-05-18 · tweet · [[2026-05-18-amd-cpu-bottleneck-three-ways]] · AAPL, AMD, ARM, INTC, META, NVDA
 2026-05-17 · tweet · [[2026-05-17-stm-mcu-theme-play]] · STM, TXN, NXPI
 2026-05-17 · tweet · [[2026-05-17-avgo-shunsin-cpo-orders]] · AVGO
