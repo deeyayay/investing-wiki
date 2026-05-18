@@ -11,8 +11,8 @@ Digital-native U.S. bank with a national charter; Galileo B2B platform + Financi
 ## Investment Thesis
 
 > **Thesis established:** 2026-05-16
-> **Last validated:** 2026-05-16
-> **Drift status:** On track — initial thesis established; monitor Q2 2026 earnings for continued GAAP profitability and LPB revenue trajectory
+> **Last validated:** 2026-05-18
+> **Drift status:** On track — Q1 2026 verified: record $1.1B rev, 10th consecutive GAAP quarter, LPB $3.6B expansion confirmed; Tech Platform weakness known and already priced; thesis executing on all core pillars
 
 SoFi Technologies is the first U.S. fintech to build a full-spectrum banking product suite on top of a national bank charter, then monetize that same technology infrastructure as a B2B platform to third-party banks and fintechs (Galileo). This two-sided architecture — consumer banking + B2B tech licensing — is what separates SoFi from every other digital bank. Without the charter, there's no deposit gathering. Without Galileo, there's no tech platform revenue. Together they create a compounding moat that improves with scale.
 
@@ -58,6 +58,7 @@ The bull case is the Financial Services Productivity Loop (FSPL): 75% of new SoF
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
 | 2026-05-16 | Thesis established on add-ticker run | → Neutral | Initial entry; no prior conviction baseline to compare against |
+| 2026-04-29 | Q1 2026: record $1.1B rev (+43%), 10th GAAP quarter, 1,055K members, LPB $3B third-party originations, $3.6B partner expansion | ↑ | Every core pillar delivered simultaneously — member flywheel, FSPL cross-sell, LPB expansion, GAAP profitability; this is thesis confirmation, not just continuation |
 
 ---
 
@@ -75,6 +76,9 @@ The bull case is the Financial Services Productivity Loop (FSPL): 75% of new SoF
 
 | Filing | Period | File |
 |--------|--------|------|
+| 10-Q | Q1 FY2026 (Mar 31, 2026) | [SOFI_10Q_Q1FY2026_Mar2026] |
+| 8-K | 2026-04-29 | [SOFI_8K_2026-04-29] |
+| 8-K | 2026-03-26 | [SOFI_8K_2026-03-26] |
 | DEF 14A | 2025-04-15 | [SEC EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001818874&type=DEF+14A&dateb=&owner=include&count=1) |
 
 ---
@@ -98,6 +102,12 @@ The bull case is the Financial Services Productivity Loop (FSPL): 75% of new SoF
 - **Q1 2026** — Loan Platform Business: $3B of personal loans originated on behalf of third parties; $3.6B of new capital commitments added from three new partners; management noted LPB demand was above what they chose to fulfil. [src: tweet — verify against 10-Q]
   **Why it matters:** LPB is the structural answer to the credit bear case — SoFi can route loans off balance sheet for fee income when credit conditions are unfavourable, decoupling revenue growth from balance sheet risk. New partner commitments expanding while demand exceeds supply means pricing power.
 
+- **2026-03-26** — LPB $3.6B partner expansion announced via 8-K: >$1B with a leading global bank, $600M with a financial services/insurance group, up to $2B with a top-5 global private asset manager. [src: 8-K] *(Verifies tweet claim from 2026-05-18 signal.)*
+  **Why it matters:** Institutional partner composition (global bank, insurer, mega PE firm) signals that demand for SoFi-originated paper is not retail-sentiment-driven — these are balance-sheet buyers with multi-year capital deployment mandates, which is more durable than cycle-sensitive warehouse lenders.
+
+- **2026-04-29** — Q1 2026 earnings call: 18th consecutive Rule of 40, score 72 (41% revenue growth + 31% EBITDA margin). [src: IR call]
+  **Why it matters:** Sustained Rule of 40 above 70 over 18 quarters removes execution risk from the bear case — this is no longer a "show me" story on profitability, it is a compounding platform business with consistent unit economics.
+
 ---
 
 ## Cross-Ticker Signals
@@ -114,6 +124,9 @@ The bull case is the Financial Services Productivity Loop (FSPL): 75% of new SoF
 *(Rating changes, price target moves, notable commentary)*
 
 - **2026** — SOFI +55% YTD through May 2026; undergoing analyst re-rating cycle following 9 consecutive GAAP-profitable quarters.
+- **2026-05-12** — Truist lowered PT $20→$17, maintained Hold (credit risk concerns, higher-for-longer rate environment)
+- **May 2026** — Goldman Sachs lowered PT $20→$17 (macro caution, rate sensitivity)
+- **May 2026** — Deutsche Bank lowered PT $26→$18 (rate environment + Tech Platform headwind)
 
 ---
 
@@ -137,3 +150,4 @@ The bull case is the Financial Services Productivity Loop (FSPL): 75% of new SoF
 
 - **2026-05-16** — add-ticker run. Note created from template; fundamental sections populated from web research (SoFi IR, SEC Form 4, DEF 14A 2025-04-15, Gurufocus insider data). Key findings: CIK 0001818874; NASDAQ; CEO Noto bought ~$1M shares open-market May 8–11 post-Q1 earnings (39 buys, 0 sells, 5-year record); Q1 2026 $1.09B revenue (+43%), 9th consecutive GAAP-profitable quarter; 2026 guidance $4.7B adj. rev / $1.6B adj. EBITDA; LPB originations +200% YoY; Galileo 158.4M accounts; stablecoin SoFi USD launching 2026.
 - **2026-05-18** — 📊 MONITOR | ingest-sentiment pass on Q1 2026 signal. Verified against 8-K: Tech Platform $75.1M (-27% YoY) ✓; members +1,055,000 ✓. Pending 10-Q verification: LPB $3B third-party originations, $3.6B new capital commitments (3 partners), 45% cross-sell rate, 50% SoFi Plus second-product rate. ⚠ Data errors found in existing Earnings row (added 2026-05-16): EPS should be $0.12 not $0.13 [src: 8-K]; Q1 2026 was the **10th** consecutive GAAP-profitable quarter, not 9th — the signal author and add-ticker run both miscounted.
+- **2026-05-18** — 📊 MONITOR deep pass. LPB $3B originations now verified [src: 10-Q/IR]; LPB $3.6B partner expansion verified via 8-K (2026-03-26) — all tweet-tagged LPB figures confirmed. SoFi Plus cross-buy direction verified on IR call; exact 50%/45% cross-sell percentages still pending 10-Q footnote review. Rule of 40 score 72 logged (18th consecutive). Analyst PT cuts: Truist $17, GS $17, DB $18 (rate/credit concerns, not thesis-breaking). Q2 2026 earnings expected July 28–29 (unconfirmed).
