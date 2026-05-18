@@ -12,7 +12,7 @@ The only vertically integrated launch provider with proven mission cadence outsi
 
 > **Thesis established:** May 18, 2026
 > **Last validated:** May 18, 2026
-> **Drift status:** On track — initial thesis established; monitor for Neutron development milestones and cadence
+> **Drift status:** On track — Q1 2026 record revenue and $2.2B backlog confirm Space Systems durability; Neutron secured first commercial commitments pre-launch
 
 Rocket Lab is a full-stack space company with two revenue engines: Launch Services (Electron small-lift rocket; Neutron medium-lift in development) and Space Systems (spacecraft buses, satellite components, propulsion systems, and mission management). Its vertical integration — designing and manufacturing most components in-house — gives it cost control and mission assurance that competitors buying commodity parts cannot replicate. Space Systems contributes ~71% of revenue, providing recurring component income independent of launch cadence and reducing binary dependence on launch outcomes.
 
@@ -44,7 +44,8 @@ The critical risk is Neutron execution. The current valuation prices in meaningf
 
 ## Catalyst Timeline
 - [ ] Neutron rocket first launch (2026 target — watch for hardware milestone updates)
-- [ ] Q1 2026 earnings — Space Systems revenue trajectory and Neutron capex burn rate
+- [x] Q1 2026 earnings — Space Systems revenue trajectory and Neutron capex burn rate
+- [ ] Q2 2026 earnings — expected August 6, 2026
 - [ ] Government contract awards (NRO, DoD NSSL phase-in)
 - [ ] Neutron pad completion at Launch Complex 3, Wallops Island
 
@@ -56,6 +57,7 @@ The critical risk is Neutron execution. The current valuation prices in meaningf
 
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
+| May 7, 2026 | Q1 2026 record $200.3M rev; $2.2B backlog; largest-ever Neutron+Electron contract (confidential, through 2029) | ↑ | Revenue crossing $200M/qtr proves Space Systems durability independent of Neutron; commercial Neutron commitments before first flight validate market demand and de-risk the revenue ramp |
 
 ---
 
@@ -64,6 +66,7 @@ The critical risk is Neutron execution. The current valuation prices in meaningf
 
 | Quarter | Revenue | Beat/Miss | EPS | Guidance | Notes |
 |---------|---------|-----------|-----|----------|-------|
+| Q1 2026 | $200.3M | Beat | -$0.07 | Q2 rev $225–240M; GAAP GM 33–35% | Record rev +63.5% YoY; $2.2B backlog; largest-ever contract (confidential, Neutron+Electron through 2029); Adj. EBITDA -$11.8M |
 | — | — | — | — | — | — |
 
 ---
@@ -73,6 +76,8 @@ The critical risk is Neutron execution. The current valuation prices in meaningf
 
 | Filing | Period | File |
 |--------|--------|------|
+| 8-K | May 7, 2026 | [RKLB_8K_2026-05-07] |
+| 10-Q | Q1 FY2026 (Mar 31, 2026) | [RKLB_10Q_Q1FY2026_Mar2026] |
 | — | — | — |
 
 ---
@@ -80,6 +85,15 @@ The critical risk is Neutron execution. The current valuation prices in meaningf
 ## News & Alpha Log
 *(Append notable developments: partnerships, product launches, supply chain signals)*
 *(For each entry, include a **Why it matters:** line explaining the mechanism — not just what happened, but why it moves the thesis.)*
+
+- **May 7, 2026** — Q1 2026: Record $200.3M revenue (+63.5% YoY); backlog jumps to $2.2B; largest-ever contract signed (confidential customer, Neutron + Electron through 2029).
+  **Why it matters:** Space Systems at $136.7M this quarter proves the business has durable recurring revenue independent of Neutron success — reduces binary launch risk and supports the premium multiple.
+
+- **May 7, 2026** — Neutron 5-launch commercial deal announced with confidential customer; Q4 2026 first launch target maintained.
+  **Why it matters:** Committed Neutron backlog before first flight directly validates commercial demand for the vehicle and de-risks the post-debut revenue ramp — the most important pre-launch confidence signal.
+
+- **January 2026** — Stage 1 tank rupture during hydrostatic pressure qualification testing at Wallops Island facility.
+  **Why it matters:** Qualification failures are common in development programs, but this adds execution risk to the Q4 2026 debut target; watch Q2 earnings for any schedule guidance change.
 
 ---
 
@@ -94,6 +108,9 @@ The critical risk is Neutron execution. The current valuation prices in meaningf
 
 ## Analyst Coverage
 *(Rating changes, price target moves, notable commentary)*
+
+- **May 8, 2026** — TheStreet (Guilfoyle) maintained positive view on RKLB, PT $112 (post-Q1 earnings beat)
+- **May 2026** — TD Cowen raised PT to $120 post-Q1 results; consensus Buy (15 analysts), 53% Strong Buy
 
 ---
 
@@ -113,3 +130,4 @@ The critical risk is Neutron execution. The current valuation prices in meaningf
 *(Reverse-chron append log — newest at bottom)*
 
 - **May 18, 2026** — add-ticker run. Note created from template; fundamental sections populated from web research and SEC DEF 14A. CIK 0001819994, NASDAQ. Space & Comms sector.
+- **May 18, 2026** — 📊 MONITOR | Q1 2026 earnings filed May 7: record $200.3M rev (+63.5% YoY), $2.2B backlog, largest-ever contract; Neutron 5-launch deal booked pre-flight; Q4 2026 debut target maintained; Stage 1 tank rupture in Jan 2026 noted as schedule risk.
