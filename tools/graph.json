@@ -1,0 +1,957 @@
+{
+  "nodes": [
+    {
+      "id": "AAOI",
+      "mentions": 1,
+      "sectors": [
+        "Photonics & Optical",
+        "Semiconductors"
+      ]
+    },
+    {
+      "id": "AAPL",
+      "mentions": 1,
+      "sectors": [
+        "AI Infrastructure",
+        "Semiconductors"
+      ]
+    },
+    {
+      "id": "AMD",
+      "mentions": 2,
+      "sectors": [
+        "AI Infrastructure",
+        "Photonics & Optical",
+        "Semiconductors"
+      ]
+    },
+    {
+      "id": "AMZN",
+      "mentions": 1,
+      "sectors": [
+        "AI Infrastructure",
+        "Photonics & Optical"
+      ]
+    },
+    {
+      "id": "ARM",
+      "mentions": 1,
+      "sectors": [
+        "AI Infrastructure",
+        "Semiconductors"
+      ]
+    },
+    {
+      "id": "ASML",
+      "mentions": 1,
+      "sectors": [
+        "Photonics & Optical",
+        "Semiconductors"
+      ]
+    },
+    {
+      "id": "AVGO",
+      "mentions": 1,
+      "sectors": [
+        "Photonics & Optical",
+        "Semiconductors"
+      ]
+    },
+    {
+      "id": "AXTI",
+      "mentions": 1,
+      "sectors": [
+        "Photonics & Optical",
+        "Semiconductors"
+      ]
+    },
+    {
+      "id": "BOT",
+      "mentions": 1,
+      "sectors": []
+    },
+    {
+      "id": "COHR",
+      "mentions": 1,
+      "sectors": [
+        "Photonics & Optical",
+        "Semiconductors"
+      ]
+    },
+    {
+      "id": "FN",
+      "mentions": 1,
+      "sectors": [
+        "Photonics & Optical",
+        "Semiconductors"
+      ]
+    },
+    {
+      "id": "INTC",
+      "mentions": 2,
+      "sectors": [
+        "AI Infrastructure",
+        "Photonics & Optical",
+        "Semiconductors"
+      ]
+    },
+    {
+      "id": "IQE",
+      "mentions": 1,
+      "sectors": [
+        "Photonics & Optical",
+        "Semiconductors"
+      ]
+    },
+    {
+      "id": "LITE",
+      "mentions": 2,
+      "sectors": [
+        "Photonics & Optical",
+        "Semiconductors"
+      ]
+    },
+    {
+      "id": "LPK",
+      "mentions": 1,
+      "sectors": [
+        "Photonics & Optical",
+        "Semiconductors"
+      ]
+    },
+    {
+      "id": "META",
+      "mentions": 1,
+      "sectors": [
+        "AI Infrastructure",
+        "Semiconductors"
+      ]
+    },
+    {
+      "id": "MRVL",
+      "mentions": 2,
+      "sectors": [
+        "Photonics & Optical",
+        "Semiconductors"
+      ]
+    },
+    {
+      "id": "MTSI",
+      "mentions": 1,
+      "sectors": [
+        "Photonics & Optical",
+        "Semiconductors"
+      ]
+    },
+    {
+      "id": "NVDA",
+      "mentions": 3,
+      "sectors": [
+        "AI Infrastructure",
+        "Photonics & Optical",
+        "Semiconductors"
+      ]
+    },
+    {
+      "id": "NXPI",
+      "mentions": 1,
+      "sectors": [
+        "Semiconductors"
+      ]
+    },
+    {
+      "id": "PENG",
+      "mentions": 1,
+      "sectors": [
+        "Photonics & Optical",
+        "Semiconductors"
+      ]
+    },
+    {
+      "id": "POET",
+      "mentions": 1,
+      "sectors": [
+        "Photonics & Optical",
+        "Semiconductors"
+      ]
+    },
+    {
+      "id": "SIVE",
+      "mentions": 3,
+      "sectors": [
+        "AI Infrastructure",
+        "Photonics & Optical",
+        "Semiconductors"
+      ]
+    },
+    {
+      "id": "SMCI",
+      "mentions": 1,
+      "sectors": [
+        "Photonics & Optical",
+        "Semiconductors"
+      ]
+    },
+    {
+      "id": "STM",
+      "mentions": 1,
+      "sectors": [
+        "Semiconductors"
+      ]
+    },
+    {
+      "id": "TSM",
+      "mentions": 1,
+      "sectors": [
+        "AI Infrastructure",
+        "Photonics & Optical"
+      ]
+    },
+    {
+      "id": "TXN",
+      "mentions": 1,
+      "sectors": [
+        "Semiconductors"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "source": "AAPL",
+      "target": "INTC",
+      "type": "customer",
+      "weight": 1,
+      "dates": [
+        "2026-05-18"
+      ],
+      "slugs": [
+        "2026-05-18-amd-cpu-bottleneck-three-ways"
+      ],
+      "notes": [
+        "AAPL chip designs to be manufactured on Intel foundry process"
+      ]
+    },
+    {
+      "source": "META",
+      "target": "AMD",
+      "type": "customer",
+      "weight": 1,
+      "dates": [
+        "2026-05-18"
+      ],
+      "slugs": [
+        "2026-05-18-amd-cpu-bottleneck-three-ways"
+      ],
+      "notes": [
+        "6GW Instinct order; first customer for Venice/Verano EPYC processors"
+      ]
+    },
+    {
+      "source": "NVDA",
+      "target": "INTC",
+      "type": "design_win",
+      "weight": 1,
+      "dates": [
+        "2026-05-18"
+      ],
+      "slugs": [
+        "2026-05-18-amd-cpu-bottleneck-three-ways"
+      ],
+      "notes": [
+        "Xeon 6 selected as host CPU for DGX Rubin NVL8 systems"
+      ]
+    }
+  ],
+  "co_occurrences": [
+    {
+      "source": "NVDA",
+      "target": "TSM",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-nvda-foci-cpo-undervalued"
+    },
+    {
+      "source": "MRVL",
+      "target": "PENG",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-peng-people-buying-peng"
+    },
+    {
+      "source": "MRVL",
+      "target": "SMCI",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-peng-people-buying-peng"
+    },
+    {
+      "source": "PENG",
+      "target": "SMCI",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-peng-people-buying-peng"
+    },
+    {
+      "source": "LITE",
+      "target": "SIVE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-aiming-become-lite"
+    },
+    {
+      "source": "AMZN",
+      "target": "SIVE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-amzn-alchip-signal"
+    },
+    {
+      "source": "AAOI",
+      "target": "AMD",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "AAOI",
+      "target": "ASML",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "AAOI",
+      "target": "COHR",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "AAOI",
+      "target": "FN",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "AAOI",
+      "target": "INTC",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "AAOI",
+      "target": "IQE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "AAOI",
+      "target": "LITE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "AAOI",
+      "target": "LPK",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "AAOI",
+      "target": "MTSI",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "AAOI",
+      "target": "MRVL",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "AAOI",
+      "target": "NVDA",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "AAOI",
+      "target": "POET",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "AAOI",
+      "target": "SIVE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "AMD",
+      "target": "ASML",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "AMD",
+      "target": "COHR",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "AMD",
+      "target": "FN",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "AMD",
+      "target": "INTC",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "AMD",
+      "target": "IQE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "AMD",
+      "target": "LITE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "AMD",
+      "target": "LPK",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "AMD",
+      "target": "MTSI",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "AMD",
+      "target": "MRVL",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "AMD",
+      "target": "NVDA",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "AMD",
+      "target": "POET",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "AMD",
+      "target": "SIVE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "ASML",
+      "target": "COHR",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "ASML",
+      "target": "FN",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "ASML",
+      "target": "INTC",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "ASML",
+      "target": "IQE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "ASML",
+      "target": "LITE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "ASML",
+      "target": "LPK",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "ASML",
+      "target": "MTSI",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "ASML",
+      "target": "MRVL",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "ASML",
+      "target": "NVDA",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "ASML",
+      "target": "POET",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "ASML",
+      "target": "SIVE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "COHR",
+      "target": "FN",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "COHR",
+      "target": "INTC",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "COHR",
+      "target": "IQE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "COHR",
+      "target": "LITE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "COHR",
+      "target": "LPK",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "COHR",
+      "target": "MTSI",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "COHR",
+      "target": "MRVL",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "COHR",
+      "target": "NVDA",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "COHR",
+      "target": "POET",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "COHR",
+      "target": "SIVE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "FN",
+      "target": "INTC",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "FN",
+      "target": "IQE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "FN",
+      "target": "LITE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "FN",
+      "target": "LPK",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "FN",
+      "target": "MTSI",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "FN",
+      "target": "MRVL",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "FN",
+      "target": "NVDA",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "FN",
+      "target": "POET",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "FN",
+      "target": "SIVE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "INTC",
+      "target": "IQE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "INTC",
+      "target": "LITE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "INTC",
+      "target": "LPK",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "INTC",
+      "target": "MTSI",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "INTC",
+      "target": "MRVL",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "INTC",
+      "target": "NVDA",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "INTC",
+      "target": "POET",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "INTC",
+      "target": "SIVE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "IQE",
+      "target": "LITE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "IQE",
+      "target": "LPK",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "IQE",
+      "target": "MTSI",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "IQE",
+      "target": "MRVL",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "IQE",
+      "target": "NVDA",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "IQE",
+      "target": "POET",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "IQE",
+      "target": "SIVE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "LITE",
+      "target": "LPK",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "LITE",
+      "target": "MTSI",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "LITE",
+      "target": "MRVL",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "LITE",
+      "target": "NVDA",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "LITE",
+      "target": "POET",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "LITE",
+      "target": "SIVE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "LPK",
+      "target": "MTSI",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "LPK",
+      "target": "MRVL",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "LPK",
+      "target": "NVDA",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "LPK",
+      "target": "POET",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "LPK",
+      "target": "SIVE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "MTSI",
+      "target": "MRVL",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "MTSI",
+      "target": "NVDA",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "MTSI",
+      "target": "POET",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "MTSI",
+      "target": "SIVE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "MRVL",
+      "target": "NVDA",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "MRVL",
+      "target": "POET",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "MRVL",
+      "target": "SIVE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "NVDA",
+      "target": "POET",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "NVDA",
+      "target": "SIVE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "POET",
+      "target": "SIVE",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-sive-when-i-see"
+    },
+    {
+      "source": "NXPI",
+      "target": "STM",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-stm-mcu-theme-play"
+    },
+    {
+      "source": "NXPI",
+      "target": "TXN",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-stm-mcu-theme-play"
+    },
+    {
+      "source": "STM",
+      "target": "TXN",
+      "date": "2026-05-17",
+      "slug": "2026-05-17-stm-mcu-theme-play"
+    },
+    {
+      "source": "AAPL",
+      "target": "AMD",
+      "date": "2026-05-18",
+      "slug": "2026-05-18-amd-cpu-bottleneck-three-ways"
+    },
+    {
+      "source": "AAPL",
+      "target": "ARM",
+      "date": "2026-05-18",
+      "slug": "2026-05-18-amd-cpu-bottleneck-three-ways"
+    },
+    {
+      "source": "AAPL",
+      "target": "INTC",
+      "date": "2026-05-18",
+      "slug": "2026-05-18-amd-cpu-bottleneck-three-ways"
+    },
+    {
+      "source": "AAPL",
+      "target": "META",
+      "date": "2026-05-18",
+      "slug": "2026-05-18-amd-cpu-bottleneck-three-ways"
+    },
+    {
+      "source": "AAPL",
+      "target": "NVDA",
+      "date": "2026-05-18",
+      "slug": "2026-05-18-amd-cpu-bottleneck-three-ways"
+    },
+    {
+      "source": "AMD",
+      "target": "ARM",
+      "date": "2026-05-18",
+      "slug": "2026-05-18-amd-cpu-bottleneck-three-ways"
+    },
+    {
+      "source": "AMD",
+      "target": "INTC",
+      "date": "2026-05-18",
+      "slug": "2026-05-18-amd-cpu-bottleneck-three-ways"
+    },
+    {
+      "source": "AMD",
+      "target": "META",
+      "date": "2026-05-18",
+      "slug": "2026-05-18-amd-cpu-bottleneck-three-ways"
+    },
+    {
+      "source": "AMD",
+      "target": "NVDA",
+      "date": "2026-05-18",
+      "slug": "2026-05-18-amd-cpu-bottleneck-three-ways"
+    },
+    {
+      "source": "ARM",
+      "target": "INTC",
+      "date": "2026-05-18",
+      "slug": "2026-05-18-amd-cpu-bottleneck-three-ways"
+    },
+    {
+      "source": "ARM",
+      "target": "META",
+      "date": "2026-05-18",
+      "slug": "2026-05-18-amd-cpu-bottleneck-three-ways"
+    },
+    {
+      "source": "ARM",
+      "target": "NVDA",
+      "date": "2026-05-18",
+      "slug": "2026-05-18-amd-cpu-bottleneck-three-ways"
+    },
+    {
+      "source": "INTC",
+      "target": "META",
+      "date": "2026-05-18",
+      "slug": "2026-05-18-amd-cpu-bottleneck-three-ways"
+    },
+    {
+      "source": "INTC",
+      "target": "NVDA",
+      "date": "2026-05-18",
+      "slug": "2026-05-18-amd-cpu-bottleneck-three-ways"
+    },
+    {
+      "source": "META",
+      "target": "NVDA",
+      "date": "2026-05-18",
+      "slug": "2026-05-18-amd-cpu-bottleneck-three-ways"
+    }
+  ]
+}

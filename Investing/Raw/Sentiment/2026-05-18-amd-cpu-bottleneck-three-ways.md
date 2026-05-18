@@ -6,6 +6,10 @@ sectors: [Semiconductors, AI Infrastructure]
 author: ""
 url: "https://x.com/i/status/2056022011491811504"
 tags: []
+relationships:
+  - { from: META, to: AMD, type: customer, note: "6GW Instinct order; first customer for Venice/Verano EPYC processors" }
+  - { from: NVDA, to: INTC, type: design_win, note: "Xeon 6 selected as host CPU for DGX Rubin NVL8 systems" }
+  - { from: AAPL, to: INTC, type: customer, note: "AAPL chip designs to be manufactured on Intel foundry process" }
 ---
 
 MY 3 FAVORITE WAYS TO PLAY THE CPU BOTTLENECK
