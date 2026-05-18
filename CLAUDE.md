@@ -39,6 +39,7 @@ gemini-scribe/
 | `/stock-research-all` | `/stock-research-all [--refresh] [--sector SECTOR]` | Batch research across all tickers (5 concurrent agents) |
 | `/ticker-monitor` | `/ticker-monitor [--force] [--dry-run] [--sector SECTOR] [--deep TICKER]` | Weekly update pass: SEC filings, earnings, analyst moves, catalysts — append-only |
 | `/ingest-sentiment` | `/ingest-sentiment [--source article\|musing] [--author "@handle"]` | Parse Tweets.md staging dump into signal notes; update Social Mentions on ticker pages |
+| `/score-ticker` | `/score-ticker TICKER [--refresh]` | Score a ticker on the 6-criterion Unrivaled Investing rubric; writes Scoring Summary to ticker page, updates Monitor Registry and Watchlist |
 
 ## Ticker Workflow
 

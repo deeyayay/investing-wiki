@@ -8,6 +8,24 @@
 
 ---
 
+## Scoring Summary
+_Last scored: — | [[Scoring Rubric]]_
+
+| Criterion | Score | Evidence |
+|-----------|-------|----------|
+| Product (Love Factor) | —/5 | |
+| Pricing Power | —/5 | |
+| Leadership & Alignment | —/5 | |
+| Financial Health | —/5 | |
+| Macro Environment | —/5 | |
+| Future Potential | —/5 | |
+| **Composite** | **—/10** | |
+
+**Valuation:** — (not scored; see [[Scoring Rubric]] for methodology)
+**Growth Potential:** — (pending real-time data integration)
+
+---
+
 ## Investment Thesis
 
 > **Thesis established:** {{date}}

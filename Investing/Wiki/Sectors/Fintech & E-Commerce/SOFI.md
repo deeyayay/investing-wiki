@@ -8,6 +8,24 @@ Digital-native U.S. bank with a national charter; Galileo B2B platform + Financi
 
 ---
 
+## Scoring Summary
+_Last scored: 2026-05-18 | [[Scoring Rubric]]_
+
+| Criterion | Score | Evidence |
+|-----------|-------|----------|
+| Product (Love Factor) | 5/5 | 75% 30-day second-product adoption; 14.7M members (+35% YoY); 90% retention; no adequate substitute combining FSPL + national bank charter economics |
+| Pricing Power | 4/5 | NIM expanding post-charter; LPB demand exceeded fulfillment capacity (pricing power); cross-sell carries 60–70% gross margin; rate-cycle sensitivity limits to 4 |
+| Leadership & Alignment | 5/5 | CEO Noto: 11.9M shares (~$190M), 39 open-market buys/0 sells over 5 years, ~$1M post-Q1 purchase; 10 consecutive GAAP-profitable quarters |
+| Financial Health | 4/5 | $37.5B FDIC-deposit-funded; GAAP profitable; Rule of 40 = 72 for 18 consecutive quarters; LPB capital-light; unsecured loan book limits to 4 |
+| Macro Environment | 4/5 | Structural digital banking disintermediation; 14.7M vs. ~300M US adults = vast white space; one material headwind: NIM sensitivity to rate cuts |
+| Future Potential | 5/5 | Positioned at 3+ value chain layers (consumer banking + Galileo B2B + LPB); stablecoin rails and insurance as additional adjacencies with traction |
+| **Composite** | **9.0/10** | **Unrivaled** |
+
+**Valuation:** Reasonable at ~$16 | P/E ~33x 2026E | Analyst consensus PT ~$17 (+6% upside; Truist/GS $17, DB $18 — all Hold)
+**Growth Potential:** — (pending real-time data integration)
+
+---
+
 ## Investment Thesis
 
 > **Thesis established:** 2026-05-16
@@ -151,3 +169,4 @@ The bull case is the Financial Services Productivity Loop (FSPL): 75% of new SoF
 - **2026-05-16** — add-ticker run. Note created from template; fundamental sections populated from web research (SoFi IR, SEC Form 4, DEF 14A 2025-04-15, Gurufocus insider data). Key findings: CIK 0001818874; NASDAQ; CEO Noto bought ~$1M shares open-market May 8–11 post-Q1 earnings (39 buys, 0 sells, 5-year record); Q1 2026 $1.09B revenue (+43%), 9th consecutive GAAP-profitable quarter; 2026 guidance $4.7B adj. rev / $1.6B adj. EBITDA; LPB originations +200% YoY; Galileo 158.4M accounts; stablecoin SoFi USD launching 2026.
 - **2026-05-18** — 📊 MONITOR | ingest-sentiment pass on Q1 2026 signal. Verified against 8-K: Tech Platform $75.1M (-27% YoY) ✓; members +1,055,000 ✓. Pending 10-Q verification: LPB $3B third-party originations, $3.6B new capital commitments (3 partners), 45% cross-sell rate, 50% SoFi Plus second-product rate. ⚠ Data errors found in existing Earnings row (added 2026-05-16): EPS should be $0.12 not $0.13 [src: 8-K]; Q1 2026 was the **10th** consecutive GAAP-profitable quarter, not 9th — the signal author and add-ticker run both miscounted.
 - **2026-05-18** — 📊 MONITOR deep pass. LPB $3B originations now verified [src: 10-Q/IR]; LPB $3.6B partner expansion verified via 8-K (2026-03-26) — all tweet-tagged LPB figures confirmed. SoFi Plus cross-buy direction verified on IR call; exact 50%/45% cross-sell percentages still pending 10-Q footnote review. Rule of 40 score 72 logged (18th consecutive). Analyst PT cuts: Truist $17, GS $17, DB $18 (rate/credit concerns, not thesis-breaking). Q2 2026 earnings expected July 28–29 (unconfirmed).
+- **2026-05-18** — Scored — Composite 9.0/10 Unrivaled | P:5 PP:4 L:5 FH:4 ME:4 FP:5 | Valuation: Reasonable at ~$16 | Monitor Registry updated.
