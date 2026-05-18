@@ -1,6 +1,6 @@
 # Monitor Registry
 *The research-monitor skill reads this file on every run. Add tickers here — no skill update needed.*
-*Last updated: May 16, 2026 — SOFI added*
+*Last updated: May 18, 2026 — AMBA added; Other sector renamed to Robotics & Edge AI*
 
 ---
 
@@ -14,6 +14,14 @@ Manual fallback:
 
 ## How to Add a Sector
 Add a new `## Sector Name` heading with a table using the same column structure.
+
+---
+
+## Robotics & Edge AI
+
+| Ticker | Company | CIK | Exchange | Path |
+|--------|---------|-----|----------|------|
+| AMBA | Ambarella, Inc. | 0001280263 | NASDAQ | Investing/Wiki/Sectors/Robotics & Edge AI/AMBA.md |
 
 ---
 
