@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s \"https://www.sec.gov/cgi-bin/browse-edgar*\")",
+      "Bash(curl -s -H \"User-Agent: *\" \"https://www.sec.gov/cgi-bin/browse-edgar*\")",
+      "Bash(Start-Sleep -Seconds *)",
+      "Bash(mkdir *)"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s \"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=IREN&type=DEF+14A&dateb=&owner=include&count=5&search_text=\")",
+      "Bash(curl -s \"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=IREN&type=20-F&dateb=&owner=include&count=3&search_text=\")",
+      "Bash(curl -s \"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=IREN&type=&dateb=&owner=include&count=10&search_text=\")",
+      "Bash(curl -s -H \"User-Agent: Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36\" \"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=IREN&type=DEF+14A&dateb=&owner=include&count=5\")",
+      "Bash(Start-Sleep -Seconds 2)",
+      "Bash(curl -s -H \"User-Agent: Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\)\" \"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=IREN&type=20-F&dateb=&owner=include&count=3\")",
+      "Bash(curl -s -H \"User-Agent: Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\)\" \"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=IREN&type=&dateb=&owner=include&count=10\")",
+      "Bash(curl -s \"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=IREN&type=&dateb=&owner=include&count=10&output=json\")"
+    ]
+  }
+}
