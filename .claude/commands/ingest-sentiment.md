@@ -147,22 +147,21 @@ Do NOT register stub tickers in the Monitor Registry.
 
 For each signal flagged as sector-level, for each sector it touches:
 
-1. Check if `Investing/Wiki/Sectors/[Sector Name]/Sector Sentiment.md` exists
-2. If **does not exist**: create it:
+1. Read `Investing/Wiki/Sectors/[Sector Name]/_Sector Framework.md`
+2. Check for a `## Social Mentions` section
+3. If section **does not exist**: append to end of file:
    ```markdown
-   # [Sector Name] — Social Mentions
-
-   Sector-level signals and commentary from external sources.
-
    ---
 
-   ## Signals
+   ## Social Mentions
+
+   *Sector-level signals and commentary. Maintained by `/ingest-sentiment`.*
 
    | Date | Signal | Source | Summary |
    |------|--------|--------|---------|
    | [date] | [[slug]] | tweet | [one-sentence summary of the sector-level claim] |
    ```
-3. If **already exists**: append a row to the Signals table.
+4. If section **already exists**: append a new row to the table only — never rewrite existing rows.
 
 ---
 

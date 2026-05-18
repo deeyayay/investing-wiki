@@ -173,3 +173,13 @@ This sector is primarily a **downstream receiver** of signals from Semiconductor
 ## Research Log
 
 - **2026-05-15** — Framework created. Coverage: IREN, SMCI, VRT, ANET. Key gap to close next: populate SMCI, VRT, ANET ticker notes with Investment Thesis and Management sections — currently only IREN is fully populated.
+
+---
+
+## Social Mentions
+
+*Sector-level signals and commentary. Maintained by `/ingest-sentiment`.*
+
+| Date | Signal | Source | Summary |
+|------|--------|--------|---------|
+| 2026-05-17 | [[2026-05-17-nvda-foci-cpo-undervalued]] | tweet | CPO supercycle front-running — FOCI capturing dominant share for NVDA/TSM; payoff visible 2027/2028 |
