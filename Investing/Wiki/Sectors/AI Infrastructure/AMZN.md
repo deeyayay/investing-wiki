@@ -8,3 +8,4 @@
 | Date | Signal | Source |
 |------|--------|--------|
 | 2026-05-17 | [[2026-05-17-sive-amzn-alchip-signal]] | tweet |
+| 2026-05-18 | [[2026-05-18-gev-ai-supply-chain-chokepoints]] | tweet |

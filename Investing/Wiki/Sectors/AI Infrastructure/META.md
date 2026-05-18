@@ -8,3 +8,4 @@
 | Date | Signal | Source |
 |------|--------|--------|
 | 2026-05-18 | [[2026-05-18-amd-cpu-bottleneck-three-ways]] | tweet |
+| 2026-05-18 | [[2026-05-18-gev-ai-supply-chain-chokepoints]] | tweet |
