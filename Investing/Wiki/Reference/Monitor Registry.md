@@ -1,6 +1,6 @@
 # Monitor Registry
 *The research-monitor skill reads this file on every run. Add tickers here — no skill update needed.*
-*Last updated: May 18, 2026 — AMBA added; Other sector renamed to Robotics & Edge AI*
+*Last updated: May 18, 2026 — RKLB added; AMBA added; Other sector renamed to Robotics & Edge AI*
 
 ---
 
@@ -97,6 +97,7 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 | Ticker | Company | CIK | Exchange | Path |
 |--------|---------|-----|----------|------|
 | ASTS | AST SpaceMobile | 0001780530 | NASDAQ | Investing/Wiki/Sectors/Space & Comms/ASTS.md |
+| RKLB | Rocket Lab USA, Inc. | 0001819994 | NASDAQ | Investing/Wiki/Sectors/Space & Comms/RKLB.md |
 
 ---
 
