@@ -1,6 +1,6 @@
 # Sentiment Index
 *Maintained by `/ingest-sentiment` — do not edit the ticker table manually.*
-*Last updated: 2026-05-17*
+*Last updated: 2026-05-18*
 
 ---
 
@@ -8,15 +8,16 @@
 
 | Ticker | Wiki | Status | Mentions | Last Signal |
 |--------|------|--------|----------|-------------|
-| SIVE | [[SIVE]] | monitored | 3 | 2026-05-17 |
+| SIVE | [[SIVE]] | monitored | 4 | 2026-05-18 |
 | LITE | [[LITE]] | monitored | 2 | 2026-05-17 |
 | MRVL | [[MRVL]] | monitored | 2 | 2026-05-17 |
 | NVDA | [[NVDA]] | monitored | 2 | 2026-05-17 |
 | AAOI | [[AAOI]] | monitored | 1 | 2026-05-17 |
-| AMD | [[AMD]] | stub | 1 | 2026-05-17 |
+| AMD | [[AMD]] | stub | 2 | 2026-05-18 |
 | AMZN | [[AMZN]] | stub | 1 | 2026-05-17 |
 | ASML | [[ASML]] | stub | 1 | 2026-05-17 |
 | AVGO | [[AVGO]] | stub | 1 | 2026-05-17 |
+| GFS | [[GFS]] | stub | 1 | 2026-05-18 |
 | AXTI | [[AXTI]] | monitored | 1 | 2026-05-17 |
 | BOT | [[BOT]] | stub | 1 | 2026-05-17 |
 | COHR | [[COHR]] | monitored | 1 | 2026-05-17 |
@@ -40,6 +41,7 @@
 *Newest first. Max 30 entries.*
 
 <!-- signals appended here by /ingest-sentiment -->
+2026-05-18 · tweet · [[2026-05-18-sive-yes-markets-might]] · AMD, GFS, SIVE
 2026-05-17 · tweet · [[2026-05-17-stm-mcu-theme-play]] · STM, TXN, NXPI
 2026-05-17 · tweet · [[2026-05-17-avgo-shunsin-cpo-orders]] · AVGO
 2026-05-17 · tweet · [[2026-05-17-microled-waste-of-capital]] · (sector-level, no tickers)
