@@ -69,6 +69,15 @@ Fabrinet is the de facto precision optical manufacturing partner for Lumentum, C
 
 ---
 
+## Cross-Ticker Signals
+<!-- Log signals this ticker emits to or receives from other monitored names. -->
+
+| Date | Direction | Other Ticker | Signal | Implication |
+|------|-----------|-------------|--------|-------------|
+| 2026-05-19 | Receives | NVDA | NVDA Q1 FY2027 earnings event; FN named in earnings shockwave infographic as optical module manufacturer | FN is a volume-based royalty on the optical supply chain — NVDA demand guidance directly calibrates how fast the 800G→1.6T manufacturing ramp runs through FN's Thailand fabs |
+
+---
+
 ## Research Log
 - **2026-05-11** — Note migrated to subfolder. Removed Technicals and Options sections. Knowledge base format going forward.
 

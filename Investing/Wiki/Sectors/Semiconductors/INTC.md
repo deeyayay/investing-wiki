@@ -8,3 +8,5 @@
 | Date | Signal | Source |
 |------|--------|--------|
 | 2026-05-17 | [[2026-05-17-sive-when-i-see]] | tweet |
+| 2026-05-18 | [[2026-05-18-amd-cpu-bottleneck-three-ways]] | tweet |
+| 2026-05-18 | [[2026-05-18-gev-ai-supply-chain-chokepoints]] | tweet |

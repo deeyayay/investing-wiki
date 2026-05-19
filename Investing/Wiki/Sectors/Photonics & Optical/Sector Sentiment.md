@@ -12,3 +12,4 @@ Sector-level signals and commentary from external sources. Maintained by `/inges
 | 2026-05-17 | [[2026-05-17-axti-inp-substrate-export]] | tweet | AXTI InP substrate export controls framed as US geopolitical leverage; calls for supply chain weaponization against China |
 | 2026-05-17 | [[2026-05-17-nvda-foci-cpo-undervalued]] | tweet | CPO supercycle thesis — dominant market share capture expected 2027/2028; front-running the cycle now |
 | 2026-05-17 | [[2026-05-17-microled-waste-of-capital]] | tweet | MicroLED names (ams-OSRAM, AUO, Ennostar) are waste of capital for CPO/photonics exposure; volume shipments not until H2 2028+ |
+| 2026-05-18 | [[2026-05-18-axti-next-year-im]] | tweet | FAU + component bottlenecks expected to dominate coverage next year as CPO architecture led by NVDA/TSM scales; FOCI and Nextronics named as central players |

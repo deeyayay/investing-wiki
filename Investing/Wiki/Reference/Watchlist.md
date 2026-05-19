@@ -5,37 +5,37 @@
 
 ## Core Holdings (Active Positions)
 
-| Ticker | Name | Thesis Summary | Strategy |
-|--------|------|---------------|----------|
-| OKLO | Oklo Inc. | Next-gen nuclear microreactor; AI data center power demand tailwind; founder-led | Long-term hold + Wheel |
-| RBRK | Rubrik | Cybersecurity data resilience; sticky enterprise SaaS; strong ARR growth | Long-term hold + CSP |
-| MELI | MercadoLibre | Latin America e-commerce + fintech compounder; defensible moat; founder-led | Long-term hold |
-| AEHR | Aehr Test Systems | Silicon carbide wafer testing; EV semiconductor demand | Long-term hold |
-| IREN | IREN Ltd. | Bitcoin mining + AI compute infrastructure; energy-efficient ops | Long-term hold |
+| Ticker | Name | Thesis Summary | Strategy | Score |
+|--------|------|---------------|----------|-------|
+| OKLO | Oklo Inc. | Next-gen nuclear microreactor; AI data center power demand tailwind; founder-led | Long-term hold + Wheel | — |
+| RBRK | Rubrik | Cybersecurity data resilience; sticky enterprise SaaS; strong ARR growth | Long-term hold + CSP | — |
+| MELI | MercadoLibre | Latin America e-commerce + fintech compounder; defensible moat; founder-led | Long-term hold | — |
+| AEHR | Aehr Test Systems | Silicon carbide wafer testing; EV semiconductor demand | Long-term hold | — |
+| IREN | IREN Ltd. | Bitcoin mining + AI compute infrastructure; energy-efficient ops | Long-term hold | — |
 
 ---
 
 ## High Upside Rockets (Speculative)
 
-| Ticker | Notes |
-|--------|-------|
-| SIVE | Early stage — monitor for catalyst |
-| MSSCorp | Early stage — monitor for catalyst |
-| PCL | Early stage — monitor for catalyst |
-| AAOI | Applied Optoelectronics; photonics/optical interconnect theme |
+| Ticker | Notes | Score |
+|--------|-------|-------|
+| SIVE | Early stage — monitor for catalyst | 5.5 |
+| MSSCorp | Early stage — monitor for catalyst | — |
+| PCL | Early stage — monitor for catalyst | — |
+| AAOI | Applied Optoelectronics; photonics/optical interconnect theme | — |
 
 ---
 
 ## Compounders Watchlist
 
-| Ticker | Name | Notes |
-|--------|------|-------|
-| Shunsin | Shunsin Technology | Taiwan supply chain; semiconductor packaging |
-| Sumitomo | Sumitomo Corp | Japanese conglomerate; diversified compounder |
-| 5801.T | Furukawa Electric | Optical fiber; AI infrastructure buildout beneficiary |
-| COHR | Coherent Corp | Photonics + silicon photonics for AI data centers |
-| LITE | Lumentum | Optical components; AI/cloud networking exposure |
-| HOOD | Robinhood | Fintech trading platform; crypto exposure |
+| Ticker | Name | Notes | Score |
+|--------|------|-------|-------|
+| Shunsin | Shunsin Technology | Taiwan supply chain; semiconductor packaging | — |
+| Sumitomo | Sumitomo Corp | Japanese conglomerate; diversified compounder | — |
+| 5801.T | Furukawa Electric | Optical fiber; AI infrastructure buildout beneficiary | — |
+| COHR | Coherent Corp | Photonics + silicon photonics for AI data centers | — |
+| LITE | Lumentum | Optical components; AI/cloud networking exposure | — |
+| HOOD | Robinhood | Fintech trading platform; crypto exposure | — |
 
 ---
 
@@ -80,23 +80,23 @@
 ## Photonics & Optical
 
 ### Compounders
-| Ticker | Name | Notes |
-|--------|------|-------|
-| COHR | Coherent Corp | Volume transceiver leader; NVIDIA $2B anchor + Rubin platform; best risk/reward in sector at 34x |
-| LITE | Lumentum Holdings | Sole 200G EML supplier at volume; $400M+ OCS backlog sold out through 2027; $2B NVIDIA deal |
-| FN | Fabrinet | Contract manufacturer for LITE/COHR; royalty on entire transceiver supply chain; 63M units projected 2026 |
-| CIEN | Ciena Corp | Coherent optical networking systems; 3.2T prototype at OFC 2026; WaveLogic DSP moat |
-| VIAV | Viavi Solutions | Optical test & measurement for AI fabrics; 1.6T Ethernet + silicon photonics picks-and-shovels |
+| Ticker | Name | Notes | Score |
+|--------|------|-------|-------|
+| COHR | Coherent Corp | Volume transceiver leader; NVIDIA $2B anchor + Rubin platform; best risk/reward in sector at 34x | — |
+| LITE | Lumentum Holdings | Sole 200G EML supplier at volume; $400M+ OCS backlog sold out through 2027; $2B NVIDIA deal | — |
+| FN | Fabrinet | Contract manufacturer for LITE/COHR; royalty on entire transceiver supply chain; 63M units projected 2026 | — |
+| CIEN | Ciena Corp | Coherent optical networking systems; 3.2T prototype at OFC 2026; WaveLogic DSP moat | — |
+| VIAV | Viavi Solutions | Optical test & measurement for AI fabrics; 1.6T Ethernet + silicon photonics picks-and-shovels | — |
 
 ### High Upside Rockets
-| Ticker | Name | Notes |
-|--------|------|-------|
-| AAOI | Applied Optoelectronics | Sector YTD leader (+328%); first 1.6T production orders; high beta pure play |
-| SIVE | Sivers Semiconductors | InP photonics chip design + mmWave; Swedish listed; pre-consensus, illiquid |
-| AXTI | AXT Inc. | InP substrate chokepoint; record $60M backlog; doubling capacity end-2026 |
-| POET | POET Technologies | CPO optical engine pure play; first production order >$5M; $430M cash runway |
-| LWLG | Lightwave Logic | EO polymer modulators; 4x Stage 3 design-win customers; 2027 production ramp catalyst |
-| LASR | nLIGHT | Defense DEW (70kW milestone) + AI laser manufacturing; dual catalyst structure |
+| Ticker | Name | Notes | Score |
+|--------|------|-------|-------|
+| AAOI | Applied Optoelectronics | Sector YTD leader (+328%); first 1.6T production orders; high beta pure play | — |
+| SIVE | Sivers Semiconductors | InP photonics chip design + mmWave; Swedish listed; pre-consensus, illiquid | 5.5 |
+| AXTI | AXT Inc. | InP substrate chokepoint; record $60M backlog; doubling capacity end-2026 | — |
+| POET | POET Technologies | CPO optical engine pure play; first production order >$5M; $430M cash runway | — |
+| LWLG | Lightwave Logic | EO polymer modulators; 4x Stage 3 design-win customers; 2027 production ramp catalyst | — |
+| LASR | nLIGHT | Defense DEW (70kW milestone) + AI laser manufacturing; dual catalyst structure | — |
 
 ---
 - **2026-05-11** — Created **Photonics & Optical** sector folder with 11 names. Migrated COHR, LITE from Compounders; AAOI, SIVE from High Upside Rockets; VIAV from Space & Comms. Added new coverage: FN, CIEN (Compounders tier) and AXTI, POET, LWLG, LASR (Rockets tier). Full notes at [[Photonics & Optical/]]. Note: manually remove VIAV.md from Space & Comms folder (MCP delete timed out).

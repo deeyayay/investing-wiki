@@ -74,3 +74,18 @@ Vertiv makes the critical infrastructure that keeps data centers running: power 
 - **2026-05-07** — NVDA's $2.1B investment in IREN for 5GW of AI infrastructure is a direct demand signal for VRT's liquid cooling and power systems — every GW of GPU infrastructure needs Vertiv-scale thermal management. AI data center buildout thesis strongly intact. Watch for VRT to reference IREN-scale deployments in upcoming guidance.
 
 - **2026-05-14** — stock-research run. Fundamental sections populated from web research and SEC DEF 14A. CFO, Execution track record, and Insider ownership/alignment filled; One-Line Thesis and Investment Thesis were already populated and left unchanged.
+
+## Cross-Ticker Signals
+<!-- Log signals this ticker emits to or receives from other monitored names. -->
+
+| Date | Direction | Other Ticker | Signal | Implication |
+|------|-----------|-------------|--------|-------------|
+| 2026-05-19 | Receives | NVDA | NVDA Q1 FY2027 earnings event; VRT named in earnings shockwave infographic as heat dissipation supplier | GPU shipment volume is a leading indicator for VRT backlog — every NVL72 rack at scale requires Vertiv-grade liquid cooling, making NVDA guidance the primary order signal |
+
+---
+
+## Social Mentions
+
+| Date | Signal | Source |
+|------|--------|--------|
+| 2026-05-18 | [[2026-05-18-gev-ai-supply-chain-chokepoints]] | tweet |
