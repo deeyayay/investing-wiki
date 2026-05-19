@@ -1,6 +1,6 @@
 # Monitor Registry
 *The research-monitor skill reads this file on every run. Add tickers here — no skill update needed.*
-*Last updated: May 19, 2026 — ALAB (Astera Labs), CRDO (Credo Technology), AMKR (Amkor Technology) added to Semiconductors*
+*Last updated: May 19, 2026 — OUST (Ouster) added to Robotics & Edge AI*
 
 ---
 
@@ -22,6 +22,7 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 | Ticker | Company | CIK | Exchange | Path | Score |
 |--------|---------|-----|----------|------|-------|
 | AMBA | Ambarella, Inc. | 0001280263 | NASDAQ | Investing/Wiki/Sectors/Robotics & Edge AI/AMBA.md | 8.0 |
+| OUST | Ouster, Inc. | 0001816581 | NASDAQ | Investing/Wiki/Sectors/Robotics & Edge AI/OUST.md | — |
 
 ---
 
