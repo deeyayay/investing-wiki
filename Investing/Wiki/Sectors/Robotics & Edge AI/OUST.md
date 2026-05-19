@@ -30,7 +30,7 @@ _Last scored: — | [[Scoring Rubric]]_
 
 > **Thesis established:** May 19, 2026
 > **Last validated:** May 19, 2026
-> **Drift status:** On track — initial thesis established; monitor for sustained gross margin expansion and defense revenue ramp
+> **Drift status:** On track — Stereolabs acquisition broadens platform into Physical AI; Q4 2025 hit 62% GM but Q1 2026 pulled back to 46% on integration costs — watch recovery
 
 Ouster makes digital lidar sensors — the perception hardware that lets robots, autonomous vehicles, drones, and smart infrastructure "see" the physical world in 3D. Unlike analog lidar incumbents, Ouster built its sensors around a proprietary digital SoC (system-on-chip) that reduces the sensor to two custom semiconductor chips. This architecture compresses cost and complexity, and is designed to follow a Moore's Law-like cost reduction curve as volumes scale — a structural advantage in a market facing intense pricing pressure from radar and camera alternatives.
 
@@ -66,6 +66,7 @@ Margin trajectory is the most important near-term signal: gross margins expanded
 - [ ] Software attach rate growth (60% YoY bookings growth — watch for revenue conversion)
 - [ ] Industrial robotics design wins — autonomous forklift, warehouse, inspection verticals
 - [ ] Path to GAAP profitability — timeline and credibility of guidance
+- [ ] Earnings — Q2 2026 expected ~Aug 2026 (guidance: $49.5M–$52.5M revenue)
 
 ---
 
@@ -75,6 +76,9 @@ Margin trajectory is the most important near-term signal: gross margins expanded
 
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
+| 2026-02-09 | StereoLabs acquisition closed; AI vision/perception stack added to lidar portfolio | ↑ Strengthened | Broadens from pure lidar into multimodal Physical AI — RGB-D cameras + AI enable manipulation and full-stack perception, expanding TAM and creating sensor fusion products no lidar-only competitor can match |
+| 2026-05-05 | Q1 2026: Revenue $48.6M (+49% YoY), beat on revenue; EPS -$0.28 (missed -$0.12 est); GM 46% | → Neutral | Revenue acceleration is strong (+49%) but EPS miss and margin step-down from Q4 2025 peak (62%) to 46% likely reflect Stereolabs integration costs — not a structural deterioration, but requires monitoring over next 2 quarters |
+| 2026-05-12 | Rev8 OS digital lidar qualified for NVIDIA DRIVE Hyperion AV platform | ↑ Strengthened | NVIDIA DRIVE Hyperion is the dominant AV development platform — qualification embeds Ouster in the design pipeline for production vehicles, turning developer wins into long-cycle revenue |
 
 ---
 
@@ -83,6 +87,7 @@ Margin trajectory is the most important near-term signal: gross margins expanded
 
 | Quarter | Revenue | Beat/Miss | EPS | Guidance | Notes |
 |---------|---------|-----------|-----|----------|-------|
+| Q1 2026 | $48.6M | Beat (rev) / Miss (EPS) | -$0.28 | Q2: $49.5M–$52.5M | +49% YoY; non-GAAP GM 46%; 12,600+ units; EPS missed -$0.12 est; Stereolabs included from Feb 9 |
 | FY2024 | $111M | — | — | — | Four verticals: industrial, auto, robotics, smart infra |
 | Q2 2025 | ~$33M | Beat | — | — | +26% YoY; gross margin 45%; software bookings +60% YoY |
 | — | — | — | — | — | — |
@@ -94,6 +99,9 @@ Margin trajectory is the most important near-term signal: gross margins expanded
 
 | Filing | Period | File |
 |--------|--------|------|
+| 10-Q | Q1 2026 (Mar 31) | [[OUST_10Q_Q12026]] |
+| 8-K | 2026-05-05 (Q1 Earnings) | [[OUST_8K_2026-05-05]] |
+| 8-K | 2026-02-09 (StereoLabs close) | [[OUST_8K_2026-02-09]] |
 | DEF 14A | FY2025 | [Proxy FY2025](https://www.sec.gov/Archives/edgar/data/0001816581/000114036125016007/ny20047457x2_def14a.htm) |
 | — | — | — |
 
@@ -102,6 +110,21 @@ Margin trajectory is the most important near-term signal: gross margins expanded
 ## News & Alpha Log
 *(Append notable developments: partnerships, product launches, supply chain signals)*
 *(For each entry, include a **Why it matters:** line explaining the mechanism — not just what happened, but why it moves the thesis.)*
+
+- **2026-05-12** — Rev8 OS digital lidar qualified on NVIDIA DRIVE Hyperion autonomous vehicle development platform.
+  **Why it matters:** DRIVE Hyperion is the dominant AV prototyping-to-production pipeline — qualification means Ouster sensors are in the design toolkit for production vehicle programs, converting developer mindshare into long-cycle design wins.
+
+- **2026-05-07** — Strategic collaboration with DXOMARK on world's first native color lidar using REV8.
+  **Why it matters:** Color lidar enables object classification and semantic scene understanding without camera fusion — a product differentiator commanding higher ASPs and widening the gap from monochrome competitors.
+
+- **2026-05-05** — Rev8 OS digital lidar integrations added to NVIDIA Jetson Platform; native color lidar sensing brought to NVIDIA robotics ecosystem.
+  **Why it matters:** NVIDIA Jetson is the de facto edge AI compute platform for robotics — native integration creates a distribution moat through NVIDIA's developer ecosystem reaching tens of thousands of robot builders.
+
+- **2026-04-14** — Cyrille Jacquemet appointed Chief Revenue Officer.
+  **Why it matters:** Adding a dedicated CRO signals the company is scaling go-to-market beyond founder-led sales; execution will show in whether Q2 guidance ($49.5–52.5M) is met with improving OpEx efficiency.
+
+- **2026-02-09** — Ouster closed acquisition of StereoLabs SAS (AI vision and perception, including ZED RGB-D cameras and Physical AI software).
+  **Why it matters:** Transforms Ouster from a lidar-only hardware vendor into a multimodal perception platform — StereoLabs enables sensor fusion products and opens robot manipulation and Physical AI markets where cameras + lidar > lidar alone.
 
 ---
 
@@ -117,6 +140,11 @@ Margin trajectory is the most important near-term signal: gross margins expanded
 ## Analyst Coverage
 *(Rating changes, price target moves, notable commentary)*
 
+- **2026-05-05** — Oppenheimer raised PT on OUST to $42 from $40; maintains Outperform (post-Q1 earnings)
+- **2026-05-05** — Cantor Fitzgerald downgraded OUST to Neutral from Overweight (EPS miss vs. estimate)
+- **2026-05-05** — WestPark Capital upgraded OUST to Buy from Hold
+- *Consensus (12 analysts): median PT $39, range $33–$50; 5 Buy / 1 Hold / 0 Sell*
+
 ---
 
 ## Ecosystem Links
@@ -127,3 +155,4 @@ See [[Robotics & Edge AI _Sector Framework]] for sector context.
 ## Research Log
 *(Reverse-chron append log — newest at bottom)*
 - **2026-05-19** — add-ticker run. Note created from template; fundamental sections populated from web research and SEC DEF 14A. CIK 0001816581, NASDAQ.
+- **2026-05-19** — 📊 MONITOR | Deep pass: Q1 2026 earnings logged ($48.6M, +49% YoY, revenue beat/EPS miss); StereoLabs acquisition (Feb 9) and 3 NVIDIA platform integrations added; analyst consensus PT $39 from 12 analysts; CRO hire logged.
