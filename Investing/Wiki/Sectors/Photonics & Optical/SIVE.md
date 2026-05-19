@@ -8,6 +8,24 @@ Dual-division micro-cap at the AI data center CPO laser bottleneck and mmWave 5G
 
 ---
 
+## Scoring Summary
+_Last scored: 2026-05-19 | [[Scoring Rubric]]_ ⚠️ Low-confidence — gross margin absent, insider % unavailable, leadership track record undocumented. Refresh after next earnings or runway resolution.
+
+| Criterion | Score | Evidence |
+|-----------|-------|----------|
+| Product (Love Factor) | 3/5 | InP ELS laser arrays with proprietary on-wafer coating for CPO; O-Net/Enablence partnership is first commercial validation; $453M pipeline; substrate layer = early-stage, mostly unconverted |
+| Pricing Power | 2/5 | Sector framework: substrate layer is "low-medium, volatile" margin profile; no gross margin data in wiki; loss-making; small contract sizes ($1.5–5.4M); no pricing power evidence |
+| Leadership & Alignment | 2/5 | CEO (Jul 2024) + CFO (Sep 2025) avg tenure ~1.6 yrs; CEO prior outcomes undocumented; no insider % data; Achilles Capital parent in restructuring; criminal investigation + delayed annual report |
+| Financial Health | 1/5 | Sub-12-month cash runway explicitly cited; raised twice in 12 months; 32% share count dilution YoY; $17M convertible debt overhang; 2028 breakeven target |
+| Macro Environment | 4/5 | Sector-wide AI capex hypergrowth (2025–2028); CPO architecture transition creates specific ELS laser demand; mmWave/5G/defense provides second independent tailwind |
+| Future Potential | 4/5 | Two independent divisions; $453M pipeline (~14x revenue); LiDAR ($53–138M lifecycle), CPO ELS, mmWave telecom, SATCOM, defense — multiple early-traction signals; asset-light Jabil model |
+| **Composite** | **5.5/10** | **Average** |
+
+**Valuation:** Expensive at ~31x P/S | Peer avg 17.5x | No USD analyst PT — priced for flawless execution on 2–3x revenue ramp (Seeking Alpha / Analyst Coverage)
+**Growth Potential:** — (pending real-time data integration)
+
+---
+
 ## Investment Thesis
 Sivers Semiconductors operates two divisions: Photonics (InP laser arrays for co-packaged optics) and Wireless (mmWave beamforming transceivers for 5G backhaul, radar, defense, and SATCOM). The photonics division is the primary AI thesis: as hyperscaler GPU clusters push interconnect speeds beyond copper's thermal and latency limits, co-packaged optics (CPO) replaces copper with integrated optical chiplets — and every CPO module requires an external light source (ELS). Sivers designs the InP laser arrays that serve as that ELS. The company reported FY2025 revenue of SEK 304M (~$33M USD), up 25% YoY, with Q4 accelerating at +17% sequential. Not yet profitable; management targets 2028 for breakeven.
 
@@ -85,6 +103,7 @@ The risk picture is equally specific. Cash runway is under 12 months at current 
 ## Research Log
 - **2026-05-11** — Note migrated to subfolder. Knowledge base format. No SEC filings — Swedish listed entity.
 - **2026-05-14** — stock-research run (--refresh). Investment thesis, Management & Leadership populated. Key new findings: FY2025 revenue SEK 304M (+25% YoY); CEO/CFO both appointed 2024/2025 (new team); Achilles Capital (largest shareholder) parent in restructuring; criminal investigation + delayed annual report are active governance flags; cash runway <12 months; O-Net/Enablence CPO partnership (March 2026) is primary commercial validation. Sources: company IR, Seeking Alpha, Silicon Matter, Sivers Q4 2025 report.
+- **2026-05-19** — Scored — Composite 5.5/10 Average ⚠️ Low-confidence | P:3 PP:2 L:2 FH:1 ME:4 FP:4 | Valuation: Expensive at ~31x P/S | Monitor Registry + Watchlist (×2) updated. Re-score after runway resolution or next earnings.
 
 ## Social Mentions
 
