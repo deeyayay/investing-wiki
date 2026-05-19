@@ -32,7 +32,8 @@ nLIGHT makes high-power fiber lasers and semiconductor lasers for industrial, de
 ## Catalyst Timeline
 - [x] Q1 2026 earnings — defense revenue mix confirmation *(passed May 7, 2026; A&D driving record EBITDA)*
 - [x] DE M-SHORAD contract — first Army program-of-record *(awarded Nov 27, 2023; executing over 18 months)*
-- [ ] 70kW directed energy system — next program of record (Golden Dome, naval DEW, or international program)
+- [x] 70kW directed energy system productized — HADES platform launched May 7, 2026
+- [ ] HADES program of record — first named HADES contract win (Golden Dome, naval DEW, or FMS)
 - [ ] Q2 2026 earnings — watch for A&D revenue run-rate and Products gross margin vs 37–41% guided range
 - [ ] Golden Dome missile defense initiative — any named supplier disclosure
 - [ ] Additional defense program wins (EW, space-based DEW, international orders)
@@ -46,15 +47,19 @@ nLIGHT makes high-power fiber lasers and semiconductor lasers for industrial, de
 
 | Quarter | Revenue | Beat/Miss | EPS | Guidance | Notes |
 |---------|---------|-----------|-----|----------|-------|
-| Q1 2026 (ended Mar 31, 2026) | $80.2M | Beat | $0.20 non-GAAP | Q2 2026: $75–$81M revenue; GM 29–33%; adj EBITDA $8–12M | +55.2% YoY; beat rev est by 11% ($72.1M); EPS beat 122% ($0.09 est); record adj EBITDA $13.9M vs $116K prior year; A&D driving mix |
+| Q1 2026 (ended Mar 31, 2026) | $80.2M | Beat | $0.20 non-GAAP | Q2 2026: $75–$81M rev; GM 29–33%; adj EBITDA $8–12M | +55.2% YoY; A&D $55.1M (+69%); A&D product $33.1M (+98%); EBITDA $13.9M (91.8% vs consensus); first GAAP profit $0.6M; EPS 158% beat |
+| FY2025 (ended Dec 31, 2025) | $261.3M | — | — | +31.6% YoY; GAAP GM 29.8% vs 16.6% in 2024; adj EBITDA $23.5M; A&D revenue $175M (+60%); backlog $161.6M funded + $184.4M unfunded |
 
 ---
 
 ## News & Alpha Log
 *(Append notable developments: partnerships, product launches, supply chain signals)*
 
-- **2026-05-07** — Q1 2026: $80.2M revenue (+55.2% YoY), record adj. EBITDA $13.9M; EPS $0.20 vs $0.09 estimate; Q2 guided $75–81M, 9.9% above consensus.
-  **Why it matters:** The EBITDA magnitude ($13.9M vs $116K a year ago) confirms the defense revenue mix is now large enough to drive company-level margin expansion — this is no longer an industrial story with defense optionality; A&D is the core business.
+- **2026-05-07** — HADES directed energy product line launched: scalable 70kW-class coherently beam-combined HEL with integrated atmospheric correction; first named/branded nLIGHT effector platform.
+  **Why it matters:** HADES is the transition from component supplier to system-level platform vendor — it can be sold into RFPs and FMS programs as a complete product, not just sourced as a subcomponent. Scalable architecture (tens of kW → 1 MW) expands the addressable market from C-UAS to advanced missile defense.
+
+- **2026-05-07** — Q1 2026: $80.2M revenue (+55.2% YoY); A&D $55.1M (+69% YoY), A&D product revenue $33.1M (+98%); record adj. EBITDA $13.9M; EPS $0.20 vs $0.09 est; first GAAP net income ($0.6M); Q2 guided $75–81M.
+  **Why it matters:** A&D product revenue nearly doubling (+98%) and GAAP profitability in the same quarter confirm the defense revenue is now both large enough and high-margin enough to carry the P&L — the industrial-to-defense transition is structurally complete.
 
 - **2026-03-02** — New 70kW-class directed energy laser system announced. Coincided with NVIDIA $4B photonics investment; defense-adjacent laser names lifted alongside pure AI plays. +92% YTD through April 22.
   **Why it matters:** 70kW is above the 50kW DE M-SHORAD threshold — positions LASR for next-generation DEW programs (Golden Dome, naval DEW) where higher power class is required for longer-range threats.
@@ -71,19 +76,23 @@ nLIGHT makes high-power fiber lasers and semiconductor lasers for industrial, de
 
 | Filing | Date | Notes |
 |--------|------|-------|
-| 8-K | 2026-05-07 | Q1 2026 results — $80.2M revenue (+55.2%), record $13.9M adj. EBITDA, Q2 guide $75–81M |
-| 10-Q | 2026-05-07 | Q1 2026 10-Q — period ending March 31, 2026 |
-| DEF 14A | 2026-04-25 | 2026 proxy — CEO Keeney ownership, equity raise dilution detail, board composition |
+| 8-K | 2026-05-07 | Q1 2026 results + HADES product line launch — $80.2M revenue, record $13.9M adj. EBITDA, Q2 guide $75–81M |
+| 10-Q | 2026-05-07 | Q1 2026 — period ending March 31, 2026 |
+| DEF 14A | 2026-04-24 | 2026 proxy — CEO Keeney ownership, equity raise dilution, board composition |
+| 8-K | 2026-02-26 | Q4 and FY2025 results — full-year $261.3M (+31.6%), GAAP GM 29.8%, record A&D sales |
+| 8-K | 2026-02-03 | Underwritten equity offering — ~$191.3M raised at $44/share (~3.98M shares + greenshoe) |
 
 ---
 
 ## Analyst Coverage
 *(Rating changes, price target moves, notable commentary)*
 
-- **2026-05** — Cantor Fitzgerald raised PT to $62.50 from $40, maintains Overweight; post-Q1 beat on directed energy demand visibility
-- **2026-05** — Stifel raised PT to $68 from $60, maintains Buy; A&D mix shift and margin expansion thesis confirmed
-- **2026-05** — Roth/MKM raised PT to $81 from $74, maintains Buy; specifically cited directed energy focus and Golden Dome optionality
-- **2026-05** — Consensus: 8–9 analysts; Strong Buy; avg PT ~$85; range $75–$100; 6 analysts revised earnings estimates upward post-Q1
+- **2026-05-08** — Needham maintained Buy, raised PT to $80 from $70; increased rev estimates for 2026–2027 post-Q1 beat
+- **2026-05-08** — Roth/MKM maintained Buy, raised PT to $81 from $74; cited accelerating transition to pure-play directed energy platform
+- **2026-04-17** — Stifel maintained Buy, raised PT to $75 from $68; described nLIGHT as "linchpin national security asset" after mgmt dinner
+- **2026-03-04** — Baird initiated Outperform, PT $95 (highest street); vertical integration chip→subsystem cited as key differentiator
+- **2026-02-27** — Cantor Fitzgerald maintained Overweight, raised PT to $62.50 from $40; Q4 2025 beat + record A&D sales catalyst
+- **2026-05** — Consensus: 5+ analysts; Buy/Outperform; PT range $62.50–$95; ~$80 avg; 6 estimates revised upward post-Q1
 
 ---
 
@@ -92,4 +101,4 @@ nLIGHT makes high-power fiber lasers and semiconductor lasers for industrial, de
 
 - **2026-05-12** — 📋 FILING | LASR Q1 2026 8-K: Q2 guidance revenue $75M–$81M, gross margin 29%–33%, adj EBITDA $8M–$12M. A&D market driving visibility; Products GM improving to 37–41%. Source: SEC. [[LASR_8K_2026-05-07]]
 - **2026-05-14** — stock-research run. Fundamental sections populated from web research and SEC DEF 14A.
-- **2026-05-19** — 📊 MONITOR | Q1 2026 beat logged: $80.2M revenue (+55.2% YoY), record $13.9M adj. EBITDA, EPS $0.20 vs $0.09 est. DE M-SHORAD contract (Nov 2023) logged as completed catalyst. Three analyst PT raises logged (Cantor $62.50, Stifel $68, Roth/MKM $81). Catalyst Timeline updated — 70kW program-of-record and Golden Dome added as forward items. ↑ Conviction: A&D mix shift confirmed at scale; EBITDA run-rate validates the defense-first re-rating thesis.
+- **2026-05-19** — 📊 MONITOR | Q1 2026 beat logged: $80.2M revenue (+55.2% YoY), A&D $55.1M (+69%), GAAP profitable first time, record adj. EBITDA $13.9M. HADES product line launch (May 7) logged — first branded HEL platform, key thesis upgrade. DE M-SHORAD catalyst checked. 6 analyst PT raises logged (Cantor→$62.50, Stifel→$75, Roth/MKM→$81, Needham→$80, Baird initiated $95). Catalyst Timeline updated — HADES program-of-record and Golden Dome added as forward items. ↑ Conviction: transition from component supplier to system-level platform vendor is now the correct framing; thesis requires update to reflect this.
