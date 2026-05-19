@@ -1,6 +1,6 @@
 # Monitor Registry
 *The research-monitor skill reads this file on every run. Add tickers here — no skill update needed.*
-*Last updated: May 18, 2026 — Score column added; RKLB added; AMBA added; Other sector renamed to Robotics & Edge AI*
+*Last updated: May 19, 2026 — TE (T1 Energy) added to Clean Energy*
 
 ---
 
@@ -89,6 +89,7 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 | Ticker | Company | CIK | Exchange | Path | Score |
 |--------|---------|-----|----------|------|-------|
 | OKLO | Oklo Inc. | 0001828937 | NYSE | Investing/Wiki/Sectors/Clean Energy/OKLO.md | — |
+| TE | T1 Energy Inc. | 0001992243 | NYSE | Investing/Wiki/Sectors/Clean Energy/TE.md | — |
 
 ---
 
