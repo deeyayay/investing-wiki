@@ -8,6 +8,24 @@ Ambarella's CVflow SoCs deliver GPU-class AI inference at <20W, making it the de
 
 ---
 
+## Scoring Summary
+_Last scored: 2026-05-19 | [[Scoring Rubric]]_
+
+| Criterion | Score | Evidence |
+|-----------|-------|----------|
+| Product (Love Factor) | 4/5 | CVflow 3.0 runs 34B-param GenAI at ≤20W; 15+ yr co-optimized silicon + compiler IP; 80% edge AI revenue mix; not a 5 — Mobileye OEM incumbency prevents monopoly |
+| Pricing Power | 4/5 | Investment Thesis: "rising ASPs as higher-value AI SoCs displace commodity video chips"; FY2026 +37.2% beat confirms ASP expansion; 3–5 yr OEM lock-in creates pricing protection |
+| Leadership & Alignment | 4/5 | Founder-led CEO Fermi Wang, 21+ yrs; ~$56M personal stake; total insider ownership 5.7–6.5%; no major guidance misses; CTO co-founder Kohn step-back to advisory limits to 4 |
+| Financial Health | 3/5 | GAAP pre-profitable at scale (key risk cited); non-GAAP EPS $0.07 positive; fabless model = minimal debt; balance sheet detail absent from wiki — conservative default |
+| Macro Environment | 5/5 | Three simultaneous demand curves: automotive ADAS (2026–2028 ramp), 500M+ security cameras awaiting AI upgrade, robotics; $110B TAM at ~30% CAGR through 2031 |
+| Future Potential | 4/5 | Three end-markets with early traction (automotive, security, robotics at 80% edge AI mix); Cooper platform is emerging software adjacency; GenAI-at-edge opens new use cases |
+| **Composite** | **8.0/10** | **Unrivaled** |
+
+**Valuation:** Reasonable at ~$67 (est. from ownership data) | EV/Revenue ~7.5x | Analyst PT ~$94 (+41%; 9 Buy / 5 Hold / 0 Sell) — within sector fair value range of 6–12x
+**Growth Potential:** — (pending real-time data integration)
+
+---
+
 ## Investment Thesis
 
 > **Thesis established:** May 18, 2026
@@ -131,3 +149,4 @@ Key risks are structural: Ambarella is not yet profitable at scale and is compet
 
 - **May 18, 2026** — add-ticker run. Note created from template; fundamental sections populated from web research (business model, competitive moat, executive team, insider ownership). SEC CIK confirmed as 0001280263 (NASDAQ). DEF 14A ownership data sourced from web aggregators; confirm against next proxy filing.
 - **May 18, 2026** — 📊 MONITOR | Deep pass: Q4 FY2026 results (+37.2% YoY, beat) logged; CTO co-founder Les Kohn transition to advisor (Nov 2025) flagged as key thesis watch item; Q1 FY2027 earnings dated May 28, 2026; analyst consensus 9B/5H/0S logged.
+- **2026-05-19** — Scored — Composite 8.0/10 Unrivaled | P:4 PP:4 L:4 FH:3 ME:5 FP:4 | Valuation: Reasonable at ~$67 (est.) | Monitor Registry updated.
