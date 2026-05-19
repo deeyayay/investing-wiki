@@ -38,7 +38,7 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 | AXTI | AXT Inc. | 0001051627 | NASDAQ | Investing/Wiki/Sectors/Photonics & Optical/AXTI.md | — |
 | LWLG | Lightwave Logic | 0001325964 | NASDAQ | Investing/Wiki/Sectors/Photonics & Optical/LWLG.md | — |
 | LASR | nLIGHT Inc. | 0001124796 | NASDAQ | Investing/Wiki/Sectors/Photonics & Optical/LASR.md | — |
-| SIVE | Sivers Semiconductors | none | Nasdaq Stockholm | Investing/Wiki/Sectors/Photonics & Optical/SIVE.md | — |
+| SIVE | Sivers Semiconductors | none | Nasdaq Stockholm | Investing/Wiki/Sectors/Photonics & Optical/SIVE.md | 5.5 |
 | POET | POET Technologies | none | TSX Venture | Investing/Wiki/Sectors/Photonics & Optical/POET.md | — |
 
 ---

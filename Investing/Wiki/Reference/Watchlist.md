@@ -19,7 +19,7 @@
 
 | Ticker | Notes | Score |
 |--------|-------|-------|
-| SIVE | Early stage — monitor for catalyst | — |
+| SIVE | Early stage — monitor for catalyst | 5.5 |
 | MSSCorp | Early stage — monitor for catalyst | — |
 | PCL | Early stage — monitor for catalyst | — |
 | AAOI | Applied Optoelectronics; photonics/optical interconnect theme | — |
@@ -92,7 +92,7 @@
 | Ticker | Name | Notes | Score |
 |--------|------|-------|-------|
 | AAOI | Applied Optoelectronics | Sector YTD leader (+328%); first 1.6T production orders; high beta pure play | — |
-| SIVE | Sivers Semiconductors | InP photonics chip design + mmWave; Swedish listed; pre-consensus, illiquid | — |
+| SIVE | Sivers Semiconductors | InP photonics chip design + mmWave; Swedish listed; pre-consensus, illiquid | 5.5 |
 | AXTI | AXT Inc. | InP substrate chokepoint; record $60M backlog; doubling capacity end-2026 | — |
 | POET | POET Technologies | CPO optical engine pure play; first production order >$5M; $430M cash runway | — |
 | LWLG | Lightwave Logic | EO polymer modulators; 4x Stage 3 design-win customers; 2027 production ramp catalyst | — |
