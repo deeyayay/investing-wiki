@@ -94,6 +94,13 @@ NVIDIA is the picks-and-shovels king of the AI era. Every major hyperscaler (Mic
 |------|-----------|-------------|--------|-------------|
 | 2026-05-07 | Emits | IREN | NVIDIA $3.4B cloud services deal + $2.1B warrant investment in IREN | NVIDIA allocating capital to AI infrastructure operators signals conviction in sustained GPU demand; positive for IREN (portfolio holding) and AI infra buildout broadly |
 | 2026-03-02 | Emits | COHR, LITE | NVIDIA $2B equity investment in COHR + $2B in LITE; Rubin platform anchor commitments | When NVIDIA buys equity in its optical suppliers, it signals architectural lock-in — COHR and LITE are not commodity vendors, they are strategic components of the Rubin/Blackwell stack |
+| 2026-05-19 | Emits | TSM | NVDA Q1 FY2027 earnings event; infographic identifies TSM as sole foundry for all NVDA GPUs | Every GPU in every Blackwell rack is a TSM revenue event — strong NVDA demand guidance is a direct order signal for TSMC CoWoS capacity |
+| 2026-05-19 | Emits | MU | NVDA Q1 FY2027 earnings event; MU identified as HBM and SSD supplier in shockwave map | HBM is ~30% of GPU BOM; NVDA demand beat flows straight through to MU HBM3E allocation and pricing |
+| 2026-05-19 | Emits | AVGO | NVDA Q1 FY2027 earnings event; AVGO identified as interconnect chip supplier | Broadcom's networking silicon is inside NVDA clusters — strong demand validates the custom ASIC + networking cycle |
+| 2026-05-19 | Emits | MRVL | NVDA Q1 FY2027 earnings event; MRVL identified as interconnect chip supplier | Marvell SerDes and DSP chips connect GPUs — sustained Blackwell demand extends the interconnect design-win cycle |
+| 2026-05-19 | Emits | VRT | NVDA Q1 FY2027 earnings event; VRT identified as heat dissipation supplier | Every NVL72 rack needs Vertiv-scale liquid cooling — GPU shipment volume is a leading indicator for VRT backlog |
+| 2026-05-19 | Emits | COHR | NVDA Q1 FY2027 earnings event; COHR identified as optical module supplier | Optical transceiver demand is a direct function of GPU cluster buildout pace — NVDA guidance sets the cadence |
+| 2026-05-19 | Emits | FN | NVDA Q1 FY2027 earnings event; FN identified as optical module manufacturer | As contract manufacturer for the entire optical supply chain, FN order book is a read-through on cluster build pace |
 
 ---
 

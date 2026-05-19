@@ -68,6 +68,15 @@ Micron is a cyclical semiconductor company that has found a secular growth engin
 
 ---
 
+## Cross-Ticker Signals
+<!-- Log signals this ticker emits to or receives from other monitored names. -->
+
+| Date | Direction | Other Ticker | Signal | Implication |
+|------|-----------|-------------|--------|-------------|
+| 2026-05-19 | Receives | NVDA | NVDA Q1 FY2027 earnings event; MU named in earnings shockwave infographic as HBM and SSD supplier | HBM is ~30% of GPU BOM — NVDA demand beat is a direct pull-through on MU HBM3E allocation and pricing power heading into HBM4 ramp |
+
+---
+
 ## Research Log
 - **2026-05-07** — Note initialized. Flagged as priority research candidate from NVDA ecosystem map. HBM angle is the core differentiator from prior memory cycles. Defensible niche within a commodity industry.
 

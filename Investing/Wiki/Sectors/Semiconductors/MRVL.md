@@ -75,6 +75,15 @@ Marvell is one of the most interesting dual-angle plays in AI silicon. First, th
 
 - **2026-05-14** — stock-research run. Fundamental sections populated from web research and SEC DEF 14A. CFO Willem Meintjes confirmed (since Jan 2023, replacing Jean Hu who moved to AMD). Execution track record and insider ownership stubs filled.
 
+## Cross-Ticker Signals
+<!-- Log signals this ticker emits to or receives from other monitored names. -->
+
+| Date | Direction | Other Ticker | Signal | Implication |
+|------|-----------|-------------|--------|-------------|
+| 2026-05-19 | Receives | NVDA | NVDA Q1 FY2027 earnings event; MRVL named in earnings shockwave infographic as interconnect chip supplier | Marvell's SerDes and DSP chips are inside the switching fabric of every large GPU cluster — strong NVDA guidance extends the interconnect design-win cycle and custom ASIC pipeline |
+
+---
+
 ## Social Mentions
 
 | Date | Signal | Source |

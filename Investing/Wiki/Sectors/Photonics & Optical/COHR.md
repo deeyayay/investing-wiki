@@ -89,6 +89,7 @@ Coherent is the broadest pure-play in AI optical infrastructure. They supply con
 |------|-----------|-------------|--------|-------------|
 | 2026-05-06 | Emits | LITE, FN, AAOI | COHR Q3: D&C segment +40.6% YoY; Q4 guidance raised to $1.91B–$2.05B; InP capacity doubling | COHR guidance raising implies the optical demand cycle is extending into H2 2026 and beyond — a read-through for all photonics names that the order environment remains strong |
 | 2026-03-02 | Receives | NVDA | NVIDIA $2B equity investment in COHR alongside Rubin platform commitment | NVIDIA equity in COHR is a signal that InP/silicon photonics supply is the bottleneck in the Rubin rollout — confirms COHR's architectural position is not easily substituted |
+| 2026-05-19 | Receives | NVDA | NVDA Q1 FY2027 earnings event; COHR named in earnings shockwave infographic as optical module supplier | NVDA demand guidance sets the transceiver order cadence — strong guidance extends the 800G/1.6T volume ramp that drives COHR's D&C segment growth |
 
 ---
 

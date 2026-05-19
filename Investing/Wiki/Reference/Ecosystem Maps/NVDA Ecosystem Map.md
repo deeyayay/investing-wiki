@@ -81,3 +81,83 @@ Tickers not yet in portfolio worth researching further:
 
 ## Research Log
 - **2026-05-07** — Ecosystem map initialized. Covers 5 tiers: supply chain, infrastructure, networking, power, and software. Cross-reference individual stock notes for deep dives.
+- **2026-05-19** — Earnings Shockwave Map added from infographic sourced on NVDA Q1 FY2027 earnings day. Maps 20 companies across 7 functional categories. New tickers ALAB, CRDO, AMKR onboarded via /add-ticker.
+
+---
+
+## Earnings Shockwave Map — 2026-05-19
+*Point-in-time earnings lens: "Which Industry Chains Will Feel the Earnings Shockwave?" Functional categorization sourced from infographic on NVDA Q1 FY2027 earnings day.*
+
+### Foundry
+| Ticker | Company | Role | Wiki Page |
+|--------|---------|------|-----------|
+| TSM | TSMC | Sole fabricator of NVDA GPUs; CoWoS advanced packaging | [[TSM]] |
+
+### Packaging & Testing
+| Ticker | Company | Role | Wiki Page |
+|--------|---------|------|-----------|
+| ASX | ASE Group | Advanced chip packaging and testing | — |
+| AMKR | Amkor Technology | Advanced packaging and testing services | [[AMKR]] |
+
+### Memory — HBM
+| Ticker | Company | Role | Wiki Page |
+|--------|---------|------|-----------|
+| 000660.KS | SK Hynix | #1 HBM supplier; leading HBM3E/HBM4 share | — |
+| MU | Micron Technology | US-domiciled HBM3E supplier; gaining share vs. Hynix | [[MU]] |
+| 005930.KS | Samsung Electronics | HBM supplier; trailing in AI memory share | — |
+
+### Memory — SSD
+| Ticker | Company | Role | Wiki Page |
+|--------|---------|------|-----------|
+| 000660.KS | SK Hynix | Enterprise SSD for AI server storage | — |
+| MU | Micron Technology | Enterprise NAND/SSD | [[MU]] |
+| 005930.KS | Samsung Electronics | Enterprise SSD | — |
+| SNDK | SanDisk | Consumer and enterprise SSD | — |
+
+### Memory — HDD
+| Ticker | Company | Role | Wiki Page |
+|--------|---------|------|-----------|
+| STX | Seagate Technology | HDD for AI training data storage | — |
+| SNDK | SanDisk | Flash storage | — |
+| WDC | Western Digital | HDD and enterprise SSD | — |
+
+### Communication — Optical Module
+| Ticker | Company | Role | Wiki Page |
+|--------|---------|------|-----------|
+| COHR | Coherent Corp | 800G/1.6T optical transceivers; NVDA strategic equity partner | [[COHR]] |
+| FN | Fabrinet | Contract manufacturer for optical transceivers | [[FN]] |
+
+### Communication — Copper Interconnect
+| Ticker | Company | Role | Wiki Page |
+|--------|---------|------|-----------|
+| APH | Amphenol | Copper cable assemblies and connectors for AI racks | — |
+| CRDO | Credo Technology | SerDes chips for copper interconnect in AI clusters | [[CRDO]] |
+
+### Other Chips — Interconnect
+| Ticker | Company | Role | Wiki Page |
+|--------|---------|------|-----------|
+| AVGO | Broadcom | Custom AI ASICs + networking chips | [[AVGO]] |
+| ALAB | Astera Labs | PCIe/CXL interconnect retimer chips for AI servers | [[ALAB]] |
+| MRVL | Marvell Technology | SerDes DSPs + custom AI ASICs for hyperscalers | [[MRVL]] |
+
+### Other — Heat Dissipation
+| Ticker | Company | Role | Wiki Page |
+|--------|---------|------|-----------|
+| VRT | Vertiv | Liquid cooling and power delivery for GPU clusters | [[VRT]] |
+
+### Other — Power Supply
+| Ticker | Company | Role | Wiki Page |
+|--------|---------|------|-----------|
+| MPWR | Monolithic Power Systems | Power management ICs for AI servers | — |
+| NVTS | Navitas Semiconductor | GaN power ICs for next-gen data center PSUs | — |
+
+### Other — PCB
+| Ticker | Company | Role | Wiki Page |
+|--------|---------|------|-----------|
+| TTMI | TTM Technologies | Printed circuit boards for AI servers | — |
+
+### ODM
+| Ticker | Company | Role | Wiki Page |
+|--------|---------|------|-----------|
+| FLEX | Flex Ltd | Contract electronics manufacturing for AI servers | — |
+| JBL | Jabil | Contract electronics manufacturing | — |
