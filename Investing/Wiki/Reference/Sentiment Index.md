@@ -11,7 +11,7 @@
 | CRWD | [[CRWD]] | stub | 1 | 2026-05-19 |
 | FTNT | [[FTNT]] | stub | 1 | 2026-05-19 |
 | PANW | [[PANW]] | stub | 1 | 2026-05-19 |
-| SAIL | [[SAIL]] | stub | 1 | 2026-05-19 |
+| SAIL | [[SAIL]] | monitored | 1 | 2026-05-19 |
 | NVDA | [[NVDA]] | monitored | 5 | 2026-05-18 |
 | AXTI | [[AXTI]] | monitored | 3 | 2026-05-18 |
 | INTC | [[INTC]] | stub | 3 | 2026-05-18 |

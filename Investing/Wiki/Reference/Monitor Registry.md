@@ -1,6 +1,6 @@
 # Monitor Registry
 *The research-monitor skill reads this file on every run. Add tickers here — no skill update needed.*
-*Last updated: May 19, 2026 — OUST (Ouster) added to Robotics & Edge AI*
+*Last updated: May 19, 2026 — SAIL (SailPoint) added to Cybersecurity*
 
 ---
 
@@ -75,6 +75,7 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 | Ticker | Company | CIK | Exchange | Path | Score |
 |--------|---------|-----|----------|------|-------|
 | RBRK | Rubrik Inc. | 0001943896 | NYSE | Investing/Wiki/Sectors/Cybersecurity/RBRK.md | — |
+| SAIL | SailPoint, Inc. | 0002030781 | NASDAQ | Investing/Wiki/Sectors/Cybersecurity/SAIL.md | — |
 
 ---
 
