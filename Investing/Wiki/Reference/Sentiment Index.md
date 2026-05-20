@@ -1,6 +1,6 @@
 # Sentiment Index
 *Maintained by `/ingest-sentiment` — do not edit the ticker table manually.*
-*Last updated: 2026-05-19*
+*Last updated: 2026-05-20*
 
 ---
 
@@ -8,21 +8,22 @@
 
 | Ticker | Wiki | Status | Mentions | Last Signal |
 |--------|------|--------|----------|-------------|
-| CRWD | [[CRWD]] | stub | 1 | 2026-05-19 |
-| FTNT | [[FTNT]] | stub | 1 | 2026-05-19 |
-| PANW | [[PANW]] | stub | 1 | 2026-05-19 |
-| SAIL | [[SAIL]] | monitored | 1 | 2026-05-19 |
-| NVDA | [[NVDA]] | monitored | 5 | 2026-05-18 |
-| AXTI | [[AXTI]] | monitored | 3 | 2026-05-18 |
+| NVDA | [[NVDA]] | monitored | 6 | 2026-05-20 |
+| AXTI | [[AXTI]] | monitored | 4 | 2026-05-20 |
+| SIVE | [[SIVE]] | monitored | 4 | 2026-05-20 |
+| TSM | [[TSM]] | stub | 4 | 2026-05-20 |
 | INTC | [[INTC]] | stub | 3 | 2026-05-18 |
-| SIVE | [[SIVE]] | monitored | 3 | 2026-05-17 |
-| TSM | [[TSM]] | stub | 3 | 2026-05-18 |
+| LITE | [[LITE]] | monitored | 3 | 2026-05-20 |
+| AAOI | [[AAOI]] | monitored | 2 | 2026-05-20 |
 | AMD | [[AMD]] | stub | 2 | 2026-05-18 |
 | AMZN | [[AMZN]] | stub | 2 | 2026-05-18 |
+| COHR | [[COHR]] | monitored | 2 | 2026-05-20 |
+| FOCI | [[FOCI]] | stub | 2 | 2026-05-20 |
 | IQE | [[IQE]] | stub | 2 | 2026-05-18 |
-| LITE | [[LITE]] | monitored | 2 | 2026-05-17 |
 | META | [[META]] | stub | 2 | 2026-05-18 |
 | MRVL | [[MRVL]] | monitored | 2 | 2026-05-17 |
+| SMCI | [[SMCI]] | monitored | 2 | 2026-05-20 |
+| VRT | [[VRT]] | monitored | 2 | 2026-05-20 |
 | 2308.TW | [[2308.TW]] | stub | 1 | 2026-05-18 |
 | 3017.TW | [[3017.TW]] | stub | 1 | 2026-05-18 |
 | 3324.TW | [[3324.TW]] | stub | 1 | 2026-05-18 |
@@ -32,36 +33,41 @@
 | 6367.T | [[6367.T]] | stub | 1 | 2026-05-18 |
 | 6669.TW | [[6669.TW]] | stub | 1 | 2026-05-18 |
 | 7011.T | [[7011.T]] | stub | 1 | 2026-05-18 |
-| AAOI | [[AAOI]] | monitored | 1 | 2026-05-17 |
 | AAPL | [[AAPL]] | stub | 1 | 2026-05-18 |
+| AEHR | [[AEHR]] | monitored | 1 | 2026-05-20 |
 | ARM | [[ARM]] | stub | 1 | 2026-05-18 |
 | ASML | [[ASML]] | stub | 1 | 2026-05-17 |
 | AVGO | [[AVGO]] | stub | 1 | 2026-05-17 |
 | BE | [[BE]] | stub | 1 | 2026-05-18 |
 | BOT | [[BOT]] | stub | 1 | 2026-05-17 |
-| COHR | [[COHR]] | monitored | 1 | 2026-05-17 |
+| Browave | [[Browave]] | stub | 1 | 2026-05-20 |
+| CRWD | [[CRWD]] | stub | 1 | 2026-05-19 |
 | ENR.DE | [[ENR.DE]] | stub | 1 | 2026-05-18 |
 | FCX | [[FCX]] | stub | 1 | 2026-05-18 |
 | FLNC | [[FLNC]] | stub | 1 | 2026-05-18 |
 | FN | [[FN]] | monitored | 1 | 2026-05-17 |
-| FOCI | [[FOCI]] | stub | 1 | 2026-05-18 |
+| FTNT | [[FTNT]] | stub | 1 | 2026-05-19 |
 | GEV | [[GEV]] | stub | 1 | 2026-05-18 |
+| GLW | [[GLW]] | stub | 1 | 2026-05-20 |
 | LPK | [[LPK]] | stub | 1 | 2026-05-17 |
 | MOD | [[MOD]] | stub | 1 | 2026-05-18 |
 | MP | [[MP]] | stub | 1 | 2026-05-18 |
 | MTSI | [[MTSI]] | stub | 1 | 2026-05-17 |
+| MU | [[MU]] | monitored | 1 | 2026-05-20 |
 | Nextronics | [[Nextronics]] | stub | 1 | 2026-05-18 |
 | NXPI | [[NXPI]] | stub | 1 | 2026-05-17 |
 | NVT | [[NVT]] | stub | 1 | 2026-05-18 |
 | ORCL | [[ORCL]] | stub | 1 | 2026-05-18 |
+| PANW | [[PANW]] | stub | 1 | 2026-05-19 |
 | PENG | [[PENG]] | stub | 1 | 2026-05-17 |
 | POET | [[POET]] | monitored | 1 | 2026-05-17 |
-| SMCI | [[SMCI]] | monitored | 1 | 2026-05-17 |
+| SAIL | [[SAIL]] | monitored | 1 | 2026-05-19 |
+| Samsung | [[Samsung]] | stub | 1 | 2026-05-20 |
+| SK Hynix | [[SK Hynix]] | stub | 1 | 2026-05-20 |
 | SOFI | [[SOFI]] | monitored | 1 | 2026-05-18 |
 | STM | [[STM]] | stub | 1 | 2026-05-17 |
 | TXN | [[TXN]] | stub | 1 | 2026-05-17 |
 | VNP | [[VNP]] | stub | 1 | 2026-05-18 |
-| VRT | [[VRT]] | monitored | 1 | 2026-05-18 |
 | VST | [[VST]] | stub | 1 | 2026-05-18 |
 
 ---
@@ -71,6 +77,7 @@
 *Newest first. Max 30 entries.*
 
 <!-- signals appended here by /ingest-sentiment -->
+2026-05-20 · tweet · [[2026-05-20-nvda-q1-earnings-preview]] · AAOI, AEHR, AXTI, Browave, COHR, FOCI, GLW, LITE, MU, NVDA, Samsung, SIVE, SK Hynix, SMCI, TSM, VRT
 2026-05-19 · tweet · [[2026-05-19-sail-first-memory-semis]] · CRWD, FTNT, PANW, SAIL
 2026-05-18 · tweet · [[2026-05-18-gev-ai-supply-chain-chokepoints]] · AMZN, AXTI, BE, FCX, FLNC, GEV, IQE, INTC, META, MOD, MP, NVT, NVDA, ORCL, TSM, VNP, VRT, VST, 7011.T, ENR.DE, 6367.T, 5201.T, 3017.TW, 3324.TW, 2308.TW, 6669.TW, 4369.T, 4043.T
 2026-05-18 · tweet · [[2026-05-18-sofi-top-3-position]] · SOFI

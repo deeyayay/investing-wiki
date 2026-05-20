@@ -12,3 +12,4 @@ Sector-level signals and commentary from external sources. Maintained by `/inges
 | 2026-05-18 | [[2026-05-18-amd-cpu-bottleneck-three-ways]] | tweet | Every agentic AI workload generates CPU-bound overhead — CPU layer becomes the traffic controller to the GPU engine across millions of enterprise workflows |
 | 2026-05-18 | [[2026-05-18-gev-ai-supply-chain-chokepoints]] | tweet | WEF-cited AI supply chain has 4 chokepoints: Energy, Water/Cooling, Minerals, Land — 28 names across chokepoints identified |
 | 2026-05-18 | [[2026-05-18-axti-next-year-im]] | tweet | FAU component bottlenecks expected as CPO architecture scales; FOCI (~$2.8B MC) and Nextronics (~$246M MC) named as future center-stage plays |
+| 2026-05-20 | [[2026-05-20-nvda-q1-earnings-preview]] | tweet | NVDA Q1 Q2 guide ($84–88B+ threshold) and Vera Rubin handoff timing will set rack-level infrastructure demand trajectory for VRT and SMCI |

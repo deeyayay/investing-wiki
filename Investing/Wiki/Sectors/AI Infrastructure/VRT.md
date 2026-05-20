@@ -89,3 +89,4 @@ Vertiv makes the critical infrastructure that keeps data centers running: power 
 | Date | Signal | Source |
 |------|--------|--------|
 | 2026-05-18 | [[2026-05-18-gev-ai-supply-chain-chokepoints]] | tweet |
+| 2026-05-20 | [[2026-05-20-nvda-q1-earnings-preview]] | tweet |
