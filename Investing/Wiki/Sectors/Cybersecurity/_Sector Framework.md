@@ -81,6 +81,88 @@ _Identity is the new perimeter — access control, MFA, and privileged access ma
 
 ---
 
+### Archetype 4: Agentic Security / Non-Human Identity (NHI) — Emerging Category
+
+_Governing machine identities, AI agents, and autonomous systems — the identity layer for software that acts_
+
+#### What the problem actually is
+
+Traditional IAM was built for humans: a person authenticates once, gets a session token, and accesses resources. AI agents break every assumption. They authenticate programmatically using API keys, OAuth tokens, or service accounts. They operate continuously — not in sessions. They spawn subagents. They access dozens of systems simultaneously. They make runtime decisions about what resources to request. And they exist at a ratio that dwarfs humans: current enterprise measurements put machine-to-human identity ratios between 17:1 and 82:1 depending on how aggressively a company has deployed automation.
+
+The governance gap this creates is structural, not operational. Static credentials get over-permissioned and forgotten. Service accounts accumulate access rights that no one reviews. OAuth tokens are shared between agents because provisioning individual agent identities is too slow. The consequence: 88% of organizations report suspected or confirmed AI agent security incidents, and only 18% express high confidence that their current identity systems can handle agent identities. This is not a tooling gap — most organizations have IAM tools. It's an architectural gap: existing IAM was designed for identity as a point-in-time authentication event, not identity as a continuous governance problem for entities that never stop running.
+
+#### The viability case (why this becomes mandatory spend)
+
+Three forcing functions are converging:
+
+**1. Regulatory pressure is catching up.** The EU AI Act (2025) requires documented governance of autonomous system behavior. SEC cyber disclosure rules require material breach disclosure. Neither yet specifically mandates agent identity governance, but the audit question — "can you prove your AI agents only accessed what they were supposed to?" — is already being asked in regulated industries. HIPAA-covered entities and financial services firms face the most immediate pressure.
+
+**2. The breach that changes everything hasn't happened yet — but it will.** There is no major publicly attributed breach via compromised AI agent credentials yet. When it happens (and the 88% incident rate suggests it will be disclosed soon), it will function identically to NotPetya for network segmentation or the SolarWinds hack for supply chain security: discretionary spend becomes mandatory spend within a single budget cycle. The category gets a forcing function.
+
+**3. The deployment gap is a leading indicator.** 95% of enterprises run AI agents autonomously; only 10% have governance controls in place. This gap is not sustainable as deployment scales. Organizations that ran pilots in 2025 are moving to production in 2026 — and production deployments face audit requirements that pilots did not.
+
+**Why it re-rates existing vendors, not just creates new ones:** The NHI problem is not greenfield. Enterprises will not buy a seventh identity product — they will demand that their existing identity vendor solve it. This is an expansion motion for SAIL, OKTA, and CyberArk rather than a TAM for startups, because the governance infrastructure (the directory, the audit trail, the certification workflows) already exists in production at the customer.
+
+#### The skeptic's case (why the re-rating may not materialize soon)
+
+The bear case is not that the problem is fake — it is that the revenue recognition timeline is much longer than the hype cycle:
+
+**Vendor saturation is real.** Every security vendor has announced an NHI product. This is the clearest indicator that the category is in the hype phase: when the competitive landscape is indistinguishable, pricing power has not yet formed and customers treat it as a feature, not a product. Okta announced NHI features, SailPoint announced Agentic Fabric (May 11, 2026), CyberArk extended PAM to machine identities, Microsoft Entra expanded NHI coverage — all within 12 months. A market where every incumbent announces the same product in the same year is a market that is not yet charging for it.
+
+**Organizational readiness is low.** Only 23% of enterprises have a formal enterprise-wide strategy for agent identity management. Only 29% report readiness to secure agentic AI deployments. This means the buying decision is stuck in a discovery/awareness phase — CISOs know the problem exists but haven't assigned a budget line. The discovery-to-budget cycle in enterprise security is 18–36 months.
+
+**No clear owner.** Agent identity governance sits at the intersection of IT security, AI/ML engineering, and application development. In most organizations, none of these teams owns it. Purchases that require a new budget line item and cross-functional ownership take longer to close and have higher churn risk.
+
+**Microsoft Entra bundle risk is highest here.** NHI governance requires deep integration with the directory layer — and Microsoft controls the directory layer for most enterprises. Entra's NHI capabilities, bundled into M365 E5, could commoditize the feature for mid-market accounts before standalone vendors establish pricing.
+
+#### Where we are in the cycle (as of May 2026)
+
+**Phase:** Early adoption / governance gap — transitioning from pilot to production, pre-mandatory-spend
+
+| Phase | Characteristics | Timing |
+|-------|----------------|--------|
+| **1 — Awareness** | CISOs know the problem; vendors announce products; no dedicated budget | 2024–2025 ✓ |
+| **2 — Early adoption (current)** | Production deployments creating audit pressure; governance tools bought by early movers; pricing forming | 2025–2026 ← we are here |
+| **3 — Forcing function** | Major breach attributed to compromised agent credential; regulatory mandate; discretionary → mandatory spend | 2026–2027 (probable) |
+| **4 — Scale adoption** | Dedicated budget line established across Fortune 500; category leaders emerge; re-rating complete | 2027–2028 |
+
+**Key signal to watch:** The first publicly disclosed material breach attributed to an AI agent credential. That event is the equivalent of WannaCry for ransomware recovery — it converts every CISO's "we should do this" into "we must do this this quarter."
+
+**Secondary signal:** First SEC enforcement action or material disclosure citing AI agent access as the breach vector. This creates regulatory urgency that does not require a breach.
+
+#### Competitive positioning — who wins the NHI category
+
+The NHI market will likely split into two distinct product categories that correspond to different budgets:
+
+| Layer | Problem solved | Primary vendor | Budget owner |
+|-------|---------------|----------------|--------------|
+| **Access provisioning** | Create, register, authenticate agent identities; enforce least-privilege at runtime | Okta, Microsoft Entra | IT/IAM team |
+| **Governance & audit** | Certify agent access rights, detect privilege creep, produce audit trail | SailPoint (Agentic Fabric), CyberArk | Security/GRC team |
+
+This is not a winner-take-all market — it mirrors the human identity market, where access management (Okta) and governance (SailPoint) coexist at the same enterprise selling to different buyers.
+
+**SailPoint (SAIL):** Best positioned for the governance/audit layer. The identity graph — built on years of human identity data — is the key differentiator for contextual NHI governance. Agentic Fabric (launched May 11, 2026) extends the existing governance platform rather than building a new product. The IGA-led approach (certification workflows, access reviews, audit logs) maps directly onto what compliance teams will require. Risk: if the market collapses into access management only (i.e., the audit requirement doesn't materialize), SAIL's governance depth is underutilized.
+
+**Okta (OKTA):** Best positioned for the access provisioning layer. 8,200+ integrations extended to AI agent platforms (April 30, 2026 product launch). Cross App Access (XAA) — an open protocol for agent-to-application authorization — has early backing from AWS, Google Cloud, Box, Salesforce. Okta's re-rating case is real but requires two things: (1) ARR growth recovery from current deceleration, and (2) proof that NHI drives incremental ARR rather than just preventing churn from customers who would otherwise move to Entra. The Okta re-rating is not primarily an NHI story — it's an Okta execution recovery story that NHI accelerates if the product lands.
+
+**CyberArk (CYBR):** PAM-native approach is actually well-suited for the most dangerous category of NHI: privileged machine identities (service accounts with admin rights, pipeline credentials, CI/CD tokens). These are the highest-risk NHI because they have the highest privilege. CyberArk's existing PAM customer base is an expansion motion. Less relevant for the broader governance/certification of all non-human identities, more relevant for the high-privilege subset.
+
+**Microsoft (Entra):** The bundle threat. Entra ID Governance includes NHI features. For organizations already on M365 E5, the switching cost to a standalone governance tool is high. This is the primary ceiling on SAIL's and OKTA's mid-market penetration — but enterprise accounts with complex governance requirements (regulatory industries, Fortune 500) still prefer depth over breadth.
+
+#### Re-rating framework: is OKTA worth re-evaluating?
+
+The honest answer is: **the NHI angle is a legitimate TAM expansion for Okta, but it is not sufficient on its own to re-rate the stock.** Okta's primary problem is ARR growth deceleration and Entra share loss — NHI does not solve either unless it drives material net new ARR from customers who would not otherwise expand their Okta deployment.
+
+The re-rating triggers to watch:
+- NHI ARR disclosed as a separate line or quantified in earnings commentary (proves it's driving incremental revenue, not just narrative)
+- Okta ARR growth re-accelerating above 15% (reverses the deceleration that has compressed the multiple)
+- XAA protocol adoption: if AWS, Google Cloud, and Salesforce integrate XAA natively, Okta becomes the de facto agent identity standard — that is a genuine moat event
+- Net revenue retention recovering above 115% (the most direct signal that the NHI/AI product is landing with existing customers)
+
+Absent those, OKTA is a show-me story with a compelling new narrative rather than a re-rated one.
+
+---
+
 ## Where We Are in the Industry Cycle
 
 **Current phase: Structural growth with consolidation (2025–2028)**
@@ -149,3 +231,4 @@ Cybersecurity is largely **self-contained** — it does not emit or receive stro
 ## Research Log
 
 - **2026-05-18** — Framework created. Coverage: RBRK. Key gap to close next: populate Earnings & Financials table with ARR and NRR quarterly data; add Microsoft competitive risk section to RBRK Investment Thesis; run `/ticker-monitor --deep RBRK` to capture recent analyst coverage.
+- **2026-05-19** — Added Archetype 4: Agentic Security / Non-Human Identity. Includes viability case, skeptic's case, cycle phase map, competitive positioning across SAIL/OKTA/CYBR/MSFT, and re-rating framework for OKTA. Triggered by SAIL onboarding and social signal framing it as "second-order" cybersecurity infrastructure.
