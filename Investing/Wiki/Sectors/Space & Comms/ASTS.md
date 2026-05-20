@@ -45,7 +45,7 @@ AST SpaceMobile is attempting something no one has done at scale: replacing cell
 
 | Quarter | Revenue | Beat/Miss | EPS | Guidance | Notes |
 |---------|---------|-----------|-----|----------|-------|
-| — | — | — | — | — | — |
+| Q1 2026 | $14.7M | Miss (–61% vs $37.5M est) | –$0.66 | FY26 $150–200M | BlueBird-7 failure; FCC SCS auth received; BlueBird 8–10 mid-June launch on track |
 
 ---
 
@@ -60,6 +60,9 @@ AST SpaceMobile is attempting something no one has done at scale: replacing cell
 
 ## News & Alpha Log
 *(Append notable developments: partnerships, product launches, supply chain signals)*
+
+- **2026-05-20** — BlueBird-7 launch failure confirmed; BofA estimates 7-satellite miss vs ASTS 2026 target. Q1 revenue $14.7M vs $37.5M consensus (–61% miss); EPS –$0.66. FY26 guidance $150–200M maintained. BlueBird 8–10 still on track for Falcon 9 launch mid-June. FCC Supplemental Coverage from Space authorization received for commercial U.S. service.
+  **Why it matters:** The satellite loss is a concrete execution setback — it extends the timeline to critical mass coverage and raises questions about the credibility of the $150–200M FY26 guidance; the FCC authorization and maintained guidance are offsets, but the Q1 miss vs expectations was severe.
 
 ---
 
