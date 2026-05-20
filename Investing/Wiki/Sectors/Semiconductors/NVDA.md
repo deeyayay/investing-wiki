@@ -118,6 +118,7 @@ See [[NVDA Ecosystem Map]] for full supply chain and derivative plays.
 - **2026-05-07 — CATALYST:** NVDA investing $2.1B in IREN (portfolio holding) validates AI infrastructure energy thesis directly. NVDA earnings May 20 after close — next major re-rating event. AMD Q1 beat ($1.37 vs $1.30 est, +18.6%) drove S&P 500 to first record above 7,300 yesterday — positive read-through for NVDA competitive positioning (AMD gaining but NVDA still dominant). Hyperscaler capex remains strong. S&P pulling back slightly today (-0.38%) as semis consolidate post-AMD surge. VIX 17.3 — favorable IV environment ahead of May 20 earnings.
 - **2026-05-14** — stock-research run. Fundamental sections populated from web research and SEC DEF 14A.
 - **2026-05-19** — 📰 DAILY-NEWS | Q1 FY2027 earnings tomorrow; consensus $79.2B rev +79.5% YoY, EPS $1.78 +120%; Jensen on China; chip stocks red pre-print (impact 4)
+- **2026-05-20** — 📰 DAILY-NEWS | Q1 FY2027 earnings after close TODAY; result will move COHR, LITE, IREN, FN, ANET, VRT across portfolio (impact 5)
 
 ## Social Mentions
 
