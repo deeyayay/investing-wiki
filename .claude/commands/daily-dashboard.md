@@ -1,8 +1,10 @@
 # Daily Dashboard — Investing Intelligence Hub
 
-Generates a self-contained HTML dashboard from the latest daily news digest and ticker wiki pages, then deploys it to the `gh-pages` branch for viewing at `https://deeyayay.github.io/investing-wiki/`.
+Generates a self-contained HTML dashboard from the latest daily news digest and ticker wiki pages, then deploys it to the `gh-pages` branch for viewing at `https://investing-wiki.netlify.app`.
 
-**GitHub Pages URL:** `https://deeyayay.github.io/investing-wiki/`
+**Dashboard URL:** `https://investing-wiki.netlify.app` (or your custom Netlify subdomain)
+*Netlify watches the `gh-pages` branch — every push auto-deploys within ~30 seconds.*
+*Cloudflare Access gates the URL — only your email can log in.*
 
 **Input flags (``):**
 - *(none)* — use today's digest; push to gh-pages
@@ -321,7 +323,7 @@ git -C "C:/Users/alexd/OneDrive/Documents/Obsidian Vault" worktree add /tmp/gh-p
    🔗 Signals:     N cross-ticker signals
 
    📁 Local:    Investing/Output/Dashboard/index.html
-   🌐 Live:     https://deeyayay.github.io/investing-wiki/
+   🌐 Live:     https://investing-wiki.netlify.app
 
    Portfolio recommendations:
    • TICKER — ADD  (Confidence: High) — [rationale first sentence]
