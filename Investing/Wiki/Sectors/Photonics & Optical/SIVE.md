@@ -83,6 +83,8 @@ The risk picture is equally specific. Cash runway is under 12 months at current 
 *(Append notable developments: partnerships, product launches, supply chain signals)*
 
 - **2026-05-11** — Note initialized. Swedish-listed, pre-consensus, illiquid. Monitor for InP photonics design-win as primary catalyst.
+- **2026-05-19** — Added to MSCI Sweden Global Small Cap Index (May review); changes effective after close May 29. Stock surged 31.3% to 56.65 SEK before pulling back to 45.46 SEK (–5.49% today). Private placement of 8.62M shares at 14.50 SEK (May 11) adds dilution. PCAOB audit underway for Nasdaq NY dual listing. Q1 results due May 20.
+  **Why it matters:** MSCI inclusion is structural passive-fund buying regardless of thesis; the Nasdaq NY listing path (PCAOB audit in progress) is the capital and visibility catalyst that could unlock US institutional ownership — watch Q1 results tomorrow for revenue trajectory toward 2028 breakeven.
 - **2026-03** — O-Net and Enablence partnership announced: joint ELS module development for CPO rollout in AI datacenters and HPC. First clear commercial validation beyond design phase.
 - **2026-02** — $17M capital raise: $5M term loan + $12M convertible debt. Extends runway but adds debt overhang and dilution pressure.
 - **2025** — Jabil manufacturing partnership confirmed. Validates asset-light production model for hyperscale deployment.
@@ -104,6 +106,7 @@ The risk picture is equally specific. Cash runway is under 12 months at current 
 - **2026-05-11** — Note migrated to subfolder. Knowledge base format. No SEC filings — Swedish listed entity.
 - **2026-05-14** — stock-research run (--refresh). Investment thesis, Management & Leadership populated. Key new findings: FY2025 revenue SEK 304M (+25% YoY); CEO/CFO both appointed 2024/2025 (new team); Achilles Capital (largest shareholder) parent in restructuring; criminal investigation + delayed annual report are active governance flags; cash runway <12 months; O-Net/Enablence CPO partnership (March 2026) is primary commercial validation. Sources: company IR, Seeking Alpha, Silicon Matter, Sivers Q4 2025 report.
 - **2026-05-19** — Scored — Composite 5.5/10 Average ⚠️ Low-confidence | P:3 PP:2 L:2 FH:1 ME:4 FP:4 | Valuation: Expensive at ~31x P/S | Monitor Registry + Watchlist (×2) updated. Re-score after runway resolution or next earnings.
+- **2026-05-19** — 📰 DAILY-NEWS | MSCI Sweden Global Small Cap index inclusion (effective May 29); stock +31.3% then –5.49%; Q1 results due tomorrow May 20 (impact 4)
 
 ## Social Mentions
 
