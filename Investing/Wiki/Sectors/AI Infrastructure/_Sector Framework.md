@@ -170,6 +170,39 @@ This sector is primarily a **downstream receiver** of signals from Semiconductor
 
 ---
 
+## AI Buildout Opportunity Profile
+*See [[AI Buildout Framework]] for axis definitions.*
+
+**Forcing Function:** Already Fired
+*What it is:* Hyperscaler AI capex commitments ($300B+/yr in 2025) have already created locked-in multi-year demand for power, cooling, and networking infrastructure — contracts are signed, land is permitted, equipment is on order.
+*Why it matters:* Already-Fired allows DCF valuation against visible backlog and revenue; execution risk (construction timelines, dilution, cost overruns) is larger than demand risk.
+
+**Value Chain Order:** 2nd Order
+*Mechanism:* Every GPU cluster requires power, cooling, and high-speed networking. No substitution is possible at the infrastructure layer — physics dictates requirements.
+
+**Revenue Timing:** Cash Flows Now (VRT backlog, ANET orders) / 12–24 Months (IREN ramp — AI Cloud revenue inflecting)
+
+**Primary Moat:** Supply scarcity (IREN — permitted power/land; 5–7 yr build lead time) | Connector depth + process IP (VRT — embedded in data center builds; switching costs after installation) | Merchant silicon + software stack (ANET — Ethernet co-packaged optics; 3–5 yr moat)
+
+**Cycle Phase:** Phase 3–4 — Forcing function fired; large-scale buildout underway. VRT and ANET are in Phase 4 (scale). IREN is in Phase 3 (ramp phase; not yet at operating leverage inflection). Infrastructure saturation is years away.
+
+**Platform Risk:** Hyperscaler vertical integration — MSFT building proprietary cooling, AMZN building proprietary networking switches, GOOGL operating its own campuses. Each in-sourcing decision removes a potential revenue pool. The risk is highest for server manufacturers (SMCI); lowest for power/land scarcity plays (IREN).
+
+**Valuation Type:** B (IREN — core ramp + Sweetwater/NVDA option value) | A (VRT, ANET — DCF on visible backlog)
+
+**What Has to Be True:**
+- Hyperscaler AI capex stays elevated ($200B+/yr) through 2027 — any multi-quarter deceleration stalls the buildout
+- IREN executes on power permitting and GPU deployment timelines without equity dilution outpacing revenue growth
+- Liquid cooling becomes the dominant architecture by 2027 (VRT thesis validation)
+
+**What Kills It:**
+- Hyperscaler AI spending pause (macro recession or AI ROI disappointment)
+- IREN dilution-to-revenue ratio deteriorates — equity raises outpace contracted revenue
+- InfiniBand wins the AI backend networking standard decisively, compressing ANET's AI cluster TAM
+
+---
+
 ## Research Log
 
 - **2026-05-15** — Framework created. Coverage: IREN, SMCI, VRT, ANET. Key gap to close next: populate SMCI, VRT, ANET ticker notes with Investment Thesis and Management sections — currently only IREN is fully populated.
+- **2026-05-20** — Added AI Buildout Opportunity Profile. AI Infrastructure is pure 2nd-order Already-Fired; primary risk is hyperscaler in-sourcing and IREN execution, not demand existence.

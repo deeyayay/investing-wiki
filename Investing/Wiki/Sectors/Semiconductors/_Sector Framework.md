@@ -187,6 +187,40 @@ MRVL ASIC wins → ↑ ANET (networking co-packaged optics)
 
 ---
 
+## AI Buildout Opportunity Profile
+*See [[AI Buildout Framework]] for axis definitions.*
+
+**Forcing Function:** Already Fired (AI compute / memory) | Deterministic (custom silicon)
+*What it is:* Hyperscaler AI capex commitments ($300B+/yr) have already created locked-in multi-year demand for AI compute, HBM, and custom silicon — the question is pace, not existence.
+*Why it matters:* Already-Fired forcing functions allow DCF-based valuation; the primary risk is execution (supply ramp, export controls) not demand existence.
+
+**Value Chain Order:** 1st Order (NVDA) / 2nd Order (MU, MRVL, ALAB, CRDO, AMKR)
+*Mechanism:* NVDA is the AI product. MU/MRVL/ALAB/CRDO are mandatory components every GPU cluster requires — no substitution at the system level.
+
+**Revenue Timing:** Cash Flows Now (NVDA, MRVL) / 12–24 Months (ALAB ramp, CRDO scale) / Cyclical recovery (MU)
+
+**Primary Moat:** Ecosystem lock-in (NVDA CUDA — 7–10 yr duration) | Process IP + certification (TSMC node, AXTI InP substrates — 3–7 yr) | Architecture + customer lock-in (MRVL custom ASICs — 3–5 yr)
+
+**Cycle Phase:** Phase 4 — Scale (NVDA, MRVL, ALAB) | Phase 4 cyclical (MU) | Phase 3–4 (CRDO, AMKR)
+The AI compute buildout is in full execution — institutional coverage is complete, consensus recognizes the opportunity. Alpha comes from execution differentiation and cycle timing in memory.
+
+**Platform Risk:** Hyperscaler custom silicon (Google TPU, Amazon Trainium) eroding NVDA training share over 3–5 year horizon. AMD MI-series gaining inference share. Memory commoditization risk as HBM supply catches up to demand.
+
+**Valuation Type:** D (NVDA — compounding platform) | A (MU — DCF cycle play) | B (MRVL, ALAB, CRDO — core DCF + ASIC expansion option)
+
+**What Has to Be True:**
+- Hyperscaler AI capex sustains at $200B+/yr through 2027 (primary demand driver for entire stack)
+- NVDA maintains >70% of frontier training GPU market share (CUDA moat)
+- HBM demand continues to outpace supply capacity additions through 2026 (MU margin floor)
+
+**What Kills It:**
+- Hyperscaler capex pause triggered by macro recession or AI ROI disappointment
+- CUDA ecosystem cracks — a successful open alternative reaching developer critical mass
+- Export control expansion materially cuts China revenue (NVDA specific)
+
+---
+
 ## Research Log
 
 - **2026-05-15** — Framework created. Coverage: NVDA, MU, MRVL, AEHR. Key gap to close next: populate Earnings & Financials tables for MU, MRVL, AEHR with historical data to enable cycle position analysis.
+- **2026-05-20** — Added AI Buildout Opportunity Profile. Semiconductors spans 1st–2nd order across Already-Fired and Deterministic forcing functions; primary risk is execution and export controls, not demand existence.

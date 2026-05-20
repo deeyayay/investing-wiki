@@ -146,6 +146,39 @@ This sector is a **primary input supplier** to multiple portfolio sectors, makin
 
 ---
 
+## AI Buildout Opportunity Profile
+*See [[AI Buildout Framework]] for axis definitions.*
+
+**Forcing Function:** Deterministic
+*What it is:* AI data centers require copper for power distribution and high-speed cabling; AI chip manufacturing requires gallium arsenide (InP substrates), rare earth elements for magnets in cooling systems, and specialty metals in advanced packaging. The physical buildout is inescapably materials-intensive — this demand cannot be substituted away.
+*Why it matters:* Deterministic demand, but cyclical pricing. The forcing function is not in doubt; the investment return depends on commodity cycle positioning (when to be long, when to reduce).
+
+**Value Chain Order:** 3rd Order Input (physical materials → chips/cables/power hardware → AI infrastructure)
+*Mechanism:* Physical materials are the deepest upstream input in the AI value chain. Each AI data center is a complex physical object made of copper, rare earths, specialty metals, and silicon. No copper = no power bus = no data center. But the causal chain has many links between metals prices and AI capex decisions.
+
+**Revenue Timing:** Cash Flows Now (FCX — copper spot, existing production) | 12–24 Months (MP — NdPr production ramp, Stage 3 magnet optionality)
+
+**Primary Moat:** Resource endowment + mining rights + permitting (FCX Grasberg deposit, MP Mountain Pass — both are unique geological assets with permits that cannot be replicated in <5–10 yrs) | Strategic supply chain positioning (MP — US rare earth independence has explicit government support; China export risk creates strategic premium)
+
+**Cycle Phase:** Phase 3 (copper — AI/electrification demand recognized; institutional ownership growing; supply constraint real) | Phase 2–3 (rare earths — China export risk and EV demand creating strategic premium; domestic supply build-out underway)
+
+**Platform Risk:** Recycling technology improvement reducing primary mining demand over 5–10 year horizon. Commodity substitution at the materials level (aluminum for copper in some applications). China unilaterally resolving rare earth supply constraints by flooding market (opposite of the current export restriction trend).
+
+**Valuation Type:** A (FCX — cyclically-adjusted P/E or EV/EBITDA at mid-cycle copper price) | B (MP — production DCF + Stage 3 magnet integration option value)
+
+**What Has to Be True:**
+- AI data center buildout continues adding 500+ MW of new capacity per year, sustaining structural copper demand above pre-AI baseline
+- China does not resolve rare earth export restrictions within 3 years (MP's strategic premium depends on supply constraint)
+- MP completes Stage 3 magnet production at Mountain Pass on its current timeline (highest-value optionality)
+
+**What Kills It:**
+- LME copper inventory builds for 3+ consecutive quarters — signals demand peak has passed or supply has caught up
+- China reverses rare earth export restrictions or floods the market through state-owned enterprise production — eliminates MP's strategic premium
+- Recycled copper supply increases faster than expected, reducing the AI buildout's impact on primary copper demand
+
+---
+
 ## Research Log
 
 - **2026-05-18** — Framework created. Coverage: FCX, MP. Key gap to close next: populate Earnings & Financials tables for both tickers with historical quarterly data; add China supply risk section to MP Catalyst Timeline; track LME copper inventory data in FCX News & Alpha Log quarterly.
+- **2026-05-20** — Added AI Buildout Opportunity Profile. Metals & Mining is 3rd-order Deterministic with current cash flows — deepest upstream AI input; primary risk is commodity cycle positioning and China policy, not demand existence.

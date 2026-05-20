@@ -228,7 +228,40 @@ Cybersecurity is largely **self-contained** — it does not emit or receive stro
 
 ---
 
+## AI Buildout Opportunity Profile
+*See [[AI Buildout Framework]] for axis definitions.*
+
+**Forcing Function:** Already Fired (perimeter defense) + Probabilistic (Agentic / NHI)
+*What it is:* AI expands the attack surface deterministically — every new model deployment, agent, and API endpoint is a new vulnerability vector. The perimeter defense response is already funded and scaling. Agentic identity governance (SAIL) is the second-order response — contingent on either a major NHI breach or enterprise mandate, neither of which has fired yet at scale.
+*Why it matters:* Two distinct investment profiles exist in the same sector. Perimeter (CRWD/PANW/FTNT/RBRK) is an execution play on visible cash flows; NHI/Agentic (SAIL) is an option-on-catalyst play that requires explicit probability weighting.
+
+**Value Chain Order:** 3rd Order
+*Mechanism:* AI creates the attack surface (more endpoints, more agents, more machine identities) → enterprises increase security spend → perimeter defense then identity governance. Each step requires the prior to happen — this is the "two links" risk vs. 2nd-order sectors.
+
+**Revenue Timing:** Cash Flows Now (CRWD, PANW, FTNT, RBRK — all scaling ARR) / 12–24 Months (SAIL — IGA core growing; machine identity expansion ramping)
+
+**Primary Moat:** Data network effects (CRWD Threat Graph — each endpoint improves detection for all; 7–10 yr duration) | Connector depth + identity graph (SAIL — 150+ enterprise connectors, Fortune 500 customer data moat) | Platform breadth + bundle pricing (PANW — hardest to compete with on consolidation thesis)
+
+**Cycle Phase:** Phase 4 (perimeter — CRWD/PANW/FTNT/RBRK are in full scale; institutional coverage complete) | Phase 2–3 (NHI/Agentic — early adoption; forcing function not yet fired at enterprise scale)
+
+**Platform Risk:** Microsoft enterprise bundle (primary risk to mid-market security consolidation — M365 E5 includes Defender, Entra, Purview at package pricing). Less severe for enterprises with complex, multi-cloud environments where best-of-breed still wins. Microsoft Entra specifically competes with SAIL in the identity governance space.
+
+**Valuation Type:** D (CRWD — compounding platform on Threat Graph data moat) | B (SAIL — IGA DCF + machine identity expansion option) | A (RBRK — data resilience DCF + ransomware event optionality)
+
+**What Has to Be True:**
+- AI agent deployments proliferate at enterprise scale, creating machine identity governance demand (NHI thesis)
+- SAIL's ARR sustains >25% growth, validating the machine identity expansion thesis before the forcing function fires
+- Microsoft Entra does not successfully consolidate mid-enterprise identity governance before SAIL captures the Fortune 1000 base
+
+**What Kills It:**
+- Microsoft bundles comprehensive NHI governance into Entra ID at no incremental cost to M365 customers
+- No major NHI breach or regulatory mandate within 3 years — agentic security thesis loses urgency, SAIL re-rates down to IGA-only multiple
+- CRWD/PANW extend their platforms into identity governance, absorbing SAIL's TAM from the perimeter direction
+
+---
+
 ## Research Log
 
 - **2026-05-18** — Framework created. Coverage: RBRK. Key gap to close next: populate Earnings & Financials table with ARR and NRR quarterly data; add Microsoft competitive risk section to RBRK Investment Thesis; run `/ticker-monitor --deep RBRK` to capture recent analyst coverage.
 - **2026-05-19** — Added Archetype 4: Agentic Security / Non-Human Identity. Includes viability case, skeptic's case, cycle phase map, competitive positioning across SAIL/OKTA/CYBR/MSFT, and re-rating framework for OKTA. Triggered by SAIL onboarding and social signal framing it as "second-order" cybersecurity infrastructure.
+- **2026-05-20** — Added AI Buildout Opportunity Profile. Cybersecurity has two investment profiles in one sector: perimeter (Already-Fired, Phase 4, Type D) and NHI/Agentic (Probabilistic, Phase 2–3, Type B/C). Size accordingly.
