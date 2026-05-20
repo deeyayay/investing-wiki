@@ -79,6 +79,9 @@ NVIDIA is the picks-and-shovels king of the AI era. Every major hyperscaler (Mic
 ## News & Alpha Log
 *(Append notable developments: partnerships, product launches, supply chain signals)*
 
+- **2026-05-19** — Q1 FY2027 earnings tomorrow (May 20) after close. Consensus: $79.2B revenue (+79.5% YoY), EPS $1.78 (+120% YoY). Wedbush expects beat and upside guide. Jensen commented China must "decide how much of their local market they want to protect." Chip stocks broadly red today in pre-earnings positioning. Stock at $220.76, $5.43T market cap.
+  **Why it matters:** NVDA earnings is the most consequential market event this week — a beat-and-raise will be a cross-ticker catalyst for COHR, LITE, IREN, FN, ANET, and VRT; a miss or guide-down would reprice the entire AI infrastructure thesis.
+
 ---
 
 ## Analyst Coverage
@@ -114,6 +117,7 @@ See [[NVDA Ecosystem Map]] for full supply chain and derivative plays.
 
 - **2026-05-07 — CATALYST:** NVDA investing $2.1B in IREN (portfolio holding) validates AI infrastructure energy thesis directly. NVDA earnings May 20 after close — next major re-rating event. AMD Q1 beat ($1.37 vs $1.30 est, +18.6%) drove S&P 500 to first record above 7,300 yesterday — positive read-through for NVDA competitive positioning (AMD gaining but NVDA still dominant). Hyperscaler capex remains strong. S&P pulling back slightly today (-0.38%) as semis consolidate post-AMD surge. VIX 17.3 — favorable IV environment ahead of May 20 earnings.
 - **2026-05-14** — stock-research run. Fundamental sections populated from web research and SEC DEF 14A.
+- **2026-05-19** — 📰 DAILY-NEWS | Q1 FY2027 earnings tomorrow; consensus $79.2B rev +79.5% YoY, EPS $1.78 +120%; Jensen on China; chip stocks red pre-print (impact 4)
 
 ## Social Mentions
 
