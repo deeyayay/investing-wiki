@@ -153,6 +153,39 @@ This sector is largely **self-contained** from other portfolio sectors, with one
 
 ---
 
+## AI Buildout Opportunity Profile
+*See [[AI Buildout Framework]] for axis definitions.*
+
+**Forcing Function:** Deterministic (orthogonal to AI buildout — driven by financial services democratization and underbanked market dynamics, not AI capital deployment)
+*What it is:* MELI, SOFI, and HOOD benefit from structural shifts in financial access, not from AI infrastructure demand. The AI angle is an enabler (AI improves underwriting, fraud detection, product personalization) but not the primary forcing function — these businesses would grow without AI.
+*Why it matters:* This sector is distinct from the rest of the portfolio — it is not positioned on the AI buildout chain. Its role is portfolio diversification (different cycle drivers, different correlation to hyperscaler capex). The question is whether the AI enablement effect is incremental enough to warrant re-rating, or just a tailwind that gets competed away.
+
+**Value Chain Order:** 3rd Order (AI-enabled, not AI-infrastructure)
+*Mechanism:* AI improves unit economics (better underwriting → lower charge-offs, better fraud detection → lower losses, better recommendations → higher engagement) but fintech companies would exist and grow without AI. This is capability enhancement, not structural dependency.
+
+**Revenue Timing:** Cash Flows Now (MELI — profitable and growing) / 12–24 Months (SOFI — path to sustained profitability; HOOD — revenue diversification via credit card and retirement products)
+
+**Primary Moat:** Network effects + marketplace liquidity (MELI — Latin American e-commerce + fintech flywheel; very difficult to displace) | Bank charter + regulatory moat (SOFI — national bank charter enables deposit funding cost advantage; 2–5 yr structural edge) | First-mover + brand (HOOD — youngest investors entering the market; brand retention over career)
+
+**Cycle Phase:** Phase 3–4 (MELI — Scale in LatAm fintech) | Phase 2–3 (SOFI — early profitability phase; thesis validation underway) | Phase 2–3 (HOOD — platform diversification from trading to full financial services)
+
+**Platform Risk:** Big Tech financial services (Apple Card, Google Pay, Amazon Pay) entering the financial services layer. Traditional bank incumbent modernization. For SOFI specifically: a rate cycle change (rising rates hurt the SFI lending NIM thesis; falling rates are tailwind).
+
+**Valuation Type:** D (MELI — compounding network effects; multi-decade runway in LatAm) | B (SOFI — bank DCF + bank charter optionality on deposit cost advantage) | A (HOOD — near-term P/E on monetizable active user base)
+
+**What Has to Be True:**
+- MELI's Mercado Pago fintech penetration continues to grow faster than e-commerce GMV (fintech as % of revenue mix expanding = structural multiple expansion)
+- SOFI's bank charter delivers a sustained deposit cost advantage that allows it to price products below legacy bank competitors profitably
+- HOOD successfully migrates from trading revenue (volatile) to recurring financial services revenue (loans, retirement, gold)
+
+**What Kills It:**
+- Latin American macroeconomic instability or currency depreciation compressing MELI's USD-reported revenue growth
+- Federal Reserve rate path turns unfavorable for SOFI's NIM guidance — rising credit losses overwhelm bank charter advantage
+- Big Tech financial services achieves critical mass adoption, drawing HOOD's core young investor demographic before HOOD monetizes them
+
+---
+
 ## Research Log
 
 - **2026-05-18** — Framework created. Coverage: SOFI, MELI. HOOD page not yet created — run `/add-ticker HOOD` to onboard. Key gap to close next: populate Earnings & Financials table for MELI with historical quarterly data; add Management & Leadership section to HOOD when created.
+- **2026-05-20** — Added AI Buildout Opportunity Profile. Fintech & E-Commerce is 3rd-order AI-enabled with an orthogonal forcing function — the primary driver is financial democratization, not AI infrastructure demand. Portfolio role is diversification, not AI buildout exposure.

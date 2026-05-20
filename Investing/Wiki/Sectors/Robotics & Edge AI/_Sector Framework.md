@@ -140,6 +140,39 @@ This sector both **receives from** and **emits to** several other portfolio sect
 
 ---
 
+## AI Buildout Opportunity Profile
+*See [[AI Buildout Framework]] for axis definitions.*
+
+**Forcing Function:** Deterministic
+*What it is:* Physics and economics make edge AI inference adoption inevitable — latency, bandwidth cost, and privacy constraints mean AI cannot run exclusively in the cloud at scale. The forcing function is not "if" but "when" — labor cost economics for autonomous systems and sensor cost curves for robotics are both bending in the right direction.
+*Why it matters:* Deterministic forcing functions allow higher conviction than Probabilistic, but the timing uncertainty is still meaningful. "Inevitable" 5 years from now is different from "inevitable next quarter."
+
+**Value Chain Order:** 2nd Order
+*Mechanism:* Edge AI chips and sensor platforms are mandatory infrastructure for autonomous systems — every autonomous vehicle, robot, and industrial camera requires this compute. AMBA and OUST don't depend on a specific AI model winning; they depend on the category of autonomous systems deploying at scale.
+
+**Revenue Timing:** 12–24 Months (AMBA — CV3 automotive design-ins entering production volume; OUST — StereoLabs integration and Rev8 qualification ramping)
+
+**Primary Moat:** Process IP + certification cycles (AMBA — automotive ISO 26262 qualification takes 18–36 months; once designed in, switching cost is $2–10M + 12–18 months) | Sensor fusion + software stack (OUST post-StereoLabs — 3D + depth + color perception pipeline creates data moat and switching costs for robotics platforms)
+
+**Cycle Phase:** Phase 2–3 — Autonomous vehicles are in Phase 2 (early adoption) moving toward Phase 3 (forcing function = OEM volume commitments). Industrial robotics is in Phase 3. Consumer/security camera edge AI is in Phase 3–4.
+
+**Platform Risk:** NVDA Jetson platform competes directly with AMBA for edge AI compute — NVDA has greater GPU density and software ecosystem; AMBA's advantage is power efficiency at lower ASP. NVDA Drive Hyperion (which OUST's Rev8 just qualified for) is simultaneously an enabler and a platform dependency risk for OUST.
+
+**Valuation Type:** B — core 12–24 month design-win revenue DCF + autonomous vehicle volume production option (3–5 year horizon)
+
+**What Has to Be True:**
+- AMBA's CV3 achieves volume production at 2+ Tier 1 automotive OEMs by end-2026 (primary revenue driver)
+- OUST's StereoLabs integration delivers a coherent perception platform that justifies the acquisition premium in robotics customer wins
+- Edge AI inference requirements continue to demand dedicated SoCs (AMBA's value proposition) rather than migrating to commodity ARM cores with software-only solutions
+
+**What Kills It:**
+- NVDA Jetson price-performance improves to the point that AMBA's power-efficiency advantage no longer justifies the design-in effort
+- Autonomous vehicle OEM timelines slip further (2–3 yr delay to volume), pushing AMBA's revenue ramp out of the planning horizon
+- OUST fails to achieve positive gross margins at scale after StereoLabs integration costs (execution risk on the combined entity)
+
+---
+
 ## Research Log
 
 - **2026-05-18** — Framework created. Coverage: AMBA, BOT. Key gap to close next: populate Earnings & Financials tables for both tickers; add design-win pipeline details to AMBA Catalyst Timeline; confirm BOT company identity and update Investment Thesis section accordingly.
+- **2026-05-20** — Added AI Buildout Opportunity Profile. Robotics & Edge AI is Deterministic 2nd-order with 12–24M revenue timing; primary risk is NVDA platform displacement and AV timeline delays rather than demand existence.

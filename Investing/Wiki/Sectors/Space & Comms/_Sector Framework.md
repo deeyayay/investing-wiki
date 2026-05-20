@@ -138,6 +138,39 @@ This sector is a **moderate receiver** of AI Infrastructure signals and a **weak
 
 ---
 
+## AI Buildout Opportunity Profile
+*See [[AI Buildout Framework]] for axis definitions.*
+
+**Forcing Function:** Probabilistic
+*What it is:* ASTS depends on regulatory clearances, constellation deployment, and MNO commercial adoption — multiple sequential probabilistic events. RKLB depends on sustained satellite launch demand and successful Neutron development. Neither has a deterministic demand driver; both have plausible but contingent AI-adjacent theses (ubiquitous connectivity enabling AI-connected devices globally).
+*Why it matters:* Probabilistic forcing functions require explicit option-sizing — the portfolio exposure should reflect the probability × payoff, not full conviction.
+
+**Value Chain Order:** 3rd Order
+*Mechanism:* AI requires connectivity for edge devices and remote sensing → satellite connectivity fills coverage gaps where terrestrial networks can't reach → ASTS and RKLB enable that infrastructure. Each link in this chain is a risk point.
+
+**Revenue Timing:** 24–48 Months Option (ASTS — BlueBird constellation deployment through 2026–2027; commercial service 2027) / 12–24 Months (RKLB — Electron launch cadence growing; Neutron 2028)
+
+**Primary Moat:** FCC spectrum licensing + orbital slots (ASTS — the ITU coordination and FCC approval process is a genuine moat; cannot be replicated quickly) | Launch service reliability + customer relationships (RKLB — Electron track record, government contracts)
+
+**Cycle Phase:** Phase 2 (ASTS — constellation being built; first commercial BlueBird satellites in orbit but full service not yet active) | Phase 2–3 (RKLB — launch services scaling; Neutron is Phase 1)
+
+**Platform Risk:** Starlink Direct-to-Cell (SpaceX) is the dominant competitive threat to ASTS — SpaceX has greater capital, faster launch cadence, and an existing constellation. Kuiper (Amazon) is the secondary threat. Both have resources that dwarf ASTS. RKLB's primary competitive risk is launch market commoditization if SpaceX Starship reduces launch costs dramatically.
+
+**Valuation Type:** C (ASTS — pure option on constellation deployment + MNO adoption) | C/B (RKLB — Electron DCF + Neutron option)
+
+**What Has to Be True:**
+- ASTS completes BlueBird constellation deployment on schedule and achieves MNO binding commercial agreements (not just LOIs) with 3+ carriers
+- ASTS's link budget performance in orbit matches ground simulation targets (technical validation)
+- RKLB Electron launch cadence reaches 20+ missions/year and Space Systems revenue sustains >30% growth
+
+**What Kills It:**
+- Starlink Direct-to-Cell achieves significant MNO adoption before ASTS completes its constellation — first-mover advantage goes to SpaceX
+- ASTS cash runway proves insufficient for full constellation deployment — requiring dilutive equity raises that impair per-share value
+- Launch market pricing collapses (Starship fully operational) — erodes RKLB's Electron economics and reduces Neutron's competitive positioning
+
+---
+
 ## Research Log
 
 - **2026-05-18** — Framework created. Coverage: ASTS, RKLB. Key gap to close next: add Management & Leadership sections to ASTS and RKLB ticker pages; populate Catalyst Timeline checklists with Neutron and BlueBird deployment milestones.
+- **2026-05-20** — Added AI Buildout Opportunity Profile. Space & Comms is 3rd-order Probabilistic; both names are Type C options. Size accordingly — these are high-variance, multi-year bets, not execution plays.

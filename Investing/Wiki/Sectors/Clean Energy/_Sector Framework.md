@@ -197,6 +197,39 @@ This sector is a **primary receiver** of AI Infrastructure and Semiconductor sig
 
 ---
 
+## AI Buildout Opportunity Profile
+*See [[AI Buildout Framework]] for axis definitions.*
+
+**Forcing Function:** Deterministic (AI power demand) + Probabilistic (regulatory permitting / policy)
+*What it is:* AI data centers will consume 1,000+ TWh/yr by 2030 — the power demand is deterministic and physics-driven. But the specific companies that capture that demand depend on permitting approvals, policy regimes, and offtake contracts that are not guaranteed on any timeline.
+*Why it matters:* The underlying demand is not in doubt; the investment risk is in the regulatory and permitting pathway. OKLO requires NRC approval for its first commercial reactor (probabilistic; binary). Grid infrastructure upgrades (GEV) are more deterministic — the upgrade cycle is mandated by physics regardless of political cycle.
+
+**Value Chain Order:** 3rd Order Enabler
+*Mechanism:* AI buildout requires power → power scarcity becomes the binding constraint on AI buildout pace → clean energy companies that can deliver firm, dispatchable power at scale become strategic infrastructure. This is two causal links from AI — the constraint is real but the mechanism is indirect.
+
+**Revenue Timing:** Cash Flows Now (VST — existing nuclear fleet; GEV — grid hardware backlog) / 24–48 Months Option (OKLO — first commercial reactor 2027–2028; TE — project pipeline development) / 12–24 Months (FLNC, BE — storage scaling)
+
+**Primary Moat:** Regulatory certification (OKLO — NRC licensing progress is a durable barrier; first-mover in microreactor space) | Supply scarcity (VST — permitted, operating nuclear plants cannot be quickly replicated) | Mandatory upgrade demand (GEV — grid hardware upgrades required regardless of energy source)
+
+**Cycle Phase:** Phase 1–2 (microreactor nuclear — OKLO, 7011.T SMR) | Phase 3–4 (grid infrastructure — GEV, ENR.DE; grid upgrade is already underway) | Phase 3 (utility-scale nuclear — VST; re-rating already begun)
+
+**Platform Risk:** Utility incumbents scaling into SMR and nuclear extension (Constellation, Exelon) compete with pure-play nuclear names. Policy risk is asymmetric — a change in regulatory stance can accelerate or kill microreactor timelines. Cheap natural gas extending its economics competes with nuclear on marginal cost.
+
+**Valuation Type:** C (OKLO, TE — option on first commercial; high variance) | A (VST, GEV — DCF on existing assets with AI power premium)
+
+**What Has to Be True:**
+- OKLO receives NRC approval for its first Aurora Powerhouse commercial unit (binary gating event)
+- AI data center power demand continues to create an acute scarcity premium for firm, dispatchable clean power in grid-constrained regions
+- Grid infrastructure upgrade cycle accelerates rather than stalling on supply chain constraints (GEV backlog conversion)
+
+**What Kills It:**
+- NRC approval delayed 2+ years beyond OKLO's current timeline — thesis horizon extends beyond most investors' patience
+- Natural gas prices decline to <$2/MMBtu, making gas peakers competitive with nuclear on marginal cost and reducing clean energy premium
+- Political/regulatory reversal on clean energy mandates removes the policy tailwind
+
+---
+
 ## Research Log
 
 - **2026-05-18** — Framework created. Coverage: OKLO, VST, GEV, FLNC, BE, ENR.DE, 7011.T. Key gap to close next: populate Earnings & Financials tables for GEV and FLNC; add Investment Thesis sections to ENR.DE and 7011.T ticker pages.
+- **2026-05-20** — Added AI Buildout Opportunity Profile. Clean Energy is a 3rd-order enabler with dual forcing functions — deterministic AI power demand, probabilistic permitting pathways. VST/GEV are Type A; OKLO/TE are Type C options.

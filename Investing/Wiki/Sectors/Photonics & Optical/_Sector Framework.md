@@ -195,6 +195,39 @@ When comparing any two photonics investments, score each on these five dimension
 
 ---
 
+## AI Buildout Opportunity Profile
+*See [[AI Buildout Framework]] for axis definitions.*
+
+**Forcing Function:** Already Fired
+*What it is:* Every AI GPU cluster requires optical transceivers; the 400G→800G→1.6T speed transition is an active re-procurement cycle driving demand that didn't exist three years ago.
+*Why it matters:* Already-Fired demand with a recurring architectural upgrade cadence means revenue exists now and each speed generation is a new capex event — not a one-time TAM.
+
+**Value Chain Order:** 2nd Order
+*Mechanism:* Electrons cannot move data fast enough between GPUs at AI cluster distances. Optical interconnects are physically mandatory — there is no software fix or substitute. Demand is derived directly from GPU cluster deployment volume and speed generation transitions.
+
+**Revenue Timing:** Cash Flows Now (COHR, LITE, FN — 800G revenue ramping) / 12–24 Months (AXTI InP substrate ramp, SIVE, POET platform commercialization)
+
+**Primary Moat:** Process IP + supply chokepoints (LITE 200G EML laser monopoly at volume, AXTI InP wafer substrates — both ~3–7 yr to replicate at scale) | Manufacturing precision + switching costs (FN contract manufacturing — customer re-qualification cost is high) | Architectural transition leadership (COHR multi-material platform covers InP + GaAs + SiPh)
+
+**Cycle Phase:** Phase 3–4 — 800G is scaling now; 1.6T qualification cycles underway at lead customers. The sector is in the steepest part of the S-curve. Co-packaged optics (CPO) represents the next architectural transition (Phase 2) within the same sector — a distinct, later-stage opportunity.
+
+**Platform Risk:** Silicon photonics commoditization — hyperscalers (Intel, GOOGL) developing integrated silicon photonics platforms that reduce demand for discrete optical components. CPO architecture disrupts the transceiver business model (switches and optics merge — potentially cutting out standalone transceiver vendors). NVDA co-packaged optics roadmap is the specific watch item.
+
+**Valuation Type:** B — core 800G DCF (cash flows growing) + CPO/1.6T expansion option (next architectural cycle)
+
+**What Has to Be True:**
+- 800G hyperscaler deployment volume continues to grow 30–50% annually through 2026 (primary revenue driver)
+- LITE's 200G EML laser supply constraint persists — no second-source at equivalent yields for 18+ months
+- CPO adoption timeline extends past 2027, preserving the discrete transceiver TAM through the next planning horizon
+
+**What Kills It:**
+- Hyperscaler AI capex pause stalls new cluster deployments (reduces transceiver pull-through)
+- CPO adoption accelerates to 2026 timeline — eliminates discrete transceiver demand ahead of current projections
+- A second-source for InP substrates at scale eliminates AXTI pricing power faster than expected
+
+---
+
 ## Research Log
 
 - **2026-05-11** — Framework created. Key gap to close next: add valuation anchors (bull/base/bear price targets) to each ticker note so the ranking criteria can be applied systematically across the folder.
+- **2026-05-20** — Added AI Buildout Opportunity Profile. Photonics is 2nd-order Already-Fired with a recurring upgrade cadence; primary structural risk is CPO timeline (architectural disruption) and silicon photonics commoditization.

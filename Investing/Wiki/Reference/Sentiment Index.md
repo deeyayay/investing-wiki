@@ -1,6 +1,6 @@
 # Sentiment Index
 *Maintained by `/ingest-sentiment` — do not edit the ticker table manually.*
-*Last updated: 2026-05-18*
+*Last updated: 2026-05-19*
 
 ---
 
@@ -8,6 +8,10 @@
 
 | Ticker | Wiki | Status | Mentions | Last Signal |
 |--------|------|--------|----------|-------------|
+| CRWD | [[CRWD]] | stub | 1 | 2026-05-19 |
+| FTNT | [[FTNT]] | stub | 1 | 2026-05-19 |
+| PANW | [[PANW]] | stub | 1 | 2026-05-19 |
+| SAIL | [[SAIL]] | monitored | 1 | 2026-05-19 |
 | NVDA | [[NVDA]] | monitored | 5 | 2026-05-18 |
 | AXTI | [[AXTI]] | monitored | 3 | 2026-05-18 |
 | INTC | [[INTC]] | stub | 3 | 2026-05-18 |
@@ -67,6 +71,7 @@
 *Newest first. Max 30 entries.*
 
 <!-- signals appended here by /ingest-sentiment -->
+2026-05-19 · tweet · [[2026-05-19-sail-first-memory-semis]] · CRWD, FTNT, PANW, SAIL
 2026-05-18 · tweet · [[2026-05-18-gev-ai-supply-chain-chokepoints]] · AMZN, AXTI, BE, FCX, FLNC, GEV, IQE, INTC, META, MOD, MP, NVT, NVDA, ORCL, TSM, VNP, VRT, VST, 7011.T, ENR.DE, 6367.T, 5201.T, 3017.TW, 3324.TW, 2308.TW, 6669.TW, 4369.T, 4043.T
 2026-05-18 · tweet · [[2026-05-18-sofi-top-3-position]] · SOFI
 2026-05-18 · tweet · [[2026-05-18-amd-cpu-bottleneck-three-ways]] · AAPL, AMD, ARM, INTC, META, NVDA
