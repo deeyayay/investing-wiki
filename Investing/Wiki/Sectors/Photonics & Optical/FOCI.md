@@ -30,7 +30,8 @@ _Last scored: — | [[Scoring Rubric]]_
 
 > **Thesis established:** May 21, 2026
 > **Last validated:** May 21, 2026
-> **Drift status:** On track — initial thesis established; monitor for H2 2026 FAU mass-production ramp and TSMC COUPE adoption timeline
+> **Drift status:** On track — sole FAU provider for COUPE Gen 1 (H2 2026, AMD) and Gen 2 (NVIDIA Rubin Ultra, late 2027/early 2028) confirmed; Q1 2026 revenue decline expected pre-ramp; grating-coupled substitute and TFC competitor risks warrant monitoring
+> **Last validated:** 2026-05-21
 
 FOCI Fiber Optic Communications designs and manufactures the fiber optic components at the heart of co-packaged optics (CPO) modules. Founded in 1995 as an ITRI (Industrial Technology Research Institute) spinout in Hsinchu, Taiwan, the company has spent three decades building precision fiber interconnect expertise. Its current strategic focus is the fiber array unit (FAU) — the component that couples optical fiber to photonic chips in CPO assemblies. FAU is not glamorous, but it is the tolerance-critical interface that determines whether a CPO module works or fails: sub-micron alignment between fiber core and silicon photonic waveguide is required at scale, and FOCI's proprietary ReLFACon (Reflowable Lensed Fiber Array Connector) technology is designed to meet that specification in high-volume automated production.
 
@@ -59,12 +60,14 @@ The company's 2025 revenue was TWD 1.89B (~$58M USD) growing +38.7% YoY — the 
 ---
 
 ## Catalyst Timeline
-- [ ] H2 2026 — FAU mass-production ramp for 1.6T and 3.2T CPO modules (primary revenue catalyst)
-- [ ] TSMC COUPE architecture confirmation as NVIDIA Spectrum-X/Rubin standard — validates FAU supply chain position
-- [ ] Himax WLO + FOCI ReLFACon MCM integration milestone — proof of COUPE assembly stack
-- [ ] NVIDIA Spectrum-X and Quantum-X CPO switch production scale — determines FAU order cadence
-- [ ] Quarterly revenue disclosures (TPEX) — watch for CPO revenue as % of total
-- [ ] Additional hyperscaler or ODM customer announcements confirming CPO supplier status
+- [ ] H2 2026 — FAU mass-production ramp for 1.6T and 3.2T CPO modules — **Gen 1 COUPE, AMD first adopter** (primary revenue catalyst)
+- [ ] Q2/Q3 2026 TPEX earnings — first signal of CPO revenue contribution; watch for YoY inflection
+- [x] TSMC COUPE FAU supplier confirmation — FOCI confirmed sole FAU provider for Gen 1 and Gen 2
+- [ ] Gen 1 COUPE (AMD) production ramp monitoring — volume shipment confirmation from AMD or TSMC commentary
+- [ ] Gen 2 COUPE (NVIDIA Rubin Ultra) — late 2027/early 2028 production target; FAU design-in already secured
+- [ ] Himax WLO + FOCI ReLFACon MCM integration customer validation milestone
+- [ ] Grating-coupled COUPE architecture — monitor for any TSMC or NVIDIA signal that grating-coupled is advancing toward production (structural moat risk)
+- [ ] TFC commercial CPO ramp progress — determine if TFC is a direct FAU competitor or a different supply chain node
 
 ---
 
@@ -75,6 +78,9 @@ The company's 2025 revenue was TWD 1.89B (~$58M USD) growing +38.7% YoY — the 
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
 | 2026-03 | Himax Technologies takes 5.3% equity stake in FOCI private placement; partnership to unite FOCI CPO tech with Himax WLO for TSMC COUPE | ↑ Strengthened | Strategic equity from a listed technology partner is a high-credibility validation — Himax would not deploy capital into a FAU supplier without independent verification of ReLFACon's ability to meet COUPE specifications |
+| 2026-01 | Himax issues press release reaffirming FOCI CPO collaboration is "ongoing and unchanged" | → Neutral | Reaffirmation was apparently triggered by market speculation about partnership status — the need to confirm publicly implies the relationship faced scrutiny; neutral because the partnership held, but the ambiguity itself is a flag |
+| 2026-Q1 | Q1 2026 revenue TWD 382M (-7.2% YoY); EPS -NT$0.98; net loss NT$107M | → Neutral | Pre-ramp investment costs are expected — automated production line buildout is inherently front-loaded. Revenue decline and swing to loss are consistent with a company spending ahead of H2 2026 mass-production. Not a thesis break, but sets a higher bar for H2 execution |
+| 2026-05 | Confirmed: FOCI is sole FAU provider for COUPE Gen 1 (H2 2026, AMD first) and Gen 2 (NVIDIA Rubin Ultra, late 2027/early 2028) | ↑ Strengthened | Sole-source confirmation across two COUPE generations is the most important structural data point for the thesis — it eliminates the question of whether FOCI is one of several FAU suppliers and defines a multi-year revenue lock |
 
 ---
 
@@ -83,8 +89,8 @@ The company's 2025 revenue was TWD 1.89B (~$58M USD) growing +38.7% YoY — the 
 
 | Quarter | Revenue (TWD) | Revenue (USD ~) | YoY | Notes |
 |---------|--------------|-----------------|-----|-------|
-| FY2025 | 1.89B | ~$58M | +38.7% | CPO ramp beginning; FAU production in small-scale phase |
-| — | — | — | — | — |
+| Q1 2026 | 382M | ~$12M | -7.2% | EPS -NT$0.98; Net loss NT$107M; pre-ramp investment phase; automated production line buildout |
+| FY2025 | 1.89B | ~$58M | +38.7% | CPO ramp beginning; FAU production in small-scale phase; EPS NT$0.16 |
 
 ---
 
@@ -103,6 +109,15 @@ The company's 2025 revenue was TWD 1.89B (~$58M USD) growing +38.7% YoY — the 
 - **2026-03** — Digitimes: FOCI targets CPO with automated production lines; eyes revenue surge in 3 years. Plans to mass-produce 1.6T and 3.2T FAUs in H2 2026.
   **Why it matters:** H2 2026 mass-production is the make-or-break milestone for the revenue thesis. Automated production lines are a prerequisite — manual FAU assembly cannot meet hyperscaler volume requirements. The "3-year revenue surge" framing suggests management is guiding to a 2028–2029 revenue step-change, consistent with TSMC COUPE hitting volume production.
 
+- **2026-05** — ⚠️ RISK FLAG | "Grating Coupled COUPE" architecture analysis published (VikS Newsletter). Separately, FundAI research notes "TFC Outpaces FOCI-Himax Ecosystem in Commercial CPO Ramp."
+  **Why it matters:** Grating-coupled COUPE would route light via gratings rather than edge-coupled FAUs, potentially eliminating FOCI's component entirely. TFC (Taiwan Fiber Channel or similar) accelerating in commercial CPO ramp implies FOCI may not be the only FAU path to COUPE volume. Both are early-stage threat signals, not confirmed competitive displacements, but warrant close monitoring. The moat thesis requires FAU to remain architecturally mandatory.
+
+- **2026-Q1** — Q1 2026: Revenue TWD 382M (-7.2% YoY), EPS -NT$0.98, Net Loss NT$107M. Company swung from NT$0.011 EPS profit in Q1 2025 to loss.
+  **Why it matters:** Pre-ramp investment costs (automated line buildout, validation work) explain the loss. Revenue decline is expected before H2 2026 production ramp. However, Q1 2025 was already a modest revenue base — -7.2% YoY on a seasonally weak Q1 sets a low bar for H2. The thesis pivots entirely on H2 2026 execution.
+
+- **2026-01** — Himax issues formal press release reaffirming CPO collaboration with FOCI is "ongoing and unchanged."
+  **Why it matters:** Companies don't issue unsolicited reaffirmations without a reason — market or counterparty speculation about the partnership apparently required a public statement. The partnership held, but the event reveals fragility in the information environment around these two names.
+
 ---
 
 ## Cross-Ticker Signals
@@ -111,6 +126,7 @@ The company's 2025 revenue was TWD 1.89B (~$58M USD) growing +38.7% YoY — the 
 |------|-----------|-------------|--------|-------------|
 | 2026-05-20 | Receives | NVDA | NVDA Q1 FY2027: Spectrum-X and Quantum-X CPO switches confirmed; networking +199% YoY; no Spectrum-X deferral; Rubin SiPh on schedule | NVDA CPO demand is real and scaling on the timeline the thesis requires — no push-out language; Rubin starting revenue Q2 accelerates the COUPE volume ramp that drives FAU orders |
 | 2026-05-20 | Receives | NVDA | NVDA Q2 guide $91B — 4-5% above consensus; Rubin begins revenue contribution Q2 | Accelerated Rubin ramp means the CPO content-per-rack increases ahead of prior schedule; FAU demand scales with rack count and CPO switch density |
+| 2026-05-21 | Emits | AXTI | FOCI confirmed sole FAU in COUPE; Gen 1 AMD H2 2026; Gen 2 NVDA Rubin late 2027 | COUPE production schedule sets the InP substrate and EML laser demand curve — AXTI's InP wafers feed into the photonic chips that FOCI's FAU couples to |
 
 ---
 
@@ -118,7 +134,9 @@ The company's 2025 revenue was TWD 1.89B (~$58M USD) growing +38.7% YoY — the 
 *(Rating changes, price target moves, notable commentary)*
 
 - **2026** — Citrini Research and Hunterbrook Media identified FOCI as a key supplier in NVIDIA's CPO supply chain via TSMC COUPE. Coverage primarily from Taiwanese brokerages; limited English-language sell-side coverage.
+- **2026-05** — 1 analyst (Taiwanese brokerage): Buy, PT TWD 708 (vs current ~804 — PT is 11.9% below current price). Consensus is thin; stock has re-rated above the sole covering analyst's target on NVDA-driven CPO enthusiasm.
 - **2026-05-17** — Social signal noted FOCI/Nextronics as "next year's center-stage plays" as CPO architecture scales (see [[2026-05-18-axti-next-year-im]]).
+- **2026-05** — ⚠️ FundAI research: "TFC Outpaces FOCI-Himax Ecosystem in Commercial CPO Ramp" — independent research flagging a potential competitor; no PT or rating change.
 
 ---
 
@@ -142,4 +160,5 @@ The company's 2025 revenue was TWD 1.89B (~$58M USD) growing +38.7% YoY — the 
 
 ## Research Log
 *(Reverse-chron append log — newest at bottom)*
-- **2026-05-21** — add-ticker run. Stub page (social mentions only) converted to full wiki page. Fundamental sections populated from web research: Digitimes CPO/FAU coverage, Citrini/Hunterbrook supply chain analysis, Himax private placement announcement, TPEX market data. Not an SEC filer — TPEX listed, CIK = none. DEF 14A equivalent not available in English; management section based on publicly available sources; verify via TPEX filings or foci.com.tw IR.
+- **2026-05-21** — add-ticker run. Stub page (social mentions only) converted to full wiki page.
+- **2026-05-21** — 📊 MONITOR | Deep pass: Q1 2026 revenue -7.2% YoY, EPS -NT$0.98 (pre-ramp loss expected); confirmed sole FAU supplier for COUPE Gen 1 (AMD, H2 2026) and Gen 2 (NVDA Rubin Ultra, 2027/2028); Himax partnership reaffirmed Jan 2026; grating-coupled COUPE and TFC competitor risks flagged; analyst PT TWD 708 vs current ~804 (stock above sole analyst target). Source: TPEX filings, Himax PR, Digitimes, VikS Newsletter, FundAI. Fundamental sections populated from web research: Digitimes CPO/FAU coverage, Citrini/Hunterbrook supply chain analysis, Himax private placement announcement, TPEX market data. Not an SEC filer — TPEX listed, CIK = none. DEF 14A equivalent not available in English; management section based on publicly available sources; verify via TPEX filings or foci.com.tw IR.
