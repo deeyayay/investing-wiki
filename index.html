@@ -3,890 +3,386 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Investing Brief · May 20, 2026</title>
+<title>Investing Brief · 2026-05-20</title>
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
-    --bg: #0d1117; --bg2: #161b22; --bg3: #21262d;
-    --border: #30363d; --border2: #21262d;
-    --text: #e6edf3; --text2: #8b949e; --text3: #6e7681;
-    --amber: #d4a017; --amber2: #9e6a03; --amber-dim: #3d2f00;
-    --green: #3fb950; --green-bg: #0f2c1a; --green-dark: #1a7f37;
-    --blue: #58a6ff; --blue-bg: #051d40; --blue-dark: #1f6feb;
-    --red: #f85149; --red-bg: #2d0f0e; --red-dark: #da3633;
-    --orange: #e3812b; --orange-bg: #2d1700;
-    --yellow: #d29922; --yellow-bg: #271f00;
-    --gray: #6e7681;
-    --radius: 8px; --radius-sm: 4px;
-    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    --bg:        #0d1117;
+    --surface:   #161b22;
+    --border:    #30363d;
+    --text:      #e6edf3;
+    --muted:     #8b949e;
+    --amber:     #d4a017;
+    --amber-dim: #9e6a03;
+    --green:     #3fb950;
+    --red:       #f85149;
+    --red-bg:    #da3633;
+    --orange:    #e3812b;
+    --yellow:    #d29922;
+    --blue:      #58a6ff;
+    --blue-bg:   #1f6feb;
+    --gray:      #6e7681;
+    --radius:    6px;
   }
-  html { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 14px; line-height: 1.5; }
-  body { min-height: 100vh; padding-bottom: 48px; }
-
-  /* HEADER */
-  .site-header {
-    position: sticky; top: 0; z-index: 100;
-    background: var(--bg); border-bottom: 1px solid var(--border);
-    padding: 12px 24px; display: flex; align-items: center; justify-content: space-between;
-    backdrop-filter: blur(8px);
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    min-height: 100vh;
   }
-  .header-left h1 { font-size: 15px; font-weight: 700; letter-spacing: 0.05em; color: var(--amber); }
-  .header-left .subtitle { font-size: 12px; color: var(--text2); margin-top: 2px; }
-  .header-meta { font-size: 11px; color: var(--text3); text-align: right; }
-  .alert-pill { display: inline-flex; align-items: center; gap: 4px; background: var(--red-bg); color: var(--red); border: 1px solid var(--red-dark); border-radius: 20px; padding: 2px 8px; font-size: 11px; font-weight: 600; margin-left: 8px; }
-
-  /* NAV TABS */
-  .tab-nav { display: flex; gap: 0; border-bottom: 1px solid var(--border); padding: 0 24px; background: var(--bg); position: sticky; top: 57px; z-index: 99; }
-  .tab-btn { background: none; border: none; color: var(--text2); padding: 12px 16px; font-size: 13px; font-weight: 500; cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; transition: color 0.15s, border-color 0.15s; font-family: var(--font); }
-  .tab-btn:hover { color: var(--text); }
-  .tab-btn.active { color: var(--amber); border-bottom-color: var(--amber); }
-  .tab-btn .badge { display: inline-flex; align-items: center; justify-content: center; background: var(--bg3); color: var(--text2); border-radius: 20px; padding: 1px 6px; font-size: 10px; margin-left: 6px; }
-
-  /* MAIN CONTENT */
-  .tab-content { display: none; padding: 24px; max-width: 1400px; margin: 0 auto; }
-  .tab-content.active { display: block; }
-
-  /* SECTION HEADERS */
-  .section-header { margin-bottom: 20px; }
-  .section-header h2 { font-size: 18px; font-weight: 700; color: var(--text); }
-  .section-header p { font-size: 12px; color: var(--text2); margin-top: 4px; }
-
-  /* PORTFOLIO GRID */
-  .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
-
-  /* RECOMMENDATION CARD */
-  .rec-card {
-    background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius);
-    border-left: 3px solid var(--amber);
-    overflow: hidden; position: relative;
-  }
-  .rec-card-header { display: flex; align-items: flex-start; justify-content: space-between; padding: 14px 16px 10px; gap: 8px; }
-  .signal-badge { display: inline-flex; align-items: center; padding: 3px 10px; border-radius: var(--radius-sm); font-size: 11px; font-weight: 700; letter-spacing: 0.05em; flex-shrink: 0; }
-  .signal-ADD { background: var(--green); color: #000; }
-  .signal-HOLD { background: var(--blue-dark); color: #fff; }
-  .signal-TRIM { background: var(--red-dark); color: #fff; }
-  .signal-WATCH { background: var(--amber2); color: #fff; }
-  .confidence { font-size: 10px; color: var(--text3); padding: 3px 6px; border: 1px solid var(--border); border-radius: var(--radius-sm); }
-  .conf-High { color: var(--green); border-color: var(--green-dark); }
-  .conf-Medium { color: var(--yellow); border-color: var(--amber2); }
-  .conf-Low { color: var(--text3); }
-
-  .rec-card-ticker { padding: 0 16px 8px; }
-  .rec-card-ticker .ticker { font-size: 20px; font-weight: 800; color: var(--text); letter-spacing: -0.02em; }
-  .rec-card-ticker .company { font-size: 12px; color: var(--text2); }
-  .sector-tag { display: inline-block; background: var(--bg3); color: var(--text3); border-radius: 20px; padding: 1px 7px; font-size: 10px; margin-left: 6px; }
-
-  .rec-card-thesis { padding: 0 16px 10px; font-size: 12px; color: var(--text2); font-style: italic; line-height: 1.45; }
-
-  .rec-card-divider { border: none; border-top: 1px solid var(--border2); margin: 0 16px; }
-
-  .rec-card-rationale { padding: 12px 16px; font-size: 12px; color: var(--text); line-height: 1.6; }
-
-  .rec-card-meta { padding: 10px 16px 14px; display: flex; flex-direction: column; gap: 5px; }
-  .meta-row { display: flex; align-items: baseline; gap: 6px; font-size: 11px; }
-  .meta-label { color: var(--text3); min-width: 80px; flex-shrink: 0; }
-  .meta-value { color: var(--text2); }
-  .drift-on-track { color: var(--green); }
-  .drift-drifting { color: var(--yellow); }
-  .drift-broken { color: var(--red); }
-  .conv-up { color: var(--green); }
-  .conv-down { color: var(--red); }
-  .conv-neutral { color: var(--text3); }
-
-  .news-alert { display: flex; align-items: flex-start; gap: 6px; background: rgba(248,81,73,0.08); border: 1px solid rgba(248,81,73,0.25); border-radius: var(--radius-sm); padding: 8px 12px; margin: 0 12px 12px; font-size: 11px; color: var(--text2); }
-  .news-alert-dot { font-size: 13px; flex-shrink: 0; }
-
-  /* DIGEST FEED */
-  .digest-feed { display: flex; flex-direction: column; gap: 2px; }
-  .digest-row { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius-sm); cursor: pointer; transition: border-color 0.15s; }
-  .digest-row:hover { border-color: var(--border2); background: var(--bg3); }
-  .digest-row-main { display: flex; align-items: center; gap: 10px; padding: 10px 14px; flex-wrap: wrap; }
-  .impact-pill { display: inline-flex; align-items: center; justify-content: center; min-width: 28px; padding: 2px 6px; border-radius: 20px; font-size: 11px; font-weight: 700; flex-shrink: 0; }
-  .impact-5 { background: rgba(248,81,73,0.15); color: var(--red); border: 1px solid rgba(248,81,73,0.4); }
-  .impact-4 { background: rgba(227,129,43,0.15); color: var(--orange); border: 1px solid rgba(227,129,43,0.4); }
-  .impact-3 { background: rgba(210,153,34,0.15); color: var(--yellow); border: 1px solid rgba(210,153,34,0.4); }
-  .impact-2, .impact-1 { background: var(--bg3); color: var(--text3); border: 1px solid var(--border); }
-  .portfolio-badge { display: inline-flex; padding: 1px 7px; border-radius: 20px; font-size: 10px; font-weight: 600; flex-shrink: 0; background: var(--amber-dim); color: var(--amber); border: 1px solid var(--amber2); }
-  .watchlist-badge { display: inline-flex; padding: 1px 7px; border-radius: 20px; font-size: 10px; color: var(--text3); border: 1px solid var(--border); flex-shrink: 0; }
-  .cat-tag { display: inline-flex; padding: 1px 7px; border-radius: 20px; font-size: 10px; color: var(--text3); background: var(--bg3); flex-shrink: 0; }
-  .digest-ticker { font-size: 13px; font-weight: 700; color: var(--text); flex-shrink: 0; }
-  .digest-headline { font-size: 12px; color: var(--text2); flex: 1; min-width: 200px; }
-  .digest-summary { padding: 0 14px 8px; font-size: 11px; color: var(--text3); }
-  .digest-detail { display: none; padding: 0 14px 12px; border-top: 1px solid var(--border2); margin-top: 4px; }
-  .digest-detail.open { display: block; }
-  .digest-detail p { font-size: 12px; color: var(--text2); line-height: 1.6; margin-bottom: 8px; }
-  .digest-snippet { background: var(--bg3); border-left: 3px solid var(--border); padding: 8px 12px; font-size: 11px; color: var(--text3); font-style: italic; border-radius: 0 4px 4px 0; }
-
-  /* WATCHLIST */
-  .watchlist-sector { margin-bottom: 24px; }
-  .watchlist-sector-header { font-size: 12px; font-weight: 600; color: var(--text3); text-transform: uppercase; letter-spacing: 0.08em; padding: 8px 0; border-bottom: 1px solid var(--border); margin-bottom: 8px; }
-  .watchlist-rows { display: flex; flex-direction: column; gap: 2px; }
-  .watchlist-row { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 10px 14px; display: flex; align-items: flex-start; gap: 10px; }
-  .wl-ticker { font-size: 13px; font-weight: 700; color: var(--text); min-width: 56px; flex-shrink: 0; }
-  .wl-drift { flex-shrink: 0; }
-  .drift-badge { display: inline-flex; padding: 1px 8px; border-radius: 20px; font-size: 10px; font-weight: 500; }
-  .drift-badge.on-track { background: var(--green-bg); color: var(--green); border: 1px solid var(--green-dark); }
-  .drift-badge.drifting { background: var(--yellow-bg); color: var(--yellow); border: 1px solid var(--amber2); }
-  .drift-badge.broken { background: var(--red-bg); color: var(--red); border: 1px solid var(--red-dark); }
-  .drift-badge.unknown { background: var(--bg3); color: var(--text3); border: 1px solid var(--border); }
-  .wl-info { flex: 1; min-width: 0; }
-  .wl-thesis { font-size: 12px; color: var(--text2); }
-  .wl-last { font-size: 10px; color: var(--text3); margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-
-  /* SIGNALS TABLE */
-  .signals-table { width: 100%; border-collapse: collapse; }
-  .signals-table th { background: var(--bg2); color: var(--text3); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--border); }
-  .signals-table td { padding: 10px 12px; font-size: 12px; border-bottom: 1px solid var(--border2); color: var(--text2); vertical-align: top; }
-  .signals-table tr:hover td { background: var(--bg2); }
-  .sig-ticker { font-weight: 700; color: var(--text); }
-  .sig-arrow { color: var(--amber); font-weight: 700; }
-  .sig-emits { color: var(--blue); }
-  .sig-receives { color: var(--green); }
-  .sig-date { color: var(--text3); font-size: 11px; white-space: nowrap; }
-
-  /* EMPTY STATE */
-  .empty-state { text-align: center; padding: 48px 24px; color: var(--text3); font-size: 13px; }
-
-  /* UTILS */
-  .mt-8 { margin-top: 8px; }
-  .mt-16 { margin-top: 16px; }
   a { color: var(--blue); text-decoration: none; }
-  a:hover { text-decoration: underline; }
+  .header {
+    position: sticky; top: 0; z-index: 100;
+    background: #010409;
+    border-bottom: 1px solid var(--border);
+    padding: 10px 20px;
+    display: flex; justify-content: space-between; align-items: flex-start;
+    gap: 12px; flex-wrap: wrap;
+  }
+  .header-left h1 { font-size: 15px; font-weight: 700; letter-spacing: .04em; color: var(--text); }
+  .header-left h1 span { color: var(--amber); }
+  .header-sub { font-size: 12px; color: var(--muted); margin-top: 2px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .header-sub .sep { color: var(--border); }
+  .alert-badge { background: var(--red-bg); color: #fff; font-size: 11px; font-weight: 600; padding: 1px 7px; border-radius: 20px; }
+  .stale-badge { background: var(--amber-dim); color: #fff; font-size: 10px; padding: 1px 5px; border-radius: 3px; margin-left: 4px; }
+  .header-right { font-size: 11px; color: var(--muted); text-align: right; white-space: nowrap; }
+  .event-banner { background: linear-gradient(90deg, #1a1500 0%, #0d1117 100%); border-bottom: 1px solid var(--amber-dim); padding: 6px 20px; font-size: 12px; color: var(--amber); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .event-banner strong { color: #fff; }
+  .tabs { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0 20px; display: flex; gap: 0; overflow-x: auto; }
+  .tab-btn { background: none; border: none; color: var(--muted); cursor: pointer; font-size: 13px; font-weight: 500; padding: 10px 16px; border-bottom: 2px solid transparent; transition: color .15s, border-color .15s; white-space: nowrap; }
+  .tab-btn:hover { color: var(--text); }
+  .tab-btn.active { color: var(--text); border-bottom-color: var(--amber); }
+  .main { padding: 20px; max-width: 1400px; margin: 0 auto; }
+  .section-header { margin-bottom: 16px; }
+  .section-header h2 { font-size: 16px; font-weight: 600; }
+  .section-header .sub { color: var(--muted); font-size: 12px; margin-top: 2px; }
+  .gap-note { background: rgba(212,160,23,.08); border: 1px solid rgba(212,160,23,.25); border-radius: 4px; padding: 8px 12px; font-size: 12px; color: #c9a84c; margin-bottom: 16px; }
+  .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
+  .rec-card { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--amber); border-radius: var(--radius); overflow: hidden; }
+  .card-header { padding: 12px 14px 10px; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+  .card-ticker { font-size: 18px; font-weight: 700; letter-spacing: .02em; }
+  .card-company { font-size: 12px; color: var(--muted); }
+  .sector-tag { font-size: 10px; background: rgba(255,255,255,.05); border: 1px solid var(--border); border-radius: 3px; padding: 1px 6px; color: var(--muted); margin-top: 4px; display: inline-block; }
+  .card-badges { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+  .signal-badge { font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 4px; letter-spacing: .06em; white-space: nowrap; }
+  .signal-ADD { background: var(--green); color: #000; }
+  .signal-HOLD { background: var(--blue-bg); color: #fff; }
+  .signal-TRIM { background: var(--red-bg); color: #fff; }
+  .signal-WATCH { background: var(--amber-dim); color: #fff; }
+  .conf-badge { font-size: 10px; color: var(--muted); padding: 2px 6px; border: 1px solid var(--border); border-radius: 3px; }
+  .card-thesis { padding: 0 14px 10px; font-size: 12px; font-style: italic; color: #b1bac4; }
+  .card-divider { border-top: 1px solid var(--border); }
+  .card-rationale { padding: 10px 14px; font-size: 13px; line-height: 1.55; color: var(--text); }
+  .card-meta { padding: 10px 14px; border-top: 1px solid var(--border); display: flex; flex-direction: column; gap: 5px; }
+  .meta-row { font-size: 12px; color: var(--muted); display: flex; gap: 6px; align-items: baseline; flex-wrap: wrap; }
+  .meta-label { font-weight: 600; color: #8b949e; min-width: 80px; flex-shrink: 0; }
+  .meta-val { color: var(--text); }
+  .meta-muted { color: var(--muted); }
+  .drift-on { color: var(--green); } .drift-none { color: var(--gray); }
+  .conv-up { color: var(--green); } .conv-down { color: var(--red); } .conv-neutral { color: var(--muted); }
+  .digest-list { display: flex; flex-direction: column; gap: 2px; }
+  .digest-row { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 14px; cursor: pointer; transition: background .1s; }
+  .digest-row:hover { background: #1c2128; }
+  .digest-top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .impact-pill { font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 20px; white-space: nowrap; }
+  .impact-5 { background: rgba(248,81,73,.25); color: var(--red); border: 1px solid rgba(248,81,73,.4); }
+  .impact-4 { background: rgba(227,129,43,.2); color: var(--orange); border: 1px solid rgba(227,129,43,.4); }
+  .impact-3 { background: rgba(210,153,34,.15); color: var(--yellow); border: 1px solid rgba(210,153,34,.3); }
+  .impact-2 { background: rgba(110,118,129,.1); color: var(--gray); border: 1px solid rgba(110,118,129,.2); }
+  .d-ticker { font-weight: 700; font-size: 13px; }
+  .list-badge { font-size: 10px; font-weight: 600; padding: 1px 6px; border-radius: 3px; letter-spacing: .04em; }
+  .badge-portfolio { background: rgba(212,160,23,.25); color: var(--amber); border: 1px solid rgba(212,160,23,.4); }
+  .badge-watchlist { background: rgba(139,148,158,.15); color: var(--muted); border: 1px solid var(--border); }
+  .cat-tag { font-size: 10px; background: rgba(255,255,255,.06); border: 1px solid var(--border); border-radius: 3px; padding: 1px 5px; color: var(--muted); }
+  .d-headline { font-size: 13px; font-weight: 500; flex: 1; min-width: 200px; }
+  .d-summary { font-size: 12px; color: var(--muted); margin-top: 4px; }
+  .expand-hint { font-size: 11px; color: var(--muted); margin-left: auto; white-space: nowrap; }
+  .expand-hint::after { content: ' ▾'; }
+  .digest-row.is-open .expand-hint::after { content: ' ▴'; }
+  .digest-detail { display: none; margin-top: 10px; border-top: 1px solid var(--border); padding-top: 10px; }
+  .digest-detail.open { display: block; }
+  .detail-body { font-size: 13px; line-height: 1.6; color: #b1bac4; margin-bottom: 8px; }
+  .detail-snippet { background: rgba(255,255,255,.04); border-left: 3px solid var(--border); padding: 8px 12px; font-size: 12px; font-style: italic; color: var(--muted); border-radius: 0 4px 4px 0; }
+  .sector-group { margin-bottom: 24px; }
+  .sector-title { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; padding-bottom: 4px; border-bottom: 1px solid var(--border); }
+  .wl-row { display: flex; align-items: baseline; gap: 8px; padding: 8px 12px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 4px; flex-wrap: wrap; }
+  .wl-ticker { font-weight: 700; font-size: 13px; min-width: 52px; }
+  .wl-company { color: var(--muted); font-size: 12px; min-width: 140px; }
+  .drift-pill { font-size: 10px; font-weight: 600; padding: 1px 7px; border-radius: 20px; white-space: nowrap; }
+  .dp-on { background: rgba(63,185,80,.15); color: var(--green); border: 1px solid rgba(63,185,80,.3); }
+  .dp-none { background: rgba(110,118,129,.1); color: var(--gray); border: 1px solid rgba(110,118,129,.2); }
+  .wl-thesis { font-size: 12px; color: #b1bac4; flex: 1; min-width: 200px; }
+  .wl-log { font-size: 11px; color: var(--gray); width: 100%; margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 700px; }
+  .signals-table-wrap { overflow-x: auto; }
+  .signals-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .signals-table th { text-align: left; padding: 8px 12px; background: var(--surface); border-bottom: 2px solid var(--border); font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 600; white-space: nowrap; }
+  .signals-table td { padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  .signals-table tr:hover td { background: rgba(255,255,255,.02); }
+  .ticker-chip { background: rgba(255,255,255,.08); border: 1px solid var(--border); border-radius: 4px; padding: 2px 7px; font-weight: 700; font-size: 12px; white-space: nowrap; margin-right: 3px; display: inline-block; }
+  .emits-arrow { color: var(--amber); font-weight: 700; text-align: center; }
+  .date-cell { color: var(--muted); font-size: 12px; white-space: nowrap; }
+  .signal-text { font-weight: 500; }
+  .impl-text { color: var(--muted); font-size: 12px; }
+  .footer { margin-top: 40px; padding: 16px 20px; border-top: 1px solid var(--border); font-size: 11px; color: var(--gray); text-align: center; }
+  @media (max-width: 600px) { .portfolio-grid { grid-template-columns: 1fr; } .header { flex-direction: column; } }
 </style>
 </head>
 <body>
-
-<!-- HEADER -->
-<header class="site-header">
+<header class="header">
   <div class="header-left">
-    <h1>INVESTING BRIEF <span style="opacity:0.4;font-weight:400;">·</span> May 20, 2026</h1>
-    <div class="subtitle">VIX 17.3 &nbsp;·&nbsp; Goldilocks backdrop &nbsp;·&nbsp; Tech-favorable regime
-      <span class="alert-pill">🔴 3 high-impact alerts</span>
+    <h1>INVESTING BRIEF <span>·</span> 2026-05-20</h1>
+    <div class="header-sub">
+      <span>VIX 17.3<span class="stale-badge">as of May 7</span></span>
+      <span class="sep">·</span>
+      <span>Goldilocks · Tech-Favorable</span>
+      <span class="sep">·</span>
+      <span class="alert-badge">3 HIGH-IMPACT ALERTS</span>
+      <span class="sep">·</span>
+      <span style="color:var(--amber);font-weight:600;">⚡ NVDA Q1 FY2027 earnings reported post-close May 20 — not yet in digest</span>
     </div>
   </div>
-  <div class="header-meta">
-    Generated May 20, 2026<br>
-    Digest: 2026-05-20 &nbsp;·&nbsp; 19 tickers scanned
-  </div>
+  <div class="header-right">Generated 2026-05-21<br><span style="color:var(--muted)">Digest from 1 day ago</span></div>
 </header>
-
-<!-- TAB NAV -->
-<nav class="tab-nav">
-  <button class="tab-btn active" data-tab="portfolio" onclick="showTab('portfolio')">Portfolio <span class="badge">5</span></button>
-  <button class="tab-btn" data-tab="digest" onclick="showTab('digest')">Digest <span class="badge">19</span></button>
-  <button class="tab-btn" data-tab="watchlist" onclick="showTab('watchlist')">Watchlist <span class="badge">25+</span></button>
-  <button class="tab-btn" data-tab="signals" onclick="showTab('signals')">Signals <span class="badge">5</span></button>
+<div class="event-banner">
+  ⚡ <strong>EVENT:</strong> NVDA Q1 FY2027 earnings — consensus $79.2B rev (+79.5% YoY) &amp; $1.78 EPS (+120%). Beat-and-raise = cross-ticker catalyst for IREN, COHR, LITE, FN, ANET. Miss = full portfolio reprice. Results not yet reflected in this digest snapshot.
+</div>
+<nav class="tabs">
+  <button class="tab-btn active" data-tab="portfolio" onclick="showTab('portfolio')">Portfolio (5)</button>
+  <button class="tab-btn" data-tab="digest" onclick="showTab('digest')">Digest (19 tickers)</button>
+  <button class="tab-btn" data-tab="watchlist" onclick="showTab('watchlist')">Watchlist</button>
+  <button class="tab-btn" data-tab="signals" onclick="showTab('signals')">Ecosystem Signals (5)</button>
 </nav>
+<div class="main">
 
-<!-- ══════════════════════════════════════════════════════
-     TAB 1: PORTFOLIO
-══════════════════════════════════════════════════════ -->
-<div id="tab-portfolio" class="tab-content active">
-  <div class="section-header">
-    <h2>Portfolio — Core Holdings</h2>
-    <p>5 positions &nbsp;·&nbsp; Recommendations synthesized from KB thesis drift, conviction log, and latest digest &nbsp;·&nbsp; All HOLD signals reflect low data maturity — run /score-ticker to populate scoring summaries</p>
-  </div>
-
+<div id="tab-portfolio" class="tab-content">
+  <div class="section-header"><h2>Portfolio — Core Holdings</h2><div class="sub">5 positions · Recommendations synthesized from KB + latest digest · Sorted: ADD → WATCH → HOLD → TRIM</div></div>
   <div class="portfolio-grid">
 
-    <!-- IREN -->
     <div class="rec-card">
-      <div class="rec-card-header">
-        <span class="signal-badge signal-HOLD">HOLD</span>
-        <span class="confidence conf-Medium">Medium confidence</span>
-      </div>
-      <div class="rec-card-ticker">
-        <span class="ticker">IREN</span>
-        <span class="sector-tag">AI Infrastructure</span><br>
-        <span class="company">IREN Limited (Iris Energy)</span>
-      </div>
-      <div class="rec-card-thesis">Co-founder-led AI data center operator with NVIDIA and Microsoft as anchor tenants and a permitted 3GW power pipeline no independent competitor can replicate.</div>
-      <hr class="rec-card-divider">
-      <div class="rec-card-rationale">Thesis validated by NVIDIA's $3.4B managed GPU deal, $2.1B warrant, and Microsoft's $9.7B contract — external anchors from the two dominant AI infrastructure spenders remove buildout financing risk. The Awaken + Mirantis acquisitions (May 19) extend IREN from raw GPU capacity toward a managed AI cloud platform with software layers, which is bullish long-term but introduces near-term integration complexity. Hold through Q4 FY2026 to validate AI Cloud segment ramp toward the $3.4B ARR target; an ADD signal triggers if the end-2026 GPU utilization milestone (460 MW, 140K GPUs) is hit on schedule.</div>
-      <hr class="rec-card-divider">
-      <div class="rec-card-meta">
-        <div class="meta-row"><span class="meta-label">Drift</span><span class="meta-value drift-on-track">On track</span></div>
-        <div class="meta-row"><span class="meta-label">Conviction</span><span class="meta-value conv-up">↑↑ Strengthening (2/2 entries)</span></div>
-        <div class="meta-row"><span class="meta-label">Next catalyst</span><span class="meta-value">End-2026: 460 MW utilization · 140K GPUs · $3.4B ARR</span></div>
-        <div class="meta-row"><span class="meta-label">Latest news</span><span class="meta-value">Awaken + Mirantis acquired; $3B convert closed (May 19)</span></div>
-        <div class="meta-row"><span class="meta-label">Last validated</span><span class="meta-value">May 14, 2026</span></div>
+      <div class="card-header"><div><div class="card-ticker">IREN</div><div class="card-company">IREN Limited (Iris Energy)</div><span class="sector-tag">AI Infrastructure</span></div><div class="card-badges"><span class="signal-badge signal-ADD">ADD</span><span class="conf-badge">Medium Confidence</span></div></div>
+      <div class="card-thesis">&ldquo;Co-founder-led AI data center operator with NVIDIA and Microsoft as anchor tenants and a permitted 3GW power pipeline no independent competitor can replicate.&rdquo;</div>
+      <div class="card-divider"></div>
+      <div class="card-rationale">IREN&rsquo;s thesis is confirmed on every KB axis &mdash; the NVIDIA $3.4B cloud deal and Microsoft $9.7B contract are multi-year contracted revenue commitments from the two dominant AI infrastructure spenders, and both conviction log entries are upward, the latest confirming +94% QoQ AI Cloud revenue is being recognized as cash, not just contracted. The most relevant near-term catalyst is the Q4 AI Cloud revenue ramp versus that +94% QoQ baseline; the recent vertical expansion (Awaken AI + Mirantis Kubernetes + $3B convertible) is thesis-consistent, building toward a managed cloud stack rather than raw GPU leasing. Signal reverts to HOLD on any downward revision to end-2026 targets (460 MW / 140K GPUs / $3.4B ARR) or evidence of Sweetwater Campus execution delay.</div>
+      <div class="card-meta">
+        <div class="meta-row"><span class="meta-label">Drift:</span><span class="meta-val drift-on">On track</span><span class="meta-muted">&mdash; NVDA $3.4B + MSFT $9.7B de-risk buildout; GPU ramp is the variable</span></div>
+        <div class="meta-row"><span class="meta-label">Last validated:</span><span class="meta-val">2026-05-14</span></div>
+        <div class="meta-row"><span class="meta-label">Conviction:</span><span class="meta-val conv-up">&uarr;&uarr;</span><span class="meta-muted">NVDA DSX anchor + AI Cloud +94% QoQ confirmed (both entries bullish)</span></div>
+        <div class="meta-row"><span class="meta-label">Next catalyst:</span><span class="meta-val">AI Cloud revenue QoQ ramp &mdash; watch vs. +94% baseline; end-2026 460 MW / 140K GPU targets</span></div>
+        <div class="meta-row"><span class="meta-label">Latest news:</span><span class="meta-val">2026-05-19 &mdash; Awaken + Mirantis acquisitions; $3B convertible notes closed; vertical AI cloud expansion confirmed</span></div>
       </div>
     </div>
 
-    <!-- OKLO -->
     <div class="rec-card">
-      <div class="rec-card-header">
-        <span class="signal-badge signal-HOLD">HOLD</span>
-        <span class="confidence conf-Low">Low confidence</span>
-      </div>
-      <div class="rec-card-ticker">
-        <span class="ticker">OKLO</span>
-        <span class="sector-tag">Clean Energy</span><br>
-        <span class="company">Oklo Inc.</span>
-      </div>
-      <div class="rec-card-thesis">Next-generation nuclear microreactor company positioned to power AI data centers and remote industrial sites; founder-led with NVIDIA and Meta as strategic partners.</div>
-      <hr class="rec-card-divider">
-      <div class="rec-card-rationale">Thesis intact: NVIDIA's AI digital twin partnership and Meta's 1.2GW PPA validate the power-demand narrative, and the NRC's May 6 Principal Design Criteria approval was a genuine milestone. However, Wolfe Research's Peerperform initiation (~$61 fair value) introduces a sell-side ceiling narrative at a moment when the stock has already dropped 20% in a week — creating a near-term headwind until a derisking catalyst appears. Hold through the NRC COLA decision; a positive ruling upgrades this to ADD. A COLA rejection or guidance cut would trigger TRIM.</div>
-      <hr class="rec-card-divider">
-      <div class="rec-card-meta">
-        <div class="meta-row"><span class="meta-label">Drift</span><span class="meta-value" style="color:var(--text3)">Not set — initial thesis</span></div>
-        <div class="meta-row"><span class="meta-label">Conviction</span><span class="meta-value conv-neutral">→ No entries logged</span></div>
-        <div class="meta-row"><span class="meta-label">Next catalyst</span><span class="meta-value">NRC COLA decision (key derisking event)</span></div>
-        <div class="meta-row"><span class="meta-label">Latest news</span><span class="meta-value">Wolfe Peerperform ~$61; stock –20% past week; ATM agreement w/ 9 banks</span></div>
+      <div class="card-header"><div><div class="card-ticker">OKLO</div><div class="card-company">Oklo Inc.</div><span class="sector-tag">Clean Energy</span></div><div class="card-badges"><span class="signal-badge signal-HOLD">HOLD</span><span class="conf-badge">Low Confidence</span></div></div>
+      <div class="card-thesis">&ldquo;Next-generation nuclear microreactor company positioned to power AI data centers and remote industrial sites; founder-led with a long regulatory runway and no near-term competition at scale.&rdquo;</div>
+      <div class="card-divider"></div>
+      <div class="card-rationale">OKLO&rsquo;s KB has no formal drift tracking or conviction history &mdash; insufficient signal for a directional call. The Wolfe Peerperform initiation (fair value ~$61, below current market) and fresh ATM offering infrastructure with 9 major banks are near-term headwinds: the market has no de-risking catalyst with NRC COLA still pending and no commercial PPA signed. NVDA and Meta strategic partnerships validate the power demand narrative but generate no near-term cash. The stock is down ~20% over the past week; first thesis catalyst would be any NRC COLA milestone or a named hyperscaler power purchase commitment &mdash; absent that, hold the position without adding.</div>
+      <div class="card-meta">
+        <div class="meta-row"><span class="meta-label">Drift:</span><span class="meta-val drift-none">Not tracked</span></div>
+        <div class="meta-row"><span class="meta-label">Conviction:</span><span class="meta-val conv-neutral">&rarr;</span><span class="meta-muted">No conviction log entries</span></div>
+        <div class="meta-row"><span class="meta-label">Next catalyst:</span><span class="meta-val">NRC COLA decision &mdash; key derisking event; first commercial PPA announcement</span></div>
+        <div class="meta-row"><span class="meta-label">Latest news:</span><span class="meta-val">2026-05-19 &mdash; Wolfe Peerperform ~$61; stock &ndash;6.4% to $54.32; &ndash;20% past week; ATM offering setup (May 13)</span></div>
       </div>
     </div>
 
-    <!-- RBRK -->
     <div class="rec-card">
-      <div class="rec-card-header">
-        <span class="signal-badge signal-HOLD">HOLD</span>
-        <span class="confidence conf-Low">Low confidence</span>
-      </div>
-      <div class="rec-card-ticker">
-        <span class="ticker">RBRK</span>
-        <span class="sector-tag">Cybersecurity</span><br>
-        <span class="company">Rubrik Inc.</span>
-      </div>
-      <div class="rec-card-thesis">Cybersecurity data resilience platform with sticky enterprise SaaS revenue; beneficiary of ransomware tailwinds and cloud migration; founder-led with strong ARR growth trajectory.</div>
-      <hr class="rec-card-divider">
-      <div class="rec-card-rationale">SaaS data resilience thesis is intact — ~$1.46B ARR scaling at ~46% YoY with 120% NRR is top-of-peer-group performance. PICTET's addition of 1.7M shares (+104%) is a positive institutional accumulation signal with no thesis-specific news today. The position warrants holding; no earnings or scoring data logged yet, which limits conviction. An ADD signal triggers on any quarterly ARR acceleration above 50% YoY, a major federal contract win, or continued insider buying at scale.</div>
-      <hr class="rec-card-divider">
-      <div class="rec-card-meta">
-        <div class="meta-row"><span class="meta-label">Drift</span><span class="meta-value" style="color:var(--text3)">Not set — initial thesis</span></div>
-        <div class="meta-row"><span class="meta-label">Conviction</span><span class="meta-value conv-neutral">→ No entries logged</span></div>
-        <div class="meta-row"><span class="meta-label">Next catalyst</span><span class="meta-value">Quarterly ARR growth rate (primary thesis validator)</span></div>
-        <div class="meta-row"><span class="meta-label">Latest news</span><span class="meta-value">PICTET +1.7M shares (+104%); institutional accumulation signal</span></div>
+      <div class="card-header"><div><div class="card-ticker">RBRK</div><div class="card-company">Rubrik Inc.</div><span class="sector-tag">Cybersecurity</span></div><div class="card-badges"><span class="signal-badge signal-HOLD">HOLD</span><span class="conf-badge">Low Confidence</span></div></div>
+      <div class="card-thesis">&ldquo;Cybersecurity data resilience platform with sticky enterprise SaaS revenue; beneficiary of ransomware tailwinds and cloud migration; founder-led with strong ARR growth trajectory.&rdquo;</div>
+      <div class="card-divider"></div>
+      <div class="card-rationale">RBRK&rsquo;s KB is early-stage with no formal drift tracking or conviction history. The quiet institutional signal is constructive &mdash; PICTET&rsquo;s 104% share increase (1.7M shares in Q1 2026) suggests smart money is positioning ahead of a re-rating event. The ransomware tailwind driving board-level data security budgets and ~46% YoY ARR growth rate are intact thesis signals, but neither is formally validated in the KB yet. The next opportunity to formalize a conviction direction is the upcoming earnings call; Q4 ARR growth acceleration or a federal contract win would be specific triggers for an upgrade to ADD.</div>
+      <div class="card-meta">
+        <div class="meta-row"><span class="meta-label">Drift:</span><span class="meta-val drift-none">Not tracked</span></div>
+        <div class="meta-row"><span class="meta-label">Conviction:</span><span class="meta-val conv-neutral">&rarr;</span><span class="meta-muted">No conviction log entries</span></div>
+        <div class="meta-row"><span class="meta-label">Next catalyst:</span><span class="meta-val">Quarterly ARR growth rate &mdash; watch for acceleration vs. 46% YoY baseline</span></div>
+        <div class="meta-row"><span class="meta-label">Latest news:</span><span class="meta-val">2026-05-20 &mdash; PICTET +1.7M shares (+104%); stock $65.96; 11 analysts Buy; no fresh catalyst</span></div>
       </div>
     </div>
 
-    <!-- MELI -->
     <div class="rec-card">
-      <div class="rec-card-header">
-        <span class="signal-badge signal-HOLD">HOLD</span>
-        <span class="confidence conf-Low">Low confidence</span>
-      </div>
-      <div class="rec-card-ticker">
-        <span class="ticker">MELI</span>
-        <span class="sector-tag">Fintech & E-Commerce</span><br>
-        <span class="company">MercadoLibre Inc.</span>
-      </div>
-      <div class="rec-card-thesis">The dominant e-commerce and fintech compounder in Latin America; two massive TAMs with a defensible network effect moat and a founder still at the helm.</div>
-      <hr class="rec-card-divider">
-      <div class="rec-card-rationale">Galperin's 26-year compounding track record through regional macro cycles is the best answer to near-term margin compression; Q1 2026 revenue at +49% YoY with FY2025 at +39% confirms the flywheel is intact. JPMorgan ($1,900) and Goldman ($2,100) PT cuts reflect deliberate investment-phase spending, not competitive deterioration — 21 analysts remain Buy. Hold through the margin reset; an ADD signal triggers if Q2 shows GMV/TPV reacceleration alongside any gross margin stabilization evidence.</div>
-      <hr class="rec-card-divider">
-      <div class="rec-card-meta">
-        <div class="meta-row"><span class="meta-label">Drift</span><span class="meta-value" style="color:var(--text3)">Not set — initial thesis</span></div>
-        <div class="meta-row"><span class="meta-label">Conviction</span><span class="meta-value conv-neutral">→ No entries logged</span></div>
-        <div class="meta-row"><span class="meta-label">Next catalyst</span><span class="meta-value">Q2 GMV + TPV growth · Mercado Pago credit quality</span></div>
-        <div class="meta-row"><span class="meta-label">Latest news</span><span class="meta-value">JPMorgan PT $1,900; Goldman PT $2,100; 21 analysts still Buy</span></div>
+      <div class="card-header"><div><div class="card-ticker">MELI</div><div class="card-company">MercadoLibre Inc.</div><span class="sector-tag">Fintech &amp; E-Commerce</span></div><div class="card-badges"><span class="signal-badge signal-HOLD">HOLD</span><span class="conf-badge">Low Confidence</span></div></div>
+      <div class="card-thesis">&ldquo;The dominant e-commerce and fintech compounder in Latin America; two massive TAMs (retail + financial services) with a defensible network effect moat and a founder still at the helm.&rdquo;</div>
+      <div class="card-divider"></div>
+      <div class="card-rationale">Q1 margin compression prompted target cuts from JPMorgan ($2,100&rarr;$1,900) and Goldman ($2,440&rarr;$2,100), but 21 analysts remain Buy and the stock at $1,598 appears to be finding a floor. The MELI compounder thesis is long-cycle; one quarter of deliberate investment-driven margin pressure doesn&rsquo;t break the LatAm digital penetration story. The CEO transition (Galperin &rarr; Szarfsztejn, Jan 2026) is the primary monitoring variable &mdash; the next 2&ndash;3 quarters will reveal whether the 30%+ GMV compound rate is maintained. Signal shifts to WATCH if next quarterly GMV/TPV growth decelerates materially below 40% or credit book quality deteriorates.</div>
+      <div class="card-meta">
+        <div class="meta-row"><span class="meta-label">Drift:</span><span class="meta-val drift-none">Not tracked</span></div>
+        <div class="meta-row"><span class="meta-label">Conviction:</span><span class="meta-val conv-neutral">&rarr;</span><span class="meta-muted">No conviction log entries</span></div>
+        <div class="meta-row"><span class="meta-label">Next catalyst:</span><span class="meta-val">Quarterly GMV and TPV growth &mdash; primary thesis validator</span></div>
+        <div class="meta-row"><span class="meta-label">Latest news:</span><span class="meta-val">2026-05-20 &mdash; JPM PT $1,900; GS PT $2,100; stock $1,598 stabilizing post Q1 selloff; 21 analysts Buy</span></div>
       </div>
     </div>
 
-    <!-- AEHR -->
     <div class="rec-card">
-      <div class="rec-card-header">
-        <span class="signal-badge signal-HOLD">HOLD</span>
-        <span class="confidence conf-Low">Low confidence</span>
-      </div>
-      <div class="rec-card-ticker">
-        <span class="ticker">AEHR</span>
-        <span class="sector-tag">Semiconductors</span><br>
-        <span class="company">Aehr Test Systems</span>
-      </div>
-      <div class="rec-card-thesis">Niche semiconductor test equipment play riding the silicon carbide (SiC) wave in EV powertrains; dominant in wafer-level burn-in testing with no direct competitor at scale.</div>
-      <hr class="rec-card-divider">
-      <div class="rec-card-rationale">WaferPak monopoly in SiC wafer burn-in testing is structurally intact; bookings raised to the high end of $60–80M H2 FY2026 with Q4 profitability expected signals the EV test cycle is recovering. Book-to-bill above 3.5x is a strong leading indicator of revenue visibility. Hold ahead of the July 14 earnings print — the key watch metric is any non-SiC design-win announcement (AI chips, photonics testing) that would broaden the moat and warrant an ADD signal.</div>
-      <hr class="rec-card-divider">
-      <div class="rec-card-meta">
-        <div class="meta-row"><span class="meta-label">Drift</span><span class="meta-value" style="color:var(--text3)">Not set — initial thesis</span></div>
-        <div class="meta-row"><span class="meta-label">Conviction</span><span class="meta-value conv-neutral">→ No entries logged</span></div>
-        <div class="meta-row"><span class="meta-label">Next catalyst</span><span class="meta-value">Earnings Jul 14 · Non-SiC design-win announcements</span></div>
-        <div class="meta-row"><span class="meta-label">Latest news</span><span class="meta-value">Bookings raised to $60–80M high end; Q4 profitability expected; book-to-bill >3.5x</span></div>
+      <div class="card-header"><div><div class="card-ticker">AEHR</div><div class="card-company">Aehr Test Systems</div><span class="sector-tag">Semiconductors</span></div><div class="card-badges"><span class="signal-badge signal-HOLD">HOLD</span><span class="conf-badge">Low Confidence</span></div></div>
+      <div class="card-thesis">&ldquo;Niche semiconductor test equipment play riding the silicon carbide (SiC) wave in EV powertrains; dominant in wafer-level burn-in testing with no direct competitor at scale.&rdquo;</div>
+      <div class="card-divider"></div>
+      <div class="card-rationale">AEHR&rsquo;s KB is early-stage with no formal drift tracking or conviction history. Near-term data is constructive: bookings at the high end of the $60&ndash;80M H2 FY2026 guidance range with a book-to-bill &gt;3.5x signals SiC demand recovery ahead of schedule. The core EV semiconductor thesis requires ON Semi, Wolfspeed, and STMicro production ramps &mdash; those are 2&ndash;3 quarters ahead. Non-EV expansion (AI chips, photonics test) is a potential TAM widener. Next catalyst is Q4 FY2026 earnings on July 14 where profitability return is guided &mdash; confirmation would justify an upgrade to ADD.</div>
+      <div class="card-meta">
+        <div class="meta-row"><span class="meta-label">Drift:</span><span class="meta-val drift-none">Not tracked</span></div>
+        <div class="meta-row"><span class="meta-label">Conviction:</span><span class="meta-val conv-neutral">&rarr;</span><span class="meta-muted">No conviction log entries</span></div>
+        <div class="meta-row"><span class="meta-label">Next catalyst:</span><span class="meta-val">Q4 FY2026 earnings Jul 14 &mdash; profitability return; new customer / design-in announcements</span></div>
+        <div class="meta-row"><span class="meta-label">Latest news:</span><span class="meta-val">2026-05-20 &mdash; Bookings H2 high end $80M; book-to-bill &gt;3.5x; Q4 profit guided; next earnings Jul 14</span></div>
       </div>
     </div>
 
-  </div><!-- /portfolio-grid -->
-
-  <div style="margin-top:20px; padding:12px 16px; background:var(--bg2); border:1px solid var(--border); border-radius:var(--radius); font-size:11px; color:var(--text3);">
-    💡 <strong style="color:var(--text2)">Improve recommendation quality:</strong> Run <code>/score-ticker TICKER</code> to populate Scoring Summaries and <code>/ticker-monitor --deep TICKER</code> to log Conviction entries. High-confidence recommendations require: drift status set + ≥2 conviction log entries + scoring composite.
   </div>
 </div>
 
-<!-- ══════════════════════════════════════════════════════
-     TAB 2: DIGEST
-══════════════════════════════════════════════════════ -->
-<div id="tab-digest" class="tab-content">
-  <div class="section-header">
-    <h2>Today's Digest — May 20, 2026</h2>
-    <p>19 tickers scanned &nbsp;·&nbsp; 24h lookback &nbsp;·&nbsp; 3 high-impact (≥4) &nbsp;·&nbsp; Click any row to expand detail</p>
+<div id="tab-digest" class="tab-content" style="display:none">
+  <div class="section-header"><h2>Today&rsquo;s Digest &mdash; 2026-05-20</h2><div class="sub">19 tickers scanned &middot; Lookback 24h &middot; 3 high-impact (&ge;4) &middot; Click any row to expand detail</div></div>
+  <div class="gap-note">&zap; NVDA Q1 FY2027 earnings were reported after close on 2026-05-20. This digest was compiled pre-close &mdash; results not reflected here. NVDA impact on IREN, COHR, LITE, FN will materialize in next digest.</div>
+  <div class="digest-list">
+
+    <div class="digest-row" onclick="toggleDetail(this)">
+      <div class="digest-top"><span class="impact-pill impact-5">5 &#128308;</span><span class="d-ticker">NVDA</span><span class="list-badge badge-watchlist">WATCHLIST</span><span class="cat-tag">earnings</span><span class="d-headline">NVIDIA Q1 FY2027 earnings after close TODAY; consensus $79.2B +79.5% YoY, EPS $1.78 +120%</span><span class="expand-hint">detail</span></div>
+      <div class="d-summary">The single most market-moving event this week; result sets tone for all AI names &mdash; IREN, COHR, LITE, FN, ANET, VRT in direct read-through path.</div>
+      <div class="digest-detail"><div class="detail-body">NVIDIA reports Q1 FY2027 after close today. Consensus: $79.2B revenue (+79.5% YoY), $1.78 EPS (+120% YoY). The central concern is China export controls. Wedbush and the broader analyst consensus expects another beat-and-raise. A beat-and-raise would be a clear cross-ticker catalyst across the full AI infrastructure and photonics stack. A miss or guide-down would reprice every AI name in the portfolio.</div><div class="detail-snippet">&ldquo;Analysts are expecting NVIDIA to report earnings of $1.78 per share, up 120% year over year, on revenue of $79.2 billion...the biggest indicator that NVIDIA is poised for a fantastic quarter is that hyperscalers have continued to increase their planned capital expenditures.&rdquo; &mdash; Kiplinger, May 20, 2026</div></div>
+    </div>
+
+    <div class="digest-row" onclick="toggleDetail(this)">
+      <div class="digest-top"><span class="impact-pill impact-5">5 &#128308;</span><span class="d-ticker">POET</span><span class="list-badge badge-watchlist">WATCHLIST</span><span class="cat-tag">product</span><span class="d-headline">POET signs $500M Lumilens AI deal; $50M initial PO; stock +114% past week &mdash; thesis reversal</span><span class="expand-hint">detail</span></div>
+      <div class="d-summary">Complete thesis reversal &mdash; Lumilens replaces Celestial AI/Marvell cancellation; engineering samples targeted late 2026; lawsuits ongoing; CFO retiring.</div>
+      <div class="digest-detail"><div class="detail-body">Lumilens signed a $500M deal with POET Technologies with an initial $50M purchase order and engineering samples targeted for late 2026. This followed the Celestial AI/Marvell order cancellation and federal securities class action lawsuits, driving the stock up 114.72% in the past week. Engineering samples (not production orders) are the late-2026 milestone. Highly speculative upside, not confirmed revenue.</div><div class="detail-snippet">&ldquo;The stock surged 114.72% in the past week alone after announcing a $500 million AI infrastructure deal with Lumilens. The deal carries an initial $50 million purchase order and engineering samples targeted for late 2026.&rdquo; &mdash; 24/7 Wall St., May 2026</div></div>
+    </div>
+
+    <div class="digest-row" onclick="toggleDetail(this)">
+      <div class="digest-top"><span class="impact-pill impact-4">4 &#128308;</span><span class="d-ticker">ASTS</span><span class="list-badge badge-watchlist">WATCHLIST</span><span class="cat-tag">product</span><span class="d-headline">BlueBird-7 launch failure; Q1 revenue $14.7M vs $37.5M expected (&ndash;61% miss); BofA: 7-satellite shortfall</span><span class="expand-hint">detail</span></div>
+      <div class="d-summary">Execution risk crystallized: Q1 miss + satellite failure challenge 2026 deployment timeline; FCC SCS authorization received; BlueBird 8&ndash;10 mid-June Falcon 9 on track.</div>
+      <div class="digest-detail"><div class="detail-body">BlueBird-7&rsquo;s launch failure &mdash; BofA estimates ASTS will miss its 2026 satellite target by 7 units. Q1 revenue $14.7M missed expectations of $37.5M by 61%. Company received FCC SCS authorization for commercial U.S. service. FY26 guidance $150&ndash;200M maintained. The satellite loss is a delay, not a death knell, but confirms execution risk is real.</div><div class="detail-snippet">&ldquo;The BlueBird-7 launch failure raises execution risks for ASTS, with BofA estimating a 7-unit miss against its 2026 satellite target.&rdquo; &mdash; StockTwits/TradingKey, May 2026</div></div>
+    </div>
+
+    <div class="digest-row" onclick="toggleDetail(this)">
+      <div class="digest-top"><span class="impact-pill impact-3">3 &#128993;</span><span class="d-ticker">SIVE</span><span class="list-badge badge-watchlist">WATCHLIST</span><span class="cat-tag">filing</span><span class="d-headline">Q1 results delayed to May 29; stock +13.18% today on continued MSCI inclusion momentum</span><span class="expand-hint">detail</span></div>
+      <div class="d-summary">Delay tied to PCAOB audit for Nasdaq NY dual listing; 8.62M share capital raise approved; LiDAR customer Q4 2026 ramp remains primary catalyst.</div>
+      <div class="digest-detail"><div class="detail-body">Sivers postponed Q1 results to May 29 due to PCAOB audit requirements for Nasdaq NY dual listing. MSCI Sweden Global Small Cap inclusion (effective May 29) continues to drive passive buying. Score: 5.5/10 (Average) with explicit low-confidence flag &mdash; sub-12-month cash runway and governance risks remain the primary bear case.</div><div class="detail-snippet">&ldquo;Sivers postponed its Q1 report to May 29...scrubbing its books to meet U.S. listing requirements.&rdquo; &mdash; ts2.tech, May 2026</div></div>
+    </div>
+
+    <div class="digest-row" onclick="toggleDetail(this)">
+      <div class="digest-top"><span class="impact-pill impact-3">3 &#128993;</span><span class="d-ticker">AXTI</span><span class="list-badge badge-watchlist">WATCHLIST</span><span class="cat-tag">filing</span><span class="d-headline">Annual meeting adjourned for lack of quorum; reset June 4; stock pre-market +3% at $116.31</span><span class="expand-hint">detail</span></div>
+      <div class="d-summary">Quorum failure reflects retail dispersal post $632M equity raise; proxy solicitor hired; InP $100M+ backlog and AI demand thesis unchanged.</div>
+      <div class="digest-detail"><div class="detail-body">Annual meeting adjourned for lack of quorum; reset to June 4. Proxy solicitor hired. No change to InP backlog fundamentals &mdash; record $100M+ backlog and end-2026 capacity doubling on track.</div><div class="detail-snippet">&ldquo;The 2026 annual meeting for AXTI was adjourned for lack of quorum and reset to 2026/06/04.&rdquo; &mdash; StocksToTrade, May 2026</div></div>
+    </div>
+
+    <div class="digest-row" onclick="toggleDetail(this)">
+      <div class="digest-top"><span class="impact-pill impact-3">3 &#128993;</span><span class="d-ticker">LASR</span><span class="list-badge badge-watchlist">WATCHLIST</span><span class="cat-tag">analyst</span><span class="d-headline">Raymond James raises PT to $100 from $75 (street high); YTD +90%; all-time high $86.95</span><span class="expand-hint">detail</span></div>
+      <div class="d-summary">New street-high PT; funded A&amp;D backlog $162M; 8 analysts Strong Buy; HADES platform thesis playing out.</div>
+      <div class="digest-detail"><div class="detail-body">Raymond James raised their target to $100 from $75 &mdash; new street-high. Funded backlog $162M, Q1 2026 EPS beat 158% vs consensus, and the HADES directed energy platform launch (May 7). YTD +90% confirms market is repricing LASR as a defense platform company.</div><div class="detail-snippet">&ldquo;Raymond James raised their target to $100 from $75...nLIGHT, Inc. has showed a year-to-date surge of over 90%.&rdquo; &mdash; Tickeron, May 2026</div></div>
+    </div>
+
+    <div class="digest-row" onclick="toggleDetail(this)"><div class="digest-top"><span class="impact-pill impact-2">2 &CircleDot;</span><span class="d-ticker">MELI</span><span class="list-badge badge-portfolio">PORTFOLIO</span><span class="cat-tag">analyst</span><span class="d-headline">JPMorgan cuts PT $2,100&rarr;$1,900; Goldman cuts $2,440&rarr;$2,100 on margin compression</span><span class="expand-hint">detail</span></div><div class="d-summary">Stock stabilizing at $1,598; 21 analysts still Buy; Q1 EPS miss appears digested.</div><div class="digest-detail"><div class="detail-body">JPMorgan and Goldman trimmed targets on Q1 margin compression but 21 analysts maintain Buy. Stock at $1,598 finding floor. Margin compression reflects deliberate investment consistent with MELI playbook.</div><div class="detail-snippet">JPM PT $2,100&rarr;$1,900; GS PT $2,440&rarr;$2,100. 21 analysts Buy. Stock $1,598.</div></div></div>
+    <div class="digest-row" onclick="toggleDetail(this)"><div class="digest-top"><span class="impact-pill impact-2">2 &CircleDot;</span><span class="d-ticker">OKLO</span><span class="list-badge badge-portfolio">PORTFOLIO</span><span class="cat-tag">filing</span><span class="d-headline">New equity distribution agreement signed with 9 major banks (May 13) &mdash; ATM offering ready</span><span class="expand-hint">detail</span></div><div class="d-summary">ATM infrastructure in place; stock down 20% past week post Wolfe hold initiation; pre-revenue; NRC COLA still pending.</div><div class="digest-detail"><div class="detail-body">Oklo signed a new equity distribution agreement with 9 major banks, establishing ATM offering infrastructure. Combined with Wolfe&rsquo;s Peerperform initiation (fair value ~$61) on May 19, this signals potential near-term dilution risk. NRC COLA decision and first commercial PPA remain the key derisking milestones.</div><div class="detail-snippet">New EDA with 9 banks (May 13). ATM offering infrastructure ready. Stock &ndash;20% past week. NRC COLA still pending.</div></div></div>
+    <div class="digest-row" onclick="toggleDetail(this)"><div class="digest-top"><span class="impact-pill impact-2">2 &CircleDot;</span><span class="d-ticker">IREN</span><span class="list-badge badge-portfolio">PORTFOLIO</span><span class="cat-tag">quiet</span><span class="d-headline">No fresh news; stock at $47.94; digesting $3B convert + Awaken/Mirantis acquisitions</span><span class="expand-hint">detail</span></div><div class="d-summary">Stock consolidating; NVDA earnings tonight are the primary near-term read-through for IREN&rsquo;s AI Cloud thesis.</div><div class="digest-detail"><div class="detail-body">IREN at $47.94, digesting Awaken AI + Mirantis Kubernetes + $3B convertible notes from May 19. NVDA Q1 earnings tonight are the most relevant cross-ticker catalyst.</div><div class="detail-snippet">IREN at $47.94. No fresh news. NVDA earnings tonight = primary read-through.</div></div></div>
+    <div class="digest-row" onclick="toggleDetail(this)"><div class="digest-top"><span class="impact-pill impact-2">2 &CircleDot;</span><span class="d-ticker">RBRK</span><span class="list-badge badge-portfolio">PORTFOLIO</span><span class="cat-tag">analyst</span><span class="d-headline">PICTET added 1.7M shares (+104%); stock at $65.96; 11 analysts rate Buy</span><span class="expand-hint">detail</span></div><div class="d-summary">Institutional accumulation positive signal; no fresh catalyst today.</div><div class="digest-detail"><div class="detail-body">PICTET increased its RBRK position by 104% (1.7M shares in Q1 2026). At $65.96, maintains 11-analyst Buy consensus. Next meaningful validation: earnings call with ARR growth as key metric.</div><div class="detail-snippet">PICTET +1.7M shares (+104%) in Q1 2026. RBRK $65.96. 11 analysts Buy.</div></div></div>
+    <div class="digest-row" onclick="toggleDetail(this)"><div class="digest-top"><span class="impact-pill impact-2">2 &CircleDot;</span><span class="d-ticker">AEHR</span><span class="list-badge badge-portfolio">PORTFOLIO</span><span class="cat-tag">earnings</span><span class="d-headline">Bookings raised to high end of $60&ndash;80M H2 FY2026; profitability return Q4 expected; next earnings Jul 14</span><span class="expand-hint">detail</span></div><div class="d-summary">Stock at $82; book-to-bill &gt;3.5x; SiC demand recovering ahead of schedule.</div><div class="digest-detail"><div class="detail-body">Aehr raised bookings to high end $60&ndash;80M H2 FY2026 with book-to-bill &gt;3.5x &mdash; SiC demand recovering ahead of schedule. Q4 profitability guided. Next earnings Jul 14.</div><div class="detail-snippet">Bookings high end $80M. Book-to-bill &gt;3.5x. Q4 profitability guided. Next earnings Jul 14.</div></div></div>
+    <div class="digest-row" onclick="toggleDetail(this)"><div class="digest-top"><span class="impact-pill impact-2">2 &CircleDot;</span><span class="d-ticker">AAOI</span><span class="list-badge badge-watchlist">WATCHLIST</span><span class="cat-tag">earnings</span><span class="d-headline">Q1 revenue $151.1M +51% YoY but EPS missed; stock pulled back from $233 all-time high</span><span class="expand-hint">detail</span></div><div class="d-summary">$324M in 800G/1.6T firm orders intact; watching NVDA tonight for optical read-through.</div><div class="digest-detail"><div class="detail-body">AAOI Q1: $151.1M +51% YoY but EPS missed. $324M firm orders intact. Stock below $233 ATH. NVDA earnings tonight = primary read-through.</div><div class="detail-snippet">AAOI Q1: $151.1M +51% YoY. EPS missed. $324M orders. Watch NVDA tonight.</div></div></div>
+    <div class="digest-row" onclick="toggleDetail(this)"><div class="digest-top"><span class="impact-pill impact-2">2 &CircleDot;</span><span class="d-ticker">COHR</span><span class="list-badge badge-watchlist">WATCHLIST</span><span class="cat-tag">quiet</span><span class="d-headline">Stock at $362.88, down from $413 ATH May 13; no fresh news today</span><span class="expand-hint">detail</span></div><div class="d-summary">Digesting Q3 beat + NVIDIA $2B equity investment; watching NVDA print tonight as primary order cadence signal.</div><div class="digest-detail"><div class="detail-body">COHR at $362.88, consolidating from $413 ATH post-Q3 beat. NVIDIA $2B equity investment confirmed strategic supplier status. Q4 guidance $1.91B&ndash;$2.05B. NVDA tonight calibrates 800G/1.6T transceiver order cadence (D&amp;C = 75% of COHR revenue).</div><div class="detail-snippet">COHR at $362.88. NVDA print tonight = primary order cadence signal.</div></div></div>
+    <div class="digest-row" onclick="toggleDetail(this)"><div class="digest-top"><span class="impact-pill impact-2">2 &CircleDot;</span><span class="d-ticker">LITE</span><span class="list-badge badge-watchlist">WATCHLIST</span><span class="cat-tag">quiet</span><span class="d-headline">Stock recovering to $893 after Nasdaq-100 inclusion dip; no fresh news today</span><span class="expand-hint">detail</span></div><div class="d-summary">Nasdaq-100 inclusion (May 18) drove &ndash;8.83% profit-taking; under-shipping demand 30%; sole 200G EML supplier thesis intact.</div><div class="digest-detail"><div class="detail-body">LITE recovering to $893 from &ndash;8.83% post-inclusion dip. 6 analyst PT hikes (Loop $1,400 high). Under-shipping demand ~30% confirms pricing power. NVDA tonight = direct read-through on EML order pace.</div><div class="detail-snippet">LITE recovering to $893. 6 analyst PT hikes. Under-shipping demand 30%. Watch NVDA tonight.</div></div></div>
+    <div class="digest-row" onclick="toggleDetail(this)"><div class="digest-top"><span class="impact-pill impact-2">2 &CircleDot;</span><span class="d-ticker">HOOD</span><span class="list-badge badge-watchlist">WATCHLIST</span><span class="cat-tag">product</span><span class="d-headline">Presented at JPMorgan TMC conference May 19; Q2 guidance EPS $0.45, rev $1.23B</span><span class="expand-hint">detail</span></div><div class="d-summary">Management signaling earnings recovery; stock at $74.16. No wiki page &mdash; run /add-ticker HOOD to onboard.</div><div class="digest-detail"><div class="detail-body">Robinhood at JPMorgan TMC; guided Q2: $0.45 EPS, $1.234B rev. GraniteShares autocallable ETF on HOOD. Stock $74.16. Note: No HOOD wiki page &mdash; run /add-ticker HOOD to onboard.</div><div class="detail-snippet">HOOD Q2 guidance $0.45 EPS / $1.234B rev. Stock $74.16.</div></div></div>
+    <div class="digest-row" onclick="toggleDetail(this)"><div class="digest-top"><span class="impact-pill impact-2">2 &CircleDot;</span><span class="d-ticker">FN</span><span class="list-badge badge-watchlist">WATCHLIST</span><span class="cat-tag">quiet</span><span class="d-headline">Stock recovered to $686.45; no fresh news beyond Q3 earnings digestion</span><span class="expand-hint">detail</span></div><div class="d-summary">Fourth consecutive beat; watching NVDA print tonight for 800G&rarr;1.6T manufacturing ramp read-through.</div><div class="digest-detail"><div class="detail-body">FN at $686.45. Q3: $1.214B +39% YoY. Q4 guidance $1.25B&ndash;$1.29B. NVDA tonight = primary read-through for 800G&rarr;1.6T ramp through Thailand fabs.</div><div class="detail-snippet">FN at $686.45. Q3 $1.214B +39% YoY. Q4 $1.25B&ndash;$1.29B. Watch NVDA tonight.</div></div></div>
+    <div class="digest-row" onclick="toggleDetail(this)"><div class="digest-top"><span class="impact-pill impact-2">2 &CircleDot;</span><span class="d-ticker">CIEN</span><span class="list-badge badge-watchlist">WATCHLIST</span><span class="cat-tag">product</span><span class="d-headline">GeoMesh Extreme + WaveLogic 6 Extreme commercial activation with Matrix Networks</span><span class="expand-hint">detail</span></div><div class="d-summary">Minor product news; stock at $544.68; Q2 FY2026 earnings June 4.</div><div class="digest-detail"><div class="detail-body">Ciena activated GeoMesh Extreme and WL6e with Matrix Networks. No fresh analyst action. Backlog ~$7B. Next earnings Q2 FY2026 June 4 before open.</div><div class="detail-snippet">CIEN: WL6e activated. Stock $544.68. Next earnings June 4.</div></div></div>
+    <div class="digest-row" onclick="toggleDetail(this)"><div class="digest-top"><span class="impact-pill impact-2">2 &CircleDot;</span><span class="d-ticker">VIAV</span><span class="list-badge badge-watchlist">WATCHLIST</span><span class="cat-tag">filing</span><span class="d-headline">Board committee update; Joanne Solomon appointed Audit Committee chair</span><span class="expand-hint">detail</span></div><div class="d-summary">Routine governance; no business-impact news today.</div><div class="digest-detail"><div class="detail-body">Routine governance change &mdash; Joanne Solomon appointed Audit Committee chair. No impact on AI test &amp; measurement thesis.</div><div class="detail-snippet">VIAV: Routine governance. No business-impact news.</div></div></div>
+    <div class="digest-row" onclick="toggleDetail(this)"><div class="digest-top"><span class="impact-pill impact-2">2 &CircleDot;</span><span class="d-ticker">LWLG</span><span class="list-badge badge-watchlist">WATCHLIST</span><span class="cat-tag">quiet</span><span class="d-headline">Annual meeting tomorrow (May 21); routine governance agenda &mdash; no commercialization update expected</span><span class="expand-hint">detail</span></div><div class="d-summary">Director elections + auditor ratification; pre-revenue; 2027 production ramp is the binary catalyst.</div><div class="digest-detail"><div class="detail-body">Annual meeting May 21. Routine agenda. Pre-revenue; ~$70M cash runway. Key watch: Stage 3 &rarr; production commitment from 4 design-win customers would trigger significant re-rating.</div><div class="detail-snippet">LWLG: Annual meeting May 21. No commercialization update expected.</div></div></div>
+
   </div>
-
-  <div class="digest-feed">
-
-    <!-- POET 5 -->
-    <div class="digest-row" onclick="toggleDetail(this)">
-      <div class="digest-row-main">
-        <span class="impact-pill impact-5">5</span>
-        <span class="digest-ticker">POET</span>
-        <span class="watchlist-badge">WATCHLIST</span>
-        <span class="cat-tag">product</span>
-        <span class="digest-headline">POET signs $500M Lumilens AI deal; stock +114% past week — thesis reversal</span>
-      </div>
-      <div class="digest-summary">Replacement customer found; $50M initial PO with engineering samples targeted late 2026</div>
-      <div class="digest-detail">
-        <p>Lumilens signed a $500M AI infrastructure deal with POET Technologies with an initial $50M purchase order and engineering samples targeted for late 2026. This followed the devastating Celestial AI/Marvell cancellation and federal securities class action lawsuits, driving the stock up 114.72% in a week. Key risks remain: lawsuits ongoing, CFO retiring, and Lumilens is a new unproven customer. Engineering samples — not production orders — are the late-2026 milestone. Highly speculative upside, not confirmed revenue.</p>
-        <div class="digest-snippet">"The stock surged 114.72% in the past week alone after announcing a $500 million AI infrastructure deal with Lumilens. The deal carries an initial $50 million purchase order and engineering samples targeted for late 2026." (24/7 Wall St., May 2026)</div>
-      </div>
-    </div>
-
-    <!-- NVDA 5 -->
-    <div class="digest-row" onclick="toggleDetail(this)">
-      <div class="digest-row-main">
-        <span class="impact-pill impact-5">5</span>
-        <span class="digest-ticker">NVDA</span>
-        <span class="watchlist-badge">WATCHLIST</span>
-        <span class="cat-tag">earnings</span>
-        <span class="digest-headline">NVIDIA Q1 FY2027 earnings after close TODAY; consensus $79.2B +79.5% YoY</span>
-      </div>
-      <div class="digest-summary">The single most market-moving event this week; result sets tone for all AI names</div>
-      <div class="digest-detail">
-        <p>NVIDIA reports Q1 FY2027 after close today. Consensus: $79.2B revenue (+79.5% YoY), $1.78 EPS (+120% YoY). Hyperscaler capex acceleration is the primary driver. Key concern: China export controls and how much they drag on reported numbers. Wedbush expects beat-and-raise. A beat-and-raise is a clear cross-ticker catalyst for COHR, LITE, IREN, FN, ANET, VRT. A miss or guide-down would reprice every AI name in the portfolio.</p>
-        <div class="digest-snippet">"Analysts are expecting NVIDIA to report earnings of $1.78 per share, up 120% year over year, on revenue of $79.2 billion...the biggest indicator that NVIDIA is poised for a fantastic quarter is that hyperscalers have continued to increase their planned capital expenditures." (Kiplinger, May 20, 2026)</div>
-      </div>
-    </div>
-
-    <!-- ASTS 4 -->
-    <div class="digest-row" onclick="toggleDetail(this)">
-      <div class="digest-row-main">
-        <span class="impact-pill impact-4">4</span>
-        <span class="digest-ticker">ASTS</span>
-        <span class="watchlist-badge">WATCHLIST</span>
-        <span class="cat-tag">product</span>
-        <span class="digest-headline">BlueBird-7 launch failure; Q1 revenue $14.7M vs $37.5M expected (–61% miss)</span>
-      </div>
-      <div class="digest-summary">Execution risk confirmed; BofA sees 7-satellite miss vs 2026 target; stock volatile $78–$90</div>
-      <div class="digest-detail">
-        <p>BlueBird-7 launch failure: BofA now estimates ASTS will miss its 2026 satellite target by 7 units. Q1 revenue $14.7M missed the $37.5M estimate by 61%, with –$0.66 EPS. Company received FCC Supplemental Coverage from Space authorization for commercial U.S. service. BlueBird 8–10 on track for mid-June Falcon 9. FY26 guidance $150–200M maintained but credibility is strained. Core thesis intact if constellation can be built — satellite loss is a delay, not death knell, but confirms execution risk is real.</p>
-        <div class="digest-snippet">"The BlueBird-7 launch failure raises execution risks for ASTS, with BofA estimating a 7-unit miss against its 2026 satellite target." (StockTwits/TradingKey, May 2026)</div>
-      </div>
-    </div>
-
-    <!-- SIVE 3 -->
-    <div class="digest-row" onclick="toggleDetail(this)">
-      <div class="digest-row-main">
-        <span class="impact-pill impact-3">3</span>
-        <span class="digest-ticker">SIVE</span>
-        <span class="watchlist-badge">WATCHLIST</span>
-        <span class="cat-tag">filing</span>
-        <span class="digest-headline">Q1 results delayed to May 29; stock +13.18% today on continued MSCI momentum</span>
-      </div>
-      <div class="digest-summary">Delay tied to PCAOB audit for Nasdaq NY listing; LiDAR customer Q4 2026 ramp remains primary catalyst</div>
-      <div class="digest-detail">
-        <p>"Sivers postponed its Q1 report to May 29...Sivers has adjusted its 2025 financials, posting a larger full-year loss and is scrubbing its books to meet U.S. listing requirements." (ts2.tech, May 2026)</p>
-      </div>
-    </div>
-
-    <!-- AXTI 3 -->
-    <div class="digest-row" onclick="toggleDetail(this)">
-      <div class="digest-row-main">
-        <span class="impact-pill impact-3">3</span>
-        <span class="digest-ticker">AXTI</span>
-        <span class="watchlist-badge">WATCHLIST</span>
-        <span class="cat-tag">filing</span>
-        <span class="digest-headline">Annual meeting adjourned for lack of quorum; reset to June 4; stock +3%</span>
-      </div>
-      <div class="digest-summary">Quorum failure; proxy solicitor hired; no change to InP backlog fundamentals</div>
-      <div class="digest-detail">
-        <p>"The 2026 annual meeting for AXTI was adjourned for lack of quorum and reset to 2026/06/04, while the company hired a proxy solicitor to chase the remaining votes." No change to fundamentals or InP substrate demand thesis.</p>
-      </div>
-    </div>
-
-    <!-- LASR 3 -->
-    <div class="digest-row" onclick="toggleDetail(this)">
-      <div class="digest-row-main">
-        <span class="impact-pill impact-3">3</span>
-        <span class="digest-ticker">LASR</span>
-        <span class="watchlist-badge">WATCHLIST</span>
-        <span class="cat-tag">analyst</span>
-        <span class="digest-headline">Raymond James raises PT to $100 from $75; YTD +90%; 8 analysts Strong Buy</span>
-      </div>
-      <div class="digest-summary">Street-high PT; funded A&D backlog $162M; HADES HEL launch reinforces defense pivot thesis</div>
-      <div class="digest-detail">
-        <p>"Raymond James raised their target to $100 from $75...nLIGHT, Inc. has showed a year-to-date surge of over 90% highlighting strong investor confidence in its repositioning toward high-margin aerospace and defense sectors." (Tickeron, May 2026)</p>
-      </div>
-    </div>
-
-    <!-- MELI 2 -->
-    <div class="digest-row" onclick="toggleDetail(this)">
-      <div class="digest-row-main">
-        <span class="impact-pill impact-2">2</span>
-        <span class="digest-ticker">MELI</span>
-        <span class="portfolio-badge">PORTFOLIO</span>
-        <span class="cat-tag">analyst</span>
-        <span class="digest-headline">JPMorgan PT $2,100→$1,900; Goldman $2,440→$2,100 on margin compression</span>
-      </div>
-      <div class="digest-summary">Stock stabilizing at $1,598; 21 analysts still Buy; Q1 EPS miss digested</div>
-      <div class="digest-detail"><p>PT cuts on margin compression; 21 of ~23 covering analysts still rate Buy. Stock at $1,598 finding floor after Q1 selloff. Deliberate investment-phase spending, not competitive deterioration.</p></div>
-    </div>
-
-    <!-- OKLO 2 -->
-    <div class="digest-row" onclick="toggleDetail(this)">
-      <div class="digest-row-main">
-        <span class="impact-pill impact-2">2</span>
-        <span class="digest-ticker">OKLO</span>
-        <span class="portfolio-badge">PORTFOLIO</span>
-        <span class="cat-tag">filing</span>
-        <span class="digest-headline">New equity distribution agreement signed with 9 major banks (May 13)</span>
-      </div>
-      <div class="digest-summary">Replaces prior EDA; ATM infrastructure in place; stock –20% past week</div>
-      <div class="digest-detail"><p>New EDA with Goldman, BofA, Citi, JPMorgan, Morgan Stanley, Barclays and others. At-the-market offering capacity established. Stock down 20% in the past week following Wolfe hold initiation at ~$61 fair value. Pre-revenue; NRC COLA still pending.</p></div>
-    </div>
-
-    <!-- IREN 2 -->
-    <div class="digest-row" onclick="toggleDetail(this)">
-      <div class="digest-row-main">
-        <span class="impact-pill impact-2">2</span>
-        <span class="digest-ticker">IREN</span>
-        <span class="portfolio-badge">PORTFOLIO</span>
-        <span class="cat-tag">quiet</span>
-        <span class="digest-headline">No fresh news; stock at $47.94; digesting Awaken/Mirantis + $3B convert</span>
-      </div>
-      <div class="digest-summary">Consolidating after major May 19 announcements</div>
-      <div class="digest-detail"><p>No material new developments today. Stock at $47.94. Market digesting yesterday's Awaken acquisition, Mirantis acquisition, and $3B convertible notes offering.</p></div>
-    </div>
-
-    <!-- RBRK 2 -->
-    <div class="digest-row" onclick="toggleDetail(this)">
-      <div class="digest-row-main">
-        <span class="impact-pill impact-2">2</span>
-        <span class="digest-ticker">RBRK</span>
-        <span class="portfolio-badge">PORTFOLIO</span>
-        <span class="cat-tag">analyst</span>
-        <span class="digest-headline">PICTET added 1.7M shares (+104%); stock at $65.96</span>
-      </div>
-      <div class="digest-summary">Institutional accumulation positive signal; no fresh catalyst today</div>
-      <div class="digest-detail"><p>PICTET added 1.7M shares (+104%) in Q1 2026. Stock at $65.96. 11 analysts rate Buy. No fresh company-specific catalyst today beyond continued post-earnings re-rating.</p></div>
-    </div>
-
-    <!-- AEHR 2 -->
-    <div class="digest-row" onclick="toggleDetail(this)">
-      <div class="digest-row-main">
-        <span class="impact-pill impact-2">2</span>
-        <span class="digest-ticker">AEHR</span>
-        <span class="portfolio-badge">PORTFOLIO</span>
-        <span class="cat-tag">earnings</span>
-        <span class="digest-headline">Bookings raised to high end of $60–80M H2 FY2026; Q4 profitability expected</span>
-      </div>
-      <div class="digest-summary">Book-to-bill >3.5x; next earnings Jul 14</div>
-      <div class="digest-detail"><p>Same fundamentals as yesterday. Book-to-bill >3.5x remains key forward indicator. Stock at $82. Profitability return expected Q4. Earnings Jul 14.</p></div>
-    </div>
-
-    <!-- Remaining impact-2 tickers (condensed) -->
-    <div class="digest-row" onclick="toggleDetail(this)">
-      <div class="digest-row-main"><span class="impact-pill impact-2">2</span><span class="digest-ticker">AAOI</span><span class="watchlist-badge">WATCHLIST</span><span class="cat-tag">earnings</span><span class="digest-headline">Q1 $151.1M +51% YoY but EPS missed; stock pulled back from $233 ATH</span></div>
-      <div class="digest-summary">$324M in 800G/1.6T orders firm; watching NVDA print for optical read-through</div>
-      <div class="digest-detail"><p>Strong order book ($324M in 800G/1.6T) intact; no fresh news today. NVDA earnings tonight is the read-through catalyst for all optical names.</p></div>
-    </div>
-    <div class="digest-row" onclick="toggleDetail(this)">
-      <div class="digest-row-main"><span class="impact-pill impact-2">2</span><span class="digest-ticker">COHR</span><span class="watchlist-badge">WATCHLIST</span><span class="cat-tag">quiet</span><span class="digest-headline">Stock at $362.88, down from $413 ATH May 13; no fresh news</span></div>
-      <div class="digest-summary">Digesting strong Q3 earnings; watching NVDA print tonight</div>
-      <div class="digest-detail"><p>No material news today. Stock $362.88, down from $413 all-time high May 13. Watching NVDA earnings tonight as primary read-through signal.</p></div>
-    </div>
-    <div class="digest-row" onclick="toggleDetail(this)">
-      <div class="digest-row-main"><span class="impact-pill impact-2">2</span><span class="digest-ticker">LITE</span><span class="watchlist-badge">WATCHLIST</span><span class="cat-tag">quiet</span><span class="digest-headline">Stock recovering to $893 after Nasdaq-100 inclusion dip; no fresh news</span></div>
-      <div class="digest-summary">Same fundamentals; watching NVDA print tonight</div>
-      <div class="digest-detail"><p>No material news today. Stock recovered to $893 after Nasdaq-100 inclusion-related volatility. NVIDIA $2B investment + EML sole-source position intact.</p></div>
-    </div>
-    <div class="digest-row" onclick="toggleDetail(this)">
-      <div class="digest-row-main"><span class="impact-pill impact-2">2</span><span class="digest-ticker">HOOD</span><span class="watchlist-badge">WATCHLIST</span><span class="cat-tag">product</span><span class="digest-headline">JPMorgan TMC conference May 19; Q2 guidance EPS $0.45, rev $1.23B</span></div>
-      <div class="digest-summary">Management signaling earnings recovery; GraniteShares autocallable ETF launched</div>
-      <div class="digest-detail"><p>Management at JPMorgan TMC projecting Q2 earnings recovery. New GraniteShares autocallable ETF launched on HOOD platform. Stock at $74.16.</p></div>
-    </div>
-    <div class="digest-row" onclick="toggleDetail(this)">
-      <div class="digest-row-main"><span class="impact-pill impact-2">2</span><span class="digest-ticker">FN</span><span class="watchlist-badge">WATCHLIST</span><span class="cat-tag">quiet</span><span class="digest-headline">Stock recovered to $686; watching NVDA print for read-through</span></div>
-      <div class="digest-summary">Fourth consecutive beat; NVDA earnings tonight is primary signal</div>
-      <div class="digest-detail"><p>No material news. Stock at $686.45, recovering from post-Q3 earnings drop. Fourth consecutive beat. NVDA print tonight is the primary read-through for order cadence.</p></div>
-    </div>
-    <div class="digest-row" onclick="toggleDetail(this)">
-      <div class="digest-row-main"><span class="impact-pill impact-2">2</span><span class="digest-ticker">CIEN</span><span class="watchlist-badge">WATCHLIST</span><span class="cat-tag">product</span><span class="digest-headline">GeoMesh Extreme + WaveLogic 6 Extreme commercial activation with Matrix Networks</span></div>
-      <div class="digest-summary">Minor product news; stock at $544; no fresh analyst action</div>
-      <div class="digest-detail"><p>Commercial activation of GeoMesh Extreme and WaveLogic 6 Extreme with Matrix Networks. Minor product news. Stock at $544.68.</p></div>
-    </div>
-    <div class="digest-row" onclick="toggleDetail(this)">
-      <div class="digest-row-main"><span class="impact-pill impact-2">2</span><span class="digest-ticker">VIAV</span><span class="watchlist-badge">WATCHLIST</span><span class="cat-tag">filing</span><span class="digest-headline">Board committee update; Joanne Solomon appointed Audit Committee chair</span></div>
-      <div class="digest-summary">Routine governance; no business-impact news</div>
-      <div class="digest-detail"><p>Routine governance update. Joanne Solomon takes Audit Committee chair. No business-impact news.</p></div>
-    </div>
-    <div class="digest-row" onclick="toggleDetail(this)">
-      <div class="digest-row-main"><span class="impact-pill impact-2">2</span><span class="digest-ticker">LWLG</span><span class="watchlist-badge">WATCHLIST</span><span class="cat-tag">quiet</span><span class="digest-headline">Annual meeting tomorrow (May 21); routine agenda</span></div>
-      <div class="digest-summary">Director elections + auditor ratification; no commercialization update expected</div>
-      <div class="digest-detail"><p>Annual meeting May 21. Routine agenda: director elections and auditor ratification. No commercialization milestone expected.</p></div>
-    </div>
-
-  </div><!-- /digest-feed -->
 </div>
 
-<!-- ══════════════════════════════════════════════════════
-     TAB 3: WATCHLIST
-══════════════════════════════════════════════════════ -->
-<div id="tab-watchlist" class="tab-content">
-  <div class="section-header">
-    <h2>Watchlist — Monitored Names</h2>
-    <p>Portfolio positions (OKLO, RBRK, MELI, AEHR, IREN) are in the Portfolio tab. Names below are tracked but not held.</p>
+<div id="tab-watchlist" class="tab-content" style="display:none">
+  <div class="section-header"><h2>Watchlist &mdash; Monitored Names</h2><div class="sub">Portfolio positions excluded (Tab 1) &middot; Grouped by sector &middot; Drift status from KB</div></div>
+
+  <div class="sector-group"><div class="sector-title">Photonics &amp; Optical</div>
+    <div class="wl-row"><span class="wl-ticker">COHR</span><span class="wl-company">Coherent Corp</span><span class="drift-pill dp-on">On track</span><span class="wl-thesis">Volume leader in optical transceivers &mdash; NVIDIA anchor customer, ~25% market share, gross margin expanding 3 consecutive quarters; NVIDIA $2B equity stake confirms strategic supplier status</span><span class="wl-log">2026-05-12 &mdash; Q3 FY2026: Revenue $1.81B (+21% YoY), Non-GAAP EPS $1.41 (+55%), NVIDIA $2B equity investment; Q4 guidance $1.91B&ndash;$2.05B</span></div>
+    <div class="wl-row"><span class="wl-ticker">LITE</span><span class="wl-company">Lumentum Holdings</span><span class="drift-pill dp-on">On track</span><span class="wl-thesis">Sole 200G EML supplier at volume; $400M+ OCS backlog sold out through 2027; Nasdaq-100 member; under-shipping demand by 30% confirms pricing power</span><span class="wl-log">2026-05-19 &mdash; Nasdaq-100 inclusion; stock &ndash;8.83% post-inclusion; 6 analyst PT hikes (Loop $1,400 high); under-shipping demand 30%</span></div>
+    <div class="wl-row"><span class="wl-ticker">FN</span><span class="wl-company">Fabrinet</span><span class="drift-pill dp-none">Not tracked</span><span class="wl-thesis">Contract manufacturer for the entire optical transceiver supply chain &mdash; royalty on 800G/1.6T volume ramp (24M &rarr; 63M+ units in 2026); Q3 revenue $1.214B +39% YoY</span><span class="wl-log">2026-05-14 &mdash; stock-research run. Q3 beat; Q4 guidance $1.25B&ndash;$1.29B; $32M Raytec investment for CPO</span></div>
+    <div class="wl-row"><span class="wl-ticker">CIEN</span><span class="wl-company">Ciena Corporation</span><span class="drift-pill dp-none">Not tracked</span><span class="wl-thesis">Coherent optical networking systems backbone &mdash; WaveLogic 6 Extreme + 3.2T prototype at OFC 2026; FY2026 guidance $5.9B&ndash;$6.3B; next earnings June 4</span><span class="wl-log">2026-05-14 &mdash; stock-research run. Q1 FY2026: $1.43B +33% YoY. FY2026 guidance $5.9B&ndash;$6.3B</span></div>
+    <div class="wl-row"><span class="wl-ticker">VIAV</span><span class="wl-company">Viavi Solutions</span><span class="drift-pill dp-none">Not tracked</span><span class="wl-thesis">Picks-and-shovels on AI optical buildout &mdash; test &amp; measurement + thin-film coatings; DC now ~50% of NSE revenue</span><span class="wl-log">2026-05-20 &mdash; Joanne Solomon appointed Audit Committee chair; routine governance</span></div>
+    <div class="wl-row"><span class="wl-ticker">AAOI</span><span class="wl-company">Applied Optoelectronics</span><span class="drift-pill dp-on">On track</span><span class="wl-thesis">High-beta optical interconnect pure play with first real 1.6T production orders &mdash; +328% YTD; highest sector upside with meaningful execution risk</span><span class="wl-log">2026-05-14 &mdash; stock-research run. Q1 2026: first 800G volume shipment to large hyperscaler confirmed; Q2 guided $150M&ndash;$165M</span></div>
+    <div class="wl-row"><span class="wl-ticker">SIVE</span><span class="wl-company">Sivers Semiconductors</span><span class="drift-pill dp-none">Not tracked</span><span class="wl-thesis">Dual-division micro-cap at CPO laser + mmWave/5G/defense &mdash; score 5.5/10 &#9888; Low confidence; sub-12-month cash runway; Q1 results May 29</span><span class="wl-log">2026-05-19 &mdash; MSCI Sweden inclusion; +31.3% then &ndash;5.49%; PCAOB audit underway; 8.62M share private placement</span></div>
+    <div class="wl-row"><span class="wl-ticker">AXTI</span><span class="wl-company">AXT Inc.</span><span class="drift-pill dp-none">Not tracked</span><span class="wl-thesis">InP wafer substrate chokepoint &mdash; record $100M+ backlog; capacity doubling end-2026; NVIDIA pre-allocation cascades to substrate layer; +611% YTD</span><span class="wl-log">2026-05-20 &mdash; Annual meeting adjourned quorum failure; reset June 4; InP backlog thesis unchanged</span></div>
+    <div class="wl-row"><span class="wl-ticker">POET</span><span class="wl-company">POET Technologies</span><span class="drift-pill dp-none">Not tracked</span><span class="wl-thesis">CPO optical engine pure play &mdash; $500M Lumilens deal (May 20) offsets Celestial AI cancellation; $50M initial PO; +114% past week; highly speculative</span><span class="wl-log">2026-05-20 &mdash; Lumilens $500M deal + $50M PO; +114% past week; lawsuits ongoing; CFO retiring; HIGHLY SPECULATIVE</span></div>
+    <div class="wl-row"><span class="wl-ticker">LWLG</span><span class="wl-company">Lightwave Logic</span><span class="drift-pill dp-none">Not tracked</span><span class="wl-thesis">EO polymer modulator technology &mdash; 4x Stage 3 design-win customers; Tower Semiconductor partnership; 2027 production ramp is the binary catalyst; pre-revenue</span><span class="wl-log">2026-05-14 &mdash; stock-research run. Pre-revenue. Annual meeting May 21. No commercialization update expected</span></div>
+    <div class="wl-row"><span class="wl-ticker">LASR</span><span class="wl-company">nLIGHT Inc.</span><span class="drift-pill dp-on">On track</span><span class="wl-thesis">Vertically integrated directed energy platform (chips &rarr; complete HEL weapon systems) &mdash; HADES launched May 7; 69% A&amp;D revenue; first GAAP-profitable quarter Q1 2026; YTD +90%</span><span class="wl-log">2026-05-19 &mdash; Thesis refreshed to reflect HADES platform launch. Raymond James PT raised to $100 (street high) May 20</span></div>
   </div>
 
-  <!-- Photonics & Optical -->
-  <div class="watchlist-sector">
-    <div class="watchlist-sector-header">Photonics &amp; Optical &nbsp;·&nbsp; 11 names</div>
-    <div class="watchlist-rows">
-      <div class="watchlist-row">
-        <span class="wl-ticker">COHR</span>
-        <span class="wl-drift"><span class="drift-badge on-track">On track</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">Volume leader in optical transceivers; NVIDIA $2B anchor + ~25% market share; best risk/reward in sector at 34x</div>
-          <div class="wl-last">Drift: gross margin expanding 3 consecutive quarters; NVIDIA $2B equity investment confirms strategic supplier status · Last validated May 12</div>
-        </div>
-      </div>
-      <div class="watchlist-row">
-        <span class="wl-ticker">LITE</span>
-        <span class="wl-drift"><span class="drift-badge on-track">On track</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">Sole 200G EML supplier at volume; $400M+ OCS backlog sold out through 2027; $2B NVIDIA deal anchoring breakout year</div>
-          <div class="wl-last">Drift: sole 200G EML supplier with no viable second source; Nasdaq-100 added May 2026 · Last validated May 12</div>
-        </div>
-      </div>
-      <div class="watchlist-row">
-        <span class="wl-ticker">FN</span>
-        <span class="wl-drift"><span class="drift-badge unknown">Not set</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">Contract manufacturer behind entire optical transceiver supply chain — royalty on 800G/1.6T volume ramp (24M→63M+ units 2026)</div>
-          <div class="wl-last">Last research: stock-research run May 14 · Fourth consecutive earnings beat</div>
-        </div>
-      </div>
-      <div class="watchlist-row">
-        <span class="wl-ticker">CIEN</span>
-        <span class="wl-drift"><span class="drift-badge unknown">Not set</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">Coherent optical networking systems; 3.2T prototype at OFC 2026; WaveLogic DSP moat</div>
-          <div class="wl-last">Last research: stock-research run May 14 · GeoMesh Extreme + WaveLogic 6 commercial activation (May 20)</div>
-        </div>
-      </div>
-      <div class="watchlist-row">
-        <span class="wl-ticker">VIAV</span>
-        <span class="wl-drift"><span class="drift-badge unknown">Not set</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">Optical test &amp; measurement picks-and-shovels for AI fabric buildout; 1.6T Ethernet + silicon photonics platforms</div>
-          <div class="wl-last">Last research: stock-research run May 14 · Routine governance update today</div>
-        </div>
-      </div>
-      <div class="watchlist-row">
-        <span class="wl-ticker">AAOI</span>
-        <span class="wl-drift"><span class="drift-badge unknown">Not set</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">Sector YTD leader (+328%); first 1.6T production orders; high-beta pure-play on optical transceiver upgrade cycle</div>
-          <div class="wl-last">Q1 $151.1M +51% YoY; $324M in 800G/1.6T orders firm · Last research May 14</div>
-        </div>
-      </div>
-      <div class="watchlist-row">
-        <span class="wl-ticker">AXTI</span>
-        <span class="wl-drift"><span class="drift-badge unknown">Not set</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">InP substrate chokepoint; record $60M backlog; doubling capacity end-2026</div>
-          <div class="wl-last">Annual meeting adjourned for lack of quorum → reset June 4 · Last research May 14</div>
-        </div>
-      </div>
-      <div class="watchlist-row">
-        <span class="wl-ticker">LWLG</span>
-        <span class="wl-drift"><span class="drift-badge unknown">Not set</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">EO polymer modulators; 4x Stage 3 design-win customers; 2027 production ramp catalyst</div>
-          <div class="wl-last">Annual meeting tomorrow May 21 — routine agenda · Last research May 14</div>
-        </div>
-      </div>
-      <div class="watchlist-row">
-        <span class="wl-ticker">LASR</span>
-        <span class="wl-drift"><span class="drift-badge on-track">On track</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">Vertically integrated directed energy platform — chips to complete HEL weapon systems (HADES); 69% A&D revenue, DoD budget ~$1B/year</div>
-          <div class="wl-last">Drift: nLIGHT completed transition to directed energy platform; HADES launch confirmed · Raymond James PT $100 (May 20)</div>
-        </div>
-      </div>
-      <div class="watchlist-row">
-        <span class="wl-ticker">SIVE</span>
-        <span class="wl-drift"><span class="drift-badge unknown">Not set</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">Dual-division micro-cap at AI data center CPO laser bottleneck + mmWave 5G/defense; early revenue, critical cash runway constraint</div>
-          <div class="wl-last">Scored 5.5 · Q1 results delayed to May 29 (PCAOB audit); stock +13% today on MSCI momentum</div>
-        </div>
-      </div>
-      <div class="watchlist-row">
-        <span class="wl-ticker">POET</span>
-        <span class="wl-drift"><span class="drift-badge drifting">Drifting</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">CPO optical engine pure play; $500M Lumilens deal (thesis reversal); $430M cash runway</div>
-          <div class="wl-last">Celestial AI/Marvell canceled all orders → Lumilens $500M deal announced; securities lawsuits ongoing; CFO retiring</div>
-        </div>
-      </div>
-    </div>
+  <div class="sector-group"><div class="sector-title">Semiconductors</div>
+    <div class="wl-row"><span class="wl-ticker">NVDA</span><span class="wl-company">NVIDIA Corporation</span><span class="drift-pill dp-none">Not tracked</span><span class="wl-thesis">AI compute platform dominant &mdash; Q1 FY2027 earnings reported post-close May 20; primary cross-ticker catalyst for entire portfolio AI stack</span><span class="wl-log">2026-05-20 &mdash; Q1 FY2027 earnings after close; consensus $79.2B +79.5% YoY; results not yet in digest</span></div>
+    <div class="wl-row"><span class="wl-ticker">MU</span><span class="wl-company">Micron Technology</span><span class="drift-pill dp-none">Not tracked</span><span class="wl-thesis">&mdash;</span></div>
+    <div class="wl-row"><span class="wl-ticker">MRVL</span><span class="wl-company">Marvell Technology</span><span class="drift-pill dp-none">Not tracked</span><span class="wl-thesis">&mdash;</span></div>
+    <div class="wl-row"><span class="wl-ticker">ALAB</span><span class="wl-company">Astera Labs</span><span class="drift-pill dp-none">Not tracked</span><span class="wl-thesis">&mdash;</span></div>
+    <div class="wl-row"><span class="wl-ticker">CRDO</span><span class="wl-company">Credo Technology Group</span><span class="drift-pill dp-none">Not tracked</span><span class="wl-thesis">&mdash;</span></div>
+    <div class="wl-row"><span class="wl-ticker">AMKR</span><span class="wl-company">Amkor Technology</span><span class="drift-pill dp-none">Not tracked</span><span class="wl-thesis">&mdash;</span></div>
   </div>
 
-  <!-- Semiconductors -->
-  <div class="watchlist-sector">
-    <div class="watchlist-sector-header">Semiconductors &nbsp;·&nbsp; 6 names (excl. AEHR in Portfolio)</div>
-    <div class="watchlist-rows">
-      <div class="watchlist-row">
-        <span class="wl-ticker">NVDA</span>
-        <span class="wl-drift"><span class="drift-badge on-track">On track</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">The dominant AI compute platform; GPU monopoly in training and inference; CUDA ecosystem makes switching nearly impossible</div>
-          <div class="wl-last">Q1 FY2027 earnings TODAY after close · Consensus $79.2B +79.5% YoY · Cross-ticker catalyst for 8+ portfolio names</div>
-        </div>
-      </div>
-      <div class="watchlist-row">
-        <span class="wl-ticker">ALAB</span>
-        <span class="wl-drift"><span class="drift-badge on-track">On track</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">Pure-play AI connectivity semiconductor; PCIe/CXL retimers and Scorpio scale-up switches keeping GPU clusters from becoming bandwidth-bottlenecked</div>
-          <div class="wl-last">Scorpio X-Series 320-lane shipping to hyperscalers; Leo CXL live on Azure; Q2 guide $355–365M · Deep monitor May 20</div>
-        </div>
-      </div>
-      <div class="watchlist-row">
-        <span class="wl-ticker">MU</span>
-        <span class="wl-drift"><span class="drift-badge unknown">Not set</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">HBM and SSD supplier; ~30% of GPU BOM is HBM3E — NVDA demand beat flows straight through to MU allocation and pricing</div>
-          <div class="wl-last">Last research: stock-research run May 14</div>
-        </div>
-      </div>
-      <div class="watchlist-row">
-        <span class="wl-ticker">MRVL</span>
-        <span class="wl-drift"><span class="drift-badge unknown">Not set</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">Marvell SerDes and DSP chips connect GPUs — sustained Blackwell demand extends the interconnect design-win cycle</div>
-          <div class="wl-last">Last research: stock-research run May 14</div>
-        </div>
-      </div>
-      <div class="watchlist-row">
-        <span class="wl-ticker">CRDO</span>
-        <span class="wl-drift"><span class="drift-badge unknown">Not set</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">Active electrical cable (AEC) silicon for high-speed AI fabric interconnects</div>
-          <div class="wl-last">Last research: stock-research run May 14</div>
-        </div>
-      </div>
-      <div class="watchlist-row">
-        <span class="wl-ticker">AMKR</span>
-        <span class="wl-drift"><span class="drift-badge unknown">Not set</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">Advanced semiconductor packaging; beneficiary of chiplet and heterogeneous integration trend</div>
-          <div class="wl-last">Last research: stock-research run May 14</div>
-        </div>
-      </div>
-    </div>
+  <div class="sector-group"><div class="sector-title">AI Infrastructure</div>
+    <div class="wl-row"><span class="wl-ticker">ANET</span><span class="wl-company">Arista Networks</span><span class="drift-pill dp-none">Not tracked</span><span class="wl-thesis">&mdash;</span></div>
+    <div class="wl-row"><span class="wl-ticker">VRT</span><span class="wl-company">Vertiv Holdings</span><span class="drift-pill dp-none">Not tracked</span><span class="wl-thesis">&mdash;</span></div>
+    <div class="wl-row"><span class="wl-ticker">SMCI</span><span class="wl-company">Super Micro Computer</span><span class="drift-pill dp-none">Not tracked</span><span class="wl-thesis">&mdash;</span></div>
+    <div class="wl-row"><span class="wl-ticker">P</span><span class="wl-company">Everpure Inc. (fka Pure Storage)</span><span class="drift-pill dp-none">Not tracked</span><span class="wl-thesis">&mdash;</span></div>
   </div>
 
-  <!-- AI Infrastructure -->
-  <div class="watchlist-sector">
-    <div class="watchlist-sector-header">AI Infrastructure &nbsp;·&nbsp; 4 names (excl. IREN in Portfolio)</div>
-    <div class="watchlist-rows">
-      <div class="watchlist-row">
-        <span class="wl-ticker">ANET</span>
-        <span class="wl-drift"><span class="drift-badge unknown">Not set</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">Cloud networking leader; AI data center Ethernet switching beneficiary; NVDA cluster build-out demand signal</div>
-          <div class="wl-last">Last research: stock-research run May 14</div>
-        </div>
-      </div>
-      <div class="watchlist-row">
-        <span class="wl-ticker">VRT</span>
-        <span class="wl-drift"><span class="drift-badge unknown">Not set</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">Liquid cooling and power infrastructure for AI data centers; every NVL72 rack needs Vertiv-scale cooling</div>
-          <div class="wl-last">Last research: stock-research run May 14</div>
-        </div>
-      </div>
-      <div class="watchlist-row">
-        <span class="wl-ticker">SMCI</span>
-        <span class="wl-drift"><span class="drift-badge unknown">Not set</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">AI server systems integrator; direct AI server demand play alongside hyperscaler GPU buildout</div>
-          <div class="wl-last">Last research: stock-research run May 14</div>
-        </div>
-      </div>
-      <div class="watchlist-row">
-        <span class="wl-ticker">P</span>
-        <span class="wl-drift"><span class="drift-badge unknown">Not set</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">Flash storage for AI inference and enterprise workloads</div>
-          <div class="wl-last">Last research: stock-research run May 14</div>
-        </div>
-      </div>
-    </div>
+  <div class="sector-group"><div class="sector-title">Space &amp; Comms</div>
+    <div class="wl-row"><span class="wl-ticker">ASTS</span><span class="wl-company">AST SpaceMobile</span><span class="drift-pill dp-none">Not tracked</span><span class="wl-thesis">Space-based cellular broadband direct to smartphones &mdash; BlueBird-7 failure today; Q1 &ndash;61% miss; thesis intact if constellation builds; execution risk confirmed as real</span><span class="wl-log">2026-05-20 &mdash; BlueBird-7 failure; Q1 $14.7M vs $37.5M est; FY26 $150&ndash;200M maintained; BlueBird 8&ndash;10 mid-June Falcon 9</span></div>
+    <div class="wl-row"><span class="wl-ticker">RKLB</span><span class="wl-company">Rocket Lab USA</span><span class="drift-pill dp-none">Not tracked</span><span class="wl-thesis">&mdash;</span></div>
   </div>
 
-  <!-- Space & Comms -->
-  <div class="watchlist-sector">
-    <div class="watchlist-sector-header">Space &amp; Comms &nbsp;·&nbsp; 2 names</div>
-    <div class="watchlist-rows">
-      <div class="watchlist-row">
-        <span class="wl-ticker">ASTS</span>
-        <span class="wl-drift"><span class="drift-badge drifting">Drifting</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">First space-based cellular broadband network connecting standard smartphones — carrier partnerships with AT&T, Verizon, Vodafone</div>
-          <div class="wl-last">BlueBird-7 failure; Q1 $14.7M vs $37.5M est (–61%); BofA 7-satellite miss; FY26 $150–200M guidance maintained</div>
-        </div>
-      </div>
-      <div class="watchlist-row">
-        <span class="wl-ticker">RKLB</span>
-        <span class="wl-drift"><span class="drift-badge unknown">Not set</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">Vertically integrated small launch + spacecraft manufacturer; Neutron development is the platform-level catalyst</div>
-          <div class="wl-last">Last research: stock-research run May 14</div>
-        </div>
-      </div>
-    </div>
+  <div class="sector-group"><div class="sector-title">Fintech &amp; E-Commerce</div>
+    <div class="wl-row"><span class="wl-ticker">HOOD</span><span class="wl-company">Robinhood Markets</span><span class="drift-pill dp-none">Not tracked</span><span class="wl-thesis">Fintech trading platform &mdash; Q2 guidance $0.45 EPS / $1.234B rev; &#9888; No wiki page &mdash; run /add-ticker HOOD to onboard</span><span class="wl-log">2026-05-20 &mdash; JPMorgan TMC conference; Q2 guidance provided; GraniteShares autocallable ETF launched; stock $74.16</span></div>
+    <div class="wl-row"><span class="wl-ticker">SOFI</span><span class="wl-company">SoFi Technologies</span><span class="drift-pill dp-none">Not tracked</span><span class="wl-thesis">&mdash;</span></div>
   </div>
 
-  <!-- Fintech -->
-  <div class="watchlist-sector">
-    <div class="watchlist-sector-header">Fintech &amp; E-Commerce &nbsp;·&nbsp; 2 names (excl. MELI in Portfolio)</div>
-    <div class="watchlist-rows">
-      <div class="watchlist-row">
-        <span class="wl-ticker">HOOD</span>
-        <span class="wl-drift"><span class="drift-badge unknown">Not set</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">Fintech trading platform expanding from commission-free brokerage into a comprehensive financial platform; crypto exposure</div>
-          <div class="wl-last">JPMorgan TMC conference; Q2 guidance $0.45 EPS, $1.23B revenue · stock at $74.16</div>
-        </div>
-      </div>
-      <div class="watchlist-row">
-        <span class="wl-ticker">SOFI</span>
-        <span class="wl-drift"><span class="drift-badge unknown">Not set</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">Digital bank + financial services platform; scored 9.0 in KB — highest scoring name in registry</div>
-          <div class="wl-last">Last research: stock-research run · Score: 9.0</div>
-        </div>
-      </div>
-    </div>
+  <div class="sector-group"><div class="sector-title">Cybersecurity</div>
+    <div class="wl-row"><span class="wl-ticker">SAIL</span><span class="wl-company">SailPoint</span><span class="drift-pill dp-none">Not tracked</span><span class="wl-thesis">&mdash;</span></div>
   </div>
 
-  <!-- Robotics -->
-  <div class="watchlist-sector">
-    <div class="watchlist-sector-header">Robotics &amp; Edge AI &nbsp;·&nbsp; 2 names</div>
-    <div class="watchlist-rows">
-      <div class="watchlist-row">
-        <span class="wl-ticker">AMBA</span>
-        <span class="wl-drift"><span class="drift-badge unknown">Not set</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">Edge AI SoC for automotive ADAS and robotics; scored 8.0 in KB</div>
-          <div class="wl-last">Score: 8.0 · Last research: stock-research run May 14</div>
-        </div>
-      </div>
-      <div class="watchlist-row">
-        <span class="wl-ticker">OUST</span>
-        <span class="wl-drift"><span class="drift-badge unknown">Not set</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">Digital lidar platform for autonomous vehicles, robotics, and smart infrastructure</div>
-          <div class="wl-last">Last research: deep monitor May 19 — Q1 2026 earnings + StereoLabs + NVIDIA integrations</div>
-        </div>
-      </div>
-    </div>
+  <div class="sector-group"><div class="sector-title">Clean Energy</div>
+    <div class="wl-row"><span class="wl-ticker">TE</span><span class="wl-company">T1 Energy Inc.</span><span class="drift-pill dp-none">Not tracked</span><span class="wl-thesis">&mdash;</span></div>
   </div>
 
-  <!-- Clean Energy -->
-  <div class="watchlist-sector">
-    <div class="watchlist-sector-header">Clean Energy &nbsp;·&nbsp; 1 name (excl. OKLO in Portfolio)</div>
-    <div class="watchlist-rows">
-      <div class="watchlist-row">
-        <span class="wl-ticker">TE</span>
-        <span class="wl-drift"><span class="drift-badge unknown">Not set</span></span>
-        <div class="wl-info">
-          <div class="wl-thesis">T1 Energy — solar + storage; AI data center power demand tailwind</div>
-          <div class="wl-last">Last research: stock-research run May 14</div>
-        </div>
-      </div>
-    </div>
+  <div class="sector-group"><div class="sector-title">Robotics &amp; Edge AI</div>
+    <div class="wl-row"><span class="wl-ticker">AMBA</span><span class="wl-company">Ambarella</span><span class="drift-pill dp-none">Not tracked</span><span class="wl-thesis">&mdash;</span></div>
+    <div class="wl-row"><span class="wl-ticker">OUST</span><span class="wl-company">Ouster</span><span class="drift-pill dp-none">Not tracked</span><span class="wl-thesis">&mdash;</span></div>
   </div>
 
 </div>
 
-<!-- ══════════════════════════════════════════════════════
-     TAB 4: SIGNALS
-══════════════════════════════════════════════════════ -->
-<div id="tab-signals" class="tab-content">
-  <div class="section-header">
-    <h2>Ecosystem Signals</h2>
-    <p>Cross-ticker implications logged in the past 7 days · Source: portfolio wiki pages + today's digest</p>
+<div id="tab-signals" class="tab-content" style="display:none">
+  <div class="section-header"><h2>Ecosystem Signals</h2><div class="sub">Cross-ticker signals from the last 7 days (since 2026-05-14) &middot; Sourced from wiki Cross-Ticker Signal tables + digest implications</div></div>
+  <div class="gap-note">&zap; NVDA Q1 FY2027 earnings reported post-close 2026-05-20 &mdash; results will update the cross-ticker signal picture for COHR, LITE, FN, IREN. Check ticker pages after next digest run.</div>
+  <div class="signals-table-wrap">
+    <table class="signals-table">
+      <thead><tr><th>Date</th><th>Source</th><th class="emits-arrow">Direction</th><th>Target(s)</th><th>Signal</th><th>Implication</th></tr></thead>
+      <tbody>
+        <tr><td class="date-cell">2026-05-20</td><td><span class="ticker-chip">NVDA</span></td><td class="emits-arrow">&rarr;</td><td><span class="ticker-chip">COHR</span><span class="ticker-chip">LITE</span><span class="ticker-chip">IREN</span><span class="ticker-chip">FN</span></td><td class="signal-text">Q1 FY2027 earnings post-close tonight &mdash; consensus $79.2B +79.5% YoY, $1.78 EPS +120%</td><td class="impl-text">Beat-and-raise extends AI infrastructure upcycle and accelerates 800G/1.6T transceiver orders; a miss would reprice all optical and AI infra names across the portfolio simultaneously</td></tr>
+        <tr><td class="date-cell">2026-05-20</td><td><span class="ticker-chip">POET</span></td><td class="emits-arrow">&rarr;</td><td><span class="ticker-chip">LITE</span><span class="ticker-chip">COHR</span></td><td class="signal-text">Lumilens $500M CPO deal signed &mdash; first major CPO contract at this order scale</td><td class="impl-text">CPO customer formation at $500M deal sizes validates optical engine market timing; de-risks the CPO investment thesis underpinning LITE&rsquo;s OCS backlog and COHR&rsquo;s next-gen product roadmap</td></tr>
+        <tr><td class="date-cell">2026-05-20</td><td><span class="ticker-chip">ASTS</span></td><td class="emits-arrow">&rarr;</td><td><span class="ticker-chip">RKLB</span></td><td class="signal-text">BlueBird-7 launch failure + Q1 revenue miss &ndash;61% vs consensus</td><td class="impl-text">Hardware execution risk in emerging space platforms is binary &mdash; RKLB&rsquo;s Neutron rocket milestones face similar timeline variability; potential negative sentiment contagion for space-related names</td></tr>
+        <tr><td class="date-cell">2026-05-19</td><td><span class="ticker-chip">NVDA</span></td><td class="emits-arrow">&rarr;</td><td><span class="ticker-chip">COHR</span></td><td class="signal-text">Named as optical module supplier in NVDA earnings preview infographic</td><td class="impl-text">NVDA demand guidance directly calibrates the 800G/1.6T transceiver order cadence driving COHR&rsquo;s D&amp;C segment (75% of revenue) &mdash; COHR is the most direct optical beneficiary of any NVDA guidance raise (Source: COHR wiki Cross-Ticker Signals table)</td></tr>
+        <tr><td class="date-cell">2026-05-19</td><td><span class="ticker-chip">NVDA</span></td><td class="emits-arrow">&rarr;</td><td><span class="ticker-chip">FN</span></td><td class="signal-text">Named as optical module manufacturer in NVDA earnings preview infographic</td><td class="impl-text">FN is a volume-based royalty on the optical supply chain &mdash; NVDA&rsquo;s demand guidance sets the pace for the 800G&rarr;1.6T manufacturing ramp through FN&rsquo;s Thailand fabs; Q4 guidance ($1.25B&ndash;$1.29B) is directly leveraged to this signal (Source: FN wiki Cross-Ticker Signals table)</td></tr>
+      </tbody>
+    </table>
   </div>
+</div>
 
-  <table class="signals-table">
-    <thead>
-      <tr>
-        <th>Date</th>
-        <th>From</th>
-        <th></th>
-        <th>To</th>
-        <th>Signal</th>
-        <th>Implication</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="sig-date">2026-05-20</td>
-        <td><span class="sig-ticker">NVDA</span></td>
-        <td><span class="sig-emits">Emits →</span></td>
-        <td><span class="sig-ticker">COHR · LITE · FN · AAOI</span></td>
-        <td>Q1 FY2027 earnings; consensus $79.2B +79.5% YoY</td>
-        <td>Optical transceiver demand is a direct function of GPU cluster buildout pace — NVDA guidance tonight sets the cadence for all photonics names.</td>
-      </tr>
-      <tr>
-        <td class="sig-date">2026-05-20</td>
-        <td><span class="sig-ticker">NVDA</span></td>
-        <td><span class="sig-emits">Emits →</span></td>
-        <td><span class="sig-ticker">IREN · VRT · ANET</span></td>
-        <td>Q1 FY2027 earnings; Blackwell cluster demand read-through</td>
-        <td>GPU shipment volume is a leading indicator for IREN AI Cloud ramp, VRT liquid cooling backlog, and ANET data center switching demand.</td>
-      </tr>
-      <tr>
-        <td class="sig-date">2026-05-20</td>
-        <td><span class="sig-ticker">NVDA</span></td>
-        <td><span class="sig-emits">Emits →</span></td>
-        <td><span class="sig-ticker">MU</span></td>
-        <td>NVDA earnings; MU identified as HBM and SSD supplier</td>
-        <td>HBM is ~30% of GPU BOM; NVDA demand beat flows directly to MU HBM3E allocation and pricing power.</td>
-      </tr>
-      <tr>
-        <td class="sig-date">2026-05-19</td>
-        <td><span class="sig-ticker">IREN</span></td>
-        <td><span class="sig-emits">Emits →</span></td>
-        <td><span class="sig-ticker">COHR · LITE · FN · AAOI</span></td>
-        <td>IREN building 2GW+ GPU-dense AI data centers with NVDA anchor</td>
-        <td>Hyperscale AI DC buildout at this power density requires enormous transceiver volumes — every MW of IREN capacity is downstream optical demand for photonics names.</td>
-      </tr>
-      <tr>
-        <td class="sig-date">2026-05-19</td>
-        <td><span class="sig-ticker">NVDA</span></td>
-        <td><span class="sig-receives">← Receives</span></td>
-        <td><span class="sig-ticker">ALAB</span></td>
-        <td>NVDA earnings event; ALAB named interconnect chip supplier</td>
-        <td>NVDA Blackwell cluster buildout drives PCIe/CXL retimer demand — NVDA guidance sets trajectory for ALAB order book and Scorpio ramp cadence.</td>
-      </tr>
-    </tbody>
-  </table>
+<div class="footer">
+  Investing Intelligence Hub &middot; Digest date 2026-05-20 &middot; Generated 2026-05-21 &middot; 5 portfolio positions &middot; 19 tickers scanned &middot; 3 high-impact alerts (NVDA &times;5, POET &times;5, ASTS &times;4) &middot; 5 cross-ticker signals
+</div>
+
 </div>
 
 <script>
-function showTab(name) {
-  document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-  document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-  document.getElementById('tab-' + name).classList.add('active');
-  document.querySelector('[data-tab="' + name + '"]').classList.add('active');
-}
-
-function toggleDetail(row) {
-  const detail = row.querySelector('.digest-detail');
-  if (detail) detail.classList.toggle('open');
-}
+  function showTab(name) {
+    document.querySelectorAll('.tab-content').forEach(function(el) { el.style.display = 'none'; });
+    document.querySelectorAll('.tab-btn').forEach(function(el) { el.classList.remove('active'); });
+    document.getElementById('tab-' + name).style.display = 'block';
+    document.querySelector('[data-tab="' + name + '"]').classList.add('active');
+  }
+  function toggleDetail(row) {
+    var detail = row.querySelector('.digest-detail');
+    if (detail) {
+      var isOpen = detail.classList.contains('open');
+      detail.classList.toggle('open', !isOpen);
+      row.classList.toggle('is-open', !isOpen);
+    }
+  }
 </script>
 </body>
 </html>
