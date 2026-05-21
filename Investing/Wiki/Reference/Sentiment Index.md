@@ -18,7 +18,7 @@
 | AMD | [[AMD]] | stub | 2 | 2026-05-18 |
 | AMZN | [[AMZN]] | stub | 2 | 2026-05-18 |
 | COHR | [[COHR]] | monitored | 2 | 2026-05-20 |
-| FOCI | [[FOCI]] | stub | 2 | 2026-05-20 |
+| FOCI | [[FOCI]] | monitored | 2 | 2026-05-20 |
 | IQE | [[IQE]] | stub | 2 | 2026-05-18 |
 | META | [[META]] | stub | 2 | 2026-05-18 |
 | MRVL | [[MRVL]] | monitored | 2 | 2026-05-17 |
