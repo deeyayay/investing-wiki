@@ -89,6 +89,8 @@ The structural edge is the 3GW permitted power pipeline — grid-connected land 
 
 - **2026-05-07** — NVIDIA strategic partnership: $3.4B managed GPU cloud services deal + $2.1B warrant (30M shares @ $70, 5-yr); Sweetwater Campus (2GW, TX) designated NVIDIA DSX flagship deployment.
 - **2025** — Microsoft $9.7B, 5-year AI data center contract signed; 85% EBITDA margin at contract terms.
+- **2026-05-19** — IREN acquired Awaken (AI software team, May 18) and Mirantis (Kubernetes cloud orchestration); $3B convertible notes offering closed. Three simultaneous moves signal vertical expansion from infrastructure to managed AI cloud platform.
+  **Why it matters:** Awaken + Mirantis add the software layers (AI workload management, container orchestration) that sit between raw GPU capacity and end customers — IREN is building toward an integrated AI cloud stack, not just a GPU leasing business.
 
 ---
 
@@ -111,3 +113,4 @@ The structural edge is the 3GW permitted power pipeline — grid-connected land 
 ## Research Log
 - **2026-05-12** — 🔥 FILING | IREN Q3 FY2026 8-K: Revenue $144.8M (AI Cloud $33.6M, +94% QoQ), Adj EBITDA $59.5M, net loss $(247.8)M (incl. $140.4M impairments). NVIDIA partnership: 5-yr right to purchase 30M shares @ $70 ($2.1B) for 5GW AI DC pipeline. Cash $2.6B at Apr 30. Source: SEC/GlobeNewswire. [[IREN_8K_2026-05-07]]
 - **2026-05-14** — stock-research run (--refresh). Investment thesis, Management & Leadership populated from web research and SEC proxy metadata (EDGAR CIK 0001878848). DEF 14A direct fetch returned 403 — insider % sourced from proxy metadata and public filings.
+- **2026-05-19** — 📰 DAILY-NEWS | Awaken acquisition + Mirantis acquisition + $3B convertible offering signal vertical AI cloud expansion (impact 4)

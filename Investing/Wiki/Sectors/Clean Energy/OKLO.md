@@ -61,6 +61,9 @@ Oklo is building compact fission reactors (Aurora) that can be deployed modularl
 ## News & Alpha Log
 *(Append notable developments: partnerships, product launches, supply chain signals)*
 
+- **2026-05-19** — Wolfe Research analyst Steve Fleishman initiated OKLO at Peerperform (hold), fair value ~$61. Stock dropped 6.4% to $54.32 today, adding to post-Q1 weakness (–6% on May 13 after $33.1M Q1 net loss). NRC approval of Principal Design Criteria Topical Report (May 6) remains a positive regulatory milestone.
+  **Why it matters:** First major hold initiation from a credible sell-side firm with a below-market PT adds a valuation ceiling narrative at a time when the stock's bull case is driven by partnership optionality (NVDA, Meta) with no near-term revenue — creates ongoing selling pressure until a de-risking catalyst (COLA decision, first commercial PPA) appears.
+
 ---
 
 ## Analyst Coverage
@@ -76,3 +79,4 @@ Oklo is building compact fission reactors (Aurora) that can be deployed modularl
 - **2026-05-07 — CATALYST:** NVDA/OKLO/LANL partnership (announced April 23) now widely covered. NVDA deploying AI digital twin and simulation tools to accelerate Oklo's reactor design and nuclear fuel R&D. OKLO recently surged 15.17% on NRC approval progress and short squeeze dynamics. Meta signed a 1.2GW power purchase agreement for Pike County, Ohio data center campus. This is thesis acceleration — OKLO is no longer just a speculative nuclear play; it now has NVDA and Meta as strategic partners. Execution risk remains (pre-revenue, NRC COLA approval still pending).
 
 - **2026-05-14** — stock-research run. Fundamental sections populated from web research and SEC DEF 14A.
+- **2026-05-19** — 📰 DAILY-NEWS | Wolfe Research Peerperform initiation, fair value ~$61; stock –6.4% to $54.32 (impact 4)

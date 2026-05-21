@@ -10,6 +10,9 @@ Investing/
     Inbox/Tweets.md          ← staging area for sentiment ingestion
     Sentiment/               ← individual signal notes (one .md per signal)
     Filings/                 ← SEC filing documents by ticker
+  Output/
+    Digest/                  ← datestamped daily news digests (YYYY-MM-DD-daily-news.md)
+    Dashboard/               ← generated HTML dashboards (index.html + YYYY-MM-DD.html)
   Wiki/
     Reference/
       Monitor Registry.md    ← master list of tracked tickers (ticker → file path map)
@@ -40,6 +43,8 @@ gemini-scribe/
 | `/ticker-monitor` | `/ticker-monitor [--force] [--dry-run] [--sector SECTOR] [--deep TICKER]` | Weekly update pass: SEC filings, earnings, analyst moves, catalysts — append-only |
 | `/ingest-sentiment` | `/ingest-sentiment [--source article\|musing] [--author "@handle"]` | Parse Tweets.md staging dump into signal notes; update Social Mentions on ticker pages |
 | `/score-ticker` | `/score-ticker TICKER [--refresh]` | Score a ticker on the 6-criterion Unrivaled Investing rubric; writes Scoring Summary to ticker page, updates Monitor Registry and Watchlist |
+| `/daily-news` | `/daily-news [--all] [--sector "Sector"] [--hours N]` | Daily news digest: scans watchlist tickers, scores 1–5 by impact, writes datestamped digest to `Investing/Output/Digest/`, appends high-impact items to ticker pages |
+| `/daily-dashboard` | `/daily-dashboard [--date YYYY-MM-DD] [--no-push]` | Generate self-contained HTML dashboard from latest digest + KB; analyst-style HOLD/ADD/TRIM/WATCH recommendations for portfolio holdings; deploy to GitHub Pages |
 
 ## Ticker Workflow
 

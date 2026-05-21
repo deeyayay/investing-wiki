@@ -53,6 +53,10 @@ POET Technologies is building the POET Infinity optical engine platform — an i
 *(Append notable developments: partnerships, product launches, supply chain signals)*
 
 - **2026-05-11** — Note initialized. First production order >$5M received — key inflection from development to commercial execution.
+- **2026-05-19** — Celestial AI/Marvell canceled all POET orders; multiple federal securities class action lawsuits filed alleging misrepresentation of PFIC tax status. Stock –8.69% today. CFO Thomas Mika announced retirement. $400M registered direct (May 14) provides cash runway but adds dilution. Core revenue thesis is at risk without a replacement customer.
+  **Why it matters:** The production order that defined the "commercialization inflection" thesis was with Celestial AI/Marvell — cancellation of all orders eliminates the primary revenue pipeline and directly challenges the 30,000 optical engine shipment target for 2026.
+- **2026-05-20** — $500M AI infrastructure deal signed with Lumilens; $50M initial purchase order; engineering samples targeted late 2026. Stock +114.72% past week on the announcement.
+  **Why it matters:** Lumilens is a potential replacement customer for the lost Celestial AI/Marvell revenue — if the engineering sample milestone is met and production orders follow, the 2026 optical engine ramp thesis could be revived; however, Lumilens is unproven and the deal is early-stage (samples, not volume production).
 
 ---
 
@@ -71,6 +75,7 @@ POET Technologies is building the POET Infinity optical engine platform — an i
 ## Research Log
 - **2026-05-11** — Note migrated to subfolder. Knowledge base format. No SEC filings — Canadian listed entity (SEDAR+).
 - **2026-05-14** — stock-research run. Fundamental sections populated from web research and SEC DEF 14A.
+- **2026-05-19** — 📰 DAILY-NEWS | Celestial AI/Marvell canceled all orders; federal securities class actions filed; CFO retiring; stock –8.69% (impact 5)
 
 ## Social Mentions
 

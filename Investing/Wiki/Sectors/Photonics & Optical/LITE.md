@@ -69,6 +69,8 @@ Lumentum is the most technically differentiated name in the photonics stack. The
 
 - **2026-03-02** — NVIDIA $2B strategic investment + multi-year, multi-billion-dollar purchase commitment announced. LITE added to S&P 500. CEO: "2026 is a breakout year for laser chip sales."
 - **2026-03-17** — OFC 2026: Lumentum reinforced optical interconnect TAM reaching $90B by 2030. Largest single CPO purchase commitment received (multi-hundred million dollars).
+- **2026-05-19** — Lumentum joined the Nasdaq-100 on May 18; stock fell 8.83% post-inclusion (profit-taking). Multiple analysts raised PTs: Loop Capital $1,400, Rosenblatt $1,300, Jefferies $1,200, Mizuho $1,100, Raymond James $1,014. Company under-shipping demand by ~30% even after 40% capacity expansion.
+  **Why it matters:** Nasdaq-100 inclusion is structural demand — QQQ and index ETFs must buy regardless of valuation; the supply-under-demand signal (30% under-shipping) confirms the capacity constraint is real and pricing power is intact.
 
 ---
 
@@ -104,6 +106,7 @@ Lumentum is the most technically differentiated name in the photonics stack. The
 
 - **2026-05-12** — 📋 FILING | LITE Q3 FY2026 8-K: Revenue $808.4M (+90% YoY), Non-GAAP EPS $2.37 (beat est $2.17 by 9%), GAAP OM 21.6% (+700 bps QoQ). NVIDIA direct investment drove cash to $3.17B. Q4 guidance ~$960M+. Source: SEC/GlobeNewswire. [[LITE_8K_2026-05-05]]
 - **2026-05-14** — stock-research run. Fundamental sections populated from web research and SEC DEF 14A.
+- **2026-05-19** — 📰 DAILY-NEWS | Nasdaq-100 inclusion (May 18); stock –8.83% post-inclusion; 6 analyst PT hikes (Loop $1,400 high); under-shipping demand 30% (impact 4)
 
 ## Social Mentions
 
