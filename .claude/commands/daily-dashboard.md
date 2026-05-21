@@ -1,82 +1,107 @@
-# Daily Dashboard — Investing Intelligence Hub
+# Daily Dashboard — KB Visualization Hub
 
-Generates a self-contained HTML dashboard from the latest daily news digest and ticker wiki pages, then deploys it to the `gh-pages` branch for viewing at `https://investing-wiki.netlify.app`.
+Generates a self-contained HTML knowledge base visualization — a navigable, multi-view SPA with macro → sector → ticker drill-down and ecosystem supply chain maps — then deploys it to the `gh-pages` branch.
 
-**Dashboard URL:** `https://investing-wiki.netlify.app` (or your custom Netlify subdomain)
+**Dashboard URL:** `https://investing-wiki.netlify.app`
 *Netlify watches the `gh-pages` branch — every push auto-deploys within ~30 seconds.*
 *Cloudflare Access gates the URL — only your email can log in.*
 
-**Input flags (``):**
+**Input flags:**
 - *(none)* — use today's digest; push to gh-pages
-- `--date YYYY-MM-DD` — render a specific digest date instead of today's
-- `--no-push` — generate HTML locally only, skip git branch switching and push
+- `--date YYYY-MM-DD` — render a specific digest date
+- `--no-push` — generate HTML locally only, skip gh-pages deployment
 
 ---
 
-## Phase 1 — Load context (reads only, no searches)
+## Phase 1 — Load core references (4 parallel reads)
 
-### 1A — Read Watchlist.md
-Read `Investing/Wiki/Reference/Watchlist.md`.
+Run these reads in parallel:
+
+**1A — Read Watchlist.md** (`Investing/Wiki/Reference/Watchlist.md`)
 
 Extract:
-- **`portfolio[]`** — all tickers from the **Core Holdings** table (these are active positions the user owns)
-- **`watchlist[]`** — all other tickers from all other tables (High Upside Rockets, Compounders, Photonics subsections)
-- **`macro_pulse`** — the JSON block at the bottom of the file (VIX, backdrop, top_catalysts, sector_regime, one_liner, timestamp). If not present, set to null.
+- `portfolio[]` — tickers in Core Holdings table (active positions)
+- `rockets[]` — tickers in High Upside Rockets section
+- `compounders[]` — tickers in Compounders Watchlist section
+- `macro_pulse` — JSON block at bottom (VIX, S&P level, backdrop, sector_regime, one_liner, timestamp). If absent, set null.
 
-### 1B — Read Monitor Registry
-Read `Investing/Wiki/Reference/Monitor Registry.md`.
+**1B — Read Monitor Registry** (`Investing/Wiki/Reference/Monitor Registry.md`)
 
-Build map: `ticker → { company, sector, path, cik, exchange }` from all sector tables.
+Build map: `ticker → { company, sector, path, cik, exchange }` from all sector tables. Also extract the sector list in order.
 
-### 1C — Find and read digest
-Determine the target date:
-- If `--date YYYY-MM-DD` is supplied, use that date.
-- Otherwise, use today's date.
+**1C — Find and read digest**
 
-Look for `Investing/Output/Digest/[DATE]-daily-news.md`. If not found, use Glob to find the most recent digest file in `Investing/Output/Digest/`. Note any date delta in the dashboard header (e.g., "Digest from 2 days ago").
+Target date: `--date` arg if supplied, else today. Find `Investing/Output/Digest/[DATE]-daily-news.md`; if missing, glob for the most recent file in that folder. Note any date delta.
 
-Read the digest file. Parse:
-- **Summary table**: each row → `{ impact, ticker, category, headline, summary }`
-- **Per-ticker detail blocks**: each `### TICKER` section → `{ ticker, headline, source, summary, detail, snippet }`
+Parse:
+- Summary table rows → `{ impact, ticker, category, headline, summary }`
+- Per-ticker `### TICKER` blocks → `{ ticker, headline, source, summary, detail }`
 
-If no digest file exists at all: render the dashboard without the digest feed section, and note the absence in the header.
+**1D — Read Sentiment Index** (`Investing/Wiki/Reference/Sentiment Index.md`)
 
----
+Parse the Ticker Mentions Summary table → `{ ticker, status, mentions, last_signal_date }` for each row.
 
-## Phase 2 — Read ticker wiki pages (parallel)
-
-### Portfolio tickers — full read (~5 tickers, Core Holdings)
-For each ticker in `portfolio[]` that appears in the registry map:
-
-Read its wiki page at the `path` from the registry. Extract:
-- **one_line_thesis** — the sentence under `## One-Line Thesis`
-- **drift_status** — the `Drift status:` line from the Investment Thesis block (format: "On track — [reason]" or "Drifting — [reason]" or "Broken — [reason]")
-- **last_validated** — date from `Last validated:` line
-- **conviction_log** — last 3 rows of the Conviction Log table: `{ date, event, direction (↑/↓/→), why }`
-- **catalysts_pending** — first 2 unchecked `- [ ]` items from Catalyst Timeline
-- **news_latest** — latest 2 entries from News & Alpha Log (date + headline + why_it_matters)
-- **scoring_composite** — composite score from Scoring Summary table if populated (not `—`)
-- **analyst_coverage** — last 1–2 lines from Analyst Coverage section
-
-### Watchlist tickers — light read
-For each ticker in `watchlist[]` that appears in the registry map:
-
-Read its wiki page. Extract:
-- **one_line_thesis**
-- **drift_status** (just the status word: "On track" / "Drifting" / "Broken" / "—")
-- **last_research_log_entry** — last line of Research Log
+Also parse the Recent Signals feed (last 30 lines) → for each entry extract the date and ticker list.
 
 ---
 
-## Phase 3 — Synthesize analyst recommendations
+## Phase 2 — Read ecosystem map files (parallel)
 
-For each portfolio holding, generate a recommendation using the data extracted in Phase 2.
+List all files matching `Investing/Wiki/Reference/Ecosystem Maps/*.md`.
 
-### Signal logic
+For each file found, read it and parse:
+- File name → derive the ecosystem name (e.g., "NVDA Ecosystem Map.md" → ecosystem `nvda`, anchor ticker `NVDA`)
+- **Tier tables**: each `## Tier N` section → tier label + table rows of `{ ticker, company, relationship, notes }`
+- **Shockwave / functional category sections**: any `##` section after the tiers → category name + table rows
+- Store as `ecosystems[name] = { anchor, tiers: { 1: [...], 2: [...], ... }, categories: { name: [...] } }`
 
-Apply this decision matrix in order (first match wins):
+If no ecosystem map files exist, continue with empty `ecosystems = {}`.
 
-| Drift status | Conviction trend (last 3) | Today's news impact | → Signal |
+---
+
+## Phase 3 — Read sector frameworks (parallel)
+
+For each sector in the registry, read `Investing/Wiki/Sectors/[Sector]/_Sector Framework.md`.
+
+Extract:
+- First non-header paragraph → `sector_description` (1–3 sentences)
+- Any "Value Chain" or "Archetype" section → `value_chain_summary` (first sentence or bullet)
+
+Store as `sector_meta[sector_name] = { description, value_chain_summary }`.
+
+If a framework file is missing for a sector, set description to null and continue.
+
+---
+
+## Phase 4 — Read all monitored ticker pages (parallel batches of 8)
+
+For each ticker in the Monitor Registry `path` map, read the wiki page. Run in parallel batches of 8.
+
+For **portfolio tickers** (in `portfolio[]`), extract all of:
+- `one_line_thesis` — sentence under `## One-Line Thesis`
+- `drift_status` — `Drift status:` line value ("On track — ...", "Drifting — ...", "Broken — ...", or "—")
+- `last_validated` — `Last validated:` date
+- `scoring` — from Scoring Summary section: composite score + all 6 criterion scores. If section is blank or absent, set `scoring: null`.
+- `catalysts` — all items from Catalyst Timeline, each as `{ text, checked: true/false }`
+- `conviction_log` — last 3 rows of Conviction Log table: `{ date, event, direction, why }`
+- `news` — last 5 entries from News & Alpha Log: `{ date, headline, detail, impact }`. Parse impact number from any "impact N" annotation.
+- `earnings` — most recent row from Earnings & Financials table: `{ period, revenue, eps, guidance }`
+- `analyst_coverage` — all rows from Analyst Coverage table (may be empty)
+- `cross_ticker_signals` — all rows from Cross-Ticker Signals table: `{ date, source, direction, target, signal, implication }`
+- `social_mentions` — last 5 rows from Social Mentions table: `{ date, signal_slug, source }`
+- `investment_thesis` — full text of Investment Thesis section (first 400 chars for detail page; preserve paragraphs)
+- `management` — Management & Leadership table rows: `{ name, role, note }`
+
+For **watchlist/rocket/compounder tickers** (not in portfolio), extract a lighter set:
+- `one_line_thesis`, `drift_status`, `scoring` (composite only), `news` (last 2 entries), `social_mentions` (last 2), `cross_ticker_signals`
+
+For **any ticker in the digest not in the registry**: skip wiki read; mark as `{ tracked: false }`.
+
+### Recommendation signal (portfolio tickers only)
+
+Apply decision matrix (first match wins):
+
+| Drift status | Conviction trend (last 3) | Digest impact | → Signal |
 |---|---|---|---|
 | Broken | any | any | TRIM |
 | Drifting | ↓ majority | any | TRIM |
@@ -87,191 +112,468 @@ Apply this decision matrix in order (first match wins):
 | On track | ↓ majority | any | WATCH |
 | — (not set) | any | any | HOLD |
 
-**Conviction trend**: from the last ≤3 conviction log entries. Count ↑ vs ↓ — if ↑ > ↓ → bullish; ↓ > ↑ → cautionary; otherwise neutral. If conviction log is empty, treat as neutral.
+**Conviction trend**: count ↑ vs ↓ in last 3 conviction log entries. ↑ > ↓ → bullish; ↓ > ↑ → cautionary; else neutral.
 
-**Today's news impact**: look up this ticker in the digest summary table. Use its impact score. If not in digest, treat as 1.
+**Confidence**:
+- High: drift_status set + conviction_log ≥ 2 entries + scoring populated
+- Medium: drift_status set + (conviction_log ≥ 1 entry OR scoring populated)
+- Low: otherwise
 
-### Confidence level
-
-- **High**: drift status is set + conviction log has ≥2 entries + scoring composite is populated
-- **Medium**: drift status is set + conviction log has ≥1 entry (or scoring composite populated)
-- **Low**: most fields are empty/default
-
-### Rationale
-
-Write 2–3 sentences synthesizing:
-1. Thesis drift and conviction direction — what the KB says about where this name stands
-2. Most relevant near-term catalyst (next unchecked item) or latest news signal
-3. What would change the signal (threshold for upgrade or downgrade)
-
-Keep it crisp. No filler. Active voice. Treat this as a sell-side morning note bullet.
+**Rationale**: 2–3 sentences synthesizing drift, latest catalyst, and what changes the signal. Active voice, no filler.
 
 ---
 
-## Phase 4 — Generate HTML dashboard
+## Phase 5 — Build unified data model
 
-Produce a **single self-contained HTML file** — no external CDN links, no imports, no build step. All CSS and JS are inline. Must render correctly when opened directly from the filesystem (file://) or served by GitHub Pages.
+Assemble the `KB` object that will be embedded as JSON in the HTML:
 
-### Global design
-
-- **Dark theme** by default: `#0d1117` background (GitHub dark), `#e6edf3` text, `#161b22` card backgrounds, `#30363d` borders
-- **Accent colors**:
-  - Portfolio items: `#d4a017` amber border (2px left border on cards)
-  - Signal ADD: `#3fb950` green
-  - Signal HOLD: `#58a6ff` blue
-  - Signal TRIM: `#f85149` red
-  - Signal WATCH: `#d29922` amber/yellow
-  - Impact 5: `#f85149`; Impact 4: `#e3812b`; Impact 3: `#d29922`; Impact 1–2: `#6e7681`
-- **Font**: system-ui stack (`-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif`)
-- **Responsive**: CSS Grid for portfolio cards (auto-fill, min 300px), flexbox for digest rows
-
-### Page structure
-
-#### Header bar (always visible, sticky)
 ```
-INVESTING BRIEF · [Date]
-[VIX value if available] · [macro backdrop one-liner] · [N high-impact alerts]
+KB = {
+  meta: {
+    date,                    // digest date
+    generated_at,            // ISO timestamp
+    vix,                     // from macro_pulse or null
+    market_level,            // S&P from macro_pulse or null
+    regime_label,            // e.g. "Tech-Favorable / Goldilocks"
+    regime_color             // "green" | "amber" | "red" based on VIX
+  },
+  digest: {
+    date,
+    items: [{ impact, ticker, category, headline, summary, detail, sector }]
+  },
+  sectors: [
+    {
+      slug,                  // kebab-case, e.g. "semiconductors"
+      name,                  // display name from registry
+      description,           // from sector framework
+      value_chain,           // from sector framework
+      ticker_symbols,        // all tickers registered in this sector
+      top_news              // digest items where ticker is in this sector
+    }
+  ],
+  tickers: {                 // keyed by symbol
+    "NVDA": {
+      symbol, name, sector, sector_slug,
+      tracked: true,
+      in_portfolio, in_rockets, in_compounders,
+      one_line_thesis,
+      investment_thesis,
+      drift_status,
+      last_validated,
+      scoring,               // { composite, criteria: { moat, management, growth, balance_sheet, valuation, momentum } } or null
+      catalysts,             // [{ text, checked }]
+      conviction_log,        // [{ date, event, direction, why }] last 3
+      news,                  // [{ date, headline, detail, impact }] last 5
+      earnings,              // { period, revenue, eps, guidance }
+      analyst_coverage,      // [{ firm, analyst, pt, rating, date }]
+      cross_ticker_signals,  // [{ date, source, direction, target, signal, implication }]
+      social_mentions,       // [{ date, signal_slug, source }]
+      social_mention_count,  // from Sentiment Index
+      social_last_signal,    // from Sentiment Index
+      management,            // [{ name, role, note }]
+      recommendation: { signal, confidence, rationale },  // portfolio only
+      ecosystem: {
+        upstream: [{ symbol, relationship, implication }],
+        downstream: [{ symbol, relationship, implication }]
+      }
+    }
+  },
+  ecosystem_graph: {
+    nodes: [{ id, label, sector, in_portfolio, in_watchlist }],
+    edges: [                 // all relationship edges from all sources
+      {
+        source, target,
+        type,               // "cross_ticker_signal" | "ecosystem_map" | "sentiment_relationship"
+        direction,          // "emits" | "receives"
+        relationship_type,  // "supplier" | "customer" | "design_win" | "investor" | "partner" | null
+        implication
+      }
+    ],
+    ecosystems: {            // keyed by anchor ticker symbol
+      "NVDA": {
+        tiers: { "1": [{ ticker, company, relationship, notes }], ... },
+        tier_labels: { "1": "Direct Supply Chain", ... }
+      }
+    }
+  },
+  sentiment: {
+    hot_tickers: [...],      // top 5 by mentions in last 7 days
+    by_ticker: {             // keyed by symbol
+      "NVDA": { mentions, last_signal_date, velocity_label }
+      // velocity_label: "↑ active" | "→ steady" | "↓ quiet"
+    }
+  }
+}
 ```
-Right side: small "Generated [datetime]" timestamp.
 
-#### Navigation tabs
-Four tabs: **Portfolio** | **Digest** | **Watchlist** | **Signals**
+**Building ecosystem edges:**
 
-Tab switching via JS (show/hide divs — no page reload). Active tab underline in amber.
+1. From each ticker's `cross_ticker_signals`: each row → one edge `{ source: signal.source, target: signal.target, type: "cross_ticker_signal", direction: signal.direction, implication: signal.implication }`
+2. From ecosystem map tiers: each ticker in a tier → edge from that tier's anchor (e.g., NVDA) with `type: "ecosystem_map"` and `relationship_type` from the Relationship column
+3. From sentiment signal notes (read the 10 most recent `.md` files in `Investing/Raw/Sentiment/` that have non-empty `relationships:` fields): each relationship entry → edge with `type: "sentiment_relationship"` and `relationship_type` from the `type` field
+
+**Building each ticker's upstream/downstream:**
+- `upstream`: all edges where `target === this ticker` → each entry's source, with its relationship and implication
+- `downstream`: all edges where `source === this ticker` → each entry's target, with its relationship and implication
+
+**Building sentiment.hot_tickers:**
+- From Sentiment Index data: filter to signals with `last_signal_date` within last 7 days; sort by `mentions` descending; take top 5.
+- For `velocity_label`: compare `last_signal_date` to 14 days ago — if signal within 7 days → "↑ active"; within 14 days → "→ steady"; older → "↓ quiet".
 
 ---
 
-#### Tab 1: Portfolio
+## Phase 6 — Generate HTML
 
-Section header: "Portfolio — Core Holdings" with subtext: "[N positions] · Recommendations generated from KB + latest digest"
+Produce a **single self-contained HTML file** — no CDN links, no external scripts. All CSS and JS inline. Must work at `file://` and on GitHub Pages.
 
-Grid of recommendation cards, one per Core Holding. Each card:
+### Design system
 
-```
-┌─ [SIGNAL badge] ─────────────────── [Confidence] ┐
-│ TICKER   CompanyName              [Sector tag]   │
-│ [one-line thesis, italic]                         │
-├───────────────────────────────────────────────────┤
-│ RATIONALE (2-3 sentences, body text)              │
-├───────────────────────────────────────────────────┤
-│ Drift: [status] · Last validated: [date]          │
-│ Conviction: [↑ / ↓ / →] [last event, 10 words]   │
-│ Next catalyst: [first unchecked item]             │
-│ Latest news: [headline from News & Alpha Log]     │
-└───────────────────────────────────────────────────┘
-```
-
-Signal badge styling:
-- ADD: green background `#3fb950`, white text, bold
-- HOLD: blue background `#1f6feb`, white text
-- TRIM: red background `#da3633`, white text
-- WATCH: amber background `#9e6a03`, white text
-
-Cards are sorted: TRIM first (most urgent), then WATCH, then ADD, then HOLD.
-
-If today's digest has a news entry for this ticker with impact ≥ 4: add a small 🔴 alert indicator on the card with the headline.
-
----
-
-#### Tab 2: Digest
-
-Section header: "Today's Digest — [date]" with subtext from digest header (N tickers scanned, N high-impact)
-
-Full digest feed, impact-sorted descending. Each row:
-
-```
-[Impact pill] [Ticker] [PORTFOLIO or WATCHLIST badge] [Category tag] [Headline]
-              [Summary line in muted text]
+```css
+:root {
+  --bg:      #0d1117;
+  --bg2:     #161b22;
+  --bg3:     #21262d;
+  --text:    #e6edf3;
+  --muted:   #8b949e;
+  --border:  #30363d;
+  --amber:   #d4a017;
+  --green:   #3fb950;
+  --blue:    #58a6ff;
+  --red:     #f85149;
+  --orange:  #e3812b;
+  --yellow:  #d29922;
+  --purple:  #bc8cff;
+  --pink:    #ff7b72;
+}
 ```
 
-Clicking a row expands it inline to show: Detail paragraph + Snippet (blockquote style).
+Signal badge colors:
+- ADD → `--green` bg, dark text
+- HOLD → `--blue` bg, dark text (use `#1f6feb` for the bg, white text)
+- TRIM → `--red` bg, white text
+- WATCH → `--yellow` bg, dark text
 
-Portfolio tickers get a gold `[PORTFOLIO]` badge. Watchlist tickers get a gray `[WATCHLIST]` badge. This is the primary visual distinction.
+Impact pill colors (impact 5→1): `--red`, `--orange`, `--yellow`, `--muted`, `--muted`
 
-Impact pills:
-- 5 🔴: `#f85149` red
-- 4 🔴: `#e3812b` orange
-- 3 🟡: `#d29922` yellow, dark text
-- 2 ⚪: `#6e7681` gray
-- 1 ⚪: `#6e7681` gray, "quiet"
+Relationship edge colors in ecosystem:
+- `ecosystem_map` edge: `--amber`
+- `cross_ticker_signal` edge: `--blue`
+- `sentiment_relationship` edge: `--purple`
 
-Tickers not in registry (not fully onboarded) are still shown if they appear in the digest, labeled `[UNTRACKED]`.
+### SPA architecture
 
----
+Embed the full `KB` JSON as `const KB = {...};` in a `<script>` block.
 
-#### Tab 3: Watchlist
-
-Section header: "Watchlist — Monitored Names"
-
-Sub-tabs or collapsible sections by sector (from Monitor Registry groupings).
-
-Each watchlist ticker is a compact row (not a full card):
-```
-TICKER · CompanyName · [Drift status badge] · [one-line thesis]
-[last research log entry in muted text, max 80 chars]
-```
-
-Drift status badges:
-- "On track": green pill
-- "Drifting": amber pill
-- "Broken": red pill
-- "—" or not set: gray pill "Not tracked"
-
-Portfolio tickers are excluded from this tab (they appear in Tab 1).
-
----
-
-#### Tab 4: Cross-Ticker Signals
-
-Section header: "Ecosystem Signals"
-
-Flat table with all cross-ticker signal data surfaced today. Source: parse each ticker's detail block in the digest for any ecosystem implication lines; also include the Cross-Ticker Signals tables from portfolio ticker wiki pages (extracted in Phase 2).
-
-Table columns: Date | Source Ticker | Direction | Target Ticker | Signal (≤10 words) | Implication
-
-Filter to signals from the last 7 days. Sort by date descending.
-
-If no signals are found, show: "No cross-ticker signals logged in the past 7 days."
-
----
-
-### JavaScript behavior
+Implement a hash router:
 
 ```javascript
-// Tab switching
-function showTab(name) {
-  document.querySelectorAll('.tab-content').forEach(el => el.style.display = 'none');
-  document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-  document.getElementById('tab-' + name).style.display = 'block';
-  document.querySelector('[data-tab="' + name + '"]').classList.add('active');
+function navigate(hash) {
+  history.pushState(null, '', hash || '#');
+  renderView(hash);
 }
 
-// Digest row expand/collapse
-document.querySelectorAll('.digest-row').forEach(row => {
-  row.addEventListener('click', () => {
-    row.querySelector('.digest-detail').classList.toggle('hidden');
-  });
-});
+window.addEventListener('hashchange', () => renderView(location.hash));
+window.addEventListener('load', () => renderView(location.hash));
+
+function renderView(hash) {
+  const app = document.getElementById('app');
+  if (!hash || hash === '#' || hash === '#macro') {
+    renderMacro(app);
+  } else if (hash.startsWith('#sector/')) {
+    const slug = hash.slice(8);
+    renderSector(app, slug);
+  } else if (hash.startsWith('#ticker/')) {
+    const sym = hash.slice(8).toUpperCase();
+    renderTicker(app, sym);
+  } else {
+    renderMacro(app);
+  }
+}
 ```
 
-All JS is inline in the HTML file. No external scripts.
+**Navigation links**: all internal `<a>` tags use `href="#sector/slug"` or `href="#ticker/SYMBOL"`. Never reload the page.
+
+**Back breadcrumb**: rendered at top of each view. Sector view: `Macro > [Sector]`. Ticker view: `Macro > [Sector] > [TICKER]`. Each segment is a clickable link.
+
+### Global structure
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investing KB · [Date]</title>
+  <style>/* all CSS inline */</style>
+</head>
+<body>
+  <header id="site-header"><!-- sticky header --></header>
+  <div id="app"><!-- view rendered here by JS --></div>
+  <script>
+    const KB = /* JSON data */;
+    /* router + view functions */
+  </script>
+</body>
+</html>
+```
+
+**Sticky header** (always visible):
+```
+INVESTING KB · [Date]         [VIX badge] [S&P badge] [Regime label]
+```
+Right side on desktop: VIX value with color (green <20, amber 20–30, red >30), S&P level, regime label. On mobile: stacks vertically, smaller text.
 
 ---
 
-## Phase 5 — Write files and deploy
+### View 1: Macro (landing)
 
-### 5A — Write to local output folder
-1. Write `Investing/Output/Dashboard/index.html` (always overwrite — this is the "latest" copy)
-2. Write `Investing/Output/Dashboard/[DATE].html` where DATE is the digest date (YYYY-MM-DD)
-   - If this file already exists (duplicate run), append `-2` suffix
+```
+[Breadcrumb: you are here]
 
-### 5B — Deploy to gh-pages (skip if `--no-push`)
+╔══════════════════════════════════════════════════╗
+║  MARKET PULSE                                    ║
+║  [Regime label]  [VIX]  [S&P]  [Backdrop text]  ║
+╚══════════════════════════════════════════════════╝
 
-**Check if gh-pages branch exists:**
+HOT SIGNALS (last 7 days)
+[Ticker chip] [Ticker chip] [Ticker chip] ...
+(from sentiment.hot_tickers — each chip links to #ticker/SYMBOL)
+
+PORTFOLIO QUICK VIEW
+[Horizontal scrollable strip of core holding cards]
+Each card: TICKER · SIGNAL badge · one_line_thesis (truncated)
+Click → #ticker/SYMBOL
+
+TODAY'S DIGEST — [date]
+[List of digest items, impact-sorted, max 15]
+Each item: [Impact pill] [Ticker chip → #ticker/SYMBOL] [Sector chip → #sector/slug] [Headline]
+           [Summary in muted text]
+
+SECTORS
+[Responsive grid: 3 cols desktop, 2 tablet, 1 mobile]
+Each sector card:
+  ┌─────────────────────────────────┐
+  │ [Sector name]    [N tickers]   │
+  │ [Health dot] [sector_description truncated to 80 chars]
+  │ ─────────────────────────────── │
+  │ Top news: [headline] (if any)  │
+  └─────────────────────────────────┘
+  Click → #sector/slug
+  Health dot: green = no digest items with impact≥3; amber = highest impact 3–4; red = highest impact 5
+```
+
+**Portfolio quick view card** (compact, horizontal scroll on mobile):
+- Width: ~280px fixed
+- Signal badge (top right)
+- Ticker symbol (bold, large)
+- One-line thesis (italic, 2 lines max, truncated with ellipsis)
+- Amber left border for portfolio items
+
+**Sector card** styling:
+- `--bg2` background, `--border` border
+- Sector name in `--text`, description in `--muted`
+- Health dot: 8px circle, colored
+- Hover: `--bg3` background, slight lift (box-shadow)
+
+---
+
+### View 2: Sector
+
+```
+[Breadcrumb: Macro > [Sector Name]]
+
+[Sector name heading]
+[sector_description]
+[value_chain_summary in muted text]
+[N tickers registered]
+
+LATEST NEWS
+[All digest items for this sector's tickers, impact-sorted]
+Each: [Impact pill] [Ticker chip → #ticker/SYMBOL] [Category tag] [Headline]
+      [Summary]
+
+TICKERS IN THIS SECTOR
+[Responsive grid: 3 cols desktop, 2 tablet, 1 mobile]
+Each ticker card:
+  ┌───────────────────────────────────┐
+  │ TICKER [Signal badge if portfolio]│
+  │ [Company name]                    │
+  │ [Score badge if scored: N.N/10]   │
+  │ [Sentiment badge: N signals ↑]    │
+  │ ─────────────────────────────────│
+  │ [one_line_thesis, 2 lines max]    │
+  └───────────────────────────────────┘
+  Click → #ticker/SYMBOL
+```
+
+**Ticker card** in sector view:
+- Portfolio tickers: `--amber` left border (2px)
+- Rockets: `--orange` left border
+- Unregistered (stub): `--muted` left border, italic
+- Score badge: small pill, color-coded:
+  - ≥8.0: `--green`
+  - 6.0–7.9: `--blue`
+  - 4.0–5.9: `--yellow`
+  - <4.0: `--red`
+- Sentiment badge: `--purple` if "↑ active", `--muted` if steady/quiet
+
+---
+
+### View 3: Ticker Detail
+
+```
+[Breadcrumb: Macro > [Sector] > [TICKER]]
+
+┌─ Header ──────────────────────────────────────────────────┐
+│ TICKER  CompanyName                                        │
+│ [Sector chip] [In Portfolio / Rocket / Watchlist badge]   │
+│ [Signal badge] [Confidence pill]  if portfolio            │
+└───────────────────────────────────────────────────────────┘
+
+[Rationale block — 2-3 sentences] if portfolio ticker
+
+ONE-LINE THESIS
+[one_line_thesis]
+
+INVESTMENT THESIS
+[investment_thesis text, up to 400 chars, with "Read more" toggle for full text]
+Drift: [drift_status value] · Last validated: [last_validated]
+
+MANAGEMENT
+[Table: Name | Role | Note]
+(if management data present; else omit section)
+
+SCORING   [if scoring !== null]
+Composite: N.N / 10 · [label: Unrivaled / Strong / Moderate / Developing]
+[6-criterion grid:]
+  Moat: N/10    Management: N/10    Growth: N/10
+  Balance Sheet: N/10    Valuation: N/10    Momentum: N/10
+[Each criterion shown as a labeled bar: filled portion colored by value]
+[if scoring is null:]
+Scoring not yet run — use /score-ticker [SYMBOL] to populate.
+
+CATALYST TIMELINE
+[Checkbox list of all catalysts]
+[Unchecked items in --text; checked items in --muted with strikethrough]
+
+EARNINGS & FINANCIALS
+[Table: Period | Revenue | EPS | Guidance]
+(if empty: "No earnings data logged yet")
+
+NEWS & ALPHA LOG (last 5)
+[Each entry:]
+  [Date badge] [Impact pill if available]
+  [Headline — bold]
+  [Detail text in --muted]
+
+CONVICTION LOG (last 3)
+[Each entry:]
+  [Date] [Direction arrow ↑/↓/→ colored green/red/gray]
+  [Event name]
+  [Why, in muted text]
+
+ANALYST COVERAGE
+[Table: Firm | Analyst | Rating | PT | Date]
+(if empty: "No analyst coverage logged")
+
+SOCIAL SENTIMENT
+[N total signals] [velocity_label badge]  [Last: date]
+[Last 5 signal slugs as a compact list]
+
+ECOSYSTEM — SUPPLY CHAIN RELATIONSHIPS
+[See ecosystem panel spec below]
+```
+
+**"Read more" toggle for investment thesis**: Show first 400 chars + "… [expand]" link. Click reveals full text. Pure CSS `<details><summary>` element for zero JS.
+
+**Scoring criterion bar**: 40px-wide label + `<div>` bar scaled to N/10. Bar fill colors:
+- ≥8: `--green`; 6–7: `--blue`; 4–5: `--yellow`; <4: `--red`
+
+---
+
+### Ecosystem Panel (within ticker detail view)
+
+**Case A: Ticker has an explicit ecosystem map** (e.g., NVDA)
+
+Render a **responsive SVG tier diagram**:
+
+```
+Tier 1 — Direct Supply Chain
+  [Chip] [Chip] [Chip] [Chip]
+
+Tier 2 — Infrastructure & Deployment
+  [Chip] [Chip] [Chip] [Chip]
+
+Tier 3 — Networking & Interconnect
+  [Chip] [Chip] [Chip]
+
+Tier 4 — Power & Energy
+  [Chip] [Chip] [Chip]
+
+Tier 5 — Software & Platforms
+  [Chip] [Chip] [Chip] [Chip]
+```
+
+Each "Chip" is a `<button>` styled as a rounded rectangle:
+- Background: sector color (assign each sector a distinct muted hue derived from `--bg3` + sector index offset)
+- Text: ticker symbol (bold) + company name (smaller, muted) on hover via tooltip `<title>` + `rel`
+- If ticker is in KB: `onclick="navigate('#ticker/SYMBOL')"` and a small arrow indicator
+- If ticker is NOT in KB: dimmed, no click, tooltip shows company name only
+- Width: fit-content (min 80px, max 160px); wrap within tier row
+
+Layout:
+- Desktop: each tier is a horizontal flex row with `flex-wrap: wrap` and a left-aligned label
+- Mobile (< 640px): each tier label is full-width, chips wrap below it — same layout but tighter spacing
+- Anchor ticker (e.g., NVDA): shown as a large centered chip between Tier 2 and Tier 3 with `--amber` border, labeled "● THIS POSITION"
+
+Connecting lines: Use a `<canvas>` overlay or pure CSS `::before`/`::after` to draw subtle vertical dotted lines between tiers (optional — omit if it adds significant complexity; the tier labels convey hierarchy clearly enough).
+
+**Case B: Ticker has cross-ticker signal edges only**
+
+Render a **3-zone layout** (no SVG canvas needed):
+
+```
+UPSTREAM (supplies to / enables [TICKER])
+  ┌──────────┐    ┌──────────┐
+  │  SYMBOL  │    │  SYMBOL  │
+  │ rel type │    │ rel type │
+  └──────────┘    └──────────┘
+
+              ● [TICKER]
+         [This position]
+
+DOWNSTREAM ([TICKER] enables / supplies to)
+  ┌──────────┐    ┌──────────┐    ┌──────────┐
+  │  SYMBOL  │    │  SYMBOL  │    │  SYMBOL  │
+  │ rel type │    │ rel type │    │ rel type │
+  └──────────┘    └──────────┘    └──────────┘
+```
+
+Chips in 3-zone view use same styling as Case A. The implication text from the edge is shown as a `<span title="...">` tooltip on hover (truncated to 60 chars inline).
+
+A **legend** below the ecosystem panel shows edge source types with their colors (amber = ecosystem map, blue = cross-ticker signal, purple = sentiment signal).
+
+**If no ecosystem edges at all**: show "No ecosystem relationships logged yet. Run /ticker-monitor --deep [SYMBOL] to scan for supply chain links."
+
+**Mobile responsive for 3-zone**: Upstream and downstream chip groups stack vertically above/below the center ticker chip, maintaining the visual hierarchy.
+
+---
+
+## Phase 7 — Write files and deploy
+
+### 7A — Write local output
+
+1. Write `Investing/Output/Dashboard/index.html` (always overwrite)
+2. Write `Investing/Output/Dashboard/[DATE].html` (if exists, append `-2`)
+
+### 7B — Deploy to gh-pages (skip if `--no-push`)
+
+Check if `gh-pages` branch exists:
 ```bash
 git ls-remote --heads origin gh-pages
 ```
-If no output: branch doesn't exist yet. Create it:
+
+If not found, create it:
 ```bash
 git checkout --orphan gh-pages
 git rm -rf .
@@ -279,55 +581,39 @@ echo "# Investing Dashboard" > README.md
 git add README.md
 git commit -m "Init gh-pages"
 git push origin gh-pages
-git checkout -  # return to previous branch
+git checkout -
 ```
 
-**Deploy the dashboard:**
-
-The dashboard is at `Investing/Output/Dashboard/index.html` inside the vault working tree. The gh-pages branch lives in the same repo but only holds dashboard files in its root.
-
-Use `git worktree` to deploy without switching branches (safe for the active worktree):
-
+Deploy via worktree (safe — does not switch the active branch):
 ```bash
-# Add a temporary worktree for gh-pages
 git worktree add /tmp/gh-pages-deploy gh-pages
-
-# Copy dashboard files into it
 cp "Investing/Output/Dashboard/index.html" /tmp/gh-pages-deploy/index.html
 cp "Investing/Output/Dashboard/[DATE].html" /tmp/gh-pages-deploy/[DATE].html
-
-# Commit and push
 cd /tmp/gh-pages-deploy
 git add index.html [DATE].html
 git commit -m "Dashboard [DATE]"
-git push origin gh-pages
-
-# Cleanup
+git push -u origin gh-pages
 cd -
 git worktree remove /tmp/gh-pages-deploy
 ```
 
-Note: `git worktree add` must be run from the **main repo root** (not from inside the `.claude/worktrees/` worktree path). Use absolute path:
-```bash
-git -C "C:/Users/alexd/OneDrive/Documents/Obsidian Vault" worktree add /tmp/gh-pages-deploy gh-pages
-```
-
-### 5C — Print completion summary
+### 7C — Print completion summary
 
 ```
 ✅ Dashboard generated — [DATE]
 
-   📊 Portfolio:   N positions · N recommendations
-   📰 Digest:      N tickers · N high-impact
-   👁 Watchlist:   N tickers across N sectors
-   🔗 Signals:     N cross-ticker signals
+   📊 Portfolio:    N positions · N recommendations
+   🗺  Sectors:     N sectors · N monitored tickers
+   📰 Digest:       N tickers · N high-impact
+   🔗 Ecosystem:    N edges (M from maps, K from signals, J from sentiment)
+   🔥 Hot signals:  [ticker list]
 
-   📁 Local:    Investing/Output/Dashboard/index.html
-   🌐 Live:     https://investing-wiki.netlify.app
+   📁 Local:   Investing/Output/Dashboard/index.html
+   🌐 Live:    https://investing-wiki.netlify.app
 
-   Portfolio recommendations:
-   • TICKER — ADD  (Confidence: High) — [rationale first sentence]
-   • TICKER — HOLD (Confidence: Medium)
+   Portfolio:
+   • TICKER — ADD  (High) — [rationale first sentence]
+   • TICKER — HOLD (Medium)
    ...
 ```
 
@@ -335,10 +621,12 @@ git -C "C:/Users/alexd/OneDrive/Documents/Obsidian Vault" worktree add /tmp/gh-p
 
 ## Rules
 
-- **Self-contained HTML.** No CDN links, no external scripts, no web fonts. The file must render correctly in any browser, including offline.
-- **No wiki page writes.** This skill is read-only on the vault — it never appends to ticker pages or the registry.
-- **Graceful degradation.** If a ticker page doesn't exist or can't be read, skip it and note the gap in the dashboard header rather than failing the entire run.
-- **Portfolio first.** Core Holdings always appear in Tab 1 regardless of whether they had news today. Never demote a portfolio holding to watchlist-only view.
-- **No hallucinated prices.** Do not fabricate current stock prices, market cap, or percentage changes. Only display data that appears explicitly in the digest or wiki pages.
-- **Date accuracy.** The dashboard date reflects the digest date, not necessarily today's date. Always display both if they differ.
-- **Worktree awareness.** The skill runs inside the `.claude/worktrees/` worktree. All file read/write paths are relative to the repo root inside that worktree. Git deployment commands must reference the main repo root at `C:/Users/alexd/OneDrive/Documents/Obsidian Vault`.
+- **Self-contained HTML.** No CDN links, no external scripts or fonts. Must render offline and on GitHub Pages.
+- **No wiki page writes.** Read-only on the vault — never appends to ticker pages or registry.
+- **Graceful degradation.** Missing wiki page → skip, note gap in header. Missing ecosystem map → fall back to cross-ticker signals. Missing scoring → show "not yet scored" block. Missing digest → render without digest section.
+- **Portfolio first.** Core Holdings always appear in the portfolio strip regardless of digest coverage.
+- **No hallucinated prices.** Only display prices, market caps, or percentage changes that appear explicitly in the digest or wiki pages.
+- **Date accuracy.** Display digest date and generation date separately if they differ.
+- **Mobile first.** All layouts must work at 375px viewport. Use `min-width` media queries to add columns for larger screens.
+- **Accessible chips.** All clickable chips must be `<button>` or `<a>` elements, never `<div>` with click handlers. Include `aria-label` attributes.
+- **Worktree awareness.** Git deployment commands must reference the main repo root. All file read/write paths are relative to the repo root.
