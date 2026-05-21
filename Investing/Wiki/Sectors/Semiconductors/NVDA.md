@@ -63,7 +63,7 @@ NVIDIA is the picks-and-shovels king of the AI era. Every major hyperscaler (Mic
 
 | Quarter | Revenue | Beat/Miss | EPS | Guidance | Notes |
 |---------|---------|-----------|-----|----------|-------|
-| — | — | — | — | — | — |
+| Q1 FY2027 (Apr 26, 2026) | $81.6B | Beat ($79.1B est) | $1.87 non-GAAP (beat $1.76) | Q2: $91.0B ±2% | Data Center $75B (+92% YoY); non-GAAP GM 75.0%; networking +199% YoY; Vera Rubin samples in customer hands; China DC revenue excluded from guide; dividend raised 25x |
 
 ---
 
@@ -81,6 +81,12 @@ NVIDIA is the picks-and-shovels king of the AI era. Every major hyperscaler (Mic
 
 - **2026-05-19** — Q1 FY2027 earnings tomorrow (May 20) after close. Consensus: $79.2B revenue (+79.5% YoY), EPS $1.78 (+120% YoY). Wedbush expects beat and upside guide. Jensen commented China must "decide how much of their local market they want to protect." Chip stocks broadly red today in pre-earnings positioning. Stock at $220.76, $5.43T market cap.
   **Why it matters:** NVDA earnings is the most consequential market event this week — a beat-and-raise will be a cross-ticker catalyst for COHR, LITE, IREN, FN, ANET, and VRT; a miss or guide-down would reprice the entire AI infrastructure thesis.
+
+- **2026-05-20 — EARNINGS** | Q1 FY2027: Revenue $81.6B (+85% YoY, beat $79.1B est), non-GAAP EPS $1.87 (beat $1.76), Data Center $75B (+92% YoY). Q2 guided $91.0B ±2% — obliterated the $87.4B consensus. Non-GAAP GM held at 75.0%, defying Blackwell-ramp compression fears. Networking revenue +199% YoY (InfiniBand, Spectrum-X, NVLink demand tripled). Vera Rubin samples already in customer hands; Rubin begins revenue contribution in Q2. Jensen: "Demand has gone parabolic. Agentic AI has arrived." Dividend raised 25x. Stock slid AH despite beat. Source: NVIDIA Newsroom / CNBC.
+
+- **2026-05-20 — PHYSICAL AI / ROBOTICS** | Jensen framed physical AI as the next era: "The world is rebuilding computing for agentic AI and robotic AI — Nvidia sits at the center of it all." Announced Isaac GR00T N1 and N1.5 (world's first open humanoid robot foundation model), Isaac GR00T-Dreams (synthetic motion data), Cosmos simulation platform, and general availability of IGX Thor. GM collaboration announced: NVIDIA Omniverse + Cosmos + DRIVE AGX across GM vehicles, factories, and robots. T-Mobile/Nokia collaboration on physical AI apps on AI-RAN infrastructure. Jensen: "Industrial AI companies will be bigger over time than consumer AI companies."
+
+- **2026-05-20 — CPO / PHOTONICS** | Spectrum-X and Quantum-X silicon photonics networking switches confirmed — enabling AI factories to connect millions of GPUs across sites. CPO built on 200G SerDes; 5x better power efficiency and 10x higher network resiliency vs. pluggable. No explicit Spectrum-X deferral language. Rubin SiPh architecture details not broken out separately on the call.
 
 ---
 
@@ -104,6 +110,10 @@ NVIDIA is the picks-and-shovels king of the AI era. Every major hyperscaler (Mic
 | 2026-05-19 | Emits | VRT | NVDA Q1 FY2027 earnings event; VRT identified as heat dissipation supplier | Every NVL72 rack needs Vertiv-scale liquid cooling — GPU shipment volume is a leading indicator for VRT backlog |
 | 2026-05-19 | Emits | COHR | NVDA Q1 FY2027 earnings event; COHR identified as optical module supplier | Optical transceiver demand is a direct function of GPU cluster buildout pace — NVDA guidance sets the cadence |
 | 2026-05-19 | Emits | FN | NVDA Q1 FY2027 earnings event; FN identified as optical module manufacturer | As contract manufacturer for the entire optical supply chain, FN order book is a read-through on cluster build pace |
+| 2026-05-20 | Emits | COHR, LITE, AAOI, AXTI, SIVE | Q1 actual: Spectrum-X and Quantum-X CPO switches confirmed; networking +199% YoY; Rubin SiPh sampling; no deferral language | CPO is real and scaling — no Spectrum-X push-out; Rubin ramp brings another CPO content layer. Positive read-through across the entire photonics stack |
+| 2026-05-20 | Emits | VRT, SMCI | Q2 guide $91B — 4% above the "forces up sellside numbers" threshold; Rubin revenue starting Q2 | Rack-level infrastructure demand (liquid cooling, GPU servers) is accelerating into H2 2026 — Rubin ramp is on schedule, not deferred |
+| 2026-05-20 | Emits | MU | Rubin starts revenue Q2; HBM4 cost inflation cited as ongoing factor in GM trajectory | HBM4 ramp is live — Micron HBM4 supply agreements and pricing will be tested as Rubin volumes scale through H2 |
+| 2026-05-20 | Emits | AMBA, OUST | Physical AI era declared: Isaac GR00T N1/N1.5, Cosmos, IGX Thor GA, GM collaboration | NVIDIA is building the software/simulation stack for physical AI — edge AI and robotics inference hardware (Ambarella, lidar sensors) are downstream beneficiaries of NVIDIA-defined robot development pipelines |
 
 ---
 
@@ -119,6 +129,7 @@ See [[NVDA Ecosystem Map]] for full supply chain and derivative plays.
 - **2026-05-14** — stock-research run. Fundamental sections populated from web research and SEC DEF 14A.
 - **2026-05-19** — 📰 DAILY-NEWS | Q1 FY2027 earnings tomorrow; consensus $79.2B rev +79.5% YoY, EPS $1.78 +120%; Jensen on China; chip stocks red pre-print (impact 4)
 - **2026-05-20** — 📰 DAILY-NEWS | Q1 FY2027 earnings after close TODAY; result will move COHR, LITE, IREN, FN, ANET, VRT across portfolio (impact 5)
+- **2026-05-20 — 🔥 EARNINGS** | Q1 FY2027: Rev $81.6B (+85% YoY), non-GAAP EPS $1.87 (beat $1.76 est), DC $75B (+92%). Q2 guide $91.0B ±2% — 4-5% above the $87.4B consensus. Non-GAAP GM 75.0% — held flat, no compression from Blackwell ramp. Networking +199% YoY. Vera Rubin samples in customer hands; starts revenue Q2 (pull-in from prior "Q3 timeframe" language). No Spectrum-X deferral. Physical AI declared the next platform: Isaac GR00T N1/N1.5, Cosmos, IGX Thor GA. GM collaboration (Omniverse + Cosmos + DRIVE AGX). Dividend 25x raise. Stock -AH despite beat. Source: NVIDIA Newsroom / CNBC / Motley Fool transcript.
 
 ## Social Mentions
 
@@ -129,3 +140,4 @@ See [[NVDA Ecosystem Map]] for full supply chain and derivative plays.
 | 2026-05-18 | [[2026-05-18-amd-cpu-bottleneck-three-ways]] | tweet |
 | 2026-05-18 | [[2026-05-18-gev-ai-supply-chain-chokepoints]] | tweet |
 | 2026-05-18 | [[2026-05-18-axti-next-year-im]] | tweet |
+| 2026-05-20 | [[2026-05-20-nvda-q1-earnings-preview]] | tweet |

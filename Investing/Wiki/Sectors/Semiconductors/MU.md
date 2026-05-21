@@ -77,6 +77,14 @@ Micron is a cyclical semiconductor company that has found a secular growth engin
 
 ---
 
+## Social Mentions
+
+| Date | Signal | Source |
+|------|--------|--------|
+| 2026-05-20 | [[2026-05-20-nvda-q1-earnings-preview]] | tweet |
+
+---
+
 ## Research Log
 - **2026-05-07** — Note initialized. Flagged as priority research candidate from NVDA ecosystem map. HBM angle is the core differentiator from prior memory cycles. Defensible niche within a commodity industry.
 

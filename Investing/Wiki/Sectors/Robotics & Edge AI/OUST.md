@@ -9,19 +9,19 @@ Co-founder-led digital lidar company with a custom SoC architecture, Pentagon Bl
 ---
 
 ## Scoring Summary
-_Last scored: — | [[Scoring Rubric]]_
+_Last scored: 2026-05-20 | [[Scoring Rubric]]_
 
 | Criterion | Score | Evidence |
 |-----------|-------|----------|
-| Product (Love Factor) | —/5 | |
-| Pricing Power | —/5 | |
-| Leadership & Alignment | —/5 | |
-| Financial Health | —/5 | |
-| Macro Environment | —/5 | |
-| Future Potential | —/5 | |
-| **Composite** | **—/10** | |
+| Product (Love Factor) | 4/5 | Digital SoC architecture (2 chips vs. dozens analog); Pentagon Blue UAS cert; Rev8 qualified on NVDA Jetson + DRIVE Hyperion; StereoLabs adds RGB-D + AI perception — strong differentiation, meaningful switching costs once embedded |
+| Pricing Power | 3/5 | GM expanded 22%→62% peak demonstrating SoC cost curve; Q1 2026 stepped to 46% on StereoLabs integration costs — trend positive but most recent quarter retreated; 50%+ sustained level not yet proven |
+| Leadership & Alignment | 3/5 | Co-founder CEO + CTO (10+ yr each); strong track record: Velodyne integration, margin turnaround, Blue UAS cert; but SPAC dilution reduced CEO ownership to sub-1% float; CFO new May 2025; Q1 EPS miss (-$0.28 vs -$0.12 est) |
+| Financial Health | 2/5 | FCF negative; EPS -$0.28 Q1 2026; StereoLabs integration adds cost pressure; no balance sheet detail in wiki; GAAP profitability still a catalyst item not a near-term timeline commitment |
+| Macro Environment | 4/5 | NVDA physical AI era declared; robotics Phase 3 (industrial) + Phase 2 (AV); Pentagon Blue UAS defense segment; 5+ year demand visibility; camera/radar substitution is manageable headwind |
+| Future Potential | 4/5 | Software bookings +60% YoY; StereoLabs RGB-D + AI perception as second product line; NVDA Jetson distribution; 4 verticals + AV + defense + color lidar premium tier — 2-3 adjacencies with measurable traction |
+| **Composite** | **6.5/10** | **Strong** |
 
-**Valuation:** — (not scored; see [[Scoring Rubric]] for methodology)
+**Valuation:** Insufficient current price data | Analyst median PT $39, range $33–$50 | 5B / 1H / 0S (12 analysts) | Robotics Platform archetype fair value 3–7x EV/Revenue
 **Growth Potential:** — (pending real-time data integration)
 
 ---
@@ -134,6 +134,7 @@ Margin trajectory is the most important near-term signal: gross margins expanded
 
 | Date | Direction | Other Ticker | Signal | Implication |
 |------|-----------|-------------|--------|-------------|
+| 2026-05-20 | Receives | NVDA | NVDA physical AI era declared; Isaac GR00T N1/N1.5, Cosmos, IGX Thor GA, GM collaboration; Jensen: "billions of agents"; Jetson is the edge compute backbone | OUST is already embedded in NVDA Jetson (Rev8 native integration, May 5) and DRIVE Hyperion (May 12 qualification). NVDA declaring physical AI as the next platform is the demand signal OUST needs — every robot built on Jetson is a potential OUST sensor socket. StereoLabs (RGB-D + AI perception) makes OUST the multimodal perception layer for the NVIDIA robot stack. Most direct beneficiary of this call among portfolio names. |
 
 ---
 
@@ -156,3 +157,4 @@ See [[Robotics & Edge AI _Sector Framework]] for sector context.
 *(Reverse-chron append log — newest at bottom)*
 - **2026-05-19** — add-ticker run. Note created from template; fundamental sections populated from web research and SEC DEF 14A. CIK 0001816581, NASDAQ.
 - **2026-05-19** — 📊 MONITOR | Deep pass: Q1 2026 earnings logged ($48.6M, +49% YoY, revenue beat/EPS miss); StereoLabs acquisition (Feb 9) and 3 NVIDIA platform integrations added; analyst consensus PT $39 from 12 analysts; CRO hire logged.
+- **2026-05-20** — Scored — Composite 6.5/10 Strong | P:4 PP:3 L:3 FH:2 ME:4 FP:4 | Monitor Registry updated. Key watch: GM recovery toward 50%+ post-StereoLabs integration; balance sheet detail needed for FH re-score; re-score trigger = Q2 2026 earnings (~Aug 2026).

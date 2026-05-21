@@ -121,6 +121,7 @@ Key risks are structural: Ambarella is not yet profitable at scale and is compet
 
 | Date | Direction | Other Ticker | Signal | Implication |
 |------|-----------|-------------|--------|-------------|
+| 2026-05-20 | Receives | NVDA | NVDA declared physical AI as next compute era; Isaac GR00T N1/N1.5, Cosmos, IGX Thor GA; GM collaboration on robots+factories; Jensen: "industrial AI will be bigger than consumer AI" | NVDA defining the software/sim stack for robotics expands the total number of robots being built — more robots = more edge AI inference demand. CVflow's <20W profile targets exactly the thermal envelope of robot embodiments where Jetson is too power-hungry. Indirect but real TAM expansion. Note: NVDA Jetson T4000 ("4x better energy efficiency") is a competing edge inference module — monitor whether AMBA wins robot SoC slots where Jetson is too expensive or power-hungry. |
 
 ---
 

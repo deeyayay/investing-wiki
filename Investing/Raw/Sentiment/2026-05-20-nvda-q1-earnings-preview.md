@@ -1,3 +1,13 @@
+---
+date: 2026-05-20
+source: tweet
+tickers: [AAOI, AEHR, AXTI, Browave, COHR, FOCI, GLW, LITE, MU, NVDA, Samsung, SIVE, SK Hynix, SMCI, TSM, VRT]
+sectors: [Semiconductors, Photonics & Optical, AI Infrastructure]
+author: ""
+url: "https://x.com/i/status/2057111403324944880"
+tags: []
+---
+
 $NVDA Q1 Earnings Preview:
 
 My pre-earnings notes & watchpoints.

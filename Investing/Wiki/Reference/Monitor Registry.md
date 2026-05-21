@@ -1,6 +1,6 @@
 # Monitor Registry
 *The research-monitor skill reads this file on every run. Add tickers here — no skill update needed.*
-*Last updated: May 19, 2026 — SAIL (SailPoint) added to Cybersecurity*
+*Last updated: May 21, 2026 — FOCI (3363.TW) added to Photonics & Optical*
 
 ---
 
@@ -22,7 +22,7 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 | Ticker | Company | CIK | Exchange | Path | Score |
 |--------|---------|-----|----------|------|-------|
 | AMBA | Ambarella, Inc. | 0001280263 | NASDAQ | Investing/Wiki/Sectors/Robotics & Edge AI/AMBA.md | 8.0 |
-| OUST | Ouster, Inc. | 0001816581 | NASDAQ | Investing/Wiki/Sectors/Robotics & Edge AI/OUST.md | — |
+| OUST | Ouster, Inc. | 0001816581 | NASDAQ | Investing/Wiki/Sectors/Robotics & Edge AI/OUST.md | 6.5 |
 
 ---
 
@@ -41,6 +41,7 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 | LASR | nLIGHT Inc. | 0001124796 | NASDAQ | Investing/Wiki/Sectors/Photonics & Optical/LASR.md | — |
 | SIVE | Sivers Semiconductors | none | Nasdaq Stockholm | Investing/Wiki/Sectors/Photonics & Optical/SIVE.md | 5.5 |
 | POET | POET Technologies | none | TSX Venture | Investing/Wiki/Sectors/Photonics & Optical/POET.md | — |
+| FOCI | FOCI Fiber Optic Communications, Inc. | none | TPEX (Taiwan) | Investing/Wiki/Sectors/Photonics & Optical/FOCI.md | — |
 
 ---
 
