@@ -134,6 +134,7 @@ Margin trajectory is the most important near-term signal: gross margins expanded
 
 | Date | Direction | Other Ticker | Signal | Implication |
 |------|-----------|-------------|--------|-------------|
+| 2026-05-20 | Receives | NVDA | NVDA physical AI era declared; Isaac GR00T N1/N1.5, Cosmos, IGX Thor GA, GM collaboration; Jensen: "billions of agents"; Jetson is the edge compute backbone | OUST is already embedded in NVDA Jetson (Rev8 native integration, May 5) and DRIVE Hyperion (May 12 qualification). NVDA declaring physical AI as the next platform is the demand signal OUST needs — every robot built on Jetson is a potential OUST sensor socket. StereoLabs (RGB-D + AI perception) makes OUST the multimodal perception layer for the NVIDIA robot stack. Most direct beneficiary of this call among portfolio names. |
 
 ---
 
