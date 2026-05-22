@@ -17,12 +17,12 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 
 ---
 
-## Robotics & Edge AI
+## Robotics and Physical AI
 
 | Ticker | Company | CIK | Exchange | Path | Score |
 |--------|---------|-----|----------|------|-------|
-| AMBA | Ambarella, Inc. | 0001280263 | NASDAQ | Investing/Wiki/Sectors/Robotics & Edge AI/AMBA.md | 8.0 |
-| OUST | Ouster, Inc. | 0001816581 | NASDAQ | Investing/Wiki/Sectors/Robotics & Edge AI/OUST.md | 6.5 |
+| AMBA | Ambarella, Inc. | 0001280263 | NASDAQ | Investing/Wiki/Sectors/Robotics and Physical AI/AMBA.md | 8.0 |
+| OUST | Ouster, Inc. | 0001816581 | NASDAQ | Investing/Wiki/Sectors/Robotics and Physical AI/OUST.md | 6.5 |
 
 ---
 

@@ -142,6 +142,7 @@ Key risks are structural: Ambarella is not yet profitable at scale and is compet
 
 | Date | Signal | Source |
 |------|--------|--------|
+| 2026-05-22 | [[2026-05-22-nvda-the-clearest]] | tweet |
 
 ---
 

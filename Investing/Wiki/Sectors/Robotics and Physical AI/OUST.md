@@ -149,7 +149,15 @@ Margin trajectory is the most important near-term signal: gross margins expanded
 ---
 
 ## Ecosystem Links
-See [[Robotics & Edge AI _Sector Framework]] for sector context.
+See [[Robotics and Physical AI _Sector Framework]] for sector context.
+
+---
+
+## Social Mentions
+
+| Date | Signal | Source |
+|------|--------|--------|
+| 2026-05-22 | [[2026-05-22-nvda-the-clearest]] | tweet |
 
 ---
 
