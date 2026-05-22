@@ -49,7 +49,7 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 
 | Ticker | Company | CIK | Exchange | Path | Score |
 |--------|---------|-----|----------|------|-------|
-| NVDA | NVIDIA Corporation | 0001045810 | NASDAQ | Investing/Wiki/Sectors/Semiconductors/NVDA.md | — |
+| NVDA | NVIDIA Corporation | 0001045810 | NASDAQ | Investing/Wiki/Sectors/Semiconductors/NVDA.md | 9.5 |
 | MU | Micron Technology | 0000723125 | NASDAQ | Investing/Wiki/Sectors/Semiconductors/MU.md | — |
 | MRVL | Marvell Technology | 0001058057 | NASDAQ | Investing/Wiki/Sectors/Semiconductors/MRVL.md | — |
 | AEHR | Aehr Test Systems | 0001040896 | NASDAQ | Investing/Wiki/Sectors/Semiconductors/AEHR.md | — |

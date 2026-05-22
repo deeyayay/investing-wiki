@@ -8,6 +8,24 @@ The dominant AI compute platform company; GPU monopoly in model training and inf
 
 ---
 
+## Scoring Summary
+_Last scored: 2026-05-22 | [[Scoring Rubric]]_
+
+| Criterion | Score | Evidence |
+|-----------|-------|----------|
+| Product (Love Factor) | 5/5 | CUDA ecosystem: 15+ years of developer lock-in; entire AI software stack built on it; switching requires rewriting years of optimized code |
+| Pricing Power | 5/5 | Non-GAAP GM held 75.0% through Blackwell ramp; expanded from ~65% (FY2023) to 75%+ with generational price increases and surging volume |
+| Leadership & Alignment | 4/5 | Co-founder Jensen Huang since 1993; ~3.5–3.8% insider ownership (below 5% threshold); multiple consecutive guidance beats; periodic planned sales noted |
+| Financial Health | 5/5 | $81.6B quarterly revenue; FCF positive and growing; self-funded R&D and capex; dividend raised 25x; no leverage concerns |
+| Macro Environment | 5/5 | AI compute hypergrowth 2025–2028+; $300B+ hyperscaler capex committed 2025; $1T→$3–4T AI infra spend projected by 2030 (Baird) |
+| Future Potential | 5/5 | CPU ($200B TAM), physical AI/robotics (Isaac GR00T, Cosmos), software platform (NIM, DGX Cloud), inference, sovereign AI — 3+ value chain layers with traction |
+| **Composite** | **9.5/10** | **Unrivaled** |
+
+**Valuation:** Reasonable at ~$220 | Forward P/E: ~27x (FY2027E) | Analyst upside: ~127% (Baird high PT $500)
+**Growth Potential:** — (pending real-time data integration)
+
+---
+
 ## Investment Thesis
 
 > **Thesis established:** 2026-05-07
@@ -130,6 +148,7 @@ See [[NVDA Ecosystem Map]] for full supply chain and derivative plays.
 - **2026-05-19** — 📰 DAILY-NEWS | Q1 FY2027 earnings tomorrow; consensus $79.2B rev +79.5% YoY, EPS $1.78 +120%; Jensen on China; chip stocks red pre-print (impact 4)
 - **2026-05-20** — 📰 DAILY-NEWS | Q1 FY2027 earnings after close TODAY; result will move COHR, LITE, IREN, FN, ANET, VRT across portfolio (impact 5)
 - **2026-05-20 — 🔥 EARNINGS** | Q1 FY2027: Rev $81.6B (+85% YoY), non-GAAP EPS $1.87 (beat $1.76 est), DC $75B (+92%). Q2 guide $91.0B ±2% — 4-5% above the $87.4B consensus. Non-GAAP GM 75.0% — held flat, no compression from Blackwell ramp. Networking +199% YoY. Vera Rubin samples in customer hands; starts revenue Q2 (pull-in from prior "Q3 timeframe" language). No Spectrum-X deferral. Physical AI declared the next platform: Isaac GR00T N1/N1.5, Cosmos, IGX Thor GA. GM collaboration (Omniverse + Cosmos + DRIVE AGX). Dividend 25x raise. Stock -AH despite beat. Source: NVIDIA Newsroom / CNBC / Motley Fool transcript.
+- **2026-05-22** — Scored — Composite 9.5/10 Unrivaled | P:5 PP:5 L:4 FH:5 ME:5 FP:5
 
 ## Social Mentions
 
@@ -141,3 +160,4 @@ See [[NVDA Ecosystem Map]] for full supply chain and derivative plays.
 | 2026-05-18 | [[2026-05-18-gev-ai-supply-chain-chokepoints]] | tweet |
 | 2026-05-18 | [[2026-05-18-axti-next-year-im]] | tweet |
 | 2026-05-20 | [[2026-05-20-nvda-q1-earnings-preview]] | tweet |
+| 2026-05-22 | [[2026-05-22-amd-a-ton-of]] | article |

@@ -1,6 +1,6 @@
 # Sentiment Index
 *Maintained by `/ingest-sentiment` — do not edit the ticker table manually.*
-*Last updated: 2026-05-20*
+*Last updated: 2026-05-22*
 
 ---
 
@@ -8,15 +8,15 @@
 
 | Ticker | Wiki | Status | Mentions | Last Signal |
 |--------|------|--------|----------|-------------|
-| NVDA | [[NVDA]] | monitored | 6 | 2026-05-20 |
+| NVDA | [[NVDA]] | monitored | 7 | 2026-05-22 |
 | AXTI | [[AXTI]] | monitored | 4 | 2026-05-20 |
 | SIVE | [[SIVE]] | monitored | 4 | 2026-05-20 |
 | TSM | [[TSM]] | stub | 4 | 2026-05-20 |
+| AMD | [[AMD]] | stub | 3 | 2026-05-22 |
+| AMZN | [[AMZN]] | stub | 3 | 2026-05-22 |
 | INTC | [[INTC]] | stub | 3 | 2026-05-18 |
 | LITE | [[LITE]] | monitored | 3 | 2026-05-20 |
 | AAOI | [[AAOI]] | monitored | 2 | 2026-05-20 |
-| AMD | [[AMD]] | stub | 2 | 2026-05-18 |
-| AMZN | [[AMZN]] | stub | 2 | 2026-05-18 |
 | COHR | [[COHR]] | monitored | 2 | 2026-05-20 |
 | FOCI | [[FOCI]] | monitored | 2 | 2026-05-20 |
 | IQE | [[IQE]] | stub | 2 | 2026-05-18 |
@@ -48,10 +48,15 @@
 | FN | [[FN]] | monitored | 1 | 2026-05-17 |
 | FTNT | [[FTNT]] | stub | 1 | 2026-05-19 |
 | GEV | [[GEV]] | stub | 1 | 2026-05-18 |
+| GFS | [[GFS]] | stub | 1 | 2026-05-22 |
 | GLW | [[GLW]] | stub | 1 | 2026-05-20 |
+| GOOGL | [[GOOGL]] | stub | 1 | 2026-05-22 |
+| IBM | [[IBM]] | stub | 1 | 2026-05-22 |
+| INFQ | [[INFQ]] | stub | 1 | 2026-05-22 |
 | LPK | [[LPK]] | stub | 1 | 2026-05-17 |
 | MOD | [[MOD]] | stub | 1 | 2026-05-18 |
 | MP | [[MP]] | stub | 1 | 2026-05-18 |
+| MSFT | [[MSFT]] | stub | 1 | 2026-05-22 |
 | MTSI | [[MTSI]] | stub | 1 | 2026-05-17 |
 | MU | [[MU]] | monitored | 1 | 2026-05-20 |
 | Nextronics | [[Nextronics]] | stub | 1 | 2026-05-18 |
@@ -61,6 +66,8 @@
 | PANW | [[PANW]] | stub | 1 | 2026-05-19 |
 | PENG | [[PENG]] | stub | 1 | 2026-05-17 |
 | POET | [[POET]] | monitored | 1 | 2026-05-17 |
+| QBTS | [[QBTS]] | stub | 1 | 2026-05-22 |
+| RGTI | [[RGTI]] | stub | 1 | 2026-05-22 |
 | SAIL | [[SAIL]] | monitored | 1 | 2026-05-19 |
 | Samsung | [[Samsung]] | stub | 1 | 2026-05-20 |
 | SK Hynix | [[SK Hynix]] | stub | 1 | 2026-05-20 |
@@ -69,6 +76,7 @@
 | TXN | [[TXN]] | stub | 1 | 2026-05-17 |
 | VNP | [[VNP]] | stub | 1 | 2026-05-18 |
 | VST | [[VST]] | stub | 1 | 2026-05-18 |
+| WMT | [[WMT]] | stub | 1 | 2026-05-22 |
 
 ---
 
@@ -77,6 +85,7 @@
 *Newest first. Max 30 entries.*
 
 <!-- signals appended here by /ingest-sentiment -->
+2026-05-22 · article · [[2026-05-22-amd-a-ton-of]] · AMD, AMZN, GFS, GOOGL, IBM, INFQ, MSFT, NVDA, QBTS, RGTI, WMT
 2026-05-20 · tweet · [[2026-05-20-nvda-q1-earnings-preview]] · AAOI, AEHR, AXTI, Browave, COHR, FOCI, GLW, LITE, MU, NVDA, Samsung, SIVE, SK Hynix, SMCI, TSM, VRT
 2026-05-19 · tweet · [[2026-05-19-sail-first-memory-semis]] · CRWD, FTNT, PANW, SAIL
 2026-05-18 · tweet · [[2026-05-18-gev-ai-supply-chain-chokepoints]] · AMZN, AXTI, BE, FCX, FLNC, GEV, IQE, INTC, META, MOD, MP, NVT, NVDA, ORCL, TSM, VNP, VRT, VST, 7011.T, ENR.DE, 6367.T, 5201.T, 3017.TW, 3324.TW, 2308.TW, 6669.TW, 4369.T, 4043.T
