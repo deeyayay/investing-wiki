@@ -49,6 +49,7 @@ AAOI makes optical transceivers and subsystems for data centers, cable TV, and t
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
 | 2026-05-12 | Q1 2026 earnings: first 800G volume shipment to large hyperscaler confirmed; FY2026 consensus raised to $1.03B (+103% YoY) | ↑ Strengthened | Execution risk was the primary bear case — volume shipment at scale to a hyperscaler is the single most important data point to validate the thesis that AAOI can compete with COHR/LITE at volume |
+| 2026-05-23 | External: 9% in hypothetical 6–12mo AI infra portfolio — joint 2nd highest; "control their own InP lasers internally" cited as the key differentiator | ↑ Strengthened | Vertical InP integration is the structural advantage that external portfolio constructors are pricing in — 9% weighting at near-equal rank to AXTI implies the laser vertical integration moat is viewed as equally scarce as upstream substrate supply |
 
 ---
 
@@ -65,6 +66,8 @@ AAOI makes optical transceivers and subsystems for data centers, cable TV, and t
 *(Append notable developments: partnerships, product launches, supply chain signals)*
 
 - **2026-05-11** — Note initialized. Sector YTD leader at +328% through April 22. First 1.6T production orders received — primary thesis validator.
+- **2026-05-23** — 🎯 PORTFOLIO SIGNAL | Hypothetical 6–12mo AI infra portfolio: **9%** allocation (joint 2nd highest of ~28 positions). "One of the few real American made 1.6T transceiver stories. They control their own InP lasers internally, 800G is ramping hard, and 1.6T qualification starts in Q3. The datacenter revenue target for 2027 is massive if they execute."
+  **Why it matters:** "Control their own InP lasers internally" is the vertical integration moat that differentiates AAOI from transceiver assemblers who source lasers externally — this is the thesis leg that preserves AAOI's margin even if transceiver pricing compresses as the market matures.
 
 ---
 
@@ -107,3 +110,4 @@ AAOI makes optical transceivers and subsystems for data centers, cable TV, and t
 | 2026-05-17 | [[2026-05-17-sive-when-i-see]] | tweet |
 | 2026-05-20 | [[2026-05-20-nvda-q1-earnings-preview]] | tweet |
 | 2026-05-23 | [[2026-05-23-intc-30-stocks-i]] | tweet |
+| 2026-05-23 | [[2026-05-23-sive-hypothetical-ai-portfolio]] | tweet |

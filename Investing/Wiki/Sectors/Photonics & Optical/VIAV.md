@@ -61,6 +61,8 @@ Viavi Solutions (formerly JDS Uniphase) operates at the intersection of two powe
 
 - **2026-03-06** — OFC 2026 showcase: demoed 1.6T Ethernet, silicon photonics, PCIe over optics, hollow-core fiber testing, distributed acoustic sensing with edge AI. Unveiled INX 700 probe microscopes, high-density OSFP 1.6T test platform, and DCX-700. Volume 3x 20-day average.
 - **2026-05-11** — Note initialized. ~$35, near 52-week high of $35.61. Well above 200d MA of $14.88. +148.65% YTD through April 22.
+- **2026-05-23** — 🎯 PORTFOLIO SIGNAL | Hypothetical 6–12mo AI infra portfolio: **1%** allocation. "Optical testing and validation. Every serious 1.6T deployment eventually runs through VIAVI gear somewhere in the process."
+  **Why it matters:** "Runs through VIAVI gear somewhere" positions VIAV as infrastructure-level mandatory spend rather than discretionary tooling — if 1.6T Ethernet becomes the standard fabric, VIAV's NSE test platforms are a cost-of-production line item, not a capex option.
 
 ---
 
@@ -77,6 +79,14 @@ Viavi Solutions (formerly JDS Uniphase) operates at the intersection of two powe
 *(Rating changes, price target moves, notable commentary)*
 
 - **2026-03-22** — Cited as "hidden alpha" in sector power ranking. Converges with COHR on both growth+macro and value+L/S frameworks — analyst: "when philosophies that disagree on everything converge on the same names, that's high-conviction signal."
+
+---
+
+## Social Mentions
+
+| Date | Signal | Source |
+|------|--------|--------|
+| 2026-05-23 | [[2026-05-23-sive-hypothetical-ai-portfolio]] | tweet |
 
 ---
 

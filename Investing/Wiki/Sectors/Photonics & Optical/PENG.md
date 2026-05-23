@@ -84,6 +84,9 @@ At a market cap of approximately $1.6B (roughly 1x trailing revenue), the market
 *(Append notable developments: partnerships, product launches, supply chain signals)*
 *(For each entry, include a **Why it matters:** line explaining the mechanism — not just what happened, but why it moves the thesis.)*
 
+- **2026-05-23** — 🎯 PORTFOLIO SIGNAL | Hypothetical 6–12mo AI infra portfolio: **4%** allocation. "One of the more interesting enterprise AI infrastructure names. Exposure to sovereign AI, neoclouds, and enterprise AI factories. Their MemoryAI CXL positioning looks unique right now and NVIDIA has openly recommended them."
+  **Why it matters:** "NVIDIA has openly recommended them" is a demand endorsement that most competitors at Penguin's valuation (~1x revenue) don't carry — a named NVIDIA recommendation into the enterprise AI factory segment is a credible demand signal given NVIDIA's incentive to drive full-stack cluster adoption.
+
 ---
 
 ## Cross-Ticker Signals
@@ -110,6 +113,7 @@ At a market cap of approximately $1.6B (roughly 1x trailing revenue), the market
 | Date | Signal | Source |
 |------|--------|--------|
 | 2026-05-17 | [[2026-05-17-peng-people-buying-peng]] | tweet |
+| 2026-05-23 | [[2026-05-23-sive-hypothetical-ai-portfolio]] | tweet |
 
 ---
 

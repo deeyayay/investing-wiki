@@ -122,6 +122,7 @@ IQE closed a £81m capital raise anchored by MACOM Technology Solutions (£30m e
 |------|--------|--------|
 | 2026-05-17 | [[2026-05-17-sive-when-i-see]] | tweet |
 | 2026-05-18 | [[2026-05-18-gev-ai-supply-chain-chokepoints]] | tweet |
+| 2026-05-23 | [[2026-05-23-sive-hypothetical-ai-portfolio]] | tweet |
 
 ---
 
@@ -129,3 +130,4 @@ IQE closed a £81m capital raise anchored by MACOM Technology Solutions (£30m e
 *(Reverse-chron append log — newest at bottom)*
 
 - **2026-05-18** — stock-research run. Fundamental sections populated from web research. Foreign filer (AIM-listed); no SEC DEF 14A.
+- **2026-05-23** — 🎯 PORTFOLIO SIGNAL | Hypothetical 6–12mo AI infra portfolio: **1%** allocation. "InP epi wafer supplier with strategic review and possible M&A optionality. Feels like the market still isn't paying attention." Consistent with thesis: MACOM deal resolved the strategic review; M&A optionality from full-portfolio epiwafer breadth remains underappreciated.

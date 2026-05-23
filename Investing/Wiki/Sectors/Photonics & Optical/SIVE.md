@@ -91,6 +91,8 @@ The risk picture is equally specific. Cash runway is under 12 months at current 
 - **2025-01** — $5.4M mmWave chip development program signed with Tier-1 telecom vendor (beamforming transceiver for 6G-adjacent applications, delivery end-2026).
 - **2025** — Tachyon Networks $3M production order (mmWave/wireless).
 - **2025** — Doosan $1.5M strategic partnership for Ka-band SATCOM antenna panels.
+- **2026-05-23** — 🎯 PORTFOLIO SIGNAL | Hypothetical 6–12mo AI infra portfolio: **14%** allocation (highest conviction of ~28 positions). "The cleanest AI photonics choke point I've found. Every major CPO architecture needs CW lasers, and Sivers is the sole Ayar supplier right now. Jabil basically said demand is uncapped. CHIPS Act exposure and a NASDAQ listing are nice bonuses on top."
+  **Why it matters:** Sole-source status to Ayar (NVIDIA's CPO packaging partner) and an "uncapped demand" read-through from Jabil are the two strongest external validations for the SIVE thesis. The 14% sizing — largest in the portfolio — treats SIVE as a category-defining chokepoint, not a trading position.
 
 ---
 
@@ -99,6 +101,16 @@ The risk picture is equally specific. Cash runway is under 12 months at current 
 
 - **2026-05-11** — Primarily covered by Swedish/Nordic analysts. Northland named SIVE a top 2026 pick in photonics/lasers coverage.
 - **2026** — Seeking Alpha: "A small-cap bet on AI's next bottleneck" — CPO laser source angle. Trades at 31x P/S vs. peer avg 17.5x; priced for execution.
+
+---
+
+## Conviction Log
+<!-- Append-only. One entry per meaningful event that shifts or confirms your view. -->
+<!-- Δ Conviction: ↑ Strengthened / ↓ Weakened / → Neutral -->
+
+| Date | Event | Δ Conviction | Why |
+|------|-------|-------------|-----|
+| 2026-05-23 | External: 14% in hypothetical 6–12mo AI infra portfolio — highest allocation of ~28 positions, framed as "cleanest chokepoint" | ↑ Strengthened | Sole-source status to Ayar (NVIDIA's CPO partner) validated by an independent portfolio constructing around chokepoint sizing — 14% weighting implies no viable substitute and an uncapped demand ceiling, consistent with Jabil's read-through |
 
 ---
 
@@ -116,3 +128,4 @@ The risk picture is equally specific. Cash runway is under 12 months at current 
 | 2026-05-17 | [[2026-05-17-sive-aiming-become-lite]] | tweet |
 | 2026-05-17 | [[2026-05-17-sive-amzn-alchip-signal]] | tweet |
 | 2026-05-20 | [[2026-05-20-nvda-q1-earnings-preview]] | tweet |
+| 2026-05-23 | [[2026-05-23-sive-hypothetical-ai-portfolio]] | tweet |

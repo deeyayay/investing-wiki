@@ -51,6 +51,7 @@ Lumentum is the most technically differentiated name in the photonics stack. The
 |------|-------|-------------|-----|
 | 2026-03-02 | NVIDIA $2B strategic investment + multi-year multi-billion purchase commitment | ↑ Strengthened | NVIDIA is not just buying product — they are buying equity to lock in supply of a critical, sole-sourced component (200G EMLs). This signals that LITE has a component NVIDIA cannot get elsewhere at volume, which is the definition of pricing power |
 | 2026-05-12 | Q3 FY2026: Revenue $808.4M (+90% YoY), Non-GAAP EPS $2.37 (beat $2.17 by 9%); Q4 guidance ~$960M+ | ↑ Strengthened | 90% YoY growth with a gross margin of 42.5% means LITE is scaling without sacrificing margin — that combination is rare and validates the moat thesis that sole-supplier status allows them to grow into higher prices, not compete on lower ones |
+| 2026-05-23 | External: 1% in hypothetical 6–12mo AI infra portfolio; "CW laser demand keeps surprising higher" flagged as upside optionality | → Neutral | 1% weight reflects valuation caution at 60x+ rather than thesis doubt — the "surprising higher" language is consistent with the 30% under-shipping observation and flags optionality above consensus, not a fundamental reassessment |
 
 ---
 
@@ -71,6 +72,8 @@ Lumentum is the most technically differentiated name in the photonics stack. The
 - **2026-03-17** — OFC 2026: Lumentum reinforced optical interconnect TAM reaching $90B by 2030. Largest single CPO purchase commitment received (multi-hundred million dollars).
 - **2026-05-19** — Lumentum joined the Nasdaq-100 on May 18; stock fell 8.83% post-inclusion (profit-taking). Multiple analysts raised PTs: Loop Capital $1,400, Rosenblatt $1,300, Jefferies $1,200, Mizuho $1,100, Raymond James $1,014. Company under-shipping demand by ~30% even after 40% capacity expansion.
   **Why it matters:** Nasdaq-100 inclusion is structural demand — QQQ and index ETFs must buy regardless of valuation; the supply-under-demand signal (30% under-shipping) confirms the capacity constraint is real and pricing power is intact.
+- **2026-05-23** — 🎯 PORTFOLIO SIGNAL | Hypothetical 6–12mo AI infra portfolio: **1%** allocation. "Obvious beneficiary of NVIDIA's multi-year optical agreements. Could quietly become one of the biggest winners if CW laser demand keeps surprising higher."
+  **Why it matters:** "CW laser demand keeps surprising higher" flags upside optionality beyond current consensus — consistent with the 30% under-shipping observation, the author is suggesting the EML demand curve is steeper than visible order data implies.
 
 ---
 
@@ -116,3 +119,4 @@ Lumentum is the most technically differentiated name in the photonics stack. The
 | 2026-05-17 | [[2026-05-17-sive-aiming-become-lite]] | tweet |
 | 2026-05-20 | [[2026-05-20-nvda-q1-earnings-preview]] | tweet |
 | 2026-05-23 | [[2026-05-23-intc-30-stocks-i]] | tweet |
+| 2026-05-23 | [[2026-05-23-sive-hypothetical-ai-portfolio]] | tweet |

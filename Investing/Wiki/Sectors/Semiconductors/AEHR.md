@@ -60,6 +60,9 @@ Aehr makes specialized test and burn-in systems for silicon carbide wafers — a
 ## News & Alpha Log
 *(Append notable developments: partnerships, product launches, supply chain signals)*
 
+- **2026-05-23** — 🎯 PORTFOLIO SIGNAL | Hypothetical 6–12mo AI infra portfolio: **1%** allocation. "Owns a very niche but important layer: wafer-level burn-in for PICs. Exposure to both photonics and power semis."
+  **Why it matters:** The PIC burn-in angle is additive to the existing SiC/EV thesis — if photonics IC volume scales as projected, AEHR's WaferPak technology gains a second demand driver independent of EV cycle timing.
+
 ---
 
 ## Analyst Coverage
@@ -73,6 +76,7 @@ Aehr makes specialized test and burn-in systems for silicon carbide wafers — a
 |------|--------|--------|
 | 2026-05-20 | [[2026-05-20-nvda-q1-earnings-preview]] | tweet |
 | 2026-05-23 | [[2026-05-23-intc-30-stocks-i]] | tweet |
+| 2026-05-23 | [[2026-05-23-sive-hypothetical-ai-portfolio]] | tweet |
 
 ---
 

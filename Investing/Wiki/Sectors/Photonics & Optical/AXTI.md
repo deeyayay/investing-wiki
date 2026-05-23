@@ -51,6 +51,8 @@ AXT manufactures compound semiconductor substrates — primarily indium phosphid
 *(Append notable developments: partnerships, product launches, supply chain signals)*
 
 - **2026-05-11** — Note initialized. Record $60M InP backlog. Upstream chokepoint play — NVIDIA pre-allocation of EML capacity is the demand signal.
+- **2026-05-23** — 🎯 PORTFOLIO SIGNAL | Hypothetical 6–12mo AI infra portfolio: **9%** allocation (joint 2nd highest of ~28 positions). "InP substrates are one of those 'nobody talks about it but everybody needs it' parts of the stack. Backlog already above $100M and they're doubling capacity twice before 2028. Hyperscalers are clearly trying to lock supply early."
+  **Why it matters:** "Hyperscalers locking supply early" transforms the $100M+ backlog from a lagging demand indicator into a strategic signal — customers pre-purchasing beyond immediate need implies they are pricing in sustained InP allocation constraints through 2028.
 
 ---
 
@@ -70,6 +72,16 @@ AXT manufactures compound semiconductor substrates — primarily indium phosphid
 
 ---
 
+## Conviction Log
+<!-- Append-only. One entry per meaningful event that shifts or confirms your view. -->
+<!-- Δ Conviction: ↑ Strengthened / ↓ Weakened / → Neutral -->
+
+| Date | Event | Δ Conviction | Why |
+|------|-------|-------------|-----|
+| 2026-05-23 | External: 9% in hypothetical 6–12mo AI infra portfolio — joint 2nd highest of ~28 positions; "hyperscalers locking supply early" framing; backlog cited as $100M+ | ↑ Strengthened | Pre-purchasing at the substrate layer implies strategic allocation constraint, not ordinary order flow — the $100M+ backlog is being treated as a floor by hyperscaler procurement teams, consistent with InP lead times extending past 2027 |
+
+---
+
 ## Research Log
 - **2026-05-11** — Note migrated to subfolder. Knowledge base format going forward.
 
@@ -84,3 +96,4 @@ AXT manufactures compound semiconductor substrates — primarily indium phosphid
 | 2026-05-18 | [[2026-05-18-gev-ai-supply-chain-chokepoints]] | tweet |
 | 2026-05-18 | [[2026-05-18-axti-next-year-im]] | tweet |
 | 2026-05-20 | [[2026-05-20-nvda-q1-earnings-preview]] | tweet |
+| 2026-05-23 | [[2026-05-23-sive-hypothetical-ai-portfolio]] | tweet |

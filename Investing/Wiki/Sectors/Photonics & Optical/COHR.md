@@ -51,6 +51,7 @@ Coherent is the broadest pure-play in AI optical infrastructure. They supply con
 |------|-------|-------------|-----|
 | 2026-05-06 | Q3 FY2026: Revenue $1.81B (+27% YoY), Non-GAAP EPS $1.41 (+55% YoY), gross margin +243 bps; Q4 guidance $1.91B–$2.05B | ↑ Strengthened | Gross margin expanding for the third consecutive quarter while revenue accelerates — this is the key thesis signal because it means COHR is gaining pricing power in optical, not just growing through commodity volume |
 | 2026-05-06 | NVIDIA $2B equity investment announced alongside Q3 results | ↑ Strengthened | Strategic equity from the primary AI infrastructure buyer is a rare signal — NVIDIA is locking in supply chain relationships at the equity level, not just purchase orders, which implies multi-year architectural dependency |
+| 2026-05-23 | External: 4% in hypothetical 6–12mo AI infra portfolio; "6-inch InP ahead of schedule" and full vertical integration from substrate to device cited | ↑ Strengthened | Independent external confirmation of the 6-inch InP scaling thesis converges with the NVIDIA equity signal — two independent sources pointing to wafer-scale economics as the real moat increases confidence this is durable, not cycle-dependent |
 
 ---
 
@@ -69,6 +70,8 @@ Coherent is the broadest pure-play in AI optical infrastructure. They supply con
 *(Append notable developments: partnerships, product launches, supply chain signals)*
 
 - **2026-05-11** — Note initialized. NVIDIA $2B strategic investment + Rubin platform anchor confirmed. Book-to-bill >4x during upcycle signals capacity-constrained pricing power.
+- **2026-05-23** — 🎯 PORTFOLIO SIGNAL | Hypothetical 6–12mo AI infra portfolio: **4%** allocation. "Fully vertically integrated from substrate to optical device. NVIDIA taking a $2B stake changed the perception completely. 6inch InP progress is ahead of schedule and CPO revenue should start showing up in H2 2026."
+  **Why it matters:** "6-inch InP ahead of schedule" is the manufacturing scaling lever that matters most — larger wafer diameter means lower cost per die and higher throughput, which determines whether COHR can serve the Rubin ramp without gross margin compression during volume production.
 
 ---
 
@@ -137,3 +140,4 @@ Coherent is the broadest pure-play in AI optical infrastructure. They supply con
 | 2026-05-17 | [[2026-05-17-sive-when-i-see]] | tweet |
 | 2026-05-20 | [[2026-05-20-nvda-q1-earnings-preview]] | tweet |
 | 2026-05-23 | [[2026-05-23-intc-30-stocks-i]] | tweet |
+| 2026-05-23 | [[2026-05-23-sive-hypothetical-ai-portfolio]] | tweet |

@@ -81,6 +81,7 @@ The company's 2025 revenue was TWD 1.89B (~$58M USD) growing +38.7% YoY — the 
 | 2026-01 | Himax issues press release reaffirming FOCI CPO collaboration is "ongoing and unchanged" | → Neutral | Reaffirmation was apparently triggered by market speculation about partnership status — the need to confirm publicly implies the relationship faced scrutiny; neutral because the partnership held, but the ambiguity itself is a flag |
 | 2026-Q1 | Q1 2026 revenue TWD 382M (-7.2% YoY); EPS -NT$0.98; net loss NT$107M | → Neutral | Pre-ramp investment costs are expected — automated production line buildout is inherently front-loaded. Revenue decline and swing to loss are consistent with a company spending ahead of H2 2026 mass-production. Not a thesis break, but sets a higher bar for H2 execution |
 | 2026-05 | Confirmed: FOCI is sole FAU provider for COUPE Gen 1 (H2 2026, AMD first) and Gen 2 (NVIDIA Rubin Ultra, late 2027/early 2028) | ↑ Strengthened | Sole-source confirmation across two COUPE generations is the most important structural data point for the thesis — it eliminates the question of whether FOCI is one of several FAU suppliers and defines a multi-year revenue lock |
+| 2026-05-23 | External: 3% in hypothetical 6–12mo AI infra portfolio; Jabil cited as saying "demand could exceed supply" for FAUs | ↑ Strengthened | Jabil's demand-exceeds-supply read-through is the strongest independent supply constraint validation available — if the largest optical EMS expects supply to be binding, FOCI's pricing power is structural and not a temporary design-win artifact |
 
 ---
 
@@ -117,6 +118,8 @@ The company's 2025 revenue was TWD 1.89B (~$58M USD) growing +38.7% YoY — the 
 
 - **2026-01** — Himax issues formal press release reaffirming CPO collaboration with FOCI is "ongoing and unchanged."
   **Why it matters:** Companies don't issue unsolicited reaffirmations without a reason — market or counterparty speculation about the partnership apparently required a public statement. The partnership held, but the event reveals fragility in the information environment around these two names.
+- **2026-05-23** — 🎯 PORTFOLIO SIGNAL | Hypothetical 6–12mo AI infra portfolio: **3%** allocation. "Sole FAU supplier for TSMC COUPE Gen 1 and Gen 2. Mass production starts H2 2026 and even Jabil hinted demand could exceed supply."
+  **Why it matters:** Jabil's "demand could exceed supply" read-through is the strongest external validation of the FOCI sole-source constraint thesis available — if the largest optical contract manufacturer expects supply to be the binding limit, FOCI's FAU pricing power is structural, not temporary.
 
 ---
 
@@ -155,6 +158,7 @@ The company's 2025 revenue was TWD 1.89B (~$58M USD) growing +38.7% YoY — the 
 |------|--------|--------|
 | 2026-05-18 | [[2026-05-18-axti-next-year-im]] | tweet |
 | 2026-05-20 | [[2026-05-20-nvda-q1-earnings-preview]] | tweet |
+| 2026-05-23 | [[2026-05-23-sive-hypothetical-ai-portfolio]] | tweet |
 
 ---
 
