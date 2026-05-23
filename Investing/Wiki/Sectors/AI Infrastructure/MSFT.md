@@ -8,3 +8,4 @@
 | Date | Signal | Source |
 |------|--------|--------|
 | 2026-05-22 | [[2026-05-22-amd-a-ton-of]] | article |
+| 2026-05-23 | [[2026-05-23-intc-30-stocks-i]] | tweet |

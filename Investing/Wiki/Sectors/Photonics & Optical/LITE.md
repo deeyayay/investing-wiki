@@ -115,3 +115,4 @@ Lumentum is the most technically differentiated name in the photonics stack. The
 | 2026-05-17 | [[2026-05-17-sive-when-i-see]] | tweet |
 | 2026-05-17 | [[2026-05-17-sive-aiming-become-lite]] | tweet |
 | 2026-05-20 | [[2026-05-20-nvda-q1-earnings-preview]] | tweet |
+| 2026-05-23 | [[2026-05-23-intc-30-stocks-i]] | tweet |

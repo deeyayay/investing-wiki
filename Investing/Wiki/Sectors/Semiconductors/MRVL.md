@@ -90,3 +90,4 @@ Marvell is one of the most interesting dual-angle plays in AI silicon. First, th
 |------|--------|--------|
 | 2026-05-17 | [[2026-05-17-peng-people-buying-peng]] | tweet |
 | 2026-05-17 | [[2026-05-17-sive-when-i-see]] | tweet |
+| 2026-05-23 | [[2026-05-23-intc-30-stocks-i]] | tweet |

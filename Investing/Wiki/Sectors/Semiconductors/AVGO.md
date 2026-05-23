@@ -16,3 +16,4 @@
 | Date | Signal | Source |
 |------|--------|--------|
 | 2026-05-17 | [[2026-05-17-avgo-shunsin-cpo-orders]] | tweet |
+| 2026-05-23 | [[2026-05-23-intc-30-stocks-i]] | tweet |

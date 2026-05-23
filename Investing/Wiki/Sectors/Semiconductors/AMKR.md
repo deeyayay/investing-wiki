@@ -127,6 +127,14 @@ See [[NVDA Ecosystem Map]] — Earnings Shockwave Map (2026-05-19): Packaging & 
 
 ---
 
+## Social Mentions
+
+| Date | Signal | Source |
+|------|--------|--------|
+| 2026-05-23 | [[2026-05-23-intc-30-stocks-i]] | tweet |
+
+---
+
 ## Research Log
 *(Reverse-chron append log — newest at bottom)*
 - **2026-05-19** — add-ticker run. Note created from template; fundamental sections populated from web research and SEC DEF 14A. Onboarded as part of NVDA earnings shockwave infographic ingestion. CIK 0001047127, NASDAQ.
