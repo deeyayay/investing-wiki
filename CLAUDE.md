@@ -24,7 +24,9 @@ Investing/
     Sectors/
       [Sector Name]/
         [TICKER].md          ← individual ticker wiki page
-        _Sector Framework.md ← sector thesis and competitive landscape
+        _Supply Chain Map.md ← company-agnostic tier diagram (created by /map-sector)
+        _Customer Matrix.md  ← supplier × end-customer dependency table
+        _Sector Framework.md ← sector thesis — written LAST, after map + matrix exist
 gemini-scribe/
   Prompts/                   ← reusable prompt templates
   Scheduled-Tasks/           ← scheduled task state (JSON)
@@ -37,7 +39,8 @@ gemini-scribe/
 
 | Skill | Usage | When to use |
 |-------|-------|-------------|
-| `/add-ticker` | `/add-ticker TICKER [--sector "Sector"]` | Onboard a new name: creates wiki page, registers in Monitor Registry, runs stock research |
+| `/map-sector` | `/map-sector "Sector Name" [--anchor "Concept"]` | **Start here for a new sector.** Maps the supply chain structure company-agnostically, identifies publicly-traded nodes, creates `_Supply Chain Map.md` |
+| `/add-ticker` | `/add-ticker TICKER [--sector "Sector"] [--layer "Layer"]` | Onboard a specific company: creates wiki page, registers in Monitor Registry, runs stock research |
 | `/stock-research` | `/stock-research TICKER [--refresh]` | Populate Investment Thesis, Management & Leadership, One-Line Thesis for one ticker |
 | `/stock-research-all` | `/stock-research-all [--refresh] [--sector SECTOR]` | Batch research across all tickers (5 concurrent agents) |
 | `/ticker-monitor` | `/ticker-monitor [--force] [--dry-run] [--sector SECTOR] [--deep TICKER]` | Weekly update pass: SEC filings, earnings, analyst moves, catalysts — append-only |
@@ -46,13 +49,27 @@ gemini-scribe/
 | `/daily-news` | `/daily-news [--all] [--sector "Sector"] [--hours N]` | Daily news digest: scans watchlist tickers, scores 1–5 by impact, writes datestamped digest to `Investing/Output/Digest/`, appends high-impact items to ticker pages |
 | `/daily-dashboard` | `/daily-dashboard [--date YYYY-MM-DD] [--no-push]` | Generate self-contained HTML dashboard from latest digest + KB; analyst-style HOLD/ADD/TRIM/WATCH recommendations for portfolio holdings; deploy to GitHub Pages |
 
-## Ticker Workflow
+## Sector-First Workflow (preferred for entering a new sector)
 
 ```
-/add-ticker TICKER          → creates page + populates fundamentals
-/ticker-monitor --deep TICKER  → pulls recent filings, news, analyst coverage
-/ingest-sentiment           → files social signals from Tweets.md
-/ticker-monitor             → weekly pass across all tickers
+1. /map-sector "Sector Name"              → _Supply Chain Map.md (company-agnostic tier structure)
+2. /add-ticker TICKER --layer "Layer"     → wiki page + registry row (repeat per node)
+3. /stock-research TICKER                 → ground truth: thesis, management, filings
+4. /build-customer-matrix "Sector Name"  → _Customer Matrix.md (supplier × end-customer)
+5. /ticker-monitor --sector "Sector"     → ongoing weekly cadence
+6. Write _Sector Framework.md manually   → only after steps 1–4 are complete
+7. /score-ticker TICKER                  → conviction scoring
+```
+
+The Sector Framework is written **last** — it's the synthesis output, not the starting point.
+
+## Ticker-Add Workflow (for a company you already know)
+
+```
+/add-ticker TICKER --layer "Layer"   → creates page + fundamentals
+/ticker-monitor --deep TICKER        → pulls recent filings, news, analyst coverage
+/ingest-sentiment                    → files social signals from Tweets.md
+/ticker-monitor                      → weekly pass across all tickers
 ```
 
 ## Key Reference Files
