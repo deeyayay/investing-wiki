@@ -45,7 +45,33 @@ Also parse the Recent Signals feed (last 30 lines) → for each entry extract th
 
 ---
 
-## Phase 2 — Read ecosystem map files (parallel)
+## Phase 2 — Read sector maps, matrices, and ecosystem files (parallel)
+
+Run all reads in this phase in parallel.
+
+**2A — Read Supply Chain Maps**
+
+For each sector in the registry, attempt to read `Investing/Wiki/Sectors/[Sector]/_Supply Chain Map.md`.
+
+If found, parse:
+- **Value Chain table** (`## Value Chain` section) → each row: `{ tier, function, chokepoint, capital_intensity, moat_type, margin_profile }`
+- **Publicly-Traded Nodes table** (`## Publicly-Traded Nodes` section) → each row: `{ tier, ticker, company, mkt_cap, in_registry, notes }`. Gap rows (ticker = "—") → `{ tier, ticker: null, gap: true, notes }`
+- **Structural Gaps section** → array of `{ tier_name, description }` strings
+- **Framework Status checklist** → `{ mapped, nodes_registered, ground_truth, matrix_built, framework_written }` — each `true` if the line is `- [x]`, else `false`
+
+Store as `supply_chains[sector_name] = { tiers, nodes, gaps, framework_status }`. If file missing, store `null`.
+
+**2B — Read Customer Matrices**
+
+For each sector in the registry, attempt to read `Investing/Wiki/Sectors/[Sector]/_Customer Matrix.md`.
+
+If found, parse the `## Heat Map Metadata` JSON block (the fenced ```json block at the bottom of the file) → parse as JSON directly into `customer_matrices[sector_name]`. Structure: `{ sector, built, customers: [], rows: [{ ticker, company, layer, cells: { CustomerName: { score, display, source, note } } }] }`.
+
+If the JSON block is missing or malformed, fall back to parsing the `## Dependency Table` markdown table rows manually: extract ticker, layer, and cell values (star ratings → numeric: ★=1, ★★=2, ★★★=3, ★★★★=4, ★★★★★=5, blank=0).
+
+If file missing, store `null`.
+
+**2C — Read ecosystem map files**
 
 List all files matching `Investing/Wiki/Reference/Ecosystem Maps/*.md`.
 
@@ -148,12 +174,22 @@ KB = {
       description,           // from sector framework
       value_chain,           // from sector framework
       ticker_symbols,        // all tickers registered in this sector
-      top_news              // digest items where ticker is in this sector
+      top_news,              // digest items where ticker is in this sector
+      supply_chain: {        // from _Supply Chain Map.md — null if file absent
+        tiers,               // [{ tier, function, chokepoint, capital_intensity, moat_type, margin_profile }]
+        nodes,               // [{ tier, ticker, company, mkt_cap, in_registry, notes, gap }]
+        gaps,                // [{ tier_name, description }]
+        framework_status     // { mapped, nodes_registered, ground_truth, matrix_built, framework_written }
+      },
+      customer_matrix        // parsed JSON from _Customer Matrix.md — null if file absent
+                             // { customers[], rows[{ ticker, layer, cells }] }
     }
   ],
   tickers: {                 // keyed by symbol
     "NVDA": {
       symbol, name, sector, sector_slug,
+      layer,                 // supply chain tier label from _Supply Chain Map.md nodes table — null if absent
+      chokepoint,            // true/false from supply chain tiers table — null if absent
       tracked: true,
       in_portfolio, in_rockets, in_compounders,
       one_line_thesis,
@@ -387,17 +423,102 @@ Each sector card:
 [value_chain_summary in muted text]
 [N tickers registered]
 
-LATEST NEWS
-[All digest items for this sector's tickers, impact-sorted]
-Each: [Impact pill] [Ticker chip → #ticker/SYMBOL] [Category tag] [Headline]
-      [Summary]
+[Tab bar: CHAIN MAP | CUSTOMER MATRIX | TICKERS | NEWS ]
+                                           (default tab: CHAIN MAP if supply_chain data exists, else TICKERS)
+```
 
-TICKERS IN THIS SECTOR
+#### Tab: CHAIN MAP
+
+Render only if `sector.supply_chain` is non-null. If null, show: *"No supply chain map yet — run `/map-sector [Sector]` to generate one."*
+
+**Swim-lane diagram** — CSS grid, one column per tier:
+
+```
+RAW MATERIALS   WAFER PROD    EDA / IP     EQUIPMENT    FOUNDRY    PACKAGING    DESIGN       TEST
+──────────────  ──────────    ────────     ─────────    ───────    ─────────    ──────       ────
+[4369.T]        [4043.T]      [SNPS]  ◆   [ASML]  ◆   [TSM]  ◆  [AMKR]       [NVDA]  ◆   [AEHR]  ◆
+[ENTG]          [SK Hynix]    [CDNS]  ◆   [LRCX]      [GFS]      [ASX]        [AMD]        [COHU]
+[ICHR]                        [ARM]   ◆   [AMAT]      [INTC]                  [MRVL]
+                                          [KLAC]                              [MU]
+
+[-- gap --]                                                                                  [-- gap --]
+EUV Photoresist                                                                          Packaged Device Test
+```
+
+**Layout rules:**
+- Each tier is a `<div class="tier-col">` with a header label at top
+- Chokepoint tiers (`chokepoint: "Y"`) get a `--amber` top border on the column header; non-chokepoint get `--border`
+- Each node is a `<button class="node-chip">` — clicking navigates to `#ticker/SYMBOL` if ticker is in KB; otherwise cursor is default and chip is dimmed
+- Portfolio tickers: `--amber` left border on chip; rockets: `--orange`
+- Gap nodes: dashed border, `--muted` text, not clickable — hover shows gap description as tooltip
+- Chokepoint node badge: a small `◆` icon in `--amber` appended to the ticker label
+
+**Relationship highlighting (JS, no SVG lines):**
+When a node chip is clicked or hovered (desktop: hover; mobile: tap to toggle):
+1. All edges in `ecosystem_graph.edges` + cross_ticker_signals where `source === TICKER` or `target === TICKER` are extracted
+2. Upstream nodes (they supply to this ticker) → ring color `--green`
+3. Downstream nodes (this ticker supplies to them) → ring color `--blue`
+4. All unrelated nodes → opacity 0.25
+5. A small tooltip appears below the hovered chip listing: upstream tickers (green label) and downstream tickers (blue label) with their implication text (truncated to 60 chars)
+6. Click elsewhere / second tap → clears highlight state
+
+**Relationship legend** (below diagram):
+```
+● Hover a node to highlight supply relationships
+◆ Chokepoint tier    [amber border col header]
+[green ring] = supplies this node    [blue ring] = this node supplies
+[dashed box] = no public player (structural gap)
+```
+
+**Mobile (< 640px):** Tiers stack vertically (one tier per row, full width). Each tier header becomes a full-width label. Node chips wrap horizontally within their tier block. Highlight behavior unchanged.
+
+**Framework status bar** — shown below the diagram as a compact progress strip:
+```
+[ ✓ Mapped ] [ ✓ Nodes ] [ ○ Ground Truth ] [ ○ Matrix ] [ ○ Framework ]
+```
+Each step is a small pill: `--green` if true, `--muted` if false. Clicking a false step shows a tooltip: "Run [command] to complete this step."
+
+---
+
+#### Tab: CUSTOMER MATRIX
+
+Render only if `sector.customer_matrix` is non-null. If null, show: *"No customer matrix yet — run `/build-customer-matrix "[Sector]"` to generate one."*
+
+**Heat map table:**
+
+```
+             │ Google │ Amazon │ Microsoft │ Meta │ Apple │ TSMC │ ...
+─────────────┼────────┼────────┼───────────┼──────┼───────┼──────┼────
+NVDA  Design │  ████  │  ███   │   ████    │  ██  │   █   │      │
+ASML  Equip  │        │        │           │      │       │ █████│
+LRCX  Equip  │        │        │           │      │       │ ████ │
+MU    Memory │  ███   │  ████  │   ███     │  ██  │  ███  │      │
+AMKR  OSAT   │        │        │           │      │       │ ████ │
+```
+
+- Each cell is a `<td>` with a filled bar: width proportional to score (score/5 × 100%), color from `--amber` (score 1–2) → `--orange` (score 3) → `--red` (score 4–5)
+- Score 0 → empty cell, `--bg2` background
+- Hover any cell → tooltip: `{ display, source, note }` from the JSON metadata
+- Row header = `[TICKER]` + small `[Layer]` badge
+- Column headers = customer names
+- Click row header → navigate to `#ticker/SYMBOL`
+
+**Critical Paths block** — below the table, show the `## Critical Paths` text from the matrix file (if present) in a styled callout box with `--amber` left border.
+
+**Built date** shown as muted text below the table: *"Matrix built [date] — refresh with `/build-customer-matrix "[Sector]"`"*
+
+---
+
+#### Tab: TICKERS
+
+Existing ticker grid, unchanged:
+
+```
 [Responsive grid: 3 cols desktop, 2 tablet, 1 mobile]
 Each ticker card:
   ┌───────────────────────────────────┐
   │ TICKER [Signal badge if portfolio]│
-  │ [Company name]                    │
+  │ [Company name]  [Layer badge]     │
   │ [Score badge if scored: N.N/10]   │
   │ [Sentiment badge: N signals ↑]    │
   │ ─────────────────────────────────│
@@ -406,16 +527,27 @@ Each ticker card:
   Click → #ticker/SYMBOL
 ```
 
-**Ticker card** in sector view:
+**Layer badge** — new addition: small `--bg3` pill showing the supply chain tier label (e.g., `Equipment`, `Design`, `Foundry`). Shown only if `ticker.layer` is non-null.
+
+**Ticker card** styling (unchanged except layer badge):
 - Portfolio tickers: `--amber` left border (2px)
 - Rockets: `--orange` left border
 - Unregistered (stub): `--muted` left border, italic
-- Score badge: small pill, color-coded:
-  - ≥8.0: `--green`
-  - 6.0–7.9: `--blue`
-  - 4.0–5.9: `--yellow`
-  - <4.0: `--red`
+- Score badge: small pill, color-coded: ≥8.0 `--green` · 6.0–7.9 `--blue` · 4.0–5.9 `--yellow` · <4.0 `--red`
 - Sentiment badge: `--purple` if "↑ active", `--muted` if steady/quiet
+
+---
+
+#### Tab: NEWS
+
+```
+LATEST NEWS
+[All digest items for this sector's tickers, impact-sorted]
+Each: [Impact pill] [Ticker chip → #ticker/SYMBOL] [Category tag] [Headline]
+      [Summary]
+```
+
+(Previously the only content in the sector view — now one of four tabs.)
 
 ---
 
@@ -431,6 +563,11 @@ Each ticker card:
 └───────────────────────────────────────────────────────────┘
 
 [Rationale block — 2-3 sentences] if portfolio ticker
+
+SUPPLY CHAIN POSITION   [if ticker.layer is non-null]
+[Layer badge: e.g. "Equipment"] [Chokepoint ◆ badge if chokepoint=true]
+[Sector name → #sector/slug] › [Layer label]
+(Click the sector link to open the Chain Map tab pre-highlighted on this ticker)
 
 ONE-LINE THESIS
 [one_line_thesis]
@@ -604,6 +741,8 @@ git worktree remove /tmp/gh-pages-deploy
 
    📊 Portfolio:    N positions · N recommendations
    🗺  Sectors:     N sectors · N monitored tickers
+   🏗️  Chain maps:  N sectors with supply chain map · N structural gaps flagged
+   🔥 Matrices:    N sectors with customer matrix · N high-concentration cells
    📰 Digest:       N tickers · N high-impact
    🔗 Ecosystem:    N edges (M from maps, K from signals, J from sentiment)
    🔥 Hot signals:  [ticker list]
