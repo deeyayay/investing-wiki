@@ -21,7 +21,7 @@ This file is the authoritative taxonomy for the five-dimension vertical stack. A
 
 | Sector | Dimension | Folder Slug | Status | Supply Chain Map |
 |--------|-----------|-------------|--------|-----------------|
-| Semiconductors | D1 | `Semiconductors` | partial | `_Supply Chain Map.md` — rebuilt 2026-05-24, process/product depth |
+| Semiconductors | D1 | `Semiconductors` | partial | `_Supply Chain Map.md` — rebuilt 2026-05-24, full process/product depth, Chip Design tier added |
 | Electronic Components | D1 | `Electronic Components` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
 | Materials & Mining | D1 | `Metals & Mining` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
 | Photonics & Optical | D2 | `Photonics & Optical` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
