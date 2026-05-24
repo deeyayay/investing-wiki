@@ -1,6 +1,6 @@
 # Monitor Registry
 *The research-monitor skill reads this file on every run. Add tickers here — no skill update needed.*
-*Last updated: May 24, 2026 — /map-sector Compute Infrastructure run; 13 new candidate stubs added*
+*Last updated: May 24, 2026 — /map-sector Energy & Power run; 9 new candidate stubs added*
 
 ---
 
@@ -127,6 +127,16 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 |--------|---------|-----|----------|------|-------|
 | OKLO | Oklo Inc. | 0001828937 | NYSE | Investing/Wiki/Sectors/Clean Energy/OKLO.md | — |
 | TE | T1 Energy Inc. | 0001992243 | NYSE | Investing/Wiki/Sectors/Clean Energy/TE.md | — |
+
+<!-- CANDIDATE (/map-sector 2026-05-24): VST (Vistra Energy) — Primary Power Generation layer. Largest US competitive power generator; nuclear (Comanche Peak) + CCGT; Texas merchant market. Run /add-ticker VST --sector "Energy & Power" --layer "Primary Power Generation" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): GEV (GE Vernova) — Primary Power Generation + High-Voltage Transmission layer. Gas turbines (GE 7F.05, HA-class); wind (Haliade-X); Grid Solutions HV transformers + HVDC. Run /add-ticker GEV --sector "Energy & Power" --layer "Primary Power Generation" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): CEG (Constellation Energy) — Primary Power Generation layer. Largest US nuclear operator (21 GW); Microsoft + Amazon nuclear PPA winner. Run /add-ticker CEG --sector "Energy & Power" --layer "Primary Power Generation" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): NEE (NextEra Energy) — Primary Power Generation layer. #1 US wind + solar; FPL nuclear fleet; NEER renewables arm; largest FID machine for clean generation. Run /add-ticker NEE --sector "Energy & Power" --layer "Primary Power Generation" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): ENR.DE (Siemens Energy) — High-Voltage Transmission layer. Germany-listed; HV transformers (2-4 year wait lists); HVDC BlueTec; switchgear. Run /add-ticker ENR.DE --sector "Energy & Power" --layer "High-Voltage Transmission & Grid Infrastructure" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): FLNC (Fluence Energy) — Grid-Scale Storage layer. BESS system integrator (Siemens + AES JV); Gridstack product; Fluence IQ optimization software. Run /add-ticker FLNC --sector "Energy & Power" --layer "Grid-Scale Energy Storage (BESS)" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): BE (Bloom Energy) — Fuel Cell & Distributed Generation layer. SOFC (solid oxide fuel cell); NG + H2 compatible; data center deployments. Run /add-ticker BE --sector "Energy & Power" --layer "Fuel Cell & Distributed Clean Generation" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): LEU (Centrus Energy) — Advanced Nuclear SMR layer. Only US HALEU enrichment capability (Piketon, OH); critical fuel for all fast-spectrum SMRs. Run /add-ticker LEU --sector "Energy & Power" --layer "Advanced Nuclear — SMR & Microreactor" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): PLUG (Plug Power) — Fuel Cell & Distributed Generation layer. PEMFC + PEM electrolyzer + liquid H2; material handling + stationary power. Run /add-ticker PLUG --sector "Energy & Power" --layer "Fuel Cell & Distributed Clean Generation" to onboard. -->
 
 ---
 

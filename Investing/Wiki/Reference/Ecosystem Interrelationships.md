@@ -1,5 +1,5 @@
 # AI Buildout — Ecosystem Interrelationships
-*Last updated: 2026-05-24 — Electronic Components + Metals & Mining + Photonics & Optical + Compute Infrastructure sector maps appended*
+*Last updated: 2026-05-24 — D1 (Electronic Components, Metals & Mining) + D2 (Photonics & Optical) + D3 (Compute Infrastructure, Energy & Power) sector maps appended*
 
 Each row is a directional dependency: **Source sector → Target sector**, documented at the process/product level. This file is the source of truth for cross-sector edges and is the data backbone for the future dashboard's flow diagram.
 
@@ -68,6 +68,11 @@ Each row is a directional dependency: **Source sector → Target sector**, docum
 | Compute Infrastructure | AI Compute Service | Fintech & Commerce AI | AI Model Serving | Service | GPU cluster inference endpoint → real-time fraud scoring, credit decisioning, LLM-powered commerce AI | No | All major fintech AI inference workloads run on hyperscaler GPU — AWS SageMaker, Azure ML, GCP Vertex |
 | Semiconductors | Design (Memory) | Compute Infrastructure | Server Assembly | Component | HBM3e / HBM4 stack → GPU memory subsystem (on-package, CoWoS-integrated) | Yes | HBM CoWoS packaging at TSMC is the primary supply bottleneck for GPU shipments |
 | Electronic Components | PCB Assembly (EMS / PCBA) | Compute Infrastructure | Server Assembly | Component | Fully populated PCBA (GPU board, PSU board, NIC board) → server chassis integration at ODM | No | Jabil, Celestica, and Foxconn/FIH are primary AI server PCBA assemblers under SMCI/Quanta ODM |
+| Energy & Power | Primary Generation | Compute Infrastructure | Power Distribution | Service | Grid-connected substation (33kV step-down) → data center main switchboard → facility power distribution | No | Utility interconnect is the foundational infrastructure dependency; all other power tiers flow from this |
+| Energy & Power | Advanced Nuclear | Compute Infrastructure | Hyperscaler Operation | Service | Nuclear PPA (cost-plus return, 24/7 carbon-free, 20-year contract) → hyperscaler Scope 2 zero-carbon commitment | Partial | Microsoft Three Mile Island, Amazon Talen, Google Kairos PPAs set template; SMR PPAs pending first commercial operation |
+| Energy & Power | Fuel Cell & Distributed | Compute Infrastructure | On-Site Generation | Component | SOFC unit (Bloom Energy box, 250kW) → on-site baseload power behind-the-meter at data center | No | Bloom boxes provide bridge power while grid interconnect queue is resolved; 60% LHV efficiency |
+| Energy & Power | Power Electronics | Robotics & Edge AI | Actuators & Motors | Component | Variable-frequency drive (SiC-based, 4kW–1MW) → servo motor torque control in robot joint actuator | No | Motor drive is the power-stage interface between the power grid and the mechanical actuator |
+| Materials & Mining | Rare Earth Separation | Energy & Power | Primary Generation | Material | NdFeB permanent magnet (Nd, Pr, Dy alloy) → PMSG rotor in direct-drive wind turbine → wind generation | Yes | Offshore wind direct-drive PMSG uses ~1 tonne NdFeB per MW; China controls ~90% of NdFeB alloy |
 
 ---
 
