@@ -1,6 +1,6 @@
 # Monitor Registry
 *The research-monitor skill reads this file on every run. Add tickers here — no skill update needed.*
-*Last updated: May 24, 2026 — /map-sector Fintech & Commerce AI run; 7 new candidate stubs added*
+*Last updated: May 24, 2026 — /map-sector Space & Communications run; IRDM, GSAT, VSAT, KTOS candidate stubs added*
 
 ---
 
@@ -154,6 +154,11 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 |--------|---------|-----|----------|------|-------|
 | ASTS | AST SpaceMobile | 0001780530 | NASDAQ | Investing/Wiki/Sectors/Space & Comms/ASTS.md | — |
 | RKLB | Rocket Lab USA, Inc. | 0001819994 | NASDAQ | Investing/Wiki/Sectors/Space & Comms/RKLB.md | — |
+
+<!-- CANDIDATE (/map-sector 2026-05-24): IRDM (Iridium Communications) — Satellite Connectivity Services + Spectrum & Orbital Operations layers. 66-satellite LEO constellation; L-band MSS; Iridium SBD IoT; Iridium Certus broadband; owns globally-coordinated ITU L-band spectrum. Run /add-ticker IRDM --sector "Space & Comms" --layer "Satellite Connectivity Services" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): GSAT (Globalstar Inc.) — Satellite Connectivity Services + Spectrum & Orbital Operations layers. S-band MSS constellation; Apple Emergency SOS royalty stream; Band 53/n53 terrestrial LTE spectrum asset; SPOT IoT messaging. Run /add-ticker GSAT --sector "Space & Comms" --layer "Satellite Connectivity Services" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): VSAT (Viasat Inc.) — Ground Segment & Network Operations + Satellite Connectivity Services + User Terminal Manufacturing layers. Ka-band HTS (ViaSat-3, >1 Tbps); in-flight broadband (Viasat IFC); government satcom; owns ground gateways and user terminals. Run /add-ticker VSAT --sector "Space & Comms" --layer "Ground Segment & Network Operations" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): KTOS (Kratos Defense & Security Solutions) — Payload Manufacturing + Ground Segment & Network Operations + Satellite Manufacturing Support & Testing layers. OpenSpace satcom ground systems software; GaN T/R module defense electronics; hypersonic test vehicles. Run /add-ticker KTOS --sector "Space & Comms" --layer "Ground Segment & Network Operations" to onboard. -->
 
 ---
 

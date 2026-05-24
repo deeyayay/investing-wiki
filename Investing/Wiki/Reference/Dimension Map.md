@@ -1,5 +1,5 @@
 # AI Ecosystem — Dimension Map
-*Last updated: 2026-05-24 — Electronic Components sector mapped*
+*Last updated: 2026-05-24 — Space & Communications sector mapped (8-tier supply chain map, process/product depth)*
 
 This file is the authoritative taxonomy for the five-dimension vertical stack. All sector supply chain maps and the Ecosystem Interrelationships graph reference the dimension codes here.
 
