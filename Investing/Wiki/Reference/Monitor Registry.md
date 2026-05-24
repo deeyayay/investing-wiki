@@ -1,6 +1,6 @@
 # Monitor Registry
 *The research-monitor skill reads this file on every run. Add tickers here — no skill update needed.*
-*Last updated: May 21, 2026 — FOCI (3363.TW) added to Photonics & Optical*
+*Last updated: May 24, 2026 — /map-sector Semiconductors run; candidate stubs added*
 
 ---
 
@@ -56,6 +56,19 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 | ALAB | Astera Labs, Inc. | 0001736297 | NASDAQ | Investing/Wiki/Sectors/Semiconductors/ALAB.md | — |
 | CRDO | Credo Technology Group Holding Ltd | 0001807794 | NASDAQ | Investing/Wiki/Sectors/Semiconductors/CRDO.md | — |
 | AMKR | Amkor Technology, Inc. | 0001047127 | NASDAQ | Investing/Wiki/Sectors/Semiconductors/AMKR.md | — |
+
+<!-- CANDIDATE (/map-sector 2026-05-24): SNPS (Synopsys) — EDA & Design IP layer. Run /add-ticker SNPS --sector "Semiconductors" --layer "EDA & Design IP" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): CDNS (Cadence Design Systems) — EDA & Design IP layer. Run /add-ticker CDNS --sector "Semiconductors" --layer "EDA & Design IP" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): ARM (Arm Holdings) — EDA & Design IP layer. Run /add-ticker ARM --sector "Semiconductors" --layer "EDA & Design IP" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): LRCX (Lam Research) — Deposition & Etch Equipment layer. Run /add-ticker LRCX --sector "Semiconductors" --layer "Deposition & Etch Equipment" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): AMAT (Applied Materials) — Deposition & Etch Equipment layer. Run /add-ticker AMAT --sector "Semiconductors" --layer "Deposition & Etch Equipment" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): KLAC (KLA Corporation) — Inspection & Metrology layer. Run /add-ticker KLAC --sector "Semiconductors" --layer "Inspection & Metrology" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): ENTG (Entegris) — Raw Materials layer. Run /add-ticker ENTG --sector "Semiconductors" --layer "Raw Materials" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): ICHR (Ichor Holdings) — Raw Materials layer. Run /add-ticker ICHR --sector "Semiconductors" --layer "Raw Materials" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): ONTO (Onto Innovation) — Inspection & Metrology layer. Run /add-ticker ONTO --sector "Semiconductors" --layer "Inspection & Metrology" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): ASX (ASE Technology / Advanced Semiconductor Engineering) — Packaging (OSAT) layer. Run /add-ticker ASX --sector "Semiconductors" --layer "Packaging (OSAT)" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): COHU (Cohu Inc.) — Final Test & Burn-In layer. Run /add-ticker COHU --sector "Semiconductors" --layer "Final Test & Burn-In" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): 6857.T (Advantest) — Final Test & Burn-In layer (Japan-listed; dominant AI chip tester). Run /add-ticker 6857.T --sector "Semiconductors" --layer "Final Test & Burn-In" to onboard. -->
 
 ---
 
