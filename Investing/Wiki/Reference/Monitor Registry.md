@@ -1,6 +1,6 @@
 # Monitor Registry
 *The research-monitor skill reads this file on every run. Add tickers here — no skill update needed.*
-*Last updated: May 24, 2026 — /map-sector Energy & Power run; 9 new candidate stubs added*
+*Last updated: May 24, 2026 — /map-sector Fintech & Commerce AI run; 7 new candidate stubs added*
 
 ---
 
@@ -118,6 +118,14 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 | MELI | MercadoLibre Inc. | 0001099590 | NASDAQ | Investing/Wiki/Sectors/Fintech & E-Commerce/MELI.md | — |
 | HOOD | Robinhood Markets | 0001783879 | NASDAQ | Investing/Wiki/Sectors/Fintech & E-Commerce/HOOD.md | — |
 | SOFI | SoFi Technologies, Inc. | 0001818874 | NASDAQ | Investing/Wiki/Sectors/Fintech & E-Commerce/SOFI.md | 9.0 |
+
+<!-- CANDIDATE (/map-sector 2026-05-24): AFRM (Affirm Holdings) — Buy Now Pay Later / Credit Decisioning layer. Real-time underwriting at checkout; BNPL market leader in US; AI credit model moat. Run /add-ticker AFRM --sector "Fintech & E-Commerce" --layer "Buy Now Pay Later & Credit Decisioning" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): PYPL (PayPal Holdings) — Payment Processing & Wallet layer. 430M active accounts; Venmo + PayPal wallet; Braintree gateway; AI fraud decisioning at scale. Run /add-ticker PYPL --sector "Fintech & E-Commerce" --layer "Payment Processing & Digital Wallet" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): SQ (Block, Inc.) — Payment Processing & Commerce Enablement layer. Square POS + Cash App; merchant acquiring + consumer wallet; Bitcoin integration. Run /add-ticker SQ --sector "Fintech & E-Commerce" --layer "Payment Processing & Commerce Enablement" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): NU (Nu Holdings) — Digital Banking & Neobank layer. Largest neobank in Latin America (Brazil, Mexico, Colombia); AI underwriting; 90M+ customers. Run /add-ticker NU --sector "Fintech & E-Commerce" --layer "Digital Banking & Neobank" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): UPST (Upstart Holdings) — AI Credit Underwriting layer. AI-native consumer lending platform; bank partnership model; macro-sensitive but AI-differentiating. Run /add-ticker UPST --sector "Fintech & E-Commerce" --layer "AI Credit Underwriting" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): FLYW (Flywire Corporation) — Vertical Payment Orchestration layer. High-value vertical payments (education, healthcare, travel); FX handling + receivables automation. Run /add-ticker FLYW --sector "Fintech & E-Commerce" --layer "Vertical Payment Orchestration" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): NCNO (nCino, Inc.) — Banking AI & Cloud Platform layer. AI-powered cloud banking platform; commercial loan origination; bank digital transformation. Run /add-ticker NCNO --sector "Fintech & E-Commerce" --layer "Banking AI & Cloud Platform" to onboard. -->
 
 ---
 

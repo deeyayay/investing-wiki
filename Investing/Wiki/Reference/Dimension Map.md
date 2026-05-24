@@ -25,13 +25,13 @@ This file is the authoritative taxonomy for the five-dimension vertical stack. A
 | Electronic Components | D1 | `Electronic Components` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
 | Materials & Mining | D1 | `Metals & Mining` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
 | Photonics & Optical | D2 | `Photonics & Optical` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
-| Space & Communications | D2 | `Space & Comms` | framework-only | no map |
+| Space & Communications | D2 | `Space & Comms` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
 | Compute Infrastructure | D3 | `AI Infrastructure` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
 | Energy & Power | D3 | `Clean Energy` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
-| Cybersecurity | D4 | `Cybersecurity` | framework-only | no map |
+| Cybersecurity | D4 | `Cybersecurity` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
 | Data & Software Platforms | D4 | *(reserved)* | planned | not yet created |
-| Robotics & Edge AI | D5 | `Robotics & Edge AI` | framework-only | no map |
-| Fintech & Commerce AI | D5 | `Fintech & E-Commerce` | framework-only | no map |
+| Robotics & Edge AI | D5 | `Robotics & Edge AI` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
+| Fintech & Commerce AI | D5 | `Fintech & E-Commerce` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
 | Defense & Space | D5 | *(reserved)* | planned | not yet created |
 
 **Status values:**
