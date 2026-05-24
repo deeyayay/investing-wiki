@@ -1,6 +1,6 @@
 # Monitor Registry
 *The research-monitor skill reads this file on every run. Add tickers here — no skill update needed.*
-*Last updated: May 24, 2026 — /map-sector Photonics & Optical run; 3 new candidate stubs added (GLW, IQE, MTSI)*
+*Last updated: May 24, 2026 — /map-sector Compute Infrastructure run; 13 new candidate stubs added*
 
 ---
 
@@ -85,6 +85,20 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 | VRT | Vertiv Holdings | 0001793309 | NYSE | Investing/Wiki/Sectors/AI Infrastructure/VRT.md | — |
 | SMCI | Super Micro Computer | 0001375365 | NASDAQ | Investing/Wiki/Sectors/AI Infrastructure/SMCI.md | — |
 | P | Everpure Inc. (fka Pure Storage) | 0001474432 | NYSE | Investing/Wiki/Sectors/AI Infrastructure/P.md | — |
+
+<!-- CANDIDATE (/map-sector 2026-05-24): NTAP (NetApp) — Storage Systems layer. All-flash arrays + object storage (ONTAP / StorageGRID); strong AI storage pipeline. Run /add-ticker NTAP --sector "Compute Infrastructure" --layer "Storage Systems" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): WDC (Western Digital) — Storage Systems layer. NVMe SSD + HDD; enterprise flash for hyperscalers; NAND vertically integrated. Run /add-ticker WDC --sector "Compute Infrastructure" --layer "Storage Systems" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): STX (Seagate Technology) — Storage Systems layer. HDD dominant; high-capacity nearline storage for hyperscaler object stores. Run /add-ticker STX --sector "Compute Infrastructure" --layer "Storage Systems" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): ETN (Eaton Corporation) — Data Center Power Infrastructure layer. Modular UPS (93PM), PDUs, busway, switchgear; broad power management portfolio. Run /add-ticker ETN --sector "Compute Infrastructure" --layer "Data Center Power Infrastructure" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): MOD (Modine Manufacturing) — Thermal Management & Cooling layer. CDUs, cold plates, dry coolers for liquid cooling; pivoting to AI data center thermal. Run /add-ticker MOD --sector "Compute Infrastructure" --layer "Thermal Management & Cooling" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): NVT (nVent Electric) — Thermal Management & Cooling + Power Infrastructure layer. Enclosures, cable management, liquid cooling rack components. Run /add-ticker NVT --sector "Compute Infrastructure" --layer "Thermal Management & Cooling" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): 2308.TW (Delta Electronics Taiwan) — Compute Node Design & ODM Assembly layer. Taiwan-listed; power supplies + AI server designs; major Nvidia system integrator. Run /add-ticker 2308.TW --sector "Compute Infrastructure" --layer "Compute Node Design & ODM Assembly" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): 6669.TW (Wistron Corporation) — Compute Node Design & ODM Assembly layer. Taiwan ODM; AI server and OCP production for US hyperscalers. Run /add-ticker 6669.TW --sector "Compute Infrastructure" --layer "Compute Node Design & ODM Assembly" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): 3324.TW (Inventec Corporation) — Compute Node Design & ODM Assembly layer. Taiwan ODM; high AI server revenue growth; HPE + hyperscaler customer. Run /add-ticker 3324.TW --sector "Compute Infrastructure" --layer "Compute Node Design & ODM Assembly" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): AMZN (Amazon / AWS) — Hyperscaler & Colocation Operation layer. #1 cloud; dominant AI training (P5 H100, Trainium2); custom ASIC vertical integration. Run /add-ticker AMZN --sector "Compute Infrastructure" --layer "Hyperscaler & Colocation Operation" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): GOOGL (Alphabet / GCP) — Hyperscaler & Colocation Operation layer. GCP + TPU v5; custom silicon moat; AI-native cloud. Run /add-ticker GOOGL --sector "Compute Infrastructure" --layer "Hyperscaler & Colocation Operation" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): MSFT (Microsoft / Azure) — Hyperscaler & Colocation Operation layer. Azure AI; Copilot cloud; deepest OpenAI integration. Run /add-ticker MSFT --sector "Compute Infrastructure" --layer "Hyperscaler & Colocation Operation" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): ORCL (Oracle Cloud) — Hyperscaler & Colocation Operation layer. OCI GPU clusters; NVIDIA preferred partner; GenAI workload momentum. Run /add-ticker ORCL --sector "Compute Infrastructure" --layer "Hyperscaler & Colocation Operation" to onboard. -->
 
 ---
 

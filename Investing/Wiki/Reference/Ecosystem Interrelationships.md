@@ -1,5 +1,5 @@
 # AI Buildout — Ecosystem Interrelationships
-*Last updated: 2026-05-24 — Electronic Components + Metals & Mining + Photonics & Optical sector maps appended*
+*Last updated: 2026-05-24 — Electronic Components + Metals & Mining + Photonics & Optical + Compute Infrastructure sector maps appended*
 
 Each row is a directional dependency: **Source sector → Target sector**, documented at the process/product level. This file is the source of truth for cross-sector edges and is the data backbone for the future dashboard's flow diagram.
 
@@ -62,6 +62,12 @@ Each row is a directional dependency: **Source sector → Target sector**, docum
 | Photonics & Optical | Photonic Device Fab | Semiconductors | Power Devices | Material | GaN-on-SiC epi wafer (MOCVD grown) → GaN HEMT power amplifier die, RF transistor | Partial | GaN-on-SiC shares MOCVD fab capacity with telecom laser production; RF/power and photonics compete for III-V fab time |
 | Photonics & Optical | Coherent Line Systems | Space & Communications | Ground Segment | Component | Coherent DWDM line card / ROADM → terrestrial fiber backbone connecting satellite ground stations and inter-DC routes | No | Space ground stations require high-capacity terrestrial backhaul; coherent optics is the enabling technology |
 | Photonics & Optical | Photonic Sensing | Energy & Power | Grid Infrastructure | Component | Distributed acoustic sensing (DAS) / distributed temperature sensing (DTS) fiber system → power grid fault detection, pipeline integrity monitoring | No | DAS/DTS fiber runs alongside HV power cables or gas pipelines; Viavi and AP Sensing supply systems |
+| Compute Infrastructure | Liquid Cooling Waste Heat | Energy & Power | Thermal Recovery | Process | CDU / immersion coolant waste heat (40–70°C) → facility heat recovery system or district heating loop (Nordic / Canadian DCs selling waste heat to municipalities) | No | PUE optimization; waste heat monetization is emerging but not yet mainstream |
+| Compute Infrastructure | AI Compute Service | Cybersecurity | Security Operations | Service | Infrastructure telemetry, VPC flow logs, API audit logs → SIEM / XDR ingestion and threat detection at cloud scale | No | Every cloud workload generates telemetry; hyperscaler log volume is the primary scale driver for SIEM capacity |
+| Compute Infrastructure | AI Compute Service | Robotics & Edge AI | Edge Inference | Service | Cloud LLM inference API + model checkpoint download → robot remote cognition and periodic on-device model update | No | Embodied AI systems offload long-horizon planning and learning to cloud; edge runs local perception and reflex |
+| Compute Infrastructure | AI Compute Service | Fintech & Commerce AI | AI Model Serving | Service | GPU cluster inference endpoint → real-time fraud scoring, credit decisioning, LLM-powered commerce AI | No | All major fintech AI inference workloads run on hyperscaler GPU — AWS SageMaker, Azure ML, GCP Vertex |
+| Semiconductors | Design (Memory) | Compute Infrastructure | Server Assembly | Component | HBM3e / HBM4 stack → GPU memory subsystem (on-package, CoWoS-integrated) | Yes | HBM CoWoS packaging at TSMC is the primary supply bottleneck for GPU shipments |
+| Electronic Components | PCB Assembly (EMS / PCBA) | Compute Infrastructure | Server Assembly | Component | Fully populated PCBA (GPU board, PSU board, NIC board) → server chassis integration at ODM | No | Jabil, Celestica, and Foxconn/FIH are primary AI server PCBA assemblers under SMCI/Quanta ODM |
 
 ---
 

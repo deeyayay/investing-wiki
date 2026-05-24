@@ -26,7 +26,7 @@ This file is the authoritative taxonomy for the five-dimension vertical stack. A
 | Materials & Mining | D1 | `Metals & Mining` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
 | Photonics & Optical | D2 | `Photonics & Optical` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
 | Space & Communications | D2 | `Space & Comms` | framework-only | no map |
-| Compute Infrastructure | D3 | `AI Infrastructure` | framework-only | no map |
+| Compute Infrastructure | D3 | `AI Infrastructure` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
 | Energy & Power | D3 | `Clean Energy` | framework-only | no map |
 | Cybersecurity | D4 | `Cybersecurity` | framework-only | no map |
 | Data & Software Platforms | D4 | *(reserved)* | planned | not yet created |
