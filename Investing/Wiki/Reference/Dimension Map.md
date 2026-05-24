@@ -1,5 +1,5 @@
 # AI Ecosystem — Dimension Map
-*Last updated: 2026-05-24*
+*Last updated: 2026-05-24 — Electronic Components sector mapped*
 
 This file is the authoritative taxonomy for the five-dimension vertical stack. All sector supply chain maps and the Ecosystem Interrelationships graph reference the dimension codes here.
 
@@ -22,7 +22,7 @@ This file is the authoritative taxonomy for the five-dimension vertical stack. A
 | Sector | Dimension | Folder Slug | Status | Supply Chain Map |
 |--------|-----------|-------------|--------|-----------------|
 | Semiconductors | D1 | `Semiconductors` | partial | `_Supply Chain Map.md` — rebuilt 2026-05-24, process/product depth |
-| Electronic Components | D1 | `Electronic Components` | planned | not yet created |
+| Electronic Components | D1 | `Electronic Components` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
 | Materials & Mining | D1 | `Metals & Mining` | framework-only | no map |
 | Photonics & Optical | D2 | `Photonics & Optical` | framework-only | no map |
 | Space & Communications | D2 | `Space & Comms` | framework-only | no map |

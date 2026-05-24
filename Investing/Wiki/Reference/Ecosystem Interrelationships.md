@@ -1,5 +1,5 @@
 # AI Buildout — Ecosystem Interrelationships
-*Last updated: 2026-05-24*
+*Last updated: 2026-05-24 — Electronic Components sector map appended*
 
 Each row is a directional dependency: **Source sector → Target sector**, documented at the process/product level. This file is the source of truth for cross-sector edges and is the data backbone for the future dashboard's flow diagram.
 
@@ -39,6 +39,18 @@ Each row is a directional dependency: **Source sector → Target sector**, docum
 | Compute Infrastructure | Demand Signal | Semiconductors | Design (Compute) | Signal | Hyperscaler GPU capex → fabless chip demand pull | No | Hyperscaler capex guidance is the primary forward indicator for NVDA/AMD/AVGO custom ASIC demand |
 | Compute Infrastructure | Demand Signal | Energy & Power | Power Generation | Signal | Data center power purchase → utility-scale generation build | No | Microsoft/Google/Amazon PPA signings drive utility-scale nuclear and solar project FIDs |
 | Compute Infrastructure | Demand Signal | Electronic Components | MLCC | Signal | Server build rate → MLCC volume orders | No | MLCC order book = 3–6 month leading indicator |
+| Materials & Mining | Copper Mining & Refining | Electronic Components | PCB & Substrate Mfg | Material | High-purity electrolytic copper foil (9–18µm) → PCB inner layers, IC substrate SAP plating | Partial | Copper purity and foil thickness spec for signal-layer PCB is tighter than structural copper |
+| Materials & Mining | Rare Earth & Specialty Metals | Electronic Components | MLCC Manufacturing | Material | Nickel powder → MLCC internal electrode; Palladium → Ag-Pd termination alloy | Partial | Ni electrode co-fire is the process that enabled base-metal MLCC; Pd exposure is legacy high-rel only |
+| Materials & Mining | Rare Earth & Specialty Metals | Electronic Components | Film & Electrolytic Cap Mfg | Material | Tantalum powder → solid tantalum capacitor anode | Partial | Ta supply from conflict-mineral-regulated sources; Cabot and Global Advanced Metals are key processors |
+| Electronic Components | IC Substrate Mfg | Semiconductors | Packaging (OSAT) | Material | ABF IC substrate (flip-chip BGA) → OSAT packaging line input | Yes | ABF substrate supply periodically constrains CoWoS and HBM advanced packaging throughput at TSMC/AMKR |
+| Electronic Components | PCB Fabrication | Compute Infrastructure | Server Assembly | Material | Multi-layer PCB (24L+ HDI) → server motherboard / GPU board / switch board | Partial | High-layer-count AI server PCBs are capacity-constrained; TTM and Taiwanese PCB makers are key |
+| Electronic Components | MLCC Manufacturing | Compute Infrastructure | Server Assembly | Component | MLCC (X5R/X7R, 100V class) → server PCB decoupling array | Partial | Murata/TDK/Yageo order book is a 3–6 month leading indicator of server build rates |
+| Electronic Components | MLCC Manufacturing | Space & Communications | Satellite Bus | Component | High-rel MLCC (MIL-PRF-55681 / ESA-qualified) → satellite PCB passive decoupling | No | Space-grade MLCC is a distinct qualification; AVX/Kyocera and Vishay are primary suppliers |
+| Electronic Components | Connector & Socket Mfg | Compute Infrastructure | Networking | Component | QSFP-DD / PCIe Gen 5 connector → NIC, switch, GPU server backplane | No | CPO transition may eventually eliminate pluggable transceiver connector tier |
+| Electronic Components | Film & Electrolytic Cap Mfg | Energy & Power | Power Conversion | Component | 900V polypropylene film capacitor → HVDC rectifier DC bus filter; polymer Al electrolytic → UPS energy storage | Partial | 800V-rated film caps require different dielectric spec than 450V AC-side; not a drop-in substitute |
+| Electronic Components | Inductor & Transformer Mfg | Energy & Power | Power Conversion | Component | Metal composite power inductor → DC-DC converter output filter stage | No | High-Isat inductors (metal composite core) required for high-frequency LLC converters in server PSUs |
+| Electronic Components | PCB Assembly (EMS / PCBA) | Compute Infrastructure | Server Assembly | Component | Fully populated PCBA (motherboard, GPU board, PSU board) → server chassis integration at EMS/ODM | No | Jabil, Celestica, and Foxconn are primary AI server PCBA assemblers |
+| Electronic Components | High-Frequency PCB | Photonics & Optical | Transceiver Mfg | Material | Rogers 4350B / Megtron 6 PCB → optical transceiver RF board | No | Low-loss dielectric PCB is required for 400G+ DSP signal integrity |
 
 ---
 

@@ -1,6 +1,6 @@
 # Monitor Registry
 *The research-monitor skill reads this file on every run. Add tickers here — no skill update needed.*
-*Last updated: May 24, 2026 — /map-sector Semiconductors run; candidate stubs added*
+*Last updated: May 24, 2026 — /map-sector Electronic Components run; 13 candidate stubs added*
 
 ---
 
@@ -118,6 +118,27 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 |--------|---------|-----|----------|------|-------|
 | ASTS | AST SpaceMobile | 0001780530 | NASDAQ | Investing/Wiki/Sectors/Space & Comms/ASTS.md | — |
 | RKLB | Rocket Lab USA, Inc. | 0001819994 | NASDAQ | Investing/Wiki/Sectors/Space & Comms/RKLB.md | — |
+
+---
+
+## Electronic Components
+
+| Ticker | Company | CIK | Exchange | Path | Score |
+|--------|---------|-----|----------|------|-------|
+
+<!-- CANDIDATE (/map-sector 2026-05-24): 6981.T (Murata Manufacturing) — MLCC Manufacturing + Dielectric & Conductor Materials layer. ~40% global MLCC share; dominant in high-layer-count small case sizes. Run /add-ticker 6981.T --sector "Electronic Components" --layer "MLCC Manufacturing" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): 6762.T (TDK Corporation) — MLCC Manufacturing + Inductor & Transformer Mfg layer. #2 MLCC; also ferrite cores, inductors, EPCOS capacitors. Run /add-ticker 6762.T --sector "Electronic Components" --layer "MLCC Manufacturing" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): 2327.TW (Yageo Corporation) — MLCC Manufacturing + Film & Electrolytic Cap Mfg layer. #3 MLCC globally; KEMET acquisition adds film/electrolytic. Taiwan-listed. Run /add-ticker 2327.TW --sector "Electronic Components" --layer "MLCC Manufacturing" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): VSH (Vishay Intertechnology) — Film & Electrolytic Cap Mfg + Inductor & Transformer Mfg layer. Broad passive portfolio: tantalum, film, electrolytic, resistors. Run /add-ticker VSH --sector "Electronic Components" --layer "Film & Electrolytic Capacitor Mfg" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): RCI (Rogers Corporation) — Substrate & Laminate Materials layer. High-frequency PTFE/ceramic laminates (Rogers 4000 series); antenna and transceiver substrates. Run /add-ticker RCI --sector "Electronic Components" --layer "Substrate & Laminate Materials" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): TTM (TTM Technologies) — PCB Fabrication layer. #1 US PCB manufacturer; advanced AI server and aerospace PCBs. Run /add-ticker TTM --sector "Electronic Components" --layer "PCB Fabrication" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): 3036.TW (Unimicron Technology) — IC Substrate Manufacturing layer. #1 IC substrate globally; advanced ABF substrates for AMD/Intel. Taiwan-listed. Run /add-ticker 3036.TW --sector "Electronic Components" --layer "IC Substrate Manufacturing" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): 3037.TW (Ibiden Co.) — IC Substrate Manufacturing layer. #3 IC substrate; ABF-based; NVIDIA customer. Japan-listed. Run /add-ticker 3037.TW --sector "Electronic Components" --layer "IC Substrate Manufacturing" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): 8046.TW (Nan Ya PCB) — IC Substrate Manufacturing layer. #2 IC substrate; conventional PCBs also. Taiwan-listed. Run /add-ticker 8046.TW --sector "Electronic Components" --layer "IC Substrate Manufacturing" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): TEL (TE Connectivity) — Connector & Socket Manufacturing layer. Broadest connector portfolio; automotive + data center + industrial. Run /add-ticker TEL --sector "Electronic Components" --layer "Connector & Socket Manufacturing" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): APH (Amphenol Corporation) — Connector & Socket Manufacturing layer. #2 connector globally; strong data center and AI infrastructure exposure. Run /add-ticker APH --sector "Electronic Components" --layer "Connector & Socket Manufacturing" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): JBL (Jabil Inc.) — PCB Assembly (EMS / PCBA) layer. #2 EMS globally; AI server PCBA + power supply assembly. Run /add-ticker JBL --sector "Electronic Components" --layer "PCB Assembly (EMS / PCBA)" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): CLS (Celestica) — PCB Assembly (EMS / PCBA) layer. EMS; growing AI infrastructure PCBA share. Run /add-ticker CLS --sector "Electronic Components" --layer "PCB Assembly (EMS / PCBA)" to onboard. -->
 
 ---
 
