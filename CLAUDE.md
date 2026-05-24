@@ -47,6 +47,7 @@ gemini-scribe/
 | `/ingest-sentiment` | `/ingest-sentiment [--source article\|musing] [--author "@handle"]` | Parse Tweets.md staging dump into signal notes; update Social Mentions on ticker pages |
 | `/score-ticker` | `/score-ticker TICKER [--refresh]` | Score a ticker on the 6-criterion Unrivaled Investing rubric; writes Scoring Summary to ticker page, updates Monitor Registry and Watchlist |
 | `/daily-news` | `/daily-news [--all] [--sector "Sector"] [--hours N]` | Daily news digest: scans watchlist tickers, scores 1–5 by impact, writes datestamped digest to `Investing/Output/Digest/`, appends high-impact items to ticker pages |
+| `/build-customer-matrix` | `/build-customer-matrix "Sector Name"` | Build supplier × end-customer dependency matrix; writes `_Customer Matrix.md` with scored cells and JSON heat map metadata for the dashboard |
 | `/daily-dashboard` | `/daily-dashboard [--date YYYY-MM-DD] [--no-push]` | Generate self-contained HTML dashboard from latest digest + KB; analyst-style HOLD/ADD/TRIM/WATCH recommendations for portfolio holdings; deploy to GitHub Pages |
 
 ## Sector-First Workflow (preferred for entering a new sector)
