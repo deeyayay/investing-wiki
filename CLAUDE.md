@@ -15,12 +15,14 @@ Investing/
     Dashboard/               ← generated HTML dashboards (index.html + YYYY-MM-DD.html)
   Wiki/
     Reference/
-      Monitor Registry.md    ← master list of tracked tickers (ticker → file path map)
-      Sentiment Index.md     ← aggregated sentiment tracking
-      Watchlist.md           ← core holdings + speculative + compounders
-      _Ticker Template.md    ← template for new ticker pages
-      _Signal Template.md    ← template for signal notes
-      Ecosystem Maps/        ← supply chain and ecosystem diagrams
+      Monitor Registry.md           ← master list of tracked tickers (ticker → file path map)
+      Sentiment Index.md            ← aggregated sentiment tracking
+      Watchlist.md                  ← core holdings + speculative + compounders
+      Dimension Map.md              ← D1–D5 taxonomy: sector → dimension → status
+      Ecosystem Interrelationships.md ← cross-sector dependency graph (source of truth for flow diagram)
+      _Ticker Template.md           ← template for new ticker pages
+      _Signal Template.md           ← template for signal notes
+      Ecosystem Maps/               ← supply chain and ecosystem diagrams
     Sectors/
       [Sector Name]/
         [TICKER].md          ← individual ticker wiki page
@@ -49,6 +51,7 @@ gemini-scribe/
 | `/daily-news` | `/daily-news [--all] [--sector "Sector"] [--hours N]` | Daily news digest: scans watchlist tickers, scores 1–5 by impact, writes datestamped digest to `Investing/Output/Digest/`, appends high-impact items to ticker pages |
 | `/build-customer-matrix` | `/build-customer-matrix "Sector Name"` | Build supplier × end-customer dependency matrix; writes `_Customer Matrix.md` with scored cells and JSON heat map metadata for the dashboard |
 | `/daily-dashboard` | `/daily-dashboard [--date YYYY-MM-DD] [--no-push]` | Generate self-contained HTML dashboard from latest digest + KB; analyst-style HOLD/ADD/TRIM/WATCH recommendations for portfolio holdings; deploy to GitHub Pages |
+| `/detect-shifts` | `/detect-shifts [--sector "Sector"] [--all]` | Scan for structural technology and architectural shifts affecting sector supply chains. Searches recent news for process-level changes, compares against current tier definitions, appends new rows to `Ecosystem Interrelationships.md` and flags affected tiers in supply chain maps. Run monthly or after major industry events. |
 
 ## Sector-First Workflow (preferred for entering a new sector)
 
@@ -78,18 +81,22 @@ The Sector Framework is written **last** — it's the synthesis output, not the 
 - **Monitor Registry** (`Investing/Wiki/Reference/Monitor Registry.md`) — authoritative ticker → sector → file path map. All skills read this to locate wiki pages.
 - **Sentiment Index** (`Investing/Wiki/Reference/Sentiment Index.md`) — social signal counts and recency by ticker.
 - **Watchlist** (`Investing/Wiki/Reference/Watchlist.md`) — curated view of holdings, rockets, and compounders with one-line theses.
+- **Dimension Map** (`Investing/Wiki/Reference/Dimension Map.md`) — D1–D5 taxonomy, sector slugs, and supply chain map status per sector.
+- **Ecosystem Interrelationships** (`Investing/Wiki/Reference/Ecosystem Interrelationships.md`) — cross-sector dependency graph at the process/product level. Source of truth for flow diagram rendering and multi-sector signal propagation.
 
-## Existing Sectors
+## Sector Taxonomy (Five-Dimension Stack)
 
-- AI Infrastructure
-- Clean Energy
-- Cybersecurity
-- Fintech & E-Commerce
-- Metals & Mining
-- Photonics & Optical
-- Robotics & Edge AI
-- Semiconductors
-- Space & Comms
+Sectors are organized into a D1–D5 vertical stack. See `Investing/Wiki/Reference/Dimension Map.md` for the authoritative registry with status per sector.
+
+```
+D5 — AI Applications:    Robotics & Edge AI · Fintech & Commerce AI · Defense & Space (planned)
+D4 — AI Enablement:      Cybersecurity · Data & Software Platforms (planned)
+D3 — AI Infrastructure:  Compute Infrastructure (folder: AI Infrastructure) · Energy & Power (folder: Clean Energy)
+D2 — AI Connectivity:    Photonics & Optical · Space & Communications (folder: Space & Comms)
+D1 — AI Mfg Base:        Semiconductors · Electronic Components (planned) · Materials & Mining (folder: Metals & Mining)
+```
+
+**Folder slugs are unchanged** — display names differ from folder names for some sectors (e.g., "Compute Infrastructure" maps to `AI Infrastructure/`). The Dimension Map is the source of truth for slug ↔ display name mapping.
 
 ## Ticker Page Structure
 
