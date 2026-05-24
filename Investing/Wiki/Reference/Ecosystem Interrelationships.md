@@ -1,5 +1,5 @@
 # AI Buildout — Ecosystem Interrelationships
-*Last updated: 2026-05-24 — Electronic Components sector map appended*
+*Last updated: 2026-05-24 — Electronic Components + Metals & Mining sector maps appended*
 
 Each row is a directional dependency: **Source sector → Target sector**, documented at the process/product level. This file is the source of truth for cross-sector edges and is the data backbone for the future dashboard's flow diagram.
 
@@ -51,6 +51,12 @@ Each row is a directional dependency: **Source sector → Target sector**, docum
 | Electronic Components | Inductor & Transformer Mfg | Energy & Power | Power Conversion | Component | Metal composite power inductor → DC-DC converter output filter stage | No | High-Isat inductors (metal composite core) required for high-frequency LLC converters in server PSUs |
 | Electronic Components | PCB Assembly (EMS / PCBA) | Compute Infrastructure | Server Assembly | Component | Fully populated PCBA (motherboard, GPU board, PSU board) → server chassis integration at EMS/ODM | No | Jabil, Celestica, and Foxconn are primary AI server PCBA assemblers |
 | Electronic Components | High-Frequency PCB | Photonics & Optical | Transceiver Mfg | Material | Rogers 4350B / Megtron 6 PCB → optical transceiver RF board | No | Low-loss dielectric PCB is required for 400G+ DSP signal integrity |
+| Materials & Mining | Copper Mining & Refining | Energy & Power | Power Infrastructure | Material | High-purity copper rod → transformer winding, overhead conductor, underground cable, EV / motor winding | Partial | Copper is the single largest volume output of this sector by value; power infrastructure is #1 end-market |
+| Materials & Mining | Rare Earth Separation | Robotics & Edge AI | Actuators & Motors | Material | Nd₂O₃, Pr₆O₁₁, Dy₂O₃ → NdFeB alloy → sintered permanent magnet → servo motor, traction motor, voice coil | Yes | China controls ~90% of NdFeB alloy production; no western commercial-scale alternative exists today |
+| Materials & Mining | Electrolytic Refining | Energy & Power | Grid-Scale Storage | Material | CoSO4·7H2O + NiSO4·6H2O → NMC cathode precursor (pCAM) co-precipitation | Partial | DRC dominates cobalt output; Glencore and China Moly control refining; NMC chemistry depends on both |
+| Materials & Mining | Silicon & SiC Precursor | Semiconductors | Wafer Fabrication | Material | Trichlorosilane (TCS, SiHCl3) → Siemens CVD reactor → polysilicon chunk; specialty gases (WF6, SiH4, NF3) from mineral chemical processing → CVD/ALD | Partial | TCS is the polysilicon precursor; WF6 (tungsten hexafluoride) for W-plug fill is processed from scheelite concentrate |
+| Materials & Mining | Rare Earth Separation | Photonics & Optical | Optical Fiber | Material | GeCl4 (germanium tetrachloride, from Ge metal) → MCVD/OVD preform process → GeO2-doped silica core → single-mode fiber | Partial | Ge doping raises fiber core refractive index; China controls >60% of Ge refining; export controls active since 2023 |
+| Materials & Mining | Mineral Processing | Electronic Components | Dielectric Materials | Material | Barium carbonate (BaCO3, from witherite/barite) + TiO2 (from ilmenite/rutile) → BaTiO3 dielectric powder → MLCC body | Partial | BaTiO3 synthesis is a chemical processing step; raw inputs are mined minerals but the chokepoint is the synthesis quality, not the ore |
 
 ---
 

@@ -1,6 +1,6 @@
 # Monitor Registry
 *The research-monitor skill reads this file on every run. Add tickers here — no skill update needed.*
-*Last updated: May 24, 2026 — /map-sector Electronic Components run; 13 candidate stubs added*
+*Last updated: May 24, 2026 — /map-sector Metals & Mining run; FCX + MP registered, 9 candidate stubs added*
 
 ---
 
@@ -118,6 +118,25 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 |--------|---------|-----|----------|------|-------|
 | ASTS | AST SpaceMobile | 0001780530 | NASDAQ | Investing/Wiki/Sectors/Space & Comms/ASTS.md | — |
 | RKLB | Rocket Lab USA, Inc. | 0001819994 | NASDAQ | Investing/Wiki/Sectors/Space & Comms/RKLB.md | — |
+
+---
+
+## Metals & Mining
+
+| Ticker | Company | CIK | Exchange | Path | Score |
+|--------|---------|-----|----------|------|-------|
+| FCX | Freeport-McMoRan | 0000831259 | NYSE | Investing/Wiki/Sectors/Metals & Mining/FCX.md | — |
+| MP | MP Materials Corp. | 0001801170 | NYSE | Investing/Wiki/Sectors/Metals & Mining/MP.md | — |
+
+<!-- CANDIDATE (/map-sector 2026-05-24): VALE (Vale S.A.) — Bulk Mining & Ore Extraction layer. World's largest nickel producer; iron ore dominant; cobalt byproduct. Run /add-ticker VALE --sector "Metals & Mining" --layer "Bulk Mining & Ore Extraction" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): RIO (Rio Tinto) — Bulk Mining & Ore Extraction layer. Copper (Oyu Tolgoi), lithium (Rincon), iron ore. Run /add-ticker RIO --sector "Metals & Mining" --layer "Bulk Mining & Ore Extraction" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): BHP (BHP Group) — Bulk Mining & Ore Extraction layer. Escondida (~5% world copper supply), nickel (WA), iron ore. Run /add-ticker BHP --sector "Metals & Mining" --layer "Bulk Mining & Ore Extraction" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): ALB (Albemarle) — Mineral Processing + Battery Material Precursor layer. #1 lithium chemicals globally; Greenbushes spodumene JV; Chilean brine. Run /add-ticker ALB --sector "Metals & Mining" --layer "Battery Material Precursor Production" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): SQM (Sociedad Química y Minera) — Mineral Processing + Battery Material Precursor layer. #2 lithium producer; Atacama brine. Run /add-ticker SQM --sector "Metals & Mining" --layer "Battery Material Precursor Production" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): DQNGY (Daqo New Energy) — Silicon & SiC Precursor Production layer. China-based US ADR; #1–2 polysilicon volume globally. Run /add-ticker DQNGY --sector "Metals & Mining" --layer "Silicon & SiC Precursor Production" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): WOLF (Wolfspeed) — Silicon & SiC Precursor Production layer. Only large-scale 4H-SiC substrate maker outside China; 150mm and 200mm wafers. Run /add-ticker WOLF --sector "Metals & Mining" --layer "Silicon & SiC Precursor Production" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): LAC (Lithium Americas) — Battery Material Precursor Production layer. Thacker Pass (NV) — largest known US lithium deposit; development stage. Run /add-ticker LAC --sector "Metals & Mining" --layer "Battery Material Precursor Production" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): LYC (Lynas Rare Earths) — Mineral Processing + Rare Earth Separation layer. Australia-listed (ASX: LYC); processes REE in Malaysia; building US facility. Run /add-ticker LYC --sector "Metals & Mining" --layer "Rare Earth Separation & Critical Mineral Refining" to onboard. -->
 
 ---
 
