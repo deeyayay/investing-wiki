@@ -7,7 +7,7 @@
 - [x] Supply chain mapped
 - [ ] Nodes registered (`/add-ticker TICKER --layer "Layer"` for each below)
 - [ ] Ground truth pulled (`/stock-research TICKER` per node)
-- [ ] Customer matrix built (`/build-customer-matrix "Semiconductors"`)
+- [x] Customer matrix built (`/build-customer-matrix "Semiconductors"`) — 2026-05-24
 - [ ] Sector Framework written (only after above steps complete)
 
 *Note: 7 tickers already registered (NVDA, MU, MRVL, AEHR, ALAB, CRDO, AMKR). Run `/add-ticker TICKER --layer "Layer"` to backfill the Layer field for existing names, and to onboard new candidates below.*
