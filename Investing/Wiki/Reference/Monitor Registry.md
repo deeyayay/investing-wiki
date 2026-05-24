@@ -1,6 +1,6 @@
 # Monitor Registry
 *The research-monitor skill reads this file on every run. Add tickers here — no skill update needed.*
-*Last updated: May 24, 2026 — /map-sector Metals & Mining run; FCX + MP registered, 9 candidate stubs added*
+*Last updated: May 24, 2026 — /map-sector Photonics & Optical run; 3 new candidate stubs added (GLW, IQE, MTSI)*
 
 ---
 
@@ -42,6 +42,10 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 | SIVE | Sivers Semiconductors | none | Nasdaq Stockholm | Investing/Wiki/Sectors/Photonics & Optical/SIVE.md | 5.5 |
 | POET | POET Technologies | none | TSX Venture | Investing/Wiki/Sectors/Photonics & Optical/POET.md | — |
 | FOCI | FOCI Fiber Optic Communications, Inc. | none | TPEX (Taiwan) | Investing/Wiki/Sectors/Photonics & Optical/FOCI.md | — |
+
+<!-- CANDIDATE (/map-sector 2026-05-24): GLW (Corning Incorporated) — Optical Fiber & Preform Manufacturing layer. ~50% global optical fiber market; OVD preform; SMF-28. Run /add-ticker GLW --sector "Photonics & Optical" --layer "Optical Fiber & Preform Manufacturing" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): IQE (IQE plc, AIM: IQE) — III-V Substrate & Epitaxial Wafer Growth layer. MOCVD epi foundry; VCSEL and GaN epi for multiple customers. UK AIM-listed. Run /add-ticker IQE --sector "Photonics & Optical" --layer "III-V Substrate & Epitaxial Wafer Growth" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-24): MTSI (MACOM Technology Solutions) — Photonic Device Fabrication layer. GaAs/InP/GaN chip fab; drivers, TIAs, photonic ICs; strong DC transceiver exposure. Run /add-ticker MTSI --sector "Photonics & Optical" --layer "Photonic Device Fabrication" to onboard. -->
 
 ---
 

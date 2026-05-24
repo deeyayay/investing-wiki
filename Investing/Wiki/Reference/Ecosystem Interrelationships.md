@@ -1,5 +1,5 @@
 # AI Buildout — Ecosystem Interrelationships
-*Last updated: 2026-05-24 — Electronic Components + Metals & Mining sector maps appended*
+*Last updated: 2026-05-24 — Electronic Components + Metals & Mining + Photonics & Optical sector maps appended*
 
 Each row is a directional dependency: **Source sector → Target sector**, documented at the process/product level. This file is the source of truth for cross-sector edges and is the data backbone for the future dashboard's flow diagram.
 
@@ -57,6 +57,11 @@ Each row is a directional dependency: **Source sector → Target sector**, docum
 | Materials & Mining | Silicon & SiC Precursor | Semiconductors | Wafer Fabrication | Material | Trichlorosilane (TCS, SiHCl3) → Siemens CVD reactor → polysilicon chunk; specialty gases (WF6, SiH4, NF3) from mineral chemical processing → CVD/ALD | Partial | TCS is the polysilicon precursor; WF6 (tungsten hexafluoride) for W-plug fill is processed from scheelite concentrate |
 | Materials & Mining | Rare Earth Separation | Photonics & Optical | Optical Fiber | Material | GeCl4 (germanium tetrachloride, from Ge metal) → MCVD/OVD preform process → GeO2-doped silica core → single-mode fiber | Partial | Ge doping raises fiber core refractive index; China controls >60% of Ge refining; export controls active since 2023 |
 | Materials & Mining | Mineral Processing | Electronic Components | Dielectric Materials | Material | Barium carbonate (BaCO3, from witherite/barite) + TiO2 (from ilmenite/rutile) → BaTiO3 dielectric powder → MLCC body | Partial | BaTiO3 synthesis is a chemical processing step; raw inputs are mined minerals but the chokepoint is the synthesis quality, not the ore |
+| Materials & Mining | Electrolytic Refining | Photonics & Optical | Coherent Line Systems | Material | Erbium oxide (Er2O3, from rare earth refining) → Er3+ dopant → EDFA gain fiber → C-band / L-band optical amplifier | Partial | Erbium is a heavy rare earth separated in the REE cascade; EDFA gain fiber is specialty product (OFS/Fibercore) |
+| Photonics & Optical | Silicon Photonics Platform | Semiconductors | Packaging (OSAT) | Component | SiPh interposer / CPO chiplet → GPU or switch ASIC optical I/O port (co-packaged optics) | Partial | CPO not yet at volume production; TSMC N45SiPh and Intel IFS are primary SiPh PDK holders; transition reshapes pluggable transceiver market |
+| Photonics & Optical | Photonic Device Fab | Semiconductors | Power Devices | Material | GaN-on-SiC epi wafer (MOCVD grown) → GaN HEMT power amplifier die, RF transistor | Partial | GaN-on-SiC shares MOCVD fab capacity with telecom laser production; RF/power and photonics compete for III-V fab time |
+| Photonics & Optical | Coherent Line Systems | Space & Communications | Ground Segment | Component | Coherent DWDM line card / ROADM → terrestrial fiber backbone connecting satellite ground stations and inter-DC routes | No | Space ground stations require high-capacity terrestrial backhaul; coherent optics is the enabling technology |
+| Photonics & Optical | Photonic Sensing | Energy & Power | Grid Infrastructure | Component | Distributed acoustic sensing (DAS) / distributed temperature sensing (DTS) fiber system → power grid fault detection, pipeline integrity monitoring | No | DAS/DTS fiber runs alongside HV power cables or gas pipelines; Viavi and AP Sensing supply systems |
 
 ---
 
