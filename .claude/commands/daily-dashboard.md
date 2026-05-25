@@ -449,12 +449,13 @@ Swipe-to-dismiss: track `touchstart` Y on `#detail-panel`; on `touchend` if delt
 3. If `--no-push` flag is set, stop here.
 4. Otherwise, deploy to `gh-pages`:
    ```bash
+   git fetch origin gh-pages
    git checkout gh-pages
-   cp Investing/Output/Dashboard/index.html index.html
+   git show [CURRENT_BRANCH]:Investing/Output/Dashboard/index.html > index.html
    git add index.html
    git commit -m "Deploy ecosystem map [DATE]"
    git push -u origin gh-pages
-   git checkout master
+   git checkout [CURRENT_BRANCH]
    ```
 5. Commit the dashboard files to `master` as well:
    ```bash
