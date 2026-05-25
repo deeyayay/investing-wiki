@@ -50,28 +50,19 @@ Run ALL of these reads in parallel.
 For each sector with status ≠ `planned`, read:
 `Investing/Wiki/Sectors/[folder]/_Supply Chain Map.md`
 
-Parse the **Value Chain table** under `## Value Chain`. The table has 8 columns:
-`Tier | Function | Processes | Key Products / Materials | Chokepoint | Capital Intensity | Moat Type | Margin Profile`
+Parse the **Value Chain table** under `## Value Chain`.
 
-For each row extract:
+For each row extract only:
 ```
 {
-  tier: col[0],
-  function: col[1],
-  processes: col[2],          // may be long — keep full text
-  key_products: col[3],       // may be long — keep full text
-  chokepoint: col[4],         // "Y", "Partial", or "No"
-  capital_intensity: col[5],
-  moat_type: col[6],
-  margin_profile: col[7]
+  tier: col[0],        // tier name
+  chokepoint: col[4],  // "Y", "Partial", or "No" — normalize "Yes" to "Y"
 }
 ```
 
 Skip header row and separator rows (lines starting with `|---`).
 
-Also check for a `## Publicly-Traded Nodes` table or `<!-- CANDIDATE ... -->` HTML comments. Extract any `{ tier, ticker, company }` mappings found. This is optional — if absent, leave nodes empty.
-
-Store as `supply_chains[sector_name] = { tiers: [...], nodes: [...] }`. If file missing, store `{ tiers: [], nodes: [] }`.
+Store as `supply_chains[sector_name] = { tiers: [...] }`. If file missing, store `{ tiers: [] }`.
 
 ### 2B — Ecosystem Interrelationships (1 read)
 
@@ -97,7 +88,10 @@ For each row extract:
 Skip header rows, separator rows, and section headings (lines not starting with `|`).
 Normalize chokepoint: treat "Yes" and "Y" as "Y".
 
-Store as `edges[]` (flat array).
+**Keep only edges where chokepoint === "Y"** after normalization. Discard all Partial and No edges.
+Deduplicate edges with the same (from, to) sector pair — keep only the first occurrence.
+
+Store as `edges[]` (flat array, typically 10–15 entries).
 
 ---
 
@@ -110,18 +104,19 @@ const DATA = {
   generated: "YYYY-MM-DD",   // today or --date arg
   sectors: [
     {
-      slug: "semiconductors",         // kebab-case of display name
+      slug: "semiconductors",   // kebab-case of display name
       name: "Semiconductors",
       dimension: "D1",
-      tiers: [                        // from supply_chains
-        { tier, function, processes, key_products, chokepoint,
-          capital_intensity, moat_type, margin_profile }
-      ],
-      nodes: [{ tier, ticker, company }]  // may be empty
+      tiers: [
+        { tier: "Silicon Wafer Production", chokepoint: "Y" },
+        // one entry per tier, only tier name + chokepoint
+      ]
     }
+    // one entry per active sector, D1→D5 order
   ],
+  // Only Y-chokepoint cross-sector edges, deduplicated by (from, to) pair
   edges: [
-    { from, from_tier, to, to_tier, flow, product, chokepoint, notes }
+    { from, from_tier, to, to_tier, flow, product, chokepoint: "Y" }
   ]
 };
 ```
@@ -215,12 +210,15 @@ CSS for layout:
 
 ### Header
 
+Filter buttons allow narrowing the 12 Y-chokepoint edges by flow type. Since all stored edges are
+Y-chokepoints, there is no separate "⬥ Chokepoints only" button — all shown edges are already
+chokepoints.
+
 ```html
 <header id="hdr">
   <span class="site-title">ECOSYSTEM MAP · [DATE]</span>
   <div class="filters">
-    <button class="filter-btn active" data-filter="all">All edges</button>
-    <button class="filter-btn" data-filter="Y">⬥ Chokepoints only</button>
+    <button class="filter-btn active" data-filter="all">All flows</button>
     <button class="filter-btn" data-filter="Material">Material</button>
     <button class="filter-btn" data-filter="Component">Component</button>
     <button class="filter-btn" data-filter="Service">Service</button>
@@ -259,63 +257,41 @@ Dimension label text:
 Chokepoint count = number of edges where `from === sector.name && edge.chokepoint === "Y"`.
 Edge count = total edges where `from === sector.name || to === sector.name`.
 
-### SVG edge drawing
+### SVG edge drawing (desktop only)
 
-Define SVG arrowhead markers in `<defs>`:
+On mobile (`max-width: 768px`) the `#edge-svg` is `display:none`. SVG drawing only runs on desktop.
+
+Two arrowhead markers — blue (outbound from selected) and green (inbound to selected):
 ```svg
 <defs>
-  <marker id="arrow-amber" ...><path d="M0,0 L8,4 L0,8 Z" fill="#9a6700"/></marker>
-  <marker id="arrow-blue" ...><path d="M0,0 L8,4 L0,8 Z" fill="#0969da"/></marker>
-  <marker id="arrow-green" ...><path d="M0,0 L8,4 L0,8 Z" fill="#1a7f37"/></marker>
+  <marker id="arr-blue" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+    <path d="M0,0 L8,4 L0,8 Z" fill="#0969da"/>
+  </marker>
+  <marker id="arr-green" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+    <path d="M0,0 L8,4 L0,8 Z" fill="#1a7f37"/>
+  </marker>
 </defs>
 ```
 
-Edge drawing has two code paths — desktop (two-panel) and mobile (gutter):
+**`drawEdges(slug, filter)`:**
+1. Return immediately if `window.innerWidth <= 768`
+2. Clear SVG paths (preserve `<defs>`)
+3. Filter `DATA.edges` to those where `from === sector.name || to === sector.name`
+4. If `filter !== 'all'`, further filter by `edge.flow === filter`
+5. For each edge, compute bounding rects of source/target cards relative to `#stack-panel`:
+   - `sx = srcCard.getBoundingClientRect().right - panelRect.left`
+   - `sy = srcCard vertical center - panelRect.top + panel.scrollTop`
+   - `tx = tgtCard.getBoundingClientRect().left - panelRect.left`
+   - `ty = tgtCard vertical center - panelRect.top + panel.scrollTop`
+   - `cx = sx + (tx-sx)*0.5` (single midpoint control)
+6. Draw `<path d="M sx,sy C cx,sy cx,ty tx,ty">` — cubic bezier
+   - Outbound (from === selected): stroke `#0969da`, marker `arr-blue`
+   - Inbound (to === selected): stroke `#1a7f37`, marker `arr-green`
+   - stroke-width 2, opacity 0.8
+7. On `window resize`, redraw if a sector is selected
 
-**`drawEdges(selectedSlug, activeFilter)`** — desktop path (runs when `window.innerWidth > 768`):
-1. Clear all `<path>` elements from the SVG
-2. For the selected sector, find all edges where `edge.from === selectedSlug_name || edge.to === selectedSlug_name`
-3. Apply `activeFilter` to narrow edges (if filter === "Y", only show chokepoint === "Y"; if filter is a flow type, only show that flow)
-4. For each visible edge:
-   - Get `sourceCard = document.querySelector('[data-slug="'+fromSlug+'"]')`
-   - Get `targetCard = document.querySelector('[data-slug="'+toSlug+'"]')`
-   - Get bounding rects relative to `#stack-panel` (subtract panel's `scrollTop` and `getBoundingClientRect`)
-   - `sx = sourceRect.right - panelRect.left`, `sy = sourceRect.top + sourceRect.height/2 - panelRect.top + panel.scrollTop`
-   - `tx = targetRect.left - panelRect.left`, `ty = targetRect.top + targetRect.height/2 - panelRect.top + panel.scrollTop`
-   - If source and target are in the same dimension row, use center-to-center with vertical offsets
-   - Control points: `cx1 = sx + (tx-sx)*0.5, cy1 = sy; cx2 = cx1, cy2 = ty`
-   - Stroke: amber (`#9a6700`) if chokepoint Y, blue (`#0969da`) if from === selected (outbound), green (`#1a7f37`) if to === selected (inbound)
-   - Stroke-width: 2.5px if Y, 1.5px otherwise
-   - Marker-end: matching arrow marker
-   - Append `<path d="M sx sy C cx1 cy1 cx2 cy2 tx ty" stroke="..." stroke-width="..." fill="none" marker-end="url(#arrow-...)" opacity="0.85"/>`
-5. On window resize: call `drawEdges(currentSelected, activeFilter)` if a sector is selected
-
-**`drawAmbientEdges()`** — mobile gutter ambient state (no sector selected yet):
-
-Called on page load when mobile. Draws all Y-chokepoint edges as faint curves through the 48px right gutter so the graph has visual weight before any tap:
-- SVG element is positioned `right:0, width:48px` on mobile; coordinates are relative to it
-- For each edge where `chokepoint === "Y"`:
-  - `sourceCard`, `targetCard` via `[data-slug]`; compute `sy`, `ty` as Y-center of each card relative to `#stack-panel` top (accounting for `scrollTop`)
-  - `sx = tx = 0` (left edge of gutter = right edge of cards)
-  - Bezier S-curve: `cx1 = 40, cy1 = sy; cx2 = 40, cy2 = ty` (bows 40px into gutter)
-  - Stroke: `#9a6700` (amber), stroke-width: 1.5px, opacity: 0.25
-  - No arrowheads (omit `marker-end`) — color coding conveys meaning, arrows too small
-
-**`drawEdgesMobile(selectedSlug, activeFilter)`** — mobile gutter selection state:
-
-Called when a sector is tapped on mobile. Replaces ambient with selection-aware edges:
-1. Clear all `<path>` elements from gutter SVG
-2. First pass — ambient Y-chokepoint edges: draw all at opacity 0.15, sw 1px, amber (background context)
-3. Second pass — connected edges for selected sector with filter applied:
-   - Outbound (from === selectedName): blue (`#0969da`), opacity 0.9, sw 2px
-   - Inbound (to === selectedName): green (`#1a7f37`), opacity 0.9, sw 2px
-   - Y-chokepoint among connected: amber (`#9a6700`), opacity 0.9, sw 3px (overrides color)
-   - Same S-curve geometry as `drawAmbientEdges`
-4. Unconnected cards dim to 0.2 opacity (via class, same as desktop)
-
-**Dispatch:** Top-level `drawEdges(slug, filter)` checks `window.innerWidth <= 768` and calls `drawEdgesMobile` or the desktop path accordingly. `drawAmbientEdges()` is called on `DOMContentLoaded` when mobile.
-
-Convert display name to slug: lowercase, replace spaces and `&` with `-`, remove special chars. E.g., "Photonics & Optical" → "photonics-optical". Store slug on card `data-slug` and in the DATA object.
+Convert display name to slug: lowercase, replace `&` → `-`, spaces → `-`, strip non-alphanumeric.
+E.g., "Photonics & Optical" → `"photonics-optical"`.
 
 ### Sector card interaction
 
@@ -370,287 +346,99 @@ CSS for card states:
 
 ### Detail panel rendering
 
+Tier table shows only Tier name + Choke badge (2 columns). No tooltip. No accordion. No extra data attributes.
+
 ```javascript
 function renderDetail(slug) {
   const sector = DATA.sectors.find(s => s.slug === slug);
   const outbound = DATA.edges.filter(e => e.from === sector.name);
-  const inbound = DATA.edges.filter(e => e.to === sector.name);
-  
-  // Apply active filter
-  const filterEdges = edges => {
-    if (activeFilter === 'all') return edges;
-    if (activeFilter === 'Y') return edges.filter(e => e.chokepoint === 'Y');
-    return edges.filter(e => e.flow === activeFilter);
-  };
-  
-  // Tier table
-  const tierRows = sector.tiers.map(t => `
-    <tr class="tier-row choke-${t.chokepoint.toLowerCase()}"
-        data-fn="${escHtml(t.function)}"
-        data-processes="${escHtml(t.processes)}"
-        data-products="${escHtml(t.key_products)}">
-      <td class="tier-name">${t.tier}</td>
-      <td>${chokeBadge(t.chokepoint)}</td>
-      <td class="tier-fn">${t.function}</td>
-      <td class="tier-proc">${truncate(t.processes, 80)}</td>
-    </tr>
-  `).join('');
-  
-  // Edge cards (outbound)
-  const outHtml = filterEdges(outbound).map(e => edgeCard(e, 'out')).join('') || '<p class="muted">None</p>';
-  const inHtml = filterEdges(inbound).map(e => edgeCard(e, 'in')).join('') || '<p class="muted">None</p>';
-  
+  const inbound  = DATA.edges.filter(e => e.to === sector.name);
+  const applyFilter = arr => activeFilter === 'all' ? arr : arr.filter(e => e.flow === activeFilter);
+
+  const tierRows = sector.tiers.map(t => `<tr>
+    <td class="tier-name">${esc(t.tier)}</td>
+    <td>${chokeBadge(t.chokepoint)}</td>
+  </tr>`).join('');
+
+  const fOut = applyFilter(outbound);
+  const fIn  = applyFilter(inbound);
+
   document.getElementById('detail-panel').innerHTML = `
     <div class="detail-header">
       <div style="display:flex;align-items:center;gap:8px;flex:1">
-        <h2>${sector.name}</h2>
+        <h2>${esc(sector.name)}</h2>
         <span class="dim-badge dim-${sector.dimension.toLowerCase()}">${sector.dimension}</span>
       </div>
-      <button class="close-drawer" onclick="document.getElementById('detail-panel').classList.remove('open');document.body.classList.remove('drawer-open');" aria-label="Close">✕</button>
+      <button class="close-drawer" onclick="closeDrawer()">✕</button>
     </div>
-    
-    <section class="detail-section">
+    <div class="detail-section">
       <div class="section-title">Supply Chain Tiers (${sector.tiers.length})</div>
       <table class="tier-table">
-        <thead><tr><th>Tier</th><th>Choke</th><th>Function</th><th>Processes</th></tr></thead>
+        <thead><tr><th>Tier</th><th>Choke</th></tr></thead>
         <tbody>${tierRows}</tbody>
       </table>
-      <p class="hint desktop-only">Hover row for full processes &amp; key products</p>
-      <p class="hint mobile-only">Tap a tier row to expand details</p>
-    </section>
-    
-    <section class="detail-section">
-      <div class="section-title">→ Outbound (${outbound.length} edges)</div>
-      <div class="edge-list">${outHtml}</div>
-    </section>
-    
-    <section class="detail-section">
-      <div class="section-title">← Inbound (${inbound.length} edges)</div>
-      <div class="edge-list">${inHtml}</div>
-    </section>
-  `;
-  
-  // Wire up tier row tooltips (desktop hover)
-  document.querySelectorAll('.tier-row').forEach(row => {
-    row.addEventListener('mouseenter', e => showTooltip(row.dataset.processes, row.dataset.products));
-    row.addEventListener('mouseleave', hideTooltip);
-  });
+    </div>
+    <div class="detail-section">
+      <div class="section-title">→ Outbound chokepoint flows (${fOut.length})</div>
+      <div class="edge-list">${fOut.map(e => edgeCard(e,'out')).join('') || '<p class="muted">None for this filter.</p>'}</div>
+    </div>
+    <div class="detail-section">
+      <div class="section-title">← Inbound chokepoint flows (${fIn.length})</div>
+      <div class="edge-list">${fIn.map(e => edgeCard(e,'in')).join('') || '<p class="muted">None for this filter.</p>'}</div>
+    </div>`;
 
-  // Mobile accordion: tap to expand tier row inline
-  document.querySelectorAll('.tier-row').forEach(row => {
-    row.addEventListener('click', () => {
-      if (window.innerWidth > 768) return;
-      const wasExpanded = row.classList.contains('expanded');
-      // Collapse all rows first
-      document.querySelectorAll('.tier-row').forEach(r => {
-        r.classList.remove('expanded');
-        const det = r.querySelector('.tier-detail');
-        if (det) det.remove();
-      });
-      if (!wasExpanded) {
-        row.classList.add('expanded');
-        const detail = document.createElement('td');
-        detail.className = 'tier-detail';
-        detail.colSpan = 4;
-        detail.innerHTML = `<b>Function:</b> ${row.dataset.fn}<br><b>Processes:</b> ${row.dataset.processes}<br><b>Key products:</b> ${row.dataset.products}`;
-        row.appendChild(detail);
-      }
-    });
-  });
-  
-  // Wire up sector chips in edge list
   document.querySelectorAll('.edge-sector-chip').forEach(chip => {
     chip.addEventListener('click', () => selectSector(chip.dataset.slug));
   });
 }
 
-function edgeCard(edge, direction) {
-  const otherName = direction === 'out' ? edge.to : edge.from;
-  const otherSlug = nameToSlug(otherName);
-  return `
-    <div class="edge-card">
-      <span class="flow-badge flow-${edge.flow.toLowerCase()}">${edge.flow}</span>
-      <span class="edge-sector-chip" data-slug="${otherSlug}">${otherName}</span>
-      <span class="edge-product">${edge.product}</span>
-      ${edge.chokepoint === 'Y' ? '<span class="choke-badge-y">⬥Y</span>' : ''}
-    </div>
-  `;
+function edgeCard(edge, dir) {
+  const otherName = dir === 'out' ? edge.to : edge.from;
+  return `<div class="edge-card">
+    <span class="flow-badge flow-${esc(edge.flow)}">${esc(edge.flow)}</span>
+    <span class="edge-sector-chip" data-slug="${esc(nameToSlug(otherName))}">${esc(otherName)}</span>
+    <span class="edge-product">${esc(edge.product)}</span>
+  </div>`;
+}
+
+function closeDrawer() {
+  document.getElementById('detail-panel').classList.remove('open');
+  document.body.classList.remove('drawer-open');
 }
 ```
 
-### Tier row tooltip
+### Mobile layout
 
-A floating `<div id="tooltip">` (fixed position, `pointer-events:none`, `z-index:1000`):
-```javascript
-function showTooltip(processes, products) {
-  const tt = document.getElementById('tooltip');
-  tt.innerHTML = `<b>Processes:</b> ${processes}<hr><b>Key Products:</b> ${products}`;
-  tt.style.display = 'block';
-}
-document.addEventListener('mousemove', e => {
-  const tt = document.getElementById('tooltip');
-  tt.style.left = (e.clientX + 12) + 'px';
-  tt.style.top = (e.clientY + 12) + 'px';
-});
-function hideTooltip() { document.getElementById('tooltip').style.display = 'none'; }
-```
-
-### Filter button logic
-
-```javascript
-let activeFilter = 'all';
-document.querySelectorAll('.filter-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    activeFilter = btn.dataset.filter;
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    if (currentSelected) {
-      drawEdges(currentSelected, activeFilter);
-      renderDetail(currentSelected); // re-render edge lists with filter applied
-    }
-  });
-});
-document.getElementById('reset-btn').addEventListener('click', () => {
-  currentSelected = null;
-  document.querySelectorAll('.sector-card').forEach(c => {
-    c.classList.remove('selected','upstream','downstream','dimmed');
-  });
-  document.getElementById('edge-svg').innerHTML = '<defs>...</defs>'; // keep defs, clear paths
-  document.getElementById('detail-panel').innerHTML = `<div class="detail-empty">Select a sector to explore its supply chain tiers and ecosystem connections.</div>`;
-  if (window.innerWidth <= 768) {
-    document.getElementById('detail-panel').classList.remove('open');
-    document.body.classList.remove('drawer-open');
-    drawAmbientEdges(); // restore ambient chokepoint lines
-  }
-});
-```
-
-### Mobile layout — "Metro Map" gutter design
-
-On mobile (`max-width: 768px`), the D1→D5 stack becomes a single scrollable column. A 48px SVG
-gutter on the right edge shows cross-sector relationship lines as S-curves, like a metro map
-running alongside the card list. Before any sector is tapped, ambient amber lines (Y chokepoints)
-are always visible so the graph has visual weight from the start.
+On mobile (`max-width: 768px`), the layout stacks vertically. `#edge-svg` is hidden (`display:none`).
+The detail panel slides up as a bottom sheet. No SVG gutter, no ambient edge drawing.
 
 ```css
 @media (max-width: 768px) {
-  /* Stack becomes full-width column; right 48px reserved as SVG gutter */
+  #hdr { height: auto; flex-direction: column; align-items: flex-start; padding: 8px 12px; gap: 6px; }
+  .filters { overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+             flex-wrap: nowrap; width: 100%; padding-bottom: 4px; }
+  .filter-btn, #reset-btn { flex-shrink: 0; scroll-snap-align: start;
+                             min-height: 40px; padding: 0 14px; font-size: 13px; border-radius: 20px; }
   #layout { flex-direction: column; height: auto; overflow: visible; }
-  #stack-panel {
-    width: 100%; border-right: none;
-    padding: 12px 52px 12px 12px; /* 52px right = 48px gutter + 4px gap */
-    overflow-y: visible;
-    position: relative;
-  }
-
-  /* SVG gutter: right-aligned, full height, pointer-events none */
-  #edge-svg {
-    position: absolute; top: 0; right: 0;
-    width: 48px; height: 100%;
-    pointer-events: none; z-index: 10;
-  }
-
-  /* Sector cards fill available width */
-  .sector-card { margin-bottom: 8px; }
+  #stack-panel { width: 100%; border-right: none; padding: 12px; overflow-y: visible; }
+  #edge-svg { display: none; }
   .dim-sectors { flex-direction: column; gap: 0; }
-
-  /* Filter bar: horizontally scrollable pill strip */
-  #hdr { flex-wrap: wrap; gap: 6px; padding: 8px 12px; }
-  .filters {
-    display: flex; gap: 6px; overflow-x: auto;
-    scroll-snap-type: x mandatory; padding-bottom: 4px;
-    -webkit-overflow-scrolling: touch; flex-wrap: nowrap;
-  }
-  .filter-btn, #reset-btn {
-    flex-shrink: 0; scroll-snap-align: start;
-    min-height: 40px; padding: 0 14px; font-size: 13px;
-    border-radius: 20px;
-  }
-  .filter-btn.active { background: var(--text); color: var(--bg); }
-
-  /* Detail panel: bottom sheet, 50vh — stack stays visible above */
-  #detail-panel {
-    position: fixed; bottom: 0; left: 0; right: 0;
-    height: 50vh; background: var(--bg);
-    border-top: 2px solid var(--border);
-    border-radius: 16px 16px 0 0;
-    overflow-y: auto; padding: 0 16px 24px;
-    transform: translateY(100%); transition: transform .3s ease;
-    z-index: 50; box-shadow: 0 -4px 24px rgba(0,0,0,.08);
-  }
+  .sector-card { margin-bottom: 8px; min-width: unset; flex: 1 1 auto; }
+  #detail-panel { position: fixed; bottom: 0; left: 0; right: 0; height: 55vh;
+                  background: var(--bg); border-top: 2px solid var(--border);
+                  border-radius: 16px 16px 0 0; overflow-y: auto; padding: 0 16px 24px;
+                  transform: translateY(100%); transition: transform .3s ease;
+                  z-index: 50; box-shadow: 0 -4px 24px rgba(0,0,0,.08); }
   #detail-panel.open { transform: translateY(0); }
-
-  /* Drag handle */
-  #detail-panel::before {
-    content: ''; display: block; width: 36px; height: 4px;
-    background: var(--border); border-radius: 2px;
-    margin: 10px auto 14px;
-  }
-
-  /* Close button in detail header */
-  .close-drawer {
-    display: flex; align-items: center; justify-content: center;
-    width: 32px; height: 32px; border-radius: 50%;
-    background: var(--bg3); color: var(--muted);
-    font-size: 14px; cursor: pointer; flex-shrink: 0;
-  }
-  .close-drawer:hover { background: var(--border); }
-
-  /* Tier accordion: show only Tier + Choke on mobile */
-  .tier-table th:nth-child(3),
-  .tier-table th:nth-child(4),
-  .tier-fn, .tier-proc { display: none; }
-  .tier-row { cursor: pointer; }
-  .tier-row.expanded { background: var(--bg2); }
-  .tier-detail {
-    display: table-cell; grid-column: 1 / -1;
-    font-size: 12px; color: var(--muted); line-height: 1.5;
-    padding: 8px 0 6px; border-top: 1px solid var(--border);
-  }
-
-  /* Hint text: show appropriate version */
-  .desktop-only { display: none; }
-  .mobile-only { display: block; }
-
-  /* Lock body scroll when drawer is open */
+  #detail-panel::before { content: ''; display: block; width: 36px; height: 4px;
+                          background: var(--border); border-radius: 2px; margin: 10px auto 14px; }
+  .close-drawer { display: flex; }
   body.drawer-open { overflow: hidden; }
 }
-
-/* On desktop, hide mobile-only hints */
-@media (min-width: 769px) {
-  .mobile-only { display: none; }
-  .close-drawer { display: none; }
-}
+@media (min-width: 769px) { .close-drawer { display: none; } }
 ```
 
-**Swipe-to-dismiss:** Wire up on the `#detail-panel` element after init:
-
-```javascript
-(function() {
-  const panel = document.getElementById('detail-panel');
-  let startY = 0;
-  panel.addEventListener('touchstart', e => { startY = e.touches[0].clientY; }, { passive: true });
-  panel.addEventListener('touchend', e => {
-    if (e.changedTouches[0].clientY - startY > 60) {
-      panel.classList.remove('open');
-      document.body.classList.remove('drawer-open');
-      if (currentSelected) drawAmbientEdges();
-    }
-  });
-})();
-```
-
-**Ambient edges on load:** Call `drawAmbientEdges()` inside a `DOMContentLoaded` listener when `window.innerWidth <= 768`.
-
-```javascript
-document.addEventListener('DOMContentLoaded', () => {
-  if (window.innerWidth <= 768) drawAmbientEdges();
-});
-window.addEventListener('resize', () => {
-  if (currentSelected) drawEdges(currentSelected, activeFilter);
-  else if (window.innerWidth <= 768) drawAmbientEdges();
-});
-```
+Swipe-to-dismiss: track `touchstart` Y on `#detail-panel`; on `touchend` if delta > 60px call `closeDrawer()`.
 
 ---
 
