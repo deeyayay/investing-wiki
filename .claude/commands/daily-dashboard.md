@@ -132,356 +132,162 @@ Dimension order for rendering: D1 → D2 → D3 → D4 → D5.
 
 ## Phase 4 — Generate HTML
 
-Write a complete self-contained HTML file. All CSS and JS inline. No CDN links. Must work at `file://` and on GitHub Pages.
+Write a **complete self-contained HTML file**. All CSS and JS inline. No CDN links. Must work at `file://` and on GitHub Pages. The design is ecosystem-mapping only — no portfolio, ticker, or sentiment data.
+
+### Scope
+
+- **Layer 0 (Global):** D1→D5 SVG node graph with animated bezier edges. All 10 sector nodes positioned in 5 dimension rows. Edges colored by flow type, weight by chokepoint severity. Filter bar at top.
+- **Layer 1 (Sector):** Click a node → right panel shows sector description + clickable tier list + outbound/inbound edge cards. On mobile: bottom sheet slides up.
+- **Layer 2 (Tier):** Click a tier card → right panel shows tier detail (function, moat type, capital intensity, margin profile, cross-sector edges mapped to this tier). Breadcrumb navigates back.
 
 ### Design system
 
-```css
-:root {
-  --bg: #0d1117; --bg2: #161b22; --bg3: #21262d;
-  --text: #e6edf3; --muted: #8b949e; --border: #30363d;
-  --amber: #d4a017; --green: #3fb950; --blue: #58a6ff;
-  --red: #f85149; --orange: #e3812b; --purple: #bc8cff;
-  --pink: #ff7b72;
-}
+```
+--bg:#0d1117  --bg2:#161b22  --bg3:#21262d
+--text:#e6edf3  --muted:#8b949e  --border:#30363d
+--amber:#d4a017  --green:#3fb950  --blue:#58a6ff
+--orange:#e3812b  --purple:#bc8cff  --pink:#ff7b72
 ```
 
-Dimension colors (for labels and card accents):
-- D1 → `--purple`
-- D2 → `--blue`
-- D3 → `--green`
-- D4 → `--amber`
-- D5 → `--pink`
+Dimension colors: D1=purple, D2=blue, D3=green, D4=amber, D5=pink.
+Flow badge colors: Material=orange, Component=blue, Service=green, Signal=purple, Process=amber.
+Chokepoint Y = amber badge `⬥ CHOKEPOINT`. Partial = muted amber `⬥ PARTIAL`.
 
-Flow type badge colors:
-- Material → `--orange`
-- Component → `--blue`
-- Service → `--green`
-- Signal → `--purple`
-- Process → `--amber`
+### Shell layout
 
-Chokepoint badge colors:
-- Y → `--amber` background, dark text, bold `⬥`
-- Partial → `#5a4200` background, `--amber` text
-- No → `--bg3`, `--muted` text
-
-### Layout
-
-```html
-<body>
-  <header id="hdr">...</header>
-  <div id="layout">
-    <div id="stack-panel">     <!-- left, ~45% width -->
-      <svg id="edge-svg"></svg>  <!-- absolute overlay -->
-      <div id="stack">...</div>  <!-- D1..D5 rows -->
-    </div>
-    <div id="detail-panel">   <!-- right, ~55% width -->
-      ...
-    </div>
-  </div>
-</body>
+```
+#app (flex-column, height:100vh)
+  header#hdr (48px, sticky) — logo + horizontal-scroll filter bar
+  div#main (flex-row, flex:1, overflow:hidden)
+    div#gp  (50% width, overflow:auto) — SVG graph
+    div#dp  (flex:1, overflow-y:auto) — detail panel
 ```
 
-CSS for layout:
-```css
-#layout {
-  display: flex;
-  height: calc(100vh - 48px);
-  overflow: hidden;
-}
-#stack-panel {
-  width: 45%;
-  min-width: 320px;
-  position: relative;
-  overflow-y: auto;
-  border-right: 1px solid var(--border);
-  padding: 16px;
-}
-#edge-svg {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  pointer-events: none;
-  z-index: 10;
-}
-#detail-panel {
-  flex: 1;
-  overflow-y: auto;
-  padding: 20px;
-}
+Mobile (`max-width:768px`): `#gp` takes 100% width; `#dp` is `position:fixed; bottom:0; height:72vh; border-radius:14px 14px 0 0; transform:translateY(100%); transition:.3s`. Adding class `.open` slides it into view. Add `::before` drag handle (36×4px `--border` pill, `margin:10px auto`).
+
+### SVG graph — `buildGraph()`
+
+Compute node positions:
+```
+NODE_H = 78, ROW_H = 140, PAD_X = 16, PAD_Y = 38, GAP_X = 10
+For each dimension row (D1..D5):
+  row = sectors where dimension === dim.id
+  nodeW = min(182, floor((panelWidth - 2*PAD_X - (row.length-1)*GAP_X) / row.length))
+  totalW = row.length*nodeW + (row.length-1)*GAP_X
+  startX = (panelWidth - totalW) / 2
+  y = PAD_Y + dimIndex*ROW_H + 24   ← +24 for dim label above
+  each sector: x = startX + i*(nodeW+GAP_X)
+  store pos[slug] = {x, y, cx:x+nodeW/2, cy:y+NODE_H/2, nw:nodeW}
 ```
 
-**Mobile** (`max-width: 768px`): stack layout becomes column, `#stack-panel` takes full width, `#detail-panel` slides up from bottom as a fixed drawer (transforms from `translateY(100%)` to `translateY(0)` when a sector is selected).
+SVG total height = `PAD_Y + 5*ROW_H + NODE_H + 20`. Set `width` and `height` attributes on the SVG element so `#gp` scrolls if needed.
 
-### Header
+Dimension bands: for each dim, draw a `<rect>` spanning full width at that row's y position using the dim's bg color (low opacity), then a `<text>` label above in the dim's color.
 
-```html
-<header id="hdr">
-  <span class="site-title">ECOSYSTEM MAP · [DATE]</span>
-  <div class="filters">
-    <button class="filter-btn active" data-filter="all">All edges</button>
-    <button class="filter-btn" data-filter="Y">⬥ Chokepoints only</button>
-    <button class="filter-btn" data-filter="Material">Material</button>
-    <button class="filter-btn" data-filter="Component">Component</button>
-    <button class="filter-btn" data-filter="Service">Service</button>
-    <button id="reset-btn">Reset</button>
-  </div>
-</header>
+Arrow markers in `<defs>`: one per flow type + one for chokepoint. `viewBox="0 0 10 6" refX="9" refY="3" markerWidth="7" markerHeight="5" orient="auto"` with a filled triangle `<path d="M0,0 L10,3 L0,6 Z"/>`.
+
+Edge routing per edge `{from, to, flow, chokepoint}`:
+- Resolve src/tgt sectors by name; look up `pos[slug]`
+- Same dimension → route `right-center of source → left-center of target` with horizontal bezier arcing 40px above
+- Source above target (sp.y < tp.y) → bottom-center of source to top-center of target, control points at 42% of dy
+- Source below target → top-center of source to bottom-center of target
+
+Edge styling: chokepoint Y → stroke `#d4a017`, width 2.5; otherwise flow color, width 1.5. Class `eco-edge anim` plus `slow` (Material) or `fast` (Signal) for animation speed.
+
+CSS animation: `@keyframes flowFwd{to{stroke-dashoffset:-22}}`. Class `.anim{stroke-dasharray:6 4;animation:flowFwd 1.4s linear infinite}`.
+
+Node SVG: `<g class="sector-node" data-slug="..." onclick="selSec('...')">`. Inside: `<rect class="node-bg" width="{nw}" height="78" rx="8" fill="#161b22" stroke="#30363d"/>`. Three `<text>` lines: name (font-size 12, font-weight 600, y≈26), dimension badge text (font-size 9, y≈44), edge count + ⬥ chokepoint count (font-size 9.5, muted, y≈60). For sector names longer than 14 chars, split at word boundary into two `<tspan>` lines.
+
+### Node highlight states — `applyStates(slug, isSelected)`
+
+For each `.sector-node`: classify as target / upstream (edges where `to===name`) / downstream (edges where `from===name`) / unrelated. Apply:
+- Target + selected: `fill #21262d, stroke #d4a017, stroke-width 2`
+- Upstream: `stroke #3fb950, stroke-width 1.5`
+- Downstream: `stroke #58a6ff, stroke-width 1.5`
+- Unrelated when selected: `opacity 0.12`
+
+For each `.eco-edge`: `opacity 0.92` if `data-from===slug || data-to===slug`, else `0.07`.
+
+On hover (mouseenter/mouseleave without selection), call same logic with `isSelected=false` — no fill change, just edge/opacity feedback.
+
+### Filter logic — `applyFilter(f)`
+
+For each `.eco-edge`: if `f==='Y'` show only `data-chk==='Y'`; if `f` is a flow type show only `data-flow===f`; otherwise show all. Set `style.display=''` or `'none'`.
+
+### Sector detail — `renderSec(slug)` — writes into `#dp`
+
+```
+breadcrumb: [Ecosystem → slug.name]
+dh: sector name (22px bold) + dim badge
+dd: sector.description
+sec: "Supply Chain — N Tiers"
+  tier-list: one .tc card per tier
+    .tc class: ck-Y (amber left border) or ck-P (partial)
+    inside: .tc-body (name bold 13px + function 11px muted truncated) + ckBadge + › arrow
+    onclick: selTier(slug, idx)
+sec: "→ Outbound Flows (N)" — edge cards, filtered by activeF
+sec: "← Inbound Flows (N)" — edge cards, filtered by activeF
 ```
 
-### Stack panel — D1→D5 rows
+Edge card: `.ec` div, flex-wrap. Contains: flow badge, sector name (clickable → `selSec`), ⬥Y if chokepoint, product text (full width, muted 11px).
 
-For each dimension D1..D5, render a row:
-```html
-<div class="dim-row" data-dim="D1">
-  <div class="dim-label d1-color">D1 · AI Manufacturing Base</div>
-  <div class="dim-sectors">
-    <div class="sector-card" data-slug="semiconductors" data-dim="D1">
-      <div class="card-name">Semiconductors</div>
-      <div class="card-meta">
-        <span class="dim-badge d1">D1</span>
-        <span class="choke-count" title="Y-chokepoint edges sourced here">⬥3</span>
-        <span class="edge-count">8 edges</span>
-      </div>
-    </div>
-    ...
-  </div>
-</div>
+### Tier detail — `selTier(sectorSlug, idx)` — writes into `#dp`
+
+```
+breadcrumb: [Ecosystem → sectorName → tier.tier]
+dh: tier.tier (18px bold) + ckBadge
+fn-text: tier.function (13px, 1.65 line-height)
+meta-row: pills for moat_type, capital_intensity, margin_profile
+sec: "Cross-Sector Flows Through This Tier"
+  edge cards for DATA.edges where from_tier===tier.tier||to_tier===tier.tier
+  direction arrow (→ or ←) prepended to sector name
 ```
 
-Dimension label text:
-- D1 → "D1 · AI Manufacturing Base"
-- D2 → "D2 · AI Connectivity"
-- D3 → "D3 · AI Infrastructure"
-- D4 → "D4 · AI Enablement"
-- D5 → "D5 · AI Applications"
-
-Chokepoint count = number of edges where `from === sector.name && edge.chokepoint === "Y"`.
-Edge count = total edges where `from === sector.name || to === sector.name`.
-
-### SVG edge drawing
-
-Define SVG arrowhead markers in `<defs>`:
-```svg
-<defs>
-  <marker id="arrow-amber" ...><path d="M0,0 L8,4 L0,8 Z" fill="#d4a017"/></marker>
-  <marker id="arrow-blue" ...><path d="M0,0 L8,4 L0,8 Z" fill="#58a6ff"/></marker>
-  <marker id="arrow-green" ...><path d="M0,0 L8,4 L0,8 Z" fill="#3fb950"/></marker>
-</defs>
-```
-
-Edge drawing function `drawEdges(selectedSlug, activeFilter)`:
-1. Clear all `<path>` elements from the SVG
-2. For the selected sector, find all edges where `edge.from === selectedSlug_name || edge.to === selectedSlug_name`
-3. Apply `activeFilter` to narrow edges (if filter === "Y", only show chokepoint === "Y"; if filter is a flow type, only show that flow)
-4. For each visible edge:
-   - Get `sourceCard = document.querySelector('[data-slug="'+fromSlug+'"]')`
-   - Get `targetCard = document.querySelector('[data-slug="'+toSlug+'"]')`
-   - Get bounding rects relative to `#stack-panel` (subtract panel's `scrollTop` and `getBoundingClientRect`)
-   - `sx = sourceRect.right - panelRect.left`, `sy = sourceRect.top + sourceRect.height/2 - panelRect.top + panel.scrollTop`
-   - `tx = targetRect.left - panelRect.left`, `ty = targetRect.top + targetRect.height/2 - panelRect.top + panel.scrollTop`
-   - If source and target are in the same dimension row, use center-to-center with vertical offsets
-   - Control points: `cx1 = sx + (tx-sx)*0.5, cy1 = sy; cx2 = cx1, cy2 = ty`
-   - Stroke: amber if chokepoint Y, blue if from === selected (outbound), green if to === selected (inbound)
-   - Stroke-width: 2.5px if Y, 1.5px otherwise
-   - Marker-end: matching arrow marker
-   - Append `<path d="M sx sy C cx1 cy1 cx2 cy2 tx ty" stroke="..." stroke-width="..." fill="none" marker-end="url(#arrow-...)" opacity="0.85"/>`
-5. On window resize: call `drawEdges(currentSelected, activeFilter)` if a sector is selected
-
-Convert display name to slug: lowercase, replace spaces and `&` with `-`, remove special chars. E.g., "Photonics & Optical" → "photonics-optical". Store slug on card `data-slug` and in the DATA object.
-
-### Sector card interaction
+### Navigation helpers
 
 ```javascript
-document.querySelectorAll('.sector-card').forEach(card => {
-  card.addEventListener('click', () => {
-    const slug = card.dataset.slug;
-    selectSector(slug);
-  });
-});
-
-function selectSector(slug) {
-  currentSelected = slug;
-  // Update card visual states
-  document.querySelectorAll('.sector-card').forEach(c => {
-    const s = c.dataset.slug;
-    const sectorName = DATA.sectors.find(x => x.slug === s)?.name;
-    const isSelected = s === slug;
-    const selectedName = DATA.sectors.find(x => x.slug === slug)?.name;
-    const connectedEdges = DATA.edges.filter(e =>
-      (e.from === selectedName && e.to === sectorName) ||
-      (e.to === selectedName && e.from === sectorName)
-    );
-    const isDownstream = connectedEdges.some(e => e.from === selectedName);
-    const isUpstream = connectedEdges.some(e => e.to === selectedName);
-    
-    c.classList.toggle('selected', isSelected);
-    c.classList.toggle('upstream', !isSelected && isUpstream);
-    c.classList.toggle('downstream', !isSelected && isDownstream);
-    c.classList.toggle('dimmed', !isSelected && !isUpstream && !isDownstream);
-  });
-  // Draw SVG edges
-  drawEdges(slug, activeFilter);
-  // Render detail panel
-  renderDetail(slug);
-  // Mobile: show drawer
-  if (window.innerWidth <= 768) {
-    document.getElementById('detail-panel').classList.add('open');
-  }
-}
+function goHome() — clear selection, reset #dp to empty state, remove .open class
+function bc(parts) — returns breadcrumb HTML; all but last item are <a onclick=...>
+function nslug(name) — sector name → slug lookup
+function sname(slug) — slug → name
+function esc(s) — HTML-escape string
+function flBadge(f) — flow badge span
+function ckBadge(c) — chokepoint badge span
+function dimBadge(d) — dimension badge span
+function filt(edges) — filter edges array by activeF state
 ```
 
-CSS for card states:
-```css
-.sector-card { transition: opacity .2s, box-shadow .2s; }
-.sector-card.selected { border-left: 3px solid var(--amber); background: var(--bg3); }
-.sector-card.upstream { box-shadow: 0 0 0 2px var(--green); }
-.sector-card.downstream { box-shadow: 0 0 0 2px var(--blue); }
-.sector-card.dimmed { opacity: 0.2; }
+### DATA block
+
+Assemble from Phase 3 output exactly matching this structure:
+```javascript
+const DATA = {
+  generated: "[DATE]",
+  sectors: [
+    { slug, name, dimension, description,
+      tiers: [{ tier, function, processes, key_products,
+                chokepoint, capital_intensity, moat_type, margin_profile }] }
+  ],
+  edges: [
+    { from, from_tier, to, to_tier, flow, product, chokepoint }
+  ]
+};
 ```
 
-### Detail panel rendering
+Slugs: lowercase display name, spaces and `&` → `-`, remove special chars (e.g. "Photonics & Optical" → "photonics-optical").
+Chokepoint normalization: "Yes"/"Y" → "Y", "Partial" → "Partial", anything else → "No".
+
+Embed `const DATA = {...};` as the first script block. All visualization JS follows.
+
+### Init
 
 ```javascript
-function renderDetail(slug) {
-  const sector = DATA.sectors.find(s => s.slug === slug);
-  const outbound = DATA.edges.filter(e => e.from === sector.name);
-  const inbound = DATA.edges.filter(e => e.to === sector.name);
-  
-  // Apply active filter
-  const filterEdges = edges => {
-    if (activeFilter === 'all') return edges;
-    if (activeFilter === 'Y') return edges.filter(e => e.chokepoint === 'Y');
-    return edges.filter(e => e.flow === activeFilter);
-  };
-  
-  // Tier table
-  const tierRows = sector.tiers.map(t => `
-    <tr class="tier-row choke-${t.chokepoint.toLowerCase()}"
-        data-processes="${escHtml(t.processes)}"
-        data-products="${escHtml(t.key_products)}">
-      <td class="tier-name">${t.tier}</td>
-      <td>${chokeBadge(t.chokepoint)}</td>
-      <td class="tier-fn">${t.function}</td>
-      <td class="tier-proc">${truncate(t.processes, 80)}</td>
-    </tr>
-  `).join('');
-  
-  // Edge cards (outbound)
-  const outHtml = filterEdges(outbound).map(e => edgeCard(e, 'out')).join('') || '<p class="muted">None</p>';
-  const inHtml = filterEdges(inbound).map(e => edgeCard(e, 'in')).join('') || '<p class="muted">None</p>';
-  
-  document.getElementById('detail-panel').innerHTML = `
-    <div class="detail-header">
-      <h2>${sector.name}</h2>
-      <span class="dim-badge dim-${sector.dimension.toLowerCase()}">${sector.dimension}</span>
-    </div>
-    
-    <section class="detail-section">
-      <div class="section-title">Supply Chain Tiers</div>
-      <table class="tier-table">
-        <thead><tr><th>Tier</th><th>Choke</th><th>Function</th><th>Processes</th></tr></thead>
-        <tbody>${tierRows}</tbody>
-      </table>
-      <p class="hint">Hover row for full processes &amp; key products</p>
-    </section>
-    
-    <section class="detail-section">
-      <div class="section-title">→ Outbound (${outbound.length} edges)</div>
-      <div class="edge-list">${outHtml}</div>
-    </section>
-    
-    <section class="detail-section">
-      <div class="section-title">← Inbound (${inbound.length} edges)</div>
-      <div class="edge-list">${inHtml}</div>
-    </section>
-  `;
-  
-  // Wire up tier row tooltips
-  document.querySelectorAll('.tier-row').forEach(row => {
-    row.addEventListener('mouseenter', e => showTooltip(row.dataset.processes, row.dataset.products));
-    row.addEventListener('mouseleave', hideTooltip);
-  });
-  
-  // Wire up sector chips in edge list
-  document.querySelectorAll('.edge-sector-chip').forEach(chip => {
-    chip.addEventListener('click', () => selectSector(chip.dataset.slug));
-  });
-}
-
-function edgeCard(edge, direction) {
-  const otherName = direction === 'out' ? edge.to : edge.from;
-  const otherSlug = nameToSlug(otherName);
-  return `
-    <div class="edge-card">
-      <span class="flow-badge flow-${edge.flow.toLowerCase()}">${edge.flow}</span>
-      <span class="edge-sector-chip" data-slug="${otherSlug}">${otherName}</span>
-      <span class="edge-product">${edge.product}</span>
-      ${edge.chokepoint === 'Y' ? '<span class="choke-badge-y">⬥Y</span>' : ''}
-    </div>
-  `;
-}
-```
-
-### Tier row tooltip
-
-A floating `<div id="tooltip">` (fixed position, `pointer-events:none`, `z-index:1000`):
-```javascript
-function showTooltip(processes, products) {
-  const tt = document.getElementById('tooltip');
-  tt.innerHTML = `<b>Processes:</b> ${processes}<hr><b>Key Products:</b> ${products}`;
-  tt.style.display = 'block';
-}
-document.addEventListener('mousemove', e => {
-  const tt = document.getElementById('tooltip');
-  tt.style.left = (e.clientX + 12) + 'px';
-  tt.style.top = (e.clientY + 12) + 'px';
+window.addEventListener('DOMContentLoaded', buildGraph);
+let _rt;
+window.addEventListener('resize', () => {
+  clearTimeout(_rt);
+  _rt = setTimeout(() => { buildGraph(); if (selSlug) applyStates(selSlug, true); }, 120);
 });
-function hideTooltip() { document.getElementById('tooltip').style.display = 'none'; }
-```
-
-### Filter button logic
-
-```javascript
-let activeFilter = 'all';
-document.querySelectorAll('.filter-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    activeFilter = btn.dataset.filter;
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    if (currentSelected) {
-      drawEdges(currentSelected, activeFilter);
-      renderDetail(currentSelected); // re-render edge lists with filter applied
-    }
-  });
-});
-document.getElementById('reset-btn').addEventListener('click', () => {
-  currentSelected = null;
-  document.querySelectorAll('.sector-card').forEach(c => {
-    c.classList.remove('selected','upstream','downstream','dimmed');
-  });
-  document.getElementById('edge-svg').innerHTML = '<defs>...</defs>'; // keep defs, clear paths
-  document.getElementById('detail-panel').innerHTML = `<div class="detail-empty">Select a sector to explore its supply chain tiers and ecosystem connections.</div>`;
-  if (window.innerWidth <= 768) document.getElementById('detail-panel').classList.remove('open');
-});
-```
-
-### Mobile drawer
-
-```css
-@media (max-width: 768px) {
-  #layout { flex-direction: column; height: auto; overflow: visible; }
-  #stack-panel { width: 100%; border-right: none; border-bottom: 1px solid var(--border); }
-  #detail-panel {
-    position: fixed; bottom: 0; left: 0; right: 0;
-    height: 65vh; background: var(--bg2);
-    border-top: 1px solid var(--border); border-radius: 12px 12px 0 0;
-    overflow-y: auto; padding: 20px;
-    transform: translateY(100%); transition: transform .3s ease;
-    z-index: 50;
-  }
-  #detail-panel.open { transform: translateY(0); }
-}
 ```
 
 ---
