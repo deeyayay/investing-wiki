@@ -53,13 +53,11 @@ For each sector with status ≠ `planned`, read:
 Parse the **Value Chain table** under `## Value Chain`. The table has 8 columns:
 `Tier | Function | Processes | Key Products / Materials | Chokepoint | Capital Intensity | Moat Type | Margin Profile`
 
-For each row extract:
+For each row extract **ONLY** these fields (do NOT extract Processes or Key Products — those columns are intentionally omitted to stay within output token budget):
 ```
 {
   tier: col[0],
-  function: col[1],
-  processes: col[2],          // may be long — keep full text
-  key_products: col[3],       // may be long — keep full text
+  function: first sentence of col[1] only, truncated to 120 chars max,
   chokepoint: col[4],         // "Y", "Partial", or "No"
   capital_intensity: col[5],
   moat_type: col[6],
@@ -69,9 +67,7 @@ For each row extract:
 
 Skip header row and separator rows (lines starting with `|---`).
 
-Also check for a `## Publicly-Traded Nodes` table or `<!-- CANDIDATE ... -->` HTML comments. Extract any `{ tier, ticker, company }` mappings found. This is optional — if absent, leave nodes empty.
-
-Store as `supply_chains[sector_name] = { tiers: [...], nodes: [...] }`. If file missing, store `{ tiers: [], nodes: [] }`.
+Store as `supply_chains[sector_name] = { tiers: [...] }`. If file missing, store `{ tiers: [] }`.
 
 ### 2B — Ecosystem Interrelationships (1 read)
 
@@ -88,14 +84,14 @@ For each row extract:
   to: col[2],
   to_tier: col[3],
   flow: col[4],         // "Material", "Component", "Service", "Signal", "Process"
-  product: col[5],
+  product: col[5],      // keep as-is
   chokepoint: col[6],   // "Yes", "Y", "Partial", or "No"
-  notes: col[7]
 }
 ```
 
 Skip header rows, separator rows, and section headings (lines not starting with `|`).
 Normalize chokepoint: treat "Yes" and "Y" as "Y".
+Omit the `notes` column entirely.
 
 Store as `edges[]` (flat array).
 
@@ -103,170 +99,21 @@ Store as `edges[]` (flat array).
 
 ## Phase 3 — Assemble data model
 
-Build the JS data object to embed in the HTML:
+Build the JS data object to embed in the HTML. **Omit `processes` and `key_products` entirely** — they are not present in the trimmed DATA model:
 
 ```javascript
 const DATA = {
-  generated: "YYYY-MM-DD",   // today or --date arg
+  generated: "YYYY-MM-DD",
   sectors: [
     {
-      slug: "semiconductors",         // kebab-case of display name
+      slug: "semiconductors",
       name: "Semiconductors",
       dimension: "D1",
-      tiers: [                        // from supply_chains
-        { tier, function, processes, key_products, chokepoint,
-          capital_intensity, moat_type, margin_profile }
-      ],
-      nodes: [{ tier, ticker, company }]  // may be empty
+      tiers: [
+        { tier, fn, chokepoint, capital_intensity, moat_type, margin_profile }
+        // NOTE: use "fn" not "function" (reserved keyword in JS)
+      ]
     }
-  ],
-  edges: [
-    { from, from_tier, to, to_tier, flow, product, chokepoint, notes }
-  ]
-};
-```
-
-Dimension order for rendering: D1 → D2 → D3 → D4 → D5.
-
----
-
-## Phase 4 — Generate HTML
-
-Write a **complete self-contained HTML file**. All CSS and JS inline. No CDN links. Must work at `file://` and on GitHub Pages. The design is ecosystem-mapping only — no portfolio, ticker, or sentiment data.
-
-### Scope
-
-- **Layer 0 (Global):** D1→D5 SVG node graph with animated bezier edges. All 10 sector nodes positioned in 5 dimension rows. Edges colored by flow type, weight by chokepoint severity. Filter bar at top.
-- **Layer 1 (Sector):** Click a node → right panel shows sector description + clickable tier list + outbound/inbound edge cards. On mobile: bottom sheet slides up.
-- **Layer 2 (Tier):** Click a tier card → right panel shows tier detail (function, moat type, capital intensity, margin profile, cross-sector edges mapped to this tier). Breadcrumb navigates back.
-
-### Design system
-
-```
---bg:#0d1117  --bg2:#161b22  --bg3:#21262d
---text:#e6edf3  --muted:#8b949e  --border:#30363d
---amber:#d4a017  --green:#3fb950  --blue:#58a6ff
---orange:#e3812b  --purple:#bc8cff  --pink:#ff7b72
-```
-
-Dimension colors: D1=purple, D2=blue, D3=green, D4=amber, D5=pink.
-Flow badge colors: Material=orange, Component=blue, Service=green, Signal=purple, Process=amber.
-Chokepoint Y = amber badge `⬥ CHOKEPOINT`. Partial = muted amber `⬥ PARTIAL`.
-
-### Shell layout
-
-```
-#app (flex-column, height:100vh)
-  header#hdr (48px, sticky) — logo + horizontal-scroll filter bar
-  div#main (flex-row, flex:1, overflow:hidden)
-    div#gp  (50% width, overflow:auto) — SVG graph
-    div#dp  (flex:1, overflow-y:auto) — detail panel
-```
-
-Mobile (`max-width:768px`): `#gp` takes 100% width; `#dp` is `position:fixed; bottom:0; height:72vh; border-radius:14px 14px 0 0; transform:translateY(100%); transition:.3s`. Adding class `.open` slides it into view. Add `::before` drag handle (36×4px `--border` pill, `margin:10px auto`).
-
-### SVG graph — `buildGraph()`
-
-Compute node positions:
-```
-NODE_H = 78, ROW_H = 140, PAD_X = 16, PAD_Y = 38, GAP_X = 10
-For each dimension row (D1..D5):
-  row = sectors where dimension === dim.id
-  nodeW = min(182, floor((panelWidth - 2*PAD_X - (row.length-1)*GAP_X) / row.length))
-  totalW = row.length*nodeW + (row.length-1)*GAP_X
-  startX = (panelWidth - totalW) / 2
-  y = PAD_Y + dimIndex*ROW_H + 24   ← +24 for dim label above
-  each sector: x = startX + i*(nodeW+GAP_X)
-  store pos[slug] = {x, y, cx:x+nodeW/2, cy:y+NODE_H/2, nw:nodeW}
-```
-
-SVG total height = `PAD_Y + 5*ROW_H + NODE_H + 20`. Set `width` and `height` attributes on the SVG element so `#gp` scrolls if needed.
-
-Dimension bands: for each dim, draw a `<rect>` spanning full width at that row's y position using the dim's bg color (low opacity), then a `<text>` label above in the dim's color.
-
-Arrow markers in `<defs>`: one per flow type + one for chokepoint. `viewBox="0 0 10 6" refX="9" refY="3" markerWidth="7" markerHeight="5" orient="auto"` with a filled triangle `<path d="M0,0 L10,3 L0,6 Z"/>`.
-
-Edge routing per edge `{from, to, flow, chokepoint}`:
-- Resolve src/tgt sectors by name; look up `pos[slug]`
-- Same dimension → route `right-center of source → left-center of target` with horizontal bezier arcing 40px above
-- Source above target (sp.y < tp.y) → bottom-center of source to top-center of target, control points at 42% of dy
-- Source below target → top-center of source to bottom-center of target
-
-Edge styling: chokepoint Y → stroke `#d4a017`, width 2.5; otherwise flow color, width 1.5. Class `eco-edge anim` plus `slow` (Material) or `fast` (Signal) for animation speed.
-
-CSS animation: `@keyframes flowFwd{to{stroke-dashoffset:-22}}`. Class `.anim{stroke-dasharray:6 4;animation:flowFwd 1.4s linear infinite}`.
-
-Node SVG: `<g class="sector-node" data-slug="..." onclick="selSec('...')">`. Inside: `<rect class="node-bg" width="{nw}" height="78" rx="8" fill="#161b22" stroke="#30363d"/>`. Three `<text>` lines: name (font-size 12, font-weight 600, y≈26), dimension badge text (font-size 9, y≈44), edge count + ⬥ chokepoint count (font-size 9.5, muted, y≈60). For sector names longer than 14 chars, split at word boundary into two `<tspan>` lines.
-
-### Node highlight states — `applyStates(slug, isSelected)`
-
-For each `.sector-node`: classify as target / upstream (edges where `to===name`) / downstream (edges where `from===name`) / unrelated. Apply:
-- Target + selected: `fill #21262d, stroke #d4a017, stroke-width 2`
-- Upstream: `stroke #3fb950, stroke-width 1.5`
-- Downstream: `stroke #58a6ff, stroke-width 1.5`
-- Unrelated when selected: `opacity 0.12`
-
-For each `.eco-edge`: `opacity 0.92` if `data-from===slug || data-to===slug`, else `0.07`.
-
-On hover (mouseenter/mouseleave without selection), call same logic with `isSelected=false` — no fill change, just edge/opacity feedback.
-
-### Filter logic — `applyFilter(f)`
-
-For each `.eco-edge`: if `f==='Y'` show only `data-chk==='Y'`; if `f` is a flow type show only `data-flow===f`; otherwise show all. Set `style.display=''` or `'none'`.
-
-### Sector detail — `renderSec(slug)` — writes into `#dp`
-
-```
-breadcrumb: [Ecosystem → slug.name]
-dh: sector name (22px bold) + dim badge
-dd: sector.description
-sec: "Supply Chain — N Tiers"
-  tier-list: one .tc card per tier
-    .tc class: ck-Y (amber left border) or ck-P (partial)
-    inside: .tc-body (name bold 13px + function 11px muted truncated) + ckBadge + › arrow
-    onclick: selTier(slug, idx)
-sec: "→ Outbound Flows (N)" — edge cards, filtered by activeF
-sec: "← Inbound Flows (N)" — edge cards, filtered by activeF
-```
-
-Edge card: `.ec` div, flex-wrap. Contains: flow badge, sector name (clickable → `selSec`), ⬥Y if chokepoint, product text (full width, muted 11px).
-
-### Tier detail — `selTier(sectorSlug, idx)` — writes into `#dp`
-
-```
-breadcrumb: [Ecosystem → sectorName → tier.tier]
-dh: tier.tier (18px bold) + ckBadge
-fn-text: tier.function (13px, 1.65 line-height)
-meta-row: pills for moat_type, capital_intensity, margin_profile
-sec: "Cross-Sector Flows Through This Tier"
-  edge cards for DATA.edges where from_tier===tier.tier||to_tier===tier.tier
-  direction arrow (→ or ←) prepended to sector name
-```
-
-### Navigation helpers
-
-```javascript
-function goHome() — clear selection, reset #dp to empty state, remove .open class
-function bc(parts) — returns breadcrumb HTML; all but last item are <a onclick=...>
-function nslug(name) — sector name → slug lookup
-function sname(slug) — slug → name
-function esc(s) — HTML-escape string
-function flBadge(f) — flow badge span
-function ckBadge(c) — chokepoint badge span
-function dimBadge(d) — dimension badge span
-function filt(edges) — filter edges array by activeF state
-```
-
-### DATA block
-
-Assemble from Phase 3 output exactly matching this structure:
-```javascript
-const DATA = {
-  generated: "[DATE]",
-  sectors: [
-    { slug, name, dimension, description,
-      tiers: [{ tier, function, processes, key_products,
-                chokepoint, capital_intensity, moat_type, margin_profile }] }
   ],
   edges: [
     { from, from_tier, to, to_tier, flow, product, chokepoint }
@@ -274,41 +121,481 @@ const DATA = {
 };
 ```
 
-Slugs: lowercase display name, spaces and `&` → `-`, remove special chars (e.g. "Photonics & Optical" → "photonics-optical").
-Chokepoint normalization: "Yes"/"Y" → "Y", "Partial" → "Partial", anything else → "No".
+**Slugs:** lowercase display name, spaces and `&` → `-`, remove special chars.
+Examples: "Photonics & Optical" → `photonics-optical`, "Fintech & Commerce AI" → `fintech-commerce-ai`, "Space & Communications" → `space-communications`.
 
-Embed `const DATA = {...};` as the first script block. All visualization JS follows.
+**Chokepoint normalization:** "Yes"/"Y" → `"Y"`, "Partial" → `"Partial"`, anything else → `"No"`.
 
-### Init
+Dimension order for rendering: D1 → D2 → D3 → D4 → D5.
 
-```javascript
-window.addEventListener('DOMContentLoaded', buildGraph);
-let _rt;
-window.addEventListener('resize', () => {
-  clearTimeout(_rt);
-  _rt = setTimeout(() => { buildGraph(); if (selSlug) applyStates(selSlug, true); }, 120);
-});
+---
+
+## Phase 4 — Generate HTML in 4 bash heredoc chunks
+
+**CRITICAL: Do not attempt to write the entire HTML file in a single Write or cat command.** The output is too large. Instead, write in exactly 4 sequential bash heredoc calls to `Investing/Output/Dashboard/index.html`.
+
+---
+
+### Chunk A — Write HTML/CSS shell (cat > creates the file)
+
+```bash
+cat > Investing/Output/Dashboard/index.html << 'HTMLEOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Ecosystem Map — [DATE]</title>
+<style>
+:root{
+  --bg:#0d1117;--bg2:#161b22;--bg3:#21262d;
+  --text:#e6edf3;--muted:#8b949e;--border:#30363d;
+  --amber:#d4a017;--green:#3fb950;--blue:#58a6ff;
+  --orange:#e3812b;--purple:#bc8cff;--pink:#ff7b72;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow:hidden}
+#app{display:flex;flex-direction:column;height:100vh}
+#hdr{height:48px;min-height:48px;background:var(--bg2);border-bottom:1px solid var(--border);
+  display:flex;align-items:center;padding:0 14px;gap:12px;overflow-x:auto;white-space:nowrap;z-index:10}
+.logo{font-size:15px;font-weight:700;color:var(--text);flex-shrink:0}
+.logo span{color:var(--amber)}
+#filters{display:flex;gap:6px;flex-shrink:0}
+.fb{padding:4px 10px;border-radius:20px;border:1px solid var(--border);background:transparent;
+  color:var(--muted);font-size:11px;cursor:pointer;transition:all .15s}
+.fb:hover,.fb.active{background:var(--bg3);color:var(--text);border-color:var(--muted)}
+#main{display:flex;flex:1;overflow:hidden}
+#gp{width:50%;overflow:auto;position:relative;border-right:1px solid var(--border)}
+#dp{flex:1;overflow-y:auto;padding:16px;background:var(--bg)}
+/* Mobile bottom sheet */
+@media(max-width:768px){
+  #gp{width:100%;border-right:none}
+  #dp{position:fixed;bottom:0;left:0;right:0;height:72vh;background:var(--bg2);
+    border-radius:14px 14px 0 0;transform:translateY(100%);transition:transform .3s cubic-bezier(.25,.46,.45,.94);
+    z-index:30;padding:0 16px 16px;overflow-y:auto}
+  #dp.open{transform:translateY(0)}
+  #dp::before{content:'';display:block;width:36px;height:4px;background:var(--border);
+    border-radius:2px;margin:10px auto 14px}
+}
+/* SVG graph */
+.sector-node{cursor:pointer}
+.sector-node rect{transition:fill .15s,stroke .15s,opacity .15s}
+@keyframes flowFwd{to{stroke-dashoffset:-22}}
+.anim{stroke-dasharray:6 4;animation:flowFwd 1.4s linear infinite}
+.slow{animation-duration:2.2s}
+.fast{animation-duration:.7s}
+.eco-edge{transition:opacity .2s}
+/* Detail panel */
+.bc{font-size:11px;color:var(--muted);margin-bottom:12px}
+.bc a{color:var(--blue);cursor:pointer;text-decoration:none}
+.bc a:hover{text-decoration:underline}
+.dh{font-size:22px;font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.dh.tier{font-size:18px}
+.dd{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:16px}
+.sec-label{font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;
+  letter-spacing:.07em;margin:18px 0 8px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+/* Tier cards */
+.tc{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:8px;
+  background:var(--bg2);border:1px solid var(--border);margin-bottom:6px;cursor:pointer;transition:background .15s}
+.tc:hover{background:var(--bg3)}
+.tc.ck-Y{border-left:3px solid var(--amber)}
+.tc.ck-P{border-left:3px solid #7a5c00}
+.tc-body{flex:1;min-width:0}
+.tc-name{font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tc-fn{font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px}
+.tc-arr{color:var(--muted);font-size:14px;flex-shrink:0}
+/* Edge cards */
+.ec{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:8px 12px;border-radius:8px;
+  background:var(--bg2);border:1px solid var(--border);margin-bottom:6px;font-size:12px}
+.ec-prod{flex:1 1 100%;font-size:11px;color:var(--muted);margin-top:2px}
+.ec-sec{cursor:pointer;color:var(--blue)}
+.ec-sec:hover{text-decoration:underline}
+/* Meta pills */
+.meta-row{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 16px}
+.pill{padding:3px 9px;border-radius:12px;font-size:11px;background:var(--bg3);color:var(--muted);border:1px solid var(--border)}
+/* Badges */
+.badge{display:inline-block;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;line-height:1.6}
+.bD1{background:#2d1f47;color:var(--purple)}
+.bD2{background:#1a2a47;color:var(--blue)}
+.bD3{background:#1a3027;color:var(--green)}
+.bD4{background:#3a2a00;color:var(--amber)}
+.bD5{background:#3a1a1a;color:var(--pink)}
+.bCY{background:#3a2a00;color:var(--amber)}
+.bCP{background:#2a2200;color:#9a7a20}
+.bMat{background:#3a2010;color:var(--orange)}
+.bCom{background:#1a2a47;color:var(--blue)}
+.bSvc{background:#1a3027;color:var(--green)}
+.bSig{background:#2d1f47;color:var(--purple)}
+.bPrc{background:#3a2a00;color:var(--amber)}
+/* Empty state */
+.empty{display:flex;flex-direction:column;align-items:center;justify-content:center;
+  height:100%;color:var(--muted);font-size:13px;gap:8px;padding:20px;text-align:center}
+.empty-icon{font-size:32px;opacity:.4}
+/* Mobile back button */
+.back-btn{display:none;padding:6px 12px;border-radius:6px;border:1px solid var(--border);
+  background:transparent;color:var(--muted);font-size:12px;cursor:pointer;margin-bottom:12px}
+@media(max-width:768px){.back-btn{display:inline-block}}
+</style>
+</head>
+<body>
+<div id="app">
+<header id="hdr">
+  <span class="logo">AI Ecosystem <span>Map</span></span>
+  <div id="filters">
+    <button class="fb active" onclick="setFilter('all')">All Flows</button>
+    <button class="fb" onclick="setFilter('Y')">⬥ Chokepoints</button>
+    <button class="fb" onclick="setFilter('Material')">Material</button>
+    <button class="fb" onclick="setFilter('Component')">Component</button>
+    <button class="fb" onclick="setFilter('Service')">Service</button>
+    <button class="fb" onclick="setFilter('Signal')">Signal</button>
+  </div>
+</header>
+<div id="main">
+  <div id="gp"></div>
+  <div id="dp"><div class="empty"><div class="empty-icon">◈</div><div>Click a sector node to explore its supply chain and cross-sector flows</div></div></div>
+</div>
+</div>
+<script>
+HTMLEOF
 ```
 
 ---
 
-## Phase 5 — Write and deploy
+### Chunk B — Append DATA block (cat >> appends)
 
-1. **Write** the complete HTML to `Investing/Output/Dashboard/index.html`
-2. **Write** a dated copy to `Investing/Output/Dashboard/[DATE].html`
-3. If `--no-push` flag is set, stop here.
-4. Otherwise, deploy to `gh-pages`:
-   ```bash
-   git checkout gh-pages
-   cp Investing/Output/Dashboard/index.html index.html
-   git add index.html
-   git commit -m "Deploy ecosystem map [DATE]"
-   git push -u origin gh-pages
-   git checkout master
-   ```
-5. Commit the dashboard files to `master` as well:
-   ```bash
-   git add Investing/Output/Dashboard/index.html Investing/Output/Dashboard/[DATE].html
-   git commit -m "Dashboard: ecosystem map [DATE]"
-   git push -u origin master
-   ```
+Generate the DATA constant from the parsed sectors and edges. Use `cat >> Investing/Output/Dashboard/index.html << 'DATAEOF'` ... `DATAEOF`.
+
+The DATA object must exactly follow this structure:
+```javascript
+const DATA={generated:"[DATE]",sectors:[...],edges:[...]};
+```
+
+Write it as a single minified JS line or compact multi-line block. Use `fn` (not `function`) for the tier function field. Emit only the fields in the trimmed model: `slug, name, dimension, tiers:[{tier,fn,chokepoint,capital_intensity,moat_type,margin_profile}], edges:[{from,from_tier,to,to_tier,flow,product,chokepoint}]`.
+
+End the heredoc after the semicolon that closes `const DATA`.
+
+---
+
+### Chunk C — Append JS visualization (cat >> appends)
+
+Write all visualization JS using `cat >> Investing/Output/Dashboard/index.html << 'JSEOF'` ... `JSEOF`.
+
+Include all of the following, in order:
+
+```javascript
+// ── helpers ──────────────────────────────────────────────────────────────────
+let selSlug=null,activeF='all';
+const DIM_COLORS={D1:'#bc8cff',D2:'#58a6ff',D3:'#3fb950',D4:'#d4a017',D5:'#ff7b72'};
+const DIM_BG={D1:'rgba(188,140,255,.04)',D2:'rgba(88,166,255,.04)',D3:'rgba(63,185,80,.04)',D4:'rgba(212,160,23,.04)',D5:'rgba(255,123,114,.04)'};
+const FLOW_COLOR={Material:'#e3812b',Component:'#58a6ff',Service:'#3fb950',Signal:'#bc8cff',Process:'#d4a017'};
+const FLOW_BADGE={Material:'bMat',Component:'bCom',Service:'bSvc',Signal:'bSig',Process:'bPrc'};
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+function nslug(name){const s=DATA.sectors.find(x=>x.name===name);return s?s.slug:null}
+function sname(slug){const s=DATA.sectors.find(x=>x.slug===slug);return s?s.name:slug}
+function sec(label){return`<div class="sec-label">${esc(label)}</div>`}
+function flBadge(f){return`<span class="badge ${FLOW_BADGE[f]||'bPrc'}">${esc(f)}</span>`}
+function ckBadge(c){if(c==='Y')return'<span class="badge bCY">⬥ CHOKEPOINT</span>';if(c==='Partial')return'<span class="badge bCP">⬥ PARTIAL</span>';return''}
+function dimBadge(d){return`<span class="badge b${d}">${esc(d)}</span>`}
+function filt(arr){
+  if(activeF==='all')return arr;
+  if(activeF==='Y')return arr.filter(e=>e.chokepoint==='Y');
+  return arr.filter(e=>e.flow===activeF);
+}
+function bc(parts){
+  return'<div class="bc">'+parts.map((p,i)=>{
+    if(i===parts.length-1)return`<span>${esc(p.label)}</span>`;
+    return`<a onclick="${esc(p.action)}">${esc(p.label)}</a>`;
+  }).join(' › ')+'</div>';
+}
+
+// ── filter ────────────────────────────────────────────────────────────────────
+function setFilter(f){
+  activeF=f;
+  document.querySelectorAll('.fb').forEach(b=>b.classList.toggle('active',b.textContent.trim().replace('⬥ ','')===
+    ({all:'All Flows',Y:'Chokepoints',Material:'Material',Component:'Component',Service:'Service',Signal:'Signal'}[f]||f)));
+  applyFilter();
+  if(selSlug)renderSec(selSlug);
+}
+function applyFilter(){
+  document.querySelectorAll('.eco-edge').forEach(el=>{
+    const chk=el.dataset.chk,flow=el.dataset.flow;
+    let show=true;
+    if(activeF==='Y')show=chk==='Y';
+    else if(activeF!=='all')show=flow===activeF;
+    el.style.display=show?'':'none';
+  });
+}
+
+// ── node states ───────────────────────────────────────────────────────────────
+function applyStates(slug,isSelected){
+  const upNames=new Set(DATA.edges.filter(e=>nslug(e.to)===slug).map(e=>nslug(e.from)));
+  const dnNames=new Set(DATA.edges.filter(e=>nslug(e.from)===slug).map(e=>nslug(e.to)));
+  document.querySelectorAll('.sector-node').forEach(g=>{
+    const s=g.dataset.slug,r=g.querySelector('rect');
+    if(s===slug&&isSelected){r.setAttribute('fill','#21262d');r.setAttribute('stroke','#d4a017');r.setAttribute('stroke-width','2')}
+    else if(upNames.has(s)){r.setAttribute('stroke','#3fb950');r.setAttribute('stroke-width','1.5');r.setAttribute('fill','#161b22')}
+    else if(dnNames.has(s)){r.setAttribute('stroke','#58a6ff');r.setAttribute('stroke-width','1.5');r.setAttribute('fill','#161b22')}
+    else if(isSelected){r.setAttribute('fill','#161b22');r.setAttribute('stroke','#30363d');r.setAttribute('stroke-width','1');g.style.opacity='0.12'}
+    else{r.setAttribute('fill','#161b22');r.setAttribute('stroke','#30363d');r.setAttribute('stroke-width','1');g.style.opacity='1'}
+  });
+  document.querySelectorAll('.eco-edge').forEach(el=>{
+    const show=!isSelected||(el.dataset.from===slug||el.dataset.to===slug);
+    el.style.opacity=show?'0.92':'0.07';
+  });
+}
+
+// ── graph ─────────────────────────────────────────────────────────────────────
+function buildGraph(){
+  const gp=document.getElementById('gp');
+  const W=gp.clientWidth||window.innerWidth/2;
+  const NODE_H=78,ROW_H=140,PAD_X=16,PAD_Y=38,GAP_X=10;
+  const dims=['D1','D2','D3','D4','D5'];
+  const pos={};
+
+  dims.forEach((d,di)=>{
+    const row=DATA.sectors.filter(s=>s.dimension===d);
+    const nodeW=Math.min(182,Math.floor((W-2*PAD_X-(row.length-1)*GAP_X)/row.length));
+    const totalW=row.length*nodeW+(row.length-1)*GAP_X;
+    const startX=(W-totalW)/2;
+    const y=PAD_Y+di*ROW_H+24;
+    row.forEach((s,i)=>{
+      const x=startX+i*(nodeW+GAP_X);
+      pos[s.slug]={x,y,cx:x+nodeW/2,cy:y+NODE_H/2,nw:nodeW};
+    });
+  });
+
+  const SVG_H=PAD_Y+5*ROW_H+NODE_H+20;
+  let svg=`<svg width="${W}" height="${SVG_H}" xmlns="http://www.w3.org/2000/svg">`;
+
+  // defs: arrowhead markers per flow type
+  svg+=`<defs>`;
+  Object.entries(FLOW_COLOR).forEach(([f,c])=>{
+    svg+=`<marker id="arr-${f}" viewBox="0 0 10 6" refX="9" refY="3" markerWidth="7" markerHeight="5" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="${c}"/></marker>`;
+  });
+  svg+=`<marker id="arr-chk" viewBox="0 0 10 6" refX="9" refY="3" markerWidth="7" markerHeight="5" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#d4a017"/></marker>`;
+  svg+=`</defs>`;
+
+  // dimension band backgrounds + labels
+  dims.forEach((d,di)=>{
+    const y=PAD_Y+di*ROW_H;
+    svg+=`<rect x="0" y="${y+18}" width="${W}" height="${NODE_H+12}" fill="${DIM_BG[d]}"/>`;
+    svg+=`<text x="${PAD_X}" y="${y+14}" font-size="10" fill="${DIM_COLORS[d]}" font-weight="600">${d} — ${{D1:'AI Mfg Base',D2:'AI Connectivity',D3:'AI Infrastructure',D4:'AI Enablement',D5:'AI Applications'}[d]}</text>`;
+  });
+
+  // edges
+  DATA.edges.forEach((e,ei)=>{
+    const fg=nslug(e.from),tg=nslug(e.to);
+    if(!fg||!tg||!pos[fg]||!pos[tg])return;
+    const sp=pos[fg],tp=pos[tg];
+    const isChk=e.chokepoint==='Y';
+    const col=isChk?'#d4a017':(FLOW_COLOR[e.flow]||'#58a6ff');
+    const sw=isChk?2.5:1.5;
+    const mId=isChk?'arr-chk':`arr-${e.flow}`;
+    const animClass=e.flow==='Material'?'slow':e.flow==='Signal'?'fast':'';
+    let d2;
+    if(sp.y===tp.y){
+      // same row — horizontal arc
+      const x1=sp.x+sp.nw,y1=sp.cy,x2=tp.x,y2=tp.cy;
+      const cy=y1-40;
+      d2=`M${x1},${y1} C${x1+30},${cy} ${x2-30},${cy} ${x2},${y2}`;
+    } else if(sp.y<tp.y){
+      // source above target
+      const x1=sp.cx,y1=sp.y+NODE_H,x2=tp.cx,y2=tp.y;
+      const dy=y2-y1;
+      d2=`M${x1},${y1} C${x1},${y1+dy*.42} ${x2},${y2-dy*.42} ${x2},${y2}`;
+    } else {
+      // source below target
+      const x1=sp.cx,y1=sp.y,x2=tp.cx,y2=tp.y+NODE_H;
+      const dy=y1-y2;
+      d2=`M${x1},${y1} C${x1},${y1-dy*.42} ${x2},${y2+dy*.42} ${x2},${y2}`;
+    }
+    svg+=`<path class="eco-edge anim ${animClass}" d="${d2}" fill="none" stroke="${col}" stroke-width="${sw}" marker-end="url(#${mId})" data-from="${fg}" data-to="${tg}" data-flow="${esc(e.flow)}" data-chk="${e.chokepoint}" opacity="0.75"/>`;
+  });
+
+  // nodes
+  DATA.sectors.forEach(s=>{
+    const p=pos[s.slug];
+    if(!p)return;
+    const outE=DATA.edges.filter(e=>nslug(e.from)===s.slug).length;
+    const inE=DATA.edges.filter(e=>nslug(e.to)===s.slug).length;
+    const chkE=DATA.edges.filter(e=>(nslug(e.from)===s.slug||nslug(e.to)===s.slug)&&e.chokepoint==='Y').length;
+    const words=s.name.split(' ');
+    let line1=s.name,line2='';
+    if(s.name.length>14){
+      const mid=Math.ceil(words.length/2);
+      line1=words.slice(0,mid).join(' ');
+      line2=words.slice(mid).join(' ');
+    }
+    svg+=`<g class="sector-node" data-slug="${s.slug}" onclick="selSec('${s.slug}')" transform="translate(${p.x},${p.y})">`;
+    svg+=`<rect class="node-bg" width="${p.nw}" height="${NODE_H}" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>`;
+    if(line2){
+      svg+=`<text x="${p.nw/2}" y="22" text-anchor="middle" font-size="12" font-weight="600" fill="#e6edf3">${esc(line1)}</text>`;
+      svg+=`<text x="${p.nw/2}" y="36" text-anchor="middle" font-size="12" font-weight="600" fill="#e6edf3">${esc(line2)}</text>`;
+      svg+=`<text x="${p.nw/2}" y="52" text-anchor="middle" font-size="9" fill="${DIM_COLORS[s.dimension]}">${s.dimension}</text>`;
+      svg+=`<text x="${p.nw/2}" y="65" text-anchor="middle" font-size="9" fill="#8b949e">${inE+outE} flows${chkE?' · ⬥'+chkE:''}</text>`;
+    } else {
+      svg+=`<text x="${p.nw/2}" y="28" text-anchor="middle" font-size="12" font-weight="600" fill="#e6edf3">${esc(s.name)}</text>`;
+      svg+=`<text x="${p.nw/2}" y="44" text-anchor="middle" font-size="9" fill="${DIM_COLORS[s.dimension]}">${s.dimension}</text>`;
+      svg+=`<text x="${p.nw/2}" y="60" text-anchor="middle" font-size="9" fill="#8b949e">${inE+outE} flows${chkE?' · ⬥'+chkE:''}</text>`;
+    }
+    svg+=`</g>`;
+  });
+
+  svg+=`</svg>`;
+  gp.innerHTML=svg;
+
+  // hover handlers
+  document.querySelectorAll('.sector-node').forEach(g=>{
+    g.addEventListener('mouseenter',()=>{if(!selSlug)applyStates(g.dataset.slug,false)});
+    g.addEventListener('mouseleave',()=>{if(!selSlug)applyStates(null,false)});
+  });
+
+  applyFilter();
+  if(selSlug)applyStates(selSlug,true);
+}
+
+// ── sector detail ─────────────────────────────────────────────────────────────
+function selSec(slug){
+  selSlug=slug;
+  applyStates(slug,true);
+  renderSec(slug);
+  const dp=document.getElementById('dp');
+  dp.classList.add('open');
+  dp.scrollTop=0;
+}
+
+function renderSec(slug){
+  const s=DATA.sectors.find(x=>x.slug===slug);
+  if(!s)return;
+  const outE=filt(DATA.edges.filter(e=>nslug(e.from)===slug));
+  const inE=filt(DATA.edges.filter(e=>nslug(e.to)===slug));
+  let h='';
+  h+=`<button class="back-btn" onclick="goHome()">← Back</button>`;
+  h+=bc([{label:'Ecosystem',action:'goHome()'},{label:s.name}]);
+  h+=`<div class="dh">${esc(s.name)} ${dimBadge(s.dimension)}</div>`;
+  h+=sec(`Supply Chain — ${s.tiers.length} Tiers`);
+  s.tiers.forEach((t,i)=>{
+    const cls=t.chokepoint==='Y'?'ck-Y':t.chokepoint==='Partial'?'ck-P':'';
+    h+=`<div class="tc ${cls}" onclick="selTier('${esc(slug)}',${i})">`;
+    h+=`<div class="tc-body"><div class="tc-name">${esc(t.tier)}</div>`;
+    h+=`<div class="tc-fn">${esc(t.fn)}</div></div>`;
+    if(t.chokepoint!=='No')h+=ckBadge(t.chokepoint);
+    h+=`<span class="tc-arr">›</span></div>`;
+  });
+  if(outE.length){
+    h+=sec(`→ Outbound Flows (${outE.length})`);
+    outE.forEach(e=>{
+      const tslug=nslug(e.to);
+      h+=`<div class="ec">${flBadge(e.flow)}<span class="ec-sec" onclick="selSec('${esc(tslug||'')}')">${esc(e.to)}</span>${e.chokepoint==='Y'?'<span class="badge bCY">⬥Y</span>':''}`;
+      h+=`<div class="ec-prod">${esc(e.product)}</div></div>`;
+    });
+  }
+  if(inE.length){
+    h+=sec(`← Inbound Flows (${inE.length})`);
+    inE.forEach(e=>{
+      const fslug=nslug(e.from);
+      h+=`<div class="ec">${flBadge(e.flow)}<span class="ec-sec" onclick="selSec('${esc(fslug||'')}')">${esc(e.from)}</span>${e.chokepoint==='Y'?'<span class="badge bCY">⬥Y</span>':''}`;
+      h+=`<div class="ec-prod">${esc(e.product)}</div></div>`;
+    });
+  }
+  document.getElementById('dp').innerHTML=h;
+}
+
+// ── tier detail ───────────────────────────────────────────────────────────────
+function selTier(sectorSlug,idx){
+  const s=DATA.sectors.find(x=>x.slug===sectorSlug);
+  if(!s)return;
+  const t=s.tiers[idx];
+  if(!t)return;
+  const tierEdges=DATA.edges.filter(e=>e.from_tier===t.tier||e.to_tier===t.tier);
+  let h='';
+  h+=`<button class="back-btn" onclick="selSec('${esc(sectorSlug)}')">← Back</button>`;
+  h+=bc([{label:'Ecosystem',action:'goHome()'},{label:s.name,action:`selSec('${esc(sectorSlug)}')`},{label:t.tier}]);
+  h+=`<div class="dh tier">${esc(t.tier)} ${ckBadge(t.chokepoint)}</div>`;
+  h+=`<div class="dd">${esc(t.fn)}</div>`;
+  h+=`<div class="meta-row">`;
+  h+=`<span class="pill">Moat: ${esc(t.moat_type)}</span>`;
+  h+=`<span class="pill">CapEx: ${esc(t.capital_intensity)}</span>`;
+  h+=`<span class="pill">Margin: ${esc(t.margin_profile)}</span>`;
+  h+=`</div>`;
+  if(tierEdges.length){
+    h+=sec(`Cross-Sector Flows Through This Tier (${tierEdges.length})`);
+    tierEdges.forEach(e=>{
+      const isOut=e.from_tier===t.tier;
+      const counterSlug=isOut?nslug(e.to):nslug(e.from);
+      const counterName=isOut?e.to:e.from;
+      h+=`<div class="ec">${isOut?'→':'←'} ${flBadge(e.flow)}<span class="ec-sec" onclick="selSec('${esc(counterSlug||'')}')">${esc(counterName)}</span>${e.chokepoint==='Y'?'<span class="badge bCY">⬥Y</span>':''}`;
+      h+=`<div class="ec-prod">${esc(e.product)}</div></div>`;
+    });
+  } else {
+    h+=sec('Cross-Sector Flows');
+    h+=`<div class="ec"><span style="color:var(--muted);font-size:12px">No cross-sector flows mapped to this tier</span></div>`;
+  }
+  const dp=document.getElementById('dp');
+  dp.innerHTML=h;
+  dp.scrollTop=0;
+}
+
+// ── navigation ────────────────────────────────────────────────────────────────
+function goHome(){
+  selSlug=null;
+  document.getElementById('dp').classList.remove('open');
+  document.getElementById('dp').innerHTML='<div class="empty"><div class="empty-icon">◈</div><div>Click a sector node to explore its supply chain and cross-sector flows</div></div>';
+  document.querySelectorAll('.sector-node').forEach(g=>{
+    const r=g.querySelector('rect');
+    r.setAttribute('fill','#161b22');r.setAttribute('stroke','#30363d');r.setAttribute('stroke-width','1');g.style.opacity='1';
+  });
+  document.querySelectorAll('.eco-edge').forEach(el=>{el.style.opacity='0.75'});
+}
+
+// ── init ──────────────────────────────────────────────────────────────────────
+window.addEventListener('DOMContentLoaded',buildGraph);
+let _rt;
+window.addEventListener('resize',()=>{clearTimeout(_rt);_rt=setTimeout(()=>{buildGraph();if(selSlug)applyStates(selSlug,true)},120)});
+JSEOF
+```
+
+---
+
+### Chunk D — Append closing tags (cat >> appends)
+
+```bash
+cat >> Investing/Output/Dashboard/index.html << 'CLOSEEOF'
+</script>
+</body>
+</html>
+CLOSEEOF
+```
+
+---
+
+## Phase 5 — Write dated copy and deploy
+
+### 5A — Write dated copy
+
+```bash
+cp Investing/Output/Dashboard/index.html Investing/Output/Dashboard/[DATE].html
+```
+
+### 5B — If `--no-push` flag is set, stop here.
+
+### 5C — Deploy to `gh-pages`:
+
+```bash
+git stash
+git checkout gh-pages
+cp Investing/Output/Dashboard/index.html index.html
+git add index.html
+git commit -m "Deploy ecosystem map [DATE]"
+git push -u origin gh-pages
+git checkout -
+git stash pop
+```
+
+### 5D — Commit dashboard files to the current feature branch:
+
+```bash
+git add Investing/Output/Dashboard/index.html Investing/Output/Dashboard/[DATE].html
+git commit -m "Dashboard: ecosystem map [DATE]"
+git push -u origin HEAD
+```
