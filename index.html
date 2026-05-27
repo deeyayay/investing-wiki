@@ -57,6 +57,18 @@ body{background:var(--bg);color:var(--text);font:14px/1.5 system-ui,sans-serif}
 .choke-box p{font-size:13px;color:var(--amber)}
 .choke-box-partial{background:rgba(120,113,108,.1);border:1px solid rgba(120,113,108,.25);border-radius:6px;padding:12px 16px;margin-bottom:20px}
 .choke-box-partial p{font-size:13px;color:#a8a29e}
+.co-count{font-size:10px;background:rgba(99,102,241,.15);color:#a5b4fc;padding:2px 7px;border-radius:99px}
+.co-section{margin-top:24px}
+.co-section h3{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:12px}
+.co-card{background:var(--bg3);border-radius:6px;padding:12px 14px;margin-bottom:8px}
+.co-header{display:flex;align-items:center;gap:10px;margin-bottom:6px;flex-wrap:wrap}
+.co-ticker{font-weight:700;font-size:13px;font-family:monospace;color:var(--text)}
+.co-name{font-size:12px;color:var(--muted)}
+.co-cap{font-size:10px;padding:2px 7px;border-radius:99px;margin-left:auto}
+.co-cap.large{background:rgba(59,130,246,.15);color:#93c5fd}
+.co-cap.mid{background:rgba(245,158,11,.15);color:#fcd34d}
+.co-cap.small{background:rgba(239,68,68,.15);color:#fca5a5}
+.co-notes{font-size:12px;color:var(--muted);line-height:1.5}
 @media(max-width:600px){.sec-card{width:100%}.dim-desc{display:none}#l0,#l1,#l2{padding:16px}}
 </style>
 </head>
@@ -80,17 +92,37 @@ const DATA = {
       dimension: "D1",
       description: "packaged chip ready for system assembly",
       tiers: [
-        { tier: "Raw Materials & Specialty Chemicals", fn: "Produce the ultra-high-purity silicon, specialty gases, photoresists, CMP slurries, and process chemicals that every subsequent fab step consumes", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Process IP + Geographic monopoly", margin_profile: "Medium–High" },
-        { tier: "Silicon Wafer Production", fn: "Slice, grind, etch, and polish silicon boules to produce the atomically flat, contamination-free substrates on which all CMOS devices are built", chokepoint: "Y", capital_intensity: "High", moat_type: "Scale + Process IP", margin_profile: "Medium" },
-        { tier: "Compound Semiconductor & SiC Substrate", fn: "Grow gallium arsenide, indium phosphide, gallium nitride, and silicon carbide crystals and epitaxial layers for photonic, RF, and power devices that silicon cannot serve", chokepoint: "Y", capital_intensity: "High", moat_type: "Process IP + Geographic concentration", margin_profile: "High" },
-        { tier: "EDA & Design IP", fn: "Provide the electronic design automation software and licensable chip IP that allows engineers to design billion-transistor chips without understanding every process detail", chokepoint: "Y", capital_intensity: "Low", moat_type: "Switching cost + Ecosystem", margin_profile: "Very High" },
-        { tier: "Chip Design (Fabless & IDM)", fn: "Design the logic, memory, and analog circuits that define a chip’s function, then optimize for performance, power, and area (PPA) at a target process node — the highest-value-add step in the semiconductor industry", chokepoint: "Y", capital_intensity: "Low–Medium", moat_type: "Ecosystem", margin_profile: "Very High" },
-        { tier: "Lithography Equipment", fn: "Project photomask circuit patterns onto photoresist-coated wafers at nanometer precision using UV or EUV light — the single most critical and concentrated manufacturing equipment tier", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Process IP + Geographic monopoly", margin_profile: "Very High" },
-        { tier: "Deposition & Etch Equipment", fn: "Deposit thin-film layers atom-by-atom and etch features with sub-angstrom control to build transistors, interconnects, and dielectrics across 100+ process steps", chokepoint: "Partial", capital_intensity: "High", moat_type: "Process IP + Switching cost", margin_profile: "High" },
-        { tier: "Inspection & Metrology", fn: "Measure every critical dimension and detect every printable defect in real time — the feedback loop that enables yield learning and process control", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Switching cost + Certification", margin_profile: "High" },
-        { tier: "Wafer Fabrication (Foundry / IDM)", fn: "Execute 500–1,500 process steps to transform a blank wafer into a wafer full of functional die, integrating all upstream tiers into a manufacturable, yielding process", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Process IP + Scale + Certification", margin_profile: "High (cyclical)" },
-        { tier: "Packaging (OSAT & Advanced)", fn: "Dice wafers into individual die, integrate multiple die into multi-chip packages, and assemble the system-in-package that sits on the PCB — the tier undergoing the fastest structural change in the industry", chokepoint: "Partial", capital_intensity: "High", moat_type: "Process IP (advanced) / Scale (legacy)", margin_profile: "Medium–High" },
-        { tier: "Test & Burn-In", fn: "Electrically verify every die and packaged device; stress-screen for latent defects; characterize performance bins for yield optimization and product segmentation", chokepoint: "Partial", capital_intensity: "Low–Medium", moat_type: "Certification", margin_profile: "Low–Medium" }
+        { tier: "Raw Materials & Specialty Chemicals", fn: "Produce the ultra-high-purity silicon, specialty gases, photoresists, CMP slurries, and process chemicals that every subsequent fab step consumes", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Process IP + Geographic monopoly", margin_profile: "Medium–High", companies: [
+          { ticker: "4369.T", name: "Shin-Etsu Chemical", mkt_cap: "Large", notes: "#1 silicon wafer (300mm); EUV photoresist (dominant with TOK); specialty PVC" },
+          { ticker: "5201.T", name: "AGC Inc.", mkt_cap: "Large", notes: "Photomask substrate (EUVL quartz blank); specialty glass; fluorine chemicals" }
+        ]},
+        { tier: "Silicon Wafer Production", fn: "Slice, grind, etch, and polish silicon boules to produce the atomically flat, contamination-free substrates on which all CMOS devices are built", chokepoint: "Y", capital_intensity: "High", moat_type: "Scale + Process IP", margin_profile: "Medium", companies: [
+          { ticker: "4043.T", name: "Sumco Corporation", mkt_cap: "Large", notes: "#2 silicon wafer globally; 300mm prime and epi" }
+        ]},
+        { tier: "Compound Semiconductor & SiC Substrate", fn: "Grow gallium arsenide, indium phosphide, gallium nitride, and silicon carbide crystals and epitaxial layers for photonic, RF, and power devices that silicon cannot serve", chokepoint: "Y", capital_intensity: "High", moat_type: "Process IP + Geographic concentration", margin_profile: "High", companies: [] },
+        { tier: "EDA & Design IP", fn: "Provide the electronic design automation software and licensable chip IP that allows engineers to design billion-transistor chips without understanding every process detail", chokepoint: "Y", capital_intensity: "Low", moat_type: "Switching cost + Ecosystem", margin_profile: "Very High", companies: [] },
+        { tier: "Chip Design (Fabless & IDM)", fn: "Design the logic, memory, and analog circuits that define a chip’s function, then optimize for performance, power, and area (PPA) at a target process node — the highest-value-add step in the semiconductor industry", chokepoint: "Y", capital_intensity: "Low–Medium", moat_type: "Ecosystem", margin_profile: "Very High", companies: [
+          { ticker: "NVDA", name: "NVIDIA Corporation", mkt_cap: "Large", notes: "AI GPU (H200, B200, Blackwell Ultra); CUDA ecosystem; dominant AI training silicon" },
+          { ticker: "MRVL", name: "Marvell Technology", mkt_cap: "Large", notes: "Custom ASIC (Amazon Trainium2, hyperscaler) + networking (PAM4 SerDes, PHY)" },
+          { ticker: "MU", name: "Micron Technology", mkt_cap: "Large", notes: "DRAM (DDR5) + HBM3e + NAND; growing HBM share for AI" },
+          { ticker: "ALAB", name: "Astera Labs", mkt_cap: "Mid", notes: "PCIe / CXL retimer and switch IC for AI infrastructure" },
+          { ticker: "CRDO", name: "Credo Technology", mkt_cap: "Small", notes: "Ultra-short-reach (USR) SerDes for AI cluster networking at 112G/224G" }
+        ]},
+        { tier: "Lithography Equipment", fn: "Project photomask circuit patterns onto photoresist-coated wafers at nanometer precision using UV or EUV light — the single most critical and concentrated manufacturing equipment tier", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Process IP + Geographic monopoly", margin_profile: "Very High", companies: [
+          { ticker: "ASML", name: "ASML Holding", mkt_cap: "Large", notes: "Sole supplier of EUV scanners globally; monopoly on High-NA EUV" }
+        ]},
+        { tier: "Deposition & Etch Equipment", fn: "Deposit thin-film layers atom-by-atom and etch features with sub-angstrom control to build transistors, interconnects, and dielectrics across 100+ process steps", chokepoint: "Partial", capital_intensity: "High", moat_type: "Process IP + Switching cost", margin_profile: "High", companies: [] },
+        { tier: "Inspection & Metrology", fn: "Measure every critical dimension and detect every printable defect in real time — the feedback loop that enables yield learning and process control", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Switching cost + Certification", margin_profile: "High", companies: [] },
+        { tier: "Wafer Fabrication (Foundry / IDM)", fn: "Execute 500–1,500 process steps to transform a blank wafer into a wafer full of functional die, integrating all upstream tiers into a manufacturable, yielding process", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Process IP + Scale + Certification", margin_profile: "High (cyclical)", companies: [
+          { ticker: "TSM", name: "TSMC", mkt_cap: "Large", notes: "#1 foundry; sole manufacturer of ≤3nm for AI chips; CoWoS monopoly" },
+          { ticker: "GFS", name: "GlobalFoundries", mkt_cap: "Mid", notes: "Mature nodes; RF, automotive, government-sensitive US fab" }
+        ]},
+        { tier: "Packaging (OSAT & Advanced)", fn: "Dice wafers into individual die, integrate multiple die into multi-chip packages, and assemble the system-in-package that sits on the PCB — the tier undergoing the fastest structural change in the industry", chokepoint: "Partial", capital_intensity: "High", moat_type: "Process IP (advanced) / Scale (legacy)", margin_profile: "Medium–High", companies: [
+          { ticker: "AMKR", name: "Amkor Technology", mkt_cap: "Mid", notes: "#2 OSAT; advanced packaging (TSMC CoWoS partner); Samsung co-investor" }
+        ]},
+        { tier: "Test & Burn-In", fn: "Electrically verify every die and packaged device; stress-screen for latent defects; characterize performance bins for yield optimization and product segmentation", chokepoint: "Partial", capital_intensity: "Low–Medium", moat_type: "Certification", margin_profile: "Low–Medium", companies: [
+          { ticker: "AEHR", name: "Aehr Test Systems", mkt_cap: "Small", notes: "Near-monopoly on SiC wafer-level burn-in (WaferPak contactor)" }
+        ]}
       ]
     },
     {
@@ -99,15 +131,15 @@ const DATA = {
       dimension: "D1",
       description: "populated PCB ready for system assembly",
       tiers: [
-        { tier: "Dielectric & Conductor Materials", fn: "Synthesize and refine the functional materials that passive components are built from", chokepoint: "Y", capital_intensity: "Medium", moat_type: "Process IP + Geographic monopoly", margin_profile: "Medium" },
-        { tier: "Substrate & Laminate Materials", fn: "Produce the insulating base layers and build-up films that PCBs and IC substrates are constructed from", chokepoint: "Y", capital_intensity: "Medium", moat_type: "Process IP + Qualification", margin_profile: "Medium–High" },
-        { tier: "MLCC Manufacturing", fn: "Stack, fire, and terminate ceramic multilayer chip capacitors — the most ubiquitous passive component on any PCB", chokepoint: "Partial", capital_intensity: "High", moat_type: "Scale + Process IP", margin_profile: "Medium–High" },
-        { tier: "Film & Electrolytic Capacitor Mfg", fn: "Produce high-voltage and high-capacitance capacitors for power electronics, filtering, and energy storage", chokepoint: "N", capital_intensity: "Medium", moat_type: "Scale + Process IP", margin_profile: "Medium" },
-        { tier: "Inductor & Transformer Mfg", fn: "Wind, press, or print inductive components for power conversion, filtering, and signal isolation", chokepoint: "N", capital_intensity: "Medium", moat_type: "Scale + Certification", margin_profile: "Medium" },
-        { tier: "PCB Fabrication", fn: "Etch, drill, plate, and laminate copper circuit layers onto insulating substrates to create printed circuit boards", chokepoint: "N", capital_intensity: "Medium", moat_type: "Scale + Certification", margin_profile: "Low–Medium" },
-        { tier: "IC Substrate Manufacturing", fn: "Build the fine-pitch interposer layers that bridge IC die to PCB — the most technically demanding segment of the package supply chain", chokepoint: "Y", capital_intensity: "High", moat_type: "Process IP + Qualification", margin_profile: "High" },
-        { tier: "Connector & Socket Manufacturing", fn: "Form, plate, and assemble the mechanical and electrical interfaces that link boards, modules, cables, and racks", chokepoint: "N", capital_intensity: "Medium", moat_type: "Switching cost + Certification", margin_profile: "Medium–High" },
-        { tier: "PCB Assembly (EMS / PCBA)", fn: "Place and solder all components onto populated PCBs at volume; the final integration step before system-level assembly", chokepoint: "N", capital_intensity: "Low–Medium", moat_type: "Scale + Customer lock-in", margin_profile: "Low–Medium" }
+        { tier: "Dielectric & Conductor Materials", fn: "Synthesize and refine the functional materials that passive components are built from", chokepoint: "Y", capital_intensity: "Medium", moat_type: "Process IP + Geographic monopoly", margin_profile: "Medium", companies: [] },
+        { tier: "Substrate & Laminate Materials", fn: "Produce the insulating base layers and build-up films that PCBs and IC substrates are constructed from", chokepoint: "Y", capital_intensity: "Medium", moat_type: "Process IP + Qualification", margin_profile: "Medium–High", companies: [] },
+        { tier: "MLCC Manufacturing", fn: "Stack, fire, and terminate ceramic multilayer chip capacitors — the most ubiquitous passive component on any PCB", chokepoint: "Partial", capital_intensity: "High", moat_type: "Scale + Process IP", margin_profile: "Medium–High", companies: [] },
+        { tier: "Film & Electrolytic Capacitor Mfg", fn: "Produce high-voltage and high-capacitance capacitors for power electronics, filtering, and energy storage", chokepoint: "N", capital_intensity: "Medium", moat_type: "Scale + Process IP", margin_profile: "Medium", companies: [] },
+        { tier: "Inductor & Transformer Mfg", fn: "Wind, press, or print inductive components for power conversion, filtering, and signal isolation", chokepoint: "N", capital_intensity: "Medium", moat_type: "Scale + Certification", margin_profile: "Medium", companies: [] },
+        { tier: "PCB Fabrication", fn: "Etch, drill, plate, and laminate copper circuit layers onto insulating substrates to create printed circuit boards", chokepoint: "N", capital_intensity: "Medium", moat_type: "Scale + Certification", margin_profile: "Low–Medium", companies: [] },
+        { tier: "IC Substrate Manufacturing", fn: "Build the fine-pitch interposer layers that bridge IC die to PCB — the most technically demanding segment of the package supply chain", chokepoint: "Y", capital_intensity: "High", moat_type: "Process IP + Qualification", margin_profile: "High", companies: [] },
+        { tier: "Connector & Socket Manufacturing", fn: "Form, plate, and assemble the mechanical and electrical interfaces that link boards, modules, cables, and racks", chokepoint: "N", capital_intensity: "Medium", moat_type: "Switching cost + Certification", margin_profile: "Medium–High", companies: [] },
+        { tier: "PCB Assembly (EMS / PCBA)", fn: "Place and solder all components onto populated PCBs at volume; the final integration step before system-level assembly", chokepoint: "N", capital_intensity: "Low–Medium", moat_type: "Scale + Customer lock-in", margin_profile: "Low–Medium", companies: [] }
       ]
     },
     {
@@ -116,14 +148,14 @@ const DATA = {
       dimension: "D1",
       description: "semiconductor-grade and battery-grade material outputs",
       tiers: [
-        { tier: "Geological Exploration & Resource Definition", fn: "Delineate ore bodies and estimate recoverable metal tonnage to justify mine capital commitment", chokepoint: "N", capital_intensity: "Low–Medium", moat_type: "Geographic monopoly (orebody)", margin_profile: "Very High (discovery) / Low (miss)" },
-        { tier: "Bulk Mining & Ore Extraction", fn: "Break, load, and haul rock from the ore body to the processing plant", chokepoint: "N", capital_intensity: "Very High", moat_type: "Geographic monopoly + Scale", margin_profile: "Cyclical" },
-        { tier: "Mineral Processing & Concentration", fn: "Liberate and concentrate target minerals from gangue rock to produce a saleable or smeltable concentrate", chokepoint: "Partial", capital_intensity: "High", moat_type: "Scale + Location", margin_profile: "Cyclical" },
-        { tier: "Primary Smelting & Pyrometallurgy", fn: "Reduce metal from concentrate using heat and flux to produce crude metal or matte for further refining", chokepoint: "Partial", capital_intensity: "Very High", moat_type: "Scale + Geographic concentration", margin_profile: "Cyclical" },
-        { tier: "Electrolytic Refining & Hydrometallurgy", fn: "Remove impurities from crude metal to produce refined metal at LME-delivery grade (99.99%+)", chokepoint: "N", capital_intensity: "High", moat_type: "Scale + Process IP", margin_profile: "Cyclical" },
-        { tier: "Rare Earth Separation & Critical Mineral Refining", fn: "Separate individual rare earth elements from mixed concentrate and refine critical byproduct metals to usable purity", chokepoint: "Y", capital_intensity: "High", moat_type: "Geographic monopoly + Process IP", margin_profile: "High" },
-        { tier: "Silicon & SiC Precursor Production", fn: "Upgrade metallurgical-grade silicon to polysilicon and SiC powder grades required for semiconductor and power-device manufacturing", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Process IP + Scale", margin_profile: "High" },
-        { tier: "Battery Material Precursor Production", fn: "Process lithium, nickel, cobalt, and manganese into battery-ready chemical forms suitable for cathode and electrolyte manufacturing", chokepoint: "Partial", capital_intensity: "High", moat_type: "Process IP + Certification", margin_profile: "Medium–High" }
+        { tier: "Geological Exploration & Resource Definition", fn: "Delineate ore bodies and estimate recoverable metal tonnage to justify mine capital commitment", chokepoint: "N", capital_intensity: "Low–Medium", moat_type: "Geographic monopoly (orebody)", margin_profile: "Very High (discovery) / Low (miss)", companies: [] },
+        { tier: "Bulk Mining & Ore Extraction", fn: "Break, load, and haul rock from the ore body to the processing plant", chokepoint: "N", capital_intensity: "Very High", moat_type: "Geographic monopoly + Scale", margin_profile: "Cyclical", companies: [] },
+        { tier: "Mineral Processing & Concentration", fn: "Liberate and concentrate target minerals from gangue rock to produce a saleable or smeltable concentrate", chokepoint: "Partial", capital_intensity: "High", moat_type: "Scale + Location", margin_profile: "Cyclical", companies: [] },
+        { tier: "Primary Smelting & Pyrometallurgy", fn: "Reduce metal from concentrate using heat and flux to produce crude metal or matte for further refining", chokepoint: "Partial", capital_intensity: "Very High", moat_type: "Scale + Geographic concentration", margin_profile: "Cyclical", companies: [] },
+        { tier: "Electrolytic Refining & Hydrometallurgy", fn: "Remove impurities from crude metal to produce refined metal at LME-delivery grade (99.99%+)", chokepoint: "N", capital_intensity: "High", moat_type: "Scale + Process IP", margin_profile: "Cyclical", companies: [] },
+        { tier: "Rare Earth Separation & Critical Mineral Refining", fn: "Separate individual rare earth elements from mixed concentrate and refine critical byproduct metals to usable purity", chokepoint: "Y", capital_intensity: "High", moat_type: "Geographic monopoly + Process IP", margin_profile: "High", companies: [] },
+        { tier: "Silicon & SiC Precursor Production", fn: "Upgrade metallurgical-grade silicon to polysilicon and SiC powder grades required for semiconductor and power-device manufacturing", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Process IP + Scale", margin_profile: "High", companies: [] },
+        { tier: "Battery Material Precursor Production", fn: "Process lithium, nickel, cobalt, and manganese into battery-ready chemical forms suitable for cathode and electrolyte manufacturing", chokepoint: "Partial", capital_intensity: "High", moat_type: "Process IP + Certification", margin_profile: "Medium–High", companies: [] }
       ]
     },
     {
@@ -132,14 +164,42 @@ const DATA = {
       dimension: "D2",
       description: "optical transceiver enabling AI cluster interconnect",
       tiers: [
-        { tier: "III-V Substrate & Epitaxial Wafer Growth", fn: "Grow the compound semiconductor wafers that laser diodes, VCSELs, photodetectors, and GaN power devices are fabricated on", chokepoint: "Y", capital_intensity: "High", moat_type: "Process IP + Geographic concentration", margin_profile: "High" },
-        { tier: "Photonic Device Fabrication", fn: "Pattern, implant, metallize, and cleave epitaxial wafers to produce individual photonic chips — laser diodes, EMLs, VCSELs, photodetectors — at wafer scale", chokepoint: "Y", capital_intensity: "High", moat_type: "Process IP + Scale", margin_profile: "High" },
-        { tier: "Silicon Photonics Platform", fn: "Integrate optical functions — waveguides, ring modulators, Mach-Zehnder modulators, Ge photodetectors — onto silicon wafers using CMOS-compatible processes to enable chiplet-level optical I/O", chokepoint: "Partial", capital_intensity: "High", moat_type: "Ecosystem", margin_profile: "High" },
-        { tier: "Optical Fiber & Preform Manufacturing", fn: "Produce the glass preforms and draw the optical fibers that carry photons between chips, racks, data centers, and continents", chokepoint: "Partial", capital_intensity: "Very High", moat_type: "Scale + Process IP", margin_profile: "Medium–High" },
-        { tier: "Passive Optical Components", fn: "Filter, route, split, combine, and condition light at the wavelength or polarization level without active gain or modulation", chokepoint: "N", capital_intensity: "Medium", moat_type: "Process IP + Certification", margin_profile: "Medium–High" },
-        { tier: "Transceiver & Module Integration", fn: "Co-package laser, photodetector, driver IC, TIA, and DSP into pluggable optical modules that translate electrical signals to optical and back at data-center-relevant speeds", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Scale + Customer lock-in", margin_profile: "Medium–High" },
-        { tier: "Coherent Line Systems & ROADM", fn: "Transmit, amplify, switch, and manage terabit-class optical signals over metro and long-haul fiber routes connecting data centers and backbone nodes", chokepoint: "Partial", capital_intensity: "High", moat_type: "Ecosystem + Switching cost", margin_profile: "High" },
-        { tier: "Photonic Sensing & LIDAR", fn: "Produce optically-based sensors and ranging systems for robotics, autonomous systems, industrial measurement, and environmental monitoring", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Process IP + Certification", margin_profile: "High" }
+        { tier: "III-V Substrate & Epitaxial Wafer Growth", fn: "Grow the compound semiconductor wafers that laser diodes, VCSELs, photodetectors, and GaN power devices are fabricated on", chokepoint: "Y", capital_intensity: "High", moat_type: "Process IP + Geographic concentration", margin_profile: "High", companies: [
+          { ticker: "AXTI", name: "AXT Inc.", mkt_cap: "Small", notes: "InP, GaAs, Ge substrates; Mountain Pass-adjacent for Ga/In feedstock" },
+          { ticker: "SIVE", name: "Sivers Semiconductors", mkt_cap: "Small", notes: "Stockholm-listed; GaAs/GaN device fab; 5G and photonics" }
+        ]},
+        { tier: "Photonic Device Fabrication", fn: "Pattern, implant, metallize, and cleave epitaxial wafers to produce individual photonic chips — laser diodes, EMLs, VCSELs, photodetectors — at wafer scale", chokepoint: "Y", capital_intensity: "High", moat_type: "Process IP + Scale", margin_profile: "High", companies: [
+          { ticker: "COHR", name: "Coherent Corp", mkt_cap: "Large", notes: "Laser diodes, VCSELs, EMLs, InP photonic ICs; largest US photonic device fab" },
+          { ticker: "LITE", name: "Lumentum Holdings", mkt_cap: "Large", notes: "VCSEL (LiDAR + 3D sensing), DFB lasers, ROADMs; strong cloud customer base" },
+          { ticker: "AAOI", name: "Applied Optoelectronics", mkt_cap: "Small", notes: "DFB laser, VCSEL; data center and cable TV transceiver market" },
+          { ticker: "LASR", name: "nLIGHT Inc.", mkt_cap: "Small", notes: "High-power fiber-coupled semiconductor and fiber lasers; defense + industrial" }
+        ]},
+        { tier: "Silicon Photonics Platform", fn: "Integrate optical functions — waveguides, ring modulators, Mach-Zehnder modulators, Ge photodetectors — onto silicon wafers using CMOS-compatible processes to enable chiplet-level optical I/O", chokepoint: "Partial", capital_intensity: "High", moat_type: "Ecosystem", margin_profile: "High", companies: [
+          { ticker: "POET", name: "POET Technologies", mkt_cap: "Small", notes: "POET Optical Interposer platform (SiPh + III-V heterogeneous integration); pre-revenue" },
+          { ticker: "LWLG", name: "Lightwave Logic", mkt_cap: "Small", notes: "Electro-optic polymer Mach-Zehnder modulator; pre-revenue R&D stage" }
+        ]},
+        { tier: "Optical Fiber & Preform Manufacturing", fn: "Produce the glass preforms and draw the optical fibers that carry photons between chips, racks, data centers, and continents", chokepoint: "Partial", capital_intensity: "Very High", moat_type: "Scale + Process IP", margin_profile: "Medium–High", companies: [
+          { ticker: "FOCI", name: "FOCI Fiber Optic Communications", mkt_cap: "Small", notes: "Taiwan-listed (TPEX); specialty fiber cables and assemblies" }
+        ]},
+        { tier: "Passive Optical Components", fn: "Filter, route, split, combine, and condition light at the wavelength or polarization level without active gain or modulation", chokepoint: "N", capital_intensity: "Medium", moat_type: "Process IP + Certification", margin_profile: "Medium–High", companies: [
+          { ticker: "VIAV", name: "Viavi Solutions", mkt_cap: "Mid", notes: "Thin-film filter coatings, fiber test (OTDR), network & service enablement" },
+          { ticker: "COHR", name: "Coherent Corp", mkt_cap: "Large", notes: "Also produces optical isolators, beam combiners, and passive WDM components" }
+        ]},
+        { tier: "Transceiver & Module Integration", fn: "Co-package laser, photodetector, driver IC, TIA, and DSP into pluggable optical modules that translate electrical signals to optical and back at data-center-relevant speeds", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Scale + Customer lock-in", margin_profile: "Medium–High", companies: [
+          { ticker: "COHR", name: "Coherent Corp", mkt_cap: "Large", notes: "400G/800G/1.6T QSFP-DD/OSFP transceivers; coherent CFP2-DCO" },
+          { ticker: "LITE", name: "Lumentum Holdings", mkt_cap: "Large", notes: "Pluggable transceivers; coherent and PAM4 portfolio" },
+          { ticker: "AAOI", name: "Applied Optoelectronics", mkt_cap: "Small", notes: "100G/400G QSFP28/QSFP-DD transceivers" },
+          { ticker: "FN", name: "Fabrinet", mkt_cap: "Large", notes: "CM/EMS for optical modules; assembles for COHR, LITE, Ciena, Cisco" }
+        ]},
+        { tier: "Coherent Line Systems & ROADM", fn: "Transmit, amplify, switch, and manage terabit-class optical signals over metro and long-haul fiber routes connecting data centers and backbone nodes", chokepoint: "Partial", capital_intensity: "High", moat_type: "Ecosystem + Switching cost", margin_profile: "High", companies: [
+          { ticker: "CIEN", name: "Ciena Corporation", mkt_cap: "Large", notes: "WaveLogic coherent DSP (best-in-class); 6500 platform ROADM; WaveServer" },
+          { ticker: "LITE", name: "Lumentum Holdings", mkt_cap: "Large", notes: "ROADM line cards, tunable lasers for DWDM" },
+          { ticker: "COHR", name: "Coherent Corp", mkt_cap: "Large", notes: "Coherent modules for Nokia/Infinera integration" }
+        ]},
+        { tier: "Photonic Sensing & LIDAR", fn: "Produce optically-based sensors and ranging systems for robotics, autonomous systems, industrial measurement, and environmental monitoring", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Process IP + Certification", margin_profile: "High", companies: [
+          { ticker: "LASR", name: "nLIGHT Inc.", mkt_cap: "Small", notes: "High-power fiber lasers used in directed energy and industrial sensing" },
+          { ticker: "VIAV", name: "Viavi Solutions", mkt_cap: "Mid", notes: "Optical fiber sensing (distributed temperature/acoustic sensing — DTS/DAS)" }
+        ]}
       ]
     },
     {
@@ -148,14 +208,20 @@ const DATA = {
       dimension: "D2",
       description: "satellite connectivity enabling AI edge inference and global broadband",
       tiers: [
-        { tier: "Launch Services", fn: "Deliver payloads to orbit via expendable or reusable rockets; the physical access layer for every downstream satellite deployment", chokepoint: "Partial", capital_intensity: "Very High", moat_type: "Scale + Reusability economics", margin_profile: "Low–Medium" },
-        { tier: "Satellite Bus Manufacturing", fn: "Design and produce the structural, power, thermal, propulsion, and attitude-control subsystems that host a payload in orbit", chokepoint: "Partial", capital_intensity: "High", moat_type: "Vertical integration + Qualification", margin_profile: "Medium" },
-        { tier: "Payload Manufacturing", fn: "Design and produce the mission-specific RF, optical, or sensing payload that transmits, receives, or collects data", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Process IP + Spectrum licensing", margin_profile: "High" },
-        { tier: "Ground Segment & Network Operations", fn: "Receive, process, and route satellite signals to and from end users; manage orbital slot, frequency, and antenna resources", chokepoint: "Partial", capital_intensity: "High", moat_type: "Geographic + Regulatory moat", margin_profile: "Medium–High" },
-        { tier: "Satellite Connectivity Services", fn: "Sell broadband, IoT, and narrowband connectivity services to end markets over owned or leased satellite capacity", chokepoint: "N", capital_intensity: "Low", moat_type: "Customer relationships + Spectrum", margin_profile: "Medium" },
-        { tier: "User Terminal Manufacturing", fn: "Produce the antennas, modems, and enclosures that the end user installs to connect to the satellite network", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "RFIC design IP + Ecosystem lock-in", margin_profile: "Medium–High" },
-        { tier: "Satellite Manufacturing Support & Testing", fn: "Supply the radiation-hardened electronics, specialty materials, and environmental test services that enable satellite reliability in the space radiation environment", chokepoint: "Partial", capital_intensity: "High", moat_type: "Qualification moat", margin_profile: "High" },
-        { tier: "Spectrum & Orbital Operations", fn: "Coordinate, file, and manage radio frequency spectrum and orbital slot assignments across the full satellite lifecycle", chokepoint: "Y", capital_intensity: "Low–Medium", moat_type: "Regulatory moat", margin_profile: "High" }
+        { tier: "Launch Services", fn: "Deliver payloads to orbit via expendable or reusable rockets; the physical access layer for every downstream satellite deployment", chokepoint: "Partial", capital_intensity: "Very High", moat_type: "Scale + Reusability economics", margin_profile: "Low–Medium", companies: [
+          { ticker: "RKLB", name: "Rocket Lab USA", mkt_cap: "Mid", notes: "Electron small launch vehicle; Neutron in development; Photon kick stage; space systems segment" }
+        ]},
+        { tier: "Satellite Bus Manufacturing", fn: "Design and produce the structural, power, thermal, propulsion, and attitude-control subsystems that host a payload in orbit", chokepoint: "Partial", capital_intensity: "High", moat_type: "Vertical integration + Qualification", margin_profile: "Medium", companies: [
+          { ticker: "RKLB", name: "Rocket Lab USA", mkt_cap: "Mid", notes: "Space Systems segment: Photon bus (50–300 kg); Pioneer bus (constellation class)" }
+        ]},
+        { tier: "Payload Manufacturing", fn: "Design and produce the mission-specific RF, optical, or sensing payload that transmits, receives, or collects data", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Process IP + Spectrum licensing", margin_profile: "High", companies: [] },
+        { tier: "Ground Segment & Network Operations", fn: "Receive, process, and route satellite signals to and from end users; manage orbital slot, frequency, and antenna resources", chokepoint: "Partial", capital_intensity: "High", moat_type: "Geographic + Regulatory moat", margin_profile: "Medium–High", companies: [] },
+        { tier: "Satellite Connectivity Services", fn: "Sell broadband, IoT, and narrowband connectivity services to end markets over owned or leased satellite capacity", chokepoint: "N", capital_intensity: "Low", moat_type: "Customer relationships + Spectrum", margin_profile: "Medium", companies: [
+          { ticker: "ASTS", name: "AST SpaceMobile", mkt_cap: "Small", notes: "BlueBird LEO constellation; direct-to-smartphone broadband via L/S/Ka-band; partner: AT&T, Vodafone" }
+        ]},
+        { tier: "User Terminal Manufacturing", fn: "Produce the antennas, modems, and enclosures that the end user installs to connect to the satellite network", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "RFIC design IP + Ecosystem lock-in", margin_profile: "Medium–High", companies: [] },
+        { tier: "Satellite Manufacturing Support & Testing", fn: "Supply the radiation-hardened electronics, specialty materials, and environmental test services that enable satellite reliability in the space radiation environment", chokepoint: "Partial", capital_intensity: "High", moat_type: "Qualification moat", margin_profile: "High", companies: [] },
+        { tier: "Spectrum & Orbital Operations", fn: "Coordinate, file, and manage radio frequency spectrum and orbital slot assignments across the full satellite lifecycle", chokepoint: "Y", capital_intensity: "Low–Medium", moat_type: "Regulatory moat", margin_profile: "High", companies: [] }
       ]
     },
     {
@@ -164,13 +230,25 @@ const DATA = {
       dimension: "D3",
       description: "GPU compute cluster ready for AI training workload",
       tiers: [
-        { tier: "Compute Node Design & ODM Assembly", fn: "Design and assemble the server trays, HGX/MGX baseplates, and GPU compute nodes that house the accelerators", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Scale + Customer lock-in", margin_profile: "Low–Medium" },
-        { tier: "High-Speed Networking", fn: "Design, integrate, and operate the switches, NICs, and fabric interconnects that move data between GPUs, between servers, and between racks at AI-cluster scale", chokepoint: "Y", capital_intensity: "High", moat_type: "Ecosystem + Switching cost", margin_profile: "Very High" },
-        { tier: "Storage Systems", fn: "Design, integrate, and operate the flash and object storage systems that hold AI training datasets, model checkpoints, and inference artifacts", chokepoint: "N", capital_intensity: "Medium", moat_type: "Switching cost", margin_profile: "High" },
-        { tier: "Data Center Power Infrastructure", fn: "Deliver, transform, condition, and distribute electrical power from utility feed to server board-level power rails, with protection and backup at each stage", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Scale + Certification", margin_profile: "Medium–High" },
-        { tier: "Thermal Management & Cooling", fn: "Remove heat from compute nodes and reject it from the facility using the minimum energy input consistent with the server’s thermal design", chokepoint: "N", capital_intensity: "Very High", moat_type: "Scale + Geographic", margin_profile: "Medium" },
-        { tier: "Data Center Facility & MEP", fn: "Construct and operate the physical plant: structure, electrical infrastructure, mechanical systems, network entry, and physical security that define a data center tier", chokepoint: "N", capital_intensity: "Very High", moat_type: "Geographic monopoly", margin_profile: "Medium" },
-        { tier: "Hyperscaler & Colocation Operation", fn: "Operate the data center as a service platform: provision capacity, manage workloads, sell compute/storage/network as a service, and maintain SLA commitments", chokepoint: "Partial", capital_intensity: "Very High", moat_type: "Scale + Ecosystem", margin_profile: "High" }
+        { tier: "Compute Node Design & ODM Assembly", fn: "Design and assemble the server trays, HGX/MGX baseplates, and GPU compute nodes that house the accelerators", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Scale + Customer lock-in", margin_profile: "Low–Medium", companies: [
+          { ticker: "SMCI", name: "Super Micro Computer", mkt_cap: "Large", notes: "#1 AI server ODM by design innovation; HGX/MGX tray specialist" }
+        ]},
+        { tier: "High-Speed Networking", fn: "Design, integrate, and operate the switches, NICs, and fabric interconnects that move data between GPUs, between servers, and between racks at AI-cluster scale", chokepoint: "Y", capital_intensity: "High", moat_type: "Ecosystem + Switching cost", margin_profile: "Very High", companies: [
+          { ticker: "ANET", name: "Arista Networks", mkt_cap: "Large", notes: "#1 hyperscale Ethernet switching; EOS software moat; 800G transition" }
+        ]},
+        { tier: "Storage Systems", fn: "Design, integrate, and operate the flash and object storage systems that hold AI training datasets, model checkpoints, and inference artifacts", chokepoint: "N", capital_intensity: "Medium", moat_type: "Switching cost", margin_profile: "High", companies: [
+          { ticker: "P", name: "Pure Storage", mkt_cap: "Large", notes: "#1 pure-play enterprise all-flash; FlashArray//XL; AI storage positioning" }
+        ]},
+        { tier: "Data Center Power Infrastructure", fn: "Deliver, transform, condition, and distribute electrical power from utility feed to server board-level power rails, with protection and backup at each stage", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Scale + Certification", margin_profile: "Medium–High", companies: [
+          { ticker: "VRT", name: "Vertiv Holdings", mkt_cap: "Large", notes: "PDUs, UPS (modular Li-ion), busway, switchgear; strong 800VDC transition exposure" }
+        ]},
+        { tier: "Thermal Management & Cooling", fn: "Remove heat from compute nodes and reject it from the facility using the minimum energy input consistent with the server’s thermal design", chokepoint: "N", capital_intensity: "Very High", moat_type: "Scale + Geographic", margin_profile: "Medium", companies: [
+          { ticker: "VRT", name: "Vertiv Holdings", mkt_cap: "Large", notes: "CDUs, precision cooling (CRV, CRH), CRAC/CRAH; thermal + power integrated" }
+        ]},
+        { tier: "Data Center Facility & MEP", fn: "Construct and operate the physical plant: structure, electrical infrastructure, mechanical systems, network entry, and physical security that define a data center tier", chokepoint: "N", capital_intensity: "Very High", moat_type: "Geographic monopoly", margin_profile: "Medium", companies: [] },
+        { tier: "Hyperscaler & Colocation Operation", fn: "Operate the data center as a service platform: provision capacity, manage workloads, sell compute/storage/network as a service, and maintain SLA commitments", chokepoint: "Partial", capital_intensity: "Very High", moat_type: "Scale + Ecosystem", margin_profile: "High", companies: [
+          { ticker: "IREN", name: "IREN Limited", mkt_cap: "Mid", notes: "HPC/AI compute (pivoting from Bitcoin mining); low-cost power sites" }
+        ]}
       ]
     },
     {
@@ -179,13 +257,18 @@ const DATA = {
       dimension: "D3",
       description: "firm 24/7 clean power delivered to AI data center",
       tiers: [
-        { tier: "Primary Power Generation", fn: "Convert a primary energy source (nuclear fission, combustion, photovoltaics, wind) into three-phase AC electricity at transmission voltage", chokepoint: "N", capital_intensity: "Very High", moat_type: "Geographic monopoly + Scale + Certification", margin_profile: "Cyclical / High" },
-        { tier: "High-Voltage Transmission & Grid Infrastructure", fn: "Transform, transmit, and switch electrical power at EHV/HV levels (66kV–800kV) from generation source to load center", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Scale + Certification + Geographic monopoly", margin_profile: "Medium (regulated)" },
-        { tier: "Grid-Scale Energy Storage (BESS)", fn: "Store bulk electrical energy in electrochemical form and discharge on demand to provide capacity, frequency response, and arbitrage", chokepoint: "N", capital_intensity: "High", moat_type: "Scale + Software", margin_profile: "Medium" },
-        { tier: "Power Electronics & Conversion", fn: "Convert electrical power between AC and DC and across voltage levels at high efficiency using semiconductor switching devices", chokepoint: "Y", capital_intensity: "Medium–High", moat_type: "Process IP + Certification", margin_profile: "Medium–High" },
-        { tier: "Fuel Cell & Distributed Clean Generation", fn: "Generate electricity from an electrochemical reaction (H2 + O2 or reformed natural gas) at the point of use, with high efficiency and low/zero emissions", chokepoint: "N", capital_intensity: "High", moat_type: "Process IP + Certification", margin_profile: "High / Low" },
-        { tier: "Advanced Nuclear — SMR & Microreactor", fn: "Design, license, manufacture, and operate small modular reactors and microreactors that provide firm, dispatchable, carbon-free power at 1–500 MWe scale", chokepoint: "Partial", capital_intensity: "Very High", moat_type: "Certification + Process IP", margin_profile: "Very High (operating) / N/A (development)" },
-        { tier: "Grid Software & Energy Management", fn: "Plan, dispatch, monitor, and optimize the flow of electricity across generation assets, transmission networks, and end-use loads using software and communications infrastructure", chokepoint: "N", capital_intensity: "Low–Medium", moat_type: "Ecosystem + Switching cost", margin_profile: "High" }
+        { tier: "Primary Power Generation", fn: "Convert a primary energy source (nuclear fission, combustion, photovoltaics, wind) into three-phase AC electricity at transmission voltage", chokepoint: "N", capital_intensity: "Very High", moat_type: "Geographic monopoly + Scale + Certification", margin_profile: "Cyclical / High", companies: [] },
+        { tier: "High-Voltage Transmission & Grid Infrastructure", fn: "Transform, transmit, and switch electrical power at EHV/HV levels (66kV–800kV) from generation source to load center", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Scale + Certification + Geographic monopoly", margin_profile: "Medium (regulated)", companies: [] },
+        { tier: "Grid-Scale Energy Storage (BESS)", fn: "Store bulk electrical energy in electrochemical form and discharge on demand to provide capacity, frequency response, and arbitrage", chokepoint: "N", capital_intensity: "High", moat_type: "Scale + Software", margin_profile: "Medium", companies: [] },
+        { tier: "Power Electronics & Conversion", fn: "Convert electrical power between AC and DC and across voltage levels at high efficiency using semiconductor switching devices", chokepoint: "Y", capital_intensity: "Medium–High", moat_type: "Process IP + Certification", margin_profile: "Medium–High", companies: [
+          { ticker: "VRT", name: "Vertiv Holdings", mkt_cap: "Large", notes: "800VDC HVDC rectifier modules for data centers; power conversion integrated with cooling" }
+        ]},
+        { tier: "Fuel Cell & Distributed Clean Generation", fn: "Generate electricity from an electrochemical reaction (H2 + O2 or reformed natural gas) at the point of use, with high efficiency and low/zero emissions", chokepoint: "N", capital_intensity: "High", moat_type: "Process IP + Certification", margin_profile: "High / Low", companies: [] },
+        { tier: "Advanced Nuclear — SMR & Microreactor", fn: "Design, license, manufacture, and operate small modular reactors and microreactors that provide firm, dispatchable, carbon-free power at 1–500 MWe scale", chokepoint: "Partial", capital_intensity: "Very High", moat_type: "Certification + Process IP", margin_profile: "Very High (operating) / N/A (development)", companies: [
+          { ticker: "OKLO", name: "Oklo Inc.", mkt_cap: "Mid", notes: "Aurora microreactor (1.5 MWe, fast spectrum, heat-pipe cooled, metal fuel)" },
+          { ticker: "TE", name: "T1 Energy Inc.", mkt_cap: "Small", notes: "Nuclear construction and services" }
+        ]},
+        { tier: "Grid Software & Energy Management", fn: "Plan, dispatch, monitor, and optimize the flow of electricity across generation assets, transmission networks, and end-use loads using software and communications infrastructure", chokepoint: "N", capital_intensity: "Low–Medium", moat_type: "Ecosystem + Switching cost", margin_profile: "High", companies: [] }
       ]
     },
     {
@@ -194,14 +277,18 @@ const DATA = {
       dimension: "D5",
       description: "AI-era software security stack",
       tiers: [
-        { tier: "Hardware Security Root", fn: "Provides silicon-level root of trust — the cryptographic anchor that all higher software tiers depend on for attestation and key storage", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Certification · Process IP", margin_profile: "High" },
-        { tier: "Identity & Access Management (IAM/PAM)", fn: "Governs who and what can authenticate and authorize access to systems, data, and cloud resources — first control plane", chokepoint: "Partial", capital_intensity: "Low", moat_type: "Switching cost · Ecosystem", margin_profile: "Very High" },
-        { tier: "Endpoint Detection & Response (EDR)", fn: "Monitors every process, file, registry, and network call on endpoints to detect and contain threats in real time", chokepoint: "Partial", capital_intensity: "Low", moat_type: "Switching cost · Ecosystem · Scale", margin_profile: "Very High" },
-        { tier: "Network Detection & Response (NDR)", fn: "Inspects east-west and north-south traffic flows to detect anomalies, lateral movement, and command-and-control communications", chokepoint: "N", capital_intensity: "Medium", moat_type: "Scale · Switching cost", margin_profile: "High" },
-        { tier: "Cloud Security Posture (CSPM/CNAPP)", fn: "Continuously audits cloud infrastructure configurations and workload runtime behavior against security benchmarks and compliance frameworks", chokepoint: "N", capital_intensity: "Low", moat_type: "Ecosystem · Switching cost", margin_profile: "Very High" },
-        { tier: "Data Security & Backup / Recovery", fn: "Protects data at rest and in motion through encryption, DLP, and immutable backup — and recovers from ransomware or deletion", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Switching cost · Certification", margin_profile: "High" },
-        { tier: "Security Operations (SIEM/SOAR/XDR)", fn: "Aggregates, correlates, and responds to telemetry from all other tiers — the analytical hub of the security stack", chokepoint: "N", capital_intensity: "Low", moat_type: "Scale · Ecosystem · Switching cost", margin_profile: "High" },
-        { tier: "AI-Native Security", fn: "Secures AI/ML systems themselves and deploys AI agents for autonomous threat hunting — the emerging frontier tier", chokepoint: "N", capital_intensity: "Low", moat_type: "Process IP · Ecosystem", margin_profile: "Very High" }
+        { tier: "Hardware Security Root", fn: "Provides silicon-level root of trust — the cryptographic anchor that all higher software tiers depend on for attestation and key storage", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Certification · Process IP", margin_profile: "High", companies: [] },
+        { tier: "Identity & Access Management (IAM/PAM)", fn: "Governs who and what can authenticate and authorize access to systems, data, and cloud resources — first control plane", chokepoint: "Partial", capital_intensity: "Low", moat_type: "Switching cost · Ecosystem", margin_profile: "Very High", companies: [
+          { ticker: "SAIL", name: "SailPoint, Inc.", mkt_cap: "Large", notes: "Identity governance & administration (IGA); re-listed 2024 after Vista PE take-private" }
+        ]},
+        { tier: "Endpoint Detection & Response (EDR)", fn: "Monitors every process, file, registry, and network call on endpoints to detect and contain threats in real time", chokepoint: "Partial", capital_intensity: "Low", moat_type: "Switching cost · Ecosystem · Scale", margin_profile: "Very High", companies: [] },
+        { tier: "Network Detection & Response (NDR)", fn: "Inspects east-west and north-south traffic flows to detect anomalies, lateral movement, and command-and-control communications", chokepoint: "N", capital_intensity: "Medium", moat_type: "Scale · Switching cost", margin_profile: "High", companies: [] },
+        { tier: "Cloud Security Posture (CSPM/CNAPP)", fn: "Continuously audits cloud infrastructure configurations and workload runtime behavior against security benchmarks and compliance frameworks", chokepoint: "N", capital_intensity: "Low", moat_type: "Ecosystem · Switching cost", margin_profile: "Very High", companies: [] },
+        { tier: "Data Security & Backup / Recovery", fn: "Protects data at rest and in motion through encryption, DLP, and immutable backup — and recovers from ransomware or deletion", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Switching cost · Certification", margin_profile: "High", companies: [
+          { ticker: "RBRK", name: "Rubrik, Inc.", mkt_cap: "Mid", notes: "Zero Trust Data Management; ransomware recovery; immutable snapshots; cloud-native" }
+        ]},
+        { tier: "Security Operations (SIEM/SOAR/XDR)", fn: "Aggregates, correlates, and responds to telemetry from all other tiers — the analytical hub of the security stack", chokepoint: "N", capital_intensity: "Low", moat_type: "Scale · Ecosystem · Switching cost", margin_profile: "High", companies: [] },
+        { tier: "AI-Native Security", fn: "Secures AI/ML systems themselves and deploys AI agents for autonomous threat hunting — the emerging frontier tier", chokepoint: "N", capital_intensity: "Low", moat_type: "Process IP · Ecosystem", margin_profile: "Very High", companies: [] }
       ]
     },
     {
@@ -210,13 +297,13 @@ const DATA = {
       dimension: "D6",
       description: "Embodied AI systems — autonomous robots, edge inference, perception hardware",
       tiers: [
-        { tier: "Perception Layer", fn: "Provides multi-modal sensing of the physical environment (geometry, semantics, identity)", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Process IP / Sensor design", margin_profile: "Medium–High" },
-        { tier: "Edge Compute Module", fn: "Runs real-time perception, planning, and control inference at the robot or device", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Silicon design / Software stack", margin_profile: "High" },
-        { tier: "Actuators & Motors", fn: "Converts electrical commands into precise physical motion", chokepoint: "N", capital_intensity: "Medium", moat_type: "Mechanical precision / Application-specific", margin_profile: "Medium" },
-        { tier: "Robot OS & Middleware", fn: "Provides the software framework for sensor-actuator integration, inter-node communication, and system orchestration", chokepoint: "N", capital_intensity: "Low", moat_type: "Ecosystem / Developer lock-in", margin_profile: "Low–Medium" },
-        { tier: "AI Model Training & Deployment", fn: "Trains perception, planning, and language-conditioned task models; deploys quantized versions to edge", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Data / Cloud training infra", margin_profile: "High" },
-        { tier: "System Integration & OEM Assembly", fn: "Integrates subsystems into a deployable robot or edge device and validates end-to-end system behavior", chokepoint: "N", capital_intensity: "High", moat_type: "Systems engineering / Application knowledge", margin_profile: "Low–Medium" },
-        { tier: "Fleet Management & Operations Platform", fn: "Monitors and manages deployed robot fleets across sites in real time", chokepoint: "N", capital_intensity: "Low", moat_type: "Data network effects / Switching cost", margin_profile: "High" }
+        { tier: "Perception Layer", fn: "Provides multi-modal sensing of the physical environment (geometry, semantics, identity)", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Process IP / Sensor design", margin_profile: "Medium–High", companies: [] },
+        { tier: "Edge Compute Module", fn: "Runs real-time perception, planning, and control inference at the robot or device", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Silicon design / Software stack", margin_profile: "High", companies: [] },
+        { tier: "Actuators & Motors", fn: "Converts electrical commands into precise physical motion", chokepoint: "N", capital_intensity: "Medium", moat_type: "Mechanical precision / Application-specific", margin_profile: "Medium", companies: [] },
+        { tier: "Robot OS & Middleware", fn: "Provides the software framework for sensor-actuator integration, inter-node communication, and system orchestration", chokepoint: "N", capital_intensity: "Low", moat_type: "Ecosystem / Developer lock-in", margin_profile: "Low–Medium", companies: [] },
+        { tier: "AI Model Training & Deployment", fn: "Trains perception, planning, and language-conditioned task models; deploys quantized versions to edge", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Data / Cloud training infra", margin_profile: "High", companies: [] },
+        { tier: "System Integration & OEM Assembly", fn: "Integrates subsystems into a deployable robot or edge device and validates end-to-end system behavior", chokepoint: "N", capital_intensity: "High", moat_type: "Systems engineering / Application knowledge", margin_profile: "Low–Medium", companies: [] },
+        { tier: "Fleet Management & Operations Platform", fn: "Monitors and manages deployed robot fleets across sites in real time", chokepoint: "N", capital_intensity: "Low", moat_type: "Data network effects / Switching cost", margin_profile: "High", companies: [] }
       ]
     },
     {
@@ -225,14 +312,20 @@ const DATA = {
       dimension: "D6",
       description: "AI-powered financial services and commerce platforms",
       tiers: [
-        { tier: "Payment Network Rails & Settlement", fn: "Provides the clearing and settlement backbone for all money movement", chokepoint: "Y", capital_intensity: "Low", moat_type: "Ecosystem / Scale", margin_profile: "Very High" },
-        { tier: "Core Banking & Ledger Systems", fn: "Maintains authoritative books of record for accounts, balances, and transactions", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Switching cost", margin_profile: "High" },
-        { tier: "Risk & Fraud AI Models", fn: "Detects and suppresses fraudulent transactions and credit risk events in real time", chokepoint: "Partial", capital_intensity: "Low", moat_type: "Process IP / Switching cost", margin_profile: "Very High" },
-        { tier: "Identity Verification & KYC", fn: "Establishes and maintains verified identity for onboarding and ongoing compliance", chokepoint: "Partial", capital_intensity: "Low", moat_type: "Certification / Switching cost", margin_profile: "High" },
-        { tier: "Credit Decisioning & Underwriting AI", fn: "Scores loan applications and prices risk using alternative and traditional data sources", chokepoint: "Partial", capital_intensity: "Low", moat_type: "Process IP / Data", margin_profile: "Very High" },
-        { tier: "Personal Finance & Wealth Management Platforms", fn: "Delivers end-user financial management, investment, and advisory experiences", chokepoint: "N", capital_intensity: "Low", moat_type: "Ecosystem / Switching cost", margin_profile: "High" },
-        { tier: "Embedded Finance & Commerce APIs", fn: "Delivers banking and payment capabilities inside non-financial applications via API", chokepoint: "N", capital_intensity: "Low", moat_type: "Ecosystem / Switching cost", margin_profile: "High" },
-        { tier: "Regulatory Compliance Tech (RegTech)", fn: "Automates compliance reporting, transaction monitoring, and regulatory filing obligations", chokepoint: "N", capital_intensity: "Low", moat_type: "Certification / Switching cost", margin_profile: "High" }
+        { tier: "Payment Network Rails & Settlement", fn: "Provides the clearing and settlement backbone for all money movement", chokepoint: "Y", capital_intensity: "Low", moat_type: "Ecosystem / Scale", margin_profile: "Very High", companies: [] },
+        { tier: "Core Banking & Ledger Systems", fn: "Maintains authoritative books of record for accounts, balances, and transactions", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Switching cost", margin_profile: "High", companies: [] },
+        { tier: "Risk & Fraud AI Models", fn: "Detects and suppresses fraudulent transactions and credit risk events in real time", chokepoint: "Partial", capital_intensity: "Low", moat_type: "Process IP / Switching cost", margin_profile: "Very High", companies: [] },
+        { tier: "Identity Verification & KYC", fn: "Establishes and maintains verified identity for onboarding and ongoing compliance", chokepoint: "Partial", capital_intensity: "Low", moat_type: "Certification / Switching cost", margin_profile: "High", companies: [] },
+        { tier: "Credit Decisioning & Underwriting AI", fn: "Scores loan applications and prices risk using alternative and traditional data sources", chokepoint: "Partial", capital_intensity: "Low", moat_type: "Process IP / Data", margin_profile: "Very High", companies: [
+          { ticker: "SOFI", name: "SoFi Technologies", mkt_cap: "Mid", notes: "Bank charter + proprietary credit model + Galileo BaaS platform" }
+        ]},
+        { tier: "Personal Finance & Wealth Management Platforms", fn: "Delivers end-user financial management, investment, and advisory experiences", chokepoint: "N", capital_intensity: "Low", moat_type: "Ecosystem / Switching cost", margin_profile: "High", companies: [
+          { ticker: "HOOD", name: "Robinhood Markets", mkt_cap: "Mid", notes: "Commission-free retail brokerage + crypto; expanding into advisory" }
+        ]},
+        { tier: "Embedded Finance & Commerce APIs", fn: "Delivers banking and payment capabilities inside non-financial applications via API", chokepoint: "N", capital_intensity: "Low", moat_type: "Ecosystem / Switching cost", margin_profile: "High", companies: [
+          { ticker: "MELI", name: "MercadoLibre", mkt_cap: "Large", notes: "LatAm marketplace + MercadoPago embedded finance + Mercado Credito" }
+        ]},
+        { tier: "Regulatory Compliance Tech (RegTech)", fn: "Automates compliance reporting, transaction monitoring, and regulatory filing obligations", chokepoint: "N", capital_intensity: "Low", moat_type: "Certification / Switching cost", margin_profile: "High", companies: [] }
       ]
     }
   ]
@@ -306,6 +399,7 @@ function renderL1(){
       +"<span class=\"pill\">"+t.moat_type+"</span>"
       +"<span class=\"pill\">"+t.capital_intensity+" capex</span>"
       +"<span class=\"pill\">"+t.margin_profile+" margins</span>"
+      +(t.companies&&t.companies.length>0?"<span class=\"co-count\">"+t.companies.length+" tracked</span>":"")
       +"</div></div>";
   }).join("");
   document.getElementById("l1").innerHTML=
@@ -327,6 +421,18 @@ function openTier(idx){
     :t.chokepoint==="Partial"
     ?"<div class=\"choke-box-partial\"><p>⧫ Partial chokepoint — some alternatives exist, but switching carries meaningful cost or lead time.</p></div>"
     :"";
+  const coBlock=t.companies&&t.companies.length>0
+    ?"<div class=\"co-section\"><h3>Tracked Companies</h3>"
+      +t.companies.map(c=>{
+        const cc=c.mkt_cap==="Large"?"large":c.mkt_cap==="Mid"?"mid":"small";
+        const cl=c.mkt_cap==="Large"?"Large cap":c.mkt_cap==="Mid"?"Mid cap":"Small cap";
+        return "<div class=\"co-card\">"
+          +"<div class=\"co-header\"><span class=\"co-ticker\">"+c.ticker+"</span>"
+          +"<span class=\"co-name\">"+c.name+"</span>"
+          +"<span class=\"co-cap "+cc+"\">"+cl+"</span></div>"
+          +"<div class=\"co-notes\">"+c.notes+"</div></div>";
+      }).join("")+"</div>"
+    :"";
   document.getElementById("l2").innerHTML=
     "<div class=\"breadcrumb\" onclick=\"openSector('"+s.slug+"')\">← "+s.name+"</div>"
     +chokeBlock
@@ -341,7 +447,8 @@ function openTier(idx){
     +"<div class=\"invest-row\"><span class=\"invest-label\">Chokepoint status</span><span class=\"invest-val\">"
     +(t.chokepoint==="Y"?"Yes — critical supply constraint":t.chokepoint==="Partial"?"Partial — some alternatives exist":"No — competitive market")
     +"</span></div>"
-    +"</div></div>";
+    +"</div></div>"
+    +coBlock;
   showLayer(2);
 }
 
