@@ -72,7 +72,39 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 .co-cap.mid{background:oklch(95% .09 68);color:var(--amber)}
 .co-cap.small{background:oklch(94% .08 25);color:var(--d5)}
 .co-notes{font-size:12px;color:var(--muted);line-height:1.5}
-@media(max-width:600px){.sec-card{width:100%}.dim-desc{display:none}#l0,#l1,#l2{padding:16px}}
+@media(max-width:600px){.sec-card{width:100%}.dim-desc{display:none}#l0,#l1,#l2,#l3{padding:16px}}
+/* L3 — ticker wiki */
+#l3{padding:32px 24px;max-width:1200px;margin:0 auto}
+.ticker-hdr{display:flex;align-items:baseline;gap:12px;margin-bottom:12px;flex-wrap:wrap}
+.ticker-sym{font-size:28px;font-weight:700;font-family:monospace;line-height:1}
+.ticker-fullname{font-size:16px;color:var(--muted)}
+.ticker-meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.ticker-tag{font-size:11px;padding:3px 9px;border-radius:99px;background:var(--bg3);color:var(--muted)}
+.wiki-empty{color:var(--muted);font-style:italic;font-size:13px;padding:60px 0;text-align:center;line-height:2}
+.wiki-loading{color:var(--muted);font-size:13px;padding:60px 0;text-align:center}
+.wiki-body{max-width:800px}
+.wiki-section{margin-bottom:36px}
+.wiki-h2{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin-bottom:14px;padding-bottom:7px;border-bottom:1px solid var(--border)}
+.wiki-h3{font-size:13px;font-weight:700;margin:18px 0 8px;color:var(--text)}
+.wiki-h4{font-size:11px;font-weight:700;color:var(--muted);margin:12px 0 6px;text-transform:uppercase;letter-spacing:.05em}
+.wiki-p{font-size:13px;line-height:1.7;margin-bottom:10px;color:var(--text)}
+.wiki-meta{font-size:11px;color:var(--muted);margin-bottom:14px;font-style:italic}
+.wiki-table-wrap{overflow-x:auto;margin-bottom:18px}
+.wiki-table{width:100%;border-collapse:collapse;font-size:12px}
+.wiki-table th{text-align:left;padding:6px 10px;border-bottom:2px solid var(--border);font-weight:600;color:var(--muted);white-space:nowrap;background:var(--bg2)}
+.wiki-table td{padding:6px 10px;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.45}
+.wiki-table tr:last-child td{border-bottom:none}
+.wiki-table tr:hover td{background:var(--bg2)}
+.wiki-blockquote{border-left:3px solid var(--border);padding:8px 14px;margin:10px 0 14px;color:var(--muted);font-size:12px;font-style:italic;line-height:1.6}
+.wiki-list{padding-left:18px;margin-bottom:14px;font-size:13px;line-height:1.6}
+.wiki-list li{margin-bottom:4px}
+.wiki-checklist{list-style:none;padding-left:0;margin-bottom:14px;font-size:13px}
+.wiki-checklist li{padding:4px 0 4px 24px;position:relative;line-height:1.5}
+.wiki-checklist li::before{content:'☐';position:absolute;left:0;color:var(--muted)}
+.wiki-checklist li.done{color:var(--muted);text-decoration:line-through}
+.wiki-checklist li.done::before{content:'☑';color:var(--d2)}
+.wiki-code{font-family:monospace;font-size:11px;background:var(--bg3);padding:1px 4px;border-radius:3px}
+.wiki-oneline{background:oklch(95% .06 258);border-left:3px solid var(--d3);padding:12px 16px;border-radius:0 6px 6px 0;font-size:14px;line-height:1.6;margin-bottom:4px}
 </style>
 </head>
 <body>
@@ -84,6 +116,7 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 <div id="l0"></div>
 <div id="l1" hidden></div>
 <div id="l2" hidden></div>
+<div id="l3" hidden></div>
 </div>
 <script>
 const DATA = {
@@ -346,14 +379,16 @@ const DIM_DESC={
 const DIMS=["D1","D2","D3","D4","D5","D6"];
 
 let activeSector=null;
+let activeTierIdx=null;
 
 const SECTOR_FOLDER={"Compute Infrastructure":"AI Infrastructure","Energy & Power":"Clean Energy","Materials & Mining":"Metals & Mining","Space & Communications":"Space & Comms","Fintech & Commerce AI":"Fintech & E-Commerce"};
-function wikiUrl(sName,ticker){const f=SECTOR_FOLDER[sName]||sName;return"https://github.com/deeyayay/investing-wiki/blob/master/Investing/Wiki/Sectors/"+encodeURIComponent(f)+"/"+ticker+".md";}
+function rawGithubUrl(sName,ticker){const f=SECTOR_FOLDER[sName]||sName;return"https://raw.githubusercontent.com/deeyayay/investing-wiki/master/Investing/Wiki/Sectors/"+encodeURIComponent(f)+"/"+ticker+".md";}
 
 function showLayer(n){
   document.getElementById("l0").hidden=n!==0;
   document.getElementById("l1").hidden=n!==1;
   document.getElementById("l2").hidden=n!==2;
+  document.getElementById("l3").hidden=n!==3;
 }
 
 function renderL0(){
@@ -420,6 +455,7 @@ function renderL1(){
 }
 
 function openTier(idx){
+  activeTierIdx=idx;
   const s=activeSector;
   const t=s.tiers[idx];
   const chokeBlock=t.chokepoint==="Y"
@@ -433,7 +469,7 @@ function openTier(idx){
         const cc=c.mkt_cap==="Large"?"large":c.mkt_cap==="Mid"?"mid":"small";
         const cl=c.mkt_cap==="Large"?"Large cap":c.mkt_cap==="Mid"?"Mid cap":"Small cap";
         return "<div class=\"co-card\">"
-          +"<div class=\"co-header\"><a class=\"co-ticker\" href=\""+wikiUrl(s.name,c.ticker)+"\" target=\"_blank\" rel=\"noopener\">"+c.ticker+"</a>"
+          +"<div class=\"co-header\"><a class=\"co-ticker\" href=\"#\" onclick=\"openTicker('"+c.ticker+"','"+s.name+"');return false\">"+c.ticker+"</a>"
           +"<span class=\"co-name\">"+c.name+"</span>"
           +"<span class=\"co-cap "+cc+"\">"+cl+"</span></div>"
           +"<div class=\"co-notes\">"+c.notes+"</div></div>";
@@ -456,6 +492,113 @@ function openTier(idx){
     +"</div></div>"
     +coBlock;
   showLayer(2);
+}
+
+// ── Ticker detail (L3) ──────────────────────────────────────────────────────
+const TICKER_MAP={};
+DATA.sectors.forEach(s=>s.tiers.forEach(t=>(t.companies||[]).forEach(c=>{TICKER_MAP[c.ticker]={...c,sectorName:s.name};})));
+const WIKI_CACHE={};
+
+async function openTicker(ticker,sName){
+  showLayer(3);
+  document.getElementById("l3").innerHTML='<div class="wiki-loading">Loading '+ticker+'…</div>';
+  if(!(ticker in WIKI_CACHE)){
+    try{
+      const r=await fetch(rawGithubUrl(sName,ticker));
+      WIKI_CACHE[ticker]=r.ok?await r.text():null;
+    }catch(e){WIKI_CACHE[ticker]=null;}
+  }
+  renderL3(ticker,sName);
+}
+
+function renderL3(ticker,sName){
+  const c=TICKER_MAP[ticker]||{name:ticker,mkt_cap:''};
+  const cc=c.mkt_cap==="Large"?"large":c.mkt_cap==="Mid"?"mid":"small";
+  const cl=c.mkt_cap==="Large"?"Large cap":c.mkt_cap==="Mid"?"Mid cap":"Small cap";
+  const md=WIKI_CACHE[ticker];
+  const body=md
+    ?parseWiki(md)
+    :'<div class="wiki-empty">No wiki page for '+ticker+' yet.<br>Run <code>/add-ticker '+ticker+'</code> to create one.</div>';
+  const tierName=activeSector&&activeTierIdx!==null?activeSector.tiers[activeTierIdx].tier:sName;
+  document.getElementById("l3").innerHTML=
+    '<div class="breadcrumb" onclick="openTier('+activeTierIdx+')">← '+esc(tierName)+'</div>'
+    +'<div class="ticker-hdr">'
+    +'<span class="ticker-sym">'+esc(ticker)+'</span>'
+    +'<span class="ticker-fullname">'+esc(c.name)+'</span>'
+    +'</div>'
+    +'<div class="ticker-meta">'
+    +(c.mkt_cap?'<span class="co-cap '+cc+'">'+cl+'</span>':'')
+    +'<span class="ticker-tag">'+esc(sName)+'</span>'
+    +(activeSector?'<span class="ticker-tag">'+activeSector.dimension+'</span>':'')
+    +'</div>'
+    +'<div class="wiki-body">'+body+'</div>';
+}
+
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+function inlineMd(text){
+  let s=esc(text);
+  s=s.replace(/\[\[([^\]]+)\]\]/g,'$1');
+  s=s.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
+  s=s.replace(/(?<![a-zA-Z0-9])_(.+?)_(?![a-zA-Z0-9])/g,'<em>$1</em>');
+  s=s.replace(/`([^`]+)`/g,'<code class="wiki-code">$1</code>');
+  s=s.replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>');
+  return s;
+}
+
+function parseWiki(md){
+  const lines=md.split('\n');
+  let html='',inTable=false,tableRows=[],inList=false,listType='',sectionOpen=false;
+
+  function flushTable(){
+    if(!tableRows.length)return;
+    const rows=tableRows.filter(r=>!/^\|[\s\-:|]+\|/.test(r));
+    if(!rows.length){tableRows=[];inTable=false;return;}
+    const cells=r=>r.split('|').slice(1,-1).map(c=>c.trim());
+    const hdr=cells(rows[0]).map(h=>'<th>'+inlineMd(h)+'</th>').join('');
+    const body=rows.slice(1).map(r=>'<tr>'+cells(r).map(c=>'<td>'+inlineMd(c)+'</td>').join('')+'</tr>').join('');
+    html+='<div class="wiki-table-wrap"><table class="wiki-table"><thead><tr>'+hdr+'</tr></thead><tbody>'+body+'</tbody></table></div>';
+    tableRows=[];inTable=false;
+  }
+  function flushList(){if(inList){html+='</ul>';inList=false;listType='';}}
+  function closeSection(){if(sectionOpen){html+='</div>';sectionOpen=false;}}
+
+  for(const line of lines){
+    if(/^# /.test(line)||/^<!--/.test(line.trim()))continue;
+    if(/^## /.test(line)){
+      flushTable();flushList();closeSection();
+      html+='<div class="wiki-section"><h2 class="wiki-h2">'+esc(line.slice(3).trim())+'</h2>';
+      sectionOpen=true;continue;
+    }
+    if(/^### /.test(line)){flushTable();flushList();html+='<h3 class="wiki-h3">'+esc(line.slice(4).trim())+'</h3>';continue;}
+    if(/^#### /.test(line)){flushTable();flushList();html+='<h4 class="wiki-h4">'+esc(line.slice(5).trim())+'</h4>';continue;}
+    if(/^-{3,}$/.test(line.trim())){flushTable();flushList();continue;}
+    if(/^\|/.test(line)){flushList();inTable=true;tableRows.push(line);continue;}
+    else if(inTable)flushTable();
+    if(/^> /.test(line)){flushList();html+='<div class="wiki-blockquote">'+inlineMd(line.slice(2).trim())+'</div>';continue;}
+    if(/^- \[[ xX]\]/.test(line)){
+      if(!inList||listType!=='checklist'){flushList();html+='<ul class="wiki-checklist">';inList=true;listType='checklist';}
+      const done=/^- \[[xX]\]/.test(line);
+      html+='<li class="'+(done?'done':'')+'">'+inlineMd(line.slice(6).trim())+'</li>';continue;
+    }
+    if(/^- /.test(line)){
+      if(!inList||listType!=='ul'){flushList();html+='<ul class="wiki-list">';inList=true;listType='ul';}
+      html+='<li>'+inlineMd(line.slice(2).trim())+'</li>';continue;
+    }
+    if(inList&&line.trim()===''){flushList();continue;}
+    if(line.trim()===''){flushList();continue;}
+    flushList();
+    const p=inlineMd(line.trim());
+    if(p){
+      // italic-only line (e.g. *Last updated: …*)
+      if(/^\*[^*].*[^*]\*$/.test(line.trim())||/^\*[^*]\*$/.test(line.trim()))
+        html+='<p class="wiki-meta">'+p+'</p>';
+      else
+        html+='<p class="wiki-p">'+p+'</p>';
+    }
+  }
+  flushTable();flushList();closeSection();
+  return html;
 }
 
 renderL0();
