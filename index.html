@@ -5,23 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Ecosystem Map</title>
 <style>
-:root{--bg:#0f1117;--bg2:#1a1d27;--bg3:#252836;--border:#2e3244;--text:#e2e8f0;--muted:#8892a4;--amber:#f59e0b;--amber-bg:rgba(245,158,11,0.12);--d1:#6366f1;--d2:#22c55e;--d3:#3b82f6;--d4:#a855f7;--d5:#ef4444;--d6:#f97316}
+:root{--bg:oklch(97.5% .007 75);--bg2:oklch(95% .008 75);--bg3:oklch(92% .010 75);--border:oklch(87% .011 75);--text:oklch(18% .008 280);--muted:oklch(50% .012 260);--amber:oklch(66% .17 62);--amber-bg:oklch(97% .07 75);--d1:oklch(34% .24 278);--d2:oklch(30% .16 148);--d3:oklch(32% .22 258);--d4:oklch(32% .24 310);--d5:oklch(35% .24 27);--d6:oklch(40% .18 55)}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--text);font:14px/1.5 system-ui,sans-serif}
 #hdr{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;border-bottom:1px solid var(--border);background:var(--bg2);position:sticky;top:0;z-index:10}
 .logo{font-weight:700;font-size:16px}.gen-date{color:var(--muted);font-size:12px}
-#l0,#l1,#l2{padding:24px;max-width:1200px;margin:0 auto}
-.dim-row{margin-bottom:32px}
-.dim-label{display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap}
-.dim-pill{font-size:11px;font-weight:700;padding:3px 10px;border-radius:99px;color:#fff;letter-spacing:.05em;flex-shrink:0}
-.dim-pill.D1{background:var(--d1)}.dim-pill.D2{background:var(--d2);color:#000}
-.dim-pill.D3{background:var(--d3)}.dim-pill.D4{background:var(--d4)}
-.dim-pill.D5{background:var(--d5)}.dim-pill.D6{background:var(--d6)}
-.dim-name{font-weight:600;font-size:14px}
+#l0,#l1,#l2{padding:32px 24px;max-width:1200px;margin:0 auto}
+.dim-row{margin-bottom:52px}
+.dim-label{display:flex;align-items:center;gap:10px;margin-bottom:18px;flex-wrap:wrap}
+.dim-pill{font-size:11px;font-weight:700;padding:3px 10px;border-radius:99px;color:var(--text);letter-spacing:.05em;flex-shrink:0}
+.dim-pill.D1{background:oklch(89% .14 278);color:var(--d1)}.dim-pill.D2{background:oklch(89% .12 148);color:var(--d2)}
+.dim-pill.D3{background:oklch(89% .14 258);color:var(--d3)}.dim-pill.D4{background:oklch(89% .14 308);color:var(--d4)}
+.dim-pill.D5{background:oklch(91% .12 27);color:var(--d5)}.dim-pill.D6{background:oklch(93% .12 60);color:var(--d6)}
+.dim-name{font-weight:700;font-size:15px}
 .dim-desc{color:var(--muted);font-size:12px;margin-left:auto;max-width:480px;text-align:right}
-.sec-cards{display:flex;flex-wrap:wrap;gap:12px}
-.sec-card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px 16px;cursor:pointer;width:clamp(160px,22%,240px);transition:border-color .15s,transform .1s}
-.sec-card:hover{border-color:#4a5568;transform:translateY(-1px)}
+.sec-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.sec-card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px 16px;cursor:pointer;transition:border-color .15s,transform .1s}
+.sec-card:hover{border-color:oklch(72% .012 75);transform:translateY(-1px)}
 .sec-card-name{font-weight:600;font-size:13px;margin-bottom:4px}
 .sec-card-desc{color:var(--muted);font-size:11px;line-height:1.4;margin-bottom:8px}
 .sec-meta{display:flex;align-items:center;gap:8px}
@@ -30,19 +30,20 @@ body{background:var(--bg);color:var(--text);font:14px/1.5 system-ui,sans-serif}
 .empty-dim{color:var(--muted);font-size:12px;padding:8px 0;font-style:italic}
 .breadcrumb{font-size:12px;color:var(--muted);margin-bottom:20px;cursor:pointer;display:inline-block;padding:4px 0}
 .breadcrumb:hover{color:var(--text)}
-.sector-hdr{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.sector-hdr{display:flex;align-items:center;gap:12px;margin-bottom:16px}
 .sector-title{font-size:22px;font-weight:700}
 .sector-desc-full{color:var(--muted);font-size:13px;margin-bottom:6px}
-.dim-ctx{font-size:12px;color:var(--muted);margin-bottom:24px;font-style:italic}
-.tier-card{background:var(--bg2);border:1px solid var(--border);border-left:3px solid var(--border);border-radius:6px;padding:14px 16px;margin-bottom:10px;cursor:pointer;transition:border-color .15s}
-.tier-card:hover{border-color:#4a5568}
-.tier-card.choke-y{border-left-color:var(--amber)}
-.tier-card.choke-p{border-left-color:#78716c}
+.dim-ctx{font-size:12px;color:var(--muted);margin-bottom:36px;font-style:italic}
+.tier-card{background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:16px 18px;margin-bottom:10px;cursor:pointer;transition:border-color .15s,background .15s}
+.tier-card:hover{border-color:oklch(72% .012 75);background:oklch(97% .006 75)}
+.tier-card.choke-y{border-color:oklch(73% .18 62);background:oklch(98% .08 72)}
+.tier-card.choke-y:hover{background:oklch(97% .11 72)}
+.tier-card.choke-p{border-color:oklch(76% .012 75);background:oklch(96.5% .005 75)}
 .tier-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:8px}
 .tier-name{font-weight:600;font-size:13px}
 .choke-badge{font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;flex-shrink:0}
 .choke-badge.y{background:var(--amber-bg);color:var(--amber)}
-.choke-badge.p{background:rgba(120,113,108,.15);color:#a8a29e}
+.choke-badge.p{background:oklch(91% .008 75);color:var(--muted)}
 .tier-fn{color:var(--muted);font-size:12px;line-height:1.5;margin-bottom:10px}
 .tier-pills{display:flex;flex-wrap:wrap;gap:6px}
 .pill{font-size:10px;background:var(--bg3);padding:2px 8px;border-radius:99px;color:var(--muted)}
@@ -53,21 +54,22 @@ body{background:var(--bg);color:var(--text);font:14px/1.5 system-ui,sans-serif}
 .invest-row{display:flex;gap:12px;font-size:13px}
 .invest-label{color:var(--muted);width:140px;flex-shrink:0}
 .invest-val{color:var(--text)}
-.choke-box{background:var(--amber-bg);border:1px solid rgba(245,158,11,.3);border-radius:6px;padding:12px 16px;margin-bottom:20px}
+.choke-box{background:var(--amber-bg);border:1px solid oklch(78% .16 62);border-radius:6px;padding:12px 16px;margin-bottom:20px}
 .choke-box p{font-size:13px;color:var(--amber)}
-.choke-box-partial{background:rgba(120,113,108,.1);border:1px solid rgba(120,113,108,.25);border-radius:6px;padding:12px 16px;margin-bottom:20px}
-.choke-box-partial p{font-size:13px;color:#a8a29e}
-.co-count{font-size:10px;background:rgba(99,102,241,.15);color:#a5b4fc;padding:2px 7px;border-radius:99px}
+.choke-box-partial{background:oklch(96% .005 75);border:1px solid oklch(82% .010 75);border-radius:6px;padding:12px 16px;margin-bottom:20px}
+.choke-box-partial p{font-size:13px;color:var(--muted)}
+.co-count{font-size:10px;background:oklch(92% .10 278);color:var(--d1);padding:2px 7px;border-radius:99px}
 .co-section{margin-top:24px}
 .co-section h3{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:12px}
-.co-card{background:var(--bg3);border-radius:6px;padding:12px 14px;margin-bottom:8px}
+.co-card{padding:14px 0;border-bottom:1px solid var(--border)}
+.co-card:last-child{border-bottom:none}
 .co-header{display:flex;align-items:center;gap:10px;margin-bottom:6px;flex-wrap:wrap}
 .co-ticker{font-weight:700;font-size:13px;font-family:monospace;color:var(--text)}
 .co-name{font-size:12px;color:var(--muted)}
 .co-cap{font-size:10px;padding:2px 7px;border-radius:99px;margin-left:auto}
-.co-cap.large{background:rgba(59,130,246,.15);color:#93c5fd}
-.co-cap.mid{background:rgba(245,158,11,.15);color:#fcd34d}
-.co-cap.small{background:rgba(239,68,68,.15);color:#fca5a5}
+.co-cap.large{background:oklch(93% .08 258);color:var(--d3)}
+.co-cap.mid{background:oklch(95% .09 68);color:var(--amber)}
+.co-cap.small{background:oklch(94% .08 25);color:var(--d5)}
 .co-notes{font-size:12px;color:var(--muted);line-height:1.5}
 @media(max-width:600px){.sec-card{width:100%}.dim-desc{display:none}#l0,#l1,#l2{padding:16px}}
 </style>
@@ -435,9 +437,9 @@ function openTier(idx){
     :"";
   document.getElementById("l2").innerHTML=
     "<div class=\"breadcrumb\" onclick=\"openSector('"+s.slug+"')\">← "+s.name+"</div>"
-    +chokeBlock
     +"<div class=\"tier-detail-name\">"+t.tier+"</div>"
     +"<div class=\"tier-fn-full\">"+t.fn+"</div>"
+    +chokeBlock
     +"<div class=\"invest-section\">"
     +"<h3>Investment Angle</h3>"
     +"<div class=\"invest-rows\">"
