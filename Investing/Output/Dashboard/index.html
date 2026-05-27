@@ -6,10 +6,15 @@
 <title>Ecosystem Map · 2026-05-25</title>
 <style>
 :root {
-  --bg:#ffffff;--bg2:#f6f8fa;--bg3:#eaeef2;
-  --text:#1f2328;--muted:#57606a;--border:#d0d7de;
-  --amber:#9a6700;--green:#1a7f37;--blue:#0969da;
-  --red:#cf222e;--orange:#bc4c00;--purple:#8250df;--pink:#e4525b;
+  /* Warm stone neutrals — breaks the GitHub gray fingerprint */
+  --bg:oklch(99.5% 0.004 75);--bg2:oklch(97% 0.007 70);--bg3:oklch(93% 0.011 70);
+  --text:oklch(18% 0.008 65);--muted:oklch(44% 0.012 65);--border:oklch(87% 0.009 72);
+  /* Dimensional arc: copper → teal → steel → indigo → violet (D1→D5) */
+  --d1:oklch(44% 0.17 42);--d2:oklch(44% 0.14 180);--d3:oklch(43% 0.14 245);
+  --d4:oklch(43% 0.17 275);--d5:oklch(45% 0.18 305);
+  /* Semantic palette */
+  --amber:oklch(45% 0.18 55);--green:oklch(44% 0.16 155);--blue:oklch(46% 0.19 250);
+  --red:oklch(44% 0.19 25);--orange:oklch(51% 0.19 45);--purple:oklch(46% 0.20 285);--pink:oklch(52% 0.17 355);
   --sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:20px;--sp-6:24px;--sp-8:32px;--sp-10:40px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -34,12 +39,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 /* Dimension rows */
 .dim-row{margin-bottom:var(--sp-6)}
 .dim-label{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin-bottom:10px;padding-left:2px}
-.d1{color:var(--purple)}.d2{color:var(--blue)}.d3{color:var(--green)}.d4{color:var(--amber)}.d5{color:var(--pink)}
+.d1{color:var(--d1)}.d2{color:var(--d2)}.d3{color:var(--d3)}.d4{color:var(--d4)}.d5{color:var(--d5)}
 .dim-sectors{display:flex;flex-wrap:wrap;gap:8px}
 
 /* Sector cards */
 .sector-card{padding:10px 12px;border:1px solid var(--border);border-radius:8px;background:var(--bg);cursor:pointer;flex:1;min-width:160px;transition:opacity .2s,box-shadow .2s,border-color .2s}
-.sector-card:hover{box-shadow:0 2px 8px rgba(0,0,0,.07);border-color:var(--muted)}
+.sector-card:hover{box-shadow:0 2px 8px oklch(18% 0.008 65 / 0.09);border-color:var(--muted)}
 .sector-card.selected{box-shadow:inset 0 0 0 2px var(--amber);background:var(--bg3);border-color:transparent}
 .sector-card.upstream{box-shadow:0 0 0 2px var(--green)}
 .sector-card.downstream{box-shadow:0 0 0 2px var(--blue)}
@@ -47,9 +52,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 .card-name{font-weight:600;font-size:13px;margin-bottom:4px}
 .card-meta{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
 .dim-badge{font-size:10px;font-weight:700;padding:1px 6px;border-radius:4px}
-.dim-d1{background:#fbefff;color:var(--purple)}.dim-d2{background:#ddf4ff;color:var(--blue)}
-.dim-d3{background:#dafbe1;color:var(--green)}.dim-d4{background:#fff8c5;color:var(--amber)}
-.dim-d5{background:#ffebef;color:var(--pink)}
+.dim-d1{background:oklch(95% 0.035 42);color:var(--d1)}.dim-d2{background:oklch(95% 0.03 180);color:var(--d2)}
+.dim-d3{background:oklch(95% 0.03 245);color:var(--d3)}.dim-d4{background:oklch(95% 0.035 275);color:var(--d4)}
+.dim-d5{background:oklch(95% 0.038 305);color:var(--d5)}
 .choke-count{font-size:11px;font-weight:700;color:var(--amber)}
 .edge-count{font-size:11px;color:var(--muted)}
 
@@ -66,18 +71,18 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 .tier-table th{text-align:left;padding:5px 8px;border-bottom:2px solid var(--border);font-size:11px;color:var(--muted);font-weight:600}
 .tier-table td{padding:5px 8px;border-bottom:1px solid var(--border);vertical-align:middle}
 .tier-name{font-weight:500}
-.choke-y{background:var(--amber);color:#fff;font-size:10px;font-weight:700;padding:1px 5px;border-radius:3px;white-space:nowrap}
-.choke-partial{background:#fff3c4;color:var(--amber);font-size:10px;padding:1px 5px;border-radius:3px;white-space:nowrap}
+.choke-y{background:oklch(68% 0.17 72);color:var(--text);font-size:10px;font-weight:700;padding:1px 5px;border-radius:3px;white-space:nowrap}
+.choke-partial{background:oklch(92% 0.05 75);color:var(--amber);font-size:10px;padding:1px 5px;border-radius:3px;white-space:nowrap}
 .choke-no{background:var(--bg3);color:var(--muted);font-size:10px;padding:1px 5px;border-radius:3px;white-space:nowrap}
 
 /* Edge cards */
 .edge-list{display:flex;flex-direction:column;gap:6px}
 .edge-card{display:flex;align-items:center;flex-wrap:wrap;gap:6px;padding:8px 10px;background:var(--bg2);border:1px solid var(--border);border-radius:6px;font-size:12px}
 .flow-badge{font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px}
-.flow-Material{background:#fff1e6;color:var(--orange)}
-.flow-Component{background:#ddf4ff;color:var(--blue)}
-.flow-Service{background:#dafbe1;color:var(--green)}
-.flow-Signal{background:#fbefff;color:var(--purple)}
+.flow-Material{background:oklch(95% 0.04 45);color:var(--orange)}
+.flow-Component{background:oklch(95% 0.04 250);color:var(--blue)}
+.flow-Service{background:oklch(95% 0.04 155);color:var(--green)}
+.flow-Signal{background:oklch(95% 0.04 285);color:var(--purple)}
 .edge-sector-chip{background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:1px 7px;cursor:pointer;font-size:11px;font-weight:600}
 .edge-sector-chip:hover{background:var(--border)}
 .edge-product{color:var(--muted);font-size:11px;flex:1}
@@ -93,13 +98,14 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
   #edge-svg{display:none}
   .dim-sectors{flex-direction:column;gap:0}
   .sector-card{margin-bottom:8px;min-width:unset;flex:1 1 auto}
-  #detail-panel{position:fixed;bottom:0;left:0;right:0;height:55vh;background:var(--bg);border-top:2px solid var(--border);border-radius:16px 16px 0 0;overflow-y:auto;padding:0 16px 24px;transform:translateY(100%);transition:transform .3s ease;z-index:50;box-shadow:0 -4px 24px rgba(0,0,0,.08)}
+  #detail-panel{position:fixed;bottom:0;left:0;right:0;height:55vh;background:var(--bg);border-top:2px solid var(--border);border-radius:16px 16px 0 0;overflow-y:auto;padding:0 16px 24px;transform:translateY(100%);transition:transform .3s ease;z-index:50;box-shadow:0 -4px 24px oklch(18% 0.008 65 / 0.1)}
   #detail-panel.open{transform:translateY(0)}
   #detail-panel::before{content:'';display:block;width:36px;height:4px;background:var(--border);border-radius:2px;margin:10px auto 14px}
   .close-drawer{display:flex}
   body.drawer-open{overflow:hidden}
 }
 @media(min-width:769px){.close-drawer{display:none}}
+#arr-blue path{fill:var(--blue)}#arr-green path{fill:var(--green)}
 </style>
 </head>
 <body>
@@ -117,8 +123,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 <div id="layout">
   <div id="stack-panel">
     <svg id="edge-svg"><defs>
-      <marker id="arr-blue" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#0969da"/></marker>
-      <marker id="arr-green" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#1a7f37"/></marker>
+      <marker id="arr-blue" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z"/></marker>
+      <marker id="arr-green" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z"/></marker>
     </defs></svg>
     <div id="stack"></div>
   </div>
@@ -251,6 +257,9 @@ const DATA = {
 
 const DIM_LABELS = {D1:"D1 · AI Manufacturing Base",D2:"D2 · AI Connectivity",D3:"D3 · AI Infrastructure",D4:"D4 · AI Enablement",D5:"D5 · AI Applications"};
 const DIM_ORDER = ["D1","D2","D3","D4","D5"];
+const _rs = getComputedStyle(document.documentElement);
+const _colorBlue = ()=>_rs.getPropertyValue('--blue').trim();
+const _colorGreen = ()=>_rs.getPropertyValue('--green').trim();
 
 function nameToSlug(n){ return n.toLowerCase().replace(/\s*&\s*/g,'-').replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,''); }
 function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
@@ -348,7 +357,7 @@ function drawEdges(slug, filter){
     const cx = sx + (tx-sx)*0.5;
 
     const isOut = edge.from===sector.name;
-    const stroke = isOut ? '#0969da' : '#1a7f37';
+    const stroke = isOut ? _colorBlue() : _colorGreen();
     const marker = isOut ? 'arr-blue' : 'arr-green';
 
     const path = document.createElementNS('http://www.w3.org/2000/svg','path');
