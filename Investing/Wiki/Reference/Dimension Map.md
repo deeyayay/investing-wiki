@@ -1,7 +1,7 @@
 # AI Ecosystem — Dimension Map
-*Last updated: 2026-05-24 — Space & Communications sector mapped (8-tier supply chain map, process/product depth)*
+*Last updated: 2026-05-27 — D1–D6 taxonomy expansion: D4 AI Model Infrastructure inserted; existing D4→D5, D5→D6*
 
-This file is the authoritative taxonomy for the five-dimension vertical stack. All sector supply chain maps and the Ecosystem Interrelationships graph reference the dimension codes here.
+This file is the authoritative taxonomy for the six-dimension vertical stack. All sector supply chain maps and the Ecosystem Interrelationships graph reference the dimension codes here.
 
 ---
 
@@ -12,8 +12,9 @@ This file is the authoritative taxonomy for the five-dimension vertical stack. A
 | D1 | AI Manufacturing Base | Physical production of the components, materials, and devices that all higher layers consume. Constraints here propagate upward through the entire stack. |
 | D2 | AI Connectivity | Moving data at the speed and distance AI requires — between chips, servers, data centers, and continents. |
 | D3 | AI Infrastructure | Operating AI at scale: compute, power, cooling, and the physical facilities that house it. |
-| D4 | AI Enablement | Software and security layers that make infrastructure usable and trustworthy. |
-| D5 | AI Applications | End-use systems that deploy AI capability to solve domain-specific problems. |
+| D4 | AI Model Infrastructure | Platforms and tools that surround foundation models — MLOps, data annotation, model serving, vector databases, and orchestration. Focus is on investable infrastructure; foundation model providers (OpenAI, Anthropic, Google) are excluded. |
+| D5 | AI Enablement | Software and security layers that make infrastructure usable and trustworthy. *(was D4)* |
+| D6 | AI Applications | End-use systems that deploy AI capability to solve domain-specific problems. *(was D5)* |
 
 ---
 
@@ -28,11 +29,13 @@ This file is the authoritative taxonomy for the five-dimension vertical stack. A
 | Space & Communications | D2 | `Space & Comms` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
 | Compute Infrastructure | D3 | `AI Infrastructure` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
 | Energy & Power | D3 | `Clean Energy` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
-| Cybersecurity | D4 | `Cybersecurity` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
-| Data & Software Platforms | D4 | *(reserved)* | planned | not yet created |
-| Robotics & Edge AI | D5 | `Robotics & Edge AI` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
-| Fintech & Commerce AI | D5 | `Fintech & E-Commerce` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
-| Defense & Space | D5 | *(reserved)* | planned | not yet created |
+| MLOps & Model Serving | D4 | *(reserved)* | planned | not yet created |
+| Data Annotation & Vector DB | D4 | *(reserved)* | planned | not yet created |
+| Cybersecurity | D5 | `Cybersecurity` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
+| Data & Software Platforms | D5 | *(reserved)* | planned | not yet created |
+| Robotics & Edge AI | D6 | `Robotics & Edge AI` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
+| Fintech & Commerce AI | D6 | `Fintech & E-Commerce` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
+| Defense & Space | D6 | *(reserved)* | planned | not yet created |
 
 **Status values:**
 - `complete` — supply chain map exists with Processes + Key Products columns + Interrelationship Anchors
@@ -46,11 +49,14 @@ This file is the authoritative taxonomy for the five-dimension vertical stack. A
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│  D5 — AI Applications                                           │
+│  D6 — AI Applications                                           │
 │  Robotics & Edge AI · Fintech & Commerce AI · Defense & Space   │
 ├─────────────────────────────────────────────────────────────────┤
-│  D4 — AI Enablement                                             │
+│  D5 — AI Enablement                                             │
 │  Cybersecurity · Data & Software Platforms                      │
+├─────────────────────────────────────────────────────────────────┤
+│  D4 — AI Model Infrastructure                                   │
+│  MLOps & Model Serving · Data Annotation & Vector DB            │
 ├─────────────────────────────────────────────────────────────────┤
 │  D3 — AI Infrastructure                                         │
 │  Compute Infrastructure · Energy & Power                        │
@@ -63,4 +69,4 @@ This file is the authoritative taxonomy for the five-dimension vertical stack. A
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-Physical constraints flow upward. A capacity crunch at D1 propagates to D2, D3, D4, and D5 in sequence. Demand signals flow downward — AI application growth at D5 pulls compute at D3, which pulls silicon at D1.
+Physical constraints flow upward. A capacity crunch at D1 propagates through D2, D3, D4, D5, and D6 in sequence. Demand signals flow downward — AI application growth at D6 pulls compute at D3, which pulls silicon at D1.
