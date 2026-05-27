@@ -1,9 +1,9 @@
 # Daily Dashboard — Ecosystem Map Viewer
 
-Deploys the ecosystem map to Netlify via `gh-pages`. The HTML and embedded `DATA` object live in `Investing/Output/Dashboard/index.html` as the source of truth.
+Deploys the ecosystem map via `gh-pages` to GitHub Pages. The HTML and embedded `DATA` object live in `Investing/Output/Dashboard/index.html` as the source of truth.
 
-**Dashboard URL:** `https://investing-wiki.netlify.app`
-*Netlify watches `gh-pages` — every push auto-deploys within ~30 seconds.*
+**Dashboard URL:** `https://deeyayay.github.io/investing-wiki`
+*GitHub Pages serves the `gh-pages` branch — every push auto-deploys within ~1 minute.*
 
 **Flags:**
 - *(none)* — deploy existing `index.html` to gh-pages as-is
