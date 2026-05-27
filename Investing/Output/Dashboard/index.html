@@ -10,17 +10,17 @@
 body{background:var(--bg);color:var(--text);font:14px/1.5 system-ui,sans-serif}
 #hdr{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;border-bottom:1px solid var(--border);background:var(--bg2);position:sticky;top:0;z-index:10}
 .logo{font-weight:700;font-size:16px}.gen-date{color:var(--muted);font-size:12px}
-#l0,#l1,#l2{padding:24px;max-width:1200px;margin:0 auto}
-.dim-row{margin-bottom:32px}
-.dim-label{display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+#l0,#l1,#l2{padding:32px 24px;max-width:1200px;margin:0 auto}
+.dim-row{margin-bottom:52px}
+.dim-label{display:flex;align-items:center;gap:10px;margin-bottom:18px;flex-wrap:wrap}
 .dim-pill{font-size:11px;font-weight:700;padding:3px 10px;border-radius:99px;color:#fff;letter-spacing:.05em;flex-shrink:0}
 .dim-pill.D1{background:var(--d1)}.dim-pill.D2{background:var(--d2);color:#000}
 .dim-pill.D3{background:var(--d3)}.dim-pill.D4{background:var(--d4)}
 .dim-pill.D5{background:var(--d5)}.dim-pill.D6{background:var(--d6)}
-.dim-name{font-weight:600;font-size:14px}
+.dim-name{font-weight:700;font-size:15px}
 .dim-desc{color:var(--muted);font-size:12px;margin-left:auto;max-width:480px;text-align:right}
-.sec-cards{display:flex;flex-wrap:wrap;gap:12px}
-.sec-card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px 16px;cursor:pointer;width:clamp(160px,22%,240px);transition:border-color .15s,transform .1s}
+.sec-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.sec-card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px 16px;cursor:pointer;transition:border-color .15s,transform .1s}
 .sec-card:hover{border-color:#4a5568;transform:translateY(-1px)}
 .sec-card-name{font-weight:600;font-size:13px;margin-bottom:4px}
 .sec-card-desc{color:var(--muted);font-size:11px;line-height:1.4;margin-bottom:8px}
@@ -30,14 +30,15 @@ body{background:var(--bg);color:var(--text);font:14px/1.5 system-ui,sans-serif}
 .empty-dim{color:var(--muted);font-size:12px;padding:8px 0;font-style:italic}
 .breadcrumb{font-size:12px;color:var(--muted);margin-bottom:20px;cursor:pointer;display:inline-block;padding:4px 0}
 .breadcrumb:hover{color:var(--text)}
-.sector-hdr{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.sector-hdr{display:flex;align-items:center;gap:12px;margin-bottom:16px}
 .sector-title{font-size:22px;font-weight:700}
 .sector-desc-full{color:var(--muted);font-size:13px;margin-bottom:6px}
-.dim-ctx{font-size:12px;color:var(--muted);margin-bottom:24px;font-style:italic}
-.tier-card{background:var(--bg2);border:1px solid var(--border);border-left:3px solid var(--border);border-radius:6px;padding:14px 16px;margin-bottom:10px;cursor:pointer;transition:border-color .15s}
-.tier-card:hover{border-color:#4a5568}
-.tier-card.choke-y{border-left-color:var(--amber)}
-.tier-card.choke-p{border-left-color:#78716c}
+.dim-ctx{font-size:12px;color:var(--muted);margin-bottom:36px;font-style:italic}
+.tier-card{background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:16px 18px;margin-bottom:10px;cursor:pointer;transition:border-color .15s,background .15s}
+.tier-card:hover{border-color:#4a5568;background:rgba(255,255,255,.02)}
+.tier-card.choke-y{border-color:rgba(245,158,11,.45);background:rgba(245,158,11,.05)}
+.tier-card.choke-y:hover{background:rgba(245,158,11,.09)}
+.tier-card.choke-p{border-color:rgba(120,113,108,.4);background:rgba(120,113,108,.05)}
 .tier-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:8px}
 .tier-name{font-weight:600;font-size:13px}
 .choke-badge{font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;flex-shrink:0}
@@ -60,7 +61,8 @@ body{background:var(--bg);color:var(--text);font:14px/1.5 system-ui,sans-serif}
 .co-count{font-size:10px;background:rgba(99,102,241,.15);color:#a5b4fc;padding:2px 7px;border-radius:99px}
 .co-section{margin-top:24px}
 .co-section h3{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:12px}
-.co-card{background:var(--bg3);border-radius:6px;padding:12px 14px;margin-bottom:8px}
+.co-card{padding:14px 0;border-bottom:1px solid var(--border)}
+.co-card:last-child{border-bottom:none}
 .co-header{display:flex;align-items:center;gap:10px;margin-bottom:6px;flex-wrap:wrap}
 .co-ticker{font-weight:700;font-size:13px;font-family:monospace;color:var(--text)}
 .co-name{font-size:12px;color:var(--muted)}
@@ -435,9 +437,9 @@ function openTier(idx){
     :"";
   document.getElementById("l2").innerHTML=
     "<div class=\"breadcrumb\" onclick=\"openSector('"+s.slug+"')\">← "+s.name+"</div>"
-    +chokeBlock
     +"<div class=\"tier-detail-name\">"+t.tier+"</div>"
     +"<div class=\"tier-fn-full\">"+t.fn+"</div>"
+    +chokeBlock
     +"<div class=\"invest-section\">"
     +"<h3>Investment Angle</h3>"
     +"<div class=\"invest-rows\">"
