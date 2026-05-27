@@ -64,7 +64,8 @@ body{background:var(--bg);color:var(--text);font:14px/1.5 system-ui,sans-serif}
 .co-card{padding:14px 0;border-bottom:1px solid var(--border)}
 .co-card:last-child{border-bottom:none}
 .co-header{display:flex;align-items:center;gap:10px;margin-bottom:6px;flex-wrap:wrap}
-.co-ticker{font-weight:700;font-size:13px;font-family:monospace;color:var(--text)}
+.co-ticker{font-weight:700;font-size:13px;font-family:monospace;color:var(--text);text-decoration:none}
+a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 .co-name{font-size:12px;color:var(--muted)}
 .co-cap{font-size:10px;padding:2px 7px;border-radius:99px;margin-left:auto}
 .co-cap.large{background:oklch(93% .08 258);color:var(--d3)}
@@ -346,6 +347,9 @@ const DIMS=["D1","D2","D3","D4","D5","D6"];
 
 let activeSector=null;
 
+const SECTOR_FOLDER={"Compute Infrastructure":"AI Infrastructure","Energy & Power":"Clean Energy","Materials & Mining":"Metals & Mining","Space & Communications":"Space & Comms","Fintech & Commerce AI":"Fintech & E-Commerce"};
+function wikiUrl(sName,ticker){const f=SECTOR_FOLDER[sName]||sName;return"https://github.com/deeyayay/investing-wiki/blob/master/Investing/Wiki/Sectors/"+encodeURIComponent(f)+"/"+ticker+".md";}
+
 function showLayer(n){
   document.getElementById("l0").hidden=n!==0;
   document.getElementById("l1").hidden=n!==1;
@@ -429,7 +433,7 @@ function openTier(idx){
         const cc=c.mkt_cap==="Large"?"large":c.mkt_cap==="Mid"?"mid":"small";
         const cl=c.mkt_cap==="Large"?"Large cap":c.mkt_cap==="Mid"?"Mid cap":"Small cap";
         return "<div class=\"co-card\">"
-          +"<div class=\"co-header\"><span class=\"co-ticker\">"+c.ticker+"</span>"
+          +"<div class=\"co-header\"><a class=\"co-ticker\" href=\""+wikiUrl(s.name,c.ticker)+"\" target=\"_blank\" rel=\"noopener\">"+c.ticker+"</a>"
           +"<span class=\"co-name\">"+c.name+"</span>"
           +"<span class=\"co-cap "+cc+"\">"+cl+"</span></div>"
           +"<div class=\"co-notes\">"+c.notes+"</div></div>";
