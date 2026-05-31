@@ -1,6 +1,6 @@
 # Monitor Registry
 *The research-monitor skill reads this file on every run. Add tickers here — no skill update needed.*
-*Last updated: May 31, 2026 — /add-ticker 6841.T, 6754.T (Photonics test); 6857.T, FORM (cross-sector Semis/Photonics) added*
+*Last updated: May 31, 2026 — /add-ticker 6841.T, 6754.T (Photonics test); 6857.T, FORM added; /map-sector AI Model Infrastructure run; AMD, CRWV, META, DDOG, SNOW, PLTR, MDB, ESTC, CFLT candidate stubs added*
 
 ---
 
@@ -212,6 +212,23 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 <!-- CANDIDATE (/map-sector 2026-05-24): APH (Amphenol Corporation) — Connector & Socket Manufacturing layer. #2 connector globally; strong data center and AI infrastructure exposure. Run /add-ticker APH --sector "Electronic Components" --layer "Connector & Socket Manufacturing" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): JBL (Jabil Inc.) — PCB Assembly (EMS / PCBA) layer. #2 EMS globally; AI server PCBA + power supply assembly. Run /add-ticker JBL --sector "Electronic Components" --layer "PCB Assembly (EMS / PCBA)" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): CLS (Celestica) — PCB Assembly (EMS / PCBA) layer. EMS; growing AI infrastructure PCBA share. Run /add-ticker CLS --sector "Electronic Components" --layer "PCB Assembly (EMS / PCBA)" to onboard. -->
+
+---
+
+## AI Model Infrastructure
+
+| Ticker | Company | CIK | Exchange | Path | Score |
+|--------|---------|-----|----------|------|-------|
+
+<!-- CANDIDATE (/map-sector 2026-05-31): AMD (Advanced Micro Devices) — Distributed Training Orchestration + Model Optimization + Inference Serving layers. MI300X GPU; ROCm ecosystem; gaining training share at Meta and Microsoft; vLLM MI300X path for inference. Run /add-ticker AMD --sector "AI Model Infrastructure" --layer "Distributed Training Orchestration" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-31): CRWV (CoreWeave) — Distributed Training Orchestration + Inference Serving & Scaling layers. Pure-play GPU cloud; IPO 2025; NVIDIA preferred partner; OpenAI, Inflection, Cohere training customer; Kubernetes-native GPU autoscaling for inference. Run /add-ticker CRWV --sector "AI Model Infrastructure" --layer "Distributed Training Orchestration" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-31): META (Meta Platforms) — Foundation Model Development layer. Llama 3.x / 4 open-weight models (open-weight leader); PyTorch custodian; FAIR research; MTIA custom ASIC program. No direct API revenue model but controls open-weight ecosystem. Run /add-ticker META --sector "AI Model Infrastructure" --layer "Foundation Model Development" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-31): DDOG (Datadog) — MLOps & Model Lifecycle Management layer. LLM Observability product; APM and log analytics; AI cost attribution dashboards; model performance monitoring. Run /add-ticker DDOG --sector "AI Model Infrastructure" --layer "MLOps & Model Lifecycle Management" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-31): SNOW (Snowflake) — MLOps & Model Lifecycle Management + Model API & Developer Platform layers. Cortex AI (managed LLM inference + RAG + feature store inside data warehouse); text_complete() / embed_text() SQL-native APIs; strong data platform moat. Run /add-ticker SNOW --sector "AI Model Infrastructure" --layer "MLOps & Model Lifecycle Management" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-31): PLTR (Palantir Technologies) — MLOps & Model Lifecycle Management layer. AIP (AI Platform) for enterprise model deployment and workflow automation; Foundry + Ontology for model output integration; US government + commercial customers. Run /add-ticker PLTR --sector "AI Model Infrastructure" --layer "MLOps & Model Lifecycle Management" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-31): MDB (MongoDB) — MLOps & Model Lifecycle Management + Model API & Developer Platform layers. Atlas Vector Search (HNSW / ENN); document store for RAG pipeline metadata and embeddings; native vector+filter combined queries. Run /add-ticker MDB --sector "AI Model Infrastructure" --layer "MLOps & Model Lifecycle Management" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-31): ESTC (Elastic) — MLOps & Model Lifecycle Management layer. ELSER learned sparse retrieval model; k-NN / ANN vector search; LLM observability in Kibana; hybrid BM25 + vector search for RAG. Run /add-ticker ESTC --sector "AI Model Infrastructure" --layer "MLOps & Model Lifecycle Management" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-31): CFLT (Confluent) — Model API & Developer Platform layer. Kafka-based real-time data streaming for ML feature pipelines, model event sourcing, and real-time inference input normalization. Run /add-ticker CFLT --sector "AI Model Infrastructure" --layer "Model API & Developer Platform" to onboard. -->
 
 ---
 

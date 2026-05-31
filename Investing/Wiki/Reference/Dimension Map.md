@@ -1,5 +1,5 @@
 # AI Ecosystem — Dimension Map
-*Last updated: 2026-05-24 — Space & Communications sector mapped (8-tier supply chain map, process/product depth)*
+*Last updated: 2026-05-31 — AI Model Infrastructure sector mapped (8-tier supply chain map, process/product depth, D4)*
 
 This file is the authoritative taxonomy for the five-dimension vertical stack. All sector supply chain maps and the Ecosystem Interrelationships graph reference the dimension codes here.
 
@@ -29,6 +29,7 @@ This file is the authoritative taxonomy for the five-dimension vertical stack. A
 | Compute Infrastructure | D3 | `AI Infrastructure` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
 | Energy & Power | D3 | `Clean Energy` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
 | Cybersecurity | D4 | `Cybersecurity` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
+| AI Model Infrastructure | D4 | `AI Model Infrastructure` | partial | `_Supply Chain Map.md` — mapped 2026-05-31, 8-tier, process/product depth |
 | Data & Software Platforms | D4 | *(reserved)* | planned | not yet created |
 | Robotics & Edge AI | D5 | `Robotics & Edge AI` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
 | Fintech & Commerce AI | D5 | `Fintech & E-Commerce` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
@@ -50,7 +51,7 @@ This file is the authoritative taxonomy for the five-dimension vertical stack. A
 │  Robotics & Edge AI · Fintech & Commerce AI · Defense & Space   │
 ├─────────────────────────────────────────────────────────────────┤
 │  D4 — AI Enablement                                             │
-│  Cybersecurity · Data & Software Platforms                      │
+│  Cybersecurity · AI Model Infrastructure · Data & Software Platforms │
 ├─────────────────────────────────────────────────────────────────┤
 │  D3 — AI Infrastructure                                         │
 │  Compute Infrastructure · Energy & Power                        │
