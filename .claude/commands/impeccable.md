@@ -1,0 +1,1 @@
+Read the full skill definition at `.claude/skills/impeccable/SKILL.md` and follow its instructions exactly. The base directory for the skill is the absolute path to `.claude/skills/impeccable`. Replace `{{scripts_path}}` with `.claude/skills/impeccable/scripts` and `{{command_prefix}}` with `/` throughout. Pass `$ARGUMENTS` as the arguments to the skill.

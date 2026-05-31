@@ -3,948 +3,551 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Investing KB · May 24, 2026</title>
+<title>AI Ecosystem Map</title>
 <style>
-:root {
-  --bg:#0d1117;--bg2:#161b22;--bg3:#21262d;--text:#e6edf3;--muted:#8b949e;
-  --border:#30363d;--amber:#d4a017;--green:#3fb950;--blue:#58a6ff;
-  --red:#f85149;--orange:#e3812b;--yellow:#d29922;--purple:#bc8cff;--pink:#ff7b72;
-}
+:root{--bg:#0f1117;--bg2:#1a1d27;--bg3:#252836;--border:#2e3244;--text:#e2e8f0;--muted:#8892a4;--amber:#f59e0b;--amber-bg:rgba(245,158,11,0.12);--d1:#6366f1;--d2:#22c55e;--d3:#3b82f6;--d4:#a855f7;--d5:#ef4444;--d6:#f97316}
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px;line-height:1.5}
-a{color:var(--blue);text-decoration:none}
-a:hover{text-decoration:underline}
-button{cursor:pointer;font:inherit;border:none;background:none;color:inherit}
-
-/* Header */
-#site-header{position:sticky;top:0;z-index:100;background:var(--bg);border-bottom:1px solid var(--border);padding:10px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
-.header-title{font-weight:700;font-size:13px;letter-spacing:.08em;color:var(--muted)}
-.header-meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-.badge{display:inline-block;padding:2px 8px;border-radius:12px;font-size:12px;font-weight:600}
-.badge-green{background:#1a4a2a;color:var(--green)}
-.badge-amber{background:#3a2e00;color:var(--amber)}
-.badge-red{background:#3a1a1a;color:var(--red)}
-.badge-blue{background:#1a2a4a;color:var(--blue)}
-.badge-muted{background:var(--bg3);color:var(--muted)}
-.badge-purple{background:#2a1a4a;color:var(--purple)}
-
-/* Layout */
-#app{max-width:1200px;margin:0 auto;padding:20px}
-.breadcrumb{font-size:12px;color:var(--muted);margin-bottom:20px}
-.breadcrumb a{color:var(--muted)}
-.breadcrumb a:hover{color:var(--text)}
-.section-title{font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--muted);text-transform:uppercase;margin-bottom:12px;margin-top:24px}
-
-/* Cards */
-.card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:16px}
-.card:hover{background:var(--bg3);box-shadow:0 2px 8px rgba(0,0,0,.4)}
-.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-@media(max-width:900px){.card-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:600px){.card-grid{grid-template-columns:1fr}}
-
-/* Portfolio strip */
-.portfolio-strip{display:flex;gap:12px;overflow-x:auto;padding-bottom:8px;scrollbar-width:thin}
-.portfolio-card{flex:0 0 260px;background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px;border-left:3px solid var(--amber);cursor:pointer;transition:background .15s}
-.portfolio-card:hover{background:var(--bg3)}
-.portfolio-card .ticker{font-size:20px;font-weight:700}
-.portfolio-card .thesis{font-size:12px;color:var(--muted);margin-top:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-style:italic}
-.portfolio-card .top-row{display:flex;justify-content:space-between;align-items:flex-start}
-
-/* Signal badges */
-.sig-ADD{background:var(--green);color:#0d1117;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700}
-.sig-HOLD{background:#1f6feb;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700}
-.sig-TRIM{background:var(--red);color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700}
-.sig-WATCH{background:var(--yellow);color:#0d1117;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700}
-
-/* Impact pills */
-.imp-5{background:var(--red);color:#fff;padding:1px 6px;border-radius:3px;font-size:11px;font-weight:600}
-.imp-4{background:var(--orange);color:#fff;padding:1px 6px;border-radius:3px;font-size:11px;font-weight:600}
-.imp-3{background:var(--yellow);color:#0d1117;padding:1px 6px;border-radius:3px;font-size:11px;font-weight:600}
-.imp-2{background:var(--bg3);color:var(--muted);padding:1px 6px;border-radius:3px;font-size:11px;font-weight:600}
-.imp-1{background:var(--bg3);color:var(--muted);padding:1px 6px;border-radius:3px;font-size:11px;font-weight:600}
-
-/* Digest */
-.digest-item{padding:10px 0;border-bottom:1px solid var(--border);display:flex;flex-wrap:wrap;gap:8px;align-items:baseline}
-.digest-headline{flex:1;min-width:200px;font-weight:500}
-.digest-summary{width:100%;color:var(--muted);font-size:13px;margin-top:2px}
-.ticker-chip{background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:1px 7px;font-size:12px;font-weight:600;cursor:pointer;transition:background .1s}
-.ticker-chip:hover{background:var(--border);color:var(--text)}
-.sector-chip{background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:1px 7px;font-size:11px;color:var(--muted);cursor:pointer}
-.sector-chip:hover{color:var(--text)}
-
-/* Sector cards */
-.sector-card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:16px;cursor:pointer;transition:background .15s;position:relative}
-.sector-card:hover{background:var(--bg3);box-shadow:0 2px 8px rgba(0,0,0,.4)}
-.sector-card-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px}
-.sector-name{font-weight:700;font-size:15px}
-.sector-count{font-size:12px;color:var(--muted)}
-.health-dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:6px}
-.sector-desc{font-size:12px;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.sector-news{font-size:12px;color:var(--muted);margin-top:8px;border-top:1px solid var(--border);padding-top:8px}
-
-/* Market pulse */
-.pulse-box{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:20px;margin-bottom:24px;border-left:3px solid var(--amber)}
-.pulse-headline{font-size:13px;color:var(--muted);margin-top:6px}
-
-/* Tabs */
-.tab-bar{display:flex;gap:0;border-bottom:1px solid var(--border);margin-bottom:20px;overflow-x:auto}
-.tab-btn{padding:10px 18px;font-size:13px;font-weight:500;color:var(--muted);border-bottom:2px solid transparent;white-space:nowrap;transition:color .15s}
-.tab-btn:hover{color:var(--text)}
-.tab-btn.active{color:var(--text);border-bottom-color:var(--blue)}
-.tab-content{display:none}
-.tab-content.active{display:block}
-
-/* Chain map */
-.chain-map{overflow-x:auto}
-.chain-lanes{display:flex;gap:12px;min-width:max-content;padding-bottom:12px}
-.tier-col{min-width:130px;max-width:160px}
-.tier-header{font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:6px 8px;border-radius:4px 4px 0 0;border:1px solid var(--border);border-bottom:none;background:var(--bg3);color:var(--muted);text-align:center}
-.tier-header.chokepoint{border-top:3px solid var(--amber);color:var(--amber)}
-.tier-body{border:1px solid var(--border);border-radius:0 0 4px 4px;padding:8px;background:var(--bg2);min-height:60px;display:flex;flex-direction:column;gap:6px}
-.node-chip{display:flex;align-items:center;gap:4px;padding:5px 8px;border-radius:5px;font-size:12px;font-weight:600;background:var(--bg3);border:1px solid var(--border);text-align:left;width:100%;transition:all .15s;position:relative}
-.node-chip:hover{border-color:var(--blue);background:var(--bg)}
-.node-chip.in-kb{cursor:pointer}
-.node-chip.not-in-kb{opacity:.45;cursor:default}
-.node-chip.gap-node{border-style:dashed;color:var(--muted);cursor:default;font-style:italic;font-size:11px}
-.node-chip.portfolio{border-left:3px solid var(--amber)}
-.node-chip.highlighted-up{box-shadow:0 0 0 2px var(--green);opacity:1!important}
-.node-chip.highlighted-down{box-shadow:0 0 0 2px var(--blue);opacity:1!important}
-.node-chip.dimmed{opacity:.15!important}
-.chokepoint-icon{color:var(--amber);font-size:10px;flex-shrink:0}
-.chain-legend{display:flex;flex-wrap:wrap;gap:12px;margin-top:12px;font-size:11px;color:var(--muted);padding:10px;background:var(--bg2);border-radius:6px;border:1px solid var(--border)}
-
-/* Framework status */
-.fw-status{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
-.fw-pill{padding:3px 10px;border-radius:12px;font-size:11px;font-weight:600}
-.fw-pill.done{background:#1a4a2a;color:var(--green)}
-.fw-pill.todo{background:var(--bg3);color:var(--muted)}
-
-/* Customer matrix */
-.matrix-wrap{overflow-x:auto;margin-bottom:16px}
-.matrix-table{border-collapse:collapse;min-width:600px}
-.matrix-table th{font-size:11px;font-weight:600;color:var(--muted);padding:8px 10px;border:1px solid var(--border);background:var(--bg3);text-align:center;white-space:nowrap}
-.matrix-table td{padding:6px 8px;border:1px solid var(--border);background:var(--bg2)}
-.matrix-table td.row-header{font-weight:700;font-size:12px;cursor:pointer;white-space:nowrap;min-width:90px}
-.matrix-table td.row-header:hover{color:var(--blue)}
-.layer-badge{font-size:10px;font-weight:500;color:var(--muted);background:var(--bg3);padding:1px 5px;border-radius:3px;margin-left:4px;display:inline-block}
-.cell-bar-wrap{position:relative;height:20px;background:var(--bg2);border-radius:3px;overflow:hidden;min-width:60px}
-.cell-bar{height:100%;border-radius:3px;transition:width .3s}
-.cell-score-1,.cell-score-2{background:var(--amber)}
-.cell-score-3{background:var(--orange)}
-.cell-score-4,.cell-score-5{background:var(--red)}
-.critical-paths{background:var(--bg2);border-left:3px solid var(--amber);border-radius:0 6px 6px 0;padding:14px 16px;margin-top:16px;font-size:13px;color:var(--muted);line-height:1.7}
-.critical-paths strong{color:var(--text)}
-
-/* Ticker grid */
-.ticker-card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px;cursor:pointer;transition:background .15s;position:relative}
-.ticker-card:hover{background:var(--bg3)}
-.ticker-card.portfolio{border-left:3px solid var(--amber)}
-.ticker-card.rocket{border-left:3px solid var(--orange)}
-.ticker-symbol{font-size:18px;font-weight:700}
-.ticker-name{font-size:12px;color:var(--muted)}
-.ticker-thesis{font-size:12px;color:var(--muted);margin-top:8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-style:italic}
-.score-badge{font-size:11px;font-weight:600;padding:2px 7px;border-radius:3px}
-.score-9{background:#1a4a2a;color:var(--green)}
-.score-7{background:#1a2a4a;color:var(--blue)}
-.score-5{background:#3a3000;color:var(--yellow)}
-.score-low{background:#3a1a1a;color:var(--red)}
-
-/* Ticker detail */
-.ticker-detail-header{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:20px;margin-bottom:16px}
-.ticker-detail-symbol{font-size:28px;font-weight:700}
-.ticker-detail-name{font-size:14px;color:var(--muted);margin-top:2px}
-.rationale-box{background:var(--bg2);border-left:3px solid var(--blue);border-radius:0 6px 6px 0;padding:12px 16px;margin-bottom:16px;font-size:13px;color:var(--muted);line-height:1.7}
-.section-block{margin-bottom:20px}
-.section-label{font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--muted);text-transform:uppercase;margin-bottom:8px}
-.thesis-text{font-size:13px;line-height:1.7;color:var(--text)}
-details summary{cursor:pointer;color:var(--blue);font-size:12px;margin-top:6px}
-.drift-line{font-size:12px;color:var(--muted);margin-top:6px}
-.chain-position{display:flex;align-items:center;gap:8px;margin-bottom:16px;padding:10px 14px;background:var(--bg2);border:1px solid var(--border);border-radius:6px}
-
-/* Scoring bars */
-.scoring-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-@media(max-width:600px){.scoring-grid{grid-template-columns:repeat(2,1fr)}}
-.criterion-bar-wrap{display:flex;flex-direction:column;gap:4px}
-.criterion-label{font-size:11px;color:var(--muted)}
-.criterion-bar-bg{height:6px;background:var(--bg3);border-radius:3px;overflow:hidden}
-.criterion-bar-fill{height:100%;border-radius:3px}
-
-/* Conviction log */
-.conviction-entry{padding:8px 0;border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start}
-.conv-arrow-up{color:var(--green);font-size:16px;flex-shrink:0}
-.conv-arrow-down{color:var(--red);font-size:16px;flex-shrink:0}
-.conv-arrow-neutral{color:var(--muted);font-size:16px;flex-shrink:0}
-.conv-date{font-size:11px;color:var(--muted);margin-bottom:2px}
-.conv-event{font-size:13px;font-weight:500}
-.conv-why{font-size:12px;color:var(--muted)}
-
-/* News log */
-.news-entry{padding:10px 0;border-bottom:1px solid var(--border)}
-.news-headline{font-weight:600;font-size:13px}
-.news-detail{font-size:12px;color:var(--muted);margin-top:3px}
-
-/* Ecosystem panel */
-.eco-zone{margin-bottom:16px}
-.eco-zone-label{font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;margin-bottom:8px}
-.eco-chips{display:flex;flex-wrap:wrap;gap:8px}
-.eco-chip{padding:6px 12px;border-radius:6px;font-size:12px;font-weight:600;background:var(--bg3);border:1px solid var(--border);cursor:pointer}
-.eco-chip:hover{border-color:var(--blue)}
-.eco-chip.up-chip{border-color:var(--green);background:#0d2a18}
-.eco-chip.down-chip{border-color:var(--blue);background:#0d1a2a}
-.eco-center{text-align:center;padding:14px;margin:8px 0;border:2px solid var(--amber);border-radius:8px;background:var(--bg2)}
-
-/* Table */
-.data-table{width:100%;border-collapse:collapse;font-size:13px}
-.data-table th{text-align:left;padding:8px;border-bottom:1px solid var(--border);font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
-.data-table td{padding:8px;border-bottom:1px solid var(--border);color:var(--text)}
-.data-table tr:last-child td{border-bottom:none}
-
-/* Hot tickers */
-.hot-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
-.hot-chip{padding:4px 12px;border-radius:20px;font-size:12px;font-weight:700;background:var(--bg3);border:1px solid var(--purple);color:var(--purple);cursor:pointer}
-.hot-chip:hover{background:#2a1a4a}
+body{background:var(--bg);color:var(--text);font:14px/1.5 system-ui,sans-serif}
+#hdr{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;border-bottom:1px solid var(--border);background:var(--bg2);position:sticky;top:0;z-index:10}
+.logo{font-weight:700;font-size:16px}.gen-date{color:var(--muted);font-size:12px}
+#l0,#l1,#l2{padding:24px;max-width:1200px;margin:0 auto}
+.dim-row{margin-bottom:32px}
+.dim-label{display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+.dim-pill{font-size:11px;font-weight:700;padding:3px 10px;border-radius:99px;color:#fff;letter-spacing:.05em;flex-shrink:0}
+.dim-pill.D1{background:var(--d1)}.dim-pill.D2{background:var(--d2);color:#000}
+.dim-pill.D3{background:var(--d3)}.dim-pill.D4{background:var(--d4)}
+.dim-pill.D5{background:var(--d5)}.dim-pill.D6{background:var(--d6)}
+.dim-name{font-weight:600;font-size:14px}
+.dim-desc{color:var(--muted);font-size:12px;margin-left:auto;max-width:480px;text-align:right}
+.sec-cards{display:flex;flex-wrap:wrap;gap:12px}
+.sec-card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px 16px;cursor:pointer;width:clamp(160px,22%,240px);transition:border-color .15s,transform .1s}
+.sec-card:hover{border-color:#4a5568;transform:translateY(-1px)}
+.sec-card-name{font-weight:600;font-size:13px;margin-bottom:4px}
+.sec-card-desc{color:var(--muted);font-size:11px;line-height:1.4;margin-bottom:8px}
+.sec-meta{display:flex;align-items:center;gap:8px}
+.tier-badge{font-size:10px;background:var(--bg3);padding:2px 7px;border-radius:99px;color:var(--muted)}
+.choke-dot{width:7px;height:7px;border-radius:50%;background:var(--amber);display:inline-block}
+.empty-dim{color:var(--muted);font-size:12px;padding:8px 0;font-style:italic}
+.breadcrumb{font-size:12px;color:var(--muted);margin-bottom:20px;cursor:pointer;display:inline-block;padding:4px 0}
+.breadcrumb:hover{color:var(--text)}
+.sector-hdr{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.sector-title{font-size:22px;font-weight:700}
+.sector-desc-full{color:var(--muted);font-size:13px;margin-bottom:6px}
+.dim-ctx{font-size:12px;color:var(--muted);margin-bottom:24px;font-style:italic}
+.tier-card{background:var(--bg2);border:1px solid var(--border);border-left:3px solid var(--border);border-radius:6px;padding:14px 16px;margin-bottom:10px;cursor:pointer;transition:border-color .15s}
+.tier-card:hover{border-color:#4a5568}
+.tier-card.choke-y{border-left-color:var(--amber)}
+.tier-card.choke-p{border-left-color:#78716c}
+.tier-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:8px}
+.tier-name{font-weight:600;font-size:13px}
+.choke-badge{font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;flex-shrink:0}
+.choke-badge.y{background:var(--amber-bg);color:var(--amber)}
+.choke-badge.p{background:rgba(120,113,108,.15);color:#a8a29e}
+.tier-fn{color:var(--muted);font-size:12px;line-height:1.5;margin-bottom:10px}
+.tier-pills{display:flex;flex-wrap:wrap;gap:6px}
+.pill{font-size:10px;background:var(--bg3);padding:2px 8px;border-radius:99px;color:var(--muted)}
+.tier-detail-name{font-size:20px;font-weight:700;margin-bottom:16px}
+.tier-fn-full{font-size:15px;line-height:1.6;color:var(--text);margin-bottom:28px}
+.invest-section h3{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:12px}
+.invest-rows{display:flex;flex-direction:column;gap:8px;margin-bottom:20px}
+.invest-row{display:flex;gap:12px;font-size:13px}
+.invest-label{color:var(--muted);width:140px;flex-shrink:0}
+.invest-val{color:var(--text)}
+.choke-box{background:var(--amber-bg);border:1px solid rgba(245,158,11,.3);border-radius:6px;padding:12px 16px;margin-bottom:20px}
+.choke-box p{font-size:13px;color:var(--amber)}
+.choke-box-partial{background:rgba(120,113,108,.1);border:1px solid rgba(120,113,108,.25);border-radius:6px;padding:12px 16px;margin-bottom:20px}
+.choke-box-partial p{font-size:13px;color:#a8a29e}
+.co-count{font-size:10px;background:rgba(99,102,241,.15);color:#a5b4fc;padding:2px 7px;border-radius:99px}
+.co-section{margin-top:24px}
+.co-section h3{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:12px}
+.co-card{background:var(--bg3);border-radius:6px;padding:12px 14px;margin-bottom:8px}
+.co-header{display:flex;align-items:center;gap:10px;margin-bottom:6px;flex-wrap:wrap}
+.co-ticker{font-weight:700;font-size:13px;font-family:monospace;color:var(--text)}
+.co-name{font-size:12px;color:var(--muted)}
+.co-cap{font-size:10px;padding:2px 7px;border-radius:99px;margin-left:auto}
+.co-cap.large{background:rgba(59,130,246,.15);color:#93c5fd}
+.co-cap.mid{background:rgba(245,158,11,.15);color:#fcd34d}
+.co-cap.small{background:rgba(239,68,68,.15);color:#fca5a5}
+.co-notes{font-size:12px;color:var(--muted);line-height:1.5}
+@media(max-width:600px){.sec-card{width:100%}.dim-desc{display:none}#l0,#l1,#l2{padding:16px}}
+#search-wrap{position:relative;flex:1;max-width:420px}
+#search-input{width:100%;padding:7px 12px 7px 34px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:13px;outline:none;transition:border-color .15s}
+#search-input:focus{border-color:#4a5568}
+#search-input::placeholder{color:var(--muted)}
+#search-icon{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none;font-size:14px}
+#search-results{position:absolute;top:calc(100% + 6px);left:0;right:0;background:var(--bg2);border:1px solid var(--border);border-radius:8px;max-height:380px;overflow-y:auto;z-index:100;box-shadow:0 8px 32px rgba(0,0,0,.5)}
+.sr-group-label{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:8px 12px 4px}
+.sr-item{padding:8px 12px;cursor:pointer;display:flex;align-items:center;gap:10px;transition:background .1s}
+.sr-item:hover,.sr-item.focused{background:var(--bg3)}
+.sr-ticker{font-family:monospace;font-weight:700;font-size:11px;background:rgba(99,102,241,.2);color:#a5b4fc;padding:2px 7px;border-radius:4px;flex-shrink:0}
+.sr-text{flex:1;min-width:0}
+.sr-label{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sr-sub{font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sr-empty{padding:16px 12px;text-align:center;color:var(--muted);font-size:13px}
+.sr-divider{height:1px;background:var(--border);margin:2px 0}
+@media(max-width:600px){#search-wrap{max-width:100%;order:3;width:100%}#hdr{flex-wrap:wrap}}
 </style>
 </head>
 <body>
-<header id="site-header">
-  <span class="header-title">INVESTING KB · MAY 24, 2026</span>
-  <div class="header-meta">
-    <span class="badge badge-green">VIX 17.3</span>
-    <span class="badge badge-muted">S&P 7,337</span>
-    <span class="badge badge-green">Tech-Favorable / Goldilocks</span>
+<div id="app">
+<header id="hdr">
+  <span class="logo">AI Ecosystem Map</span>
+  <div id="search-wrap">
+    <span id="search-icon">&#9906;</span>
+    <input id="search-input" type="text" placeholder="Search tickers, sectors, tiers…" autocomplete="off" spellcheck="false">
+    <div id="search-results" hidden></div>
   </div>
+  <span class="gen-date">Generated: 2026-05-27</span>
 </header>
-<div id="app"></div>
-
+<div id="l0"></div>
+<div id="l1" hidden></div>
+<div id="l2" hidden></div>
+</div>
 <script>
-const KB = {
-  meta: {
-    date: "2026-05-20",
-    generated_at: "2026-05-24T00:00:00Z",
-    vix: 17.3,
-    market_level: 7337,
-    regime_label: "Tech-Favorable / Goldilocks",
-    regime_color: "green"
-  },
-  digest: {
-    date: "2026-05-20",
-    items: [
-      {impact:5,ticker:"POET",category:"product",headline:"POET signs $500M Lumilens AI deal; stock +114% past week — thesis reversal",summary:"Replacement customer found; $50M initial PO with engineering samples targeted late 2026",sector:"Photonics & Optical"},
-      {impact:5,ticker:"NVDA",category:"earnings",headline:"NVIDIA Q1 FY2027 earnings: $81.6B revenue, beat $79.1B est; Data Center +92% YoY",summary:"Beat-and-raise quarter; Q2 guided $91.0B; Vera Rubin samples in customer hands; networking +199% YoY",sector:"Semiconductors"},
-      {impact:4,ticker:"ASTS",category:"product",headline:"BlueBird-7 launch failure; Q1 revenue $14.7M vs $37.5M expected (–61% miss)",summary:"Execution risk confirmed; BofA sees 7-satellite miss vs 2026 target; stock volatile $78–$90",sector:"Space & Comms"},
-      {impact:3,ticker:"SIVE",category:"filing",headline:"Q1 results delayed to May 29; stock +13.18% on MSCI momentum",summary:"Delay tied to PCAOB audit for Nasdaq NY listing; capital raise approved",sector:"Photonics & Optical"},
-      {impact:3,ticker:"AXTI",category:"filing",headline:"Annual meeting adjourned for lack of quorum; reset to June 4",summary:"Proxy solicitor hired; no change to InP backlog fundamentals",sector:"Photonics & Optical"},
-      {impact:3,ticker:"LASR",category:"analyst",headline:"Raymond James raises LASR PT to $100; stock YTD +90%; all-time high $86.95",summary:"New street-high PT; funded A&D backlog $162M; Strong Buy consensus from 8 analysts",sector:"Photonics & Optical"},
-      {impact:2,ticker:"MELI",category:"analyst",headline:"JPMorgan cuts PT $2,100→$1,900; Goldman cuts $2,440→$2,100",summary:"Stock stabilizing at $1,598; 21 analysts still Buy; Q1 EPS miss digested",sector:"Fintech & E-Commerce"},
-      {impact:2,ticker:"OKLO",category:"filing",headline:"New equity distribution agreement signed with 9 major banks",summary:"Positions for potential ATM offering; stock –20% past week",sector:"Clean Energy"},
-      {impact:2,ticker:"IREN",category:"quiet",headline:"Stock at $47.94; digesting $3B convert + Awaken/Mirantis acquisitions",summary:"No fresh news; watching for AI Cloud revenue acceleration",sector:"AI Infrastructure"},
-      {impact:2,ticker:"RBRK",category:"analyst",headline:"PICTET added 1.7M shares (+104%); stock at $65.96",summary:"Institutional accumulation positive signal; no fresh catalyst today",sector:"Cybersecurity"},
-      {impact:2,ticker:"AEHR",category:"earnings",headline:"Bookings raised to high end of $60–$80M H2 FY2026; Q4 profitability return",summary:"Book-to-bill >3.5x; stock at $82",sector:"Semiconductors"},
-      {impact:2,ticker:"COHR",category:"quiet",headline:"Stock at $362.88, down from $413 all-time high May 13",summary:"Digesting strong Q3 earnings; watching NVDA print",sector:"Photonics & Optical"},
-      {impact:2,ticker:"LITE",category:"quiet",headline:"Stock recovering to $893 after Nasdaq-100 inclusion dip",summary:"Same fundamentals; watching NVDA print",sector:"Photonics & Optical"}
-    ]
-  },
+const DATA = {
+  generated: "2026-05-27",
   sectors: [
     {
-      slug:"semiconductors",
-      name:"Semiconductors",
-      description:"Semiconductors are the foundational layer of the AI era. Every model trained, every inference served, every data center built requires chips — and the specificity of which chips matters enormously.",
-      value_chain:"AI Compute monopoly (NVDA) → HBM memory constraint (MU) → custom silicon arms race (MRVL) → power semiconductor test bottleneck (AEHR)",
-      ticker_symbols:["NVDA","MU","MRVL","AEHR","ALAB","CRDO","AMKR"],
-      top_news:["NVIDIA Q1 FY2027 beat: $81.6B revenue +79.5% YoY; Q2 guided $91B","AEHR bookings raised to high end of $60–80M H2 FY2026"],
-      supply_chain:{
-        tiers:[
-          {tier:"Raw Materials",function:"Purify silicon, grow wafer boules; specialty gases, CMP slurries, photoresists",chokepoint:"Partial",capital_intensity:"Medium",moat_type:"Geographic monopoly",margin_profile:"Medium"},
-          {tier:"Wafer Production",function:"Slice, polish, and certify silicon wafers to sub-nanometer flatness",chokepoint:"Y",capital_intensity:"High",moat_type:"Scale + Process IP",margin_profile:"Medium"},
-          {tier:"EDA & Design IP",function:"Software tools and licensable IP cores designers use to create chip layouts",chokepoint:"Y",capital_intensity:"Low",moat_type:"Switching cost + Ecosystem",margin_profile:"Very High"},
-          {tier:"Lithography Equipment",function:"Project circuit patterns onto wafers using UV/EUV light; ASML is sole EUV supplier",chokepoint:"Y",capital_intensity:"Very High",moat_type:"Process IP + Geographic monopoly",margin_profile:"Very High"},
-          {tier:"Deposition & Etch Equipment",function:"Deposit thin films (CVD/ALD) and etch circuit features",chokepoint:"Partial",capital_intensity:"High",moat_type:"Process IP + Switching cost",margin_profile:"High"},
-          {tier:"Wafer Fabrication",function:"Run wafers through 500–1,000 process steps to produce functional dies",chokepoint:"Y",capital_intensity:"Very High",moat_type:"Process IP + Scale + Certification",margin_profile:"High (cyclical)"},
-          {tier:"Inspection & Metrology",function:"Measure and verify each process step; catch defects before they propagate",chokepoint:"Partial",capital_intensity:"Medium",moat_type:"Switching cost + Certification",margin_profile:"High"},
-          {tier:"Test (Wafer-Level)",function:"Electrically test dies on the wafer; burn-in for reliability screening",chokepoint:"Partial",capital_intensity:"Medium",moat_type:"Certification + Switching cost",margin_profile:"Medium"},
-          {tier:"Packaging (OSAT)",function:"Dice wafers, mount dies into packages; advanced packaging (CoWoS, HBM stacking) increasingly critical",chokepoint:"Partial",capital_intensity:"High",moat_type:"Process IP (advanced) / Scale (legacy)",margin_profile:"Medium"},
-          {tier:"Design (Fabless)",function:"Architect chips; outsource manufacturing to foundries",chokepoint:"Y",capital_intensity:"Low",moat_type:"Ecosystem + Architecture IP",margin_profile:"Very High"},
-          {tier:"System Integration",function:"Assemble chips into boards, modules, or complete systems",chokepoint:"N",capital_intensity:"Low",moat_type:"None",margin_profile:"Low"}
-        ],
-        nodes:[
-          {tier:"Raw Materials",ticker:"4369.T",company:"Shin-Etsu Chemical",mkt_cap:"Large",in_registry:true,notes:"Dominant silicon wafer + photoresist",gap:false},
-          {tier:"Raw Materials",ticker:"5201.T",company:"AGC Inc.",mkt_cap:"Large",in_registry:true,notes:"Specialty glass, photomask substrates",gap:false},
-          {tier:"Raw Materials",ticker:"ENTG",company:"Entegris",mkt_cap:"Mid",in_registry:false,notes:"Specialty chemicals, filters",gap:false},
-          {tier:"Raw Materials",ticker:"ICHR",company:"Ichor Holdings",mkt_cap:"Small",in_registry:false,notes:"Gas delivery systems",gap:false},
-          {tier:"Raw Materials",ticker:null,company:"EUV Photoresist",mkt_cap:null,in_registry:false,notes:"JSR taken private 2024; no US pure-play",gap:true},
-          {tier:"Wafer Production",ticker:"4043.T",company:"Sumco Corporation",mkt_cap:"Large",in_registry:true,notes:"#2 silicon wafer supplier globally",gap:false},
-          {tier:"EDA & Design IP",ticker:"SNPS",company:"Synopsys",mkt_cap:"Large",in_registry:false,notes:"#1 EDA tools",gap:false},
-          {tier:"EDA & Design IP",ticker:"CDNS",company:"Cadence Design",mkt_cap:"Large",in_registry:false,notes:"#2 EDA tools",gap:false},
-          {tier:"EDA & Design IP",ticker:"ARM",company:"Arm Holdings",mkt_cap:"Large",in_registry:false,notes:"Dominant CPU/GPU IP licensor",gap:false},
-          {tier:"Lithography Equipment",ticker:"ASML",company:"ASML Holding",mkt_cap:"Large",in_registry:true,notes:"Sole EUV supplier",gap:false},
-          {tier:"Deposition & Etch Equipment",ticker:"LRCX",company:"Lam Research",mkt_cap:"Large",in_registry:false,notes:"#1 etch and deposition",gap:false},
-          {tier:"Deposition & Etch Equipment",ticker:"AMAT",company:"Applied Materials",mkt_cap:"Large",in_registry:false,notes:"Broadest equipment portfolio",gap:false},
-          {tier:"Deposition & Etch Equipment",ticker:"KLAC",company:"KLA Corporation",mkt_cap:"Large",in_registry:false,notes:"#1 inspection/metrology",gap:false},
-          {tier:"Wafer Fabrication",ticker:"TSM",company:"Taiwan Semiconductor",mkt_cap:"Large",in_registry:true,notes:"#1 foundry; sole leading-edge",gap:false},
-          {tier:"Wafer Fabrication",ticker:"GFS",company:"GlobalFoundries",mkt_cap:"Mid",in_registry:true,notes:"Mature nodes; RF, automotive",gap:false},
-          {tier:"Wafer Fabrication",ticker:"INTC",company:"Intel Corporation",mkt_cap:"Large",in_registry:true,notes:"IDM + foundry",gap:false},
-          {tier:"Test (Wafer-Level)",ticker:"AEHR",company:"Aehr Test Systems",mkt_cap:"Small",in_registry:true,notes:"Near-monopoly wafer-level burn-in SiC",gap:false},
-          {tier:"Packaging (OSAT)",ticker:"AMKR",company:"Amkor Technology",mkt_cap:"Mid",in_registry:true,notes:"#2 OSAT; advanced packaging",gap:false},
-          {tier:"Design (Fabless)",ticker:"NVDA",company:"NVIDIA Corporation",mkt_cap:"Large",in_registry:true,notes:"AI GPU monopoly; CUDA ecosystem",gap:false},
-          {tier:"Design (Fabless)",ticker:"MU",company:"Micron Technology",mkt_cap:"Large",in_registry:true,notes:"HBM3E; only US HBM supplier",gap:false},
-          {tier:"Design (Fabless)",ticker:"MRVL",company:"Marvell Technology",mkt_cap:"Large",in_registry:true,notes:"Custom ASICs + interconnect",gap:false},
-          {tier:"Design (Fabless)",ticker:"ALAB",company:"Astera Labs",mkt_cap:"Mid",in_registry:true,notes:"PCIe/CXL connectivity",gap:false},
-          {tier:"Design (Fabless)",ticker:"CRDO",company:"Credo Technology",mkt_cap:"Small",in_registry:true,notes:"High-speed SerDes copper AEC",gap:false}
-        ],
-        gaps:[
-          {tier_name:"Raw Materials — EUV Photoresist",description:"JSR taken private 2024; Shin-Etsu and Tokyo Ohka the only remaining public proxies. Watch for re-listing or spin-off."},
-          {tier_name:"Final Test & Burn-In",description:"No dominant US-listed pure-play. Advantest (6857.T, Japan) is dominant for AI chip test. Watch Teradyne earnings for demand signal."}
-        ],
-        framework_status:{mapped:true,nodes_registered:false,ground_truth:false,matrix_built:true,framework_written:true}
-      },
-      customer_matrix:{
-        sector:"Semiconductors",
-        built:"2026-05-24",
-        customers:["Google (GOOGL)","Amazon (AMZN)","Microsoft (MSFT)","Meta (META)","Apple (AAPL)","NVDA (intermediate)","Auto OEMs"],
-        rows:[
-          {ticker:"NVDA",company:"NVIDIA Corporation",layer:"Design — Compute",cells:{"Google (GOOGL)":{score:4,display:"★★★★",note:"Named hyperscaler GPU customer"},"Amazon (AMZN)":{score:4,display:"★★★★",note:"AWS AI build-out"},"Microsoft (MSFT)":{score:4,display:"★★★★",note:"Azure AI infrastructure"},"Meta (META)":{score:4,display:"★★★★",note:"LLM training clusters"},"Apple (AAPL)":{score:1,display:"★",note:"Automotive AI — inferred"},"NVDA (intermediate)":{score:0,display:"",note:"N/A"},"Auto OEMs":{score:1,display:"★",note:"DRIVE PX — small %"}}},
-          {ticker:"MU",company:"Micron Technology",layer:"Design — Memory",cells:{"Google (GOOGL)":{score:3,display:"★★★",note:"AI server procurement via NVDA GPU BOM"},"Amazon (AMZN)":{score:3,display:"★★★",note:"Same pull-through"},"Microsoft (MSFT)":{score:3,display:"★★★",note:"Same pull-through"},"Meta (META)":{score:3,display:"★★★",note:"Same pull-through"},"Apple (AAPL)":{score:2,display:"★★",note:"NAND/DRAM in iPhones"},"NVDA (intermediate)":{score:4,display:"★★★★",note:"HBM3E ~30% of GPU BOM"},"Auto OEMs":{score:1,display:"★",note:"Automotive DRAM — inferred"}}},
-          {ticker:"MRVL",company:"Marvell Technology",layer:"Design — Custom ASIC",cells:{"Google (GOOGL)":{score:4,display:"★★★★",note:"Google TPU — named in thesis"},"Amazon (AMZN)":{score:4,display:"★★★★",note:"Amazon Trainium — named in thesis"},"Microsoft (MSFT)":{score:3,display:"★★★",note:"Microsoft Maia — mentioned"},"Meta (META)":{score:2,display:"★★",note:"Hyperscaler — not named specifically"},"Apple (AAPL)":{score:0,display:"",note:""},"NVDA (intermediate)":{score:3,display:"★★★",note:"MRVL SerDes inside NVDA clusters"},"Auto OEMs":{score:0,display:"",note:""}}},
-          {ticker:"ALAB",company:"Astera Labs",layer:"Design — Connectivity",cells:{"Google (GOOGL)":{score:4,display:"★★★★",note:"Co-design hyperscaler relationship"},"Amazon (AMZN)":{score:4,display:"★★★★",note:"Scorpio adoption"},"Microsoft (MSFT)":{score:3,display:"★★★",note:"Hyperscaler customer"},"Meta (META)":{score:3,display:"★★★",note:"Hyperscaler customer"},"Apple (AAPL)":{score:0,display:"",note:""},"NVDA (intermediate)":{score:2,display:"★★",note:"ALAB retimers in NVDA racks"},"Auto OEMs":{score:0,display:"",note:""}}},
-          {ticker:"CRDO",company:"Credo Technology",layer:"Design — Connectivity",cells:{"Google (GOOGL)":{score:4,display:"★★★★",note:"Copper interconnect at every hyperscaler"},"Amazon (AMZN)":{score:4,display:"★★★★",note:"AEC in AWS clusters"},"Microsoft (MSFT)":{score:3,display:"★★★",note:"Hyperscaler AEC customer"},"Meta (META)":{score:3,display:"★★★",note:"Hyperscaler AEC customer"},"Apple (AAPL)":{score:0,display:"",note:""},"NVDA (intermediate)":{score:2,display:"★★",note:"CRDO AEC in NVDA cluster fabric"},"Auto OEMs":{score:0,display:"",note:""}}},
-          {ticker:"AMKR",company:"Amkor Technology",layer:"Packaging — OSAT",cells:{"Google (GOOGL)":{score:2,display:"★★",note:"Indirect via AI chip packaging"},"Amazon (AMZN)":{score:2,display:"★★",note:"Indirect"},"Microsoft (MSFT)":{score:2,display:"★★",note:"Indirect"},"Meta (META)":{score:2,display:"★★",note:"Indirect"},"Apple (AAPL)":{score:4,display:"★★★★",note:"~20%+ of revenue — largest customer"},"NVDA (intermediate)":{score:3,display:"★★★",note:"Advanced packaging overflow from TSMC CoWoS"},"Auto OEMs":{score:2,display:"★★",note:"Automotive chip packaging"}}},
-          {ticker:"AEHR",company:"Aehr Test Systems",layer:"Test — Wafer-Level",cells:{"Google (GOOGL)":{score:0,display:"",note:""},"Amazon (AMZN)":{score:0,display:"",note:""},"Microsoft (MSFT)":{score:0,display:"",note:""},"Meta (META)":{score:0,display:"",note:""},"Apple (AAPL)":{score:0,display:"",note:""},"NVDA (intermediate)":{score:0,display:"",note:""},"Auto OEMs":{score:3,display:"★★★",note:"SiC burn-in for EV powertrain chips"}}}
-        ]
-      }
+      slug: "semiconductors",
+      name: "Semiconductors",
+      dimension: "D1",
+      description: "packaged chip ready for system assembly",
+      tiers: [
+        { tier: "Raw Materials & Specialty Chemicals", fn: "Produce the ultra-high-purity silicon, specialty gases, photoresists, CMP slurries, and process chemicals that every subsequent fab step consumes", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Process IP + Geographic monopoly", margin_profile: "Medium–High", companies: [
+          { ticker: "4369.T", name: "Shin-Etsu Chemical", mkt_cap: "Large", notes: "#1 silicon wafer (300mm); EUV photoresist (dominant with TOK); specialty PVC" },
+          { ticker: "5201.T", name: "AGC Inc.", mkt_cap: "Large", notes: "Photomask substrate (EUVL quartz blank); specialty glass; fluorine chemicals" }
+        ]},
+        { tier: "Silicon Wafer Production", fn: "Slice, grind, etch, and polish silicon boules to produce the atomically flat, contamination-free substrates on which all CMOS devices are built", chokepoint: "Y", capital_intensity: "High", moat_type: "Scale + Process IP", margin_profile: "Medium", companies: [
+          { ticker: "4043.T", name: "Sumco Corporation", mkt_cap: "Large", notes: "#2 silicon wafer globally; 300mm prime and epi" }
+        ]},
+        { tier: "Compound Semiconductor & SiC Substrate", fn: "Grow gallium arsenide, indium phosphide, gallium nitride, and silicon carbide crystals and epitaxial layers for photonic, RF, and power devices that silicon cannot serve", chokepoint: "Y", capital_intensity: "High", moat_type: "Process IP + Geographic concentration", margin_profile: "High", companies: [] },
+        { tier: "EDA & Design IP", fn: "Provide the electronic design automation software and licensable chip IP that allows engineers to design billion-transistor chips without understanding every process detail", chokepoint: "Y", capital_intensity: "Low", moat_type: "Switching cost + Ecosystem", margin_profile: "Very High", companies: [] },
+        { tier: "Chip Design (Fabless & IDM)", fn: "Design the logic, memory, and analog circuits that define a chip’s function, then optimize for performance, power, and area (PPA) at a target process node — the highest-value-add step in the semiconductor industry", chokepoint: "Y", capital_intensity: "Low–Medium", moat_type: "Ecosystem", margin_profile: "Very High", companies: [
+          { ticker: "NVDA", name: "NVIDIA Corporation", mkt_cap: "Large", notes: "AI GPU (H200, B200, Blackwell Ultra); CUDA ecosystem; dominant AI training silicon" },
+          { ticker: "MRVL", name: "Marvell Technology", mkt_cap: "Large", notes: "Custom ASIC (Amazon Trainium2, hyperscaler) + networking (PAM4 SerDes, PHY)" },
+          { ticker: "MU", name: "Micron Technology", mkt_cap: "Large", notes: "DRAM (DDR5) + HBM3e + NAND; growing HBM share for AI" },
+          { ticker: "ALAB", name: "Astera Labs", mkt_cap: "Mid", notes: "PCIe / CXL retimer and switch IC for AI infrastructure" },
+          { ticker: "CRDO", name: "Credo Technology", mkt_cap: "Small", notes: "Ultra-short-reach (USR) SerDes for AI cluster networking at 112G/224G" }
+        ]},
+        { tier: "Lithography Equipment", fn: "Project photomask circuit patterns onto photoresist-coated wafers at nanometer precision using UV or EUV light — the single most critical and concentrated manufacturing equipment tier", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Process IP + Geographic monopoly", margin_profile: "Very High", companies: [
+          { ticker: "ASML", name: "ASML Holding", mkt_cap: "Large", notes: "Sole supplier of EUV scanners globally; monopoly on High-NA EUV" }
+        ]},
+        { tier: "Deposition & Etch Equipment", fn: "Deposit thin-film layers atom-by-atom and etch features with sub-angstrom control to build transistors, interconnects, and dielectrics across 100+ process steps", chokepoint: "Partial", capital_intensity: "High", moat_type: "Process IP + Switching cost", margin_profile: "High", companies: [] },
+        { tier: "Inspection & Metrology", fn: "Measure every critical dimension and detect every printable defect in real time — the feedback loop that enables yield learning and process control", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Switching cost + Certification", margin_profile: "High", companies: [] },
+        { tier: "Wafer Fabrication (Foundry / IDM)", fn: "Execute 500–1,500 process steps to transform a blank wafer into a wafer full of functional die, integrating all upstream tiers into a manufacturable, yielding process", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Process IP + Scale + Certification", margin_profile: "High (cyclical)", companies: [
+          { ticker: "TSM", name: "TSMC", mkt_cap: "Large", notes: "#1 foundry; sole manufacturer of ≤3nm for AI chips; CoWoS monopoly" },
+          { ticker: "GFS", name: "GlobalFoundries", mkt_cap: "Mid", notes: "Mature nodes; RF, automotive, government-sensitive US fab" }
+        ]},
+        { tier: "Packaging (OSAT & Advanced)", fn: "Dice wafers into individual die, integrate multiple die into multi-chip packages, and assemble the system-in-package that sits on the PCB — the tier undergoing the fastest structural change in the industry", chokepoint: "Partial", capital_intensity: "High", moat_type: "Process IP (advanced) / Scale (legacy)", margin_profile: "Medium–High", companies: [
+          { ticker: "AMKR", name: "Amkor Technology", mkt_cap: "Mid", notes: "#2 OSAT; advanced packaging (TSMC CoWoS partner); Samsung co-investor" }
+        ]},
+        { tier: "Test & Burn-In", fn: "Electrically verify every die and packaged device; stress-screen for latent defects; characterize performance bins for yield optimization and product segmentation", chokepoint: "Partial", capital_intensity: "Low–Medium", moat_type: "Certification", margin_profile: "Low–Medium", companies: [
+          { ticker: "AEHR", name: "Aehr Test Systems", mkt_cap: "Small", notes: "Near-monopoly on SiC wafer-level burn-in (WaferPak contactor)" }
+        ]}
+      ]
     },
-    {slug:"ai-infrastructure",name:"AI Infrastructure",description:"AI infrastructure is the physical layer that makes AI possible at scale — power, cooling, networking, and servers. Supply of grid-connected, GPU-ready data center capacity is genuinely constrained.",value_chain:"Power + land scarcity → vertical integration eliminating margin leakage → GPU deployment at scale",ticker_symbols:["IREN","ANET","VRT","SMCI"],top_news:["IREN stock at $47.94; digesting $3B convert + Awaken/Mirantis acquisitions"],supply_chain:null,customer_matrix:null},
-    {slug:"photonics-optical",name:"Photonics & Optical",description:"Optical interconnects are mandatory AI infrastructure — regardless of which model or hyperscaler wins, the optical layer replaces itself every 2–3 years (400G → 800G → 1.6T → 3.2T).",value_chain:"Laser sources → transceiver assembly → test & measurement → network deployment",ticker_symbols:["COHR","LITE","FN","CIEN","VIAV","AAOI","AXTI","POET","LWLG","LASR","SIVE","FOCI"],top_news:["POET signs $500M Lumilens AI deal; +114% past week","AXTI annual meeting adjourned for lack of quorum","LASR: Raymond James raises PT to $100"],supply_chain:null,customer_matrix:null},
-    {slug:"cybersecurity",name:"Cybersecurity",description:"Cybersecurity spending grows during downturns. The average enterprise ransomware attack costs $4.5M+; RBRK's data resilience platform is the last line of defense.",value_chain:"Prevention → detection → response → recovery",ticker_symbols:["RBRK","SAIL"],top_news:["RBRK: PICTET added 1.7M shares (+104%)"],supply_chain:null,customer_matrix:null},
-    {slug:"fintech-e-commerce",name:"Fintech & E-Commerce",description:"Digital-native financial platforms capture market share from legacy banks at 30-40% lower unit cost. MELI is the dominant e-commerce + fintech compounder in Latin America.",value_chain:"Customer acquisition → cross-sell → ecosystem lock-in → compounding margins",ticker_symbols:["MELI","HOOD","SOFI"],top_news:["MELI: JPMorgan cuts PT $2,100→$1,900; Goldman cuts $2,440→$2,100"],supply_chain:null,customer_matrix:null},
-    {slug:"clean-energy",name:"Clean Energy",description:"AI data centers require firm, 24/7 dispatchable clean power — intermittent renewables cannot meet this spec alone. Nuclear and next-gen microreactors command structural pricing premiums.",value_chain:"Generation → transmission → distribution → data center power delivery",ticker_symbols:["OKLO","TE"],top_news:["OKLO: New equity distribution agreement with 9 major banks"],supply_chain:null,customer_matrix:null},
-    {slug:"robotics-edge-ai",name:"Robotics & Edge AI",description:"AI inference is migrating from cloud to edge. Autonomous vehicles, cameras, robots, and drones need millisecond inference on a few watts — a structural semiconductor market distinct from datacenter GPUs.",value_chain:"Edge AI silicon → sensor fusion → platform → application",ticker_symbols:["AMBA","OUST"],top_news:[],supply_chain:null,customer_matrix:null},
-    {slug:"metals-mining",name:"Metals & Mining",description:"Mining new copper takes 15–20 years from discovery to first production. AI data centers and EVs create sustained demand for copper and rare earths where supply response is measured in decades.",value_chain:"Ore extraction → processing → refining → end market",ticker_symbols:[],top_news:[],supply_chain:null,customer_matrix:null},
-    {slug:"space-comms",name:"Space & Comms",description:"SpaceX reduced orbital launch costs by 10x, unlocking constellations impossible in the prior era. ASTS and RKLB represent the connectivity and infrastructure layers of the new space economy.",value_chain:"Launch → constellation → service layer → carrier contracts",ticker_symbols:[],top_news:["ASTS BlueBird-7 launch failure; Q1 revenue $14.7M vs $37.5M expected"],supply_chain:null,customer_matrix:null}
-  ],
-  tickers: {
-    "NVDA":{symbol:"NVDA",name:"NVIDIA Corporation",sector:"Semiconductors",sector_slug:"semiconductors",layer:"Design (Fabless)",chokepoint:true,tracked:true,in_portfolio:true,in_rockets:false,in_compounders:false,one_line_thesis:"The dominant AI compute platform company; GPU monopoly in model training and inference with a rapidly expanding software moat (CUDA ecosystem) that makes switching nearly impossible.",drift_status:"On track — Blackwell demand intact; IREN $2.1B investment signals hyperscaler-level AI capex commitment",last_validated:"2026-05-14",scoring:{composite:9.5,label:"Unrivaled"},recommendation:{signal:"HOLD",confidence:"High",rationale:"NVDA remains on track with Blackwell demand intact and a Q1 FY2027 beat at $81.6B (+79.5% YoY). Conviction trend is neutral — AMD read-through logged but CUDA moat assessed as intact. No drift signal present; hold through the Vera Rubin ramp cycle."}},
-    "AEHR":{symbol:"AEHR",name:"Aehr Test Systems",sector:"Semiconductors",sector_slug:"semiconductors",layer:"Test (Wafer-Level)",chokepoint:false,tracked:true,in_portfolio:true,in_rockets:false,in_compounders:false,one_line_thesis:"Niche semiconductor test equipment play riding the silicon carbide (SiC) wave in EV powertrains; dominant in wafer-level burn-in testing with no direct competitor at scale.",drift_status:null,last_validated:null,scoring:null,recommendation:{signal:"HOLD",confidence:"Low",rationale:"Drift status not yet set and conviction log is empty — thesis tracking incomplete. Bookings raised to high end of $60–80M H2 FY2026 and book-to-bill >3.5x are positive signals. Run /score-ticker AEHR and update Conviction Log to raise confidence level."}},
-    "IREN":{symbol:"IREN",name:"IREN Limited",sector:"AI Infrastructure",sector_slug:"ai-infrastructure",layer:null,chokepoint:null,tracked:true,in_portfolio:true,in_rockets:false,in_compounders:false,one_line_thesis:"Co-founder-led AI data center operator with NVIDIA and Microsoft as anchor tenants and a permitted 3GW power pipeline no independent competitor can replicate.",drift_status:"On track — NVIDIA $3.4B cloud deal + $2.1B warrant + Microsoft $9.7B contract de-risk buildout; execution on GPU ramp is the remaining variable",last_validated:"2026-05-14",scoring:null,recommendation:{signal:"HOLD",confidence:"Medium",rationale:"On track with anchor tenant contracts de-risking the build-out thesis. Conviction is strengthening (↑ on Q3 AI Cloud +94% QoQ). Digest shows no fresh catalyst today; stock digesting large capital structure moves. Hold through GPU ramp execution."}},
-    "OKLO":{symbol:"OKLO",name:"Oklo Inc.",sector:"Clean Energy",sector_slug:"clean-energy",layer:null,chokepoint:null,tracked:true,in_portfolio:true,in_rockets:false,in_compounders:false,one_line_thesis:"Next-generation nuclear microreactor company positioned to power AI data centers and remote industrial sites; founder-led with a long regulatory runway.",drift_status:null,last_validated:null,scoring:null,recommendation:{signal:"HOLD",confidence:"Low",rationale:"No drift status or conviction log populated. New ATM equity distribution agreement adds dilution risk; stock –20% past week. Regulatory pathway (NRC COLA) remains the primary gating event. Thesis intact structurally; track record too short to raise conviction."}},
-    "RBRK":{symbol:"RBRK",name:"Rubrik Inc.",sector:"Cybersecurity",sector_slug:"cybersecurity",layer:null,chokepoint:null,tracked:true,in_portfolio:true,in_rockets:false,in_compounders:false,one_line_thesis:"Cybersecurity data resilience platform with sticky enterprise SaaS revenue; beneficiary of ransomware tailwinds and cloud migration; founder-led with strong ARR growth trajectory.",drift_status:null,last_validated:null,scoring:null,recommendation:{signal:"HOLD",confidence:"Low",rationale:"No drift status or conviction log set. PICTET adding 1.7M shares (+104%) is a positive institutional signal. No fresh operational catalyst. Populate thesis tracking to improve signal quality."}},
-    "MELI":{symbol:"MELI",name:"MercadoLibre Inc.",sector:"Fintech & E-Commerce",sector_slug:"fintech-e-commerce",layer:null,chokepoint:null,tracked:true,in_portfolio:true,in_rockets:false,in_compounders:false,one_line_thesis:"The dominant e-commerce and fintech compounder in Latin America; two massive TAMs (retail + financial services) with a defensible network effect moat and a founder still at the helm.",drift_status:null,last_validated:null,scoring:null,recommendation:{signal:"HOLD",confidence:"Low",rationale:"No drift status or conviction log set. JPMorgan and Goldman PT cuts on margin compression are a caution flag — not thesis-breaking but warrant monitoring next quarter. Stock stabilizing at $1,598. Compounder thesis intact; no action needed."}},
-    "MU":{symbol:"MU",name:"Micron Technology",sector:"Semiconductors",sector_slug:"semiconductors",layer:"Design (Fabless — Memory)",chokepoint:false,tracked:true,in_portfolio:false,in_rockets:false,in_compounders:false,one_line_thesis:"The only US-based manufacturer of HBM — stacked directly onto every NVIDIA Blackwell GPU — with a structural demand tailwind from AI unlike any prior memory cycle.",drift_status:null,last_validated:null,scoring:null},
-    "MRVL":{symbol:"MRVL",name:"Marvell Technology",sector:"Semiconductors",sector_slug:"semiconductors",layer:"Design (Fabless — Custom ASIC)",chokepoint:false,tracked:true,in_portfolio:false,in_rockets:false,in_compounders:false,one_line_thesis:"Custom AI ASIC designer for hyperscalers plus high-speed interconnect silicon — positioned to benefit whether hyperscalers buy NVDA GPUs or build their own.",drift_status:null,last_validated:null,scoring:null},
-    "ALAB":{symbol:"ALAB",name:"Astera Labs",sector:"Semiconductors",sector_slug:"semiconductors",layer:"Design (Fabless — Connectivity)",chokepoint:false,tracked:true,in_portfolio:false,in_rockets:false,in_compounders:false,one_line_thesis:"Pure-play AI connectivity semiconductor company whose PCIe/CXL retimers and Scorpio scale-up switches are the I/O fabric keeping GPU clusters from becoming bandwidth-bottlenecked.",drift_status:null,last_validated:null,scoring:null},
-    "CRDO":{symbol:"CRDO",name:"Credo Technology",sector:"Semiconductors",sector_slug:"semiconductors",layer:"Design (Fabless — Connectivity)",chokepoint:false,tracked:true,in_portfolio:false,in_rockets:false,in_compounders:false,one_line_thesis:"Fabless SerDes chip and Active Electrical Cable company whose copper interconnect silicon is the bandwidth backbone inside AI clusters at every major hyperscaler.",drift_status:null,last_validated:null,scoring:null},
-    "AMKR":{symbol:"AMKR",name:"Amkor Technology",sector:"Semiconductors",sector_slug:"semiconductors",layer:"Packaging (OSAT)",chokepoint:false,tracked:true,in_portfolio:false,in_rockets:false,in_compounders:false,one_line_thesis:"The world's #2 OSAT whose advanced packaging sits at the critical intersection of AI chip complexity and the physical limits of monolithic die integration.",drift_status:null,last_validated:null,scoring:null},
-    "COHR":{symbol:"COHR",name:"Coherent Corp",sector:"Photonics & Optical",sector_slug:"photonics-optical",layer:null,chokepoint:null,tracked:true,in_portfolio:false,in_rockets:false,in_compounders:true,one_line_thesis:"Volume transceiver leader; NVIDIA $2B anchor + Rubin platform; best risk/reward in sector.",drift_status:null,last_validated:null,scoring:null},
-    "LITE":{symbol:"LITE",name:"Lumentum Holdings",sector:"Photonics & Optical",sector_slug:"photonics-optical",layer:null,chokepoint:null,tracked:true,in_portfolio:false,in_rockets:false,in_compounders:true,one_line_thesis:"Sole 200G EML supplier at volume; $400M+ OCS backlog sold out through 2027; $2B NVIDIA deal.",drift_status:null,last_validated:null,scoring:null},
-    "SIVE":{symbol:"SIVE",name:"Sivers Semiconductors",sector:"Photonics & Optical",sector_slug:"photonics-optical",layer:null,chokepoint:null,tracked:true,in_portfolio:false,in_rockets:true,in_compounders:false,one_line_thesis:"InP photonics chip design + mmWave; pre-consensus, illiquid, MSCI inclusion catalyst.",drift_status:null,last_validated:null,scoring:{composite:5.5,label:"Average"}},
-    "AAOI":{symbol:"AAOI",name:"Applied Optoelectronics",sector:"Photonics & Optical",sector_slug:"photonics-optical",layer:null,chokepoint:null,tracked:true,in_portfolio:false,in_rockets:true,in_compounders:false,one_line_thesis:"Sector YTD leader (+328%); first 1.6T production orders; high beta pure play.",drift_status:null,last_validated:null,scoring:null},
-    "SOFI":{symbol:"SOFI",name:"SoFi Technologies",sector:"Fintech & E-Commerce",sector_slug:"fintech-e-commerce",layer:null,chokepoint:null,tracked:true,in_portfolio:false,in_rockets:false,in_compounders:false,one_line_thesis:"Digital bank platform compounding members and products; cross-sell flywheel drives unit economics to near-software margins.",drift_status:null,last_validated:null,scoring:{composite:9.0,label:"Unrivaled"}},
-    "ANET":{symbol:"ANET",name:"Arista Networks",sector:"AI Infrastructure",sector_slug:"ai-infrastructure",layer:null,chokepoint:null,tracked:true,in_portfolio:false,in_rockets:false,in_compounders:false,one_line_thesis:"Ethernet switching platform dominant in hyperscaler AI clusters; NVDA GPU clusters migrating to Ethernet over InfiniBand.",drift_status:null,last_validated:null,scoring:null},
-    "VRT":{symbol:"VRT",name:"Vertiv Holdings",sector:"AI Infrastructure",sector_slug:"ai-infrastructure",layer:null,chokepoint:null,tracked:true,in_portfolio:false,in_rockets:false,in_compounders:false,one_line_thesis:"Liquid cooling and power infrastructure for GPU clusters; every NVL72 rack needs Vertiv-style thermal management.",drift_status:null,last_validated:null,scoring:null},
-    "POET":{symbol:"POET",name:"POET Technologies",sector:"Photonics & Optical",sector_slug:"photonics-optical",layer:null,chokepoint:null,tracked:true,in_portfolio:false,in_rockets:false,in_compounders:false,one_line_thesis:"CPO optical engine pure play; $500M Lumilens AI deal revives thesis after Celestial AI cancellation.",drift_status:null,last_validated:null,scoring:null}
-  },
-  ecosystem_graph:{
-    nodes:[
-      {id:"NVDA",label:"NVIDIA",sector:"Semiconductors",in_portfolio:true,in_watchlist:false},
-      {id:"MU",label:"Micron",sector:"Semiconductors",in_portfolio:false,in_watchlist:false},
-      {id:"MRVL",label:"Marvell",sector:"Semiconductors",in_portfolio:false,in_watchlist:false},
-      {id:"ALAB",label:"Astera Labs",sector:"Semiconductors",in_portfolio:false,in_watchlist:false},
-      {id:"CRDO",label:"Credo",sector:"Semiconductors",in_portfolio:false,in_watchlist:false},
-      {id:"AMKR",label:"Amkor",sector:"Semiconductors",in_portfolio:false,in_watchlist:false},
-      {id:"AEHR",label:"Aehr Test",sector:"Semiconductors",in_portfolio:true,in_watchlist:false},
-      {id:"COHR",label:"Coherent",sector:"Photonics & Optical",in_portfolio:false,in_watchlist:true},
-      {id:"LITE",label:"Lumentum",sector:"Photonics & Optical",in_portfolio:false,in_watchlist:true},
-      {id:"IREN",label:"IREN",sector:"AI Infrastructure",in_portfolio:true,in_watchlist:false},
-      {id:"TSM",label:"TSMC",sector:"Semiconductors",in_portfolio:false,in_watchlist:false}
-    ],
-    edges:[
-      {source:"NVDA",target:"IREN",type:"cross_ticker_signal",direction:"emits",relationship_type:"customer",implication:"NVIDIA $3.4B cloud deal + $2.1B warrant investment"},
-      {source:"NVDA",target:"COHR",type:"cross_ticker_signal",direction:"emits",relationship_type:"investor",implication:"$2B equity investment; Rubin platform anchor commitment"},
-      {source:"NVDA",target:"LITE",type:"cross_ticker_signal",direction:"emits",relationship_type:"investor",implication:"$2B equity investment; strategic transceiver supplier"},
-      {source:"NVDA",target:"TSM",type:"cross_ticker_signal",direction:"emits",relationship_type:"customer",implication:"NVDA sole foundry dependency; every GPU is a TSM revenue event"},
-      {source:"NVDA",target:"MU",type:"cross_ticker_signal",direction:"emits",relationship_type:"customer",implication:"HBM ~30% of GPU BOM; demand beat is direct MU order signal"},
-      {source:"NVDA",target:"MRVL",type:"cross_ticker_signal",direction:"emits",relationship_type:"customer",implication:"MRVL SerDes/DSP inside NVDA cluster switching fabric"},
-      {source:"NVDA",target:"ALAB",type:"cross_ticker_signal",direction:"emits",relationship_type:"customer",implication:"NVDA Blackwell drives PCIe/CXL retimer demand"},
-      {source:"NVDA",target:"CRDO",type:"cross_ticker_signal",direction:"emits",relationship_type:"customer",implication:"NVDA rack density drives intra-rack copper AEC demand"},
-      {source:"NVDA",target:"AMKR",type:"cross_ticker_signal",direction:"emits",relationship_type:"customer",implication:"AI advanced packaging overflow from TSMC CoWoS"},
-      {source:"MU",target:"NVDA",type:"cross_ticker_signal",direction:"receives",relationship_type:"supplier",implication:"HBM3E stacked on every Blackwell GPU"},
-      {source:"MRVL",target:"NVDA",type:"cross_ticker_signal",direction:"receives",relationship_type:"supplier",implication:"SerDes and DSP chips in NVDA cluster switching"},
-      {source:"ALAB",target:"NVDA",type:"cross_ticker_signal",direction:"receives",relationship_type:"supplier",implication:"PCIe/CXL retimers in NVDA GPU racks"},
-      {source:"CRDO",target:"NVDA",type:"cross_ticker_signal",direction:"receives",relationship_type:"supplier",implication:"Copper AEC in NVDA cluster fabric"},
-      {source:"AMKR",target:"NVDA",type:"cross_ticker_signal",direction:"receives",relationship_type:"supplier",implication:"Packaging and testing services for NVDA supply chain"},
-      {source:"COHR",target:"NVDA",type:"ecosystem_map",direction:"emits",relationship_type:"supplier",implication:"800G/1.6T optical transceivers for GPU cluster networking"},
-      {source:"LITE",target:"NVDA",type:"ecosystem_map",direction:"emits",relationship_type:"supplier",implication:"Laser chips inside every transceiver in NVDA clusters"},
-      {source:"TSM",target:"NVDA",type:"ecosystem_map",direction:"emits",relationship_type:"supplier",implication:"Fabricates every NVDA GPU at leading-edge node"}
-    ],
-    ecosystems:{
-      "NVDA":{
-        tiers:{
-          "1":[{ticker:"TSM",company:"TSMC",relationship:"Foundry",notes:"Fabricates every NVDA GPU"},{ticker:"AMAT",company:"Applied Materials",relationship:"Equipment",notes:""},{ticker:"ASML",company:"ASML",relationship:"Equipment",notes:"EUV monopoly"},{ticker:"MU",company:"Micron",relationship:"Memory",notes:"HBM3E ~30% of GPU BOM"},{ticker:"AVGO",company:"Broadcom",relationship:"Custom ASIC",notes:""},{ticker:"LRCX",company:"Lam Research",relationship:"Equipment",notes:""},{ticker:"KLAC",company:"KLA",relationship:"Equipment",notes:""}],
-          "2":[{ticker:"SMCI",company:"Super Micro",relationship:"Server ODM",notes:""},{ticker:"VRT",company:"Vertiv",relationship:"Cooling/Power",notes:""},{ticker:"CDNS",company:"Cadence",relationship:"EDA",notes:""},{ticker:"SNPS",company:"Synopsys",relationship:"EDA",notes:""}],
-          "3":[{ticker:"MRVL",company:"Marvell",relationship:"Interconnect",notes:""},{ticker:"CIEN",company:"Ciena",relationship:"Optical Networking",notes:""},{ticker:"COHR",company:"Coherent",relationship:"Transceivers",notes:""},{ticker:"LITE",company:"Lumentum",relationship:"Laser components",notes:""},{ticker:"ANET",company:"Arista",relationship:"Ethernet switching",notes:""}],
-          "4":[{ticker:"OKLO",company:"Oklo",relationship:"Power",notes:"Portfolio"},{ticker:"IREN",company:"IREN",relationship:"AI Infra",notes:"Portfolio"}],
-          "5":[{ticker:"MSFT",company:"Microsoft",relationship:"Customer",notes:"Largest"},{ticker:"GOOGL",company:"Alphabet",relationship:"Customer",notes:""},{ticker:"AMZN",company:"Amazon",relationship:"Customer",notes:""},{ticker:"META",company:"Meta",relationship:"Customer",notes:"400K H100s"}]
-        },
-        tier_labels:{"1":"Direct Supply Chain","2":"Infrastructure & Deployment","3":"Networking & Interconnect","4":"Power & Energy","5":"Software & Platforms"}
-      }
+    {
+      slug: "electronic-components",
+      name: "Electronic Components",
+      dimension: "D1",
+      description: "populated PCB ready for system assembly",
+      tiers: [
+        { tier: "Dielectric & Conductor Materials", fn: "Synthesize and refine the functional materials that passive components are built from", chokepoint: "Y", capital_intensity: "Medium", moat_type: "Process IP + Geographic monopoly", margin_profile: "Medium", companies: [] },
+        { tier: "Substrate & Laminate Materials", fn: "Produce the insulating base layers and build-up films that PCBs and IC substrates are constructed from", chokepoint: "Y", capital_intensity: "Medium", moat_type: "Process IP + Qualification", margin_profile: "Medium–High", companies: [] },
+        { tier: "MLCC Manufacturing", fn: "Stack, fire, and terminate ceramic multilayer chip capacitors — the most ubiquitous passive component on any PCB", chokepoint: "Partial", capital_intensity: "High", moat_type: "Scale + Process IP", margin_profile: "Medium–High", companies: [] },
+        { tier: "Film & Electrolytic Capacitor Mfg", fn: "Produce high-voltage and high-capacitance capacitors for power electronics, filtering, and energy storage", chokepoint: "N", capital_intensity: "Medium", moat_type: "Scale + Process IP", margin_profile: "Medium", companies: [] },
+        { tier: "Inductor & Transformer Mfg", fn: "Wind, press, or print inductive components for power conversion, filtering, and signal isolation", chokepoint: "N", capital_intensity: "Medium", moat_type: "Scale + Certification", margin_profile: "Medium", companies: [] },
+        { tier: "PCB Fabrication", fn: "Etch, drill, plate, and laminate copper circuit layers onto insulating substrates to create printed circuit boards", chokepoint: "N", capital_intensity: "Medium", moat_type: "Scale + Certification", margin_profile: "Low–Medium", companies: [] },
+        { tier: "IC Substrate Manufacturing", fn: "Build the fine-pitch interposer layers that bridge IC die to PCB — the most technically demanding segment of the package supply chain", chokepoint: "Y", capital_intensity: "High", moat_type: "Process IP + Qualification", margin_profile: "High", companies: [] },
+        { tier: "Connector & Socket Manufacturing", fn: "Form, plate, and assemble the mechanical and electrical interfaces that link boards, modules, cables, and racks", chokepoint: "N", capital_intensity: "Medium", moat_type: "Switching cost + Certification", margin_profile: "Medium–High", companies: [] },
+        { tier: "PCB Assembly (EMS / PCBA)", fn: "Place and solder all components onto populated PCBs at volume; the final integration step before system-level assembly", chokepoint: "N", capital_intensity: "Low–Medium", moat_type: "Scale + Customer lock-in", margin_profile: "Low–Medium", companies: [] }
+      ]
+    },
+    {
+      slug: "metals-mining",
+      name: "Materials & Mining",
+      dimension: "D1",
+      description: "semiconductor-grade and battery-grade material outputs",
+      tiers: [
+        { tier: "Geological Exploration & Resource Definition", fn: "Delineate ore bodies and estimate recoverable metal tonnage to justify mine capital commitment", chokepoint: "N", capital_intensity: "Low–Medium", moat_type: "Geographic monopoly (orebody)", margin_profile: "Very High (discovery) / Low (miss)", companies: [] },
+        { tier: "Bulk Mining & Ore Extraction", fn: "Break, load, and haul rock from the ore body to the processing plant", chokepoint: "N", capital_intensity: "Very High", moat_type: "Geographic monopoly + Scale", margin_profile: "Cyclical", companies: [] },
+        { tier: "Mineral Processing & Concentration", fn: "Liberate and concentrate target minerals from gangue rock to produce a saleable or smeltable concentrate", chokepoint: "Partial", capital_intensity: "High", moat_type: "Scale + Location", margin_profile: "Cyclical", companies: [] },
+        { tier: "Primary Smelting & Pyrometallurgy", fn: "Reduce metal from concentrate using heat and flux to produce crude metal or matte for further refining", chokepoint: "Partial", capital_intensity: "Very High", moat_type: "Scale + Geographic concentration", margin_profile: "Cyclical", companies: [] },
+        { tier: "Electrolytic Refining & Hydrometallurgy", fn: "Remove impurities from crude metal to produce refined metal at LME-delivery grade (99.99%+)", chokepoint: "N", capital_intensity: "High", moat_type: "Scale + Process IP", margin_profile: "Cyclical", companies: [] },
+        { tier: "Rare Earth Separation & Critical Mineral Refining", fn: "Separate individual rare earth elements from mixed concentrate and refine critical byproduct metals to usable purity", chokepoint: "Y", capital_intensity: "High", moat_type: "Geographic monopoly + Process IP", margin_profile: "High", companies: [] },
+        { tier: "Silicon & SiC Precursor Production", fn: "Upgrade metallurgical-grade silicon to polysilicon and SiC powder grades required for semiconductor and power-device manufacturing", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Process IP + Scale", margin_profile: "High", companies: [] },
+        { tier: "Battery Material Precursor Production", fn: "Process lithium, nickel, cobalt, and manganese into battery-ready chemical forms suitable for cathode and electrolyte manufacturing", chokepoint: "Partial", capital_intensity: "High", moat_type: "Process IP + Certification", margin_profile: "Medium–High", companies: [] }
+      ]
+    },
+    {
+      slug: "photonics-optical",
+      name: "Photonics & Optical",
+      dimension: "D2",
+      description: "optical transceiver enabling AI cluster interconnect",
+      tiers: [
+        { tier: "III-V Substrate & Epitaxial Wafer Growth", fn: "Grow the compound semiconductor wafers that laser diodes, VCSELs, photodetectors, and GaN power devices are fabricated on", chokepoint: "Y", capital_intensity: "High", moat_type: "Process IP + Geographic concentration", margin_profile: "High", companies: [
+          { ticker: "AXTI", name: "AXT Inc.", mkt_cap: "Small", notes: "InP, GaAs, Ge substrates; Mountain Pass-adjacent for Ga/In feedstock" },
+          { ticker: "SIVE", name: "Sivers Semiconductors", mkt_cap: "Small", notes: "Stockholm-listed; GaAs/GaN device fab; 5G and photonics" }
+        ]},
+        { tier: "Photonic Device Fabrication", fn: "Pattern, implant, metallize, and cleave epitaxial wafers to produce individual photonic chips — laser diodes, EMLs, VCSELs, photodetectors — at wafer scale", chokepoint: "Y", capital_intensity: "High", moat_type: "Process IP + Scale", margin_profile: "High", companies: [
+          { ticker: "COHR", name: "Coherent Corp", mkt_cap: "Large", notes: "Laser diodes, VCSELs, EMLs, InP photonic ICs; largest US photonic device fab" },
+          { ticker: "LITE", name: "Lumentum Holdings", mkt_cap: "Large", notes: "VCSEL (LiDAR + 3D sensing), DFB lasers, ROADMs; strong cloud customer base" },
+          { ticker: "AAOI", name: "Applied Optoelectronics", mkt_cap: "Small", notes: "DFB laser, VCSEL; data center and cable TV transceiver market" },
+          { ticker: "LASR", name: "nLIGHT Inc.", mkt_cap: "Small", notes: "High-power fiber-coupled semiconductor and fiber lasers; defense + industrial" }
+        ]},
+        { tier: "Silicon Photonics Platform", fn: "Integrate optical functions — waveguides, ring modulators, Mach-Zehnder modulators, Ge photodetectors — onto silicon wafers using CMOS-compatible processes to enable chiplet-level optical I/O", chokepoint: "Partial", capital_intensity: "High", moat_type: "Ecosystem", margin_profile: "High", companies: [
+          { ticker: "POET", name: "POET Technologies", mkt_cap: "Small", notes: "POET Optical Interposer platform (SiPh + III-V heterogeneous integration); pre-revenue" },
+          { ticker: "LWLG", name: "Lightwave Logic", mkt_cap: "Small", notes: "Electro-optic polymer Mach-Zehnder modulator; pre-revenue R&D stage" }
+        ]},
+        { tier: "Optical Fiber & Preform Manufacturing", fn: "Produce the glass preforms and draw the optical fibers that carry photons between chips, racks, data centers, and continents", chokepoint: "Partial", capital_intensity: "Very High", moat_type: "Scale + Process IP", margin_profile: "Medium–High", companies: [
+          { ticker: "FOCI", name: "FOCI Fiber Optic Communications", mkt_cap: "Small", notes: "Taiwan-listed (TPEX); specialty fiber cables and assemblies" }
+        ]},
+        { tier: "Passive Optical Components", fn: "Filter, route, split, combine, and condition light at the wavelength or polarization level without active gain or modulation", chokepoint: "N", capital_intensity: "Medium", moat_type: "Process IP + Certification", margin_profile: "Medium–High", companies: [
+          { ticker: "VIAV", name: "Viavi Solutions", mkt_cap: "Mid", notes: "Thin-film filter coatings, fiber test (OTDR), network & service enablement" },
+          { ticker: "COHR", name: "Coherent Corp", mkt_cap: "Large", notes: "Also produces optical isolators, beam combiners, and passive WDM components" }
+        ]},
+        { tier: "Transceiver & Module Integration", fn: "Co-package laser, photodetector, driver IC, TIA, and DSP into pluggable optical modules that translate electrical signals to optical and back at data-center-relevant speeds", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Scale + Customer lock-in", margin_profile: "Medium–High", companies: [
+          { ticker: "COHR", name: "Coherent Corp", mkt_cap: "Large", notes: "400G/800G/1.6T QSFP-DD/OSFP transceivers; coherent CFP2-DCO" },
+          { ticker: "LITE", name: "Lumentum Holdings", mkt_cap: "Large", notes: "Pluggable transceivers; coherent and PAM4 portfolio" },
+          { ticker: "AAOI", name: "Applied Optoelectronics", mkt_cap: "Small", notes: "100G/400G QSFP28/QSFP-DD transceivers" },
+          { ticker: "FN", name: "Fabrinet", mkt_cap: "Large", notes: "CM/EMS for optical modules; assembles for COHR, LITE, Ciena, Cisco" }
+        ]},
+        { tier: "Coherent Line Systems & ROADM", fn: "Transmit, amplify, switch, and manage terabit-class optical signals over metro and long-haul fiber routes connecting data centers and backbone nodes", chokepoint: "Partial", capital_intensity: "High", moat_type: "Ecosystem + Switching cost", margin_profile: "High", companies: [
+          { ticker: "CIEN", name: "Ciena Corporation", mkt_cap: "Large", notes: "WaveLogic coherent DSP (best-in-class); 6500 platform ROADM; WaveServer" },
+          { ticker: "LITE", name: "Lumentum Holdings", mkt_cap: "Large", notes: "ROADM line cards, tunable lasers for DWDM" },
+          { ticker: "COHR", name: "Coherent Corp", mkt_cap: "Large", notes: "Coherent modules for Nokia/Infinera integration" }
+        ]},
+        { tier: "Photonic Sensing & LIDAR", fn: "Produce optically-based sensors and ranging systems for robotics, autonomous systems, industrial measurement, and environmental monitoring", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Process IP + Certification", margin_profile: "High", companies: [
+          { ticker: "LASR", name: "nLIGHT Inc.", mkt_cap: "Small", notes: "High-power fiber lasers used in directed energy and industrial sensing" },
+          { ticker: "VIAV", name: "Viavi Solutions", mkt_cap: "Mid", notes: "Optical fiber sensing (distributed temperature/acoustic sensing — DTS/DAS)" }
+        ]}
+      ]
+    },
+    {
+      slug: "space-communications",
+      name: "Space & Communications",
+      dimension: "D2",
+      description: "satellite connectivity enabling AI edge inference and global broadband",
+      tiers: [
+        { tier: "Launch Services", fn: "Deliver payloads to orbit via expendable or reusable rockets; the physical access layer for every downstream satellite deployment", chokepoint: "Partial", capital_intensity: "Very High", moat_type: "Scale + Reusability economics", margin_profile: "Low–Medium", companies: [
+          { ticker: "RKLB", name: "Rocket Lab USA", mkt_cap: "Mid", notes: "Electron small launch vehicle; Neutron in development; Photon kick stage; space systems segment" }
+        ]},
+        { tier: "Satellite Bus Manufacturing", fn: "Design and produce the structural, power, thermal, propulsion, and attitude-control subsystems that host a payload in orbit", chokepoint: "Partial", capital_intensity: "High", moat_type: "Vertical integration + Qualification", margin_profile: "Medium", companies: [
+          { ticker: "RKLB", name: "Rocket Lab USA", mkt_cap: "Mid", notes: "Space Systems segment: Photon bus (50–300 kg); Pioneer bus (constellation class)" }
+        ]},
+        { tier: "Payload Manufacturing", fn: "Design and produce the mission-specific RF, optical, or sensing payload that transmits, receives, or collects data", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Process IP + Spectrum licensing", margin_profile: "High", companies: [] },
+        { tier: "Ground Segment & Network Operations", fn: "Receive, process, and route satellite signals to and from end users; manage orbital slot, frequency, and antenna resources", chokepoint: "Partial", capital_intensity: "High", moat_type: "Geographic + Regulatory moat", margin_profile: "Medium–High", companies: [] },
+        { tier: "Satellite Connectivity Services", fn: "Sell broadband, IoT, and narrowband connectivity services to end markets over owned or leased satellite capacity", chokepoint: "N", capital_intensity: "Low", moat_type: "Customer relationships + Spectrum", margin_profile: "Medium", companies: [
+          { ticker: "ASTS", name: "AST SpaceMobile", mkt_cap: "Small", notes: "BlueBird LEO constellation; direct-to-smartphone broadband via L/S/Ka-band; partner: AT&T, Vodafone" }
+        ]},
+        { tier: "User Terminal Manufacturing", fn: "Produce the antennas, modems, and enclosures that the end user installs to connect to the satellite network", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "RFIC design IP + Ecosystem lock-in", margin_profile: "Medium–High", companies: [] },
+        { tier: "Satellite Manufacturing Support & Testing", fn: "Supply the radiation-hardened electronics, specialty materials, and environmental test services that enable satellite reliability in the space radiation environment", chokepoint: "Partial", capital_intensity: "High", moat_type: "Qualification moat", margin_profile: "High", companies: [] },
+        { tier: "Spectrum & Orbital Operations", fn: "Coordinate, file, and manage radio frequency spectrum and orbital slot assignments across the full satellite lifecycle", chokepoint: "Y", capital_intensity: "Low–Medium", moat_type: "Regulatory moat", margin_profile: "High", companies: [] }
+      ]
+    },
+    {
+      slug: "compute-infrastructure",
+      name: "Compute Infrastructure",
+      dimension: "D3",
+      description: "GPU compute cluster ready for AI training workload",
+      tiers: [
+        { tier: "Compute Node Design & ODM Assembly", fn: "Design and assemble the server trays, HGX/MGX baseplates, and GPU compute nodes that house the accelerators", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Scale + Customer lock-in", margin_profile: "Low–Medium", companies: [
+          { ticker: "SMCI", name: "Super Micro Computer", mkt_cap: "Large", notes: "#1 AI server ODM by design innovation; HGX/MGX tray specialist" }
+        ]},
+        { tier: "High-Speed Networking", fn: "Design, integrate, and operate the switches, NICs, and fabric interconnects that move data between GPUs, between servers, and between racks at AI-cluster scale", chokepoint: "Y", capital_intensity: "High", moat_type: "Ecosystem + Switching cost", margin_profile: "Very High", companies: [
+          { ticker: "ANET", name: "Arista Networks", mkt_cap: "Large", notes: "#1 hyperscale Ethernet switching; EOS software moat; 800G transition" }
+        ]},
+        { tier: "Storage Systems", fn: "Design, integrate, and operate the flash and object storage systems that hold AI training datasets, model checkpoints, and inference artifacts", chokepoint: "N", capital_intensity: "Medium", moat_type: "Switching cost", margin_profile: "High", companies: [
+          { ticker: "P", name: "Pure Storage", mkt_cap: "Large", notes: "#1 pure-play enterprise all-flash; FlashArray//XL; AI storage positioning" }
+        ]},
+        { tier: "Data Center Power Infrastructure", fn: "Deliver, transform, condition, and distribute electrical power from utility feed to server board-level power rails, with protection and backup at each stage", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Scale + Certification", margin_profile: "Medium–High", companies: [
+          { ticker: "VRT", name: "Vertiv Holdings", mkt_cap: "Large", notes: "PDUs, UPS (modular Li-ion), busway, switchgear; strong 800VDC transition exposure" }
+        ]},
+        { tier: "Thermal Management & Cooling", fn: "Remove heat from compute nodes and reject it from the facility using the minimum energy input consistent with the server’s thermal design", chokepoint: "N", capital_intensity: "Very High", moat_type: "Scale + Geographic", margin_profile: "Medium", companies: [
+          { ticker: "VRT", name: "Vertiv Holdings", mkt_cap: "Large", notes: "CDUs, precision cooling (CRV, CRH), CRAC/CRAH; thermal + power integrated" }
+        ]},
+        { tier: "Data Center Facility & MEP", fn: "Construct and operate the physical plant: structure, electrical infrastructure, mechanical systems, network entry, and physical security that define a data center tier", chokepoint: "N", capital_intensity: "Very High", moat_type: "Geographic monopoly", margin_profile: "Medium", companies: [] },
+        { tier: "Hyperscaler & Colocation Operation", fn: "Operate the data center as a service platform: provision capacity, manage workloads, sell compute/storage/network as a service, and maintain SLA commitments", chokepoint: "Partial", capital_intensity: "Very High", moat_type: "Scale + Ecosystem", margin_profile: "High", companies: [
+          { ticker: "IREN", name: "IREN Limited", mkt_cap: "Mid", notes: "HPC/AI compute (pivoting from Bitcoin mining); low-cost power sites" }
+        ]}
+      ]
+    },
+    {
+      slug: "energy-power",
+      name: "Energy & Power",
+      dimension: "D3",
+      description: "firm 24/7 clean power delivered to AI data center",
+      tiers: [
+        { tier: "Primary Power Generation", fn: "Convert a primary energy source (nuclear fission, combustion, photovoltaics, wind) into three-phase AC electricity at transmission voltage", chokepoint: "N", capital_intensity: "Very High", moat_type: "Geographic monopoly + Scale + Certification", margin_profile: "Cyclical / High", companies: [] },
+        { tier: "High-Voltage Transmission & Grid Infrastructure", fn: "Transform, transmit, and switch electrical power at EHV/HV levels (66kV–800kV) from generation source to load center", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Scale + Certification + Geographic monopoly", margin_profile: "Medium (regulated)", companies: [] },
+        { tier: "Grid-Scale Energy Storage (BESS)", fn: "Store bulk electrical energy in electrochemical form and discharge on demand to provide capacity, frequency response, and arbitrage", chokepoint: "N", capital_intensity: "High", moat_type: "Scale + Software", margin_profile: "Medium", companies: [] },
+        { tier: "Power Electronics & Conversion", fn: "Convert electrical power between AC and DC and across voltage levels at high efficiency using semiconductor switching devices", chokepoint: "Y", capital_intensity: "Medium–High", moat_type: "Process IP + Certification", margin_profile: "Medium–High", companies: [
+          { ticker: "VRT", name: "Vertiv Holdings", mkt_cap: "Large", notes: "800VDC HVDC rectifier modules for data centers; power conversion integrated with cooling" }
+        ]},
+        { tier: "Fuel Cell & Distributed Clean Generation", fn: "Generate electricity from an electrochemical reaction (H2 + O2 or reformed natural gas) at the point of use, with high efficiency and low/zero emissions", chokepoint: "N", capital_intensity: "High", moat_type: "Process IP + Certification", margin_profile: "High / Low", companies: [] },
+        { tier: "Advanced Nuclear — SMR & Microreactor", fn: "Design, license, manufacture, and operate small modular reactors and microreactors that provide firm, dispatchable, carbon-free power at 1–500 MWe scale", chokepoint: "Partial", capital_intensity: "Very High", moat_type: "Certification + Process IP", margin_profile: "Very High (operating) / N/A (development)", companies: [
+          { ticker: "OKLO", name: "Oklo Inc.", mkt_cap: "Mid", notes: "Aurora microreactor (1.5 MWe, fast spectrum, heat-pipe cooled, metal fuel)" },
+          { ticker: "TE", name: "T1 Energy Inc.", mkt_cap: "Small", notes: "Nuclear construction and services" }
+        ]},
+        { tier: "Grid Software & Energy Management", fn: "Plan, dispatch, monitor, and optimize the flow of electricity across generation assets, transmission networks, and end-use loads using software and communications infrastructure", chokepoint: "N", capital_intensity: "Low–Medium", moat_type: "Ecosystem + Switching cost", margin_profile: "High", companies: [] }
+      ]
+    },
+    {
+      slug: "cybersecurity",
+      name: "Cybersecurity",
+      dimension: "D5",
+      description: "AI-era software security stack",
+      tiers: [
+        { tier: "Hardware Security Root", fn: "Provides silicon-level root of trust — the cryptographic anchor that all higher software tiers depend on for attestation and key storage", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Certification · Process IP", margin_profile: "High", companies: [] },
+        { tier: "Identity & Access Management (IAM/PAM)", fn: "Governs who and what can authenticate and authorize access to systems, data, and cloud resources — first control plane", chokepoint: "Partial", capital_intensity: "Low", moat_type: "Switching cost · Ecosystem", margin_profile: "Very High", companies: [
+          { ticker: "SAIL", name: "SailPoint, Inc.", mkt_cap: "Large", notes: "Identity governance & administration (IGA); re-listed 2024 after Vista PE take-private" }
+        ]},
+        { tier: "Endpoint Detection & Response (EDR)", fn: "Monitors every process, file, registry, and network call on endpoints to detect and contain threats in real time", chokepoint: "Partial", capital_intensity: "Low", moat_type: "Switching cost · Ecosystem · Scale", margin_profile: "Very High", companies: [] },
+        { tier: "Network Detection & Response (NDR)", fn: "Inspects east-west and north-south traffic flows to detect anomalies, lateral movement, and command-and-control communications", chokepoint: "N", capital_intensity: "Medium", moat_type: "Scale · Switching cost", margin_profile: "High", companies: [] },
+        { tier: "Cloud Security Posture (CSPM/CNAPP)", fn: "Continuously audits cloud infrastructure configurations and workload runtime behavior against security benchmarks and compliance frameworks", chokepoint: "N", capital_intensity: "Low", moat_type: "Ecosystem · Switching cost", margin_profile: "Very High", companies: [] },
+        { tier: "Data Security & Backup / Recovery", fn: "Protects data at rest and in motion through encryption, DLP, and immutable backup — and recovers from ransomware or deletion", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Switching cost · Certification", margin_profile: "High", companies: [
+          { ticker: "RBRK", name: "Rubrik, Inc.", mkt_cap: "Mid", notes: "Zero Trust Data Management; ransomware recovery; immutable snapshots; cloud-native" }
+        ]},
+        { tier: "Security Operations (SIEM/SOAR/XDR)", fn: "Aggregates, correlates, and responds to telemetry from all other tiers — the analytical hub of the security stack", chokepoint: "N", capital_intensity: "Low", moat_type: "Scale · Ecosystem · Switching cost", margin_profile: "High", companies: [] },
+        { tier: "AI-Native Security", fn: "Secures AI/ML systems themselves and deploys AI agents for autonomous threat hunting — the emerging frontier tier", chokepoint: "N", capital_intensity: "Low", moat_type: "Process IP · Ecosystem", margin_profile: "Very High", companies: [] }
+      ]
+    },
+    {
+      slug: "robotics-edge-ai",
+      name: "Robotics & Edge AI",
+      dimension: "D6",
+      description: "Embodied AI systems — autonomous robots, edge inference, perception hardware",
+      tiers: [
+        { tier: "Perception Layer", fn: "Provides multi-modal sensing of the physical environment (geometry, semantics, identity)", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Process IP / Sensor design", margin_profile: "Medium–High", companies: [] },
+        { tier: "Edge Compute Module", fn: "Runs real-time perception, planning, and control inference at the robot or device", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Silicon design / Software stack", margin_profile: "High", companies: [] },
+        { tier: "Actuators & Motors", fn: "Converts electrical commands into precise physical motion", chokepoint: "N", capital_intensity: "Medium", moat_type: "Mechanical precision / Application-specific", margin_profile: "Medium", companies: [] },
+        { tier: "Robot OS & Middleware", fn: "Provides the software framework for sensor-actuator integration, inter-node communication, and system orchestration", chokepoint: "N", capital_intensity: "Low", moat_type: "Ecosystem / Developer lock-in", margin_profile: "Low–Medium", companies: [] },
+        { tier: "AI Model Training & Deployment", fn: "Trains perception, planning, and language-conditioned task models; deploys quantized versions to edge", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Data / Cloud training infra", margin_profile: "High", companies: [] },
+        { tier: "System Integration & OEM Assembly", fn: "Integrates subsystems into a deployable robot or edge device and validates end-to-end system behavior", chokepoint: "N", capital_intensity: "High", moat_type: "Systems engineering / Application knowledge", margin_profile: "Low–Medium", companies: [] },
+        { tier: "Fleet Management & Operations Platform", fn: "Monitors and manages deployed robot fleets across sites in real time", chokepoint: "N", capital_intensity: "Low", moat_type: "Data network effects / Switching cost", margin_profile: "High", companies: [] }
+      ]
+    },
+    {
+      slug: "fintech-commerce-ai",
+      name: "Fintech & Commerce AI",
+      dimension: "D6",
+      description: "AI-powered financial services and commerce platforms",
+      tiers: [
+        { tier: "Payment Network Rails & Settlement", fn: "Provides the clearing and settlement backbone for all money movement", chokepoint: "Y", capital_intensity: "Low", moat_type: "Ecosystem / Scale", margin_profile: "Very High", companies: [] },
+        { tier: "Core Banking & Ledger Systems", fn: "Maintains authoritative books of record for accounts, balances, and transactions", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Switching cost", margin_profile: "High", companies: [] },
+        { tier: "Risk & Fraud AI Models", fn: "Detects and suppresses fraudulent transactions and credit risk events in real time", chokepoint: "Partial", capital_intensity: "Low", moat_type: "Process IP / Switching cost", margin_profile: "Very High", companies: [] },
+        { tier: "Identity Verification & KYC", fn: "Establishes and maintains verified identity for onboarding and ongoing compliance", chokepoint: "Partial", capital_intensity: "Low", moat_type: "Certification / Switching cost", margin_profile: "High", companies: [] },
+        { tier: "Credit Decisioning & Underwriting AI", fn: "Scores loan applications and prices risk using alternative and traditional data sources", chokepoint: "Partial", capital_intensity: "Low", moat_type: "Process IP / Data", margin_profile: "Very High", companies: [
+          { ticker: "SOFI", name: "SoFi Technologies", mkt_cap: "Mid", notes: "Bank charter + proprietary credit model + Galileo BaaS platform" }
+        ]},
+        { tier: "Personal Finance & Wealth Management Platforms", fn: "Delivers end-user financial management, investment, and advisory experiences", chokepoint: "N", capital_intensity: "Low", moat_type: "Ecosystem / Switching cost", margin_profile: "High", companies: [
+          { ticker: "HOOD", name: "Robinhood Markets", mkt_cap: "Mid", notes: "Commission-free retail brokerage + crypto; expanding into advisory" }
+        ]},
+        { tier: "Embedded Finance & Commerce APIs", fn: "Delivers banking and payment capabilities inside non-financial applications via API", chokepoint: "N", capital_intensity: "Low", moat_type: "Ecosystem / Switching cost", margin_profile: "High", companies: [
+          { ticker: "MELI", name: "MercadoLibre", mkt_cap: "Large", notes: "LatAm marketplace + MercadoPago embedded finance + Mercado Credito" }
+        ]},
+        { tier: "Regulatory Compliance Tech (RegTech)", fn: "Automates compliance reporting, transaction monitoring, and regulatory filing obligations", chokepoint: "N", capital_intensity: "Low", moat_type: "Certification / Switching cost", margin_profile: "High", companies: [] }
+      ]
     }
-  },
-  sentiment:{
-    hot_tickers:["NVDA","AXTI","SIVE","TSM","AMD"],
-    by_ticker:{
-      "NVDA":{mentions:7,last_signal_date:"2026-05-22",velocity_label:"↑ active"},
-      "AXTI":{mentions:4,last_signal_date:"2026-05-20",velocity_label:"↑ active"},
-      "SIVE":{mentions:4,last_signal_date:"2026-05-20",velocity_label:"↑ active"},
-      "TSM":{mentions:4,last_signal_date:"2026-05-20",velocity_label:"↑ active"},
-      "AMD":{mentions:3,last_signal_date:"2026-05-22",velocity_label:"↑ active"},
-      "LITE":{mentions:3,last_signal_date:"2026-05-20",velocity_label:"↑ active"},
-      "MRVL":{mentions:2,last_signal_date:"2026-05-17",velocity_label:"→ steady"},
-      "MU":{mentions:1,last_signal_date:"2026-05-20",velocity_label:"↑ active"},
-      "AEHR":{mentions:1,last_signal_date:"2026-05-20",velocity_label:"↑ active"}
-    }
-  }
+  ]
 };
 
-// ─── Router ───────────────────────────────────────────────────────────────────
-function navigate(hash) {
-  history.pushState(null, '', hash || '#');
-  renderView(hash);
-}
-window.addEventListener('hashchange', () => renderView(location.hash));
-window.addEventListener('load', () => renderView(location.hash));
+const DIM_LABEL={D1:"AI Manufacturing Base",D2:"AI Connectivity",D3:"AI Infrastructure",D4:"AI Model Infrastructure",D5:"AI Enablement",D6:"AI Applications"};
+const DIM_DESC={
+  D1:"The foundational physical layer — raw materials, components, and chips that everything above depends on.",
+  D2:"The connection layer — optical, wireless, and satellite links that move data between AI compute nodes.",
+  D3:"The compute and power layer — data centers, GPUs, and clean energy that run AI workloads.",
+  D4:"The model infrastructure layer — MLOps platforms, vector databases, data annotation, model serving, and orchestration tools that surround foundation models.",
+  D5:"The software and security layer — platforms and tools that enable safe, governed AI deployment.",
+  D6:"The application layer — AI-native products in robotics, fintech, defense, and enterprise."
+};
+const DIMS=["D1","D2","D3","D4","D5","D6"];
 
-function renderView(hash) {
-  const app = document.getElementById('app');
-  if (!hash || hash === '#' || hash === '#macro') renderMacro(app);
-  else if (hash.startsWith('#sector/')) renderSector(app, hash.slice(8));
-  else if (hash.startsWith('#ticker/')) renderTicker(app, hash.slice(8).toUpperCase());
-  else renderMacro(app);
-}
+let activeSector=null;
 
-// ─── Helpers ──────────────────────────────────────────────────────────────────
-function impactPill(n) {
-  return `<span class="imp-${n}">${n}</span>`;
-}
-function sigBadge(s) {
-  if (!s) return '';
-  return `<span class="sig-${s}">${s}</span>`;
-}
-function tickerChip(sym) {
-  const t = KB.tickers[sym];
-  return `<button class="ticker-chip" onclick="navigate('#ticker/${sym}')" aria-label="View ${sym}">${sym}</button>`;
-}
-function sectorChip(slug, name) {
-  return `<button class="sector-chip" onclick="navigate('#sector/${slug}')" aria-label="View ${name} sector">${name}</button>`;
-}
-function healthDot(sector) {
-  const items = KB.digest.items.filter(i => KB.tickers[i.ticker] && KB.tickers[i.ticker].sector === sector.name);
-  const max = items.reduce((m,i) => Math.max(m, i.impact), 0);
-  const color = max >= 5 ? 'var(--red)' : max >= 3 ? 'var(--amber)' : 'var(--green)';
-  return `<span class="health-dot" style="background:${color}"></span>`;
-}
-function scoreBadge(scoring) {
-  if (!scoring) return '';
-  const c = scoring.composite;
-  const cls = c >= 8 ? 'score-9' : c >= 7 ? 'score-7' : c >= 5 ? 'score-5' : 'score-low';
-  return `<span class="score-badge ${cls}">${c}/10</span>`;
+function showLayer(n){
+  document.getElementById("l0").hidden=n!==0;
+  document.getElementById("l1").hidden=n!==1;
+  document.getElementById("l2").hidden=n!==2;
 }
 
-// ─── View 1: Macro ─────────────────────────────────────────────────────────────
-function renderMacro(app) {
-  const portfolio = Object.values(KB.tickers).filter(t => t.in_portfolio);
-  const digestItems = KB.digest.items.slice(0, 15);
-
-  let html = `<div class="breadcrumb">You are here: <strong>Macro</strong></div>`;
-
-  // Market pulse
-  const rc = KB.meta.regime_color;
-  html += `<div class="pulse-box">
-    <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
-      <span style="font-size:18px;font-weight:700">📊 Market Pulse</span>
-      <span class="badge badge-${rc === 'green' ? 'green' : rc === 'amber' ? 'amber' : 'red'}">${KB.meta.regime_label}</span>
-      <span class="badge badge-green">VIX ${KB.meta.vix}</span>
-      <span class="badge badge-muted">S&P ${KB.meta.market_level.toLocaleString()}</span>
-    </div>
-    <div class="pulse-headline">Tech-favorable conditions; AI infrastructure capex supercycle intact. NVDA Q1 FY2027 beat-and-raise confirmed $81.6B revenue +79.5% YoY; Q2 guided $91B.</div>
-  </div>`;
-
-  // Hot signals
-  html += `<div class="section-title">🔥 Hot Signals — Last 7 Days</div>
-  <div class="hot-chips">`;
-  KB.sentiment.hot_tickers.forEach(sym => {
-    const s = KB.sentiment.by_ticker[sym];
-    html += `<button class="hot-chip" onclick="navigate('#ticker/${sym}')" aria-label="${sym} sentiment">${sym} · ${s ? s.mentions : '—'} signals</button>`;
-  });
-  html += `</div>`;
-
-  // Portfolio strip
-  html += `<div class="section-title">Portfolio Quick View</div>
-  <div class="portfolio-strip">`;
-  portfolio.forEach(t => {
-    const rec = t.recommendation || {};
-    html += `<div class="portfolio-card" onclick="navigate('#ticker/${t.symbol}')" role="button" aria-label="View ${t.symbol}">
-      <div class="top-row">
-        <span class="ticker">${t.symbol}</span>
-        ${sigBadge(rec.signal)}
-      </div>
-      <div class="ticker-name">${t.name}</div>
-      <div class="thesis">${t.one_line_thesis || '—'}</div>
-    </div>`;
-  });
-  html += `</div>`;
-
-  // Digest
-  html += `<div class="section-title">Today's Digest — ${KB.digest.date}</div>`;
-  digestItems.forEach(item => {
-    const sector = KB.sectors.find(s => s.name === item.sector);
-    html += `<div class="digest-item">
-      ${impactPill(item.impact)}
-      ${tickerChip(item.ticker)}
-      ${sector ? sectorChip(sector.slug, sector.name) : ''}
-      <span class="digest-headline">${item.headline}</span>
-      <div class="digest-summary">${item.summary}</div>
-    </div>`;
-  });
-
-  // Sectors grid
-  html += `<div class="section-title" style="margin-top:28px">Sectors</div>
-  <div class="card-grid">`;
-  KB.sectors.forEach(sector => {
-    const topNews = sector.top_news && sector.top_news[0];
-    html += `<div class="sector-card" onclick="navigate('#sector/${sector.slug}')" role="button" aria-label="View ${sector.name} sector">
-      <div class="sector-card-header">
-        <span class="sector-name">${sector.name}</span>
-        <span class="sector-count">${sector.ticker_symbols.length} tickers</span>
-      </div>
-      <div style="margin-bottom:6px">${healthDot(sector)}<span class="sector-desc">${(sector.description||'').slice(0,90)}${(sector.description||'').length > 90 ? '…' : ''}</span></div>
-      ${topNews ? `<div class="sector-news">↗ ${topNews}</div>` : ''}
-      ${sector.supply_chain ? `<div style="margin-top:8px"><span class="badge badge-amber" style="font-size:10px">⛓ Chain Map</span></div>` : ''}
-    </div>`;
-  });
-  html += `</div>`;
-
-  app.innerHTML = html;
+function renderL0(){
+  const el=document.getElementById("l0");
+  el.innerHTML=DIMS.map(dim=>{
+    const secs=DATA.sectors.filter(s=>s.dimension===dim);
+    const cards=secs.length===0
+      ?"<div class=\"empty-dim\">No sectors mapped yet — run /map-sector to add D4 sectors</div>"
+      :secs.map(s=>{
+        const hasChoke=s.tiers.some(t=>t.chokepoint==="Y");
+        return "<div class=\"sec-card\" onclick=\"openSector('"+s.slug+"')\">"
+          +"<div class=\"sec-card-name\">"+s.name+"</div>"
+          +"<div class=\"sec-card-desc\">"+s.description+"</div>"
+          +"<div class=\"sec-meta\">"
+          +"<span class=\"tier-badge\">"+s.tiers.length+" tier"+(s.tiers.length!==1?"s":"")+"</span>"
+          +(hasChoke?"<span class=\"choke-dot\" title=\"Contains chokepoint tiers\"></span>":"")
+          +"</div></div>";
+      }).join("");
+    return "<div class=\"dim-row\">"
+      +"<div class=\"dim-label\">"
+      +"<span class=\"dim-pill "+dim+"\">"+dim+"</span>"
+      +"<span class=\"dim-name\">"+DIM_LABEL[dim]+"</span>"
+      +"<span class=\"dim-desc\">"+DIM_DESC[dim]+"</span>"
+      +"</div>"
+      +"<div class=\"sec-cards\">"+cards+"</div>"
+      +"</div>";
+  }).join("");
 }
 
-// ─── View 2: Sector ───────────────────────────────────────────────────────────
-let activeTab = {};
-function renderSector(app, slug) {
-  const sector = KB.sectors.find(s => s.slug === slug);
-  if (!sector) { app.innerHTML = `<p>Sector not found: ${slug}</p>`; return; }
-
-  const hasSC = !!sector.supply_chain;
-  const hasMX = !!sector.customer_matrix;
-  const defaultTab = hasSC ? 'chain' : 'tickers';
-  const tab = activeTab[slug] || defaultTab;
-
-  const sectorTickers = Object.values(KB.tickers).filter(t => t.sector === sector.name);
-  const digestItems = KB.digest.items.filter(i => sectorTickers.find(t => t.symbol === i.ticker));
-
-  let html = `<div class="breadcrumb"><a href="#" onclick="navigate('#');return false">Macro</a> › <strong>${sector.name}</strong></div>`;
-  html += `<h2 style="font-size:22px;font-weight:700;margin-bottom:6px">${sector.name}</h2>`;
-  html += `<p style="color:var(--muted);font-size:13px;margin-bottom:4px">${sector.description || ''}</p>`;
-  if (sector.value_chain) html += `<p style="color:var(--muted);font-size:12px;margin-bottom:12px;font-style:italic">${sector.value_chain}</p>`;
-  html += `<p style="font-size:12px;color:var(--muted);margin-bottom:16px">${sector.ticker_symbols.length} tickers registered</p>`;
-
-  // Tab bar
-  const tabs = [{id:'chain',label:'⛓ Chain Map'},{id:'matrix',label:'🔥 Customer Matrix'},{id:'tickers',label:'Tickers'},{id:'news',label:'News'}];
-  html += `<div class="tab-bar">`;
-  tabs.forEach(t => {
-    const disabled = (t.id === 'chain' && !hasSC) || (t.id === 'matrix' && !hasMX);
-    html += `<button class="tab-btn${tab === t.id ? ' active' : ''}" onclick="setTab('${slug}','${t.id}')" ${disabled ? 'style="opacity:.4;cursor:default"' : ''} aria-label="${t.label} tab">${t.label}</button>`;
-  });
-  html += `</div>`;
-
-  // Chain Map tab
-  html += `<div class="tab-content${tab === 'chain' ? ' active' : ''}">`;
-  if (!hasSC) {
-    html += `<p style="color:var(--muted);padding:20px">No supply chain map yet — run <code>/map-sector "${sector.name}"</code> to generate one.</p>`;
-  } else {
-    html += renderChainMap(sector);
-  }
-  html += `</div>`;
-
-  // Customer Matrix tab
-  html += `<div class="tab-content${tab === 'matrix' ? ' active' : ''}">`;
-  if (!hasMX) {
-    html += `<p style="color:var(--muted);padding:20px">No customer matrix yet — run <code>/build-customer-matrix "${sector.name}"</code> to generate one.</p>`;
-  } else {
-    html += renderCustomerMatrix(sector);
-  }
-  html += `</div>`;
-
-  // Tickers tab
-  html += `<div class="tab-content${tab === 'tickers' ? ' active' : ''}"><div class="card-grid">`;
-  sectorTickers.forEach(t => {
-    const rec = t.recommendation;
-    const sent = KB.sentiment.by_ticker[t.symbol];
-    const portfolioClass = t.in_portfolio ? 'portfolio' : t.in_rockets ? 'rocket' : '';
-    html += `<div class="ticker-card ${portfolioClass}" onclick="navigate('#ticker/${t.symbol}')" role="button" aria-label="View ${t.symbol}">
-      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px">
-        <div>
-          <span class="ticker-symbol">${t.symbol}</span>
-          ${rec ? sigBadge(rec.signal) : ''}
-        </div>
-        ${scoreBadge(t.scoring)}
-      </div>
-      <div class="ticker-name">${t.name}</div>
-      ${t.layer ? `<div style="margin-top:4px"><span class="layer-badge">${t.layer}</span></div>` : ''}
-      ${sent && sent.velocity_label === '↑ active' ? `<span class="badge badge-purple" style="font-size:10px;margin-top:4px">${sent.mentions} signals ↑</span>` : ''}
-      <div class="ticker-thesis">${t.one_line_thesis || '—'}</div>
-    </div>`;
-  });
-  html += `</div></div>`;
-
-  // News tab
-  html += `<div class="tab-content${tab === 'news' ? ' active' : ''}">`;
-  if (digestItems.length === 0) {
-    html += `<p style="color:var(--muted);padding:20px 0">No digest items for this sector today.</p>`;
-  } else {
-    digestItems.sort((a,b) => b.impact - a.impact).forEach(item => {
-      html += `<div class="digest-item">
-        ${impactPill(item.impact)} ${tickerChip(item.ticker)}
-        <span class="digest-headline">${item.headline}</span>
-        <div class="digest-summary">${item.summary}</div>
-      </div>`;
-    });
-  }
-  html += `</div>`;
-
-  app.innerHTML = html;
+function openSector(slug){
+  activeSector=DATA.sectors.find(s=>s.slug===slug);
+  renderL1();
+  showLayer(1);
 }
 
-function setTab(slug, tabId) {
-  activeTab[slug] = tabId;
-  renderSector(document.getElementById('app'), slug);
+function renderL1(){
+  const s=activeSector;
+  const tiers=s.tiers.map((t,i)=>{
+    const cls=t.chokepoint==="Y"?"choke-y":t.chokepoint==="Partial"?"choke-p":"";
+    const badge=t.chokepoint==="Y"
+      ?"<span class=\"choke-badge y\">⧫ CHOKEPOINT</span>"
+      :t.chokepoint==="Partial"
+      ?"<span class=\"choke-badge p\">⧫ PARTIAL</span>"
+      :"";
+    return "<div class=\"tier-card "+cls+"\" onclick=\"openTier("+i+")\">"
+      +"<div class=\"tier-top\"><div class=\"tier-name\">"+t.tier+"</div>"+badge+"</div>"
+      +"<div class=\"tier-fn\">"+t.fn+"</div>"
+      +"<div class=\"tier-pills\">"
+      +"<span class=\"pill\">"+t.moat_type+"</span>"
+      +"<span class=\"pill\">"+t.capital_intensity+" capex</span>"
+      +"<span class=\"pill\">"+t.margin_profile+" margins</span>"
+      +(t.companies&&t.companies.length>0?"<span class=\"co-count\">"+t.companies.length+" tracked</span>":"")
+      +"</div></div>";
+  }).join("");
+  document.getElementById("l1").innerHTML=
+    "<div class=\"breadcrumb\" onclick=\"showLayer(0)\">← Ecosystem</div>"
+    +"<div class=\"sector-hdr\">"
+    +"<span class=\"dim-pill "+s.dimension+"\">"+s.dimension+"</span>"
+    +"<span class=\"sector-title\">"+s.name+"</span>"
+    +"</div>"
+    +"<div class=\"sector-desc-full\">"+s.description+"</div>"
+    +"<div class=\"dim-ctx\">"+DIM_LABEL[s.dimension]+" — "+DIM_DESC[s.dimension]+"</div>"
+    +tiers;
 }
 
-function renderChainMap(sector) {
-  const sc = sector.supply_chain;
-  // Group nodes by tier
-  const tierMap = {};
-  sc.tiers.forEach(t => { tierMap[t.tier] = {info: t, nodes: []}; });
-  sc.nodes.forEach(n => {
-    const key = n.tier;
-    if (!tierMap[key]) tierMap[key] = {info:{chokepoint:'N'},nodes:[]};
-    tierMap[key].nodes.push(n);
-  });
-
-  // Get all edges for highlight
-  const edges = KB.ecosystem_graph.edges;
-
-  let html = `<div class="chain-map"><div class="chain-lanes" id="chain-lanes-${sector.slug}">`;
-
-  Object.entries(tierMap).forEach(([tierName, {info, nodes}]) => {
-    const isChokepoint = info.chokepoint === 'Y';
-    html += `<div class="tier-col">
-      <div class="tier-header${isChokepoint ? ' chokepoint' : ''}" title="${info.function||''}">${tierName}</div>
-      <div class="tier-body">`;
-
-    nodes.forEach(n => {
-      if (n.gap) {
-        html += `<button class="node-chip gap-node" title="${n.notes || 'No public player'}" disabled aria-label="Gap: ${n.company}">⚠ ${n.company.slice(0,18)}</button>`;
-      } else {
-        const inKB = !!KB.tickers[n.ticker];
-        const isPortfolio = inKB && KB.tickers[n.ticker].in_portfolio;
-        const cpIcon = isChokepoint ? '<span class="chokepoint-icon">◆</span>' : '';
-        html += `<button class="node-chip${inKB ? ' in-kb' : ' not-in-kb'}${isPortfolio ? ' portfolio' : ''}"
-          ${inKB ? `onclick="navigate('#ticker/${n.ticker}')"` : ''}
-          onmouseenter="${inKB ? `highlightNode('${n.ticker}','${sector.slug}')` : ''}"
-          onmouseleave="clearHighlight('${sector.slug}')"
-          title="${n.company}${n.notes ? ' — ' + n.notes : ''}"
-          aria-label="${n.ticker}: ${n.company}"
-        >${cpIcon}${n.ticker}</button>`;
-      }
-    });
-
-    html += `</div></div>`;
-  });
-
-  html += `</div>`;
-
-  // Legend
-  html += `<div class="chain-legend">
-    <span>● Hover a node to highlight supply relationships</span>
-    <span><span style="color:var(--amber)">◆</span> = Chokepoint tier</span>
-    <span><span style="color:var(--green)">■</span> = Supplies this node</span>
-    <span><span style="color:var(--blue)">■</span> = This node supplies</span>
-    <span style="border:1px dashed var(--muted);padding:1px 4px;border-radius:3px">⚠</span> = Structural gap (no public player)
-  </div>`;
-
-  // Framework status
-  const fs = sc.framework_status;
-  const steps = [
-    {key:'mapped',label:'Mapped',cmd:null},
-    {key:'nodes_registered',label:'Nodes Registered',cmd:`/add-ticker TICKER --sector "${sector.name}"`},
-    {key:'ground_truth',label:'Ground Truth',cmd:`/stock-research-all --sector "${sector.name}"`},
-    {key:'matrix_built',label:'Matrix Built',cmd:`/build-customer-matrix "${sector.name}"`},
-    {key:'framework_written',label:'Framework Written',cmd:'Write _Sector Framework.md manually'}
-  ];
-  html += `<div style="margin-top:12px"><span style="font-size:11px;color:var(--muted);font-weight:700;letter-spacing:.07em;text-transform:uppercase">Framework Progress</span></div>
-  <div class="fw-status">`;
-  steps.forEach(s => {
-    const done = fs[s.key];
-    html += `<span class="fw-pill ${done ? 'done' : 'todo'}" title="${done ? '✓ Complete' : (s.cmd || '')}">${done ? '✓' : '○'} ${s.label}</span>`;
-  });
-  html += `</div></div>`;
-
-  return html;
+function openTier(idx){
+  const s=activeSector;
+  const t=s.tiers[idx];
+  const chokeBlock=t.chokepoint==="Y"
+    ?"<div class=\"choke-box\"><p>⧫ Supply chain chokepoint — limited substitutes in this tier. Capacity constraints here propagate up the stack.</p></div>"
+    :t.chokepoint==="Partial"
+    ?"<div class=\"choke-box-partial\"><p>⧫ Partial chokepoint — some alternatives exist, but switching carries meaningful cost or lead time.</p></div>"
+    :"";
+  const coBlock=t.companies&&t.companies.length>0
+    ?"<div class=\"co-section\"><h3>Tracked Companies</h3>"
+      +t.companies.map(c=>{
+        const cc=c.mkt_cap==="Large"?"large":c.mkt_cap==="Mid"?"mid":"small";
+        const cl=c.mkt_cap==="Large"?"Large cap":c.mkt_cap==="Mid"?"Mid cap":"Small cap";
+        return "<div class=\"co-card\">"
+          +"<div class=\"co-header\"><span class=\"co-ticker\">"+c.ticker+"</span>"
+          +"<span class=\"co-name\">"+c.name+"</span>"
+          +"<span class=\"co-cap "+cc+"\">"+cl+"</span></div>"
+          +"<div class=\"co-notes\">"+c.notes+"</div></div>";
+      }).join("")+"</div>"
+    :"";
+  document.getElementById("l2").innerHTML=
+    "<div class=\"breadcrumb\" onclick=\"openSector('"+s.slug+"')\">← "+s.name+"</div>"
+    +chokeBlock
+    +"<div class=\"tier-detail-name\">"+t.tier+"</div>"
+    +"<div class=\"tier-fn-full\">"+t.fn+"</div>"
+    +"<div class=\"invest-section\">"
+    +"<h3>Investment Angle</h3>"
+    +"<div class=\"invest-rows\">"
+    +"<div class=\"invest-row\"><span class=\"invest-label\">Competitive moat</span><span class=\"invest-val\">"+t.moat_type+"</span></div>"
+    +"<div class=\"invest-row\"><span class=\"invest-label\">Capital intensity</span><span class=\"invest-val\">"+t.capital_intensity+"</span></div>"
+    +"<div class=\"invest-row\"><span class=\"invest-label\">Margin profile</span><span class=\"invest-val\">"+t.margin_profile+"</span></div>"
+    +"<div class=\"invest-row\"><span class=\"invest-label\">Chokepoint status</span><span class=\"invest-val\">"
+    +(t.chokepoint==="Y"?"Yes — critical supply constraint":t.chokepoint==="Partial"?"Partial — some alternatives exist":"No — competitive market")
+    +"</span></div>"
+    +"</div></div>"
+    +coBlock;
+  showLayer(2);
 }
 
-function renderCustomerMatrix(sector) {
-  const mx = sector.customer_matrix;
-  let html = `<div class="matrix-wrap"><table class="matrix-table"><thead><tr>
-    <th style="text-align:left">Supplier</th><th>Layer</th>`;
-  mx.customers.forEach(c => { html += `<th>${c}</th>`; });
-  html += `</tr></thead><tbody>`;
+renderL0();
 
-  mx.rows.forEach(row => {
-    html += `<tr><td class="row-header" onclick="navigate('#ticker/${row.ticker}')" aria-label="View ${row.ticker}">${row.ticker}</td>
-      <td><span class="layer-badge">${(row.layer||'').replace('Design — ','').replace('Design (Fabless — ','').replace(')','')}</span></td>`;
-    mx.customers.forEach(c => {
-      const cell = row.cells[c];
-      const score = cell ? cell.score : 0;
-      if (score === 0) {
-        html += `<td style="background:var(--bg2)"></td>`;
-      } else {
-        const pct = (score / 5 * 100).toFixed(0);
-        const note = cell ? `${cell.display} — ${cell.note}` : '';
-        html += `<td title="${note}" style="padding:4px 6px">
-          <div class="cell-bar-wrap"><div class="cell-bar cell-score-${score}" style="width:${pct}%"></div></div>
-        </td>`;
-      }
-    });
-    html += `</tr>`;
-  });
+// ── Search ────────────────────────────────────────────────────────────────────
+let _searchIdx = null;
 
-  html += `</tbody></table></div>`;
-
-  // Legend
-  html += `<div style="display:flex;gap:12px;flex-wrap:wrap;font-size:11px;color:var(--muted);margin-bottom:12px">
-    <span>Bar width = concentration score (1–5)</span>
-    <span><span style="color:var(--amber)">■</span> Low (1–2)</span>
-    <span><span style="color:var(--orange)">■</span> Meaningful (3)</span>
-    <span><span style="color:var(--red)">■</span> High (4–5)</span>
-    <span>Hover cell for detail</span>
-  </div>`;
-
-  // Critical paths
-  html += `<div class="critical-paths">
-    <strong>Critical Paths</strong><br><br>
-    <strong>NVDA → Hyperscalers</strong> is the master dependency: all four hyperscalers drive GPU demand, which cascades through MU (HBM BOM), MRVL/ALAB/CRDO (interconnect), and AMKR (packaging). A coordinated hyperscaler capex pullback reprices the entire sector simultaneously.<br><br>
-    <strong>MU → NVDA</strong> is the tightest bilateral: HBM3E is ~30% of GPU BOM. NVDA demand beat = direct MU order signal. No short-term substitute.<br><br>
-    <strong>AMKR → Apple</strong> is the primary idiosyncratic risk: ~20%+ revenue concentration in consumer cycle, fully decoupled from AI capex.<br><br>
-    <strong>AEHR</strong> is structurally isolated: zero hyperscaler exposure — the only portfolio name whose revenue clock runs on EV adoption, not AI capex.
-  </div>`;
-
-  html += `<p style="font-size:11px;color:var(--muted);margin-top:10px">Matrix built ${mx.built} — refresh with <code>/build-customer-matrix "${sector.name}"</code></p>`;
-
-  return html;
-}
-
-// Node highlight logic
-function highlightNode(ticker, slug) {
-  const edges = KB.ecosystem_graph.edges;
-  const upstream = new Set(edges.filter(e => e.target === ticker).map(e => e.source));
-  const downstream = new Set(edges.filter(e => e.source === ticker).map(e => e.target));
-
-  document.querySelectorAll('.node-chip.in-kb').forEach(chip => {
-    const t = chip.getAttribute('aria-label').split(':')[0];
-    if (t === ticker) return;
-    if (upstream.has(t)) {
-      chip.classList.add('highlighted-up');
-      chip.classList.remove('dimmed');
-    } else if (downstream.has(t)) {
-      chip.classList.add('highlighted-down');
-      chip.classList.remove('dimmed');
-    } else {
-      chip.classList.add('dimmed');
-    }
-  });
-}
-
-function clearHighlight(slug) {
-  document.querySelectorAll('.node-chip').forEach(chip => {
-    chip.classList.remove('highlighted-up','highlighted-down','dimmed');
-  });
-}
-
-// ─── View 3: Ticker Detail ─────────────────────────────────────────────────────
-function renderTicker(app, sym) {
-  const t = KB.tickers[sym];
-  if (!t) { app.innerHTML = `<p style="color:var(--muted);padding:20px">Ticker not found: ${sym}. Not yet onboarded in the registry.</p>`; return; }
-
-  const sector = KB.sectors.find(s => s.name === t.sector);
-  const rec = t.recommendation;
-
-  let html = `<div class="breadcrumb">
-    <a href="#" onclick="navigate('#');return false">Macro</a> ›
-    <a href="#sector/${t.sector_slug}" onclick="navigate('#sector/${t.sector_slug}');return false">${t.sector}</a> ›
-    <strong>${t.symbol}</strong>
-  </div>`;
-
-  // Header
-  html += `<div class="ticker-detail-header">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px">
-      <div>
-        <div class="ticker-detail-symbol">${t.symbol}</div>
-        <div class="ticker-detail-name">${t.name}</div>
-      </div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
-        ${sectorChip(t.sector_slug, t.sector)}
-        ${t.in_portfolio ? '<span class="badge badge-amber">Portfolio</span>' : ''}
-        ${t.in_rockets ? '<span class="badge badge-orange" style="background:#3a2000;color:var(--orange)">Rocket</span>' : ''}
-        ${t.in_compounders ? '<span class="badge badge-muted">Compounder</span>' : ''}
-        ${rec ? sigBadge(rec.signal) : ''}
-        ${rec ? `<span class="badge badge-muted">${rec.confidence} confidence</span>` : ''}
-      </div>
-    </div>
-  </div>`;
-
-  // Rationale
-  if (rec && rec.rationale) {
-    html += `<div class="rationale-box">${rec.rationale}</div>`;
-  }
-
-  // Supply chain position
-  if (t.layer) {
-    html += `<div class="chain-position">
-      <span style="font-size:11px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.07em">Supply Chain Position</span>
-      <span class="layer-badge" style="font-size:12px;padding:2px 8px">${t.layer}</span>
-      ${t.chokepoint ? '<span style="color:var(--amber);font-size:13px">◆ Chokepoint</span>' : ''}
-      <a href="#sector/${t.sector_slug}" onclick="navigate('#sector/${t.sector_slug}');return false" style="font-size:12px;margin-left:auto">View in Chain Map →</a>
-    </div>`;
-  }
-
-  // One-line thesis
-  html += `<div class="section-block">
-    <div class="section-label">One-Line Thesis</div>
-    <div style="font-size:14px;font-weight:500;line-height:1.6">${t.one_line_thesis || '—'}</div>
-  </div>`;
-
-  // Drift
-  if (t.drift_status) {
-    html += `<div class="drift-line">📍 ${t.drift_status}${t.last_validated ? ` · Last validated: ${t.last_validated}` : ''}</div>`;
-  }
-
-  // Scoring
-  html += `<div class="section-block" style="margin-top:16px">
-    <div class="section-label">Scoring</div>`;
-  if (t.scoring) {
-    const c = t.scoring.composite;
-    const cls = c >= 8 ? 'var(--green)' : c >= 7 ? 'var(--blue)' : c >= 5 ? 'var(--yellow)' : 'var(--red)';
-    html += `<div style="font-size:20px;font-weight:700;color:${cls};margin-bottom:10px">${c}/10 <span style="font-size:13px;color:var(--muted)">${t.scoring.label || ''}</span></div>`;
-  } else {
-    html += `<p style="color:var(--muted);font-size:13px">Scoring not yet run — use <code>/score-ticker ${sym}</code> to populate.</p>`;
-  }
-  html += `</div>`;
-
-  // Recent news from digest
-  const digestItems = KB.digest.items.filter(i => i.ticker === sym);
-  if (digestItems.length > 0) {
-    html += `<div class="section-block">
-      <div class="section-label">Latest News</div>`;
-    digestItems.forEach(item => {
-      html += `<div class="news-entry">
-        <div style="display:flex;gap:6px;align-items:center;margin-bottom:4px">${impactPill(item.impact)}<span style="font-size:11px;color:var(--muted)">${KB.digest.date}</span></div>
-        <div class="news-headline">${item.headline}</div>
-        <div class="news-detail">${item.summary}</div>
-      </div>`;
-    });
-    html += `</div>`;
-  }
-
-  // Sentiment
-  const sent = KB.sentiment.by_ticker[sym];
-  if (sent) {
-    html += `<div class="section-block">
-      <div class="section-label">Social Sentiment</div>
-      <div style="display:flex;gap:10px;align-items:center">
-        <span style="font-size:16px;font-weight:700">${sent.mentions}</span>
-        <span style="font-size:12px;color:var(--muted)">signals</span>
-        <span class="badge badge-purple">${sent.velocity_label}</span>
-        <span style="font-size:12px;color:var(--muted)">Last: ${sent.last_signal_date}</span>
-      </div>
-    </div>`;
-  }
-
-  // Ecosystem
-  html += `<div class="section-block">
-    <div class="section-label">Ecosystem — Supply Chain Relationships</div>`;
-  html += renderEcosystemPanel(sym);
-  html += `</div>`;
-
-  app.innerHTML = html;
-}
-
-function renderEcosystemPanel(sym) {
-  const ecosystems = KB.ecosystem_graph.ecosystems;
-  const edges = KB.ecosystem_graph.edges;
-
-  // Case A: explicit ecosystem map
-  if (ecosystems[sym]) {
-    const eco = ecosystems[sym];
-    let html = '';
-    Object.entries(eco.tiers).forEach(([tierNum, nodes]) => {
-      const label = eco.tier_labels[tierNum] || `Tier ${tierNum}`;
-      html += `<div class="eco-zone">
-        <div class="eco-zone-label">Tier ${tierNum} — ${label}</div>
-        <div class="eco-chips">`;
-      nodes.forEach(n => {
-        const inKB = !!KB.tickers[n.ticker];
-        html += `<button class="eco-chip${inKB ? '' : ''}" ${inKB ? `onclick="navigate('#ticker/${n.ticker}')"` : 'style="opacity:.5;cursor:default"'} title="${n.company}: ${n.relationship}" aria-label="${n.ticker}">${n.ticker}</button>`;
+function buildSearchIdx() {
+  const idx = [];
+  DATA.sectors.forEach(s => {
+    idx.push({ type: "sector", label: s.name, sub: s.dimension + " · " + s.description, slug: s.slug, q: (s.name + " " + s.description).toLowerCase() });
+    s.tiers.forEach((t, i) => {
+      idx.push({ type: "tier", label: t.tier, sub: s.name, slug: s.slug, tierIdx: i, q: (t.tier + " " + (t.fn || "")).toLowerCase() });
+      (t.companies || []).forEach(c => {
+        idx.push({ type: "company", label: c.name, ticker: c.ticker || "", sub: t.tier + " · " + s.name, slug: s.slug, tierIdx: i, q: ((c.ticker || "") + " " + c.name + " " + (c.notes || "")).toLowerCase() });
       });
-      html += `</div></div>`;
     });
-
-    // Center node
-    html = `<div class="eco-center"><span style="font-size:16px;font-weight:700;color:var(--amber)">● ${sym}</span><div style="font-size:11px;color:var(--muted);margin-top:2px">This position</div></div>` + html;
-
-    html += `<div class="chain-legend" style="margin-top:8px">
-      <span><span style="color:var(--amber)">■</span> = Ecosystem map edges</span>
-      <span><span style="color:var(--blue)">■</span> = Cross-ticker signal edges</span>
-    </div>`;
-    return html;
-  }
-
-  // Case B: cross-ticker signals only
-  const upstream = edges.filter(e => e.target === sym);
-  const downstream = edges.filter(e => e.source === sym);
-
-  if (upstream.length === 0 && downstream.length === 0) {
-    return `<p style="color:var(--muted);font-size:13px">No ecosystem relationships logged yet. Run <code>/ticker-monitor --deep ${sym}</code> to scan for supply chain links.</p>`;
-  }
-
-  let html = '';
-  if (upstream.length > 0) {
-    html += `<div class="eco-zone">
-      <div class="eco-zone-label">Upstream (supplies / enables ${sym})</div>
-      <div class="eco-chips">`;
-    upstream.forEach(e => {
-      const inKB = !!KB.tickers[e.source];
-      html += `<button class="eco-chip up-chip" ${inKB ? `onclick="navigate('#ticker/${e.source}')"` : 'style="cursor:default"'} title="${e.implication ? e.implication.slice(0,80) : ''}" aria-label="${e.source}">${e.source}</button>`;
-    });
-    html += `</div></div>`;
-  }
-
-  html += `<div class="eco-center"><span style="font-size:16px;font-weight:700;color:var(--amber)">● ${sym}</span></div>`;
-
-  if (downstream.length > 0) {
-    html += `<div class="eco-zone">
-      <div class="eco-zone-label">Downstream (${sym} supplies / enables)</div>
-      <div class="eco-chips">`;
-    downstream.forEach(e => {
-      const inKB = !!KB.tickers[e.target];
-      html += `<button class="eco-chip down-chip" ${inKB ? `onclick="navigate('#ticker/${e.target}')"` : 'style="cursor:default"'} title="${e.implication ? e.implication.slice(0,80) : ''}" aria-label="${e.target}">${e.target}</button>`;
-    });
-    html += `</div></div>`;
-  }
-
-  html += `<div class="chain-legend">
-    <span><span style="color:var(--green)">■</span> Upstream (green border)</span>
-    <span><span style="color:var(--blue)">■</span> Downstream (blue border)</span>
-  </div>`;
-  return html;
+  });
+  return idx;
 }
+
+function renderSearchResults(q) {
+  const res = document.getElementById("search-results");
+  if (!q) { res.hidden = true; return; }
+  if (!_searchIdx) _searchIdx = buildSearchIdx();
+  const hits = _searchIdx.filter(x => x.q.includes(q)).slice(0, 18);
+  if (!hits.length) {
+    res.innerHTML = "<div class=\"sr-empty\">No results</div>";
+    res.hidden = false;
+    return;
+  }
+  const groups = [["sector", "Sectors"], ["tier", "Tiers"], ["company", "Companies"]];
+  let html = "";
+  groups.forEach(([type, label]) => {
+    const group = hits.filter(h => h.type === type);
+    if (!group.length) return;
+    if (html) html += "<div class=\"sr-divider\"></div>";
+    html += "<div class=\"sr-group-label\">" + label + "</div>";
+    group.forEach(h => {
+      const ticker = h.ticker ? "<span class=\"sr-ticker\">" + h.ticker + "</span>" : "";
+      html += "<div class=\"sr-item\" data-type=\"" + h.type + "\" data-slug=\"" + h.slug + "\"" + (h.tierIdx !== undefined ? " data-tier=\"" + h.tierIdx + "\"" : "") + ">"
+        + ticker
+        + "<div class=\"sr-text\"><div class=\"sr-label\">" + h.label + "</div><div class=\"sr-sub\">" + h.sub + "</div></div>"
+        + "</div>";
+    });
+  });
+  res.innerHTML = html;
+  res.hidden = false;
+}
+
+document.getElementById("search-input").addEventListener("input", function () {
+  renderSearchResults(this.value.trim().toLowerCase());
+});
+
+document.getElementById("search-input").addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
+    this.value = "";
+    document.getElementById("search-results").hidden = true;
+  }
+});
+
+document.getElementById("search-results").addEventListener("click", function (e) {
+  const item = e.target.closest(".sr-item");
+  if (!item) return;
+  const slug = item.dataset.slug;
+  const tierIdx = item.dataset.tier;
+  document.getElementById("search-input").value = "";
+  document.getElementById("search-results").hidden = true;
+  openSector(slug);
+  if (tierIdx !== undefined) openTier(Number(tierIdx));
+});
+
+document.addEventListener("click", function (e) {
+  if (!document.getElementById("search-wrap").contains(e.target)) {
+    document.getElementById("search-results").hidden = true;
+  }
+});
 </script>
 </body>
 </html>
