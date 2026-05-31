@@ -1,6 +1,6 @@
 # Monitor Registry
 *The research-monitor skill reads this file on every run. Add tickers here — no skill update needed.*
-*Last updated: May 31, 2026 — NVTS (Navitas Semiconductor) added to Semiconductors / Power Devices*
+*Last updated: May 31, 2026 — IFX (Infineon Technologies) added to Semiconductors / Power Devices*
 
 ---
 
@@ -74,6 +74,7 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 | 6857.T | Advantest Corporation | none | TSE (Tokyo) | Investing/Wiki/Sectors/Semiconductors/6857.T.md | — |
 | FORM | FormFactor, Inc. | 0001039399 | NASDAQ | Investing/Wiki/Sectors/Semiconductors/FORM.md | — |
 | NVTS | Navitas Semiconductor Corp | 0001821769 | NASDAQ | Investing/Wiki/Sectors/Semiconductors/NVTS.md | — |
+| IFX | Infineon Technologies AG | none | XETRA (Frankfurt) | Investing/Wiki/Sectors/Semiconductors/IFX.md | — |
 
 <!-- CANDIDATE (/map-sector 2026-05-24): SNPS (Synopsys) — EDA & Design IP layer. Run /add-ticker SNPS --sector "Semiconductors" --layer "EDA & Design IP" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): CDNS (Cadence Design Systems) — EDA & Design IP layer. Run /add-ticker CDNS --sector "Semiconductors" --layer "EDA & Design IP" to onboard. -->

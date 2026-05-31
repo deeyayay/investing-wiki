@@ -53,7 +53,7 @@
 | GLW | [[GLW]] | stub | 1 | 2026-05-20 |
 | GOOGL | [[GOOGL]] | stub | 1 | 2026-05-22 |
 | IBM | [[IBM]] | stub | 1 | 2026-05-22 |
-| IFX | [[IFX]] | stub | 1 | 2026-05-31 |
+| IFX | [[IFX]] | monitored | 1 | 2026-05-31 |
 | INFQ | [[INFQ]] | stub | 1 | 2026-05-22 |
 | LPK | [[LPK]] | stub | 1 | 2026-05-17 |
 | MOD | [[MOD]] | stub | 1 | 2026-05-18 |
