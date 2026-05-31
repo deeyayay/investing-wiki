@@ -1,6 +1,6 @@
 # Sentiment Index
 *Maintained by `/ingest-sentiment` — do not edit the ticker table manually.*
-*Last updated: 2026-05-31*
+*Last updated: 2026-05-31 (ASPI added)*
 
 ---
 
@@ -14,6 +14,7 @@
 | TSM | [[TSM]] | stub | 4 | 2026-05-20 |
 | AMD | [[AMD]] | stub | 3 | 2026-05-22 |
 | AOSL | [[AOSL]] | stub | 1 | 2026-05-31 |
+| ASPI | [[ASPI]] | monitored | 0 | — |
 | AMZN | [[AMZN]] | stub | 3 | 2026-05-22 |
 | INTC | [[INTC]] | stub | 3 | 2026-05-18 |
 | LITE | [[LITE]] | monitored | 3 | 2026-05-20 |

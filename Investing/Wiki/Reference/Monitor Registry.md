@@ -1,6 +1,6 @@
 # Monitor Registry
 *The research-monitor skill reads this file on every run. Add tickers here — no skill update needed.*
-*Last updated: May 31, 2026 — IFX (Infineon Technologies) added to Semiconductors / Power Devices*
+*Last updated: May 31, 2026 — ASPI (ASP Isotopes) added to Clean Energy / Advanced Nuclear*
 
 ---
 
@@ -150,6 +150,7 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 |--------|---------|-----|----------|------|-------|
 | OKLO | Oklo Inc. | 0001828937 | NYSE | Investing/Wiki/Sectors/Clean Energy/OKLO.md | — |
 | TE | T1 Energy Inc. | 0001992243 | NYSE | Investing/Wiki/Sectors/Clean Energy/TE.md | — |
+| ASPI | ASP Isotopes Inc. | 0001921865 | NASDAQ | Investing/Wiki/Sectors/Clean Energy/ASPI.md | — |
 
 <!-- CANDIDATE (/map-sector 2026-05-24): VST (Vistra Energy) — Primary Power Generation layer. Largest US competitive power generator; nuclear (Comanche Peak) + CCGT; Texas merchant market. Run /add-ticker VST --sector "Energy & Power" --layer "Primary Power Generation" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): GEV (GE Vernova) — Primary Power Generation + High-Voltage Transmission layer. Gas turbines (GE 7F.05, HA-class); wind (Haliade-X); Grid Solutions HV transformers + HVDC. Run /add-ticker GEV --sector "Energy & Power" --layer "Primary Power Generation" to onboard. -->
