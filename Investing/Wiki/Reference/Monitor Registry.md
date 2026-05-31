@@ -1,6 +1,6 @@
 # Monitor Registry
 *The research-monitor skill reads this file on every run. Add tickers here — no skill update needed.*
-*Last updated: May 31, 2026 — ASPI (ASP Isotopes) added to Clean Energy / Advanced Nuclear*
+*Last updated: May 31, 2026 — ELMT (The Elmet Group) added to Metals & Mining / Refractory Metals & Defense Components*
 
 ---
 
@@ -184,6 +184,7 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 |--------|---------|-----|----------|------|-------|
 | FCX | Freeport-McMoRan | 0000831259 | NYSE | Investing/Wiki/Sectors/Metals & Mining/FCX.md | — |
 | MP | MP Materials Corp. | 0001801170 | NYSE | Investing/Wiki/Sectors/Metals & Mining/MP.md | — |
+| ELMT | The Elmet Group Co. | 0002101698 | NASDAQ | Investing/Wiki/Sectors/Metals & Mining/ELMT.md | — |
 
 <!-- CANDIDATE (/map-sector 2026-05-24): VALE (Vale S.A.) — Bulk Mining & Ore Extraction layer. World's largest nickel producer; iron ore dominant; cobalt byproduct. Run /add-ticker VALE --sector "Metals & Mining" --layer "Bulk Mining & Ore Extraction" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): RIO (Rio Tinto) — Bulk Mining & Ore Extraction layer. Copper (Oyu Tolgoi), lithium (Rincon), iron ore. Run /add-ticker RIO --sector "Metals & Mining" --layer "Bulk Mining & Ore Extraction" to onboard. -->
