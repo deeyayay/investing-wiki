@@ -132,7 +132,7 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
     <input id="search-input" type="text" placeholder="Search tickers, sectors, tiers…" autocomplete="off" spellcheck="false">
     <div id="search-results" hidden></div>
   </div>
-  <span class="gen-date">Generated: 2026-05-27</span>
+  <span class="gen-date">Generated: 2026-05-31</span>
 </header>
 <div id="l0"></div>
 <div id="l1" hidden></div>
@@ -141,7 +141,7 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 </div>
 <script>
 const DATA = {
-  generated: "2026-05-27",
+  generated: "2026-05-31",
   sectors: [
     {
       slug: "semiconductors",
@@ -384,7 +384,7 @@ const DATA = {
     {
       slug: "cybersecurity",
       name: "Cybersecurity",
-      dimension: "D5",
+      dimension: "D4",
       description: "AI-era software security stack",
       tiers: [
         { tier: "Hardware Security Root", fn: "Provides silicon-level root of trust — the cryptographic anchor that all higher software tiers depend on for attestation and key storage", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Certification · Process IP", margin_profile: "High", companies: [] },
@@ -410,7 +410,7 @@ const DATA = {
     {
       slug: "robotics-edge-ai",
       name: "Robotics & Edge AI",
-      dimension: "D6",
+      dimension: "D5",
       description: "Embodied AI systems — autonomous robots, edge inference, perception hardware",
       tiers: [
         { tier: "Perception Layer", fn: "Provides multi-modal sensing of the physical environment (geometry, semantics, identity)", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Process IP / Sensor design", margin_profile: "Medium–High", companies: [
@@ -429,7 +429,7 @@ const DATA = {
     {
       slug: "fintech-commerce-ai",
       name: "Fintech & Commerce AI",
-      dimension: "D6",
+      dimension: "D5",
       description: "AI-powered financial services and commerce platforms",
       tiers: [
         { tier: "Payment Network Rails & Settlement", fn: "Provides the clearing and settlement backbone for all money movement", chokepoint: "Y", capital_intensity: "Low", moat_type: "Ecosystem / Scale", margin_profile: "Very High", companies: [] },
@@ -450,19 +450,30 @@ const DATA = {
         ] }
       ]
     }
+  ],
+  edges: [
+    { from: "Materials & Mining", from_tier: "Silicon Refining", to: "Semiconductors", to_tier: "Wafer Production", flow: "Material", product: "Polysilicon ingot → CZ-grown boule", chokepoint: "Y" },
+    { from: "Semiconductors", from_tier: "Power Devices", to: "Energy & Power", to_tier: "Power Conversion", flow: "Component", product: "SiC MOSFET / GaN HEMT → inverter and rectifier modules", chokepoint: "Y" },
+    { from: "Semiconductors", from_tier: "Design (Compute)", to: "Compute Infrastructure", to_tier: "Server Assembly", flow: "Component", product: "GPU / CPU / ASIC → compute node PCB", chokepoint: "Y" },
+    { from: "Photonics & Optical", from_tier: "Laser Sources", to: "Semiconductors", to_tier: "Lithography Equipment", flow: "Component", product: "EUV light source → ASML scanner", chokepoint: "Y" },
+    { from: "Photonics & Optical", from_tier: "Transceiver Mfg", to: "Compute Infrastructure", to_tier: "Networking", flow: "Component", product: "400G / 800G optical transceiver → spine switch port", chokepoint: "Y" },
+    { from: "Electronic Components", from_tier: "Substrates (ABF)", to: "Semiconductors", to_tier: "Packaging (OSAT)", flow: "Material", product: "ABF substrate → flip-chip BGA package", chokepoint: "Y" },
+    { from: "Energy & Power", from_tier: "Power Conversion", to: "Compute Infrastructure", to_tier: "Power Distribution", flow: "Service", product: "800VDC bus → rack-level DC-DC", chokepoint: "Y" },
+    { from: "Materials & Mining", from_tier: "Rare Earth Separation", to: "Robotics & Edge AI", to_tier: "Actuators & Motors", flow: "Material", product: "Nd₂O₃ → NdFeB alloy → servo motor", chokepoint: "Y" },
+    { from: "Materials & Mining", from_tier: "Rare Earth Separation", to: "Energy & Power", to_tier: "Primary Generation", flow: "Material", product: "NdFeB permanent magnet → wind turbine PMSG", chokepoint: "Y" },
+    { from: "Semiconductors", from_tier: "Design (Edge AI)", to: "Robotics & Edge AI", to_tier: "Edge Compute Module", flow: "Component", product: "Nvidia Jetson Orin / Ambarella CV3 → edge inference module", chokepoint: "Y" }
   ]
 };
 
-const DIM_LABEL={D1:"AI Manufacturing Base",D2:"AI Connectivity",D3:"AI Infrastructure",D4:"AI Model Infrastructure",D5:"AI Enablement",D6:"AI Applications"};
+const DIM_LABEL={D1:"AI Manufacturing Base",D2:"AI Connectivity",D3:"AI Infrastructure",D4:"AI Enablement",D5:"AI Applications"};
 const DIM_DESC={
   D1:"The foundational physical layer — raw materials, components, and chips that everything above depends on.",
   D2:"The connection layer — optical, wireless, and satellite links that move data between AI compute nodes.",
   D3:"The compute and power layer — data centers, GPUs, and clean energy that run AI workloads.",
-  D4:"The model infrastructure layer — MLOps platforms, vector databases, data annotation, model serving, and orchestration tools that surround foundation models.",
-  D5:"The software and security layer — platforms and tools that enable safe, governed AI deployment.",
-  D6:"The application layer — AI-native products in robotics, fintech, defense, and enterprise."
+  D4:"The software and security layer — platforms and tools that enable safe, governed AI deployment.",
+  D5:"The application layer — AI-native products in robotics, fintech, defense, and enterprise."
 };
-const DIMS=["D1","D2","D3","D4","D5","D6"];
+const DIMS=["D1","D2","D3","D4","D5"];
 
 let activeSector=null;
 let activeTierIdx=null;
