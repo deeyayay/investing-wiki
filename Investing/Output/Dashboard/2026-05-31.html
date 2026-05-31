@@ -408,6 +408,31 @@ const DATA = {
       ]
     },
     {
+      slug: "ai-model-infrastructure",
+      name: "AI Model Infrastructure",
+      dimension: "D4",
+      description: "Foundation model training, optimization, and serving",
+      tiers: [
+        { tier: "Training Data & Curation", fn: "Acquire, clean, deduplicate, and prepare large-scale datasets for model pre-training, RLHF, and fine-tuning", chokepoint: "Partial", capital_intensity: "Low–Medium", moat_type: "Ecosystem (data flywheel)", margin_profile: "Low (services) / High (proprietary data)", companies: [] },
+        { tier: "Distributed Training Orchestration", fn: "Orchestrate GPU/TPU clusters at scale for model pre-training and reinforcement learning using parallelism strategies that saturate interconnect bandwidth", chokepoint: "Partial", capital_intensity: "High", moat_type: "Process IP + Ecosystem", margin_profile: "High", companies: [
+          { ticker: "CRWV", name: "CoreWeave", mkt_cap: "Large", notes: "Pure-play GPU cloud operator and NVIDIA's preferred hyperscale partner — provides the bare-metal H100/B200 clusters that AI labs use for frontier model training when they can't get time on AWS or Azure. Its 2025 IPO made it the first listed company whose entire business is GPU-as-a-service." }
+        ]},
+        { tier: "Foundation Model Development", fn: "Design neural architectures, execute pre-training runs, and establish base model capabilities across language, vision, and multimodal tasks", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Process IP + Ecosystem + Switching cost", margin_profile: "Very High", companies: [] },
+        { tier: "Alignment & Safety Tuning", fn: "Adapt foundation models to be helpful, harmless, and honest via supervised fine-tuning, preference learning, and safety evaluation", chokepoint: "N", capital_intensity: "Low–Medium", moat_type: "Process IP", margin_profile: "Medium", companies: [] },
+        { tier: "Model Optimization & Compilation", fn: "Reduce model size, latency, and compute cost for production inference without unacceptable quality loss", chokepoint: "N", capital_intensity: "Low", moat_type: "Process IP (inference kernels) + Switching cost", margin_profile: "Medium–High", companies: [] },
+        { tier: "Inference Serving & Scaling", fn: "Serve model inference at scale with low P50/P95 latency, high throughput, and cost-efficient GPU utilization using continuous batching, KV cache management, and speculative decoding", chokepoint: "Y", capital_intensity: "High", moat_type: "Ecosystem + Process IP + Switching cost", margin_profile: "High", companies: [] },
+        { tier: "MLOps & Model Lifecycle Management", fn: "Manage the end-to-end model lifecycle: experiment tracking, versioning, CI/CD pipelines, feature management, drift monitoring, and automated retraining", chokepoint: "N", capital_intensity: "Low–Medium", moat_type: "Switching cost + Ecosystem", margin_profile: "Medium", companies: [
+          { ticker: "DDOG", name: "Datadog", mkt_cap: "Large", notes: "Monitoring platform expanding into LLM Observability — tracks token costs, latency, error rates, and prompt quality across AI model deployments. The default APM for AI-native applications, adding an LLM-specific revenue layer on top of its infrastructure monitoring base." },
+          { ticker: "SNOW", name: "Snowflake", mkt_cap: "Large", notes: "Data platform adding Cortex AI — brings managed LLM inference, vector search, and a feature store directly into the data warehouse where training data lives. Removes the need to move data to a separate ML platform, compressing the RAG and fine-tuning workflow into one SQL environment." },
+          { ticker: "PLTR", name: "Palantir Technologies", mkt_cap: "Large", notes: "Enterprise AI deployment platform with US government as a marquee anchor — its AIP (AI Platform) orchestrates LLM agents over proprietary enterprise data using its Ontology layer, solving the governance and data-access problems that prevent most enterprises from deploying AI safely." },
+          { ticker: "MDB", name: "MongoDB", mkt_cap: "Mid", notes: "Document database adding native vector search (HNSW) for RAG pipelines — enables developers to store embeddings alongside operational data without a separate vector store. Positioned as the simplest path from structured application data to LLM retrieval-augmented generation." }
+        ]},
+        { tier: "Model API & Developer Platform", fn: "Expose model capabilities via standardized APIs, SDKs, and developer tooling consumed by application builders and enterprise integrators", chokepoint: "Partial", capital_intensity: "Low", moat_type: "Ecosystem + Switching cost", margin_profile: "Very High", companies: [
+          { ticker: "CFLT", name: "Confluent", mkt_cap: "Mid", notes: "Kafka-based real-time streaming platform for ML feature pipelines — streams transactional events to model serving endpoints in milliseconds, enabling real-time fraud scoring, recommendation serving, and feature freshness that batch ETL cannot match." }
+        ]}
+      ]
+    },
+    {
       slug: "robotics-edge-ai",
       name: "Robotics & Edge AI",
       dimension: "D5",
@@ -461,7 +486,9 @@ const DATA = {
     { from: "Energy & Power", from_tier: "Power Conversion", to: "Compute Infrastructure", to_tier: "Power Distribution", flow: "Service", product: "800VDC bus → rack-level DC-DC", chokepoint: "Y" },
     { from: "Materials & Mining", from_tier: "Rare Earth Separation", to: "Robotics & Edge AI", to_tier: "Actuators & Motors", flow: "Material", product: "Nd₂O₃ → NdFeB alloy → servo motor", chokepoint: "Y" },
     { from: "Materials & Mining", from_tier: "Rare Earth Separation", to: "Energy & Power", to_tier: "Primary Generation", flow: "Material", product: "NdFeB permanent magnet → wind turbine PMSG", chokepoint: "Y" },
-    { from: "Semiconductors", from_tier: "Design (Edge AI)", to: "Robotics & Edge AI", to_tier: "Edge Compute Module", flow: "Component", product: "Nvidia Jetson Orin / Ambarella CV3 → edge inference module", chokepoint: "Y" }
+    { from: "Semiconductors", from_tier: "Design (Edge AI)", to: "Robotics & Edge AI", to_tier: "Edge Compute Module", flow: "Component", product: "Nvidia Jetson Orin / Ambarella CV3 → edge inference module", chokepoint: "Y" },
+    { from: "Compute Infrastructure", from_tier: "Server Assembly", to: "AI Model Infrastructure", to_tier: "Distributed Training Orchestration", flow: "Service", product: "GPU compute hours (H100/B200 DGX clusters) → model pre-training runs", chokepoint: "Y" },
+    { from: "Semiconductors", from_tier: "Design (Compute)", to: "AI Model Infrastructure", to_tier: "Distributed Training Orchestration", flow: "Component", product: "GPU die (H100/B200) + packaged HBM → training accelerator module", chokepoint: "Y" }
   ]
 };
 
