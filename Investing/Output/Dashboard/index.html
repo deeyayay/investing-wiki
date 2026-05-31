@@ -70,12 +70,33 @@ body{background:var(--bg);color:var(--text);font:14px/1.5 system-ui,sans-serif}
 .co-cap.small{background:rgba(239,68,68,.15);color:#fca5a5}
 .co-notes{font-size:12px;color:var(--muted);line-height:1.5}
 @media(max-width:600px){.sec-card{width:100%}.dim-desc{display:none}#l0,#l1,#l2{padding:16px}}
+#search-wrap{position:relative;flex:1;max-width:420px}
+#search-input{width:100%;padding:7px 12px 7px 34px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:13px;outline:none;transition:border-color .15s}
+#search-input:focus{border-color:#4a5568}
+#search-input::placeholder{color:var(--muted)}
+#search-icon{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none;font-size:14px}
+#search-results{position:absolute;top:calc(100% + 6px);left:0;right:0;background:var(--bg2);border:1px solid var(--border);border-radius:8px;max-height:380px;overflow-y:auto;z-index:100;box-shadow:0 8px 32px rgba(0,0,0,.5)}
+.sr-group-label{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:8px 12px 4px}
+.sr-item{padding:8px 12px;cursor:pointer;display:flex;align-items:center;gap:10px;transition:background .1s}
+.sr-item:hover,.sr-item.focused{background:var(--bg3)}
+.sr-ticker{font-family:monospace;font-weight:700;font-size:11px;background:rgba(99,102,241,.2);color:#a5b4fc;padding:2px 7px;border-radius:4px;flex-shrink:0}
+.sr-text{flex:1;min-width:0}
+.sr-label{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sr-sub{font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sr-empty{padding:16px 12px;text-align:center;color:var(--muted);font-size:13px}
+.sr-divider{height:1px;background:var(--border);margin:2px 0}
+@media(max-width:600px){#search-wrap{max-width:100%;order:3;width:100%}#hdr{flex-wrap:wrap}}
 </style>
 </head>
 <body>
 <div id="app">
 <header id="hdr">
   <span class="logo">AI Ecosystem Map</span>
+  <div id="search-wrap">
+    <span id="search-icon">&#9906;</span>
+    <input id="search-input" type="text" placeholder="Search tickers, sectors, tiers…" autocomplete="off" spellcheck="false">
+    <div id="search-results" hidden></div>
+  </div>
   <span class="gen-date">Generated: 2026-05-27</span>
 </header>
 <div id="l0"></div>
@@ -453,6 +474,80 @@ function openTier(idx){
 }
 
 renderL0();
+
+// ── Search ────────────────────────────────────────────────────────────────────
+let _searchIdx = null;
+
+function buildSearchIdx() {
+  const idx = [];
+  DATA.sectors.forEach(s => {
+    idx.push({ type: "sector", label: s.name, sub: s.dimension + " · " + s.description, slug: s.slug, q: (s.name + " " + s.description).toLowerCase() });
+    s.tiers.forEach((t, i) => {
+      idx.push({ type: "tier", label: t.tier, sub: s.name, slug: s.slug, tierIdx: i, q: (t.tier + " " + (t.fn || "")).toLowerCase() });
+      (t.companies || []).forEach(c => {
+        idx.push({ type: "company", label: c.name, ticker: c.ticker || "", sub: t.tier + " · " + s.name, slug: s.slug, tierIdx: i, q: ((c.ticker || "") + " " + c.name + " " + (c.notes || "")).toLowerCase() });
+      });
+    });
+  });
+  return idx;
+}
+
+function renderSearchResults(q) {
+  const res = document.getElementById("search-results");
+  if (!q) { res.hidden = true; return; }
+  if (!_searchIdx) _searchIdx = buildSearchIdx();
+  const hits = _searchIdx.filter(x => x.q.includes(q)).slice(0, 18);
+  if (!hits.length) {
+    res.innerHTML = "<div class=\"sr-empty\">No results</div>";
+    res.hidden = false;
+    return;
+  }
+  const groups = [["sector", "Sectors"], ["tier", "Tiers"], ["company", "Companies"]];
+  let html = "";
+  groups.forEach(([type, label]) => {
+    const group = hits.filter(h => h.type === type);
+    if (!group.length) return;
+    if (html) html += "<div class=\"sr-divider\"></div>";
+    html += "<div class=\"sr-group-label\">" + label + "</div>";
+    group.forEach(h => {
+      const ticker = h.ticker ? "<span class=\"sr-ticker\">" + h.ticker + "</span>" : "";
+      html += "<div class=\"sr-item\" data-type=\"" + h.type + "\" data-slug=\"" + h.slug + "\"" + (h.tierIdx !== undefined ? " data-tier=\"" + h.tierIdx + "\"" : "") + ">"
+        + ticker
+        + "<div class=\"sr-text\"><div class=\"sr-label\">" + h.label + "</div><div class=\"sr-sub\">" + h.sub + "</div></div>"
+        + "</div>";
+    });
+  });
+  res.innerHTML = html;
+  res.hidden = false;
+}
+
+document.getElementById("search-input").addEventListener("input", function () {
+  renderSearchResults(this.value.trim().toLowerCase());
+});
+
+document.getElementById("search-input").addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
+    this.value = "";
+    document.getElementById("search-results").hidden = true;
+  }
+});
+
+document.getElementById("search-results").addEventListener("click", function (e) {
+  const item = e.target.closest(".sr-item");
+  if (!item) return;
+  const slug = item.dataset.slug;
+  const tierIdx = item.dataset.tier;
+  document.getElementById("search-input").value = "";
+  document.getElementById("search-results").hidden = true;
+  openSector(slug);
+  if (tierIdx !== undefined) openTier(Number(tierIdx));
+});
+
+document.addEventListener("click", function (e) {
+  if (!document.getElementById("search-wrap").contains(e.target)) {
+    document.getElementById("search-results").hidden = true;
+  }
+});
 </script>
 </body>
 </html>
