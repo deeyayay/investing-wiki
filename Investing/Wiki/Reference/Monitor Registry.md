@@ -1,6 +1,6 @@
 # Monitor Registry
 *The research-monitor skill reads this file on every run. Add tickers here — no skill update needed.*
-*Last updated: May 31, 2026 — /add-ticker 6451.TW (ShunSin Technology) added to Photonics & Optical*
+*Last updated: May 31, 2026 — /add-ticker 6841.T, 6754.T (Photonics test); 6857.T, FORM (cross-sector Semis/Photonics) added*
 
 ---
 
@@ -46,10 +46,14 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 | PRY.MI | Prysmian S.p.A. | none | Euronext Milan | Investing/Wiki/Sectors/Photonics & Optical/PRY.MI.md | — |
 | 5801.T | Furukawa Electric Co., Ltd. | none | TSE (Tokyo) | Investing/Wiki/Sectors/Photonics & Optical/5801.T.md | — |
 | 6451.TW | ShunSin Technology Holdings Limited | none | TWSE (Taiwan) | Investing/Wiki/Sectors/Photonics & Optical/6451.TW.md | — |
+| 6841.T | Yokogawa Electric Corporation | none | TSE (Tokyo) | Investing/Wiki/Sectors/Photonics & Optical/6841.T.md | — |
+| 6754.T | Anritsu Corporation | none | TSE (Tokyo) | Investing/Wiki/Sectors/Photonics & Optical/6754.T.md | — |
 
 <!-- CANDIDATE (/map-sector 2026-05-24): GLW (Corning Incorporated) — Optical Fiber & Preform Manufacturing layer. ~50% global optical fiber market; OVD preform; SMF-28. Run /add-ticker GLW --sector "Photonics & Optical" --layer "Optical Fiber & Preform Manufacturing" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): IQE (IQE plc, AIM: IQE) — III-V Substrate & Epitaxial Wafer Growth layer. MOCVD epi foundry; VCSEL and GaN epi for multiple customers. UK AIM-listed. Run /add-ticker IQE --sector "Photonics & Optical" --layer "III-V Substrate & Epitaxial Wafer Growth" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): MTSI (MACOM Technology Solutions) — Photonic Device Fabrication layer. GaAs/InP/GaN chip fab; drivers, TIAs, photonic ICs; strong DC transceiver exposure. Run /add-ticker MTSI --sector "Photonics & Optical" --layer "Photonic Device Fabrication" to onboard. -->
+<!-- CROSS-SECTOR (2026-05-31): 6857.T (Advantest) — Photonic Detection, Measurement & Test tier (primary registry: Semiconductors). V93000-Triton SiPh/CPO wafer test system. -->
+<!-- CROSS-SECTOR (2026-05-31): FORM (FormFactor) — Photonic Detection, Measurement & Test tier (primary registry: Semiconductors). OptoVue Pro optical probe + V93000-Triton partnership. -->
 <!-- CANDIDATE (/scout-tickers 2026-05-31): 6965.T (Hamamatsu Photonics) — Photonic Sensing & LIDAR. Run /add-ticker 6965.T --sector "Photonics & Optical" --layer "Photonic Sensing & LIDAR" to onboard. -->
 <!-- CANDIDATE (/scout-tickers 2026-05-31): PRY.MI (Prysmian S.p.A.) — Optical Fiber & Preform Manufacturing. Run /add-ticker PRY.MI --sector "Photonics & Optical" --layer "Optical Fiber & Preform Manufacturing" to onboard. -->
 <!-- CANDIDATE (/scout-tickers 2026-05-31): 5801.T (Furukawa Electric) — Optical Fiber & Preform Manufacturing. Run /add-ticker 5801.T --sector "Photonics & Optical" --layer "Optical Fiber & Preform Manufacturing" to onboard. -->
@@ -67,6 +71,8 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 | ALAB | Astera Labs, Inc. | 0001736297 | NASDAQ | Investing/Wiki/Sectors/Semiconductors/ALAB.md | — |
 | CRDO | Credo Technology Group Holding Ltd | 0001807794 | NASDAQ | Investing/Wiki/Sectors/Semiconductors/CRDO.md | — |
 | AMKR | Amkor Technology, Inc. | 0001047127 | NASDAQ | Investing/Wiki/Sectors/Semiconductors/AMKR.md | — |
+| 6857.T | Advantest Corporation | none | TSE (Tokyo) | Investing/Wiki/Sectors/Semiconductors/6857.T.md | — |
+| FORM | FormFactor, Inc. | 0001039399 | NASDAQ | Investing/Wiki/Sectors/Semiconductors/FORM.md | — |
 
 <!-- CANDIDATE (/map-sector 2026-05-24): SNPS (Synopsys) — EDA & Design IP layer. Run /add-ticker SNPS --sector "Semiconductors" --layer "EDA & Design IP" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): CDNS (Cadence Design Systems) — EDA & Design IP layer. Run /add-ticker CDNS --sector "Semiconductors" --layer "EDA & Design IP" to onboard. -->
