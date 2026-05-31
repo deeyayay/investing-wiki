@@ -1,6 +1,6 @@
 # Monitor Registry
 *The research-monitor skill reads this file on every run. Add tickers here — no skill update needed.*
-*Last updated: May 24, 2026 — /map-sector Space & Communications run; IRDM, GSAT, VSAT, KTOS candidate stubs added*
+*Last updated: May 31, 2026 — /add-ticker 6965.T, PRY.MI, 5801.T added to Photonics & Optical*
 
 ---
 
@@ -42,6 +42,9 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 | SIVE | Sivers Semiconductors | none | Nasdaq Stockholm | Investing/Wiki/Sectors/Photonics & Optical/SIVE.md | 5.5 |
 | POET | POET Technologies | none | TSX Venture | Investing/Wiki/Sectors/Photonics & Optical/POET.md | — |
 | FOCI | FOCI Fiber Optic Communications, Inc. | none | TPEX (Taiwan) | Investing/Wiki/Sectors/Photonics & Optical/FOCI.md | — |
+| 6965.T | Hamamatsu Photonics K.K. | none | TSE (Tokyo) | Investing/Wiki/Sectors/Photonics & Optical/6965.T.md | — |
+| PRY.MI | Prysmian S.p.A. | none | Euronext Milan | Investing/Wiki/Sectors/Photonics & Optical/PRY.MI.md | — |
+| 5801.T | Furukawa Electric Co., Ltd. | none | TSE (Tokyo) | Investing/Wiki/Sectors/Photonics & Optical/5801.T.md | — |
 
 <!-- CANDIDATE (/map-sector 2026-05-24): GLW (Corning Incorporated) — Optical Fiber & Preform Manufacturing layer. ~50% global optical fiber market; OVD preform; SMF-28. Run /add-ticker GLW --sector "Photonics & Optical" --layer "Optical Fiber & Preform Manufacturing" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): IQE (IQE plc, AIM: IQE) — III-V Substrate & Epitaxial Wafer Growth layer. MOCVD epi foundry; VCSEL and GaN epi for multiple customers. UK AIM-listed. Run /add-ticker IQE --sector "Photonics & Optical" --layer "III-V Substrate & Epitaxial Wafer Growth" to onboard. -->
