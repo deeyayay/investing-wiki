@@ -1,6 +1,6 @@
 # Sentiment Index
 *Maintained by `/ingest-sentiment` — do not edit the ticker table manually.*
-*Last updated: 2026-05-22*
+*Last updated: 2026-05-31 (ASPI added)*
 
 ---
 
@@ -8,11 +8,13 @@
 
 | Ticker | Wiki | Status | Mentions | Last Signal |
 |--------|------|--------|----------|-------------|
-| NVDA | [[NVDA]] | monitored | 7 | 2026-05-22 |
+| NVDA | [[NVDA]] | monitored | 8 | 2026-05-31 |
 | AXTI | [[AXTI]] | monitored | 4 | 2026-05-20 |
 | SIVE | [[SIVE]] | monitored | 4 | 2026-05-20 |
 | TSM | [[TSM]] | stub | 4 | 2026-05-20 |
 | AMD | [[AMD]] | stub | 3 | 2026-05-22 |
+| AOSL | [[AOSL]] | stub | 1 | 2026-05-31 |
+| ASPI | [[ASPI]] | monitored | 0 | — |
 | AMZN | [[AMZN]] | stub | 3 | 2026-05-22 |
 | INTC | [[INTC]] | stub | 3 | 2026-05-18 |
 | LITE | [[LITE]] | monitored | 3 | 2026-05-20 |
@@ -52,6 +54,7 @@
 | GLW | [[GLW]] | stub | 1 | 2026-05-20 |
 | GOOGL | [[GOOGL]] | stub | 1 | 2026-05-22 |
 | IBM | [[IBM]] | stub | 1 | 2026-05-22 |
+| IFX | [[IFX]] | monitored | 1 | 2026-05-31 |
 | INFQ | [[INFQ]] | stub | 1 | 2026-05-22 |
 | LPK | [[LPK]] | stub | 1 | 2026-05-17 |
 | MOD | [[MOD]] | stub | 1 | 2026-05-18 |
@@ -62,21 +65,25 @@
 | Nextronics | [[Nextronics]] | stub | 1 | 2026-05-18 |
 | NXPI | [[NXPI]] | stub | 1 | 2026-05-17 |
 | NVT | [[NVT]] | stub | 1 | 2026-05-18 |
+| NVTS | [[NVTS]] | monitored | 1 | 2026-05-31 |
 | ORCL | [[ORCL]] | stub | 1 | 2026-05-18 |
 | PANW | [[PANW]] | stub | 1 | 2026-05-19 |
 | PENG | [[PENG]] | stub | 1 | 2026-05-17 |
 | POET | [[POET]] | monitored | 1 | 2026-05-17 |
+| POWI | [[POWI]] | stub | 1 | 2026-05-31 |
 | QBTS | [[QBTS]] | stub | 1 | 2026-05-22 |
 | RGTI | [[RGTI]] | stub | 1 | 2026-05-22 |
 | SAIL | [[SAIL]] | monitored | 1 | 2026-05-19 |
 | Samsung | [[Samsung]] | stub | 1 | 2026-05-20 |
 | SK Hynix | [[SK Hynix]] | stub | 1 | 2026-05-20 |
 | SOFI | [[SOFI]] | monitored | 1 | 2026-05-18 |
-| STM | [[STM]] | stub | 1 | 2026-05-17 |
+| STM | [[STM]] | stub | 2 | 2026-05-31 |
 | TXN | [[TXN]] | stub | 1 | 2026-05-17 |
 | VNP | [[VNP]] | stub | 1 | 2026-05-18 |
+| VICR | [[VICR]] | stub | 1 | 2026-05-31 |
 | VST | [[VST]] | stub | 1 | 2026-05-18 |
 | WMT | [[WMT]] | stub | 1 | 2026-05-22 |
+| WOLF | [[WOLF]] | stub | 1 | 2026-05-31 |
 
 ---
 
@@ -85,6 +92,7 @@
 *Newest first. Max 30 entries.*
 
 <!-- signals appended here by /ingest-sentiment -->
+2026-05-31 · tweet · [[2026-05-31-aosl-researching-the-power]] · AOSL, IFX, NVDA, NVTS, POWI, STM, VICR, WOLF
 2026-05-22 · article · [[2026-05-22-amd-a-ton-of]] · AMD, AMZN, GFS, GOOGL, IBM, INFQ, MSFT, NVDA, QBTS, RGTI, WMT
 2026-05-20 · tweet · [[2026-05-20-nvda-q1-earnings-preview]] · AAOI, AEHR, AXTI, Browave, COHR, FOCI, GLW, LITE, MU, NVDA, Samsung, SIVE, SK Hynix, SMCI, TSM, VRT
 2026-05-19 · tweet · [[2026-05-19-sail-first-memory-semis]] · CRWD, FTNT, PANW, SAIL

@@ -1,6 +1,6 @@
 # Monitor Registry
 *The research-monitor skill reads this file on every run. Add tickers here — no skill update needed.*
-*Last updated: May 31, 2026 — /add-ticker 6841.T, 6754.T (Photonics test); 6857.T, FORM added; /map-sector AI Model Infrastructure run; AMD, CRWV, META, DDOG, SNOW, PLTR, MDB, ESTC, CFLT candidate stubs added*
+*Last updated: May 31, 2026 — /add-ticker 6841.T, 6754.T, 6857.T, FORM (Photonics/Semis); /map-sector AI Model Infrastructure; NVTS, IFX, ASPI, ELMT added; AMD, CRWV, META, DDOG, SNOW, PLTR, MDB, ESTC, CFLT candidate stubs added*
 
 ---
 
@@ -73,6 +73,8 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 | AMKR | Amkor Technology, Inc. | 0001047127 | NASDAQ | Investing/Wiki/Sectors/Semiconductors/AMKR.md | — |
 | 6857.T | Advantest Corporation | none | TSE (Tokyo) | Investing/Wiki/Sectors/Semiconductors/6857.T.md | — |
 | FORM | FormFactor, Inc. | 0001039399 | NASDAQ | Investing/Wiki/Sectors/Semiconductors/FORM.md | — |
+| NVTS | Navitas Semiconductor Corp | 0001821769 | NASDAQ | Investing/Wiki/Sectors/Semiconductors/NVTS.md | — |
+| IFX | Infineon Technologies AG | none | XETRA (Frankfurt) | Investing/Wiki/Sectors/Semiconductors/IFX.md | — |
 
 <!-- CANDIDATE (/map-sector 2026-05-24): SNPS (Synopsys) — EDA & Design IP layer. Run /add-ticker SNPS --sector "Semiconductors" --layer "EDA & Design IP" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): CDNS (Cadence Design Systems) — EDA & Design IP layer. Run /add-ticker CDNS --sector "Semiconductors" --layer "EDA & Design IP" to onboard. -->
@@ -148,6 +150,7 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 |--------|---------|-----|----------|------|-------|
 | OKLO | Oklo Inc. | 0001828937 | NYSE | Investing/Wiki/Sectors/Clean Energy/OKLO.md | — |
 | TE | T1 Energy Inc. | 0001992243 | NYSE | Investing/Wiki/Sectors/Clean Energy/TE.md | — |
+| ASPI | ASP Isotopes Inc. | 0001921865 | NASDAQ | Investing/Wiki/Sectors/Clean Energy/ASPI.md | — |
 
 <!-- CANDIDATE (/map-sector 2026-05-24): VST (Vistra Energy) — Primary Power Generation layer. Largest US competitive power generator; nuclear (Comanche Peak) + CCGT; Texas merchant market. Run /add-ticker VST --sector "Energy & Power" --layer "Primary Power Generation" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): GEV (GE Vernova) — Primary Power Generation + High-Voltage Transmission layer. Gas turbines (GE 7F.05, HA-class); wind (Haliade-X); Grid Solutions HV transformers + HVDC. Run /add-ticker GEV --sector "Energy & Power" --layer "Primary Power Generation" to onboard. -->
@@ -181,6 +184,7 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 |--------|---------|-----|----------|------|-------|
 | FCX | Freeport-McMoRan | 0000831259 | NYSE | Investing/Wiki/Sectors/Metals & Mining/FCX.md | — |
 | MP | MP Materials Corp. | 0001801170 | NYSE | Investing/Wiki/Sectors/Metals & Mining/MP.md | — |
+| ELMT | The Elmet Group Co. | 0002101698 | NASDAQ | Investing/Wiki/Sectors/Metals & Mining/ELMT.md | — |
 
 <!-- CANDIDATE (/map-sector 2026-05-24): VALE (Vale S.A.) — Bulk Mining & Ore Extraction layer. World's largest nickel producer; iron ore dominant; cobalt byproduct. Run /add-ticker VALE --sector "Metals & Mining" --layer "Bulk Mining & Ore Extraction" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): RIO (Rio Tinto) — Bulk Mining & Ore Extraction layer. Copper (Oyu Tolgoi), lithium (Rincon), iron ore. Run /add-ticker RIO --sector "Metals & Mining" --layer "Bulk Mining & Ore Extraction" to onboard. -->
