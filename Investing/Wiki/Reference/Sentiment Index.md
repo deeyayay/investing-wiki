@@ -64,7 +64,7 @@
 | Nextronics | [[Nextronics]] | stub | 1 | 2026-05-18 |
 | NXPI | [[NXPI]] | stub | 1 | 2026-05-17 |
 | NVT | [[NVT]] | stub | 1 | 2026-05-18 |
-| NVTS | [[NVTS]] | stub | 1 | 2026-05-31 |
+| NVTS | [[NVTS]] | monitored | 1 | 2026-05-31 |
 | ORCL | [[ORCL]] | stub | 1 | 2026-05-18 |
 | PANW | [[PANW]] | stub | 1 | 2026-05-19 |
 | PENG | [[PENG]] | stub | 1 | 2026-05-17 |
