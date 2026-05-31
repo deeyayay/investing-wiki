@@ -46,6 +46,9 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 <!-- CANDIDATE (/map-sector 2026-05-24): GLW (Corning Incorporated) — Optical Fiber & Preform Manufacturing layer. ~50% global optical fiber market; OVD preform; SMF-28. Run /add-ticker GLW --sector "Photonics & Optical" --layer "Optical Fiber & Preform Manufacturing" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): IQE (IQE plc, AIM: IQE) — III-V Substrate & Epitaxial Wafer Growth layer. MOCVD epi foundry; VCSEL and GaN epi for multiple customers. UK AIM-listed. Run /add-ticker IQE --sector "Photonics & Optical" --layer "III-V Substrate & Epitaxial Wafer Growth" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): MTSI (MACOM Technology Solutions) — Photonic Device Fabrication layer. GaAs/InP/GaN chip fab; drivers, TIAs, photonic ICs; strong DC transceiver exposure. Run /add-ticker MTSI --sector "Photonics & Optical" --layer "Photonic Device Fabrication" to onboard. -->
+<!-- CANDIDATE (/scout-tickers 2026-05-31): 6965.T (Hamamatsu Photonics) — Photonic Sensing & LIDAR. Run /add-ticker 6965.T --sector "Photonics & Optical" --layer "Photonic Sensing & LIDAR" to onboard. -->
+<!-- CANDIDATE (/scout-tickers 2026-05-31): PRY.MI (Prysmian S.p.A.) — Optical Fiber & Preform Manufacturing. Run /add-ticker PRY.MI --sector "Photonics & Optical" --layer "Optical Fiber & Preform Manufacturing" to onboard. -->
+<!-- CANDIDATE (/scout-tickers 2026-05-31): 5801.T (Furukawa Electric) — Optical Fiber & Preform Manufacturing. Run /add-ticker 5801.T --sector "Photonics & Optical" --layer "Optical Fiber & Preform Manufacturing" to onboard. -->
 
 ---
 
