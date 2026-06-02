@@ -131,3 +131,4 @@ The critical risk is Neutron execution. The current valuation prices in meaningf
 
 - **May 18, 2026** — add-ticker run. Note created from template; fundamental sections populated from web research and SEC DEF 14A. CIK 0001819994, NASDAQ. Space & Comms sector.
 - **May 18, 2026** — 📊 MONITOR | Q1 2026 earnings filed May 7: record $200.3M rev (+63.5% YoY), $2.2B backlog, largest-ever contract; Neutron 5-launch deal booked pre-flight; Q4 2026 debut target maintained; Stage 1 tank rupture in Jan 2026 noted as schedule risk.
+- **June 2, 2026** — stock-research run. All fundamental sections (One-Line Thesis, Investment Thesis, Management & Leadership) already populated from May 18 add-ticker run — no updates required. No --refresh flag passed.
