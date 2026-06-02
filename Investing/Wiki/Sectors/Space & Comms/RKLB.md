@@ -8,6 +8,24 @@ The only vertically integrated launch provider with proven mission cadence outsi
 
 ---
 
+## Scoring Summary
+_Last scored: 2026-06-02 | [[Scoring Rubric]]_
+
+| Criterion | Score | Evidence |
+|-----------|-------|----------|
+| Product (Love Factor) | 4/5 | Sole non-SpaceX commercial launcher at scale; DoD/NRO/NASA mission trust; Space Systems components sold industry-wide |
+| Pricing Power | 3/5 | GAAP GM 33–35% (Q2 2026 guidance); Space Systems recurring revenue provides floor; not yet demonstrating active price raises |
+| Leadership & Alignment | 4/5 | Founder Beck holds ~17% economic stake (51.35M common + 45.95M Series A preferred / 575.8M shares); 100% mission success rate 2025; guidance accuracy improving |
+| Financial Health | 2/5 | Adj. EBITDA -$11.8M Q1 2026; FCF negative; thesis explicitly states capital markets access required for Neutron development |
+| Macro Environment | 4/5 | US DoD requires 100+ small-sat launches/year by 2027; commercial constellation buildout secular tailwind; SpaceX is one manageable headwind |
+| Future Potential | 4/5 | Launch + Space Systems (~71% revenue) both operational; Neutron 5-launch commercial deal signed pre-flight; medium-lift TAM expansion in play |
+| **Composite** | **7.0/10** | **Strong** |
+
+**Valuation:** Fair–Expensive vs. sector framework (3–6x EV/Revenue fair value range) | EV/Revenue: est. >10x at analyst PTs | Analyst upside: consensus Buy (15 analysts), 53% Strong Buy; PTs $112 (TheStreet) – $120 (TD Cowen)
+**Growth Potential:** — (pending real-time data integration)
+
+---
+
 ## Investment Thesis
 
 > **Thesis established:** May 18, 2026
@@ -132,3 +150,4 @@ The critical risk is Neutron execution. The current valuation prices in meaningf
 - **May 18, 2026** — add-ticker run. Note created from template; fundamental sections populated from web research and SEC DEF 14A. CIK 0001819994, NASDAQ. Space & Comms sector.
 - **May 18, 2026** — 📊 MONITOR | Q1 2026 earnings filed May 7: record $200.3M rev (+63.5% YoY), $2.2B backlog, largest-ever contract; Neutron 5-launch deal booked pre-flight; Q4 2026 debut target maintained; Stage 1 tank rupture in Jan 2026 noted as schedule risk.
 - **June 2, 2026** — stock-research run. All fundamental sections (One-Line Thesis, Investment Thesis, Management & Leadership) already populated from May 18 add-ticker run — no updates required. No --refresh flag passed.
+- **June 2, 2026** — Scored — Composite 7.0/10 Strong | P:4 PP:3 L:4 FH:2 ME:4 FP:4

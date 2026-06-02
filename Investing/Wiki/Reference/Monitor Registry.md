@@ -169,7 +169,7 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 | Ticker | Company | CIK | Exchange | Path | Score |
 |--------|---------|-----|----------|------|-------|
 | ASTS | AST SpaceMobile | 0001780530 | NASDAQ | Investing/Wiki/Sectors/Space & Comms/ASTS.md | — |
-| RKLB | Rocket Lab USA, Inc. | 0001819994 | NASDAQ | Investing/Wiki/Sectors/Space & Comms/RKLB.md | — |
+| RKLB | Rocket Lab USA, Inc. | 0001819994 | NASDAQ | Investing/Wiki/Sectors/Space & Comms/RKLB.md | 7.0 |
 
 <!-- CANDIDATE (/map-sector 2026-05-24): IRDM (Iridium Communications) — Satellite Connectivity Services + Spectrum & Orbital Operations layers. 66-satellite LEO constellation; L-band MSS; Iridium SBD IoT; Iridium Certus broadband; owns globally-coordinated ITU L-band spectrum. Run /add-ticker IRDM --sector "Space & Comms" --layer "Satellite Connectivity Services" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): GSAT (Globalstar Inc.) — Satellite Connectivity Services + Spectrum & Orbital Operations layers. S-band MSS constellation; Apple Emergency SOS royalty stream; Band 53/n53 terrestrial LTE spectrum asset; SPOT IoT messaging. Run /add-ticker GSAT --sector "Space & Comms" --layer "Satellite Connectivity Services" to onboard. -->
