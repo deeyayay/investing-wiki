@@ -61,7 +61,7 @@ The critical risks are revenue concentration and governance. A single $471.7M co
 ---
 
 ## Catalyst Timeline
-- [ ] Q1 2026 10-Q filing — delayed past SEC deadline; watch for SEC comment letter or amended filing
+- [x] Q1 2026 10-Q filing — delayed past SEC deadline; filed June 1, 2026 (within self-imposed deadline)
 - [ ] Q2 2026 earnings — first fully public quarter; watch $375M ARR ramp progress
 - [ ] Thinking Machines Lab deployment completion — 5,000 NVIDIA B300 GPUs through FY2026
 - [ ] 5 new data center locations (in development) — watch for operational go-live announcements
@@ -75,6 +75,7 @@ The critical risks are revenue concentration and governance. A single $471.7M co
 
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
+| June 1, 2026 | Q1 2026 10-Q filed by self-imposed June 1 deadline after May 26 delay disclosure | → | Filing resolved without SEC comment letter; internal controls appear intact for a scale-up company; governance concern downgraded from active risk to watch item |
 
 ---
 
@@ -94,7 +95,9 @@ The critical risks are revenue concentration and governance. A single $471.7M co
 | Filing | Period | File |
 |--------|--------|------|
 | 8-K | May 8, 2026 | Business combination with Willow Lane closes; $134.5M gross proceeds |
-| 8-K | May 2026 | $471.7M GPU services contract with Thinking Machines Lab Inc. (5,000 NVIDIA B300s, 36-month) |
+| 8-K | May 21, 2026 | $471.7M GPU services contract with Thinking Machines Lab Inc. (5,000 NVIDIA B300s, 36-month) |
+| 10-Q | June 1, 2026 | Q1 FY2026 (Jan–Mar 2026); revenue $10.96M, net loss -$4.12M, GM 85.6%; filed after May 26 delay disclosure |
+| 8-K | June 2, 2026 | Investor metrics presentation — ARR trajectory, contracted revenue backlog, and key operating KPIs |
 | — | — | — |
 
 ---
@@ -112,6 +115,12 @@ The critical risks are revenue concentration and governance. A single $471.7M co
 - **May 26, 2026** — BRUN discloses inability to file 10-Q by SEC deadline.
   **Why it matters:** Governance signal at a newly public SPAC company — could indicate internal control weaknesses, rapid scale-up growing pains, or more serious reporting issues; watch for SEC comment letter.
 
+- **June 1, 2026** — Q1 2026 10-Q filed; revenue $10.96M (+165% YoY), GM 85.6%, net loss -$4.12M formally confirmed; company met its self-imposed June 1 refiling deadline.
+  **Why it matters:** Resolves the May 26 governance concern — filing without SEC comment letter suggests the delay was a scale-up admin issue, not a restatement or material control weakness; active risk downgraded to watch item.
+
+- **June 2, 2026** — BRUN files 8-K investor metrics presentation; current stock price $36.74, market cap ~$2.3B at filing date.
+  **Why it matters:** First formal ARR progress data point post-listing; confirms backlog deployment tracking against the $375M year-end ARR target — most important pre-Q2-earnings read on execution.
+
 ---
 
 ## Cross-Ticker Signals
@@ -120,13 +129,15 @@ The critical risks are revenue concentration and governance. A single $471.7M co
 
 | Date | Direction | Other Ticker | Signal | Implication |
 |------|-----------|-------------|--------|-------------|
+| May 21, 2026 | Emits | NVDA | 5,000 NVIDIA B300 GPU deployment contracted | Confirms B300 demand pull from enterprise neocloud segment; validates NVDA's next-gen GPU revenue ramp beyond hyperscalers |
 
 ---
 
 ## Analyst Coverage
 *(Rating changes, price target moves, notable commentary)*
 
-- **May 2026** — Craig-Hallum initiated with Buy rating; BRUN described as "great opportunity to play the AI industry amid rapidly growing demand for inference compute"
+- **May 2026** — Craig-Hallum initiated with Buy rating, PT $30; BRUN described as "great opportunity to play the AI industry amid rapidly growing demand for inference compute"
+- **May 2026** — DA Davidson raised PT to $45 from $25, maintains Buy; driven by Thinking Machines Lab $472M contract adding 50% to backlog
 
 ---
 
@@ -146,3 +157,4 @@ The critical risks are revenue concentration and governance. A single $471.7M co
 *(Reverse-chron append log — newest at bottom)*
 
 - **June 4, 2026** — add-ticker run. Note created from template; fundamental sections populated from web research and SEC filings. CIK 0002090646, NASDAQ. AI Infrastructure sector. DEF 14A not yet filed (newly listed May 2026 via SPAC).
+- **June 4, 2026** — 📊 MONITOR | Q1 10-Q filed June 1 (governance concern resolved); DA Davidson raised PT $25→$45 (Buy); investor metrics 8-K June 2; stock $36.74, mkt cap ~$2.3B; 2 analysts, consensus Strong Buy, PT range $30–$45.
