@@ -1,6 +1,6 @@
 # Monitor Registry
 *The research-monitor skill reads this file on every run. Add tickers here — no skill update needed.*
-*Last updated: May 24, 2026 — /map-sector Space & Communications run; IRDM, GSAT, VSAT, KTOS candidate stubs added*
+*Last updated: May 31, 2026 — /add-ticker 6841.T, 6754.T, 6857.T, FORM (Photonics/Semis); /map-sector AI Model Infrastructure; NVTS, IFX, ASPI, ELMT added; AMD, CRWV, META, DDOG, SNOW, PLTR, MDB, ESTC, CFLT candidate stubs added*
 
 ---
 
@@ -42,10 +42,21 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 | SIVE | Sivers Semiconductors | none | Nasdaq Stockholm | Investing/Wiki/Sectors/Photonics & Optical/SIVE.md | 5.5 |
 | POET | POET Technologies | none | TSX Venture | Investing/Wiki/Sectors/Photonics & Optical/POET.md | — |
 | FOCI | FOCI Fiber Optic Communications, Inc. | none | TPEX (Taiwan) | Investing/Wiki/Sectors/Photonics & Optical/FOCI.md | — |
+| 6965.T | Hamamatsu Photonics K.K. | none | TSE (Tokyo) | Investing/Wiki/Sectors/Photonics & Optical/6965.T.md | — |
+| PRY.MI | Prysmian S.p.A. | none | Euronext Milan | Investing/Wiki/Sectors/Photonics & Optical/PRY.MI.md | — |
+| 5801.T | Furukawa Electric Co., Ltd. | none | TSE (Tokyo) | Investing/Wiki/Sectors/Photonics & Optical/5801.T.md | — |
+| 6451.TW | ShunSin Technology Holdings Limited | none | TWSE (Taiwan) | Investing/Wiki/Sectors/Photonics & Optical/6451.TW.md | — |
+| 6841.T | Yokogawa Electric Corporation | none | TSE (Tokyo) | Investing/Wiki/Sectors/Photonics & Optical/6841.T.md | — |
+| 6754.T | Anritsu Corporation | none | TSE (Tokyo) | Investing/Wiki/Sectors/Photonics & Optical/6754.T.md | — |
 
 <!-- CANDIDATE (/map-sector 2026-05-24): GLW (Corning Incorporated) — Optical Fiber & Preform Manufacturing layer. ~50% global optical fiber market; OVD preform; SMF-28. Run /add-ticker GLW --sector "Photonics & Optical" --layer "Optical Fiber & Preform Manufacturing" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): IQE (IQE plc, AIM: IQE) — III-V Substrate & Epitaxial Wafer Growth layer. MOCVD epi foundry; VCSEL and GaN epi for multiple customers. UK AIM-listed. Run /add-ticker IQE --sector "Photonics & Optical" --layer "III-V Substrate & Epitaxial Wafer Growth" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): MTSI (MACOM Technology Solutions) — Photonic Device Fabrication layer. GaAs/InP/GaN chip fab; drivers, TIAs, photonic ICs; strong DC transceiver exposure. Run /add-ticker MTSI --sector "Photonics & Optical" --layer "Photonic Device Fabrication" to onboard. -->
+<!-- CROSS-SECTOR (2026-05-31): 6857.T (Advantest) — Photonic Detection, Measurement & Test tier (primary registry: Semiconductors). V93000-Triton SiPh/CPO wafer test system. -->
+<!-- CROSS-SECTOR (2026-05-31): FORM (FormFactor) — Photonic Detection, Measurement & Test tier (primary registry: Semiconductors). OptoVue Pro optical probe + V93000-Triton partnership. -->
+<!-- CANDIDATE (/scout-tickers 2026-05-31): 6965.T (Hamamatsu Photonics) — Photonic Sensing & LIDAR. Run /add-ticker 6965.T --sector "Photonics & Optical" --layer "Photonic Sensing & LIDAR" to onboard. -->
+<!-- CANDIDATE (/scout-tickers 2026-05-31): PRY.MI (Prysmian S.p.A.) — Optical Fiber & Preform Manufacturing. Run /add-ticker PRY.MI --sector "Photonics & Optical" --layer "Optical Fiber & Preform Manufacturing" to onboard. -->
+<!-- CANDIDATE (/scout-tickers 2026-05-31): 5801.T (Furukawa Electric) — Optical Fiber & Preform Manufacturing. Run /add-ticker 5801.T --sector "Photonics & Optical" --layer "Optical Fiber & Preform Manufacturing" to onboard. -->
 
 ---
 
@@ -60,6 +71,10 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 | ALAB | Astera Labs, Inc. | 0001736297 | NASDAQ | Investing/Wiki/Sectors/Semiconductors/ALAB.md | — |
 | CRDO | Credo Technology Group Holding Ltd | 0001807794 | NASDAQ | Investing/Wiki/Sectors/Semiconductors/CRDO.md | — |
 | AMKR | Amkor Technology, Inc. | 0001047127 | NASDAQ | Investing/Wiki/Sectors/Semiconductors/AMKR.md | — |
+| 6857.T | Advantest Corporation | none | TSE (Tokyo) | Investing/Wiki/Sectors/Semiconductors/6857.T.md | — |
+| FORM | FormFactor, Inc. | 0001039399 | NASDAQ | Investing/Wiki/Sectors/Semiconductors/FORM.md | — |
+| NVTS | Navitas Semiconductor Corp | 0001821769 | NASDAQ | Investing/Wiki/Sectors/Semiconductors/NVTS.md | — |
+| IFX | Infineon Technologies AG | none | XETRA (Frankfurt) | Investing/Wiki/Sectors/Semiconductors/IFX.md | — |
 
 <!-- CANDIDATE (/map-sector 2026-05-24): SNPS (Synopsys) — EDA & Design IP layer. Run /add-ticker SNPS --sector "Semiconductors" --layer "EDA & Design IP" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): CDNS (Cadence Design Systems) — EDA & Design IP layer. Run /add-ticker CDNS --sector "Semiconductors" --layer "EDA & Design IP" to onboard. -->
@@ -135,6 +150,7 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 |--------|---------|-----|----------|------|-------|
 | OKLO | Oklo Inc. | 0001828937 | NYSE | Investing/Wiki/Sectors/Clean Energy/OKLO.md | — |
 | TE | T1 Energy Inc. | 0001992243 | NYSE | Investing/Wiki/Sectors/Clean Energy/TE.md | — |
+| ASPI | ASP Isotopes Inc. | 0001921865 | NASDAQ | Investing/Wiki/Sectors/Clean Energy/ASPI.md | — |
 
 <!-- CANDIDATE (/map-sector 2026-05-24): VST (Vistra Energy) — Primary Power Generation layer. Largest US competitive power generator; nuclear (Comanche Peak) + CCGT; Texas merchant market. Run /add-ticker VST --sector "Energy & Power" --layer "Primary Power Generation" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): GEV (GE Vernova) — Primary Power Generation + High-Voltage Transmission layer. Gas turbines (GE 7F.05, HA-class); wind (Haliade-X); Grid Solutions HV transformers + HVDC. Run /add-ticker GEV --sector "Energy & Power" --layer "Primary Power Generation" to onboard. -->
@@ -153,7 +169,7 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 | Ticker | Company | CIK | Exchange | Path | Score |
 |--------|---------|-----|----------|------|-------|
 | ASTS | AST SpaceMobile | 0001780530 | NASDAQ | Investing/Wiki/Sectors/Space & Comms/ASTS.md | — |
-| RKLB | Rocket Lab USA, Inc. | 0001819994 | NASDAQ | Investing/Wiki/Sectors/Space & Comms/RKLB.md | — |
+| RKLB | Rocket Lab USA, Inc. | 0001819994 | NASDAQ | Investing/Wiki/Sectors/Space & Comms/RKLB.md | 7.0 |
 
 <!-- CANDIDATE (/map-sector 2026-05-24): IRDM (Iridium Communications) — Satellite Connectivity Services + Spectrum & Orbital Operations layers. 66-satellite LEO constellation; L-band MSS; Iridium SBD IoT; Iridium Certus broadband; owns globally-coordinated ITU L-band spectrum. Run /add-ticker IRDM --sector "Space & Comms" --layer "Satellite Connectivity Services" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): GSAT (Globalstar Inc.) — Satellite Connectivity Services + Spectrum & Orbital Operations layers. S-band MSS constellation; Apple Emergency SOS royalty stream; Band 53/n53 terrestrial LTE spectrum asset; SPOT IoT messaging. Run /add-ticker GSAT --sector "Space & Comms" --layer "Satellite Connectivity Services" to onboard. -->
@@ -168,6 +184,7 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 |--------|---------|-----|----------|------|-------|
 | FCX | Freeport-McMoRan | 0000831259 | NYSE | Investing/Wiki/Sectors/Metals & Mining/FCX.md | — |
 | MP | MP Materials Corp. | 0001801170 | NYSE | Investing/Wiki/Sectors/Metals & Mining/MP.md | — |
+| ELMT | The Elmet Group Co. | 0002101698 | NASDAQ | Investing/Wiki/Sectors/Metals & Mining/ELMT.md | — |
 
 <!-- CANDIDATE (/map-sector 2026-05-24): VALE (Vale S.A.) — Bulk Mining & Ore Extraction layer. World's largest nickel producer; iron ore dominant; cobalt byproduct. Run /add-ticker VALE --sector "Metals & Mining" --layer "Bulk Mining & Ore Extraction" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): RIO (Rio Tinto) — Bulk Mining & Ore Extraction layer. Copper (Oyu Tolgoi), lithium (Rincon), iron ore. Run /add-ticker RIO --sector "Metals & Mining" --layer "Bulk Mining & Ore Extraction" to onboard. -->
@@ -199,6 +216,23 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 <!-- CANDIDATE (/map-sector 2026-05-24): APH (Amphenol Corporation) — Connector & Socket Manufacturing layer. #2 connector globally; strong data center and AI infrastructure exposure. Run /add-ticker APH --sector "Electronic Components" --layer "Connector & Socket Manufacturing" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): JBL (Jabil Inc.) — PCB Assembly (EMS / PCBA) layer. #2 EMS globally; AI server PCBA + power supply assembly. Run /add-ticker JBL --sector "Electronic Components" --layer "PCB Assembly (EMS / PCBA)" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): CLS (Celestica) — PCB Assembly (EMS / PCBA) layer. EMS; growing AI infrastructure PCBA share. Run /add-ticker CLS --sector "Electronic Components" --layer "PCB Assembly (EMS / PCBA)" to onboard. -->
+
+---
+
+## AI Model Infrastructure
+
+| Ticker | Company | CIK | Exchange | Path | Score |
+|--------|---------|-----|----------|------|-------|
+
+<!-- CANDIDATE (/map-sector 2026-05-31): AMD (Advanced Micro Devices) — Distributed Training Orchestration + Model Optimization + Inference Serving layers. MI300X GPU; ROCm ecosystem; gaining training share at Meta and Microsoft; vLLM MI300X path for inference. Run /add-ticker AMD --sector "AI Model Infrastructure" --layer "Distributed Training Orchestration" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-31): CRWV (CoreWeave) — Distributed Training Orchestration + Inference Serving & Scaling layers. Pure-play GPU cloud; IPO 2025; NVIDIA preferred partner; OpenAI, Inflection, Cohere training customer; Kubernetes-native GPU autoscaling for inference. Run /add-ticker CRWV --sector "AI Model Infrastructure" --layer "Distributed Training Orchestration" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-31): META (Meta Platforms) — Foundation Model Development layer. Llama 3.x / 4 open-weight models (open-weight leader); PyTorch custodian; FAIR research; MTIA custom ASIC program. No direct API revenue model but controls open-weight ecosystem. Run /add-ticker META --sector "AI Model Infrastructure" --layer "Foundation Model Development" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-31): DDOG (Datadog) — MLOps & Model Lifecycle Management layer. LLM Observability product; APM and log analytics; AI cost attribution dashboards; model performance monitoring. Run /add-ticker DDOG --sector "AI Model Infrastructure" --layer "MLOps & Model Lifecycle Management" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-31): SNOW (Snowflake) — MLOps & Model Lifecycle Management + Model API & Developer Platform layers. Cortex AI (managed LLM inference + RAG + feature store inside data warehouse); text_complete() / embed_text() SQL-native APIs; strong data platform moat. Run /add-ticker SNOW --sector "AI Model Infrastructure" --layer "MLOps & Model Lifecycle Management" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-31): PLTR (Palantir Technologies) — MLOps & Model Lifecycle Management layer. AIP (AI Platform) for enterprise model deployment and workflow automation; Foundry + Ontology for model output integration; US government + commercial customers. Run /add-ticker PLTR --sector "AI Model Infrastructure" --layer "MLOps & Model Lifecycle Management" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-31): MDB (MongoDB) — MLOps & Model Lifecycle Management + Model API & Developer Platform layers. Atlas Vector Search (HNSW / ENN); document store for RAG pipeline metadata and embeddings; native vector+filter combined queries. Run /add-ticker MDB --sector "AI Model Infrastructure" --layer "MLOps & Model Lifecycle Management" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-31): ESTC (Elastic) — MLOps & Model Lifecycle Management layer. ELSER learned sparse retrieval model; k-NN / ANN vector search; LLM observability in Kibana; hybrid BM25 + vector search for RAG. Run /add-ticker ESTC --sector "AI Model Infrastructure" --layer "MLOps & Model Lifecycle Management" to onboard. -->
+<!-- CANDIDATE (/map-sector 2026-05-31): CFLT (Confluent) — Model API & Developer Platform layer. Kafka-based real-time data streaming for ML feature pipelines, model event sourcing, and real-time inference input normalization. Run /add-ticker CFLT --sector "AI Model Infrastructure" --layer "Model API & Developer Platform" to onboard. -->
 
 ---
 
