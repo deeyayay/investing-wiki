@@ -4,24 +4,24 @@
 ---
 
 ## One-Line Thesis
-Capital-efficient GPU neocloud with 85%+ gross margins, $940M contracted backlog, and enterprise compliance certifications (SOC 2 / HIPAA / ISO) that gate out most small-scale competitors.
+NVIDIA Exemplar Cloud-certified GPU neocloud (fewer than 10 globally) with 85%+ gross margins, $1.45B take-or-pay contracted backlog, and Dell DFS financing that removes dilutive equity risk.
 
 ---
 
 ## Scoring Summary
-_Last scored: 2026-06-04 | [[Scoring Rubric]]_
+_Last scored: 2026-06-04 (revised) | [[Scoring Rubric]]_
 
 | Criterion | Score | Evidence |
 |-----------|-------|----------|
-| Product (Love Factor) | 3/5 | HIPAA/SOC 2/ISO certs gate regulated-industry procurement; TierPoint 45-site network differentiates; but GPU cloud is competitive and replicable by larger neoclouds |
-| Pricing Power | 4/5 | Q1 2026 GM 85.6%; non-cancelable 3-year fixed-rate contracts with fees due regardless of usage |
-| Leadership & Alignment | 3/5 | Founder Karos holds 29.5M Class B shares; strong pre-listing commercial execution; 10-Q delay and limited public-company track record temper the score |
-| Financial Health | 2/5 | Net loss -$4.12M Q1 2026; FCF negative; $134.5M SPAC proceeds vs. capital-intensive GPU deployment pipeline |
+| Product (Love Factor) | 4/5 | NVIDIA Exemplar Cloud (Blackwell) — peer tier is CRWV, NBIS, Azure, OCI; fewer than 10 providers globally; take-or-pay contracts signal deep customer commitment |
+| Pricing Power | 4/5 | Q1 2026 GM 85.6%; take-or-pay fixed-rate 3-year contracts; fees due regardless of GPU utilization |
+| Leadership & Alignment | 4/5 | Karos prior exit: Blue Fire Capital (13 DCs) → Galaxy Digital 2020; self-funded BRUN with original team; 29.5M Class B shares; NVIDIA Exemplar at 13 months validates execution |
+| Financial Health | 3/5 | Dell DFS $1.44B financing aligned to contract timelines eliminates dilutive equity raise risk; take-or-pay cash flows provide predictable repayment; Q1 net loss -$4.12M is ramp-phase, not structural |
 | Macro Environment | 4/5 | "Already Fired" forcing function per sector framework; hyperscaler AI capex locked in multi-year; 2025–2028 buildout phase directly in BRUN's addressable window |
-| Future Potential | 3/5 | Government/defense adjacency via Carahsoft; 5 new DC locations in development; core single-product risk limits the ceiling |
-| **Composite** | **6.5/10** | **Strong** |
+| Future Potential | 4/5 | Backlog 12x in 6 months ($120M→$1.45B); guiding to triple again by year-end; NVIDIA Exemplar opens AI lab enterprise pipeline; $940M pre-TML backlog from diversified customers |
+| **Composite** | **7.5/10** | **Strong** |
 
-**Valuation:** Reasonable at $36.74 | EV/Revenue: ~6x (fwd $375M ARR) | Analyst upside: +22% to DA Davidson PT $45; consensus midpoint ~$37.5 (~2% upside)
+**Valuation:** Fair at $36.74 | EV/Revenue: ~6x (fwd $375M ARR) | Analyst upside: +22% to DA Davidson PT $45; discount vs. NBIS (~6.3x) / IREN (~5.5x) now largely closed by verified NVIDIA Exemplar status and Dell DFS financing
 **Growth Potential:** — (pending real-time data integration)
 
 ---
@@ -30,7 +30,8 @@ _Last scored: 2026-06-04 | [[Scoring Rubric]]_
 
 > **Thesis established:** June 4, 2026
 > **Last validated:** June 4, 2026
-> **Drift status:** On track — initial thesis established; monitor Q2 2026 results for ARR ramp and 10-Q filing resolution
+> **Drift status:** On track — strengthened; NVIDIA Exemplar Cloud (Blackwell) validates platform quality; Dell DFS $1.44B financing removes dilution risk; backlog $1.45B and growing 12x in 6 months
+> **Last validated:** June 4, 2026
 
 Boost Run is a pure-play neocloud operator providing GPU compute, managed Kubernetes, and shared storage infrastructure for enterprise AI and HPC workloads. The company went public via SPAC merger with Willow Lane Acquisition Corp. on May 11, 2026, entering Nasdaq with $940M in contracted customer revenue at average three-year terms. Unlike hyperscalers that treat GPU allocation as a commodity add-on, BRUN built its platform on a compliance-first foundation — SOC 2 Type II, HIPAA, ISO 27001, and ISO 27701 certifications at the operator level — targeting enterprise and government customers for whom regulatory compliance is a procurement gating requirement, not an afterthought.
 
@@ -51,7 +52,7 @@ The critical risks are revenue concentration and governance. A single $471.7M co
 
 | Role | Name | Notes |
 |------|------|-------|
-| CEO | Andrew Karos | Founder; built BRUN to $940M contracted backlog pre-listing; 29.5M Class B shares |
+| CEO | Andrew Karos | Co-founded Blue Fire Capital (13 DCs, 6 countries); sold to Galaxy Digital 2020; MD/Head of Electronic Trading Galaxy 2020–2023; self-funded BRUN with original team; 29.5M Class B shares |
 | CFO | Erik Guckel | Named CFO 2025; $400K base; limited public-company CFO track record |
 
 **Execution track record:** Karos built Boost Run from zero to $940M contracted backlog and a $375M ARR target before taking the company public via SPAC in May 2026 — demonstrating commercial development capability. The SPAC process with Willow Lane closed on schedule. Financial reporting execution has been tested: BRUN disclosed inability to file the Q1 2026 10-Q by the SEC deadline as of May 26, 2026 — a caution flag on internal controls at a newly public company.
@@ -66,6 +67,7 @@ The critical risks are revenue concentration and governance. A single $471.7M co
 - [ ] Thinking Machines Lab deployment completion — 5,000 NVIDIA B300 GPUs through FY2026
 - [ ] 5 new data center locations (in development) — watch for operational go-live announcements
 - [ ] DEF 14A filing — will formalize insider ownership and compensation structure post-SPAC
+- [ ] November 8, 2026 — SPAC lock-up expiry; 90% of seller shares (~43.9M) unlock; major float supply event (~250% of current float); watch for price pressure and insider selling pace
 
 ---
 
@@ -76,6 +78,7 @@ The critical risks are revenue concentration and governance. A single $471.7M co
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
 | June 1, 2026 | Q1 2026 10-Q filed by self-imposed June 1 deadline after May 26 delay disclosure | → | Filing resolved without SEC comment letter; internal controls appear intact for a scale-up company; governance concern downgraded from active risk to watch item |
+| June 4, 2026 | NVIDIA Exemplar Cloud (Blackwell) verified; Dell DFS $1.44B financing confirmed; CEO Blue Fire Capital → Galaxy Digital exit verified; backlog $1.45B (12x in 6 months); TML take-or-pay confirmed = 33% of total backlog not 50% | ↑ | Multiple thesis-strengthening data points verified simultaneously: NVIDIA certification places BRUN in peer tier with CRWV/NBIS/OCI/Azure; Dell DFS eliminates dilution risk thesis had flagged; CEO prior exit validates commercial execution DNA; TML concentration overstated — pre-listing $940M backlog came from diversified customers |
 
 ---
 
@@ -105,6 +108,12 @@ The critical risks are revenue concentration and governance. A single $471.7M co
 ## News & Alpha Log
 *(Append notable developments: partnerships, product launches, supply chain signals)*
 *(For each entry, include a **Why it matters:** line explaining the mechanism — not just what happened, but why it moves the thesis.)*
+
+- **April 13, 2026** — BRUN achieves NVIDIA Exemplar Cloud on Blackwell Architecture certification; fewer than 10 providers globally; peer list includes CRWV, NBIS, Oracle Cloud Infrastructure, Microsoft Azure.
+  **Why it matters:** Exemplar Cloud certification requires performance within 5% of NVIDIA reference targets on large-scale LLM training — this is a technical gate, not a marketing label. Being in this tier places BRUN in the same product-quality bracket as the largest GPU cloud operators globally, directly validating the premium multiple and supporting enterprise/AI lab procurement decisions.
+
+- **April 22, 2026** — Dell Technologies announces $1.44B purchase agreement for NVIDIA B300 GPUs for BRUN; Dell Financial Services financing aligned to customer contract timelines.
+  **Why it matters:** DFS financing eliminates the primary Financial Health risk: BRUN does not need to raise dilutive equity to fund GPU capex — hardware payments are paced to match take-or-pay contract cash inflows. This converts what looked like a SPAC balance sheet constraint into a self-funding ramp model.
 
 - **May 11, 2026** — BRUN begins Nasdaq trading with $940M in contracted customer revenue; average contract term ~3 years; $375M ARR target by year-end 2026.
   **Why it matters:** Long-duration contracted backlog provides unusual revenue visibility for a small-cap neocloud — reduces the "show-me" burden hyperscalers face and supports the premium multiple.
@@ -159,3 +168,4 @@ The critical risks are revenue concentration and governance. A single $471.7M co
 - **June 4, 2026** — add-ticker run. Note created from template; fundamental sections populated from web research and SEC filings. CIK 0002090646, NASDAQ. AI Infrastructure sector. DEF 14A not yet filed (newly listed May 2026 via SPAC).
 - **June 4, 2026** — 📊 MONITOR | Q1 10-Q filed June 1 (governance concern resolved); DA Davidson raised PT $25→$45 (Buy); investor metrics 8-K June 2; stock $36.74, mkt cap ~$2.3B; 2 analysts, consensus Strong Buy, PT range $30–$45.
 - **June 4, 2026** — Scored — Composite 6.5/10 Strong | P:3 PP:4 L:3 FH:2 ME:4 FP:3
+- **June 4, 2026** — Scored (revised) — Composite 7.5/10 Strong | P:4 PP:4 L:4 FH:3 ME:4 FP:4 | Revision driven by verified NVIDIA Exemplar Cloud (Blackwell) certification, Dell DFS $1.44B financing eliminating dilution risk, CEO Blue Fire Capital/Galaxy Digital exit validating leadership, and TML concentration reframed (33% of $1.41B total backlog, not 50%)

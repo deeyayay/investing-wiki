@@ -100,7 +100,7 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 | VRT | Vertiv Holdings | 0001793309 | NYSE | Investing/Wiki/Sectors/AI Infrastructure/VRT.md | — |
 | SMCI | Super Micro Computer | 0001375365 | NASDAQ | Investing/Wiki/Sectors/AI Infrastructure/SMCI.md | — |
 | P | Everpure Inc. (fka Pure Storage) | 0001474432 | NYSE | Investing/Wiki/Sectors/AI Infrastructure/P.md | — |
-| BRUN | Boost Run Inc. | 0002090646 | NASDAQ | Investing/Wiki/Sectors/AI Infrastructure/BRUN.md | 6.5 |
+| BRUN | Boost Run Inc. | 0002090646 | NASDAQ | Investing/Wiki/Sectors/AI Infrastructure/BRUN.md | 7.5 |
 
 <!-- CANDIDATE (/map-sector 2026-05-24): NTAP (NetApp) — Storage Systems layer. All-flash arrays + object storage (ONTAP / StorageGRID); strong AI storage pipeline. Run /add-ticker NTAP --sector "Compute Infrastructure" --layer "Storage Systems" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): WDC (Western Digital) — Storage Systems layer. NVMe SSD + HDD; enterprise flash for hyperscalers; NAND vertically integrated. Run /add-ticker WDC --sector "Compute Infrastructure" --layer "Storage Systems" to onboard. -->
