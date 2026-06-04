@@ -1,6 +1,6 @@
 # Monitor Registry
 *The research-monitor skill reads this file on every run. Add tickers here — no skill update needed.*
-*Last updated: May 31, 2026 — /add-ticker 6841.T, 6754.T, 6857.T, FORM (Photonics/Semis); /map-sector AI Model Infrastructure; NVTS, IFX, ASPI, ELMT added; AMD, CRWV, META, DDOG, SNOW, PLTR, MDB, ESTC, CFLT candidate stubs added*
+*Last updated: June 4, 2026 — /add-ticker BRUN (Boost Run Inc., AI Infrastructure neocloud)*
 
 ---
 
@@ -100,6 +100,7 @@ Add a new `## Sector Name` heading with a table using the same column structure.
 | VRT | Vertiv Holdings | 0001793309 | NYSE | Investing/Wiki/Sectors/AI Infrastructure/VRT.md | — |
 | SMCI | Super Micro Computer | 0001375365 | NASDAQ | Investing/Wiki/Sectors/AI Infrastructure/SMCI.md | — |
 | P | Everpure Inc. (fka Pure Storage) | 0001474432 | NYSE | Investing/Wiki/Sectors/AI Infrastructure/P.md | — |
+| BRUN | Boost Run Inc. | 0002090646 | NASDAQ | Investing/Wiki/Sectors/AI Infrastructure/BRUN.md | — |
 
 <!-- CANDIDATE (/map-sector 2026-05-24): NTAP (NetApp) — Storage Systems layer. All-flash arrays + object storage (ONTAP / StorageGRID); strong AI storage pipeline. Run /add-ticker NTAP --sector "Compute Infrastructure" --layer "Storage Systems" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): WDC (Western Digital) — Storage Systems layer. NVMe SSD + HDD; enterprise flash for hyperscalers; NAND vertically integrated. Run /add-ticker WDC --sector "Compute Infrastructure" --layer "Storage Systems" to onboard. -->
