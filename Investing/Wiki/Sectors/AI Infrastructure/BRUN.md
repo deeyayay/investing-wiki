@@ -9,19 +9,19 @@ Capital-efficient GPU neocloud with 85%+ gross margins, $940M contracted backlog
 ---
 
 ## Scoring Summary
-_Last scored: — | [[Scoring Rubric]]_
+_Last scored: 2026-06-04 | [[Scoring Rubric]]_
 
 | Criterion | Score | Evidence |
 |-----------|-------|----------|
-| Product (Love Factor) | —/5 | |
-| Pricing Power | —/5 | |
-| Leadership & Alignment | —/5 | |
-| Financial Health | —/5 | |
-| Macro Environment | —/5 | |
-| Future Potential | —/5 | |
-| **Composite** | **—/10** | |
+| Product (Love Factor) | 3/5 | HIPAA/SOC 2/ISO certs gate regulated-industry procurement; TierPoint 45-site network differentiates; but GPU cloud is competitive and replicable by larger neoclouds |
+| Pricing Power | 4/5 | Q1 2026 GM 85.6%; non-cancelable 3-year fixed-rate contracts with fees due regardless of usage |
+| Leadership & Alignment | 3/5 | Founder Karos holds 29.5M Class B shares; strong pre-listing commercial execution; 10-Q delay and limited public-company track record temper the score |
+| Financial Health | 2/5 | Net loss -$4.12M Q1 2026; FCF negative; $134.5M SPAC proceeds vs. capital-intensive GPU deployment pipeline |
+| Macro Environment | 4/5 | "Already Fired" forcing function per sector framework; hyperscaler AI capex locked in multi-year; 2025–2028 buildout phase directly in BRUN's addressable window |
+| Future Potential | 3/5 | Government/defense adjacency via Carahsoft; 5 new DC locations in development; core single-product risk limits the ceiling |
+| **Composite** | **6.5/10** | **Strong** |
 
-**Valuation:** — (not scored; see [[Scoring Rubric]] for methodology)
+**Valuation:** Reasonable at $36.74 | EV/Revenue: ~6x (fwd $375M ARR) | Analyst upside: +22% to DA Davidson PT $45; consensus midpoint ~$37.5 (~2% upside)
 **Growth Potential:** — (pending real-time data integration)
 
 ---
@@ -158,3 +158,4 @@ The critical risks are revenue concentration and governance. A single $471.7M co
 
 - **June 4, 2026** — add-ticker run. Note created from template; fundamental sections populated from web research and SEC filings. CIK 0002090646, NASDAQ. AI Infrastructure sector. DEF 14A not yet filed (newly listed May 2026 via SPAC).
 - **June 4, 2026** — 📊 MONITOR | Q1 10-Q filed June 1 (governance concern resolved); DA Davidson raised PT $25→$45 (Buy); investor metrics 8-K June 2; stock $36.74, mkt cap ~$2.3B; 2 analysts, consensus Strong Buy, PT range $30–$45.
+- **June 4, 2026** — Scored — Composite 6.5/10 Strong | P:3 PP:4 L:3 FH:2 ME:4 FP:3
