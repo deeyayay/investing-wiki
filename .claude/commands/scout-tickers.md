@@ -10,7 +10,7 @@ Research which publicly-traded companies belong in each empty or thin tier of a 
 **Sits between:** `/map-sector` (creates tier structure) and `/add-ticker` (creates full wiki pages).  
 **Vault path:** `Investing/Wiki/`  
 **Dashboard:** `Investing/Output/Dashboard/index.html`  
-**Monitor Registry:** `Investing/Wiki/Reference/Monitor Registry.md`
+**Monitor Registry:** `Investing/Wiki/Reference/Monitor Registry.yaml`
 
 **Input:** `$ARGUMENTS` — the sector name (required), plus optional `--tier "Tier Name"` to focus on one tier, and optional `--no-push` to skip git deployment.
 
@@ -35,7 +35,7 @@ Extract from `$ARGUMENTS`:
    - The **Publicly-Traded Nodes table** — candidates already identified for each tier
    - The **Structural Gaps section** — tiers where no public player exists (skip these in research)
 
-4. Read `Investing/Wiki/Reference/Monitor Registry.md`. Extract all `<!-- CANDIDATE ... -->` comment lines for SECTOR — these are tickers already identified but not yet onboarded.
+4. Read `Investing/Wiki/Reference/Monitor Registry.yaml`. Extract all entries from the `candidates:` list where `sector` matches SECTOR — these are tickers already identified but not yet onboarded.
 
 Build a working list: for each target tier, compile (a) any existing Nodes table entries, (b) any Registry CANDIDATE comments, and (c) companies already in the dashboard for that tier.
 
@@ -148,15 +148,19 @@ Rules:
 
 ## Step 6 — Update Monitor Registry
 
-For each `Net new` ticker (not yet in the Registry at all), append a CANDIDATE comment to the appropriate sector block in `Investing/Wiki/Reference/Monitor Registry.md`:
+For each `Net new` ticker (not yet in the Registry at all), append a CANDIDATE entry to the `candidates:` list in `Investing/Wiki/Reference/Monitor Registry.yaml`:
 
-```html
-<!-- CANDIDATE (/scout-tickers [TODAY'S DATE]): [TICKER] ([Company Name]) — [Tier Name]. Run /add-ticker [TICKER] --sector "[SECTOR]" --layer "[Tier Name]" to onboard. -->
+```yaml
+  - ticker: "[TICKER]"
+    company: "[Company Name]"
+    sector: "[SECTOR]"
+    layer: "[Tier Name]"
+    source: "scout-tickers"
+    added: "[TODAY'S DATE]"
+    note: "[differentiation note, 20–30 words]"
 ```
 
-Append these comments at the end of the sector's table block (after the last row, before the next `##` heading).
-
-Do not modify existing rows or remove any existing CANDIDATE comments.
+Use Edit to append to the `candidates:` list. Do not modify the `tickers:` section or remove any existing candidates.
 
 ---
 
@@ -205,8 +209,7 @@ Added [N] companies across [N] tiers:
 Structural gaps (no public company): [TIER NAME], [TIER NAME]
 
 Next steps:
-- Run /add-ticker [TICKER] --sector "[SECTOR]" to create full wiki pages for each candidate
-- Run /stock-research [TICKER] to populate investment thesis sections
+- Run /add-ticker [TICKER] --sector "[SECTOR]" to create full wiki pages with fundamental research for each candidate
 ```
 
 ---
