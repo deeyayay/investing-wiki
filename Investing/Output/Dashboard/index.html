@@ -508,7 +508,7 @@ let activeSector=null;
 let activeTierIdx=null;
 
 const SECTOR_FOLDER={"Compute Infrastructure":"AI Infrastructure","Energy & Power":"Clean Energy","Materials & Mining":"Metals & Mining","Space & Communications":"Space & Comms","Fintech & Commerce AI":"Fintech & E-Commerce"};
-function rawGithubUrl(sName,ticker){const f=SECTOR_FOLDER[sName]||sName;return"https://raw.githubusercontent.com/deeyayay/investing-wiki/master/Investing/Wiki/Sectors/"+encodeURIComponent(f)+"/"+ticker+".md";}
+function rawGithubUrl(sName,ticker,legacy){const f=SECTOR_FOLDER[sName]||sName;const base="https://raw.githubusercontent.com/deeyayay/investing-wiki/master/Investing/Wiki/Sectors/"+encodeURIComponent(f)+"/";return legacy?base+ticker+".md":base+encodeURIComponent(ticker)+"/analysis.md";}
 
 function showLayer(n){
   document.getElementById("l0").hidden=n!==0;
@@ -630,8 +630,10 @@ async function openTicker(ticker,sName){
   document.getElementById("l3").innerHTML='<div class="wiki-loading">Loading '+ticker+'…</div>';
   if(!(ticker in WIKI_CACHE)){
     try{
-      const r=await fetch(rawGithubUrl(sName,ticker));
-      WIKI_CACHE[ticker]=r.ok?await r.text():null;
+      // Try three-layer path first (TICKER/analysis.md), fall back to legacy TICKER.md
+      let r=await fetch(rawGithubUrl(sName,ticker));
+      if(r.ok){WIKI_CACHE[ticker]=await r.text();}
+      else{r=await fetch(rawGithubUrl(sName,ticker,true));WIKI_CACHE[ticker]=r.ok?await r.text():null;}
     }catch(e){WIKI_CACHE[ticker]=null;}
   }
   renderL3(ticker,sName);
