@@ -13,7 +13,7 @@ Fabless SerDes chip and Active Electrical Cable company whose copper interconnec
 
 > **Thesis established:** May 19, 2026
 > **Last validated:** 2026-06-07
-> **Drift status:** On track — Q4 FY2026 beat validates hyperscaler AEC ramp; 1.6T cycle and PCIe retimer remain next catalysts
+> **Drift status:** On track — Q4 FY2026 beat validates hyperscaler AEC ramp; Hyperlume acquisition hedges optical displacement risk; 1.6T cycle and PCIe retimer remain next catalysts
 
 Credo makes the SerDes (serializer/deserializer) chips and Active Electrical Cables (AECs) that physically move data at very high speeds between GPUs, switches, and storage within AI data center racks. As AI clusters scale to 100K+ GPUs, the intra-rack and inter-rack interconnect problem — moving data at 400G/800G/1.6T without burning excessive power — becomes a first-order constraint. Credo's AECs address this with a chip-in-cable approach that extends reach while slashing power versus optical transceivers, and their SerDes IP underpins the high-speed interface layer in switches and ASICs throughout the AI fabric.
 
@@ -49,6 +49,7 @@ _Last scored: 2026-06-07 | [[Scoring Rubric]]_
 
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
+| 2026-06-07 | Acquired Hyperlume for $92M — microLED-based optical interconnect technology | ↑ | Deploys ATM capital into optical adjacency, directly hedging the copper AEC displacement risk; expands Credo's TAM into optical interconnect and signals management is positioning for post-copper AI rack generations at 3.2T+. |
 | 2026-06-01 | Q4 FY2026: $437M +157% YoY, EPS $1.16, guidance $470M midpoint | ↑ | Consecutive beat with accelerating sequential growth and above-consensus guidance confirms hyperscaler AEC demand is durable, not pull-forward. FY2026 full-year $1.34B at ~68% GM materially ahead of prior expectations. |
 | 2026-06-01 | CEO William Brennan granted performance-based PSU award with stretch milestones | ↑ | PSU structure ties compensation to long-duration revenue/margin targets rather than time-vesting, strengthening CEO-shareholder alignment and reducing near-term equity overhang risk. |
 | 2026-04-13 | Completed $750M ATM equity offering, raised $736.3M net via 4.8M shares | → | Raises strategic optionality (M&A, R&D, working capital) but adds ~2.8% dilution at elevated valuation; net neutral absent a specific high-return deployment announcement. |
@@ -67,6 +68,7 @@ _Last scored: 2026-06-07 | [[Scoring Rubric]]_
 
 ## Catalyst Timeline
 - [ ] Q1 FY2027 earnings — expected 2026-09-02
+- [ ] Hyperlume microLED integration: first product announcement or design win (H1 FY2027)
 - [ ] 1.6T AEC product launch and first hyperscaler volume orders (H2 2026)
 - [ ] PCIe retimer revenue ramp — watch for % of total revenue in quarterly reports
 - [ ] New hyperscaler design wins (beyond existing anchor customer)
@@ -77,6 +79,7 @@ _Last scored: 2026-06-07 | [[Scoring Rubric]]_
 
 ## Analyst Coverage
 - Goldman Sachs bullish on CRDO — cited AI connectivity tailwinds and AEC market leadership (2026).
+- **2026-06** — Rothschild & Co initiates CRDO Buy, PT undisclosed (AI connectivity leadership and AEC market position; post-Q4 FY2026 initiation)
 - **2026-06-02** — Roth Capital raises CRDO to Buy, PT $300 (post-Q4 beat; FY2026 revenue tripling exceeds prior estimates)
 - **2026-06-02** — Mizuho raises CRDO to Buy, PT $290 (sustained hyperscaler AEC demand; Q1 FY2027 guidance above consensus)
 - **2026-06-01** — Jefferies raises CRDO to Buy, PT $270 (record Q4 revenue and margin expansion support re-rating)

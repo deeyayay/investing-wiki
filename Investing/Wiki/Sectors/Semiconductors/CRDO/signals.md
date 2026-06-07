@@ -5,6 +5,9 @@
 
 ## News & Alpha Log
 
+- **2026-06-07** — Credo acquires Hyperlume for $92M, adding microLED-based optical interconnect technology to its portfolio.
+  **Why it matters:** Deploys ATM capital into optical adjacency, directly hedging the thesis risk that copper AEC gets displaced by optical at future AI rack generations (3.2T+); expands Credo's TAM and product roadmap beyond copper SerDes.
+
 - **2026-06-01** — Credo Q4 FY2026: $437M revenue (+157% YoY), non-GAAP EPS $1.16, Q1 FY2027 guidance $465–475M — beat on all metrics.
   **Why it matters:** Third consecutive beat with accelerating sequential growth confirms the AEC/SerDes hyperscaler ramp is demand-driven and durable, not pull-forward; $1.34B FY2026 full-year revenue at ~68% GM is materially ahead of prior consensus.
 
@@ -28,3 +31,4 @@
 - **2026-06-07** — 📊 MIGRATE | Legacy CRDO.md split into three-layer structure (facts.md + analysis.md + signals.md) via /ticker-monitor --deep CRDO.
 - **2026-06-07** — 📊 MONITOR --deep | Q4 FY2026 earnings beat ($437M, +157% YoY, EPS $1.16), Q1 FY2027 guidance $470M midpoint; 4 analyst PT raises post-earnings (Roth $300, Mizuho $290, Jefferies $270, JPMorgan $250); ATM offering $736M completed April. facts.md: Q4 earnings + 4 new filings added. analysis.md: 3 conviction entries, 2 cross-ticker signal rows, 4 analyst moves, thesis drift updated.
 - **2026-06-07** — 📊 SCORE | Composite 8.0/10 Unrivaled | P:4 PP:4 L:4 FH:4 ME:4 FP:4 | Analyst PT consensus $278 (4 firms). Scored on Q4 FY2026 data.
+- **2026-06-07** — 📊 MONITOR --deep | Material new item: Hyperlume acquisition ($92M, microLED optical interconnect, announced 2026-06-01). Rothschild & Co Buy initiation added. EDGAR direct fetch blocked (403); used search fallback — no new filings beyond Q4 8-K (2026-06-01). 10-K FY2026 not yet filed (expected ~Jul 2026).
