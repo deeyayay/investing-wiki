@@ -24,6 +24,22 @@ Run the deploy steps in Phase 3. No file reads needed.
 
 Run all reads in parallel.
 
+**Technology Preferences** (`Investing/Wiki/Reference/Technology Preferences.md`):
+- Find all `## Sector Group: [Name]` headings → track `current_group`
+- Within each group, find all `### Race N — ` entries → one race object per entry
+- From each race block, extract:
+  - `name` — text after the dash in the `### Race N — [Name]: ...` heading
+  - `preference` — text after `**Preference:**`
+  - `conviction` — text after `**Conviction:**` (High / Medium / Low / Watch)
+  - `last_validated` — text after `**Last validated:**`
+  - `status` — text after `**Status:**` (Active / Resolved)
+  - `tickers[]` — rows from the `#### Ticker Exposure Map` markdown table: `{ ticker, technology, exposure, weighting }`
+  - `application_driver` — paragraph(s) below `#### Application-Layer Driver` (plain text, not table headers)
+  - `consensus_gap` — rows from the table below `#### Consensus vs. Reality Gap` as `[[belief, reality], ...]`
+  - `bull_case` — bullet items below `#### Bull Case` as `["...", ...]`
+  - `bear_risk` — bullet items below `#### Bear / Risk` as `["...", ...]`
+- Add `tech_races: [...]` to the DATA object alongside `sectors` and `edges`
+
 **Dimension Map** (`Investing/Wiki/Reference/Dimension Map.md`):
 - Extract: `name`, `dimension` (D1–D5), `folder` slug, `status`
 - Skip sectors where `status === "planned"`
@@ -59,6 +75,21 @@ const DATA = {
       to: "Semiconductors", to_tier: "Wafer Production",
       flow: "Material", product: "Polysilicon → silicon wafer", chokepoint: "Y" },
     // ~12 Y-chokepoint edges
+  ],
+  tech_races: [
+    { id: "nand-vs-hbm4", name: "NAND vs. HBM4", sector_group: "AI Ecosystem",
+      preference: "NAND over HBM4 for the agentic AI demand wave",
+      conviction: "High", last_validated: "YYYY-MM-DD", status: "Active",
+      tickers: [
+        { ticker: "SNDK", technology: "NAND Flash", exposure: "Primary", weighting: "Overweight vs. memory peers" }
+        // ... one entry per row in the Ticker Exposure Map table
+      ],
+      application_driver: "...",  // paragraph text from Application-Layer Driver section
+      consensus_gap: [["Market belief", "Reality"], ...],  // rows from table
+      bull_case: ["bullet 1", "bullet 2", ...],
+      bear_risk: ["bullet 1", "bullet 2", ...]
+    }
+    // ... one entry per ### Race block in Technology Preferences.md
   ]
 };
 ```
