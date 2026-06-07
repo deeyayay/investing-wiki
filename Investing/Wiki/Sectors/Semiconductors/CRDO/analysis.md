@@ -5,7 +5,7 @@
 ---
 
 ## One-Line Thesis
-Fabless SerDes chip and Active Electrical Cable company whose copper interconnect silicon is the bandwidth backbone inside AI clusters at every major hyperscaler.
+Full-stack SerDes IP owner that has become the de facto AEC standard inside AI GPU clusters — FY2026 revenue tripled to $1.34B at 68% gross margins, now expanding to optical via Hyperlume.
 
 ---
 
@@ -15,15 +15,15 @@ Fabless SerDes chip and Active Electrical Cable company whose copper interconnec
 > **Last validated:** 2026-06-07
 > **Drift status:** On track — Q4 FY2026 beat validates hyperscaler AEC ramp; Hyperlume acquisition hedges optical displacement risk; 1.6T cycle and PCIe retimer remain next catalysts
 
-Credo makes the SerDes (serializer/deserializer) chips and Active Electrical Cables (AECs) that physically move data at very high speeds between GPUs, switches, and storage within AI data center racks. As AI clusters scale to 100K+ GPUs, the intra-rack and inter-rack interconnect problem — moving data at 400G/800G/1.6T without burning excessive power — becomes a first-order constraint. Credo's AECs address this with a chip-in-cable approach that extends reach while slashing power versus optical transceivers, and their SerDes IP underpins the high-speed interface layer in switches and ASICs throughout the AI fabric.
+Credo designs SerDes (serializer/deserializer) chips, retimers, and Active Electrical Cables (AECs) — the components that move data at 400G/800G/1.6T between GPUs, switches, and storage within AI data center racks. As hyperscalers build 100,000+ GPU clusters for AI training and inference, intra-rack connectivity has become a first-order engineering constraint. Credo's AECs address it: a chip-embedded-in-cable approach that extends signal reach while consuming roughly half the power of optical transceivers, with 100× the reliability. FY2026 revenue tripled to $1.34B at ~68% non-GAAP gross margins — a fabless semiconductor company compounding revenue at hyperscale rates while sustaining margins that would be exceptional even for a software business.
 
-FY2025 revenue reached $436.8M, up 126% YoY. GAAP net income was $52.2M (+284% YoY) — the business crossed into full GAAP profitability in FY2025, a meaningful inflection. Gross margins run ~67% for a hardware company, reflecting the value of proprietary SerDes IP rather than commodity assembly. The transition to 1.6T switch systems, expected to drive a major AEC replacement cycle in late 2026, is the next revenue step-function. A separate PCIe retimer opportunity (TAM >$1B by 2027) represents a second growth wave.
+The primary growth engine is the AI cluster buildout cycle. Credo is estimated to hold ~75% market share in the AI AEC market — every Blackwell or future NVIDIA rack contains hundreds of intra-rack connections, each one a Credo AEC or a competitor's solution. The 1.6T switch transition expected in H2 2026 triggers a full AEC replacement across installed clusters (400G and 800G cables cannot run 1.6T traffic), creating a step-function revenue event. PCIe retimers represent a second TAM of >$1B by 2027 as backplanes require signal conditioning at PCIe Gen 6 data rates. A fifth hyperscaler entered qualification in FY2026, meaningfully reducing customer concentration. The June 2026 acquisition of Hyperlume ($92M) adds microLED-based optical interconnect capability, positioning Credo to address future AI rack generations where copper may cede ground to optical at 3.2T+ speeds.
 
-The co-founders — CTO Chi Fung Cheng and COO Yat Tung Lam — remain deeply embedded in the business and hold meaningful equity positions, creating strong alignment. CEO Bill Brennan has led the company since 2014, guiding it from startup to public company and compounding revenue from ~$59M (2021) to $437M (2025).
+The moat is end-to-end proprietary SerDes IP: Credo owns the full stack from IP core through retimer IC to AEC system. Design wins at hyperscalers are co-developed over 12–18 month qualification cycles, creating per-customer switching costs that neither Marvell nor Astera Labs can displace mid-cycle. CEO Bill Brennan (since 2014) has compounded revenue from ~$59M to $1.34B. Co-founders CTO Chi Fung Cheng (3.95% ownership) and COO Yat Tung Lam (2.01%) remain deeply embedded. The CEO PSU plan, granted in June 2026 alongside CFO Dan Fleming's performance-based award, ties long-duration compensation to revenue and margin targets rather than time-vesting.
 
-**Key moat:** Proprietary SerDes IP stack (owned end-to-end: IP → retimer IC → AEC system), hyperscaler design-win co-development cycles that create switching costs, and power-efficiency leadership in copper interconnect (relevant as data center power budgets tighten).
+**Key moat:** Full-stack proprietary SerDes IP (IP core → retimer IC → AEC system); hyperscaler co-development qualification cycles creating switching costs; ~75% AEC market share with ZeroFlap reliability moat; Hyperlume optical adjacency hedging the long-term copper displacement risk.
 
-**Key risks:** High customer concentration (handful of hyperscalers = majority of revenue), business highly sensitive to hyperscaler capex timing, optical interconnect could displace copper AECs at scale in future generations, competition from MRVL and emerging SerDes players with deeper pockets.
+**Key risks:** Customer concentration (~88% from top 3 hyperscalers as of FY2026); revenue highly sensitive to a single hyperscaler's capex timing; Astera Labs as a credible pure-play competitor with overlapping retimer roadmap; Broadcom/Marvell can bundle competing solutions with switch silicon at scale; Hyperlume integration execution risk ($92M acquisition with no commercial product yet).
 
 ---
 
