@@ -17,28 +17,40 @@ management:
 
 earnings:
   - quarter: Q1_FY2026
-    date: "2026-04-24"
+    date: "2026-04-23"
     revenue_b: 13.6
-    eps_nongaap: null
-    beat: null
-    guidance_next_b: null
-    notes: "Revenue +7% YoY; Non-GAAP gross margin 41.0%; IFS operating losses continuing to narrow"
+    eps_nongaap: 0.29
+    beat: true
+    guidance_next_b: 14.3
+    notes: "Revenue +7% YoY beat guidance ($11.7-12.7B); Non-GAAP GM 41.0%; IFS rev $5.4B +20% QoQ"
   - quarter: Q4_FY2025
-    date: "2026-01-23"
+    date: "2026-01-22"
     revenue_b: 13.7
     eps_nongaap: null
     beat: null
-    guidance_next_b: null
-    notes: "Revenue -4% YoY; Non-GAAP gross margin 37.9%"
+    guidance_next_b: 12.2
+    notes: "Revenue -4% YoY; Non-GAAP gross margin 37.9%; guided Q1 2026 at $11.7-12.7B"
   - quarter: FY2025
-    date: "2026-01-23"
+    date: "2026-01-22"
     revenue_b: 52.9
     eps_nongaap: null
     beat: null
     guidance_next_b: null
     notes: "FY2025 flat vs FY2024 $53.1B; GAAP gross margin 34.8%; Non-GAAP 36.7%"
 
-filings: []
+filings:
+  - type: 10-Q
+    period: "Q1_FY2026"
+    date: "2026-04-24"
+    url: "https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000079/intc-20260328.htm"
+  - type: 8-K
+    period: "Q1_FY2026"
+    date: "2026-04-23"
+    url: "https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000077/intc-20260423.htm"
+  - type: 8-K
+    period: "Q4_FY2025"
+    date: "2026-01-22"
+    url: "https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000009/intc-20260122.htm"
 
 moat:
   type: "IP/Patent + Platform"
@@ -66,7 +78,7 @@ metrics:
   score_label: "—"
   last_scored: null
   valuation_fpe: null
-  analyst_pt: 79.00
+  analyst_pt: 83.00
   analyst_upside_pct: null
 
 last_updated: "2026-06-07"

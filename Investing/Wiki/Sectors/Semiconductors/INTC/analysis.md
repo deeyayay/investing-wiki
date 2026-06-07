@@ -13,7 +13,7 @@ Intel's EMIB packaging + 25-year in-house silicon photonics stack is the only ID
 
 > **Thesis established:** 2026-06-07
 > **Last validated:** 2026-06-07
-> **Drift status:** On track — Lip-Bu Tan stabilizing; NVIDIA + SoftBank investment validates IFS
+> **Drift status:** On track — Apple preliminary IFS deal + Q1 beat + analyst upgrades accelerating rerate
 
 Intel is a classic turnaround bet with three compounding technology optionalities layered on top of a stable but declining core CPU franchise. The core (x86 Client + Server) generates ~$40B+ in annual revenue and funds the transformation; the question is whether any of the three strategic bets—IFS foundry, EMIB/CPO, and AI inference—can rerate the stock before the market runs out of patience.
 
@@ -56,6 +56,10 @@ _Last scored: — | [[Scoring Rubric]]_
 | 2026-06-07 | CPO tweet validated; OFC 2024 OCI chiplet confirmed 4 Tbps @ 5 pJ/bit via EMIB | ↑ | Technical claim core is correct; EMIB thermal/yield advantage vs CoWoS-S verified |
 | 2026-06-07 | NVIDIA $5B + SoftBank $2B strategic investments confirmed | ↑ | Anchor customers validating IFS; strategic not just financial |
 | 2026-06-07 | Broadcom shipping 50K+ CPO switches, Ayar Labs $870M raised | ↓ | CPO not an Intel monopoly; competition already in production |
+| 2026-06-07 | Q1 FY2026: revenue $13.6B (+7% YoY, beat $12.7B guide); non-GAAP EPS $0.29; IFS +20% QoQ | ↑ | Strong execution against guidance; IFS acceleration early; Q2 guided $13.8-14.8B |
+| 2026-06-07 | Apple preliminary deal to manufacture chips at Intel US fabs starting 2026 | ↑ | Most significant potential IFS external customer; validates 18A commercial readiness; watch for confirmation |
+| 2026-06-07 | Intel repurchases Apollo's 49% Fab 34 Ireland stake for $14.2B (cash + $6.5B bridge loan) | ↑ | Full fab ownership strengthens IFS vertical control; large debt load is tail risk but shows conviction |
+| 2026-06-07 | Mizuho ↑ $128, Wells Fargo ↑ $110, Barclays ↑ $100 (all June 2, 2026) | ↑ | Tier-1 analyst upgrades reflect improving IFS credibility; PT dispersion narrowing bullishly |
 
 ---
 
@@ -71,12 +75,14 @@ _Last scored: — | [[Scoring Rubric]]_
 ---
 
 ## Catalyst Timeline
-- [ ] IFS first major HVM customer commitment (expected H2 2026–2027)
+- [ ] Q2 FY2026 earnings — ~July 23, 2026 (unconfirmed); guided $13.8-14.8B rev, $0.20 non-GAAP EPS
+- [ ] Apple deal confirmation — preliminary manufacturing agreement converting to firm commitment
+- [ ] IFS first major HVM customer commitment beyond Apple (expected H2 2026–2027)
 - [ ] EMIB-T external customer design win announcement
 - [ ] 18A yield data released / product qualification milestone
-- [ ] Next OFC demo (OFC 2025/2026) — CPO roadmap update
+- [ ] Next OFC demo — CPO roadmap update (OFC 2027)
 - [ ] Altera Silver Lake transaction close — capital unlock
-- [ ] Q2 FY2026 earnings — gross margin trajectory and IFS loss narrowing
+- [ ] Fab 34 Ireland $6.5B bridge loan refinancing timeline
 - [ ] CHIPS Act grant disbursement milestones
 
 ---
@@ -87,6 +93,11 @@ _Last scored: — | [[Scoring Rubric]]_
 | Date | Firm | Rating | PT | Notes |
 |------|------|--------|----|-------|
 | 2026-06-07 | Consensus (27 analysts, WallStreetZen) | Hold | $79 | Wide dispersion: $30 low / $140 high; 9 Buy / 33 Hold / 6 Sell |
+| 2026-06-02 | Mizuho | — | $128 | Raised PT; IFS + Apple deal credibility improving |
+| 2026-06-02 | Wells Fargo | — | $110 | Raised PT; foundry ramp cadence ahead of expectations |
+| 2026-06-02 | Barclays | — | $100 | Raised PT; Q1 beat + IFS sequential growth trajectory |
+| 2026-04-28 | Freedom Broker | — | $100 | Raised PT post-Q1 earnings beat |
+| 2026-04-20 | KGI Securities | — | $71 | Cautious on IFS profitability timeline; execution risk |
 
 ---
 
