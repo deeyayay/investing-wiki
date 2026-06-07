@@ -45,6 +45,16 @@ moat:
   made_in_usa: null      # true / false / partial
   notes: "—"
 
+tech_exposure: []
+# Link this ticker to technology races in Technology Preferences.md.
+# exposure: primary / partial / indirect / none
+# - technology: "NAND Flash"
+#   exposure: primary
+#   notes: "~100% revenue from NAND; enterprise + client SSD"
+# - technology: "Proof-of-Stake"
+#   exposure: partial
+#   notes: "Ethereum staking revenue stream; not primary business"
+
 metrics:
   score: null            # Composite score from /score-ticker (0–10)
   score_label: "—"       # Unrivaled / Strong / Average / Reassess
