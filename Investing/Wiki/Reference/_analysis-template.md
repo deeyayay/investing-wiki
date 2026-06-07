@@ -69,5 +69,16 @@ _Last scored: — | [[Scoring Rubric]]_
 
 ---
 
+## Technology Alignment
+*Maps this ticker to active technology races in [[Technology Preferences]]. Drives the Macro Environment score and relative weighting vs. sector peers.*
+
+| Technology | Preference | This Ticker's Exposure | Weighting Implication |
+|-----------|-----------|----------------------|----------------------|
+| — | — | — | — |
+
+**Net tech alignment:** — (Tailwind / Headwind / Neutral)
+
+---
+
 ## Ecosystem Links
 *(Links to supply chain maps, sector frameworks, or upstream/downstream names)*

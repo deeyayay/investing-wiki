@@ -113,7 +113,9 @@ What trends in the world will impact this business? Are the tailwinds secular an
 | **2** | Sector in transition; headwinds are near-term material; tailwinds are 3+ years out |
 | **1** | Secular decline, regulatory overhang, or structural disruption with no clear resolution |
 
-_Sources in wiki: Sector Framework (Why this sector exists, Cycle positioning, Bull/Base/Bear cases)_
+**Technology preference alignment:** A ticker with *primary* exposure to a high-conviction preferred technology in [[Technology Preferences]] qualifies as a structural tailwind supporting a score of 4–5. Primary exposure to a disfavored or transitioning technology should score 2–3 on this criterion even if broader sector-level tailwinds exist. See the Technology Alignment section in `analysis.md` for the explicit per-ticker mapping.
+
+_Sources in wiki: Sector Framework (Why this sector exists, Cycle positioning, Bull/Base/Bear cases), [[Technology Preferences]] (technology race outcomes and ticker exposure maps)_
 
 ---
 
