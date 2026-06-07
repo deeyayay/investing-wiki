@@ -1,52 +1,69 @@
 ---
-description: Add a new ticker to the wiki. Creates the wiki page from template, registers it in Monitor Registry, and runs stock-research to populate fundamental sections. Usage: /add-ticker TICKER [--sector "Sector Name"]
+description: Add a new ticker to the wiki. Creates the three-layer file structure (facts.md + analysis.md + signals.md), registers it in Monitor Registry.yaml, and populates fundamental sections in a single pass. Usage: /add-ticker TICKER [--sector "Sector Name"] [--refresh-research]
 allowed-tools: WebSearch, WebFetch, Read, Write, Edit, Glob, Bash
 ---
 
 # Add Ticker — Onboarding a New Name
 
-One-command workflow to add a new ticker to the wiki. Creates the page, registers it, and populates it with fundamental research in a single pass.
+One-command workflow to add a new ticker to the wiki. Creates the three-layer folder structure, registers it in Monitor Registry.yaml, and populates facts.md + analysis.md with fundamental research.
 
-**Vault path:** `Investing/Wiki/`
-**Template path:** `Investing/Wiki/Reference/_Ticker Template.md`
-**Monitor Registry:** `Investing/Wiki/Reference/Monitor Registry.md`
+**Vault path:** `Investing/Wiki/Sectors/`
+**Templates:** `Investing/Wiki/Reference/_facts-template.md`, `_analysis-template.md`, `_signals-template.md`
+**Monitor Registry:** `Investing/Wiki/Reference/Monitor Registry.yaml`
 
-**Input:** `$ARGUMENTS` — the ticker symbol (required), plus optional `--sector "Sector Name"`
+**Input:** `$ARGUMENTS`
+- `TICKER` — required. The ticker symbol (uppercase), e.g. `SOFI`
+- `--sector "..."` — optional sector name (must match an existing Sectors subfolder, or be a new one)
+- `--refresh-research` — re-run the research pass on an existing ticker (updates facts.md + analysis.md thesis/management; never deletes existing data)
 
 ---
 
 ## Step 1 — Parse arguments
 
 Extract from `$ARGUMENTS`:
-- `TICKER` — the ticker symbol (uppercase), e.g. `SOFI`
-- `--sector "..."` — optional sector name (must match an existing Sectors subfolder exactly, or be a new one)
+- `TICKER` — ticker symbol (uppercase)
+- `--sector "..."` — optional sector name
+- `--refresh-research` — flag
 
-If `--sector` is not provided, print the list of existing sectors and ask the user to confirm which one before continuing:
+If `--sector` is not provided, print the list of existing sectors and ask the user to confirm:
 ```
 Existing sectors:
   1. AI Infrastructure
   2. Clean Energy
   3. Cybersecurity
   4. Fintech & E-Commerce
-  5. Photonics & Optical
-  6. Semiconductors
-  7. Space & Comms
-  8. [New sector — I'll create the folder]
+  5. Metals & Mining
+  6. Photonics & Optical
+  7. Robotics & Edge AI
+  8. Semiconductors
+  9. Space & Comms
+  10. [New sector — I'll create the folder]
 
 Which sector does [TICKER] belong in?
 ```
 
 ---
 
-## Step 2 — Check for duplicates
+## Step 2 — Check for existing ticker
 
-Use Glob to check if `[TICKER].md` already exists anywhere under `Investing/Wiki/Sectors/`.
+Use Glob to check if `Investing/Wiki/Sectors/*/[TICKER]/facts.md` already exists.
 
-If found, print:
+**If found and `--refresh-research` is NOT set:**
 ```
-⚠️  [TICKER] already exists at [path]
-    Use /stock-research [TICKER] --refresh to update existing content.
+⚠️  [TICKER] already exists at [path]/facts.md
+    Use /add-ticker [TICKER] --refresh-research to re-run fundamental research.
     Aborting.
+```
+Then stop.
+
+**If found and `--refresh-research` IS set:** skip to Step 4 (research pass only; skip file creation and registry steps).
+
+Also check for old-format files: `Investing/Wiki/Sectors/*/[TICKER].md`.
+If an old-format file exists, print:
+```
+ℹ️  Found legacy file: [path]
+    This is the old single-file format. Run /ticker-monitor --deep [TICKER] to migrate it to the three-layer structure.
+    Aborting add-ticker to avoid conflicts.
 ```
 Then stop.
 
@@ -60,60 +77,16 @@ Fetch the EDGAR company search page for this ticker:
 Extract:
 - **Legal company name** (as registered with SEC)
 - **CIK number** (10-digit, e.g. `0001818201`)
-- **Exchange** (NASDAQ or NYSE — shown in the filing entity line)
+- **Exchange** (NASDAQ or NYSE)
 
-If the EDGAR fetch fails or returns no result (foreign-listed company), set:
-- Company name: search the web for `[TICKER] stock company name`
-- CIK: `none`
+If EDGAR returns no result (foreign-listed company):
+- Company name: search the web for `[TICKER] stock company name exchange`
+- CIK: `null`
 - Exchange: note the actual exchange (e.g. `Nasdaq Stockholm`, `TSX Venture`)
 
 ---
 
-## Step 4 — Create the wiki page
-
-Read the template: `Investing/Wiki/Reference/_Ticker Template.md`
-
-Make the following replacements throughout the content:
-- `TICKER` → actual ticker symbol (e.g. `SOFI`)
-- `Company Name` → legal company name from Step 3 (e.g. `SoFi Technologies`)
-- `{{date}}` → today's date in `Month DD, YYYY` format (e.g. `May 16, 2026`)
-
-Determine the output path:
-- Sector folder: `Investing/Wiki/Sectors/[SECTOR]/`
-- If this folder does not exist, create it (Bash: `mkdir`)
-- Output file: `Investing/Wiki/Sectors/[SECTOR]/[TICKER].md`
-
-Write the file.
-
----
-
-## Step 5 — Add to Monitor Registry
-
-Read the Monitor Registry. Find the table under the correct sector heading (e.g., `## Fintech & E-Commerce`).
-
-Append a new row to that table:
-```
-| [TICKER] | [Company Name] | [CIK] | [Exchange] | Investing/Wiki/Sectors/[SECTOR]/[TICKER].md |
-```
-
-If the sector heading doesn't exist in the registry, add it:
-```markdown
-## [SECTOR]
-
-| Ticker | Company | CIK | Exchange | Path |
-|--------|---------|-----|----------|------|
-| [TICKER] | [Company Name] | [CIK] | [Exchange] | Investing/Wiki/Sectors/[SECTOR]/[TICKER].md |
-```
-
-Also update the `*Last updated:` line at the top of the registry to today's date.
-
-Write the updated Monitor Registry back.
-
----
-
-## Step 6 — Run stock research (inline)
-
-Now populate the fundamental sections of the newly created wiki page.
+## Step 4 — Research pass (web + EDGAR)
 
 Run three lookups in parallel:
 
@@ -122,71 +95,162 @@ Run three lookups in parallel:
 `[TICKER] CEO CFO executive team background tenure track record`
 
 **Search B — SEC DEF 14A for insider ownership:**
-`https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=[TICKER]&type=DEF+14A&dateb=&owner=include&count=1&search_text=`
+`https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=[CIK]&type=DEF+14A&dateb=&owner=include&count=1`
 
-If CIK is `none`, skip Search B and note `— (not an SEC filer)`.
+If CIK is null, skip Search B and note `— (not an SEC filer)`.
 
-Using the research results, populate these sections in the new wiki page:
+**Search C — Key metrics:**
+`[TICKER] [Company Name] revenue earnings gross margin P/B P/E forward guidance 2026`
 
-### One-Line Thesis
-One sentence. Max 25 words. Present tense. Lead with core differentiation — not "a company that." No filler phrases.
+From the research results, extract:
+- One-line thesis (max 25 words, present tense, lead with core differentiation)
+- Business description and bull case (2–4 paragraphs)
+- Key moat and key risks
+- CEO name, CFO name, tenure, insider ownership % from DEF 14A
+- Execution track record (1–2 sentences)
+- Latest revenue, gross margin, forward P/E or P/B if available
+- Moat type, pricing power assessment, competitive intensity
 
-### Investment Thesis
+---
 
-First, fill in the **Thesis Drift block** at the top of the section:
+## Step 5 — Create file structure (skip if --refresh-research)
+
+Determine the output folder:
+- `Investing/Wiki/Sectors/[SECTOR]/[TICKER]/`
+- If the sector folder does not exist: `mkdir -p "Investing/Wiki/Sectors/[SECTOR]/[TICKER]"`
+- If the ticker folder does not exist: `mkdir "Investing/Wiki/Sectors/[SECTOR]/[TICKER]"`
+
+### Write facts.md (Layer 1)
+
+Read `Investing/Wiki/Reference/_facts-template.md` as the schema reference.
+
+Write `Investing/Wiki/Sectors/[SECTOR]/[TICKER]/facts.md` with YAML frontmatter populated from research:
+
+```markdown
+---
+ticker: [TICKER]
+company: "[Legal Company Name]"
+cik: "[CIK or null]"
+exchange: [Exchange]
+sector: "[SECTOR]"
+
+management:
+  - role: CEO
+    name: "[Name]"
+    ownership_pct: [% from DEF 14A, or null]
+    notes: "[max 12 words: tenure + key signal]"
+  - role: CFO
+    name: "[Name]"
+    ownership_pct: [% or null]
+    notes: "[max 12 words]"
+
+earnings: []
+
+filings: []
+
+moat:
+  type: "[Platform/Ecosystem | Sole-source | IP/Patent | Cost | Network | Other]"
+  pricing_power: "[high | medium | low]"
+  competition_intensity: "[low | medium | high]"
+  made_in_usa: [true | false | null]
+  notes: "[max 15 words on the moat's defensibility]"
+
+metrics:
+  score: null
+  score_label: "—"
+  last_scored: null
+  valuation_fpe: [forward P/E or null]
+  analyst_pt: null
+  analyst_upside_pct: null
+
+last_updated: "[TODAY'S DATE]"
+---
 ```
-> **Thesis established:** [TODAY'S DATE]
-> **Last validated:** [TODAY'S DATE]
-> **Drift status:** On track — initial thesis established; monitor for first earnings validation
-```
 
-Then write 2–4 paragraphs covering:
+### Write analysis.md (Layer 2)
+
+Read `Investing/Wiki/Reference/_analysis-template.md` as the schema reference.
+
+Write `Investing/Wiki/Sectors/[SECTOR]/[TICKER]/analysis.md` with the following sections populated:
+
+**One-Line Thesis:** one sentence, max 25 words, present tense, lead with core differentiation.
+
+**Investment Thesis:** fill the Thesis Drift block with today's date, then write 2–4 paragraphs covering:
 1. What the company does and why it matters now
-2. The bull case and primary growth driver
+2. Bull case and primary growth driver
 3. Key moat (specific and concrete)
 4. Key risks (specific and honest)
 
 Then the `**Key moat:**` and `**Key risks:**` summary lines.
 
-### Management & Leadership
-Fill in the CEO and CFO table rows (and any other C-suite notably relevant to the thesis). Notes column: max 15 words per row.
+All other sections (Scoring Summary, Conviction Log, Cross-Ticker Signals, Catalyst Timeline, Analyst Coverage) remain as stubs from the template.
 
-Fill in:
-- **Execution track record:** 1–2 sentences on capital allocation history, guidance accuracy, prior company outcomes
-- **Insider ownership / alignment:** Ownership % from DEF 14A, recent Form 4 activity if notable; if unavailable write `— (DEF 14A pending)` or `— (not an SEC filer)`
+### Write signals.md (Layer 3)
 
----
+Read `Investing/Wiki/Reference/_signals-template.md`.
 
-## Step 7 — Append to Research Log
+Write `Investing/Wiki/Sectors/[SECTOR]/[TICKER]/signals.md` — replace `TICKER` with the actual ticker symbol. Body is empty (stubs only).
 
-Add one entry at the bottom of the Research Log section in the new wiki page:
-`- **[TODAY'S DATE]** — add-ticker run. Note created from template; fundamental sections populated from web research and SEC DEF 14A.`
+Append the initial Research Log entry:
+`- **[TODAY'S DATE]** — add-ticker run. facts.md + analysis.md populated from web research and SEC EDGAR.`
 
 ---
 
-## Step 8 — Print summary
+## Step 6 — Register in Monitor Registry.yaml (skip if --refresh-research)
 
-Print the completion summary:
+Read `Investing/Wiki/Reference/Monitor Registry.yaml`.
+
+Append the new ticker under the `tickers:` key in the appropriate sector grouping:
+
+```yaml
+  [TICKER]:
+    company: "[Legal Company Name]"
+    cik: "[CIK or null]"
+    exchange: [Exchange]
+    sector: "[SECTOR]"
+    path: "Investing/Wiki/Sectors/[SECTOR]/[TICKER]"
+    score: null
 ```
-✅ [TICKER] — [Company Name] added to Wiki
 
-   📄 Page:      Investing/Wiki/Sectors/[SECTOR]/[TICKER].md
-   🏛️  CIK:       [CIK] ([Exchange])
-   📋 Registry:  Monitor Registry updated — [SECTOR] section
-   ✍️  Populated: One-Line Thesis · Investment Thesis · Management & Leadership
+If the ticker already exists as a `candidate` entry, remove it from the `candidates:` list.
+
+Also update `last_updated` to today's date.
+
+---
+
+## Step 7 — Print summary
+
+For new ticker:
+```
+✅ [TICKER] — [Company Name] added
+
+   📁 Folder:    Investing/Wiki/Sectors/[SECTOR]/[TICKER]/
+   📊 facts.md:  CIK [CIK] ([Exchange]) · moat: [type] · [pricing_power] pricing power
+   📝 analysis.md: One-Line Thesis + Investment Thesis + Management populated
+   📡 signals.md: empty (ready for news + sentiment)
+   📋 Registry:  Monitor Registry.yaml updated
 
    Next steps:
-   • Run /ticker-monitor --deep [TICKER] to pull recent SEC filings and news
-   • Check the Catalyst Timeline — add upcoming earnings date if known
-   • Add Cross-Ticker Signals if this name has clear read-throughs to existing names
+   • /ticker-monitor --deep [TICKER]   ← pull recent SEC filings + news
+   • /score-ticker [TICKER]            ← score on 6-criterion rubric
+   • Check Catalyst Timeline in analysis.md — add upcoming earnings date if known
+```
+
+For `--refresh-research`:
+```
+✅ [TICKER] — research refreshed
+
+   📊 facts.md:  management + moat + metrics updated
+   📝 analysis.md: One-Line Thesis + Investment Thesis updated
+   📋 Registry:  score preserved (re-run /score-ticker to update)
 ```
 
 ---
 
 ## Rules
 
-- **Never overwrite an existing wiki page.** If the file exists, abort (Step 2).
-- **Preserve all template sections.** Do not remove or reorder any sections from the template, even if content is not yet available.
-- **Leave placeholder tables intact.** The Conviction Log, Cross-Ticker Signals, Earnings & Financials, and SEC Filings tables should remain as empty tables (the `| — |` row pattern) if no real data is available yet. Do not delete them.
-- **Keep writing style consistent** with existing pages: direct, no hype, no passive voice.
-- **Fail gracefully.** If EDGAR is unavailable, continue with `none` for CIK and note the source. If web search returns thin results, write what's available and note the gap in the Research Log entry.
+- **Never overwrite an existing three-layer folder.** If `facts.md` already exists and `--refresh-research` is not set, abort (Step 2).
+- **`--refresh-research` updates, never deletes.** It rewrites One-Line Thesis, Investment Thesis, and management rows in facts.md. It never touches Conviction Log, Cross-Ticker Signals, Scoring Summary, or Research Log.
+- **YAML must be valid.** All string values with special characters must be quoted. Null values use `null`, not `—`.
+- **Fail gracefully.** If EDGAR is unavailable, continue with `null` for CIK and note the source. If web search returns thin results, write what's available and note the gap in signals.md Research Log.
+- **No old-format creation.** Never create a single `[TICKER].md` file. Always use the three-file folder structure.

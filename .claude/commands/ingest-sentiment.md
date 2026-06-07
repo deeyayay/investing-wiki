@@ -1,16 +1,16 @@
 ---
-description: Parse the Tweets.md staging dump (or any pasted signal) into individual signal notes, create/update Social Mentions sections on ticker and sector wiki pages, and update the Sentiment Index. Usage: /ingest-sentiment [--source article|musing] [--author "@handle"]
+description: Parse the Tweets.md staging dump (or any pasted signal) into individual signal notes, create/update Social Mentions in signals.md (Layer 3) for each ticker, and update the Sentiment Index. Usage: /ingest-sentiment [--source article|musing] [--author "@handle"]
 allowed-tools: Read, Write, Edit, Glob, mcp__mcp-obsidian__obsidian_get_file_contents, mcp__mcp-obsidian__obsidian_append_content, mcp__mcp-obsidian__obsidian_patch_content
 ---
 
 # Ingest Sentiment
 
-Parse raw signals from the staging inbox into the structured social mentions database.
+Parse raw signals from the staging inbox into the structured social mentions database. Writes to Layer 3 (signals.md) only — never reads or modifies facts.md or analysis.md.
 
 **Staging file:** `Investing/Raw/Inbox/Tweets.md`
 **Signal folder:** `Investing/Raw/Sentiment/`
 **Sentiment Index:** `Investing/Wiki/Reference/Sentiment Index.md`
-**Monitor Registry:** `Investing/Wiki/Reference/Monitor Registry.md`
+**Registry:** `Investing/Wiki/Reference/Monitor Registry.yaml`
 
 **Input:** `$ARGUMENTS` — optional flags:
 - `--source article|musing` — override source type (default: `tweet`)
@@ -32,25 +32,20 @@ Then stop.
 
 ## Step 2 — Split into individual signals
 
-Split the raw content into individual signal blocks. The primary split boundary is a URL line matching `https://x.com/` or `https://twitter.com/`. Each block of text above a URL (down to the previous URL) = one signal. The URL belongs to the signal above it.
+Split the raw content into individual signal blocks. Primary split boundary: a URL line matching `https://x.com/` or `https://twitter.com/`. Each block of text above a URL = one signal. The URL belongs to the signal above it.
 
-If no URLs are present (e.g. articles or musings pasted without links), treat the entire content as one signal.
+If no URLs are present (articles or musings), treat the entire content as one signal.
 
 For each signal block, extract:
 - **Raw text** — full pasted content including embedded URL
-- **URL** — the trailing `https://x.com/...` line if present, else empty
-- **Tickers** — all `$TICKER` patterns; deduplicate; sort alphabetically. Also include clearly-referenced public tickers written without `$` if you are confident they refer to a traded stock.
-- **Sectors** — infer which sector(s) the signal touches based on content. Use the existing sector names from the Monitor Registry: `Photonics & Optical`, `Semiconductors`, `AI Infrastructure`, `Cybersecurity`, `Fintech & E-Commerce`, `Clean Energy`, `Space & Comms`. A signal can touch multiple sectors. If none apply, leave empty.
-- **Is sector-level** — flag true if the signal makes a broad claim about a sector (e.g. TAM size, macro dynamics, sector thesis) rather than being purely ticker-specific.
+- **URL** — the trailing URL line if present, else empty
+- **Tickers** — all `$TICKER` patterns; also include clearly-referenced public tickers written without `$`; deduplicate, sort alphabetically
+- **Sectors** — infer which sector(s) the signal touches using sector names from Monitor Registry.yaml
+- **Is sector-level** — flag true if the signal makes a broad claim about a sector (TAM, macro dynamics, sector thesis) rather than being purely ticker-specific
 
 ---
 
-## Step 3 — Auto-assign and present batch for review
-
-Internally process all signals. For each signal, note:
-- Extracted tickers
-- Inferred sectors
-- Whether it's sector-level (true/false)
+## Step 3 — Batch review
 
 Present the full batch in a single review table:
 
@@ -58,19 +53,17 @@ Present the full batch in a single review table:
 ─────────────────────────────────────────
 Batch preview — [M] signals
 ─────────────────────────────────────────
- #  | Tickers                                   | Sectors              | Sector-level?
-----|-------------------------------------------|----------------------|--------------
- 1  | PENG, MRVL, SMCI                          | Photonics & Optical, Semiconductors | no
- 2  | BOT                                       | —                    | no
- 3  | SIVE, LITE, AAOI, COHR, POET, FN, IQE, LPK| Photonics & Optical | yes
-...
+ #  | Tickers        | Sectors              | Sector-level?
+----|----------------|----------------------|--------------
+ 1  | PENG, MRVL     | Photonics & Optical  | no
+ 2  | SIVE, LITE     | Photonics & Optical  | yes
 ─────────────────────────────────────────
 ```
 
-Then ask in a single message:
-> "Review the table. Reply with corrections in the format `[#] add TICKER`, `[#] remove TICKER`, `[#] sector Sector Name`, or `[#] skip`. Type **ok** to accept all and file."
+Then ask:
+> "Review the table. Reply with corrections: `[#] add TICKER`, `[#] remove TICKER`, `[#] sector Sector Name`, or `[#] skip`. Type **ok** to accept all and file."
 
-Wait for user reply. Apply any corrections. If a signal is marked `skip`, drop it. Then proceed.
+Wait for reply. Apply corrections. If a signal is marked `skip`, drop it.
 
 ---
 
@@ -79,11 +72,9 @@ Wait for user reply. Apply any corrections. If a signal is marked `skip`, drop i
 For each signal (not skipped), generate:
 - **date** — today's date `YYYY-MM-DD`
 - **slug** — `[date]-[first-ticker-or-topic]-[first-3-words]`, lowercase, hyphens, max 60 chars
-- **filename** — `[slug].md`
-- **filepath** — `Investing/Raw/Sentiment/[filename]`
+- **filepath** — `Investing/Raw/Sentiment/[slug].md`
 
 Write the file:
-
 ```markdown
 ---
 date: [date]
@@ -102,16 +93,16 @@ Print `✓ [slug].md` for each file saved.
 
 ---
 
-## Step 5 — Update ticker wiki pages
+## Step 5 — Update ticker signals.md files (Layer 3 only)
 
-Read the Monitor Registry to build the full ticker → file path map.
+Read `Investing/Wiki/Reference/Monitor Registry.yaml`. Build the ticker → path map from the `tickers:` key.
 
 For each ticker across all filed signals:
 
-**A) Ticker exists in Monitor Registry:**
-1. Read the wiki page
+**A) Ticker exists in Monitor Registry.yaml:**
+1. Read `[path]/signals.md`
 2. Check for `## Social Mentions` section
-3. If section **does not exist**: insert before `## Research Log` (or append to end of file if missing):
+3. If section **does not exist**: insert before `## Research Log`:
    ```markdown
    ## Social Mentions
 
@@ -119,14 +110,16 @@ For each ticker across all filed signals:
    |------|--------|--------|
    | [date] | [[slug]] | tweet |
    ```
-4. If section **already exists**: append a new row to the table only — never rewrite existing rows.
+4. If section **exists**: append a new row to the table — never rewrite existing rows
 
-**B) Ticker NOT in Monitor Registry (stub):**
-1. Infer the most likely sector from the signal context. Use the folder name exactly as it appears in `Investing/Wiki/Sectors/` (e.g. `Photonics & Optical`).
-2. Check if a file already exists at `Investing/Wiki/Sectors/[sector]/[TICKER].md`
-3. If file **does not exist**: create it:
+Do NOT read or touch facts.md or analysis.md.
+
+**B) Ticker NOT in Monitor Registry.yaml (stub):**
+1. Infer the most likely sector from the signal context. Use the folder name exactly as it appears in `Investing/Wiki/Sectors/`.
+2. Check if `Investing/Wiki/Sectors/[sector]/[TICKER]/signals.md` already exists
+3. If **does not exist**: create the ticker folder and write a minimal signals.md:
    ```markdown
-   # [TICKER]
+   # [TICKER] — Signals
    *Social mentions only — not yet in Monitor Registry. Run `/add-ticker [TICKER]` to onboard fully.*
 
    ---
@@ -136,10 +129,14 @@ For each ticker across all filed signals:
    | Date | Signal | Source |
    |------|--------|--------|
    | [date] | [[slug]] | tweet |
-   ```
-4. If file **already exists** (previously created stub): append a row to the Social Mentions table.
 
-Do NOT register stub tickers in the Monitor Registry.
+   ---
+
+   ## Research Log
+   ```
+4. If **exists**: append a row to the Social Mentions table
+
+Do NOT register stub tickers in Monitor Registry.yaml.
 
 ---
 
@@ -148,7 +145,7 @@ Do NOT register stub tickers in the Monitor Registry.
 For each signal flagged as sector-level, for each sector it touches:
 
 1. Check if `Investing/Wiki/Sectors/[Sector Name]/Sector Sentiment.md` exists
-2. If **does not exist**: create it:
+2. If **does not exist**: create it with a Signals table:
    ```markdown
    # [Sector Name] — Social Mentions
 
@@ -162,7 +159,7 @@ For each signal flagged as sector-level, for each sector it touches:
    |------|--------|--------|---------|
    | [date] | [[slug]] | tweet | [one-sentence summary of the sector-level claim] |
    ```
-3. If **already exists**: append a row to the Signals table.
+3. If **exists**: append a row to the Signals table
 
 ---
 
@@ -170,8 +167,8 @@ For each signal flagged as sector-level, for each sector it touches:
 
 Read `Investing/Wiki/Reference/Sentiment Index.md`.
 
-**Ticker Summary table** — for each ticker across the batch:
-- New ticker: add row with Mentions = 1, Last Signal = date, Wiki = `[[TICKER]]` if in Monitor Registry else `[[TICKER]]` linking to stub, Status = `monitored` or `stub`
+**Ticker Summary table:**
+- New ticker: add row with Mentions = 1, Last Signal = date, Wiki = `[[TICKER]]`, Status = `monitored` or `stub`
 - Existing ticker: increment Mentions, update Last Signal if newer
 
 Columns: `Ticker | Wiki | Status | Mentions | Last Signal`
@@ -182,7 +179,7 @@ Columns: `Ticker | Wiki | Status | Mentions | Last Signal`
 ```
 Keep max 30 entries.
 
-Rewrite the Sentiment Index with updated table and feed using the Edit tool.
+Rewrite the Sentiment Index with updated table and feed using Edit.
 
 ---
 
@@ -191,7 +188,7 @@ Rewrite the Sentiment Index with updated table and feed using the Edit tool.
 Ask: "Clear Tweets.md now that signals are filed? (yes / no)"
 
 If yes: overwrite `Investing/Raw/Inbox/Tweets.md` with an empty file. Print `✓ Tweets.md cleared.`
-If no: leave unchanged. Print `Tweets.md left as-is.`
+If no: leave unchanged.
 
 ---
 
@@ -204,8 +201,8 @@ Ingest complete
 Signals filed:        [N]
 Signals skipped:      [N]
 Tickers tagged:       [list]
-  - Monitored:        [list — existing wiki pages updated]
-  - Stubs created:    [list — new bare pages created]
+  - Monitored:        [list — signals.md updated]
+  - Stubs created:    [list — new signals.md created]
 Sector pages updated: [list or "none"]
 Sentiment Index:      updated
 ─────────────────────────────────────────

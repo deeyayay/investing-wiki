@@ -1,16 +1,16 @@
 ---
-description: Build a supplier × end-customer dependency matrix for a sector. Reads wiki pages and Cross-Ticker Signals to map revenue concentration, then writes _Customer Matrix.md with a JSON block the dashboard uses to render a heat map. Usage: /build-customer-matrix "Sector Name"
+description: Build a supplier × end-customer dependency matrix for a sector. Reads facts.md (Layer 1) for company identity and analysis.md (Layer 2) for cross-ticker signals and thesis. Writes _Customer Matrix.md with a JSON block the dashboard uses to render a heat map. Usage: /build-customer-matrix "Sector Name"
 allowed-tools: WebSearch, Read, Write, Edit, Bash
 ---
 
 # Build Customer Matrix — Supplier × End-Customer Dependency
 
-Maps which companies in a sector sell to which end-customers, and how concentrated those relationships are. Output is `_Customer Matrix.md` — a human-readable table plus a machine-readable JSON block the dashboard renders as a heat map.
+Maps which companies in a sector sell to which end-customers, and how concentrated those relationships are. Output is `_Customer Matrix.md` — a human-readable table plus a machine-readable JSON block.
 
 **Output:** `Investing/Wiki/Sectors/[Sector]/_Customer Matrix.md`
 **Input:** `$ARGUMENTS` — `"Sector Name"` (required)
 
-Token-efficient: reads wiki pages first, searches only for tickers with no customer data logged.
+Token-efficient: reads facts.md + analysis.md first, searches only for tickers with no customer data in either.
 
 ---
 
@@ -19,10 +19,10 @@ Token-efficient: reads wiki pages first, searches only for tickers with no custo
 Extract `SECTOR` from `$ARGUMENTS`.
 
 Read these files in parallel:
-- `Investing/Wiki/Reference/Monitor Registry.md` → get all tickers registered in this sector + their wiki page paths
-- `Investing/Wiki/Sectors/[SECTOR]/_Supply Chain Map.md` → get each ticker's layer/tier (if map exists; skip gracefully if not)
+- `Investing/Wiki/Reference/Monitor Registry.yaml` → get all tickers registered in this sector + their folder paths
+- `Investing/Wiki/Sectors/[SECTOR]/_Supply Chain Map.md` → get each ticker's layer/tier (skip gracefully if not present)
 
-If `_Customer Matrix.md` already exists at `Investing/Wiki/Sectors/[SECTOR]/_Customer Matrix.md`, print:
+If `_Customer Matrix.md` already exists, print:
 ```
 ⚠️  Customer Matrix already exists for [SECTOR].
     The file will be overwritten with refreshed data. Continuing...
@@ -31,75 +31,74 @@ If `_Customer Matrix.md` already exists at `Investing/Wiki/Sectors/[SECTOR]/_Cus
 If fewer than 3 tickers are registered in this sector, print:
 ```
 ⚠️  Only [N] tickers registered in [SECTOR]. Matrix will be sparse.
-    Consider running /add-ticker for more nodes before building the matrix.
-    Continuing anyway...
+    Consider /add-ticker for more nodes first. Continuing anyway...
 ```
 
 ---
 
-## Step 2 — Extract customer data from wiki pages (parallel reads)
+## Step 2 — Extract customer data from ticker files (parallel reads)
 
-Read all ticker wiki pages for this sector in parallel.
+For each ticker in this sector, read `[path]/facts.md` and `[path]/analysis.md` in parallel.
 
-For each ticker, extract:
-- **Cross-Ticker Signals table** — all rows where `Direction = emits` and the signal type suggests a customer relationship (demand signal, design win, revenue dependency, capex read-through). Capture: `other_ticker`, `signal`, `implication`.
-- **News & Alpha Log** — scan for customer names, revenue concentration mentions, "top customer", "largest customer", "design win at", "supply agreement with". Capture any named customers and context.
-- **Earnings & Financials table** — note if any customer concentration % is mentioned in the Notes column.
-- **Investment Thesis** — scan for named customers and dependency language.
+**From facts.md (YAML):**
+- `moat.notes` — check for customer concentration language
+- `earnings[].notes` — scan for customer % mentions
+- `management` + `moat` — customer dependency signals
+
+**From analysis.md (markdown):**
+- **Cross-Ticker Signals table** — all rows where `Direction = Emits` and the signal suggests a customer relationship (demand signal, design win, revenue dependency, capex read-through). Capture: `other_ticker`, `signal`, `implication`
+- **Investment Thesis** — scan for named customers and dependency language
+- **Analyst Coverage** — scan for customer concentration % if disclosed
 
 Build per-ticker: `customer_signals[TICKER] = [{ customer_name, source, detail, concentration_hint }]`
 
-A `concentration_hint` is any % or relative language found: "50% of revenue", "largest customer", "top 3 customers", "meaningful exposure", etc.
+A `concentration_hint` is any % or relative language: "50% of revenue", "largest customer", "top 3 customers", "meaningful exposure".
+
+Do NOT read signals.md (news log is too noisy for customer matrix; structured data from facts.md and analysis.md is sufficient).
 
 ---
 
 ## Step 3 — Identify end-customer universe
 
-From all customer signals collected in Step 2, compile a deduplicated list of end-customers. Normalize names:
+From all customer signals in Step 2, compile a deduplicated list of end-customers. Normalize names:
 - "Google", "Alphabet", "Google Cloud" → `Google (GOOGL)`
-- "Amazon", "AWS", "Amazon Web Services" → `Amazon (AMZN)`
+- "Amazon", "AWS" → `Amazon (AMZN)`
 - "Microsoft", "Azure" → `Microsoft (MSFT)`
 - "Meta", "Facebook" → `Meta (META)`
 - "Apple" → `Apple (AAPL)`
-- OEM/automotive/industrial customers: keep as-is
 
 For well-known sectors, supplement from knowledge:
-- **Semiconductors**: always include Google (GOOGL), Amazon (AMZN), Microsoft (MSFT), Meta (META), Apple (AAPL), TSMC (as intermediary), as column candidates — they appear in virtually every semicon supplier's customer base
-- **Photonics & Optical**: always include hyperscalers + major telcos (AT&T, Verizon, Lumen)
-- **AI Infrastructure**: hyperscalers + cloud providers
-- **Clean Energy**: utilities, grid operators, auto OEMs
+- **Semiconductors / Photonics:** include hyperscalers (GOOGL, AMZN, MSFT, META) + TSMC (intermediary) + Apple (AAPL)
+- **AI Infrastructure:** hyperscalers + cloud providers
+- **Clean Energy:** utilities, grid operators, auto OEMs
 
-Limit to the 8 most relevant end-customers as columns. More than 8 makes the matrix unreadable.
+Limit to 8 most relevant end-customers as columns.
 
 ---
 
 ## Step 4 — Fill gaps with targeted searches
 
-For any ticker where Step 2 returned zero customer signals, run one search:
+For any ticker where Steps 2–3 returned zero customer signals, run one search:
 `[TICKER] major customers revenue concentration 10-Q 2025 2026`
 
-Extract any named customers and % figures from results. Mark these as `source: "web"` (vs. `source: "wiki"` for data from ticker pages).
+Extract named customers and % figures. Mark as `source: "web"`.
 
-Maximum searches: one per ticker with no wiki data, capped at 5 total searches regardless of sector size.
+Maximum 5 total searches regardless of sector size.
 
 ---
 
 ## Step 5 — Score each cell
 
-For each (supplier ticker, end-customer) pair, assign a relationship score:
-
 | Evidence | Score | Display |
 |---|---|---|
-| Named in 10-Q as top customer + % disclosed ≥50% | 5 | `★★★★★` or `>50%` |
-| Named in 10-Q as top customer, % not disclosed or 25–49% | 4 | `★★★★` or `~25–49%` |
-| Named in earnings call / analyst report, meaningful exposure | 3 | `★★★` |
-| Mentioned in news/thesis, indirect or partial exposure | 2 | `★★` |
+| Named in 10-Q as top customer + % ≥50% | 5 | `>50%` |
+| Named in 10-Q as top customer, % 25–49% | 4 | `~25–49%` |
+| Named in earnings call / analyst report, meaningful | 3 | `★★★` |
+| Mentioned in thesis/signals, indirect exposure | 2 | `★★` |
 | Inferred from supply chain position (no direct evidence) | 1 | `★` |
 | No evidence | 0 | blank |
 
-For the JSON heat map, use the numeric score (0–5). For the markdown table, use the display string.
-
-Also flag each cell's source: `wiki` (from Cross-Ticker Signals / thesis / news) or `web` (from search).
+Flag each cell's source: `wiki` (from facts.md / analysis.md) or `web` (from search).
 
 ---
 
@@ -110,22 +109,22 @@ Write the file at `Investing/Wiki/Sectors/[SECTOR]/_Customer Matrix.md`:
 ```markdown
 # [SECTOR] — Customer Matrix
 *Built: [TODAY'S DATE] | Refresh: after each /ticker-monitor pass or earnings event*
-*Rows = suppliers registered in this sector. Columns = major end-customers.*
-*Score: ★★★★★ >50% revenue | ★★★★ ~25–49% | ★★★ meaningful | ★★ partial/indirect | ★ inferred | blank = no evidence*
+*Rows = suppliers in this sector. Columns = major end-customers.*
+*Score: >50% revenue | ~25–49% | ★★★ meaningful | ★★ partial/indirect | ★ inferred | blank = no evidence*
 
 ---
 
 ## Dependency Table
 
-| Supplier | Layer | [Customer 1] | [Customer 2] | [Customer 3] | ... | Concentration Notes |
-|----------|-------|-------------|-------------|-------------|-----|---------------------|
-[one row per registered ticker, sorted by layer then ticker]
+| Supplier | Layer | [Customer 1] | [Customer 2] | ... | Concentration Notes |
+|----------|-------|-------------|-------------|-----|---------------------|
+[one row per ticker, sorted by layer then ticker]
 
 ---
 
 ## Critical Paths
 
-[2–4 sentences identifying the most concentrated dependencies — e.g., "ASML → TSMC is the single most critical bilateral relationship in the chain: TSMC is ASML's largest customer by revenue and ASML is TSMC's sole EUV supplier. Disruption to either direction halts leading-edge chip production globally."]
+[2–4 sentences identifying the most concentrated dependencies]
 
 ---
 
@@ -133,7 +132,7 @@ Write the file at `Investing/Wiki/Sectors/[SECTOR]/_Customer Matrix.md`:
 
 | Ticker | Issue |
 |--------|-------|
-[Any ticker where no customer data was found in wiki or web search]
+[Any ticker where no customer data was found]
 
 ---
 
@@ -146,7 +145,7 @@ Write the file at `Investing/Wiki/Sectors/[SECTOR]/_Customer Matrix.md`:
 ---
 
 ## Heat Map Metadata
-<!-- Machine-readable block — parsed by /daily-dashboard to render the visual heat map. Do not edit manually. -->
+<!-- Machine-readable block — parsed by /daily-dashboard. Do not edit manually. -->
 
 ```json
 {
@@ -159,35 +158,26 @@ Write the file at `Investing/Wiki/Sectors/[SECTOR]/_Customer Matrix.md`:
       "company": "NVIDIA Corporation",
       "layer": "Design (Fabless — Compute)",
       "cells": {
-        "Customer 1": { "score": 4, "display": "★★★★", "source": "wiki", "note": "Hyperscaler GPU demand — H100/H200 allocation" },
-        "Customer 2": { "score": 3, "display": "★★★", "source": "wiki", "note": "Azure AI infrastructure build-out" },
+        "Customer 1": { "score": 4, "display": "~25–49%", "source": "wiki", "note": "..." },
         ...
       }
-    },
-    ...
+    }
   ]
 }
-` `` (close json block)
+```
 
 ---
 
 ## Research Log
-- **[TODAY'S DATE]** — build-customer-matrix run. [N] suppliers × [N] customers. [N] cells scored from wiki data, [N] from web search, [N] inferred, [N] blank. [N] coverage gaps.
+- **[TODAY'S DATE]** — build-customer-matrix run. [N] suppliers × [N] customers. [N] cells from wiki, [N] from web, [N] blank.
 ```
 
 ---
 
 ## Step 7 — Update `_Supply Chain Map.md` framework status
 
-If `_Supply Chain Map.md` exists for this sector, find the Framework Status checklist and check off the customer matrix step:
-
-```
-- [ ] Customer matrix built (`/build-customer-matrix "[SECTOR]"`)
-```
-→
-```
-- [x] Customer matrix built (`/build-customer-matrix "[SECTOR]"`) — [TODAY'S DATE]
-```
+If `_Supply Chain Map.md` exists for this sector, check off the customer matrix step:
+`- [ ] Customer matrix built` → `- [x] Customer matrix built — [TODAY'S DATE]`
 
 ---
 
@@ -199,26 +189,21 @@ If `_Supply Chain Map.md` exists for this sector, find the Framework Status chec
    📄 Investing/Wiki/Sectors/[SECTOR]/_Customer Matrix.md
    📊 [N] suppliers × [N] customers = [N] cells
    🔴 High concentration (★★★★+): [N] cells
-   🟡 Meaningful exposure (★★★):   [N] cells
-   ⬜ No evidence:                  [N] cells
-   ⚠️  Coverage gaps:               [N] tickers (no customer data found)
+   🟡 Meaningful (★★★): [N] cells
+   ⬜ No evidence: [N] cells
+   ⚠️  Coverage gaps: [N] tickers
 
-   Most concentrated relationships:
-   • [TICKER] → [Customer]: [display score] — [note]
-   • [TICKER] → [Customer]: [display score] — [note]
-   • [TICKER] → [Customer]: [display score] — [note]
-
-   Next: /daily-dashboard to render the heat map visualization
-         /ticker-monitor --sector "[SECTOR]" to keep Cross-Ticker Signals fresh
+   Next: /daily-dashboard to render the heat map
+         /ticker-monitor --sector "[SECTOR]" to keep signals fresh
 ```
 
 ---
 
 ## Rules
 
-- **Wiki-first.** Never search for a ticker that already has customer data in Cross-Ticker Signals or thesis. Search is the fallback, not the default.
-- **Cap searches at 5.** If the sector has more than 5 tickers with no wiki data, fill them as coverage gaps rather than running unlimited searches.
-- **No invented relationships.** Score 0 (blank) is correct when there's no evidence. Do not infer a relationship just because it's plausible from supply chain position — that's what score 1 (★, inferred) is for, and use it sparingly with a clear note.
-- **Overwrite is safe.** Unlike ticker pages, the matrix is a derived artifact — it's always regenerated from source data. Overwriting is expected behavior.
-- **JSON block must be valid JSON.** Close all braces. The dashboard parser will fail on malformed JSON.
-- **8-column maximum.** If more than 8 distinct end-customers appear, keep the 8 with the highest total score across all suppliers. Note excluded customers in a comment above the JSON block.
+- **Wiki-first (facts.md + analysis.md).** Never search for a ticker that already has customer data in either file. Search is the fallback.
+- **Cap searches at 5.** If more than 5 tickers have no wiki data, fill them as coverage gaps.
+- **No invented relationships.** Score 0 (blank) is correct when there's no evidence. Use score 1 (★, inferred) sparingly with a clear note.
+- **Never read signals.md.** The news log is too noisy for customer dependency analysis.
+- **JSON block must be valid JSON.** The dashboard parser will fail on malformed JSON.
+- **8-column maximum.** Keep the 8 end-customers with the highest total score across all suppliers.

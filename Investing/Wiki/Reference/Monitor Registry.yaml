@@ -1,0 +1,770 @@
+# Monitor Registry — machine-readable ticker index
+# Skills read this file to resolve: sector, wiki folder path, and score.
+# Path values point to the ticker's FOLDER (no extension).
+#   facts.md    → [path]/facts.md   (Layer 1 — YAML frontmatter, machine-readable KB)
+#   analysis.md → [path]/analysis.md (Layer 2 — thesis + conviction)
+#   signals.md  → [path]/signals.md  (Layer 3 — news, sentiment, research log)
+#
+# To add a ticker: /add-ticker TICKER [--sector "Sector Name"]
+# To add a candidate: append to the sector's candidates list below.
+
+last_updated: "2026-06-06"
+
+tickers:
+  # ── Robotics & Edge AI ────────────────────────────────────────────────────
+  AMBA:
+    company: "Ambarella, Inc."
+    cik: "0001280263"
+    exchange: NASDAQ
+    sector: "Robotics & Edge AI"
+    path: "Investing/Wiki/Sectors/Robotics & Edge AI/AMBA"
+    score: 8.0
+
+  OUST:
+    company: "Ouster, Inc."
+    cik: "0001816581"
+    exchange: NASDAQ
+    sector: "Robotics & Edge AI"
+    path: "Investing/Wiki/Sectors/Robotics & Edge AI/OUST"
+    score: 6.5
+
+  # ── Photonics & Optical ───────────────────────────────────────────────────
+  COHR:
+    company: "Coherent Corp"
+    cik: "0000820318"
+    exchange: NYSE
+    sector: "Photonics & Optical"
+    path: "Investing/Wiki/Sectors/Photonics & Optical/COHR"
+    score: null
+
+  LITE:
+    company: "Lumentum Holdings"
+    cik: "0001633978"
+    exchange: NASDAQ
+    sector: "Photonics & Optical"
+    path: "Investing/Wiki/Sectors/Photonics & Optical/LITE"
+    score: null
+
+  FN:
+    company: "Fabrinet"
+    cik: "0001408710"
+    exchange: NYSE
+    sector: "Photonics & Optical"
+    path: "Investing/Wiki/Sectors/Photonics & Optical/FN"
+    score: null
+
+  CIEN:
+    company: "Ciena Corporation"
+    cik: "0000936395"
+    exchange: NYSE
+    sector: "Photonics & Optical"
+    path: "Investing/Wiki/Sectors/Photonics & Optical/CIEN"
+    score: null
+
+  VIAV:
+    company: "Viavi Solutions"
+    cik: "0000912093"
+    exchange: NASDAQ
+    sector: "Photonics & Optical"
+    path: "Investing/Wiki/Sectors/Photonics & Optical/VIAV"
+    score: null
+
+  AAOI:
+    company: "Applied Optoelectronics"
+    cik: "0001158114"
+    exchange: NASDAQ
+    sector: "Photonics & Optical"
+    path: "Investing/Wiki/Sectors/Photonics & Optical/AAOI"
+    score: null
+
+  AXTI:
+    company: "AXT Inc."
+    cik: "0001051627"
+    exchange: NASDAQ
+    sector: "Photonics & Optical"
+    path: "Investing/Wiki/Sectors/Photonics & Optical/AXTI"
+    score: null
+
+  LWLG:
+    company: "Lightwave Logic"
+    cik: "0001325964"
+    exchange: NASDAQ
+    sector: "Photonics & Optical"
+    path: "Investing/Wiki/Sectors/Photonics & Optical/LWLG"
+    score: null
+
+  LASR:
+    company: "nLIGHT Inc."
+    cik: "0001124796"
+    exchange: NASDAQ
+    sector: "Photonics & Optical"
+    path: "Investing/Wiki/Sectors/Photonics & Optical/LASR"
+    score: null
+
+  SIVE:
+    company: "Sivers Semiconductors"
+    cik: null
+    exchange: "Nasdaq Stockholm"
+    sector: "Photonics & Optical"
+    path: "Investing/Wiki/Sectors/Photonics & Optical/SIVE"
+    score: 5.5
+
+  POET:
+    company: "POET Technologies"
+    cik: null
+    exchange: "TSX Venture"
+    sector: "Photonics & Optical"
+    path: "Investing/Wiki/Sectors/Photonics & Optical/POET"
+    score: null
+
+  FOCI:
+    company: "FOCI Fiber Optic Communications, Inc."
+    cik: null
+    exchange: "TPEX (Taiwan)"
+    sector: "Photonics & Optical"
+    path: "Investing/Wiki/Sectors/Photonics & Optical/FOCI"
+    score: null
+
+  "6965.T":
+    company: "Hamamatsu Photonics K.K."
+    cik: null
+    exchange: "TSE (Tokyo)"
+    sector: "Photonics & Optical"
+    path: "Investing/Wiki/Sectors/Photonics & Optical/6965.T"
+    score: null
+
+  PRY.MI:
+    company: "Prysmian S.p.A."
+    cik: null
+    exchange: "Euronext Milan"
+    sector: "Photonics & Optical"
+    path: "Investing/Wiki/Sectors/Photonics & Optical/PRY.MI"
+    score: null
+
+  "5801.T":
+    company: "Furukawa Electric Co., Ltd."
+    cik: null
+    exchange: "TSE (Tokyo)"
+    sector: "Photonics & Optical"
+    path: "Investing/Wiki/Sectors/Photonics & Optical/5801.T"
+    score: null
+
+  "6451.TW":
+    company: "ShunSin Technology Holdings Limited"
+    cik: null
+    exchange: "TWSE (Taiwan)"
+    sector: "Photonics & Optical"
+    path: "Investing/Wiki/Sectors/Photonics & Optical/6451.TW"
+    score: null
+
+  "6841.T":
+    company: "Yokogawa Electric Corporation"
+    cik: null
+    exchange: "TSE (Tokyo)"
+    sector: "Photonics & Optical"
+    path: "Investing/Wiki/Sectors/Photonics & Optical/6841.T"
+    score: null
+
+  "6754.T":
+    company: "Anritsu Corporation"
+    cik: null
+    exchange: "TSE (Tokyo)"
+    sector: "Photonics & Optical"
+    path: "Investing/Wiki/Sectors/Photonics & Optical/6754.T"
+    score: null
+
+  # ── Semiconductors ────────────────────────────────────────────────────────
+  NVDA:
+    company: "NVIDIA Corporation"
+    cik: "0001045810"
+    exchange: NASDAQ
+    sector: Semiconductors
+    path: "Investing/Wiki/Sectors/Semiconductors/NVDA"
+    score: 9.5
+
+  MU:
+    company: "Micron Technology"
+    cik: "0000723125"
+    exchange: NASDAQ
+    sector: Semiconductors
+    path: "Investing/Wiki/Sectors/Semiconductors/MU"
+    score: null
+
+  MRVL:
+    company: "Marvell Technology"
+    cik: "0001058057"
+    exchange: NASDAQ
+    sector: Semiconductors
+    path: "Investing/Wiki/Sectors/Semiconductors/MRVL"
+    score: null
+
+  AEHR:
+    company: "Aehr Test Systems"
+    cik: "0001040896"
+    exchange: NASDAQ
+    sector: Semiconductors
+    path: "Investing/Wiki/Sectors/Semiconductors/AEHR"
+    score: null
+
+  ALAB:
+    company: "Astera Labs, Inc."
+    cik: "0001736297"
+    exchange: NASDAQ
+    sector: Semiconductors
+    path: "Investing/Wiki/Sectors/Semiconductors/ALAB"
+    score: null
+
+  CRDO:
+    company: "Credo Technology Group Holding Ltd"
+    cik: "0001807794"
+    exchange: NASDAQ
+    sector: Semiconductors
+    path: "Investing/Wiki/Sectors/Semiconductors/CRDO"
+    score: 8.0
+    # migrated to three-layer structure 2026-06-07
+
+  AMKR:
+    company: "Amkor Technology, Inc."
+    cik: "0001047127"
+    exchange: NASDAQ
+    sector: Semiconductors
+    path: "Investing/Wiki/Sectors/Semiconductors/AMKR"
+    score: null
+
+  "6857.T":
+    company: "Advantest Corporation"
+    cik: null
+    exchange: "TSE (Tokyo)"
+    sector: Semiconductors
+    path: "Investing/Wiki/Sectors/Semiconductors/6857.T"
+    score: null
+
+  FORM:
+    company: "FormFactor, Inc."
+    cik: "0001039399"
+    exchange: NASDAQ
+    sector: Semiconductors
+    path: "Investing/Wiki/Sectors/Semiconductors/FORM"
+    score: null
+
+  NVTS:
+    company: "Navitas Semiconductor Corp"
+    cik: "0001821769"
+    exchange: NASDAQ
+    sector: Semiconductors
+    path: "Investing/Wiki/Sectors/Semiconductors/NVTS"
+    score: null
+
+  IFX:
+    company: "Infineon Technologies AG"
+    cik: null
+    exchange: "XETRA (Frankfurt)"
+    sector: Semiconductors
+    path: "Investing/Wiki/Sectors/Semiconductors/IFX"
+    score: null
+
+  # ── AI Infrastructure ─────────────────────────────────────────────────────
+  IREN:
+    company: "IREN Limited"
+    cik: "0001704720"
+    exchange: NASDAQ
+    sector: "AI Infrastructure"
+    path: "Investing/Wiki/Sectors/AI Infrastructure/IREN"
+    score: null
+
+  ANET:
+    company: "Arista Networks"
+    cik: "0001313925"
+    exchange: NYSE
+    sector: "AI Infrastructure"
+    path: "Investing/Wiki/Sectors/AI Infrastructure/ANET"
+    score: null
+
+  VRT:
+    company: "Vertiv Holdings"
+    cik: "0001793309"
+    exchange: NYSE
+    sector: "AI Infrastructure"
+    path: "Investing/Wiki/Sectors/AI Infrastructure/VRT"
+    score: null
+
+  SMCI:
+    company: "Super Micro Computer"
+    cik: "0001375365"
+    exchange: NASDAQ
+    sector: "AI Infrastructure"
+    path: "Investing/Wiki/Sectors/AI Infrastructure/SMCI"
+    score: null
+
+  P:
+    company: "Everpure Inc. (fka Pure Storage)"
+    cik: "0001474432"
+    exchange: NYSE
+    sector: "AI Infrastructure"
+    path: "Investing/Wiki/Sectors/AI Infrastructure/P"
+    score: null
+
+  BRUN:
+    company: "Boost Run Inc."
+    cik: "0002090646"
+    exchange: NASDAQ
+    sector: "AI Infrastructure"
+    path: "Investing/Wiki/Sectors/AI Infrastructure/BRUN"
+    score: 7.5
+
+  # ── Cybersecurity ─────────────────────────────────────────────────────────
+  RBRK:
+    company: "Rubrik Inc."
+    cik: "0001943896"
+    exchange: NYSE
+    sector: Cybersecurity
+    path: "Investing/Wiki/Sectors/Cybersecurity/RBRK"
+    score: null
+
+  SAIL:
+    company: "SailPoint, Inc."
+    cik: "0002030781"
+    exchange: NASDAQ
+    sector: Cybersecurity
+    path: "Investing/Wiki/Sectors/Cybersecurity/SAIL"
+    score: null
+
+  # ── Fintech & E-Commerce ──────────────────────────────────────────────────
+  MELI:
+    company: "MercadoLibre Inc."
+    cik: "0001099590"
+    exchange: NASDAQ
+    sector: "Fintech & E-Commerce"
+    path: "Investing/Wiki/Sectors/Fintech & E-Commerce/MELI"
+    score: null
+
+  HOOD:
+    company: "Robinhood Markets"
+    cik: "0001783879"
+    exchange: NASDAQ
+    sector: "Fintech & E-Commerce"
+    path: "Investing/Wiki/Sectors/Fintech & E-Commerce/HOOD"
+    score: null
+
+  SOFI:
+    company: "SoFi Technologies, Inc."
+    cik: "0001818874"
+    exchange: NASDAQ
+    sector: "Fintech & E-Commerce"
+    path: "Investing/Wiki/Sectors/Fintech & E-Commerce/SOFI"
+    score: 9.0
+
+  # ── Clean Energy ──────────────────────────────────────────────────────────
+  OKLO:
+    company: "Oklo Inc."
+    cik: "0001828937"
+    exchange: NYSE
+    sector: "Clean Energy"
+    path: "Investing/Wiki/Sectors/Clean Energy/OKLO"
+    score: null
+
+  TE:
+    company: "T1 Energy Inc."
+    cik: "0001992243"
+    exchange: NYSE
+    sector: "Clean Energy"
+    path: "Investing/Wiki/Sectors/Clean Energy/TE"
+    score: null
+
+  ASPI:
+    company: "ASP Isotopes Inc."
+    cik: "0001921865"
+    exchange: NASDAQ
+    sector: "Clean Energy"
+    path: "Investing/Wiki/Sectors/Clean Energy/ASPI"
+    score: null
+
+  # ── Space & Comms ─────────────────────────────────────────────────────────
+  ASTS:
+    company: "AST SpaceMobile"
+    cik: "0001780530"
+    exchange: NASDAQ
+    sector: "Space & Comms"
+    path: "Investing/Wiki/Sectors/Space & Comms/ASTS"
+    score: null
+
+  RKLB:
+    company: "Rocket Lab USA, Inc."
+    cik: "0001819994"
+    exchange: NASDAQ
+    sector: "Space & Comms"
+    path: "Investing/Wiki/Sectors/Space & Comms/RKLB"
+    score: 7.0
+
+  # ── Metals & Mining ───────────────────────────────────────────────────────
+  FCX:
+    company: "Freeport-McMoRan"
+    cik: "0000831259"
+    exchange: NYSE
+    sector: "Metals & Mining"
+    path: "Investing/Wiki/Sectors/Metals & Mining/FCX"
+    score: null
+
+  MP:
+    company: "MP Materials Corp."
+    cik: "0001801170"
+    exchange: NYSE
+    sector: "Metals & Mining"
+    path: "Investing/Wiki/Sectors/Metals & Mining/MP"
+    score: null
+
+  ELMT:
+    company: "The Elmet Group Co."
+    cik: "0002101698"
+    exchange: NASDAQ
+    sector: "Metals & Mining"
+    path: "Investing/Wiki/Sectors/Metals & Mining/ELMT"
+    score: null
+
+# ── Candidates (not yet onboarded) ────────────────────────────────────────
+# Run /add-ticker TICKER --sector "Sector" to onboard any candidate.
+
+candidates:
+  - ticker: GLW
+    company: "Corning Incorporated"
+    sector: "Photonics & Optical"
+    layer: "Optical Fiber & Preform Manufacturing"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: "~50% global optical fiber market; OVD preform; SMF-28"
+
+  - ticker: IQE
+    company: "IQE plc"
+    sector: "Photonics & Optical"
+    layer: "III-V Substrate & Epitaxial Wafer Growth"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: "MOCVD epi foundry; VCSEL and GaN epi for multiple customers. UK AIM-listed."
+
+  - ticker: MTSI
+    company: "MACOM Technology Solutions"
+    sector: "Photonics & Optical"
+    layer: "Photonic Device Fabrication"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: "GaAs/InP/GaN chip fab; drivers, TIAs, photonic ICs; strong DC transceiver exposure"
+
+  - ticker: SNPS
+    company: "Synopsys"
+    sector: Semiconductors
+    layer: "EDA & Design IP"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: ""
+
+  - ticker: CDNS
+    company: "Cadence Design Systems"
+    sector: Semiconductors
+    layer: "EDA & Design IP"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: ""
+
+  - ticker: ARM
+    company: "Arm Holdings"
+    sector: Semiconductors
+    layer: "EDA & Design IP"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: ""
+
+  - ticker: LRCX
+    company: "Lam Research"
+    sector: Semiconductors
+    layer: "Deposition & Etch Equipment"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: ""
+
+  - ticker: AMAT
+    company: "Applied Materials"
+    sector: Semiconductors
+    layer: "Deposition & Etch Equipment"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: ""
+
+  - ticker: KLAC
+    company: "KLA Corporation"
+    sector: Semiconductors
+    layer: "Inspection & Metrology"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: ""
+
+  - ticker: ENTG
+    company: Entegris
+    sector: Semiconductors
+    layer: "Raw Materials"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: ""
+
+  - ticker: ICHR
+    company: "Ichor Holdings"
+    sector: Semiconductors
+    layer: "Raw Materials"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: ""
+
+  - ticker: ONTO
+    company: "Onto Innovation"
+    sector: Semiconductors
+    layer: "Inspection & Metrology"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: ""
+
+  - ticker: ASX
+    company: "ASE Technology / Advanced Semiconductor Engineering"
+    sector: Semiconductors
+    layer: "Packaging (OSAT)"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: ""
+
+  - ticker: COHU
+    company: "Cohu Inc."
+    sector: Semiconductors
+    layer: "Final Test & Burn-In"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: ""
+
+  - ticker: NTAP
+    company: NetApp
+    sector: "AI Infrastructure"
+    layer: "Storage Systems"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: "All-flash arrays + object storage (ONTAP / StorageGRID); strong AI storage pipeline"
+
+  - ticker: WDC
+    company: "Western Digital"
+    sector: "AI Infrastructure"
+    layer: "Storage Systems"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: "NVMe SSD + HDD; enterprise flash for hyperscalers; NAND vertically integrated"
+
+  - ticker: STX
+    company: "Seagate Technology"
+    sector: "AI Infrastructure"
+    layer: "Storage Systems"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: "HDD dominant; high-capacity nearline storage for hyperscaler object stores"
+
+  - ticker: ETN
+    company: "Eaton Corporation"
+    sector: "AI Infrastructure"
+    layer: "Data Center Power Infrastructure"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: "Modular UPS (93PM), PDUs, busway, switchgear; broad power management portfolio"
+
+  - ticker: MOD
+    company: "Modine Manufacturing"
+    sector: "AI Infrastructure"
+    layer: "Thermal Management & Cooling"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: "CDUs, cold plates, dry coolers for liquid cooling; pivoting to AI data center thermal"
+
+  - ticker: NVT
+    company: "nVent Electric"
+    sector: "AI Infrastructure"
+    layer: "Thermal Management & Cooling"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: "Enclosures, cable management, liquid cooling rack components"
+
+  - ticker: AFRM
+    company: "Affirm Holdings"
+    sector: "Fintech & E-Commerce"
+    layer: "Buy Now Pay Later & Credit Decisioning"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: "Real-time underwriting at checkout; BNPL market leader in US; AI credit model moat"
+
+  - ticker: PYPL
+    company: "PayPal Holdings"
+    sector: "Fintech & E-Commerce"
+    layer: "Payment Processing & Digital Wallet"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: "430M active accounts; Venmo + PayPal wallet; Braintree gateway; AI fraud decisioning"
+
+  - ticker: SQ
+    company: "Block, Inc."
+    sector: "Fintech & E-Commerce"
+    layer: "Payment Processing & Commerce Enablement"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: "Square POS + Cash App; merchant acquiring + consumer wallet"
+
+  - ticker: NU
+    company: "Nu Holdings"
+    sector: "Fintech & E-Commerce"
+    layer: "Digital Banking & Neobank"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: "Largest neobank in Latin America; AI underwriting; 90M+ customers"
+
+  - ticker: VST
+    company: "Vistra Energy"
+    sector: "Clean Energy"
+    layer: "Primary Power Generation"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: "Largest US competitive power generator; nuclear (Comanche Peak) + CCGT; Texas merchant"
+
+  - ticker: GEV
+    company: "GE Vernova"
+    sector: "Clean Energy"
+    layer: "Primary Power Generation"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: "Gas turbines (GE 7F.05, HA-class); wind (Haliade-X); Grid Solutions HV transformers"
+
+  - ticker: CEG
+    company: "Constellation Energy"
+    sector: "Clean Energy"
+    layer: "Primary Power Generation"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: "Largest US nuclear operator (21 GW); Microsoft + Amazon nuclear PPA winner"
+
+  - ticker: NEE
+    company: "NextEra Energy"
+    sector: "Clean Energy"
+    layer: "Primary Power Generation"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: "#1 US wind + solar; FPL nuclear fleet; largest FID machine for clean generation"
+
+  - ticker: IRDM
+    company: "Iridium Communications"
+    sector: "Space & Comms"
+    layer: "Satellite Connectivity Services"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: "66-satellite LEO constellation; L-band MSS; globally-coordinated ITU L-band spectrum"
+
+  - ticker: GSAT
+    company: "Globalstar Inc."
+    sector: "Space & Comms"
+    layer: "Satellite Connectivity Services"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: "S-band MSS; Apple Emergency SOS royalty stream; Band 53/n53 terrestrial LTE spectrum"
+
+  - ticker: VSAT
+    company: "Viasat Inc."
+    sector: "Space & Comms"
+    layer: "Ground Segment & Network Operations"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: "Ka-band HTS (ViaSat-3, >1 Tbps); in-flight broadband; government satcom"
+
+  - ticker: FCX
+    company: "Freeport-McMoRan"
+    sector: "Metals & Mining"
+    layer: "Bulk Mining & Ore Extraction"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: "World's largest public copper producer"
+
+  - ticker: VALE
+    company: "Vale S.A."
+    sector: "Metals & Mining"
+    layer: "Bulk Mining & Ore Extraction"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: "World's largest nickel producer; iron ore dominant; cobalt byproduct"
+
+  - ticker: RIO
+    company: "Rio Tinto"
+    sector: "Metals & Mining"
+    layer: "Bulk Mining & Ore Extraction"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: "Copper (Oyu Tolgoi), lithium (Rincon), iron ore"
+
+  - ticker: ALB
+    company: Albemarle
+    sector: "Metals & Mining"
+    layer: "Battery Material Precursor Production"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: "#1 lithium chemicals globally; Greenbushes spodumene JV; Chilean brine"
+
+  - ticker: WOLF
+    company: Wolfspeed
+    sector: "Metals & Mining"
+    layer: "Silicon & SiC Precursor Production"
+    source: "map-sector"
+    added: "2026-05-24"
+    note: "Only large-scale 4H-SiC substrate maker outside China; 150mm and 200mm wafers"
+
+  - ticker: AMD
+    company: "Advanced Micro Devices"
+    sector: "AI Model Infrastructure"
+    layer: "Distributed Training Orchestration"
+    source: "map-sector"
+    added: "2026-05-31"
+    note: "MI300X GPU; ROCm ecosystem; gaining training share at Meta and Microsoft"
+
+  - ticker: CRWV
+    company: CoreWeave
+    sector: "AI Model Infrastructure"
+    layer: "Distributed Training Orchestration"
+    source: "map-sector"
+    added: "2026-05-31"
+    note: "Pure-play GPU cloud; IPO 2025; NVIDIA preferred partner; Kubernetes-native GPU autoscaling"
+
+  - ticker: META
+    company: "Meta Platforms"
+    sector: "AI Model Infrastructure"
+    layer: "Foundation Model Development"
+    source: "map-sector"
+    added: "2026-05-31"
+    note: "Llama 3.x/4 open-weight models; PyTorch custodian; FAIR research; MTIA custom ASIC"
+
+  - ticker: DDOG
+    company: Datadog
+    sector: "AI Model Infrastructure"
+    layer: "MLOps & Model Lifecycle Management"
+    source: "map-sector"
+    added: "2026-05-31"
+    note: "LLM Observability product; APM and log analytics; AI cost attribution dashboards"
+
+  - ticker: SNOW
+    company: Snowflake
+    sector: "AI Model Infrastructure"
+    layer: "MLOps & Model Lifecycle Management"
+    source: "map-sector"
+    added: "2026-05-31"
+    note: "Cortex AI (managed LLM inference + RAG + feature store); SQL-native ML APIs"
+
+  - ticker: PLTR
+    company: "Palantir Technologies"
+    sector: "AI Model Infrastructure"
+    layer: "MLOps & Model Lifecycle Management"
+    source: "map-sector"
+    added: "2026-05-31"
+    note: "AIP (AI Platform) for enterprise model deployment; Foundry + Ontology integration"
+
+  - ticker: MDB
+    company: MongoDB
+    sector: "AI Model Infrastructure"
+    layer: "MLOps & Model Lifecycle Management"
+    source: "map-sector"
+    added: "2026-05-31"
+    note: "Atlas Vector Search (HNSW/ENN); document store for RAG pipeline metadata"

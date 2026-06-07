@@ -1,6 +1,11 @@
+---
+description: Score a ticker on the Unrivaled Investing 6-criterion rubric. Reads facts.md (Layer 1) and analysis.md (Layer 2) only. Writes Scoring Summary to analysis.md and updates Monitor Registry.yaml score field. Usage: /score-ticker TICKER [--refresh]
+allowed-tools: Read, Edit, Glob
+---
+
 # /score-ticker
 
-Score a ticker using the Unrivaled Investing 6-criterion rubric. Writes a Scoring Summary section into the ticker's wiki page and updates Monitor Registry and Watchlist.
+Score a ticker using the Unrivaled Investing 6-criterion rubric. Writes a Scoring Summary section into the ticker's analysis.md and updates Monitor Registry.yaml.
 
 ## Usage
 
@@ -14,59 +19,77 @@ Score a ticker using the Unrivaled Investing 6-criterion rubric. Writes a Scorin
 ## Workflow
 
 ### Step 1 — Load reference context
-Read these three files before scoring:
-1. `Investing/Wiki/Reference/Scoring Rubric.md` — criteria definitions, scoring thresholds, pre-revenue rules
-2. `Investing/Wiki/Reference/Monitor Registry.md` — locate the ticker's wiki page path
-3. The sector's `_Sector Framework.md` — macro context and valuation matrix for this archetype
 
-### Step 2 — Read the ticker page
-Read the full ticker wiki page at the path from Monitor Registry. Identify which sections are populated:
-- Investment Thesis → used for Product, Pricing Power, Future Potential
-- Management & Leadership → used for Leadership & Alignment
-- Earnings & Financials → used for Financial Health, Pricing Power (margin trend)
-- Conviction Log → used for Leadership & Alignment (guidance beat/miss history)
-- Analyst Coverage → used for Valuation snapshot
-- Sector Framework (already loaded) → used for Macro Environment
+Read these files before scoring:
+1. `Investing/Wiki/Reference/Scoring Rubric.md` — criteria definitions, scoring thresholds, pre-revenue rules
+2. `Investing/Wiki/Reference/Monitor Registry.yaml` — locate the ticker's folder path
+3. The sector's `_Sector Framework.md` at `Investing/Wiki/Sectors/[sector]/_Sector Framework.md` — macro context and valuation matrix
+
+If the ticker is not found in `Monitor Registry.yaml`, print:
+```
+⚠️  [TICKER] not in Monitor Registry.yaml. Run /add-ticker [TICKER] first.
+```
+Then stop.
+
+### Step 2 — Read Layer 1 and Layer 2
+
+Read **only** these two files (do not read signals.md):
+
+**`[path]/facts.md`** — extract from YAML frontmatter:
+- `management` array → Leadership & Alignment criterion
+- `earnings` array → Financial Health, Pricing Power (margin trend)
+- `moat` object → Product (Love Factor), Pricing Power
+- `metrics` object → current score (if exists), valuation fields
+- `cik` → pre-revenue detection (cross-ref with earnings array)
+
+**`[path]/analysis.md`** — extract from markdown sections:
+- `## One-Line Thesis` → Product (Love Factor)
+- `## Investment Thesis` → Product, Pricing Power, Future Potential (bull case)
+- `## Conviction Log` table → Leadership & Alignment (guidance beat/miss history)
+- `## Analyst Coverage` → Valuation snapshot (current price, PT)
+- `## Catalyst Timeline` → Future Potential
 
 ### Step 3 — Determine pre-revenue status
-Check whether the Earnings & Financials table has any revenue rows with actual dollar amounts. If the table is empty or all rows show `—`, treat this as a pre-revenue company:
+
+Check whether `earnings:` array in facts.md has any entries with `revenue_b > 0`. If the array is empty or all entries have null revenue, treat this as a pre-revenue company:
 - Cap Financial Health criterion at 3/5
-- Score Financial Health based on cash runway evidence from Research Log or Investment Thesis
+- Score Financial Health based on cash runway evidence from Investment Thesis
 - Apply composite cap of 7.0/10
 - Set Valuation to `— (pre-revenue; no P/E applicable)`
 
 ### Step 4 — Score each of the 6 criteria
-For each criterion (1–5), select the score that best matches the evidence in the wiki page. Cite the specific section or quote that supports the score. When evidence is absent for a criterion, score conservatively (default to 2).
 
-| Criterion | Primary wiki source |
-|-----------|-------------------|
-| Product (Love Factor) | Investment Thesis → Key moat; One-Line Thesis |
-| Pricing Power | Earnings & Financials (gross margin trend); Investment Thesis |
-| Leadership & Alignment | Management & Leadership; Conviction Log |
-| Financial Health | Earnings & Financials (balance sheet); Research Log |
-| Macro Environment | Sector Framework (Why this sector exists, Cycle positioning) |
-| Future Potential | Investment Thesis (bull case); Catalyst Timeline |
+For each criterion (1–5), select the score that best matches the evidence. Cite the specific field or section that supports the score. When evidence is absent, score conservatively (default 2).
+
+| Criterion | Primary source |
+|-----------|---------------|
+| Product (Love Factor) | `moat.type` + `moat.notes` in facts.md; One-Line Thesis in analysis.md |
+| Pricing Power | `moat.pricing_power` in facts.md; gross margin trend in earnings array; Investment Thesis |
+| Leadership & Alignment | `management` array (ownership %, notes) in facts.md; Conviction Log in analysis.md |
+| Financial Health | `earnings` array (revenue trend, EPS) in facts.md; Investment Thesis (balance sheet) |
+| Macro Environment | Sector Framework (why this sector exists, cycle positioning) |
+| Future Potential | Investment Thesis (bull case) in analysis.md; Catalyst Timeline |
 
 ### Step 5 — Calculate composite
-`composite = round((sum / 30) × 10, nearest 0.5)`
 
-Apply pre-revenue cap if triggered: `composite = min(composite, 7.0)`
+`composite = round((sum of 6 scores / 30) × 10, nearest 0.5)`
+
+Apply pre-revenue cap: `composite = min(composite, 7.0)`
 
 Assign label: 8.0–10.0 = Unrivaled | 6.0–7.9 = Strong | 4.0–5.9 = Average | <4.0 = Reassess
 
 ### Step 6 — Assess valuation snapshot
-Using the Analyst Coverage section and the sector framework's valuation reference matrix:
-- Find the current price (from most recent Research Log entry or Analyst Coverage)
-- Find the archetype's Fair Value Range in the sector framework
-- Determine if current valuation is Cheap / Reasonable / Fair / Expensive relative to that range
-- Note the relevant metric (P/E, EV/Revenue, EV/EBITDA) and analyst consensus upside if available
+
+Using Analyst Coverage in analysis.md and the sector framework's valuation reference matrix:
+- Find the current price and analyst consensus price target
+- Determine if current valuation is Cheap / Reasonable / Fair / Expensive relative to archetype range
+- Note the relevant metric (P/E, EV/Revenue, EV/EBITDA) and analyst upside
 
 Format: `Valuation: [label] at $[price] | [Metric]: [X]x | Analyst upside: [X]%`
 
-### Step 7 — Write Scoring Summary to ticker page
-Locate the `## One-Line Thesis` section header in the ticker page. Insert the Scoring Summary block immediately after the One-Line Thesis content and before the `## Investment Thesis` header.
+### Step 7 — Write Scoring Summary to analysis.md
 
-If a Scoring Summary section already exists, replace it entirely (this is the one section that is not append-only).
+Locate `## Scoring Summary` in analysis.md. Replace it entirely (this is the one section that is not append-only):
 
 ```markdown
 ## Scoring Summary
@@ -86,14 +109,30 @@ _Last scored: YYYY-MM-DD | [[Scoring Rubric]]_
 **Growth Potential:** — (pending real-time data integration)
 ```
 
-### Step 8 — Update Monitor Registry
-Read `Investing/Wiki/Reference/Monitor Registry.md`. Find the row for this ticker. Update the Score column to `X.X` (the composite). If the Score column doesn't exist yet in a given sector table, append it.
+### Step 8 — Update facts.md metrics
 
-### Step 9 — Update Watchlist
-Read `Investing/Wiki/Reference/Watchlist.md`. Search all tables for this ticker. If found, update the Score column in that row. If the Score column doesn't exist in a table where this ticker appears, append it.
+Edit the `metrics:` block in facts.md YAML frontmatter:
+```yaml
+metrics:
+  score: X.X
+  score_label: "[Label]"
+  last_scored: "YYYY-MM-DD"
+  valuation_fpe: [X or null]
+  analyst_pt: [X or null]
+  analyst_upside_pct: [X or null]
+```
 
-### Step 10 — Append Research Log
-Append one line to the Research Log section of the ticker page:
+### Step 9 — Update Monitor Registry.yaml
+
+Read `Investing/Wiki/Reference/Monitor Registry.yaml`. Find the entry for this ticker under `tickers:`. Update the `score` field to `X.X`.
+
+### Step 10 — Update Watchlist
+
+Read `Investing/Wiki/Reference/Watchlist.md`. Search all tables for this ticker. If found, update the Score column in that row.
+
+### Step 11 — Append to signals.md Research Log
+
+Append one line to the Research Log section of signals.md:
 
 ```
 - **YYYY-MM-DD** — Scored — Composite X.X/10 [Label] | P:[X] PP:[X] L:[X] FH:[X] ME:[X] FP:[X]
@@ -101,8 +140,8 @@ Append one line to the Research Log section of the ticker page:
 
 ## Behavior Notes
 
-- This is the **only** section of a ticker page that is not append-only. The Scoring Summary replaces itself on re-score.
-- The Research Log entry IS append-only — every scoring run adds a new dated line.
-- If the ticker is not in Monitor Registry, output a warning and stop. Run `/add-ticker TICKER` first.
-- If the wiki page has fewer than 3 populated sections (Investment Thesis, Management, Earnings), note in the Research Log that the score is low-confidence and should be refreshed after `/stock-research TICKER`.
-- Never fabricate evidence. If a criterion cannot be scored from existing wiki content, score it 2 (conservative default) and note "Insufficient data" in the Evidence column.
+- **analysis.md Scoring Summary is the only replace-not-append section.** Everything else is append-only.
+- **facts.md metrics block is updated in-place.** Edit the YAML block between `---` markers.
+- **signals.md Research Log entry IS append-only** — every scoring run adds a new dated line.
+- **If fewer than 3 sections are populated** (Investment Thesis, Management, Earnings), note in signals.md Research Log that the score is low-confidence and should be refreshed after `/add-ticker [TICKER] --refresh-research`.
+- **Never fabricate evidence.** If a criterion cannot be scored from existing wiki content, score it 2 (conservative default) and note "Insufficient data" in the Evidence column.
