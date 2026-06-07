@@ -121,6 +121,49 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 .sr-empty{padding:16px 12px;text-align:center;color:var(--muted);font-size:13px}
 .sr-divider{height:1px;background:var(--border);margin:2px 0}
 @media(max-width:600px){#search-wrap{order:3;flex:0 0 100%}#hdr{flex-wrap:wrap;padding:10px 16px;row-gap:8px}}
+/* Tab navigation */
+#tab-nav{display:flex;gap:2px;padding:0 24px;background:var(--bg2);border-bottom:1px solid var(--border)}
+.tab-btn{background:none;border:none;border-bottom:2px solid transparent;padding:10px 16px;font:13px/1 system-ui,sans-serif;color:var(--muted);cursor:pointer;transition:color .15s,border-color .15s;margin-bottom:-1px;border-radius:0}
+.tab-btn:hover{color:var(--text)}
+.tab-btn.active{color:var(--text);border-bottom-color:var(--text);font-weight:600}
+/* Tech races container */
+#tech-races,#tech-race-detail{padding:40px 32px;max-width:1200px;margin:0 auto}
+.tech-group-label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;margin-top:8px}
+.race-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin-bottom:48px}
+.race-card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:18px;cursor:pointer;transition:border-color .15s,transform .1s;display:flex;flex-direction:column;gap:10px}
+.race-card:hover{border-color:oklch(72% .012 75);transform:translateY(-1px)}
+.race-card-top{display:flex;align-items:center;gap:8px}
+.conviction-badge{font-size:10px;font-weight:700;padding:2px 8px;border-radius:99px;flex-shrink:0;text-transform:uppercase;letter-spacing:.04em}
+.conviction-badge.high{background:oklch(93% .10 142);color:oklch(34% .18 142)}
+.conviction-badge.medium{background:var(--amber-bg);color:var(--amber)}
+.conviction-badge.low,.conviction-badge.watch{background:var(--bg3);color:var(--muted)}
+.conviction-badge.resolved{background:oklch(92% .10 258);color:var(--d3)}
+.status-badge{font-size:10px;padding:2px 8px;border-radius:99px;background:var(--bg3);color:var(--muted);margin-left:auto}
+.race-card-name{font-weight:700;font-size:14px}
+.race-card-pref{font-size:12px;color:var(--muted);line-height:1.45}
+.race-ticker-pills{display:flex;flex-wrap:wrap;gap:6px}
+.exposure-pill{font-size:10px;padding:2px 8px;border-radius:99px;white-space:nowrap}
+.exposure-pill.primary{background:oklch(92% .10 278);color:var(--d1);font-weight:600}
+.exposure-pill.partial{background:var(--amber-bg);color:var(--amber)}
+.exposure-pill.indirect{background:var(--bg3);color:var(--muted)}
+.race-card-foot{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--muted);margin-top:auto}
+.group-pill{background:var(--bg3);padding:2px 7px;border-radius:99px;font-size:10px}
+.no-races{color:var(--muted);font-size:12px;font-style:italic;margin-bottom:40px;padding:8px 0}
+/* Race detail view */
+.race-detail-top{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.race-detail-name{font-size:22px;font-weight:700;margin-bottom:8px}
+.race-detail-pref{font-size:14px;line-height:1.65;color:var(--text);margin-bottom:32px;padding:14px 16px;background:var(--bg2);border-left:3px solid oklch(73% .18 62);border-radius:0 6px 6px 0}
+.race-section{margin-bottom:32px}
+.race-section-hdr{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:12px;padding-bottom:7px;border-bottom:1px solid var(--border)}
+.race-text{font-size:13px;line-height:1.7;color:var(--text)}
+.race-two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.race-col{background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:14px 16px}
+.race-col-hdr{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
+.race-col-hdr.bull{color:oklch(34% .18 142)}
+.race-col-hdr.bear{color:var(--d5)}
+.race-bullet{font-size:12px;line-height:1.6;color:var(--muted);padding:3px 0 3px 14px;position:relative}
+.race-bullet::before{content:'·';position:absolute;left:4px;color:var(--text)}
+@media(max-width:600px){#tech-races,#tech-race-detail{padding:16px}.race-two-col{grid-template-columns:1fr}#tab-nav{padding:0 16px}}
 </style>
 </head>
 <body>
@@ -134,10 +177,16 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
   </div>
   <span class="gen-date">Generated: 2026-05-31</span>
 </header>
+<div id="tab-nav">
+  <button class="tab-btn active" data-tab="supply-chain" onclick="showTab('supply-chain')">Supply Chain</button>
+  <button class="tab-btn" data-tab="tech-races" onclick="showTab('tech-races')">Tech Races</button>
+</div>
 <div id="l0"></div>
 <div id="l1" hidden></div>
 <div id="l2" hidden></div>
 <div id="l3" hidden></div>
+<div id="tech-races" hidden></div>
+<div id="tech-race-detail" hidden></div>
 </div>
 <script>
 const DATA = {
@@ -491,6 +540,104 @@ const DATA = {
     { from: "Semiconductors", from_tier: "Design (Edge AI)", to: "Robotics & Edge AI", to_tier: "Edge Compute Module", flow: "Component", product: "Nvidia Jetson Orin / Ambarella CV3 → edge inference module", chokepoint: "Y" },
     { from: "Compute Infrastructure", from_tier: "Server Assembly", to: "AI Model Infrastructure", to_tier: "Distributed Training Orchestration", flow: "Service", product: "GPU compute hours (H100/B200 DGX clusters) → model pre-training runs", chokepoint: "Y" },
     { from: "Semiconductors", from_tier: "Design (Compute)", to: "AI Model Infrastructure", to_tier: "Distributed Training Orchestration", flow: "Component", product: "GPU die (H100/B200) + packaged HBM → training accelerator module", chokepoint: "Y" }
+  ],
+  tech_races: [
+    {
+      id: "nand-vs-hbm4",
+      name: "NAND vs. HBM4",
+      sector_group: "AI Ecosystem",
+      preference: "NAND over HBM4 for the agentic AI demand wave",
+      conviction: "High",
+      last_validated: "2026-06-07",
+      status: "Active",
+      tickers: [
+        { ticker: "SNDK", technology: "NAND Flash", exposure: "Primary", weighting: "Overweight vs. memory peers" },
+        { ticker: "MU", technology: "HBM4 + NAND", exposure: "Partial", weighting: "Market weight" },
+        { ticker: "LRCX", technology: "NAND capex equipment", exposure: "Indirect", weighting: "No direct weighting change" }
+      ],
+      application_driver: "Agentic AI requires large persistent stores (RAG, vector DB, session state), high-frequency sequential reads, non-volatile persistence across power cycles, and edge deployment for autonomous agents — all served by NAND. HBM4 serves on-package bandwidth for training and frontier inference: a different and already-priced-in demand signal.",
+      consensus_gap: [
+        ["Memory = HBM = the AI memory play", "HBM is GPU-tied and already recognized. NAND's agentic AI TAM — enterprise SSDs, edge agents, NVMe tiering — is underappreciated."],
+        ["NAND is commodity with limited moat", "Leading-edge QLC and enterprise NVMe have meaningful process differentiation. SanDisk/KIOXIA at cutting-edge node."],
+        ["HBM4 is the next big upgrade cycle", "HBM4 serves incremental GPU bandwidth. NAND serves horizontal scale-out of deployed agentic infrastructure."]
+      ],
+      bull_case: [
+        "Enterprise SSD attach per agentic deployment grows from near-zero to standard infrastructure",
+        "Automotive NAND (in-vehicle agents, OTA model updates) is underpenetrated and accelerating",
+        "QLC NAND cost-per-bit reaches crossover displacing hard drives in warm storage tier",
+        "NAND pricing recovers from 2023–2024 oversupply trough; supply discipline restored"
+      ],
+      bear_risk: [
+        "Chinese NAND producers (YMTC) gain market access and compress ASPs",
+        "Compute-in-memory architectures reduce the NAND read bottleneck long-term",
+        "Agentic workloads shift toward stateless designs, reducing persistent storage demand"
+      ]
+    },
+    {
+      id: "compute-architecture",
+      name: "Compute Architecture Bifurcation",
+      sector_group: "AI Ecosystem",
+      preference: "CPU (orchestration) + Custom ASIC (training/inference) — GPU dominant but bifurcating",
+      conviction: "Medium",
+      last_validated: "2026-06-07",
+      status: "Active",
+      tickers: [
+        { ticker: "ARM", technology: "ARM ISA / NPU IP", exposure: "Primary", weighting: "Overweight — edge inference cycle" },
+        { ticker: "AVGO", technology: "Custom ASIC", exposure: "Primary", weighting: "Overweight — custom silicon wave" },
+        { ticker: "MRVL", technology: "Custom ASIC + SerDes", exposure: "Primary", weighting: "Overweight — two beneficiary vectors" },
+        { ticker: "NVDA", technology: "GPU (AI accelerator)", exposure: "Primary", weighting: "Market weight — CUDA moat unrivaled" },
+        { ticker: "AMD", technology: "GPU + x86 CPU", exposure: "Partial", weighting: "Market weight" },
+        { ticker: "INTC", technology: "x86 CPU (server)", exposure: "Partial", weighting: "Underweight vs. ARM on architecture preference" }
+      ],
+      application_driver: "Agentic AI has three distinct compute layers: orchestration (tool dispatch, routing, memory management — CPU-bound), frontier inference (large LLMs — GPU/custom ASIC), and edge inference (vehicles, robots, laptops — NPU/custom ASIC, power-constrained). The pure-GPU narrative oversimplifies this bifurcation. Every GPU server still needs CPUs to orchestrate; edge agents can't run GPUs.",
+      consensus_gap: [
+        ["AI compute = GPU, full stop", "CPU orchestration layers mean high-core-count CPUs remain essential — they're the coordination fabric around GPU clusters."],
+        ["NVIDIA has no viable competition", "Custom ASICs (TPU, Trainium, MTIA) are capturing training share at hyperscalers. AVGO and MRVL are the beneficiaries."],
+        ["ARM is just a mobile chip story", "ARM's NPU IP is the critical differentiator for edge inference. Server market share (Graviton, Neoverse) is growing fast."]
+      ],
+      bull_case: [
+        "Hyperscaler custom ASIC capex grows from ~10% to ~30% of silicon budget over 3 years",
+        "ARM server CPU reaches 25% of data center sockets by 2028 (vs. ~10% today)",
+        "Edge AI inference (automotive, robotics) becomes the next 100M unit market won by ARM NPU"
+      ],
+      bear_risk: [
+        "CUDA moat proves stronger than expected; custom ASICs remain sub-scale and high-NRE",
+        "AMD catches NVIDIA before ARM disrupts CPUs — pure GPU narrative extends",
+        "RISC-V open-source pressure erodes ARM's edge licensing power"
+      ]
+    },
+    {
+      id: "optical-interconnect",
+      name: "Optical Interconnect",
+      sector_group: "AI Ecosystem",
+      preference: "CPO (co-packaged optics) is the structural winner — pluggable extends 2–3 more years",
+      conviction: "Medium",
+      last_validated: "2026-06-07",
+      status: "Active",
+      tickers: [
+        { ticker: "AAOI", technology: "Pluggable + CPO transition", exposure: "Primary", weighting: "Overweight on pluggable cycle; watch CPO readiness" },
+        { ticker: "SIVE", technology: "Pluggable (EML laser chip)", exposure: "Primary", weighting: "Market weight; near-term revenue + CPO optionality" },
+        { ticker: "COHR", technology: "Pluggable (coherent + datacom)", exposure: "Primary", weighting: "Market weight; CPO is a structural headwind" },
+        { ticker: "POET", technology: "CPO platform (optical interposer)", exposure: "Primary", weighting: "High upside if CPO ramps; binary risk on timing" },
+        { ticker: "GLW", technology: "Fiber cable", exposure: "Indirect", weighting: "No weighting change — agnostic to pluggable vs. CPO" }
+      ],
+      application_driver: "AI cluster networking at 1.6T+ per port hits the power wall for pluggable transceivers — the electrical trace from switch ASIC to pluggable cage burns too much power. CPO eliminates that trace by integrating the optical engine directly on or beside the switch ASIC. Every major switch ASIC roadmap (Broadcom, Marvell, Intel) assumes CPO at 3.2T+.",
+      consensus_gap: [
+        ["Buy pluggable transceiver makers as the AI networking play", "Pluggable wins now (400G/800G), but CPO is the structural endpoint at 3.2T+. The question is timing, not direction."],
+        ["CPO is too complex to commercialize", "TSMC N45SiPh and Intel IFS are production SiPh PDKs. Hyperscalers are actively co-developing CPO solutions for 2026–2027."],
+        ["POET is too early to matter", "CPO-first platforms have the right architecture. Risk is timing, not concept viability."]
+      ],
+      bull_case: [
+        "1.6T pluggable proves too power-hungry at scale; hyperscalers pull CPO forward to 2026",
+        "POET or competing CPO platform wins a major switch ASIC design-in at revenue scale",
+        "CPO eliminates the QSFP-DD connector tier ahead of schedule — incumbent module makers face structural disruption"
+      ],
+      bear_risk: [
+        "1.6T pluggable works well enough; CPO pushed to 2028+ giving pluggable more runway",
+        "CPO integration complexity (foundry + photonics alignment) causes repeated delays",
+        "CPO solution is captive/in-house (NVIDIA, Intel) — investable pure plays don't capture the win"
+      ]
+    }
   ]
 };
 
@@ -506,6 +653,7 @@ const DIMS=["D1","D2","D3","D4","D5"];
 
 let activeSector=null;
 let activeTierIdx=null;
+let _raceOrigin=null;
 
 const SECTOR_FOLDER={"Compute Infrastructure":"AI Infrastructure","Energy & Power":"Clean Energy","Materials & Mining":"Metals & Mining","Space & Communications":"Space & Comms","Fintech & Commerce AI":"Fintech & E-Commerce"};
 function rawGithubUrl(sName,ticker,legacy){const f=SECTOR_FOLDER[sName]||sName;const base="https://raw.githubusercontent.com/deeyayay/investing-wiki/master/Investing/Wiki/Sectors/"+encodeURIComponent(f)+"/";return legacy?base+ticker+".md":base+encodeURIComponent(ticker)+"/analysis.md";}
@@ -515,6 +663,9 @@ function showLayer(n){
   document.getElementById("l1").hidden=n!==1;
   document.getElementById("l2").hidden=n!==2;
   document.getElementById("l3").hidden=n!==3;
+  document.getElementById("tech-races").hidden=true;
+  document.getElementById("tech-race-detail").hidden=true;
+  document.querySelectorAll(".tab-btn").forEach(b=>b.classList.toggle("active",b.dataset.tab==="supply-chain"));
 }
 
 function renderL0(){
@@ -647,9 +798,12 @@ function renderL3(ticker,sName){
   const body=md
     ?parseWiki(md)
     :'<div class="wiki-empty">No wiki page for '+ticker+' yet.<br>Run <code>/add-ticker '+ticker+'</code> to create one.</div>';
-  const tierName=activeSector&&activeTierIdx!==null?activeSector.tiers[activeTierIdx].tier:sName;
+  const fromRace=_raceOrigin;_raceOrigin=null;
+  if(fromRace)document.querySelectorAll(".tab-btn").forEach(b=>b.classList.toggle("active",b.dataset.tab==="tech-races"));
+  const tierName=fromRace?fromRace.name:(activeSector&&activeTierIdx!==null?activeSector.tiers[activeTierIdx].tier:sName);
+  const backFn=fromRace?"openRace('"+fromRace.id+"')":'openTier('+activeTierIdx+')';
   document.getElementById("l3").innerHTML=
-    '<div class="breadcrumb" onclick="openTier('+activeTierIdx+')">← '+esc(tierName)+'</div>'
+    '<div class="breadcrumb" onclick="'+backFn+'">← '+esc(tierName)+'</div>'
     +'<div class="ticker-hdr">'
     +'<span class="ticker-sym">'+esc(ticker)+'</span>'
     +'<span class="ticker-fullname">'+esc(c.name)+'</span>'
@@ -730,6 +884,82 @@ function parseWiki(md){
 }
 
 renderL0();
+
+// ── Tech Races ────────────────────────────────────────────────────────────────
+function showTab(tab) {
+  document.querySelectorAll(".tab-btn").forEach(b=>b.classList.toggle("active",b.dataset.tab===tab));
+  if(tab==="supply-chain"){
+    document.getElementById("tech-races").hidden=true;
+    document.getElementById("tech-race-detail").hidden=true;
+    showLayer(0);
+  } else {
+    renderTechRaces();
+    ["l0","l1","l2","l3","tech-race-detail"].forEach(id=>document.getElementById(id).hidden=true);
+    document.getElementById("tech-races").hidden=false;
+  }
+}
+
+function renderTechRaces() {
+  const groups={};
+  DATA.tech_races.forEach(r=>{if(!groups[r.sector_group])groups[r.sector_group]=[];groups[r.sector_group].push(r);});
+  const knownGroups=["AI Ecosystem","Crypto & Digital Assets","Healthcare & Biotech"];
+  Object.keys(groups).forEach(g=>{if(!knownGroups.includes(g))knownGroups.push(g);});
+  const html=knownGroups.map(g=>{
+    const races=groups[g];
+    if(!races||races.length===0)return '<div class="tech-group-label">'+esc(g)+'</div><div class="no-races">No active races yet — add entries to Technology Preferences.md as coverage expands.</div>';
+    const cards=races.map(r=>{
+      const conv=r.conviction.toLowerCase();
+      const pills=r.tickers.map(t=>'<span class="exposure-pill '+t.exposure.toLowerCase()+'">'+esc(t.ticker)+'</span>').join('');
+      return '<div class="race-card" onclick="openRace(\''+r.id+'\')">'
+        +'<div class="race-card-top"><span class="conviction-badge '+conv+'">'+esc(r.conviction)+'</span><span class="status-badge">'+esc(r.status)+'</span></div>'
+        +'<div class="race-card-name">'+esc(r.name)+'</div>'
+        +'<div class="race-card-pref">'+esc(r.preference)+'</div>'
+        +'<div class="race-ticker-pills">'+pills+'</div>'
+        +'<div class="race-card-foot"><span>Validated '+esc(r.last_validated)+'</span><span class="group-pill">'+esc(r.sector_group)+'</span></div>'
+        +'</div>';
+    }).join('');
+    return '<div class="tech-group-label">'+esc(g)+'</div><div class="race-cards">'+cards+'</div>';
+  }).join('');
+  document.getElementById("tech-races").innerHTML='<h2 style="font-size:22px;font-weight:700;margin-bottom:32px">Technology Races</h2>'+html;
+}
+
+function openRace(id) {
+  const r=DATA.tech_races.find(x=>x.id===id);
+  if(!r)return;
+  const conv=r.conviction.toLowerCase();
+  const tickerRows=r.tickers.map(t=>'<tr>'
+    +'<td><a class="co-ticker" href="#" onclick="openTickerFromRace(\''+id+'\',\''+t.ticker+'\');return false">'+esc(t.ticker)+'</a></td>'
+    +'<td>'+esc(t.technology)+'</td>'
+    +'<td><span class="exposure-pill '+t.exposure.toLowerCase()+'">'+esc(t.exposure)+'</span></td>'
+    +'<td style="font-size:12px;color:var(--muted)">'+esc(t.weighting)+'</td>'
+    +'</tr>').join('');
+  const gapRows=(r.consensus_gap||[]).map(([b,real])=>'<tr><td>'+esc(b)+'</td><td>'+esc(real)+'</td></tr>').join('');
+  const bullHtml=(r.bull_case||[]).map(b=>'<div class="race-bullet">'+esc(b)+'</div>').join('');
+  const bearHtml=(r.bear_risk||[]).map(b=>'<div class="race-bullet">'+esc(b)+'</div>').join('');
+  document.getElementById("tech-race-detail").innerHTML=
+    '<div class="breadcrumb" onclick="showTab(\'tech-races\')">← Tech Races</div>'
+    +'<div class="race-detail-top"><span class="conviction-badge '+conv+'">'+esc(r.conviction)+' conviction</span><span class="status-badge">'+esc(r.status)+'</span><span class="group-pill" style="margin-left:6px">'+esc(r.sector_group)+'</span></div>'
+    +'<div class="race-detail-name">'+esc(r.name)+'</div>'
+    +'<div class="race-detail-pref">'+esc(r.preference)+'</div>'
+    +'<div class="race-section"><div class="race-section-hdr">Application-Layer Driver</div><p class="race-text">'+esc(r.application_driver)+'</p></div>'
+    +(gapRows?'<div class="race-section"><div class="race-section-hdr">Consensus vs. Reality</div>'
+      +'<div class="wiki-table-wrap"><table class="wiki-table"><thead><tr><th>Market Believes</th><th>What\'s Actually Happening</th></tr></thead><tbody>'+gapRows+'</tbody></table></div></div>':'')
+    +'<div class="race-section"><div class="race-section-hdr">Ticker Exposure</div>'
+    +'<div class="wiki-table-wrap"><table class="wiki-table"><thead><tr><th>Ticker</th><th>Technology</th><th>Exposure</th><th>Weighting Implication</th></tr></thead><tbody>'+tickerRows+'</tbody></table></div></div>'
+    +'<div class="race-section"><div class="race-section-hdr">Investment Cases</div>'
+    +'<div class="race-two-col"><div class="race-col"><div class="race-col-hdr bull">Bull Case</div>'+bullHtml+'</div>'
+    +'<div class="race-col"><div class="race-col-hdr bear">Bear / Risk</div>'+bearHtml+'</div></div></div>';
+  ["l0","l1","l2","l3","tech-races"].forEach(id=>document.getElementById(id).hidden=true);
+  document.getElementById("tech-race-detail").hidden=false;
+}
+
+function openTickerFromRace(raceId, ticker) {
+  const r=DATA.tech_races.find(x=>x.id===raceId);
+  const info=TICKER_MAP[ticker];
+  _raceOrigin=r;
+  activeSector=null;activeTierIdx=null;
+  openTicker(ticker,info?info.sectorName:'');
+}
 
 // ── Search ────────────────────────────────────────────────────────────────────
 let _searchIdx = null;
