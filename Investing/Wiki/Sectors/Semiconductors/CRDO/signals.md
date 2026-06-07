@@ -27,3 +27,4 @@
 - **2026-05-19** — add-ticker run. Note created from template; fundamental sections populated from web research and SEC DEF 14A. Onboarded as part of NVDA earnings shockwave infographic ingestion. CIK 0001807794, NASDAQ.
 - **2026-06-07** — 📊 MIGRATE | Legacy CRDO.md split into three-layer structure (facts.md + analysis.md + signals.md) via /ticker-monitor --deep CRDO.
 - **2026-06-07** — 📊 MONITOR --deep | Q4 FY2026 earnings beat ($437M, +157% YoY, EPS $1.16), Q1 FY2027 guidance $470M midpoint; 4 analyst PT raises post-earnings (Roth $300, Mizuho $290, Jefferies $270, JPMorgan $250); ATM offering $736M completed April. facts.md: Q4 earnings + 4 new filings added. analysis.md: 3 conviction entries, 2 cross-ticker signal rows, 4 analyst moves, thesis drift updated.
+- **2026-06-07** — 📊 SCORE | Composite 8.0/10 Unrivaled | P:4 PP:4 L:4 FH:4 ME:4 FP:4 | Analyst PT consensus $278 (4 firms). Scored on Q4 FY2026 data.

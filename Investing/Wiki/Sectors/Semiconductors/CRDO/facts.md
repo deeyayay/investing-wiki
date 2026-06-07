@@ -76,11 +76,11 @@ moat:
   notes: "Proprietary SerDes IP end-to-end; hyperscaler design-win co-dev creates switching costs"
 
 metrics:
-  score: null
-  score_label: "—"
-  last_scored: null
+  score: 8.0
+  score_label: "Unrivaled"
+  last_scored: "2026-06-07"
   valuation_fpe: null
-  analyst_pt: null
+  analyst_pt: 278
   analyst_upside_pct: null
 
 last_updated: "2026-06-07"

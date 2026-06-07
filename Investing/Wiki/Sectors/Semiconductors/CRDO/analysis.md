@@ -28,20 +28,20 @@ The co-founders — CTO Chi Fung Cheng and COO Yat Tung Lam — remain deeply em
 ---
 
 ## Scoring Summary
-_Last scored: — | [[Scoring Rubric]]_
+_Last scored: 2026-06-07 | [[Scoring Rubric]]_
 
 | Criterion | Score | Evidence |
 |-----------|-------|----------|
-| Product (Love Factor) | —/5 | |
-| Pricing Power | —/5 | |
-| Leadership & Alignment | —/5 | |
-| Financial Health | —/5 | |
-| Macro Environment | —/5 | |
-| Future Potential | —/5 | |
-| **Composite** | **—/10** | |
+| Product (Love Factor) | 4/5 | Proprietary SerDes IP end-to-end; hyperscaler co-dev qualification creates high switching costs; copper AEC taking share from optical at short reach |
+| Pricing Power | 4/5 | 67–68% non-GAAP GM sustained as revenue triples (+157% YoY Q4 FY2026); volume acceleration without margin compression |
+| Leadership & Alignment | 4/5 | CEO Brennan 12yr tenure, 7x revenue compound; co-founders CTO (6.84M sh) + COO (3.47M sh) active; CEO PSU with stretch milestones; 3 consecutive beats |
+| Financial Health | 4/5 | GAAP profitable FY2025 ($52M net income +284%); fabless light capex; $736M net cash raised via ATM; non-GAAP GM expanding to ~68% |
+| Macro Environment | 4/5 | AI cluster buildout is Already Fired forcing function; 2nd-order mandatory component in every GPU rack; 1 manageable headwind: optical displacement risk at future generations |
+| Future Potential | 4/5 | 1.6T AEC cycle H2 2026, PCIe retimer TAM >$1B by 2027, new hyperscaler design wins — 2-3 adjacencies with confirmed near-term catalyst |
+| **Composite** | **8.0/10** | **Unrivaled** |
 
-**Valuation:** — (not yet scored)
-**Growth Potential:** — (pending)
+**Valuation:** Expensive (growth premium) | Forward P/E est. ~45–55x at Q4 run rate | Analyst consensus PT ~$278 (4 firms post-Q4 FY2026: Roth $300, Mizuho $290, Jefferies $270, JPMorgan $250)
+**Growth Potential:** High — 1.6T transition and PCIe retimer represent two distinct step-functions in FY2027
 
 ---
 
