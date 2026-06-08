@@ -74,10 +74,10 @@ tech_exposure:
     notes: "Core Ultra (client) + Xeon (server); x86 inference workload persistence thesis"
 
 metrics:
-  score: null
-  score_label: "—"
-  last_scored: null
-  valuation_fpe: null
+  score: 6.5
+  score_label: "Strong"
+  last_scored: "2026-06-07"
+  valuation_fpe: 73.0
   analyst_pt: 83.00
   analyst_upside_pct: null
 

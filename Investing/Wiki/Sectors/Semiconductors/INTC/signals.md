@@ -53,3 +53,4 @@
 
 - **2026-06-07** — add-ticker run. facts.md + analysis.md populated from web research, SEC EDGAR (CIK 0000050863), and deep-research validation of CPO/EMIB tweet thread. Legacy INTC.md social mentions migrated here. Key sources: Intel OFC 2024 press release, IEEE EMIB fiber CPO reliability paper, WccfTech EMIB yield analyst report, Broadcom CPO shipment data, Ayar Labs Series E coverage.
 - **2026-06-07** — 📊 MONITOR --deep | Q1 FY2026 data confirmed ($13.6B rev, $0.29 non-GAAP EPS, IFS $5.4B +20% QoQ); Apple preliminary IFS deal identified; Fab 34 Ireland buyback ($14.2B) confirmed; Mizuho/WF/Barclays upgrade cluster June 2; 10-Q + 8-K filings logged; legacy INTC.md stub deleted.
+- **2026-06-07** — Scored — Composite 6.5/10 Strong | P:3 PP:3 L:3 FH:2 ME:4 FP:4

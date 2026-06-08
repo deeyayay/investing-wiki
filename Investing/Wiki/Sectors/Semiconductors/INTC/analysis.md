@@ -30,20 +30,20 @@ Intel is a classic turnaround bet with three compounding technology optionalitie
 ---
 
 ## Scoring Summary
-_Last scored: — | [[Scoring Rubric]]_
+_Last scored: 2026-06-07 | [[Scoring Rubric]]_
 
 | Criterion | Score | Evidence |
 |-----------|-------|----------|
-| Product (Love Factor) | —/5 | |
-| Pricing Power | —/5 | |
-| Leadership & Alignment | —/5 | |
-| Financial Health | —/5 | |
-| Macro Environment | —/5 | |
-| Future Potential | —/5 | |
-| **Composite** | **—/10** | |
+| Product (Love Factor) | 3/5 | x86 ISA switching costs + EMIB/CPO IP differentiation; AMD is a credible CPU alternative; CPO platform is pre-commercial-scale externally |
+| Pricing Power | 3/5 | Non-GAAP GM expanding 36.7% → 41.0% (FY2025 → Q1 2026); moat.pricing_power = "medium"; IFS still at operating loss |
+| Leadership & Alignment | 3/5 | Lip-Bu Tan (15 months, ex-Cadence CEO); Q1 revenue beat $13.6B vs. $12.7B guide high; insider ownership unavailable; prior CEO missed roadmaps |
+| Financial Health | 2/5 | FCF negative through 2026 (consensus); GAAP net loss $(3.7B) Q1 2026; $6.5B bridge loan (Fab 34); IFS losses narrowing but large |
+| Macro Environment | 4/5 | CHIPS Act + AI advanced packaging + CPO = converging secular tailwinds; x86 CPU share loss = 1 manageable headwind |
+| Future Potential | 4/5 | IFS/18A + EMIB+CPO + x86 inference = 3 pathways; >$15B signed IFS commitments; Apple deal; positioned at design + foundry + packaging + photonics |
+| **Composite** | **6.5/10** | **Strong** |
 
-**Valuation:** — (not yet scored)
-**Growth Potential:** — (pending)
+**Valuation:** Fair-to-Expensive at est. ~$80 | Fwd P/E ~73x (2026 EPS consensus $1.09) | PT dispersion wide: median $48, upgrade cluster $100–128 post-Apple deal; re-rate contingent on IFS HVM execution
+**Growth Potential:** — (pending real-time data integration)
 
 ---
 
