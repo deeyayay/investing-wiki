@@ -6,5 +6,18 @@
       "Bash(Start-Sleep -Seconds *)",
       "Bash(mkdir *)"
     ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r --arg today \"$(date +%Y-%m-%d)\" --arg cutoff \"$(date -d '+14 days' +%Y-%m-%d 2>/dev/null || date -v+14d +%Y-%m-%d)\" '[.[] | select(.next_earnings != null and .next_earnings >= $today and .next_earnings <= $cutoff)] | if length == 0 then \"No earnings in the next 14 days.\" else \"Upcoming earnings (next 14 days):\\n\" + (map(\"  \" + .ticker + \" — \" + .next_earnings + \" (\" + .sector + \")\") | join(\"\\n\")) end' \"Investing/Wiki/Reference/Earnings Calendar.json\" 2>/dev/null || echo 'Earnings Calendar not yet populated — run /ticker-monitor to build it.'"
+          }
+        ]
+      }
+    ]
   }
 }

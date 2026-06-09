@@ -64,4 +64,5 @@ metrics:
   analyst_upside_pct: null
 
 last_updated: "YYYY-MM-DD"
+next_earnings: null      # "YYYY-MM-DD" — predicted date of next earnings release; updated by /ticker-monitor
 ---
