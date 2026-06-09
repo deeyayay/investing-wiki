@@ -148,6 +148,8 @@ For each ticker, process its agent result. Skip if `nothing_new: true`. If `--dr
 
 **last_updated:** Update the `last_updated` field to today's date.
 
+**next_earnings:** If G1 or the per-ticker agent returned a future earnings date for this ticker, update the `next_earnings` field to that date (`"YYYY-MM-DD"`). If the existing value is already a future date and no newer date was found, leave it unchanged. If the date has now passed (≤ today), clear it to `null`. Also update the `next_earnings` field in Monitor Registry.yaml for the same ticker.
+
 Do not touch any other facts.md fields.
 
 ### analysis.md — Layer 2 writes
@@ -188,7 +190,34 @@ Conviction delta rules:
 
 ---
 
-## Phase 4 — Summary
+## Phase 4 — Earnings Calendar rebuild
+
+After all per-ticker writes are complete:
+
+1. Read `Investing/Wiki/Reference/Monitor Registry.yaml`
+2. Collect every ticker entry where `next_earnings` is not null and `next_earnings >= today`
+3. Sort ascending by date
+4. Write (overwrite) `Investing/Wiki/Reference/Earnings Calendar.json`:
+
+```json
+[
+  {
+    "ticker": "XXXX",
+    "company": "Company Name",
+    "sector": "Sector Name",
+    "next_earnings": "YYYY-MM-DD",
+    "confidence": "confirmed"
+  }
+]
+```
+
+`confidence` should be `"confirmed"` if the date came from an official IR announcement or SEC filing, `"estimated"` otherwise.
+
+Skip this phase in `--news-only` mode.
+
+---
+
+## Phase 5 — Summary
 
 Print a summary table:
 
