@@ -114,5 +114,5 @@ metrics:
   analyst_upside_pct: null
 
 last_updated: "2026-06-07"
-# next_earnings: "2026-09-02" (Q1 FY2027)
+next_earnings: "2026-09-09"
 ---
