@@ -49,6 +49,31 @@ Read **only** these two files (do not read signals.md):
 - `## Analyst Coverage` → Valuation snapshot (current price, PT)
 - `## Catalyst Timeline` → Future Potential
 
+### Step 2A — Generate the AI Adoption Profile
+
+Using content already loaded from facts.md and analysis.md, evaluate the 5 layers using these sources:
+
+| Layer | Source fields | Question | Rating values |
+|-------|--------------|----------|---------------|
+| Data Moat Depth | `moat.type`, `moat.notes`, Investment Thesis (key moat) | Proprietary irreplaceable data/network effects a funded startup can't close in 3yr? | strong / moderate / weak / none |
+| Cost Structure Leverage | `earnings` gross margin %, Investment Thesis, sector framework | Labor-heavy COGS = margin expansion candidate; asset-light/human-judgment = most vulnerable | high / medium / low / negative |
+| Distribution vs. Capability | `moat.type`, Investment Thesis (key moat), Conviction Log | Primary lock-in via product IP or customer relationship/GTM? | product / distribution / both / neither |
+| Regulatory Insulation | Investment Thesis (key risks), sector framework, `moat.notes` | How many years does regulatory approval insulate the incumbent? Existing approvals = moat? | strong (3+yr) / moderate (1–3yr) / weak (<1yr) / none + integer years |
+| Offense vs. Defense | Catalyst Timeline, Investment Thesis (bull case), Cross-Ticker Signals | Attacking new AI-enabled markets (deployer) or defending existing margins (target)? | deployer / target / both / neutral |
+
+**Assign 2×2 quadrant:**
+- Deployer + strong/moderate data moat → `re-rating winner`
+- Deployer + weak/none data moat → `commodity improver`
+- Target + strong/moderate data moat → `transition play`
+- Target + weak/none data moat → `value trap`
+- `both`/`neutral` posture: use data moat as tiebreaker; note ambiguity in rationale
+
+**Write `## AI Adoption Profile`** to analysis.md using the template format (5-layer table + quadrant rationale + scoring implication line). If the section does not exist, insert it before `## Ecosystem Links`. If it exists, replace it entirely (replace-on-update).
+
+**Note:** The `ai_profile:` YAML write is batched with the Step 8 `metrics:` edit — do not write it separately here.
+
+If fewer than 3 sections are populated, set `ai_quadrant: "—"` and note "Insufficient data — AI profile pending" in the section. Score Macro Environment and Future Potential on existing evidence only.
+
 ### Step 3 — Determine pre-revenue status
 
 Check whether `earnings:` array in facts.md has any entries with `revenue_b > 0`. If the array is empty or all entries have null revenue, treat this as a pre-revenue company:
@@ -67,8 +92,8 @@ For each criterion (1–5), select the score that best matches the evidence. Cit
 | Pricing Power | `moat.pricing_power` in facts.md; gross margin trend in earnings array; Investment Thesis |
 | Leadership & Alignment | `management` array (ownership %, notes) in facts.md; Conviction Log in analysis.md |
 | Financial Health | `earnings` array (revenue trend, EPS) in facts.md; Investment Thesis (balance sheet) |
-| Macro Environment | Sector Framework (why this sector exists, cycle positioning) |
-| Future Potential | Investment Thesis (bull case) in analysis.md; Catalyst Timeline |
+| Macro Environment | Sector Framework (why this sector exists, cycle positioning) + `ai_profile.ai_quadrant` — see AI adoption guidance in Scoring Rubric.md |
+| Future Potential | Investment Thesis (bull case) in analysis.md; Catalyst Timeline + `ai_profile.ai_quadrant` — see AI adoption guidance in Scoring Rubric.md |
 
 ### Step 5 — Calculate composite
 
@@ -109,10 +134,26 @@ _Last scored: YYYY-MM-DD | [[Scoring Rubric]]_
 **Growth Potential:** — (pending real-time data integration)
 ```
 
-### Step 8 — Update facts.md metrics
+### Step 8 — Update facts.md metrics and AI profile
 
-Edit the `metrics:` block in facts.md YAML frontmatter:
+In a **single Edit call**, update both blocks in facts.md YAML frontmatter:
+
 ```yaml
+ai_profile:
+  data_moat: "[value from Step 2A]"
+  data_moat_notes: "[≤15 words]"
+  cost_leverage: "[value]"
+  cost_leverage_notes: "[≤15 words]"
+  moat_source: "[value]"
+  moat_source_notes: "[≤15 words]"
+  regulatory_moat: "[value]"
+  regulatory_moat_years: [integer or null]
+  ai_posture: "[value]"
+  ai_posture_notes: "[≤15 words]"
+  ai_quadrant: "[quadrant]"
+  ai_quadrant_rationale: "[≤20 words]"
+  last_assessed: "YYYY-MM-DD"
+
 metrics:
   score: X.X
   score_label: "[Label]"
@@ -135,7 +176,7 @@ Read `Investing/Wiki/Reference/Watchlist.md`. Search all tables for this ticker.
 Append one line to the Research Log section of signals.md:
 
 ```
-- **YYYY-MM-DD** — Scored — Composite X.X/10 [Label] | P:[X] PP:[X] L:[X] FH:[X] ME:[X] FP:[X]
+- **YYYY-MM-DD** — Scored — Composite X.X/10 [Label] | P:[X] PP:[X] L:[X] FH:[X] ME:[X] FP:[X] | AI: [quadrant]
 ```
 
 ## Behavior Notes

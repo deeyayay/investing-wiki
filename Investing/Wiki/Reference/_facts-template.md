@@ -55,6 +55,22 @@ tech_exposure: []
 #   exposure: partial
 #   notes: "Ethereum staking revenue stream; not primary business"
 
+ai_profile:
+  # Written by /score-ticker (Step 2A). Quadrant: deployer+strong→re-rating winner | deployer+weak→commodity improver | target+strong→transition play | target+weak→value trap
+  data_moat: "—"              # strong / moderate / weak / none
+  data_moat_notes: "—"        # ≤15 words: what data, can a funded startup close gap in 3yr?
+  cost_leverage: "—"          # high / medium / low / negative
+  cost_leverage_notes: "—"    # ≤15 words: labor-heavy COGS? asset-light? margin expansion candidate?
+  moat_source: "—"            # product / distribution / both / neither
+  moat_source_notes: "—"      # ≤15 words: lock-in via product IP or customer relationship/GTM?
+  regulatory_moat: "—"        # strong / moderate / weak / none
+  regulatory_moat_years: null # integer: estimated years of insulation from regulatory approvals
+  ai_posture: "—"             # deployer / target / both / neutral
+  ai_posture_notes: "—"       # ≤15 words: attacking new AI-enabled markets, or defending margins?
+  ai_quadrant: "—"            # re-rating winner / commodity improver / transition play / value trap
+  ai_quadrant_rationale: "—"  # ≤20 words: one-line logic for the quadrant assignment
+  last_assessed: null         # "YYYY-MM-DD"
+
 metrics:
   score: null            # Composite score from /score-ticker (0–10)
   score_label: "—"       # Unrivaled / Strong / Average / Reassess

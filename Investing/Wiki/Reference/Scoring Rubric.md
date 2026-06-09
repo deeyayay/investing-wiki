@@ -115,6 +115,8 @@ What trends in the world will impact this business? Are the tailwinds secular an
 
 **Technology preference alignment:** A ticker with *primary* exposure to a high-conviction preferred technology in [[Technology Preferences]] qualifies as a structural tailwind supporting a score of 4–5. Primary exposure to a disfavored or transitioning technology should score 2–3 on this criterion even if broader sector-level tailwinds exist. See the Technology Alignment section in `analysis.md` for the explicit per-ticker mapping.
 
+**AI adoption guidance:** Re-rating winner → bias 4–5 (structural AI tailwind on top of sector tailwinds). Commodity improver → score on sector tailwinds only; no AI premium. Transition play → bias 2–3 unless transition evidence is concrete and advancing. Value trap → bias 1–2 unless extraordinary non-AI tailwinds exist. Profile pending → score as before; note "AI profile pending" in Evidence.
+
 _Sources in wiki: Sector Framework (Why this sector exists, Cycle positioning, Bull/Base/Bear cases), [[Technology Preferences]] (technology race outcomes and ticker exposure maps)_
 
 ---
@@ -130,6 +132,8 @@ How many ways can the company make money? Does it have multiple adjacent pathway
 | **3** | 1–2 adjacent opportunities; early exploration; TAM expansion thesis not yet validated |
 | **2** | Core business is the primary and near-only path; limited adjacency identified |
 | **1** | Single product, single market, no expansion pathway; TAM may be declining |
+
+**AI adoption guidance:** Re-rating winner → bias 4–5 if ≥1 AI-driven adjacency has measurable traction. Commodity improver → score on non-AI pathways; AI is cost tool not TAM expander. Transition play → 3–4 if transition milestones exist in Catalyst Timeline; 2–3 if aspirational only. Value trap → bias 1–3; flag AI substitution risk explicitly in Evidence.
 
 _Sources in wiki: Investment Thesis (bull case, moat), Catalyst Timeline, Cross-Ticker Signals_
 

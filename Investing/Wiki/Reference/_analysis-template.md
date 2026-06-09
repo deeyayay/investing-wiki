@@ -80,5 +80,24 @@ _Last scored: — | [[Scoring Rubric]]_
 
 ---
 
+## AI Adoption Profile
+<!-- Replace-on-update. Written by /score-ticker. Last assessed: — -->
+
+**AI Quadrant: —**
+
+| Layer | Assessment | Rating | Evidence |
+|-------|-----------|--------|----------|
+| Data Moat Depth | — | strong / moderate / weak / none | — |
+| Cost Structure Leverage | — | high / medium / low / negative | — |
+| Distribution vs. Capability | — | product / distribution / both / neither | — |
+| Regulatory Insulation | — | strong / moderate / weak / none | — yr est. |
+| Offense vs. Defense | — | deployer / target / both / neutral | — |
+
+**Quadrant rationale:** —
+
+**Scoring implication:** Macro Environment [↑/→/↓] — [reason]. Future Potential [↑/→/↓] — [reason].
+
+---
+
 ## Ecosystem Links
 *(Links to supply chain maps, sector frameworks, or upstream/downstream names)*
