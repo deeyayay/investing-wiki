@@ -210,6 +210,30 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 .connector.choke .connector-label{color:var(--amber);border-color:oklch(80% .12 62);font-weight:600}
 @media(max-width:980px){.stack-grid{grid-template-columns:1fr}.rail{position:static;flex-direction:row;flex-wrap:wrap}.rail-card{flex:1 1 200px}}
 @media(max-width:600px){#l0{padding:16px}.subbox{min-width:120px}.rail-card{flex:1 1 100%}}
+/* clickable layer header */
+.layer-head{cursor:pointer;transition:filter .12s}
+.layer-head:hover{filter:brightness(.97)}
+.layer-go{font-size:10.5px;font-weight:700;color:oklch(38% .1 var(--lh,250));opacity:0;transition:opacity .12s;margin-left:8px}
+.layer-head:hover .layer-go{opacity:.85}
+/* Layer view (L1) */
+.layer-view-hdr{display:flex;align-items:baseline;gap:10px;margin-bottom:4px}
+.layer-view-num{font-family:ui-monospace,monospace;font-weight:800;font-size:14px;color:oklch(45% .14 var(--lh,250))}
+.layer-view-name{font-size:24px;font-weight:800;letter-spacing:-.02em;color:oklch(28% .13 var(--lh,250))}
+.layer-view-tag{color:var(--muted);font-size:13px;margin-bottom:26px}
+.layer-box-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.layer-box{background:var(--bg2);border:1px solid var(--border);border-radius:9px;padding:14px 15px;cursor:pointer;transition:border-color .15s,transform .1s,box-shadow .12s}
+.layer-box:hover{border-color:oklch(72% .04 250);transform:translateY(-1px);box-shadow:0 3px 14px rgba(0,0,0,.07)}
+.layer-box.choke{border-color:var(--amber);background:oklch(98% .04 72)}
+.layer-box-head{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:7px}
+.layer-box-label{font-weight:700;font-size:13px;display:flex;align-items:center;gap:5px}
+.layer-box-sector{font-size:10px;color:var(--muted);white-space:nowrap;flex-shrink:0}
+.layer-box-fn{font-size:11.5px;color:var(--muted);line-height:1.5;margin-bottom:9px}
+.layer-box-count{font-size:10px;color:var(--muted);margin-top:8px}
+/* provenance pills on tier & ticker pages */
+.tier-provenance{display:flex;gap:8px;align-items:center;margin-bottom:14px;flex-wrap:wrap}
+.layer-pill{font-size:11px;font-weight:700;padding:3px 10px;border-radius:99px;background:oklch(90% .09 var(--lh,250));color:oklch(32% .14 var(--lh,250));letter-spacing:.02em}
+.sector-tag{font-size:11px;padding:3px 10px;border-radius:99px;background:var(--bg3);color:var(--muted)}
+@media(max-width:600px){.layer-box-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -692,22 +716,15 @@ const DATA = {
   ]
 };
 
-const DIM_LABEL={D1:"AI Manufacturing Base",D2:"AI Connectivity",D3:"AI Infrastructure",D4:"AI Enablement",D5:"AI Applications"};
-const DIM_DESC={
-  D1:"The foundational physical layer — raw materials, components, and chips that everything above depends on.",
-  D2:"The connection layer — optical, wireless, and satellite links that move data between AI compute nodes.",
-  D3:"The compute and power layer — data centers, GPUs, and clean energy that run AI workloads.",
-  D4:"The software and security layer — platforms and tools that enable safe, governed AI deployment.",
-  D5:"The application layer — AI-native products in robotics, fintech, defense, and enterprise."
-};
-const DIMS=["D1","D2","D3","D4","D5"];
 
 let activeSector=null;
 let activeTierIdx=null;
+let activeLayerIdx=null;
 let _raceOrigin=null;
 let _fromStack=false;
-// Open a ticker straight from a stack/rail chip — breadcrumb returns to the stack, not a tier.
-function openStackTicker(tk,sName){_raceOrigin=null;_fromStack=true;activeSector=null;activeTierIdx=null;openTicker(tk,sName);}
+let _chipOrigin=null;
+// Open a ticker straight from a stack/rail/layer chip — breadcrumb returns to the stack (with an optional context crumb), not a tier.
+function openStackTicker(tk,sName,ctxLabel,ctxFn){_raceOrigin=null;_fromStack=true;_chipOrigin=ctxLabel?{label:ctxLabel,fn:ctxFn}:null;activeSector=null;activeTierIdx=null;activeLayerIdx=null;openTicker(tk,sName);}
 
 const SECTOR_FOLDER={"Compute Infrastructure":"AI Infrastructure","Energy & Power":"Clean Energy","Materials & Mining":"Metals & Mining","Space & Communications":"Space & Comms","Fintech & Commerce AI":"Fintech & E-Commerce"};
 function rawGithubUrl(sName,ticker,legacy){const f=SECTOR_FOLDER[sName]||sName;const base="https://raw.githubusercontent.com/deeyayay/investing-wiki/master/Investing/Wiki/Sectors/"+encodeURIComponent(f)+"/";return legacy?base+ticker+".md":base+encodeURIComponent(ticker)+"/analysis.md";}
@@ -817,20 +834,26 @@ const STACK={
   ]
 };
 
+// tier → layer reverse index ("slug|tier" → layer index)
+const _tierLayer={};
+STACK.layers.forEach((L,i)=>L.boxes.forEach(b=>{_tierLayer[b.slug+'|'+b.tier]=i;}));
+function _layerLabel(i){const L=STACK.layers[i];return"L"+L.num+" "+L.name;}
+
 function _tierLookup(slug,tierName){
   const s=DATA.sectors.find(x=>x.slug===slug);
   if(!s)return{sector:null,tier:null};
   return{sector:s,tier:s.tiers.find(t=>t.tier===tierName)||null};
 }
-function _chipHtml(tk,fallbackSector){
+function _chipHtml(tk,fallbackSector,ctxLabel,ctxFn){
   const info=TICKER_MAP[tk];
-  const sName=(info&&info.sectorName)||fallbackSector||"";
-  return '<span class="chip" onclick="event.stopPropagation();openStackTicker(\''+tk+'\',\''+sName.replace(/'/g,"\\'")+'\')">'+esc(tk)+'</span>';
+  const sName=((info&&info.sectorName)||fallbackSector||"").replace(/'/g,"\\'");
+  const args="'"+tk+"','"+sName+"'"+(ctxLabel?",'"+String(ctxLabel).replace(/'/g,"\\'")+"','"+String(ctxFn||"").replace(/'/g,"\\'")+"'":"");
+  return '<span class="chip" onclick="event.stopPropagation();openStackTicker('+args+')">'+esc(tk)+'</span>';
 }
 function _railHtml(rail){
   const groups=rail.groups.map(g=>
     '<div class="rail-group"><div class="rail-group-label">'+esc(g.label)+'</div>'
-    +'<div class="chip-row">'+g.chips.map(t=>_chipHtml(t)).join("")+'</div></div>'
+    +'<div class="chip-row">'+g.chips.map(t=>_chipHtml(t,"",rail.title,"showLayer(0)")).join("")+'</div></div>'
   ).join("");
   return '<div class="rail-card '+rail.id+'"><div class="rail-title">'+esc(rail.title)+'</div>'
     +'<div class="rail-cap">'+esc(rail.cap)+'</div>'+groups+'</div>';
@@ -844,17 +867,18 @@ function renderL0(){
       const{sector,tier}=_tierLookup(b.slug,b.tier);
       const choke=b.choke!==undefined?b.choke:(tier&&tier.chokepoint==="Y");
       const sName=sector?sector.name:"";
+      const ctxL=_layerLabel(i),ctxF="openLayer("+i+")";
       const chips=(b.chips&&b.chips.length?b.chips:(tier?(tier.companies||[]).map(c=>c.ticker):[]))
-        .slice(0,6).map(t=>_chipHtml(t,sName)).join("");
-      const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\')"':'';
+        .slice(0,6).map(t=>_chipHtml(t,sName,ctxL,ctxF)).join("");
+      const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\','+i+')"':'';
       return '<div class="subbox'+(choke?' choke':'')+'"'+onclick+'>'
         +'<div class="subbox-label">'+(choke?'<span class="choke-mark">⧫</span>':'')+esc(b.label)+'</div>'
         +'<div class="chip-row">'+chips+'</div></div>';
     }).join("");
     let html='<div class="layer" style="--lh:'+L.hue+';--lbg:oklch(96.5% .03 '+L.hue+')">'
-      +'<div class="layer-head"><span class="layer-num">L'+L.num+'</span>'
+      +'<div class="layer-head" onclick="openLayer('+i+')" title="View this layer"><span class="layer-num">L'+L.num+'</span>'
       +'<span class="layer-name">'+esc(L.name)+'</span>'
-      +'<span class="layer-tag">'+esc(L.tag)+'</span></div>'
+      +'<span class="layer-tag">'+esc(L.tag)+'</span><span class="layer-go">View ›</span></div>'
       +'<div class="subbox-row">'+boxes+'</div></div>';
     if(i<STACK.connectors.length){
       const c=STACK.connectors[i];
@@ -863,56 +887,54 @@ function renderL0(){
     return html;
   }).join("");
   document.getElementById("l0").innerHTML=
-    '<div class="stack-intro">The AI buildout as a single dependency stack — each layer <strong>runs on</strong> the one below it, all the way down to the critical minerals at the bedrock. Amber <span style="color:var(--amber)">⧫</span> marks supply-chain chokepoints. Click any sub-box to drill into its tier, or a ticker to open its wiki page.</div>'
+    '<div class="stack-intro">The AI buildout as a single dependency stack — each layer <strong>runs on</strong> the one below it, all the way down to the critical minerals at the bedrock. Amber <span style="color:var(--amber)">⧫</span> marks supply-chain chokepoints. Click a <strong>layer header</strong> to open the layer, a <strong>sub-box</strong> to drill into its tier, or a <strong>ticker</strong> to open its wiki page.</div>'
     +'<div class="stack-grid"><div class="rail">'+leftRail+'</div>'
     +'<div class="stack">'+stack+'</div>'
     +'<div class="rail">'+rightRail+'</div></div>';
 }
 
-function openStackTier(slug,tierName){
+function openStackTier(slug,tierName,layerIdx){
   const s=DATA.sectors.find(x=>x.slug===slug);
   if(!s){return;}
   activeSector=s;
+  activeLayerIdx=(layerIdx!==undefined&&layerIdx!==null)?layerIdx:(_tierLayer[slug+"|"+tierName]!==undefined?_tierLayer[slug+"|"+tierName]:null);
   const idx=s.tiers.findIndex(t=>t.tier===tierName);
-  if(idx<0){openSector(slug);return;}
-  renderL1();
+  if(idx<0){return;}
   openTier(idx);
 }
 
-function openSector(slug){
-  activeSector=DATA.sectors.find(s=>s.slug===slug);
-  renderL1();
+// Layer view (L1) — replaces the retired cross-cutting sector list.
+function openLayer(i){
+  activeLayerIdx=i;
+  renderLayerView(i);
   showLayer(1);
 }
 
-function renderL1(){
-  const s=activeSector;
-  const tiers=s.tiers.map((t,i)=>{
-    const cls=t.chokepoint==="Y"?"choke-y":t.chokepoint==="Partial"?"choke-p":"";
-    const badge=t.chokepoint==="Y"
-      ?"<span class=\"choke-badge y\">⧫ CHOKEPOINT</span>"
-      :t.chokepoint==="Partial"
-      ?"<span class=\"choke-badge p\">⧫ PARTIAL</span>"
-      :"";
-    return "<div class=\"tier-card "+cls+"\" onclick=\"openTier("+i+")\">"
-      +"<div class=\"tier-top\"><div class=\"tier-name\">"+t.tier+"</div>"+badge+"</div>"
-      +"<div class=\"tier-fn\">"+t.fn+"</div>"
-      +"<div class=\"tier-pills\">"
-      +"<span class=\"pill\">"+t.moat_type+"</span>"
-      +"<span class=\"pill\">"+t.capital_intensity+" capex</span>"
-      +"<span class=\"pill\">"+t.margin_profile+" margins</span>"
-      +(t.companies&&t.companies.length>0?"<span class=\"co-count\">"+t.companies.length+" tracked</span>":"")
-      +"</div></div>";
+function renderLayerView(i){
+  const L=STACK.layers[i];
+  const cards=L.boxes.map(b=>{
+    const{sector,tier}=_tierLookup(b.slug,b.tier);
+    const choke=b.choke!==undefined?b.choke:(tier&&tier.chokepoint==="Y");
+    const sName=sector?sector.name:"";
+    const ctxL=_layerLabel(i),ctxF="openLayer("+i+")";
+    const chips=(b.chips&&b.chips.length?b.chips:(tier?(tier.companies||[]).map(c=>c.ticker):[]))
+      .map(t=>_chipHtml(t,sName,ctxL,ctxF)).join("");
+    const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\','+i+')"':'';
+    const count=tier&&tier.companies?tier.companies.length:0;
+    return '<div class="layer-box'+(choke?' choke':'')+'"'+onclick+'>'
+      +'<div class="layer-box-head"><span class="layer-box-label">'+(choke?'<span class="choke-mark">⧫</span>':'')+esc(b.label)+'</span>'
+      +'<span class="layer-box-sector">'+esc(sName)+'</span></div>'
+      +(tier?'<div class="layer-box-fn">'+esc(tier.fn)+'</div>':'')
+      +'<div class="chip-row">'+chips+'</div>'
+      +(count?'<div class="layer-box-count">'+count+' tracked</div>':'')
+      +'</div>';
   }).join("");
   document.getElementById("l1").innerHTML=
-    crumbTrail([{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:s.name}])
-    +"<div class=\"sector-hdr\">"
-    +"<span class=\"dim-pill "+s.dimension+"\">"+s.dimension+"</span>"
-    +"<span class=\"sector-title\">"+s.name+"</span>"
-    +"</div>"
-    +"<div class=\"sector-desc-full\">"+s.description+"</div>"
-    +"<div class=\"dim-ctx\">"+DIM_LABEL[s.dimension]+" — "+DIM_DESC[s.dimension]+"</div>"
-    +tiers;
+    crumbTrail([{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:_layerLabel(i)}])
+    +'<div class="layer-view-hdr" style="--lh:'+L.hue+'"><span class="layer-view-num">L'+L.num+'</span>'
+    +'<span class="layer-view-name">'+esc(L.name)+'</span></div>'
+    +'<div class="layer-view-tag">'+esc(L.tag)+'</div>'
+    +'<div class="layer-box-grid">'+cards+'</div>';
 }
 
 function openTier(idx){
@@ -936,8 +958,16 @@ function openTier(idx){
           +"<div class=\"co-notes\">"+c.notes+"</div></div>";
       }).join("")+"</div>"
     :"";
+  const li=activeLayerIdx;
+  const trail=(li!==null&&li!==undefined)
+    ?[{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:_layerLabel(li),fn:"openLayer("+li+")"},{label:t.tier}]
+    :[{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:t.tier}];
+  const provenance="<div class=\"tier-provenance\">"
+    +((li!==null&&li!==undefined)?"<span class=\"layer-pill\" style=\"--lh:"+STACK.layers[li].hue+"\">"+esc(_layerLabel(li))+"</span>":"")
+    +"<span class=\"sector-tag\">"+esc(s.name)+"</span></div>";
   document.getElementById("l2").innerHTML=
-    crumbTrail([{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:s.name,fn:"openSector('"+s.slug+"')"},{label:t.tier}])
+    crumbTrail(trail)
+    +provenance
     +"<div class=\"tier-detail-name\">"+t.tier+"</div>"
     +"<div class=\"tier-fn-full\">"+t.fn+"</div>"
     +chokeBlock
@@ -984,15 +1014,26 @@ function renderL3(ticker,sName){
     :'<div class="wiki-empty">No wiki page for '+ticker+' yet.<br>Run <code>/add-ticker '+ticker+'</code> to create one.</div>';
   const fromRace=_raceOrigin;_raceOrigin=null;
   const fromStack=_fromStack;_fromStack=false;
+  const chipOrigin=_chipOrigin;_chipOrigin=null;
   if(fromRace)document.querySelectorAll(".tab-btn").forEach(b=>b.classList.toggle("active",b.dataset.tab==="tech-races"));
+  const li=activeLayerIdx;
   let crumbs;
   if(fromRace){
     crumbs=crumbTrail([{label:"Tech Races",fn:"showTab('tech-races')"},{label:fromRace.name,fn:"openRace('"+fromRace.id+"')"},{label:ticker}]);
   }else if(fromStack||!activeSector||activeTierIdx===null){
-    crumbs=crumbTrail([{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:ticker}]);
+    const parts=[{label:"AI Buildout Stack",fn:"showLayer(0)"}];
+    if(chipOrigin)parts.push({label:chipOrigin.label,fn:chipOrigin.fn});
+    parts.push({label:ticker});
+    crumbs=crumbTrail(parts);
   }else{
-    crumbs=crumbTrail([{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:activeSector.name,fn:"openSector('"+activeSector.slug+"')"},{label:activeSector.tiers[activeTierIdx].tier,fn:"openTier("+activeTierIdx+")"},{label:ticker}]);
+    const mid=(li!==null&&li!==undefined)?{label:_layerLabel(li),fn:"openLayer("+li+")"}:null;
+    const parts=[{label:"AI Buildout Stack",fn:"showLayer(0)"}];
+    if(mid)parts.push(mid);
+    parts.push({label:activeSector.tiers[activeTierIdx].tier,fn:"openTier("+activeTierIdx+")"});
+    parts.push({label:ticker});
+    crumbs=crumbTrail(parts);
   }
+  const layerPill=(!fromRace&&li!==null&&li!==undefined)?'<span class="layer-pill" style="--lh:'+STACK.layers[li].hue+'">'+esc(_layerLabel(li))+'</span>':'';
   document.getElementById("l3").innerHTML=
     crumbs
     +'<div class="ticker-hdr">'
@@ -1001,8 +1042,8 @@ function renderL3(ticker,sName){
     +'</div>'
     +'<div class="ticker-meta">'
     +(c.mkt_cap?'<span class="co-cap '+cc+'">'+cl+'</span>':'')
+    +layerPill
     +'<span class="ticker-tag">'+esc(sName)+'</span>'
-    +(activeSector?'<span class="ticker-tag">'+activeSector.dimension+'</span>':'')
     +'</div>'
     +'<div class="wiki-body">'+body+'</div>';
 }
@@ -1157,7 +1198,7 @@ function openTickerFromRace(raceId, ticker) {
   const r=DATA.tech_races.find(x=>x.id===raceId);
   const info=TICKER_MAP[ticker];
   _raceOrigin=r;
-  activeSector=null;activeTierIdx=null;
+  activeSector=null;activeTierIdx=null;activeLayerIdx=null;
   openTicker(ticker,info?info.sectorName:'');
 }
 
@@ -1166,12 +1207,16 @@ let _searchIdx = null;
 
 function buildSearchIdx() {
   const idx = [];
+  STACK.layers.forEach((L, i) => {
+    idx.push({ type: "layer", label: _layerLabel(i), sub: L.tag, layerIdx: i, q: (L.name + " " + L.tag).toLowerCase() });
+  });
   DATA.sectors.forEach(s => {
-    idx.push({ type: "sector", label: s.name, sub: s.dimension + " · " + s.description, slug: s.slug, q: (s.name + " " + s.description).toLowerCase() });
-    s.tiers.forEach((t, i) => {
-      idx.push({ type: "tier", label: t.tier, sub: s.name, slug: s.slug, tierIdx: i, q: (t.tier + " " + (t.fn || "")).toLowerCase() });
+    s.tiers.forEach(t => {
+      const layer = _tierLayer[s.slug + "|" + t.tier];
+      const li = (layer !== undefined ? layer : "");
+      idx.push({ type: "tier", label: t.tier, sub: s.name, slug: s.slug, tierName: t.tier, layerIdx: li, q: (t.tier + " " + (t.fn || "")).toLowerCase() });
       (t.companies || []).forEach(c => {
-        idx.push({ type: "company", label: c.name, ticker: c.ticker || "", sub: t.tier + " · " + s.name, slug: s.slug, tierIdx: i, q: ((c.ticker || "") + " " + c.name + " " + (c.notes || "")).toLowerCase() });
+        idx.push({ type: "company", label: c.name, ticker: c.ticker || "", sub: t.tier + " · " + s.name, slug: s.slug, tierName: t.tier, layerIdx: li, q: ((c.ticker || "") + " " + c.name + " " + (c.notes || "")).toLowerCase() });
       });
     });
   });
@@ -1188,7 +1233,7 @@ function renderSearchResults(q) {
     res.hidden = false;
     return;
   }
-  const groups = [["sector", "Sectors"], ["tier", "Tiers"], ["company", "Companies"]];
+  const groups = [["layer", "Layers"], ["tier", "Tiers"], ["company", "Companies"]];
   let html = "";
   groups.forEach(([type, label]) => {
     const group = hits.filter(h => h.type === type);
@@ -1197,7 +1242,11 @@ function renderSearchResults(q) {
     html += "<div class=\"sr-group-label\">" + label + "</div>";
     group.forEach(h => {
       const ticker = h.ticker ? "<span class=\"sr-ticker\">" + h.ticker + "</span>" : "";
-      html += "<div class=\"sr-item\" data-type=\"" + h.type + "\" data-slug=\"" + h.slug + "\"" + (h.tierIdx !== undefined ? " data-tier=\"" + h.tierIdx + "\"" : "") + ">"
+      html += "<div class=\"sr-item\" data-type=\"" + h.type + "\""
+        + (h.slug !== undefined ? " data-slug=\"" + esc(h.slug) + "\"" : "")
+        + (h.tierName !== undefined ? " data-tiername=\"" + esc(h.tierName) + "\"" : "")
+        + (h.layerIdx !== undefined && h.layerIdx !== "" ? " data-layer=\"" + h.layerIdx + "\"" : "")
+        + ">"
         + ticker
         + "<div class=\"sr-text\"><div class=\"sr-label\">" + h.label + "</div><div class=\"sr-sub\">" + h.sub + "</div></div>"
         + "</div>";
@@ -1221,12 +1270,17 @@ document.getElementById("search-input").addEventListener("keydown", function (e)
 document.getElementById("search-results").addEventListener("click", function (e) {
   const item = e.target.closest(".sr-item");
   if (!item) return;
+  const type = item.dataset.type;
   const slug = item.dataset.slug;
-  const tierIdx = item.dataset.tier;
+  const tierName = item.dataset.tiername;
+  const layer = item.dataset.layer;
   document.getElementById("search-input").value = "";
   document.getElementById("search-results").hidden = true;
-  openSector(slug);
-  if (tierIdx !== undefined) openTier(Number(tierIdx));
+  if (type === "layer") {
+    openLayer(Number(layer));
+  } else {
+    openStackTier(slug, tierName, layer !== undefined ? Number(layer) : undefined);
+  }
 });
 
 document.addEventListener("click", function (e) {
