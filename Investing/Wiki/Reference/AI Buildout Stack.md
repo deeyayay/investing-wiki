@@ -87,7 +87,7 @@ The previous five-dimension stack is superseded but maps cleanly onto the layers
       {"label":"CPUs & Design IP","sector":"Semiconductors","slug":"semiconductors","tier":"EDA & Design IP","chips":["ARM","SNPS","CDNS"]}
     ]},
     {"num":"06","name":"Memory","hue":92,"tag":"compute is useless without memory","boxes":[
-      {"label":"HBM · DRAM · NAND Flash","sector":"Semiconductors","slug":"semiconductors","tier":"Chip Design (Fabless & IDM)","chips":["MU"],"choke":true}
+      {"label":"HBM · DRAM · NAND Flash","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU"]}
     ]},
     {"num":"07","name":"Interconnect","hue":42,"tag":"compute & memory need to talk","boxes":[
       {"label":"Networking Silicon & Switches","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"High-Speed Networking","chips":["ANET","AVGO","MRVL"]},
