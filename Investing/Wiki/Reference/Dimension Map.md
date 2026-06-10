@@ -1,19 +1,21 @@
 # AI Ecosystem — Dimension Map
-*Last updated: 2026-05-31 — AI Model Infrastructure sector mapped (8-tier supply chain map, process/product depth, D4)*
+*Last updated: 2026-06-10 — superseded by the 12-layer AI Buildout Stack; kept as the sector registry + slug map.*
 
-This file is the authoritative taxonomy for the five-dimension vertical stack. All sector supply chain maps and the Ecosystem Interrelationships graph reference the dimension codes here.
+> **Canonical taxonomy moved.** The wiki now organizes the AI buildout as a **12-layer vertical stack** (Application → Critical Minerals) plus 4 cross-cutting rails. See **`AI Buildout Stack.md`** for the authoritative layer definitions and the machine-readable JSON the dashboard consumes. This file remains the **sector registry** (sector → folder slug → status) and the **D1–D5 → layer crosswalk** for legacy references.
 
 ---
 
-## Dimension Definitions
+## Sector → Layer crosswalk
 
-| Code | Name | Description |
-|------|------|-------------|
-| D1 | AI Manufacturing Base | Physical production of the components, materials, and devices that all higher layers consume. Constraints here propagate upward through the entire stack. |
-| D2 | AI Connectivity | Moving data at the speed and distance AI requires — between chips, servers, data centers, and continents. |
-| D3 | AI Infrastructure | Operating AI at scale: compute, power, cooling, and the physical facilities that house it. |
-| D4 | AI Enablement | Software and security layers that make infrastructure usable and trustworthy. |
-| D5 | AI Applications | End-use systems that deploy AI capability to solve domain-specific problems. |
+The legacy five-dimension codes map onto the 12 layers as follows (full layer definitions in `AI Buildout Stack.md`):
+
+| Legacy code | Name | Maps to layers |
+|------|------|----------------|
+| D5 | AI Applications | L01 Application + Edge & Physical AI rail |
+| D4 | AI Enablement | L02 AI Model, L03 Software Infrastructure + Security rail |
+| D3 | AI Infrastructure | L04 Cloud Infrastructure + Power & Thermal rails |
+| D2 | AI Connectivity | L07 Interconnect |
+| D1 | AI Manufacturing Base | L05 Compute Hardware, L06 Memory, L08–L12 (packaging → minerals) |
 
 ---
 
@@ -46,22 +48,20 @@ This file is the authoritative taxonomy for the five-dimension vertical stack. A
 ## Stack Diagram
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│  D5 — AI Applications                                           │
-│  Robotics & Edge AI · Fintech & Commerce AI · Defense & Space   │
-├─────────────────────────────────────────────────────────────────┤
-│  D4 — AI Enablement                                             │
-│  Cybersecurity · AI Model Infrastructure · Data & Software Platforms │
-├─────────────────────────────────────────────────────────────────┤
-│  D3 — AI Infrastructure                                         │
-│  Compute Infrastructure · Energy & Power                        │
-├─────────────────────────────────────────────────────────────────┤
-│  D2 — AI Connectivity                                           │
-│  Photonics & Optical · Space & Communications                   │
-├─────────────────────────────────────────────────────────────────┤
-│  D1 — AI Manufacturing Base                                     │
-│  Semiconductors · Electronic Components · Materials & Mining    │
-└─────────────────────────────────────────────────────────────────┘
+            ┌──────────────────────────────────────────────────┐
+            │  L01  Application            (fintech · commerce) │
+            │  L02  AI Model               (foundation models)  │
+            │  L03  Software Infrastructure(orchestration·MLOps)│
+  POWER     │  L04  Cloud Infrastructure   (hyperscalers)       │  THERMAL
+  (rail)    │  L05  Compute Hardware       (GPUs · ASICs)       │  SECURITY
+            │  L06  Memory                 (HBM · DRAM · NAND)   │  EDGE &
+            │  L07  Interconnect           (optics · networking) │  PHYSICAL AI
+            │  L08  Advanced Packaging     (CoWoS · substrates) │  (rails)
+            │  L09  Semiconductor Foundry  (wafer fab)          │
+            │  L10  Semiconductor Equipment(litho · etch · test)│
+            │  L11  Semiconductor Materials(wafers · chemicals) │
+            │  L12  Critical Minerals & Rare Earths  (bedrock)  │
+            └──────────────────────────────────────────────────┘
 ```
 
-Physical constraints flow upward. A capacity crunch at D1 propagates to D2, D3, D4, and D5 in sequence. Demand signals flow downward — AI application growth at D5 pulls compute at D3, which pulls silicon at D1.
+Each layer **runs on** the one below it. Physical constraints flow **upward** — a chokepoint at L09 Foundry or L12 Minerals starves every layer above. Demand signals flow **downward** — an application boom at L01 pulls compute at L05, which pulls silicon at L09–L12. The four rails (Power, Thermal, Security, Edge & Physical AI) cut across the stack rather than sitting at a single level.

@@ -1,6 +1,8 @@
-# Daily Dashboard — Ecosystem Map Viewer
+# Daily Dashboard — AI Buildout Stack Viewer
 
-Deploys the ecosystem map to GitHub Pages via `gh-pages`. The HTML and embedded `DATA` object live in `Investing/Output/Dashboard/index.html` as the source of truth.
+Deploys the dashboard to GitHub Pages via `gh-pages`. The HTML lives in `Investing/Output/Dashboard/index.html`. It embeds two objects:
+- **`STACK`** — the canonical 12-layer vertical map (Application → Critical Minerals) + 4 rails, rendered as the homepage. Source of truth: the JSON block in `Investing/Wiki/Reference/AI Buildout Stack.md`.
+- **`DATA`** — the per-sector tier/company backbone (`sectors`, `tech_races`) used by the drill-down, ticker-wiki, and search. Each `STACK` sub-box maps to a `(sector, tier)` in `DATA.sectors`.
 
 **Dashboard URL:** `https://deeyayay.github.io/investing-wiki/`
 *GitHub Pages watches `gh-pages` — every push auto-deploys within ~1 minute.*
@@ -23,6 +25,11 @@ Run the deploy steps in Phase 3. No file reads needed.
 ### Phase 1 — Read source files (parallel, up to 12 reads)
 
 Run all reads in parallel.
+
+**AI Buildout Stack** (`Investing/Wiki/Reference/AI Buildout Stack.md`) — **canonical taxonomy**:
+- Parse the fenced ```json block. Copy it verbatim into the `const STACK = {…}` object in `index.html` (layers, connectors, rails).
+- Each sub-box's `slug` + `tier` must match a sector/tier in `DATA.sectors` (below) so the drill-down resolves. If a referenced tier is missing, fix the slug/tier in `AI Buildout Stack.md` — do not invent tiers.
+- `chips[]` are ticker symbols; they need not all be onboarded (candidates render and degrade gracefully to a "run /add-ticker" notice).
 
 **Technology Preferences** (`Investing/Wiki/Reference/Technology Preferences.md`):
 - Find all `## Sector Group: [Name]` headings → track `current_group`
@@ -54,9 +61,12 @@ Run all reads in parallel.
 - Keep only rows where `chokepoint === "Y"` (after normalizing "Yes" → "Y")
 - Deduplicate by `(from, to)` sector pair — keep first occurrence
 
-### Phase 2 — Update DATA in index.html
+### Phase 2 — Update STACK + DATA in index.html
 
-Read `Investing/Output/Dashboard/index.html`. Locate the line starting with `const DATA = {` and replace the entire `DATA` object (through the matching closing `};`) with the newly assembled object:
+Read `Investing/Output/Dashboard/index.html`.
+
+1. Locate `const STACK = {` and replace the entire object (through its matching closing `};`) with the JSON parsed from `AI Buildout Stack.md` (rename JSON keys are already JS-compatible — paste as-is, dropping the outer `generated` field which lives on `DATA`).
+2. Locate `const DATA = {` and replace the entire `DATA` object (through the matching closing `};`) with the newly assembled object:
 
 ```javascript
 const DATA = {

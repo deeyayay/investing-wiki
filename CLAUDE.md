@@ -18,7 +18,8 @@ Investing/
       Monitor Registry.yaml        ← master ticker index (machine-readable YAML)
       Sentiment Index.md           ← aggregated sentiment tracking
       Watchlist.md                 ← core holdings + speculative + compounders
-      Dimension Map.md             ← D1–D5 taxonomy: sector → dimension → status
+      AI Buildout Stack.md         ← canonical 12-layer taxonomy + dashboard JSON
+      Dimension Map.md             ← sector registry, folder slugs, D1–D5 → layer crosswalk
       Ecosystem Interrelationships.md ← cross-sector dependency graph
       _facts-template.md           ← Layer 1 template (YAML frontmatter schema)
       _analysis-template.md        ← Layer 2 template (thesis + conviction)
@@ -109,22 +110,32 @@ Review Monitor Registry.yaml candidates
 - **Monitor Registry** (`Investing/Wiki/Reference/Monitor Registry.yaml`) — machine-readable YAML index. All skills read this to locate ticker folder paths. Format: `TICKER → { sector, path, score }` + `candidates:` list.
 - **Sentiment Index** (`Investing/Wiki/Reference/Sentiment Index.md`) — social signal counts and recency by ticker.
 - **Watchlist** (`Investing/Wiki/Reference/Watchlist.md`) — curated view of holdings, rockets, and compounders with one-line theses.
-- **Dimension Map** (`Investing/Wiki/Reference/Dimension Map.md`) — D1–D5 taxonomy, sector slugs, and supply chain map status per sector.
+- **AI Buildout Stack** (`Investing/Wiki/Reference/AI Buildout Stack.md`) — canonical 12-layer taxonomy (Application → Critical Minerals) + 4 rails. Holds the machine-readable JSON that `/daily-dashboard` renders as the vertical stack map.
+- **Dimension Map** (`Investing/Wiki/Reference/Dimension Map.md`) — sector registry, folder slugs, supply chain map status, and the legacy D1–D5 → layer crosswalk.
 - **Ecosystem Interrelationships** (`Investing/Wiki/Reference/Ecosystem Interrelationships.md`) — cross-sector dependency graph. Source of truth for flow diagram rendering and multi-sector signal propagation.
 
-## Sector Taxonomy (Five-Dimension Stack)
+## Taxonomy (12-Layer AI Buildout Stack)
 
-Sectors are organized into a D1–D5 vertical stack. See `Investing/Wiki/Reference/Dimension Map.md` for the authoritative registry with status per sector.
+The AI buildout is modeled as a **single vertical dependency stack** — 12 layers from Application (top) down to Critical Minerals (bedrock) — plus 4 cross-cutting rails. Each layer *runs on* the layer below it. See `Investing/Wiki/Reference/AI Buildout Stack.md` for the authoritative layer definitions + the machine-readable JSON the dashboard consumes.
 
 ```
-D5 — AI Applications:    Robotics & Edge AI · Fintech & Commerce AI · Defense & Space (planned)
-D4 — AI Enablement:      Cybersecurity · Data & Software Platforms (planned)
-D3 — AI Infrastructure:  Compute Infrastructure (folder: AI Infrastructure) · Energy & Power (folder: Clean Energy)
-D2 — AI Connectivity:    Photonics & Optical · Space & Communications (folder: Space & Comms)
-D1 — AI Mfg Base:        Semiconductors · Electronic Components (planned) · Materials & Mining (folder: Metals & Mining)
+L01 Application              ← AI-native apps (fintech · commerce · agents)
+L02 AI Model                 ← foundation models · alignment · training data
+L03 Software Infrastructure  ← orchestration · serving · MLOps · APIs
+L04 Cloud Infrastructure     ← hyperscalers · neoclouds · colocation · storage
+L05 Compute Hardware         ← GPUs · custom ASICs · CPUs · design IP
+L06 Memory                   ← HBM · DRAM · NAND
+L07 Interconnect             ← networking silicon · optics · SerDes · fiber
+L08 Advanced Packaging       ← CoWoS · stacking · IC substrates
+L09 Semiconductor Foundry    ← leading-edge & specialty wafer fab
+L10 Semiconductor Equipment  ← litho · deposition/etch · metrology · test
+L11 Semiconductor Materials  ← wafers · photoresist · chemicals · substrates
+L12 Critical Minerals        ← mined & refined inputs (bedrock)
+
+Rails:  Power Infrastructure (left) · Thermal · Security · Edge & Physical AI (right)
 ```
 
-**Folder slugs are unchanged** — display names differ from folder names for some sectors (e.g., "Compute Infrastructure" maps to `AI Infrastructure/`). The Dimension Map is the source of truth for slug ↔ display name mapping.
+**Sectors → layers:** the 11 sector folders are unchanged — they remain the physical home of each ticker (keyed in `Monitor Registry.yaml`). Layers are the canonical *organizing/navigation* structure; each layer sub-box maps to one `(sector, tier)`. The legacy **D1–D5 dimension codes are superseded** but crosswalk cleanly to layers — see `Dimension Map.md`, which now holds the sector registry + slug↔display-name mapping + the D1–D5 → layer crosswalk.
 
 ## Notes
 
