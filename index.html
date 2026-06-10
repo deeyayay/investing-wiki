@@ -28,8 +28,11 @@ body{background:var(--bg);color:var(--text);font:14px/1.5 system-ui,sans-serif}
 .tier-badge{font-size:10px;background:var(--bg3);padding:2px 7px;border-radius:99px;color:var(--muted)}
 .choke-dot{width:7px;height:7px;border-radius:50%;background:var(--amber);display:inline-block}
 .empty-dim{color:var(--muted);font-size:12px;padding:8px 0;font-style:italic}
-.breadcrumb{font-size:12px;color:var(--muted);margin-bottom:28px;cursor:pointer;display:inline-block;padding:4px 0}
-.breadcrumb:hover{color:var(--text)}
+.breadcrumb{font-size:12px;color:var(--muted);margin-bottom:28px;display:flex;align-items:center;gap:7px;flex-wrap:wrap;padding:4px 0}
+.crumb-link{cursor:pointer;color:var(--muted);transition:color .12s}
+.crumb-link:hover{color:var(--text);text-decoration:underline}
+.crumb-sep{color:var(--border);font-size:12px}
+.crumb-cur{color:var(--text);font-weight:600}
 .sector-hdr{display:flex;align-items:center;gap:12px;margin-bottom:16px}
 .sector-title{font-size:22px;font-weight:700}
 .sector-desc-full{color:var(--muted);font-size:13px;margin-bottom:12px}
@@ -702,6 +705,9 @@ const DIMS=["D1","D2","D3","D4","D5"];
 let activeSector=null;
 let activeTierIdx=null;
 let _raceOrigin=null;
+let _fromStack=false;
+// Open a ticker straight from a stack/rail chip — breadcrumb returns to the stack, not a tier.
+function openStackTicker(tk,sName){_raceOrigin=null;_fromStack=true;activeSector=null;activeTierIdx=null;openTicker(tk,sName);}
 
 const SECTOR_FOLDER={"Compute Infrastructure":"AI Infrastructure","Energy & Power":"Clean Energy","Materials & Mining":"Metals & Mining","Space & Communications":"Space & Comms","Fintech & Commerce AI":"Fintech & E-Commerce"};
 function rawGithubUrl(sName,ticker,legacy){const f=SECTOR_FOLDER[sName]||sName;const base="https://raw.githubusercontent.com/deeyayay/investing-wiki/master/Investing/Wiki/Sectors/"+encodeURIComponent(f)+"/";return legacy?base+ticker+".md":base+encodeURIComponent(ticker)+"/analysis.md";}
@@ -819,7 +825,7 @@ function _tierLookup(slug,tierName){
 function _chipHtml(tk,fallbackSector){
   const info=TICKER_MAP[tk];
   const sName=(info&&info.sectorName)||fallbackSector||"";
-  return '<span class="chip" onclick="event.stopPropagation();openTicker(\''+tk+'\',\''+sName.replace(/'/g,"\\'")+'\')">'+esc(tk)+'</span>';
+  return '<span class="chip" onclick="event.stopPropagation();openStackTicker(\''+tk+'\',\''+sName.replace(/'/g,"\\'")+'\')">'+esc(tk)+'</span>';
 }
 function _railHtml(rail){
   const groups=rail.groups.map(g=>
@@ -899,7 +905,7 @@ function renderL1(){
       +"</div></div>";
   }).join("");
   document.getElementById("l1").innerHTML=
-    "<div class=\"breadcrumb\" onclick=\"showLayer(0)\">← Ecosystem</div>"
+    crumbTrail([{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:s.name}])
     +"<div class=\"sector-hdr\">"
     +"<span class=\"dim-pill "+s.dimension+"\">"+s.dimension+"</span>"
     +"<span class=\"sector-title\">"+s.name+"</span>"
@@ -931,7 +937,7 @@ function openTier(idx){
       }).join("")+"</div>"
     :"";
   document.getElementById("l2").innerHTML=
-    "<div class=\"breadcrumb\" onclick=\"openSector('"+s.slug+"')\">← "+s.name+"</div>"
+    crumbTrail([{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:s.name,fn:"openSector('"+s.slug+"')"},{label:t.tier}])
     +"<div class=\"tier-detail-name\">"+t.tier+"</div>"
     +"<div class=\"tier-fn-full\">"+t.fn+"</div>"
     +chokeBlock
@@ -977,11 +983,18 @@ function renderL3(ticker,sName){
     ?parseWiki(md)
     :'<div class="wiki-empty">No wiki page for '+ticker+' yet.<br>Run <code>/add-ticker '+ticker+'</code> to create one.</div>';
   const fromRace=_raceOrigin;_raceOrigin=null;
+  const fromStack=_fromStack;_fromStack=false;
   if(fromRace)document.querySelectorAll(".tab-btn").forEach(b=>b.classList.toggle("active",b.dataset.tab==="tech-races"));
-  const tierName=fromRace?fromRace.name:(activeSector&&activeTierIdx!==null?activeSector.tiers[activeTierIdx].tier:sName);
-  const backFn=fromRace?"openRace('"+fromRace.id+"')":'openTier('+activeTierIdx+')';
+  let crumbs;
+  if(fromRace){
+    crumbs=crumbTrail([{label:"Tech Races",fn:"showTab('tech-races')"},{label:fromRace.name,fn:"openRace('"+fromRace.id+"')"},{label:ticker}]);
+  }else if(fromStack||!activeSector||activeTierIdx===null){
+    crumbs=crumbTrail([{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:ticker}]);
+  }else{
+    crumbs=crumbTrail([{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:activeSector.name,fn:"openSector('"+activeSector.slug+"')"},{label:activeSector.tiers[activeTierIdx].tier,fn:"openTier("+activeTierIdx+")"},{label:ticker}]);
+  }
   document.getElementById("l3").innerHTML=
-    '<div class="breadcrumb" onclick="'+backFn+'">← '+esc(tierName)+'</div>'
+    crumbs
     +'<div class="ticker-hdr">'
     +'<span class="ticker-sym">'+esc(ticker)+'</span>'
     +'<span class="ticker-fullname">'+esc(c.name)+'</span>'
@@ -995,6 +1008,15 @@ function renderL3(ticker,sName){
 }
 
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+// Hierarchical breadcrumb trail. parts: [{label, fn?}, …]; an item without fn is the current (non-clickable) crumb.
+function crumbTrail(parts){
+  return '<div class="breadcrumb">'+parts.map((p,i)=>
+    (i>0?'<span class="crumb-sep">›</span>':'')
+    +(p.fn?'<span class="crumb-link" onclick="'+p.fn+'">'+esc(p.label)+'</span>'
+          :'<span class="crumb-cur">'+esc(p.label)+'</span>')
+  ).join('')+'</div>';
+}
 
 function inlineMd(text){
   let s=esc(text);
