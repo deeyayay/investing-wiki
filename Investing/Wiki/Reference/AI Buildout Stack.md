@@ -92,15 +92,16 @@ The previous five-dimension stack is superseded but maps cleanly onto the layers
     {"num":"07","name":"Interconnect","hue":42,"tag":"compute & memory need to talk","boxes":[
       {"label":"Networking Silicon & Switches","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"High-Speed Networking","chips":["ANET","AVGO","MRVL"]},
       {"label":"Optical Transceivers","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Transceiver & Module Integration","chips":["COHR","LITE","FN","AAOI"]},
-      {"label":"SerDes · Retimers · Cables","sector":"Semiconductors","slug":"semiconductors","tier":"Chip Design (Fabless & IDM)","chips":["CRDO","ALAB"]},
+      {"label":"SerDes · Retimers · Cables","sector":"Semiconductors","slug":"semiconductors","tier":"Interconnect & SerDes Silicon","chips":["CRDO","ALAB"]},
       {"label":"Fiber & Coherent Line Systems","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Coherent Line Systems & ROADM","chips":["CIEN","GLW"]}
     ]},
     {"num":"08","name":"Advanced Packaging","hue":150,"tag":"CoWoS · stacking · substrates","boxes":[
-      {"label":"CoWoS / Advanced Packaging","sector":"Semiconductors","slug":"semiconductors","tier":"Packaging (OSAT & Advanced)","chips":["TSM","AMKR","ASX"],"choke":true},
+      {"label":"CoWoS / Advanced Packaging","sector":"Semiconductors","slug":"semiconductors","tier":"Advanced Packaging (CoWoS / SoIC)","chips":["TSM","AMKR"]},
       {"label":"IC Substrates (ABF)","sector":"Electronic Components","slug":"electronic-components","tier":"IC Substrate Manufacturing","chips":[],"choke":true}
     ]},
     {"num":"09","name":"Semiconductor Foundry","hue":162,"tag":"where the dies are made","boxes":[
-      {"label":"Leading-Edge & Specialty Logic","sector":"Semiconductors","slug":"semiconductors","tier":"Wafer Fabrication (Foundry / IDM)","chips":["TSM","INTC","GFS"]}
+      {"label":"Leading-Edge & Specialty Logic","sector":"Semiconductors","slug":"semiconductors","tier":"Wafer Fabrication (Foundry / IDM)","chips":["TSM","INTC","GFS"]},
+      {"label":"OSAT (Assembly & Test)","sector":"Semiconductors","slug":"semiconductors","tier":"OSAT — Assembly & Test","chips":["ASX","AMKR"]}
     ]},
     {"num":"10","name":"Semiconductor Equipment","hue":192,"tag":"the tools that build the chips","boxes":[
       {"label":"Lithography","sector":"Semiconductors","slug":"semiconductors","tier":"Lithography Equipment","chips":["ASML"]},
