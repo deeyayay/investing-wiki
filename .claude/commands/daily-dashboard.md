@@ -1,15 +1,16 @@
 # Daily Dashboard — AI Buildout Stack Viewer
 
-Deploys the dashboard to GitHub Pages via `gh-pages`. The HTML lives in `Investing/Output/Dashboard/index.html`. It embeds two objects:
-- **`STACK`** — the canonical 12-layer vertical map (Application → Critical Minerals) + 4 rails, rendered as the homepage. Source of truth: the JSON block in `Investing/Wiki/Reference/AI Buildout Stack.md`.
-- **`DATA`** — the per-sector tier/company backbone (`sectors`, `tech_races`) used by the drill-down, ticker-wiki, and search. Each `STACK` sub-box maps to a `(sector, tier)` in `DATA.sectors`.
+Deploys the dashboard to GitHub Pages via `gh-pages`. The HTML lives in `Investing/Output/Dashboard/index.html`. It loads two companion JSON files at runtime:
+- **`data.json`** — the per-sector tier/company backbone (`sectors`, `edges`, `tech_races`) + the canonical 12-layer STACK (`stack.layers`, `stack.rails`). Updated by `--refresh-data`.
+- **`scores.json`** — per-ticker scoring API (`fundamental`, `advisory` namespaces). Updated by `--refresh-scores`.
 
 **Dashboard URL:** `https://deeyayay.github.io/investing-wiki/`
 *GitHub Pages watches `gh-pages` — every push auto-deploys within ~1 minute.*
 
 **Flags:**
-- *(none)* — deploy existing `index.html` to gh-pages as-is
-- `--refresh-data` — re-read source files, update the `DATA` block in `index.html`, then deploy
+- *(none)* — deploy existing `index.html` + `data.json` + `scores.json` to gh-pages as-is
+- `--refresh-data` — re-read structural source files, write `data.json`, then deploy (~15K tokens)
+- `--refresh-scores` — re-read Monitor Registry + scored analysis.md files, write `scores.json`, then deploy (~8–12K tokens)
 - `--no-push` — write changes locally only, skip deployment
 
 ---
@@ -27,8 +28,8 @@ Run the deploy steps in Phase 3. No file reads needed.
 Run all reads in parallel.
 
 **AI Buildout Stack** (`Investing/Wiki/Reference/AI Buildout Stack.md`) — **canonical taxonomy**:
-- Parse the fenced ```json block. Copy it verbatim into the `const STACK = {…}` object in `index.html` (layers, connectors, rails).
-- Each sub-box's `slug` + `tier` must match a sector/tier in `DATA.sectors` (below) so the drill-down resolves. If a referenced tier is missing, fix the slug/tier in `AI Buildout Stack.md` — do not invent tiers.
+- Parse the fenced ```json block. This is the `stack` key in `data.json` (layers + rails + connectors).
+- Each sub-box's `slug` + `tier` must match a sector/tier in `data.json`'s `sectors` array so the drill-down resolves. If a referenced tier is missing, fix the slug/tier in `AI Buildout Stack.md` — do not invent tiers.
 - `chips[]` are ticker symbols; they need not all be onboarded (candidates render and degrade gracefully to a "run /add-ticker" notice).
 
 **Technology Preferences** (`Investing/Wiki/Reference/Technology Preferences.md`):
@@ -45,7 +46,7 @@ Run all reads in parallel.
   - `consensus_gap` — rows from the table below `#### Consensus vs. Reality Gap` as `[[belief, reality], ...]`
   - `bull_case` — bullet items below `#### Bull Case` as `["...", ...]`
   - `bear_risk` — bullet items below `#### Bear / Risk` as `["...", ...]`
-- Add `tech_races: [...]` to the DATA object alongside `sectors` and `edges`
+- Add `tech_races: [...]` to the data.json object alongside `sectors` and `edges`
 
 **Dimension Map** (`Investing/Wiki/Reference/Dimension Map.md`):
 - Extract: `name`, `dimension` (D1–D5), `folder` slug, `status`
@@ -61,65 +62,90 @@ Run all reads in parallel.
 - Keep only rows where `chokepoint === "Y"` (after normalizing "Yes" → "Y")
 - Deduplicate by `(from, to)` sector pair — keep first occurrence
 
-### Phase 2 — Update STACK + DATA in index.html
+### Phase 2 — Write data.json
 
-Read `Investing/Output/Dashboard/index.html`.
+Assemble the data object and write to `Investing/Output/Dashboard/data.json`:
 
-1. Locate `const STACK = {` and replace the entire object (through its matching closing `};`) with the JSON parsed from `AI Buildout Stack.md` (rename JSON keys are already JS-compatible — paste as-is, dropping the outer `generated` field which lives on `DATA`).
-2. Locate `const DATA = {` and replace the entire `DATA` object (through the matching closing `};`) with the newly assembled object:
-
-```javascript
-const DATA = {
-  generated: "YYYY-MM-DD",
-  sectors: [
-    { slug: "semiconductors", name: "Semiconductors", dimension: "D1",
-      tiers: [
-        { tier: "Silicon Wafer Production", chokepoint: "Y" },
-        // ...
+```json
+{
+  "generated": "YYYY-MM-DD",
+  "sectors": [
+    { "slug": "semiconductors", "name": "Semiconductors", "dimension": "D1",
+      "tiers": [
+        { "tier": "Silicon Wafer Production", "chokepoint": "Y", "companies": [...] }
       ]
-    },
-    // one entry per active sector, D1→D5 order
-  ],
-  edges: [
-    { from: "Materials & Mining", from_tier: "Silicon Refining",
-      to: "Semiconductors", to_tier: "Wafer Production",
-      flow: "Material", product: "Polysilicon → silicon wafer", chokepoint: "Y" },
-    // ~12 Y-chokepoint edges
-  ],
-  tech_races: [
-    { id: "nand-vs-hbm4", name: "NAND vs. HBM4", sector_group: "AI Ecosystem",
-      preference: "NAND over HBM4 for the agentic AI demand wave",
-      conviction: "High", last_validated: "YYYY-MM-DD", status: "Active",
-      tickers: [
-        { ticker: "SNDK", technology: "NAND Flash", exposure: "Primary", weighting: "Overweight vs. memory peers" }
-        // ... one entry per row in the Ticker Exposure Map table
-      ],
-      application_driver: "...",  // paragraph text from Application-Layer Driver section
-      consensus_gap: [["Market belief", "Reality"], ...],  // rows from table
-      bull_case: ["bullet 1", "bullet 2", ...],
-      bear_risk: ["bullet 1", "bullet 2", ...]
     }
-    // ... one entry per ### Race block in Technology Preferences.md
-  ]
-};
+  ],
+  "edges": [
+    { "from": "Materials & Mining", "from_tier": "Silicon Refining",
+      "to": "Semiconductors", "to_tier": "Wafer Production",
+      "flow": "Material", "product": "Polysilicon → silicon wafer", "chokepoint": "Y" }
+  ],
+  "tech_races": [
+    { "id": "nand-vs-hbm4", "name": "NAND vs. HBM4", "sector_group": "AI Ecosystem",
+      "preference": "...", "conviction": "High", "last_validated": "YYYY-MM-DD",
+      "status": "Active", "tickers": [...], "application_driver": "...",
+      "consensus_gap": [...], "bull_case": [...], "bear_risk": [...] }
+  ],
+  "stack": {
+    "layers": [...],
+    "rails": [...],
+    "connectors": [...]
+  }
+}
 ```
 
 Slug format: lowercase, spaces and `&` → `-`, strip non-alphanumeric. E.g. `"Photonics & Optical"` → `"photonics-optical"`.
 
-Write the updated file back to `Investing/Output/Dashboard/index.html` and copy to `Investing/Output/Dashboard/[DATE].html`.
+Also copy to `Investing/Output/Dashboard/[DATE]-data.json` for archival.
+
+Do **not** modify `index.html` — it is a static shell that fetches `data.json` at runtime.
+
+---
+
+## `--refresh-scores` path
+
+Token-efficient scoring update (~8–12K tokens). Reads Monitor Registry + scored analysis.md files only. Does **not** read structural source files.
+
+### Phase 1 — Read sources (parallel)
+
+1. `Investing/Wiki/Reference/Monitor Registry.yaml` — all active tickers + their `score`, `path`, `sector`, `next_earnings`
+2. For each ticker where `score` is not null: read `[path]/analysis.md` and extract:
+   - `## Scoring Summary` table → per-criterion scores (P, PP, L, FH, ME, FP), composite, label
+   - `## One-Line Thesis` → `one_line_thesis`
+   - `## Analyst Coverage` → current price, analyst PT, upside %, valuation label
+   - `## Catalyst Timeline` → next 1–2 bullet items as `near_term_catalysts[]`
+   - Check `score_history` in facts.md YAML if available
+
+For legacy single-file tickers (no three-layer structure), read `[TICKER].md` instead of `analysis.md`.
+
+### Phase 2 — Build scores.json
+
+Assemble using the schema in `scores.json` (schema_version "1"). Derive `dominance` automatically:
+- 1 company in tier → `"Monopoly"`
+- 2 companies in tier → `"Duopoly"`
+- 3+ companies with notes containing "only company", "dominant", "largest", "#1", "leads", "monopoly" → `"Leader"`
+- 3+ otherwise → `"Contested"`
+
+Set `growth_flag: true` when `criteria.future_potential >= 4`.
+
+Write to `Investing/Output/Dashboard/scores.json`. Do **not** modify `index.html` or `data.json`.
 
 ---
 
 ## Phase 3 — Deploy to gh-pages
 
 ```bash
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
 git fetch origin gh-pages
 git checkout gh-pages
-git show [CURRENT_BRANCH]:Investing/Output/Dashboard/index.html > index.html
-git add index.html
+git show $BRANCH:Investing/Output/Dashboard/index.html > index.html
+git show $BRANCH:Investing/Output/Dashboard/data.json > data.json
+git show $BRANCH:Investing/Output/Dashboard/scores.json > scores.json
+git add index.html data.json scores.json
 git commit -m "Deploy ecosystem map [DATE]"
 git push -u origin gh-pages
-git checkout [CURRENT_BRANCH]
+git checkout $BRANCH
 ```
 
 If `--no-push` is set, stop before these steps.
