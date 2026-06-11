@@ -234,6 +234,53 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 .layer-pill{font-size:11px;font-weight:700;padding:3px 10px;border-radius:99px;background:oklch(90% .09 var(--lh,250));color:oklch(32% .14 var(--lh,250));letter-spacing:.02em}
 .sector-tag{font-size:11px;padding:3px 10px;border-radius:99px;background:var(--bg3);color:var(--muted)}
 @media(max-width:600px){.layer-box-grid{grid-template-columns:1fr}}
+/* ── Score-enhanced chips ── */
+.chip.sc-ur{background:oklch(90% .09 142);color:oklch(28% .18 142)}
+.chip.sc-st{background:oklch(90% .09 258);color:oklch(28% .13 258)}
+.chip.sc-av{background:oklch(93% .09 62);color:oklch(40% .15 55)}
+.chip.sc-re{background:oklch(91% .08 25);color:oklch(35% .14 25)}
+.chip-score{font-size:8.5px;font-weight:800;margin-left:3px;opacity:.9;vertical-align:middle}
+.chip-growth{font-size:8px;margin-left:1px;vertical-align:middle}
+/* ── Conviction board (L2) ── */
+.conv-board{margin-top:32px}
+.conv-board-hdr{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:0;display:flex;align-items:center;gap:8px;padding-bottom:9px;border-bottom:2px solid var(--border)}
+.conv-row{display:grid;grid-template-columns:28px 1fr auto;gap:12px;padding:14px 0;border-bottom:1px solid var(--border);align-items:start}
+.conv-row:last-child{border-bottom:none}
+.conv-rank{font-size:11px;font-weight:800;color:var(--muted);text-align:center;padding-top:3px;font-family:ui-monospace,monospace}
+.conv-body{min-width:0}
+.conv-header{display:flex;align-items:center;gap:7px;margin-bottom:5px;flex-wrap:wrap}
+.conv-ticker{font-family:ui-monospace,monospace;font-weight:700;font-size:13px;cursor:pointer;color:var(--text);text-decoration:none}
+.conv-ticker:hover{color:var(--d3);text-decoration:underline}
+.conv-coname{font-size:11px;color:var(--muted)}
+.conv-thesis{font-size:12px;color:var(--muted);line-height:1.45;margin-bottom:9px;max-width:540px}
+.conv-spark{display:flex;gap:5px;align-items:flex-end}
+.spark-item{display:flex;flex-direction:column;align-items:center;gap:2px}
+.spark-bar-wrap{height:22px;width:22px;background:var(--bg3);border-radius:3px;display:flex;align-items:flex-end;overflow:hidden}
+.spark-bar{width:100%;background:var(--d3);border-radius:2px}
+.spark-label{font-size:8.5px;color:var(--muted);letter-spacing:.03em;font-weight:600}
+/* ── Score pill ── */
+.score-pill{font-size:11px;font-weight:700;padding:3px 9px;border-radius:99px;white-space:nowrap;flex-shrink:0;align-self:start;margin-top:3px}
+.score-pill.unrivaled{background:oklch(90% .10 142);color:oklch(25% .18 142)}
+.score-pill.strong{background:oklch(90% .10 258);color:oklch(25% .13 258)}
+.score-pill.average{background:var(--amber-bg);color:var(--amber)}
+.score-pill.reassess{background:oklch(91% .07 25);color:oklch(32% .14 25)}
+.score-pill.unscored{background:var(--bg3);color:var(--muted);font-weight:400}
+/* ── Dominance badge ── */
+.dom-badge{font-size:9px;font-weight:700;padding:1px 6px;border-radius:4px;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+.dom-badge.monopoly{background:oklch(89% .14 142);color:oklch(26% .18 142)}
+.dom-badge.duopoly{background:oklch(90% .10 258);color:oklch(26% .13 258)}
+.dom-badge.leader{background:var(--amber-bg);color:var(--amber)}
+.dom-badge.contested{background:var(--bg3);color:var(--muted)}
+/* ── Growth flag ── */
+.growth-flag{font-size:9px;color:oklch(28% .18 142);background:oklch(92% .09 142);padding:1px 5px;border-radius:4px;font-weight:700}
+/* ── Earnings strip ── */
+#earnings-strip{background:var(--amber-bg);border-bottom:1px solid oklch(82% .12 62);padding:7px 24px;display:flex;align-items:center;gap:16px;overflow-x:auto}
+.es-label{font-size:10px;font-weight:700;color:var(--amber);flex-shrink:0;text-transform:uppercase;letter-spacing:.05em}
+.es-items{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.es-item{font-size:11px;display:flex;align-items:center;gap:4px}
+.es-ticker{font-family:ui-monospace,monospace;font-weight:700;font-size:11px;color:var(--text)}
+.es-date{color:var(--muted);font-size:10px}
+@media(max-width:600px){.conv-row{grid-template-columns:20px 1fr auto}#earnings-strip{padding:6px 16px}}
 </style>
 </head>
 <body>
@@ -298,7 +345,17 @@ function _chipHtml(tk,fallbackSector,ctxLabel,ctxFn){
   const info=TICKER_MAP[tk];
   const sName=((info&&info.sectorName)||fallbackSector||"").replace(/'/g,"\\'");
   const args="'"+tk+"','"+sName+"'"+(ctxLabel?",'"+String(ctxLabel).replace(/'/g,"\\'")+"','"+String(ctxFn||"").replace(/'/g,"\\'")+"'":"");
-  return '<span class="chip" onclick="event.stopPropagation();openStackTicker('+args+')">'+esc(tk)+'</span>';
+  let cls='chip', extra='';
+  if(SCORES){
+    const td=SCORES.tickers[tk];
+    if(td&&td.fundamental.score!==null){
+      const lbl=td.fundamental.score_label;
+      cls+=(lbl==='Unrivaled'?' sc-ur':lbl==='Strong'?' sc-st':lbl==='Average'?' sc-av':' sc-re');
+      extra='<span class="chip-score">'+td.fundamental.score+'</span>';
+      if(td.fundamental.growth_flag)extra+='<span class="chip-growth">▲</span>';
+    }
+  }
+  return '<span class="'+cls+'" onclick="event.stopPropagation();openStackTicker('+args+')">'+esc(tk)+extra+'</span>';
 }
 function _railHtml(rail){
   const groups=rail.groups.map(g=>
@@ -387,6 +444,71 @@ function renderLayerView(i){
     +'<div class="layer-box-grid">'+cards+'</div>';
 }
 
+const _CRIT_KEYS=['product','pricing_power','leadership','financial_health','macro','future_potential'];
+const _CRIT_LBL=['P','PP','L','FH','ME','FP'];
+function _scorePillCls(lbl){return lbl==='Unrivaled'?'unrivaled':lbl==='Strong'?'strong':lbl==='Average'?'average':'reassess';}
+function _sparkBars(criteria){
+  if(!criteria)return'';
+  return'<div class="conv-spark">'+_CRIT_KEYS.map((k,i)=>{
+    const v=criteria[k]||0;
+    const h=(v/5*100).toFixed(0);
+    return'<div class="spark-item"><div class="spark-bar-wrap"><div class="spark-bar" style="height:'+h+'%"></div></div><div class="spark-label">'+_CRIT_LBL[i]+'</div></div>';
+  }).join('')+'</div>';
+}
+function _domBadge(td){
+  const tp=td&&td.fundamental&&td.fundamental.tier_positions;
+  if(!tp||!tp.length)return'';
+  const dom=(tp[0].dominance||'').toLowerCase();
+  if(!dom)return'';
+  return'<span class="dom-badge '+dom+'">'+esc(tp[0].dominance)+'</span>';
+}
+function _buildTierConvictionBoard(companies,sector){
+  const scored=[],unscored=[];
+  companies.forEach(c=>{
+    const td=SCORES&&SCORES.tickers[c.ticker];
+    if(td&&td.fundamental.score!==null)scored.push({co:c,td});
+    else unscored.push({co:c});
+  });
+  scored.sort((a,b)=>b.td.fundamental.score-a.td.fundamental.score);
+  const sn=sector.name.replace(/'/g,"\\'");
+  let rows='';
+  scored.forEach(({co,td},rank)=>{
+    const f=td.fundamental;
+    const thesis=f.one_line_thesis||co.notes||'';
+    rows+='<div class="conv-row">'
+      +'<div class="conv-rank">#'+(rank+1)+'</div>'
+      +'<div class="conv-body">'
+      +'<div class="conv-header">'
+      +'<span class="conv-ticker" onclick="openTicker(\''+co.ticker+'\',\''+sn+'\')">'+esc(co.ticker)+'</span>'
+      +'<span class="conv-coname">'+esc(co.name)+'</span>'
+      +_domBadge(td)
+      +(f.growth_flag?'<span class="growth-flag">▲ Growth</span>':'')
+      +'</div>'
+      +'<div class="conv-thesis">'+esc(thesis)+'</div>'
+      +_sparkBars(f.criteria)
+      +'</div>'
+      +'<div class="score-pill '+_scorePillCls(f.score_label)+'">'+f.score+'</div>'
+      +'</div>';
+  });
+  unscored.forEach(({co})=>{
+    rows+='<div class="conv-row">'
+      +'<div class="conv-rank" style="opacity:.4">—</div>'
+      +'<div class="conv-body">'
+      +'<div class="conv-header">'
+      +'<span class="conv-ticker" onclick="openTicker(\''+co.ticker+'\',\''+sn+'\')">'+esc(co.ticker)+'</span>'
+      +'<span class="conv-coname">'+esc(co.name)+'</span>'
+      +'</div>'
+      +'<div class="conv-thesis">'+esc(co.notes||'')+'</div>'
+      +'</div>'
+      +'<div class="score-pill unscored">Unscored</div>'
+      +'</div>';
+  });
+  const countBadge='<span class="co-count">'+scored.length+'/'+companies.length+' scored</span>';
+  return'<div class="conv-board"><div class="conv-board-hdr">Company Conviction Board '+countBadge+'</div>'
+    +(rows||'<div class="empty-dim" style="padding:16px 0">No companies tracked yet</div>')
+    +'</div>';
+}
+
 function openTier(idx){
   activeTierIdx=idx;
   const s=activeSector;
@@ -397,16 +519,7 @@ function openTier(idx){
     ?"<div class=\"choke-box-partial\"><p>⧫ Partial chokepoint — some alternatives exist, but switching carries meaningful cost or lead time.</p></div>"
     :"";
   const coBlock=t.companies&&t.companies.length>0
-    ?"<div class=\"co-section\"><h3>Tracked Companies</h3>"
-      +t.companies.map(c=>{
-        const cc=c.mkt_cap==="Large"?"large":c.mkt_cap==="Mid"?"mid":"small";
-        const cl=c.mkt_cap==="Large"?"Large cap":c.mkt_cap==="Mid"?"Mid cap":"Small cap";
-        return "<div class=\"co-card\">"
-          +"<div class=\"co-header\"><a class=\"co-ticker\" href=\"#\" onclick=\"openTicker('"+c.ticker+"','"+s.name+"');return false\">"+c.ticker+"</a>"
-          +"<span class=\"co-name\">"+c.name+"</span>"
-          +"<span class=\"co-cap "+cc+"\">"+cl+"</span></div>"
-          +"<div class=\"co-notes\">"+c.notes+"</div></div>";
-      }).join("")+"</div>"
+    ?_buildTierConvictionBoard(t.companies,s)
     :"";
   const li=activeLayerIdx;
   const trail=(li!==null&&li!==undefined)
@@ -593,6 +706,33 @@ async function init() {
   STACK.layers.forEach((L,i)=>L.boxes.forEach(b=>{_tierLayer[b.slug+'|'+b.tier]=i;}));
   DATA.sectors.forEach(s=>s.tiers.forEach(t=>(t.companies||[]).forEach(c=>{TICKER_MAP[c.ticker]={...c,sectorName:s.name};})));
   renderL0();
+  _renderEarningsStrip();
+}
+
+function _renderEarningsStrip(){
+  if(!SCORES)return;
+  const today=new Date();today.setHours(0,0,0,0);
+  const cutoff=new Date(today.getTime()+14*24*60*60*1000);
+  const upcoming=Object.entries(SCORES.tickers)
+    .filter(([,td])=>{
+      const ne=td.advisory&&td.advisory.next_earnings;
+      if(!ne)return false;
+      const d=new Date(ne);
+      return d>=today&&d<=cutoff;
+    })
+    .map(([tk,td])=>({ticker:tk,date:td.advisory.next_earnings}))
+    .sort((a,b)=>new Date(a.date)-new Date(b.date));
+  if(!upcoming.length)return;
+  const items=upcoming.map(e=>{
+    const d=new Date(e.date+'T12:00:00');
+    const ds=d.toLocaleDateString('en-US',{month:'short',day:'numeric'});
+    return'<span class="es-item"><span class="es-ticker">'+esc(e.ticker)+'</span><span class="es-date">'+ds+'</span></span>';
+  }).join('');
+  const strip=document.createElement('div');
+  strip.id='earnings-strip';
+  strip.innerHTML='<span class="es-label">Upcoming earnings</span><div class="es-items">'+items+'</div>';
+  const tabNav=document.getElementById('tab-nav');
+  tabNav.parentNode.insertBefore(strip,tabNav.nextSibling);
 }
 
 init();
