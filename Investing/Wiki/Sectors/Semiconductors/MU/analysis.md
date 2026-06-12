@@ -24,17 +24,19 @@ Risks center on NVIDIA GPU demand cycles, yield ramp execution, and potential su
 
 ## Scoring Summary
 
-_Last scored: [pending /score-ticker MU]_
+_Last scored: 2026-06-12_
 
 | Criterion | Score | Evidence |
 |-----------|-------|----------|
-| Product (Love Factor) | — | [pending] |
-| Pricing Power | — | [pending] |
-| Leadership & Alignment | — | [pending] |
-| Financial Health | — | [pending] |
-| Macro Environment | — | [pending] |
-| Future Potential | — | [pending] |
-| **Composite** | **—** | **[pending]** |
+| Product (Love Factor) | 5/5 | Only US-based HBM maker; NVIDIA-qualified sole-source; no domestic substitute; switching prohibitively costly |
+| Pricing Power | 4/5 | HBM ASPs structurally rising; GM expanding from 38%; moat-driven pricing; legacy DRAM/NAND commodity exposure caps from 5 |
+| Leadership & Alignment | 3/5 | Mehrotra long-tenured and credible; insider ownership very low (0.1%); competent but not founder-led |
+| Financial Health | 4/5 | $21.4B revenue; GM expanding; P/E 6.5x implies FCF positive; disciplined capex; not full fortress due to capex intensity |
+| Macro Environment | 5/5 | Multiple converging secular tailwinds: AI GPU ramp, HBM content/GPU rising, US national security preference, hyperscaler diversification; 5+ year visibility |
+| Future Potential | 4/5 | HBM4/HBM5 roadmap, NAND/DRAM adjacencies, Vera Rubin ramp; well-positioned at 2 stack layers (HBM + NAND) |
+| **Composite** | **8.5/10** | **Unrivaled** — (25/30 × 10 = 8.33 → 8.5) |
+
+Valuation: Cheap at ~$130 | P/E 6.5x | Analyst upside: 8%
 
 ## Conviction Log
 

@@ -24,17 +24,19 @@ Risks: CXL ecosystem adoption delays if hyperscalers prefer proprietary solution
 
 ## Scoring Summary
 
-_Last scored: [pending /score-ticker ALAB]_
+_Last scored: 2026-06-12_
 
 | Criterion | Score | Evidence |
 |-----------|-------|----------|
-| Product (Love Factor) | — | [pending] |
-| Pricing Power | — | [pending] |
-| Leadership & Alignment | — | [pending] |
-| Financial Health | — | [pending] |
-| Macro Environment | — | [pending] |
-| Future Potential | — | [pending] |
-| **Composite** | **—** | **[pending]** |
+| Product (Love Factor) | 5/5 | Only CXL pure-play; Leo controller in Azure production = category-defining first-mover; near-irreplaceable position in hyperscale CXL deployment |
+| Pricing Power | 4/5 | 72% GM; sole-source dynamic supports premium pricing; pre-profitability limits full confirmation of sustained pricing power |
+| Leadership & Alignment | 3/5 | Strong Broadcom/Arista pedigree; low insider ownership (0.5% CEO); limited multi-year public execution track record |
+| Financial Health | 2/5 | Pre-profitability; operating margin -45%; FCF negative; rapid revenue growth but significant cash burn; requires capital markets access |
+| Macro Environment | 5/5 | GPU memory wall is structural multi-year problem; CXL adoption curve at early inflection; 5+ year demand visibility across hyperscalers |
+| Future Potential | 5/5 | Scorpio CXL switch adds rack-level pooling; multiple hyperscalers pending; L06 Memory + L07 Interconnect exposure; multiple adjacencies showing traction |
+| **Composite** | **8.0/10** | **Unrivaled** — (24/30 × 10 = 8.0) |
+
+Valuation: Expensive at ~$355 | P/S 51x | Analyst upside: 18%
 
 ## Conviction Log
 

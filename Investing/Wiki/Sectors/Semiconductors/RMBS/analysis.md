@@ -26,17 +26,19 @@ Risks: Customer diversification (reliance on Samsung, SK Hynix, Micron); competi
 
 ## Scoring Summary
 
-_Last scored: [pending /score-ticker RMBS]_
+_Last scored: 2026-06-12_
 
 | Criterion | Score | Evidence |
 |-----------|-------|----------|
-| Product (Love Factor) | — | [pending] |
-| Pricing Power | — | [pending] |
-| Leadership & Alignment | — | [pending] |
-| Financial Health | — | [pending] |
-| Macro Environment | — | [pending] |
-| Future Potential | — | [pending] |
-| **Composite** | **—** | **[pending]** |
+| Product (Love Factor) | 5/5 | Pure IP tollbooth; DDR5 RCD mandatory in every server RDIMM; HBM4E controller IP licensed industry-wide; switching cost = rewriting server memory standards |
+| Pricing Power | 5/5 | 84% GM; royalty licensing structurally raises effective ASP as DDR5 adoption accelerates; zero fab cost inflation exposure |
+| Leadership & Alignment | 3/5 | Craig Tanner credible in industry; low insider ownership (0.1%); no founder-led signal; steady execution but limited public track record data |
+| Financial Health | 4/5 | 84% GM; $0.88B revenue growing; P/E 28x; zero fab capex = near-zero debt; FCF positive and growing; smaller scale keeps from 5 |
+| Macro Environment | 4/5 | DDR5 adoption secular; HBM content growth; CXL expansion TAM; IP licensing cycles can be lumpy (1 manageable headwind) |
+| Future Potential | 4/5 | TAM $1.4B→$14B by 2035 (29.5% CAGR); CXL controller IP new TAM; HBM4E expansion; 2-3 adjacencies with early traction |
+| **Composite** | **8.5/10** | **Unrivaled** — (25/30 × 10 = 8.33 → 8.5) |
+
+Valuation: Reasonable at ~$80 | P/E 28x | Analyst upside: 18%
 
 ## Conviction Log
 

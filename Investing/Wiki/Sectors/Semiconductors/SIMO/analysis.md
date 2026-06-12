@@ -24,17 +24,19 @@ Risks: NAND maker in-house controller development (Samsung, SK Hynix, SanDisk); 
 
 ## Scoring Summary
 
-_Last scored: [pending /score-ticker SIMO]_
+_Last scored: 2026-06-12_
 
 | Criterion | Score | Evidence |
 |-----------|-------|----------|
-| Product (Love Factor) | — | [pending] |
-| Pricing Power | — | [pending] |
-| Leadership & Alignment | — | [pending] |
-| Financial Health | — | [pending] |
-| Macro Environment | — | [pending] |
-| Future Potential | — | [pending] |
-| **Composite** | **—** | **[pending]** |
+| Product (Love Factor) | 4/5 | MonTitan is industry-first AI SSD controller; strong differentiation; alternatives exist (Phison, in-house Samsung); switching costs are meaningful |
+| Pricing Power | 3/5 | PCIe Gen5 ASP uplift supports pricing; NAND commodity cycle risk and customer concentration limit sustained pricing power to moderate |
+| Leadership & Alignment | 4/5 | Founder-led (Wallace Kou, 2.5% ownership); strong execution on MonTitan ramp; consistent product delivery track record |
+| Financial Health | 4/5 | GM expanding to 52%; EPS growing ($2.80→$3.95); P/E 18x (profitable); fabless = zero fab capex; FCF positive implied |
+| Macro Environment | 4/5 | AI inference storage secular tailwind; PCIe Gen5 adoption structural; NAND commodity cycles are 1 manageable headwind; no US national security angle |
+| Future Potential | 4/5 | MonTitan at 5 hyperscalers H2 2026; PCIe 6.0 controller roadmap; KV cache/RAG adjacency; fabless leverage; 2-3 identified adjacencies |
+| **Composite** | **7.5/10** | **Strong** — (23/30 × 10 = 7.67 → 7.5) |
+
+Valuation: Reasonable at ~$70 | P/E 18x | Analyst upside: 22%
 
 ## Conviction Log
 

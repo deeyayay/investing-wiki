@@ -18,8 +18,17 @@ moat:
   made_in_usa: true
   notes: "Mid-40% DDR5 RCD market share; HBM4E controller IP licensed to all makers; royalty model, zero fab capex"
 metrics:
-  score: null
-  last_scored: null
+  score: 8.5
+  score_label: "Unrivaled"
+  last_scored: "2026-06-12"
+  score_metrics:
+    product: 5
+    pricing_power: 5
+    leadership: 3
+    financial_health: 4
+    macro_environment: 4
+    future_potential: 4
+    composite: 8.5
   valuation_fpe: 28
   analyst_pt: 95
   analyst_upside_pct: 18

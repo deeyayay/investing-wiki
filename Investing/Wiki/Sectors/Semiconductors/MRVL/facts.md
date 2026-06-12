@@ -22,8 +22,17 @@ moat:
   made_in_usa: true
   notes: "$2B NVIDIA strategic investment; Structera CXL switch + SSD controllers; NVLink Fusion integration"
 metrics:
-  score: null
-  last_scored: null
+  score: 8.0
+  score_label: "Unrivaled"
+  last_scored: "2026-06-12"
+  score_metrics:
+    product: 4
+    pricing_power: 4
+    leadership: 3
+    financial_health: 4
+    macro_environment: 5
+    future_potential: 4
+    composite: 8.0
   valuation_fpe: 22
   analyst_pt: 115
   analyst_upside_pct: 15

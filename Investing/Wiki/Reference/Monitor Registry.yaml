@@ -8,7 +8,7 @@
 # To add a ticker: /add-ticker TICKER [--sector "Sector Name"]
 # To add a candidate: append to the sector's candidates list below.
 
-last_updated: "2026-06-09"
+last_updated: "2026-06-12"
 
 tickers:
   # ── Robotics & Edge AI ────────────────────────────────────────────────────
@@ -219,7 +219,7 @@ tickers:
     exchange: NASDAQ
     sector: Semiconductors
     path: "Investing/Wiki/Sectors/Semiconductors/MU"
-    score: null
+    score: 8.5
     next_earnings: "2026-06-24"
 
   MRVL:
@@ -228,8 +228,26 @@ tickers:
     exchange: NASDAQ
     sector: Semiconductors
     path: "Investing/Wiki/Sectors/Semiconductors/MRVL"
-    score: null
+    score: 8.0
     next_earnings: "2026-08-27"
+
+  SIMO:
+    company: "Silicon Motion Technology Corporation"
+    cik: "0001821769"
+    exchange: NASDAQ
+    sector: Semiconductors
+    path: "Investing/Wiki/Sectors/Semiconductors/SIMO"
+    score: 7.5
+    next_earnings: null
+
+  RMBS:
+    company: "Rambus Inc."
+    cik: "0000912096"
+    exchange: NASDAQ
+    sector: Semiconductors
+    path: "Investing/Wiki/Sectors/Semiconductors/RMBS"
+    score: 8.5
+    next_earnings: null
 
   AEHR:
     company: "Aehr Test Systems"
@@ -246,7 +264,7 @@ tickers:
     exchange: NASDAQ
     sector: Semiconductors
     path: "Investing/Wiki/Sectors/Semiconductors/ALAB"
-    score: null
+    score: 8.0
     next_earnings: "2026-08-11"
 
   CRDO:

@@ -26,17 +26,19 @@ Risks: CXL adoption delays if hyperscalers prefer proprietary solutions; Astera'
 
 ## Scoring Summary
 
-_Last scored: [pending /score-ticker MRVL]_
+_Last scored: 2026-06-12_
 
 | Criterion | Score | Evidence |
 |-----------|-------|----------|
-| Product (Love Factor) | — | [pending] |
-| Pricing Power | — | [pending] |
-| Leadership & Alignment | — | [pending] |
-| Financial Health | — | [pending] |
-| Macro Environment | — | [pending] |
-| Future Potential | — | [pending] |
-| **Composite** | **—** | **[pending]** |
+| Product (Love Factor) | 4/5 | Structera CXL switch + SSD controllers; $2B NVIDIA partnership validates ecosystem position; strong differentiation, not pure-play |
+| Pricing Power | 4/5 | 62% GM expanding on AI infrastructure mix; NVIDIA partnership creates pricing umbrella; diversified portfolio supports stable margins |
+| Leadership & Alignment | 3/5 | Murphy + Hu are competent; large-company execution track record; low insider ownership (0.3%); no founder-led signal |
+| Financial Health | 4/5 | $6.2B revenue; 62% GM; P/E 22x; positive FCF trajectory; manageable leverage; improving mix toward higher-margin AI products |
+| Macro Environment | 5/5 | CXL switching + SSD controllers + NVLink Fusion = multiple converging AI infrastructure tailwinds; secular AI capex cycle; 5+ year visibility |
+| Future Potential | 4/5 | CXL switch + SSD + PCIe retimers + NVLink Fusion = 2-3 adjacencies with measurable traction; diversified L06+L07 exposure |
+| **Composite** | **8.0/10** | **Unrivaled** — (24/30 × 10 = 8.0) |
+
+Valuation: Fair at ~$100 | P/E 22x | Analyst upside: 15%
 
 ## Conviction Log
 

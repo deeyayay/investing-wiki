@@ -22,9 +22,17 @@ moat:
   made_in_usa: true
   notes: "Only US-based HBM maker; NVIDIA qualified; structural margin expansion on HBM ASPs"
 metrics:
-  score: null
-  score_label: null
-  last_scored: null
+  score: 8.5
+  score_label: "Unrivaled"
+  last_scored: "2026-06-12"
+  score_metrics:
+    product: 5
+    pricing_power: 4
+    leadership: 3
+    financial_health: 4
+    macro_environment: 5
+    future_potential: 4
+    composite: 8.5
   valuation_fpe: 6.5
   analyst_pt: 140
   analyst_upside_pct: 8

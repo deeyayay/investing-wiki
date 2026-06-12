@@ -22,9 +22,17 @@ moat:
   made_in_usa: true
   notes: "Only pure-play CXL memory expansion provider; first hyperscale deployment (Azure) de-risks ecosystem"
 metrics:
-  score: null
-  score_label: null
-  last_scored: null
+  score: 8.0
+  score_label: "Unrivaled"
+  last_scored: "2026-06-12"
+  score_metrics:
+    product: 5
+    pricing_power: 4
+    leadership: 3
+    financial_health: 2
+    macro_environment: 5
+    future_potential: 5
+    composite: 8.0
   valuation_fpe: 180
   analyst_pt: 420
   analyst_upside_pct: 18

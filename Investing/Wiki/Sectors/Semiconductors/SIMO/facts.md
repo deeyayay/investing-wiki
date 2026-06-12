@@ -18,8 +18,17 @@ moat:
   made_in_usa: false
   notes: "Dominant NAND controller for AI inference (MonTitan); PCIe Gen5 ASP uplift; fabless leverage"
 metrics:
-  score: null
-  last_scored: null
+  score: 7.5
+  score_label: "Strong"
+  last_scored: "2026-06-12"
+  score_metrics:
+    product: 4
+    pricing_power: 3
+    leadership: 4
+    financial_health: 4
+    macro_environment: 4
+    future_potential: 4
+    composite: 7.5
   valuation_fpe: 18
   analyst_pt: 85
   analyst_upside_pct: 22
