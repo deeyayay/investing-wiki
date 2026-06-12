@@ -488,15 +488,15 @@ tickers:
 
 candidates:
   # ── L06 Memory — added 2026-06-12 ──────────────────────────────────────────
-  - ticker: HXSCF
+  - ticker: HXSCL
     company: "SK Hynix Inc."
     sector: "Semiconductors"
     layer: "Memory (HBM · DRAM · NAND)"
-    exchange: "OTC (primary: KRX 000660)"
+    exchange: "OTC (primary: KRX 000660; OTC tickers: HXSCL / HXSCF)"
     source: "scout-tickers"
     added: "2026-06-12"
     race: ["HBM Supremacy", "NAND for AI Storage", "CXL Memory"]
-    note: "Undisputed HBM leader ~70% HBM3e share; sole early NVIDIA H100/H200 supplier; HBM4 Rubin qualification underway"
+    note: "~70% HBM4 market share for NVIDIA Vera Rubin; Q1 2026 operating margin 72%; all 2026 capacity sold out; NASDAQ ADR listing expected August 2026 (~$14B raise); crossed $1T market cap May 2026"
 
   - ticker: SSNLF
     company: "Samsung Electronics Co. Ltd."
@@ -518,15 +518,15 @@ candidates:
     race: ["NAND for AI Storage"]
     note: "Pure-play NAND spun off from Western Digital Feb 2025; only US-listed NAND pure-play; QLC roadmap for AI data lakes"
 
-  - ticker: 6600.T
+  - ticker: 285A.T
     company: "KIOXIA Holdings Corporation"
     sector: "Semiconductors"
     layer: "Memory (HBM · DRAM · NAND)"
-    exchange: "TSE (Tokyo)"
+    exchange: "TSE Prime (Tokyo; ticker: 285A)"
     source: "scout-tickers"
     added: "2026-06-12"
     race: ["NAND for AI Storage"]
-    note: "World #2 NAND (after Samsung); IPO'd TSE Oct 2024; BiCS FLASH 3D TLC/QLC; JV fab with SanDisk at Yokkaichi/Kitakami"
+    note: "World #3 NAND (after Samsung + SanDisk); IPO'd TSE December 18, 2024; BiCS FLASH 10th-gen TLC/QLC; 51% owner of Flash Ventures JV (9 fabs with SanDisk); market cap ~$260B; no US ADR"
 
   - ticker: RMBS
     company: "Rambus Inc."
@@ -557,6 +557,36 @@ candidates:
     added: "2026-06-12"
     race: ["AI Memory Modules"]
     note: "Specialty DRAM modules + NVMe SSDs for AI/HPC OEMs (Dell, HPE, Supermicro); Penguin Solutions HPC integration arm; small-cap AI memory demand play"
+
+  - ticker: ALAB
+    company: "Astera Labs, Inc."
+    sector: "Semiconductors"
+    layer: "Memory (HBM · DRAM · NAND)"
+    exchange: "NASDAQ"
+    source: "scout-tickers"
+    added: "2026-06-12"
+    race: ["CXL Memory Expansion"]
+    note: "Only US-listed pure-play CXL memory expansion silicon; IPO NASDAQ March 2024; market cap ~$63B; Leo CXL in production on Microsoft Azure M-series; Scorpio CXL switch; Q1 2026 revenue $308M (+93% YoY); added to Nasdaq-100"
+
+  - ticker: SIMO
+    company: "Silicon Motion Technology Corporation"
+    sector: "Semiconductors"
+    layer: "Memory (HBM · DRAM · NAND)"
+    exchange: "NASDAQ"
+    source: "scout-tickers"
+    added: "2026-06-12"
+    race: ["NAND for AI Storage"]
+    note: "Fabless NAND flash controller designer; Q1 2026 revenue $342M (+105% YoY); MonTitan AI SSD controller entering volume production at 5 tier-1 cloud customers H2 2026; PCIe Gen5 DRAMless controller for AI inference (KV cache/RAG)"
+
+  - ticker: MRVL
+    company: "Marvell Technology, Inc."
+    sector: "Semiconductors"
+    layer: "Memory (HBM · DRAM · NAND)"
+    exchange: "NASDAQ"
+    source: "scout-tickers"
+    added: "2026-06-12"
+    race: ["CXL Memory Expansion", "Memory Interface & Standards IP"]
+    note: "CXL memory switching (Structera S: 260-lane, 4TB/s; samples Q3 2026) + SSD controllers + PCIe retimers; $2B NVIDIA strategic investment via NVLink Fusion (March 2026); competes with ALAB in CXL switches"
 
   - ticker: GLW
     company: "Corning Incorporated"
