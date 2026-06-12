@@ -1,0 +1,2256 @@
+{
+  "meta": {
+    "schema_version": "1",
+    "generated": "2026-06-11",
+    "source": {
+      "registry": "Investing/Wiki/Reference/Monitor Registry.yaml",
+      "data": "Investing/Output/Dashboard/data.json"
+    },
+    "counts": {
+      "active": 51,
+      "scored": 9,
+      "candidates": 34
+    },
+    "schema_notes": {
+      "fundamental": "Dashboard-safe. Never contains price, analyst targets, or valuation. Advisor project reads this.",
+      "advisory": "Advisor-layer only. Dashboard ignores this namespace. Advisor project overrides with real-time data.",
+      "tier_positions": "Derived at build time from data.json company arrays. dominance auto-derived: 1 company=Monopoly, 2=Duopoly, 3+ with dominance keyword=Leader, 3+ otherwise=Contested. Rail-mapped tickers use layer_id=Rail-*.",
+      "score_history": "Parsed from signals.md Research Log at build time. Empty array = not yet parsed.",
+      "growth_flag": "Derived: fundamental.criteria.future_potential >= 4"
+    }
+  },
+
+  "tickers": {
+
+    "AMBA": {
+      "symbol": "AMBA",
+      "company": "Ambarella, Inc.",
+      "exchange": "NASDAQ",
+      "cik": "0001280263",
+      "sector": "Robotics & Edge AI",
+      "wiki_path": "Investing/Wiki/Sectors/Robotics & Edge AI/AMBA",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "Rail-Edge",
+          "layer_name": "Edge & Physical AI",
+          "sector_slug": "robotics-edge-ai",
+          "tier": "Edge AI Inference Chips",
+          "chokepoint": false,
+          "dominance": "Leader"
+        }
+      ],
+      "fundamental": {
+        "score": 8.5,
+        "score_label": "Unrivaled",
+        "last_scored": "2026-06-09",
+        "pre_revenue": false,
+        "criteria": {
+          "product": 4,
+          "pricing_power": 4,
+          "leadership": 5,
+          "financial_health": 3,
+          "macro_environment": 5,
+          "future_potential": 5
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Ambarella's CVflow SoCs deliver GPU-class AI inference at <20W, making it the default edge AI chip for robotics, ADAS, and computer vision at scale.",
+        "score_history": [
+          { "date": "2026-05-19", "score": 8.0, "label": "Unrivaled" },
+          { "date": "2026-06-09", "score": 8.5, "label": "Unrivaled" }
+        ]
+      },
+      "advisory": {
+        "next_earnings": "2026-09-01",
+        "valuation_label": "Reasonable",
+        "valuation_metric": "EV/Revenue",
+        "valuation_multiple": 8.5,
+        "analyst_pt": 104.0,
+        "analyst_upside_pct": 27.0,
+        "valuation_last_updated": "2026-06-09",
+        "near_term_catalysts": [
+          { "date": "2026-09-01", "type": "earnings", "description": "Q1 FY2028 earnings — watch Hanwha ramp progress and edge AI revenue mix" },
+          { "date": null, "type": "product", "description": "CVflow 4.0 next-gen architecture timeline announcement" },
+          { "date": null, "type": "partnership", "description": "Additional ADAS OEM design-win announcements beyond Hanwha" }
+        ],
+        "bull_summary": "CVflow architecture compounds at each generational step; Hanwha $800M+ deal provides multi-year revenue visibility; physical AI era (NVIDIA Isaac) expands edge inference TAM; 4 simultaneous adjacencies confirmed.",
+        "bear_summary": "Mobileye OEM incumbency is deep with decades of automotive relationships; TSMC concentration creates geopolitical supply risk; CTO co-founder departure reduces active technical oversight at critical roadmap juncture."
+      }
+    },
+
+    "OUST": {
+      "symbol": "OUST",
+      "company": "Ouster, Inc.",
+      "exchange": "NASDAQ",
+      "cik": "0001816581",
+      "sector": "Robotics & Edge AI",
+      "wiki_path": "Investing/Wiki/Sectors/Robotics & Edge AI/OUST",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "Rail-Edge",
+          "layer_name": "Edge & Physical AI",
+          "sector_slug": "robotics-edge-ai",
+          "tier": "Lidar & Sensor Systems",
+          "chokepoint": false,
+          "dominance": "Leader"
+        }
+      ],
+      "fundamental": {
+        "score": 6.5,
+        "score_label": "Strong",
+        "last_scored": "2026-05-20",
+        "pre_revenue": false,
+        "criteria": {
+          "product": 4,
+          "pricing_power": 3,
+          "leadership": 3,
+          "financial_health": 2,
+          "macro_environment": 4,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Co-founder-led digital lidar company with a custom SoC architecture, Pentagon Blue UAS approval, and gross margins climbing from 22% to 45% — proof the cost curve is working.",
+        "score_history": [
+          { "date": "2026-05-20", "score": 6.5, "label": "Strong" }
+        ]
+      },
+      "advisory": {
+        "next_earnings": "2026-08-06",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": 39.0,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": "2026-05-20",
+        "near_term_catalysts": [
+          { "date": "2026-08-06", "type": "earnings", "description": "Q2 2026 earnings — re-score trigger: watch GM recovery toward 50%+ post-StereoLabs integration" },
+          { "date": null, "type": "product", "description": "StereoLabs RGB-D + AI perception second product line commercial traction" },
+          { "date": null, "type": "partnership", "description": "NVIDIA DRIVE Hyperion production vehicle program design wins from qualification" }
+        ],
+        "bull_summary": "Digital SoC architecture (2 chips vs. dozens analog) compounds manufacturing cost advantage; Pentagon Blue certification opens defense TAM; NVIDIA DRIVE Hyperion qualification embeds Ouster in AV production pipelines; StereoLabs adds multimodal perception platform.",
+        "bear_summary": "Balance sheet thin (FH 2/5); StereoLabs integration causing GM step-down from 62% to 46% requires monitoring; co-founder leadership gaps; lidar commoditization risk from China vendors at lower ASPs."
+      }
+    },
+
+    "COHR": {
+      "symbol": "COHR",
+      "company": "Coherent Corp",
+      "exchange": "NYSE",
+      "cik": "0000820318",
+      "sector": "Photonics & Optical",
+      "wiki_path": "Investing/Wiki/Sectors/Photonics & Optical/COHR",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L07",
+          "layer_name": "Interconnect",
+          "sector_slug": "photonics-optical",
+          "tier": "Transceiver & Module Integration",
+          "chokepoint": false,
+          "dominance": "Contested"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-08-13",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "LITE": {
+      "symbol": "LITE",
+      "company": "Lumentum Holdings",
+      "exchange": "NASDAQ",
+      "cik": "0001633978",
+      "sector": "Photonics & Optical",
+      "wiki_path": "Investing/Wiki/Sectors/Photonics & Optical/LITE",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L07",
+          "layer_name": "Interconnect",
+          "sector_slug": "photonics-optical",
+          "tier": "Transceiver & Module Integration",
+          "chokepoint": false,
+          "dominance": "Contested"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-08-18",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "FN": {
+      "symbol": "FN",
+      "company": "Fabrinet",
+      "exchange": "NYSE",
+      "cik": "0001408710",
+      "sector": "Photonics & Optical",
+      "wiki_path": "Investing/Wiki/Sectors/Photonics & Optical/FN",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L07",
+          "layer_name": "Interconnect",
+          "sector_slug": "photonics-optical",
+          "tier": "Transceiver & Module Integration",
+          "chokepoint": false,
+          "dominance": "Contested"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-08-24",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "CIEN": {
+      "symbol": "CIEN",
+      "company": "Ciena Corporation",
+      "exchange": "NYSE",
+      "cik": "0000936395",
+      "sector": "Photonics & Optical",
+      "wiki_path": "Investing/Wiki/Sectors/Photonics & Optical/CIEN",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L07",
+          "layer_name": "Interconnect",
+          "sector_slug": "photonics-optical",
+          "tier": "Coherent Line Systems & ROADM",
+          "chokepoint": false,
+          "dominance": "Duopoly"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-09-03",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "VIAV": {
+      "symbol": "VIAV",
+      "company": "Viavi Solutions",
+      "exchange": "NASDAQ",
+      "cik": "0000912093",
+      "sector": "Photonics & Optical",
+      "wiki_path": "Investing/Wiki/Sectors/Photonics & Optical/VIAV",
+      "status": "active",
+      "tier_positions": [],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": null,
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "AAOI": {
+      "symbol": "AAOI",
+      "company": "Applied Optoelectronics",
+      "exchange": "NASDAQ",
+      "cik": "0001158114",
+      "sector": "Photonics & Optical",
+      "wiki_path": "Investing/Wiki/Sectors/Photonics & Optical/AAOI",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L07",
+          "layer_name": "Interconnect",
+          "sector_slug": "photonics-optical",
+          "tier": "Transceiver & Module Integration",
+          "chokepoint": false,
+          "dominance": "Contested"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-08-06",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "AXTI": {
+      "symbol": "AXTI",
+      "company": "AXT Inc.",
+      "exchange": "NASDAQ",
+      "cik": "0001051627",
+      "sector": "Photonics & Optical",
+      "wiki_path": "Investing/Wiki/Sectors/Photonics & Optical/AXTI",
+      "status": "active",
+      "tier_positions": [],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-07-29",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "LWLG": {
+      "symbol": "LWLG",
+      "company": "Lightwave Logic",
+      "exchange": "NASDAQ",
+      "cik": "0001325964",
+      "sector": "Photonics & Optical",
+      "wiki_path": "Investing/Wiki/Sectors/Photonics & Optical/LWLG",
+      "status": "active",
+      "tier_positions": [],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": true,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-08-18",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "LASR": {
+      "symbol": "LASR",
+      "company": "nLIGHT Inc.",
+      "exchange": "NASDAQ",
+      "cik": "0001124796",
+      "sector": "Photonics & Optical",
+      "wiki_path": "Investing/Wiki/Sectors/Photonics & Optical/LASR",
+      "status": "active",
+      "tier_positions": [],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-08-06",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "SIVE": {
+      "symbol": "SIVE",
+      "company": "Sivers Semiconductors",
+      "exchange": "Nasdaq Stockholm",
+      "cik": null,
+      "sector": "Photonics & Optical",
+      "wiki_path": "Investing/Wiki/Sectors/Photonics & Optical/SIVE",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L07",
+          "layer_name": "Interconnect",
+          "sector_slug": "photonics-optical",
+          "tier": "Photonic Device Fabrication",
+          "chokepoint": true,
+          "dominance": "Niche"
+        }
+      ],
+      "fundamental": {
+        "score": 5.5,
+        "score_label": "Average",
+        "last_scored": "2026-05-19",
+        "pre_revenue": false,
+        "criteria": {
+          "product": 3,
+          "pricing_power": 2,
+          "leadership": 2,
+          "financial_health": 1,
+          "macro_environment": 4,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Dual-division micro-cap at the AI data center CPO laser bottleneck and mmWave 5G/defense — early revenue, 64% growing opportunity pipeline, and a critical cash runway constraint that makes execution timing everything.",
+        "score_history": [
+          { "date": "2026-05-19", "score": 5.5, "label": "Average" }
+        ]
+      },
+      "advisory": {
+        "next_earnings": null,
+        "valuation_label": "Expensive",
+        "valuation_metric": "P/S",
+        "valuation_multiple": 31.0,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": "2026-05-19",
+        "near_term_catalysts": [
+          { "date": null, "type": "product", "description": "O-Net / Enablence CPO ELS modules — commercial production timeline from March 2026 partnership" },
+          { "date": null, "type": "product", "description": "Jabil manufacturing ramp — first volume production orders" },
+          { "date": null, "type": "partnership", "description": "InP photonics design-win with hyperscaler or Tier-1 transceiver customer" },
+          { "date": "2026-12-31", "type": "product", "description": "Strategic LiDAR customer high-volume production ramp" }
+        ],
+        "bull_summary": "InP laser arrays sit at the CPO bottleneck tier; O-Net/Enablence commercial partnership validates technology; Jabil manufacturing partnership enables hyperscale production; $453M pipeline 64% growing.",
+        "bear_summary": "Sub-12-month cash runway with ongoing dilution risk; 31x P/S valuation punishes execution misses; criminal investigation and delayed annual report governance flags; Achilles Capital parent in restructuring creating forced-sale overhang."
+      }
+    },
+
+    "POET": {
+      "symbol": "POET",
+      "company": "POET Technologies",
+      "exchange": "TSX Venture",
+      "cik": null,
+      "sector": "Photonics & Optical",
+      "wiki_path": "Investing/Wiki/Sectors/Photonics & Optical/POET",
+      "status": "active",
+      "tier_positions": [],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": true,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": null,
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "FOCI": {
+      "symbol": "FOCI",
+      "company": "FOCI Fiber Optic Communications, Inc.",
+      "exchange": "TPEX (Taiwan)",
+      "cik": null,
+      "sector": "Photonics & Optical",
+      "wiki_path": "Investing/Wiki/Sectors/Photonics & Optical/FOCI",
+      "status": "active",
+      "tier_positions": [],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": null,
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "6965.T": {
+      "symbol": "6965.T",
+      "company": "Hamamatsu Photonics K.K.",
+      "exchange": "TSE (Tokyo)",
+      "cik": null,
+      "sector": "Photonics & Optical",
+      "wiki_path": "Investing/Wiki/Sectors/Photonics & Optical/6965.T",
+      "status": "active",
+      "tier_positions": [],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": null,
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "PRY.MI": {
+      "symbol": "PRY.MI",
+      "company": "Prysmian S.p.A.",
+      "exchange": "Euronext Milan",
+      "cik": null,
+      "sector": "Photonics & Optical",
+      "wiki_path": "Investing/Wiki/Sectors/Photonics & Optical/PRY.MI",
+      "status": "active",
+      "tier_positions": [],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": null,
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "5801.T": {
+      "symbol": "5801.T",
+      "company": "Furukawa Electric Co., Ltd.",
+      "exchange": "TSE (Tokyo)",
+      "cik": null,
+      "sector": "Photonics & Optical",
+      "wiki_path": "Investing/Wiki/Sectors/Photonics & Optical/5801.T",
+      "status": "active",
+      "tier_positions": [],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": null,
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "6451.TW": {
+      "symbol": "6451.TW",
+      "company": "ShunSin Technology Holdings Limited",
+      "exchange": "TWSE (Taiwan)",
+      "cik": null,
+      "sector": "Photonics & Optical",
+      "wiki_path": "Investing/Wiki/Sectors/Photonics & Optical/6451.TW",
+      "status": "active",
+      "tier_positions": [],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": null,
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "6841.T": {
+      "symbol": "6841.T",
+      "company": "Yokogawa Electric Corporation",
+      "exchange": "TSE (Tokyo)",
+      "cik": null,
+      "sector": "Photonics & Optical",
+      "wiki_path": "Investing/Wiki/Sectors/Photonics & Optical/6841.T",
+      "status": "active",
+      "tier_positions": [],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": null,
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "6754.T": {
+      "symbol": "6754.T",
+      "company": "Anritsu Corporation",
+      "exchange": "TSE (Tokyo)",
+      "cik": null,
+      "sector": "Photonics & Optical",
+      "wiki_path": "Investing/Wiki/Sectors/Photonics & Optical/6754.T",
+      "status": "active",
+      "tier_positions": [],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": null,
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "INTC": {
+      "symbol": "INTC",
+      "company": "Intel Corporation",
+      "exchange": "NASDAQ",
+      "cik": "0000050863",
+      "sector": "Semiconductors",
+      "wiki_path": "Investing/Wiki/Sectors/Semiconductors/INTC",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L05",
+          "layer_name": "Compute Hardware",
+          "sector_slug": "semiconductors",
+          "tier": "Chip Design (Fabless & IDM)",
+          "chokepoint": true,
+          "dominance": "Leader"
+        },
+        {
+          "layer_id": "L09",
+          "layer_name": "Semiconductor Foundry",
+          "sector_slug": "semiconductors",
+          "tier": "Wafer Fabrication (Foundry / IDM)",
+          "chokepoint": true,
+          "dominance": "Contested"
+        }
+      ],
+      "fundamental": {
+        "score": 6.5,
+        "score_label": "Strong",
+        "last_scored": "2026-06-07",
+        "pre_revenue": false,
+        "criteria": {
+          "product": 3,
+          "pricing_power": 3,
+          "leadership": 3,
+          "financial_health": 2,
+          "macro_environment": 4,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Intel's EMIB packaging and 25-year in-house silicon photonics stack is the only IDM-foundry platform that can solve the AI interconnect bottleneck while manufacturing on US soil.",
+        "score_history": [
+          { "date": "2026-06-07", "score": 6.5, "label": "Strong" }
+        ]
+      },
+      "advisory": {
+        "next_earnings": null,
+        "valuation_label": "Fair-to-Expensive",
+        "valuation_metric": "Fwd P/E",
+        "valuation_multiple": 73.0,
+        "analyst_pt": 79.0,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": "2026-06-07",
+        "near_term_catalysts": [
+          { "date": "2026-07-23", "type": "earnings", "description": "Q2 FY2026 earnings (unconfirmed) — guided $13.8-14.8B rev, $0.20 non-GAAP EPS" },
+          { "date": null, "type": "partnership", "description": "Apple preliminary deal converting to firm commitment for Intel US fabs" },
+          { "date": null, "type": "product", "description": "IFS first major HVM customer commitment beyond Apple (H2 2026-2027)" },
+          { "date": null, "type": "product", "description": "EMIB-T external customer design win announcement" },
+          { "date": null, "type": "regulatory", "description": "CHIPS Act grant disbursement milestones" }
+        ],
+        "bull_summary": "IFS as US-domiciled TSMC alternative with $15B+ signed lifetime commitments and CHIPS Act backing; EMIB+CPO platform uniquely combines design+foundry+packaging+photonics; Apple preliminary deal as anchor IFS customer.",
+        "bear_summary": "Prior CEO Pat Gelsinger missed multiple process node roadmaps; IFS lacks proven HVM customers at scale; Broadcom already shipping CPO in production volume (50K+ units) ahead of Intel; FCF negative through 2026 with $6.5B bridge loan."
+      }
+    },
+
+    "NVDA": {
+      "symbol": "NVDA",
+      "company": "NVIDIA Corporation",
+      "exchange": "NASDAQ",
+      "cik": "0001045810",
+      "sector": "Semiconductors",
+      "wiki_path": "Investing/Wiki/Sectors/Semiconductors/NVDA",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L05",
+          "layer_name": "Compute Hardware",
+          "sector_slug": "semiconductors",
+          "tier": "Chip Design (Fabless & IDM)",
+          "chokepoint": true,
+          "dominance": "Leader"
+        }
+      ],
+      "fundamental": {
+        "score": 9.5,
+        "score_label": "Unrivaled",
+        "last_scored": "2026-05-22",
+        "pre_revenue": false,
+        "criteria": {
+          "product": 5,
+          "pricing_power": 5,
+          "leadership": 4,
+          "financial_health": 5,
+          "macro_environment": 5,
+          "future_potential": 5
+        },
+        "growth_flag": true,
+        "one_line_thesis": "The dominant AI compute platform company; GPU monopoly in model training and inference with a rapidly expanding software moat (CUDA ecosystem) that makes switching nearly impossible.",
+        "score_history": [
+          { "date": "2026-05-22", "score": 9.5, "label": "Unrivaled" }
+        ]
+      },
+      "advisory": {
+        "next_earnings": "2026-08-26",
+        "valuation_label": "Reasonable",
+        "valuation_metric": "Fwd P/E",
+        "valuation_multiple": 27.0,
+        "analyst_pt": null,
+        "analyst_upside_pct": 127.0,
+        "valuation_last_updated": "2026-05-22",
+        "near_term_catalysts": [
+          { "date": "2026-08-26", "type": "earnings", "description": "Q2 FY2027 earnings — primary metric: datacenter revenue growth rate" },
+          { "date": null, "type": "product", "description": "Blackwell / GB200 NVL72 rack demand updates and Rubin platform ramp" },
+          { "date": null, "type": "regulatory", "description": "Export control policy changes affecting China and Middle East revenue" },
+          { "date": null, "type": "industry", "description": "Hyperscaler capex guidance from MSFT, GOOGL, AMZN, META" }
+        ],
+        "bull_summary": "CUDA ecosystem lock-in compounds with every AI software release; Blackwell/Rubin demand cycle extends AI capex supercycle into 2028+; software platform (NIM, DGX Cloud) compounds margins; physical AI/robotics opens new TAM layer.",
+        "bear_summary": "Export controls on China revenue create recurring ceiling; custom silicon from hyperscalers (Google TPU, Amazon Trainium, Microsoft Maia) threaten long-term share; AMD MI-series gaining inference share at major accounts."
+      }
+    },
+
+    "MU": {
+      "symbol": "MU",
+      "company": "Micron Technology",
+      "exchange": "NASDAQ",
+      "cik": "0000723125",
+      "sector": "Semiconductors",
+      "wiki_path": "Investing/Wiki/Sectors/Semiconductors/MU",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L06",
+          "layer_name": "Memory",
+          "sector_slug": "semiconductors",
+          "tier": "Memory (HBM · DRAM · NAND)",
+          "chokepoint": true,
+          "dominance": "Monopoly"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-06-24",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [
+          { "date": "2026-06-24", "type": "earnings", "description": "Q3 FY2026 earnings — HBM3E demand and HBM4 pricing dynamics key watch items" }
+        ],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "MRVL": {
+      "symbol": "MRVL",
+      "company": "Marvell Technology",
+      "exchange": "NASDAQ",
+      "cik": "0001058057",
+      "sector": "Semiconductors",
+      "wiki_path": "Investing/Wiki/Sectors/Semiconductors/MRVL",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L05",
+          "layer_name": "Compute Hardware",
+          "sector_slug": "semiconductors",
+          "tier": "Chip Design (Fabless & IDM)",
+          "chokepoint": true,
+          "dominance": "Contested"
+        },
+        {
+          "layer_id": "L07",
+          "layer_name": "Interconnect",
+          "sector_slug": "semiconductors",
+          "tier": "Interconnect & SerDes Silicon",
+          "chokepoint": false,
+          "dominance": "Contested"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-08-27",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "AEHR": {
+      "symbol": "AEHR",
+      "company": "Aehr Test Systems",
+      "exchange": "NASDAQ",
+      "cik": "0001040896",
+      "sector": "Semiconductors",
+      "wiki_path": "Investing/Wiki/Sectors/Semiconductors/AEHR",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L10",
+          "layer_name": "Semiconductor Equipment",
+          "sector_slug": "semiconductors",
+          "tier": "Test & Burn-In",
+          "chokepoint": false,
+          "dominance": "Monopoly"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-07-21",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "ALAB": {
+      "symbol": "ALAB",
+      "company": "Astera Labs, Inc.",
+      "exchange": "NASDAQ",
+      "cik": "0001736297",
+      "sector": "Semiconductors",
+      "wiki_path": "Investing/Wiki/Sectors/Semiconductors/ALAB",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L07",
+          "layer_name": "Interconnect",
+          "sector_slug": "semiconductors",
+          "tier": "Interconnect & SerDes Silicon",
+          "chokepoint": false,
+          "dominance": "Duopoly"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-08-11",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "CRDO": {
+      "symbol": "CRDO",
+      "company": "Credo Technology Group Holding Ltd",
+      "exchange": "NASDAQ",
+      "cik": "0001807794",
+      "sector": "Semiconductors",
+      "wiki_path": "Investing/Wiki/Sectors/Semiconductors/CRDO",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L07",
+          "layer_name": "Interconnect",
+          "sector_slug": "semiconductors",
+          "tier": "Interconnect & SerDes Silicon",
+          "chokepoint": false,
+          "dominance": "Duopoly"
+        }
+      ],
+      "fundamental": {
+        "score": 8.0,
+        "score_label": "Unrivaled",
+        "last_scored": "2026-06-07",
+        "pre_revenue": false,
+        "criteria": {
+          "product": 4,
+          "pricing_power": 4,
+          "leadership": 4,
+          "financial_health": 4,
+          "macro_environment": 4,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Full-stack SerDes IP owner that has become the de facto AEC standard inside AI GPU clusters — FY2026 revenue tripled to $1.34B at 68% gross margins, now expanding to optical via Hyperlume.",
+        "score_history": [
+          { "date": "2026-06-07", "score": 8.0, "label": "Unrivaled" }
+        ]
+      },
+      "advisory": {
+        "next_earnings": "2026-09-09",
+        "valuation_label": "Expensive",
+        "valuation_metric": "Fwd P/E",
+        "valuation_multiple": 50.0,
+        "analyst_pt": 278.0,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": "2026-06-07",
+        "near_term_catalysts": [
+          { "date": "2026-09-09", "type": "earnings", "description": "Q1 FY2027 earnings — watch quarterly gross margin sustaining ~67-68%" },
+          { "date": null, "type": "product", "description": "1.6T AEC product launch and first hyperscaler volume orders (H2 2026)" },
+          { "date": null, "type": "product", "description": "Hyperlume microLED integration: first product announcement or design win (H1 FY2027)" },
+          { "date": null, "type": "partnership", "description": "PCIe retimer revenue ramp — watch % of total revenue" }
+        ],
+        "bull_summary": "1.6T AEC transition triggers full cluster replacement cycle in H2 2026; PCIe retimer TAM over $1B by 2027; Hyperlume opens optical adjacency at 3.2T+; fifth hyperscaler in qualification reducing concentration.",
+        "bear_summary": "~88% revenue from top 3 hyperscalers creates capex-timing concentration risk; Astera Labs competing in retimers; Broadcom and Marvell can bundle competing solutions with switch silicon at scale."
+      }
+    },
+
+    "AMKR": {
+      "symbol": "AMKR",
+      "company": "Amkor Technology, Inc.",
+      "exchange": "NASDAQ",
+      "cik": "0001047127",
+      "sector": "Semiconductors",
+      "wiki_path": "Investing/Wiki/Sectors/Semiconductors/AMKR",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L08",
+          "layer_name": "Advanced Packaging",
+          "sector_slug": "semiconductors",
+          "tier": "Advanced Packaging (CoWoS / SoIC)",
+          "chokepoint": true,
+          "dominance": "Duopoly"
+        },
+        {
+          "layer_id": "L09",
+          "layer_name": "Semiconductor Foundry",
+          "sector_slug": "semiconductors",
+          "tier": "OSAT — Assembly & Test",
+          "chokepoint": false,
+          "dominance": "Duopoly"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-07-27",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "6857.T": {
+      "symbol": "6857.T",
+      "company": "Advantest Corporation",
+      "exchange": "TSE (Tokyo)",
+      "cik": null,
+      "sector": "Semiconductors",
+      "wiki_path": "Investing/Wiki/Sectors/Semiconductors/6857.T",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L10",
+          "layer_name": "Semiconductor Equipment",
+          "sector_slug": "semiconductors",
+          "tier": "Test & Burn-In",
+          "chokepoint": false,
+          "dominance": "Contested"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": null,
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "FORM": {
+      "symbol": "FORM",
+      "company": "FormFactor, Inc.",
+      "exchange": "NASDAQ",
+      "cik": "0001039399",
+      "sector": "Semiconductors",
+      "wiki_path": "Investing/Wiki/Sectors/Semiconductors/FORM",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L10",
+          "layer_name": "Semiconductor Equipment",
+          "sector_slug": "semiconductors",
+          "tier": "Inspection & Metrology",
+          "chokepoint": false,
+          "dominance": "Contested"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-07-29",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "NVTS": {
+      "symbol": "NVTS",
+      "company": "Navitas Semiconductor Corp",
+      "exchange": "NASDAQ",
+      "cik": "0001821769",
+      "sector": "Semiconductors",
+      "wiki_path": "Investing/Wiki/Sectors/Semiconductors/NVTS",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "Rail-Power",
+          "layer_name": "Power Infrastructure",
+          "sector_slug": "semiconductors",
+          "tier": "Power Semiconductors",
+          "chokepoint": false,
+          "dominance": "Contested"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-08-17",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "IFX": {
+      "symbol": "IFX",
+      "company": "Infineon Technologies AG",
+      "exchange": "XETRA (Frankfurt)",
+      "cik": null,
+      "sector": "Semiconductors",
+      "wiki_path": "Investing/Wiki/Sectors/Semiconductors/IFX",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "Rail-Power",
+          "layer_name": "Power Infrastructure",
+          "sector_slug": "semiconductors",
+          "tier": "Power Semiconductors",
+          "chokepoint": false,
+          "dominance": "Contested"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": null,
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "IREN": {
+      "symbol": "IREN",
+      "company": "IREN Limited",
+      "exchange": "NASDAQ",
+      "cik": "0001704720",
+      "sector": "AI Infrastructure",
+      "wiki_path": "Investing/Wiki/Sectors/AI Infrastructure/IREN",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L04",
+          "layer_name": "Cloud Infrastructure",
+          "sector_slug": "compute-infrastructure",
+          "tier": "Hyperscaler & Colocation Operation",
+          "chokepoint": false,
+          "dominance": "Contested"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-09-16",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "ANET": {
+      "symbol": "ANET",
+      "company": "Arista Networks",
+      "exchange": "NYSE",
+      "cik": "0001313925",
+      "sector": "AI Infrastructure",
+      "wiki_path": "Investing/Wiki/Sectors/AI Infrastructure/ANET",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L07",
+          "layer_name": "Interconnect",
+          "sector_slug": "compute-infrastructure",
+          "tier": "High-Speed Networking",
+          "chokepoint": false,
+          "dominance": "Leader"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-08-03",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "VRT": {
+      "symbol": "VRT",
+      "company": "Vertiv Holdings",
+      "exchange": "NYSE",
+      "cik": "0001793309",
+      "sector": "AI Infrastructure",
+      "wiki_path": "Investing/Wiki/Sectors/AI Infrastructure/VRT",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "Rail-Power",
+          "layer_name": "Power Infrastructure",
+          "sector_slug": "compute-infrastructure",
+          "tier": "Data Center Power",
+          "chokepoint": false,
+          "dominance": "Leader"
+        },
+        {
+          "layer_id": "Rail-Thermal",
+          "layer_name": "Thermal Management",
+          "sector_slug": "compute-infrastructure",
+          "tier": "Liquid & Immersion Cooling",
+          "chokepoint": false,
+          "dominance": "Leader"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-08-05",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "SMCI": {
+      "symbol": "SMCI",
+      "company": "Super Micro Computer",
+      "exchange": "NASDAQ",
+      "cik": "0001375365",
+      "sector": "AI Infrastructure",
+      "wiki_path": "Investing/Wiki/Sectors/AI Infrastructure/SMCI",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L04",
+          "layer_name": "Cloud Infrastructure",
+          "sector_slug": "compute-infrastructure",
+          "tier": "Compute Node Design & ODM Assembly",
+          "chokepoint": false,
+          "dominance": "Monopoly"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-08-11",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "P": {
+      "symbol": "P",
+      "company": "Everpure Inc. (fka Pure Storage)",
+      "exchange": "NYSE",
+      "cik": "0001474432",
+      "sector": "AI Infrastructure",
+      "wiki_path": "Investing/Wiki/Sectors/AI Infrastructure/P",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L04",
+          "layer_name": "Cloud Infrastructure",
+          "sector_slug": "compute-infrastructure",
+          "tier": "Storage Systems",
+          "chokepoint": false,
+          "dominance": "Contested"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": null,
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "BRUN": {
+      "symbol": "BRUN",
+      "company": "Boost Run Inc.",
+      "exchange": "NASDAQ",
+      "cik": "0002090646",
+      "sector": "AI Infrastructure",
+      "wiki_path": "Investing/Wiki/Sectors/AI Infrastructure/BRUN",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L04",
+          "layer_name": "Cloud Infrastructure",
+          "sector_slug": "compute-infrastructure",
+          "tier": "Hyperscaler & Colocation Operation",
+          "chokepoint": false,
+          "dominance": "Niche"
+        }
+      ],
+      "fundamental": {
+        "score": 7.5,
+        "score_label": "Strong",
+        "last_scored": "2026-06-04",
+        "pre_revenue": false,
+        "criteria": {
+          "product": 4,
+          "pricing_power": 4,
+          "leadership": 4,
+          "financial_health": 3,
+          "macro_environment": 4,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "NVIDIA Exemplar Cloud-certified GPU neocloud (fewer than 10 globally) with 85%+ gross margins, $1.45B take-or-pay contracted backlog, and Dell DFS financing that removes dilutive equity risk.",
+        "score_history": [
+          { "date": "2026-06-04", "score": 7.5, "label": "Strong" }
+        ]
+      },
+      "advisory": {
+        "next_earnings": "2026-09-02",
+        "valuation_label": "Fair",
+        "valuation_metric": "EV/Revenue",
+        "valuation_multiple": 6.0,
+        "analyst_pt": 45.0,
+        "analyst_upside_pct": 22.0,
+        "valuation_last_updated": "2026-06-04",
+        "near_term_catalysts": [
+          { "date": "2026-09-02", "type": "earnings", "description": "Q2 2026 earnings — first fully public quarter; watch $375M ARR ramp progress" },
+          { "date": null, "type": "product", "description": "Thinking Machines Lab deployment completion — 5,000 NVIDIA B300 GPUs" },
+          { "date": "2026-11-08", "type": "regulatory", "description": "SPAC lock-up expiry — 43.9M shares unlock (~250% of float); watch insider selling pace" },
+          { "date": null, "type": "product", "description": "5 new data center locations (in development) — go-live announcements" }
+        ],
+        "bull_summary": "NVIDIA Exemplar Cloud certification places BRUN in peer tier with CRWV/Azure/OCI; $1.45B take-or-pay backlog growing 12x in 6 months; Dell DFS $1.44B financing eliminates dilution risk; compliance certifications gate regulated-industry procurement.",
+        "bear_summary": "Thinking Machines Lab ~33% of backlog creates concentration risk; Nov 8 lock-up expiry ~43.9M shares is major float supply event; SPAC governance immaturity signals; CoreWeave and hyperscaler competition compressing neocloud pricing."
+      }
+    },
+
+    "RBRK": {
+      "symbol": "RBRK",
+      "company": "Rubrik Inc.",
+      "exchange": "NYSE",
+      "cik": "0001943896",
+      "sector": "Cybersecurity",
+      "wiki_path": "Investing/Wiki/Sectors/Cybersecurity/RBRK",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "Rail-Security",
+          "layer_name": "Security",
+          "sector_slug": "cybersecurity",
+          "tier": "Identity · EDR · SecOps",
+          "chokepoint": false,
+          "dominance": "Contested"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-09-08",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "SAIL": {
+      "symbol": "SAIL",
+      "company": "SailPoint, Inc.",
+      "exchange": "NASDAQ",
+      "cik": "0002030781",
+      "sector": "Cybersecurity",
+      "wiki_path": "Investing/Wiki/Sectors/Cybersecurity/SAIL",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "Rail-Security",
+          "layer_name": "Security",
+          "sector_slug": "cybersecurity",
+          "tier": "Identity · EDR · SecOps",
+          "chokepoint": false,
+          "dominance": "Contested"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-06-09",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "MELI": {
+      "symbol": "MELI",
+      "company": "MercadoLibre Inc.",
+      "exchange": "NASDAQ",
+      "cik": "0001099590",
+      "sector": "Fintech & E-Commerce",
+      "wiki_path": "Investing/Wiki/Sectors/Fintech & E-Commerce/MELI",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L01",
+          "layer_name": "Application",
+          "sector_slug": "fintech-commerce-ai",
+          "tier": "Embedded Finance & Commerce APIs",
+          "chokepoint": false,
+          "dominance": "Contested"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-08-03",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "HOOD": {
+      "symbol": "HOOD",
+      "company": "Robinhood Markets",
+      "exchange": "NASDAQ",
+      "cik": "0001783879",
+      "sector": "Fintech & E-Commerce",
+      "wiki_path": "Investing/Wiki/Sectors/Fintech & E-Commerce/HOOD",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L01",
+          "layer_name": "Application",
+          "sector_slug": "fintech-commerce-ai",
+          "tier": "Personal Finance & Wealth Management Platforms",
+          "chokepoint": false,
+          "dominance": "Contested"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-08-05",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "SOFI": {
+      "symbol": "SOFI",
+      "company": "SoFi Technologies, Inc.",
+      "exchange": "NASDAQ",
+      "cik": "0001818874",
+      "sector": "Fintech & E-Commerce",
+      "wiki_path": "Investing/Wiki/Sectors/Fintech & E-Commerce/SOFI",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L01",
+          "layer_name": "Application",
+          "sector_slug": "fintech-commerce-ai",
+          "tier": "Credit Decisioning & Underwriting AI",
+          "chokepoint": false,
+          "dominance": "Monopoly"
+        },
+        {
+          "layer_id": "L01",
+          "layer_name": "Application",
+          "sector_slug": "fintech-commerce-ai",
+          "tier": "Personal Finance & Wealth Management Platforms",
+          "chokepoint": false,
+          "dominance": "Contested"
+        }
+      ],
+      "fundamental": {
+        "score": 9.0,
+        "score_label": "Unrivaled",
+        "last_scored": "2026-05-18",
+        "pre_revenue": false,
+        "criteria": {
+          "product": 5,
+          "pricing_power": 4,
+          "leadership": 5,
+          "financial_health": 4,
+          "macro_environment": 4,
+          "future_potential": 5
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Digital-native U.S. bank with a national charter; Galileo B2B platform and Financial Services Productivity Loop flywheel driving nine consecutive GAAP-profitable quarters and 30% member growth.",
+        "score_history": [
+          { "date": "2026-05-18", "score": 9.0, "label": "Unrivaled" }
+        ]
+      },
+      "advisory": {
+        "next_earnings": "2026-08-04",
+        "valuation_label": "Reasonable",
+        "valuation_metric": "P/E",
+        "valuation_multiple": 33.0,
+        "analyst_pt": 17.0,
+        "analyst_upside_pct": 6.0,
+        "valuation_last_updated": "2026-05-18",
+        "near_term_catalysts": [
+          { "date": "2026-08-04", "type": "earnings", "description": "Q2 2026 earnings — 10th consecutive GAAP-profitable quarter; watch LPB revenue trajectory and deposit growth" },
+          { "date": null, "type": "product", "description": "SoFi USD stablecoin launch — loan tokenization and POS crypto payments timeline" },
+          { "date": null, "type": "product", "description": "Galileo revenue ramp — $1.2B targeted for 2026" }
+        ],
+        "bull_summary": "10 consecutive GAAP-profitable quarters; Financial Services Productivity Loop (75% 30-day second-product adoption) compounds cross-sell; LPB capital-light fee income scales without credit risk; CEO Noto 39 open-market buys and 0 sales over 5 years.",
+        "bear_summary": "~33x 2026E P/E punishes any miss; unsecured personal loan book vulnerable in macro downturn; LPB growth rate-cycle sensitive; competitive pressure from incumbent banks building digital-first products."
+      }
+    },
+
+    "OKLO": {
+      "symbol": "OKLO",
+      "company": "Oklo Inc.",
+      "exchange": "NYSE",
+      "cik": "0001828937",
+      "sector": "Clean Energy",
+      "wiki_path": "Investing/Wiki/Sectors/Clean Energy/OKLO",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "Rail-Power",
+          "layer_name": "Power Infrastructure",
+          "sector_slug": "clean-energy",
+          "tier": "Power Generation",
+          "chokepoint": false,
+          "dominance": "Contested"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": true,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-08-18",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "TE": {
+      "symbol": "TE",
+      "company": "T1 Energy Inc.",
+      "exchange": "NYSE",
+      "cik": "0001992243",
+      "sector": "Clean Energy",
+      "wiki_path": "Investing/Wiki/Sectors/Clean Energy/TE",
+      "status": "active",
+      "tier_positions": [],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-08-07",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "ASPI": {
+      "symbol": "ASPI",
+      "company": "ASP Isotopes Inc.",
+      "exchange": "NASDAQ",
+      "cik": "0001921865",
+      "sector": "Clean Energy",
+      "wiki_path": "Investing/Wiki/Sectors/Clean Energy/ASPI",
+      "status": "active",
+      "tier_positions": [],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": true,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-08-12",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "ASTS": {
+      "symbol": "ASTS",
+      "company": "AST SpaceMobile",
+      "exchange": "NASDAQ",
+      "cik": "0001780530",
+      "sector": "Space & Comms",
+      "wiki_path": "Investing/Wiki/Sectors/Space & Comms/ASTS",
+      "status": "active",
+      "tier_positions": [],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-08-17",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "RKLB": {
+      "symbol": "RKLB",
+      "company": "Rocket Lab USA, Inc.",
+      "exchange": "NASDAQ",
+      "cik": "0001819994",
+      "sector": "Space & Comms",
+      "wiki_path": "Investing/Wiki/Sectors/Space & Comms/RKLB",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "Rail-Edge",
+          "layer_name": "Edge & Physical AI",
+          "sector_slug": "space-comms",
+          "tier": "Launch Services",
+          "chokepoint": false,
+          "dominance": "Monopoly"
+        }
+      ],
+      "fundamental": {
+        "score": 7.0,
+        "score_label": "Strong",
+        "last_scored": "2026-06-02",
+        "pre_revenue": false,
+        "criteria": {
+          "product": 4,
+          "pricing_power": 3,
+          "leadership": 4,
+          "financial_health": 2,
+          "macro_environment": 4,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "The only vertically integrated launch provider with proven mission cadence outside SpaceX, compounding into a space systems business that serves as the DoD's indispensable second source.",
+        "score_history": [
+          { "date": "2026-06-02", "score": 7.0, "label": "Strong" }
+        ]
+      },
+      "advisory": {
+        "next_earnings": "2026-08-06",
+        "valuation_label": "Fair-to-Expensive",
+        "valuation_metric": "EV/Revenue",
+        "valuation_multiple": 10.0,
+        "analyst_pt": 116.0,
+        "analyst_upside_pct": 53.0,
+        "valuation_last_updated": "2026-06-02",
+        "near_term_catalysts": [
+          { "date": "2026-08-06", "type": "earnings", "description": "Q2 2026 earnings — watch Space Systems revenue mix and Neutron development capex" },
+          { "date": null, "type": "product", "description": "Neutron reusable rocket development milestone announcements" },
+          { "date": null, "type": "partnership", "description": "Additional DoD/NRO mission manifest confirmation" }
+        ],
+        "bull_summary": "Only non-SpaceX commercial launcher at proven mission cadence; DoD/NRO indispensable second source with deep mission trust; Space Systems components sold industry-wide as independent revenue stream; Neutron reusable rocket as next compounding growth vector.",
+        "bear_summary": "FCF negative (FH 2/5); launch pricing compressed by SpaceX Falcon 9 cost floor; Neutron development capex creates dilution risk; launch market maturity timeline uncertain."
+      }
+    },
+
+    "FCX": {
+      "symbol": "FCX",
+      "company": "Freeport-McMoRan",
+      "exchange": "NYSE",
+      "cik": "0000831259",
+      "sector": "Metals & Mining",
+      "wiki_path": "Investing/Wiki/Sectors/Metals & Mining/FCX",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L12",
+          "layer_name": "Critical Minerals",
+          "sector_slug": "metals-mining",
+          "tier": "Bulk Mining & Ore Extraction",
+          "chokepoint": false,
+          "dominance": "Leader"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-07-23",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "MP": {
+      "symbol": "MP",
+      "company": "MP Materials Corp.",
+      "exchange": "NYSE",
+      "cik": "0001801170",
+      "sector": "Metals & Mining",
+      "wiki_path": "Investing/Wiki/Sectors/Metals & Mining/MP",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L12",
+          "layer_name": "Critical Minerals",
+          "sector_slug": "metals-mining",
+          "tier": "Rare Earth Separation & Critical Mineral Refining",
+          "chokepoint": true,
+          "dominance": "Monopoly"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-07-30",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    },
+
+    "ELMT": {
+      "symbol": "ELMT",
+      "company": "The Elmet Group Co.",
+      "exchange": "NASDAQ",
+      "cik": "0002101698",
+      "sector": "Metals & Mining",
+      "wiki_path": "Investing/Wiki/Sectors/Metals & Mining/ELMT",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L12",
+          "layer_name": "Critical Minerals",
+          "sector_slug": "metals-mining",
+          "tier": "Battery Material Precursor Production",
+          "chokepoint": false,
+          "dominance": "Duopoly"
+        }
+      ],
+      "fundamental": {
+        "score": null,
+        "score_label": null,
+        "last_scored": null,
+        "pre_revenue": false,
+        "criteria": null,
+        "growth_flag": null,
+        "one_line_thesis": null,
+        "score_history": []
+      },
+      "advisory": {
+        "next_earnings": "2026-08-25",
+        "valuation_label": null,
+        "valuation_metric": null,
+        "valuation_multiple": null,
+        "analyst_pt": null,
+        "analyst_upside_pct": null,
+        "valuation_last_updated": null,
+        "near_term_catalysts": [],
+        "bull_summary": null,
+        "bear_summary": null
+      }
+    }
+
+  },
+
+  "candidates": [
+    { "symbol": "GLW",  "company": "Corning Incorporated",              "sector": "Photonics & Optical",   "tier": "Optical Fiber & Preform Manufacturing",          "source": "map-sector", "added": "2026-05-24", "note": "~50% global optical fiber market; OVD preform; SMF-28" },
+    { "symbol": "IQE",  "company": "IQE plc",                          "sector": "Photonics & Optical",   "tier": "III-V Substrate & Epitaxial Wafer Growth",        "source": "map-sector", "added": "2026-05-24", "note": "MOCVD epi foundry; VCSEL and GaN epi; UK AIM-listed" },
+    { "symbol": "MTSI", "company": "MACOM Technology Solutions",        "sector": "Photonics & Optical",   "tier": "Photonic Device Fabrication",                     "source": "map-sector", "added": "2026-05-24", "note": "GaAs/InP/GaN chip fab; drivers, TIAs, photonic ICs; strong DC transceiver exposure" },
+    { "symbol": "SNPS", "company": "Synopsys",                          "sector": "Semiconductors",        "tier": "EDA & Design IP",                                 "source": "map-sector", "added": "2026-05-24", "note": "" },
+    { "symbol": "CDNS", "company": "Cadence Design Systems",            "sector": "Semiconductors",        "tier": "EDA & Design IP",                                 "source": "map-sector", "added": "2026-05-24", "note": "" },
+    { "symbol": "ARM",  "company": "Arm Holdings",                      "sector": "Semiconductors",        "tier": "EDA & Design IP",                                 "source": "map-sector", "added": "2026-05-24", "note": "" },
+    { "symbol": "LRCX", "company": "Lam Research",                      "sector": "Semiconductors",        "tier": "Deposition & Etch Equipment",                     "source": "map-sector", "added": "2026-05-24", "note": "" },
+    { "symbol": "AMAT", "company": "Applied Materials",                 "sector": "Semiconductors",        "tier": "Deposition & Etch Equipment",                     "source": "map-sector", "added": "2026-05-24", "note": "" },
+    { "symbol": "KLAC", "company": "KLA Corporation",                   "sector": "Semiconductors",        "tier": "Inspection & Metrology",                          "source": "map-sector", "added": "2026-05-24", "note": "" },
+    { "symbol": "ENTG", "company": "Entegris",                          "sector": "Semiconductors",        "tier": "Raw Materials & Specialty Chemicals",              "source": "map-sector", "added": "2026-05-24", "note": "" },
+    { "symbol": "ICHR", "company": "Ichor Holdings",                    "sector": "Semiconductors",        "tier": "Raw Materials & Specialty Chemicals",              "source": "map-sector", "added": "2026-05-24", "note": "" },
+    { "symbol": "ONTO", "company": "Onto Innovation",                   "sector": "Semiconductors",        "tier": "Inspection & Metrology",                          "source": "map-sector", "added": "2026-05-24", "note": "" },
+    { "symbol": "ASX",  "company": "ASE Technology / Advanced Semiconductor Engineering", "sector": "Semiconductors", "tier": "OSAT — Assembly & Test",          "source": "map-sector", "added": "2026-05-24", "note": "" },
+    { "symbol": "COHU", "company": "Cohu Inc.",                         "sector": "Semiconductors",        "tier": "Test & Burn-In",                                  "source": "map-sector", "added": "2026-05-24", "note": "" },
+    { "symbol": "NTAP", "company": "NetApp",                            "sector": "AI Infrastructure",     "tier": "Storage Systems",                                 "source": "map-sector", "added": "2026-05-24", "note": "All-flash arrays + object storage; strong AI storage pipeline" },
+    { "symbol": "WDC",  "company": "Western Digital",                   "sector": "AI Infrastructure",     "tier": "Storage Systems",                                 "source": "map-sector", "added": "2026-05-24", "note": "NVMe SSD + HDD; enterprise flash for hyperscalers; NAND vertically integrated" },
+    { "symbol": "STX",  "company": "Seagate Technology",                "sector": "AI Infrastructure",     "tier": "Storage Systems",                                 "source": "map-sector", "added": "2026-05-24", "note": "HDD dominant; high-capacity nearline storage for hyperscaler object stores" },
+    { "symbol": "ETN",  "company": "Eaton Corporation",                 "sector": "AI Infrastructure",     "tier": "Data Center Power Infrastructure",                "source": "map-sector", "added": "2026-05-24", "note": "Modular UPS, PDUs, busway, switchgear; broad power management portfolio" },
+    { "symbol": "MOD",  "company": "Modine Manufacturing",              "sector": "AI Infrastructure",     "tier": "Thermal Management & Cooling",                    "source": "map-sector", "added": "2026-05-24", "note": "CDUs, cold plates, dry coolers for liquid cooling; pivoting to AI data center thermal" },
+    { "symbol": "NVT",  "company": "nVent Electric",                    "sector": "AI Infrastructure",     "tier": "Thermal Management & Cooling",                    "source": "map-sector", "added": "2026-05-24", "note": "Enclosures, cable management, liquid cooling rack components" },
+    { "symbol": "AFRM", "company": "Affirm Holdings",                   "sector": "Fintech & E-Commerce",  "tier": "Credit Decisioning & Underwriting AI",            "source": "map-sector", "added": "2026-05-24", "note": "Real-time underwriting at checkout; BNPL market leader in US; AI credit model moat" },
+    { "symbol": "PYPL", "company": "PayPal Holdings",                   "sector": "Fintech & E-Commerce",  "tier": "Payment Network Rails & Settlement",               "source": "map-sector", "added": "2026-05-24", "note": "430M active accounts; Venmo + PayPal wallet; Braintree gateway; AI fraud decisioning" },
+    { "symbol": "SQ",   "company": "Block, Inc.",                       "sector": "Fintech & E-Commerce",  "tier": "Payment Network Rails & Settlement",               "source": "map-sector", "added": "2026-05-24", "note": "Square POS + Cash App; merchant acquiring + consumer wallet" },
+    { "symbol": "NU",   "company": "Nu Holdings",                       "sector": "Fintech & E-Commerce",  "tier": "Embedded Finance & Commerce APIs",                "source": "map-sector", "added": "2026-05-24", "note": "Largest neobank in Latin America; AI underwriting; 90M+ customers" },
+    { "symbol": "VST",  "company": "Vistra Energy",                     "sector": "Clean Energy",          "tier": "Primary Power Generation",                        "source": "map-sector", "added": "2026-05-24", "note": "Largest US competitive power generator; nuclear + CCGT; Texas merchant" },
+    { "symbol": "GEV",  "company": "GE Vernova",                        "sector": "Clean Energy",          "tier": "Primary Power Generation",                        "source": "map-sector", "added": "2026-05-24", "note": "Gas turbines; wind (Haliade-X); Grid Solutions HV transformers" },
+    { "symbol": "CEG",  "company": "Constellation Energy",              "sector": "Clean Energy",          "tier": "Primary Power Generation",                        "source": "map-sector", "added": "2026-05-24", "note": "Largest US nuclear operator (21 GW); Microsoft + Amazon nuclear PPA winner" },
+    { "symbol": "NEE",  "company": "NextEra Energy",                    "sector": "Clean Energy",          "tier": "Primary Power Generation",                        "source": "map-sector", "added": "2026-05-24", "note": "#1 US wind + solar; FPL nuclear fleet; largest FID machine for clean generation" },
+    { "symbol": "IRDM", "company": "Iridium Communications",            "sector": "Space & Comms",         "tier": "Satellite Connectivity Services",                  "source": "map-sector", "added": "2026-05-24", "note": "66-satellite LEO constellation; L-band MSS; globally-coordinated ITU L-band spectrum" },
+    { "symbol": "GSAT", "company": "Globalstar Inc.",                   "sector": "Space & Comms",         "tier": "Satellite Connectivity Services",                  "source": "map-sector", "added": "2026-05-24", "note": "S-band MSS; Apple Emergency SOS royalty stream; Band 53/n53 terrestrial LTE spectrum" },
+    { "symbol": "VSAT", "company": "Viasat Inc.",                       "sector": "Space & Comms",         "tier": "Ground Segment & Network Operations",              "source": "map-sector", "added": "2026-05-24", "note": "Ka-band HTS (ViaSat-3); in-flight broadband; government satcom" },
+    { "symbol": "VALE", "company": "Vale S.A.",                         "sector": "Metals & Mining",       "tier": "Bulk Mining & Ore Extraction",                    "source": "map-sector", "added": "2026-05-24", "note": "World's largest nickel producer; iron ore dominant; cobalt byproduct" },
+    { "symbol": "RIO",  "company": "Rio Tinto",                         "sector": "Metals & Mining",       "tier": "Bulk Mining & Ore Extraction",                    "source": "map-sector", "added": "2026-05-24", "note": "Copper (Oyu Tolgoi), lithium (Rincon), iron ore" },
+    { "symbol": "ALB",  "company": "Albemarle",                         "sector": "Metals & Mining",       "tier": "Battery Material Precursor Production",            "source": "map-sector", "added": "2026-05-24", "note": "#1 lithium chemicals globally; Greenbushes spodumene JV; Chilean brine" },
+    { "symbol": "WOLF", "company": "Wolfspeed",                         "sector": "Metals & Mining",       "tier": "Silicon & SiC Precursor Production",               "source": "map-sector", "added": "2026-05-24", "note": "Only large-scale 4H-SiC substrate maker outside China; 150mm and 200mm wafers" },
+    { "symbol": "AMD",  "company": "Advanced Micro Devices",            "sector": "AI Model Infrastructure", "tier": "Distributed Training Orchestration",             "source": "map-sector", "added": "2026-05-31", "note": "MI300X GPU; ROCm ecosystem; gaining training share at Meta and Microsoft" },
+    { "symbol": "CRWV", "company": "CoreWeave",                         "sector": "AI Model Infrastructure", "tier": "Distributed Training Orchestration",             "source": "map-sector", "added": "2026-05-31", "note": "Pure-play GPU cloud; IPO 2025; NVIDIA preferred partner; Kubernetes-native GPU autoscaling" },
+    { "symbol": "META", "company": "Meta Platforms",                    "sector": "AI Model Infrastructure", "tier": "Foundation Model Development",                  "source": "map-sector", "added": "2026-05-31", "note": "Llama 3.x/4 open-weight models; PyTorch custodian; FAIR research; MTIA custom ASIC" },
+    { "symbol": "DDOG", "company": "Datadog",                           "sector": "AI Model Infrastructure", "tier": "MLOps & Model Lifecycle Management",             "source": "map-sector", "added": "2026-05-31", "note": "LLM Observability product; APM and log analytics; AI cost attribution dashboards" },
+    { "symbol": "SNOW", "company": "Snowflake",                         "sector": "AI Model Infrastructure", "tier": "MLOps & Model Lifecycle Management",             "source": "map-sector", "added": "2026-05-31", "note": "Cortex AI (managed LLM inference + RAG + feature store); SQL-native ML APIs" },
+    { "symbol": "PLTR", "company": "Palantir Technologies",             "sector": "AI Model Infrastructure", "tier": "MLOps & Model Lifecycle Management",             "source": "map-sector", "added": "2026-05-31", "note": "AIP (AI Platform) for enterprise model deployment; Foundry + Ontology integration" },
+    { "symbol": "MDB",  "company": "MongoDB",                           "sector": "AI Model Infrastructure", "tier": "MLOps & Model Lifecycle Management",             "source": "map-sector", "added": "2026-05-31", "note": "Atlas Vector Search (HNSW/ENN); document store for RAG pipeline metadata" }
+  ],
+
+  "sectors": {
+    "Robotics & Edge AI":      ["AMBA", "OUST"],
+    "Photonics & Optical":     ["COHR", "LITE", "FN", "CIEN", "VIAV", "AAOI", "AXTI", "LWLG", "LASR", "SIVE", "POET", "FOCI", "6965.T", "PRY.MI", "5801.T", "6451.TW", "6841.T", "6754.T"],
+    "Semiconductors":          ["INTC", "NVDA", "MU", "MRVL", "AEHR", "ALAB", "CRDO", "AMKR", "6857.T", "FORM", "NVTS", "IFX"],
+    "AI Infrastructure":       ["IREN", "ANET", "VRT", "SMCI", "P", "BRUN"],
+    "Cybersecurity":           ["RBRK", "SAIL"],
+    "Fintech & E-Commerce":    ["MELI", "HOOD", "SOFI"],
+    "Clean Energy":            ["OKLO", "TE", "ASPI"],
+    "Space & Comms":           ["ASTS", "RKLB"],
+    "Metals & Mining":         ["FCX", "MP", "ELMT"]
+  }
+}
