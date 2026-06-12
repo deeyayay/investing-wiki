@@ -187,7 +187,49 @@
               "ticker": "MU",
               "name": "Micron Technology",
               "mkt_cap": "Large",
-              "notes": "The only US-based maker of High Bandwidth Memory (HBM) \u2014 the specialized memory stacked directly on AI chips. Without HBM, a GPU can't move data fast enough to stay productive during training. One of three HBM suppliers worldwide alongside SK Hynix and Samsung."
+              "notes": "The only US-based maker of High Bandwidth Memory \u2014 the specialized memory stacked directly on AI GPUs. Ramping HBM3e for NVIDIA Blackwell; HBM4 qualification for Rubin (2026) is the next major inflection. Also #3 globally in NAND and DRAM, making it a three-front AI memory play."
+            },
+            {
+              "ticker": "HXSCF",
+              "name": "SK Hynix (OTC: HXSCF / KRX: 000660)",
+              "mkt_cap": "Large",
+              "notes": "The undisputed HBM champion \u2014 holds ~70% of HBM3e market share and was the exclusive early supplier for NVIDIA H100 and H200. Its Icheon fab is the only facility capable of HBM3e volume at NVIDIA's required density. HBM4 qualification for Rubin is already underway, and TSMC CoWoS capacity was secured jointly with NVIDIA. The single most critical memory supplier in the AI stack."
+            },
+            {
+              "ticker": "SSNLF",
+              "name": "Samsung Electronics (OTC: SSNLF / KRX: 005930)",
+              "mkt_cap": "Large",
+              "notes": "#1 globally in NAND, DRAM, and HBM by volume \u2014 but currently losing ground in HBM3e due to yield issues. The turnaround catalyst is HBM4: Samsung's 12-layer HBM4 is in qualification at NVIDIA and AMD for 2026 designs. Also the world's largest NAND producer, dominant in enterprise SSDs used for AI training data lakes."
+            },
+            {
+              "ticker": "SNDK",
+              "name": "SanDisk Corporation",
+              "mkt_cap": "Mid",
+              "notes": "Pure-play NAND flash company spun off from Western Digital in February 2025. Now the only US-listed pure-play NAND investment. Positioned for the AI storage wave: inference KV-cache, training data checkpointing, and model weight storage all run on NAND. QLC technology roadmap targets the cost-per-bit economics needed for exabyte-scale AI data lakes."
+            },
+            {
+              "ticker": "6600.T",
+              "name": "KIOXIA Holdings (TSE: 6600)",
+              "mkt_cap": "Large",
+              "notes": "World's #2 NAND flash company (after Samsung) \u2014 IPO'd on the Tokyo Stock Exchange in October 2024 after being Toshiba's flash memory unit. Pure-play NAND with BiCS FLASH (3D TLC/QLC) optimized for enterprise SSDs. Joint venture fab (Yokkaichi/Kitakami) shared with WD/SanDisk gives economies of scale. First pure-play NAND play accessible in Japan."
+            },
+            {
+              "ticker": "RMBS",
+              "name": "Rambus Inc.",
+              "mkt_cap": "Mid",
+              "notes": "The tollbooth on memory standards \u2014 licenses PHY and controller IP for DDR5, HBM2/3, GDDR6, and LPDDR5 to every memory maker and chip designer on the planet. Every AI chip that uses HBM pays into Rambus's royalty stream. Also sells silicon products (security cores, memory interface chips for AI server DIMMs) alongside licensing. Low-risk exposure to the memory upgrade cycle with no fab capex risk."
+            },
+            {
+              "ticker": "MRAM",
+              "name": "Everspin Technologies",
+              "mkt_cap": "Small",
+              "notes": "The only publicly traded pure-play MRAM (Magnetoresistive RAM) company. MRAM is non-volatile like flash but as fast as DRAM \u2014 ideal for persistent memory in AI inference servers, industrial robotics, and autonomous vehicles where power loss cannot corrupt state. Everspin's STT-MRAM is already designed into data center SSDs (as cache) and industrial controllers. A niche but defensible position in the emerging storage-class memory market."
+            },
+            {
+              "ticker": "SGH",
+              "name": "SMART Global Holdings",
+              "mkt_cap": "Small",
+              "notes": "Designs and manufactures specialty memory and storage modules optimized for AI/HPC workloads \u2014 DRAM modules, NVMe SSDs, and hybrid memory solutions that OEMs like Dell, HPE, and Supermicro drop into AI servers. Also owns Penguin Solutions (HPC cluster integration) and CREE LED (divesting). Pure small-cap leverage to AI memory demand without wafer fab exposure."
             }
           ]
         },
@@ -2039,6 +2081,152 @@
         "CPO integration complexity (foundry + photonics alignment) causes repeated delays",
         "CPO solution is captive/in-house (NVIDIA, Intel) \u2014 investable pure plays don't capture the win"
       ]
+    },
+    {
+      "id": "hbm-supremacy",
+      "name": "HBM Supremacy",
+      "sector_group": "AI Memory",
+      "preference": "SK Hynix over Samsung and Micron for HBM3e/HBM4 AI accelerator sockets through 2026",
+      "conviction": "High",
+      "last_validated": "2026-06-12",
+      "status": "Active",
+      "tickers": [
+        {
+          "ticker": "HXSCF",
+          "technology": "HBM3e / HBM4",
+          "exposure": "Primary",
+          "weighting": "Overweight \u2014 sole early NVIDIA supplier"
+        },
+        {
+          "ticker": "MU",
+          "technology": "HBM3e (ramping)",
+          "exposure": "Primary",
+          "weighting": "Overweight \u2014 only US-listed HBM maker"
+        },
+        {
+          "ticker": "SSNLF",
+          "technology": "HBM3e (yield recovery)",
+          "exposure": "Partial",
+          "weighting": "Neutral \u2014 watch for HBM4 qualification confirmation"
+        }
+      ],
+      "application_driver": "Every NVIDIA Hopper and Blackwell GPU ships with HBM stacked directly on the package via CoWoS. Without HBM, GPU compute sits idle \u2014 the memory bandwidth bottleneck is the binding constraint on AI training throughput. NVIDIA's next architecture (Rubin, 2026) requires HBM4, doubling bandwidth to ~1.7 TB/s per stack.",
+      "consensus_gap": [
+        [
+          "Samsung will recover HBM share quickly",
+          "HBM3e yields at Samsung remain below NVIDIA's threshold \u2014 HBM4 is the earliest realistic recovery point (2026)"
+        ],
+        [
+          "Micron is a distant third in HBM",
+          "MU has secured confirmed HBM3e design wins and is the only US-listed way to own HBM \u2014 strategic importance for CHIPS Act supply chain narrative"
+        ],
+        [
+          "HBM is a commodity",
+          "HBM is an oligopoly with two years of committed TSMC CoWoS capacity as the gating constraint \u2014 pricing power is structurally elevated"
+        ]
+      ],
+      "bull_case": [
+        "HBM content per GPU is increasing with each generation \u2014 HBM4 doubles bandwidth and increases die count from 8 to 12 layers",
+        "AI inference scaling (more GPUs, longer context windows) is linear demand growth that doesn't plateau",
+        "SK Hynix already has HBM4 samples running at NVIDIA \u2014 12+ month lead over Samsung on next-gen"
+      ],
+      "bear_risk": [
+        "Samsung HBM3e yield recovery faster than expected could compress SK Hynix ASPs in 2025",
+        "Custom silicon (Google TPU, AWS Trainium) using alternative memory architectures could reduce HBM dependency at large hyperscalers",
+        "Memory is cyclical \u2014 if GPU build rates slow, HBM inventory correction could be severe"
+      ]
+    },
+    {
+      "id": "nand-ai-storage",
+      "name": "NAND for AI Storage",
+      "sector_group": "AI Memory",
+      "preference": "SNDK (SanDisk) as the pure-play NAND bet; KIOXIA for Japan exposure",
+      "conviction": "Medium",
+      "last_validated": "2026-06-12",
+      "status": "Active",
+      "tickers": [
+        {
+          "ticker": "SNDK",
+          "technology": "QLC NAND Flash",
+          "exposure": "Primary",
+          "weighting": "Overweight \u2014 only US pure-play NAND post-spinoff"
+        },
+        {
+          "ticker": "6600.T",
+          "technology": "BiCS FLASH (TLC/QLC)",
+          "exposure": "Primary",
+          "weighting": "Overweight \u2014 #2 NAND globally, Japan-listed"
+        },
+        {
+          "ticker": "MU",
+          "technology": "NAND + HBM",
+          "exposure": "Partial",
+          "weighting": "Neutral \u2014 NAND is secondary to HBM thesis for MU"
+        },
+        {
+          "ticker": "SSNLF",
+          "technology": "V-NAND (TLC/QLC/PLC)",
+          "exposure": "Primary",
+          "weighting": "Neutral \u2014 NAND leader but complex conglomerate"
+        }
+      ],
+      "application_driver": "AI training requires exabyte-scale data lakes for raw training data, and inference requires persistent KV-cache storage for long-context models. A single 100,000-GPU training cluster generates and stores petabytes of checkpoints per week. QLC NAND \u2014 4 bits per cell \u2014 is the cost-per-bit breakthrough enabling economically viable AI storage at that scale.",
+      "consensus_gap": [
+        [
+          "NAND is oversupplied and commoditized",
+          "Enterprise NAND for AI workloads (high endurance, low latency, consistent QoS) commands premium pricing versus consumer NAND \u2014 the AI mix shift is margin-accretive"
+        ],
+        [
+          "SanDisk is just WDC's NAND division with a new name",
+          "SNDK as a standalone pure-play forces a re-rating \u2014 investors can now buy NAND exposure without WDC's legacy HDD business dragging valuation"
+        ]
+      ],
+      "bull_case": [
+        "QLC NAND cost structure makes exabyte-scale AI storage economically viable for the first time \u2014 total AI storage capacity is growing 40-60% annually",
+        "SanDisk spinoff unlocks pure-play NAND valuation multiple \u2014 historically trades at discount inside a conglomerate",
+        "KIOXIA at TSE listing trades at meaningful discount to Samsung on NAND-adjusted EV/revenue"
+      ],
+      "bear_risk": [
+        "NAND is deeply cyclical \u2014 oversupply driven by excess capacity additions from Chinese manufacturers (YMTC) could suppress pricing",
+        "HBM is the higher-margin, higher-growth AI memory story \u2014 NAND benefits are slower-moving and more commodity-like"
+      ]
+    },
+    {
+      "id": "memory-interface-ip",
+      "name": "Memory Interface IP",
+      "sector_group": "AI Memory",
+      "preference": "Rambus (RMBS) as the royalty toll on every AI memory standard upgrade cycle",
+      "conviction": "High",
+      "last_validated": "2026-06-12",
+      "status": "Active",
+      "tickers": [
+        {
+          "ticker": "RMBS",
+          "technology": "DDR5 / HBM PHY / GDDR6 IP",
+          "exposure": "Primary",
+          "weighting": "Overweight \u2014 pure royalty toll, zero fab capex"
+        }
+      ],
+      "application_driver": "Every time the industry upgrades memory standards \u2014 from DDR4 to DDR5, from HBM2 to HBM3 to HBM4 \u2014 chip designers and memory makers must license the PHY and controller IP that makes the interface work. Rambus holds foundational patents across every current AI-relevant memory standard. Each GPU generation upgrade triggers a new royalty event.",
+      "consensus_gap": [
+        [
+          "Rambus is a patent troll with no real business",
+          "Rambus has transformed into a semiconductor IP and silicon products company \u2014 it sells actual memory interface chips (DIMM buffers, security cores) alongside licensing, with 70%+ gross margins and recurring revenue"
+        ],
+        [
+          "AI doesn't benefit Rambus specifically",
+          "HBM4 requires new PHY IP \u2014 Rambus is actively involved in standardization and will license HBM4 PHY to all three HBM manufacturers"
+        ]
+      ],
+      "bull_case": [
+        "DDR5 adoption cycle is still early \u2014 less than 40% of data center DIMMs have transitioned, creating a multi-year royalty ramp",
+        "HBM4 standard finalization in 2025 creates a new licensing event across all AI GPU designs",
+        "No fab capex, no inventory risk, no customer concentration \u2014 the cleanest risk-adjusted AI memory exposure"
+      ],
+      "bear_risk": [
+        "Patent licensing disputes can drag through courts for years, creating revenue uncertainty",
+        "Transition to open-source memory standards or JEDEC-only specs could erode licensing leverage over time"
+      ]
     }
   ],
   "stack": {
@@ -2243,7 +2431,14 @@
             "slug": "semiconductors",
             "tier": "Memory (HBM \u00b7 DRAM \u00b7 NAND)",
             "chips": [
-              "MU"
+              "MU",
+              "HXSCF",
+              "SSNLF",
+              "SNDK",
+              "6600.T",
+              "RMBS",
+              "MRAM",
+              "SGH"
             ]
           }
         ]
