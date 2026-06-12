@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-10",
+  "generated": "2026-06-12",
   "sectors": [
     {
       "slug": "semiconductors",
@@ -190,10 +190,10 @@
               "notes": "The only US-based maker of High Bandwidth Memory \u2014 the specialized memory stacked directly on AI GPUs. Ramping HBM3e for NVIDIA Blackwell; HBM4 qualification for Rubin (2026) is the next major inflection. Also #3 globally in NAND and DRAM, making it a three-front AI memory play."
             },
             {
-              "ticker": "HXSCF",
-              "name": "SK Hynix (OTC: HXSCF / KRX: 000660)",
+              "ticker": "HXSCL",
+              "name": "SK Hynix (OTC: HXSCL / KRX: 000660)",
               "mkt_cap": "Large",
-              "notes": "The undisputed HBM champion \u2014 holds ~70% of HBM3e market share and was the exclusive early supplier for NVIDIA H100 and H200. Its Icheon fab is the only facility capable of HBM3e volume at NVIDIA's required density. HBM4 qualification for Rubin is already underway, and TSMC CoWoS capacity was secured jointly with NVIDIA. The single most critical memory supplier in the AI stack."
+              "notes": "Global HBM leader with ~70% HBM4 market share for NVIDIA Vera Rubin platform. Q1 2026 revenue ~$35.6B (+3x YoY), operating margin 72%. All 2026 HBM capacity sold out; shortages forecast into 2027. NASDAQ ADR listing expected August 2026 \u2014 could raise up to $14B. Crossed $1 trillion market cap in May 2026. Primary US-accessible ticker: OTC HXSCL (Robinhood-eligible)."
             },
             {
               "ticker": "SSNLF",
@@ -208,10 +208,10 @@
               "notes": "Pure-play NAND flash company spun off from Western Digital in February 2025. Now the only US-listed pure-play NAND investment. Positioned for the AI storage wave: inference KV-cache, training data checkpointing, and model weight storage all run on NAND. QLC technology roadmap targets the cost-per-bit economics needed for exabyte-scale AI data lakes."
             },
             {
-              "ticker": "6600.T",
-              "name": "KIOXIA Holdings (TSE: 6600)",
+              "ticker": "285A.T",
+              "name": "KIOXIA Holdings (TSE: 285A)",
               "mkt_cap": "Large",
-              "notes": "World's #2 NAND flash company (after Samsung) \u2014 IPO'd on the Tokyo Stock Exchange in October 2024 after being Toshiba's flash memory unit. Pure-play NAND with BiCS FLASH (3D TLC/QLC) optimized for enterprise SSDs. Joint venture fab (Yokkaichi/Kitakami) shared with WD/SanDisk gives economies of scale. First pure-play NAND play accessible in Japan."
+              "notes": "World's #3 NAND flash company \u2014 IPO'd on the Tokyo Stock Exchange December 18, 2024 after being Toshiba's flash memory unit. Pure-play NAND with BiCS FLASH (3D TLC/QLC) optimized for enterprise AI SSDs. Owns 51% of Flash Ventures JV (9 fabs in Japan at Yokkaichi + Kitakami) jointly with SanDisk \u2014 when SanDisk's hyperscaler orders ramp, Kioxia's fabs fill. Market cap ~$260B USD. No US ADR \u2014 requires TSE access. ITC investigation on 3D NAND imports is an active risk."
             },
             {
               "ticker": "RMBS",
@@ -230,6 +230,24 @@
               "name": "SMART Global Holdings",
               "mkt_cap": "Small",
               "notes": "Designs and manufactures specialty memory and storage modules optimized for AI/HPC workloads \u2014 DRAM modules, NVMe SSDs, and hybrid memory solutions that OEMs like Dell, HPE, and Supermicro drop into AI servers. Also owns Penguin Solutions (HPC cluster integration) and CREE LED (divesting). Pure small-cap leverage to AI memory demand without wafer fab exposure."
+            },
+            {
+              "ticker": "ALAB",
+              "name": "Astera Labs, Inc.",
+              "mkt_cap": "Large",
+              "notes": "Only pure-play CXL memory expansion silicon company on a US exchange. IPO NASDAQ March 2024. Market cap ~$63B. Q1 2026 revenue $308M (+93% YoY). Leo CXL Smart Memory Controller is the first CXL memory expansion controller deployed at hyperscale \u2014 in production on Microsoft Azure M-series VMs. Scorpio CXL Smart Fabric Switch enables rack-level memory pooling. Two additional hyperscaler Leo deployments guided for end of 2026. Added to Nasdaq-100."
+            },
+            {
+              "ticker": "SIMO",
+              "name": "Silicon Motion Technology Corporation",
+              "mkt_cap": "Mid",
+              "notes": "Fabless NAND flash controller designer. Q1 2026 net sales $342M (+105% YoY). MonTitan enterprise SSD controller for AI inference (KV cache / RAG) entering volume production at five tier-1 cloud customers in H2 2026. SM2524XT PCIe Gen5 DRAMless controller for AI inference. SSD controller segment +45% YoY. Competes with Phison in NAND controller market; NASDAQ-listed ADR."
+            },
+            {
+              "ticker": "MRVL",
+              "name": "Marvell Technology, Inc.",
+              "mkt_cap": "Large",
+              "notes": "Broad-line semiconductor company with significant CXL memory switching and SSD controller exposure. Structera S 30260: 260-lane CXL switch (samples Q3 2026; 4TB/s bandwidth for rack-level memory pooling). Also Structera A (near-memory accelerator) and X (memory expansion controller). $2B NVIDIA strategic investment (March 2026) via NVLink Fusion partnership. Competes with Astera Labs in CXL switches; also leads in enterprise SSD controllers."
             }
           ]
         },
@@ -2092,7 +2110,7 @@
       "status": "Active",
       "tickers": [
         {
-          "ticker": "HXSCF",
+          "ticker": "HXSCL",
           "technology": "HBM3e / HBM4",
           "exposure": "Primary",
           "weighting": "Overweight \u2014 sole early NVIDIA supplier"
@@ -2152,7 +2170,7 @@
           "weighting": "Overweight \u2014 only US pure-play NAND post-spinoff"
         },
         {
-          "ticker": "6600.T",
+          "ticker": "285A.T",
           "technology": "BiCS FLASH (TLC/QLC)",
           "exposure": "Primary",
           "weighting": "Overweight \u2014 #2 NAND globally, Japan-listed"
@@ -2205,6 +2223,12 @@
           "technology": "DDR5 / HBM PHY / GDDR6 IP",
           "exposure": "Primary",
           "weighting": "Overweight \u2014 pure royalty toll, zero fab capex"
+        },
+        {
+          "ticker": "MRVL",
+          "technology": "CXL Memory Switching + PCIe Retimers",
+          "exposure": "High",
+          "weighting": "Moderate"
         }
       ],
       "application_driver": "Every time the industry upgrades memory standards \u2014 from DDR4 to DDR5, from HBM2 to HBM3 to HBM4 \u2014 chip designers and memory makers must license the PHY and controller IP that makes the interface work. Rambus holds foundational patents across every current AI-relevant memory standard. Each GPU generation upgrade triggers a new royalty event.",
@@ -2432,13 +2456,15 @@
             "tier": "Memory (HBM \u00b7 DRAM \u00b7 NAND)",
             "chips": [
               "MU",
-              "HXSCF",
+              "HXSCL",
               "SSNLF",
               "SNDK",
-              "6600.T",
+              "285A.T",
+              "ALAB",
               "RMBS",
-              "MRAM",
-              "SGH"
+              "SIMO",
+              "MRVL",
+              "MRAM"
             ]
           }
         ]
