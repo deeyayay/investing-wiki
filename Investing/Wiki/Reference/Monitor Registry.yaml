@@ -487,6 +487,77 @@ tickers:
 # Run /add-ticker TICKER --sector "Sector" to onboard any candidate.
 
 candidates:
+  # ── L06 Memory — added 2026-06-12 ──────────────────────────────────────────
+  - ticker: HXSCF
+    company: "SK Hynix Inc."
+    sector: "Semiconductors"
+    layer: "Memory (HBM · DRAM · NAND)"
+    exchange: "OTC (primary: KRX 000660)"
+    source: "scout-tickers"
+    added: "2026-06-12"
+    race: ["HBM Supremacy", "NAND for AI Storage", "CXL Memory"]
+    note: "Undisputed HBM leader ~70% HBM3e share; sole early NVIDIA H100/H200 supplier; HBM4 Rubin qualification underway"
+
+  - ticker: SSNLF
+    company: "Samsung Electronics Co. Ltd."
+    sector: "Semiconductors"
+    layer: "Memory (HBM · DRAM · NAND)"
+    exchange: "OTC (primary: KRX 005930)"
+    source: "scout-tickers"
+    added: "2026-06-12"
+    race: ["HBM Supremacy", "NAND for AI Storage", "CXL Memory"]
+    note: "#1 globally in NAND + DRAM + HBM volume; HBM3e yield recovery + HBM4 in qualification at NVIDIA for Rubin 2026"
+
+  - ticker: SNDK
+    company: "SanDisk Corporation"
+    sector: "Semiconductors"
+    layer: "Memory (HBM · DRAM · NAND)"
+    exchange: "NASDAQ"
+    source: "scout-tickers"
+    added: "2026-06-12"
+    race: ["NAND for AI Storage"]
+    note: "Pure-play NAND spun off from Western Digital Feb 2025; only US-listed NAND pure-play; QLC roadmap for AI data lakes"
+
+  - ticker: 6600.T
+    company: "KIOXIA Holdings Corporation"
+    sector: "Semiconductors"
+    layer: "Memory (HBM · DRAM · NAND)"
+    exchange: "TSE (Tokyo)"
+    source: "scout-tickers"
+    added: "2026-06-12"
+    race: ["NAND for AI Storage"]
+    note: "World #2 NAND (after Samsung); IPO'd TSE Oct 2024; BiCS FLASH 3D TLC/QLC; JV fab with SanDisk at Yokkaichi/Kitakami"
+
+  - ticker: RMBS
+    company: "Rambus Inc."
+    sector: "Semiconductors"
+    layer: "Memory (HBM · DRAM · NAND)"
+    exchange: "NASDAQ"
+    source: "scout-tickers"
+    added: "2026-06-12"
+    race: ["Memory Interface & Standards IP"]
+    note: "PHY/controller IP licensed for DDR5, HBM2/3, GDDR6, LPDDR5; royalty toll on every AI chip memory interface; zero fab capex risk"
+
+  - ticker: MRAM
+    company: "Everspin Technologies"
+    sector: "Semiconductors"
+    layer: "Memory (HBM · DRAM · NAND)"
+    exchange: "NASDAQ"
+    source: "scout-tickers"
+    added: "2026-06-12"
+    race: ["MRAM / Next-Gen Non-Volatile"]
+    note: "Only public MRAM pure-play; STT-MRAM designed into AI server SSD cache and industrial controllers; non-volatile + DRAM-speed = storage-class memory"
+
+  - ticker: SGH
+    company: "SMART Global Holdings"
+    sector: "Semiconductors"
+    layer: "Memory (HBM · DRAM · NAND)"
+    exchange: "NASDAQ"
+    source: "scout-tickers"
+    added: "2026-06-12"
+    race: ["AI Memory Modules"]
+    note: "Specialty DRAM modules + NVMe SSDs for AI/HPC OEMs (Dell, HPE, Supermicro); Penguin Solutions HPC integration arm; small-cap AI memory demand play"
+
   - ticker: GLW
     company: "Corning Incorporated"
     sector: "Photonics & Optical"
