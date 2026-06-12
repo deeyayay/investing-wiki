@@ -240,6 +240,22 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 .es-ticker{font-family:ui-monospace,monospace;font-weight:700;font-size:11px;color:var(--text)}
 .es-date{color:var(--muted);font-size:10px}
 @media(max-width:600px){.conv-row{grid-template-columns:20px 1fr auto}#earnings-strip{padding:6px 16px}}
+/* ── TAM / Market Opportunity ── */
+.tam-block{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:16px 18px;margin-bottom:28px}
+.tam-block-hdr{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:12px}
+.tam-numbers{display:flex;gap:24px;flex-wrap:wrap;margin-bottom:10px;align-items:baseline}
+.tam-now{font-size:22px;font-weight:800;color:var(--text);letter-spacing:-.02em}
+.tam-arrow{font-size:14px;color:var(--muted);align-self:center}
+.tam-proj{font-size:22px;font-weight:800;color:oklch(28% .13 258);letter-spacing:-.02em}
+.tam-proj-yr{font-size:11px;color:var(--muted);font-weight:400;margin-left:3px}
+.tam-badges{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:10px}
+.tam-cagr{font-size:11px;font-weight:700;padding:3px 9px;border-radius:99px;background:oklch(90% .10 142);color:oklch(26% .18 142)}
+.tam-sub{font-size:11px;padding:3px 9px;border-radius:99px;background:oklch(90% .09 258);color:oklch(26% .13 258)}
+.tam-source{font-size:10px;color:var(--muted);margin-bottom:8px}
+.tam-driver{font-size:12px;color:var(--text);line-height:1.6;border-top:1px solid var(--border);padding-top:9px;margin-top:4px}
+/* TAM pill on L1 layer boxes */
+.layer-box-cagr{font-size:9px;font-weight:700;padding:2px 6px;border-radius:99px;background:oklch(90% .10 142);color:oklch(26% .18 142);white-space:nowrap;flex-shrink:0}
+@media(max-width:600px){.tam-numbers{gap:12px}.tam-now,.tam-proj{font-size:18px}}
 </style>
 </head>
 <body>
@@ -391,9 +407,10 @@ function renderLayerView(i){
       +(overflow2?'<span class="chip more">+'+overflow2+'</span>':'');
     const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\','+i+')"':'';
     const count=tier&&tier.companies?tier.companies.length:0;
+    const tamCagr=sector&&sector.tam?'<span class="layer-box-cagr">'+sector.tam.cagr_pct+'% CAGR</span>':'';
     return '<div class="layer-box'+(choke?' choke':'')+'"'+onclick+'>'
       +'<div class="layer-box-head"><span class="layer-box-label">'+(choke?'<span class="choke-mark">⧫</span>':'')+esc(b.label)+'</span>'
-      +'<span class="layer-box-sector">'+esc(sName)+'</span></div>'
+      +(tamCagr||'<span class="layer-box-sector">'+esc(sName)+'</span>')+'</div>'
       +(tier?'<div class="layer-box-fn">'+esc(tier.fn)+'</div>':'')
       +'<div class="chip-row">'+chips+'</div>'
       +(count?'<div class="layer-box-count">'+count+' tracked</div>':'')
@@ -405,6 +422,22 @@ function renderLayerView(i){
     +'<span class="layer-view-name">'+esc(L.name)+'</span></div>'
     +'<div class="layer-view-tag">'+esc(L.tag)+'</div>'
     +'<div class="layer-box-grid">'+cards+'</div>';
+}
+
+function _tamHtml(tam){
+  if(!tam)return'';
+  const now='$'+tam.current_bn+'B';
+  const proj='$'+tam.projected_bn+'B';
+  const yr=tam.projected_year;
+  const cagr=tam.cagr_pct+'% CAGR';
+  const sub=tam.ai_sub_tam_bn?'$'+tam.ai_sub_tam_bn+'B AI sub-segment':'';
+  return'<div class="tam-block">'
+    +'<div class="tam-block-hdr">Market Opportunity</div>'
+    +'<div class="tam-numbers"><span class="tam-now">'+now+'</span><span class="tam-arrow">→</span><span class="tam-proj">'+proj+'<span class="tam-proj-yr">by '+yr+'</span></span></div>'
+    +'<div class="tam-badges"><span class="tam-cagr">'+cagr+'</span>'+(sub?'<span class="tam-sub">'+esc(sub)+'</span>':'')+'</div>'
+    +'<div class="tam-source">Source: '+esc(tam.source)+'</div>'
+    +'<div class="tam-driver">'+esc(tam.ai_driver)+'</div>'
+    +'</div>';
 }
 
 const _CRIT_KEYS=['product','pricing_power','leadership','financial_health','macro','future_potential'];
@@ -491,12 +524,14 @@ function openTier(idx){
   const provenance="<div class=\"tier-provenance\">"
     +((li!==null&&li!==undefined)?"<span class=\"layer-pill\" style=\"--lh:"+STACK.layers[li].hue+"\">"+esc(_layerLabel(li))+"</span>":"")
     +"<span class=\"sector-tag\">"+esc(s.name)+"</span></div>";
+  const tamHtml=_tamHtml(s.tam||null);
   document.getElementById("l2").innerHTML=
     crumbTrail(trail)
     +provenance
     +"<div class=\"tier-detail-name\">"+t.tier+"</div>"
     +"<div class=\"tier-fn-full\">"+t.fn+"</div>"
     +chokeBlock
+    +tamHtml
     +"<div class=\"invest-section\">"
     +"<h3>Investment Angle</h3>"
     +"<div class=\"invest-rows\">"
