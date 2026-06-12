@@ -1,14 +1,14 @@
 {
   "meta": {
     "schema_version": "1",
-    "generated": "2026-06-11",
+    "generated": "2026-06-12",
     "source": {
       "registry": "Investing/Wiki/Reference/Monitor Registry.yaml",
       "data": "Investing/Output/Dashboard/data.json"
     },
     "counts": {
       "active": 51,
-      "scored": 9,
+      "scored": 14,
       "candidates": 34
     },
     "schema_notes": {
@@ -931,32 +931,43 @@
           "sector_slug": "semiconductors",
           "tier": "Memory (HBM · DRAM · NAND)",
           "chokepoint": true,
-          "dominance": "Monopoly"
+          "dominance": "Leader"
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 8.5,
+        "score_label": "Unrivaled",
+        "last_scored": "2026-06-12",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 5,
+          "pricing_power": 4,
+          "leadership": 3,
+          "financial_health": 4,
+          "macro_environment": 5,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Only US-listed pure-play HBM maker ramping NVIDIA's Vera Rubin supply; structural margin expansion as HBM penetration grows.",
+        "score_history": [
+          { "date": "2026-06-12", "score": 8.5, "label": "Unrivaled" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-06-24",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
-        "analyst_pt": null,
-        "analyst_upside_pct": null,
-        "valuation_last_updated": null,
+        "valuation_label": "Cheap",
+        "valuation_metric": "P/E",
+        "valuation_multiple": 6.5,
+        "analyst_pt": 140.0,
+        "analyst_upside_pct": 8.0,
+        "valuation_last_updated": "2026-06-12",
         "near_term_catalysts": [
-          { "date": "2026-06-24", "type": "earnings", "description": "Q3 FY2026 earnings — HBM3E demand and HBM4 pricing dynamics key watch items" }
+          { "date": "2026-06-24", "type": "earnings", "description": "Q3 FY2025 earnings — guidance on HBM4 ramp and capacity utilization key watch items" },
+          { "date": null, "type": "product", "description": "NVIDIA Vera Rubin platform ramp H2 2026 — Micron production constrained, pricing power inflection" },
+          { "date": null, "type": "product", "description": "Next-gen HBM5 design win announcements targeting 2027" }
         ],
-        "bull_summary": null,
-        "bear_summary": null
+        "bull_summary": "Only US national security-cleared HBM maker; NVIDIA first-mover supply contract; HBM content per GPU rising as context windows expand; hyperscalers diversifying away from sole SK Hynix sourcing.",
+        "bear_summary": "Low insider ownership; legacy DRAM/NAND exposure caps multiple re-rating; GPU demand cycle sensitive; potential supply diversification if Korean geopolitical tensions ease."
       }
     },
 
@@ -987,26 +998,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 8.0,
+        "score_label": "Unrivaled",
+        "last_scored": "2026-06-12",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 4,
+          "pricing_power": 4,
+          "leadership": 3,
+          "financial_health": 4,
+          "macro_environment": 5,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "$2B NVIDIA partnership on CXL switching + SSD controllers; infrastructure layer for AI memory disaggregation; broad exposure to AI infrastructure.",
+        "score_history": [
+          { "date": "2026-06-12", "score": 8.0, "label": "Unrivaled" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-08-27",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
-        "analyst_pt": null,
-        "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_label": "Fair",
+        "valuation_metric": "P/E",
+        "valuation_multiple": 22.0,
+        "analyst_pt": 115.0,
+        "analyst_upside_pct": 15.0,
+        "valuation_last_updated": "2026-06-12",
+        "near_term_catalysts": [
+          { "date": null, "type": "product", "description": "Structera S 30260 CXL switch sample release Q3 2026" },
+          { "date": null, "type": "product", "description": "First hyperscaler Structera CXL switch design wins H2 2026" },
+          { "date": "2026-08-27", "type": "earnings", "description": "Q2 FY2027 earnings — watch AI infrastructure revenue mix vs legacy datacenter" }
+        ],
+        "bull_summary": "$2B NVIDIA strategic investment de-risks Structera CXL ecosystem; CXL switching + SSD controllers + NVLink Fusion = multiple converging AI infrastructure tailwinds; 62% gross margin expanding on AI mix.",
+        "bear_summary": "Distributed revenue across segments reduces pure-play leverage; Astera Labs has first-mover advantage in memory controllers; CXL ecosystem adoption could delay if hyperscalers prefer proprietary solutions."
       }
     },
 
@@ -1071,26 +1095,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 8.0,
+        "score_label": "Unrivaled",
+        "last_scored": "2026-06-12",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 5,
+          "pricing_power": 4,
+          "leadership": 3,
+          "financial_health": 2,
+          "macro_environment": 5,
+          "future_potential": 5
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Only pure-play CXL memory expansion provider; first hyperscale deployment (Azure) de-risks ecosystem; Nasdaq-100 added May 2026.",
+        "score_history": [
+          { "date": "2026-06-12", "score": 8.0, "label": "Unrivaled" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-08-11",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
-        "analyst_pt": null,
-        "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_label": "Expensive",
+        "valuation_metric": "P/S",
+        "valuation_multiple": 51.0,
+        "analyst_pt": 420.0,
+        "analyst_upside_pct": 18.0,
+        "valuation_last_updated": "2026-06-12",
+        "near_term_catalysts": [
+          { "date": "2026-08-11", "type": "earnings", "description": "Q2 2026 earnings — watch Leo CXL revenue run-rate continuation vs. Q1 $308M annualized" },
+          { "date": null, "type": "product", "description": "Scorpio CXL switch platform ramp H2 2026 — key new revenue vector" },
+          { "date": null, "type": "partnership", "description": "Second hyperscaler CXL production deployment beyond Azure announcement" }
+        ],
+        "bull_summary": "Only publicly traded pure-play CXL memory expansion company; Azure production deployment de-risks ecosystem chicken-and-egg; Nasdaq-100 inclusion signals institutional recognition; Scorpio switch extends TAM.",
+        "bear_summary": "Pre-profitability at FH:2 (operating margin -45%); 51x P/S leaves no room for execution misses; Marvell Structera competing in adjacent CXL switching; CXL adoption timeline could slip."
       }
     },
 
@@ -1147,6 +1184,116 @@
         ],
         "bull_summary": "1.6T AEC transition triggers full cluster replacement cycle in H2 2026; PCIe retimer TAM over $1B by 2027; Hyperlume opens optical adjacency at 3.2T+; fifth hyperscaler in qualification reducing concentration.",
         "bear_summary": "~88% revenue from top 3 hyperscalers creates capex-timing concentration risk; Astera Labs competing in retimers; Broadcom and Marvell can bundle competing solutions with switch silicon at scale."
+      }
+    },
+
+    "SIMO": {
+      "symbol": "SIMO",
+      "company": "Silicon Motion Technology Corporation",
+      "exchange": "NASDAQ",
+      "cik": "0001821769",
+      "sector": "Semiconductors",
+      "wiki_path": "Investing/Wiki/Sectors/Semiconductors/SIMO",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L06",
+          "layer_name": "Memory",
+          "sector_slug": "semiconductors",
+          "tier": "Memory (HBM · DRAM · NAND)",
+          "chokepoint": true,
+          "dominance": "Leader"
+        }
+      ],
+      "fundamental": {
+        "score": 7.5,
+        "score_label": "Strong",
+        "last_scored": "2026-06-12",
+        "pre_revenue": false,
+        "criteria": {
+          "product": 4,
+          "pricing_power": 3,
+          "leadership": 4,
+          "financial_health": 4,
+          "macro_environment": 4,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Fabless NAND flash controller pure-play; MonTitan AI SSD ramping five hyperscalers; PCIe Gen5 ASP uplift, +100% growth.",
+        "score_history": [
+          { "date": "2026-06-12", "score": 7.5, "label": "Strong" }
+        ]
+      },
+      "advisory": {
+        "next_earnings": null,
+        "valuation_label": "Reasonable",
+        "valuation_metric": "P/E",
+        "valuation_multiple": 18.0,
+        "analyst_pt": 85.0,
+        "analyst_upside_pct": 22.0,
+        "valuation_last_updated": "2026-06-12",
+        "near_term_catalysts": [
+          { "date": null, "type": "product", "description": "MonTitan mass production at 5 cloud customers H2 2026 — volume ramp visible in Q3 earnings" },
+          { "date": null, "type": "earnings", "description": "Q2 2026 earnings — guidance $393-411M, validate +100% growth continuation" },
+          { "date": null, "type": "product", "description": "Next-gen PCIe 6.0 controller sampling 2027" }
+        ],
+        "bull_summary": "MonTitan is industry-first AI-optimized SSD controller with 5 simultaneous hyperscaler ramps; founder-led (Wallace Kou 2.5% ownership); fabless leverage drives margin expansion at scale; PCIe Gen5 ASP uplift structural.",
+        "bear_summary": "NAND maker in-house controller development (Samsung, SK Hynix) threatens long-term share; NAND commodity cycle risk; customer concentration in hyperscalers; competing Phison designs in same market."
+      }
+    },
+
+    "RMBS": {
+      "symbol": "RMBS",
+      "company": "Rambus Inc.",
+      "exchange": "NASDAQ",
+      "cik": "0000912096",
+      "sector": "Semiconductors",
+      "wiki_path": "Investing/Wiki/Sectors/Semiconductors/RMBS",
+      "status": "active",
+      "tier_positions": [
+        {
+          "layer_id": "L06",
+          "layer_name": "Memory",
+          "sector_slug": "semiconductors",
+          "tier": "Memory (HBM · DRAM · NAND)",
+          "chokepoint": true,
+          "dominance": "Leader"
+        }
+      ],
+      "fundamental": {
+        "score": 8.5,
+        "score_label": "Unrivaled",
+        "last_scored": "2026-06-12",
+        "pre_revenue": false,
+        "criteria": {
+          "product": 5,
+          "pricing_power": 5,
+          "leadership": 3,
+          "financial_health": 4,
+          "macro_environment": 4,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Pure-play memory interface IP (DDR5, HBM4E); 40% RCD market share; zero fab capex, 84% margins, $14B TAM by 2035.",
+        "score_history": [
+          { "date": "2026-06-12", "score": 8.5, "label": "Unrivaled" }
+        ]
+      },
+      "advisory": {
+        "next_earnings": null,
+        "valuation_label": "Reasonable",
+        "valuation_metric": "P/E",
+        "valuation_multiple": 28.0,
+        "analyst_pt": 95.0,
+        "analyst_upside_pct": 18.0,
+        "valuation_last_updated": "2026-06-12",
+        "near_term_catalysts": [
+          { "date": null, "type": "product", "description": "DDR5 MRDIMM (next-gen high-density) ramp H2 2026 — RCD royalties accelerate" },
+          { "date": null, "type": "product", "description": "HBM4E controller licensing deals at major DRAM customers 2027" },
+          { "date": null, "type": "product", "description": "CXL memory pooling controller ramp 2028+ — new TAM opening" }
+        ],
+        "bull_summary": "Pure IP tollbooth: every DDR5 RDIMM server requires a Rambus RCD; 40%+ market share with network effects; 84% gross margin; zero fab capex = FCF machine; HBM4E controller IP licensed industry-wide at all major DRAM makers.",
+        "bear_summary": "Customer concentration (Samsung, SK Hynix, Micron); competitor next-gen controller threat; memory cycle downturn reduces DDR5 RCD volume; small scale ($8B market cap) limits institutional float."
       }
     },
 
@@ -2245,7 +2392,7 @@
   "sectors": {
     "Robotics & Edge AI":      ["AMBA", "OUST"],
     "Photonics & Optical":     ["COHR", "LITE", "FN", "CIEN", "VIAV", "AAOI", "AXTI", "LWLG", "LASR", "SIVE", "POET", "FOCI", "6965.T", "PRY.MI", "5801.T", "6451.TW", "6841.T", "6754.T"],
-    "Semiconductors":          ["INTC", "NVDA", "MU", "MRVL", "AEHR", "ALAB", "CRDO", "AMKR", "6857.T", "FORM", "NVTS", "IFX"],
+    "Semiconductors":          ["INTC", "NVDA", "MU", "MRVL", "AEHR", "ALAB", "CRDO", "SIMO", "RMBS", "AMKR", "6857.T", "FORM", "NVTS", "IFX"],
     "AI Infrastructure":       ["IREN", "ANET", "VRT", "SMCI", "P", "BRUN"],
     "Cybersecurity":           ["RBRK", "SAIL"],
     "Fintech & E-Commerce":    ["MELI", "HOOD", "SOFI"],
