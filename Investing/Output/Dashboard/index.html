@@ -11,45 +11,12 @@ body{background:var(--bg);color:var(--text);font:14px/1.5 system-ui,sans-serif}
 #hdr{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;border-bottom:1px solid var(--border);background:var(--bg2);position:sticky;top:0;z-index:10}
 .logo{font-weight:700;font-size:16px}.gen-date{color:var(--muted);font-size:12px}
 #l0,#l1,#l2{padding:40px 32px;max-width:1200px;margin:0 auto}
-.dim-row{margin-bottom:72px}
-.dim-label{display:flex;align-items:center;gap:12px;margin-bottom:22px;flex-wrap:wrap}
-.dim-pill{font-size:11px;font-weight:700;padding:3px 10px;border-radius:99px;color:var(--text);letter-spacing:.05em;flex-shrink:0}
-.dim-pill.D1{background:oklch(89% .14 278);color:var(--d1)}.dim-pill.D2{background:oklch(89% .12 148);color:var(--d2)}
-.dim-pill.D3{background:oklch(89% .14 258);color:var(--d3)}.dim-pill.D4{background:oklch(89% .14 308);color:var(--d4)}
-.dim-pill.D5{background:oklch(91% .12 27);color:var(--d5)}.dim-pill.D6{background:oklch(93% .12 60);color:var(--d6)}
-.dim-name{font-weight:700;font-size:16px;letter-spacing:-.01em}
-.dim-desc{color:var(--muted);font-size:12px;margin-left:auto;max-width:480px;text-align:right}
-.sec-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
-.sec-card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:16px;cursor:pointer;transition:border-color .15s,transform .1s}
-.sec-card:hover{border-color:oklch(72% .012 75);transform:translateY(-1px)}
-.sec-card-name{font-weight:600;font-size:14px;margin-bottom:6px}
-.sec-card-desc{color:var(--muted);font-size:11px;line-height:1.4;margin-bottom:8px}
-.sec-meta{display:flex;align-items:center;gap:8px}
-.tier-badge{font-size:10px;background:var(--bg3);padding:2px 7px;border-radius:99px;color:var(--muted)}
-.choke-dot{width:7px;height:7px;border-radius:50%;background:var(--amber);display:inline-block}
 .empty-dim{color:var(--muted);font-size:12px;padding:8px 0;font-style:italic}
 .breadcrumb{font-size:12px;color:var(--muted);margin-bottom:28px;display:flex;align-items:center;gap:7px;flex-wrap:wrap;padding:4px 0}
 .crumb-link{cursor:pointer;color:var(--muted);transition:color .12s}
 .crumb-link:hover{color:var(--text);text-decoration:underline}
 .crumb-sep{color:var(--border);font-size:12px}
 .crumb-cur{color:var(--text);font-weight:600}
-.sector-hdr{display:flex;align-items:center;gap:12px;margin-bottom:16px}
-.sector-title{font-size:22px;font-weight:700}
-.sector-desc-full{color:var(--muted);font-size:13px;margin-bottom:12px}
-.dim-ctx{font-size:12px;color:var(--muted);margin-bottom:44px;font-style:italic}
-.tier-card{background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:18px 20px;margin-bottom:14px;cursor:pointer;transition:border-color .15s,background .15s}
-.tier-card:hover{border-color:oklch(72% .012 75);background:oklch(97% .006 75)}
-.tier-card.choke-y{border-color:oklch(73% .18 62);background:oklch(98% .08 72)}
-.tier-card.choke-y:hover{background:oklch(97% .11 72)}
-.tier-card.choke-p{border-color:oklch(76% .012 75);background:oklch(96.5% .005 75)}
-.tier-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:8px}
-.tier-name{font-weight:600;font-size:13px}
-.choke-badge{font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;flex-shrink:0}
-.choke-badge.y{background:var(--amber-bg);color:var(--amber)}
-.choke-badge.p{background:oklch(91% .008 75);color:var(--muted)}
-.tier-fn{color:var(--muted);font-size:12px;line-height:1.5;margin-bottom:10px}
-.tier-pills{display:flex;flex-wrap:wrap;gap:6px}
-.pill{font-size:10px;background:var(--bg3);padding:2px 8px;border-radius:99px;color:var(--muted)}
 .tier-detail-name{font-size:20px;font-weight:700;margin-bottom:16px}
 .tier-fn-full{font-size:15px;line-height:1.6;color:var(--text);margin-bottom:36px}
 .invest-section h3{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:12px}
@@ -62,20 +29,13 @@ body{background:var(--bg);color:var(--text);font:14px/1.5 system-ui,sans-serif}
 .choke-box-partial{background:oklch(96% .005 75);border:1px solid oklch(82% .010 75);border-radius:6px;padding:12px 16px;margin-bottom:20px}
 .choke-box-partial p{font-size:13px;color:var(--muted)}
 .co-count{font-size:10px;background:oklch(92% .10 278);color:var(--d1);padding:2px 7px;border-radius:99px}
-.co-section{margin-top:32px}
-.co-section h3{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:12px}
-.co-card{padding:14px 0;border-bottom:1px solid var(--border)}
-.co-card:last-child{border-bottom:none}
-.co-header{display:flex;align-items:center;gap:10px;margin-bottom:6px;flex-wrap:wrap}
 .co-ticker{font-weight:700;font-size:13px;font-family:monospace;color:var(--text);text-decoration:none}
 a.co-ticker:hover{color:var(--d3);text-decoration:underline}
-.co-name{font-size:12px;color:var(--muted)}
 .co-cap{font-size:10px;padding:2px 7px;border-radius:99px;margin-left:auto}
 .co-cap.large{background:oklch(93% .08 258);color:var(--d3)}
 .co-cap.mid{background:oklch(95% .09 68);color:var(--amber)}
 .co-cap.small{background:oklch(94% .08 25);color:var(--d5)}
-.co-notes{font-size:12px;color:var(--muted);line-height:1.5}
-@media(max-width:600px){.sec-card{width:100%}.dim-desc{display:none}#l0,#l1,#l2,#l3{padding:16px}}
+@media(max-width:600px){#l0,#l1,#l2,#l3{padding:16px}}
 /* L3 — ticker wiki */
 #l3{padding:40px 32px;max-width:1200px;margin:0 auto}
 .ticker-hdr{display:flex;align-items:baseline;gap:12px;margin-bottom:12px;flex-wrap:wrap}
@@ -155,7 +115,7 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 /* Race detail view */
 .race-detail-top{display:flex;align-items:center;gap:8px;margin-bottom:10px}
 .race-detail-name{font-size:22px;font-weight:700;margin-bottom:8px}
-.race-detail-pref{font-size:14px;line-height:1.65;color:var(--text);margin-bottom:32px;padding:14px 16px;background:var(--bg2);border-left:3px solid oklch(73% .18 62);border-radius:0 6px 6px 0}
+.race-detail-pref{font-size:14px;line-height:1.65;color:var(--text);margin-bottom:32px;padding:14px 16px;background:var(--amber-bg);border:1px solid oklch(82% .12 62);border-top:3px solid oklch(73% .18 62);border-radius:6px}
 .race-section{margin-bottom:32px}
 .race-section-hdr{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:12px;padding-bottom:7px;border-bottom:1px solid var(--border)}
 .race-text{font-size:13px;line-height:1.7;color:var(--text)}
@@ -175,8 +135,7 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 .stack-intro{font-size:12px;color:var(--muted);margin-bottom:22px;max-width:820px;line-height:1.6}
 .stack-grid{display:grid;grid-template-columns:228px minmax(0,1fr) 232px;gap:18px;align-items:start}
 .rail{display:flex;flex-direction:column;gap:12px;position:sticky;top:96px}
-.rail-card{border:1px solid var(--border);border-radius:11px;padding:13px 13px 14px;position:relative;overflow:hidden}
-.rail-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--rail-accent,var(--border))}
+.rail-card{border:1px solid var(--border);border-top:3px solid var(--rail-accent,var(--border));border-radius:11px;padding:13px 13px 14px}
 .rail-card.power{--rail-accent:oklch(64% .18 35);background:oklch(97% .035 35)}
 .rail-card.thermal{--rail-accent:oklch(62% .12 215);background:oklch(97% .03 215)}
 .rail-card.security{--rail-accent:oklch(55% .17 300);background:oklch(97% .035 300)}
@@ -375,8 +334,10 @@ function renderL0(){
       const choke=b.choke!==undefined?b.choke:(tier&&tier.chokepoint==="Y");
       const sName=sector?sector.name:"";
       const ctxL=_layerLabel(i),ctxF="openLayer("+i+")";
-      const chips=(b.chips&&b.chips.length?b.chips:(tier?(tier.companies||[]).map(c=>c.ticker):[]))
-        .slice(0,6).map(t=>_chipHtml(t,sName,ctxL,ctxF)).join("");
+      const allTk=(b.chips&&b.chips.length?b.chips:(tier?(tier.companies||[]).map(c=>c.ticker):[]));
+      const overflow=Math.max(0,allTk.length-6);
+      const chips=allTk.slice(0,6).map(t=>_chipHtml(t,sName,ctxL,ctxF)).join("")
+        +(overflow?'<span class="chip more">+'+overflow+'</span>':'');
       const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\','+i+')"':'';
       return '<div class="subbox'+(choke?' choke':'')+'"'+onclick+'>'
         +'<div class="subbox-label">'+(choke?'<span class="choke-mark">⧫</span>':'')+esc(b.label)+'</div>'
@@ -424,8 +385,10 @@ function renderLayerView(i){
     const choke=b.choke!==undefined?b.choke:(tier&&tier.chokepoint==="Y");
     const sName=sector?sector.name:"";
     const ctxL=_layerLabel(i),ctxF="openLayer("+i+")";
-    const chips=(b.chips&&b.chips.length?b.chips:(tier?(tier.companies||[]).map(c=>c.ticker):[]))
-      .map(t=>_chipHtml(t,sName,ctxL,ctxF)).join("");
+    const allTk2=(b.chips&&b.chips.length?b.chips:(tier?(tier.companies||[]).map(c=>c.ticker):[]));
+    const overflow2=Math.max(0,allTk2.length-8);
+    const chips=allTk2.slice(0,8).map(t=>_chipHtml(t,sName,ctxL,ctxF)).join("")
+      +(overflow2?'<span class="chip more">+'+overflow2+'</span>':'');
     const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\','+i+')"':'';
     const count=tier&&tier.companies?tier.companies.length:0;
     return '<div class="layer-box'+(choke?' choke':'')+'"'+onclick+'>'
@@ -827,7 +790,7 @@ function buildSearchIdx() {
       const li = (layer !== undefined ? layer : "");
       idx.push({ type: "tier", label: t.tier, sub: s.name, slug: s.slug, tierName: t.tier, layerIdx: li, q: (t.tier + " " + (t.fn || "")).toLowerCase() });
       (t.companies || []).forEach(c => {
-        idx.push({ type: "company", label: c.name, ticker: c.ticker || "", sub: t.tier + " · " + s.name, slug: s.slug, tierName: t.tier, layerIdx: li, q: ((c.ticker || "") + " " + c.name + " " + (c.notes || "")).toLowerCase() });
+        idx.push({ type: "company", label: c.name, ticker: c.ticker || "", sectorName: s.name, sub: t.tier + " · " + s.name, slug: s.slug, tierName: t.tier, layerIdx: li, q: ((c.ticker || "") + " " + c.name + " " + (c.notes || "")).toLowerCase() });
       });
     });
   });
@@ -857,6 +820,8 @@ function renderSearchResults(q) {
         + (h.slug !== undefined ? " data-slug=\"" + esc(h.slug) + "\"" : "")
         + (h.tierName !== undefined ? " data-tiername=\"" + esc(h.tierName) + "\"" : "")
         + (h.layerIdx !== undefined && h.layerIdx !== "" ? " data-layer=\"" + h.layerIdx + "\"" : "")
+        + (h.ticker ? " data-ticker=\"" + esc(h.ticker) + "\"" : "")
+        + (h.sectorName ? " data-sname=\"" + esc(h.sectorName) + "\"" : "")
         + ">"
         + ticker
         + "<div class=\"sr-text\"><div class=\"sr-label\">" + h.label + "</div><div class=\"sr-sub\">" + h.sub + "</div></div>"
@@ -889,6 +854,10 @@ document.getElementById("search-results").addEventListener("click", function (e)
   document.getElementById("search-results").hidden = true;
   if (type === "layer") {
     openLayer(Number(layer));
+  } else if (type === "company") {
+    const tk = item.dataset.ticker;
+    const sn = item.dataset.sname || "";
+    openTicker(tk, sn);
   } else {
     openStackTier(slug, tierName, layer !== undefined ? Number(layer) : undefined);
   }
