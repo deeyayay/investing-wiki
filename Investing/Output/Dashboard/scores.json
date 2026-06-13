@@ -1,14 +1,14 @@
 {
   "meta": {
     "schema_version": "1",
-    "generated": "2026-06-12",
+    "generated": "2026-06-13",
     "source": {
       "registry": "Investing/Wiki/Reference/Monitor Registry.yaml",
       "data": "Investing/Output/Dashboard/data.json"
     },
     "counts": {
       "active": 51,
-      "scored": 21,
+      "scored": 25,
       "candidates": 34
     },
     "schema_notes": {
@@ -1898,26 +1898,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 7.5,
+        "score_label": "Strong",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 4,
+          "pricing_power": 4,
+          "leadership": 4,
+          "financial_health": 3,
+          "macro_environment": 4,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Rubrik is the cloud-native data security platform that ransomware makes mandatory — 46% ARR growth and 120% NRR at $1.46B ARR with founder-CEO Bipul Sinha holding 8.9%.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 7.5, "label": "Strong" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-09-08",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
+        "valuation_label": "Fair",
+        "valuation_metric": "EV/ARR",
+        "valuation_multiple": 12.0,
         "analyst_pt": null,
         "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": "2026-09-08", "type": "earnings", "description": "Q1 FY2027 earnings — ARR trajectory toward $2B; operating leverage inflection watch" },
+          { "date": null, "type": "product", "description": "DSPM expansion: Data Security Posture Management product announcements" },
+          { "date": null, "type": "product", "description": "Government FedRAMP authorization expansion post-CIA CISO hire" }
+        ],
+        "bull_summary": "Zero-trust architecture is the mandatory defense against ransomware; last-resort recovery position = highest switching cost; 120% NRR and 46% ARR growth validate enterprise lock-in; former CIA CISO + ex-Palo Alto CEO governance team.",
+        "bear_summary": "-35% operating margin requires sustained growth to justify $18B market cap; CrowdStrike, Palo Alto competing in adjacent data security; founder Bipul Sinha running 10b5-1 sales plan."
       }
     },
 
@@ -1940,26 +1953,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 8.5,
+        "score_label": "Unrivaled",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 5,
+          "pricing_power": 4,
+          "leadership": 3,
+          "financial_health": 3,
+          "macro_environment": 5,
+          "future_potential": 5
+        },
+        "growth_flag": true,
+        "one_line_thesis": "SailPoint is the identity governance control plane that every AI agent, bot, and human employee must pass through — machine identities growing 45:1 vs. humans makes this the fastest-expanding TAM in enterprise security.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 8.5, "label": "Unrivaled" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-06-09",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
-        "analyst_pt": null,
-        "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_label": "Fair",
+        "valuation_metric": "EV/ARR",
+        "valuation_multiple": 18.0,
+        "analyst_pt": 36.0,
+        "analyst_upside_pct": 20.0,
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": null, "type": "earnings", "description": "Q2 FY2026 earnings (~Aug 2026) — NRR + $1M+ customer cohort expansion; key health check" },
+          { "date": null, "type": "product", "description": "Machine identity product (FY2026/27): dedicated AI agent governance modules → NRR expansion" },
+          { "date": null, "type": "product", "description": "FY2027 profitability path: operating leverage → re-rating from growth to compounder" }
+        ],
+        "bull_summary": "150+ enterprise connectors = years of integration moat; Fortune 500 identity graph compounds as AI training data; machine identity 45:1 vs. humans is structural TAM expansion; 120% NRR and 185 customers >$1M ARR (+48%) prove land-and-expand.",
+        "bear_summary": "Mark McClain only 2.5% ownership creates alignment gap vs. peers; Thoma Bravo overhang as PE exits; Microsoft (Entra), Okta, CyberArk competing in adjacent identity spaces; -15% operating margin."
       }
     },
 
@@ -1982,26 +2008,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 8.5,
+        "score_label": "Unrivaled",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 5,
+          "pricing_power": 4,
+          "leadership": 4,
+          "financial_health": 4,
+          "macro_environment": 4,
+          "future_potential": 5
+        },
+        "growth_flag": true,
+        "one_line_thesis": "MercadoLibre is the Amazon + PayPal of Latin America — 27 consecutive quarters of 30%+ growth with GAAP profitability across a region of 650M people with massive e-commerce and fintech under-penetration.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 8.5, "label": "Unrivaled" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-08-03",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
-        "analyst_pt": null,
-        "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_label": "Reasonable",
+        "valuation_metric": "Fwd P/E",
+        "valuation_multiple": 55.0,
+        "analyst_pt": 2750.0,
+        "analyst_upside_pct": 15.0,
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": "2026-08-03", "type": "earnings", "description": "Q2 2026 earnings — whether +49% YoY acceleration in Q1 sustains; margin trajectory in investment phase" },
+          { "date": null, "type": "product", "description": "Mexico acceleration: third-largest LatAm economy is MELI's fastest-growing market" },
+          { "date": null, "type": "product", "description": "Mercado Crédito: credit book expansion — total loans outstanding vs. NPL ratio" }
+        ],
+        "bull_summary": "27 consecutive 30%+ growth quarters + GAAP profitable + four-flywheel compounding; Galperin 7% stake + 26-yr track record + internal CEO succession; LatAm e-commerce at 10% penetration with decades of runway; flywheel reinforces in every market.",
+        "bear_summary": "LatAm FX volatility (Brazilian Real, Argentine Peso) creates reported USD revenue noise; deliberate investment phase compressing near-term margins; Nubank/PagSeguro competition in Brazil payments; 55x Fwd P/E punishes macro surprises."
       }
     },
 
@@ -2024,26 +2063,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 6.5,
+        "score_label": "Strong",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 3,
+          "pricing_power": 3,
+          "leadership": 4,
+          "financial_health": 3,
+          "macro_environment": 3,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Robinhood is the retail fintech platform with a real recurring revenue stream (Gold, >3M subscribers) and Bitstamp crypto optionality, but PFOF regulatory risk and crypto cyclicality keep it a tactical trade more than a compounder.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 6.5, "label": "Strong" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-08-05",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
+        "valuation_label": "Reasonable",
+        "valuation_metric": "Fwd P/E",
+        "valuation_multiple": 35.0,
         "analyst_pt": null,
         "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": "2026-08-05", "type": "earnings", "description": "Q2 2026 earnings — whether Q1 +50% was sustainable or peak-cycle; Gold subscriber count" },
+          { "date": null, "type": "regulatory", "description": "PFOF regulatory decision: SEC rule finalization — binary event (upside if grandfather; downside if ban)" },
+          { "date": null, "type": "product", "description": "Bitstamp integration progress — international crypto exchange revenue contribution" }
+        ],
+        "bull_summary": "Gold subscribers >3M growing 25% YoY = $360M+ ARR of defensible recurring revenue; Tenev co-founder 8% + super-voting = strong alignment; Bitstamp global crypto exchange adds regulatory-compliant international optionality; GAAP profitable FY2025.",
+        "bear_summary": "PFOF (30-50% of non-Gold revenue) faces SEC ban risk — material impairment scenario; crypto revenue highly cyclical (crypto winter = revenue crater); commission-free trading now table stakes; super-voting limits shareholder influence."
       }
     },
 
