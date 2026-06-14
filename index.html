@@ -754,6 +754,8 @@ let _fromStack=false;
 let _chipOrigin=null;
 let activeStack='buildout';
 let _physRendered=false;
+let _boxLabelOverride=null;
+let _activeTierDisplayLabel=null;
 // Open a ticker straight from a stack/rail/layer chip — breadcrumb returns to the stack (with an optional context crumb), not a tier.
 function openStackTicker(tk,sName,ctxLabel,ctxFn){_raceOrigin=null;_fromStack=true;_chipOrigin=ctxLabel?{label:ctxLabel,fn:ctxFn}:null;activeSector=null;activeTierIdx=null;activeLayerIdx=null;openTicker(tk,sName);}
 
@@ -881,7 +883,7 @@ const PHYS_STACK={
     {num:"P02",name:"Actuation & Motion Control",hue:30,tag:"motors · drives · harmonic joints",boxes:[
       {label:"Electric Motors & Servo Drives",slug:"physical-ai",tier:"Actuation & Motion Control",chips:["6594.T","PH"]},
       {label:"Precision Gearboxes",slug:"physical-ai",tier:"Actuation & Motion Control",chips:[]},
-      {label:"Power Electronics for Motion",slug:"semiconductors",tier:"Chip Design (Fabless & IDM)",chips:["STM","IFX","NVTS"]}
+      {label:"Power Electronics for Motion",slug:"semiconductors",tier:"Compound Semiconductor & SiC Substrate",chips:["STM","NVTS"]}
     ]},
     {num:"P03",name:"Perception & Sensing",hue:55,tag:"LIDAR · cameras · radar · IMU",boxes:[
       {label:"LIDAR & Depth Sensing",slug:"physical-ai",tier:"Perception & Sensing",chips:["OUST"]},
@@ -965,7 +967,7 @@ function renderL0(){
       const ctxL=_layerLabel(i),ctxF="openLayer("+i+")";
       const chips=(b.chips&&b.chips.length?b.chips:(tier?(tier.companies||[]).map(c=>c.ticker):[]))
         .slice(0,6).map(t=>_chipHtml(t,sName,ctxL,ctxF)).join("");
-      const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\','+i+')"':'';
+      const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\','+i+',\''+b.label.replace(/'/g,"\\'")+'\' )"':'';
       return '<div class="subbox'+(choke?' choke':'')+'"'+onclick+'>'
         +'<div class="subbox-label">'+(choke?'<span class="choke-mark">⧫</span>':'')+esc(b.label)+'</div>'
         +'<div class="chip-row">'+chips+'</div></div>';
@@ -999,7 +1001,7 @@ function renderPhysL0(){
       const ctxL=L.num+" "+L.name,ctxF="switchStack('physical')";
       const chips=(b.chips&&b.chips.length?b.chips:(tier?(tier.companies||[]).map(c=>c.ticker):[]))
         .slice(0,6).map(t=>_chipHtml(t,sName,ctxL,ctxF)).join("");
-      const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\',null)"':'';
+      const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\',null,\''+b.label.replace(/'/g,"\\'")+'\' )"':'';
       return '<div class="subbox'+(choke?' choke':'')+'"'+onclick+'>'
         +'<div class="subbox-label">'+(choke?'<span class="choke-mark">⧫</span>':'')+esc(b.label)+'</div>'
         +'<div class="chip-row">'+chips+'</div></div>';
@@ -1036,13 +1038,14 @@ function switchStack(id){
   }
 }
 
-function openStackTier(slug,tierName,layerIdx){
+function openStackTier(slug,tierName,layerIdx,boxLabel){
   const s=DATA.sectors.find(x=>x.slug===slug);
   if(!s){return;}
   activeSector=s;
+  _boxLabelOverride=boxLabel||null;
   activeLayerIdx=(layerIdx!==undefined&&layerIdx!==null)?layerIdx:(_tierLayer[slug+"|"+tierName]!==undefined?_tierLayer[slug+"|"+tierName]:null);
   const idx=s.tiers.findIndex(t=>t.tier===tierName);
-  if(idx<0){return;}
+  if(idx<0){_boxLabelOverride=null;return;}
   openTier(idx);
 }
 
@@ -1062,7 +1065,7 @@ function renderLayerView(i){
     const ctxL=_layerLabel(i),ctxF="openLayer("+i+")";
     const chips=(b.chips&&b.chips.length?b.chips:(tier?(tier.companies||[]).map(c=>c.ticker):[]))
       .map(t=>_chipHtml(t,sName,ctxL,ctxF)).join("");
-    const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\','+i+')"':'';
+    const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\','+i+',\''+b.label.replace(/'/g,"\\'")+'\' )"':'';
     const count=tier&&tier.companies?tier.companies.length:0;
     return '<div class="layer-box'+(choke?' choke':'')+'"'+onclick+'>'
       +'<div class="layer-box-head"><span class="layer-box-label">'+(choke?'<span class="choke-mark">⧫</span>':'')+esc(b.label)+'</span>'
@@ -1088,6 +1091,9 @@ function openTier(idx){
     activeStack='buildout';
   }
   const t=s.tiers[idx];
+  // Consume box label override — shows what the user clicked, not the generic tier name
+  _activeTierDisplayLabel=_boxLabelOverride||t.tier;
+  _boxLabelOverride=null;
   const chokeBlock=t.chokepoint==="Y"
     ?"<div class=\"choke-box\"><p>⧫ Supply chain chokepoint — limited substitutes in this tier. Capacity constraints here propagate up the stack.</p></div>"
     :t.chokepoint==="Partial"
@@ -1106,17 +1112,18 @@ function openTier(idx){
       }).join("")+"</div>"
     :"";
   const li=activeLayerIdx;
+  const displayName=_activeTierDisplayLabel||t.tier;
   const _rootCrumb=activeStack==='physical'?{label:"Physical AI Stack",fn:"switchStack('physical')"}:{label:"AI Buildout Stack",fn:"showLayer(0)"};
   const trail=(li!==null&&li!==undefined&&activeStack==='buildout')
-    ?[_rootCrumb,{label:_layerLabel(li),fn:"openLayer("+li+")"},{label:t.tier}]
-    :[_rootCrumb,{label:t.tier}];
+    ?[_rootCrumb,{label:_layerLabel(li),fn:"openLayer("+li+")"},{label:displayName}]
+    :[_rootCrumb,{label:displayName}];
   const provenance="<div class=\"tier-provenance\">"
     +((li!==null&&li!==undefined&&activeStack==='buildout')?"<span class=\"layer-pill\" style=\"--lh:"+STACK.layers[li].hue+"\">"+esc(_layerLabel(li))+"</span>":"")
     +"<span class=\"sector-tag\">"+esc(s.name)+"</span></div>";
   document.getElementById("l2").innerHTML=
     crumbTrail(trail)
     +provenance
-    +"<div class=\"tier-detail-name\">"+t.tier+"</div>"
+    +"<div class=\"tier-detail-name\">"+esc(displayName)+"</div>"
     +"<div class=\"tier-fn-full\">"+t.fn+"</div>"
     +chokeBlock
     +"<div class=\"invest-section\">"
@@ -1178,7 +1185,7 @@ function renderL3(ticker,sName){
     const mid=(li!==null&&li!==undefined&&activeStack==='buildout')?{label:_layerLabel(li),fn:"openLayer("+li+")"}:null;
     const parts=[_rootL3];
     if(mid)parts.push(mid);
-    parts.push({label:activeSector.tiers[activeTierIdx].tier,fn:"openTier("+activeTierIdx+")"});
+    parts.push({label:_activeTierDisplayLabel||activeSector.tiers[activeTierIdx].tier,fn:"openTier("+activeTierIdx+")"});
     parts.push({label:ticker});
     crumbs=crumbTrail(parts);
   }
