@@ -1083,6 +1083,10 @@ function renderLayerView(i){
 function openTier(idx){
   activeTierIdx=idx;
   const s=activeSector;
+  // If navigating to cross-sector tier from Physical AI stack, exit Physical AI mode
+  if(activeStack==='physical'&&s.slug!=='physical-ai'){
+    activeStack='buildout';
+  }
   const t=s.tiers[idx];
   const chokeBlock=t.chokepoint==="Y"
     ?"<div class=\"choke-box\"><p>⧫ Supply chain chokepoint — limited substitutes in this tier. Capacity constraints here propagate up the stack.</p></div>"
