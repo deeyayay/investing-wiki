@@ -876,7 +876,7 @@ const PHYS_STACK={
       {label:"Humanoid Robots",slug:"physical-ai",tier:"Deployment Platforms",chips:["TSLA"]},
       {label:"Autonomous Vehicles",slug:"physical-ai",tier:"Deployment Platforms",chips:["TSLA","MBLY"]},
       {label:"Drones & eVTOL",slug:"physical-ai",tier:"Deployment Platforms",chips:["JOBY"]},
-      {label:"Space Vehicles",slug:"space-comms",tier:"Launch Vehicle Manufacturing",chips:["RKLB"]}
+      {label:"Space Vehicles",slug:"space-communications",tier:"Launch Services",chips:["RKLB"]}
     ]},
     {num:"P02",name:"Actuation & Motion Control",hue:30,tag:"motors · drives · harmonic joints",boxes:[
       {label:"Electric Motors & Servo Drives",slug:"physical-ai",tier:"Actuation & Motion Control",chips:["6594.T","PH"]},
@@ -944,10 +944,11 @@ function _chipHtml(tk,fallbackSector,ctxLabel,ctxFn){
   const args="'"+tk+"','"+sName+"'"+(ctxLabel?",'"+String(ctxLabel).replace(/'/g,"\\'")+"','"+String(ctxFn||"").replace(/'/g,"\\'")+"'":"");
   return '<span class="chip" onclick="event.stopPropagation();openStackTicker('+args+')">'+esc(tk)+'</span>';
 }
-function _railHtml(rail){
+function _railHtml(rail,homeCtxFn){
+  if(!homeCtxFn)homeCtxFn="showLayer(0)";
   const groups=rail.groups.map(g=>
     '<div class="rail-group"><div class="rail-group-label">'+esc(g.label)+'</div>'
-    +'<div class="chip-row">'+g.chips.map(t=>_chipHtml(t,"",rail.title,"showLayer(0)")).join("")+'</div></div>'
+    +'<div class="chip-row">'+g.chips.map(t=>_chipHtml(t,"",rail.title,homeCtxFn)).join("")+'</div></div>'
   ).join("");
   return '<div class="rail-card '+rail.id+'"><div class="rail-title">'+esc(rail.title)+'</div>'
     +'<div class="rail-cap">'+esc(rail.cap)+'</div>'+groups+'</div>';
@@ -988,8 +989,8 @@ function renderL0(){
 }
 
 function renderPhysL0(){
-  const leftRail=PHYS_STACK.rails.filter(r=>r.side==="left").map(_railHtml).join("");
-  const rightRail=PHYS_STACK.rails.filter(r=>r.side==="right").map(_railHtml).join("");
+  const leftRail=PHYS_STACK.rails.filter(r=>r.side==="left").map(r=>_railHtml(r,"switchStack('physical')")).join("");
+  const rightRail=PHYS_STACK.rails.filter(r=>r.side==="right").map(r=>_railHtml(r,"switchStack('physical')")).join("");
   const stack=PHYS_STACK.layers.map((L,i)=>{
     const boxes=L.boxes.map(b=>{
       const{sector,tier}=_tierLookup(b.slug,b.tier);
@@ -1101,11 +1102,12 @@ function openTier(idx){
       }).join("")+"</div>"
     :"";
   const li=activeLayerIdx;
-  const trail=(li!==null&&li!==undefined)
-    ?[{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:_layerLabel(li),fn:"openLayer("+li+")"},{label:t.tier}]
-    :[{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:t.tier}];
+  const _rootCrumb=activeStack==='physical'?{label:"Physical AI Stack",fn:"switchStack('physical')"}:{label:"AI Buildout Stack",fn:"showLayer(0)"};
+  const trail=(li!==null&&li!==undefined&&activeStack==='buildout')
+    ?[_rootCrumb,{label:_layerLabel(li),fn:"openLayer("+li+")"},{label:t.tier}]
+    :[_rootCrumb,{label:t.tier}];
   const provenance="<div class=\"tier-provenance\">"
-    +((li!==null&&li!==undefined)?"<span class=\"layer-pill\" style=\"--lh:"+STACK.layers[li].hue+"\">"+esc(_layerLabel(li))+"</span>":"")
+    +((li!==null&&li!==undefined&&activeStack==='buildout')?"<span class=\"layer-pill\" style=\"--lh:"+STACK.layers[li].hue+"\">"+esc(_layerLabel(li))+"</span>":"")
     +"<span class=\"sector-tag\">"+esc(s.name)+"</span></div>";
   document.getElementById("l2").innerHTML=
     crumbTrail(trail)
@@ -1159,23 +1161,24 @@ function renderL3(ticker,sName){
   const chipOrigin=_chipOrigin;_chipOrigin=null;
   if(fromRace)document.querySelectorAll(".tab-btn").forEach(b=>b.classList.toggle("active",b.dataset.tab==="tech-races"));
   const li=activeLayerIdx;
+  const _rootL3=activeStack==='physical'?{label:"Physical AI Stack",fn:"switchStack('physical')"}:{label:"AI Buildout Stack",fn:"showLayer(0)"};
   let crumbs;
   if(fromRace){
     crumbs=crumbTrail([{label:"Tech Races",fn:"showTab('tech-races')"},{label:fromRace.name,fn:"openRace('"+fromRace.id+"')"},{label:ticker}]);
   }else if(fromStack||!activeSector||activeTierIdx===null){
-    const parts=[{label:"AI Buildout Stack",fn:"showLayer(0)"}];
+    const parts=[_rootL3];
     if(chipOrigin)parts.push({label:chipOrigin.label,fn:chipOrigin.fn});
     parts.push({label:ticker});
     crumbs=crumbTrail(parts);
   }else{
-    const mid=(li!==null&&li!==undefined)?{label:_layerLabel(li),fn:"openLayer("+li+")"}:null;
-    const parts=[{label:"AI Buildout Stack",fn:"showLayer(0)"}];
+    const mid=(li!==null&&li!==undefined&&activeStack==='buildout')?{label:_layerLabel(li),fn:"openLayer("+li+")"}:null;
+    const parts=[_rootL3];
     if(mid)parts.push(mid);
     parts.push({label:activeSector.tiers[activeTierIdx].tier,fn:"openTier("+activeTierIdx+")"});
     parts.push({label:ticker});
     crumbs=crumbTrail(parts);
   }
-  const layerPill=(!fromRace&&li!==null&&li!==undefined)?'<span class="layer-pill" style="--lh:'+STACK.layers[li].hue+'">'+esc(_layerLabel(li))+'</span>':'';
+  const layerPill=(!fromRace&&li!==null&&li!==undefined&&activeStack==='buildout')?'<span class="layer-pill" style="--lh:'+STACK.layers[li].hue+'">'+esc(_layerLabel(li))+'</span>':'';
   document.getElementById("l3").innerHTML=
     crumbs
     +'<div class="ticker-hdr">'
