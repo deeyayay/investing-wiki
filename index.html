@@ -452,7 +452,7 @@ function _sparkBars(criteria){
   }).join('')+'</div>';
 }
 function _domBadge(td){
-  const tp=td&&td.fundamental&&td.fundamental.tier_positions;
+  const tp=td&&td.tier_positions;
   if(!tp||!tp.length)return'';
   const dom=(tp[0].dominance||'').toLowerCase();
   if(!dom)return'';
