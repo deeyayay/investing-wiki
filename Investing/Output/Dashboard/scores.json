@@ -8,7 +8,7 @@
     },
     "counts": {
       "active": 51,
-      "scored": 29,
+      "scored": 35,
       "candidates": 34
     },
     "schema_notes": {
@@ -2266,26 +2266,39 @@
       "status": "active",
       "tier_positions": [],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 5.5,
+        "score_label": "Average",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 3,
+          "pricing_power": 2,
+          "leadership": 3,
+          "financial_health": 2,
+          "macro_environment": 4,
+          "future_potential": 3
+        },
+        "growth_flag": false,
+        "one_line_thesis": "T1 Energy is a Texas utility-scale solar developer benefiting from IRA tax credits and AI data center power demand, but lacks a technology moat in a highly competitive EPC market.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 5.5, "label": "Average" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-08-07",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
+        "valuation_label": "Fair",
+        "valuation_metric": "EV/Revenue",
+        "valuation_multiple": 2.0,
         "analyst_pt": null,
         "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": "2026-08-07", "type": "earnings", "description": "Q2 2026 earnings — project completions and PPA signings; revenue lumpiness watch" },
+          { "date": null, "type": "product", "description": "Long-term PPA with major data center operator — de-risks pipeline" },
+          { "date": null, "type": "regulatory", "description": "IRA ITC retention — any rollback would materially impair project economics" }
+        ],
+        "bull_summary": "Texas ERCOT power demand surge + IRA ITC + AI data center PPA demand creates real near-term project opportunity; Garcia founder CEO 4.2% alignment; 2.5 GW development pipeline.",
+        "bear_summary": "No technology moat; EPC margins under compression from sector-wide competition; NextEra, Intersect Power, and dozens of regional developers compete for same projects; project-based revenue is lumpy and capital-intensive."
       }
     },
 
@@ -2299,14 +2312,23 @@
       "status": "active",
       "tier_positions": [],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 7.0,
+        "score_label": "Strong",
+        "last_scored": "2026-06-13",
         "pre_revenue": true,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 3,
+          "pricing_power": 4,
+          "leadership": 3,
+          "financial_health": 1,
+          "macro_environment": 5,
+          "future_potential": 5
+        },
+        "growth_flag": true,
+        "one_line_thesis": "ASP Isotopes sits at the intersection of nuclear renaissance (HALEU for SMRs), quantum computing (silicon-28), and medical isotopes — using a proprietary separation process that could make it the only non-governmental HALEU supplier in the West.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 7.0, "label": "Strong" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-08-12",
@@ -2315,10 +2337,14 @@
         "valuation_multiple": null,
         "analyst_pt": null,
         "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": null, "type": "product", "description": "South Africa pilot plant: first HALEU production from ASP process — technical de-risking milestone" },
+          { "date": null, "type": "product", "description": "DOE contract expansion: larger cooperative agreement for US domestic HALEU supply chain" },
+          { "date": null, "type": "product", "description": "Silicon-28 customer ramp: Intel or IBM production-scale order for quantum computing substrates" }
+        ],
+        "bull_summary": "Russia HALEU ban created acute SMR fuel supply crisis — ASPI is the only commercial US HALEU pathway; silicon-28 demand from quantum computing is real and growing; Bartholomew + Terrien technical team credible; DOE cooperation agreement validates strategic value.",
+        "bear_summary": "ASP process unproven at commercial scale; South Africa pilot still commissioning; NRC licensing for US facility years away; $8M revenue burning cash; centrifuge expansion or SILEX could commoditize before ASPI reaches scale."
       }
     },
 
@@ -2332,14 +2358,23 @@
       "status": "active",
       "tier_positions": [],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 7.5,
+        "score_label": "Strong",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 4,
+          "pricing_power": 3,
+          "leadership": 4,
+          "financial_health": 2,
+          "macro_environment": 4,
+          "future_potential": 5
+        },
+        "growth_flag": true,
+        "one_line_thesis": "AST SpaceMobile is the only satellite constellation that connects directly to unmodified smartphones — if BlueBird scales, every MNO on Earth becomes a distribution partner and 3.5B unconnected people become potential subscribers.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 7.5, "label": "Strong" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-08-17",
@@ -2348,10 +2383,14 @@
         "valuation_multiple": null,
         "analyst_pt": null,
         "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": null, "type": "product", "description": "Block 2 manufacturing contract: financing and manufacturing agreement announcement — constellation buildout de-risking" },
+          { "date": "2026-08-17", "type": "earnings", "description": "Q2 2026 earnings — AT&T and Verizon commercial subscriber volume metrics; revenue ramp pace" },
+          { "date": null, "type": "product", "description": "Maritime/aviation enterprise vertical expansion beyond consumer MNO" }
+        ],
+        "bull_summary": "Only D2D broadband to standard smartphones at commercial scale; MNO wholesale model means ASTS is infrastructure not consumer retail; Avellan 18.5% + super-voting = exceptional alignment; AT&T/Verizon/Vodafone partnerships validate technology.",
+        "bear_summary": "Block 2 requires 100+ satellites at $10M+ each — severe dilution risk; SpaceX Starlink D2C (T-Mobile partnership) competes directly; pre-profitability at current scale; ITU spectrum disputes possible."
       }
     },
 
@@ -2429,26 +2468,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 7.5,
+        "score_label": "Strong",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 3,
+          "pricing_power": 2,
+          "leadership": 4,
+          "financial_health": 4,
+          "macro_environment": 5,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Freeport-McMoRan is the world's largest publicly traded copper producer with a structural supply deficit, new leaching technology unlocking 2B+ incremental lbs, and copper as the indispensable metal for EV, grid, and AI data center power.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 7.5, "label": "Strong" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-07-23",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
+        "valuation_label": "Cheap",
+        "valuation_metric": "Fwd P/E",
+        "valuation_multiple": 18.0,
         "analyst_pt": null,
         "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": "2026-07-23", "type": "earnings", "description": "Q2 2026 earnings — leaching technology production contribution and copper cost-per-lb trajectory" },
+          { "date": null, "type": "product", "description": "Leaching technology 2B+ lbs confirmation — production guidance upgrade catalyst" },
+          { "date": null, "type": "macro", "description": "Copper price cycle: $5/lb+ copper → significant FCF and earnings expansion; watch Chinese stimulus" }
+        ],
+        "bull_summary": "Only company with Grasberg + Morenci scale; copper supply deficit is structural (15-20 year greenfield lead time); leaching technology adds 2B+ lbs at minimal capex; Adkerson/Quirk deep institutional knowledge; AI data center copper demand underestimated.",
+        "bear_summary": "Commodity pricing — FCX is a price-taker; global recession compresses copper demand and price; Indonesia Grasberg regulatory/community relations risk; Quirk new CEO with CFO background — operational execution risk."
       }
     },
 
@@ -2471,26 +2523,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 8.5,
+        "score_label": "Unrivaled",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 4,
+          "pricing_power": 4,
+          "leadership": 4,
+          "financial_health": 3,
+          "macro_environment": 5,
+          "future_potential": 5
+        },
+        "growth_flag": true,
+        "one_line_thesis": "MP Materials is the only company in the US mining, processing, and manufacturing rare earth permanent magnets — a vertically integrated monopoly in an input that China controls globally and that every EV motor, wind turbine, and defense system depends on.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 8.5, "label": "Unrivaled" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-07-30",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
-        "analyst_pt": null,
-        "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_label": "Fair",
+        "valuation_metric": "EV/Revenue",
+        "valuation_multiple": 9.0,
+        "analyst_pt": 25.0,
+        "analyst_upside_pct": 47.0,
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": "2026-07-30", "type": "earnings", "description": "Q2 2026 earnings — Fort Worth magnet production volume vs. target; GM Ultium magnet ramp" },
+          { "date": null, "type": "regulatory", "description": "China rare earth export controls escalation — accelerating MP's strategic value" },
+          { "date": null, "type": "product", "description": "DoD classified magnet contracts: expanding defense revenue contribution" }
+        ],
+        "bull_summary": "Mountain Pass + Fort Worth = only US mine-to-magnet value chain; GM 20-year contract; China export controls are an ongoing demand accelerant; Litinsky 9.8% + Corbett co-founder = strong alignment; DoD strategic asset status prevents hostile foreign acquisition.",
+        "bear_summary": "Stage III magnet manufacturing is first-of-kind in US — execution risk is real; REO prices volatile and can be suppressed by Chinese overproduction; Litinsky is a former hedge fund manager, not a mining operator; $3B market cap is already pricing significant Stage III success."
       }
     },
 
@@ -2513,26 +2578,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 7.0,
+        "score_label": "Strong",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 4,
+          "pricing_power": 3,
+          "leadership": 3,
+          "financial_health": 3,
+          "macro_environment": 4,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Elmet is the only major US manufacturer of tungsten and molybdenum specialty products — a profitable, 80-year refractory metals franchise at the intersection of defense onshoring and semiconductor manufacturing, with China controlling 85% of global tungsten supply.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 7.0, "label": "Strong" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-08-25",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
+        "valuation_label": "Reasonable",
+        "valuation_metric": "Fwd P/E",
+        "valuation_multiple": 22.0,
         "analyst_pt": null,
         "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": "2026-08-25", "type": "earnings", "description": "Q2 2026 earnings — defense contract wins; semiconductor fab tungsten demand; China restrictions impact on pricing" },
+          { "date": null, "type": "product", "description": "Army/Marine Corps 120mm tungsten munitions procurement expansion" },
+          { "date": null, "type": "macro", "description": "China tungsten export restriction escalation — strategic premium on Elmet products" }
+        ],
+        "bull_summary": "80+ year refractory metals expertise; DoD-qualified for critical defense applications (kinetic penetrators, aircraft components); semiconductor fab buildout (Intel Ohio, TSMC Arizona) increasing tungsten target demand; China 85% supply control creates acute strategic urgency for domestic alternatives.",
+        "bear_summary": "Small scale ($190M revenue, $400M market cap); professional management without founder ownership drive; commodity tungsten pricing pressure from global suppliers; defense budget cuts could reduce munitions demand; post-SPAC governance still maturing."
       }
     }
 
