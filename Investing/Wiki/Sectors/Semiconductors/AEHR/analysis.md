@@ -22,20 +22,20 @@ The company is currently in a reset phase as EV production ramp timelines have e
 **Key risks:** EV production cycle sensitivity; customer concentration in small number of Tier 1 suppliers; limited diversification beyond SiC; founder director selling shares (Rhea Posedel sold ~17,700 shares April 2026).
 
 ## Scoring Summary
-
-_Last scored: 2026-06-13_
+_Last scored: 2026-06-14 | [[Scoring Rubric]]_
 
 | Criterion | Score | Evidence |
 |-----------|-------|----------|
-| Product (Love Factor) | 4/5 | WaferPak is the only production-grade wafer-level SiC burn-in solution; monopoly-like in this niche; switching costs from multi-year qualification cycles; but single-market exposure limits the "love" ceiling |
-| Pricing Power | 3/5 | Sole-source position creates pricing power in theory; but small customer base of Tier 1 suppliers creates negotiating pressure; EV cycle sensitivity limits sustained pricing |
-| Leadership & Alignment | 3/5 | Erickson long-tenured domain expert with strong operational track record; but not founder-led at CEO level; founder director Rhea Posedel recently selling (minor bearish signal) |
-| Financial Health | 3/5 | Revenue peaked ~$80M then reset on EV softness; currently normalizing; small company with limited FCF buffer during reset; but positive Adj EBITDA expected during recovery |
-| Macro Environment | 3/5 | SiC adoption is secular for EVs; EV ramp timeline extensions are the key risk; AI chip and photonics test optionality not yet realized; no US national security angle in current form |
-| Future Potential | 3/5 | SiC TAM growing as EV penetration rises; AI chip parallelism test is a potential new market; photonics wafer test is identified adjacency; but expansion from single-niche is early-stage |
+| Product (Love Factor) | 4/5 | WaferPak is the only production-grade wafer-level SiC burn-in solution; monopoly-like in this niche; multi-year customer qualification cycles create high switching costs; single-market exposure limits the ceiling |
+| Pricing Power | 3/5 | Sole-source position provides medium pricing power (`moat.pricing_power: medium`); small Tier 1 customer base creates negotiating counterpressure; EV cycle reset suppresses realized pricing leverage |
+| Leadership & Alignment | 3/5 | Erickson (2012–present, 14 yr) has domain expertise and long tenure; not founder-led at CEO level; CEO ownership 1.5% (below 2% threshold); board director Posedel sold ~17,700 shares April 2026; Conviction Log empty — no guidance beat/miss history |
+| Financial Health | 3/5 | Revenue-generating ($80M peak FY2024) in reset/normalization phase; pre-profitability during reset; positive Adj EBITDA expected at recovery; no specific balance sheet detail on leverage or cash position |
+| Macro Environment | 3/5 | SiC adoption for EVs is a secular tailwind; EV ramp timeline extensions are near-term material headwinds; AI chip test and photonics test adjacencies not yet realized; no national security demand catalyst |
+| Future Potential | 3/5 | Core SiC TAM expands with EV penetration; AI chip parallelism test and photonics wafer test are identified adjacencies; neither yet producing measurable early revenue or signed LOIs |
 | **Composite** | **6.5/10** | **Strong** — (19/30 × 10 = 6.33 → 6.5) |
 
-Valuation: Not scored (reset-phase, no reliable forward earnings estimate)
+**Valuation:** Elevated recovery pricing at ~$1B market cap | EV/Revenue: ~12–18x est. on reset-phase revenue vs. fair value range 8–15x | Analyst upside: TBD (high-volatility; monitor quarterly)
+**Growth Potential:** — (pending real-time data integration)
 
 ## Conviction Log
 

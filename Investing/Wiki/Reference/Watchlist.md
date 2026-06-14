@@ -10,7 +10,7 @@
 | OKLO | Oklo Inc. | Next-gen nuclear microreactor; AI data center power demand tailwind; founder-led | Long-term hold + Wheel | — |
 | RBRK | Rubrik | Cybersecurity data resilience; sticky enterprise SaaS; strong ARR growth | Long-term hold + CSP | — |
 | MELI | MercadoLibre | Latin America e-commerce + fintech compounder; defensible moat; founder-led | Long-term hold | — |
-| AEHR | Aehr Test Systems | Silicon carbide wafer testing; EV semiconductor demand | Long-term hold | — |
+| AEHR | Aehr Test Systems | Silicon carbide wafer testing; EV semiconductor demand | Long-term hold | 6.5 |
 | IREN | IREN Ltd. | Bitcoin mining + AI compute infrastructure; energy-efficient ops | Long-term hold | — |
 | NVDA | NVIDIA Corporation | AI compute platform; CUDA moat; dominant across training + inference; Rubin ramp in progress | Long-term hold | 9.5 |
 

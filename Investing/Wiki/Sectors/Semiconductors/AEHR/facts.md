@@ -24,7 +24,7 @@ moat:
 metrics:
   score: 6.5
   score_label: "Strong"
-  last_scored: "2026-06-13"
+  last_scored: "2026-06-14"
   score_metrics:
     product: 4
     pricing_power: 3
