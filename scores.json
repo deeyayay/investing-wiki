@@ -1,14 +1,14 @@
 {
   "meta": {
     "schema_version": "1",
-    "generated": "2026-06-12",
+    "generated": "2026-06-13",
     "source": {
       "registry": "Investing/Wiki/Reference/Monitor Registry.yaml",
       "data": "Investing/Output/Dashboard/data.json"
     },
     "counts": {
       "active": 51,
-      "scored": 14,
+      "scored": 35,
       "candidates": 34
     },
     "schema_notes": {
@@ -1053,14 +1053,23 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 6.5,
+        "score_label": "Strong",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 4,
+          "pricing_power": 3,
+          "leadership": 3,
+          "financial_health": 3,
+          "macro_environment": 3,
+          "future_potential": 3
+        },
+        "growth_flag": false,
+        "one_line_thesis": "The only wafer-level SiC burn-in solution at commercial scale — monopoly position in EV semiconductor test; watching for AI chip and photonics test expansion.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 6.5, "label": "Strong" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-07-21",
@@ -1069,10 +1078,13 @@
         "valuation_multiple": null,
         "analyst_pt": null,
         "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": "2026-07-21", "type": "earnings", "description": "Q3 FY2026 earnings — bookings and backlog are the primary thesis validators; first signs of EV ramp acceleration" },
+          { "date": null, "type": "product", "description": "New customer wins in AI chips or photonics test — TAM expansion signal" }
+        ],
+        "bull_summary": "WaferPak is the only production-grade wafer-level SiC burn-in solution; monopoly position creates monopoly-level pricing power when SiC demand recovers; EV ramp is delayed, not cancelled; AI chip burn-in optionality.",
+        "bear_summary": "EV production cycle reset is creating near-term revenue headwind; customer concentration in small Tier 1 supplier group; founder director selling shares (April 2026); limited diversification beyond SiC creates single-cycle risk."
       }
     },
 
@@ -1324,26 +1336,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 7.5,
+        "score_label": "Strong",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 4,
+          "pricing_power": 3,
+          "leadership": 4,
+          "financial_health": 3,
+          "macro_environment": 4,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "World's #2 OSAT with 83% advanced packaging revenue, Kim family 49.4% founder control, and the only US-based CHIPS Act facility for AI chip packaging — the TSMC CoWoS overflow play.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 7.5, "label": "Strong" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-07-27",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
-        "analyst_pt": null,
-        "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_label": "Reasonable",
+        "valuation_metric": "Fwd P/E",
+        "valuation_multiple": 15.0,
+        "analyst_pt": 28.0,
+        "analyst_upside_pct": 20.0,
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": "2026-07-27", "type": "earnings", "description": "Q2 2026 earnings — is +27% YoY a new baseline? Watch advanced packaging mix target (>85%)" },
+          { "date": null, "type": "product", "description": "Peoria AZ CHIPS Act facility construction milestone and first customer design-win" },
+          { "date": null, "type": "product", "description": "NVDA/hyperscaler AI chip packaging outsourcing decisions (CoWoS vs. AMKR capacity)" }
+        ],
+        "bull_summary": "Q1 2026 record $1.68B (+27% YoY) suggests AI advanced packaging cycle accelerating; Kim family 49.4% control = 5-decade founder alignment; TSMC CoWoS constrained = structural overflow to AMKR; Peoria AZ facility is first US-based advanced packaging at scale.",
+        "bear_summary": "Semiconductor cyclicality flows directly through OSAT business; Apple ~20%+ concentration; $2.5-3.0B capex creates elevated depreciation drag; new CEO (Jan 2026) transition risk; ASE Group larger and more diversified."
       }
     },
 
@@ -1408,26 +1433,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 7.0,
+        "score_label": "Strong",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 4,
+          "pricing_power": 3,
+          "leadership": 3,
+          "financial_health": 3,
+          "macro_environment": 4,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Wafer probe market leader extending into silicon photonics — the V93000-Triton partnership with Advantest is the only production-grade CPO test cell, making FORM the hardware gate through which every CPO wafer must pass.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 7.0, "label": "Strong" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-07-29",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
+        "valuation_label": "Expensive",
+        "valuation_metric": "Fwd P/E",
+        "valuation_multiple": 45.0,
         "analyst_pt": null,
         "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": "2026-07-29", "type": "earnings", "description": "Q2 2026 earnings — watch CPO test revenue recognition; probe card ASP trajectory" },
+          { "date": null, "type": "product", "description": "TSMC COUPE CPO production ramp 2026 — first production-scale V93000-Triton deployments" },
+          { "date": null, "type": "product", "description": "Keystone Photonics IP integration: next-gen optical probe announcement" }
+        ],
+        "bull_summary": "V93000-Triton is the only production-grade CPO opto-electrical test cell — positioned at the chokepoint of the TSMC COUPE production ramp; CEO active insider buyer at elevated prices; 100+ SiPh customer deployments; Keystone acquisition consolidates IP.",
+        "bear_summary": "Market cap re-rated 3x in 18 months on CPO timeline — execution must confirm; probe card business remains semiconductor capex-correlated; CPO revenue is early-stage; Advantest partnership risk; CFO identity not publicly confirmed."
       }
     },
 
@@ -1450,26 +1488,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 6.5,
+        "score_label": "Strong",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 3,
+          "pricing_power": 3,
+          "leadership": 3,
+          "financial_health": 2,
+          "macro_environment": 4,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Navitas pioneered the GaNFast integrated power IC that delivers 3x silicon's efficiency — a small-cap pure-play on the GaN transition in EV charging, data center PSUs, and industrial power, with execution risk and scale risk still to be proven.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 6.5, "label": "Strong" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-08-17",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
+        "valuation_label": "Fair",
+        "valuation_metric": "EV/Revenue",
+        "valuation_multiple": 5.0,
         "analyst_pt": null,
         "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": "2026-08-17", "type": "earnings", "description": "Q2 2026 earnings — data center GaN PSU design win revenue recognition; key thesis validator" },
+          { "date": null, "type": "product", "description": "SiC Tier 1 auto OEM qualification (GeneSiC): EV inverter production ramp announcement" },
+          { "date": null, "type": "product", "description": "GaNFast 3rd generation: higher voltage for 48V data center power delivery buses" }
+        ],
+        "bull_summary": "GaNFast monolithic integration reduces BOM cost vs. discrete GaN; deployed at Samsung/Dell/Lenovo scale; data center PSU design wins ramping; SiC GeneSiC Tier 1 auto qualification pipeline; GaN transition is inevitable.",
+        "bear_summary": "-85% operating margin at $82M revenue; Infineon, STMicro, ON Semi, Wolfspeed all larger and better-capitalized; EV charging demand moderation creating near-term headwind; survival depends on outgrowing incumbent commoditization."
       }
     },
 
@@ -1492,26 +1543,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 7.5,
+        "score_label": "Strong",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 4,
+          "pricing_power": 3,
+          "leadership": 3,
+          "financial_health": 4,
+          "macro_environment": 5,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Infineon is the world's #1 automotive semiconductor and #1 SiC power manufacturer — the picks-and-shovels play on electrification, AI data center power, and grid decarbonization, at a European industrial valuation discount.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 7.5, "label": "Strong" }
+        ]
       },
       "advisory": {
         "next_earnings": null,
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
-        "analyst_pt": null,
-        "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_label": "Cheap",
+        "valuation_metric": "Fwd P/E",
+        "valuation_multiple": 22.0,
+        "analyst_pt": 40.0,
+        "analyst_upside_pct": 20.0,
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": null, "type": "product", "description": "Auto inventory normalization H2 2026: EV SiC volume recovery — near-term re-rating catalyst" },
+          { "date": null, "type": "product", "description": "200mm SiC yield improvement at Villach — gross margin expansion signal" },
+          { "date": null, "type": "product", "description": "AI server PSU design wins: OptiMOS/CoolGaN ramp in data center applications" }
+        ],
+        "bull_summary": "#1 SiC by revenue + 200mm manufacturing leadership (year ahead of competitors); broadest power semi portfolio across auto/data center/industrial/security; €16.4B revenue GAAP profitable; European valuation discount creates entry opportunity.",
+        "bear_summary": "Hanebeck professional manager 0.1% ownership (low alignment); 2025 auto inventory correction compressing near-term earnings; Chinese SiC vendors threatening lower-end pricing; European governance conservatism slows strategic pivots."
       }
     },
 
@@ -1534,26 +1598,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 7.5,
+        "score_label": "Strong",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 4,
+          "pricing_power": 4,
+          "leadership": 4,
+          "financial_health": 2,
+          "macro_environment": 5,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Co-founder-led AI data center operator with NVIDIA ($3.4B) and Microsoft ($9.7B) anchor contracts, 3GW permitted power pipeline, and a dynamic Bitcoin→GPU reallocation moat.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 7.5, "label": "Strong" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-09-16",
-        "valuation_label": null,
-        "valuation_metric": null,
+        "valuation_label": "Fair",
+        "valuation_metric": "EV/ARR",
         "valuation_multiple": null,
-        "analyst_pt": null,
-        "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "analyst_pt": 60.0,
+        "analyst_upside_pct": 43.0,
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": null, "type": "product", "description": "End-2026 targets: 460 MW utilization, 140K GPUs, $3.4B ARR" },
+          { "date": "2026-09-16", "type": "earnings", "description": "Q4 FY2026 earnings — AI Cloud revenue vs. +94% QoQ baseline; path to EBITDA" },
+          { "date": null, "type": "product", "description": "Sweetwater Campus (2GW) NVIDIA DSX deployment milestones" }
+        ],
+        "bull_summary": "3GW permitted power pipeline unmatched among non-hyperscaler HPC operators; NVIDIA $3.4B + Microsoft $9.7B at 85% EBITDA margin de-risk buildout; co-founders 13.2% combined ownership; dynamic Bitcoin→GPU arbitrage is structurally unique.",
+        "bear_summary": "Share dilution +124% YoY to 272M shares; $963M LTD + $3B convertible notes; net loss $(247.8)M in Q3; 20x ARR expansion target in 12 months is execution-dependent; hyperscaler capex cycle sensitive."
       }
     },
 
@@ -1576,26 +1653,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 8.5,
+        "score_label": "Unrivaled",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 5,
+          "pricing_power": 4,
+          "leadership": 4,
+          "financial_health": 5,
+          "macro_environment": 4,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "The dominant Ethernet switching platform for hyperscaler AI clusters; EOS software lock-in means every Meta/Microsoft/Google AI build is a recurring Arista order.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 8.5, "label": "Unrivaled" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-08-03",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
-        "analyst_pt": null,
-        "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_label": "Reasonable",
+        "valuation_metric": "Fwd P/E",
+        "valuation_multiple": 38.0,
+        "analyst_pt": 490.0,
+        "analyst_upside_pct": 14.0,
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": "2026-08-03", "type": "earnings", "description": "Q2 2026 earnings — watch AI/cloud revenue mix vs. enterprise; 800G adoption rate" },
+          { "date": null, "type": "product", "description": "800G adoption acceleration at hyperscalers H2 2026; ASP uplift visible in revenue" },
+          { "date": null, "type": "product", "description": "1.6T switching product cycle begins 2027; new TAM expansion" }
+        ],
+        "bull_summary": "EOS ecosystem lock-in compounds with every AI cluster built; Meta/Microsoft/Google all accelerating AI capex; 400G→800G→1.6T product cycles extend value capture for 5+ years; $1B+ quarterly net income demonstrates exceptional financial leverage.",
+        "bear_summary": "InfiniBand resurgence (NVDA Quantum-X) would slow Ethernet adoption; Meta ~15% concentration creates revenue timing risk; Cisco building AI-native networking products; hyperscalers developing custom switch silicon."
       }
     },
 
@@ -1626,26 +1716,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 8.0,
+        "score_label": "Unrivaled",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 4,
+          "pricing_power": 4,
+          "leadership": 3,
+          "financial_health": 4,
+          "macro_environment": 5,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "The chip-agnostic picks-and-shovels play on AI data center thermal management — $15B+ backlog, chip-agnostic wins regardless of GPU vendor, and every GPU cluster needs Vertiv.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 8.0, "label": "Unrivaled" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-08-05",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
-        "analyst_pt": null,
-        "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_label": "Reasonable",
+        "valuation_metric": "Fwd P/E",
+        "valuation_multiple": 32.0,
+        "analyst_pt": 145.0,
+        "analyst_upside_pct": 15.0,
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": "2026-08-05", "type": "earnings", "description": "Q2 2026 earnings — watch orders/backlog growth vs. Q4's 152% level; liquid cooling attach rate" },
+          { "date": null, "type": "product", "description": "Blackwell NVL72 rack ramp H2 2026 — liquid cooling demand surge trigger" },
+          { "date": null, "type": "product", "description": "Backlog-to-revenue conversion rate vs. Schneider/Eaton (key execution metric)" }
+        ],
+        "bull_summary": "Chip-agnostic = wins regardless of who wins the AI chip race; $15B+ backlog (100%+ YoY) provides exceptional revenue visibility; Q4 orders +152% YoY; $1.9B FCF at 115% conversion; every GPU cluster is a mandatory Vertiv order.",
+        "bear_summary": "Low insider ownership limits alignment signal; new CFO (Nov 2025) too early to evaluate; Schneider Electric and Eaton compete in every deal; SPAC debt structure; backlog conversion execution risk at $10B+ scale."
       }
     },
 
@@ -1668,26 +1771,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 6.0,
+        "score_label": "Strong",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 4,
+          "pricing_power": 2,
+          "leadership": 3,
+          "financial_health": 2,
+          "macro_environment": 4,
+          "future_potential": 3
+        },
+        "growth_flag": false,
+        "one_line_thesis": "NVIDIA's primary GPU rack ODM with founder 14-15% ownership and liquid-cooling first-mover advantage — discounted by unresolved governance overhang.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 6.0, "label": "Strong" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-08-11",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
-        "analyst_pt": null,
-        "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_label": "Cheap",
+        "valuation_metric": "Fwd P/E",
+        "valuation_multiple": 18.0,
+        "analyst_pt": 55.0,
+        "analyst_upside_pct": 20.0,
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": null, "type": "regulatory", "description": "DOJ investigation resolution — primary multiple re-rating catalyst; resolution = governance overhang lifts" },
+          { "date": "2026-08-11", "type": "earnings", "description": "Q4 FY2026 earnings — AI server revenue ramp; watch gross margin trajectory" },
+          { "date": null, "type": "governance", "description": "CFO succession announcement — resolves key governance flag from 2024" }
+        ],
+        "bull_summary": "NVIDIA preferred rack-scale ODM; fastest time-to-market on new GPU architectures; founder Liang 14-15% ownership; AI server TAM $30B→$300B+; liquid cooling design leadership; governance discount = potential upside on resolution.",
+        "bear_summary": "DOJ investigation ongoing; CFO in succession limbo since 2024; 12% GM limits downside protection; ODM commoditization risk from Dell/HPE; SMCI governance scar tissue suppresses institutional ownership."
       }
     },
 
@@ -1710,26 +1826,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 8.0,
+        "score_label": "Unrivaled",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 4,
+          "pricing_power": 4,
+          "leadership": 4,
+          "financial_health": 4,
+          "macro_environment": 4,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Everpure is the all-flash storage platform that AI training data gravity makes mandatory — Evergreen subscription lock-in, DirectFlash IP, and Portworx Kubernetes storage combine to create a durable enterprise storage franchise.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 8.0, "label": "Unrivaled" }
+        ]
       },
       "advisory": {
         "next_earnings": null,
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
-        "analyst_pt": null,
-        "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_label": "Reasonable",
+        "valuation_metric": "Fwd P/E",
+        "valuation_multiple": 38.0,
+        "analyst_pt": 62.0,
+        "analyst_upside_pct": 18.0,
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": null, "type": "earnings", "description": "Q2 FY2027 earnings (~Sep 2026) — ARR trajectory toward $2.5B; Portworx growth rate confirmation" },
+          { "date": null, "type": "product", "description": "New NVIDIA AI reference architecture certifications including Everpure storage" },
+          { "date": null, "type": "product", "description": "Evergreen//One flexible consumption expansion — converts CapEx buyers to subscription" }
+        ],
+        "bull_summary": "Evergreen subscription 90%+ renewal rates + DirectFlash IP + Portworx AI pipeline = durable enterprise storage platform; DGX BasePod certification embeds storage in NVIDIA reference architecture; AI training data gravity compounds as model sizes grow.",
+        "bear_summary": "Hyperscalers build all own storage (limits TAM); NetApp and Dell EMC serious competitors; rebranding from Pure Storage to Everpure creates short-term awareness cost; subscription deferred revenue recognition complexity."
       }
     },
 
@@ -1808,26 +1937,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 7.5,
+        "score_label": "Strong",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 4,
+          "pricing_power": 4,
+          "leadership": 4,
+          "financial_health": 3,
+          "macro_environment": 4,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Rubrik is the cloud-native data security platform that ransomware makes mandatory — 46% ARR growth and 120% NRR at $1.46B ARR with founder-CEO Bipul Sinha holding 8.9%.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 7.5, "label": "Strong" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-09-08",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
+        "valuation_label": "Fair",
+        "valuation_metric": "EV/ARR",
+        "valuation_multiple": 12.0,
         "analyst_pt": null,
         "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": "2026-09-08", "type": "earnings", "description": "Q1 FY2027 earnings — ARR trajectory toward $2B; operating leverage inflection watch" },
+          { "date": null, "type": "product", "description": "DSPM expansion: Data Security Posture Management product announcements" },
+          { "date": null, "type": "product", "description": "Government FedRAMP authorization expansion post-CIA CISO hire" }
+        ],
+        "bull_summary": "Zero-trust architecture is the mandatory defense against ransomware; last-resort recovery position = highest switching cost; 120% NRR and 46% ARR growth validate enterprise lock-in; former CIA CISO + ex-Palo Alto CEO governance team.",
+        "bear_summary": "-35% operating margin requires sustained growth to justify $18B market cap; CrowdStrike, Palo Alto competing in adjacent data security; founder Bipul Sinha running 10b5-1 sales plan."
       }
     },
 
@@ -1850,26 +1992,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 8.5,
+        "score_label": "Unrivaled",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 5,
+          "pricing_power": 4,
+          "leadership": 3,
+          "financial_health": 3,
+          "macro_environment": 5,
+          "future_potential": 5
+        },
+        "growth_flag": true,
+        "one_line_thesis": "SailPoint is the identity governance control plane that every AI agent, bot, and human employee must pass through — machine identities growing 45:1 vs. humans makes this the fastest-expanding TAM in enterprise security.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 8.5, "label": "Unrivaled" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-06-09",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
-        "analyst_pt": null,
-        "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_label": "Fair",
+        "valuation_metric": "EV/ARR",
+        "valuation_multiple": 18.0,
+        "analyst_pt": 36.0,
+        "analyst_upside_pct": 20.0,
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": null, "type": "earnings", "description": "Q2 FY2026 earnings (~Aug 2026) — NRR + $1M+ customer cohort expansion; key health check" },
+          { "date": null, "type": "product", "description": "Machine identity product (FY2026/27): dedicated AI agent governance modules → NRR expansion" },
+          { "date": null, "type": "product", "description": "FY2027 profitability path: operating leverage → re-rating from growth to compounder" }
+        ],
+        "bull_summary": "150+ enterprise connectors = years of integration moat; Fortune 500 identity graph compounds as AI training data; machine identity 45:1 vs. humans is structural TAM expansion; 120% NRR and 185 customers >$1M ARR (+48%) prove land-and-expand.",
+        "bear_summary": "Mark McClain only 2.5% ownership creates alignment gap vs. peers; Thoma Bravo overhang as PE exits; Microsoft (Entra), Okta, CyberArk competing in adjacent identity spaces; -15% operating margin."
       }
     },
 
@@ -1892,26 +2047,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 8.5,
+        "score_label": "Unrivaled",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 5,
+          "pricing_power": 4,
+          "leadership": 4,
+          "financial_health": 4,
+          "macro_environment": 4,
+          "future_potential": 5
+        },
+        "growth_flag": true,
+        "one_line_thesis": "MercadoLibre is the Amazon + PayPal of Latin America — 27 consecutive quarters of 30%+ growth with GAAP profitability across a region of 650M people with massive e-commerce and fintech under-penetration.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 8.5, "label": "Unrivaled" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-08-03",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
-        "analyst_pt": null,
-        "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_label": "Reasonable",
+        "valuation_metric": "Fwd P/E",
+        "valuation_multiple": 55.0,
+        "analyst_pt": 2750.0,
+        "analyst_upside_pct": 15.0,
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": "2026-08-03", "type": "earnings", "description": "Q2 2026 earnings — whether +49% YoY acceleration in Q1 sustains; margin trajectory in investment phase" },
+          { "date": null, "type": "product", "description": "Mexico acceleration: third-largest LatAm economy is MELI's fastest-growing market" },
+          { "date": null, "type": "product", "description": "Mercado Crédito: credit book expansion — total loans outstanding vs. NPL ratio" }
+        ],
+        "bull_summary": "27 consecutive 30%+ growth quarters + GAAP profitable + four-flywheel compounding; Galperin 7% stake + 26-yr track record + internal CEO succession; LatAm e-commerce at 10% penetration with decades of runway; flywheel reinforces in every market.",
+        "bear_summary": "LatAm FX volatility (Brazilian Real, Argentine Peso) creates reported USD revenue noise; deliberate investment phase compressing near-term margins; Nubank/PagSeguro competition in Brazil payments; 55x Fwd P/E punishes macro surprises."
       }
     },
 
@@ -1934,26 +2102,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 6.5,
+        "score_label": "Strong",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 3,
+          "pricing_power": 3,
+          "leadership": 4,
+          "financial_health": 3,
+          "macro_environment": 3,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Robinhood is the retail fintech platform with a real recurring revenue stream (Gold, >3M subscribers) and Bitstamp crypto optionality, but PFOF regulatory risk and crypto cyclicality keep it a tactical trade more than a compounder.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 6.5, "label": "Strong" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-08-05",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
+        "valuation_label": "Reasonable",
+        "valuation_metric": "Fwd P/E",
+        "valuation_multiple": 35.0,
         "analyst_pt": null,
         "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": "2026-08-05", "type": "earnings", "description": "Q2 2026 earnings — whether Q1 +50% was sustainable or peak-cycle; Gold subscriber count" },
+          { "date": null, "type": "regulatory", "description": "PFOF regulatory decision: SEC rule finalization — binary event (upside if grandfather; downside if ban)" },
+          { "date": null, "type": "product", "description": "Bitstamp integration progress — international crypto exchange revenue contribution" }
+        ],
+        "bull_summary": "Gold subscribers >3M growing 25% YoY = $360M+ ARR of defensible recurring revenue; Tenev co-founder 8% + super-voting = strong alignment; Bitstamp global crypto exchange adds regulatory-compliant international optionality; GAAP profitable FY2025.",
+        "bear_summary": "PFOF (30-50% of non-Gold revenue) faces SEC ban risk — material impairment scenario; crypto revenue highly cyclical (crypto winter = revenue crater); commission-free trading now table stakes; super-voting limits shareholder influence."
       }
     },
 
@@ -2039,14 +2220,23 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 7.0,
+        "score_label": "Strong",
+        "last_scored": "2026-06-13",
         "pre_revenue": true,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 2,
+          "pricing_power": 3,
+          "leadership": 4,
+          "financial_health": 1,
+          "macro_environment": 5,
+          "future_potential": 5
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Oklo is the nuclear renaissance pure-play at the intersection of AI's insatiable power demand and bipartisan nuclear policy support — pre-revenue with exceptional management and 20+ GW of power purchase LOIs, but entirely dependent on NRC licensing execution.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 7.0, "label": "Strong" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-08-18",
@@ -2055,10 +2245,14 @@
         "valuation_multiple": null,
         "analyst_pt": null,
         "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": null, "type": "regulatory", "description": "NRC combined license application: approval or extension — binary re-rating event" },
+          { "date": null, "type": "product", "description": "Idaho National Laboratory DOE pilot plant milestone — first Aurora heat generation" },
+          { "date": null, "type": "product", "description": "First commercial PPA: converting an LOI to a binding 20-year power purchase agreement" }
+        ],
+        "bull_summary": "AI data center power demand is the most credible demand driver in SMR history; Sam Altman 12% + board + DeWitte/Cochran founders = exceptional alignment; 20+ GW LOI pipeline; fuel cycle closing eliminates nuclear waste problem; ADVANCE Act bipartisan support.",
+        "bear_summary": "No deployed reactor; initial NRC application rejected 2022 for insufficient safety documentation; regulatory path for novel reactor design 5-10 years historically; burning SPAC proceeds with no commercial revenue; $4B market cap is pure optionality on unproven technology."
       }
     },
 
@@ -2072,26 +2266,39 @@
       "status": "active",
       "tier_positions": [],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 5.5,
+        "score_label": "Average",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 3,
+          "pricing_power": 2,
+          "leadership": 3,
+          "financial_health": 2,
+          "macro_environment": 4,
+          "future_potential": 3
+        },
+        "growth_flag": false,
+        "one_line_thesis": "T1 Energy is a Texas utility-scale solar developer benefiting from IRA tax credits and AI data center power demand, but lacks a technology moat in a highly competitive EPC market.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 5.5, "label": "Average" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-08-07",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
+        "valuation_label": "Fair",
+        "valuation_metric": "EV/Revenue",
+        "valuation_multiple": 2.0,
         "analyst_pt": null,
         "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": "2026-08-07", "type": "earnings", "description": "Q2 2026 earnings — project completions and PPA signings; revenue lumpiness watch" },
+          { "date": null, "type": "product", "description": "Long-term PPA with major data center operator — de-risks pipeline" },
+          { "date": null, "type": "regulatory", "description": "IRA ITC retention — any rollback would materially impair project economics" }
+        ],
+        "bull_summary": "Texas ERCOT power demand surge + IRA ITC + AI data center PPA demand creates real near-term project opportunity; Garcia founder CEO 4.2% alignment; 2.5 GW development pipeline.",
+        "bear_summary": "No technology moat; EPC margins under compression from sector-wide competition; NextEra, Intersect Power, and dozens of regional developers compete for same projects; project-based revenue is lumpy and capital-intensive."
       }
     },
 
@@ -2105,14 +2312,23 @@
       "status": "active",
       "tier_positions": [],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 7.0,
+        "score_label": "Strong",
+        "last_scored": "2026-06-13",
         "pre_revenue": true,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 3,
+          "pricing_power": 4,
+          "leadership": 3,
+          "financial_health": 1,
+          "macro_environment": 5,
+          "future_potential": 5
+        },
+        "growth_flag": true,
+        "one_line_thesis": "ASP Isotopes sits at the intersection of nuclear renaissance (HALEU for SMRs), quantum computing (silicon-28), and medical isotopes — using a proprietary separation process that could make it the only non-governmental HALEU supplier in the West.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 7.0, "label": "Strong" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-08-12",
@@ -2121,10 +2337,14 @@
         "valuation_multiple": null,
         "analyst_pt": null,
         "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": null, "type": "product", "description": "South Africa pilot plant: first HALEU production from ASP process — technical de-risking milestone" },
+          { "date": null, "type": "product", "description": "DOE contract expansion: larger cooperative agreement for US domestic HALEU supply chain" },
+          { "date": null, "type": "product", "description": "Silicon-28 customer ramp: Intel or IBM production-scale order for quantum computing substrates" }
+        ],
+        "bull_summary": "Russia HALEU ban created acute SMR fuel supply crisis — ASPI is the only commercial US HALEU pathway; silicon-28 demand from quantum computing is real and growing; Bartholomew + Terrien technical team credible; DOE cooperation agreement validates strategic value.",
+        "bear_summary": "ASP process unproven at commercial scale; South Africa pilot still commissioning; NRC licensing for US facility years away; $8M revenue burning cash; centrifuge expansion or SILEX could commoditize before ASPI reaches scale."
       }
     },
 
@@ -2138,14 +2358,23 @@
       "status": "active",
       "tier_positions": [],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 7.5,
+        "score_label": "Strong",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 4,
+          "pricing_power": 3,
+          "leadership": 4,
+          "financial_health": 2,
+          "macro_environment": 4,
+          "future_potential": 5
+        },
+        "growth_flag": true,
+        "one_line_thesis": "AST SpaceMobile is the only satellite constellation that connects directly to unmodified smartphones — if BlueBird scales, every MNO on Earth becomes a distribution partner and 3.5B unconnected people become potential subscribers.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 7.5, "label": "Strong" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-08-17",
@@ -2154,10 +2383,14 @@
         "valuation_multiple": null,
         "analyst_pt": null,
         "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": null, "type": "product", "description": "Block 2 manufacturing contract: financing and manufacturing agreement announcement — constellation buildout de-risking" },
+          { "date": "2026-08-17", "type": "earnings", "description": "Q2 2026 earnings — AT&T and Verizon commercial subscriber volume metrics; revenue ramp pace" },
+          { "date": null, "type": "product", "description": "Maritime/aviation enterprise vertical expansion beyond consumer MNO" }
+        ],
+        "bull_summary": "Only D2D broadband to standard smartphones at commercial scale; MNO wholesale model means ASTS is infrastructure not consumer retail; Avellan 18.5% + super-voting = exceptional alignment; AT&T/Verizon/Vodafone partnerships validate technology.",
+        "bear_summary": "Block 2 requires 100+ satellites at $10M+ each — severe dilution risk; SpaceX Starlink D2C (T-Mobile partnership) competes directly; pre-profitability at current scale; ITU spectrum disputes possible."
       }
     },
 
@@ -2235,26 +2468,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 7.5,
+        "score_label": "Strong",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 3,
+          "pricing_power": 2,
+          "leadership": 4,
+          "financial_health": 4,
+          "macro_environment": 5,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Freeport-McMoRan is the world's largest publicly traded copper producer with a structural supply deficit, new leaching technology unlocking 2B+ incremental lbs, and copper as the indispensable metal for EV, grid, and AI data center power.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 7.5, "label": "Strong" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-07-23",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
+        "valuation_label": "Cheap",
+        "valuation_metric": "Fwd P/E",
+        "valuation_multiple": 18.0,
         "analyst_pt": null,
         "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": "2026-07-23", "type": "earnings", "description": "Q2 2026 earnings — leaching technology production contribution and copper cost-per-lb trajectory" },
+          { "date": null, "type": "product", "description": "Leaching technology 2B+ lbs confirmation — production guidance upgrade catalyst" },
+          { "date": null, "type": "macro", "description": "Copper price cycle: $5/lb+ copper → significant FCF and earnings expansion; watch Chinese stimulus" }
+        ],
+        "bull_summary": "Only company with Grasberg + Morenci scale; copper supply deficit is structural (15-20 year greenfield lead time); leaching technology adds 2B+ lbs at minimal capex; Adkerson/Quirk deep institutional knowledge; AI data center copper demand underestimated.",
+        "bear_summary": "Commodity pricing — FCX is a price-taker; global recession compresses copper demand and price; Indonesia Grasberg regulatory/community relations risk; Quirk new CEO with CFO background — operational execution risk."
       }
     },
 
@@ -2277,26 +2523,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 8.5,
+        "score_label": "Unrivaled",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 4,
+          "pricing_power": 4,
+          "leadership": 4,
+          "financial_health": 3,
+          "macro_environment": 5,
+          "future_potential": 5
+        },
+        "growth_flag": true,
+        "one_line_thesis": "MP Materials is the only company in the US mining, processing, and manufacturing rare earth permanent magnets — a vertically integrated monopoly in an input that China controls globally and that every EV motor, wind turbine, and defense system depends on.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 8.5, "label": "Unrivaled" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-07-30",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
-        "analyst_pt": null,
-        "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_label": "Fair",
+        "valuation_metric": "EV/Revenue",
+        "valuation_multiple": 9.0,
+        "analyst_pt": 25.0,
+        "analyst_upside_pct": 47.0,
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": "2026-07-30", "type": "earnings", "description": "Q2 2026 earnings — Fort Worth magnet production volume vs. target; GM Ultium magnet ramp" },
+          { "date": null, "type": "regulatory", "description": "China rare earth export controls escalation — accelerating MP's strategic value" },
+          { "date": null, "type": "product", "description": "DoD classified magnet contracts: expanding defense revenue contribution" }
+        ],
+        "bull_summary": "Mountain Pass + Fort Worth = only US mine-to-magnet value chain; GM 20-year contract; China export controls are an ongoing demand accelerant; Litinsky 9.8% + Corbett co-founder = strong alignment; DoD strategic asset status prevents hostile foreign acquisition.",
+        "bear_summary": "Stage III magnet manufacturing is first-of-kind in US — execution risk is real; REO prices volatile and can be suppressed by Chinese overproduction; Litinsky is a former hedge fund manager, not a mining operator; $3B market cap is already pricing significant Stage III success."
       }
     },
 
@@ -2319,26 +2578,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 7.0,
+        "score_label": "Strong",
+        "last_scored": "2026-06-13",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 4,
+          "pricing_power": 3,
+          "leadership": 3,
+          "financial_health": 3,
+          "macro_environment": 4,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Elmet is the only major US manufacturer of tungsten and molybdenum specialty products — a profitable, 80-year refractory metals franchise at the intersection of defense onshoring and semiconductor manufacturing, with China controlling 85% of global tungsten supply.",
+        "score_history": [
+          { "date": "2026-06-13", "score": 7.0, "label": "Strong" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-08-25",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
+        "valuation_label": "Reasonable",
+        "valuation_metric": "Fwd P/E",
+        "valuation_multiple": 22.0,
         "analyst_pt": null,
         "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_last_updated": "2026-06-13",
+        "near_term_catalysts": [
+          { "date": "2026-08-25", "type": "earnings", "description": "Q2 2026 earnings — defense contract wins; semiconductor fab tungsten demand; China restrictions impact on pricing" },
+          { "date": null, "type": "product", "description": "Army/Marine Corps 120mm tungsten munitions procurement expansion" },
+          { "date": null, "type": "macro", "description": "China tungsten export restriction escalation — strategic premium on Elmet products" }
+        ],
+        "bull_summary": "80+ year refractory metals expertise; DoD-qualified for critical defense applications (kinetic penetrators, aircraft components); semiconductor fab buildout (Intel Ohio, TSMC Arizona) increasing tungsten target demand; China 85% supply control creates acute strategic urgency for domestic alternatives.",
+        "bear_summary": "Small scale ($190M revenue, $400M market cap); professional management without founder ownership drive; commodity tungsten pricing pressure from global suppliers; defense budget cuts could reduce munitions demand; post-SPAC governance still maturing."
       }
     }
 
