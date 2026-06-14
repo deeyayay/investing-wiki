@@ -8,16 +8,16 @@
 # To add a ticker: /add-ticker TICKER [--sector "Sector Name"]
 # To add a candidate: append to the sector's candidates list below.
 
-last_updated: "2026-06-09"
+last_updated: "2026-06-14"
 
 tickers:
-  # ── Robotics & Edge AI ────────────────────────────────────────────────────
+  # ── Physical AI ───────────────────────────────────────────────────────────
   AMBA:
     company: "Ambarella, Inc."
     cik: "0001280263"
     exchange: NASDAQ
-    sector: "Robotics & Edge AI"
-    path: "Investing/Wiki/Sectors/Robotics & Edge AI/AMBA"
+    sector: "Physical AI"
+    path: "Investing/Wiki/Sectors/Physical AI/AMBA"
     score: 8.5
     next_earnings: "2026-09-01"
 
@@ -25,8 +25,8 @@ tickers:
     company: "Ouster, Inc."
     cik: "0001816581"
     exchange: NASDAQ
-    sector: "Robotics & Edge AI"
-    path: "Investing/Wiki/Sectors/Robotics & Edge AI/OUST"
+    sector: "Physical AI"
+    path: "Investing/Wiki/Sectors/Physical AI/OUST"
     score: 6.5
     next_earnings: "2026-08-06"
 
@@ -830,3 +830,68 @@ candidates:
     source: "map-sector"
     added: "2026-05-31"
     note: "Atlas Vector Search (HNSW/ENN); document store for RAG pipeline metadata"
+
+  # ── Physical AI candidates ────────────────────────────────────────────────
+  - ticker: MBLY
+    company: "Mobileye Global"
+    sector: "Physical AI"
+    layer: "Perception & Sensing"
+    source: "map-sector"
+    added: "2026-06-14"
+    note: "EyeQ SoC + SuperVision camera array; highest-volume AV perception in production; ~3B EyeQ units shipped. Run /add-ticker MBLY --sector 'Physical AI'"
+
+  - ticker: CGNX
+    company: "Cognex Corporation"
+    sector: "Physical AI"
+    layer: "Perception & Sensing"
+    source: "map-sector"
+    added: "2026-06-14"
+    note: "Machine vision leader for industrial automation and robotic bin-picking. Run /add-ticker CGNX --sector 'Physical AI'"
+
+  - ticker: ANSS
+    company: "Ansys, Inc."
+    sector: "Physical AI"
+    layer: "Simulation & Synthetic Data"
+    source: "map-sector"
+    added: "2026-06-14"
+    note: "Multi-physics simulation (structural, fluid, EM) for robot and AV validation. Run /add-ticker ANSS --sector 'Physical AI'"
+
+  - ticker: QCOM
+    company: "Qualcomm"
+    sector: "Physical AI"
+    layer: "Edge Compute & Inference"
+    source: "map-sector"
+    added: "2026-06-14"
+    note: "RB5 robotics platform; Snapdragon Ride automotive edge compute. Run /add-ticker QCOM --sector 'Physical AI'"
+
+  - ticker: TSLA
+    company: "Tesla, Inc."
+    sector: "Physical AI"
+    layer: "Deployment Platforms"
+    source: "map-sector"
+    added: "2026-06-14"
+    note: "Optimus humanoid robot + FSD; vertically integrates AI training, inference chip, and deployment. Run /add-ticker TSLA --sector 'Physical AI'"
+
+  - ticker: JOBY
+    company: "Joby Aviation"
+    sector: "Physical AI"
+    layer: "Deployment Platforms"
+    source: "map-sector"
+    added: "2026-06-14"
+    note: "eVTOL air taxi; Toyota-backed; FAA Part 135 certification in process. Run /add-ticker JOBY --sector 'Physical AI'"
+
+  - ticker: "6594.T"
+    company: "Nidec Corporation"
+    sector: "Physical AI"
+    layer: "Actuation & Motion Control"
+    source: "map-sector"
+    added: "2026-06-14"
+    note: "World's largest precision motor maker; ~45% of industrial servo volume; TSE-listed. cik: null. Run /add-ticker 6594.T --sector 'Physical AI'"
+
+  - ticker: PH
+    company: "Parker Hannifin"
+    sector: "Physical AI"
+    layer: "Actuation & Motion Control"
+    source: "map-sector"
+    added: "2026-06-14"
+    note: "Linear and electromechanical actuators; motion and control; 13,000+ motion products. Run /add-ticker PH --sector 'Physical AI'"

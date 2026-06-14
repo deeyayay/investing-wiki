@@ -1,5 +1,5 @@
 # AI Ecosystem — Dimension Map
-*Last updated: 2026-06-10 — superseded by the 12-layer AI Buildout Stack; kept as the sector registry + slug map.*
+*Last updated: 2026-06-14 — "Robotics & Edge AI" renamed to "Physical AI"; sector expanded to 7-layer vertical stack.*
 
 > **Canonical taxonomy moved.** The wiki now organizes the AI buildout as a **12-layer vertical stack** (Application → Critical Minerals) plus 4 cross-cutting rails. See **`AI Buildout Stack.md`** for the authoritative layer definitions and the machine-readable JSON the dashboard consumes. This file remains the **sector registry** (sector → folder slug → status) and the **D1–D5 → layer crosswalk** for legacy references.
 
@@ -33,7 +33,7 @@ The legacy five-dimension codes map onto the 12 layers as follows (full layer de
 | Cybersecurity | D4 | `Cybersecurity` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
 | AI Model Infrastructure | D4 | `AI Model Infrastructure` | partial | `_Supply Chain Map.md` — mapped 2026-05-31, 8-tier, process/product depth |
 | Data & Software Platforms | D4 | *(reserved)* | planned | not yet created |
-| Robotics & Edge AI | D5 | `Robotics & Edge AI` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
+| Physical AI | D5 | `Physical AI` | partial | `_Supply Chain Map.md` — rebuilt 2026-06-14, 7-layer vertical stack (P07 data → P01 deployment), expanded from Robotics & Edge AI |
 | Fintech & Commerce AI | D5 | `Fintech & E-Commerce` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
 | Defense & Space | D5 | *(reserved)* | planned | not yet created |
 

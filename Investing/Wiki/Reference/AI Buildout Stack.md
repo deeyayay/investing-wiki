@@ -1,5 +1,5 @@
 # AI Buildout Stack — Canonical Layer Map
-*Last updated: 2026-06-10 — adopted the 12-layer vertical model as the canonical taxonomy*
+*Last updated: 2026-06-14 — Edge & Physical AI rail expanded; Physical AI Stack JSON added as a peer visualization*
 
 This file is the **authoritative taxonomy** for the wiki. The AI buildout is modeled as a single vertical dependency stack — **12 layers** from Application (top) down to Critical Minerals (bedrock), plus **4 cross-cutting rails** (Power Infrastructure, Thermal Management, Security, Edge & Physical AI).
 
@@ -15,7 +15,7 @@ The `daily-dashboard` skill reads the JSON block below to regenerate the dashboa
 
 | # | Layer | What it is | Feeding sector(s) |
 |---|-------|------------|-------------------|
-| L01 | **Application** | AI-native products & vertical apps | Fintech & Commerce AI, Robotics & Edge AI |
+| L01 | **Application** | AI-native products & vertical apps | Fintech & Commerce AI, Physical AI |
 | L02 | **AI Model** | Foundation models, alignment, training data | AI Model Infrastructure |
 | L03 | **Software Infrastructure** | Orchestration, serving, MLOps, APIs | AI Model Infrastructure |
 | L04 | **Cloud Infrastructure** | Hyperscalers, neoclouds, colocation, storage | Compute Infrastructure |
@@ -35,7 +35,7 @@ The `daily-dashboard` skill reads the JSON block below to regenerate the dashboa
 | **Power Infrastructure** | left | Powers the entire stack: generation → grid → rack → board | Energy & Power, Semiconductors (power devices) |
 | **Thermal Management** | right | Cools compute & memory (cross-cuts L4–L9) | Compute Infrastructure (cooling) |
 | **Security** | right | Secures every layer | Cybersecurity |
-| **Edge & Physical AI** | right | Deploys intelligence into the physical world | Robotics & Edge AI |
+| **Edge & Physical AI** | right | Deploys intelligence into the physical world | Physical AI (see Physical AI Stack below) |
 
 ---
 
@@ -148,8 +148,80 @@ The previous five-dimension stack is superseded but maps cleanly onto the layers
     {"id":"security","side":"right","title":"Security","cap":"Secures every layer of the stack.","groups":[
       {"label":"Identity · EDR · SecOps","chips":["SAIL","CRWD","PANW","FTNT","RBRK"]}
     ]},
-    {"id":"edge","side":"right","title":"Edge & Physical AI","cap":"Deploys intelligence into the physical world.","groups":[
-      {"label":"Robotics · AV · Sensors","chips":["AMBA","OUST","RKLB"]}
+    {"id":"edge","side":"right","title":"Edge & Physical AI","cap":"Deploys intelligence into the physical world. Full breakdown in the Physical AI Stack.","groups":[
+      {"label":"Perception & Sensing","chips":["OUST","MBLY","CGNX"]},
+      {"label":"Edge Compute","chips":["AMBA","NVDA"]},
+      {"label":"Simulation & Training","chips":["NVDA","ANSS"]},
+      {"label":"Deployment Platforms","chips":["TSLA","JOBY","RKLB"]}
+    ]}
+  ]
+}
+```
+
+---
+
+---
+
+## Physical AI Stack — Machine-readable definition
+
+The Physical AI stack is a **peer visualization** to the AI Buildout Stack above. The dashboard renders it as an independent 7-layer vertical stack (P07 data → P01 deployment) toggled via a stack switcher. The `daily-dashboard` skill reads the `PHYS_STACK` JSON block below to regenerate the Physical AI panel in `index.html`.
+
+```json
+{
+  "generated": "2026-06-14",
+  "layers": [
+    {"num":"P01","name":"Deployment Platforms","hue":18,"tag":"robots · AVs · drones · space","boxes":[
+      {"label":"Humanoid Robots","sector":"Physical AI","slug":"physical-ai","tier":"Deployment Platforms","chips":["TSLA"]},
+      {"label":"Autonomous Vehicles","sector":"Physical AI","slug":"physical-ai","tier":"Deployment Platforms","chips":["TSLA","MBLY"]},
+      {"label":"Drones & eVTOL","sector":"Physical AI","slug":"physical-ai","tier":"Deployment Platforms","chips":["JOBY"]},
+      {"label":"Space Vehicles","sector":"Space & Communications","slug":"space-comms","tier":"Launch Vehicle Manufacturing","chips":["RKLB"]}
+    ]},
+    {"num":"P02","name":"Actuation & Motion Control","hue":30,"tag":"motors · drives · harmonic joints","boxes":[
+      {"label":"Electric Motors & Servo Drives","sector":"Physical AI","slug":"physical-ai","tier":"Actuation & Motion Control","chips":["6594.T","PH"]},
+      {"label":"Precision Gearboxes","sector":"Physical AI","slug":"physical-ai","tier":"Actuation & Motion Control","chips":[]},
+      {"label":"Power Electronics for Motion","sector":"Semiconductors","slug":"semiconductors","tier":"Chip Design (Fabless & IDM)","chips":["STM","IFX","NVTS"]}
+    ]},
+    {"num":"P03","name":"Perception & Sensing","hue":55,"tag":"LIDAR · cameras · radar · IMU","boxes":[
+      {"label":"LIDAR & Depth Sensing","sector":"Physical AI","slug":"physical-ai","tier":"Perception & Sensing","chips":["OUST"]},
+      {"label":"Vision & Camera Modules","sector":"Physical AI","slug":"physical-ai","tier":"Perception & Sensing","chips":["MBLY","CGNX"]},
+      {"label":"Radar & mmWave","sector":"Semiconductors","slug":"semiconductors","tier":"Chip Design (Fabless & IDM)","chips":["NXPI"]},
+      {"label":"Sensor Fusion SoC","sector":"Physical AI","slug":"physical-ai","tier":"Edge Compute & Inference","chips":["AMBA","MBLY"]}
+    ]},
+    {"num":"P04","name":"Edge Compute & Inference","hue":80,"tag":"on-device AI · low-power SoC · NPU","boxes":[
+      {"label":"Edge AI SoC / NPU","sector":"Physical AI","slug":"physical-ai","tier":"Edge Compute & Inference","chips":["AMBA","NVDA","QCOM"]},
+      {"label":"Industrial Edge Module","sector":"Physical AI","slug":"physical-ai","tier":"Edge Compute & Inference","chips":["NVDA"]}
+    ]},
+    {"num":"P05","name":"Simulation & Synthetic Data","hue":155,"tag":"sim-to-real · digital twin · synthetic","boxes":[
+      {"label":"Robot & AV Simulation","sector":"Physical AI","slug":"physical-ai","tier":"Simulation & Synthetic Data","chips":["NVDA","ANSS"]},
+      {"label":"Synthetic Dataset Generation","sector":"Physical AI","slug":"physical-ai","tier":"Simulation & Synthetic Data","chips":[]}
+    ]},
+    {"num":"P06","name":"Embodied AI Training","hue":245,"tag":"VLA models · imitation learning · RL","boxes":[
+      {"label":"Vision-Language-Action Models","sector":"Physical AI","slug":"physical-ai","tier":"Embodied AI Training","chips":["META","GOOGL","NVDA"]},
+      {"label":"RL & Imitation Learning","sector":"Physical AI","slug":"physical-ai","tier":"Embodied AI Training","chips":["META"]}
+    ]},
+    {"num":"P07","name":"Real-World Data & Annotation","hue":280,"tag":"data flywheel · teleoperation · labeling","boxes":[
+      {"label":"Teleoperation & Data Capture","sector":"Physical AI","slug":"physical-ai","tier":"Real-World Data & Annotation","chips":[]},
+      {"label":"Annotation & Curation","sector":"Physical AI","slug":"physical-ai","tier":"Real-World Data & Annotation","chips":[]}
+    ]}
+  ],
+  "connectors": [
+    {"label":"actuated by"},
+    {"label":"guided by perception from"},
+    {"label":"inference computed on"},
+    {"label":"validated in simulation"},
+    {"label":"policies trained via"},
+    {"label":"trained on data from"}
+  ],
+  "rails": [
+    {"id":"mobile-power","side":"left","title":"Mobile Power","cap":"Powers untethered machines — batteries, power ICs, BMS.","groups":[
+      {"label":"Battery & Power Mgmt","chips":["TXN","NVTS","NXPI"]}
+    ]},
+    {"id":"connectivity","side":"right","title":"Connectivity","cap":"Keeps machines connected — 5G, V2X, satellite IoT.","groups":[
+      {"label":"5G / V2X","chips":["QCOM"]},
+      {"label":"Satellite IoT","chips":["RKLB","ASTS"]}
+    ]},
+    {"id":"safety-cert","side":"right","title":"Safety & Certification","cap":"Validates that machines are safe to operate in the real world.","groups":[
+      {"label":"Simulation & Functional Safety","chips":["ANSS"]}
     ]}
   ]
 }
@@ -161,6 +233,7 @@ The previous five-dimension stack is superseded but maps cleanly onto the layers
 
 - When `/map-sector` adds or rebuilds a `_Supply Chain Map.md`, assign each new tier to a layer or rail sub-box here and add it to the JSON block.
 - Keep this JSON block and the `STACK` object in `Investing/Output/Dashboard/index.html` identical — `/daily-dashboard --refresh-data` regenerates the dashboard from this file.
+- The Physical AI Stack JSON above maps to the `PHYS_STACK` object in `index.html` — keep them in sync.
 - Cross-layer dependency edges (the labeled arrows) are distilled in `connectors[]`; the full edge list lives in `Ecosystem Interrelationships.md`.
 </content>
 </invoke>
