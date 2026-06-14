@@ -1,14 +1,14 @@
 {
   "meta": {
     "schema_version": "1",
-    "generated": "2026-06-13",
+    "generated": "2026-06-14",
     "source": {
       "registry": "Investing/Wiki/Reference/Monitor Registry.yaml",
       "data": "Investing/Output/Dashboard/data.json"
     },
     "counts": {
       "active": 51,
-      "scored": 35,
+      "scored": 40,
       "candidates": 34
     },
     "schema_notes": {
@@ -152,26 +152,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 7.5,
+        "score_label": "Strong",
+        "last_scored": "2026-06-14",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 4,
+          "pricing_power": 3,
+          "leadership": 3,
+          "financial_health": 3,
+          "macro_environment": 5,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Coherent is the broadest photonics platform in the AI transceiver supercycle — vertical integration from compound semiconductor wafers to 800G modules creates margin expansion runway if Jim Anderson can clean up the merger debt overhang.",
+        "score_history": [
+          { "date": "2026-06-14", "score": 7.5, "label": "Strong" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-08-13",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
+        "valuation_label": "Reasonable",
+        "valuation_metric": "EV/Revenue",
+        "valuation_multiple": 3.0,
         "analyst_pt": null,
         "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_last_updated": "2026-06-14",
+        "near_term_catalysts": [
+          { "date": "2026-08-13", "type": "earnings", "description": "Q4 FY2026 earnings — watch gross margin trajectory toward 42%+ and debt paydown progress" },
+          { "date": null, "type": "product", "description": "1.6T transceiver qualification with hyperscalers — next revenue step-change" },
+          { "date": null, "type": "product", "description": "SiC substrate long-term supply contract with EV OEM — revenue visibility signal" }
+        ],
+        "bull_summary": "Broadest photonics platform: 800G AI transceiver + VCSEL + SiC substrate; vertical integration from wafer to module; Jim Anderson (Lattice playbook) margin recovery mandate; margin recovery + debt paydown = multiple re-rating.",
+        "bear_summary": "$4B+ net debt from II-VI/Finisar merger constrains financial flexibility; Asian transceiver ODMs pricing 800G aggressively; telecom weakness partially offsets AI datacom upside."
       }
     },
 
@@ -194,26 +207,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 7.0,
+        "score_label": "Strong",
+        "last_scored": "2026-06-14",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 4,
+          "pricing_power": 3,
+          "leadership": 3,
+          "financial_health": 3,
+          "macro_environment": 4,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Lumentum holds the most defensible positions in photonics — Apple VCSEL monopoly + telecom ROADM duopoly + coherent transceiver — but the Apple concentration risk and telecom capex cyclicality keep this permanently undervalued relative to its technology quality.",
+        "score_history": [
+          { "date": "2026-06-14", "score": 7.0, "label": "Strong" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-08-18",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
+        "valuation_label": "Reasonable",
+        "valuation_metric": "EV/Revenue",
+        "valuation_multiple": 2.0,
         "analyst_pt": null,
         "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_last_updated": "2026-06-14",
+        "near_term_catalysts": [
+          { "date": "2026-08-18", "type": "earnings", "description": "Q4 FY2026 earnings — watch 800ZR coherent ramp contribution and ROADM order recovery" },
+          { "date": null, "type": "product", "description": "Apple sole-source VCSEL confirmation for iPhone 18 cycle — structural anchor signal" },
+          { "date": null, "type": "product", "description": "800ZR hyperscaler design wins from NeoPhotonics InP capability" }
+        ],
+        "bull_summary": "Highest gross margins in photonics (48%+); Apple VCSEL = multi-year sole-source with qualification lock-in; NeoPhotonics InP opens 800ZR data center TAM; ROADM carrier recovery adds upside.",
+        "bear_summary": "Apple concentration (~30% revenue) creates permanent stock discount; Hurlston new CEO transition uncertainty; telecom capex cycles make ROADM unpredictable; Apple long-term silicon photonics in-sourcing risk."
       }
     },
 
@@ -236,26 +262,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 8.0,
+        "score_label": "Unrivaled",
+        "last_scored": "2026-06-14",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 4,
+          "pricing_power": 3,
+          "leadership": 4,
+          "financial_health": 4,
+          "macro_environment": 5,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Fabrinet is the TSMC of optical components — the world's only scaled precision photonic assembly platform, directly in the path of the AI transceiver supercycle with 15% operating margins that defy contract manufacturing norms.",
+        "score_history": [
+          { "date": "2026-06-14", "score": 8.0, "label": "Unrivaled" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-08-24",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
+        "valuation_label": "Reasonable",
+        "valuation_metric": "EV/Revenue",
+        "valuation_multiple": 3.0,
         "analyst_pt": null,
         "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_last_updated": "2026-06-14",
+        "near_term_catalysts": [
+          { "date": "2026-08-24", "type": "earnings", "description": "Q4 FY2026 earnings — AI transceiver volume sustaining +30% YoY; margin stability at 15%" },
+          { "date": null, "type": "product", "description": "1.6T CPO (co-packaged optics) assembly qualification — TAM doubling catalyst" },
+          { "date": null, "type": "partnership", "description": "Silicon photonics startup (Ayar Labs, Lightmatter) assembly win — new customer diversification" }
+        ],
+        "bull_summary": "Only scaled precision optical assembly platform globally; NVIDIA-certified for AI transceiver volumes; 15% op margin defies contract mfg norms (process knowledge moat); net cash balance sheet; AI transceiver volumes scale with every NVIDIA rack-scale order.",
+        "bear_summary": "Thailand geographic concentration — single natural disaster risk; Coherent (~largest customer) insourcing risk; top 3 customers ~50% revenue creates concentration sensitivity to any major OEM decision."
       }
     },
 
@@ -278,26 +317,39 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 7.0,
+        "score_label": "Strong",
+        "last_scored": "2026-06-14",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 4,
+          "pricing_power": 3,
+          "leadership": 3,
+          "financial_health": 3,
+          "macro_environment": 4,
+          "future_potential": 4
+        },
+        "growth_flag": true,
+        "one_line_thesis": "Ciena's WaveLogic coherent ASIC is the backbone of the internet's capacity expansion — as hyperscalers extend coherent optics inside their own data centers, Ciena transitions from a telecom cycle stock to a structural AI infrastructure compounder.",
+        "score_history": [
+          { "date": "2026-06-14", "score": 7.0, "label": "Strong" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-09-03",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
+        "valuation_label": "Reasonable",
+        "valuation_metric": "EV/Revenue",
+        "valuation_multiple": 2.3,
         "analyst_pt": null,
         "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_last_updated": "2026-06-14",
+        "near_term_catalysts": [
+          { "date": "2026-09-03", "type": "earnings", "description": "Q3 FY2026 earnings — watch web-scale customer mix growing toward 40%+ of revenue" },
+          { "date": null, "type": "product", "description": "800ZR hyperscaler data center interconnect design wins — new TAM opening" },
+          { "date": null, "type": "product", "description": "WaveLogic 6 volume ramp — next coherent ASIC cycle driving equipment refresh" }
+        ],
+        "bull_summary": "WaveLogic in-house ASIC achieves best-in-class spectral efficiency — operators extract more capacity from existing fiber; cloud operator (Google/Microsoft/AWS) mix shift improves revenue quality and visibility; 800ZR opens new data center TAM; Gary Smith 24-year CEO navigates cycles expertly.",
+        "bear_summary": "~60% carrier revenue creates telecom capex cycle exposure; Nokia competition in DWDM limits pricing power; macro-driven capex freeze would hit carriers first and hardest; management transition risk if Smith steps down."
       }
     },
 
@@ -353,26 +405,38 @@
         }
       ],
       "fundamental": {
-        "score": null,
-        "score_label": null,
-        "last_scored": null,
+        "score": 5.5,
+        "score_label": "Average",
+        "last_scored": "2026-06-14",
         "pre_revenue": false,
-        "criteria": null,
-        "growth_flag": null,
-        "one_line_thesis": null,
-        "score_history": []
+        "criteria": {
+          "product": 3,
+          "pricing_power": 2,
+          "leadership": 3,
+          "financial_health": 2,
+          "macro_environment": 4,
+          "future_potential": 3
+        },
+        "growth_flag": false,
+        "one_line_thesis": "AAOI is a vertically integrated optical transceiver manufacturer riding AI data center demand recovery — the 2017 Amazon crash showed customer concentration kills; the question is whether diversification is real this cycle.",
+        "score_history": [
+          { "date": "2026-06-14", "score": 5.5, "label": "Average" }
+        ]
       },
       "advisory": {
         "next_earnings": "2026-08-06",
-        "valuation_label": null,
-        "valuation_metric": null,
-        "valuation_multiple": null,
+        "valuation_label": "Expensive",
+        "valuation_metric": "EV/Revenue",
+        "valuation_multiple": 15.0,
         "analyst_pt": null,
         "analyst_upside_pct": null,
-        "valuation_last_updated": null,
-        "near_term_catalysts": [],
-        "bull_summary": null,
-        "bear_summary": null
+        "valuation_last_updated": "2026-06-14",
+        "near_term_catalysts": [
+          { "date": "2026-08-06", "type": "earnings", "description": "Q2 2026 earnings — GAAP profitability milestone + customer diversification evidence = re-rating catalyst" },
+          { "date": null, "type": "product", "description": "800G transceiver qualification at 2+ hyperscaler accounts — growth rate accelerator" }
+        ],
+        "bull_summary": "Vertically integrated III-V epitaxial supply chain (InGaAsP grown in-house) = cost advantage when volumes scale; AI transceiver demand is real structural tailwind; GAAP profitability inflection could trigger 3-5x re-rating from small base.",
+        "bear_summary": "2017 Amazon crash (-90%) is structural cautionary history — customer concentration can recur; competing against Coherent, Lumentum, InnoLight on price not technology; CATV legacy drag on margins; limited competitive moat vs. Asian ODMs."
       }
     },
 
