@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Research Dashboard</title>
+<title>AI Buildout Supply Chain</title>
 <style>
 :root{--bg:oklch(97.5% .007 75);--bg2:oklch(95% .008 75);--bg3:oklch(92% .010 75);--border:oklch(87% .011 75);--text:oklch(18% .008 280);--muted:oklch(50% .012 260);--amber:oklch(66% .17 62);--amber-bg:oklch(97% .07 75);--d1:oklch(34% .24 278);--d2:oklch(30% .16 148);--d3:oklch(32% .22 258);--d4:oklch(32% .24 310);--d5:oklch(35% .24 27);--d6:oklch(40% .18 55)}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -129,11 +129,6 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 .tab-btn{background:none;border:none;border-bottom:2px solid transparent;padding:10px 16px;font:13px/1 system-ui,sans-serif;color:var(--muted);cursor:pointer;transition:color .15s,border-color .15s;margin-bottom:-1px;border-radius:0}
 .tab-btn:hover{color:var(--text)}
 .tab-btn.active{color:var(--text);border-bottom-color:var(--text);font-weight:600}
-/* Stack switcher */
-.stack-switcher{display:flex;gap:4px;padding:10px 24px 0;background:var(--bg2);border-bottom:1px solid var(--border)}
-.sw-btn{background:none;border:1px solid transparent;border-bottom:none;border-radius:6px 6px 0 0;padding:7px 18px;font:600 12px/1 system-ui,sans-serif;color:var(--muted);cursor:pointer;transition:color .15s,background .15s;letter-spacing:.04em;text-transform:uppercase;margin-bottom:-1px}
-.sw-btn:hover{color:var(--text)}
-.sw-btn.active{color:var(--text);background:var(--bg);border-color:var(--border);border-bottom-color:var(--bg)}
 /* Tech races container */
 #tech-races,#tech-race-detail{padding:40px 32px;max-width:1200px;margin:0 auto}
 .tech-group-label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;margin-top:8px}
@@ -186,9 +181,6 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 .rail-card.thermal{--rail-accent:oklch(62% .12 215);background:oklch(97% .03 215)}
 .rail-card.security{--rail-accent:oklch(55% .17 300);background:oklch(97% .035 300)}
 .rail-card.edge{--rail-accent:oklch(60% .18 350);background:oklch(97% .04 350)}
-.rail-card.mobile-power{--rail-accent:oklch(68% .20 210);background:oklch(97% .04 210)}
-.rail-card.connectivity{--rail-accent:oklch(62% .18 265);background:oklch(97% .04 265)}
-.rail-card.safety-cert{--rail-accent:oklch(58% .16 145);background:oklch(97% .04 145)}
 .rail-title{font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
 .rail-cap{font-size:10px;color:var(--muted);margin:2px 0 10px;line-height:1.4}
 .rail-group{margin-bottom:9px}
@@ -242,29 +234,46 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 .layer-pill{font-size:11px;font-weight:700;padding:3px 10px;border-radius:99px;background:oklch(90% .09 var(--lh,250));color:oklch(32% .14 var(--lh,250));letter-spacing:.02em}
 .sector-tag{font-size:11px;padding:3px 10px;border-radius:99px;background:var(--bg3);color:var(--muted)}
 @media(max-width:600px){.layer-box-grid{grid-template-columns:1fr}}
+/* ── Blueprint remap: group bands, gap boxes, rail items, flow badges ── */
+.subbox-area{padding:12px 14px;display:flex;flex-direction:column;gap:10px}
+.subbox-area>.subbox-row{padding:0}
+.subgroup{border:1px dashed oklch(78% .05 var(--lh,250));border-radius:9px;padding:8px 9px 9px;background:oklch(98% .018 var(--lh,250) / .55)}
+.subgroup .subbox-row{padding:0}
+.subgroup-band{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:oklch(40% .1 var(--lh,250));margin-bottom:7px}
+.subbox.gap{background:repeating-linear-gradient(135deg,oklch(96% .004 250 / .55),oklch(96% .004 250 / .55) 6px,oklch(92% .008 250 / .45) 6px,oklch(92% .008 250 / .45) 12px);border-style:dashed;border-color:oklch(82% .015 250);cursor:default;opacity:.94}
+.subbox.gap:hover{transform:none;box-shadow:none;border-color:oklch(82% .015 250)}
+.gap-tag{font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);background:var(--bg3);padding:1px 5px;border-radius:99px;margin-left:6px;flex-shrink:0}
+.layer-subgroup{margin-bottom:18px}
+.layer-subgroup .subgroup-band{font-size:11px;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--border);color:oklch(42% .1 var(--lh,250))}
+.layer-box.gap{border-style:dashed;opacity:.9;cursor:default}
+.layer-box.gap:hover{transform:none;box-shadow:none;border-color:var(--border)}
+.layer-box.gap .layer-box-head{justify-content:flex-start;gap:7px}
+.rail-title{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.rail-flow{font-size:8.5px;font-weight:700;letter-spacing:0;text-transform:none;margin-left:auto;padding:1px 7px;border-radius:99px;background:var(--rail-accent,var(--border));color:#fff;opacity:.92;white-space:nowrap}
+.rail-items{list-style:none;margin:0 0 6px;padding:0}
+.rail-items li{font-size:9.5px;color:var(--muted);line-height:1.55;padding-left:9px;position:relative}
+.rail-items li::before{content:"·";position:absolute;left:2px}
+.rail-card.surface{--rail-accent:oklch(58% .2 350);background:oklch(96.5% .045 350)}
+.rail-card.surface::before{width:5px}
+.rail-card.surface .rail-title{color:oklch(40% .16 350)}
 </style>
 </head>
 <body>
 <div id="app">
 <header id="hdr">
-  <div class="logo-wrap"><span class="logo">AI Research Dashboard</span><span class="logo-sub">Supply chain · Physical AI · Tech races</span></div>
+  <div class="logo-wrap"><span class="logo">AI Buildout Supply Chain</span><span class="logo-sub">From Application Layer to Critical Minerals</span></div>
   <div id="search-wrap">
     <span id="search-icon">&#9906;</span>
     <input id="search-input" type="text" placeholder="Search tickers, sectors, tiers…" autocomplete="off" spellcheck="false">
     <div id="search-results" hidden></div>
   </div>
-  <span class="gen-date">Generated: 2026-06-10</span>
+  <span class="gen-date">Generated: 2026-06-15</span>
 </header>
-<div class="stack-switcher">
-  <button class="sw-btn active" data-stack="buildout" onclick="switchStack('buildout')">AI Buildout Stack</button>
-  <button class="sw-btn" data-stack="physical" onclick="switchStack('physical')">Physical AI Stack</button>
-</div>
 <div id="tab-nav">
   <button class="tab-btn active" data-tab="supply-chain" onclick="showTab('supply-chain')">Supply Chain</button>
   <button class="tab-btn" data-tab="tech-races" onclick="showTab('tech-races')">Tech Races</button>
 </div>
 <div id="l0"></div>
-<div id="phys-l0" hidden></div>
 <div id="l1" hidden></div>
 <div id="l2" hidden></div>
 <div id="l3" hidden></div>
@@ -572,38 +581,22 @@ const DATA = {
       ]
     },
     {
-      slug: "physical-ai",
-      name: "Physical AI",
+      slug: "robotics-edge-ai",
+      name: "Robotics & Edge AI",
       dimension: "D5",
-      description: "Intelligence deployed into physical machines — robots, vehicles, drones, and space vehicles",
+      description: "Embodied AI systems — autonomous robots, edge inference, perception hardware",
       tiers: [
-        { tier: "Real-World Data & Annotation", fn: "Capture, label, and curate real-world interaction datasets to train and fine-tune embodied AI models — the proprietary data flywheel that separates leaders.", chokepoint: "Partial", capital_intensity: "Low", moat_type: "Data network effects", margin_profile: "Medium", companies: [] },
-        { tier: "Embodied AI Training", fn: "Train the AI policies (perception → planning → action) running on physical machines using foundation models, imitation learning, and reinforcement learning.", chokepoint: "N", capital_intensity: "Low–Medium", moat_type: "Data + Compute access", margin_profile: "Very High (model layer)", companies: [
-          { ticker: "META", name: "Meta Platforms", mkt_cap: "Large", notes: "Open-source Llama robotics models; PyTorch training infrastructure; FAIR embodied AI research (EgoTopo, Habitat). The most accessible public embodied AI foundation model provider — GR00T competitor." },
-          { ticker: "GOOGL", name: "Alphabet", mkt_cap: "Large", notes: "RT-2 and Gemini Robotics VLA models from Google DeepMind; AutoRT large-scale robot data collection; leading academic deployment of VLA models in manipulation tasks." },
-          { ticker: "NVDA", name: "NVIDIA Corporation", mkt_cap: "Large", notes: "GR00T robot foundation model; Isaac Lab training environment; sim-to-real training pipeline lock-in. Every major robot AI lab uses NVDA H100/H200 clusters for policy training." }
-        ]},
-        { tier: "Simulation & Synthetic Data", fn: "Generate physics-accurate synthetic training data and validate system behavior without expensive real-world collection.", chokepoint: "N", capital_intensity: "Low–Medium", moat_type: "Ecosystem (platform lock-in)", margin_profile: "High (software)", companies: [
-          { ticker: "NVDA", name: "NVIDIA Corporation", mkt_cap: "Large", notes: "Omniverse / Isaac Sim — the dominant robot and AV simulation platform. GR00T model training runs in Isaac Lab. Sim-to-real transfer is NVDA's ecosystem lock-in for embodied AI." },
-          { ticker: "ANSS", name: "Ansys, Inc.", mkt_cap: "Large", notes: "Multi-physics simulation (structural, fluid, electromagnetic) for robot component and system validation before physical prototype." }
-        ]},
-        { tier: "Edge Compute & Inference", fn: "Run perception, planning, and control inference on-device under strict power (<20 W) and latency (<10 ms) budgets.", chokepoint: "Y", capital_intensity: "Medium", moat_type: "Silicon + Software ecosystem", margin_profile: "Very High", companies: [
-          { ticker: "AMBA", name: "Ambarella, Inc.", mkt_cap: "Small", notes: "Edge AI SoC designer — CV3-AD platform for L2+/L3 AV and robotics; <20W for GPU-class perception inference; CVflow architecture eliminates cloud video upload. Default edge AI chip for computer vision at scale." },
-          { ticker: "NVDA", name: "NVIDIA Corporation", mkt_cap: "Large", notes: "Jetson AGX Orin and Thor platforms dominate humanoid robot edge compute. Jetson Orin allocation is the gating constraint on humanoid production ramp." }
-        ]},
-        { tier: "Perception & Sensing", fn: "Give machines spatial and semantic awareness of their environment — LIDAR, cameras, radar, and IMU sensors.", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Process IP + Certification", margin_profile: "Medium–High", companies: [
-          { ticker: "OUST", name: "Ouster, Inc.", mkt_cap: "Small", notes: "Digital LIDAR using CMOS photonic arrays — solid-state, no moving parts, lower cost curve than spinning LIDAR. Pentagon Blue UAS approved for defense robotics." },
-          { ticker: "MBLY", name: "Mobileye Global", mkt_cap: "Large", notes: "EyeQ SoC + SuperVision camera array — highest-volume AV perception platform in production. ~3B EyeQ units shipped. Sets the benchmark for automotive-grade perception at scale." },
-          { ticker: "CGNX", name: "Cognex Corporation", mkt_cap: "Mid", notes: "Machine vision leader for industrial automation and robotic bin-picking. Barcode readers and 2D/3D vision systems for factory floor inspection." }
-        ]},
-        { tier: "Actuation & Motion Control", fn: "Convert digital torque commands into precise physical motion across joints, wheels, and flight surfaces.", chokepoint: "Partial", capital_intensity: "High", moat_type: "Process IP + Scale", margin_profile: "Medium", companies: [
-          { ticker: "6594.T", name: "Nidec Corporation", mkt_cap: "Large", notes: "World's largest precision motor maker — BLDC motors, servo drives, and traction motors. ~45% of industrial robot servo motor volume. Every humanoid robot ramp is a Nidec demand event." },
-          { ticker: "PH", name: "Parker Hannifin", mkt_cap: "Large", notes: "Linear and electromechanical actuators across aerospace and industrial robots; 13,000+ motion products." }
-        ]},
-        { tier: "Deployment Platforms", fn: "The end-product machines — humanoid robots, autonomous vehicles, drones, eVTOL aircraft, and spacecraft — that bring AI into the physical world.", chokepoint: "Partial", capital_intensity: "High", moat_type: "Systems engineering + Ecosystem", margin_profile: "Medium (early stage)", companies: [
-          { ticker: "TSLA", name: "Tesla, Inc.", mkt_cap: "Large", notes: "The only public company deploying humanoid robots (Optimus) at scale alongside Full Self-Driving — vertically integrates AI training, chip design, and deployment platform. Robot production target: 1M units by 2030." },
-          { ticker: "JOBY", name: "Joby Aviation", mkt_cap: "Small", notes: "eVTOL air taxi; Toyota-backed; FAA Part 135 certification in process. Physical AI platform for passenger autonomy in urban airspace." }
-        ]}
+        { tier: "Perception Layer", fn: "Provides multi-modal sensing of the physical environment (geometry, semantics, identity)", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Process IP / Sensor design", margin_profile: "Medium–High", companies: [
+          { ticker: "OUST", name: "Ouster, Inc.", mkt_cap: "Small", notes: "Makes digital LiDAR sensors for autonomous robots, industrial automation, and smart infrastructure — its custom SoC architecture is more cost-scalable than analog LiDAR, with gross margins expanding from 22% to 45%. Pentagon Blue UAS approval opens defense channels." }
+        ] },
+        { tier: "Edge Compute Module", fn: "Runs real-time perception, planning, and control inference at the robot or device", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Silicon design / Software stack", margin_profile: "High", companies: [
+          { ticker: "AMBA", name: "Ambarella, Inc.", mkt_cap: "Mid", notes: "Designs the AI vision SoCs that run real-time perception inference inside security cameras, autonomous vehicles, and robots — its CVflow architecture delivers GPU-class AI at <20W, eliminating the need to send video to the cloud for analysis. The default edge AI chip for computer vision at scale." }
+        ] },
+        { tier: "Actuators & Motors", fn: "Converts electrical commands into precise physical motion", chokepoint: "N", capital_intensity: "Medium", moat_type: "Mechanical precision / Application-specific", margin_profile: "Medium", companies: [] },
+        { tier: "Robot OS & Middleware", fn: "Provides the software framework for sensor-actuator integration, inter-node communication, and system orchestration", chokepoint: "N", capital_intensity: "Low", moat_type: "Ecosystem / Developer lock-in", margin_profile: "Low–Medium", companies: [] },
+        { tier: "AI Model Training & Deployment", fn: "Trains perception, planning, and language-conditioned task models; deploys quantized versions to edge", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Data / Cloud training infra", margin_profile: "High", companies: [] },
+        { tier: "System Integration & OEM Assembly", fn: "Integrates subsystems into a deployable robot or edge device and validates end-to-end system behavior", chokepoint: "N", capital_intensity: "High", moat_type: "Systems engineering / Application knowledge", margin_profile: "Low–Medium", companies: [] },
+        { tier: "Fleet Management & Operations Platform", fn: "Monitors and manages deployed robot fleets across sites in real time", chokepoint: "N", capital_intensity: "Low", moat_type: "Data network effects / Switching cost", margin_profile: "High", companies: [] }
       ]
     },
     {
@@ -639,9 +632,9 @@ const DATA = {
     { from: "Photonics & Optical", from_tier: "Transceiver Mfg", to: "Compute Infrastructure", to_tier: "Networking", flow: "Component", product: "400G / 800G optical transceiver → spine switch port", chokepoint: "Y" },
     { from: "Electronic Components", from_tier: "Substrates (ABF)", to: "Semiconductors", to_tier: "Packaging (OSAT)", flow: "Material", product: "ABF substrate → flip-chip BGA package", chokepoint: "Y" },
     { from: "Energy & Power", from_tier: "Power Conversion", to: "Compute Infrastructure", to_tier: "Power Distribution", flow: "Service", product: "800VDC bus → rack-level DC-DC", chokepoint: "Y" },
-    { from: "Materials & Mining", from_tier: "Rare Earth Separation", to: "Physical AI", to_tier: "Actuation & Motion Control", flow: "Material", product: "Nd₂O₃ → NdFeB alloy → servo motor", chokepoint: "Y" },
+    { from: "Materials & Mining", from_tier: "Rare Earth Separation", to: "Robotics & Edge AI", to_tier: "Actuators & Motors", flow: "Material", product: "Nd₂O₃ → NdFeB alloy → servo motor", chokepoint: "Y" },
     { from: "Materials & Mining", from_tier: "Rare Earth Separation", to: "Energy & Power", to_tier: "Primary Generation", flow: "Material", product: "NdFeB permanent magnet → wind turbine PMSG", chokepoint: "Y" },
-    { from: "Semiconductors", from_tier: "Design (Edge AI)", to: "Physical AI", to_tier: "Edge Compute & Inference", flow: "Component", product: "Nvidia Jetson Orin / Ambarella CV3 → edge inference module", chokepoint: "Y" },
+    { from: "Semiconductors", from_tier: "Design (Edge AI)", to: "Robotics & Edge AI", to_tier: "Edge Compute Module", flow: "Component", product: "Nvidia Jetson Orin / Ambarella CV3 → edge inference module", chokepoint: "Y" },
     { from: "Compute Infrastructure", from_tier: "Server Assembly", to: "AI Model Infrastructure", to_tier: "Distributed Training Orchestration", flow: "Service", product: "GPU compute hours (H100/B200 DGX clusters) → model pre-training runs", chokepoint: "Y" },
     { from: "Semiconductors", from_tier: "Design (Compute)", to: "AI Model Infrastructure", to_tier: "Distributed Training Orchestration", flow: "Component", product: "GPU die (H100/B200) + packaged HBM → training accelerator module", chokepoint: "Y" }
   ],
@@ -752,20 +745,14 @@ let activeLayerIdx=null;
 let _raceOrigin=null;
 let _fromStack=false;
 let _chipOrigin=null;
-let activeStack='buildout';
-let _physRendered=false;
-let _boxLabelOverride=null;
-let _activeTierDisplayLabel=null;
-let _physLayerOrigin=null;
 // Open a ticker straight from a stack/rail/layer chip — breadcrumb returns to the stack (with an optional context crumb), not a tier.
 function openStackTicker(tk,sName,ctxLabel,ctxFn){_raceOrigin=null;_fromStack=true;_chipOrigin=ctxLabel?{label:ctxLabel,fn:ctxFn}:null;activeSector=null;activeTierIdx=null;activeLayerIdx=null;openTicker(tk,sName);}
 
-const SECTOR_FOLDER={"Compute Infrastructure":"AI Infrastructure","Energy & Power":"Clean Energy","Materials & Mining":"Metals & Mining","Space & Communications":"Space & Comms","Fintech & Commerce AI":"Fintech & E-Commerce","Robotics & Edge AI":"Physical AI"};
+const SECTOR_FOLDER={"Compute Infrastructure":"AI Infrastructure","Energy & Power":"Clean Energy","Materials & Mining":"Metals & Mining","Space & Communications":"Space & Comms","Fintech & Commerce AI":"Fintech & E-Commerce"};
 function rawGithubUrl(sName,ticker,legacy){const f=SECTOR_FOLDER[sName]||sName;const base="https://raw.githubusercontent.com/deeyayay/investing-wiki/master/Investing/Wiki/Sectors/"+encodeURIComponent(f)+"/";return legacy?base+ticker+".md":base+encodeURIComponent(ticker)+"/analysis.md";}
 
 function showLayer(n){
-  document.getElementById("l0").hidden=activeStack!=='buildout'||n!==0;
-  document.getElementById("phys-l0").hidden=activeStack!=='physical'||n!==0;
+  document.getElementById("l0").hidden=n!==0;
   document.getElementById("l1").hidden=n!==1;
   document.getElementById("l2").hidden=n!==2;
   document.getElementById("l3").hidden=n!==3;
@@ -778,162 +765,147 @@ function showLayer(n){
 // Each layer's sub-boxes map to an existing (sector slug, tier) so the drill-down,
 // chokepoint flag, and tracked-company lists are reused from DATA.sectors.
 const STACK={
-  layers:[
-    {num:"01",name:"Application",hue:235,tag:"AI-native products & vertical apps",boxes:[
-      {label:"Fintech & Commerce AI",slug:"fintech-commerce-ai",tier:"Embedded Finance & Commerce APIs",chips:["MELI","SOFI","NU"]},
-      {label:"Consumer Finance Platforms",slug:"fintech-commerce-ai",tier:"Personal Finance & Wealth Management Platforms",chips:["HOOD","SOFI","AFRM"]},
-      {label:"Credit & Risk Decisioning AI",slug:"fintech-commerce-ai",tier:"Credit Decisioning & Underwriting AI",chips:["SOFI"]},
-      {label:"Payments & Settlement",slug:"fintech-commerce-ai",tier:"Payment Network Rails & Settlement",chips:["PYPL","SQ"]}
+  "generated": "2026-06-15",
+  "layers": [
+    {"num":"01","name":"Application","hue":235,"tag":"AI-native apps · agents · vertical SaaS","boxes":[
+      {"label":"AI Assistants & Chatbots","gap":true,"chips":["META","GOOGL","MSFT"]},
+      {"label":"Agentic AI Platforms (multi-step reasoning, tool use)","gap":true,"chips":["PLTR"]},
+      {"label":"Enterprise AI SaaS (Copilot-style integrations)","gap":true,"chips":["MSFT","CRM"]},
+      {"label":"AI-Native Vertical Applications (coding, video, drug discovery)","gap":true,"chips":["MELI","SOFI","HOOD","NU"]}
     ]},
-    {num:"02",name:"AI Model",hue:255,tag:"foundation models · alignment · data",boxes:[
-      {label:"Foundation Model Development",slug:"ai-model-infrastructure",tier:"Foundation Model Development",chips:["META"]},
-      {label:"Alignment & Safety Tuning",slug:"ai-model-infrastructure",tier:"Alignment & Safety Tuning",chips:[]},
-      {label:"Training Data & Curation",slug:"ai-model-infrastructure",tier:"Training Data & Curation",chips:[]}
+    {"num":"02","name":"AI Model","hue":255,"tag":"foundation models · serving · agents","boxes":[
+      {"label":"Foundation Models (LLMs, multimodal)","sector":"AI Model Infrastructure","slug":"ai-model-infrastructure","tier":"Foundation Model Development","chips":["META"]},
+      {"label":"Fine-tuned / Specialized Models","sector":"AI Model Infrastructure","slug":"ai-model-infrastructure","tier":"Alignment & Safety Tuning","chips":[]},
+      {"label":"Inference Serving Infrastructure","sector":"AI Model Infrastructure","slug":"ai-model-infrastructure","tier":"Inference Serving & Scaling","chips":[]},
+      {"label":"Model Orchestration & Agentic Frameworks","sector":"AI Model Infrastructure","slug":"ai-model-infrastructure","tier":"Model API & Developer Platform","chips":["CFLT"]}
     ]},
-    {num:"03",name:"Software Infrastructure",hue:268,tag:"orchestration · serving · MLOps",boxes:[
-      {label:"Distributed Training Orchestration",slug:"ai-model-infrastructure",tier:"Distributed Training Orchestration",chips:["CRWV","AMD"]},
-      {label:"Inference Serving & Scaling",slug:"ai-model-infrastructure",tier:"Inference Serving & Scaling",chips:[]},
-      {label:"MLOps & Data Platforms",slug:"ai-model-infrastructure",tier:"MLOps & Model Lifecycle Management",chips:["DDOG","SNOW","PLTR","MDB"]},
-      {label:"Model API & Dev Platform",slug:"ai-model-infrastructure",tier:"Model API & Developer Platform",chips:["CFLT"]}
+    {"num":"03","name":"Software Infrastructure","hue":268,"tag":"frameworks · kernels · orchestration","boxes":[
+      {"label":"ML Frameworks (training)","sector":"AI Model Infrastructure","slug":"ai-model-infrastructure","tier":"Distributed Training Orchestration","chips":["CRWV","AMD"]},
+      {"label":"GPU Programming Layer (low-level kernels)","gap":true,"chips":["NVDA"]},
+      {"label":"Distributed Training Systems","sector":"AI Model Infrastructure","slug":"ai-model-infrastructure","tier":"Distributed Training Orchestration","chips":[]},
+      {"label":"Container Orchestration (Kubernetes)","sector":"AI Model Infrastructure","slug":"ai-model-infrastructure","tier":"MLOps & Model Lifecycle Management","chips":["DDOG","SNOW","PLTR","MDB"]},
+      {"label":"Inference Optimization Stack","sector":"AI Model Infrastructure","slug":"ai-model-infrastructure","tier":"Model Optimization & Compilation","chips":[]}
     ]},
-    {num:"04",name:"Cloud Infrastructure",hue:288,tag:"hyperscalers · neoclouds · colocation",boxes:[
-      {label:"Hyperscale & GPU Clouds",slug:"compute-infrastructure",tier:"Hyperscaler & Colocation Operation",chips:["MSFT","AMZN","GOOGL","ORCL","IREN"]},
-      {label:"Server & Node ODM",slug:"compute-infrastructure",tier:"Compute Node Design & ODM Assembly",chips:["SMCI"]},
-      {label:"Storage Systems",slug:"compute-infrastructure",tier:"Storage Systems",chips:["P","NTAP","WDC","STX"]},
-      {label:"Data Center Facility & MEP",slug:"compute-infrastructure",tier:"Data Center Facility & MEP",chips:[]}
+    {"num":"04","name":"Cloud Infrastructure","hue":288,"tag":"hyperscalers · neoclouds · colocation","boxes":[
+      {"label":"Hyperscaler Clouds","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Hyperscaler & Colocation Operation","chips":["MSFT","AMZN","GOOGL","ORCL"]},
+      {"label":"NeoClouds (GPU-specialized)","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Hyperscaler & Colocation Operation","chips":["CRWV","IREN"]},
+      {"label":"Edge / Inference Colocation","gap":true,"chips":[]},
+      {"label":"Data Center Colocation","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Data Center Facility & MEP","chips":[]}
     ]},
-    {num:"05",name:"Compute Hardware",hue:55,tag:"GPUs · custom ASICs · CPUs",boxes:[
-      {label:"AI Accelerators (GPU / ASIC)",slug:"semiconductors",tier:"Chip Design (Fabless & IDM)",chips:["NVDA","AMD","AVGO","MRVL"]},
-      {label:"CPUs & Design IP",slug:"semiconductors",tier:"EDA & Design IP",chips:["ARM","SNPS","CDNS"]}
+    {"num":"05","name":"Compute Hardware","hue":55,"tag":"GPUs · ASICs · CPUs · NICs","boxes":[
+      {"label":"Training GPUs","sector":"Semiconductors","slug":"semiconductors","tier":"Chip Design (Fabless & IDM)","chips":["NVDA","AMD"]},
+      {"label":"Inference GPUs","sector":"Semiconductors","slug":"semiconductors","tier":"Chip Design (Fabless & IDM)","chips":["NVDA","AMD"]},
+      {"label":"Custom AI ASICs (hyperscaler silicon)","sector":"Semiconductors","slug":"semiconductors","tier":"Chip Design (Fabless & IDM)","chips":["AVGO","MRVL"]},
+      {"label":"Dedicated Inference Accelerators","sector":"Semiconductors","slug":"semiconductors","tier":"Chip Design (Fabless & IDM)","chips":[]},
+      {"label":"Server CPUs (orchestration, agentic workloads)","sector":"Semiconductors","slug":"semiconductors","tier":"Chip Design (Fabless & IDM)","chips":["ARM","INTC"]},
+      {"label":"Networking ASICs (switch silicon)","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"High-Speed Networking","chips":["ANET","AVGO","MRVL"]}
     ]},
-    {num:"06",name:"Memory",hue:92,tag:"compute is useless without memory",boxes:[
-      {label:"HBM · DRAM · NAND Flash",slug:"semiconductors",tier:"Memory (HBM · DRAM · NAND)",chips:["MU"]}
+    {"num":"06","name":"Memory","hue":92,"tag":"HBM · DRAM · NAND · LPDDR","boxes":[
+      {"label":"HBM (current AI server standard)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU"]},
+      {"label":"HBF (high-bandwidth flash)","gap":true,"chips":[]},
+      {"label":"DRAM (system memory)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU"]},
+      {"label":"NAND Flash (storage)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU"]},
+      {"label":"LPDDR (mobile / edge inference)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU"]}
     ]},
-    {num:"07",name:"Interconnect",hue:42,tag:"compute & memory need to talk",boxes:[
-      {label:"Networking Silicon & Switches",slug:"compute-infrastructure",tier:"High-Speed Networking",chips:["ANET","AVGO","MRVL"]},
-      {label:"Optical Transceivers",slug:"photonics-optical",tier:"Transceiver & Module Integration",chips:["COHR","LITE","FN","AAOI"]},
-      {label:"SerDes · Retimers · Cables",slug:"semiconductors",tier:"Interconnect & SerDes Silicon",chips:["CRDO","ALAB"]},
-      {label:"Fiber & Coherent Line Systems",slug:"photonics-optical",tier:"Coherent Line Systems & ROADM",chips:["CIEN","GLW"]}
+    {"num":"07","name":"Interconnect","hue":42,"tag":"scale-up · scale-out · scale-across","boxes":[
+      {"label":"Co-Packaged Optics (CPO)","group":"Scale-Up · within the rack, chip to chip","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Transceiver & Module Integration","chips":["COHR","LITE"]},
+      {"label":"NVLink-style fabrics","group":"Scale-Up · within the rack, chip to chip","sector":"Semiconductors","slug":"semiconductors","tier":"Interconnect & SerDes Silicon","chips":["NVDA","ALAB"]},
+      {"label":"On-package optical engines","group":"Scale-Up · within the rack, chip to chip","gap":true,"chips":["POET","LWLG"]},
+      {"label":"SerDes · Retimers","group":"Scale-Up · within the rack, chip to chip","sector":"Semiconductors","slug":"semiconductors","tier":"Interconnect & SerDes Silicon","chips":["CRDO","ALAB"]},
+      {"label":"Pluggable Optical Transceivers","group":"Scale-Out · between racks, within data center","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Transceiver & Module Integration","chips":["COHR","LITE","FN","AAOI"]},
+      {"label":"Linear Pluggable Optics (LPO)","group":"Scale-Out · between racks, within data center","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Transceiver & Module Integration","chips":["AAOI"]},
+      {"label":"High-speed Ethernet / InfiniBand","group":"Scale-Out · between racks, within data center","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"High-Speed Networking","chips":["ANET","AVGO"]},
+      {"label":"Coherent Optical Transport","group":"Scale-Across · between data centers","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Coherent Line Systems & ROADM","chips":["CIEN"]},
+      {"label":"Long-haul DWDM","group":"Scale-Across · between data centers","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Coherent Line Systems & ROADM","chips":["CIEN","GLW"]},
+      {"label":"External Light Sources (CW lasers)","group":"Components · used across all three scales","gap":true,"chips":["LWLG","LASR"]},
+      {"label":"Optical Engines","group":"Components · used across all three scales","gap":true,"chips":["POET"]},
+      {"label":"Fiber Array Units (FAU)","group":"Components · used across all three scales","gap":true,"chips":["FOCI"]},
+      {"label":"Optical Connectors","group":"Components · used across all three scales","gap":true,"chips":[]},
+      {"label":"Fiber Cables","group":"Components · used across all three scales","gap":true,"chips":["GLW"]}
     ]},
-    {num:"08",name:"Advanced Packaging",hue:150,tag:"CoWoS · stacking · substrates",boxes:[
-      {label:"CoWoS / Advanced Packaging",slug:"semiconductors",tier:"Advanced Packaging (CoWoS / SoIC)",chips:["TSM","AMKR"]},
-      {label:"IC Substrates (ABF)",slug:"electronic-components",tier:"IC Substrate Manufacturing",chips:[],choke:true}
+    {"num":"08","name":"Advanced Packaging","hue":150,"tag":"CoWoS · stacking · substrates","boxes":[
+      {"label":"Wafer-Level Packaging (CoWoS, SoIC)","sector":"Semiconductors","slug":"semiconductors","tier":"Advanced Packaging (CoWoS / SoIC)","chips":["TSM","AMKR"]},
+      {"label":"HBM Stacking & Integration","sector":"Semiconductors","slug":"semiconductors","tier":"Advanced Packaging (CoWoS / SoIC)","chips":["MU","TSM"]},
+      {"label":"FC-BGA Substrates","sector":"Electronic Components","slug":"electronic-components","tier":"IC Substrate Manufacturing","chips":[],"choke":true},
+      {"label":"Glass Core Substrates (emerging)","gap":true,"chips":["INTC"]},
+      {"label":"Thermal Interface Materials (TIM)","gap":true,"chips":[]}
     ]},
-    {num:"09",name:"Semiconductor Foundry",hue:162,tag:"where the dies are made",boxes:[
-      {label:"Leading-Edge & Specialty Logic",slug:"semiconductors",tier:"Wafer Fabrication (Foundry / IDM)",chips:["TSM","INTC","GFS"]},
-      {label:"OSAT (Assembly & Test)",slug:"semiconductors",tier:"OSAT — Assembly & Test",chips:["ASX","AMKR"]}
+    {"num":"09","name":"Semiconductor Foundry","hue":162,"tag":"leading-edge · specialty · OSAT","boxes":[
+      {"label":"Leading-Edge Logic Foundry (3nm, 2nm)","sector":"Semiconductors","slug":"semiconductors","tier":"Wafer Fabrication (Foundry / IDM)","chips":["TSM","INTC"]},
+      {"label":"Specialty / Mature Logic Foundry (analog, mixed-signal)","sector":"Semiconductors","slug":"semiconductors","tier":"Wafer Fabrication (Foundry / IDM)","chips":["GFS"]},
+      {"label":"Silicon Photonics Foundry","gap":true,"chips":["GFS","POET"]},
+      {"label":"Compound Semiconductor Foundry (GaN, SiC, InP)","sector":"Semiconductors","slug":"semiconductors","tier":"Compound Semiconductor & SiC Substrate","chips":["STM","WOLF"]},
+      {"label":"OSAT (outsourced assembly and test)","sector":"Semiconductors","slug":"semiconductors","tier":"OSAT — Assembly & Test","chips":["ASX","AMKR"]}
     ]},
-    {num:"10",name:"Semiconductor Equipment",hue:192,tag:"the tools that build the chips",boxes:[
-      {label:"Lithography",slug:"semiconductors",tier:"Lithography Equipment",chips:["ASML"]},
-      {label:"Deposition & Etch",slug:"semiconductors",tier:"Deposition & Etch Equipment",chips:["AMAT","LRCX"]},
-      {label:"Metrology & Inspection",slug:"semiconductors",tier:"Inspection & Metrology",chips:["KLAC","ONTO","FORM"]},
-      {label:"Test & Burn-In",slug:"semiconductors",tier:"Test & Burn-In",chips:["6857.T","AEHR","COHU"]}
+    {"num":"10","name":"Semiconductor Equipment","hue":192,"tag":"litho · etch · metrology · test","boxes":[
+      {"label":"EUV (leading edge)","group":"Lithography","sector":"Semiconductors","slug":"semiconductors","tier":"Lithography Equipment","chips":["ASML"]},
+      {"label":"DUV (mature nodes)","group":"Lithography","sector":"Semiconductors","slug":"semiconductors","tier":"Lithography Equipment","chips":["ASML","CAJ"]},
+      {"label":"NIL (nanoimprint, photonics)","group":"Lithography","gap":true,"chips":["CAJ"]},
+      {"label":"Deposition (CVD, PVD, ALD)","sector":"Semiconductors","slug":"semiconductors","tier":"Deposition & Etch Equipment","chips":["AMAT","LRCX"]},
+      {"label":"Etch (plasma, wet)","sector":"Semiconductors","slug":"semiconductors","tier":"Deposition & Etch Equipment","chips":["LRCX","AMAT"]},
+      {"label":"Metrology & Inspection","sector":"Semiconductors","slug":"semiconductors","tier":"Inspection & Metrology","chips":["KLAC","ONTO","FORM"]},
+      {"label":"Burn-in & Reliability Testing","sector":"Semiconductors","slug":"semiconductors","tier":"Test & Burn-In","chips":["AEHR","COHU","6857.T"]},
+      {"label":"Compound Semi Growth (MOCVD for InP/GaAs)","gap":true,"chips":["AIXA.DE"]}
     ]},
-    {num:"11",name:"Semiconductor Materials",hue:32,tag:"wafers · chemicals · substrates",boxes:[
-      {label:"Silicon Wafers",slug:"semiconductors",tier:"Silicon Wafer Production",chips:["4043.T","4369.T"]},
-      {label:"Photoresist & Process Chemicals",slug:"semiconductors",tier:"Raw Materials & Specialty Chemicals",chips:["4369.T","5201.T","ENTG"]},
-      {label:"Compound Substrates (SiC / III-V)",slug:"semiconductors",tier:"Compound Semiconductor & SiC Substrate",chips:["STM","VNP","WOLF"]},
-      {label:"PCB & Passive Materials",slug:"electronic-components",tier:"Dielectric & Conductor Materials",chips:[]}
+    {"num":"11","name":"Semiconductor Materials","hue":32,"tag":"wafers · substrates · chemicals","boxes":[
+      {"label":"Silicon Wafers (300mm)","sector":"Semiconductors","slug":"semiconductors","tier":"Silicon Wafer Production","chips":["4043.T","4369.T"]},
+      {"label":"SOI Substrates (for GPU)","sector":"Semiconductors","slug":"semiconductors","tier":"Silicon Wafer Production","chips":["SOI.PA"]},
+      {"label":"InP Substrates (for lasers)","sector":"Semiconductors","slug":"semiconductors","tier":"Compound Semiconductor & SiC Substrate","chips":["AXTI"]},
+      {"label":"GaAs Substrates (RF, optoelectronics)","sector":"Semiconductors","slug":"semiconductors","tier":"Compound Semiconductor & SiC Substrate","chips":["AXTI"]},
+      {"label":"SiC Wafers (power)","sector":"Semiconductors","slug":"semiconductors","tier":"Compound Semiconductor & SiC Substrate","chips":["WOLF","STM"]},
+      {"label":"Specialty Gases (neon, krypton, xenon for excimer lasers)","gap":true,"chips":[]},
+      {"label":"Anti-Stick Coatings (PFAS-free for NIL)","gap":true,"chips":[]},
+      {"label":"Photoresist (lithography chemicals)","sector":"Semiconductors","slug":"semiconductors","tier":"Raw Materials & Specialty Chemicals","chips":["ENTG","4369.T","5201.T"]}
     ]},
-    {num:"12",name:"Critical Minerals & Rare Earths",hue:350,tag:"the bedrock everything depends on",boxes:[
-      {label:"Rare Earth Separation",slug:"metals-mining",tier:"Rare Earth Separation & Critical Mineral Refining",chips:["MP"]},
-      {label:"Silicon & SiC Precursor",slug:"metals-mining",tier:"Silicon & SiC Precursor Production",chips:["WOLF"]},
-      {label:"Copper & Base Metals",slug:"metals-mining",tier:"Bulk Mining & Ore Extraction",chips:["FCX","VALE","RIO"]},
-      {label:"Battery & Refractory Metals",slug:"metals-mining",tier:"Battery Material Precursor Production",chips:["ALB","ELMT"]}
+    {"num":"12","name":"Critical Minerals & Raw Elements","hue":350,"tag":"the bedrock everything depends on","boxes":[
+      {"label":"Silicon (base material for all chips)","sector":"Materials & Mining","slug":"metals-mining","tier":"Silicon & SiC Precursor Production","chips":["WOLF"]},
+      {"label":"Copper (interconnect, power delivery)","sector":"Materials & Mining","slug":"metals-mining","tier":"Bulk Mining & Ore Extraction","chips":["FCX","VALE","RIO"]},
+      {"label":"Gallium (GaN power semis, GaAs RF, InP photonics)","gap":true,"chips":[]},
+      {"label":"Indium (InP lasers, transparent conductors)","gap":true,"chips":[]},
+      {"label":"Germanium (optical fiber, compound semis)","gap":true,"chips":[]},
+      {"label":"Hafnium (high-k dielectric in leading-edge logic)","gap":true,"chips":[]},
+      {"label":"Tantalum (capacitors)","gap":true,"chips":[]},
+      {"label":"Cobalt (energy storage)","sector":"Materials & Mining","slug":"metals-mining","tier":"Battery Material Precursor Production","chips":["ELMT"]},
+      {"label":"Lithium (energy storage)","sector":"Materials & Mining","slug":"metals-mining","tier":"Battery Material Precursor Production","chips":["ALB"]},
+      {"label":"Rare Earths (Neodymium, Dysprosium — motors, magnets)","sector":"Materials & Mining","slug":"metals-mining","tier":"Rare Earth Separation & Critical Mineral Refining","chips":["MP"]}
     ]}
   ],
-  // connectors[i] sits between layer i and i+1
-  connectors:[
-    {label:"calls inference via API"},{label:"runs on"},{label:"runs on"},
-    {label:"runs on physical compute"},{label:"feeds / paired with memory"},
-    {label:"compute & memory talk via",choke:true},{label:"dies assembled & co-packaged",choke:true},
-    {label:"packaged from wafers",choke:true},{label:"fabbed using",choke:true},
-    {label:"processed with"},{label:"refined from",choke:true}
+  "connectors": [
+    {"label":"calls models via API"},
+    {"label":"runs on"},
+    {"label":"deployed on"},
+    {"label":"running on physical compute"},
+    {"label":"each compute unit needs"},
+    {"label":"compute and memory need to talk via","choke":true},
+    {"label":"all compute, memory, interconnect requires","choke":true},
+    {"label":"made by"},
+    {"label":"foundries depend on"},
+    {"label":"equipment processes"},
+    {"label":"materials derived from","choke":true}
   ],
-  rails:[
-    {id:"power",side:"left",title:"Power Infrastructure",cap:"Powers the entire stack — generation → grid → rack → board.",groups:[
-      {label:"Power Generation",chips:["GEV","VST","CEG","OKLO","NEE"]},
-      {label:"Grid Infrastructure",chips:["ENR.DE","GEV"]},
-      {label:"Data Center Power",chips:["VRT","ETN","2308.TW","BE"]},
-      {label:"Power Semiconductors",chips:["STM","IFX","NVTS","WOLF"]}
+  "rails": [
+    {"id":"power","side":"left","flow":"in","title":"Power Infrastructure","cap":"Power comes in — generation → grid → rack → board.","groups":[
+      {"label":"Power Generation","items":["Nuclear (baseload for hyperscale)","Natural Gas Turbines","Small Modular Reactors (emerging)"],"chips":["OKLO","CEG","VST","GEV","NEE"]},
+      {"label":"Grid Infrastructure","items":["Transformers","Substations","High-Voltage Distribution"],"chips":["GEV","ETN","ENR.DE"]},
+      {"label":"Data Center Power","items":["UPS Systems","800V DC Bus Architecture","Rack-Level Power Delivery"],"chips":["VRT","ETN","BE"]},
+      {"label":"Power Semiconductors","items":["GaN (high-frequency switching)","SiC (high-voltage)","Power Management ICs","MLCC and Passive Components"],"chips":["NVTS","IFX","STM","WOLF"]}
     ]},
-    {id:"thermal",side:"right",title:"Thermal Management",cap:"Cools compute & memory (cross-cuts L4–L9).",groups:[
-      {label:"Liquid · Immersion · Air",chips:["VRT","MOD","NVT","6367.T"]}
+    {"id":"thermal","side":"right","flow":"out","title":"Thermal Management","cap":"Heat comes out — cools compute & memory across L4–L9.","groups":[
+      {"label":"Cooling Stack","items":["Air Cooling (legacy)","Direct-to-Chip Liquid Cooling","Immersion Cooling","Two-Phase Cooling","Thermal Interface Materials (TIM)","Heat Exchangers and CDUs"],"chips":["VRT","MOD","NVT","6367.T"]}
     ]},
-    {id:"security",side:"right",title:"Security",cap:"Secures every layer of the stack.",groups:[
-      {label:"Identity · EDR · SecOps",chips:["SAIL","CRWD","PANW","FTNT","RBRK"]}
+    {"id":"security","side":"right","flow":"wrap","title":"Security","cap":"Security wraps around the whole stack — cross-cutting at every layer.","groups":[
+      {"label":"Stack Security","items":["AI Model Security (alignment, jailbreak defense)","Cybersecurity for AI Infrastructure","Post-Quantum Cryptography","Optical Network Encryption","Hardware Root of Trust"],"chips":["CRWD","PANW","FTNT","SAIL","RBRK"]}
     ]},
-    {id:"edge",side:"right",title:"Edge & Physical AI",cap:"Deploys intelligence into the physical world — see Physical AI Stack.",groups:[
-      {label:"Perception & Sensing",chips:["OUST","MBLY","CGNX"]},
-      {label:"Edge Compute",chips:["AMBA","NVDA"]},
-      {label:"Simulation & Training",chips:["NVDA","ANSS"]},
-      {label:"Deployment Platforms",chips:["TSLA","JOBY","RKLB"]}
-    ]}
-  ]
-};
-
-// ── Physical AI Peer Stack ────────────────────────────────────────────────────
-const PHYS_STACK={
-  layers:[
-    {num:"P01",name:"Deployment Platforms",hue:18,tag:"robots · AVs · drones · space",boxes:[
-      {label:"Humanoid Robots",slug:"physical-ai",tier:"Deployment Platforms",chips:["TSLA"]},
-      {label:"Autonomous Vehicles",slug:"physical-ai",tier:"Deployment Platforms",chips:["TSLA","MBLY"]},
-      {label:"Drones & eVTOL",slug:"physical-ai",tier:"Deployment Platforms",chips:["JOBY"]},
-      {label:"Space Vehicles",slug:"space-communications",tier:"Launch Services",chips:["RKLB"]}
-    ]},
-    {num:"P02",name:"Actuation & Motion Control",hue:30,tag:"motors · drives · harmonic joints",boxes:[
-      {label:"Electric Motors & Servo Drives",slug:"physical-ai",tier:"Actuation & Motion Control",chips:["6594.T","PH"]},
-      {label:"Precision Gearboxes",slug:"physical-ai",tier:"Actuation & Motion Control",chips:[]},
-      {label:"Power Electronics for Motion",slug:"semiconductors",tier:"Compound Semiconductor & SiC Substrate",chips:["STM","NVTS"]}
-    ]},
-    {num:"P03",name:"Perception & Sensing",hue:55,tag:"LIDAR · cameras · radar · IMU",boxes:[
-      {label:"LIDAR & Depth Sensing",slug:"physical-ai",tier:"Perception & Sensing",chips:["OUST"]},
-      {label:"Vision & Camera Modules",slug:"physical-ai",tier:"Perception & Sensing",chips:["MBLY","CGNX"]},
-      {label:"Radar & mmWave",slug:"semiconductors",tier:"Chip Design (Fabless & IDM)",chips:["NXPI"]},
-      {label:"Sensor Fusion SoC",slug:"physical-ai",tier:"Edge Compute & Inference",chips:["AMBA","MBLY"]}
-    ]},
-    {num:"P04",name:"Edge Compute & Inference",hue:80,tag:"on-device AI · low-power SoC · NPU",boxes:[
-      {label:"Edge AI SoC / NPU",slug:"physical-ai",tier:"Edge Compute & Inference",chips:["AMBA","NVDA","QCOM"]},
-      {label:"Industrial Edge Module",slug:"physical-ai",tier:"Edge Compute & Inference",chips:["NVDA"]}
-    ]},
-    {num:"P05",name:"Simulation & Synthetic Data",hue:155,tag:"sim-to-real · digital twin · synthetic",boxes:[
-      {label:"Robot & AV Simulation",slug:"physical-ai",tier:"Simulation & Synthetic Data",chips:["NVDA","ANSS"]},
-      {label:"Synthetic Dataset Generation",slug:"physical-ai",tier:"Simulation & Synthetic Data",chips:[]}
-    ]},
-    {num:"P06",name:"Embodied AI Training",hue:245,tag:"VLA models · imitation learning · RL",boxes:[
-      {label:"Vision-Language-Action Models",slug:"physical-ai",tier:"Embodied AI Training",chips:["META","GOOGL","NVDA"]},
-      {label:"RL & Imitation Learning",slug:"physical-ai",tier:"Embodied AI Training",chips:["META"]}
-    ]},
-    {num:"P07",name:"Real-World Data & Annotation",hue:280,tag:"data flywheel · teleoperation · labeling",boxes:[
-      {label:"Teleoperation & Data Capture",slug:"physical-ai",tier:"Real-World Data & Annotation",chips:[]},
-      {label:"Annotation & Curation",slug:"physical-ai",tier:"Real-World Data & Annotation",chips:[]}
-    ]}
-  ],
-  connectors:[
-    {label:"actuated by"},
-    {label:"guided by perception from"},
-    {label:"inference computed on"},
-    {label:"validated in simulation"},
-    {label:"policies trained via"},
-    {label:"trained on data from"}
-  ],
-  rails:[
-    {id:"mobile-power",side:"left",title:"Mobile Power",cap:"Powers untethered machines — battery cells, power ICs, BMS.",groups:[
-      {label:"Battery & Power Mgmt",chips:["TXN","NVTS","NXPI"]}
-    ]},
-    {id:"connectivity",side:"right",title:"Connectivity",cap:"Keeps machines connected — 5G, V2X, satellite IoT.",groups:[
-      {label:"5G / V2X",chips:["QCOM"]},
-      {label:"Satellite IoT",chips:["RKLB","ASTS"]}
-    ]},
-    {id:"safety-cert",side:"right",title:"Safety & Certification",cap:"Validates machines are safe to operate in the real world.",groups:[
-      {label:"Simulation & Functional Safety",chips:["ANSS"]}
+    {"id":"edge","side":"right","kind":"surface","title":"Edge & Physical AI","cap":"Deployment paradigm — where the stack meets the physical world.","groups":[
+      {"label":"Edge & Physical AI","items":["Autonomous Vehicles","Humanoid Robotics","Drones and UAVs","Driver / Behavior Monitoring Systems","Edge Inference Chips","AR / VR Devices"],"chips":["AMBA","OUST","RKLB","ASTS"]},
+      {"label":"Parallel Compute Paradigms","items":["Quantum Computing","Superconducting qubits","Trapped ion / photonic qubits","Cryogenic control electronics","Dilution refrigerators","Neuromorphic Computing (emerging)","Optical / Photonic Computing (emerging)"],"chips":["IONQ","RGTI","QBTS"]}
     ]}
   ]
 };
 
 // tier → layer reverse index ("slug|tier" → layer index)
 const _tierLayer={};
-STACK.layers.forEach((L,i)=>L.boxes.forEach(b=>{_tierLayer[b.slug+'|'+b.tier]=i;}));
+STACK.layers.forEach((L,i)=>L.boxes.forEach(b=>{if(b.slug&&b.tier)_tierLayer[b.slug+'|'+b.tier]=i;}));
 function _layerLabel(i){const L=STACK.layers[i];return"L"+L.num+" "+L.name;}
 
 function _tierLookup(slug,tierName){
@@ -947,37 +919,61 @@ function _chipHtml(tk,fallbackSector,ctxLabel,ctxFn){
   const args="'"+tk+"','"+sName+"'"+(ctxLabel?",'"+String(ctxLabel).replace(/'/g,"\\'")+"','"+String(ctxFn||"").replace(/'/g,"\\'")+"'":"");
   return '<span class="chip" onclick="event.stopPropagation();openStackTicker('+args+')">'+esc(tk)+'</span>';
 }
-function _railHtml(rail,homeCtxFn){
-  if(!homeCtxFn)homeCtxFn="showLayer(0)";
-  const groups=rail.groups.map(g=>
-    '<div class="rail-group"><div class="rail-group-label">'+esc(g.label)+'</div>'
-    +'<div class="chip-row">'+g.chips.map(t=>_chipHtml(t,"",rail.title,homeCtxFn)).join("")+'</div></div>'
-  ).join("");
-  return '<div class="rail-card '+rail.id+'"><div class="rail-title">'+esc(rail.title)+'</div>'
+function _railFlow(f){return f==="in"?"\u2193 power in":f==="out"?"\u2191 heat out":f==="wrap"?"\u21bb wraps every layer":"";}
+function _railHtml(rail){
+  const flow=rail.flow?'<span class="rail-flow '+rail.flow+'">'+esc(_railFlow(rail.flow))+'</span>':'';
+  const groups=rail.groups.map(g=>{
+    const items=(g.items&&g.items.length)?'<ul class="rail-items">'+g.items.map(it=>'<li>'+esc(it)+'</li>').join("")+'</ul>':'';
+    const chips=(g.chips&&g.chips.length)?'<div class="chip-row">'+g.chips.map(t=>_chipHtml(t,"",rail.title,"showLayer(0)")).join("")+'</div>':'';
+    return '<div class="rail-group"><div class="rail-group-label">'+esc(g.label)+'</div>'+items+chips+'</div>';
+  }).join("");
+  return '<div class="rail-card '+rail.id+(rail.kind==="surface"?' surface':'')+'"><div class="rail-title">'+esc(rail.title)+flow+'</div>'
     +'<div class="rail-cap">'+esc(rail.cap)+'</div>'+groups+'</div>';
 }
 
+// Cluster a layer's boxes by their optional "group" tag, preserving order.
+function _groupBoxes(boxes){
+  const out=[],idx={};
+  boxes.forEach(b=>{
+    const g=b.group||"";
+    if(idx[g]===undefined){idx[g]=out.length;out.push({group:g,boxes:[]});}
+    out[idx[g]].boxes.push(b);
+  });
+  return out;
+}
+// Render one homepage sub-box card (handles gap boxes — muted, non-clickable).
+function _subboxCard(b,i){
+  const ctxL=_layerLabel(i),ctxF="openLayer("+i+")";
+  if(b.gap){
+    const chips=(b.chips||[]).slice(0,6).map(t=>_chipHtml(t,"",ctxL,ctxF)).join("");
+    return '<div class="subbox gap"><div class="subbox-label">'+esc(b.label)+'<span class="gap-tag">unmapped</span></div>'
+      +(chips?'<div class="chip-row">'+chips+'</div>':'')+'</div>';
+  }
+  const{sector,tier}=_tierLookup(b.slug,b.tier);
+  const choke=b.choke!==undefined?b.choke:(tier&&tier.chokepoint==="Y");
+  const sName=sector?sector.name:"";
+  const chips=(b.chips&&b.chips.length?b.chips:(tier?(tier.companies||[]).map(c=>c.ticker):[]))
+    .slice(0,6).map(t=>_chipHtml(t,sName,ctxL,ctxF)).join("");
+  const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\','+i+')"':'';
+  return '<div class="subbox'+(choke?' choke':'')+'"'+onclick+'>'
+    +'<div class="subbox-label">'+(choke?'<span class="choke-mark">⧫</span>':'')+esc(b.label)+'</div>'
+    +'<div class="chip-row">'+chips+'</div></div>';
+}
 function renderL0(){
   const leftRail=STACK.rails.filter(r=>r.side==="left").map(_railHtml).join("");
   const rightRail=STACK.rails.filter(r=>r.side==="right").map(_railHtml).join("");
   const stack=STACK.layers.map((L,i)=>{
-    const boxes=L.boxes.map(b=>{
-      const{sector,tier}=_tierLookup(b.slug,b.tier);
-      const choke=b.choke!==undefined?b.choke:(tier&&tier.chokepoint==="Y");
-      const sName=sector?sector.name:"";
-      const ctxL=_layerLabel(i),ctxF="openLayer("+i+")";
-      const chips=(b.chips&&b.chips.length?b.chips:(tier?(tier.companies||[]).map(c=>c.ticker):[]))
-        .slice(0,6).map(t=>_chipHtml(t,sName,ctxL,ctxF)).join("");
-      const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\','+i+',\''+b.label.replace(/'/g,"\\'")+'\' )"':'';
-      return '<div class="subbox'+(choke?' choke':'')+'"'+onclick+'>'
-        +'<div class="subbox-label">'+(choke?'<span class="choke-mark">⧫</span>':'')+esc(b.label)+'</div>'
-        +'<div class="chip-row">'+chips+'</div></div>';
+    const inner=_groupBoxes(L.boxes).map(g=>{
+      const cards=g.boxes.map(b=>_subboxCard(b,i)).join("");
+      return g.group
+        ? '<div class="subgroup"><div class="subgroup-band">'+esc(g.group)+'</div><div class="subbox-row">'+cards+'</div></div>'
+        : '<div class="subbox-row">'+cards+'</div>';
     }).join("");
     let html='<div class="layer" style="--lh:'+L.hue+';--lbg:oklch(96.5% .03 '+L.hue+')">'
       +'<div class="layer-head" onclick="openLayer('+i+')" title="View this layer"><span class="layer-num">L'+L.num+'</span>'
       +'<span class="layer-name">'+esc(L.name)+'</span>'
       +'<span class="layer-tag">'+esc(L.tag)+'</span><span class="layer-go">View ›</span></div>'
-      +'<div class="subbox-row">'+boxes+'</div></div>';
+      +'<div class="subbox-area">'+inner+'</div></div>';
     if(i<STACK.connectors.length){
       const c=STACK.connectors[i];
       html+='<div class="connector'+(c.choke?' choke':'')+'"><span class="connector-label">'+esc(c.label)+'</span></div>';
@@ -985,70 +981,19 @@ function renderL0(){
     return html;
   }).join("");
   document.getElementById("l0").innerHTML=
-    '<div class="stack-intro">The AI buildout as a single dependency stack — each layer <strong>runs on</strong> the one below it, all the way down to the critical minerals at the bedrock. Amber <span style="color:var(--amber)">⧫</span> marks supply-chain chokepoints. Click a <strong>layer header</strong> to open the layer, a <strong>sub-box</strong> to drill into its tier, or a <strong>ticker</strong> to open its wiki page.</div>'
+    '<div class="stack-intro">The AI buildout as a single dependency stack — each layer <strong>runs on</strong> the one below it, all the way down to the critical minerals at the bedrock. The rails frame it: <strong>Power</strong> comes in (left), <strong>Heat</strong> comes out &amp; <strong>Security</strong> wraps around (right), and <strong>Edge &amp; Physical AI</strong> is where it all deploys into the world. Amber <span style="color:var(--amber)">⧫</span> marks chokepoints; hatched boxes are <strong>unmapped</strong> coverage gaps. Click a <strong>layer header</strong>, a <strong>sub-box</strong>, or a <strong>ticker</strong> to drill in.</div>'
     +'<div class="stack-grid"><div class="rail">'+leftRail+'</div>'
     +'<div class="stack">'+stack+'</div>'
     +'<div class="rail">'+rightRail+'</div></div>';
 }
 
-function renderPhysL0(){
-  const leftRail=PHYS_STACK.rails.filter(r=>r.side==="left").map(r=>_railHtml(r,"switchStack('physical')")).join("");
-  const rightRail=PHYS_STACK.rails.filter(r=>r.side==="right").map(r=>_railHtml(r,"switchStack('physical')")).join("");
-  const stack=PHYS_STACK.layers.map((L,i)=>{
-    const boxes=L.boxes.map(b=>{
-      const{sector,tier}=_tierLookup(b.slug,b.tier);
-      const choke=b.choke!==undefined?b.choke:(tier&&tier.chokepoint==="Y");
-      const sName=sector?sector.name:"";
-      const ctxL=L.num+" "+L.name,ctxF="switchStack('physical')";
-      const chips=(b.chips&&b.chips.length?b.chips:(tier?(tier.companies||[]).map(c=>c.ticker):[]))
-        .slice(0,6).map(t=>_chipHtml(t,sName,ctxL,ctxF)).join("");
-      const physLyr=(L.num+' '+L.name).replace(/'/g,"\\'");
-      const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\',null,\''+b.label.replace(/'/g,"\\'")+'\',\''+physLyr+'\' )"':'';
-      return '<div class="subbox'+(choke?' choke':'')+'"'+onclick+'>'
-        +'<div class="subbox-label">'+(choke?'<span class="choke-mark">⧫</span>':'')+esc(b.label)+'</div>'
-        +'<div class="chip-row">'+chips+'</div></div>';
-    }).join("");
-    let html='<div class="layer" style="--lh:'+L.hue+';--lbg:oklch(96.5% .03 '+L.hue+')">'
-      +'<div class="layer-head" style="cursor:default"><span class="layer-num">'+esc(L.num)+'</span>'
-      +'<span class="layer-name">'+esc(L.name)+'</span>'
-      +'<span class="layer-tag">'+esc(L.tag)+'</span></div>'
-      +'<div class="subbox-row">'+boxes+'</div></div>';
-    if(i<PHYS_STACK.connectors.length){
-      const c=PHYS_STACK.connectors[i];
-      html+='<div class="connector'+(c.choke?' choke':'')+'"><span class="connector-label">'+esc(c.label)+'</span></div>';
-    }
-    return html;
-  }).join("");
-  document.getElementById("phys-l0").innerHTML=
-    '<div class="stack-intro">Physical AI as a dependency stack — from real-world data at the bedrock up to the machines that deploy intelligence in the world. Click a <strong>sub-box</strong> to drill into the tier, or a <strong>ticker</strong> to open its wiki page. Amber <span style="color:var(--amber)">⧫</span> marks supply-chain chokepoints.</div>'
-    +'<div class="stack-grid"><div class="rail">'+leftRail+'</div>'
-    +'<div class="stack">'+stack+'</div>'
-    +'<div class="rail">'+rightRail+'</div></div>';
-}
-
-function switchStack(id){
-  activeStack=id;
-  document.querySelectorAll(".sw-btn").forEach(b=>b.classList.toggle("active",b.dataset.stack===id));
-  if(id==='buildout'){
-    document.getElementById("phys-l0").hidden=true;
-    showLayer(0);
-  } else {
-    ["l0","l1","l2","l3","tech-races","tech-race-detail"].forEach(x=>document.getElementById(x).hidden=true);
-    if(!_physRendered){renderPhysL0();_physRendered=true;}
-    document.getElementById("phys-l0").hidden=false;
-    document.querySelectorAll(".tab-btn").forEach(b=>b.classList.toggle("active",b.dataset.tab==="supply-chain"));
-  }
-}
-
-function openStackTier(slug,tierName,layerIdx,boxLabel,physLayerLabel){
+function openStackTier(slug,tierName,layerIdx){
   const s=DATA.sectors.find(x=>x.slug===slug);
   if(!s){return;}
   activeSector=s;
-  _boxLabelOverride=boxLabel||null;
-  _physLayerOrigin=physLayerLabel||null;
   activeLayerIdx=(layerIdx!==undefined&&layerIdx!==null)?layerIdx:(_tierLayer[slug+"|"+tierName]!==undefined?_tierLayer[slug+"|"+tierName]:null);
   const idx=s.tiers.findIndex(t=>t.tier===tierName);
-  if(idx<0){_boxLabelOverride=null;_physLayerOrigin=null;return;}
+  if(idx<0){return;}
   openTier(idx);
 }
 
@@ -1059,40 +1004,51 @@ function openLayer(i){
   showLayer(1);
 }
 
+// Render one expanded layer-view card (handles gap boxes).
+function _layerBoxCard(b,i){
+  const ctxL=_layerLabel(i),ctxF="openLayer("+i+")";
+  if(b.gap){
+    const chips=(b.chips||[]).map(t=>_chipHtml(t,"",ctxL,ctxF)).join("");
+    return '<div class="layer-box gap">'
+      +'<div class="layer-box-head"><span class="layer-box-label">'+esc(b.label)+'</span><span class="gap-tag">unmapped</span></div>'
+      +'<div class="layer-box-fn">Blueprint category not yet wired to a knowledge-base tier.</div>'
+      +(chips?'<div class="chip-row">'+chips+'</div>':'')+'</div>';
+  }
+  const{sector,tier}=_tierLookup(b.slug,b.tier);
+  const choke=b.choke!==undefined?b.choke:(tier&&tier.chokepoint==="Y");
+  const sName=sector?sector.name:"";
+  const chips=(b.chips&&b.chips.length?b.chips:(tier?(tier.companies||[]).map(c=>c.ticker):[]))
+    .map(t=>_chipHtml(t,sName,ctxL,ctxF)).join("");
+  const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\','+i+')"':'';
+  const count=tier&&tier.companies?tier.companies.length:0;
+  return '<div class="layer-box'+(choke?' choke':'')+'"'+onclick+'>'
+    +'<div class="layer-box-head"><span class="layer-box-label">'+(choke?'<span class="choke-mark">⧫</span>':'')+esc(b.label)+'</span>'
+    +'<span class="layer-box-sector">'+esc(sName)+'</span></div>'
+    +(tier?'<div class="layer-box-fn">'+esc(tier.fn)+'</div>':'')
+    +'<div class="chip-row">'+chips+'</div>'
+    +(count?'<div class="layer-box-count">'+count+' tracked</div>':'')
+    +'</div>';
+}
 function renderLayerView(i){
   const L=STACK.layers[i];
-  const cards=L.boxes.map(b=>{
-    const{sector,tier}=_tierLookup(b.slug,b.tier);
-    const choke=b.choke!==undefined?b.choke:(tier&&tier.chokepoint==="Y");
-    const sName=sector?sector.name:"";
-    const ctxL=_layerLabel(i),ctxF="openLayer("+i+")";
-    const chips=(b.chips&&b.chips.length?b.chips:(tier?(tier.companies||[]).map(c=>c.ticker):[]))
-      .map(t=>_chipHtml(t,sName,ctxL,ctxF)).join("");
-    const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\','+i+',\''+b.label.replace(/'/g,"\\'")+'\' )"':'';
-    const count=tier&&tier.companies?tier.companies.length:0;
-    return '<div class="layer-box'+(choke?' choke':'')+'"'+onclick+'>'
-      +'<div class="layer-box-head"><span class="layer-box-label">'+(choke?'<span class="choke-mark">⧫</span>':'')+esc(b.label)+'</span>'
-      +'<span class="layer-box-sector">'+esc(sName)+'</span></div>'
-      +(tier?'<div class="layer-box-fn">'+esc(tier.fn)+'</div>':'')
-      +'<div class="chip-row">'+chips+'</div>'
-      +(count?'<div class="layer-box-count">'+count+' tracked</div>':'')
-      +'</div>';
+  const body=_groupBoxes(L.boxes).map(g=>{
+    const inner=g.boxes.map(b=>_layerBoxCard(b,i)).join("");
+    return g.group
+      ? '<div class="layer-subgroup"><div class="subgroup-band">'+esc(g.group)+'</div><div class="layer-box-grid">'+inner+'</div></div>'
+      : '<div class="layer-box-grid">'+inner+'</div>';
   }).join("");
   document.getElementById("l1").innerHTML=
     crumbTrail([{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:_layerLabel(i)}])
     +'<div class="layer-view-hdr" style="--lh:'+L.hue+'"><span class="layer-view-num">L'+L.num+'</span>'
     +'<span class="layer-view-name">'+esc(L.name)+'</span></div>'
     +'<div class="layer-view-tag">'+esc(L.tag)+'</div>'
-    +'<div class="layer-box-grid">'+cards+'</div>';
+    +'<div class="layer-view-body">'+body+'</div>';
 }
 
 function openTier(idx){
   activeTierIdx=idx;
   const s=activeSector;
   const t=s.tiers[idx];
-  // Consume box label override — shows what the user clicked, not the generic tier name
-  _activeTierDisplayLabel=_boxLabelOverride||t.tier;
-  _boxLabelOverride=null;
   const chokeBlock=t.chokepoint==="Y"
     ?"<div class=\"choke-box\"><p>⧫ Supply chain chokepoint — limited substitutes in this tier. Capacity constraints here propagate up the stack.</p></div>"
     :t.chokepoint==="Partial"
@@ -1111,25 +1067,16 @@ function openTier(idx){
       }).join("")+"</div>"
     :"";
   const li=activeLayerIdx;
-  const displayName=_activeTierDisplayLabel||t.tier;
-  const _rootCrumb=activeStack==='physical'?{label:"Physical AI Stack",fn:"switchStack('physical')"}:{label:"AI Buildout Stack",fn:"showLayer(0)"};
-  let trail;
-  if(activeStack==='physical'){
-    trail=_physLayerOrigin
-      ?[_rootCrumb,{label:_physLayerOrigin,fn:"switchStack('physical')"},{label:displayName}]
-      :[_rootCrumb,{label:displayName}];
-  }else{
-    trail=(li!==null&&li!==undefined)
-      ?[_rootCrumb,{label:_layerLabel(li),fn:"openLayer("+li+")"},{label:displayName}]
-      :[_rootCrumb,{label:displayName}];
-  }
+  const trail=(li!==null&&li!==undefined)
+    ?[{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:_layerLabel(li),fn:"openLayer("+li+")"},{label:t.tier}]
+    :[{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:t.tier}];
   const provenance="<div class=\"tier-provenance\">"
-    +((li!==null&&li!==undefined&&activeStack==='buildout')?"<span class=\"layer-pill\" style=\"--lh:"+STACK.layers[li].hue+"\">"+esc(_layerLabel(li))+"</span>":"")
+    +((li!==null&&li!==undefined)?"<span class=\"layer-pill\" style=\"--lh:"+STACK.layers[li].hue+"\">"+esc(_layerLabel(li))+"</span>":"")
     +"<span class=\"sector-tag\">"+esc(s.name)+"</span></div>";
   document.getElementById("l2").innerHTML=
     crumbTrail(trail)
     +provenance
-    +"<div class=\"tier-detail-name\">"+esc(displayName)+"</div>"
+    +"<div class=\"tier-detail-name\">"+t.tier+"</div>"
     +"<div class=\"tier-fn-full\">"+t.fn+"</div>"
     +chokeBlock
     +"<div class=\"invest-section\">"
@@ -1178,28 +1125,23 @@ function renderL3(ticker,sName){
   const chipOrigin=_chipOrigin;_chipOrigin=null;
   if(fromRace)document.querySelectorAll(".tab-btn").forEach(b=>b.classList.toggle("active",b.dataset.tab==="tech-races"));
   const li=activeLayerIdx;
-  const _rootL3=activeStack==='physical'?{label:"Physical AI Stack",fn:"switchStack('physical')"}:{label:"AI Buildout Stack",fn:"showLayer(0)"};
   let crumbs;
   if(fromRace){
     crumbs=crumbTrail([{label:"Tech Races",fn:"showTab('tech-races')"},{label:fromRace.name,fn:"openRace('"+fromRace.id+"')"},{label:ticker}]);
   }else if(fromStack||!activeSector||activeTierIdx===null){
-    const parts=[_rootL3];
+    const parts=[{label:"AI Buildout Stack",fn:"showLayer(0)"}];
     if(chipOrigin)parts.push({label:chipOrigin.label,fn:chipOrigin.fn});
     parts.push({label:ticker});
     crumbs=crumbTrail(parts);
   }else{
-    const parts=[_rootL3];
-    if(activeStack==='physical'){
-      if(_physLayerOrigin)parts.push({label:_physLayerOrigin,fn:"switchStack('physical')"});
-    }else{
-      const mid=(li!==null&&li!==undefined)?{label:_layerLabel(li),fn:"openLayer("+li+")"}:null;
-      if(mid)parts.push(mid);
-    }
-    parts.push({label:_activeTierDisplayLabel||activeSector.tiers[activeTierIdx].tier,fn:"openTier("+activeTierIdx+")"});
+    const mid=(li!==null&&li!==undefined)?{label:_layerLabel(li),fn:"openLayer("+li+")"}:null;
+    const parts=[{label:"AI Buildout Stack",fn:"showLayer(0)"}];
+    if(mid)parts.push(mid);
+    parts.push({label:activeSector.tiers[activeTierIdx].tier,fn:"openTier("+activeTierIdx+")"});
     parts.push({label:ticker});
     crumbs=crumbTrail(parts);
   }
-  const layerPill=(!fromRace&&li!==null&&li!==undefined&&activeStack==='buildout')?'<span class="layer-pill" style="--lh:'+STACK.layers[li].hue+'">'+esc(_layerLabel(li))+'</span>':'';
+  const layerPill=(!fromRace&&li!==null&&li!==undefined)?'<span class="layer-pill" style="--lh:'+STACK.layers[li].hue+'">'+esc(_layerLabel(li))+'</span>':'';
   document.getElementById("l3").innerHTML=
     crumbs
     +'<div class="ticker-hdr">'
@@ -1301,7 +1243,7 @@ function showTab(tab) {
     showLayer(0);
   } else {
     renderTechRaces();
-    ["l0","phys-l0","l1","l2","l3","tech-race-detail"].forEach(id=>document.getElementById(id).hidden=true);
+    ["l0","l1","l2","l3","tech-race-detail"].forEach(id=>document.getElementById(id).hidden=true);
     document.getElementById("tech-races").hidden=false;
   }
 }
