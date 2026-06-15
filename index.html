@@ -328,7 +328,8 @@ const DATA = {
           { ticker: "CRDO", name: "Credo Technology", mkt_cap: "Small", notes: "Solves the physics of moving data at 224 billion bits per second between chips on a board — its active-electrical-cable (AEC) approach is more power-efficient than optical for short distances inside a server, and that advantage compounds with every GPU generation." }
         ]},
         { tier: "Memory (HBM · DRAM · NAND)", fn: "Design and fabricate the high-bandwidth and high-density memory — HBM stacks, DDR/LPDDR DRAM, and NAND flash — that feeds AI accelerators and stores model weights, datasets, and KV cache. The layer compute is useless without.", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Scale + Process IP", margin_profile: "High (cyclical)", companies: [
-          { ticker: "MU", name: "Micron Technology", mkt_cap: "Large", notes: "The only US-based maker of High Bandwidth Memory (HBM) — the specialized memory stacked directly on AI chips. Without HBM, a GPU can't move data fast enough to stay productive during training. One of three HBM suppliers worldwide alongside SK Hynix and Samsung." }
+          { ticker: "MU", name: "Micron Technology", mkt_cap: "Large", notes: "The only US-based maker of High Bandwidth Memory (HBM) — the specialized memory stacked directly on AI chips. Without HBM, a GPU can't move data fast enough to stay productive during training. One of three HBM suppliers worldwide alongside SK Hynix and Samsung." },
+          { ticker: "SNDK", name: "SanDisk Corporation", mkt_cap: "Large", notes: "Pure-play NAND/flash after the Feb-2025 Western Digital spinoff. Pioneer of High-Bandwidth Flash (HBF) — NAND stacked HBM-style for ~1.6 TB/s at 8-16x HBM capacity (SK Hynix standardization MOU Aug 2025; samples H2 2026). The primary NAND vehicle for the agentic-AI and brain-scale data wave." }
         ]},
         { tier: "Lithography Equipment", fn: "Project photomask circuit patterns onto photoresist-coated wafers at nanometer precision using UV or EUV light — the single most critical and concentrated manufacturing equipment tier", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Process IP + Geographic monopoly", margin_profile: "Very High", companies: [
           { ticker: "ASML", name: "ASML Holding", mkt_cap: "Large", notes: "The only company that builds the machines used to print the world's most advanced chips. Without ASML's EUV scanners, TSMC and Samsung cannot manufacture chips at 7nm or below — no other company can do this." }
@@ -481,7 +482,8 @@ const DATA = {
           { ticker: "ANET", name: "Arista Networks", mkt_cap: "Large", notes: "Dominates the high-speed Ethernet switches inside hyperscaler datacenters — its EOS operating system runs identically on every Arista switch ever made, locking customers into an automation layer they've spent years building and won't abandon for Cisco." }
         ]},
         { tier: "Storage Systems", fn: "Design, integrate, and operate the flash and object storage systems that hold AI training datasets, model checkpoints, and inference artifacts", chokepoint: "N", capital_intensity: "Medium", moat_type: "Switching cost", margin_profile: "High", companies: [
-          { ticker: "P", name: "Pure Storage", mkt_cap: "Large", notes: "The only major storage vendor that has never sold spinning hard drives — its all-flash-from-day-one architecture delivers simpler operations and faster data access than hybrid-storage competitors, increasingly critical for AI training datasets." }
+          { ticker: "P", name: "Pure Storage", mkt_cap: "Large", notes: "The only major storage vendor that has never sold spinning hard drives — its all-flash-from-day-one architecture delivers simpler operations and faster data access than hybrid-storage competitors, increasingly critical for AI training datasets." },
+          { ticker: "STX", name: "Seagate Technology", mkt_cap: "Large", notes: "HDD areal-density leader; its HAMR 'Mozaic' platform ships 44TB drives (Mar 2026) with a 100TB roadmap. HDD still costs 4-22x less per TB than QLC flash, so Seagate owns the exabyte-scale cold/nearline archive tier that AI-training and connectome datasets must live on." }
         ]},
         { tier: "Data Center Power Infrastructure", fn: "Deliver, transform, condition, and distribute electrical power from utility feed to server board-level power rails, with protection and backup at each stage", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Scale + Certification", margin_profile: "Medium–High", companies: [
           { ticker: "VRT", name: "Vertiv Holdings", mkt_cap: "Large", notes: "Supplies the power distribution and backup systems for AI datacenters — uniquely positioned for the industry shift to 800VDC direct current, which cuts conversion losses in dense GPU clusters and is being standardized across every major hyperscaler." },
@@ -597,7 +599,8 @@ const DATA = {
           { ticker: "OUST", name: "Ouster, Inc.", mkt_cap: "Small", notes: "Makes digital LiDAR sensors for autonomous robots, industrial automation, and smart infrastructure — its custom SoC architecture is more cost-scalable than analog LiDAR, with gross margins expanding from 22% to 45%. Pentagon Blue UAS approval opens defense channels." }
         ] },
         { tier: "Edge Compute Module", fn: "Runs real-time perception, planning, and control inference at the robot or device", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Silicon design / Software stack", margin_profile: "High", companies: [
-          { ticker: "AMBA", name: "Ambarella, Inc.", mkt_cap: "Mid", notes: "Designs the AI vision SoCs that run real-time perception inference inside security cameras, autonomous vehicles, and robots — its CVflow architecture delivers GPU-class AI at <20W, eliminating the need to send video to the cloud for analysis. The default edge AI chip for computer vision at scale." }
+          { ticker: "AMBA", name: "Ambarella, Inc.", mkt_cap: "Mid", notes: "Designs the AI vision SoCs that run real-time perception inference inside security cameras, autonomous vehicles, and robots — its CVflow architecture delivers GPU-class AI at <20W, eliminating the need to send video to the cloud for analysis. The default edge AI chip for computer vision at scale." },
+          { ticker: "BRCHF", name: "BrainChip Holdings", mkt_cap: "Small", notes: "The only publicly listed neuromorphic pure-play. Its Akida processor is event-based (spiking) — it computes only when sensory events occur, enabling milliwatt-class always-on edge inference. Speculative: micro-cap and deeply pre-profit; a call option on brain-mimicking, non-von-Neumann compute. Dual-listed (ASX: BRN)." }
         ] },
         { tier: "Actuators & Motors", fn: "Converts electrical commands into precise physical motion", chokepoint: "N", capital_intensity: "Medium", moat_type: "Mechanical precision / Application-specific", margin_profile: "Medium", companies: [] },
         { tier: "Robot OS & Middleware", fn: "Provides the software framework for sensor-actuator integration, inter-node communication, and system orchestration", chokepoint: "N", capital_intensity: "Low", moat_type: "Ecosystem / Developer lock-in", margin_profile: "Low–Medium", companies: [] },
@@ -741,6 +744,43 @@ const DATA = {
         "CPO integration complexity (foundry + photonics alignment) causes repeated delays",
         "CPO solution is captive/in-house (NVIDIA, Intel) — investable pure plays don't capture the win"
       ]
+    },
+    {
+      id: "connectomics-storage",
+      name: "Memory & Storage for Connectomics & Artificial-Brain Workloads",
+      sector_group: "AI Ecosystem",
+      preference: "A tiered 'petabytes + speed' stack — HBF & QLC NAND for capacity-at-bandwidth, HAMR HDD for cold archive, photonic interconnect to move it — not a single HBM play",
+      conviction: "Watch",
+      last_validated: "2026-06-15",
+      status: "Active",
+      tickers: [
+        { ticker: "SNDK", technology: "HBF + QLC enterprise NAND", exposure: "Primary", weighting: "Overweight vs. memory peers" },
+        { ticker: "STX", technology: "HAMR nearline HDD (cold archive)", exposure: "Primary", weighting: "Overweight on the archive tier" },
+        { ticker: "MU", technology: "HBM + NAND + CXL", exposure: "Partial", weighting: "Market weight" },
+        { ticker: "ALAB", technology: "CXL memory fabric / retimers", exposure: "Partial", weighting: "Market weight" },
+        { ticker: "COHR", technology: "Photonic interconnect (data movement)", exposure: "Indirect", weighting: "No direct weighting change" },
+        { ticker: "CIEN", technology: "Coherent DWDM (scale-across)", exposure: "Indirect", weighting: "No direct weighting change" },
+        { ticker: "BRCHF", technology: "Neuromorphic / in-memory compute", exposure: "Speculative", weighting: "Starter / watch only" },
+        { ticker: "LRCX", technology: "NAND / HARC capex equipment", exposure: "Indirect", weighting: "No direct weighting change" }
+      ],
+      application_driver: "Building an artificial brain (connectomics: ~1.4 PB per mm³ per the Harvard/Google H01 dataset, whole-brain ≈ exabyte–zettabyte) is capacity- and cost-per-bit-bound cold/warm storage. Running one (brain-scale inference, invasive BCI — Neuralink N1 is ~200 Mbps raw, 6–9 orders smaller) is bandwidth/latency-bound near compute. Two problems → a tiered hierarchy, not one chip. Demand today is research/government/pharma (NIH BRAIN CONNECTS, IARPA MICrONS): real but long-dated.",
+      consensus_gap: [
+        ["AI memory = HBM", "Capacity-bound brain-scale workloads need NAND/HBF plus HDD archive far more than incremental HBM bandwidth."],
+        ["Flash will displace HDD for archive soon", "QLC is still 4–22x costlier per TB than HAMR HDD in 2026; cold-tier displacement slips past 2028."],
+        ["Neuromorphic is the brain-chip play", "Only one public pure-play (BrainChip), micro-cap and pre-profit; the rest is research (Intel/IBM) or private."]
+      ],
+      bull_case: [
+        "Connectome programs scale (NIH BRAIN CONNECTS, IARPA MICrONS), pulling exabyte-class archival into commercial cloud over time",
+        "HBF productizes 2027–2028, giving NAND an HBM-adjacent, capacity-led TAM it never had",
+        "QLC/PLC cost-per-bit keeps falling until it crosses into the warm-storage tier, displacing HDD there",
+        "Photonic interconnect becomes mandatory at 1.6T+/CPO — a structural tax accruing to the optics basket"
+      ],
+      bear_risk: [
+        "Connectomics is research/government/pharma today — long-dated, lumpy, not a volume market; whole-brain emulation may never become a storage end-market",
+        "HBF is sampling-stage (H2 2026), spec not finalized; meaningful revenue is a 2027–2030 story",
+        "HDD keeps a commanding $/TB lead (QLC 4–22x costlier in 2026), so NAND archival displacement slips",
+        "Neuromorphic has been 'near commercialization' for a decade; BrainChip is micro-cap and deeply pre-profit"
+      ]
     }
   ]
 };
@@ -809,9 +849,9 @@ const STACK={
     ]},
     {"num":"06","name":"Memory","hue":92,"tag":"HBM · DRAM · NAND · LPDDR","boxes":[
       {"label":"HBM (current AI server standard)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU"]},
-      {"label":"HBF (high-bandwidth flash)","gap":true,"chips":[]},
+      {"label":"HBF (high-bandwidth flash)","gap":true,"chips":["SNDK"]},
       {"label":"DRAM (system memory)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU"]},
-      {"label":"NAND Flash (storage)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU"]},
+      {"label":"NAND Flash (storage)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU","SNDK"]},
       {"label":"LPDDR (mobile / edge inference)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU"]}
     ]},
     {"num":"07","name":"Interconnect","hue":42,"tag":"scale-up · scale-out · scale-across","boxes":[
@@ -948,7 +988,7 @@ const STACK={
         {"label":"Trapped ion / photonic qubits","gap":true,"chips":["IONQ"]},
         {"label":"Cryogenic control electronics","gap":true,"chips":[]},
         {"label":"Dilution refrigerators","gap":true,"chips":[]},
-        {"label":"Neuromorphic Computing (emerging)","gap":true,"chips":[]},
+        {"label":"Neuromorphic Computing (emerging)","gap":true,"chips":["BRCHF"]},
         {"label":"Optical / Photonic Computing (emerging)","gap":true,"chips":["LWLG","POET"]}
       ]}
     ]}
