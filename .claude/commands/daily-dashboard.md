@@ -32,7 +32,7 @@ Run all reads in parallel.
 - A box with `"gap": true` is an intentional **coverage gap** (blueprint category the KB doesn't cover yet): it has **no** `slug`/`tier`, renders muted ("unmapped"), and is non-clickable. Leave it as a gap — do **not** invent a tier to fill it.
 - A non-gap box's `slug` + `tier` must match a sector/tier in `DATA.sectors` (below) so the drill-down resolves. If a referenced tier is missing, fix the slug/tier in `AI Buildout Stack.md` — do not invent tiers.
 - `"group"` on a box is a **visual tag** that clusters boxes into a labeled band within a layer (e.g. L07 Scale-Up/Out/Across/Components, L10 Lithography). It is *not* a drill-down level — preserve it.
-- Rails carry `"flow"` (`in`/`out`/`wrap` → drives the "power in / heat out / wraps" badge), an optional `"kind":"surface"` (Edge & Physical AI deployment surface), and per-group `"items"` (verbatim component lists) alongside `chips[]`.
+- Rails carry `"flow"` (`in`/`out`/`wrap` → drives the "power in / heat out / wraps" badge) and an optional `"kind":"surface"` (Edge & Physical AI deployment surface). Each rail group holds a `"boxes"` array of individual sub-boxes — same `{label, slug, tier, chips, gap, choke}` shape as layer boxes — rendered as compact cards that drill into their KB tier (or render as `gap`). Do not collapse them back into a flat `items` list.
 - `chips[]` are ticker symbols; they need not all be onboarded (candidates render and degrade gracefully to a "run /add-ticker" notice).
 
 **Technology Preferences** (`Investing/Wiki/Reference/Technology Preferences.md`):

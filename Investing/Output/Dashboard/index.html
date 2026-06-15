@@ -174,7 +174,7 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 #l0{max-width:1340px;padding:32px 24px}
 .stack-intro{font-size:12px;color:var(--muted);margin-bottom:22px;max-width:820px;line-height:1.6}
 .stack-grid{display:grid;grid-template-columns:228px minmax(0,1fr) 232px;gap:18px;align-items:start}
-.rail{display:flex;flex-direction:column;gap:12px;position:sticky;top:96px}
+.rail{display:flex;flex-direction:column;gap:12px}
 .rail-card{border:1px solid var(--border);border-radius:11px;padding:13px 13px 14px;position:relative;overflow:hidden}
 .rail-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--rail-accent,var(--border))}
 .rail-card.power{--rail-accent:oklch(64% .18 35);background:oklch(97% .035 35)}
@@ -256,6 +256,13 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 .rail-card.surface{--rail-accent:oklch(58% .2 350);background:oklch(96.5% .045 350)}
 .rail-card.surface::before{width:5px}
 .rail-card.surface .rail-title{color:oklch(40% .16 350)}
+.rail-box-col{display:flex;flex-direction:column;gap:6px}
+.rail-box{background:oklch(99.5% .003 90 / .8);border:1px solid var(--border);border-radius:7px;padding:6px 8px;cursor:pointer;transition:transform .1s,box-shadow .12s,border-color .12s}
+.rail-box[onclick]:hover{transform:translateY(-1px);box-shadow:0 2px 9px rgba(0,0,0,.08);border-color:var(--rail-accent,oklch(70% .04 250))}
+.rail-box.choke{border-color:var(--amber);background:oklch(98% .05 72 / .85)}
+.rail-box-label{font-weight:600;font-size:10.5px;line-height:1.3;margin-bottom:4px;display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.rail-box.gap{background:repeating-linear-gradient(135deg,oklch(96% .004 250 / .55),oklch(96% .004 250 / .55) 6px,oklch(92% .008 250 / .45) 6px,oklch(92% .008 250 / .45) 12px);border-style:dashed;cursor:default}
+.rail-box.gap:hover{transform:none;box-shadow:none}
 </style>
 </head>
 <body>
@@ -885,20 +892,65 @@ const STACK={
   ],
   "rails": [
     {"id":"power","side":"left","flow":"in","title":"Power Infrastructure","cap":"Power comes in — generation → grid → rack → board.","groups":[
-      {"label":"Power Generation","items":["Nuclear (baseload for hyperscale)","Natural Gas Turbines","Small Modular Reactors (emerging)"],"chips":["OKLO","CEG","VST","GEV","NEE"]},
-      {"label":"Grid Infrastructure","items":["Transformers","Substations","High-Voltage Distribution"],"chips":["GEV","ETN","ENR.DE"]},
-      {"label":"Data Center Power","items":["UPS Systems","800V DC Bus Architecture","Rack-Level Power Delivery"],"chips":["VRT","ETN","BE"]},
-      {"label":"Power Semiconductors","items":["GaN (high-frequency switching)","SiC (high-voltage)","Power Management ICs","MLCC and Passive Components"],"chips":["NVTS","IFX","STM","WOLF"]}
+      {"label":"Power Generation","boxes":[
+        {"label":"Nuclear (baseload for hyperscale)","sector":"Energy & Power","slug":"energy-power","tier":"Primary Power Generation","chips":["CEG","VST"]},
+        {"label":"Natural Gas Turbines","sector":"Energy & Power","slug":"energy-power","tier":"Primary Power Generation","chips":["GEV"]},
+        {"label":"Small Modular Reactors (emerging)","sector":"Energy & Power","slug":"energy-power","tier":"Advanced Nuclear — SMR & Microreactor","chips":["OKLO"]}
+      ]},
+      {"label":"Grid Infrastructure","boxes":[
+        {"label":"Transformers","sector":"Energy & Power","slug":"energy-power","tier":"High-Voltage Transmission & Grid Infrastructure","chips":["GEV","ETN"]},
+        {"label":"Substations","sector":"Energy & Power","slug":"energy-power","tier":"High-Voltage Transmission & Grid Infrastructure","chips":["ETN"]},
+        {"label":"High-Voltage Distribution","sector":"Energy & Power","slug":"energy-power","tier":"High-Voltage Transmission & Grid Infrastructure","chips":["GEV"]}
+      ]},
+      {"label":"Data Center Power","boxes":[
+        {"label":"UPS Systems","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Data Center Power Infrastructure","chips":["VRT","ETN"]},
+        {"label":"800V DC Bus Architecture","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Data Center Power Infrastructure","chips":["VRT","NVTS"],"choke":true},
+        {"label":"Rack-Level Power Delivery","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Data Center Power Infrastructure","chips":["VRT"]}
+      ]},
+      {"label":"Power Semiconductors","boxes":[
+        {"label":"GaN (high-frequency switching)","sector":"Semiconductors","slug":"semiconductors","tier":"Compound Semiconductor & SiC Substrate","chips":["NVTS","IFX"]},
+        {"label":"SiC (high-voltage)","sector":"Semiconductors","slug":"semiconductors","tier":"Compound Semiconductor & SiC Substrate","chips":["WOLF","STM"]},
+        {"label":"Power Management ICs","gap":true,"chips":["MPWR"]},
+        {"label":"MLCC and Passive Components","gap":true,"chips":[]}
+      ]}
     ]},
     {"id":"thermal","side":"right","flow":"out","title":"Thermal Management","cap":"Heat comes out — cools compute & memory across L4–L9.","groups":[
-      {"label":"Cooling Stack","items":["Air Cooling (legacy)","Direct-to-Chip Liquid Cooling","Immersion Cooling","Two-Phase Cooling","Thermal Interface Materials (TIM)","Heat Exchangers and CDUs"],"chips":["VRT","MOD","NVT","6367.T"]}
+      {"label":"Cooling Stack","boxes":[
+        {"label":"Air Cooling (legacy)","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Thermal Management & Cooling","chips":[]},
+        {"label":"Direct-to-Chip Liquid Cooling","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Thermal Management & Cooling","chips":["VRT"]},
+        {"label":"Immersion Cooling","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Thermal Management & Cooling","chips":[]},
+        {"label":"Two-Phase Cooling","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Thermal Management & Cooling","chips":[]},
+        {"label":"Thermal Interface Materials (TIM)","gap":true,"chips":[]},
+        {"label":"Heat Exchangers and CDUs","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Thermal Management & Cooling","chips":["VRT","MOD","NVT","6367.T"]}
+      ]}
     ]},
     {"id":"security","side":"right","flow":"wrap","title":"Security","cap":"Security wraps around the whole stack — cross-cutting at every layer.","groups":[
-      {"label":"Stack Security","items":["AI Model Security (alignment, jailbreak defense)","Cybersecurity for AI Infrastructure","Post-Quantum Cryptography","Optical Network Encryption","Hardware Root of Trust"],"chips":["CRWD","PANW","FTNT","SAIL","RBRK"]}
+      {"label":"Stack Security","boxes":[
+        {"label":"AI Model Security (alignment, jailbreak defense)","sector":"Cybersecurity","slug":"cybersecurity","tier":"AI-Native Security","chips":[]},
+        {"label":"Cybersecurity for AI Infrastructure","sector":"Cybersecurity","slug":"cybersecurity","tier":"Cloud Security Posture (CSPM/CNAPP)","chips":["PANW","CRWD","FTNT","SAIL","RBRK"]},
+        {"label":"Post-Quantum Cryptography","gap":true,"chips":[]},
+        {"label":"Optical Network Encryption","gap":true,"chips":["CIEN"]},
+        {"label":"Hardware Root of Trust","sector":"Cybersecurity","slug":"cybersecurity","tier":"Hardware Security Root","chips":[]}
+      ]}
     ]},
     {"id":"edge","side":"right","kind":"surface","title":"Edge & Physical AI","cap":"Deployment paradigm — where the stack meets the physical world.","groups":[
-      {"label":"Edge & Physical AI","items":["Autonomous Vehicles","Humanoid Robotics","Drones and UAVs","Driver / Behavior Monitoring Systems","Edge Inference Chips","AR / VR Devices"],"chips":["AMBA","OUST","RKLB","ASTS"]},
-      {"label":"Parallel Compute Paradigms","items":["Quantum Computing","Superconducting qubits","Trapped ion / photonic qubits","Cryogenic control electronics","Dilution refrigerators","Neuromorphic Computing (emerging)","Optical / Photonic Computing (emerging)"],"chips":["IONQ","RGTI","QBTS"]}
+      {"label":"Edge & Physical AI","boxes":[
+        {"label":"Autonomous Vehicles","gap":true,"chips":["OUST"]},
+        {"label":"Humanoid Robotics","sector":"Robotics & Edge AI","slug":"robotics-edge-ai","tier":"System Integration & OEM Assembly","chips":[]},
+        {"label":"Drones and UAVs","gap":true,"chips":[]},
+        {"label":"Driver / Behavior Monitoring Systems","sector":"Robotics & Edge AI","slug":"robotics-edge-ai","tier":"Perception Layer","chips":["AMBA"]},
+        {"label":"Edge Inference Chips","sector":"Robotics & Edge AI","slug":"robotics-edge-ai","tier":"Edge Compute Module","chips":["AMBA"]},
+        {"label":"AR / VR Devices","gap":true,"chips":[]}
+      ]},
+      {"label":"Parallel Compute Paradigms","boxes":[
+        {"label":"Quantum Computing","gap":true,"chips":["IONQ","RGTI","QBTS"]},
+        {"label":"Superconducting qubits","gap":true,"chips":["RGTI"]},
+        {"label":"Trapped ion / photonic qubits","gap":true,"chips":["IONQ"]},
+        {"label":"Cryogenic control electronics","gap":true,"chips":[]},
+        {"label":"Dilution refrigerators","gap":true,"chips":[]},
+        {"label":"Neuromorphic Computing (emerging)","gap":true,"chips":[]},
+        {"label":"Optical / Photonic Computing (emerging)","gap":true,"chips":["LWLG","POET"]}
+      ]}
     ]}
   ]
 };
@@ -920,12 +972,29 @@ function _chipHtml(tk,fallbackSector,ctxLabel,ctxFn){
   return '<span class="chip" onclick="event.stopPropagation();openStackTicker('+args+')">'+esc(tk)+'</span>';
 }
 function _railFlow(f){return f==="in"?"\u2193 power in":f==="out"?"\u2191 heat out":f==="wrap"?"\u21bb wraps every layer":"";}
+// One compact rail sub-box card — wired to its KB tier (clickable) or a muted gap.
+function _railBoxCard(b,railTitle){
+  if(b.gap){
+    const chips=(b.chips||[]).map(t=>_chipHtml(t,"",railTitle,"showLayer(0)")).join("");
+    return '<div class="rail-box gap"><div class="rail-box-label">'+esc(b.label)+'<span class="gap-tag">unmapped</span></div>'
+      +(chips?'<div class="chip-row">'+chips+'</div>':'')+'</div>';
+  }
+  const{sector,tier}=_tierLookup(b.slug,b.tier);
+  const choke=b.choke!==undefined?b.choke:(tier&&tier.chokepoint==="Y");
+  const sName=sector?sector.name:"";
+  const chips=(b.chips&&b.chips.length?b.chips:(tier?(tier.companies||[]).map(c=>c.ticker):[]))
+    .slice(0,6).map(t=>_chipHtml(t,sName,railTitle,"showLayer(0)")).join("");
+  const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\')"':'';
+  return '<div class="rail-box'+(choke?' choke':'')+'"'+onclick+'>'
+    +'<div class="rail-box-label">'+(choke?'<span class="choke-mark">⧫</span>':'')+esc(b.label)+'</div>'
+    +'<div class="chip-row">'+chips+'</div></div>';
+}
 function _railHtml(rail){
   const flow=rail.flow?'<span class="rail-flow '+rail.flow+'">'+esc(_railFlow(rail.flow))+'</span>':'';
   const groups=rail.groups.map(g=>{
-    const items=(g.items&&g.items.length)?'<ul class="rail-items">'+g.items.map(it=>'<li>'+esc(it)+'</li>').join("")+'</ul>':'';
-    const chips=(g.chips&&g.chips.length)?'<div class="chip-row">'+g.chips.map(t=>_chipHtml(t,"",rail.title,"showLayer(0)")).join("")+'</div>':'';
-    return '<div class="rail-group"><div class="rail-group-label">'+esc(g.label)+'</div>'+items+chips+'</div>';
+    const boxes=(g.boxes&&g.boxes.length)?g.boxes.map(b=>_railBoxCard(b,rail.title)).join(""):'';
+    return '<div class="rail-group"><div class="rail-group-label">'+esc(g.label)+'</div>'
+      +'<div class="rail-box-col">'+boxes+'</div></div>';
   }).join("");
   return '<div class="rail-card '+rail.id+(rail.kind==="surface"?' surface':'')+'"><div class="rail-title">'+esc(rail.title)+flow+'</div>'
     +'<div class="rail-cap">'+esc(rail.cap)+'</div>'+groups+'</div>';

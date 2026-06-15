@@ -181,20 +181,65 @@ The previous five-dimension stack is superseded but maps cleanly onto the layers
   ],
   "rails": [
     {"id":"power","side":"left","flow":"in","title":"Power Infrastructure","cap":"Power comes in — generation → grid → rack → board.","groups":[
-      {"label":"Power Generation","items":["Nuclear (baseload for hyperscale)","Natural Gas Turbines","Small Modular Reactors (emerging)"],"chips":["OKLO","CEG","VST","GEV","NEE"]},
-      {"label":"Grid Infrastructure","items":["Transformers","Substations","High-Voltage Distribution"],"chips":["GEV","ETN","ENR.DE"]},
-      {"label":"Data Center Power","items":["UPS Systems","800V DC Bus Architecture","Rack-Level Power Delivery"],"chips":["VRT","ETN","BE"]},
-      {"label":"Power Semiconductors","items":["GaN (high-frequency switching)","SiC (high-voltage)","Power Management ICs","MLCC and Passive Components"],"chips":["NVTS","IFX","STM","WOLF"]}
+      {"label":"Power Generation","boxes":[
+        {"label":"Nuclear (baseload for hyperscale)","sector":"Energy & Power","slug":"energy-power","tier":"Primary Power Generation","chips":["CEG","VST"]},
+        {"label":"Natural Gas Turbines","sector":"Energy & Power","slug":"energy-power","tier":"Primary Power Generation","chips":["GEV"]},
+        {"label":"Small Modular Reactors (emerging)","sector":"Energy & Power","slug":"energy-power","tier":"Advanced Nuclear — SMR & Microreactor","chips":["OKLO"]}
+      ]},
+      {"label":"Grid Infrastructure","boxes":[
+        {"label":"Transformers","sector":"Energy & Power","slug":"energy-power","tier":"High-Voltage Transmission & Grid Infrastructure","chips":["GEV","ETN"]},
+        {"label":"Substations","sector":"Energy & Power","slug":"energy-power","tier":"High-Voltage Transmission & Grid Infrastructure","chips":["ETN"]},
+        {"label":"High-Voltage Distribution","sector":"Energy & Power","slug":"energy-power","tier":"High-Voltage Transmission & Grid Infrastructure","chips":["GEV"]}
+      ]},
+      {"label":"Data Center Power","boxes":[
+        {"label":"UPS Systems","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Data Center Power Infrastructure","chips":["VRT","ETN"]},
+        {"label":"800V DC Bus Architecture","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Data Center Power Infrastructure","chips":["VRT","NVTS"],"choke":true},
+        {"label":"Rack-Level Power Delivery","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Data Center Power Infrastructure","chips":["VRT"]}
+      ]},
+      {"label":"Power Semiconductors","boxes":[
+        {"label":"GaN (high-frequency switching)","sector":"Semiconductors","slug":"semiconductors","tier":"Compound Semiconductor & SiC Substrate","chips":["NVTS","IFX"]},
+        {"label":"SiC (high-voltage)","sector":"Semiconductors","slug":"semiconductors","tier":"Compound Semiconductor & SiC Substrate","chips":["WOLF","STM"]},
+        {"label":"Power Management ICs","gap":true,"chips":["MPWR"]},
+        {"label":"MLCC and Passive Components","gap":true,"chips":[]}
+      ]}
     ]},
     {"id":"thermal","side":"right","flow":"out","title":"Thermal Management","cap":"Heat comes out — cools compute & memory across L4–L9.","groups":[
-      {"label":"Cooling Stack","items":["Air Cooling (legacy)","Direct-to-Chip Liquid Cooling","Immersion Cooling","Two-Phase Cooling","Thermal Interface Materials (TIM)","Heat Exchangers and CDUs"],"chips":["VRT","MOD","NVT","6367.T"]}
+      {"label":"Cooling Stack","boxes":[
+        {"label":"Air Cooling (legacy)","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Thermal Management & Cooling","chips":[]},
+        {"label":"Direct-to-Chip Liquid Cooling","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Thermal Management & Cooling","chips":["VRT"]},
+        {"label":"Immersion Cooling","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Thermal Management & Cooling","chips":[]},
+        {"label":"Two-Phase Cooling","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Thermal Management & Cooling","chips":[]},
+        {"label":"Thermal Interface Materials (TIM)","gap":true,"chips":[]},
+        {"label":"Heat Exchangers and CDUs","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Thermal Management & Cooling","chips":["VRT","MOD","NVT","6367.T"]}
+      ]}
     ]},
     {"id":"security","side":"right","flow":"wrap","title":"Security","cap":"Security wraps around the whole stack — cross-cutting at every layer.","groups":[
-      {"label":"Stack Security","items":["AI Model Security (alignment, jailbreak defense)","Cybersecurity for AI Infrastructure","Post-Quantum Cryptography","Optical Network Encryption","Hardware Root of Trust"],"chips":["CRWD","PANW","FTNT","SAIL","RBRK"]}
+      {"label":"Stack Security","boxes":[
+        {"label":"AI Model Security (alignment, jailbreak defense)","sector":"Cybersecurity","slug":"cybersecurity","tier":"AI-Native Security","chips":[]},
+        {"label":"Cybersecurity for AI Infrastructure","sector":"Cybersecurity","slug":"cybersecurity","tier":"Cloud Security Posture (CSPM/CNAPP)","chips":["PANW","CRWD","FTNT","SAIL","RBRK"]},
+        {"label":"Post-Quantum Cryptography","gap":true,"chips":[]},
+        {"label":"Optical Network Encryption","gap":true,"chips":["CIEN"]},
+        {"label":"Hardware Root of Trust","sector":"Cybersecurity","slug":"cybersecurity","tier":"Hardware Security Root","chips":[]}
+      ]}
     ]},
     {"id":"edge","side":"right","kind":"surface","title":"Edge & Physical AI","cap":"Deployment paradigm — where the stack meets the physical world.","groups":[
-      {"label":"Edge & Physical AI","items":["Autonomous Vehicles","Humanoid Robotics","Drones and UAVs","Driver / Behavior Monitoring Systems","Edge Inference Chips","AR / VR Devices"],"chips":["AMBA","OUST","RKLB","ASTS"]},
-      {"label":"Parallel Compute Paradigms","items":["Quantum Computing","Superconducting qubits","Trapped ion / photonic qubits","Cryogenic control electronics","Dilution refrigerators","Neuromorphic Computing (emerging)","Optical / Photonic Computing (emerging)"],"chips":["IONQ","RGTI","QBTS"]}
+      {"label":"Edge & Physical AI","boxes":[
+        {"label":"Autonomous Vehicles","gap":true,"chips":["OUST"]},
+        {"label":"Humanoid Robotics","sector":"Robotics & Edge AI","slug":"robotics-edge-ai","tier":"System Integration & OEM Assembly","chips":[]},
+        {"label":"Drones and UAVs","gap":true,"chips":[]},
+        {"label":"Driver / Behavior Monitoring Systems","sector":"Robotics & Edge AI","slug":"robotics-edge-ai","tier":"Perception Layer","chips":["AMBA"]},
+        {"label":"Edge Inference Chips","sector":"Robotics & Edge AI","slug":"robotics-edge-ai","tier":"Edge Compute Module","chips":["AMBA"]},
+        {"label":"AR / VR Devices","gap":true,"chips":[]}
+      ]},
+      {"label":"Parallel Compute Paradigms","boxes":[
+        {"label":"Quantum Computing","gap":true,"chips":["IONQ","RGTI","QBTS"]},
+        {"label":"Superconducting qubits","gap":true,"chips":["RGTI"]},
+        {"label":"Trapped ion / photonic qubits","gap":true,"chips":["IONQ"]},
+        {"label":"Cryogenic control electronics","gap":true,"chips":[]},
+        {"label":"Dilution refrigerators","gap":true,"chips":[]},
+        {"label":"Neuromorphic Computing (emerging)","gap":true,"chips":[]},
+        {"label":"Optical / Photonic Computing (emerging)","gap":true,"chips":["LWLG","POET"]}
+      ]}
     ]}
   ]
 }
@@ -219,7 +264,13 @@ muted ("unmapped") on the dashboard and are the queue for `/map-sector` / `/scou
 | L10 | NIL (nanoimprint, photonics); Compound Semi Growth (MOCVD) | Semiconductors — equipment sub-tiers |
 | L11 | Specialty Gases; Anti-Stick Coatings (PFAS-free) | Semiconductors / Electronic Components — materials |
 | L12 | Gallium; Indium; Germanium; Hafnium; Tantalum | Materials & Mining — critical-mineral tiers |
-| Surface | Parallel Compute Paradigms (quantum, neuromorphic, photonic) | New **Parallel Compute** sector |
+| Power rail | Power Management ICs; MLCC and Passive Components | Electronic Components — passives/power-IC tiers |
+| Thermal rail | Thermal Interface Materials (TIM) | Compute Infra / Electronic Components — materials |
+| Security rail | Post-Quantum Cryptography; Optical Network Encryption | Cybersecurity — new tiers |
+| Edge surface | Autonomous Vehicles; Drones and UAVs; AR / VR Devices | Robotics & Edge AI — deployment-form tiers |
+| Edge surface | Parallel Compute Paradigms (quantum, neuromorphic, photonic) | New **Parallel Compute** sector |
+
+The rails are now **fully scaffolded**: every Power / Thermal / Security / Edge sub-component is an individual box wired to its KB tier (or flagged `gap`), matching the main-layer sub-box treatment.
 
 ---
 
