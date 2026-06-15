@@ -98,9 +98,9 @@ The previous five-dimension stack is superseded but maps cleanly onto the layers
     ]},
     {"num":"06","name":"Memory","hue":92,"tag":"HBM · DRAM · NAND · LPDDR","boxes":[
       {"label":"HBM (current AI server standard)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU"]},
-      {"label":"HBF (high-bandwidth flash)","gap":true,"chips":[]},
+      {"label":"HBF (high-bandwidth flash)","gap":true,"chips":["SNDK"]},
       {"label":"DRAM (system memory)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU"]},
-      {"label":"NAND Flash (storage)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU"]},
+      {"label":"NAND Flash (storage)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU","SNDK"]},
       {"label":"LPDDR (mobile / edge inference)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU"]}
     ]},
     {"num":"07","name":"Interconnect","hue":42,"tag":"scale-up · scale-out · scale-across","boxes":[
@@ -237,7 +237,7 @@ The previous five-dimension stack is superseded but maps cleanly onto the layers
         {"label":"Trapped ion / photonic qubits","gap":true,"chips":["IONQ"]},
         {"label":"Cryogenic control electronics","gap":true,"chips":[]},
         {"label":"Dilution refrigerators","gap":true,"chips":[]},
-        {"label":"Neuromorphic Computing (emerging)","gap":true,"chips":[]},
+        {"label":"Neuromorphic Computing (emerging)","gap":true,"chips":["BRCHF"]},
         {"label":"Optical / Photonic Computing (emerging)","gap":true,"chips":["LWLG","POET"]}
       ]}
     ]}

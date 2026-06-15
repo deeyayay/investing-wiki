@@ -1,0 +1,68 @@
+# SNDK — Analysis
+*Layer 2 — Thesis, conviction, and scoring.*
+*Last updated: 2026-06-15 (onboarded via connectomics/NAND research thread)*
+
+---
+
+## One-Line Thesis
+The pure-play NAND vehicle for the agentic-AI and brain-scale data wave — and the pioneer of High-Bandwidth Flash (HBF), a NAND-based, HBM-class-bandwidth memory at 8–16× the capacity that gives flash an HBM-adjacent TAM it never had.
+
+---
+
+## Investment Thesis
+
+> **Thesis established:** 2026-06-15
+> **Last validated:** 2026-06-15
+> **Drift status:** New — onboarded to anchor the NAND/HBF leg of the memory & storage thesis (Technology Preferences Race 1 + Race 4)
+
+SanDisk became a standalone, ~pure-play NAND/flash company when Western Digital completed the spinoff on February 21, 2025 (WDC retained the HDD business). It produces leading-edge NAND through its long-standing joint venture with Kioxia — together roughly a third of global NAND bits — spanning enterprise NVMe SSD, client SSD, and embedded/edge flash.
+
+The structural thesis has two legs. **First, NAND as the agentic-AI storage workhorse:** every enterprise standing up retrieval-augmented and agentic workflows adds enterprise NVMe (knowledge bases, vector indices, session state) and edge NAND — cost-per-bit demand that accrues to NAND, not HBM (see Race 1: *NAND vs. HBM4*). **Second, HBF (High-Bandwidth Flash):** SanDisk's breakthrough that stacks NAND in an HBM-like form factor to deliver ~1.6 TB/s read bandwidth (within ~2.2% of unlimited-capacity HBM) at **8–16× HBM capacity**, purpose-built for read-intensive AI inference and very large models/context. SanDisk formed an HBF Technical Advisory Board (Jul 2025), signed a standardization MOU with SK Hynix (Aug 2025), and targets first samples in H2 2026 with products in 2027–2028. HBF is the single most on-thesis technology for the "petabytes + speed" connectomics / artificial-brain workload (Race 4).
+
+**Key moat:** Scale + process IP in NAND (Kioxia JV, ~1/3 of global bits); leading-edge QLC/BiCS8; first-mover and standards leadership on HBF.
+
+**Key risks:** NAND is a cyclical commodity — ASPs can compress hard in oversupply; Chinese producers (YMTC) pressure pricing; HBF is sampling-stage with revenue a 2027–2030 story; the company is freshly independent with a short standalone operating history.
+
+---
+
+## Scoring Summary
+_Not yet scored — run `/score-ticker SNDK`._
+
+---
+
+## Conviction Log
+
+| Date | Event | Δ Conviction | Why |
+|------|-------|-------------|-----|
+| 2026-06-15 | Onboarded as primary NAND + HBF exposure for the memory/storage thesis | → | Establishes coverage; HBF standardization with SK Hynix and the agentic-AI NAND demand wave are the watch items. |
+| 2026-02-25 | SanDisk + SK Hynix begin global HBF standardization | ↑ | A second major memory maker backing the HBF spec materially de-risks ecosystem adoption. |
+| 2025-08-06 | SanDisk–SK Hynix HBF standardization MOU | ↑ | Moves HBF from single-vendor concept toward an industry standard. |
+
+---
+
+## Cross-Ticker Signals
+
+| Date | Direction | Other Ticker | Signal | Implication |
+|------|-----------|-------------|--------|-------------|
+| 2025-08-06 | Partners | (SK Hynix) | HBF standardization MOU | Validates HBF as an industry direction, not a SanDisk-only bet |
+| 2026-06-15 | Contrasts | MU | NAND/HBF capacity play vs. Micron's HBM-led narrative | SNDK is the cleaner NAND/HBF pure-play; MU is HBM + NAND blended |
+| 2026-06-15 | Contrasts | STX | Flash vs. HDD for warm/cold archive | QLC NAND cost-decline is the long-run threat to STX's nearline HDD moat |
+
+---
+
+## Catalyst Timeline
+- [ ] HBF first samples — targeted H2 2026
+- [ ] HBF spec finalization with SK Hynix (JEDEC-style standardization)
+- [ ] NAND pricing/margin trajectory through the current cycle
+- [ ] First HBF design-in or AI-inference product announcement (2027)
+- [ ] Enterprise NVMe attach rate as agentic deployments scale
+
+---
+
+## Analyst Coverage
+- Coverage sparse post-spinoff; refresh via `/ticker-monitor --deep SNDK`.
+
+---
+
+## Ecosystem Links
+- Technology Preferences — Race 1 (NAND vs. HBM4) and Race 4 (Memory & Storage for Connectomics & Artificial-Brain Workloads).
