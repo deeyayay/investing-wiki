@@ -1,7 +1,7 @@
 # Daily Dashboard — AI Buildout Stack Viewer
 
 Deploys the dashboard to GitHub Pages via `gh-pages`. The HTML lives in `Investing/Output/Dashboard/index.html`. It embeds two objects:
-- **`STACK`** — the canonical 12-layer vertical map (Application → Critical Minerals) + 4 rails, rendered as the homepage. Source of truth: the JSON block in `Investing/Wiki/Reference/AI Buildout Stack.md`.
+- **`STACK`** — the canonical 12-layer vertical map (Application → Critical Minerals), mapped word-for-word from the *AI Buildout Supply Chain* blueprint graphic, wrapped by 3 cross-cutting rails (Power / Thermal / Security) + the Edge & Physical AI deployment surface, rendered as the homepage. Source of truth: the JSON block in `Investing/Wiki/Reference/AI Buildout Stack.md`.
 - **`DATA`** — the per-sector tier/company backbone (`sectors`, `tech_races`) used by the drill-down, ticker-wiki, and search. Each `STACK` sub-box maps to a `(sector, tier)` in `DATA.sectors`.
 
 **Dashboard URL:** `https://deeyayay.github.io/investing-wiki/`
@@ -27,8 +27,12 @@ Run the deploy steps in Phase 3. No file reads needed.
 Run all reads in parallel.
 
 **AI Buildout Stack** (`Investing/Wiki/Reference/AI Buildout Stack.md`) — **canonical taxonomy**:
-- Parse the fenced ```json block. Copy it verbatim into the `const STACK = {…}` object in `index.html` (layers, connectors, rails).
-- Each sub-box's `slug` + `tier` must match a sector/tier in `DATA.sectors` (below) so the drill-down resolves. If a referenced tier is missing, fix the slug/tier in `AI Buildout Stack.md` — do not invent tiers.
+- Parse the fenced ```json block. Copy it verbatim into the `const STACK = …` assignment in `index.html` (layers, connectors, rails). The JSON is valid JS — paste it as-is.
+- Sub-box **labels are canonical** (verbatim from the graphic) — never rename them to match a tier; instead wire the box to the closest `(slug, tier)`.
+- A box with `"gap": true` is an intentional **coverage gap** (blueprint category the KB doesn't cover yet): it has **no** `slug`/`tier`, renders muted ("unmapped"), and is non-clickable. Leave it as a gap — do **not** invent a tier to fill it.
+- A non-gap box's `slug` + `tier` must match a sector/tier in `DATA.sectors` (below) so the drill-down resolves. If a referenced tier is missing, fix the slug/tier in `AI Buildout Stack.md` — do not invent tiers.
+- `"group"` on a box is a **visual tag** that clusters boxes into a labeled band within a layer (e.g. L07 Scale-Up/Out/Across/Components, L10 Lithography). It is *not* a drill-down level — preserve it.
+- Rails carry `"flow"` (`in`/`out`/`wrap` → drives the "power in / heat out / wraps" badge), an optional `"kind":"surface"` (Edge & Physical AI deployment surface), and per-group `"items"` (verbatim component lists) alongside `chips[]`.
 - `chips[]` are ticker symbols; they need not all be onboarded (candidates render and degrade gracefully to a "run /add-ticker" notice).
 
 **Technology Preferences** (`Investing/Wiki/Reference/Technology Preferences.md`):
@@ -65,7 +69,7 @@ Run all reads in parallel.
 
 Read `Investing/Output/Dashboard/index.html`.
 
-1. Locate `const STACK = {` and replace the entire object (through its matching closing `};`) with the JSON parsed from `AI Buildout Stack.md` (rename JSON keys are already JS-compatible — paste as-is, dropping the outer `generated` field which lives on `DATA`).
+1. Locate `const STACK=` and replace the entire object (through its matching closing `};`) with the JSON block from `AI Buildout Stack.md` (the JSON is JS-compatible — paste as `const STACK=<json>;`). Keep the `generated` field; the render code ignores it. Do not strip `gap`/`group`/`flow`/`kind`/`items` fields — the renderer relies on them.
 2. Locate `const DATA = {` and replace the entire `DATA` object (through the matching closing `};`) with the newly assembled object:
 
 ```javascript

@@ -110,32 +110,35 @@ Review Monitor Registry.yaml candidates
 - **Monitor Registry** (`Investing/Wiki/Reference/Monitor Registry.yaml`) — machine-readable YAML index. All skills read this to locate ticker folder paths. Format: `TICKER → { sector, path, score }` + `candidates:` list.
 - **Sentiment Index** (`Investing/Wiki/Reference/Sentiment Index.md`) — social signal counts and recency by ticker.
 - **Watchlist** (`Investing/Wiki/Reference/Watchlist.md`) — curated view of holdings, rockets, and compounders with one-line theses.
-- **AI Buildout Stack** (`Investing/Wiki/Reference/AI Buildout Stack.md`) — canonical 12-layer taxonomy (Application → Critical Minerals) + 4 rails. Holds the machine-readable JSON that `/daily-dashboard` renders as the vertical stack map.
+- **AI Buildout Stack** (`Investing/Wiki/Reference/AI Buildout Stack.md`) — canonical 12-layer taxonomy (Application → Critical Minerals), mapped word-for-word from the *AI Buildout Supply Chain* blueprint graphic, + 3 cross-cutting rails and the Edge & Physical AI deployment surface. Holds the machine-readable JSON that `/daily-dashboard` renders as the vertical stack map. Sub-box labels are canonical; `gap` boxes flag KB coverage gaps; `group` tags cluster boxes visually (no extra depth).
 - **Dimension Map** (`Investing/Wiki/Reference/Dimension Map.md`) — sector registry, folder slugs, supply chain map status, and the legacy D1–D5 → layer crosswalk.
 - **Ecosystem Interrelationships** (`Investing/Wiki/Reference/Ecosystem Interrelationships.md`) — cross-sector dependency graph. Source of truth for flow diagram rendering and multi-sector signal propagation.
 
 ## Taxonomy (12-Layer AI Buildout Stack)
 
-The AI buildout is modeled as a **single vertical dependency stack** — 12 layers from Application (top) down to Critical Minerals (bedrock) — plus 4 cross-cutting rails. Each layer *runs on* the layer below it. See `Investing/Wiki/Reference/AI Buildout Stack.md` for the authoritative layer definitions + the machine-readable JSON the dashboard consumes.
+The AI buildout is modeled as a **single vertical dependency stack** — 12 layers from Application (top) down to Critical Minerals (bedrock) — wrapped by 3 cross-cutting rails and capped by the Edge & Physical AI deployment surface. Each layer *runs on* the layer below it. The taxonomy is mapped **word-for-word from the *AI Buildout Supply Chain* blueprint graphic**. See `Investing/Wiki/Reference/AI Buildout Stack.md` for the authoritative layer definitions + the machine-readable JSON the dashboard consumes.
 
 ```
-L01 Application              ← AI-native apps (fintech · commerce · agents)
-L02 AI Model                 ← foundation models · alignment · training data
-L03 Software Infrastructure  ← orchestration · serving · MLOps · APIs
-L04 Cloud Infrastructure     ← hyperscalers · neoclouds · colocation · storage
-L05 Compute Hardware         ← GPUs · custom ASICs · CPUs · design IP
-L06 Memory                   ← HBM · DRAM · NAND
-L07 Interconnect             ← networking silicon · optics · SerDes · fiber
-L08 Advanced Packaging       ← CoWoS · stacking · IC substrates
-L09 Semiconductor Foundry    ← leading-edge & specialty wafer fab
-L10 Semiconductor Equipment  ← litho · deposition/etch · metrology · test
-L11 Semiconductor Materials  ← wafers · photoresist · chemicals · substrates
-L12 Critical Minerals        ← mined & refined inputs (bedrock)
+L01 Application              ← AI assistants · agentic platforms · enterprise SaaS · vertical apps
+L02 AI Model                 ← foundation models · fine-tuned · inference serving · orchestration
+L03 Software Infrastructure  ← ML frameworks · GPU kernels · training · orchestration · inference opt
+L04 Cloud Infrastructure     ← hyperscalers · neoclouds · edge/inference · colocation
+L05 Compute Hardware         ← training/inference GPUs · custom ASICs · server CPUs · networking ASICs
+L06 Memory                   ← HBM · HBF · DRAM · NAND · LPDDR
+L07 Interconnect             ← scale-up · scale-out · scale-across · components
+L08 Advanced Packaging       ← CoWoS/SoIC · HBM stacking · FC-BGA · glass core · TIM
+L09 Semiconductor Foundry    ← leading-edge · specialty/mature · silicon photonics · compound · OSAT
+L10 Semiconductor Equipment  ← lithography (EUV/DUV/NIL) · deposition · etch · metrology · test
+L11 Semiconductor Materials  ← wafers · SOI · InP/GaAs/SiC substrates · gases · photoresist
+L12 Critical Minerals & Raw Elements  ← Si · Cu · Ga · In · Ge · Hf · Ta · Co · Li · rare earths (bedrock)
 
-Rails:  Power Infrastructure (left) · Thermal · Security · Edge & Physical AI (right)
+Cross-cutting rails:  Power Infrastructure (left, power in) · Thermal (right, heat out) · Security (right, wraps)
+Deployment surface:   Edge & Physical AI (right) — physical-world deployment + parallel-compute paradigms
 ```
 
-**Sectors → layers:** the 11 sector folders are unchanged — they remain the physical home of each ticker (keyed in `Monitor Registry.yaml`). Layers are the canonical *organizing/navigation* structure; each layer sub-box maps to one `(sector, tier)`. The legacy **D1–D5 dimension codes are superseded** but crosswalk cleanly to layers — see `Dimension Map.md`, which now holds the sector registry + slug↔display-name mapping + the D1–D5 → layer crosswalk.
+**Word-for-word + gaps:** sub-box labels are canonical (verbatim from the graphic). Where the blueprint names a category the KB doesn't cover yet, the sub-box is a `gap` (renders "unmapped") — a queue for `/map-sector` / `/scout-tickers`. Intra-layer `group` tags (e.g. L07 Scale-Up/Out/Across, L10 Lithography) are visual bands, not a third drill-down level.
+
+**Sectors → layers:** the 11 sector folders are unchanged — they remain the physical home of each ticker (keyed in `Monitor Registry.yaml`). Layers are the canonical *organizing/navigation* structure; each non-gap layer sub-box maps to one `(sector, tier)`. The legacy **D1–D5 dimension codes are superseded** but crosswalk cleanly to layers — see `Dimension Map.md`, which now holds the sector registry + slug↔display-name mapping + the D1–D5 → layer crosswalk.
 
 ## Notes
 
