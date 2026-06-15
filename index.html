@@ -756,6 +756,7 @@ let activeStack='buildout';
 let _physRendered=false;
 let _boxLabelOverride=null;
 let _activeTierDisplayLabel=null;
+let _physLayerOrigin=null;
 // Open a ticker straight from a stack/rail/layer chip — breadcrumb returns to the stack (with an optional context crumb), not a tier.
 function openStackTicker(tk,sName,ctxLabel,ctxFn){_raceOrigin=null;_fromStack=true;_chipOrigin=ctxLabel?{label:ctxLabel,fn:ctxFn}:null;activeSector=null;activeTierIdx=null;activeLayerIdx=null;openTicker(tk,sName);}
 
@@ -1001,7 +1002,8 @@ function renderPhysL0(){
       const ctxL=L.num+" "+L.name,ctxF="switchStack('physical')";
       const chips=(b.chips&&b.chips.length?b.chips:(tier?(tier.companies||[]).map(c=>c.ticker):[]))
         .slice(0,6).map(t=>_chipHtml(t,sName,ctxL,ctxF)).join("");
-      const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\',null,\''+b.label.replace(/'/g,"\\'")+'\' )"':'';
+      const physLyr=(L.num+' '+L.name).replace(/'/g,"\\'");
+      const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\',null,\''+b.label.replace(/'/g,"\\'")+'\',\''+physLyr+'\' )"':'';
       return '<div class="subbox'+(choke?' choke':'')+'"'+onclick+'>'
         +'<div class="subbox-label">'+(choke?'<span class="choke-mark">⧫</span>':'')+esc(b.label)+'</div>'
         +'<div class="chip-row">'+chips+'</div></div>';
@@ -1038,14 +1040,15 @@ function switchStack(id){
   }
 }
 
-function openStackTier(slug,tierName,layerIdx,boxLabel){
+function openStackTier(slug,tierName,layerIdx,boxLabel,physLayerLabel){
   const s=DATA.sectors.find(x=>x.slug===slug);
   if(!s){return;}
   activeSector=s;
   _boxLabelOverride=boxLabel||null;
+  _physLayerOrigin=physLayerLabel||null;
   activeLayerIdx=(layerIdx!==undefined&&layerIdx!==null)?layerIdx:(_tierLayer[slug+"|"+tierName]!==undefined?_tierLayer[slug+"|"+tierName]:null);
   const idx=s.tiers.findIndex(t=>t.tier===tierName);
-  if(idx<0){_boxLabelOverride=null;return;}
+  if(idx<0){_boxLabelOverride=null;_physLayerOrigin=null;return;}
   openTier(idx);
 }
 
@@ -1086,10 +1089,6 @@ function renderLayerView(i){
 function openTier(idx){
   activeTierIdx=idx;
   const s=activeSector;
-  // If navigating to cross-sector tier from Physical AI stack, exit Physical AI mode
-  if(activeStack==='physical'&&s.slug!=='physical-ai'){
-    activeStack='buildout';
-  }
   const t=s.tiers[idx];
   // Consume box label override — shows what the user clicked, not the generic tier name
   _activeTierDisplayLabel=_boxLabelOverride||t.tier;
@@ -1114,9 +1113,16 @@ function openTier(idx){
   const li=activeLayerIdx;
   const displayName=_activeTierDisplayLabel||t.tier;
   const _rootCrumb=activeStack==='physical'?{label:"Physical AI Stack",fn:"switchStack('physical')"}:{label:"AI Buildout Stack",fn:"showLayer(0)"};
-  const trail=(li!==null&&li!==undefined&&activeStack==='buildout')
-    ?[_rootCrumb,{label:_layerLabel(li),fn:"openLayer("+li+")"},{label:displayName}]
-    :[_rootCrumb,{label:displayName}];
+  let trail;
+  if(activeStack==='physical'){
+    trail=_physLayerOrigin
+      ?[_rootCrumb,{label:_physLayerOrigin,fn:"switchStack('physical')"},{label:displayName}]
+      :[_rootCrumb,{label:displayName}];
+  }else{
+    trail=(li!==null&&li!==undefined)
+      ?[_rootCrumb,{label:_layerLabel(li),fn:"openLayer("+li+")"},{label:displayName}]
+      :[_rootCrumb,{label:displayName}];
+  }
   const provenance="<div class=\"tier-provenance\">"
     +((li!==null&&li!==undefined&&activeStack==='buildout')?"<span class=\"layer-pill\" style=\"--lh:"+STACK.layers[li].hue+"\">"+esc(_layerLabel(li))+"</span>":"")
     +"<span class=\"sector-tag\">"+esc(s.name)+"</span></div>";
@@ -1182,9 +1188,13 @@ function renderL3(ticker,sName){
     parts.push({label:ticker});
     crumbs=crumbTrail(parts);
   }else{
-    const mid=(li!==null&&li!==undefined&&activeStack==='buildout')?{label:_layerLabel(li),fn:"openLayer("+li+")"}:null;
     const parts=[_rootL3];
-    if(mid)parts.push(mid);
+    if(activeStack==='physical'){
+      if(_physLayerOrigin)parts.push({label:_physLayerOrigin,fn:"switchStack('physical')"});
+    }else{
+      const mid=(li!==null&&li!==undefined)?{label:_layerLabel(li),fn:"openLayer("+li+")"}:null;
+      if(mid)parts.push(mid);
+    }
     parts.push({label:_activeTierDisplayLabel||activeSector.tiers[activeTierIdx].tier,fn:"openTier("+activeTierIdx+")"});
     parts.push({label:ticker});
     crumbs=crumbTrail(parts);
