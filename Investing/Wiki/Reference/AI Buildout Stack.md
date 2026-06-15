@@ -163,7 +163,7 @@ The previous five-dimension stack is superseded but maps cleanly onto the layers
       {"label":"Tantalum (capacitors)","gap":true,"chips":[]},
       {"label":"Cobalt (energy storage)","sector":"Materials & Mining","slug":"metals-mining","tier":"Battery Material Precursor Production","chips":["ELMT"]},
       {"label":"Lithium (energy storage)","sector":"Materials & Mining","slug":"metals-mining","tier":"Battery Material Precursor Production","chips":["ALB"]},
-      {"label":"Rare Earths (Neodymium, Dysprosium — motors, magnets)","sector":"Materials & Mining","slug":"metals-mining","tier":"Rare Earth Separation & Critical Mineral Refining","chips":["MP"]}
+      {"label":"Rare Earths (Neodymium, Dysprosium — motors, magnets)","sector":"Materials & Mining","slug":"metals-mining","tier":"Rare Earth Separation & Critical Mineral Refining","chips":["MP","NB"]}
     ]}
   ],
   "connectors": [

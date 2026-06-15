@@ -382,7 +382,8 @@ const DATA = {
           { ticker: "ELMT", name: "The Elmet Group Co.", mkt_cap: "Small", notes: "The only U.S.-owned vertically integrated tungsten and molybdenum producer — processes critical refractory metals from powder to finished defense and semiconductor components. China controls ~80% of global tungsten supply, making ELMT the sole domestic alternative as U.S. decoupling policy creates a structural sourcing pull. IPO April 2026; Q1 2026 backlog hit $113M (+52% YoY)." }
         ]},
         { tier: "Rare Earth Separation & Critical Mineral Refining", fn: "Separate individual rare earth elements from mixed concentrate and refine critical byproduct metals to usable purity", chokepoint: "Y", capital_intensity: "High", moat_type: "Geographic monopoly + Process IP", margin_profile: "High", companies: [
-          { ticker: "MP", name: "MP Materials", mkt_cap: "Mid", notes: "The only rare earth miner and processor at commercial scale outside China — its Mountain Pass mine produces the neodymium-praseodymium needed for EV motors, wind turbines, and defense systems. China controls ~90% of global rare earth processing, making MP strategically critical." }
+          { ticker: "MP", name: "MP Materials", mkt_cap: "Mid", notes: "The only rare earth miner and processor at commercial scale outside China — its Mountain Pass mine produces the neodymium-praseodymium needed for EV motors, wind turbines, and defense systems. China controls ~90% of global rare earth processing, making MP strategically critical." },
+          { ticker: "NB", name: "NioCorp Developments", mkt_cap: "Small", notes: "Development-stage US critical-minerals project (Elk Creek, Nebraska) targeting niobium, scandium, titanium, and magnetic rare earths (Nd/Pr/Dy/Tb). Pre-construction and financing-gated — $10M DoD award and a ~$780M EXIM loan application in due diligence. A binary, reshoring call option, not a producer." }
         ] },
         { tier: "Silicon & SiC Precursor Production", fn: "Upgrade metallurgical-grade silicon to polysilicon and SiC powder grades required for semiconductor and power-device manufacturing", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Process IP + Scale", margin_profile: "High", companies: [] },
         { tier: "Battery Material Precursor Production", fn: "Process lithium, nickel, cobalt, and manganese into battery-ready chemical forms suitable for cathode and electrolyte manufacturing", chokepoint: "Partial", capital_intensity: "High", moat_type: "Process IP + Certification", margin_profile: "Medium–High", companies: [] }
@@ -914,7 +915,7 @@ const STACK={
       {"label":"Tantalum (capacitors)","gap":true,"chips":[]},
       {"label":"Cobalt (energy storage)","sector":"Materials & Mining","slug":"metals-mining","tier":"Battery Material Precursor Production","chips":["ELMT"]},
       {"label":"Lithium (energy storage)","sector":"Materials & Mining","slug":"metals-mining","tier":"Battery Material Precursor Production","chips":["ALB"]},
-      {"label":"Rare Earths (Neodymium, Dysprosium — motors, magnets)","sector":"Materials & Mining","slug":"metals-mining","tier":"Rare Earth Separation & Critical Mineral Refining","chips":["MP"]}
+      {"label":"Rare Earths (Neodymium, Dysprosium — motors, magnets)","sector":"Materials & Mining","slug":"metals-mining","tier":"Rare Earth Separation & Critical Mineral Refining","chips":["MP","NB"]}
     ]}
   ],
   "connectors": [
