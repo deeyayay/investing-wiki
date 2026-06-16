@@ -1,7 +1,7 @@
 # AI Ecosystem — Dimension Map
 *Last updated: 2026-06-10 — superseded by the 12-layer AI Buildout Stack; kept as the sector registry + slug map.*
 
-> **Canonical taxonomy moved.** The wiki now organizes the AI buildout as a **12-layer vertical stack** (Application → Critical Minerals) plus 4 cross-cutting rails. See **`AI Buildout Stack.md`** for the authoritative layer definitions and the machine-readable JSON the dashboard consumes. This file remains the **sector registry** (sector → folder slug → status) and the **D1–D5 → layer crosswalk** for legacy references.
+> **Canonical taxonomy moved.** The wiki now organizes the AI buildout as a **12-layer vertical stack** (Application → Critical Minerals) — mapped word-for-word from the *AI Buildout Supply Chain* blueprint graphic — wrapped by **3 cross-cutting rails** (Power / Thermal / Security) and capped by the **Edge & Physical AI deployment surface**. See **`AI Buildout Stack.md`** for the authoritative layer definitions and the machine-readable JSON the dashboard consumes. This file remains the **sector registry** (sector → folder slug → status) and the **D1–D5 → layer crosswalk** for legacy references.
 
 ---
 
@@ -11,7 +11,7 @@ The legacy five-dimension codes map onto the 12 layers as follows (full layer de
 
 | Legacy code | Name | Maps to layers |
 |------|------|----------------|
-| D5 | AI Applications | L01 Application + Edge & Physical AI rail |
+| D5 | AI Applications | L01 Application + Edge & Physical AI deployment surface |
 | D4 | AI Enablement | L02 AI Model, L03 Software Infrastructure + Security rail |
 | D3 | AI Infrastructure | L04 Cloud Infrastructure + Power & Thermal rails |
 | D2 | AI Connectivity | L07 Interconnect |
@@ -50,19 +50,19 @@ The legacy five-dimension codes map onto the 12 layers as follows (full layer de
 
 ```
             ┌──────────────────────────────────────────────────┐
-            │  L01  Application            (fintech · commerce) │
+            │  L01  Application            (assistants · agents)│
             │  L02  AI Model               (foundation models)  │
-            │  L03  Software Infrastructure(orchestration·MLOps)│
+            │  L03  Software Infrastructure(frameworks·kernels) │
   POWER     │  L04  Cloud Infrastructure   (hyperscalers)       │  THERMAL
-  (rail)    │  L05  Compute Hardware       (GPUs · ASICs)       │  SECURITY
-            │  L06  Memory                 (HBM · DRAM · NAND)   │  EDGE &
-            │  L07  Interconnect           (optics · networking) │  PHYSICAL AI
-            │  L08  Advanced Packaging     (CoWoS · substrates) │  (rails)
-            │  L09  Semiconductor Foundry  (wafer fab)          │
-            │  L10  Semiconductor Equipment(litho · etch · test)│
-            │  L11  Semiconductor Materials(wafers · chemicals) │
-            │  L12  Critical Minerals & Rare Earths  (bedrock)  │
+  (power in)│  L05  Compute Hardware       (GPUs · ASICs · CPUs) │  (heat out)
+            │  L06  Memory                 (HBM · DRAM · NAND)   │  SECURITY
+            │  L07  Interconnect           (up · out · across)  │  (wraps)
+            │  L08  Advanced Packaging     (CoWoS · substrates) │
+            │  L09  Semiconductor Foundry  (wafer fab · OSAT)   │  EDGE &
+            │  L10  Semiconductor Equipment(litho · etch · test)│  PHYSICAL AI
+            │  L11  Semiconductor Materials(wafers · chemicals) │  (deployment
+            │  L12  Critical Minerals & Raw Elements (bedrock)  │   surface)
             └──────────────────────────────────────────────────┘
 ```
 
-Each layer **runs on** the one below it. Physical constraints flow **upward** — a chokepoint at L09 Foundry or L12 Minerals starves every layer above. Demand signals flow **downward** — an application boom at L01 pulls compute at L05, which pulls silicon at L09–L12. The four rails (Power, Thermal, Security, Edge & Physical AI) cut across the stack rather than sitting at a single level.
+Each layer **runs on** the one below it. Physical constraints flow **upward** — a chokepoint at L09 Foundry or L12 Minerals starves every layer above. Demand signals flow **downward** — an application boom at L01 pulls compute at L05, which pulls silicon at L09–L12. Three cross-cutting rails wrap the stack — **Power** comes in (left), **Heat** comes out and **Security** wraps around (right) — while **Edge & Physical AI** is the deployment surface where the stack meets the physical world (plus the parallel-compute paradigms beside it).

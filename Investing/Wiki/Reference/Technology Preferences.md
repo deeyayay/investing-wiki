@@ -195,6 +195,69 @@ The investable asymmetry: pluggable pure-plays generate strong free cash flow *n
 
 ---
 
+### Race 4 — Memory & Storage for Connectomics & Artificial-Brain Workloads
+
+**Preference: A tiered "petabytes + speed" stack — HBF & QLC NAND for capacity-at-bandwidth, HAMR HDD for cold archive, photonic interconnect to move it — not a single "HBM" play**
+**Conviction: Watch**
+**Last validated: 2026-06-15**
+**Status: Active (Watch)**
+
+#### Application-Layer Driver
+
+"Building an artificial brain" (connectomics, whole-brain emulation, large-scale neuroscience) and "running" one (brain-scale inference, invasive BCI) are two different memory/storage problems:
+
+| Dimension | The map (connectome) | The running model (inference / BCI) |
+|-----------|----------------------|-------------------------------------|
+| Bound by | Capacity & cost-per-bit | Bandwidth & latency |
+| Tier | Cold / warm archive | Near-compute working set |
+| Data scale | ~1.4 PB per mm³ (Harvard/Google H01, *Science* 2024); whole human brain ≈ exabyte–zettabyte | Neuralink N1 ~1,024 electrodes ≈ ~200 Mbps raw — **6–9 orders of magnitude smaller** than the connectome |
+| Winning tech | High-capacity QLC NAND + HAMR HDD + tape/archival | HBM, **HBF**, CXL-pooled memory |
+
+The signal: petabyte-to-exabyte capacity *and* the bandwidth to feed it. That is a tiered hierarchy, not one chip. Today the demand is research/government/pharma (NIH BRAIN CONNECTS, IARPA MICrONS, Allen Institute) — real but long-dated and lumpy, not yet a volume commercial market.
+
+#### Why a Tiered Stack Wins (not HBM alone)
+
+- **Capacity-at-bandwidth bridge = HBF.** SanDisk's High-Bandwidth Flash (HBF) targets ~1.6 TB/s read (within ~2.2% of HBM) at **8–16× HBM capacity** — purpose-built for models/datasets too large for HBM. TAB formed Jul 2025; SK Hynix standardization MOU Aug 2025; samples H2 2026, products 2027–2028.
+- **Cold archive = HAMR HDD.** Seagate Mozaic 44TB shipping in volume (Mar 2026), 100TB on the roadmap; HDD still costs **4–22× less per TB** than QLC SSD in 2026, so it owns the exabyte-scale connectome archive tier for years.
+- **Movement = photonics.** Moving PB-scale datasets between storage and compute is the "interconnect wall"; CPO / silicon photonics / coherent DWDM (NVIDIA & Broadcom CPO 2025–2026) are the unavoidable tax.
+- **Brain-mimicking compute = neuromorphic.** A literal artificial brain is non-von-Neumann (in-memory / spiking). Public exposure is thin and speculative.
+
+#### Consensus vs. Reality Gap
+
+| What the Market Believes | What Is Actually Happening |
+|--------------------------|---------------------------|
+| "AI memory = HBM" | Capacity-bound brain-scale workloads need NAND/HBF + HDD archive far more than incremental HBM bandwidth |
+| "Flash will displace HDD for archive soon" | QLC is still 4–22× costlier per TB than HAMR HDD in 2026; cold-tier displacement slips past 2028 |
+| "Neuromorphic is the brain-chip play" | Only one public pure-play (BrainChip), micro-cap and pre-profit; mostly research (Intel/IBM) or private |
+
+#### Ticker Exposure Map
+
+| Ticker | Technology | Exposure Level | Weighting Implication | Notes |
+|--------|-----------|----------------|----------------------|-------|
+| SNDK | HBF + QLC enterprise NAND | **Primary** | Overweight vs. memory peers | HBF (1.6 TB/s, 8–16× HBM capacity; SK Hynix MOU Aug 2025; samples H2 2026); pure-play NAND post Feb-2025 WDC spin |
+| STX | HAMR nearline HDD (cold archive) | **Primary** | Overweight on the archive tier | Mozaic 44TB shipping Mar 2026, 100TB roadmap; HDD retains 4–22× $/TB advantage for cold/nearline |
+| MU | HBM + NAND + CXL | **Partial** | Market weight | Only US HBM maker; NAND still >50% of revenue; CXL memory modules |
+| ALAB | CXL memory fabric / retimers | **Partial** | Market weight | Memory pooling/expansion between HBM and SSD tiers |
+| COHR / LITE / CIEN | Photonic interconnect (data movement) | **Indirect** | No direct weighting change | CPO/EML (COHR; LITE ~50–60% EML share); coherent DWDM scale-across (CIEN) |
+| BRCHF | Neuromorphic / in-memory compute | **Speculative** | Starter / watch only | Sole public neuromorphic pure-play (Akida); micro-cap, pre-profit (FY2025 rev ~$1.9M, net loss ~$20M) |
+| LRCX | NAND / HARC capex equipment | **Indirect** | No direct weighting change | #1 HARC etch for NAND; capex upcycle pull-through |
+
+#### Bull Case
+- Connectome programs scale (NIH BRAIN CONNECTS, IARPA MICrONS), pulling exabyte-class archival demand into commercial cloud over time
+- HBF productizes 2027–2028, giving NAND an HBM-adjacent, capacity-led TAM it never had
+- QLC/PLC cost-per-bit keeps falling until it crosses into the warm-storage tier, displacing HDD there
+- Brain-scale and agentic inference both demand large persistent memory tiers below HBM — exactly HBF/NAND/CXL
+- Photonic interconnect becomes mandatory at 1.6T+/CPO, a structural tax that accrues to the optics basket
+
+#### Bear / Risk
+- Connectomics is research/government/pharma today — long-dated, lumpy, not a volume market; whole-brain emulation may never become a storage end-market
+- HBF is sampling-stage (H2 2026), spec not finalized; meaningful revenue is a 2027–2030 story
+- HDD keeps a commanding $/TB lead (QLC 4–22× costlier in 2026), so NAND archival displacement slips
+- Neuromorphic has been "near commercialization" for a decade; BrainChip is micro-cap and deeply pre-profit
+- A memory oversupply cycle compresses NAND ASPs before the agentic/brain-scale demand materializes
+
+---
+
 ---
 
 ## Sector Group: Crypto & Digital Assets

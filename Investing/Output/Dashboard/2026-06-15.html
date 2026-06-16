@@ -274,7 +274,7 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
     <input id="search-input" type="text" placeholder="Search tickers, sectors, tiers…" autocomplete="off" spellcheck="false">
     <div id="search-results" hidden></div>
   </div>
-  <span class="gen-date">Generated: 2026-06-16</span>
+  <span class="gen-date">Generated: 2026-06-15</span>
 </header>
 <div id="tab-nav">
   <button class="tab-btn active" data-tab="supply-chain" onclick="showTab('supply-chain')">Supply Chain</button>
@@ -289,7 +289,7 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 </div>
 <script>
 const DATA = {
-  generated: "2026-06-16",
+  generated: "2026-06-10",
   sectors: [
     {
       slug: "semiconductors",
@@ -299,8 +299,7 @@ const DATA = {
       tiers: [
         { tier: "Raw Materials & Specialty Chemicals", fn: "Produce the ultra-high-purity silicon, specialty gases, photoresists, CMP slurries, and process chemicals that every subsequent fab step consumes", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Process IP + Geographic monopoly", margin_profile: "Medium–High", companies: [
           { ticker: "4369.T", name: "Shin-Etsu Chemical", mkt_cap: "Large", notes: "Dominates two irreplaceable chip-making inputs at once — #1 in silicon wafers AND in EUV photoresist chemicals. Losing either supply would halt production at every major global chip factory." },
-          { ticker: "5201.T", name: "AGC Inc.", mkt_cap: "Large", notes: "Near-monopoly on the ultra-pure quartz glass used as EUV photomask substrates — a niche so narrow that almost no alternative supplier exists at commercial scale." },
-          { ticker: "LIN", name: "Linde plc", mkt_cap: "Large", notes: "World's largest industrial-gas major; its electronics arm is an oligopoly supplier of ultra-high-purity bulk gases and the rare specialty gases — neon, krypton, xenon — that feed excimer-laser lithography and every leading-edge fab step. Closes the L11 Specialty Gases box." }
+          { ticker: "5201.T", name: "AGC Inc.", mkt_cap: "Large", notes: "Near-monopoly on the ultra-pure quartz glass used as EUV photomask substrates — a niche so narrow that almost no alternative supplier exists at commercial scale." }
         ]},
         { tier: "Silicon Wafer Production", fn: "Slice, grind, etch, and polish silicon boules to produce the atomically flat, contamination-free substrates on which all CMOS devices are built", chokepoint: "Y", capital_intensity: "High", moat_type: "Scale + Process IP", margin_profile: "Medium", companies: [
           { ticker: "4043.T", name: "Sumco Corporation", mkt_cap: "Large", notes: "One of only two companies that can supply 300mm silicon wafers at foundry scale — the global market is essentially a duopoly and Sumco holds the #2 position in it." }
@@ -328,30 +327,9 @@ const DATA = {
           { ticker: "ALAB", name: "Astera Labs", mkt_cap: "Mid", notes: "Makes the signal-booster (retimer) chips that keep AI servers connected at full speed as rack counts scale — a bottleneck that only appeared when GPU clusters grew to thousands of cards, creating a niche with no entrenched incumbent." },
           { ticker: "CRDO", name: "Credo Technology", mkt_cap: "Small", notes: "Solves the physics of moving data at 224 billion bits per second between chips on a board — its active-electrical-cable (AEC) approach is more power-efficient than optical for short distances inside a server, and that advantage compounds with every GPU generation." }
         ]},
-        { tier: "HBM (High-Bandwidth Memory)", fn: "Stacks of DRAM die (8–16 high) bonded with through-silicon vias (TSV) and mounted on-package beside the GPU via a CoWoS interposer — trades capacity for extreme bandwidth (~1.2 TB/s per stack on HBM3e, scaling with HBM4). This is the memory that keeps an AI accelerator fed during training and inference; supply is pre-allocated and CoWoS-packaging-gated. A three-supplier oligopoly.", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Scale + Process IP", margin_profile: "High (cyclical)", companies: [
-          { ticker: "000660.KS", name: "SK Hynix", mkt_cap: "Large", notes: "⚠️ Korea-listed. The HBM market leader (~50%+ share) and lead qualifier of HBM3E/HBM4 into NVIDIA — the single most important HBM supplier in the AI buildout." },
-          { ticker: "MU", name: "Micron Technology", mkt_cap: "Large", notes: "The only US-based HBM maker — HBM3E shipping into NVIDIA, taking share as the #3 supplier. Tracked in the wiki (Semiconductors)." },
-          { ticker: "005930.KS", name: "Samsung Electronics", mkt_cap: "Large", notes: "⚠️ Korea-listed. #2 HBM supplier; HBM3E qualification ramp; integrated DRAM+foundry+packaging the others lack." }
-        ]},
-        { tier: "DRAM (System & Server Memory)", fn: "Conventional volatile working memory — DDR5 server/desktop DIMMs and GDDR7 graphics memory built on leading-edge 1α/1β/1γ nodes. Holds the data a CPU or GPU is actively computing on. A capital-cycle commodity differentiated on process node and bit-cost; the same wafers and fabs that feed HBM and LPDDR.", chokepoint: "Partial", capital_intensity: "Very High", moat_type: "Scale + Process IP", margin_profile: "Medium (cyclical)", companies: [
-          { ticker: "005930.KS", name: "Samsung Electronics", mkt_cap: "Large", notes: "⚠️ Korea-listed. The world's largest DRAM maker by volume; sets the DDR5/GDDR7 price cycle." },
-          { ticker: "000660.KS", name: "SK Hynix", mkt_cap: "Large", notes: "⚠️ Korea-listed. #2 DRAM; server DDR5 leadership tied to its HBM base-die expertise." },
-          { ticker: "MU", name: "Micron Technology", mkt_cap: "Large", notes: "#3 DRAM and the only US producer; leading-edge DDR5/LPDDR5X node. Tracked in the wiki." }
-        ]},
-        { tier: "NAND Flash (Storage)", fn: "Non-volatile 3D-stacked flash (200+ layers, TLC/QLC charge-trap) — the SSD and enterprise storage that holds model weights, datasets, and training checkpoints. Retains data without power; differentiated on layer count and cost-per-bit rather than bandwidth. The cheapest, densest tier of the memory hierarchy.", chokepoint: "Partial", capital_intensity: "Very High", moat_type: "Scale + Process IP", margin_profile: "Low–Medium (cyclical)", companies: [
-          { ticker: "SNDK", name: "SanDisk Corporation", mkt_cap: "Large", notes: "Pure-play NAND/flash after the Feb-2025 Western Digital spinoff — BiCS 3D NAND, enterprise QLC. The primary US-listed NAND vehicle. Tracked in the wiki (Semiconductors)." },
-          { ticker: "285A.T", name: "Kioxia Holdings", mkt_cap: "Large", notes: "⚠️ Japan-listed (TSE, re-IPO Dec 2024). Co-inventor of NAND flash; BiCS NAND JV partner with SanDisk — the two share fabs." },
-          { ticker: "005930.KS", name: "Samsung Electronics", mkt_cap: "Large", notes: "⚠️ Korea-listed. #1 NAND share; V-NAND vertical-integration leader." },
-          { ticker: "MU", name: "Micron Technology", mkt_cap: "Large", notes: "Leading-layer-count 3D NAND alongside its DRAM/HBM franchise. Tracked in the wiki." }
-        ]},
-        { tier: "LPDDR (Low-Power & Edge Memory)", fn: "Low-power DRAM (LPDDR5X, SOCAMM modules) optimized for power efficiency over raw bandwidth — the working memory for mobile, automotive, and edge-inference devices, and increasingly for low-power AI servers (e.g., NVIDIA Grace). Same DRAM fabs as the system-memory tier, different packaging and power/spec envelope.", chokepoint: "N", capital_intensity: "Very High", moat_type: "Scale + Process IP", margin_profile: "Medium (cyclical)", companies: [
-          { ticker: "MU", name: "Micron Technology", mkt_cap: "Large", notes: "LPDDR5X design-in for edge AI and the NVIDIA Grace SOCAMM module; the US LPDDR option. Tracked in the wiki." },
-          { ticker: "005930.KS", name: "Samsung Electronics", mkt_cap: "Large", notes: "⚠️ Korea-listed. Largest mobile LPDDR supplier; LPDDR5X/LPCAMM2 leadership." },
-          { ticker: "000660.KS", name: "SK Hynix", mkt_cap: "Large", notes: "⚠️ Korea-listed. LPDDR5X and low-power server module supplier." }
-        ]},
-        { tier: "HBF (High-Bandwidth Flash)", fn: "Emerging: NAND stacked HBM-style with TSVs to deliver HBM-class bandwidth (~1.6 TB/s) at 8–16× HBM capacity for a fraction of the cost — aimed at holding huge inference working sets and brain-scale datasets the GPU can't fit in HBM. SanDisk + SK Hynix standardization MOU (Aug 2025); samples expected H2 2026. Pre-volume, but the bridge between the bandwidth and capacity tiers.", chokepoint: "N", capital_intensity: "Very High", moat_type: "Process IP (early-stage)", margin_profile: "N/A (pre-volume)", companies: [
-          { ticker: "SNDK", name: "SanDisk Corporation", mkt_cap: "Large", notes: "Pioneer and namer of High-Bandwidth Flash — NAND stacked HBM-style; primary public pure-play for the capacity-bound inference thesis. Tracked in the wiki (Semiconductors)." },
-          { ticker: "000660.KS", name: "SK Hynix", mkt_cap: "Large", notes: "⚠️ Korea-listed. Signed the HBF standardization MOU with SanDisk (Aug 2025), pairing its HBM packaging know-how with NAND." }
+        { tier: "Memory (HBM · DRAM · NAND)", fn: "Design and fabricate the high-bandwidth and high-density memory — HBM stacks, DDR/LPDDR DRAM, and NAND flash — that feeds AI accelerators and stores model weights, datasets, and KV cache. The layer compute is useless without.", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Scale + Process IP", margin_profile: "High (cyclical)", companies: [
+          { ticker: "MU", name: "Micron Technology", mkt_cap: "Large", notes: "The only US-based maker of High Bandwidth Memory (HBM) — the specialized memory stacked directly on AI chips. Without HBM, a GPU can't move data fast enough to stay productive during training. One of three HBM suppliers worldwide alongside SK Hynix and Samsung." },
+          { ticker: "SNDK", name: "SanDisk Corporation", mkt_cap: "Large", notes: "Pure-play NAND/flash after the Feb-2025 Western Digital spinoff. Pioneer of High-Bandwidth Flash (HBF) — NAND stacked HBM-style for ~1.6 TB/s at 8-16x HBM capacity (SK Hynix standardization MOU Aug 2025; samples H2 2026). The primary NAND vehicle for the agentic-AI and brain-scale data wave." }
         ]},
         { tier: "Lithography Equipment", fn: "Project photomask circuit patterns onto photoresist-coated wafers at nanometer precision using UV or EUV light — the single most critical and concentrated manufacturing equipment tier", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Process IP + Geographic monopoly", margin_profile: "Very High", companies: [
           { ticker: "ASML", name: "ASML Holding", mkt_cap: "Large", notes: "The only company that builds the machines used to print the world's most advanced chips. Without ASML's EUV scanners, TSMC and Samsung cannot manufacture chips at 7nm or below — no other company can do this." }
@@ -372,17 +350,6 @@ const DATA = {
       ]
     },
     {
-      slug: "memory",
-      name: "Memory",
-      dimension: "D1",
-      description: "NAND flash and non-volatile memory for AI storage and edge deployment",
-      tiers: [
-        { tier: "NAND Flash Memory", fn: "Design and fabricate 3D NAND flash memory for enterprise SSDs, AI data storage, and edge devices using vertical charge-trap stacking at 200+ layers with CMOS bonding architecture", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Scale + Process IP", margin_profile: "High (cyclical)", companies: [
-          { ticker: "285A.T", name: "Kioxia Holdings Corporation", mkt_cap: "Large", notes: "World's #3 NAND flash manufacturer and inventor of NAND (Toshiba lineage, 1987). BiCS10 3D NAND at 332 layers leads on density and power efficiency. Only publicly traded large-scale pure-play NAND company; Flash Ventures JV with SanDisk shares capex across 9 Japan fabs." }
-        ]}
-      ]
-    },
-    {
       slug: "electronic-components",
       name: "Electronic Components",
       dimension: "D1",
@@ -390,16 +357,9 @@ const DATA = {
       tiers: [
         { tier: "Dielectric & Conductor Materials", fn: "Synthesize and refine the functional materials that passive components are built from", chokepoint: "Y", capital_intensity: "Medium", moat_type: "Process IP + Geographic monopoly", margin_profile: "Medium", companies: [] },
         { tier: "Substrate & Laminate Materials", fn: "Produce the insulating base layers and build-up films that PCBs and IC substrates are constructed from", chokepoint: "Y", capital_intensity: "Medium", moat_type: "Process IP + Qualification", margin_profile: "Medium–High", companies: [] },
-        { tier: "MLCC Manufacturing", fn: "Stack, fire, and terminate ceramic multilayer chip capacitors — the most ubiquitous passive component on any PCB", chokepoint: "Partial", capital_intensity: "High", moat_type: "Scale + Process IP", margin_profile: "Medium–High", companies: [
-          { ticker: "VSH", name: "Vishay Intertechnology", mkt_cap: "Mid", notes: "Broad-line passives + discretes maker; a quiet AI-server beneficiary as MLCC and passive content per board multiplies. One of the few US-listed full-line passive franchises." }
-        ] },
-        { tier: "Film & Electrolytic Capacitor Mfg", fn: "Produce high-voltage and high-capacitance capacitors for power electronics, filtering, and energy storage", chokepoint: "N", capital_intensity: "Medium", moat_type: "Scale + Process IP", margin_profile: "Medium", companies: [
-          { ticker: "VSH", name: "Vishay Intertechnology", mkt_cap: "Mid", notes: "Leading Western maker of solid + wet tantalum capacitors and film/electrolytic caps — its direct tantalum sourcing closes the L12 Tantalum (capacitors) bedrock box." }
-        ] },
+        { tier: "MLCC Manufacturing", fn: "Stack, fire, and terminate ceramic multilayer chip capacitors — the most ubiquitous passive component on any PCB", chokepoint: "Partial", capital_intensity: "High", moat_type: "Scale + Process IP", margin_profile: "Medium–High", companies: [] },
+        { tier: "Film & Electrolytic Capacitor Mfg", fn: "Produce high-voltage and high-capacitance capacitors for power electronics, filtering, and energy storage", chokepoint: "N", capital_intensity: "Medium", moat_type: "Scale + Process IP", margin_profile: "Medium", companies: [] },
         { tier: "Inductor & Transformer Mfg", fn: "Wind, press, or print inductive components for power conversion, filtering, and signal isolation", chokepoint: "N", capital_intensity: "Medium", moat_type: "Scale + Certification", margin_profile: "Medium", companies: [] },
-        { tier: "Power Management ICs & Gate Drivers", fn: "Design and supply the analog power-conversion silicon that regulates, sequences, and delivers voltage to every digital load — the binding constraint on AI compute-node power density", chokepoint: "Partial", capital_intensity: "Low–Medium", moat_type: "Process IP + Design-win lock-in", margin_profile: "High", companies: [
-          { ticker: "MPWR", name: "Monolithic Power Systems", mkt_cap: "Large", notes: "Fast-growing fabless PMIC designer; its vertical power modules sit directly beneath NVIDIA GPUs to deliver dense, high-efficiency core-rail power. A disproportionate AI-datacenter beneficiary and the anchor of this tier; closes the Power-rail Power Management ICs box." }
-        ] },
         { tier: "PCB Fabrication", fn: "Etch, drill, plate, and laminate copper circuit layers onto insulating substrates to create printed circuit boards", chokepoint: "N", capital_intensity: "Medium", moat_type: "Scale + Certification", margin_profile: "Low–Medium", companies: [] },
         { tier: "IC Substrate Manufacturing", fn: "Build the fine-pitch interposer layers that bridge IC die to PCB — the most technically demanding segment of the package supply chain", chokepoint: "Y", capital_intensity: "High", moat_type: "Process IP + Qualification", margin_profile: "High", companies: [] },
         { tier: "Connector & Socket Manufacturing", fn: "Form, plate, and assemble the mechanical and electrical interfaces that link boards, modules, cables, and racks", chokepoint: "N", capital_intensity: "Medium", moat_type: "Switching cost + Certification", margin_profile: "Medium–High", companies: [] },
@@ -445,8 +405,7 @@ const DATA = {
           { ticker: "LITE", name: "Lumentum Holdings", mkt_cap: "Large", notes: "Sole high-volume supplier of 200G EML chips for AI datacenters, with capacity pre-allocated to NVIDIA through 2027 — a structural sole-source position that gives it pricing power even Coherent's scale cannot displace." },
           { ticker: "AAOI", name: "Applied Optoelectronics", mkt_cap: "Small", notes: "High-upside, higher-risk alternative to Coherent and Lumentum — among the first to ship 800G transceivers to hyperscalers but with less proven scale; the thesis is it sustains margins as volume ramps to 1.6T." },
           { ticker: "LASR", name: "nLIGHT Inc.", mkt_cap: "Small", notes: "The only publicly traded company spanning from semiconductor laser chips all the way through to complete directed-energy weapons — serves defense and industrial markets rather than the datacenter transceiver race." },
-          { ticker: "MTSI", name: "MACOM Technology Solutions", mkt_cap: "Mid", notes: "Designs compound semiconductor chips (GaN, InP, GaAs, SiGe) for high-performance applications silicon cannot serve — RF front-ends for 5G base stations and photonic driver ICs inside AI datacenter transceivers. Positioned at the profitable intersection of defense radar and hyperscale optics." },
-          { ticker: "IPGP", name: "IPG Photonics", mkt_cap: "Mid", notes: "The world's dominant vertically-integrated fiber-laser maker — its high-power CW and pulsed lasers are the external light source for industrial materials processing and directed-energy weapons, with an emerging role as laser sources for advanced optical interconnect. Closes the L07 External Light Sources / Optical Engines boxes." }
+          { ticker: "MTSI", name: "MACOM Technology Solutions", mkt_cap: "Mid", notes: "Designs compound semiconductor chips (GaN, InP, GaAs, SiGe) for high-performance applications silicon cannot serve — RF front-ends for 5G base stations and photonic driver ICs inside AI datacenter transceivers. Positioned at the profitable intersection of defense radar and hyperscale optics." }
         ]},
         { tier: "Silicon Photonics Platform", fn: "Integrate optical functions — waveguides, ring modulators, Mach-Zehnder modulators, Ge photodetectors — onto silicon wafers using CMOS-compatible processes to enable chiplet-level optical I/O", chokepoint: "Partial", capital_intensity: "High", moat_type: "Ecosystem", margin_profile: "High", companies: [
           { ticker: "POET", name: "POET Technologies", mkt_cap: "Small", notes: "Developing a chip platform that merges silicon photonics with compound semiconductor lasers on a single substrate — if successful, replaces expensive manual laser assembly with cheaper wafer-scale production. Pre-revenue." },
@@ -648,17 +607,7 @@ const DATA = {
         { tier: "Robot OS & Middleware", fn: "Provides the software framework for sensor-actuator integration, inter-node communication, and system orchestration", chokepoint: "N", capital_intensity: "Low", moat_type: "Ecosystem / Developer lock-in", margin_profile: "Low–Medium", companies: [] },
         { tier: "AI Model Training & Deployment", fn: "Trains perception, planning, and language-conditioned task models; deploys quantized versions to edge", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Data / Cloud training infra", margin_profile: "High", companies: [] },
         { tier: "System Integration & OEM Assembly", fn: "Integrates subsystems into a deployable robot or edge device and validates end-to-end system behavior", chokepoint: "N", capital_intensity: "High", moat_type: "Systems engineering / Application knowledge", margin_profile: "Low–Medium", companies: [] },
-        { tier: "Fleet Management & Operations Platform", fn: "Monitors and manages deployed robot fleets across sites in real time", chokepoint: "N", capital_intensity: "Low", moat_type: "Data network effects / Switching cost", margin_profile: "High", companies: [] },
-        { tier: "Autonomous Vehicles & ADAS", fn: "Productizes the full self-driving / driver-assist stack for road vehicles — perception, HD mapping, planning, and safety policy delivered to automakers", chokepoint: "Partial", capital_intensity: "Medium–High", moat_type: "Process IP + Data network effects + ASIL-D qualification", margin_profile: "Medium–High", companies: [
-          { ticker: "MBLY", name: "Mobileye Global", mkt_cap: "Large", notes: "Intel-controlled AV/ADAS pure-play and the only large-cap autonomous-driving company shipping at volume today — its EyeQ vision SoC, REM crowdsourced HD maps, and RSS safety model anchor L2+ SuperVision and eyes-off Chauffeur programs across global automakers." },
-          { ticker: "OUST", name: "Ouster", mkt_cap: "Small", notes: "Digital solid-state LIDAR supplier feeding the perception layer of autonomous vehicles, robotaxis, and ADAS reference designs." },
-          { ticker: "LAZR", name: "Luminar Technologies", mkt_cap: "Small", notes: "Long-range automotive LIDAR specialist with OEM production design-wins — a higher-beta pure-play on the sensor content of L3+ passenger vehicles." }
-        ]},
-        { tier: "UAV & Drone Systems", fn: "Designs and fields complete unmanned aircraft and loitering-munition systems — integrating airframe, autonomy, datalink, and payload", chokepoint: "Partial", capital_intensity: "Medium–High", moat_type: "Systems engineering + DoD program-of-record lock-in + autonomy software", margin_profile: "Medium", companies: [
-          { ticker: "AVAV", name: "AeroVironment", mkt_cap: "Mid", notes: "The US military's primary small-UAS and loitering-munition (Switchblade) supplier; post-BlueHalo a multi-domain autonomy + counter-UAS prime. The go-to public vehicle for defense-drone exposure." },
-          { ticker: "JOBY", name: "Joby Aviation", mkt_cap: "Mid", notes: "eVTOL air-taxi developer advancing toward FAA type certification — a long-dated bet on autonomous electric urban air mobility." },
-          { ticker: "ACHR", name: "Archer Aviation", mkt_cap: "Mid", notes: "eVTOL developer (Midnight) targeting urban air mobility and defense; peer to Joby." }
-        ]}
+        { tier: "Fleet Management & Operations Platform", fn: "Monitors and manages deployed robot fleets across sites in real time", chokepoint: "N", capital_intensity: "Low", moat_type: "Data network effects / Switching cost", margin_profile: "High", companies: [] }
       ]
     },
     {
@@ -864,7 +813,7 @@ function showLayer(n){
 // Each layer's sub-boxes map to an existing (sector slug, tier) so the drill-down,
 // chokepoint flag, and tracked-company lists are reused from DATA.sectors.
 const STACK={
-  "generated": "2026-06-16",
+  "generated": "2026-06-15",
   "layers": [
     {"num":"01","name":"Application","hue":235,"tag":"AI-native apps · agents · vertical SaaS","boxes":[
       {"label":"AI Assistants & Chatbots","gap":true,"chips":["META","GOOGL","MSFT"]},
@@ -880,7 +829,7 @@ const STACK={
     ]},
     {"num":"03","name":"Software Infrastructure","hue":268,"tag":"frameworks · kernels · orchestration","boxes":[
       {"label":"ML Frameworks (training)","sector":"AI Model Infrastructure","slug":"ai-model-infrastructure","tier":"Distributed Training Orchestration","chips":["CRWV","AMD"]},
-      {"label":"GPU Programming Layer (low-level kernels)","sector":"AI Model Infrastructure","slug":"ai-model-infrastructure","tier":"Distributed Training Orchestration","chips":["NVDA","AMD"]},
+      {"label":"GPU Programming Layer (low-level kernels)","gap":true,"chips":["NVDA"]},
       {"label":"Distributed Training Systems","sector":"AI Model Infrastructure","slug":"ai-model-infrastructure","tier":"Distributed Training Orchestration","chips":[]},
       {"label":"Container Orchestration (Kubernetes)","sector":"AI Model Infrastructure","slug":"ai-model-infrastructure","tier":"MLOps & Model Lifecycle Management","chips":["DDOG","SNOW","PLTR","MDB"]},
       {"label":"Inference Optimization Stack","sector":"AI Model Infrastructure","slug":"ai-model-infrastructure","tier":"Model Optimization & Compilation","chips":[]}
@@ -888,7 +837,7 @@ const STACK={
     {"num":"04","name":"Cloud Infrastructure","hue":288,"tag":"hyperscalers · neoclouds · colocation","boxes":[
       {"label":"Hyperscaler Clouds","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Hyperscaler & Colocation Operation","chips":["MSFT","AMZN","GOOGL","ORCL"]},
       {"label":"NeoClouds (GPU-specialized)","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Hyperscaler & Colocation Operation","chips":["CRWV","IREN"]},
-      {"label":"Edge / Inference Colocation","gap":true,"chips":["EQIX","VRT"]},
+      {"label":"Edge / Inference Colocation","gap":true,"chips":[]},
       {"label":"Data Center Colocation","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Data Center Facility & MEP","chips":[]}
     ]},
     {"num":"05","name":"Compute Hardware","hue":55,"tag":"GPUs · ASICs · CPUs · NICs","boxes":[
@@ -899,40 +848,40 @@ const STACK={
       {"label":"Server CPUs (orchestration, agentic workloads)","sector":"Semiconductors","slug":"semiconductors","tier":"Chip Design (Fabless & IDM)","chips":["ARM","INTC"]},
       {"label":"Networking ASICs (switch silicon)","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"High-Speed Networking","chips":["ANET","AVGO","MRVL"]}
     ]},
-    {"num":"06","name":"Memory","hue":92,"tag":"HBM · HBF · DRAM · NAND · LPDDR","boxes":[
-      {"label":"HBM (current AI server standard)","sector":"Semiconductors","slug":"semiconductors","tier":"HBM (High-Bandwidth Memory)","chips":["MU","000660.KS","005930.KS"]},
-      {"label":"HBF (high-bandwidth flash)","sector":"Semiconductors","slug":"semiconductors","tier":"HBF (High-Bandwidth Flash)","chips":["SNDK","000660.KS"]},
-      {"label":"DRAM (system memory)","sector":"Semiconductors","slug":"semiconductors","tier":"DRAM (System & Server Memory)","chips":["MU","005930.KS","000660.KS"]},
-      {"label":"NAND Flash (storage)","sector":"Memory","slug":"memory","tier":"NAND Flash (Storage)","chips":["SNDK","285A.T","005930.KS","MU"]},
-      {"label":"LPDDR (mobile / edge inference)","sector":"Semiconductors","slug":"semiconductors","tier":"LPDDR (Low-Power & Edge Memory)","chips":["MU","005930.KS"]}
+    {"num":"06","name":"Memory","hue":92,"tag":"HBM · DRAM · NAND · LPDDR","boxes":[
+      {"label":"HBM (current AI server standard)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU"]},
+      {"label":"HBF (high-bandwidth flash)","gap":true,"chips":["SNDK"]},
+      {"label":"DRAM (system memory)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU"]},
+      {"label":"NAND Flash (storage)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU","SNDK"]},
+      {"label":"LPDDR (mobile / edge inference)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU"]}
     ]},
     {"num":"07","name":"Interconnect","hue":42,"tag":"scale-up · scale-out · scale-across","boxes":[
       {"label":"Co-Packaged Optics (CPO)","group":"Scale-Up · within the rack, chip to chip","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Transceiver & Module Integration","chips":["COHR","LITE"]},
       {"label":"NVLink-style fabrics","group":"Scale-Up · within the rack, chip to chip","sector":"Semiconductors","slug":"semiconductors","tier":"Interconnect & SerDes Silicon","chips":["NVDA","ALAB"]},
-      {"label":"On-package optical engines","group":"Scale-Up · within the rack, chip to chip","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Silicon Photonics Platform","chips":["POET","LWLG"]},
+      {"label":"On-package optical engines","group":"Scale-Up · within the rack, chip to chip","gap":true,"chips":["POET","LWLG"]},
       {"label":"SerDes · Retimers","group":"Scale-Up · within the rack, chip to chip","sector":"Semiconductors","slug":"semiconductors","tier":"Interconnect & SerDes Silicon","chips":["CRDO","ALAB"]},
       {"label":"Pluggable Optical Transceivers","group":"Scale-Out · between racks, within data center","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Transceiver & Module Integration","chips":["COHR","LITE","FN","AAOI"]},
       {"label":"Linear Pluggable Optics (LPO)","group":"Scale-Out · between racks, within data center","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Transceiver & Module Integration","chips":["AAOI"]},
       {"label":"High-speed Ethernet / InfiniBand","group":"Scale-Out · between racks, within data center","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"High-Speed Networking","chips":["ANET","AVGO"]},
       {"label":"Coherent Optical Transport","group":"Scale-Across · between data centers","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Coherent Line Systems & ROADM","chips":["CIEN"]},
       {"label":"Long-haul DWDM","group":"Scale-Across · between data centers","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Coherent Line Systems & ROADM","chips":["CIEN","GLW"]},
-      {"label":"External Light Sources (CW lasers)","group":"Components · used across all three scales","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Photonic Device Fabrication","chips":["IPGP","LITE","LASR"]},
-      {"label":"Optical Engines","group":"Components · used across all three scales","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Silicon Photonics Platform","chips":["POET","IPGP"]},
-      {"label":"Fiber Array Units (FAU)","group":"Components · used across all three scales","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Optical Fiber & Preform Manufacturing","chips":["FOCI"]},
-      {"label":"Optical Connectors","group":"Components · used across all three scales","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Passive Optical Components","chips":["GLW","VIAV"]},
-      {"label":"Fiber Cables","group":"Components · used across all three scales","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Optical Fiber & Preform Manufacturing","chips":["GLW"]}
+      {"label":"External Light Sources (CW lasers)","group":"Components · used across all three scales","gap":true,"chips":["LWLG","LASR"]},
+      {"label":"Optical Engines","group":"Components · used across all three scales","gap":true,"chips":["POET"]},
+      {"label":"Fiber Array Units (FAU)","group":"Components · used across all three scales","gap":true,"chips":["FOCI"]},
+      {"label":"Optical Connectors","group":"Components · used across all three scales","gap":true,"chips":[]},
+      {"label":"Fiber Cables","group":"Components · used across all three scales","gap":true,"chips":["GLW"]}
     ]},
     {"num":"08","name":"Advanced Packaging","hue":150,"tag":"CoWoS · stacking · substrates","boxes":[
       {"label":"Wafer-Level Packaging (CoWoS, SoIC)","sector":"Semiconductors","slug":"semiconductors","tier":"Advanced Packaging (CoWoS / SoIC)","chips":["TSM","AMKR"]},
       {"label":"HBM Stacking & Integration","sector":"Semiconductors","slug":"semiconductors","tier":"Advanced Packaging (CoWoS / SoIC)","chips":["MU","TSM"]},
       {"label":"FC-BGA Substrates","sector":"Electronic Components","slug":"electronic-components","tier":"IC Substrate Manufacturing","chips":[],"choke":true},
-      {"label":"Glass Core Substrates (emerging)","sector":"Electronic Components","slug":"electronic-components","tier":"Substrate & Laminate Materials","chips":["GLW","INTC"]},
+      {"label":"Glass Core Substrates (emerging)","gap":true,"chips":["INTC"]},
       {"label":"Thermal Interface Materials (TIM)","gap":true,"chips":[]}
     ]},
     {"num":"09","name":"Semiconductor Foundry","hue":162,"tag":"leading-edge · specialty · OSAT","boxes":[
       {"label":"Leading-Edge Logic Foundry (3nm, 2nm)","sector":"Semiconductors","slug":"semiconductors","tier":"Wafer Fabrication (Foundry / IDM)","chips":["TSM","INTC"]},
       {"label":"Specialty / Mature Logic Foundry (analog, mixed-signal)","sector":"Semiconductors","slug":"semiconductors","tier":"Wafer Fabrication (Foundry / IDM)","chips":["GFS"]},
-      {"label":"Silicon Photonics Foundry","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Silicon Photonics Platform","chips":["GFS","POET","INTC"]},
+      {"label":"Silicon Photonics Foundry","gap":true,"chips":["GFS","POET"]},
       {"label":"Compound Semiconductor Foundry (GaN, SiC, InP)","sector":"Semiconductors","slug":"semiconductors","tier":"Compound Semiconductor & SiC Substrate","chips":["STM","WOLF"]},
       {"label":"OSAT (outsourced assembly and test)","sector":"Semiconductors","slug":"semiconductors","tier":"OSAT — Assembly & Test","chips":["ASX","AMKR"]}
     ]},
@@ -944,7 +893,7 @@ const STACK={
       {"label":"Etch (plasma, wet)","sector":"Semiconductors","slug":"semiconductors","tier":"Deposition & Etch Equipment","chips":["LRCX","AMAT"]},
       {"label":"Metrology & Inspection","sector":"Semiconductors","slug":"semiconductors","tier":"Inspection & Metrology","chips":["KLAC","ONTO","FORM"]},
       {"label":"Burn-in & Reliability Testing","sector":"Semiconductors","slug":"semiconductors","tier":"Test & Burn-In","chips":["AEHR","COHU","6857.T"]},
-      {"label":"Compound Semi Growth (MOCVD for InP/GaAs)","gap":true,"chips":["AMAT","AIXA.DE"]}
+      {"label":"Compound Semi Growth (MOCVD for InP/GaAs)","gap":true,"chips":["AIXA.DE"]}
     ]},
     {"num":"11","name":"Semiconductor Materials","hue":32,"tag":"wafers · substrates · chemicals","boxes":[
       {"label":"Silicon Wafers (300mm)","sector":"Semiconductors","slug":"semiconductors","tier":"Silicon Wafer Production","chips":["4043.T","4369.T"]},
@@ -952,18 +901,18 @@ const STACK={
       {"label":"InP Substrates (for lasers)","sector":"Semiconductors","slug":"semiconductors","tier":"Compound Semiconductor & SiC Substrate","chips":["AXTI"]},
       {"label":"GaAs Substrates (RF, optoelectronics)","sector":"Semiconductors","slug":"semiconductors","tier":"Compound Semiconductor & SiC Substrate","chips":["AXTI"]},
       {"label":"SiC Wafers (power)","sector":"Semiconductors","slug":"semiconductors","tier":"Compound Semiconductor & SiC Substrate","chips":["WOLF","STM"]},
-      {"label":"Specialty Gases (neon, krypton, xenon for excimer lasers)","sector":"Semiconductors","slug":"semiconductors","tier":"Raw Materials & Specialty Chemicals","chips":["LIN","APD"]},
-      {"label":"Anti-Stick Coatings (PFAS-free for NIL)","gap":true,"chips":["ENTG"]},
+      {"label":"Specialty Gases (neon, krypton, xenon for excimer lasers)","gap":true,"chips":[]},
+      {"label":"Anti-Stick Coatings (PFAS-free for NIL)","gap":true,"chips":[]},
       {"label":"Photoresist (lithography chemicals)","sector":"Semiconductors","slug":"semiconductors","tier":"Raw Materials & Specialty Chemicals","chips":["ENTG","4369.T","5201.T"]}
     ]},
     {"num":"12","name":"Critical Minerals & Raw Elements","hue":350,"tag":"the bedrock everything depends on","boxes":[
       {"label":"Silicon (base material for all chips)","sector":"Materials & Mining","slug":"metals-mining","tier":"Silicon & SiC Precursor Production","chips":["WOLF"]},
       {"label":"Copper (interconnect, power delivery)","sector":"Materials & Mining","slug":"metals-mining","tier":"Bulk Mining & Ore Extraction","chips":["FCX","VALE","RIO"]},
-      {"label":"Gallium (GaN power semis, GaAs RF, InP photonics)","sector":"Photonics & Optical","slug":"photonics-optical","tier":"III-V Substrate & Epitaxial Wafer Growth","chips":["AXTI","WOLF"]},
-      {"label":"Indium (InP lasers, transparent conductors)","sector":"Photonics & Optical","slug":"photonics-optical","tier":"III-V Substrate & Epitaxial Wafer Growth","chips":["AXTI"]},
-      {"label":"Germanium (optical fiber, compound semis)","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Optical Fiber & Preform Manufacturing","chips":["GLW"]},
-      {"label":"Hafnium (high-k dielectric in leading-edge logic)","gap":true,"chips":["INTC","ATI"]},
-      {"label":"Tantalum (capacitors)","sector":"Electronic Components","slug":"electronic-components","tier":"Film & Electrolytic Capacitor Mfg","chips":["VSH"]},
+      {"label":"Gallium (GaN power semis, GaAs RF, InP photonics)","gap":true,"chips":[]},
+      {"label":"Indium (InP lasers, transparent conductors)","gap":true,"chips":[]},
+      {"label":"Germanium (optical fiber, compound semis)","gap":true,"chips":[]},
+      {"label":"Hafnium (high-k dielectric in leading-edge logic)","gap":true,"chips":[]},
+      {"label":"Tantalum (capacitors)","gap":true,"chips":[]},
       {"label":"Cobalt (energy storage)","sector":"Materials & Mining","slug":"metals-mining","tier":"Battery Material Precursor Production","chips":["ELMT"]},
       {"label":"Lithium (energy storage)","sector":"Materials & Mining","slug":"metals-mining","tier":"Battery Material Precursor Production","chips":["ALB"]},
       {"label":"Rare Earths (Neodymium, Dysprosium — motors, magnets)","sector":"Materials & Mining","slug":"metals-mining","tier":"Rare Earth Separation & Critical Mineral Refining","chips":["MP","NB"]}
@@ -1002,8 +951,8 @@ const STACK={
       {"label":"Power Semiconductors","boxes":[
         {"label":"GaN (high-frequency switching)","sector":"Semiconductors","slug":"semiconductors","tier":"Compound Semiconductor & SiC Substrate","chips":["NVTS","IFX"]},
         {"label":"SiC (high-voltage)","sector":"Semiconductors","slug":"semiconductors","tier":"Compound Semiconductor & SiC Substrate","chips":["WOLF","STM"]},
-        {"label":"Power Management ICs","sector":"Electronic Components","slug":"electronic-components","tier":"Power Management ICs & Gate Drivers","chips":["MPWR"]},
-        {"label":"MLCC and Passive Components","sector":"Electronic Components","slug":"electronic-components","tier":"MLCC Manufacturing","chips":["VSH"]}
+        {"label":"Power Management ICs","gap":true,"chips":["MPWR"]},
+        {"label":"MLCC and Passive Components","gap":true,"chips":[]}
       ]}
     ]},
     {"id":"thermal","side":"right","flow":"out","title":"Thermal Management","cap":"Heat comes out — cools compute & memory across L4–L9.","groups":[
@@ -1021,18 +970,18 @@ const STACK={
         {"label":"AI Model Security (alignment, jailbreak defense)","sector":"Cybersecurity","slug":"cybersecurity","tier":"AI-Native Security","chips":[]},
         {"label":"Cybersecurity for AI Infrastructure","sector":"Cybersecurity","slug":"cybersecurity","tier":"Cloud Security Posture (CSPM/CNAPP)","chips":["PANW","CRWD","FTNT","SAIL","RBRK"]},
         {"label":"Post-Quantum Cryptography","gap":true,"chips":[]},
-        {"label":"Optical Network Encryption","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Coherent Line Systems & ROADM","chips":["CIEN","VIAV"]},
+        {"label":"Optical Network Encryption","gap":true,"chips":["CIEN"]},
         {"label":"Hardware Root of Trust","sector":"Cybersecurity","slug":"cybersecurity","tier":"Hardware Security Root","chips":[]}
       ]}
     ]},
     {"id":"edge","side":"right","kind":"surface","title":"Edge & Physical AI","cap":"Deployment paradigm — where the stack meets the physical world.","groups":[
       {"label":"Edge & Physical AI","boxes":[
-        {"label":"Autonomous Vehicles","sector":"Robotics & Edge AI","slug":"robotics-edge-ai","tier":"Autonomous Vehicles & ADAS","chips":["MBLY","OUST","LAZR"]},
+        {"label":"Autonomous Vehicles","gap":true,"chips":["OUST"]},
         {"label":"Humanoid Robotics","sector":"Robotics & Edge AI","slug":"robotics-edge-ai","tier":"System Integration & OEM Assembly","chips":[]},
-        {"label":"Drones and UAVs","sector":"Robotics & Edge AI","slug":"robotics-edge-ai","tier":"UAV & Drone Systems","chips":["AVAV","JOBY","ACHR"]},
+        {"label":"Drones and UAVs","gap":true,"chips":[]},
         {"label":"Driver / Behavior Monitoring Systems","sector":"Robotics & Edge AI","slug":"robotics-edge-ai","tier":"Perception Layer","chips":["AMBA"]},
         {"label":"Edge Inference Chips","sector":"Robotics & Edge AI","slug":"robotics-edge-ai","tier":"Edge Compute Module","chips":["AMBA"]},
-        {"label":"AR / VR Devices","gap":true,"chips":["KOPN","META"]}
+        {"label":"AR / VR Devices","gap":true,"chips":[]}
       ]},
       {"label":"Parallel Compute Paradigms","boxes":[
         {"label":"Quantum Computing","gap":true,"chips":["IONQ","RGTI","QBTS"]},
