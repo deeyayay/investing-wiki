@@ -263,6 +263,32 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 .rail-box-label{font-weight:600;font-size:10.5px;line-height:1.3;margin-bottom:4px;display:flex;align-items:center;gap:4px;flex-wrap:wrap}
 .rail-box.gap{background:repeating-linear-gradient(135deg,oklch(96% .004 250 / .55),oklch(96% .004 250 / .55) 6px,oklch(92% .008 250 / .45) 6px,oklch(92% .008 250 / .45) 12px);border-style:dashed;cursor:default}
 .rail-box.gap:hover{transform:none;box-shadow:none}
+/* ── Layer overview (L1 sector page) ──────────────────────────────────── */
+.layer-overview{padding:12px 0 4px;border-bottom:1px solid rgba(0,0,0,.06);margin-bottom:14px}
+.layer-overview-desc{font-size:14px;line-height:1.65;color:#374151;margin:0 0 12px}
+.layer-tam-row{display:flex;gap:10px}
+.layer-tam-card{flex:1;background:linear-gradient(135deg,#f0fdf4,#dcfce7);border:1px solid #86efac;border-radius:10px;padding:12px 14px}
+.tam-label{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#15803d;margin-bottom:4px}
+.tam-value{font-size:16px;font-weight:700;color:#14532d;margin-bottom:4px;font-variant-numeric:tabular-nums}
+.tam-note{font-size:11px;color:#166534;line-height:1.45}
+.layer-tiers-hdr{font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#9ca3af;margin:16px 0 8px}
+/* ── Tier detail (L2) sections ─────────────────────────────────────────── */
+.tier-section-hdr{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#6b7280;margin:16px 0 8px;padding-bottom:4px;border-bottom:1px solid #e5e7eb}
+/* ── Investment grid (replaces invest-rows) ────────────────────────────── */
+.invest-section{margin-bottom:16px}
+.invest-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.invest-cell{background:#f9fafb;border:1px solid #e5e7eb;border-radius:8px;padding:10px 12px}
+.invest-cell-label{font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#9ca3af;margin-bottom:4px}
+.invest-cell-val{font-size:13px;font-weight:600;color:#111827;line-height:1.35}
+.invest-choke-yes{color:#b91c1c}
+.invest-choke-partial{color:#b45309}
+.invest-choke-no{color:#15803d}
+/* ── Company section header ─────────────────────────────────────────────── */
+.co-section-hdr{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px}
+.co-section-title{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#6b7280}
+.co-section-count{font-size:11px;color:#9ca3af;font-weight:500}
+.co-empty{background:#f9fafb;border:1px dashed #d1d5db;border-radius:8px;padding:16px;color:#6b7280;font-size:13px;text-align:center}
+.co-empty code{background:#e5e7eb;padding:1px 5px;border-radius:3px;font-size:12px}
 </style>
 </head>
 <body>
@@ -1179,19 +1205,45 @@ function _layerBoxCard(b,i){
     +(count?'<div class="layer-box-count">'+count+' tracked</div>':'')
     +'</div>';
 }
+const LAYER_META={
+  "01":{description:"The user-facing products built on the AI stack — AI assistants, autonomous agents, enterprise SaaS, and vertical industry applications. This is where AI models are consumed, monetized, and turned into measurable business outcomes. The application layer is the fastest-growing and most diverse, spanning consumer, enterprise, and government use cases.",tam:"$500B (2026E) → $1.5T (2030E)",tam_note:"Broadest TAM: any software product embedding AI inference counts as an Application layer play"},
+  "02":{description:"Foundation models, fine-tuned vertical variants, inference-serving APIs, and orchestration frameworks — the intelligence layer that turns raw compute into reasoning capability. Revenue accrues to model labs (training + licensing), API providers, and inference infrastructure operators.",tam:"$80B (2026E) → $300B (2030E)",tam_note:"Model API revenue is the fastest-growing single line item in cloud; inference spend will surpass training spend by 2027"},
+  "03":{description:"ML frameworks (PyTorch, JAX), GPU programming layers (CUDA, ROCm), distributed training orchestrators, container platforms, and inference optimization stacks — the software that translates hardware capability into AI throughput at scale.",tam:"$30B (2026E) → $120B (2030E)",tam_note:"Software infrastructure is a GDP multiplier on compute: every $1 of GPU capex drives $3–5 of software stack spend over 5 years"},
+  "04":{description:"Hyperscalers (AWS, Azure, GCP), AI-specialized neoclouds (CoreWeave), and colocation providers that house and operate GPU clusters. The delivery mechanism for AI compute at scale — responsible for 85%+ of AI training runs in 2026. Combined hyperscaler CapEx guidance for 2026 alone exceeds $500B.",tam:"$900B (2026E) → $2.5T (2030E)",tam_note:"Hyperscaler CapEx is the primary leading indicator; $500B+ committed in 2026 signals sustained infrastructure buildout through 2030"},
+  "05":{description:"Training and inference GPUs, custom AI ASICs, server CPUs, and networking ASICs — the silicon executing AI workloads. NVIDIA controls ~80% of AI training compute; custom silicon from Google (TPU), Amazon (Trainium), and Meta (MTIA) is the fast-growing alternative. The highest-revenue and highest-multiple semiconductor tier in 2026.",tam:"$250B (2026E) → $600B (2030E)",tam_note:"AI accelerator TAM (training + inference ASICs); fastest-growing single hardware category — on track to surpass the entire non-AI semiconductor market by 2030"},
+  "06":{description:"HBM (the bandwidth-dense DRAM stack bonded beside each GPU), conventional DRAM, NAND flash (model weight storage), LPDDR (edge/mobile), and the emerging HBF (high-bandwidth flash). Memory is the most persistent bottleneck for AI compute — the GPU is always starved for bandwidth.",tam:"$180B (2026E) → $380B (2030E)",tam_note:"HBM alone grows from ~$30B to $100B+ by 2030; AI drives upgrade cycles across the entire DRAM and NAND industry"},
+  "07":{description:"Scale-up (NVLink, InfiniBand), scale-out (400G/800G Ethernet), and scale-across (optical transceivers, co-packaged optics) networks linking GPUs within a node, nodes within a cluster, and clusters across campuses. As GPU farms scale to 100,000+ cards, interconnect bandwidth has become the next binding constraint after compute.",tam:"$80B (2026E) → $250B (2030E)",tam_note:"Optical transceiver TAM grows 40%+ CAGR to 2030; co-packaged optics is a step-change in bandwidth density that will reshape data center architecture"},
+  "08":{description:"CoWoS, SoIC, HBM stacking, glass-core substrates, and advanced OSAT — packaging technologies integrating multiple die in one package to bypass transistor-scaling limits. Every NVIDIA H/B/GB GPU requires CoWoS; every HBM stack requires TSV packaging. Advanced packaging capacity was the binding AI supply chain constraint in 2023–2024.",tam:"$55B (2026E) → $130B (2030E)",tam_note:"CoWoS was the primary supply constraint for AI GPUs in 2023–2024; TSMC has since expanded significantly but demand continues to outpace supply"},
+  "09":{description:"Wafer fabrication facilities executing 500–1,500 photolithography, deposition, and etch steps to turn blank silicon into working chips. TSMC alone manufactures the compute inside every leading-edge AI chip. Foundry is the most capital-intensive and geographically concentrated tier in the entire AI buildout stack.",tam:"$115B (2026E) → $200B (2030E)",tam_note:"TSMC's AI-related revenue growing 50%+ CAGR; leading-edge foundry TAM doubles by 2030 driven by AI demand + advanced node migration"},
+  "10":{description:"Lithography (EUV/DUV), deposition, etch, metrology, and test equipment — the machines that build the machines that build chips. Equipment spend is the leading indicator of foundry capacity growth, typically 18–24 months ahead of chip production. ASML's EUV scanners are the single most concentrated chokepoint in the global AI supply chain.",tam:"$120B (2026E) → $200B (2030E)",tam_note:"Equipment TAM grows with foundry capex; TSMC + Intel + Samsung spending $200B+ combined on new fabs requiring equipment procurement through 2028"},
+  "11":{description:"Silicon wafers, SOI and compound semiconductor substrates (InP, GaAs, SiC), specialty gases (neon, krypton for excimer lasers), photoresists, and CMP slurries — the physical inputs fabrication consumes step by step. Materials tend to be highly concentrated in Japan and Korea with few alternative suppliers.",tam:"$70B (2026E) → $110B (2030E)",tam_note:"Materials spend grows with wafer starts; compound semiconductor materials see step-change adoption with SiC/GaN for AI data center power delivery"},
+  "12":{description:"Silicon, copper, gallium, indium, germanium, hafnium, tantalum, cobalt, lithium, and rare earths — the elemental inputs at the bedrock of the AI stack. Mining, refining, and primary production are heavily concentrated, with China controlling 85%+ of rare earth processing — a structural supply chain vulnerability.",tam:"$600B (2026E) → $1.2T (2030E)",tam_note:"AI-specific critical mineral demand is $50–80B today and growing; China's Ga/Ge/Sb export controls in 2023–2025 demonstrated the fragility of this tier"},
+  "power":{description:"Nuclear, natural gas, and renewable generation; grid-scale transformers and substations; data center UPS, 800V DC bus architecture, and rack-level power delivery; GaN/SiC power semiconductors. AI data centers require 20–100 MW per campus, and global AI compute demand is projected to require 200+ GW of new generation capacity by 2030.",tam:"$400B (2026E) → $1.2T (2030E)",tam_note:"AI is the largest new electricity demand driver in a generation; data center power capacity investment alone exceeds $100B annually"},
+  "security":{description:"Cybersecurity platforms protecting the AI application, model, cloud, and infrastructure layers — network security (NGFW), endpoint (EDR/XDR), cloud security (CNAPP), and AI-specific threat surface coverage. The security market grows with the attack surface, and AI both creates new attack vectors and enables better defenses.",tam:"$220B (2026E) → $500B (2030E)",tam_note:"AI-specific security (model poisoning, adversarial attacks, AI-generated threats) grows from ~$5B to $50B+ by 2030 — a new sub-market on top of the base"},
+  "edge":{description:"Autonomous vehicles, drones and UAVs, industrial robots, AR/VR devices, and quantum computing — the physical-world deployment surface where AI models meet atoms. This is where AI stops being a software problem and becomes a physics, latency, and power-budget problem, requiring purpose-built inference silicon and edge compute.",tam:"$150B (2026E) → $650B (2030E)",tam_note:"Automotive AI reaches $80B+ by 2030; robotics $120B; AR/VR $75B; quantum $15B — physical AI is the largest single emerging TAM category"}
+};
 function renderLayerView(i){
   const L=STACK.layers[i];
+  const meta=LAYER_META[L.num]||{};
   const body=_groupBoxes(L.boxes).map(g=>{
     const inner=g.boxes.map(b=>_layerBoxCard(b,i)).join("");
     return g.group
       ? '<div class="layer-subgroup"><div class="subgroup-band">'+esc(g.group)+'</div><div class="layer-box-grid">'+inner+'</div></div>'
       : '<div class="layer-box-grid">'+inner+'</div>';
   }).join("");
+  const metaHtml=meta.description
+    ?'<div class="layer-overview">'
+    +'<p class="layer-overview-desc">'+esc(meta.description)+'</p>'
+    +(meta.tam?'<div class="layer-tam-row"><div class="layer-tam-card"><div class="tam-label">Market Size Estimate</div><div class="tam-value">'+esc(meta.tam)+'</div>'+(meta.tam_note?'<div class="tam-note">'+esc(meta.tam_note)+'</div>':'')+'</div></div>':'')
+    +'</div>'
+    :'';
   document.getElementById("l1").innerHTML=
     crumbTrail([{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:_layerLabel(i)}])
     +'<div class="layer-view-hdr" style="--lh:'+L.hue+'"><span class="layer-view-num">L'+L.num+'</span>'
     +'<span class="layer-view-name">'+esc(L.name)+'</span></div>'
     +'<div class="layer-view-tag">'+esc(L.tag)+'</div>'
+    +metaHtml
+    +'<div class="layer-tiers-hdr">Tiers in this layer</div>'
     +'<div class="layer-view-body">'+body+'</div>';
 }
 
@@ -1199,46 +1251,49 @@ function openTier(idx){
   activeTierIdx=idx;
   const s=activeSector;
   const t=s.tiers[idx];
-  const chokeBlock=t.chokepoint==="Y"
-    ?"<div class=\"choke-box\"><p>⧫ Supply chain chokepoint — limited substitutes in this tier. Capacity constraints here propagate up the stack.</p></div>"
-    :t.chokepoint==="Partial"
-    ?"<div class=\"choke-box-partial\"><p>⧫ Partial chokepoint — some alternatives exist, but switching carries meaningful cost or lead time.</p></div>"
-    :"";
-  const coBlock=t.companies&&t.companies.length>0
-    ?"<div class=\"co-section\"><h3>Tracked Companies</h3>"
-      +t.companies.map(c=>{
-        const cc=c.mkt_cap==="Large"?"large":c.mkt_cap==="Mid"?"mid":"small";
-        const cl=c.mkt_cap==="Large"?"Large cap":c.mkt_cap==="Mid"?"Mid cap":"Small cap";
-        return "<div class=\"co-card\">"
-          +"<div class=\"co-header\"><a class=\"co-ticker\" href=\"#\" onclick=\"openTicker('"+c.ticker+"','"+s.name+"');return false\">"+c.ticker+"</a>"
-          +"<span class=\"co-name\">"+c.name+"</span>"
-          +"<span class=\"co-cap "+cc+"\">"+cl+"</span></div>"
-          +"<div class=\"co-notes\">"+c.notes+"</div></div>";
-      }).join("")+"</div>"
-    :"";
   const li=activeLayerIdx;
   const trail=(li!==null&&li!==undefined)
     ?[{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:_layerLabel(li),fn:"openLayer("+li+")"},{label:t.tier}]
     :[{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:t.tier}];
-  const provenance="<div class=\"tier-provenance\">"
-    +((li!==null&&li!==undefined)?"<span class=\"layer-pill\" style=\"--lh:"+STACK.layers[li].hue+"\">"+esc(_layerLabel(li))+"</span>":"")
-    +"<span class=\"sector-tag\">"+esc(s.name)+"</span></div>";
+  const provenance='<div class="tier-provenance">'
+    +((li!==null&&li!==undefined)?'<span class="layer-pill" style="--lh:'+STACK.layers[li].hue+'">'+esc(_layerLabel(li))+'</span>':'')
+    +'<span class="sector-tag">'+esc(s.name)+'</span></div>';
+  const chokeBlock=t.chokepoint==="Y"
+    ?'<div class="choke-box"><p>⧫ Supply chain chokepoint — limited substitutes in this tier. Capacity constraints here propagate up the stack.</p></div>'
+    :t.chokepoint==="Partial"
+    ?'<div class="choke-box-partial"><p>⧫ Partial chokepoint — some alternatives exist, but switching carries meaningful cost or lead time.</p></div>'
+    :'';
+  const investHtml='<div class="invest-section">'
+    +'<div class="invest-grid">'
+    +'<div class="invest-cell"><div class="invest-cell-label">Competitive Moat</div><div class="invest-cell-val">'+esc(t.moat_type||'—')+'</div></div>'
+    +'<div class="invest-cell"><div class="invest-cell-label">Capital Intensity</div><div class="invest-cell-val">'+esc(t.capital_intensity||'—')+'</div></div>'
+    +'<div class="invest-cell"><div class="invest-cell-label">Margin Profile</div><div class="invest-cell-val">'+esc(t.margin_profile||'—')+'</div></div>'
+    +'<div class="invest-cell"><div class="invest-cell-label">Chokepoint</div><div class="invest-cell-val invest-choke-'+(t.chokepoint==="Y"?'yes':t.chokepoint==="Partial"?'partial':'no')+'">'+(t.chokepoint==="Y"?"Yes — critical constraint":t.chokepoint==="Partial"?"Partial — some alternatives":"No — competitive market")+'</div></div>'
+    +'</div></div>';
+  const coBlock=(t.companies&&t.companies.length>0)
+    ?'<div class="co-section"><div class="co-section-hdr"><span class="co-section-title">Companies Building Here</span><span class="co-section-count">'+t.companies.length+' tracked</span></div>'
+    +t.companies.map(c=>{
+      const cc=c.mkt_cap==="Large"?"large":c.mkt_cap==="Mid"?"mid":"small";
+      const cl=c.mkt_cap==="Large"?"Large cap":c.mkt_cap==="Mid"?"Mid cap":"Small cap";
+      return '<div class="co-card">'
+        +'<div class="co-header">'
+        +'<a class="co-ticker" href="#" onclick="openTicker(\''+c.ticker+'\',\''+s.name+'\');return false">'+c.ticker+'</a>'
+        +'<span class="co-name">'+esc(c.name)+'</span>'
+        +'<span class="co-cap '+cc+'">'+cl+'</span>'
+        +'</div>'
+        +'<div class="co-notes">'+esc(c.notes)+'</div>'
+        +'</div>';
+    }).join('')+'</div>'
+    :'<div class="co-section co-empty"><p>No tickers tracked in this tier yet — run <code>/scout-tickers</code> to discover candidates.</p></div>';
   document.getElementById("l2").innerHTML=
     crumbTrail(trail)
     +provenance
-    +"<div class=\"tier-detail-name\">"+t.tier+"</div>"
-    +"<div class=\"tier-fn-full\">"+t.fn+"</div>"
+    +'<div class="tier-detail-name">'+esc(t.tier)+'</div>'
+    +'<div class="tier-section-hdr">What This Tier Does</div>'
+    +'<div class="tier-fn-full">'+esc(t.fn)+'</div>'
     +chokeBlock
-    +"<div class=\"invest-section\">"
-    +"<h3>Investment Angle</h3>"
-    +"<div class=\"invest-rows\">"
-    +"<div class=\"invest-row\"><span class=\"invest-label\">Competitive moat</span><span class=\"invest-val\">"+t.moat_type+"</span></div>"
-    +"<div class=\"invest-row\"><span class=\"invest-label\">Capital intensity</span><span class=\"invest-val\">"+t.capital_intensity+"</span></div>"
-    +"<div class=\"invest-row\"><span class=\"invest-label\">Margin profile</span><span class=\"invest-val\">"+t.margin_profile+"</span></div>"
-    +"<div class=\"invest-row\"><span class=\"invest-label\">Chokepoint status</span><span class=\"invest-val\">"
-    +(t.chokepoint==="Y"?"Yes — critical supply constraint":t.chokepoint==="Partial"?"Partial — some alternatives exist":"No — competitive market")
-    +"</span></div>"
-    +"</div></div>"
+    +'<div class="tier-section-hdr">Investment Angle</div>'
+    +investHtml
     +coBlock;
   showLayer(2);
 }
