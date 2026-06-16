@@ -27,17 +27,24 @@ Extract from `$ARGUMENTS`:
 
 If `--sector` is not provided, print the list of existing sectors and ask the user to confirm:
 ```
-Existing sectors:
-  1. AI Infrastructure
-  2. Clean Energy
-  3. Cybersecurity
-  4. Fintech & E-Commerce
-  5. Metals & Mining
-  6. Photonics & Optical
-  7. Robotics & Edge AI
-  8. Semiconductors
-  9. Space & Comms
-  10. [New sector — I'll create the folder]
+Existing sectors (layer-aligned folders):
+  L01  1. Application
+  L02  2. AI Model
+  L03  3. Software Infrastructure
+  L04  4. Cloud Infrastructure
+  L05  5. Compute Hardware
+  L06  6. Memory
+  L07  7. Interconnect
+  L08  8. Advanced Packaging
+  L09  9. Semiconductor Foundry
+  L10  10. Semiconductor Equipment
+  L11  11. Semiconductor Materials
+  L12  12. Critical Minerals
+  Rail 13. Power Infrastructure
+  Rail 14. Security
+  Rail 15. Edge & Physical AI
+  Cross 16. Electronic Components
+       17. [New sector — I'll create the folder]
 
 Which sector does [TICKER] belong in?
 ```

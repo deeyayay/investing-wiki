@@ -54,7 +54,7 @@ Run all reads in parallel.
 **Dimension Map** (`Investing/Wiki/Reference/Dimension Map.md`):
 - Extract: `name`, `dimension` (D1–D5), `folder` slug, `status`
 - Skip sectors where `status === "planned"`
-- Folder slug overrides: Compute Infrastructure → `AI Infrastructure`, Energy & Power → `Clean Energy`, Materials & Mining → `Metals & Mining`, Space & Communications → `Space & Comms`, Fintech & Commerce AI → `Fintech & E-Commerce`
+- Folder slug overrides: **none required** — sector folder names now match layer names directly (1:1). `SECTOR_FOLDER` is `{}`.
 
 **Supply chain maps** — for each active sector read `Investing/Wiki/Sectors/[folder]/_Supply Chain Map.md`:
 - From the `## Value Chain` table extract only: `tier` (col[0]), `chokepoint` (col[4])

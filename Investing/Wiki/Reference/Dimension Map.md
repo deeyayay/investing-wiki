@@ -1,5 +1,5 @@
 # AI Ecosystem — Dimension Map
-*Last updated: 2026-06-10 — superseded by the 12-layer AI Buildout Stack; kept as the sector registry + slug map.*
+*Last updated: 2026-06-16 — superseded by the 12-layer AI Buildout Stack; kept as the sector registry + slug map.*
 
 > **Canonical taxonomy moved.** The wiki now organizes the AI buildout as a **12-layer vertical stack** (Application → Critical Minerals) — mapped word-for-word from the *AI Buildout Supply Chain* blueprint graphic — wrapped by **3 cross-cutting rails** (Power / Thermal / Security) and capped by the **Edge & Physical AI deployment surface**. See **`AI Buildout Stack.md`** for the authoritative layer definitions and the machine-readable JSON the dashboard consumes. This file remains the **sector registry** (sector → folder slug → status) and the **D1–D5 → layer crosswalk** for legacy references.
 
@@ -21,21 +21,26 @@ The legacy five-dimension codes map onto the 12 layers as follows (full layer de
 
 ## Sector Registry
 
-| Sector | Dimension | Folder Slug | Status | Supply Chain Map |
-|--------|-----------|-------------|--------|-----------------|
-| Semiconductors | D1 | `Semiconductors` | partial | `_Supply Chain Map.md` — rebuilt 2026-05-24, full process/product depth, Chip Design tier added |
-| Electronic Components | D1 | `Electronic Components` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
-| Materials & Mining | D1 | `Metals & Mining` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
-| Photonics & Optical | D2 | `Photonics & Optical` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
-| Space & Communications | D2 | `Space & Comms` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
-| Compute Infrastructure | D3 | `AI Infrastructure` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
-| Energy & Power | D3 | `Clean Energy` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
-| Cybersecurity | D4 | `Cybersecurity` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
-| AI Model Infrastructure | D4 | `AI Model Infrastructure` | partial | `_Supply Chain Map.md` — mapped 2026-05-31, 8-tier, process/product depth |
-| Data & Software Platforms | D4 | *(reserved)* | planned | not yet created |
-| Robotics & Edge AI | D5 | `Robotics & Edge AI` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
-| Fintech & Commerce AI | D5 | `Fintech & E-Commerce` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
-| Defense & Space | D5 | *(reserved)* | planned | not yet created |
+Folder names now match layer names 1:1 — no slug overrides needed in the dashboard.
+
+| Layer | Sector Folder | Stack | Status | Supply Chain Map |
+|-------|---------------|-------|--------|-----------------|
+| L01 | `Application` | AI assistants · agents · vertical SaaS | partial | `_Supply Chain Map.md` — from Fintech & E-Commerce; run `/map-sector "Application"` to expand |
+| L02 | `AI Model` | Foundation models · inference · orchestration | partial | `_Supply Chain Map.md` — from AI Model Infrastructure |
+| L03 | `Software Infrastructure` | ML frameworks · kernels · MLOps | planned | not yet created; run `/map-sector "Software Infrastructure"` |
+| L04 | `Cloud Infrastructure` | Hyperscalers · neoclouds · colocation · storage | partial | `_Supply Chain Map.md` — from AI Infrastructure |
+| L05 | `Compute Hardware` | GPUs · ASICs · CPUs · chip design IP | partial | see `Reference/Semiconductor Stack Supply Chain Map.md` (covers L05–L11) |
+| L06 | `Memory` | HBM · HBF · DRAM · NAND · LPDDR | planned | not yet created; run `/map-sector "Memory"` |
+| L07 | `Interconnect` | Scale-up · scale-out · scale-across · optics | partial | `_Supply Chain Map.md` — from Photonics & Optical; covers optical + SerDes |
+| L08 | `Advanced Packaging` | CoWoS/SoIC · HBM stacking · FC-BGA · glass core | partial | `_Supply Chain Map.md` — from Electronic Components (IC substrates) |
+| L09 | `Semiconductor Foundry` | Leading-edge · specialty · silicon photonics · OSAT | planned | not yet created; run `/map-sector "Semiconductor Foundry"` |
+| L10 | `Semiconductor Equipment` | Lithography · deposition · etch · metrology · test | planned | not yet created; run `/map-sector "Semiconductor Equipment"` |
+| L11 | `Semiconductor Materials` | Wafers · SOI · InP/GaAs/SiC · gases · photoresist | planned | not yet created; run `/map-sector "Semiconductor Materials"` |
+| L12 | `Critical Minerals` | Si · Cu · Ga · In · Ge · Hf · rare earths | partial | `_Supply Chain Map.md` — from Metals & Mining |
+| Rail | `Power Infrastructure` | Generation → grid → rack → board | partial | `_Supply Chain Map.md` — from Clean Energy |
+| Rail | `Security` | Wraps every layer; identity · endpoint · network | partial | `_Supply Chain Map.md` — from Cybersecurity |
+| Surface | `Edge & Physical AI` | Physical-world deployment + parallel compute | partial | `_Supply Chain Map.md` — from Robotics & Edge AI; Space & Comms merged in |
+| Cross | `Electronic Components` | Passives · discretes · PCB (cross-layer; doesn't fit one L) | partial | `_Supply Chain Map.md` — moved to Advanced Packaging/ |
 
 **Status values:**
 - `complete` — supply chain map exists with Processes + Key Products columns + Interrelationship Anchors

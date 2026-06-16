@@ -292,8 +292,8 @@ const DATA = {
   generated: "2026-06-16",
   sectors: [
     {
-      slug: "semiconductors",
-      name: "Semiconductors",
+      slug: "compute-hardware",
+      name: "Compute Hardware",
       dimension: "D1",
       description: "packaged chip ready for system assembly",
       tiers: [
@@ -372,6 +372,17 @@ const DATA = {
       ]
     },
     {
+      slug: "memory",
+      name: "Memory",
+      dimension: "D1",
+      description: "NAND flash and non-volatile memory for AI storage and edge deployment",
+      tiers: [
+        { tier: "NAND Flash Memory", fn: "Design and fabricate 3D NAND flash memory for enterprise SSDs, AI data storage, and edge devices using vertical charge-trap stacking at 200+ layers with CMOS bonding architecture", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Scale + Process IP", margin_profile: "High (cyclical)", companies: [
+          { ticker: "285A.T", name: "Kioxia Holdings Corporation", mkt_cap: "Large", notes: "World's #3 NAND flash manufacturer and inventor of NAND (Toshiba lineage, 1987). BiCS10 3D NAND at 332 layers leads on density and power efficiency. Only publicly traded large-scale pure-play NAND company; Flash Ventures JV with SanDisk shares capex across 9 Japan fabs." }
+        ]}
+      ]
+    },
+    {
       slug: "electronic-components",
       name: "Electronic Components",
       dimension: "D1",
@@ -396,8 +407,8 @@ const DATA = {
       ]
     },
     {
-      slug: "metals-mining",
-      name: "Materials & Mining",
+      slug: "critical-minerals",
+      name: "Critical Minerals",
       dimension: "D1",
       description: "semiconductor-grade and battery-grade material outputs",
       tiers: [
@@ -419,8 +430,8 @@ const DATA = {
       ]
     },
     {
-      slug: "photonics-optical",
-      name: "Photonics & Optical",
+      slug: "interconnect",
+      name: "Interconnect",
       dimension: "D2",
       description: "optical transceiver enabling AI cluster interconnect",
       tiers: [
@@ -477,8 +488,8 @@ const DATA = {
       ]
     },
     {
-      slug: "space-communications",
-      name: "Space & Communications",
+      slug: "edge-physical-ai-space",
+      name: "Edge & Physical AI",
       dimension: "D2",
       description: "satellite connectivity enabling AI edge inference and global broadband",
       tiers: [
@@ -499,8 +510,8 @@ const DATA = {
       ]
     },
     {
-      slug: "compute-infrastructure",
-      name: "Compute Infrastructure",
+      slug: "cloud-infrastructure",
+      name: "Cloud Infrastructure",
       dimension: "D3",
       description: "GPU compute cluster ready for AI training workload",
       tiers: [
@@ -540,8 +551,8 @@ const DATA = {
       ]
     },
     {
-      slug: "energy-power",
-      name: "Energy & Power",
+      slug: "power-infrastructure",
+      name: "Power Infrastructure",
       dimension: "D3",
       description: "firm 24/7 clean power delivered to AI data center",
       tiers: [
@@ -570,8 +581,8 @@ const DATA = {
       ]
     },
     {
-      slug: "cybersecurity",
-      name: "Cybersecurity",
+      slug: "security",
+      name: "Security",
       dimension: "D4",
       description: "AI-era software security stack",
       tiers: [
@@ -596,8 +607,8 @@ const DATA = {
       ]
     },
     {
-      slug: "ai-model-infrastructure",
-      name: "AI Model Infrastructure",
+      slug: "ai-model",
+      name: "AI Model",
       dimension: "D4",
       description: "Foundation model training, optimization, and serving",
       tiers: [
@@ -621,8 +632,8 @@ const DATA = {
       ]
     },
     {
-      slug: "robotics-edge-ai",
-      name: "Robotics & Edge AI",
+      slug: "edge-physical-ai",
+      name: "Edge & Physical AI",
       dimension: "D5",
       description: "Embodied AI systems — autonomous robots, edge inference, perception hardware",
       tiers: [
@@ -651,8 +662,8 @@ const DATA = {
       ]
     },
     {
-      slug: "fintech-commerce-ai",
-      name: "Fintech & Commerce AI",
+      slug: "application",
+      name: "Application",
       dimension: "D5",
       description: "AI-powered financial services and commerce platforms",
       tiers: [
@@ -836,7 +847,7 @@ let _chipOrigin=null;
 // Open a ticker straight from a stack/rail/layer chip — breadcrumb returns to the stack (with an optional context crumb), not a tier.
 function openStackTicker(tk,sName,ctxLabel,ctxFn){_raceOrigin=null;_fromStack=true;_chipOrigin=ctxLabel?{label:ctxLabel,fn:ctxFn}:null;activeSector=null;activeTierIdx=null;activeLayerIdx=null;openTicker(tk,sName);}
 
-const SECTOR_FOLDER={"Compute Infrastructure":"AI Infrastructure","Energy & Power":"Clean Energy","Materials & Mining":"Metals & Mining","Space & Communications":"Space & Comms","Fintech & Commerce AI":"Fintech & E-Commerce"};
+const SECTOR_FOLDER={};
 function rawGithubUrl(sName,ticker,legacy){const f=SECTOR_FOLDER[sName]||sName;const base="https://raw.githubusercontent.com/deeyayay/investing-wiki/master/Investing/Wiki/Sectors/"+encodeURIComponent(f)+"/";return legacy?base+ticker+".md":base+encodeURIComponent(ticker)+"/analysis.md";}
 
 function showLayer(n){
@@ -862,100 +873,100 @@ const STACK={
       {"label":"AI-Native Vertical Applications (coding, video, drug discovery)","gap":true,"chips":["MELI","SOFI","HOOD","NU"]}
     ]},
     {"num":"02","name":"AI Model","hue":255,"tag":"foundation models · serving · agents","boxes":[
-      {"label":"Foundation Models (LLMs, multimodal)","sector":"AI Model Infrastructure","slug":"ai-model-infrastructure","tier":"Foundation Model Development","chips":["META"]},
-      {"label":"Fine-tuned / Specialized Models","sector":"AI Model Infrastructure","slug":"ai-model-infrastructure","tier":"Alignment & Safety Tuning","chips":[]},
-      {"label":"Inference Serving Infrastructure","sector":"AI Model Infrastructure","slug":"ai-model-infrastructure","tier":"Inference Serving & Scaling","chips":[]},
-      {"label":"Model Orchestration & Agentic Frameworks","sector":"AI Model Infrastructure","slug":"ai-model-infrastructure","tier":"Model API & Developer Platform","chips":["CFLT"]}
+      {"label":"Foundation Models (LLMs, multimodal)","sector":"AI Model","slug":"ai-model","tier":"Foundation Model Development","chips":["META"]},
+      {"label":"Fine-tuned / Specialized Models","sector":"AI Model","slug":"ai-model","tier":"Alignment & Safety Tuning","chips":[]},
+      {"label":"Inference Serving Infrastructure","sector":"AI Model","slug":"ai-model","tier":"Inference Serving & Scaling","chips":[]},
+      {"label":"Model Orchestration & Agentic Frameworks","sector":"AI Model","slug":"ai-model","tier":"Model API & Developer Platform","chips":["CFLT"]}
     ]},
     {"num":"03","name":"Software Infrastructure","hue":268,"tag":"frameworks · kernels · orchestration","boxes":[
-      {"label":"ML Frameworks (training)","sector":"AI Model Infrastructure","slug":"ai-model-infrastructure","tier":"Distributed Training Orchestration","chips":["CRWV","AMD"]},
-      {"label":"GPU Programming Layer (low-level kernels)","sector":"AI Model Infrastructure","slug":"ai-model-infrastructure","tier":"Distributed Training Orchestration","chips":["NVDA","AMD"]},
-      {"label":"Distributed Training Systems","sector":"AI Model Infrastructure","slug":"ai-model-infrastructure","tier":"Distributed Training Orchestration","chips":[]},
-      {"label":"Container Orchestration (Kubernetes)","sector":"AI Model Infrastructure","slug":"ai-model-infrastructure","tier":"MLOps & Model Lifecycle Management","chips":["DDOG","SNOW","PLTR","MDB"]},
-      {"label":"Inference Optimization Stack","sector":"AI Model Infrastructure","slug":"ai-model-infrastructure","tier":"Model Optimization & Compilation","chips":[]}
+      {"label":"ML Frameworks (training)","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"Distributed Training Orchestration","chips":["CRWV","AMD"]},
+      {"label":"GPU Programming Layer (low-level kernels)","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"Distributed Training Orchestration","chips":["NVDA","AMD"]},
+      {"label":"Distributed Training Systems","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"Distributed Training Orchestration","chips":[]},
+      {"label":"Container Orchestration (Kubernetes)","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"MLOps & Model Lifecycle Management","chips":["DDOG","SNOW","PLTR","MDB"]},
+      {"label":"Inference Optimization Stack","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"Model Optimization & Compilation","chips":[]}
     ]},
     {"num":"04","name":"Cloud Infrastructure","hue":288,"tag":"hyperscalers · neoclouds · colocation","boxes":[
-      {"label":"Hyperscaler Clouds","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Hyperscaler & Colocation Operation","chips":["MSFT","AMZN","GOOGL","ORCL"]},
-      {"label":"NeoClouds (GPU-specialized)","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Hyperscaler & Colocation Operation","chips":["CRWV","IREN"]},
+      {"label":"Hyperscaler Clouds","sector":"Cloud Infrastructure","slug":"cloud-infrastructure","tier":"Hyperscaler & Colocation Operation","chips":["MSFT","AMZN","GOOGL","ORCL"]},
+      {"label":"NeoClouds (GPU-specialized)","sector":"Cloud Infrastructure","slug":"cloud-infrastructure","tier":"Hyperscaler & Colocation Operation","chips":["CRWV","IREN"]},
       {"label":"Edge / Inference Colocation","gap":true,"chips":["EQIX","VRT"]},
-      {"label":"Data Center Colocation","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Data Center Facility & MEP","chips":[]}
+      {"label":"Data Center Colocation","sector":"Cloud Infrastructure","slug":"cloud-infrastructure","tier":"Data Center Facility & MEP","chips":[]}
     ]},
     {"num":"05","name":"Compute Hardware","hue":55,"tag":"GPUs · ASICs · CPUs · NICs","boxes":[
-      {"label":"Training GPUs","sector":"Semiconductors","slug":"semiconductors","tier":"Chip Design (Fabless & IDM)","chips":["NVDA","AMD"]},
-      {"label":"Inference GPUs","sector":"Semiconductors","slug":"semiconductors","tier":"Chip Design (Fabless & IDM)","chips":["NVDA","AMD"]},
-      {"label":"Custom AI ASICs (hyperscaler silicon)","sector":"Semiconductors","slug":"semiconductors","tier":"Chip Design (Fabless & IDM)","chips":["AVGO","MRVL"]},
-      {"label":"Dedicated Inference Accelerators","sector":"Semiconductors","slug":"semiconductors","tier":"Chip Design (Fabless & IDM)","chips":[]},
-      {"label":"Server CPUs (orchestration, agentic workloads)","sector":"Semiconductors","slug":"semiconductors","tier":"Chip Design (Fabless & IDM)","chips":["ARM","INTC"]},
-      {"label":"Networking ASICs (switch silicon)","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"High-Speed Networking","chips":["ANET","AVGO","MRVL"]}
+      {"label":"Training GPUs","sector":"Compute Hardware","slug":"compute-hardware","tier":"Chip Design (Fabless & IDM)","chips":["NVDA","AMD"]},
+      {"label":"Inference GPUs","sector":"Compute Hardware","slug":"compute-hardware","tier":"Chip Design (Fabless & IDM)","chips":["NVDA","AMD"]},
+      {"label":"Custom AI ASICs (hyperscaler silicon)","sector":"Compute Hardware","slug":"compute-hardware","tier":"Chip Design (Fabless & IDM)","chips":["AVGO","MRVL"]},
+      {"label":"Dedicated Inference Accelerators","sector":"Compute Hardware","slug":"compute-hardware","tier":"Chip Design (Fabless & IDM)","chips":[]},
+      {"label":"Server CPUs (orchestration, agentic workloads)","sector":"Compute Hardware","slug":"compute-hardware","tier":"Chip Design (Fabless & IDM)","chips":["ARM","INTC"]},
+      {"label":"Networking ASICs (switch silicon)","sector":"Cloud Infrastructure","slug":"cloud-infrastructure","tier":"High-Speed Networking","chips":["ANET","AVGO","MRVL"]}
     ]},
     {"num":"06","name":"Memory","hue":92,"tag":"HBM · HBF · DRAM · NAND · LPDDR","boxes":[
-      {"label":"HBM (current AI server standard)","sector":"Semiconductors","slug":"semiconductors","tier":"HBM (High-Bandwidth Memory)","chips":["MU","000660.KS","005930.KS"]},
-      {"label":"HBF (high-bandwidth flash)","sector":"Semiconductors","slug":"semiconductors","tier":"HBF (High-Bandwidth Flash)","chips":["SNDK","000660.KS"]},
-      {"label":"DRAM (system memory)","sector":"Semiconductors","slug":"semiconductors","tier":"DRAM (System & Server Memory)","chips":["MU","005930.KS","000660.KS"]},
-      {"label":"NAND Flash (storage)","sector":"Semiconductors","slug":"semiconductors","tier":"NAND Flash (Storage)","chips":["SNDK","285A.T","005930.KS","MU"]},
-      {"label":"LPDDR (mobile / edge inference)","sector":"Semiconductors","slug":"semiconductors","tier":"LPDDR (Low-Power & Edge Memory)","chips":["MU","005930.KS"]}
+      {"label":"HBM (current AI server standard)","sector":"Memory","slug":"memory","tier":"HBM (High-Bandwidth Memory)","chips":["MU","000660.KS","005930.KS"]},
+      {"label":"HBF (high-bandwidth flash)","sector":"Memory","slug":"memory","tier":"HBF (High-Bandwidth Flash)","chips":["SNDK","000660.KS"]},
+      {"label":"DRAM (system memory)","sector":"Memory","slug":"memory","tier":"DRAM (System & Server Memory)","chips":["MU","005930.KS","000660.KS"]},
+      {"label":"NAND Flash (storage)","sector":"Memory","slug":"memory","tier":"NAND Flash (Storage)","chips":["SNDK","285A.T","005930.KS","MU"]},
+      {"label":"LPDDR (mobile / edge inference)","sector":"Memory","slug":"memory","tier":"LPDDR (Low-Power & Edge Memory)","chips":["MU","005930.KS"]}
     ]},
     {"num":"07","name":"Interconnect","hue":42,"tag":"scale-up · scale-out · scale-across","boxes":[
-      {"label":"Co-Packaged Optics (CPO)","group":"Scale-Up · within the rack, chip to chip","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Transceiver & Module Integration","chips":["COHR","LITE"]},
-      {"label":"NVLink-style fabrics","group":"Scale-Up · within the rack, chip to chip","sector":"Semiconductors","slug":"semiconductors","tier":"Interconnect & SerDes Silicon","chips":["NVDA","ALAB"]},
-      {"label":"On-package optical engines","group":"Scale-Up · within the rack, chip to chip","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Silicon Photonics Platform","chips":["POET","LWLG"]},
-      {"label":"SerDes · Retimers","group":"Scale-Up · within the rack, chip to chip","sector":"Semiconductors","slug":"semiconductors","tier":"Interconnect & SerDes Silicon","chips":["CRDO","ALAB"]},
-      {"label":"Pluggable Optical Transceivers","group":"Scale-Out · between racks, within data center","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Transceiver & Module Integration","chips":["COHR","LITE","FN","AAOI"]},
-      {"label":"Linear Pluggable Optics (LPO)","group":"Scale-Out · between racks, within data center","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Transceiver & Module Integration","chips":["AAOI"]},
-      {"label":"High-speed Ethernet / InfiniBand","group":"Scale-Out · between racks, within data center","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"High-Speed Networking","chips":["ANET","AVGO"]},
-      {"label":"Coherent Optical Transport","group":"Scale-Across · between data centers","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Coherent Line Systems & ROADM","chips":["CIEN"]},
-      {"label":"Long-haul DWDM","group":"Scale-Across · between data centers","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Coherent Line Systems & ROADM","chips":["CIEN","GLW"]},
-      {"label":"External Light Sources (CW lasers)","group":"Components · used across all three scales","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Photonic Device Fabrication","chips":["IPGP","LITE","LASR"]},
-      {"label":"Optical Engines","group":"Components · used across all three scales","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Silicon Photonics Platform","chips":["POET","IPGP"]},
-      {"label":"Fiber Array Units (FAU)","group":"Components · used across all three scales","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Optical Fiber & Preform Manufacturing","chips":["FOCI"]},
-      {"label":"Optical Connectors","group":"Components · used across all three scales","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Passive Optical Components","chips":["GLW","VIAV"]},
-      {"label":"Fiber Cables","group":"Components · used across all three scales","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Optical Fiber & Preform Manufacturing","chips":["GLW"]}
+      {"label":"Co-Packaged Optics (CPO)","group":"Scale-Up · within the rack, chip to chip","sector":"Interconnect","slug":"interconnect","tier":"Transceiver & Module Integration","chips":["COHR","LITE"]},
+      {"label":"NVLink-style fabrics","group":"Scale-Up · within the rack, chip to chip","sector":"Interconnect","slug":"interconnect","tier":"Interconnect & SerDes Silicon","chips":["NVDA","ALAB"]},
+      {"label":"On-package optical engines","group":"Scale-Up · within the rack, chip to chip","sector":"Interconnect","slug":"interconnect","tier":"Silicon Photonics Platform","chips":["POET","LWLG"]},
+      {"label":"SerDes · Retimers","group":"Scale-Up · within the rack, chip to chip","sector":"Interconnect","slug":"interconnect","tier":"Interconnect & SerDes Silicon","chips":["CRDO","ALAB"]},
+      {"label":"Pluggable Optical Transceivers","group":"Scale-Out · between racks, within data center","sector":"Interconnect","slug":"interconnect","tier":"Transceiver & Module Integration","chips":["COHR","LITE","FN","AAOI"]},
+      {"label":"Linear Pluggable Optics (LPO)","group":"Scale-Out · between racks, within data center","sector":"Interconnect","slug":"interconnect","tier":"Transceiver & Module Integration","chips":["AAOI"]},
+      {"label":"High-speed Ethernet / InfiniBand","group":"Scale-Out · between racks, within data center","sector":"Cloud Infrastructure","slug":"cloud-infrastructure","tier":"High-Speed Networking","chips":["ANET","AVGO"]},
+      {"label":"Coherent Optical Transport","group":"Scale-Across · between data centers","sector":"Interconnect","slug":"interconnect","tier":"Coherent Line Systems & ROADM","chips":["CIEN"]},
+      {"label":"Long-haul DWDM","group":"Scale-Across · between data centers","sector":"Interconnect","slug":"interconnect","tier":"Coherent Line Systems & ROADM","chips":["CIEN","GLW"]},
+      {"label":"External Light Sources (CW lasers)","group":"Components · used across all three scales","sector":"Interconnect","slug":"interconnect","tier":"Photonic Device Fabrication","chips":["IPGP","LITE","LASR"]},
+      {"label":"Optical Engines","group":"Components · used across all three scales","sector":"Interconnect","slug":"interconnect","tier":"Silicon Photonics Platform","chips":["POET","IPGP"]},
+      {"label":"Fiber Array Units (FAU)","group":"Components · used across all three scales","sector":"Interconnect","slug":"interconnect","tier":"Optical Fiber & Preform Manufacturing","chips":["FOCI"]},
+      {"label":"Optical Connectors","group":"Components · used across all three scales","sector":"Interconnect","slug":"interconnect","tier":"Passive Optical Components","chips":["GLW","VIAV"]},
+      {"label":"Fiber Cables","group":"Components · used across all three scales","sector":"Interconnect","slug":"interconnect","tier":"Optical Fiber & Preform Manufacturing","chips":["GLW"]}
     ]},
     {"num":"08","name":"Advanced Packaging","hue":150,"tag":"CoWoS · stacking · substrates","boxes":[
-      {"label":"Wafer-Level Packaging (CoWoS, SoIC)","sector":"Semiconductors","slug":"semiconductors","tier":"Advanced Packaging (CoWoS / SoIC)","chips":["TSM","AMKR"]},
-      {"label":"HBM Stacking & Integration","sector":"Semiconductors","slug":"semiconductors","tier":"Advanced Packaging (CoWoS / SoIC)","chips":["MU","TSM"]},
+      {"label":"Wafer-Level Packaging (CoWoS, SoIC)","sector":"Advanced Packaging","slug":"advanced-packaging","tier":"Advanced Packaging (CoWoS / SoIC)","chips":["TSM","AMKR"]},
+      {"label":"HBM Stacking & Integration","sector":"Advanced Packaging","slug":"advanced-packaging","tier":"Advanced Packaging (CoWoS / SoIC)","chips":["MU","TSM"]},
       {"label":"FC-BGA Substrates","sector":"Electronic Components","slug":"electronic-components","tier":"IC Substrate Manufacturing","chips":[],"choke":true},
       {"label":"Glass Core Substrates (emerging)","sector":"Electronic Components","slug":"electronic-components","tier":"Substrate & Laminate Materials","chips":["GLW","INTC"]},
       {"label":"Thermal Interface Materials (TIM)","gap":true,"chips":[]}
     ]},
     {"num":"09","name":"Semiconductor Foundry","hue":162,"tag":"leading-edge · specialty · OSAT","boxes":[
-      {"label":"Leading-Edge Logic Foundry (3nm, 2nm)","sector":"Semiconductors","slug":"semiconductors","tier":"Wafer Fabrication (Foundry / IDM)","chips":["TSM","INTC"]},
-      {"label":"Specialty / Mature Logic Foundry (analog, mixed-signal)","sector":"Semiconductors","slug":"semiconductors","tier":"Wafer Fabrication (Foundry / IDM)","chips":["GFS"]},
-      {"label":"Silicon Photonics Foundry","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Silicon Photonics Platform","chips":["GFS","POET","INTC"]},
-      {"label":"Compound Semiconductor Foundry (GaN, SiC, InP)","sector":"Semiconductors","slug":"semiconductors","tier":"Compound Semiconductor & SiC Substrate","chips":["STM","WOLF"]},
-      {"label":"OSAT (outsourced assembly and test)","sector":"Semiconductors","slug":"semiconductors","tier":"OSAT — Assembly & Test","chips":["ASX","AMKR"]}
+      {"label":"Leading-Edge Logic Foundry (3nm, 2nm)","sector":"Semiconductor Foundry","slug":"semiconductor-foundry","tier":"Wafer Fabrication (Foundry / IDM)","chips":["TSM","INTC"]},
+      {"label":"Specialty / Mature Logic Foundry (analog, mixed-signal)","sector":"Semiconductor Foundry","slug":"semiconductor-foundry","tier":"Wafer Fabrication (Foundry / IDM)","chips":["GFS"]},
+      {"label":"Silicon Photonics Foundry","sector":"Interconnect","slug":"interconnect","tier":"Silicon Photonics Platform","chips":["GFS","POET","INTC"]},
+      {"label":"Compound Semiconductor Foundry (GaN, SiC, InP)","sector":"Semiconductor Foundry","slug":"semiconductor-foundry","tier":"Compound Semiconductor & SiC Substrate","chips":["STM","WOLF"]},
+      {"label":"OSAT (outsourced assembly and test)","sector":"Advanced Packaging","slug":"advanced-packaging","tier":"OSAT — Assembly & Test","chips":["ASX","AMKR"]}
     ]},
     {"num":"10","name":"Semiconductor Equipment","hue":192,"tag":"litho · etch · metrology · test","boxes":[
-      {"label":"EUV (leading edge)","group":"Lithography","sector":"Semiconductors","slug":"semiconductors","tier":"Lithography Equipment","chips":["ASML"]},
-      {"label":"DUV (mature nodes)","group":"Lithography","sector":"Semiconductors","slug":"semiconductors","tier":"Lithography Equipment","chips":["ASML","CAJ"]},
+      {"label":"EUV (leading edge)","group":"Lithography","sector":"Semiconductor Equipment","slug":"semiconductor-equipment","tier":"Lithography Equipment","chips":["ASML"]},
+      {"label":"DUV (mature nodes)","group":"Lithography","sector":"Semiconductor Equipment","slug":"semiconductor-equipment","tier":"Lithography Equipment","chips":["ASML","CAJ"]},
       {"label":"NIL (nanoimprint, photonics)","group":"Lithography","gap":true,"chips":["CAJ"]},
-      {"label":"Deposition (CVD, PVD, ALD)","sector":"Semiconductors","slug":"semiconductors","tier":"Deposition & Etch Equipment","chips":["AMAT","LRCX"]},
-      {"label":"Etch (plasma, wet)","sector":"Semiconductors","slug":"semiconductors","tier":"Deposition & Etch Equipment","chips":["LRCX","AMAT"]},
-      {"label":"Metrology & Inspection","sector":"Semiconductors","slug":"semiconductors","tier":"Inspection & Metrology","chips":["KLAC","ONTO","FORM"]},
-      {"label":"Burn-in & Reliability Testing","sector":"Semiconductors","slug":"semiconductors","tier":"Test & Burn-In","chips":["AEHR","COHU","6857.T"]},
+      {"label":"Deposition (CVD, PVD, ALD)","sector":"Semiconductor Equipment","slug":"semiconductor-equipment","tier":"Deposition & Etch Equipment","chips":["AMAT","LRCX"]},
+      {"label":"Etch (plasma, wet)","sector":"Semiconductor Equipment","slug":"semiconductor-equipment","tier":"Deposition & Etch Equipment","chips":["LRCX","AMAT"]},
+      {"label":"Metrology & Inspection","sector":"Semiconductor Equipment","slug":"semiconductor-equipment","tier":"Inspection & Metrology","chips":["KLAC","ONTO","FORM"]},
+      {"label":"Burn-in & Reliability Testing","sector":"Semiconductor Equipment","slug":"semiconductor-equipment","tier":"Test & Burn-In","chips":["AEHR","COHU","6857.T"]},
       {"label":"Compound Semi Growth (MOCVD for InP/GaAs)","gap":true,"chips":["AMAT","AIXA.DE"]}
     ]},
     {"num":"11","name":"Semiconductor Materials","hue":32,"tag":"wafers · substrates · chemicals","boxes":[
-      {"label":"Silicon Wafers (300mm)","sector":"Semiconductors","slug":"semiconductors","tier":"Silicon Wafer Production","chips":["4043.T","4369.T"]},
-      {"label":"SOI Substrates (for GPU)","sector":"Semiconductors","slug":"semiconductors","tier":"Silicon Wafer Production","chips":["SOI.PA"]},
-      {"label":"InP Substrates (for lasers)","sector":"Semiconductors","slug":"semiconductors","tier":"Compound Semiconductor & SiC Substrate","chips":["AXTI"]},
-      {"label":"GaAs Substrates (RF, optoelectronics)","sector":"Semiconductors","slug":"semiconductors","tier":"Compound Semiconductor & SiC Substrate","chips":["AXTI"]},
-      {"label":"SiC Wafers (power)","sector":"Semiconductors","slug":"semiconductors","tier":"Compound Semiconductor & SiC Substrate","chips":["WOLF","STM"]},
-      {"label":"Specialty Gases (neon, krypton, xenon for excimer lasers)","sector":"Semiconductors","slug":"semiconductors","tier":"Raw Materials & Specialty Chemicals","chips":["LIN","APD"]},
+      {"label":"Silicon Wafers (300mm)","sector":"Semiconductor Materials","slug":"semiconductor-materials","tier":"Silicon Wafer Production","chips":["4043.T","4369.T"]},
+      {"label":"SOI Substrates (for GPU)","sector":"Semiconductor Materials","slug":"semiconductor-materials","tier":"Silicon Wafer Production","chips":["SOI.PA"]},
+      {"label":"InP Substrates (for lasers)","sector":"Semiconductor Materials","slug":"semiconductor-materials","tier":"Compound Semiconductor & SiC Substrate","chips":["AXTI"]},
+      {"label":"GaAs Substrates (RF, optoelectronics)","sector":"Semiconductor Materials","slug":"semiconductor-materials","tier":"Compound Semiconductor & SiC Substrate","chips":["AXTI"]},
+      {"label":"SiC Wafers (power)","sector":"Semiconductor Materials","slug":"semiconductor-materials","tier":"Compound Semiconductor & SiC Substrate","chips":["WOLF","STM"]},
+      {"label":"Specialty Gases (neon, krypton, xenon for excimer lasers)","sector":"Semiconductor Materials","slug":"semiconductor-materials","tier":"Raw Materials & Specialty Chemicals","chips":["LIN","APD"]},
       {"label":"Anti-Stick Coatings (PFAS-free for NIL)","gap":true,"chips":["ENTG"]},
-      {"label":"Photoresist (lithography chemicals)","sector":"Semiconductors","slug":"semiconductors","tier":"Raw Materials & Specialty Chemicals","chips":["ENTG","4369.T","5201.T"]}
+      {"label":"Photoresist (lithography chemicals)","sector":"Semiconductor Materials","slug":"semiconductor-materials","tier":"Raw Materials & Specialty Chemicals","chips":["ENTG","4369.T","5201.T"]}
     ]},
     {"num":"12","name":"Critical Minerals & Raw Elements","hue":350,"tag":"the bedrock everything depends on","boxes":[
-      {"label":"Silicon (base material for all chips)","sector":"Materials & Mining","slug":"metals-mining","tier":"Silicon & SiC Precursor Production","chips":["WOLF"]},
-      {"label":"Copper (interconnect, power delivery)","sector":"Materials & Mining","slug":"metals-mining","tier":"Bulk Mining & Ore Extraction","chips":["FCX","VALE","RIO"]},
-      {"label":"Gallium (GaN power semis, GaAs RF, InP photonics)","sector":"Photonics & Optical","slug":"photonics-optical","tier":"III-V Substrate & Epitaxial Wafer Growth","chips":["AXTI","WOLF"]},
-      {"label":"Indium (InP lasers, transparent conductors)","sector":"Photonics & Optical","slug":"photonics-optical","tier":"III-V Substrate & Epitaxial Wafer Growth","chips":["AXTI"]},
-      {"label":"Germanium (optical fiber, compound semis)","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Optical Fiber & Preform Manufacturing","chips":["GLW"]},
+      {"label":"Silicon (base material for all chips)","sector":"Critical Minerals","slug":"critical-minerals","tier":"Silicon & SiC Precursor Production","chips":["WOLF"]},
+      {"label":"Copper (interconnect, power delivery)","sector":"Critical Minerals","slug":"critical-minerals","tier":"Bulk Mining & Ore Extraction","chips":["FCX","VALE","RIO"]},
+      {"label":"Gallium (GaN power semis, GaAs RF, InP photonics)","sector":"Interconnect","slug":"interconnect","tier":"III-V Substrate & Epitaxial Wafer Growth","chips":["AXTI","WOLF"]},
+      {"label":"Indium (InP lasers, transparent conductors)","sector":"Interconnect","slug":"interconnect","tier":"III-V Substrate & Epitaxial Wafer Growth","chips":["AXTI"]},
+      {"label":"Germanium (optical fiber, compound semis)","sector":"Interconnect","slug":"interconnect","tier":"Optical Fiber & Preform Manufacturing","chips":["GLW"]},
       {"label":"Hafnium (high-k dielectric in leading-edge logic)","gap":true,"chips":["INTC","ATI"]},
       {"label":"Tantalum (capacitors)","sector":"Electronic Components","slug":"electronic-components","tier":"Film & Electrolytic Capacitor Mfg","chips":["VSH"]},
-      {"label":"Cobalt (energy storage)","sector":"Materials & Mining","slug":"metals-mining","tier":"Battery Material Precursor Production","chips":["ELMT"]},
-      {"label":"Lithium (energy storage)","sector":"Materials & Mining","slug":"metals-mining","tier":"Battery Material Precursor Production","chips":["ALB"]},
-      {"label":"Rare Earths (Neodymium, Dysprosium — motors, magnets)","sector":"Materials & Mining","slug":"metals-mining","tier":"Rare Earth Separation & Critical Mineral Refining","chips":["MP","NB"]}
+      {"label":"Cobalt (energy storage)","sector":"Critical Minerals","slug":"critical-minerals","tier":"Battery Material Precursor Production","chips":["ELMT"]},
+      {"label":"Lithium (energy storage)","sector":"Critical Minerals","slug":"critical-minerals","tier":"Battery Material Precursor Production","chips":["ALB"]},
+      {"label":"Rare Earths (Neodymium, Dysprosium — motors, magnets)","sector":"Critical Minerals","slug":"critical-minerals","tier":"Rare Earth Separation & Critical Mineral Refining","chips":["MP","NB"]}
     ]}
   ],
   "connectors": [
@@ -974,53 +985,53 @@ const STACK={
   "rails": [
     {"id":"power","side":"left","flow":"in","title":"Power Infrastructure","cap":"Power comes in — generation → grid → rack → board.","groups":[
       {"label":"Power Generation","boxes":[
-        {"label":"Nuclear (baseload for hyperscale)","sector":"Energy & Power","slug":"energy-power","tier":"Primary Power Generation","chips":["CEG","VST"]},
-        {"label":"Natural Gas Turbines","sector":"Energy & Power","slug":"energy-power","tier":"Primary Power Generation","chips":["GEV"]},
-        {"label":"Small Modular Reactors (emerging)","sector":"Energy & Power","slug":"energy-power","tier":"Advanced Nuclear — SMR & Microreactor","chips":["OKLO"]}
+        {"label":"Nuclear (baseload for hyperscale)","sector":"Power Infrastructure","slug":"power-infrastructure","tier":"Primary Power Generation","chips":["CEG","VST"]},
+        {"label":"Natural Gas Turbines","sector":"Power Infrastructure","slug":"power-infrastructure","tier":"Primary Power Generation","chips":["GEV"]},
+        {"label":"Small Modular Reactors (emerging)","sector":"Power Infrastructure","slug":"power-infrastructure","tier":"Advanced Nuclear — SMR & Microreactor","chips":["OKLO"]}
       ]},
       {"label":"Grid Infrastructure","boxes":[
-        {"label":"Transformers","sector":"Energy & Power","slug":"energy-power","tier":"High-Voltage Transmission & Grid Infrastructure","chips":["GEV","ETN"]},
-        {"label":"Substations","sector":"Energy & Power","slug":"energy-power","tier":"High-Voltage Transmission & Grid Infrastructure","chips":["ETN"]},
-        {"label":"High-Voltage Distribution","sector":"Energy & Power","slug":"energy-power","tier":"High-Voltage Transmission & Grid Infrastructure","chips":["GEV"]}
+        {"label":"Transformers","sector":"Power Infrastructure","slug":"power-infrastructure","tier":"High-Voltage Transmission & Grid Infrastructure","chips":["GEV","ETN"]},
+        {"label":"Substations","sector":"Power Infrastructure","slug":"power-infrastructure","tier":"High-Voltage Transmission & Grid Infrastructure","chips":["ETN"]},
+        {"label":"High-Voltage Distribution","sector":"Power Infrastructure","slug":"power-infrastructure","tier":"High-Voltage Transmission & Grid Infrastructure","chips":["GEV"]}
       ]},
       {"label":"Data Center Power","boxes":[
-        {"label":"UPS Systems","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Data Center Power Infrastructure","chips":["VRT","ETN"]},
-        {"label":"800V DC Bus Architecture","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Data Center Power Infrastructure","chips":["VRT","NVTS"],"choke":true},
-        {"label":"Rack-Level Power Delivery","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Data Center Power Infrastructure","chips":["VRT"]}
+        {"label":"UPS Systems","sector":"Cloud Infrastructure","slug":"cloud-infrastructure","tier":"Data Center Power Infrastructure","chips":["VRT","ETN"]},
+        {"label":"800V DC Bus Architecture","sector":"Cloud Infrastructure","slug":"cloud-infrastructure","tier":"Data Center Power Infrastructure","chips":["VRT","NVTS"],"choke":true},
+        {"label":"Rack-Level Power Delivery","sector":"Cloud Infrastructure","slug":"cloud-infrastructure","tier":"Data Center Power Infrastructure","chips":["VRT"]}
       ]},
       {"label":"Power Semiconductors","boxes":[
-        {"label":"GaN (high-frequency switching)","sector":"Semiconductors","slug":"semiconductors","tier":"Compound Semiconductor & SiC Substrate","chips":["NVTS","IFX"]},
-        {"label":"SiC (high-voltage)","sector":"Semiconductors","slug":"semiconductors","tier":"Compound Semiconductor & SiC Substrate","chips":["WOLF","STM"]},
+        {"label":"GaN (high-frequency switching)","sector":"Compute Hardware","slug":"compute-hardware","tier":"Compound Semiconductor & SiC Substrate","chips":["NVTS","IFX"]},
+        {"label":"SiC (high-voltage)","sector":"Compute Hardware","slug":"compute-hardware","tier":"Compound Semiconductor & SiC Substrate","chips":["WOLF","STM"]},
         {"label":"Power Management ICs","sector":"Electronic Components","slug":"electronic-components","tier":"Power Management ICs & Gate Drivers","chips":["MPWR"]},
         {"label":"MLCC and Passive Components","sector":"Electronic Components","slug":"electronic-components","tier":"MLCC Manufacturing","chips":["VSH"]}
       ]}
     ]},
     {"id":"thermal","side":"right","flow":"out","title":"Thermal Management","cap":"Heat comes out — cools compute & memory across L4–L9.","groups":[
       {"label":"Cooling Stack","boxes":[
-        {"label":"Air Cooling (legacy)","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Thermal Management & Cooling","chips":[]},
-        {"label":"Direct-to-Chip Liquid Cooling","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Thermal Management & Cooling","chips":["VRT"]},
-        {"label":"Immersion Cooling","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Thermal Management & Cooling","chips":[]},
-        {"label":"Two-Phase Cooling","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Thermal Management & Cooling","chips":[]},
+        {"label":"Air Cooling (legacy)","sector":"Cloud Infrastructure","slug":"cloud-infrastructure","tier":"Thermal Management & Cooling","chips":[]},
+        {"label":"Direct-to-Chip Liquid Cooling","sector":"Cloud Infrastructure","slug":"cloud-infrastructure","tier":"Thermal Management & Cooling","chips":["VRT"]},
+        {"label":"Immersion Cooling","sector":"Cloud Infrastructure","slug":"cloud-infrastructure","tier":"Thermal Management & Cooling","chips":[]},
+        {"label":"Two-Phase Cooling","sector":"Cloud Infrastructure","slug":"cloud-infrastructure","tier":"Thermal Management & Cooling","chips":[]},
         {"label":"Thermal Interface Materials (TIM)","gap":true,"chips":[]},
-        {"label":"Heat Exchangers and CDUs","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"Thermal Management & Cooling","chips":["VRT","MOD","NVT","6367.T"]}
+        {"label":"Heat Exchangers and CDUs","sector":"Cloud Infrastructure","slug":"cloud-infrastructure","tier":"Thermal Management & Cooling","chips":["VRT","MOD","NVT","6367.T"]}
       ]}
     ]},
     {"id":"security","side":"right","flow":"wrap","title":"Security","cap":"Security wraps around the whole stack — cross-cutting at every layer.","groups":[
       {"label":"Stack Security","boxes":[
-        {"label":"AI Model Security (alignment, jailbreak defense)","sector":"Cybersecurity","slug":"cybersecurity","tier":"AI-Native Security","chips":[]},
-        {"label":"Cybersecurity for AI Infrastructure","sector":"Cybersecurity","slug":"cybersecurity","tier":"Cloud Security Posture (CSPM/CNAPP)","chips":["PANW","CRWD","FTNT","SAIL","RBRK"]},
+        {"label":"AI Model Security (alignment, jailbreak defense)","sector":"Security","slug":"security","tier":"AI-Native Security","chips":[]},
+        {"label":"Cybersecurity for AI Infrastructure","sector":"Security","slug":"security","tier":"Cloud Security Posture (CSPM/CNAPP)","chips":["PANW","CRWD","FTNT","SAIL","RBRK"]},
         {"label":"Post-Quantum Cryptography","gap":true,"chips":[]},
-        {"label":"Optical Network Encryption","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Coherent Line Systems & ROADM","chips":["CIEN","VIAV"]},
-        {"label":"Hardware Root of Trust","sector":"Cybersecurity","slug":"cybersecurity","tier":"Hardware Security Root","chips":[]}
+        {"label":"Optical Network Encryption","sector":"Interconnect","slug":"interconnect","tier":"Coherent Line Systems & ROADM","chips":["CIEN","VIAV"]},
+        {"label":"Hardware Root of Trust","sector":"Security","slug":"security","tier":"Hardware Security Root","chips":[]}
       ]}
     ]},
     {"id":"edge","side":"right","kind":"surface","title":"Edge & Physical AI","cap":"Deployment paradigm — where the stack meets the physical world.","groups":[
       {"label":"Edge & Physical AI","boxes":[
-        {"label":"Autonomous Vehicles","sector":"Robotics & Edge AI","slug":"robotics-edge-ai","tier":"Autonomous Vehicles & ADAS","chips":["MBLY","OUST","LAZR"]},
-        {"label":"Humanoid Robotics","sector":"Robotics & Edge AI","slug":"robotics-edge-ai","tier":"System Integration & OEM Assembly","chips":[]},
-        {"label":"Drones and UAVs","sector":"Robotics & Edge AI","slug":"robotics-edge-ai","tier":"UAV & Drone Systems","chips":["AVAV","JOBY","ACHR"]},
-        {"label":"Driver / Behavior Monitoring Systems","sector":"Robotics & Edge AI","slug":"robotics-edge-ai","tier":"Perception Layer","chips":["AMBA"]},
-        {"label":"Edge Inference Chips","sector":"Robotics & Edge AI","slug":"robotics-edge-ai","tier":"Edge Compute Module","chips":["AMBA"]},
+        {"label":"Autonomous Vehicles","sector":"Edge & Physical AI","slug":"edge-physical-ai","tier":"Autonomous Vehicles & ADAS","chips":["MBLY","OUST","LAZR"]},
+        {"label":"Humanoid Robotics","sector":"Edge & Physical AI","slug":"edge-physical-ai","tier":"System Integration & OEM Assembly","chips":[]},
+        {"label":"Drones and UAVs","sector":"Edge & Physical AI","slug":"edge-physical-ai","tier":"UAV & Drone Systems","chips":["AVAV","JOBY","ACHR"]},
+        {"label":"Driver / Behavior Monitoring Systems","sector":"Edge & Physical AI","slug":"edge-physical-ai","tier":"Perception Layer","chips":["AMBA"]},
+        {"label":"Edge Inference Chips","sector":"Edge & Physical AI","slug":"edge-physical-ai","tier":"Edge Compute Module","chips":["AMBA"]},
         {"label":"AR / VR Devices","gap":true,"chips":["KOPN","META"]}
       ]},
       {"label":"Parallel Compute Paradigms","boxes":[
