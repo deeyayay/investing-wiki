@@ -77,17 +77,17 @@ _Sources in wiki: Management & Leadership section, Conviction Log (guidance beat
 
 ### 4. Financial Health (/5)
 
-Does the company have a fortress balance sheet? Can it weather downturns and self-fund growth?
+Does the company have a fortress balance sheet? Can it weather downturns and self-fund growth? This criterion also considers **demand chain health** — whether the capex flowing to this ticker originates from FCF (durable) or from debt/external raises (fragile). A company can have a clean balance sheet but be fully exposed to customers who cannot self-fund.
 
 **Revenue-generating companies:**
 
 | Score | Criteria |
 |-------|----------|
-| **5** | Net cash position; FCF positive and growing; debt/EBITDA <0.5x; self-funded R&D and capex |
-| **4** | Net cash or low leverage (<1x EBITDA); positive operating cash flow; improving FCF trajectory |
-| **3** | Manageable debt (1–2x EBITDA); breakeven or slight FCF positive; no near-term maturity risk |
-| **2** | Elevated leverage (2–4x EBITDA); FCF negative; requires capital markets access to fund operations |
-| **1** | High leverage (>4x EBITDA) or cash burn without clear path to sustainability |
+| **5** | Net cash position; FCF positive and growing; debt/EBITDA <0.5x; self-funded R&D and capex; primary customers are FCF-funded (hyperscalers or enterprises with strong cash generation) |
+| **4** | Net cash or low leverage (<1x EBITDA); positive operating cash flow; improving FCF trajectory; customer funding mix is predominantly FCF-backed with limited debt-funded neocloud exposure (<25% revenue) |
+| **3** | Manageable debt (1–2x EBITDA); breakeven or slight FCF positive; no near-term maturity risk; meaningful revenue exposure to debt-funded neoclouds or pre-IPO ecosystem players (25–50%) |
+| **2** | Elevated leverage (2–4x EBITDA); FCF negative; requires capital markets access; OR majority revenue from debt-funded or circular-valuation customers (>50%), or a primary customer is pre-IPO with unclear runway |
+| **1** | High leverage (>4x EBITDA) or cash burn without clear path to sustainability; OR primary customer is heavily levered, pre-IPO, or part of a circular-valuation structure with limited buffer |
 
 **Pre-revenue modifier (cap this criterion at 3/5):**
 
@@ -97,7 +97,43 @@ Does the company have a fortress balance sheet? Can it weather downturns and sel
 | **2** | 12–18 months runway; next raise required within 1 year at likely dilutive terms |
 | **1** | <12 months runway; raise imminent at unclear pricing; survival risk elevated |
 
-_Sources in wiki: Earnings & Financials (balance sheet notes), Research Log, SEC Filings_
+_Sources in wiki: Earnings & Financials (balance sheet notes), Research Log, SEC Filings, `demand_chain:` block in facts.md, Cross-Ticker Signals in analysis.md_
+
+---
+
+### Risk Flags (separate from composite)
+
+Risk Flags are evaluated by `/score-ticker` and appended below the Scoring Summary table. They are **not included in the composite** — the same model as the Valuation snapshot. Their purpose is to surface structural fragilities that a per-criterion score can miss because it evaluates the ticker in isolation.
+
+**Five flags, each assigned CLEAR / WATCH / FLAG:**
+
+| Flag | CLEAR | WATCH | FLAG |
+|------|-------|-------|------|
+| **Capex sustainability** | FCF covers capex; debt/EBITDA <1x | Debt-funded capex with manageable coverage (1–2x EBITDA) | Capex funded by debt with weak FCF coverage or near-term maturity risk |
+| **Demand chain health** | Primary customers are FCF-funded hyperscalers or diversified enterprise | Mix of FCF and debt-funded neocloud customers | Primary customer is pre-IPO, heavily levered, or part of a circular-valuation ecosystem (e.g. neocloud dependent on OpenAI funding) |
+| **Customer concentration** | Top 3 customers <40% revenue; no single customer >20% | Top 3 = 40–60% or single customer 20–40% | Single customer >40% or single ecosystem >60% |
+| **Circular revenue exposure** | No circular backlog structures; demand signal traceable to real end-user cash | Minor backlog from circular chains (<20%); low systemic risk | Substantial backlog from circular chains; demand signal may be self-referential (e.g. neocloud → AI lab → GPU vendor → neocloud) |
+| **Rate sensitivity** | Minimal variable-rate or floating debt; Fed tightening immaterial | Moderate variable-rate exposure; manageable under +100bps scenario | Heavy variable-rate debt; Fed tightening materially impairs FCF coverage or customer solvency |
+
+**Assignment rules:**
+- Read `demand_chain:` block in facts.md and customer concentration from Investment Thesis / Cross-Ticker Signals in analysis.md
+- If evidence is absent for a flag, assign WATCH and note "Insufficient data"
+- CLEAR on all 5 = structurally sound demand chain; FLAG on Demand Chain Health or Circular Revenue = treat as thesis risk requiring monitoring cadence
+
+**Output format** (appended below Scoring Summary table in analysis.md):
+
+```markdown
+## Risk Flags
+_Evaluated: YYYY-MM-DD_
+
+| Flag | Status | Notes |
+|------|--------|-------|
+| Capex sustainability | CLEAR / WATCH / FLAG | [one-line evidence] |
+| Demand chain health | CLEAR / WATCH / FLAG | [primary customers + funding type] |
+| Customer concentration | CLEAR / WATCH / FLAG | [top customer %] |
+| Circular revenue exposure | CLEAR / WATCH / FLAG | [none / describe] |
+| Rate sensitivity | CLEAR / WATCH / FLAG | [debt terms / variable rate exposure] |
+```
 
 ---
 

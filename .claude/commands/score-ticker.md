@@ -70,6 +70,20 @@ For each criterion (1–5), select the score that best matches the evidence. Cit
 | Macro Environment | Sector Framework (why this sector exists, cycle positioning) |
 | Future Potential | Investment Thesis (bull case) in analysis.md; Catalyst Timeline |
 
+### Step 4.5 — Evaluate Risk Flags
+
+Assess 5 structural risk flags. These are **not part of the composite** — they are output alongside the Scoring Summary as a separate block. Read `demand_chain:` from facts.md and customer concentration evidence from Investment Thesis / Cross-Ticker Signals in analysis.md.
+
+Assign each flag: **CLEAR** / **WATCH** / **FLAG**. If evidence is absent, default to WATCH and note "Insufficient data."
+
+| Flag | CLEAR | WATCH | FLAG |
+|------|-------|-------|------|
+| **Capex sustainability** | FCF covers capex; debt/EBITDA <1x | Debt-funded capex, manageable coverage (1–2x) | Capex debt-funded with weak FCF coverage or near-term maturity risk |
+| **Demand chain health** | Primary customers FCF-funded (hyperscalers, strong enterprise) | Mix of FCF and debt-funded neocloud customers | Primary customer pre-IPO, heavily levered, or circular-valuation ecosystem |
+| **Customer concentration** | Top 3 <40%; no single customer >20% | Top 3 = 40–60% or single customer 20–40% | Single customer >40% or single ecosystem >60% |
+| **Circular revenue exposure** | No circular backlog; demand traceable to real end-user cash | Minor circular-chain backlog (<20%) | Substantial circular-chain backlog; demand signal may be self-referential |
+| **Rate sensitivity** | Minimal variable-rate debt; Fed tightening immaterial | Moderate variable exposure; manageable under +100bps | Heavy variable-rate debt; tightening materially impairs FCF or customer solvency |
+
 ### Step 5 — Calculate composite
 
 `composite = round((sum of 6 scores / 30) × 10, nearest 0.5)`
@@ -107,6 +121,17 @@ _Last scored: YYYY-MM-DD | [[Scoring Rubric]]_
 
 **Valuation:** [label] at $[price] | [Metric]: [X]x | Analyst upside: [X]%
 **Growth Potential:** — (pending real-time data integration)
+
+## Risk Flags
+_Evaluated: YYYY-MM-DD_
+
+| Flag | Status | Notes |
+|------|--------|-------|
+| Capex sustainability | CLEAR / WATCH / FLAG | [one-line evidence] |
+| Demand chain health | CLEAR / WATCH / FLAG | [primary customers + funding type] |
+| Customer concentration | CLEAR / WATCH / FLAG | [top customer % or "Insufficient data"] |
+| Circular revenue exposure | CLEAR / WATCH / FLAG | [none / describe / "Insufficient data"] |
+| Rate sensitivity | CLEAR / WATCH / FLAG | [debt terms / variable rate exposure] |
 ```
 
 ### Step 8 — Update facts.md metrics
