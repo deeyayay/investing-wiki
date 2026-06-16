@@ -50,6 +50,22 @@ tickers:
     score: null
     next_earnings: "2026-09-16"
 
+  AMZN:
+    company: "Amazon.com, Inc."
+    cik: "0001018724"
+    exchange: NASDAQ
+    sector: "Cloud Infrastructure"
+    path: "Investing/Wiki/Sectors/Cloud Infrastructure/AMZN"
+    score: null
+
+  GOOGL:
+    company: "Alphabet Inc."
+    cik: "0001652044"
+    exchange: NASDAQ
+    sector: "Cloud Infrastructure"
+    path: "Investing/Wiki/Sectors/Cloud Infrastructure/GOOGL"
+    score: null
+
   ANET:
     company: "Arista Networks"
     cik: "0001313925"
@@ -115,6 +131,14 @@ tickers:
     score: 9.5
     next_earnings: "2026-08-26"
     # migrated to three-layer structure 2026-06-07
+
+  AMD:
+    company: "Advanced Micro Devices, Inc."
+    cik: "0000002488"
+    exchange: NASDAQ
+    sector: "Compute Hardware"
+    path: "Investing/Wiki/Sectors/Compute Hardware/AMD"
+    score: null
 
   INTC:
     company: "Intel Corporation"
@@ -515,6 +539,22 @@ tickers:
     next_earnings: null
 
   # ── Security (rail) ──────────────────────────────────────────────────────
+  PANW:
+    company: "Palo Alto Networks, Inc."
+    cik: "0001327567"
+    exchange: NASDAQ
+    sector: "Security"
+    path: "Investing/Wiki/Sectors/Security/PANW"
+    score: null
+
+  CRWD:
+    company: "CrowdStrike Holdings, Inc."
+    cik: "0001535527"
+    exchange: NASDAQ
+    sector: "Security"
+    path: "Investing/Wiki/Sectors/Security/CRWD"
+    score: null
+
   RBRK:
     company: "Rubrik Inc."
     cik: "0001943896"
@@ -894,14 +934,6 @@ candidates:
     source: "map-sector"
     added: "2026-05-24"
     note: "Only large-scale 4H-SiC substrate maker outside China; 150mm and 200mm wafers"
-
-  - ticker: AMD
-    company: "Advanced Micro Devices"
-    sector: "Compute Hardware"
-    layer: "Distributed Training Orchestration"
-    source: "map-sector"
-    added: "2026-05-31"
-    note: "MI300X GPU; ROCm ecosystem; gaining training share at Meta and Microsoft"
 
   - ticker: CRWV
     company: CoreWeave
