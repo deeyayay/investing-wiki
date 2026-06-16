@@ -24,6 +24,7 @@ The legacy five-dimension codes map onto the 12 layers as follows (full layer de
 | Sector | Dimension | Folder Slug | Status | Supply Chain Map |
 |--------|-----------|-------------|--------|-----------------|
 | Semiconductors | D1 | `Semiconductors` | partial | `_Supply Chain Map.md` — rebuilt 2026-05-24, full process/product depth, Chip Design tier added |
+| Memory | D1 | `Memory` | planned | not yet created — sector added 2026-06-16 for NAND pure-plays (Kioxia); run `/map-sector "Memory"` |
 | Electronic Components | D1 | `Electronic Components` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
 | Materials & Mining | D1 | `Metals & Mining` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |
 | Photonics & Optical | D2 | `Photonics & Optical` | partial | `_Supply Chain Map.md` — mapped 2026-05-24, process/product depth |

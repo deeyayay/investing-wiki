@@ -320,6 +320,17 @@ const DATA = {
       ]
     },
     {
+      slug: "memory",
+      name: "Memory",
+      dimension: "D1",
+      description: "NAND flash and non-volatile memory for AI storage and edge deployment",
+      tiers: [
+        { tier: "NAND Flash Memory", fn: "Design and fabricate 3D NAND flash memory for enterprise SSDs, AI data storage, and edge devices using vertical charge-trap stacking at 200+ layers with CMOS bonding architecture", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Scale + Process IP", margin_profile: "High (cyclical)", companies: [
+          { ticker: "285A.T", name: "Kioxia Holdings Corporation", mkt_cap: "Large", notes: "World's #3 NAND flash manufacturer and inventor of NAND (Toshiba lineage, 1987). BiCS10 3D NAND at 332 layers leads on density and power efficiency. Only publicly traded large-scale pure-play NAND company; Flash Ventures JV with SanDisk shares capex across 9 Japan fabs." }
+        ]}
+      ]
+    },
+    {
       slug: "electronic-components",
       name: "Electronic Components",
       dimension: "D1",
@@ -772,7 +783,8 @@ const STACK={
       {label:"CPUs & Design IP",slug:"semiconductors",tier:"EDA & Design IP",chips:["ARM","SNPS","CDNS"]}
     ]},
     {num:"06",name:"Memory",hue:92,tag:"compute is useless without memory",boxes:[
-      {label:"HBM · DRAM · NAND Flash",slug:"semiconductors",tier:"Memory (HBM · DRAM · NAND)",chips:["MU"]}
+      {label:"HBM · DRAM (IDM)",slug:"semiconductors",tier:"Memory (HBM · DRAM · NAND)",chips:["MU"]},
+      {label:"NAND Flash (Pure-Play)",slug:"memory",tier:"NAND Flash Memory",chips:["285A.T"]}
     ]},
     {num:"07",name:"Interconnect",hue:42,tag:"compute & memory need to talk",boxes:[
       {label:"Networking Silicon & Switches",slug:"compute-infrastructure",tier:"High-Speed Networking",chips:["ANET","AVGO","MRVL"]},

@@ -20,7 +20,7 @@ The `daily-dashboard` skill reads the JSON block below to regenerate the dashboa
 | L03 | **Software Infrastructure** | Orchestration, serving, MLOps, APIs | AI Model Infrastructure |
 | L04 | **Cloud Infrastructure** | Hyperscalers, neoclouds, colocation, storage | Compute Infrastructure |
 | L05 | **Compute Hardware** | GPUs, custom ASICs, CPUs, design IP | Semiconductors |
-| L06 | **Memory** | HBM, DRAM, NAND | Semiconductors |
+| L06 | **Memory** | HBM, DRAM, NAND | Semiconductors (HBM/DRAM IDM), Memory (NAND pure-play) |
 | L07 | **Interconnect** | Networking silicon, optics, SerDes, fiber | Compute Infrastructure, Photonics & Optical, Semiconductors |
 | L08 | **Advanced Packaging** | CoWoS, stacking, IC substrates | Semiconductors, Electronic Components |
 | L09 | **Semiconductor Foundry** | Leading-edge & specialty wafer fab | Semiconductors |
@@ -87,7 +87,8 @@ The previous five-dimension stack is superseded but maps cleanly onto the layers
       {"label":"CPUs & Design IP","sector":"Semiconductors","slug":"semiconductors","tier":"EDA & Design IP","chips":["ARM","SNPS","CDNS"]}
     ]},
     {"num":"06","name":"Memory","hue":92,"tag":"compute is useless without memory","boxes":[
-      {"label":"HBM · DRAM · NAND Flash","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU"]}
+      {"label":"HBM · DRAM (IDM)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU"]},
+      {"label":"NAND Flash (Pure-Play)","sector":"Memory","slug":"memory","tier":"NAND Flash Memory","chips":["285A.T"]}
     ]},
     {"num":"07","name":"Interconnect","hue":42,"tag":"compute & memory need to talk","boxes":[
       {"label":"Networking Silicon & Switches","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"High-Speed Networking","chips":["ANET","AVGO","MRVL"]},
