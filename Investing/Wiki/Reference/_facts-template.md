@@ -55,6 +55,13 @@ tech_exposure: []
 #   exposure: partial
 #   notes: "Ethereum staking revenue stream; not primary business"
 
+demand_chain:
+  customer_funding_type: null  # "fcf-hyperscaler" | "debt-neocloud" | "pre-ipo-ecosystem" | "mixed" | "diversified"
+  top_customer_pct: null       # % of revenue from largest single customer (integer, e.g. 35)
+  top_3_customers_pct: null    # % of revenue from top 3 customers combined
+  circular_exposure: null      # "none" | "minor" | "significant"
+  notes: "—"                   # brief description of primary customer ecosystem
+
 metrics:
   score: null            # Composite score from /score-ticker (0–10)
   score_label: "—"       # Unrivaled / Strong / Average / Reassess

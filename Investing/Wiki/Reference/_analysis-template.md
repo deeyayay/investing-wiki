@@ -39,6 +39,17 @@ _Last scored: — | [[Scoring Rubric]]_
 **Valuation:** — (not yet scored)
 **Growth Potential:** — (pending)
 
+## Risk Flags
+_Evaluated: —_
+
+| Flag | Status | Notes |
+|------|--------|-------|
+| Capex sustainability | — | |
+| Demand chain health | — | |
+| Customer concentration | — | |
+| Circular revenue exposure | — | |
+| Rate sensitivity | — | |
+
 ---
 
 ## Conviction Log
