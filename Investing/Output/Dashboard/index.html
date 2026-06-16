@@ -328,9 +328,30 @@ const DATA = {
           { ticker: "ALAB", name: "Astera Labs", mkt_cap: "Mid", notes: "Makes the signal-booster (retimer) chips that keep AI servers connected at full speed as rack counts scale — a bottleneck that only appeared when GPU clusters grew to thousands of cards, creating a niche with no entrenched incumbent." },
           { ticker: "CRDO", name: "Credo Technology", mkt_cap: "Small", notes: "Solves the physics of moving data at 224 billion bits per second between chips on a board — its active-electrical-cable (AEC) approach is more power-efficient than optical for short distances inside a server, and that advantage compounds with every GPU generation." }
         ]},
-        { tier: "Memory (HBM · DRAM · NAND)", fn: "Design and fabricate the high-bandwidth and high-density memory — HBM stacks, DDR/LPDDR DRAM, and NAND flash — that feeds AI accelerators and stores model weights, datasets, and KV cache. The layer compute is useless without.", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Scale + Process IP", margin_profile: "High (cyclical)", companies: [
-          { ticker: "MU", name: "Micron Technology", mkt_cap: "Large", notes: "The only US-based maker of High Bandwidth Memory (HBM) — the specialized memory stacked directly on AI chips. Without HBM, a GPU can't move data fast enough to stay productive during training. One of three HBM suppliers worldwide alongside SK Hynix and Samsung." },
-          { ticker: "SNDK", name: "SanDisk Corporation", mkt_cap: "Large", notes: "Pure-play NAND/flash after the Feb-2025 Western Digital spinoff. Pioneer of High-Bandwidth Flash (HBF) — NAND stacked HBM-style for ~1.6 TB/s at 8-16x HBM capacity (SK Hynix standardization MOU Aug 2025; samples H2 2026). The primary NAND vehicle for the agentic-AI and brain-scale data wave." }
+        { tier: "HBM (High-Bandwidth Memory)", fn: "Stacks of DRAM die (8–16 high) bonded with through-silicon vias (TSV) and mounted on-package beside the GPU via a CoWoS interposer — trades capacity for extreme bandwidth (~1.2 TB/s per stack on HBM3e, scaling with HBM4). This is the memory that keeps an AI accelerator fed during training and inference; supply is pre-allocated and CoWoS-packaging-gated. A three-supplier oligopoly.", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Scale + Process IP", margin_profile: "High (cyclical)", companies: [
+          { ticker: "000660.KS", name: "SK Hynix", mkt_cap: "Large", notes: "⚠️ Korea-listed. The HBM market leader (~50%+ share) and lead qualifier of HBM3E/HBM4 into NVIDIA — the single most important HBM supplier in the AI buildout." },
+          { ticker: "MU", name: "Micron Technology", mkt_cap: "Large", notes: "The only US-based HBM maker — HBM3E shipping into NVIDIA, taking share as the #3 supplier. Tracked in the wiki (Semiconductors)." },
+          { ticker: "005930.KS", name: "Samsung Electronics", mkt_cap: "Large", notes: "⚠️ Korea-listed. #2 HBM supplier; HBM3E qualification ramp; integrated DRAM+foundry+packaging the others lack." }
+        ]},
+        { tier: "DRAM (System & Server Memory)", fn: "Conventional volatile working memory — DDR5 server/desktop DIMMs and GDDR7 graphics memory built on leading-edge 1α/1β/1γ nodes. Holds the data a CPU or GPU is actively computing on. A capital-cycle commodity differentiated on process node and bit-cost; the same wafers and fabs that feed HBM and LPDDR.", chokepoint: "Partial", capital_intensity: "Very High", moat_type: "Scale + Process IP", margin_profile: "Medium (cyclical)", companies: [
+          { ticker: "005930.KS", name: "Samsung Electronics", mkt_cap: "Large", notes: "⚠️ Korea-listed. The world's largest DRAM maker by volume; sets the DDR5/GDDR7 price cycle." },
+          { ticker: "000660.KS", name: "SK Hynix", mkt_cap: "Large", notes: "⚠️ Korea-listed. #2 DRAM; server DDR5 leadership tied to its HBM base-die expertise." },
+          { ticker: "MU", name: "Micron Technology", mkt_cap: "Large", notes: "#3 DRAM and the only US producer; leading-edge DDR5/LPDDR5X node. Tracked in the wiki." }
+        ]},
+        { tier: "NAND Flash (Storage)", fn: "Non-volatile 3D-stacked flash (200+ layers, TLC/QLC charge-trap) — the SSD and enterprise storage that holds model weights, datasets, and training checkpoints. Retains data without power; differentiated on layer count and cost-per-bit rather than bandwidth. The cheapest, densest tier of the memory hierarchy.", chokepoint: "Partial", capital_intensity: "Very High", moat_type: "Scale + Process IP", margin_profile: "Low–Medium (cyclical)", companies: [
+          { ticker: "SNDK", name: "SanDisk Corporation", mkt_cap: "Large", notes: "Pure-play NAND/flash after the Feb-2025 Western Digital spinoff — BiCS 3D NAND, enterprise QLC. The primary US-listed NAND vehicle. Tracked in the wiki (Semiconductors)." },
+          { ticker: "285A.T", name: "Kioxia Holdings", mkt_cap: "Large", notes: "⚠️ Japan-listed (TSE, re-IPO Dec 2024). Co-inventor of NAND flash; BiCS NAND JV partner with SanDisk — the two share fabs." },
+          { ticker: "005930.KS", name: "Samsung Electronics", mkt_cap: "Large", notes: "⚠️ Korea-listed. #1 NAND share; V-NAND vertical-integration leader." },
+          { ticker: "MU", name: "Micron Technology", mkt_cap: "Large", notes: "Leading-layer-count 3D NAND alongside its DRAM/HBM franchise. Tracked in the wiki." }
+        ]},
+        { tier: "LPDDR (Low-Power & Edge Memory)", fn: "Low-power DRAM (LPDDR5X, SOCAMM modules) optimized for power efficiency over raw bandwidth — the working memory for mobile, automotive, and edge-inference devices, and increasingly for low-power AI servers (e.g., NVIDIA Grace). Same DRAM fabs as the system-memory tier, different packaging and power/spec envelope.", chokepoint: "N", capital_intensity: "Very High", moat_type: "Scale + Process IP", margin_profile: "Medium (cyclical)", companies: [
+          { ticker: "MU", name: "Micron Technology", mkt_cap: "Large", notes: "LPDDR5X design-in for edge AI and the NVIDIA Grace SOCAMM module; the US LPDDR option. Tracked in the wiki." },
+          { ticker: "005930.KS", name: "Samsung Electronics", mkt_cap: "Large", notes: "⚠️ Korea-listed. Largest mobile LPDDR supplier; LPDDR5X/LPCAMM2 leadership." },
+          { ticker: "000660.KS", name: "SK Hynix", mkt_cap: "Large", notes: "⚠️ Korea-listed. LPDDR5X and low-power server module supplier." }
+        ]},
+        { tier: "HBF (High-Bandwidth Flash)", fn: "Emerging: NAND stacked HBM-style with TSVs to deliver HBM-class bandwidth (~1.6 TB/s) at 8–16× HBM capacity for a fraction of the cost — aimed at holding huge inference working sets and brain-scale datasets the GPU can't fit in HBM. SanDisk + SK Hynix standardization MOU (Aug 2025); samples expected H2 2026. Pre-volume, but the bridge between the bandwidth and capacity tiers.", chokepoint: "N", capital_intensity: "Very High", moat_type: "Process IP (early-stage)", margin_profile: "N/A (pre-volume)", companies: [
+          { ticker: "SNDK", name: "SanDisk Corporation", mkt_cap: "Large", notes: "Pioneer and namer of High-Bandwidth Flash — NAND stacked HBM-style; primary public pure-play for the capacity-bound inference thesis. Tracked in the wiki (Semiconductors)." },
+          { ticker: "000660.KS", name: "SK Hynix", mkt_cap: "Large", notes: "⚠️ Korea-listed. Signed the HBF standardization MOU with SanDisk (Aug 2025), pairing its HBM packaging know-how with NAND." }
         ]},
         { tier: "Lithography Equipment", fn: "Project photomask circuit patterns onto photoresist-coated wafers at nanometer precision using UV or EUV light — the single most critical and concentrated manufacturing equipment tier", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Process IP + Geographic monopoly", margin_profile: "Very High", companies: [
           { ticker: "ASML", name: "ASML Holding", mkt_cap: "Large", notes: "The only company that builds the machines used to print the world's most advanced chips. Without ASML's EUV scanners, TSMC and Samsung cannot manufacture chips at 7nm or below — no other company can do this." }
@@ -867,12 +888,12 @@ const STACK={
       {"label":"Server CPUs (orchestration, agentic workloads)","sector":"Semiconductors","slug":"semiconductors","tier":"Chip Design (Fabless & IDM)","chips":["ARM","INTC"]},
       {"label":"Networking ASICs (switch silicon)","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"High-Speed Networking","chips":["ANET","AVGO","MRVL"]}
     ]},
-    {"num":"06","name":"Memory","hue":92,"tag":"HBM · DRAM · NAND · LPDDR","boxes":[
-      {"label":"HBM (current AI server standard)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU"]},
-      {"label":"HBF (high-bandwidth flash)","gap":true,"chips":["SNDK"]},
-      {"label":"DRAM (system memory)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU"]},
-      {"label":"NAND Flash (storage)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU","SNDK"]},
-      {"label":"LPDDR (mobile / edge inference)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU"]}
+    {"num":"06","name":"Memory","hue":92,"tag":"HBM · HBF · DRAM · NAND · LPDDR","boxes":[
+      {"label":"HBM (current AI server standard)","sector":"Semiconductors","slug":"semiconductors","tier":"HBM (High-Bandwidth Memory)","chips":["MU","000660.KS","005930.KS"]},
+      {"label":"HBF (high-bandwidth flash)","sector":"Semiconductors","slug":"semiconductors","tier":"HBF (High-Bandwidth Flash)","chips":["SNDK","000660.KS"]},
+      {"label":"DRAM (system memory)","sector":"Semiconductors","slug":"semiconductors","tier":"DRAM (System & Server Memory)","chips":["MU","005930.KS","000660.KS"]},
+      {"label":"NAND Flash (storage)","sector":"Semiconductors","slug":"semiconductors","tier":"NAND Flash (Storage)","chips":["SNDK","285A.T","005930.KS","MU"]},
+      {"label":"LPDDR (mobile / edge inference)","sector":"Semiconductors","slug":"semiconductors","tier":"LPDDR (Low-Power & Edge Memory)","chips":["MU","005930.KS"]}
     ]},
     {"num":"07","name":"Interconnect","hue":42,"tag":"scale-up · scale-out · scale-across","boxes":[
       {"label":"Co-Packaged Optics (CPO)","group":"Scale-Up · within the rack, chip to chip","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Transceiver & Module Integration","chips":["COHR","LITE"]},

@@ -22,7 +22,7 @@ The `daily-dashboard` skill reads the JSON block below to regenerate the dashboa
 | L03 | **Software Infrastructure** | Orchestration, serving, MLOps, APIs | AI Model Infrastructure |
 | L04 | **Cloud Infrastructure** | Hyperscalers, neoclouds, colocation, storage | Compute Infrastructure |
 | L05 | **Compute Hardware** | GPUs, custom ASICs, CPUs, design IP | Semiconductors |
-| L06 | **Memory** | HBM, DRAM, NAND | Semiconductors |
+| L06 | **Memory** | HBM, HBF, DRAM, NAND, LPDDR | Semiconductors |
 | L07 | **Interconnect** | Networking silicon, optics, SerDes, fiber | Compute Infrastructure, Photonics & Optical, Semiconductors |
 | L08 | **Advanced Packaging** | CoWoS, stacking, IC substrates | Semiconductors, Electronic Components |
 | L09 | **Semiconductor Foundry** | Leading-edge & specialty wafer fab | Semiconductors |
@@ -96,12 +96,12 @@ The previous five-dimension stack is superseded but maps cleanly onto the layers
       {"label":"Server CPUs (orchestration, agentic workloads)","sector":"Semiconductors","slug":"semiconductors","tier":"Chip Design (Fabless & IDM)","chips":["ARM","INTC"]},
       {"label":"Networking ASICs (switch silicon)","sector":"Compute Infrastructure","slug":"compute-infrastructure","tier":"High-Speed Networking","chips":["ANET","AVGO","MRVL"]}
     ]},
-    {"num":"06","name":"Memory","hue":92,"tag":"HBM · DRAM · NAND · LPDDR","boxes":[
-      {"label":"HBM (current AI server standard)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU"]},
-      {"label":"HBF (high-bandwidth flash)","gap":true,"chips":["SNDK"]},
-      {"label":"DRAM (system memory)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU"]},
-      {"label":"NAND Flash (storage)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU","SNDK"]},
-      {"label":"LPDDR (mobile / edge inference)","sector":"Semiconductors","slug":"semiconductors","tier":"Memory (HBM · DRAM · NAND)","chips":["MU"]}
+    {"num":"06","name":"Memory","hue":92,"tag":"HBM · HBF · DRAM · NAND · LPDDR","boxes":[
+      {"label":"HBM (current AI server standard)","sector":"Semiconductors","slug":"semiconductors","tier":"HBM (High-Bandwidth Memory)","chips":["MU","000660.KS","005930.KS"]},
+      {"label":"HBF (high-bandwidth flash)","sector":"Semiconductors","slug":"semiconductors","tier":"HBF (High-Bandwidth Flash)","chips":["SNDK","000660.KS"]},
+      {"label":"DRAM (system memory)","sector":"Semiconductors","slug":"semiconductors","tier":"DRAM (System & Server Memory)","chips":["MU","005930.KS","000660.KS"]},
+      {"label":"NAND Flash (storage)","sector":"Semiconductors","slug":"semiconductors","tier":"NAND Flash (Storage)","chips":["SNDK","285A.T","005930.KS","MU"]},
+      {"label":"LPDDR (mobile / edge inference)","sector":"Semiconductors","slug":"semiconductors","tier":"LPDDR (Low-Power & Edge Memory)","chips":["MU","005930.KS"]}
     ]},
     {"num":"07","name":"Interconnect","hue":42,"tag":"scale-up · scale-out · scale-across","boxes":[
       {"label":"Co-Packaged Optics (CPO)","group":"Scale-Up · within the rack, chip to chip","sector":"Photonics & Optical","slug":"photonics-optical","tier":"Transceiver & Module Integration","chips":["COHR","LITE"]},
@@ -262,7 +262,6 @@ VSH, LIN, MBLY, AVAV. Remaining open gaps:
 |-------|---------|----------------|
 | L01 | AI Assistants & Chatbots; Agentic AI Platforms; Enterprise AI SaaS; AI-Native Vertical Applications | New **Application / AI-native apps** sector (Fintech & Commerce AI is the only L01 coverage today) |
 | L04 | Edge / Inference Colocation | Compute Infrastructure — new tier (chips EQIX/VRT pending tier) |
-| L06 | HBF (high-bandwidth flash) | Semiconductors / Memory — emerging |
 | L08 | Thermal Interface Materials (TIM) | Electronic Components / Compute Infra (thermal) |
 | L10 | NIL (nanoimprint, photonics); Compound Semi Growth (MOCVD) | Semiconductors — equipment sub-tiers (chips CAJ / AMAT, AIXA.DE) |
 | L11 | Anti-Stick Coatings (PFAS-free) | Semiconductors / Electronic Components — materials (chip ENTG) |
