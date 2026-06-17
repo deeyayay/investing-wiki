@@ -35,6 +35,7 @@ _Not yet scored — run `/score-ticker SNDK`._
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
 | 2026-06-15 | Onboarded as primary NAND + HBF exposure for the memory/storage thesis | → | Establishes coverage; HBF standardization with SK Hynix and the agentic-AI NAND demand wave are the watch items. |
+| 2026-06-16 | Substack deep-dive (Ren, ex-Google/MSFT/LinkedIn, Head of AI): Q4 FY2026 financials confirmed — 78.4% gross margin, 69.98% operating margin, $13.18B TTM revenue +251% YoY, zero net debt, $42B NBM contracts | ↑↑ | NBM contracts are a structural moat change, not just a cyclical tailwind. 32.3x FY26 forward P/E compresses to ~11.7x on FY27 estimates once contracted revenue books — premium is temporary. 128TB SSD not yet in revenue; biggest Datacenter catalyst still ahead. |
 | 2026-02-25 | SanDisk + SK Hynix begin global HBF standardization | ↑ | A second major memory maker backing the HBF spec materially de-risks ecosystem adoption. |
 | 2025-08-06 | SanDisk–SK Hynix HBF standardization MOU | ↑ | Moves HBF from single-vendor concept toward an industry standard. |
 
@@ -47,20 +48,29 @@ _Not yet scored — run `/score-ticker SNDK`._
 | 2025-08-06 | Partners | (SK Hynix) | HBF standardization MOU | Validates HBF as an industry direction, not a SanDisk-only bet |
 | 2026-06-15 | Contrasts | MU | NAND/HBF capacity play vs. Micron's HBM-led narrative | SNDK is the cleaner NAND/HBF pure-play; MU is HBM + NAND blended |
 | 2026-06-15 | Contrasts | STX | Flash vs. HDD for warm/cold archive | QLC NAND cost-decline is the long-run threat to STX's nearline HDD moat |
+| 2026-06-16 | Monitor | CXMT | China state-backed NAND entrant — 3–5 years behind BiCS8; competes on consumer price, not AI enterprise performance | Near-term risk limited to consumer/client segment; AI datacenter SSDs not susceptible to CXMT competition on performance criteria |
 
 ---
 
 ## Catalyst Timeline
+- [ ] **Q4 FY2026:** 128TB enterprise SSD begins shipping — first AI-optimized high-capacity drive; not yet in revenue as of Q4 results
+- [ ] **Q4 FY2026 guidance:** $7.75–8.25B quarter (single quarter exceeding prior-year full-year revenue)
+- [ ] NBM contract expansion beyond current 5 hyperscalers — each new signing extends the contracted revenue floor
 - [ ] HBF first samples — targeted H2 2026
 - [ ] HBF spec finalization with SK Hynix (JEDEC-style standardization)
 - [ ] NAND pricing/margin trajectory through the current cycle
 - [ ] First HBF design-in or AI-inference product announcement (2027)
 - [ ] Enterprise NVMe attach rate as agentic deployments scale
+- [ ] Physical AI / edge inference demand materialization (robots, AVs, on-device AI)
 
 ---
 
 ## Analyst Coverage
-- Coverage sparse post-spinoff; refresh via `/ticker-monitor --deep SNDK`.
+| Date | Firm | Action | PT | Notes |
+|------|------|--------|-----|-------|
+| 2026-06-16 | Morgan Stanley | Upgrade | — | AI memory upcycle prolonged; NAND supply-constrained while AI demand ramps; both MU and SNDK upgraded |
+| 2026-06-16 | Goldman Sachs | Positive | — | Memory is the cheapest bucket in the AI complex |
+| 2026-06-16 | Consensus median | — | $1,702 | Below current price ($2,107); consensus not yet pricing full NBM + HBF optionality |
 
 ---
 

@@ -12,21 +12,45 @@ management:
     ownership_pct: null
     notes: "Led the February 2025 separation of SanDisk from Western Digital; prior WDC CEO."
   - role: CFO
-    name: "—"
+    name: "Luis Visoso"
     ownership_pct: null
-    notes: "Refresh via /ticker-monitor --deep SNDK."
+    notes: "Widely praised for capital discipline and balance sheet management."
+  - role: "President, Technology & Strategy"
+    name: "Siva Sivaram"
+    ownership_pct: null
+    notes: "Flash technology architect."
 
-earnings: []
-# Pending first verified quarterly capture via /ticker-monitor.
+earnings:
+  - period: "Q4 FY2026"
+    date: "2026-04-30"
+    revenue_m: null
+    gross_margin_pct: 78.4
+    operating_margin_pct: 69.98
+    net_income_m: null
+    datacenter_revenue_m: 1467
+    datacenter_pct: 24.7
+    notes: "Datacenter +645% YoY from $197M (Q3 FY2025). 128TB enterprise SSD not yet shipping. Q4 guided $7.75–8.25B."
+  - period: "TTM (as of Q4 FY2026)"
+    date: "2026-04-30"
+    revenue_m: 13180
+    gross_margin_pct: 78.4
+    operating_margin_pct: 69.98
+    net_income_m: 4510
+    cash_m: 3740
+    long_term_debt_m: 0
+    notes: "TTM revenue +251% YoY. Zero long-term debt (down from $1.83B). $6B share buyback authorized."
 
-filings: []
+filings:
+  - type: "10-Q"
+    date: "2026-04-30"
+    notes: "Q3 FY2026 (fiscal) / Q4 earnings call. CEO quote: 'fundamental inflection point — deliberate shift toward Datacenter.'"
 
 moat:
   type: "Scale + Process IP (NAND)"
-  pricing_power: medium
+  pricing_power: high
   competition_intensity: high
   made_in_usa: partial
-  notes: "Pure-play NAND/flash after the Feb-2025 WDC spinoff; NAND fab joint venture with Kioxia (Japan). Cyclical commodity with leading-edge QLC + enterprise NVMe differentiation. HBF (High-Bandwidth Flash) is the disruptive optionality."
+  notes: "Pure-play NAND/flash after the Feb-2025 WDC spinoff; NAND fab joint venture with Kioxia (Japan) extended through 2034 ($1.17B guaranteed manufacturing payments). NBM (New Business Model): multi-year contracts with 5 hyperscalers, $42B contracted minimum revenue — supply priority for signatories breaks the 30-year commodity cycle. HBF (High-Bandwidth Flash) is the disruptive optionality. 78.4% gross margins at peak cycle (Apr 2026)."
 
 tech_exposure:
   - technology: "NAND Flash"
@@ -43,10 +67,15 @@ metrics:
   score: null
   score_label: "—"
   last_scored: null
-  valuation_fpe: null
-  analyst_pt: null
-  analyst_upside_pct: null
+  valuation_fpe: 32.3
+  valuation_fpe_date: "2026-06-16"
+  valuation_fpe_fy2027: 11.7
+  price_at_fpe: 2107.86
+  market_cap_b: 312.15
+  analyst_pt: 1702
+  analyst_upside_pct: -19.3
+  analyst_notes: "Morgan Stanley upgraded (AI memory upcycle prolonged, NAND supply-constrained). Median PT $1,702 below current price. Goldman Sachs: memory is the cheapest bucket in the AI complex."
 
-last_updated: "2026-06-15"
-next_earnings: null
+last_updated: "2026-06-16"
+next_earnings: "2026-07-30"
 ---
