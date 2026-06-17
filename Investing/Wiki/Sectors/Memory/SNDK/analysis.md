@@ -26,7 +26,31 @@ The structural thesis has two legs. **First, NAND as the agentic-AI storage work
 ---
 
 ## Scoring Summary
-_Not yet scored — run `/score-ticker SNDK`._
+_Last scored: 2026-06-17 | [[Scoring Rubric]]_
+
+| Criterion | Score | Evidence |
+|-----------|-------|----------|
+| Product (Love Factor) | 4/5 | NBM contracts ($42B, 5 hyperscalers) create genuine lock-in; Kioxia JV = ~1/3 global NAND bits through 2034; HBF pioneer; enterprise NVMe differentiated — but NAND retains commodity-cycle dynamics and YMTC pressure exists |
+| Pricing Power | 5/5 | Datacenter GM 22%→78% YoY; TTM GM 78.4%; operating margin 69.98%; Q3 EPS $23.41 vs $12–14 guided (+68% beat); NBM multi-year contracts provide structural pricing floor |
+| Leadership & Alignment | 3/5 | Goeckeler executed spinoff cleanly; CFO Visoso praised for capital discipline; Sivaram is the flash technology architect; ~16 months standalone with one confirmed massive guidance beat; insider ownership % unconfirmed |
+| Financial Health | 5/5 | Zero LT debt (down from $1.83B); $3.74B cash; FCF $2.955B in Q3 alone; debt/EBITDA ~0x; $6B buyback authorized; 5 NBM hyperscaler customers are FCF-funded enterprises |
+| Macro Environment | 5/5 | Primary exposure to HIGH-conviction Race 1 (NAND over HBM4; Conviction: High; Overweight implication); agentic AI NAND demand is structural 5+ year tailwind; AI memory undersupply confirmed; HBF adds HBM-adjacent TAM optionality |
+| Future Potential | 4/5 | 128TB enterprise SSD enters revenue Q4 FY2026; HBF samples H2 2026 (products 2027–2028); NBM expansion beyond current 5 hyperscalers; automotive/edge NAND nascent; FY2027 analyst consensus $45B vs $20B FY2026 |
+| **Composite** | **26/30 = 8.5/10** | **Unrivaled** |
+
+**Valuation:** Fair at $2,107 | P/E: 32.3x FY26 / 11.7x FY27E | Analyst upside: −16.9% (consensus $1,751 avg); bull case PT $3,250 (+54%)
+**Growth Potential:** — (pending real-time data integration)
+
+## Risk Flags
+_Evaluated: 2026-06-17_
+
+| Flag | Status | Notes |
+|------|--------|-------|
+| Capex sustainability | CLEAR | Zero LT debt (down from $1.83B); FCF $2.955B in Q3 alone; Kioxia JV $1.17B committed payments funded from FCF |
+| Demand chain health | CLEAR | 5 NBM hyperscaler customers are FCF-funded enterprises; no neocloud or pre-IPO primary customers |
+| Customer concentration | WATCH | 5 NBM hyperscaler contracts likely represent significant revenue concentration; no explicit % breakdown in wiki data |
+| Circular revenue exposure | CLEAR | Demand traceable to enterprise AI deployments; hyperscaler cash flows are real-end-user-backed, not circular |
+| Rate sensitivity | CLEAR | Zero long-term debt; net cash $3.74B; Fed tightening structurally immaterial |
 
 ---
 

@@ -105,9 +105,9 @@ tech_exposure:
     notes: "Capacity-at-bandwidth bridge (HBF) + QLC archive — see Technology Preferences Race 4."
 
 metrics:
-  score: null
-  score_label: "—"
-  last_scored: null
+  score: 8.5
+  score_label: "Unrivaled"
+  last_scored: "2026-06-17"
   valuation_fpe: 32.3
   valuation_fpe_date: "2026-06-16"
   valuation_fpe_fy2027: 11.7
