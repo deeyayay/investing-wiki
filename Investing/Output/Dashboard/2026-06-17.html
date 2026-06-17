@@ -1323,6 +1323,8 @@ function openTier(idx){
 // ── Ticker detail (L3) ──────────────────────────────────────────────────────
 const TICKER_MAP={};
 DATA.sectors.forEach(s=>s.tiers.forEach(t=>(t.companies||[]).forEach(c=>{TICKER_MAP[c.ticker]={...c,sectorName:s.name};})));
+// Memory tickers live in Sectors/Memory/ regardless of how DATA groups them
+['SNDK','285A.T','MU','000660.KS','005930.KS'].forEach(t=>{if(TICKER_MAP[t])TICKER_MAP[t].sectorName='Memory';});
 const WIKI_CACHE={};
 
 async function openTicker(ticker,sName){
