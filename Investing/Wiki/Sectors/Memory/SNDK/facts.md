@@ -21,6 +21,30 @@ management:
     notes: "Flash technology architect."
 
 earnings:
+  - period: "Q3 FY2026"
+    date: "2026-04-30"
+    period_end: "2026-04-03"
+    revenue_m: 5950
+    gross_margin_pct: 78.4
+    eps_nongaap: 23.41
+    eps_gaap: 23.03
+    net_income_m: 3615
+    free_cash_flow_m: 2955
+    datacenter_revenue_m: 1467
+    datacenter_pct: 24.7
+    beat: true
+    guidance_prev_revenue_m_low: 4400
+    guidance_prev_revenue_m_high: 4800
+    guidance_prev_eps_low: 12.00
+    guidance_prev_eps_high: 14.00
+    notes: "Revenue $5.95B crushed guidance of $4.4–4.8B; +251% YoY, +97% QoQ. EPS $23.41 vs $12–14 guided. Datacenter +233% QoQ; over 1/3 of FY2027 bit supply contracted ($11B+ enforceable guarantees). 10-Q filed 2026-05-01."
+  - period: "Q4 FY2026 (guidance)"
+    date: "2026-04-30"
+    revenue_m_low: 7750
+    revenue_m_high: 8250
+    eps_nongaap_low: 30.00
+    eps_nongaap_high: 33.00
+    notes: "Q4 FY2026 outlook issued with Q3 results. 128TB enterprise SSD expected to begin shipping this quarter."
   - period: "Q4 FY2026"
     date: "2026-04-30"
     revenue_m: null
@@ -41,6 +65,23 @@ earnings:
     notes: "TTM revenue +251% YoY. Zero long-term debt (down from $1.83B). $6B share buyback authorized."
 
 filings:
+  - type: "10-Q"
+    period: "Q3 FY2026"
+    period_end: "2026-04-03"
+    date: "2026-05-01"
+    url: "https://www.sec.gov/Archives/edgar/data/0002023554/000162828026029401/sndk-20260403.htm"
+    notes: "Q3 FY2026 10-Q. CEO quote: 'fundamental inflection point — deliberate shift toward Datacenter.'"
+  - type: "8-K"
+    period: "Q3 FY2026 earnings"
+    date: "2026-04-30"
+    url: "https://www.sec.gov/Archives/edgar/data/0002023554/000162828026028879/sndkq3-26ex991xpressrelease.htm"
+    notes: "Q3 FY2026 press release. Revenue $5.95B, Non-GAAP EPS $23.41; Q4 guidance $7.75–8.25B."
+  - type: "10-Q"
+    period: "Q2 FY2026"
+    period_end: "2026-01-02"
+    date: "2026-01-30"
+    url: "https://www.sec.gov/Archives/edgar/data/0002023554/000162828026004407/sndk-20260102.htm"
+    notes: "Q2 FY2026 10-Q. Datacenter $269M in Q1 FY2026; Stargate AI storage product qualifications underway."
   - type: "10-Q"
     date: "2026-04-30"
     notes: "Q3 FY2026 (fiscal) / Q4 earnings call. CEO quote: 'fundamental inflection point — deliberate shift toward Datacenter.'"
@@ -72,10 +113,16 @@ metrics:
   valuation_fpe_fy2027: 11.7
   price_at_fpe: 2107.86
   market_cap_b: 312.15
-  analyst_pt: 1702
-  analyst_upside_pct: -19.3
-  analyst_notes: "Morgan Stanley upgraded (AI memory upcycle prolonged, NAND supply-constrained). Median PT $1,702 below current price. Goldman Sachs: memory is the cheapest bucket in the AI complex."
+  analyst_pt: 1751
+  analyst_pt_high: 3250
+  analyst_pt_low: 1000
+  analyst_upside_pct: -16.9
+  analyst_count: 22
+  analyst_buy: 18
+  analyst_hold: 3
+  analyst_sell: 1
+  analyst_notes: "Consensus Buy (22 analysts). Citi PT $2,025 (highest major bank). Morgan Stanley upgrade. Goldman Sachs: memory cheapest AI bucket. FY2027 consensus revenue $45B (vs. $20B FY2026)."
 
-last_updated: "2026-06-16"
+last_updated: "2026-06-17"
 next_earnings: "2026-07-30"
 ---
