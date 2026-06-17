@@ -69,8 +69,9 @@ Run all reads in parallel.
 
 Read `Investing/Output/Dashboard/index.html`.
 
-1. Locate `const STACK=` and replace the entire object (through its matching closing `};`) with the JSON block from `AI Buildout Stack.md` (the JSON is JS-compatible — paste as `const STACK=<json>;`). Keep the `generated` field; the render code ignores it. Do not strip `gap`/`group`/`flow`/`kind`/`items` fields — the renderer relies on them.
-2. Locate `const DATA = {` and replace the entire `DATA` object (through the matching closing `};`) with the newly assembled object:
+1. Locate the hardcoded `<span class="gen-date">Generated: YYYY-MM-DD</span>` in the HTML and replace the date with today's date (format: `YYYY-MM-DD`).
+2. Locate `const STACK=` and replace the entire object (through its matching closing `};`) with the JSON block from `AI Buildout Stack.md` (the JSON is JS-compatible — paste as `const STACK=<json>;`). Keep the `generated` field; the render code ignores it. Do not strip `gap`/`group`/`flow`/`kind`/`items` fields — the renderer relies on them.
+3. Locate `const DATA = {` and replace the entire `DATA` object (through the matching closing `};`) with the newly assembled object:
 
 ```javascript
 const DATA = {
