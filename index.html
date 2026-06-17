@@ -318,7 +318,7 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 </div>
 <script>
 const DATA = {
-  generated: "2026-06-16",
+  generated: "2026-06-17",
   sectors: [
     {
       slug: "compute-hardware",
@@ -907,7 +907,7 @@ const STACK={
       {"label":"AI Assistants & Chatbots","gap":true,"chips":["META","GOOGL","MSFT"]},
       {"label":"Agentic AI Platforms (multi-step reasoning, tool use)","gap":true,"chips":["PLTR"]},
       {"label":"Enterprise AI SaaS (Copilot-style integrations)","gap":true,"chips":["MSFT","CRM"]},
-      {"label":"AI-Native Vertical Applications (coding, video, drug discovery)","gap":true,"chips":["MELI","SOFI","HOOD","NU"]}
+      {"label":"AI-Native Vertical Applications (coding, video, drug discovery)","sector":"Application","slug":"application","tier":"AI-Native Fintech & Commerce","chips":["MELI","SOFI","HOOD","NU"]}
     ]},
     {"num":"02","name":"AI Model","hue":255,"tag":"foundation models · serving · agents","boxes":[
       {"label":"Foundation Models (LLMs, multimodal)","sector":"AI Model","slug":"ai-model","tier":"Foundation Model Development","chips":["META"]},
@@ -969,7 +969,7 @@ const STACK={
     {"num":"09","name":"Semiconductor Foundry","hue":162,"tag":"leading-edge · specialty · OSAT","boxes":[
       {"label":"Leading-Edge Logic Foundry (3nm, 2nm)","sector":"Semiconductor Foundry","slug":"semiconductor-foundry","tier":"Wafer Fabrication (Foundry / IDM)","chips":["TSM","INTC"]},
       {"label":"Specialty / Mature Logic Foundry (analog, mixed-signal)","sector":"Semiconductor Foundry","slug":"semiconductor-foundry","tier":"Wafer Fabrication (Foundry / IDM)","chips":["GFS"]},
-      {"label":"Silicon Photonics Foundry","sector":"Interconnect","slug":"interconnect","tier":"Silicon Photonics Platform","chips":["GFS","POET","INTC"]},
+      {"label":"Silicon Photonics Foundry","sector":"Semiconductor Foundry","slug":"semiconductor-foundry","tier":"Silicon Photonics Platform","chips":["GFS","POET","INTC"]},
       {"label":"Compound Semiconductor Foundry (GaN, SiC, InP)","sector":"Semiconductor Foundry","slug":"semiconductor-foundry","tier":"Compound Semiconductor & SiC Substrate","chips":["STM","WOLF"]},
       {"label":"OSAT (outsourced assembly and test)","sector":"Advanced Packaging","slug":"advanced-packaging","tier":"OSAT — Assembly & Test","chips":["ASX","AMKR"]}
     ]},
@@ -996,8 +996,8 @@ const STACK={
     {"num":"12","name":"Critical Minerals & Raw Elements","hue":350,"tag":"the bedrock everything depends on","boxes":[
       {"label":"Silicon (base material for all chips)","sector":"Critical Minerals","slug":"critical-minerals","tier":"Silicon & SiC Precursor Production","chips":["WOLF"]},
       {"label":"Copper (interconnect, power delivery)","sector":"Critical Minerals","slug":"critical-minerals","tier":"Bulk Mining & Ore Extraction","chips":["FCX","VALE","RIO"]},
-      {"label":"Gallium (GaN power semis, GaAs RF, InP photonics)","sector":"Interconnect","slug":"interconnect","tier":"III-V Substrate & Epitaxial Wafer Growth","chips":["AXTI","WOLF"]},
-      {"label":"Indium (InP lasers, transparent conductors)","sector":"Interconnect","slug":"interconnect","tier":"III-V Substrate & Epitaxial Wafer Growth","chips":["AXTI"]},
+      {"label":"Gallium (GaN power semis, GaAs RF, InP photonics)","sector":"Semiconductor Materials","slug":"semiconductor-materials","tier":"III-V Substrate & Epitaxial Wafer Growth","chips":["AXTI","WOLF"]},
+      {"label":"Indium (InP lasers, transparent conductors)","sector":"Semiconductor Materials","slug":"semiconductor-materials","tier":"III-V Substrate & Epitaxial Wafer Growth","chips":["AXTI"]},
       {"label":"Germanium (optical fiber, compound semis)","sector":"Interconnect","slug":"interconnect","tier":"Optical Fiber & Preform Manufacturing","chips":["GLW"]},
       {"label":"Hafnium (high-k dielectric in leading-edge logic)","gap":true,"chips":["INTC","ATI"]},
       {"label":"Tantalum (capacitors)","sector":"Electronic Components","slug":"electronic-components","tier":"Film & Electrolytic Capacitor Mfg","chips":["VSH"]},
