@@ -63,6 +63,8 @@ _Last scored: — | [[Scoring Rubric]]_
 | Date | Direction | Other Ticker | Signal | Implication |
 |------|-----------|-------------|--------|-------------|
 | 2026-06-16 | Receives | MU | Micron earnings 2026-06-24; NAND demand/ASP read-through | Kioxia NAND ASP trajectory will be confirmed or challenged |
+| 2026-06-16 | JV Partner | SNDK | Flash Ventures — SNDK owns 49.9% of each entity; splits capex and co-develops all NAND technology; JV extended through 2034 | SNDK financial health and capex commitments directly affect Kioxia's fab investment capacity. SNDK NBM contract wins signal hyperscaler demand that Kioxia also serves from the same wafer pool. SNDK earnings are a leading indicator for Kioxia results. |
+| 2026-06-16 | Competes | SNDK | Both sell enterprise SSDs to the same hyperscalers using co-developed NAND from shared factories | "Partner in the morning, rival in the afternoon." SNDK NBM contracts (supply priority) could crowd out Kioxia in a supply-constrained environment. Monitor whether hyperscaler NBM signings tilt allocation toward SNDK. |
 
 ---
 
