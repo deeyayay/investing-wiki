@@ -26,31 +26,31 @@ Aehr Test Systems builds specialized test and burn-in systems for compound semic
 ---
 
 ## Scoring Summary
-_Last scored: — | [[Scoring Rubric]]_
+_Last scored: 2026-06-17 | [[Scoring Rubric]]_
 
 | Criterion | Score | Evidence |
 |-----------|-------|----------|
-| Product (Love Factor) | —/5 | |
-| Pricing Power | —/5 | |
-| Leadership & Alignment | —/5 | |
-| Financial Health | —/5 | |
-| Macro Environment | —/5 | |
-| Future Potential | —/5 | |
-| **Composite** | **—/10** | |
+| Product (Love Factor) | 5/5 | WaferPak = sole-source production WLBI; no direct competitor at scale; 12–18 month qualification cycle creates prohibitive switching costs |
+| Pricing Power | 3/5 | moat.pricing_power=high (sole-source); but Q3 FY2026 is loss-making ($10.3M revenue); no gross margin data in wiki to confirm |
+| Leadership & Alignment | 3/5 | Erickson: 14yr tenure, repositioned company, AI pivot executing; not founder-led; insider ownership unconfirmed |
+| Financial Health | 3/5 | Cash $37.1M rising despite losses; no debt evident; customers FCF-funded (EV Tier 1 + ISE/ASE OSAT); FCF negative at cyclical trough |
+| Macro Environment | 4/5 | AI processor burn-in = structural tailwind (AI buildout L10); SiC/EV = secondary tailwind; EV ramp slowdown is 1 manageable headwind |
+| Future Potential | 4/5 | AI (ISE Labs first production deployment), SiC (3.5x BTB recovery), HBM/optical adjacencies identified; FY2027 recovery to $80M+ thesis |
+| **Composite** | **7.5/10** | **Strong** |
 
-**Valuation:** — (not yet scored)
-**Growth Potential:** — (pending)
+**Valuation:** Expensive at ~$95 | No P/E (loss-making at trough) | Lake Street PT $56; consensus upside ~−41%
+**Growth Potential:** — (pending real-time data integration)
 
 ## Risk Flags
-_Evaluated: —_
+_Evaluated: 2026-06-17_
 
 | Flag | Status | Notes |
 |------|--------|-------|
-| Capex sustainability | — | |
-| Demand chain health | — | |
-| Customer concentration | — | |
-| Circular revenue exposure | — | |
-| Rate sensitivity | — | |
+| Capex sustainability | WATCH | FCF negative at $10.3M trough revenue; cash $37.1M rising; no debt; improves as H2 revenue converts |
+| Demand chain health | CLEAR | EV Tier 1 suppliers (ON Semi, Wolfspeed, STMicro) + ISE/ASE (world's largest OSAT, publicly traded) — all FCF-funded |
+| Customer concentration | FLAG | Historically small number of SiC customers; ISE Labs is primary AI customer; explicit concentration risk noted in thesis; no % breakdown |
+| Circular revenue exposure | CLEAR | Physical chip manufacturers only; demand traceable to real hardware production, no circular AI funding chains |
+| Rate sensitivity | CLEAR | No long-term debt; $37.1M net cash; Fed tightening structurally immaterial |
 
 ---
 

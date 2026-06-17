@@ -29,3 +29,4 @@
 - **2026-05-07** — Note initialized. High-volatility name — watch bookings as primary thesis validator.
 - **2026-05-14** — stock-research run. Fundamental sections populated from web research and SEC DEF 14A.
 - **2026-06-17** — 📊 MONITOR --deep AEHR | Migrated legacy AEHR.md → three-layer structure. Q3 FY2026 earnings logged ($10.3M revenue, $37.2M bookings, 3.5x BTB); ISE Labs AI OSAT partnership (Nov 2025) logged; William Blair upgrade (Mar 2, 2026) and Lake Street PT raise to $56 logged. AI pivot thesis written. CIK corrected to 0001040470. Next earnings est. 2026-07-21.
+- **2026-06-17** — Scored — Composite 7.5/10 Strong | P:5 PP:3 L:3 FH:3 ME:4 FP:4

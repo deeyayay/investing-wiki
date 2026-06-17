@@ -66,12 +66,12 @@ demand_chain:
   notes: "Legacy: EV Tier 1 suppliers (ON Semi, Wolfspeed, STMicro). New: AI OSATs (ISE/ASE). Both are well-capitalized manufacturers"
 
 metrics:
-  score: null
-  score_label: "—"
-  last_scored: null
+  score: 7.5
+  score_label: "Strong"
+  last_scored: "2026-06-17"
   valuation_fpe: null
   analyst_pt: 56
-  analyst_upside_pct: null
+  analyst_upside_pct: -41
 
 last_updated: "2026-06-17"
 next_earnings: "2026-07-21"
