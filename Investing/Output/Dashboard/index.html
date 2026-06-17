@@ -1299,7 +1299,7 @@ function openTier(idx){
       const cl=c.mkt_cap==="Large"?"Large cap":c.mkt_cap==="Mid"?"Mid cap":"Small cap";
       return '<div class="co-card">'
         +'<div class="co-header">'
-        +'<a class="co-ticker" href="#" onclick="openTicker(\''+c.ticker+'\',\''+s.name+'\');return false">'+c.ticker+'</a>'
+        +'<a class="co-ticker" href="#" onclick="openTicker(\''+c.ticker+'\',(TICKER_MAP[\''+c.ticker+'\']&&TICKER_MAP[\''+c.ticker+'\'].sectorName)||\''+s.name+'\');return false">'+c.ticker+'</a>'
         +'<span class="co-name">'+esc(c.name)+'</span>'
         +'<span class="co-cap '+cc+'">'+cl+'</span>'
         +'</div>'
