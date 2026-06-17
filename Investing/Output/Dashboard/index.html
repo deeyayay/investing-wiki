@@ -1096,7 +1096,7 @@ function _tierLookup(slug,tierName){
 }
 function _chipHtml(tk,fallbackSector,ctxLabel,ctxFn){
   const info=TICKER_MAP[tk];
-  const sName=((info&&info.sectorName)||fallbackSector||"").replace(/'/g,"\\'");
+  const sName=(fallbackSector||(info&&info.sectorName)||"").replace(/'/g,"\\'");
   const args="'"+tk+"','"+sName+"'"+(ctxLabel?",'"+String(ctxLabel).replace(/'/g,"\\'")+"','"+String(ctxFn||"").replace(/'/g,"\\'")+"'":"");
   return '<span class="chip" onclick="event.stopPropagation();openStackTicker('+args+')">'+esc(tk)+'</span>';
 }
