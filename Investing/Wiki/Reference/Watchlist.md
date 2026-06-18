@@ -31,7 +31,7 @@
 
 | Ticker | Name | Notes | Score |
 |--------|------|-------|-------|
-| Shunsin | Shunsin Technology | Taiwan supply chain; semiconductor packaging | — |
+| Shunsin | Shunsin Technology | Taiwan supply chain; semiconductor packaging | 5.5 |
 | Sumitomo | Sumitomo Corp | Japanese conglomerate; diversified compounder | — |
 | 5801.T | Furukawa Electric | Optical fiber; AI infrastructure buildout beneficiary | — |
 | COHR | Coherent Corp | Photonics + silicon photonics for AI data centers | — |

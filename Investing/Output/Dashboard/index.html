@@ -1323,7 +1323,15 @@ function openTier(idx){
 // ── Ticker detail (L3) ──────────────────────────────────────────────────────
 const TICKER_MAP={};
 DATA.sectors.forEach(s=>s.tiers.forEach(t=>(t.companies||[]).forEach(c=>{TICKER_MAP[c.ticker]={...c,sectorName:s.name};})));
-// Memory tickers live in Sectors/Memory/ regardless of how DATA groups them
+// Seed sectorName from STACK boxes whose slug has no DATA entry — these are sectors folded into
+// DATA "Compute Hardware" but whose wiki files live in their own sector folder. STACK.sector is
+// the canonical wiki folder name. Run before explicit overrides so overrides take final precedence.
+const _DS=new Set(DATA.sectors.map(s=>s.slug));
+const _ss=(boxes)=>(boxes||[]).forEach(b=>{if(b.sector&&b.chips&&!_DS.has(b.slug))b.chips.forEach(tk=>{if(TICKER_MAP[tk])TICKER_MAP[tk].sectorName=b.sector;else TICKER_MAP[tk]={ticker:tk,name:tk,sectorName:b.sector};});});
+(STACK.layers||[]).forEach(l=>_ss(l.boxes));
+(STACK.rails||[]).forEach(r=>(r.groups||[]).forEach(g=>_ss(g.boxes)));
+// Explicit overrides: tickers whose DATA sector != wiki folder (STACK seeding above may set wrong
+// sector for tickers that appear in multiple orphaned boxes, e.g. MU in Advanced Packaging).
 ['SNDK','285A.T','MU','000660.KS','005930.KS'].forEach(t=>{if(TICKER_MAP[t])TICKER_MAP[t].sectorName='Memory';});
 const WIKI_CACHE={};
 
