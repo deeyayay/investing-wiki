@@ -14,9 +14,9 @@ High-beta optical interconnect pure play catching its first real 1.6T production
 
 AAOI makes optical transceivers and subsystems for data centers, cable TV, and telecom. The stock led all photonics names with +328% YTD through April 2026 — the market is pricing in AAOI's transition from secondary supplier to meaningful 1.6T volume player. As a smaller, more concentrated pure-play than COHR or LITE, AAOI has higher beta to the optical theme in both directions. The key question is whether they can sustain execution and manufacturing quality as order volumes scale.
 
-**Key moat:** Pure-play optical transceiver exposure, vertically integrated manufacturing (in-house epitaxial wafer growth), low-cost production via Malaysian facilities.
+**Key moat:** Pure-play optical transceiver exposure, vertically integrated manufacturing including in-house InP laser fabrication (MBE/MOCVD), automated production lines, and own manufacturing equipment — largest US 800G/1.6T capacity claim.
 
-**Key risks:** Execution risk vs. incumbent suppliers (COHR, LITE), customer concentration, commoditization risk, stock already up 3x+ (valuation risk), smaller balance sheet limits capacity investment.
+**Key risks:** Management credibility discount (CEO Lin + CFO Murry settled 2017–2018 securities fraud lawsuits for $15.5M including concealed premature laser failures); customer concentration (Digicomm 53.1% FY2025, top-2 ~82%); GAAP unprofitable; 930K/month capacity ramp is the whole thesis and the primary execution risk; dilution ($382.4M raise + $125M converts + $600M ATM program); insider selling into the run.
 
 ---
 
@@ -70,6 +70,50 @@ AAOI makes optical transceivers and subsystems for data centers, cable TV, and t
 *(Append notable developments: partnerships, product launches, supply chain signals)*
 
 - **2026-05-11** — Note initialized. Sector YTD leader at +328% through April 22. First 1.6T production orders received — primary thesis validator.
+
+- **2026-06-19** — Price decline analysis and management history review (web-verified). Stock at ~$162 today, down from ~$200 (June 2 article) and ~$233 52-week high. Two distinct decline events:
+
+  **Event 1 — Post-Q1 earnings dip (May 7):** Stock fell ~12% AH from ~$178 to ~$145. Cause: slight revenue miss vs. elevated consensus ($151.1M vs $154.81M est), wider-than-expected non-GAAP loss. Recovered to ~$169 by mid-June as investors absorbed the underlying demand-exceeds-capacity structure.
+
+  **Event 2 — SemiAnalysis CPO report (June 9):** SemiAnalysis published "Power Outage: 800VDC Delays and CPO Delays," arguing CPO mass production delayed to 2028–2029 and 800VDC delayed. AAOI led the sector lower, falling ~17%. Sector-wide selloff: POET -12%, COHR -11%, LITE -8%, MRVL -7.6%, CIEN -7%. Stock now ~$162.
+
+  **Critical nuance on the SemiAnalysis selloff:** AAOI's primary product is pluggable transceivers (Linear Pluggable Optics / LPO), not CPO. The report conflated pluggable and co-packaged architectures in the market's reaction. Counter-arguments are strong: (1) NVIDIA SVP of Networking Gilad Shainer said at Computex 2026 that "CPO is the most exciting technology right now" and mass shipments begin H2 2026; (2) GlobalSemiResearch published "Co-Packaged Optics Is Not Delayed. SemiAnalysis Is Just Wrong." The selloff appears to be a sector-wide overreaction applied to a company whose product roadmap is not CPO-dependent.
+
+  **Management history — the legitimate trust discount:**
+
+  CEO Thompson Lin (Founder, CEO since 1997) and CFO Stefan Murry (CFO since 2014) are both the same executives from the 2016–2018 cycle, which followed a nearly identical playbook:
+  - 2016–2017: AAOI hyped 100G transceiver demand and "in-house laser" vertical integration. Stock rose 800%+.
+  - Reality diverged: product defects (premature laser failures), manufacturing scale-up failures, major customers departed.
+  - Securities class action lawsuits filed by multiple law firms (Rosen Law, Kessler Topaz, Levi & Korsinsky):
+    - Class period Feb 23, 2017 – Feb 21, 2018: Lin and Murry named defendants
+    - Settlement: **$15.5M** (a formal admission of harm to shareholders, though not guilt)
+    - Second lawsuit (Oct 2018, class period Aug 7 – Sep 27, 2018): alleged concealment of premature laser failures in specific transceiver products
+  - Stock crashed 90%+ from its 2017 peak.
+
+  The 2018 lawsuit is particularly relevant: the specific allegation was that AAOI's lasers "were susceptible to fail prematurely" and the company failed to disclose this. Today, the entire bull thesis rests on AAOI's in-house InP laser manufacturing as the unassailable moat. Same technology, same executives, same narrative pattern.
+
+  **Is the 2026 situation different?**
+
+  | Factor | 2017 | 2026 |
+  |--------|------|------|
+  | Orders | Pipeline/guidance only | $324M+ signed, including $200M+ 1.6T with warrant structures |
+  | Evidence of demand | Management claims only | Hyperscaler capex on record; CEO called $200M+ order "small" vs 2027 |
+  | In-house lasers | Claimed | Confirmed in 10-K (MBE/MOCVD); 350% expansion underway |
+  | Balance sheet | Weak | $449.4M cash post-raise; $125M converts |
+  | Auditor | Smaller firm | Switched to PwC (Big 4 upgrade during expansion) |
+  | Executives | Same (Lin + Murry) | Same (Lin + Murry) |
+  | Settlement history | — | $15.5M prior settlement on record |
+  | Stock move | +800% from lows | +600% from lows before decline |
+
+  The key difference in 2026 is *receipts*: actual signed orders with warrant alignment, confirmed hyperscaler relationship (inferred AMZN per Northland/Rosenblatt), and a funded expansion. The 2017 cycle collapsed because the orders never materialized and the lasers failed. If Q2 confirms $180–198M guide, the execution gap that broke the 2017 thesis closes materially.
+
+  **On social media "strong buy" sentiment:**
+  The post-decline social media consensus may be broadly correct on the *proximate* cause (SemiAnalysis report hit LPO stocks unfairly via CPO conflation) but is likely underweighting the *structural* management credibility discount. The 2017 lawsuit alleging concealed laser failures — the same product that is now the entire moat argument — is not widely known in retail circles and represents a genuine non-zero risk that warrants a discount to bull-case price targets.
+
+  **Framework for the current decision:**
+  - Bear case is not "CPO delayed" (that's a sector-narrative risk, not company-specific). Bear case is: same executives, same laser technology, same "demand exceeds capacity" narrative, prior settlement for concealing laser defects. If history rhymes, the execution divergence shows up at Q3 (first large 1.6T deliveries).
+  - Bull case is: signed orders > 2017 by definition; hyperscaler warrant structures are institutional-grade validation; $449M cash means no bankruptcy risk on a stumble; PwC audit adds institutional credibility.
+  - **Resolution event**: Q2 print (~Aug 6). Guide is $180–198M. At ~$162 today, the stock is pricing in some probability of a miss. Confirmation would likely be a significant positive catalyst; a miss or downward guide revision would trigger a sharp move and validate the 2017 pattern risk.
 
 - **2026-06-19** — @HiCagr deep-dive: "AAOI — The Chokepoint To $525-$700" (published June 2, 2026). Full fact-check below. Source: https://x.com/i/status/2061852008395726987
 
