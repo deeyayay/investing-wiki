@@ -67,6 +67,7 @@ Each ticker has three files in a dedicated folder. Skills read only the layers t
 | `/ticker-monitor` | `/ticker-monitor [--force] [--dry-run] [--sector SECTOR] [--deep TICKER] [--news-only]` | Weekly update pass: earnings/filings → facts.md; conviction/analyst/catalyst → analysis.md; news → signals.md. Use `--news-only` for daily lightweight news pass |
 | `/ingest-sentiment` | `/ingest-sentiment [--source article\|musing] [--author "@handle"]` | Parse Tweets.md into signal notes; update Social Mentions in signals.md |
 | `/score-ticker` | `/score-ticker TICKER [--refresh]` | Score on 6-criterion rubric; writes Scoring Summary to analysis.md, updates facts.md metrics + Monitor Registry.yaml |
+| `/research-ticker` | `/research-ticker TICKER [--question "..."]` | **Full-KB investment view.** Reads all three layers + Raw/Sentiment files + Sentiment Index + Sector Framework. Use for any buy/sell/hold/thesis question. |
 | `/build-customer-matrix` | `/build-customer-matrix "Sector Name"` | Build supplier × end-customer dependency matrix from facts.md + analysis.md; writes `_Customer Matrix.md` |
 | `/daily-dashboard` | `/daily-dashboard [--date YYYY-MM-DD] [--no-push]` | Generate HTML dashboard; deploy to GitHub Pages |
 | `/detect-shifts` | `/detect-shifts [--sector "Sector"] [--all]` | Scan for structural technology/architectural shifts; appends to `Ecosystem Interrelationships.md` and flags affected supply chain maps |
@@ -139,6 +140,23 @@ Deployment surface:   Edge & Physical AI (right) — physical-world deployment +
 **Word-for-word + gaps:** sub-box labels are canonical (verbatim from the graphic). Where the blueprint names a category the KB doesn't cover yet, the sub-box is a `gap` (renders "unmapped") — a queue for `/map-sector` / `/scout-tickers`. Intra-layer `group` tags (e.g. L07 Scale-Up/Out/Across, L10 Lithography) are visual bands, not a third drill-down level.
 
 **Sectors → layers:** the 11 sector folders are unchanged — they remain the physical home of each ticker (keyed in `Monitor Registry.yaml`). Layers are the canonical *organizing/navigation* structure; each non-gap layer sub-box maps to one `(sector, tier)`. The legacy **D1–D5 dimension codes are superseded** but crosswalk cleanly to layers — see `Dimension Map.md`, which now holds the sector registry + slug↔display-name mapping + the D1–D5 → layer crosswalk.
+
+## Ad-Hoc Research Protocol
+
+**When a user asks any investment question about a specific ticker — buy/sell/hold, thesis review, risk assessment, "what has changed," price comparison — always run the full-KB read before answering, even if `/research-ticker` is not explicitly invoked.**
+
+Full-KB read means, in order:
+1. `Monitor Registry.yaml` → resolve path and sector
+2. `[path]/facts.md` → structured fundamentals (Layer 1)
+3. `[path]/analysis.md` → thesis, conviction, scoring, catalysts (Layer 2)
+4. `[path]/signals.md` → news log, social mention stubs, research audit (Layer 3)
+5. `Glob Investing/Raw/Sentiment/*[TICKER]*` → read **every** matching file (this is where tweet/article content lives — signals.md only has links)
+6. `Investing/Wiki/Reference/Sentiment Index.md` → ticker's aggregated sentiment score
+7. `Investing/Wiki/Sectors/[sector]/_Sector Framework.md` → cycle phase, archetype, valuation matrix
+
+**Skipping any of these layers produces an incomplete answer.** The Raw/Sentiment files and signals.md are the layers most commonly missed in freeform Q&A — they contain market intelligence (specific quotes, dilution figures, revenue targets, risk flags) that does not appear in the structured YAML or analysis.md.
+
+If a ticker is not in Monitor Registry.yaml, say so and suggest `/add-ticker` before answering.
 
 ## Notes
 
