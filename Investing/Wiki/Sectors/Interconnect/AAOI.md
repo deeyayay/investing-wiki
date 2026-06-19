@@ -53,7 +53,7 @@ AAOI makes optical transceivers and subsystems for data centers, cable TV, and t
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
 | 2026-05-12 | Q1 2026 earnings: first 800G volume shipment to large hyperscaler confirmed; FY2026 consensus raised to $1.03B (+103% YoY) | ↑ Strengthened | Execution risk was the primary bear case — volume shipment at scale to a hyperscaler is the single most important data point to validate the thesis that AAOI can compete with COHR/LITE at volume |
-| 2026-06-19 | @HiCagr deep-dive article (June 2) documents order book ($200M+ 1.6T, $53M + $71M 800G), capacity ramp (100K→650K/month by end 2026), and demand-capped framing ($1.4–1.5B real demand vs $1.1B capacity guide); $20.8M Texas state grant; mid-2027 DC run-rate of $471M/month from CFO | ↑ Strengthened | New order specifics and state subsidy not in prior wiki. Demand-exceeds-capacity structure now confirmed from two angles (our 8-K + article). BUT: article's Q2 guidance ($180–198M) does not match our 8-K ($150–165M) — watch Q2 print for resolution. |
+| 2026-06-19 | @HiCagr deep-dive article (June 2) fact-checked and web-verified: Q2 guidance $180–198M ✅ confirmed (our 8-K summary had wrong range); $20.85M Texas grant ✅ confirmed; 350% laser fab expansion ✅ confirmed; order book ($200M+ 1.6T, $53M + $71M 800G) ✅ consistent with public disclosures. Post-earnings stock fell ~12% to ~$145 from ~$178 on "miss" vs elevated consensus; recovered to ~$169 by mid-June. Rosenblatt PT raised to $220 (from $140, Buy); another firm raised to $190. Consensus: $160, range $57.50–$220; 3 Buy, 3 Hold, 0 Sell. | ↑ Strengthened | All major article claims verified. Stock ~15% off article's ~$200 reference price — gives a margin-of-safety entry if thesis holds. Key resolution event remains Q2 print (~Aug 6). |
 
 ---
 
@@ -62,7 +62,7 @@ AAOI makes optical transceivers and subsystems for data centers, cable TV, and t
 
 | Date | Revenue | Beat/Miss | Guidance | Notes |
 |------|---------|-----------|----------|-------|
-| Q1 2026 (May 7) | $151.1M (+51% YoY, +13% seq) | Slight miss vs $154.81M est; non-GAAP EPS -$0.07 (missed -$0.06) | FY2026 >$1.1B cap-limited (demand $1.4–1.5B); Q2 $150–165M per 8-K ⚠️ article cites $180–198M — discrepancy | DC revenue $81.4M; CATV $66.8M; non-GAAP GM 29.2%; FY2026 non-GAAP OpInc >$140M guided; cash $449.4M post-$382.4M raise + $125M converts (2.75%, due 2030) |
+| Q1 2026 (May 7) | $151.1M (+51% YoY, +13% seq) | Slight miss vs $154.81M est; non-GAAP EPS -$0.07 (missed -$0.06); stock fell ~12% AH to ~$145 | FY2026 >$1.1B cap-limited (real demand $1.4–1.5B); Q2 $180–198M (confirmed from call transcript — 8-K summary had wrong $150–165M range) | DC revenue $81.4M; CATV $66.8M; non-GAAP GM 29.2%; FY2026 non-GAAP OpInc >$140M; cash $449.4M post-$382.4M raise; $125M converts 2.75% due 2030 |
 
 ---
 
@@ -97,12 +97,12 @@ AAOI makes optical transceivers and subsystems for data centers, cable TV, and t
   - Volume shipments of 1.6T Linear Pluggable Optics began March 2026
   - Gross margin guided to 35% by year-end 2026, >40% in 2027
 
-  **Discrepancies / flags:**
-  - ⚠️ Q2 revenue guidance: article says $180–198M; our 8-K says $150–165M. This is a ~20% discrepancy and the most significant factual error risk in the article. The 8-K was filed May 7 (same day as earnings call). Could reflect a difference between the press release range ($150–165M) and a revised range stated on the call, OR the article has the wrong number. **Resolve at Q2 print.**
-  - ⚠️ Year-end 2026 capacity: article says 650K units/month; our 8-K says 500K+/month. Article's number is 30% higher. Either the capacity target was raised during the earnings call (not captured in our 8-K summary) or the article overstates it. **Flag for Q2 call confirmation.**
-  - ⚠️ Customer concentration framing: article describes Q4 top-3 at 39%/31%/21%. Our 10-K shows Digicomm alone at 53.1% of FY2025 revenue — far higher than the article implies. Quarterly figures can differ from annual, but the article understates the true concentration risk in context of the full-year data.
-  - ℹ️ "A year ago this was a $15 stock": the $15.06 52-week low was at some point in the trailing year, but the 10-K shows the stock was at $25.69 at June 30, 2025. The $15 framing is directionally correct (major turnaround) but not precisely accurate.
-  - ℹ️ 81M share count (article) vs 75.2M (10-K, Feb 2026): difference is the ~6M shares from the $382.4M raise — consistent.
+  **Discrepancies / flags (updated 2026-06-19 with web verification):**
+  - ✅ Q2 revenue guidance $180–198M: **article was correct**. Confirmed from Q1 2026 earnings call transcript (Motley Fool, Seeking Alpha). Our prior 8-K wiki summary of "$150–165M" was a transcription error — that was Q1 actuals, not Q2 guidance. Wiki corrected.
+  - ⚠️ Year-end 2026 capacity: article says 650K units/month; 8-K said 500K+/month. 30% gap. Web search found no explicit contradiction of the 650K figure — more likely the capacity target was raised on the earnings call vs. the initial press release. **Monitor Q2 call for update.**
+  - ⚠️ Customer concentration: article describes Q4 top-3 at 39%/31%/21%. Our 10-K shows Digicomm alone at 53.1% for FY2025 — far higher than the article implies. The Q4 quarterly split can differ from the annual, but the 10-K level of concentration is materially worse than the article implies.
+  - ℹ️ "A year ago this was a $15 stock": the $15.06 52-week low occurred at some point in the trailing year, but the 10-K shows the stock at $25.69 at June 30, 2025. Directionally correct narrative, not a precise statement.
+  - ℹ️ 81M share count (article) vs 75.2M (10-K, Feb 2026): ~6M new shares from $382.4M raise — internally consistent.
 
   **Bear risks the article correctly enumerates:**
   Customer concentration (top 3 still >70%+ of revenue), GAAP unprofitability, dilution overhang ($382.4M raise + $125M converts), insider selling (CEO ~$10M, CFO block, director 56,575 shares), laser fab execution risk (350% expansion + wafer node transition = yield risk), and hyperscaler capex cycle risk.
@@ -141,7 +141,7 @@ AAOI makes optical transceivers and subsystems for data centers, cable TV, and t
 
 - **2026-05-11** — No analyst notes at initialization.
 - **2026-05-12** — Post-Q1: analysts raised consensus PT +48% to $151 (per Research Log).
-- **2026-06-19** — Per @HiCagr article (June 2): Northland analyst pegged lead 1.6T hyperscale customer as "very likely AMZN" based on prior filings and warrant structures (treat as informed inference, not confirmed). Rosenblatt explicitly cited AMZN-related 800G momentum plus upcoming ORCL qualifications in raising its PT.
+- **2026-06-19** — Web-verified current state (June 19): Rosenblatt PT raised to $220 (from $140), Buy. Second firm raised PT to $190. Consensus PT ~$160 (range $57.50–$220); 3 Buy, 3 Hold, 0 Sell. Stock ~$169. Per @HiCagr article (June 2): Northland pegged lead 1.6T customer as "very likely AMZN" based on prior filings and warrant structures; Rosenblatt cited AMZN-related 800G momentum plus upcoming ORCL qualifications. Both treat as informed inference, not confirmed.
 
 ---
 
@@ -150,7 +150,7 @@ AAOI makes optical transceivers and subsystems for data centers, cable TV, and t
 
 - **2026-05-12** — 🔥 EARNINGS | AAOI Q1 2026: EPS -$0.07 (missed -$0.06), record Q1 revenue. First 800G volume shipment to large hyperscale customer. Analysts raised PT +48% to $151; FY2026 consensus revenue now $1.03B (+103% YoY). Q2 guided $150M–$165M. Source: SEC/SimplyWallSt. [[AAOI_8K_2026-05-07]]
 - **2026-05-14** — stock-research run. Fundamental sections populated from web research and SEC DEF 14A.
-- **2026-06-19** — @HiCagr deep-dive ingested and fact-checked. Key new KB additions: signed order book ($200M+ 1.6T + $324M+ total in ~4 weeks), InP fab 350% expansion / 4→6-inch wafer transition, capacity ramp to 930K/month by end 2027, $20.8M Texas state grant, CFO's $471M/month mid-2027 DC run-rate target, Q4 customer concentration (39/31/21%), insider selling flag. Two discrepancies logged: Q2 guidance ($180-198M article vs $150-165M 8-K) and year-end capacity (650K article vs 500K+ 8-K). Earnings table and catalyst timeline updated.
+- **2026-06-19** — @HiCagr deep-dive ingested, fact-checked, and web-verified. Q2 guidance discrepancy resolved: article's $180–198M is correct; our 8-K wiki summary ($150–165M) was a transcription error. Texas grant ($20.85M) and 350% laser fab expansion confirmed via web. Current stock ~$169 (down from article's ~$200 reference; post-earnings fell ~12% to ~$145, since recovered). Rosenblatt PT $220 (Buy). Earnings table corrected, catalyst timeline updated, analyst coverage updated, all discrepancy flags revised.
 
 ## Social Mentions
 
