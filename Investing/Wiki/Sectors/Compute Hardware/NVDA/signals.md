@@ -29,6 +29,7 @@
 | 2026-05-20 | [[2026-05-20-nvda-q1-earnings-preview]] | tweet |
 | 2026-05-31 | [[2026-05-31-aosl-researching-the-power]] | tweet |
 | 2026-05-22 | [[2026-05-22-amd-a-ton-of]] | article |
+| 2026-06-19 | [[2026-06-19-connectivity-after-memory-i]] | article |
 
 ---
 

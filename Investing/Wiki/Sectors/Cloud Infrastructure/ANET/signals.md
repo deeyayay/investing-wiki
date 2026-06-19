@@ -24,6 +24,7 @@
 
 | Date | Signal | Source |
 |------|--------|--------|
+| 2026-06-19 | [[2026-06-19-connectivity-after-memory-i]] | article |
 
 ---
 

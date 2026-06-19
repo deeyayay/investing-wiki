@@ -17,6 +17,7 @@
 |------|--------|--------|
 | 2026-05-17 | [[2026-05-17-peng-people-buying-peng]] | tweet |
 | 2026-05-17 | [[2026-05-17-sive-when-i-see]] | tweet |
+| 2026-06-19 | [[2026-06-19-connectivity-after-memory-i]] | article |
 
 ---
 
