@@ -52,6 +52,29 @@ AXT manufactures compound semiconductor substrates — primarily indium phosphid
 
 - **2026-05-11** — Note initialized. Record $60M InP backlog. Upstream chokepoint play — NVIDIA pre-allocation of EML capacity is the demand signal.
 
+- **2026-06-19** — China AI optics supply chain brain dump (https://x.com/i/status/2068062894105952499). Author is working through how the China AI buildout changes the AXTI thesis — filed as an ongoing analysis note, not a final view.
+
+  **Five vectors identified:**
+
+  | Vector | Direction | Mechanism |
+  |--------|-----------|-----------|
+  | InP demand | ↑ | China $295B five-year AI DC buildout; domestic optics stack (Source Photonics/Dongshan, Innolight, Eoptolink, EML, CW laser, InP PICs, silicon photonics) all ramping |
+  | China AI buildout | ↑ | ~$295B five-year plan; absorbs more domestic optical supply; AXT/Tongmei in the middle of a local bottleneck |
+  | Domestic InP competition | ↑ (risk) | Yunnan Germanium + Guangdong Xiandao also expanding InP output; if they qualify, AXTI pricing power erodes over time |
+  | Export-permit risk | ↑ (risk) | China doesn't need to ban — can slow permits, condition approvals, prioritize domestic demand; could strand AXTI as "China-only" supplier vs. globally fungible |
+  | Geopolitical chokepoint value | ↑ | If export friction rises, AXTI/Tongmei becomes a strategic substrate asset; that is a different (potentially higher) multiple but also a different risk profile |
+
+  **Key constraint on China acting aggressively:** China still needs Innolight, Eoptolink, Source Photonics selling into global hyperscalers — a full substrate weaponization would hurt those exporters. Also, China's high-end InP MOCVD tool ecosystem still leans on Aixtron (AIXA) and Veeco (VECO); full localization of the process chain is not yet achieved.
+
+  **Author's framing:** "The AXT debate is really evolving. That combination can be very bullish, but it also changes the *type* of business the market is underwriting." Treat as a brain dump, not a final conclusion.
+
+  **Implications for wiki thesis:** The existing AXTI thesis (InP chokepoint → NVIDIA EML pre-allocation demand pull) is still intact. This note adds a second-order layer: *domestic China demand absorbing capacity = cleaner revenue* (no export permit risk) but *domestic competition scaling = pricing power at risk longer-term*. The export-permit risk was already flagged as Key Risk in this file; this note quantifies the mechanism more specifically.
+
+  **Adjacent signals for other tickers:**
+  - AIXA / Aixtron — named as tool dependency for high-end InP MOCVD in China; if China AI buildout accelerates InP capacity, Aixtron is a demand read-through
+  - VECO / Veeco — same MOCVD angle; monitor for China order flow
+  - SIVE (Sivers Semiconductors) — InP photonics chip design; domestic China InP competition is a risk for any InP-chip maker sourcing globally
+
 ---
 
 ## SEC Filings
@@ -75,6 +98,7 @@ AXT manufactures compound semiconductor substrates — primarily indium phosphid
 
 - **2026-05-12** — 🔥 EARNINGS | AXTI Q1 2026: Revenue $26.9M (+38.7% YoY), adj EPS -$0.01 (beat est -$0.05). Q2 guided EPS $0.06–$0.08 vs. est -$0.01 — massive guidance beat. $632.5M equity raise for InP capacity. Record $100M+ backlog. ATH $96 on May 1; +611% YTD. Wedbush PT $93, Northland $90. Source: AXT IR/InsiderMonkey. [[AXTI_8K_2026-04-30]]
 - **2026-05-14** — stock-research run. Fundamental sections populated from web research and SEC DEF 14A.
+- **2026-06-19** — China AI InP supply chain signal ingested (tweet). Five-vector framework: InP demand ↑, China AI buildout ↑, domestic InP competition ↑ (Yunnan Germanium, Guangdong Xiandao), export-permit risk ↑, geopolitical chokepoint value ↑. Adjacent signals flagged for AIXA, VECO, SIVE.
 
 ## Social Mentions
 
@@ -84,3 +108,4 @@ AXT manufactures compound semiconductor substrates — primarily indium phosphid
 | 2026-05-18 | [[2026-05-18-gev-ai-supply-chain-chokepoints]] | tweet |
 | 2026-05-18 | [[2026-05-18-axti-next-year-im]] | tweet |
 | 2026-05-20 | [[2026-05-20-nvda-q1-earnings-preview]] | tweet |
+| 2026-06-19 | [[2026-06-19-axti-china-inp-supply-chain-braindump]] | tweet |
