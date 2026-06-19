@@ -52,12 +52,12 @@ demand_chain:
   notes: "Sells equipment to OSATs, IDMs, substrate makers: Intel, Samsung, LG Innotek, Absolics, Corning — all in validation; first production orders 2026"
 
 metrics:
-  score: null
-  score_label: "—"
-  last_scored: null
+  score: 6.5
+  score_label: "Strong"
+  last_scored: "2026-06-19"
   valuation_fpe: null
-  analyst_pt: 10.70
-  analyst_upside_pct: null
+  analyst_pt: 10.65
+  analyst_upside_pct: -61
 
 last_updated: "2026-06-19"
 next_earnings: "2026-07-23"

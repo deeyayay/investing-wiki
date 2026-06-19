@@ -30,31 +30,31 @@ Near-term financials are pressured: 2026 guidance is €105-120M revenue with a 
 ---
 
 ## Scoring Summary
-_Last scored: — | [[Scoring Rubric]]_
+_Last scored: 2026-06-19 | [[Scoring Rubric]]_
 
 | Criterion | Score | Evidence |
 |-----------|-------|----------|
-| Product (Love Factor) | —/5 | |
-| Pricing Power | —/5 | |
-| Leadership & Alignment | —/5 | |
-| Financial Health | —/5 | |
-| Macro Environment | —/5 | |
-| Future Potential | —/5 | |
-| **Composite** | **—/10** | |
+| Product (Love Factor) | 5/5 | Sole-source LIDE; only commercially viable TGV process; 80%+ global player selection; prohibitive post-validation switching costs |
+| Pricing Power | 3/5 | Structural sole-source power on LIDE; blended gross margin ~22% depressed by solar mix drag; packaging margins not yet proven at scale |
+| Leadership & Alignment | 2/5 | CEO Fiedler 4-yr tenure, NXP/SCHOTT background; ownership_pct null; CFO new (Apr 2025); AGM strategy rift flagged; no guidance beat history |
+| Financial Health | 2/5 | 2026 guidance: EBIT −3% to +4.5% → operating loss likely; FCF negative during transition; demand chain FCF-hyperscaler customers (positive offset) |
+| Macro Environment | 4/5 | Multiple converging tailwinds: AI glass packaging (5+ yr, Already-Fired forcing function), CPO waveguide (equipment shipped), perovskite solar (future); solar trough is one near-term headwind |
+| Future Potential | 4/5 | Three revenue pathways with traction: LIDE (first production order), Direct Light CPO (equipment shipped Apr 2026), solar/perovskite; NEXAR adds singulation/bonding/ABF; TAM expanding to €5-10B by 2030 |
+| **Composite** | **6.5/10** | **Strong** |
 
-**Valuation:** — (not yet scored)
-**Growth Potential:** — (pending)
+**Valuation:** Expensive at €27 | EV/Revenue ~9x (est.) | Analyst consensus PT €10.65 (−61% — severely stale; pre-dates CPO shipment, SDAX, HVM order flow); Fair vs. 2027-2028 ramp optionality
+**Growth Potential:** High — sole-source equipment for glass substrate transition; CPO adjacency materializing earlier than scheduled
 
 ## Risk Flags
-_Evaluated: —_
+_Evaluated: 2026-06-19_
 
 | Flag | Status | Notes |
 |------|--------|-------|
-| Capex sustainability | — | |
-| Demand chain health | — | |
-| Customer concentration | — | |
-| Circular revenue exposure | — | |
-| Rate sensitivity | — | |
+| Capex sustainability | WATCH | 2026 guidance implies possible operating loss; FCF negative during ramp transition; no balance sheet data confirms coverage; North Star restructuring adds cost overhang |
+| Demand chain health | CLEAR | Primary customers Intel, Samsung, LG Innotek, Corning — large FCF-funded IDMs and materials cos; hyperscaler AI capex ultimately funds glass substrate demand |
+| Customer concentration | WATCH | Top customer % unavailable (null); early production stage (1 order booked) likely means high near-term concentration; 4-5 buyer pipeline would diversify rapidly |
+| Circular revenue exposure | CLEAR | Demand chain ends at AI data centers funded by hyperscaler FCF; equipment → substrate maker → chipmaker → hyperscaler is a clean linear chain; circular_exposure: none in facts.md |
+| Rate sensitivity | WATCH | European small-cap in investment/transformation mode; debt structure not public; likely some fixed/variable bank debt; ECB rate path is manageable but insufficient data to confirm CLEAR |
 
 ---
 

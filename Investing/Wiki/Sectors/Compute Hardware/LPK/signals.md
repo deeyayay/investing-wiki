@@ -103,3 +103,4 @@
 
 - **2026-06-19** — add-ticker run. facts.md + analysis.md populated from web research (Q1 2026 report, LPKF press releases, analyst research). Not an SEC filer — CIK null. Migrated Social Mentions + dual tweet fact-check from legacy LPK.md stub.
 - **2026-06-19** — 📊 MONITOR | --deep pass: CPO waveguide equipment shipped (April 28 Seoul conference), SDAX inclusion June 22 confirmed, Q2 earnings July 23, analyst PTs stale vs €27 stock; AGM strategy rift noted; June 30 LIDE order binary approaching.
+- **2026-06-19** — Scored — Composite 6.5/10 Strong | P:5 PP:3 L:2 FH:2 ME:4 FP:4
