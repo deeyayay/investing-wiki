@@ -36,3 +36,4 @@
 - **2026-05-12** — 🔥 EARNINGS | AAOI Q1 2026: EPS -$0.07 (missed -$0.06), record Q1 revenue. First 800G volume shipment to large hyperscale customer. Analysts raised PT +48% to $151; FY2026 consensus revenue now $1.03B (+103% YoY). Q2 guided $150M–$165M. Source: SEC/SimplyWallSt. [[AAOI_8K_2026-05-07]]
 - **2026-05-14** — stock-research run. Fundamental sections populated from web research and SEC DEF 14A.
 - **2026-06-19** — 📊 MONITOR --deep AAOI | Migrated legacy AAOI.md → three-layer structure. Q1 FY2026 revenue $151.1M confirmed from 10-Q; $200M+ 1.6T order (Mar 2026) logged; China credit line doubled (Jun 2026); Rosenblatt PT $220; insider selling wave logged. Next earnings 2026-08-06.
+- **2026-06-19** — Scored — Composite 6.5/10 Strong | P:3 PP:2 L:4 FH:3 ME:4 FP:3

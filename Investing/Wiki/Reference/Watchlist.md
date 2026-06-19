@@ -23,7 +23,7 @@
 | SIVE | Early stage — monitor for catalyst | 5.5 |
 | MSSCorp | Early stage — monitor for catalyst | — |
 | PCL | Early stage — monitor for catalyst | — |
-| AAOI | Applied Optoelectronics; photonics/optical interconnect theme | — |
+| AAOI | Applied Optoelectronics; photonics/optical interconnect theme | 6.5 |
 
 ---
 

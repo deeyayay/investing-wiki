@@ -70,9 +70,9 @@ demand_chain:
   notes: "Large hyperscalers (FCF-funded); customer concentration risk elevated — $200M+ single order creates 10%+ concentration; 1.6T transceivers for AI fabric buildout"
 
 metrics:
-  score: null
-  score_label: null
-  last_scored: null
+  score: 6.5
+  score_label: "Strong"
+  last_scored: "2026-06-19"
   valuation_fpe: null
   analyst_pt: 220
   analyst_upside_pct: null

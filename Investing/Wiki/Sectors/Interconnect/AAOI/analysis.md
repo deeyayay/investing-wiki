@@ -28,12 +28,31 @@ The financing structure now includes an ATM equity program (March 2026) and a Ch
 ---
 
 ## Scoring Summary
-_Not yet scored. Run /score-ticker AAOI to populate._
+_Last scored: 2026-06-19 | [[Scoring Rubric]]_
 
----
+| Criterion | Score | Evidence |
+|-----------|-------|----------|
+| Product (Love Factor) | 3/5 | Vertically integrated epi wafer growth + $200M+ 1.6T hyperscaler win proves qualification; not a chokepoint monopoly vs. COHR/LITE |
+| Pricing Power | 2/5 | moat.pricing_power: moderate; EPS -$0.07 on $151.1M revenue; gross margin absent from wiki; commoditization risk vs. Chinese entrants |
+| Leadership & Alignment | 4/5 | Founder-led (29yr CEO); ~3.3M shares (~4% ownership); ~90% variable comp; CFO/SVP selling wave (tax-withholding) is mild negative |
+| Financial Health | 3/5 | $449M cash; FCF negative at current EPS; ATM equity program + RMB 500M credit facility; customers are FCF-funded hyperscalers |
+| Macro Environment | 4/5 | AI cluster optical interconnect demand is mandatory infrastructure; 1.6T ramp in hypergrowth; CPO (2028+) and Chinese competition are manageable headwinds |
+| Future Potential | 3/5 | 1.6T ramp + 3.2T next cycle + CATV/Telecom secondary; all within same transceiver product category; no material adjacent expansion identified |
+| **Composite** | **6.5/10** | **Strong** |
+
+**Valuation:** Reasonable at ~$150 | EV/Revenue ~10x on $1.1B FY2026 guide (Component Leader fair value 8–15x) | Analyst range: $57 Northland (MPF) – $220 Rosenblatt (Buy)
+**Growth Potential:** — (pending real-time data integration)
 
 ## Risk Flags
-_Not yet evaluated. Run /score-ticker AAOI to populate._
+_Evaluated: 2026-06-19_
+
+| Flag | Status | Notes |
+|------|--------|-------|
+| Capex sustainability | WATCH | ATM equity program + RMB 500M China credit facility funding manufacturing ramp; $449M cash provides buffer but FCF negative |
+| Demand chain health | CLEAR | Primary customers are large FCF-funded hyperscalers; AI fabric capex funded by hyperscaler operating cash |
+| Customer concentration | FLAG | $200M+ single hyperscaler order at $151M/quarter run-rate implies >40% near-term concentration; specific % undisclosed |
+| Circular revenue exposure | CLEAR | Physical optical transceivers for AI data center fabric; demand traceable to real hyperscaler capex |
+| Rate sensitivity | WATCH | China credit facility (RMB 500M) likely variable-rate; other debt terms not in wiki; Insufficient data |
 
 ---
 
