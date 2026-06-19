@@ -1444,7 +1444,7 @@ function parseWiki(md){
     if(/^### /.test(line)){flushTable();flushList();html+='<h3 class="wiki-h3">'+esc(line.slice(4).trim())+'</h3>';continue;}
     if(/^#### /.test(line)){flushTable();flushList();html+='<h4 class="wiki-h4">'+esc(line.slice(5).trim())+'</h4>';continue;}
     if(/^-{3,}$/.test(line.trim())){flushTable();flushList();continue;}
-    if(/^\|/.test(line)){flushList();inTable=true;tableRows.push(line);continue;}
+    if(/^\s*\|/.test(line)){flushList();inTable=true;tableRows.push(line.trimStart());continue;}
     else if(inTable)flushTable();
     if(/^> /.test(line)){flushList();html+='<div class="wiki-blockquote">'+inlineMd(line.slice(2).trim())+'</div>';continue;}
     if(/^- \[[ xX]\]/.test(line)){
