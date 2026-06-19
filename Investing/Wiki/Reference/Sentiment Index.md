@@ -10,7 +10,7 @@
 |--------|------|--------|----------|-------------|
 | NVDA | [[NVDA]] | monitored | 8 | 2026-05-31 |
 | AMKR | [[AMKR]] | monitored | 1 | 2026-06-19 |
-| BESI | [[BESI]] | candidate | 1 | 2026-06-19 |
+| BESI | [[BESI]] | monitored | 1 | 2026-06-19 |
 | AXTI | [[AXTI]] | monitored | 4 | 2026-05-20 |
 | SIVE | [[SIVE]] | monitored | 4 | 2026-05-20 |
 | TSM | [[TSM]] | stub | 4 | 2026-05-20 |
