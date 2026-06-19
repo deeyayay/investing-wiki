@@ -30,31 +30,31 @@ The founder-CEO Richard Blickman has run BESI since 1995 (~30 years) with 1.94% 
 ---
 
 ## Scoring Summary
-_Last scored: — | [[Scoring Rubric]]_
+_Last scored: 2026-06-19 | [[Scoring Rubric]]_
 
 | Criterion | Score | Evidence |
 |-----------|-------|----------|
-| Product (Love Factor) | —/5 | |
-| Pricing Power | —/5 | |
-| Leadership & Alignment | —/5 | |
-| Financial Health | —/5 | |
-| Macro Environment | —/5 | |
-| Future Potential | —/5 | |
-| **Composite** | **—/10** | |
+| Product (Love Factor) | 4/5 | ~75% advanced die attach share; #1 hybrid bonding globally; TSMC/Samsung/SK Hynix qualification moats = multi-year switching cost; ASMPT is real but distant second |
+| Pricing Power | 4/5 | GM 63.5% Q1 2026, guided 64–66% Q2; hybrid bonding mix lifts ASP per system; FY2025 earnings compression was operating leverage, not pricing erosion |
+| Leadership & Alignment | 4/5 | Founder-CEO Blickman: 30yr tenure, 1.94% ownership (just below 2% threshold), 88.5% performance-linked comp; 2 of 3 rubric criteria met |
+| Financial Health | 4/5 | NI €131.6M in down-cycle FY2025 (22% NM); Q1 2026 NM 27.9%; customers are FCF-funded foundries/OSATs; no balance sheet stress evident; explicit FCF/debt data absent from wiki |
+| Macro Environment | 4/5 | AI chip packaging secular; chiplet + HBM + 3D-IC all converge on hybrid bonding; orders +104.5% YoY Q1 2026 confirms real pull-through; semiconductor equipment cycle is 1 manageable headwind; no Sector Framework — scored from Technology Alignment |
+| Future Potential | 4/5 | Three traction vectors: AI compute hybrid bonding (record Q1 orders, 20 customers), memory HBM5/6 (Samsung/SK Hynix roadmaps), logic 3D-IC (TSMC SoIC-X, Intel Foveros); new 1-micron flip chip tool adds capability |
+| **Composite** | **8.0/10** | **Unrivaled** |
 
-**Valuation:** Forward P/E ~80.65x (June 2026); analyst consensus PT €238.73 (Buy; 14 buy / 7 hold / 2 sell)
-**Growth Potential:** — (pending /score-ticker run)
+**Valuation:** Expensive at forward P/E 80.65x (above ASML ~35x, AMAT ~25x peak peers) | Analyst consensus: Buy (23 analysts; 14/7/2); avg PT €238.73 (~25% implied upside) | Premium reflects hybrid bonding scarcity; leaves no margin of safety
+**Growth Potential:** Strong — three application vectors at early-revenue stage; hybrid bonding customer base expanding from 20; Q2 2026 guide +30-40% QoQ
 
 ## Risk Flags
-_Evaluated: —_
+_Evaluated: 2026-06-19_
 
 | Flag | Status | Notes |
 |------|--------|-------|
-| Capex sustainability | — | Equipment spending cycles can reverse sharply |
-| Demand chain health | — | End demand is hyperscaler AI capex — healthy but lumpy |
-| Customer concentration | — | TSMC + Samsung + SK Hynix likely = majority of hybrid bonding revenue |
-| Circular revenue exposure | none | Sells equipment; no AI-circular-revenue dependency |
-| Rate sensitivity | — | High PE makes it duration-sensitive |
+| Capex sustainability | CLEAR | Equipment manufacturer with light own capex; high-margin business; customers (TSMC, Samsung, SK Hynix) are well-capitalized FCF generators; no debt stress visible |
+| Demand chain health | CLEAR | Primary customers are leading-edge foundries + large OSATs; customer_funding_type: fcf-hyperscaler; no pre-IPO or debt-dependent customer exposure |
+| Customer concentration | WATCH | top_customer_pct: null (undisclosed); by inference TSMC + Samsung + SK Hynix likely >40% of hybrid bonding revenue; customer base expanding to 20 is positive trajectory |
+| Circular revenue exposure | CLEAR | Sells equipment for immediate revenue recognition; circular_exposure: none; no self-referential backlog; demand traceable to real hyperscaler AI capex |
+| Rate sensitivity | WATCH | Limited direct debt exposure expected; but ~80x forward P/E creates significant stock price duration risk in rising rate environment; underlying business FCF unlikely rate-sensitive |
 
 ---
 

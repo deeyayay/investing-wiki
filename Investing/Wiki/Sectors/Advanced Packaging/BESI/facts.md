@@ -66,9 +66,9 @@ demand_chain:
   notes: "Equipment sold to OSATs (AMKR, ASE) and captive fabs (TSMC, Samsung, SK Hynix, Intel); end-funded by hyperscaler capex"
 
 metrics:
-  score: null
-  score_label: "—"
-  last_scored: null
+  score: 8.0
+  score_label: "Unrivaled"
+  last_scored: "2026-06-19"
   valuation_fpe: 80.65
   analyst_pt: 238.73
   analyst_upside_pct: null

@@ -25,3 +25,4 @@
 ## Research Log
 *(Reverse-chron append log — newest at bottom)*
 - **2026-06-19** — add-ticker run. facts.md + analysis.md populated from web research (Quartr, TipRanks, GlobeNewswire, Seeking Alpha). No SEC EDGAR CIK (Netherlands-listed, Euronext Amsterdam). Q1 2026 and FY2025 earnings data ingested. Hybrid bonding market position confirmed via multiple sources. Management: Richard Blickman (CEO/founder, ~30yr), Andrea Kopp-Battaglia (SVP Finance). Onboarded from candidate entry added 2026-06-19 via ingest-sentiment of tech-race tweet.
+- **2026-06-19** — Scored — Composite 8.0/10 Unrivaled | P:4 PP:4 L:4 FH:4 ME:4 FP:4 | Valuation: Expensive (80.65x fwd P/E); analyst avg PT €238.73 Buy consensus. No Sector Framework for Advanced Packaging — Macro scored from Technology Alignment. Risk flags: Customer concentration WATCH (top customer % undisclosed), Rate sensitivity WATCH (high PE duration risk).
