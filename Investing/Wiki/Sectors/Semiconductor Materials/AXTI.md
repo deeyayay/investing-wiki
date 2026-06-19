@@ -56,13 +56,12 @@ AXT manufactures compound semiconductor substrates — primarily indium phosphid
 
   **Five vectors identified:**
 
-  | Vector | Direction | Mechanism |
-  |--------|-----------|-----------|
-  | InP demand | ↑ | China $295B five-year AI DC buildout; domestic optics stack (Source Photonics/Dongshan, Innolight, Eoptolink, EML, CW laser, InP PICs, silicon photonics) all ramping |
-  | China AI buildout | ↑ | ~$295B five-year plan; absorbs more domestic optical supply; AXT/Tongmei in the middle of a local bottleneck |
-  | Domestic InP competition | ↑ (risk) | Yunnan Germanium + Guangdong Xiandao also expanding InP output; if they qualify, AXTI pricing power erodes over time |
-  | Export-permit risk | ↑ (risk) | China doesn't need to ban — can slow permits, condition approvals, prioritize domestic demand; could strand AXTI as "China-only" supplier vs. globally fungible |
-  | Geopolitical chokepoint value | ↑ | If export friction rises, AXTI/Tongmei becomes a strategic substrate asset; that is a different (potentially higher) multiple but also a different risk profile |
+  | Vector | Signal | Mechanism |
+  |--------|--------|-----------|
+  | China domestic InP demand | ↑ Bull | $295B five-year AI DC plan drives domestic optics stack (EML lasers, CW laser, InP PICs, silicon photonics); Source Photonics, Innolight, Eoptolink, Dongshan all ramping — AXT/Tongmei absorbing the local bottleneck |
+  | Domestic InP competition | ↑ Risk | Yunnan Germanium + Guangdong Xiandao expanding InP output; pricing power erodes if they qualify to global specs |
+  | Export-permit risk | ↑ Risk | China doesn't need to ban — can slow permits, condition approvals, prioritize domestic demand; could strand AXTI as "China-only" vs. globally fungible |
+  | Geopolitical chokepoint value | ↑ Bull | If export friction rises, AXTI/Tongmei becomes a strategic substrate asset — different (potentially higher) multiple but also a different risk profile |
 
   **Key constraint on China acting aggressively:** China still needs Innolight, Eoptolink, Source Photonics selling into global hyperscalers — a full substrate weaponization would hurt those exporters. Also, China's high-end InP MOCVD tool ecosystem still leans on Aixtron (AIXA) and Veeco (VECO); full localization of the process chain is not yet achieved.
 
