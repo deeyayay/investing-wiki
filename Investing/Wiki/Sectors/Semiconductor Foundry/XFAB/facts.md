@@ -29,11 +29,11 @@ earnings:
     notes: "FY2025 revenue €870M (+7% YoY); gross margin 21.2%; net income $30.1M; EBITDA $196.8M (22.6%); Q1 2026 guided $190-200M / 18-21% EBITDA margin"
   - quarter: Q1_FY2026
     date: "2026-04-29"
-    revenue_b: null
+    revenue_b: 0.196
     eps_nongaap: null
-    beat: null
-    guidance_next_b: null
-    notes: "Q1 2026 results filed Apr 29 2026; details to be updated on next monitor pass"
+    beat: true
+    guidance_next_b: 0.195
+    notes: "Rev $195.6M (beat $190-200M guide); microsystems ATH $33.7M +42% YoY; wide-bandgap +152% YoY; industrial +32% YoY; medical +39% YoY; automotive weak; EBITDA margin 17.5%; Q2 guided $190-200M / 17-20% EBITDA"
 
 filings: []
 
@@ -64,9 +64,9 @@ metrics:
   score_label: "—"
   last_scored: null
   valuation_fpe: null
-  analyst_pt: 5.34
+  analyst_pt: 5.53
   analyst_upside_pct: null
 
 last_updated: "2026-06-19"
-next_earnings: null
+next_earnings: "2026-07-30"
 ---

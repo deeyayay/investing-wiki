@@ -13,7 +13,7 @@ Sole-source analog/mixed-signal foundry with >90% product-level customer lock-in
 
 > **Thesis established:** 2026-06-19
 > **Last validated:** 2026-06-19
-> **Drift status:** Watch — SiC recovery timeline uncertain; new CEO and cost-cut execution the near-term swing factor
+> **Drift status:** On track — Q1 beat guidance; non-auto segments (medical, industrial, microsystems, wide-bandgap) all accelerating; automotive recovery expected H2 2026; cost-cut on schedule
 
 X-FAB Silicon Foundries is a specialty analog/mixed-signal semiconductor foundry — one of the few at scale globally not captive to a major IDM. Unlike TSMC or Samsung, XFAB focuses on mature-node processes (180nm–1µm) with specialized technologies: silicon carbide (SiC), gallium nitride (GaN), MEMS, SOI, BiCMOS, and BCD. Six fabs across Germany, Belgium, Malaysia, the US (Texas), and France give it a multi-continent manufacturing footprint. Primary markets are automotive (~50%+ of revenue), medical, and industrial — not hyperscalers or consumer electronics.
 
@@ -63,6 +63,7 @@ _Evaluated: —_
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
 | 2026-06-19 | Initial add-ticker pass | → Neutral | SiC headwinds weigh on near-term but structural moat intact; watch Q2 2026 results and SiC order trends |
+| 2026-06-19 | Q1 2026: revenue beat, microsystems ATH, wide-bandgap +152% YoY | ↑ Strengthened | Revenue above guidance despite automotive softness; non-auto segments (industrial, medical, microsystems, wide-bandgap) all accelerating — broadens the base beyond SiC/auto dependency; H2 2026 automotive recovery anticipated |
 
 ---
 
@@ -76,20 +77,20 @@ _Evaluated: —_
 ---
 
 ## Catalyst Timeline
-- [ ] Q1 2026 results interpretation — revenue vs. $190-200M guided range and EBITDA margin
-- [ ] Q2 2026 earnings — first quarter with full cost-cut benefit; watch gross margin trajectory
-- [ ] SiC book-to-bill recovery — watch for return to >1.0 signal that automotive/industrial SiC demand is recovering
-- [ ] $6M/quarter cost savings confirmation by Q4 2026
-- [ ] EV demand recovery commentary from major automotive OEMs (Ford, VW, BMW, Stellantis)
-- [ ] CEO Damien Macq: first analyst day or investor presentation under his leadership
-- [ ] Capacity utilization trajectory — analog/automotive core utilization is the gross margin lever
+- [x] Q1 2026 results (2026-04-29) — beat guidance: $195.6M vs. $190-200M guide; microsystems ATH; wide-bandgap +152% YoY; automotive weak; H2 recovery guided
+- [ ] Q2 2026 earnings (2026-07-30) — first key test of cost-cut benefit; watch automotive inventory destocking end; Q2 guided $190-200M / 17-20% EBITDA
+- [ ] Automotive recovery inflection H2 2026 — Melexis (top automotive client) inventory normalization; XFAB guided "steady recovery" H2
+- [ ] SiC wide-bandgap book-to-bill recovery — watch for >1.0 signal; Q1 2026 wide-bandgap +152% YoY is a positive early read
+- [ ] $6M/quarter cost savings confirmation by Q4 2026 — headcount reduction program; full-run-rate by Q4
+- [ ] CEO Damien Macq: first full analyst day under his leadership
+- [ ] Capacity utilization trajectory — automotive recovery is the gross margin operating leverage lever
 
 ---
 
 ## Analyst Coverage
 *(Rating changes, price target moves, notable commentary — append-only)*
 
-- **2026-06-19** — Consensus €5.34 avg (low €4.30, high €8.02). One analyst buy, one sell. Neutral overall rating. Fair value estimates range from €5.06 (after cut) to €7.36 (narrative value). Current price ~€4.60–5.00. Stock near multi-year lows on SiC disappointment.
+- **2026-06-19** — Consensus €5.53 avg (low €4.32, high €7.99), 8 analysts covering. 1 buy, 6 hold, 1 sell. Neutral overall rating. Current price ~€4.60–5.00. Stock near multi-year lows on SiC disappointment and automotive inventory correction. Fair value estimates range from €5.06 (discounted) to €7.36 (narrative recovery).
 
 ---
 
