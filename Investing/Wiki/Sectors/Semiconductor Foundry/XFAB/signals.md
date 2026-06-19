@@ -33,3 +33,4 @@
 
 - **2026-06-19** — add-ticker run. facts.md + analysis.md populated from web research (Euronext-listed; not an SEC filer). Key data sources: Businesswire Q1 2026 results press release, SimplyWallSt, GrowthInvesting.net, AlphaSpread, InsiderScreener.com. SiC impairment and CEO transition are the dominant thesis variables. Run /ticker-monitor --deep XFAB to pull Q1 2026 results detail and full analyst coverage.
 - **2026-06-19** — 📊 MONITOR | Q1 2026 actuals ingested: beat guidance, microsystems ATH, wide-bandgap +152% YoY; next earnings 2026-07-30; automotive recovery expected H2 2026; analyst consensus updated to €5.53 (8 analysts).
+- **2026-06-19** — Scored — Composite 6.0/10 Strong | P:4 PP:3 L:2 FH:3 ME:3 FP:3

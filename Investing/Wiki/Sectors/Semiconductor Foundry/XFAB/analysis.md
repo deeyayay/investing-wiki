@@ -30,31 +30,31 @@ The opportunity is that the SiC pain is largely a demand-timing issue, not a tec
 ---
 
 ## Scoring Summary
-_Last scored: — | [[Scoring Rubric]]_
+_Last scored: 2026-06-19 | [[Scoring Rubric]]_
 
 | Criterion | Score | Evidence |
 |-----------|-------|----------|
-| Product (Love Factor) | —/5 | |
-| Pricing Power | —/5 | |
-| Leadership & Alignment | —/5 | |
-| Financial Health | —/5 | |
-| Macro Environment | —/5 | |
-| Future Potential | —/5 | |
-| **Composite** | **—/10** | |
+| Product (Love Factor) | 4/5 | Sole-source for >90% of manufactured products; 5–7 year automotive/medical re-qual makes switching prohibitively costly |
+| Pricing Power | 3/5 | Medium pricing power (moat.pricing_power); sole-source protection offset by thin 21.2% gross margin and EBITDA declining 22.6%→17.5% on low utilization |
+| Leadership & Alignment | 2/5 | CEO change Feb 2026; Macq has 4-month track record; insider ownership % unknown; $24K share purchase de minimis; 1 guidance beat (Q1 2026) |
+| Financial Health | 3/5 | Net debt $291M / FY2025 EBITDA $196.8M = 1.48x; FCF improving as capex drops $333M/yr→$100M; diversified FCF-funded customer base |
+| Macro Environment | 3/5 | Secular analog automotive/medical/industrial tailwinds balanced by near-term SiC EV demand collapse and automotive inventory correction |
+| Future Potential | 3/5 | Wide-bandgap +152% YoY and microsystems ATH show adjacency traction; but TAM bounded by foundry-service model; no software/IP layer |
+| **Composite** | **6.0/10** | **Strong** |
 
-**Valuation:** — (not yet scored)
-**Growth Potential:** — (pending)
+**Valuation:** Cheap at ~€4.80 | EV/EBITDA ~6.5x (depressed Q1 margins) | Analyst upside: ~15% to €5.53 consensus | SiC+auto recovery scenario implies >30% upside
+**Growth Potential:** — (pending real-time data integration)
 
 ## Risk Flags
-_Evaluated: —_
+_Evaluated: 2026-06-19_
 
 | Flag | Status | Notes |
 |------|--------|-------|
-| Capex sustainability | Watch | $1B 2023-2025 build complete; 2026 capex down to ~$100M |
-| Demand chain health | Watch | SiC book-to-bill 0.38; EV demand recovery uncertain |
-| Customer concentration | Low | >90% sole-source but diversified across automotive/medical/industrial customers |
-| Circular revenue exposure | None | No hyperscaler or crypto-linked demand |
-| Rate sensitivity | Low | European lender; but debt from capex build creates service cost sensitivity |
+| Capex sustainability | WATCH | Net debt $291M / EBITDA 1.48x FY2025; capex dropping to $100M in 2026; FCF recovery underway but Q1 margins depressed |
+| Demand chain health | CLEAR | Diversified automotive Tier 1s (Bosch, Denso, Continental), medical device makers, industrial IDMs; all FCF-funded corporates; no circular chain |
+| Customer concentration | WATCH | Melexis named as largest automotive client and primary Q1 2026 drag; top-customer % not disclosed; automotive ~50% of historical revenue |
+| Circular revenue exposure | CLEAR | No circular backlog; automotive/medical demand traceable to real-world end consumers |
+| Rate sensitivity | WATCH | $291M net debt from $1B capex build; European rate exposure; fixed/variable debt split and covenant structure unknown |
 
 ---
 
