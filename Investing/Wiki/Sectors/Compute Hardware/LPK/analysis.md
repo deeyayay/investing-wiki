@@ -1,6 +1,6 @@
 # LPK — Analysis
 *Layer 2 — Thesis, conviction, and scoring. Updated by: /score-ticker, /ticker-monitor (conviction + analyst + catalyst), /add-ticker (initial stub).*
-*Last updated: 2026-06-19*
+*Last updated: 2026-06-19 (ticker-monitor --deep)*
 
 ---
 
@@ -13,7 +13,7 @@ LPKF owns the sole industrial process for glass substrate via drilling, making i
 
 > **Thesis established:** 2026-06-19
 > **Last validated:** 2026-06-19
-> **Drift status:** On track — first production order booked Q1 2026; metalization bottleneck resolving
+> **Drift status:** On track — CPO waveguide equipment already shipped to customer; SDAX inclusion confirmed; adjacent TAM materializing ahead of schedule
 
 LPKF Laser & Electronics SE makes the LIDE (Laser-Induced Deep Etching) system — currently the only commercially viable method for drilling precision through-glass vias (TGVs) in glass core substrates. Glass substrates are the next frontier in AI chip packaging: superior electrical performance, dimensional stability, and thermal properties vs. silicon interposers make them the preferred substrate for co-packaged AI accelerators and co-packaged optics. With the supply chain moving from R&D into commercial production in 2026-2027, LPKF is the sole gatekeeper to this transition.
 
@@ -65,6 +65,10 @@ _Evaluated: —_
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
 | 2026-06-19 | Corroborated investor meeting notes: metalization bottleneck resolved, 4-5 buyers pipeline, 70% share target, NASDAQ listing in discussions | ↑ Strengthened | Two independent attendees confirm same key details; metalization unlock is the critical gating variable per LPKF's own Q1 language |
+| 2026-06-19 | LPKF Korea disclosed CPO waveguide equipment shipped to customer (April 28 Seoul conference) | ↑ Strengthened | "Adjacent revenue" thesis materializing earlier than expected (was 2029-2030); Direct Light technology adds a 3rd product line beyond LIDE and NEXAR |
+| 2026-06-19 | SDAX index inclusion confirmed from June 22, 2026 | ↑ Strengthened | Forces passive index-fund buying; material liquidity improvement for a small-cap; institutional legitimacy signal |
+| 2026-06-19 | Analyst consensus PT ~€10.65-€15.81 vs stock at €27 (+330% YTD) | → Neutral | Analyst coverage hasn't repriced the glass substrate optionality or CPO expansion; stale targets, not a thesis signal |
+| 2026-06-19 | AGM shareholder strategy rift reported; short sellers active during peak rally | ↓ Slightly | Some governance friction and active short interest warrant monitoring; doesn't change thesis but adds execution risk overlay |
 
 ---
 
@@ -80,10 +84,14 @@ _Evaluated: —_
 ---
 
 ## Catalyst Timeline
-- [ ] Q2 2026 earnings — watch: advanced packaging order count, backlog growth, solar floor
+- [x] First production-scale LIDE order booked (Q1 2026)
+- [x] SDAX index inclusion announced (effective June 22, 2026)
+- [ ] **June 30, 2026** — market expects additional LIDE order announcements by H1 close; critical near-term binary
+- [ ] **July 23, 2026** — Q2 2026 earnings; watch: order count update, packaging backlog, solar floor, CPO pipeline
 - [ ] Additional production-scale LIDE orders announced (4-5 buyer base case per meeting notes)
 - [ ] Official TAM model update (company stated intent to update addressable market estimate)
 - [ ] NASDAQ listing announcement (unconfirmed; corroborated by 2 private meeting sources)
+- [ ] Direct Light / CPO waveguide commercialization milestone (2027 inflection per company)
 - [ ] HVM ramp confirmation 2027 — mass production orders from multiple buyers
 - [ ] TSMC glass substrate mass production (guided 2028) — major demand catalyst
 - [ ] Perovskite solar transition — future solar revenue recovery signal
@@ -96,6 +104,8 @@ _Evaluated: —_
 | Date | Analyst | Rating | PT (€) | Notes |
 |------|---------|--------|--------|-------|
 | 2026-03-27 | Warburg Research | Hold | 10.70 | Cautious; PT implies ~32% downside from ~€15.65 at time of note |
+| 2026-06-19 | UBS | Positive (details TBC) | n/a | "Double lifeline" alongside SDAX inclusion per headline; exact PT not confirmed in public sources |
+| 2026-06-19 | Consensus (2 analysts) | Neutral | ~10.65 | PT range €9-€12.30; severely stale vs €27 stock price — does not reflect CPO or HVM optionality |
 
 ---
 

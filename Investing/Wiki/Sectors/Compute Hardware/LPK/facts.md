@@ -60,5 +60,5 @@ metrics:
   analyst_upside_pct: null
 
 last_updated: "2026-06-19"
-next_earnings: null
+next_earnings: "2026-07-23"
 ---

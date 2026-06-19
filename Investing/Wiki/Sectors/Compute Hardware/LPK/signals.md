@@ -8,6 +8,25 @@
 *(Append notable developments: partnerships, product launches, supply chain signals, earnings highlights)*
 *(For each entry: **Why it matters:** — the mechanism, not just the event)*
 
+### 2026-06-19 — ticker-monitor --deep pass findings
+
+- **2026-04-28** — LPKF Korea discloses 3D optical waveguide equipment shipped to customer for co-packaged optics (Seoul semiconductor conference)
+  **Why it matters:** Direct Light technology — laser-defined waveguides inside glass without etching — is a third product line beyond LIDE/TGV and NEXAR singulation. Equipment already in customer hands, working on 510×515mm large-area panels. CPO thesis that was 2029-2030 now has a paying customer; expands TAM and defensibility significantly.
+
+- **2026-06-22** — LPKF officially joins SDAX (replacing Adesso and Borussia Dortmund, alongside Vincorion, Basler, Asta Energy Solutions)
+  **Why it matters:** Passive index-tracking funds are forced buyers; material liquidity injection into a stock with 30-day annualized volatility of 146%. Institutional legitimacy signals broader market acceptance of the glass substrate thesis.
+
+- **2026-06-19** — Stock at €27 (+330% YTD from €5.34 nadir in January); analyst consensus PT ~€10.65, now ~61% below current price
+  **Why it matters:** Analyst targets haven't been updated to reflect CPO equipment shipped, SDAX inclusion, or HVM order pipeline — coverage gap creates mispricing either direction. Targets are a lagging indicator, not a thesis signal.
+
+- **2026-06-30 (approaching)** — Market narrative: additional LIDE semiconductor orders expected by end of H1 2026; described as a "two-week deadline" per financial press
+  **Why it matters:** High-stakes near-term binary. If orders announced ≥ June 30, confirms 4-5 buyer pipeline; if silent, headline risk to recent rally. Watch for any ad-hoc announcement.
+
+- **2026-06 (AGM)** — Shareholder meeting reported a "deep-rooted strategy rift" amid SDAX promotion
+  **Why it matters:** Nature of the rift unspecified in public sources; worth monitoring for leadership changes or strategic pivot away from glass packaging focus.
+
+---
+
 ### 2026-05-14 — Q1 2026 Earnings
 - Revenue €17.1M (−32% YoY); Solar segment −€9.3M YoY to €1.3M
 - **First production-scale LIDE capacity expansion order booked**; management "in talks for additional units"
@@ -83,3 +102,4 @@
 *(Reverse-chron append log — newest at bottom)*
 
 - **2026-06-19** — add-ticker run. facts.md + analysis.md populated from web research (Q1 2026 report, LPKF press releases, analyst research). Not an SEC filer — CIK null. Migrated Social Mentions + dual tweet fact-check from legacy LPK.md stub.
+- **2026-06-19** — 📊 MONITOR | --deep pass: CPO waveguide equipment shipped (April 28 Seoul conference), SDAX inclusion June 22 confirmed, Q2 earnings July 23, analyst PTs stale vs €27 stock; AGM strategy rift noted; June 30 LIDE order binary approaching.
