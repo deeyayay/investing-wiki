@@ -8,7 +8,7 @@
 # To add a ticker: /add-ticker TICKER [--sector "Sector Name"]
 # To add a candidate: append to the sector's candidates list below.
 
-last_updated: "2026-06-16"
+last_updated: "2026-06-19"
 
 tickers:
   # ── Application (L01) ────────────────────────────────────────────────────
@@ -123,6 +123,16 @@ tickers:
     # migrated to three-layer structure 2026-06-07
 
   # ── Compute Hardware (L05) ───────────────────────────────────────────────
+  LPK:
+    company: "LPKF Laser & Electronics SE"
+    cik: null
+    exchange: "XETRA (Frankfurt)"
+    sector: "Compute Hardware"
+    path: "Investing/Wiki/Sectors/Compute Hardware/LPK"
+    score: null
+    next_earnings: null
+    notes: "Sole-source LIDE glass substrate equipment; NEXAR platform; CEO 70% share target; HVM ramp 2027"
+
   NVDA:
     company: "NVIDIA Corporation"
     cik: "0001045810"
