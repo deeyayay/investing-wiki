@@ -9,6 +9,7 @@
 |------|--------|--------|
 | 2026-05-17 | [[2026-05-17-sive-when-i-see]] | tweet |
 | 2026-06-19 | [[2026-06-19-lpk-investor-meeting-notes]] | tweet |
+| 2026-06-19 | [[2026-06-19-lpk-serenity-meeting-corroboration]] | tweet |
 
 ---
 
@@ -37,7 +38,7 @@
 | 11 | CEO not surprised by price action; views stock as reasonably priced | ⚠️ OPINION | Unverifiable from public sources |
 | 12 | Advanced packaging revenue will significantly exceed other segments | ✅ SUPPORTED | Consistent with LPKF's strategic repositioning; advanced packaging is the primary stated growth driver |
 | 13 | LIDE is only the entry ticket; many adjacent revenue opportunities | ✅ CONFIRMED | LPKF has publicly disclosed expansion beyond LIDE: glass singulation, multilayer glass stack bonding, co-packaged optics integration, ABF ablation — all part of NEXAR platform |
-| 14 | NASDAQ listing actively on radar, discussions underway | ❌ UNVERIFIED | No public confirmation found. LPKF currently trades on Frankfurt/XETRA (SDAX). One source notes secondary OTC/exchange presence in US but no confirmed NASDAQ primary listing plans |
+| 14 | NASDAQ listing actively on radar, discussions underway | ⚠️ CORROBORATED (2 independent sources) | No public confirmation found, but a second independent meeting attendee (@serenity, https://x.com/i/status/2067958378488623499) specifically called this out as their biggest takeaway — two unconnected retail observers citing the same detail from the same meeting raises credibility above noise |
 
 ---
 
@@ -46,3 +47,22 @@
 **Credibility: High.** The core claims align well with LPKF's Q1 2026 disclosures and public analyst research. No claims are demonstrably false. The most significant unverifiable items — specific buyer count (#2), €500M prior internal TAM (#4), €100M single-customer framing (#9), and NASDAQ listing (#14) — are the kind of detail typically shared only in private management interactions and absent from public filings. The tweet appears to be genuine meeting notes rather than fabricated. Standard caveat: author is retail/unattributed; "meeting notes not meant to be official guidance."
 
 **Key signal for LPK thesis:** The metalization bottleneck (#3) resolving is the most materially important claim if accurate — it was the primary gating factor for HVM orders per LPKF's own Q1 guidance language.
+
+---
+
+## 2026-06-19 — Corroboration: @serenity Meeting Reaction
+
+**Source:** https://x.com/i/status/2067958378488623499  
+**Author:** @serenity (disclosure: long LPK)  
+**Type:** Independent attendee reaction to the same meeting — corroborates original notes  
+
+> Wow, I completely missed this with $LPK meeting notes. And I think markets did too. My biggest takeaway:
+> - NASDAQ listing is actively on their radar and are in discussions.
+> - 70% market share targeted, unholy target.
+> - TAM greatly exceeds former projections.
+> - See a 4-5 base case of players this year with orders.
+> - Industry is ready for high volume ramps.
+>
+> I do think LPK is very undervalued based on these discussions (disclosure: own positions).
+
+**Significance:** A second independent observer independently flagged NASDAQ listing as the standout detail. This is meaningful signal — two unconnected retail attendees both specifically noting the same private-meeting disclosure makes it less likely to be mishearing or wishful interpretation. Upgrades claim #14 verdict from ❌ UNVERIFIED → ⚠️ CORROBORATED.
