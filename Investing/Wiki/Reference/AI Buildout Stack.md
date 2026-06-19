@@ -123,7 +123,7 @@ The previous five-dimension stack is superseded but maps cleanly onto the layers
       {"label":"Wafer-Level Packaging (CoWoS, SoIC)","sector":"Advanced Packaging","slug":"advanced-packaging","tier":"Advanced Packaging (CoWoS / SoIC)","chips":["TSM","AMKR"]},
       {"label":"HBM Stacking & Integration","sector":"Advanced Packaging","slug":"advanced-packaging","tier":"Advanced Packaging (CoWoS / SoIC)","chips":["MU","TSM"]},
       {"label":"FC-BGA Substrates","sector":"Electronic Components","slug":"electronic-components","tier":"IC Substrate Manufacturing","chips":[],"choke":true},
-      {"label":"Glass Core Substrates (emerging)","sector":"Electronic Components","slug":"electronic-components","tier":"Substrate & Laminate Materials","chips":["GLW","INTC"]},
+      {"label":"Glass Core Substrates (emerging)","sector":"Electronic Components","slug":"electronic-components","tier":"Substrate & Laminate Materials","chips":["GLW","INTC","LPK"]},
       {"label":"Thermal Interface Materials (TIM)","gap":true,"chips":[]}
     ]},
     {"num":"09","name":"Semiconductor Foundry","hue":162,"tag":"leading-edge · specialty · OSAT","boxes":[
