@@ -105,6 +105,9 @@ The Kim family controls ~49.4% of shares as of the 2026 proxy (down from 53.6% f
 - **2026-05-19** — NVDA Q1 FY2027 earnings day. Infographic names AMKR as Packaging & Testing supplier in NVDA earnings shockwave map alongside ASE Group.
   **Why it matters:** Advanced packaging is a structural bottleneck in AI chip supply chains — NVDA demand guidance signals how much overflow packaging capacity beyond TSMC CoWoS will be needed, and AMKR is one of the few capable alternatives.
 
+- **2026-06-19** — Twitter thread builds first-principles case for advanced packaging as the defining constraint in AI accelerators: bandwidth wall means HBM must be co-packaged with logic; yield math makes monolithic die impractical; chiplets + interposer is the only path. Author names BESI (Euronext) as favourite pure-play advanced packaging equipment name.
+  **Why it matters:** Independently confirms L08 structural thesis from the supply side — bandwidth is the binding constraint, not compute FLOP/s. BESI surfaces as an unregistered equipment node in the L08 tier worth evaluating (see candidates). Fact-check: all core technical claims verified accurate. Signal: [[2026-06-19-besi-advanced-packaging-tech-race]]
+
 ---
 
 ## Cross-Ticker Signals

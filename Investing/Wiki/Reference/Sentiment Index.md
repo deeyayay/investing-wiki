@@ -1,6 +1,6 @@
 # Sentiment Index
 *Maintained by `/ingest-sentiment` — do not edit the ticker table manually.*
-*Last updated: 2026-05-31 (ASPI added)*
+*Last updated: 2026-06-19 (BESI tech-race thread)*
 
 ---
 
@@ -9,6 +9,8 @@
 | Ticker | Wiki | Status | Mentions | Last Signal |
 |--------|------|--------|----------|-------------|
 | NVDA | [[NVDA]] | monitored | 8 | 2026-05-31 |
+| AMKR | [[AMKR]] | monitored | 1 | 2026-06-19 |
+| BESI | [[BESI]] | monitored | 1 | 2026-06-19 |
 | AXTI | [[AXTI]] | monitored | 4 | 2026-05-20 |
 | SIVE | [[SIVE]] | monitored | 4 | 2026-05-20 |
 | TSM | [[TSM]] | stub | 4 | 2026-05-20 |
@@ -92,6 +94,7 @@
 *Newest first. Max 30 entries.*
 
 <!-- signals appended here by /ingest-sentiment -->
+2026-06-19 · tweet · [[2026-06-19-besi-advanced-packaging-tech-race]] · AMKR, BESI
 2026-05-31 · tweet · [[2026-05-31-aosl-researching-the-power]] · AOSL, IFX, NVDA, NVTS, POWI, STM, VICR, WOLF
 2026-05-22 · article · [[2026-05-22-amd-a-ton-of]] · AMD, AMZN, GFS, GOOGL, IBM, INFQ, MSFT, NVDA, QBTS, RGTI, WMT
 2026-05-20 · tweet · [[2026-05-20-nvda-q1-earnings-preview]] · AAOI, AEHR, AXTI, Browave, COHR, FOCI, GLW, LITE, MU, NVDA, Samsung, SIVE, SK Hynix, SMCI, TSM, VRT
