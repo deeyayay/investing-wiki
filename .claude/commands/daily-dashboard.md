@@ -65,6 +65,30 @@ Run all reads in parallel.
 - Keep only rows where `chokepoint === "Y"` (after normalizing "Yes" → "Y")
 - Deduplicate by `(from, to)` sector pair — keep first occurrence
 
+### Phase 1.5 — Registry reconciliation (run after Phase 1 reads complete)
+
+Read `Investing/Wiki/Reference/Monitor Registry.yaml`.
+
+Build two sets:
+- `registered`: all ticker symbols listed under `tickers:` (skip `candidates:`)
+- `stacked`: all ticker symbols appearing in any `chips[]` array across the entire parsed STACK JSON (layers + rail boxes)
+
+Compute `unplaced = registered − stacked`.
+
+If `unplaced` is non-empty, print this warning **before proceeding** — do not abort:
+
+```
+⚠️  Registry sync gap — these onboarded tickers are NOT visible on the dashboard:
+    [TICKER] — sector: [sector] — path: [path]
+    ...
+    → Open AI Buildout Stack.md and add each ticker to the correct chips[] box,
+      then re-run /daily-dashboard --refresh-data to pick up the change.
+```
+
+Continue with the refresh; the warning surfaces the gap so it is not silently ignored.
+
+---
+
 ### Phase 2 — Update STACK + DATA in index.html
 
 Read `Investing/Output/Dashboard/index.html`.

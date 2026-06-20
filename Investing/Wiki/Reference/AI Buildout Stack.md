@@ -120,7 +120,7 @@ The previous five-dimension stack is superseded but maps cleanly onto the layers
       {"label":"Fiber Cables","group":"Components · used across all three scales","sector":"Interconnect","slug":"interconnect","tier":"Optical Fiber & Preform Manufacturing","chips":["GLW"]}
     ]},
     {"num":"08","name":"Advanced Packaging","hue":150,"tag":"CoWoS · stacking · substrates","boxes":[
-      {"label":"Wafer-Level Packaging (CoWoS, SoIC)","sector":"Advanced Packaging","slug":"advanced-packaging","tier":"Advanced Packaging (CoWoS / SoIC)","chips":["TSM","AMKR"]},
+      {"label":"Wafer-Level Packaging (CoWoS, SoIC)","sector":"Advanced Packaging","slug":"advanced-packaging","tier":"Advanced Packaging (CoWoS / SoIC)","chips":["TSM","AMKR","BESI"]},
       {"label":"HBM Stacking & Integration","sector":"Advanced Packaging","slug":"advanced-packaging","tier":"Advanced Packaging (CoWoS / SoIC)","chips":["MU","TSM"]},
       {"label":"FC-BGA Substrates","sector":"Electronic Components","slug":"electronic-components","tier":"IC Substrate Manufacturing","chips":[],"choke":true},
       {"label":"Glass Core Substrates (emerging)","sector":"Electronic Components","slug":"electronic-components","tier":"Substrate & Laminate Materials","chips":["GLW","INTC","LPK"]},
@@ -128,7 +128,7 @@ The previous five-dimension stack is superseded but maps cleanly onto the layers
     ]},
     {"num":"09","name":"Semiconductor Foundry","hue":162,"tag":"leading-edge · specialty · OSAT","boxes":[
       {"label":"Leading-Edge Logic Foundry (3nm, 2nm)","sector":"Semiconductor Foundry","slug":"semiconductor-foundry","tier":"Wafer Fabrication (Foundry / IDM)","chips":["TSM","INTC"]},
-      {"label":"Specialty / Mature Logic Foundry (analog, mixed-signal)","sector":"Semiconductor Foundry","slug":"semiconductor-foundry","tier":"Wafer Fabrication (Foundry / IDM)","chips":["GFS"]},
+      {"label":"Specialty / Mature Logic Foundry (analog, mixed-signal)","sector":"Semiconductor Foundry","slug":"semiconductor-foundry","tier":"Wafer Fabrication (Foundry / IDM)","chips":["GFS","XFAB"]},
       {"label":"Silicon Photonics Foundry","sector":"Semiconductor Foundry","slug":"semiconductor-foundry","tier":"Silicon Photonics Platform","chips":["GFS","POET","INTC"]},
       {"label":"Compound Semiconductor Foundry (GaN, SiC, InP)","sector":"Semiconductor Foundry","slug":"semiconductor-foundry","tier":"Compound Semiconductor & SiC Substrate","chips":["STM","WOLF"]},
       {"label":"OSAT (outsourced assembly and test)","sector":"Advanced Packaging","slug":"advanced-packaging","tier":"OSAT — Assembly & Test","chips":["ASX","AMKR"]}
