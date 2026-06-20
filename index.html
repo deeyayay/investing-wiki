@@ -918,11 +918,11 @@ const STACK={
       {"label":"Model Orchestration & Agentic Frameworks","sector":"AI Model","slug":"ai-model","tier":"Model API & Developer Platform","chips":["CFLT"]}
     ]},
     {"num":"03","name":"Software Infrastructure","hue":268,"tag":"frameworks · kernels · orchestration","boxes":[
-      {"label":"ML Frameworks (training)","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"ML Frameworks","chips":["CRWV","AMD"]},
-      {"label":"GPU Programming Layer (low-level kernels)","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"GPU Programming Layer","chips":["NVDA","AMD"]},
-      {"label":"Distributed Training Systems","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"Distributed Training Systems","chips":[]},
-      {"label":"Container Orchestration (Kubernetes)","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"Container Orchestration & MLOps","chips":["DDOG","SNOW","PLTR","MDB"]},
-      {"label":"Inference Optimization Stack","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"Inference Optimization Stack","chips":[]}
+      {"label":"ML Frameworks (training)","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"ML Frameworks","chips":["CRWV","AMD"],"fn":"Software abstraction layers — PyTorch, JAX, TensorFlow — that convert raw GPU hardware into differentiable compute graphs, automatic differentiation engines, and high-level training loops. The ML framework is the compiler of AI: it takes Python tensor operations, traces them into a computation graph, and generates optimized GPU kernel calls. Framework choice determines which hardware accelerators are supported, which distributed training strategies are available, and which ecosystem of pre-built models and libraries a team can draw on. PyTorch dominates AI research (90%+ of papers) and is rapidly displacing TensorFlow in production; JAX has significant Google/DeepMind usage for its functional purity and XLA compilation. Framework lock-in is real but asymmetric — frameworks are open-source and free, so the moat lies in the ecosystem of tooling, tutorials, and pre-trained models built on top, not in licensing.","chokepoint":"Partial","capital_intensity":"Low","moat_type":"Ecosystem lock-in (open-source)","margin_profile":"Indirect — drives GPU cloud spend"},
+      {"label":"GPU Programming Layer (low-level kernels)","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"GPU Programming Layer","chips":["NVDA","AMD"],"fn":"The low-level GPU programming environment that every ML framework and AI application runs on. NVIDIA's CUDA (Compute Unified Device Architecture) is the dominant layer: a C++ extension, compiler toolchain, and runtime that maps compute operations onto GPU streaming multiprocessors. Every major ML framework — PyTorch, JAX, TensorFlow — compiles ultimately to CUDA kernels on NVIDIA hardware. AMD's ROCm is the only serious alternative, with partial compatibility but a 15-year ecosystem deficit. The GPU programming layer is the most durable software moat in AI: CUDA's installed base includes millions of developer-years of kernel code, 10,000+ published GPU-accelerated libraries, and deep integration with every AI training and inference framework. Porting a CUDA codebase to ROCm requires months of engineering work and often produces lower performance — making GPU vendor switching essentially a datacenter-level capital decision, not a software swap.","chokepoint":"Y","capital_intensity":"Low","moat_type":"Proprietary ecosystem (CUDA)","margin_profile":"Very high — software bundled with GPU hardware"},
+      {"label":"Distributed Training Systems","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"Distributed Training Systems","chips":[],"fn":"Frameworks and algorithms coordinating gradient computation and synchronization across hundreds or thousands of GPUs — Megatron-LM, DeepSpeed, PyTorch FSDP, and Ray Train. Training a 70B–1T parameter model requires splitting the model and data across thousands of GPUs simultaneously using four parallelism strategies: data parallelism (each GPU gets a mini-batch), tensor parallelism (matrix multiplications split within a node), pipeline parallelism (model layers assigned to different nodes), and expert parallelism for MoE architectures. The core engineering challenge is overlap: communication of gradients and activations must happen simultaneously with computation, or idle GPU cycles waste millions of dollars per training run. Fault tolerance is equally critical — a single GPU failure in a 10,000-card run must trigger checkpoint recovery in minutes, not hours. Open-source frameworks from Microsoft (DeepSpeed) and NVIDIA (Megatron) dominate, with tight coupling to the underlying InfiniBand or NVLink interconnect fabric.","chokepoint":"N","capital_intensity":"Low","moat_type":"Open-source with hardware-integration advantages","margin_profile":"Low direct — open-source; drives cloud GPU spend"},
+      {"label":"Container Orchestration (Kubernetes)","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"Container Orchestration & MLOps","chips":["DDOG","SNOW","PLTR","MDB"],"fn":"Kubernetes-based infrastructure orchestration, ML pipeline management, experiment tracking, data versioning, and model monitoring — the DevOps and DataOps layer for AI production systems. MLOps platforms convert ad-hoc research experiments into reproducible, scalable production pipelines with automated retraining, A/B testing, and drift detection. The stack spans open-source tools (MLflow, Kubeflow, DVC) and commercial platforms: Datadog for observability, Snowflake and MongoDB for the ML data platform, and Palantir AIP for enterprise AI deployment. Container orchestration manages GPU resource quotas, multi-tenant isolation, and node pool scaling across heterogeneous hardware. As AI systems grow more complex (multi-agent, RAG pipelines, fine-tuning loops), MLOps complexity grows proportionally, driving spend on observability, data quality, and pipeline automation platforms.","chokepoint":"N","capital_intensity":"Low–Medium","moat_type":"Platform stickiness + data integration","margin_profile":"Medium–High (SaaS ARR)"},
+      {"label":"Inference Optimization Stack","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"Inference Optimization Stack","chips":[],"fn":"Post-training optimization runtimes that reduce the compute cost and latency of running trained models in production — quantization (INT4/INT8/FP8), pruning, kernel fusion, speculative decoding, continuous batching, and hardware-specific compilation. Tools include NVIDIA TensorRT, vLLM (open-source inference server), ONNX Runtime, Hugging Face TGI, and OpenVINO for Intel hardware. As inference volume grows to dwarf training spend (60–70% of total AI compute by 2027), inference optimization becomes the primary lever on AI unit economics: a 4x inference efficiency gain on a $100M compute budget is worth more than a 4x improvement in training throughput. The optimization stack is heavily hardware-coupled — TensorRT is explicitly tied to NVIDIA GPUs and achieves 3–8x speedups versus naive PyTorch inference. vLLM's PagedAttention algorithm for KV-cache management has become a de facto standard for large-model serving, adopted by nearly every major inference provider.","chokepoint":"Partial","capital_intensity":"Low","moat_type":"Hardware co-optimization (NVIDIA/TensorRT); open-source alternatives emerging","margin_profile":"High — bundled with GPU hardware or open-source"}
     ]},
     {"num":"04","name":"Cloud Infrastructure","hue":288,"tag":"hyperscalers · neoclouds · colocation","boxes":[
       {"label":"Hyperscaler Clouds","sector":"Cloud Infrastructure","slug":"cloud-infrastructure","tier":"Hyperscaler & Colocation Operation","chips":["MSFT","AMZN","GOOGL","ORCL"]},
@@ -1198,8 +1198,20 @@ function openTierFallback(slug,tierName,layerIdx){
   const trail=(li!==null&&li!==undefined)
     ?[{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:_layerLabel(li),fn:"openLayer("+li+")"},{label:tierName}]
     :[{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:tierName}];
-  const chokeBlock=box.choke
-    ?'<div class="choke-box"><p>⧫ Supply chain chokepoint — limited substitutes in this tier.</p></div>':'';
+  const cp=box.chokepoint||"";
+  const chokeBlock=cp==="Y"
+    ?'<div class="choke-box"><p>⧫ Supply chain chokepoint — limited substitutes in this tier. Capacity constraints here propagate up the stack.</p></div>'
+    :cp==="Partial"
+    ?'<div class="choke-box-partial"><p>⧫ Partial chokepoint — some alternatives exist, but switching carries meaningful cost or lead time.</p></div>'
+    :(box.choke?'<div class="choke-box"><p>⧫ Supply chain chokepoint — limited substitutes in this tier.</p></div>':'');
+  const investHtml=(box.moat_type||box.capital_intensity||box.margin_profile)
+    ?'<div class="invest-section"><div class="invest-grid">'
+      +'<div class="invest-cell"><div class="invest-cell-label">Competitive Moat</div><div class="invest-cell-val">'+esc(box.moat_type||'—')+'</div></div>'
+      +'<div class="invest-cell"><div class="invest-cell-label">Capital Intensity</div><div class="invest-cell-val">'+esc(box.capital_intensity||'—')+'</div></div>'
+      +'<div class="invest-cell"><div class="invest-cell-label">Margin Profile</div><div class="invest-cell-val">'+esc(box.margin_profile||'—')+'</div></div>'
+      +'<div class="invest-cell"><div class="invest-cell-label">Chokepoint</div><div class="invest-cell-val invest-choke-'+(cp==="Y"?'yes':cp==="Partial"?'partial':'no')+'">'+(cp==="Y"?"Yes — critical constraint":cp==="Partial"?"Partial — some alternatives":"No — competitive market")+'</div></div>'
+      +'</div></div>'
+    :'';
   const chips=(box.chips||[]).map(tk=>{
     const sn=(TICKER_MAP[tk]&&TICKER_MAP[tk].sectorName)||sectorName;
     const info=TICKER_MAP[tk]||{name:tk};
@@ -1210,14 +1222,16 @@ function openTierFallback(slug,tierName,layerIdx){
   }).join('');
   const coBlock=chips
     ?'<div class="co-section"><div class="co-section-hdr"><span class="co-section-title">Companies Building Here</span></div>'+chips+'</div>'
-    :'<div class="co-section co-empty"><p>No tickers tracked in this tier yet.</p></div>';
+    :'<div class="co-section co-empty"><p>No tickers tracked in this tier yet — run <code>/scout-tickers</code> to discover candidates.</p></div>';
   document.getElementById("l2").innerHTML=
     crumbTrail(trail)
     +'<div class="tier-provenance">'
     +((li!==null&&li!==undefined)?'<span class="layer-pill" style="--lh:'+STACK.layers[li].hue+'">'+esc(_layerLabel(li))+'</span>':'')
     +'<span class="sector-tag">'+esc(sectorName)+'</span></div>'
     +'<div class="tier-detail-name">'+esc(tierName)+'</div>'
+    +(box.fn?'<div class="tier-section-hdr">What This Tier Does</div><div class="tier-fn-full">'+esc(box.fn)+'</div>':'')
     +chokeBlock
+    +(investHtml?'<div class="tier-section-hdr">Investment Angle</div>'+investHtml:'')
     +coBlock;
   showLayer(2);
 }
