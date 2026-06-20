@@ -940,11 +940,60 @@ const DATA = {
         "Neuromorphic has been 'near commercialization' for a decade; BrainChip is micro-cap and deeply pre-profit"
       ]
     }
+,
+  watchlist: [
+    {
+      ticker: "SIVE",
+      name: "Sivers Semiconductors",
+      category: "Watching",
+      strategy: "",
+      sector: "Interconnect",
+      tier: "III-V Substrate & Epitaxial Wafer Growth",
+      exchange: "Nasdaq Stockholm",
+      next_earnings: null,
+      score: 5.5,
+      thesis: "",
+      scoring: null,
+      catalysts: null
+    },
+    {
+      ticker: "BESI",
+      name: "BE Semiconductor Industries N.V.",
+      category: "Watching",
+      strategy: "",
+      sector: "Advanced Packaging",
+      tier: "Advanced Packaging (CoWoS / SoIC)",
+      exchange: "Euronext Amsterdam",
+      next_earnings: "2026-07-24",
+      score: 8.0,
+      thesis: "The dominant pure-play advanced packaging equipment maker with ~75% advanced die attach share and #1 position in hybrid bonding — the interconnect technology that defines post-Moore AI chip scaling.",
+      scoring: {product:4,pricing_power:4,leadership:4,financial_health:4,macro:4,future_potential:4,composite:8.0},
+      catalysts: [
+        "Q2 2026 earnings (~July 24, 2026) — verify +30-40% QoQ guidance execution and hybrid bonding customer expansion",
+        "Hybrid bonding customer base crosses 25 — signals mainstream adoption inflection",
+        "TSMC SoIC-X HVM ramp announcement — most important downstream demand signal for BESI hybrid bonding"
+      ]
+    },
+    {
+      ticker: "XFAB",
+      name: "X-FAB Silicon Foundries",
+      category: "Watching",
+      strategy: "",
+      sector: "Semiconductor Foundry",
+      tier: "Wafer Fabrication (Foundry / IDM)",
+      exchange: "Euronext Paris (EPA:XFAB) / OTC US: XFABF",
+      next_earnings: "2026-07-30",
+      score: 6.5,
+      thesis: "EU's designated silicon photonics foundry for sovereign CPO supply chains — NVIDIA and Nokia consortium partner under photonixFAB — trading near multi-year lows on automotive/SiC drag while the photonics option is priced at zero.",
+      scoring: {product:4,pricing_power:3,leadership:2,financial_health:3,macro:4,future_potential:4,composite:6.5},
+      catalysts: [
+        "Q2 2026 earnings (2026-07-30) — first key test of cost-cut benefit; watch automotive inventory destocking end; Q2 guided $190-200M / 17-20% EBITDA",
+        "Automotive recovery inflection H2 2026 — Melexis (top automotive client) inventory normalization; XFAB guided \"steady recovery\" H2",
+        "photonixFAB development milestone ~Oct 2026 — development phase complete per author estimate; risk production ramp begins; NVIDIA/Nokia consortium update expected"
+      ]
+    }
   ]
 };
-
-
-if(!DATA.watchlist)DATA.watchlist=[];
 
 let activeSector=null;
 let activeTierIdx=null;
