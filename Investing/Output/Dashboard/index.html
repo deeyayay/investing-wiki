@@ -1824,7 +1824,7 @@ async function fetchWatchlistMd(){
   const pat=wlPat();
   const headers={'Accept':'application/vnd.github.v3+json'};
   if(pat)headers['Authorization']='Bearer '+pat;
-  const res=await fetch(WL_API,{headers});
+  const res=await fetch(WL_API,{headers,cache:'no-store'});
   if(!res.ok)throw new Error('GitHub API: HTTP '+res.status);
   const json=await res.json();
   _wlSha=json.sha;
@@ -1835,27 +1835,17 @@ async function fetchWatchlistMd(){
 
 async function writeWatchlistMd(content){
   const pat=wlPat();
-  if(!pat){alert('No GitHub PAT stored. Enter your PAT first.');return;}
+  if(!pat)throw new Error('No GitHub PAT stored.');
   const enc=new TextEncoder().encode(content);
   let raw='';
   for(let i=0;i<enc.length;i+=32768)raw+=String.fromCharCode(...enc.subarray(i,i+32768));
   const b64=btoa(raw);
-  async function doPut(sha){
-    return fetch(WL_API,{
-      method:'PUT',
-      headers:{'Authorization':'Bearer '+pat,'Content-Type':'application/json'},
-      body:JSON.stringify({message:'Watchlist update via dashboard',content:b64,sha})
-    });
-  }
-  let res=await doPut(_wlSha);
-  if(!res.ok){
-    const d=await res.json().catch(()=>({}));
-    if(res.status===409||String(d.message||'').includes('does not match')){
-      await fetchWatchlistMd();
-      res=await doPut(_wlSha);
-    }
-    if(!res.ok){const d2=await res.json().catch(()=>({}));throw new Error(d2.message||'HTTP '+res.status);}
-  }
+  const res=await fetch(WL_API,{
+    method:'PUT',
+    headers:{'Authorization':'Bearer '+pat,'Content-Type':'application/json'},
+    body:JSON.stringify({message:'Watchlist update via dashboard',content:b64,sha:_wlSha})
+  });
+  if(!res.ok){const d=await res.json().catch(()=>({}));throw new Error(d.message||'HTTP '+res.status);}
   const d=await res.json();
   if(d.content?.sha)_wlSha=d.content.sha;
 }
@@ -1918,17 +1908,12 @@ function mergeWithDataWatchlist(liveEntries){
   });
 }
 
-async function addToWatchlist(ticker){
-  let md;
-  try{md=await fetchWatchlistMd();}catch(err){alert('Failed to read Watchlist.md: '+err.message);return;}
-  const existing=parseWatchlistMd(md);
-  if(existing.find(e=>e.ticker===ticker)){alert(ticker+' is already in the watchlist.');return;}
+function _buildAddMd(md,ticker){
   const WATCH_HDR='## Watching';
   const WATCH_TABLE_HDR='| Ticker | Notes |\n|--------|-------|';
   let lines=md.split('\n');
   const si=lines.findIndex(l=>l.startsWith(WATCH_HDR));
   if(si===-1){
-    // Section doesn't exist yet — append it
     lines=lines.concat(['','---','',WATCH_HDR,'',WATCH_TABLE_HDR,'| '+ticker+' |  |']);
   } else {
     let lastRow=-1;
@@ -1937,7 +1922,6 @@ async function addToWatchlist(ticker){
       if(lines[i].startsWith('|')&&!lines[i].includes('---'))lastRow=i;
     }
     if(lastRow===-1){
-      // Header exists but no table rows yet — insert after table header
       const thi=lines.findIndex((l,idx)=>idx>si&&l.startsWith('| Ticker'));
       const ins=thi!==-1?thi+2:si+1;
       lines.splice(ins,0,'| '+ticker+' |  |');
@@ -1945,21 +1929,38 @@ async function addToWatchlist(ticker){
       lines.splice(lastRow+1,0,'| '+ticker+' |  |');
     }
   }
-  try{await writeWatchlistMd(lines.join('\n'));await initWatchlistTab(true);}
-  catch(err){alert('Failed to save: '+err.message);}
+  return lines.join('\n');
+}
+
+async function addToWatchlist(ticker){
+  for(let attempt=0;attempt<3;attempt++){
+    let md;
+    try{md=await fetchWatchlistMd();}catch(err){alert('Failed to read Watchlist.md: '+err.message);return;}
+    const existing=parseWatchlistMd(md);
+    if(existing.find(e=>e.ticker===ticker)){alert(ticker+' is already in the watchlist.');return;}
+    try{await writeWatchlistMd(_buildAddMd(md,ticker));await initWatchlistTab(true);return;}
+    catch(err){
+      if(attempt<2&&String(err.message).includes('does not match'))continue;
+      alert('Failed to save: '+err.message);return;
+    }
+  }
 }
 
 async function removeFromWatchlist(ticker){
-  let md;
-  try{md=await fetchWatchlistMd();}catch(err){alert('Failed to read Watchlist.md: '+err.message);return;}
-  const lines=md.split('\n');
-  const filtered=lines.filter(line=>{
-    if(!line.startsWith('|'))return true;
-    const cols=line.split('|').map(c=>c.trim()).filter(c=>c!=='');
-    return cols[0]!==ticker;
-  });
-  try{await writeWatchlistMd(filtered.join('\n'));await initWatchlistTab(true);}
-  catch(err){alert('Failed to save: '+err.message);}
+  for(let attempt=0;attempt<3;attempt++){
+    let md;
+    try{md=await fetchWatchlistMd();}catch(err){alert('Failed to read Watchlist.md: '+err.message);return;}
+    const filtered=md.split('\n').filter(line=>{
+      if(!line.startsWith('|'))return true;
+      const cols=line.split('|').map(c=>c.trim()).filter(c=>c!=='');
+      return cols[0]!==ticker;
+    });
+    try{await writeWatchlistMd(filtered.join('\n'));await initWatchlistTab(true);return;}
+    catch(err){
+      if(attempt<2&&String(err.message).includes('does not match'))continue;
+      alert('Failed to save: '+err.message);return;
+    }
+  }
 }
 
 function renderWatchlistCard(e,canEdit){
