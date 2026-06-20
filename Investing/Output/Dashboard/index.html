@@ -292,6 +292,52 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 .co-section-count{font-size:11px;color:#9ca3af;font-weight:500}
 .co-empty{background:#f9fafb;border:1px dashed #d1d5db;border-radius:8px;padding:16px;color:#6b7280;font-size:13px;text-align:center}
 .co-empty code{background:#e5e7eb;padding:1px 5px;border-radius:3px;font-size:12px}
+/* ── Watchlist tab ─────────────────────────────────────────────────────────── */
+#watchlist{padding:40px 32px;max-width:1200px;margin:0 auto}
+.wl-page-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:12px}
+.wl-title{font-size:22px;font-weight:700}
+.wl-auth-ok{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted)}
+.wl-btn{padding:6px 12px;border:1px solid var(--border);border-radius:6px;font-size:12px;background:var(--bg2);cursor:pointer;color:var(--text);font-family:inherit}
+.wl-btn:hover{background:var(--bg3)}
+.wl-btn.primary{background:oklch(92% .10 278);color:var(--d1);border-color:oklch(80% .08 278)}
+.wl-pat-prompt{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:18px 20px;margin-bottom:24px}
+.wl-pat-prompt strong{font-size:13px}
+.wl-pat-row{display:flex;gap:8px;margin-top:10px;align-items:center;flex-wrap:wrap}
+.wl-pat-input{padding:7px 10px;border:1px solid var(--border);border-radius:6px;font-size:12px;background:var(--bg);color:var(--text);width:260px;font-family:monospace}
+.wl-pat-note{font-size:11px;color:var(--muted);margin-top:6px}
+.wl-add-row{display:flex;gap:8px;align-items:center;margin-bottom:32px;flex-wrap:wrap}
+.wl-add-input{padding:7px 12px;border:1px solid var(--border);border-radius:6px;font-size:13px;background:var(--bg);color:var(--text);width:140px;font-family:inherit}
+.wl-add-input::placeholder{color:var(--muted)}
+.wl-cat-select{padding:7px 10px;border:1px solid var(--border);border-radius:6px;font-size:12px;background:var(--bg);color:var(--text);font-family:inherit}
+.wl-section-hdr{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:14px;margin-top:36px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.wl-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:16px}
+.wl-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:20px}
+.wl-card-hdr{display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+.wl-ticker{font-family:monospace;font-weight:700;font-size:16px}
+.wl-name{font-size:12px;color:var(--muted);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.wl-score-badge{font-size:11px;font-weight:700;padding:3px 9px;border-radius:99px;flex-shrink:0;white-space:nowrap}
+.wl-score-badge.high{background:oklch(91% .12 142);color:oklch(30% .18 142)}
+.wl-score-badge.mid{background:var(--amber-bg);color:var(--amber)}
+.wl-score-badge.none{background:var(--bg3);color:var(--muted)}
+.wl-remove{background:none;border:none;cursor:pointer;font-size:18px;color:var(--muted);padding:0 4px;line-height:1;flex-shrink:0}
+.wl-remove:hover{color:var(--text)}
+.wl-meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.wl-pill{font-size:11px;padding:2px 8px;border-radius:99px;background:var(--bg3);color:var(--muted)}
+.wl-pill.soon{background:oklch(97% .07 75);color:var(--amber);border:1px solid oklch(82% .14 62)}
+.wl-thesis{font-size:13px;font-style:italic;color:var(--muted);margin-bottom:14px;line-height:1.6}
+.wl-block-hdr{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:8px;margin-top:14px}
+.wl-score-table{width:100%;border-collapse:collapse;font-size:11px;margin-bottom:4px}
+.wl-score-table td{padding:4px 6px;border-bottom:1px solid var(--border)}
+.wl-score-table tr:last-child td{border-bottom:none;font-weight:700}
+.wl-score-val{font-family:monospace;color:var(--text);white-space:nowrap;text-align:right}
+.wl-bar{display:inline-block;height:3px;border-radius:2px;background:oklch(62% .18 142);vertical-align:middle;margin-left:4px;opacity:.7}
+.wl-cat-list{list-style:none;padding:0;margin-bottom:4px}
+.wl-cat-item{font-size:12px;padding:3px 0 3px 22px;position:relative;color:var(--text);line-height:1.5}
+.wl-cat-item::before{content:'☐';position:absolute;left:0;color:var(--muted)}
+.wl-stub{font-size:12px;color:var(--muted);font-style:italic;padding:6px 0;margin:0}
+.wl-empty{text-align:center;padding:60px 0;color:var(--muted);font-size:13px;line-height:2}
+.wl-loading{color:var(--muted);font-size:13px;padding:40px 0;text-align:center}
+@media(max-width:600px){#watchlist{padding:16px}.wl-cards{grid-template-columns:1fr}.wl-add-row{flex-direction:column;align-items:stretch}}
 </style>
 </head>
 <body>
@@ -308,6 +354,7 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 <div id="tab-nav">
   <button class="tab-btn active" data-tab="supply-chain" onclick="showTab('supply-chain')">Supply Chain</button>
   <button class="tab-btn" data-tab="tech-races" onclick="showTab('tech-races')">Tech Races</button>
+  <button class="tab-btn" data-tab="watchlist" onclick="showTab('watchlist')">Watchlist</button>
 </div>
 <div id="l0"></div>
 <div id="l1" hidden></div>
@@ -315,6 +362,7 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 <div id="l3" hidden></div>
 <div id="tech-races" hidden></div>
 <div id="tech-race-detail" hidden></div>
+<div id="watchlist" hidden></div>
 </div>
 <script>
 const DATA = {
@@ -875,6 +923,8 @@ const DATA = {
 };
 
 
+if(!DATA.watchlist)DATA.watchlist=[];
+
 let activeSector=null;
 let activeTierIdx=null;
 let activeLayerIdx=null;
@@ -894,6 +944,7 @@ function showLayer(n){
   document.getElementById("l3").hidden=n!==3;
   document.getElementById("tech-races").hidden=true;
   document.getElementById("tech-race-detail").hidden=true;
+  document.getElementById("watchlist").hidden=true;
   document.querySelectorAll(".tab-btn").forEach(b=>b.classList.toggle("active",b.dataset.tab==="supply-chain"));
 }
 
@@ -1477,10 +1528,15 @@ function showTab(tab) {
   if(tab==="supply-chain"){
     document.getElementById("tech-races").hidden=true;
     document.getElementById("tech-race-detail").hidden=true;
+    document.getElementById("watchlist").hidden=true;
     showLayer(0);
+  } else if(tab==="watchlist"){
+    ["l0","l1","l2","l3","tech-races","tech-race-detail"].forEach(id=>document.getElementById(id).hidden=true);
+    document.getElementById("watchlist").hidden=false;
+    initWatchlistTab();
   } else {
     renderTechRaces();
-    ["l0","l1","l2","l3","tech-race-detail"].forEach(id=>document.getElementById(id).hidden=true);
+    ["l0","l1","l2","l3","tech-race-detail","watchlist"].forEach(id=>document.getElementById(id).hidden=true);
     document.getElementById("tech-races").hidden=false;
   }
 }
@@ -1633,6 +1689,249 @@ document.addEventListener("click", function (e) {
     document.getElementById("search-results").hidden = true;
   }
 });
+
+// ── Watchlist ─────────────────────────────────────────────────────────────────
+const GH_REPO='deeyayay/investing-wiki';
+const WL_PATH='Investing/Wiki/Reference/Watchlist.md';
+const WL_API='https://api.github.com/repos/'+GH_REPO+'/contents/'+WL_PATH;
+let _wlSha=null;
+let _wlInitialized=false;
+
+function wlPat(){return localStorage.getItem('gh-pat')||'';}
+function wlSetPat(p){localStorage.setItem('gh-pat',p.trim());}
+function wlClearPat(){localStorage.removeItem('gh-pat');}
+
+function wlSavePat(){
+  const v=(document.getElementById('wl-pat-input')?.value||'').trim();
+  if(!v){alert('Please enter a PAT.');return;}
+  wlSetPat(v);
+  initWatchlistTab(true);
+}
+
+function wlAddFromInput(){
+  const ticker=(document.getElementById('wl-add-ticker')?.value||'').trim().toUpperCase();
+  if(!ticker)return;
+  const cat=document.getElementById('wl-add-cat')?.value||'Core Holdings';
+  addToWatchlist(ticker,cat);
+}
+
+function wlConfirmRemove(ticker){
+  if(!confirm('Remove '+ticker+' from watchlist?'))return;
+  removeFromWatchlist(ticker);
+}
+
+function daysUntil(dateStr){
+  if(!dateStr)return null;
+  const d=new Date(dateStr+'T00:00:00');
+  const now=new Date();
+  now.setHours(0,0,0,0);
+  return Math.round((d-now)/86400000);
+}
+
+async function fetchWatchlistMd(){
+  const pat=wlPat();
+  const headers={'Accept':'application/vnd.github.v3+json'};
+  if(pat)headers['Authorization']='Bearer '+pat;
+  const res=await fetch(WL_API,{headers});
+  if(!res.ok)throw new Error('GitHub API: HTTP '+res.status);
+  const json=await res.json();
+  _wlSha=json.sha;
+  const b64=json.content.replace(/\n/g,'');
+  const bytes=Uint8Array.from(atob(b64),c=>c.charCodeAt(0));
+  return new TextDecoder().decode(bytes);
+}
+
+async function writeWatchlistMd(content){
+  const pat=wlPat();
+  if(!pat){alert('No GitHub PAT stored. Enter your PAT first.');return;}
+  const enc=new TextEncoder().encode(content);
+  let raw='';
+  for(let i=0;i<enc.length;i+=32768)raw+=String.fromCharCode(...enc.subarray(i,i+32768));
+  const b64=btoa(raw);
+  const res=await fetch(WL_API,{
+    method:'PUT',
+    headers:{'Authorization':'Bearer '+pat,'Content-Type':'application/json'},
+    body:JSON.stringify({message:'Watchlist update via dashboard',content:b64,sha:_wlSha})
+  });
+  if(!res.ok){const d=await res.json().catch(()=>({}));throw new Error(d.message||'HTTP '+res.status);}
+  const d=await res.json();
+  if(d.content?.sha)_wlSha=d.content.sha;
+}
+
+function parseWatchlistMd(md){
+  const entries=[];
+  const lines=md.split('\n');
+  let category=null;
+  for(const line of lines){
+    if(line.startsWith('## Core Holdings')){category='Core Holdings';continue;}
+    if(line.startsWith('## High Upside Rockets')){category='Rockets';continue;}
+    if(line.startsWith('## Compounders')){category='Compounders';continue;}
+    if(line.startsWith('## ')||line.trim()==='---'){category=null;continue;}
+    if(!category||!line.startsWith('|'))continue;
+    const cols=line.split('|').map(c=>c.trim()).filter(c=>c!=='');
+    if(!cols.length)continue;
+    const first=cols[0];
+    if(first==='Ticker'||first.startsWith('---')||first.startsWith(':---'))continue;
+    if(!first||first==='-')continue;
+    const e={ticker:first,category,name:'',notes:'',strategy:'',score:null};
+    if(category==='Core Holdings'&&cols.length>=4){
+      e.name=cols[1]||'';e.notes=cols[2]||'';e.strategy=cols[3]||'';
+      const s=cols[4]||'';e.score=(s&&s!=='—'&&s!=='-')?parseFloat(s)||null:null;
+    } else if(category==='Rockets'&&cols.length>=2){
+      e.notes=cols[1]||'';
+      const s=cols[2]||'';e.score=(s&&s!=='—'&&s!=='-')?parseFloat(s)||null:null;
+    } else if(category==='Compounders'&&cols.length>=3){
+      e.name=cols[1]||'';e.notes=cols[2]||'';
+      const s=cols[3]||'';e.score=(s&&s!=='—'&&s!=='-')?parseFloat(s)||null:null;
+    } else continue;
+    entries.push(e);
+  }
+  return entries;
+}
+
+function mergeWithDataWatchlist(liveEntries){
+  const rich={};
+  (DATA.watchlist||[]).forEach(e=>{rich[e.ticker]=e;});
+  return liveEntries.map(live=>{
+    const r=rich[live.ticker]||{};
+    return {
+      ticker:live.ticker,
+      name:live.name||r.name||'',
+      category:live.category,
+      strategy:live.strategy||r.strategy||'',
+      notes:live.notes||'',
+      sector:r.sector||'',
+      tier:r.tier||'',
+      exchange:r.exchange||'',
+      next_earnings:r.next_earnings||null,
+      score:live.score!=null?live.score:(r.score!=null?r.score:null),
+      thesis:r.thesis||live.notes||'',
+      scoring:r.scoring||null,
+      catalysts:r.catalysts||null,
+      hasRichData:!!(r.thesis||r.scoring)
+    };
+  });
+}
+
+async function addToWatchlist(ticker,category){
+  let md;
+  try{md=await fetchWatchlistMd();}catch(err){alert('Failed to read Watchlist.md: '+err.message);return;}
+  const existing=parseWatchlistMd(md);
+  if(existing.find(e=>e.ticker===ticker)){alert(ticker+' is already in the watchlist.');return;}
+  const headers={'Core Holdings':'## Core Holdings (Active Positions)','Rockets':'## High Upside Rockets (Speculative)','Compounders':'## Compounders Watchlist'};
+  const newRows={'Core Holdings':'| '+ticker+' |  |  |  | — |','Rockets':'| '+ticker+' |  | — |','Compounders':'| '+ticker+' |  |  | — |'};
+  const lines=md.split('\n');
+  const si=lines.findIndex(l=>l.startsWith(headers[category]));
+  if(si===-1){alert('Section not found: '+category);return;}
+  let lastRow=-1;
+  for(let i=si+1;i<lines.length;i++){
+    if(lines[i].startsWith('## ')||lines[i].trim()==='---')break;
+    if(lines[i].startsWith('|')&&!lines[i].includes('---'))lastRow=i;
+  }
+  if(lastRow===-1){alert('Table not found in section.');return;}
+  lines.splice(lastRow+1,0,newRows[category]);
+  try{await writeWatchlistMd(lines.join('\n'));await initWatchlistTab(true);}
+  catch(err){alert('Failed to save: '+err.message);}
+}
+
+async function removeFromWatchlist(ticker){
+  let md;
+  try{md=await fetchWatchlistMd();}catch(err){alert('Failed to read Watchlist.md: '+err.message);return;}
+  const lines=md.split('\n');
+  const filtered=lines.filter(line=>{
+    if(!line.startsWith('|'))return true;
+    const cols=line.split('|').map(c=>c.trim()).filter(c=>c!=='');
+    return cols[0]!==ticker;
+  });
+  try{await writeWatchlistMd(filtered.join('\n'));await initWatchlistTab(true);}
+  catch(err){alert('Failed to save: '+err.message);}
+}
+
+function renderWatchlistCard(e,canEdit){
+  const scoreCls=e.score==null?'none':e.score>=8?'high':'mid';
+  const scoreLabel=e.score!=null?e.score.toFixed(1)+'/10':'Unscored';
+  const removeBtn=canEdit?'<button class="wl-remove" onclick="wlConfirmRemove(\''+esc(e.ticker)+'\')" title="Remove">×</button>':'';
+  const days=daysUntil(e.next_earnings);
+  const soon=days!=null&&days>=0&&days<=14;
+  const earningsText=e.next_earnings?(soon?'⚡ ':'')+'Earnings '+e.next_earnings+(days!=null?' ('+(days===0?'today':days+'d')+')':''):'';
+  const metaParts=[
+    e.sector&&'<span class="wl-pill">'+esc(e.sector)+'</span>',
+    e.tier&&'<span class="wl-pill">'+esc(e.tier)+'</span>',
+    e.exchange&&'<span class="wl-pill">'+esc(e.exchange)+'</span>',
+    earningsText&&'<span class="wl-pill'+(soon?' soon':'')+'">'+esc(earningsText)+'</span>'
+  ].filter(Boolean);
+  const metaHtml=metaParts.length?'<div class="wl-meta">'+metaParts.join('')+'</div>':'';
+  const thesisHtml=e.thesis?'<div class="wl-thesis">'+esc(e.thesis)+'</div>':'';
+  let scoringHtml='';
+  if(e.scoring){
+    const crit=[['Product (Love Factor)',e.scoring.product,5],['Pricing Power',e.scoring.pricing_power,5],['Leadership & Alignment',e.scoring.leadership,5],['Financial Health',e.scoring.financial_health,5],['Macro Environment',e.scoring.macro,5],['Future Potential',e.scoring.future_potential,5]];
+    const rows=crit.map(([name,val,max])=>{
+      const v=val!=null?val:'—';
+      const bar=val!=null?'<span class="wl-bar" style="width:'+Math.round((val/max)*56)+'px"></span>':'';
+      return '<tr><td>'+esc(name)+'</td><td class="wl-score-val">'+v+'/'+max+bar+'</td></tr>';
+    });
+    const comp=e.scoring.composite!=null?e.scoring.composite.toFixed(1):'—';
+    rows.push('<tr><td><strong>Composite</strong></td><td class="wl-score-val"><strong>'+comp+'/10</strong></td></tr>');
+    scoringHtml='<div class="wl-block-hdr">Scoring</div><div class="wiki-table-wrap"><table class="wl-score-table"><tbody>'+rows.join('')+'</tbody></table></div>';
+  } else if(!e.hasRichData){
+    scoringHtml='<p class="wl-stub">Run <code>/daily-dashboard --refresh-data</code> to populate scoring &amp; catalysts for this ticker.</p>';
+  }
+  let catalystsHtml='';
+  if(e.catalysts&&e.catalysts.length){
+    catalystsHtml='<div class="wl-block-hdr">Upcoming Catalysts</div><ul class="wl-cat-list">'+e.catalysts.slice(0,3).map(c=>'<li class="wl-cat-item">'+esc(c)+'</li>').join('')+'</ul>';
+  }
+  return '<div class="wl-card">'
+    +'<div class="wl-card-hdr"><span class="wl-ticker">'+esc(e.ticker)+'</span>'
+    +'<span class="wl-name">'+esc(e.name||'')+'</span>'
+    +'<span class="wl-score-badge '+scoreCls+'">'+esc(scoreLabel)+'</span>'
+    +removeBtn+'</div>'
+    +metaHtml+thesisHtml+scoringHtml+catalystsHtml+'</div>';
+}
+
+function renderWatchlist(entries,fallback){
+  const container=document.getElementById('watchlist');
+  const pat=wlPat();
+  const canEdit=!!pat&&!fallback;
+  const headerAuthHtml=pat&&!fallback
+    ?'<div class="wl-auth-ok"><span>🔓 Editing enabled</span><button class="wl-btn" style="margin-left:8px" onclick="wlClearPat();initWatchlistTab(true)">Sign out</button></div>'
+    :'';
+  const patPromptHtml=!pat||fallback
+    ?'<div class="wl-pat-prompt"><strong>Enable editing</strong> — enter a GitHub PAT with <code>contents:write</code> scope on this repo to add/remove tickers from the dashboard.<br><div class="wl-pat-row"><input id="wl-pat-input" class="wl-pat-input" type="password" placeholder="github_pat_…" /><button class="wl-btn primary" onclick="wlSavePat()">Save &amp; Reload</button></div><div class="wl-pat-note">Token stored in your browser\'s localStorage only — it never leaves your device.</div></div>'
+    :'';
+  const addRowHtml=canEdit
+    ?'<div class="wl-add-row"><input id="wl-add-ticker" class="wl-add-input" type="text" placeholder="Add ticker…" onkeydown="if(event.key===\'Enter\')wlAddFromInput()" /><select id="wl-add-cat" class="wl-cat-select"><option value="Core Holdings">Core Holdings</option><option value="Rockets">Rockets</option><option value="Compounders">Compounders</option></select><button class="wl-btn primary" onclick="wlAddFromInput()">Add</button></div>'
+    :'';
+  const cats=['Core Holdings','Rockets','Compounders'];
+  const catLabels={'Core Holdings':'Core Holdings — Active Positions','Rockets':'High Upside Rockets — Speculative','Compounders':'Compounders Watchlist'};
+  const body=cats.map(cat=>{
+    const items=entries.filter(e=>e.category===cat);
+    if(!items.length)return'';
+    return'<div class="wl-section-hdr">'+esc(catLabels[cat])+'</div><div class="wl-cards">'+items.map(e=>renderWatchlistCard(e,canEdit)).join('')+'</div>';
+  }).join('');
+  const emptyHtml=entries.length?''
+    :'<div class="wl-empty">Watchlist is empty.<br>Add a ticker above, or edit <code>Watchlist.md</code> and re-run <code>/daily-dashboard --refresh-data</code>.</div>';
+  container.innerHTML=
+    '<div class="wl-page-hdr"><div class="wl-title">Watchlist</div>'+headerAuthHtml+'</div>'
+    +patPromptHtml+addRowHtml+body+emptyHtml;
+}
+
+async function initWatchlistTab(force){
+  if(!force&&_wlInitialized)return;
+  const container=document.getElementById('watchlist');
+  container.innerHTML='<div class="wl-loading">Loading watchlist…</div>';
+  try{
+    const md=await fetchWatchlistMd();
+    const live=parseWatchlistMd(md);
+    const entries=mergeWithDataWatchlist(live);
+    _wlInitialized=true;
+    renderWatchlist(entries,false);
+  } catch(err){
+    // Fallback: use pre-generated DATA.watchlist (read-only)
+    const entries=(DATA.watchlist||[]).map(e=>({...e,hasRichData:true}));
+    _wlInitialized=true;
+    renderWatchlist(entries,true);
+  }
+}
 </script>
 </body>
 </html>
