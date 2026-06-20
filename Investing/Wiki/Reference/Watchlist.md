@@ -29,4 +29,5 @@
 | Ticker | Notes |
 | SIVE |  |
 | BESI |  |
+| XFAB |  |
 |--------|-------|
