@@ -308,7 +308,6 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 .wl-add-row{display:flex;gap:8px;align-items:center;margin-bottom:32px;flex-wrap:wrap}
 .wl-add-input{padding:7px 12px;border:1px solid var(--border);border-radius:6px;font-size:13px;background:var(--bg);color:var(--text);width:140px;font-family:inherit}
 .wl-add-input::placeholder{color:var(--muted)}
-.wl-cat-select{padding:7px 10px;border:1px solid var(--border);border-radius:6px;font-size:12px;background:var(--bg);color:var(--text);font-family:inherit}
 .wl-section-hdr{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:14px;margin-top:36px;padding-bottom:6px;border-bottom:1px solid var(--border)}
 .wl-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:16px}
 .wl-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:20px}
@@ -1805,8 +1804,7 @@ function wlSavePat(){
 function wlAddFromInput(){
   const ticker=(document.getElementById('wl-add-ticker')?.value||'').trim().toUpperCase();
   if(!ticker)return;
-  const cat=document.getElementById('wl-add-cat')?.value||'Core Holdings';
-  addToWatchlist(ticker,cat);
+  addToWatchlist(ticker);
 }
 
 function wlConfirmRemove(ticker){
@@ -1870,6 +1868,7 @@ function parseWatchlistMd(md){
     if(line.startsWith('## Core Holdings')){category='Core Holdings';continue;}
     if(line.startsWith('## High Upside Rockets')){category='Rockets';continue;}
     if(line.startsWith('## Compounders')){category='Compounders';continue;}
+    if(line.startsWith('## Watching')){category='Watching';continue;}
     if(line.startsWith('## ')||line.trim()==='---'){category=null;continue;}
     if(!category||!line.startsWith('|'))continue;
     const cols=line.split('|').map(c=>c.trim()).filter(c=>c!=='');
@@ -1887,6 +1886,8 @@ function parseWatchlistMd(md){
     } else if(category==='Compounders'&&cols.length>=3){
       e.name=cols[1]||'';e.notes=cols[2]||'';
       const s=cols[3]||'';e.score=(s&&s!=='—'&&s!=='-')?parseFloat(s)||null:null;
+    } else if(category==='Watching'){
+      e.notes=cols[1]||'';
     } else continue;
     entries.push(e);
   }
@@ -1917,23 +1918,33 @@ function mergeWithDataWatchlist(liveEntries){
   });
 }
 
-async function addToWatchlist(ticker,category){
+async function addToWatchlist(ticker){
   let md;
   try{md=await fetchWatchlistMd();}catch(err){alert('Failed to read Watchlist.md: '+err.message);return;}
   const existing=parseWatchlistMd(md);
   if(existing.find(e=>e.ticker===ticker)){alert(ticker+' is already in the watchlist.');return;}
-  const headers={'Core Holdings':'## Core Holdings (Active Positions)','Rockets':'## High Upside Rockets (Speculative)','Compounders':'## Compounders Watchlist'};
-  const newRows={'Core Holdings':'| '+ticker+' |  |  |  | — |','Rockets':'| '+ticker+' |  | — |','Compounders':'| '+ticker+' |  |  | — |'};
-  const lines=md.split('\n');
-  const si=lines.findIndex(l=>l.startsWith(headers[category]));
-  if(si===-1){alert('Section not found: '+category);return;}
-  let lastRow=-1;
-  for(let i=si+1;i<lines.length;i++){
-    if(lines[i].startsWith('## ')||lines[i].trim()==='---')break;
-    if(lines[i].startsWith('|')&&!lines[i].includes('---'))lastRow=i;
+  const WATCH_HDR='## Watching';
+  const WATCH_TABLE_HDR='| Ticker | Notes |\n|--------|-------|';
+  let lines=md.split('\n');
+  const si=lines.findIndex(l=>l.startsWith(WATCH_HDR));
+  if(si===-1){
+    // Section doesn't exist yet — append it
+    lines=lines.concat(['','---','',WATCH_HDR,'',WATCH_TABLE_HDR,'| '+ticker+' |  |']);
+  } else {
+    let lastRow=-1;
+    for(let i=si+1;i<lines.length;i++){
+      if(lines[i].startsWith('## ')||lines[i].trim()==='---')break;
+      if(lines[i].startsWith('|')&&!lines[i].includes('---'))lastRow=i;
+    }
+    if(lastRow===-1){
+      // Header exists but no table rows yet — insert after table header
+      const thi=lines.findIndex((l,idx)=>idx>si&&l.startsWith('| Ticker'));
+      const ins=thi!==-1?thi+2:si+1;
+      lines.splice(ins,0,'| '+ticker+' |  |');
+    } else {
+      lines.splice(lastRow+1,0,'| '+ticker+' |  |');
+    }
   }
-  if(lastRow===-1){alert('Table not found in section.');return;}
-  lines.splice(lastRow+1,0,newRows[category]);
   try{await writeWatchlistMd(lines.join('\n'));await initWatchlistTab(true);}
   catch(err){alert('Failed to save: '+err.message);}
 }
@@ -2003,10 +2014,10 @@ function renderWatchlist(entries,fallback){
     ?'<div class="wl-pat-prompt"><strong>Enable editing</strong> — enter a GitHub PAT with <code>contents:write</code> scope on this repo to add/remove tickers from the dashboard.<br><div class="wl-pat-row"><input id="wl-pat-input" class="wl-pat-input" type="password" placeholder="github_pat_…" /><button class="wl-btn primary" onclick="wlSavePat()">Save &amp; Reload</button></div><div class="wl-pat-note">Token stored in your browser\'s localStorage only — it never leaves your device.</div></div>'
     :'';
   const addRowHtml=canEdit
-    ?'<div class="wl-add-row"><input id="wl-add-ticker" class="wl-add-input" type="text" placeholder="Add ticker…" onkeydown="if(event.key===\'Enter\')wlAddFromInput()" /><select id="wl-add-cat" class="wl-cat-select"><option value="Core Holdings">Core Holdings</option><option value="Rockets">Rockets</option><option value="Compounders">Compounders</option></select><button class="wl-btn primary" onclick="wlAddFromInput()">Add</button></div>'
+    ?'<div class="wl-add-row"><input id="wl-add-ticker" class="wl-add-input" type="text" placeholder="Add ticker…" onkeydown="if(event.key===\'Enter\')wlAddFromInput()" /><button class="wl-btn primary" onclick="wlAddFromInput()">Add</button></div>'
     :'';
-  const cats=['Core Holdings','Rockets','Compounders'];
-  const catLabels={'Core Holdings':'Core Holdings — Active Positions','Rockets':'High Upside Rockets — Speculative','Compounders':'Compounders Watchlist'};
+  const cats=['Watching','Core Holdings','Rockets','Compounders'];
+  const catLabels={'Watching':'Watching','Core Holdings':'Core Holdings — Active Positions','Rockets':'High Upside Rockets — Speculative','Compounders':'Compounders Watchlist'};
   const body=cats.map(cat=>{
     const items=entries.filter(e=>e.category===cat);
     if(!items.length)return'';
