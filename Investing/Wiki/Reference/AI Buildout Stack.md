@@ -89,11 +89,11 @@ The previous five-dimension stack is superseded but maps cleanly onto the layers
       {"label":"Data Center Colocation","sector":"Cloud Infrastructure","slug":"cloud-infrastructure","tier":"Data Center Facility & MEP","chips":[]}
     ]},
     {"num":"05","name":"Compute Hardware","hue":55,"tag":"GPUs · ASICs · CPUs · NICs","boxes":[
-      {"label":"Training GPUs","sector":"Compute Hardware","slug":"compute-hardware","tier":"Chip Design (Fabless & IDM)","chips":["NVDA","AMD"]},
-      {"label":"Inference GPUs","sector":"Compute Hardware","slug":"compute-hardware","tier":"Chip Design (Fabless & IDM)","chips":["NVDA","AMD"]},
-      {"label":"Custom AI ASICs (hyperscaler silicon)","sector":"Compute Hardware","slug":"compute-hardware","tier":"Chip Design (Fabless & IDM)","chips":["AVGO","MRVL"]},
-      {"label":"Dedicated Inference Accelerators","sector":"Compute Hardware","slug":"compute-hardware","tier":"Chip Design (Fabless & IDM)","chips":[]},
-      {"label":"Server CPUs (orchestration, agentic workloads)","sector":"Compute Hardware","slug":"compute-hardware","tier":"Chip Design (Fabless & IDM)","chips":["ARM","INTC"]},
+      {"label":"Training GPUs","sector":"Compute Hardware","slug":"compute-hardware","tier":"AI Training GPUs","chips":["NVDA","AMD"]},
+      {"label":"Inference GPUs","sector":"Compute Hardware","slug":"compute-hardware","tier":"AI Inference GPUs","chips":["NVDA","AMD"]},
+      {"label":"Custom AI ASICs (hyperscaler silicon)","sector":"Compute Hardware","slug":"compute-hardware","tier":"Custom AI ASICs","chips":["AVGO","MRVL"]},
+      {"label":"Dedicated Inference Accelerators","sector":"Compute Hardware","slug":"compute-hardware","tier":"Dedicated Inference Accelerators","chips":[]},
+      {"label":"Server CPUs (orchestration, agentic workloads)","sector":"Compute Hardware","slug":"compute-hardware","tier":"Server CPUs","chips":["ARM","INTC"]},
       {"label":"Networking ASICs (switch silicon)","sector":"Cloud Infrastructure","slug":"cloud-infrastructure","tier":"High-Speed Networking","chips":["ANET","AVGO","MRVL"]}
     ]},
     {"num":"06","name":"Memory","hue":92,"tag":"HBM · HBF · DRAM · NAND · LPDDR","boxes":[
