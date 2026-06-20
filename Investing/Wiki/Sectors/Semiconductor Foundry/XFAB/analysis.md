@@ -32,19 +32,19 @@ The key overhang is SiC and automotive. EV demand weakness in 2024–2025 caused
 ---
 
 ## Scoring Summary
-_Last scored: 2026-06-19 | [[Scoring Rubric]]_
+_Last scored: 2026-06-19 (refresh — post photonixFAB signal ingestion) | [[Scoring Rubric]]_
 
 | Criterion | Score | Evidence |
 |-----------|-------|----------|
-| Product (Love Factor) | 4/5 | Sole-source for >90% of manufactured products; 5–7 year automotive/medical re-qual makes switching prohibitively costly |
-| Pricing Power | 3/5 | Medium pricing power (moat.pricing_power); sole-source protection offset by thin 21.2% gross margin and EBITDA declining 22.6%→17.5% on low utilization |
-| Leadership & Alignment | 2/5 | CEO change Feb 2026; Macq has 4-month track record; insider ownership % unknown; $24K share purchase de minimis; 1 guidance beat (Q1 2026) |
-| Financial Health | 3/5 | Net debt $291M / FY2025 EBITDA $196.8M = 1.48x; FCF improving as capex drops $333M/yr→$100M; diversified FCF-funded customer base |
-| Macro Environment | 3/5 | Secular analog automotive/medical/industrial tailwinds balanced by near-term SiC EV demand collapse and automotive inventory correction |
-| Future Potential | 3/5 | Wide-bandgap +152% YoY and microsystems ATH show adjacency traction; but TAM bounded by foundry-service model; no software/IP layer |
-| **Composite** | **6.0/10** | **Strong** |
+| Product (Love Factor) | 4/5 | Sole-source for >90% of manufactured products; 5–7 year automotive/medical re-qual cycles; EU-designated sovereign silicon photonics foundry |
+| Pricing Power | 3/5 | Medium pricing power (moat.pricing_power); sole-source protection vs. thin 21.2% gross margin; EBITDA 22.6%→17.5% on low utilization |
+| Leadership & Alignment | 2/5 | CEO Macq 4 months in role (Feb 2026); ownership % unknown; $24K share purchase de minimis; 1 guidance beat (Q1 2026); SiC miss under prior CEO |
+| Financial Health | 3/5 | Net debt $291M / FY2025 EBITDA $196.8M = 1.48x; FCF improving as capex $333M/yr→$100M; ~€225M government grants de-risk balance sheet; diversified FCF-funded customers |
+| Macro Environment | 4/5 | photonixFAB + EU Chips Act 2.0 (Jun 2026) + US CHIPS Act $50M PMT + SiC recovery + analog/medical/industrial secular tailwinds; auto inventory correction is 1 manageable headwind ↑ from 3 |
+| Future Potential | 4/5 | 3 adjacencies with traction: silicon photonics/CPO (NVDA+Nokia consortium, production 2027), MEMS (ATH +42% YoY, €128M EU grant), wide-bandgap (SiC/GaN +152% YoY, non-EV) ↑ from 3 |
+| **Composite** | **6.5/10** | **Strong** |
 
-**Valuation:** Cheap at ~€4.80 | EV/EBITDA ~6.5x (depressed Q1 margins) | Analyst upside: ~15% to €5.53 consensus | SiC+auto recovery scenario implies >30% upside
+**Valuation:** Cheap at ~€4.80 | EV/EBITDA ~6.5x (depressed Q1 margins) | Analyst upside: ~15% to €5.53 consensus | PhotonixFAB option priced at zero; SiC+auto recovery adds >30% upside scenario
 **Growth Potential:** — (pending real-time data integration)
 
 ## Risk Flags
@@ -52,7 +52,7 @@ _Evaluated: 2026-06-19_
 
 | Flag | Status | Notes |
 |------|--------|-------|
-| Capex sustainability | WATCH | Net debt $291M / EBITDA 1.48x FY2025; capex dropping to $100M in 2026; FCF recovery underway but Q1 margins depressed |
+| Capex sustainability | WATCH | Net debt $291M / EBITDA 1.48x FY2025; capex dropping to $100M in 2026; ~€225M confirmed government grants partially offset debt burden; FCF recovery underway |
 | Demand chain health | CLEAR | Diversified automotive Tier 1s (Bosch, Denso, Continental), medical device makers, industrial IDMs; all FCF-funded corporates; no circular chain |
 | Customer concentration | WATCH | Melexis named as largest automotive client and primary Q1 2026 drag; top-customer % not disclosed; automotive ~50% of historical revenue |
 | Circular revenue exposure | CLEAR | No circular backlog; automotive/medical demand traceable to real-world end consumers |

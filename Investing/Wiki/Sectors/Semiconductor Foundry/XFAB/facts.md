@@ -60,7 +60,7 @@ demand_chain:
   notes: "Automotive OEMs + Tier 1 suppliers, medical device makers, industrial IDMs; no hyperscaler dependency"
 
 metrics:
-  score: 6.0
+  score: 6.5
   score_label: "Strong"
   last_scored: "2026-06-19"
   valuation_fpe: null
