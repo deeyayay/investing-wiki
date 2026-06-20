@@ -303,7 +303,7 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
     <input id="search-input" type="text" placeholder="Search tickers, sectors, tiers…" autocomplete="off" spellcheck="false">
     <div id="search-results" hidden></div>
   </div>
-  <span class="gen-date">Generated: 2026-06-20</span>
+  <span class="gen-date">Generated: 2026-06-19</span>
 </header>
 <div id="tab-nav">
   <button class="tab-btn active" data-tab="supply-chain" onclick="showTab('supply-chain')">Supply Chain</button>
@@ -318,7 +318,7 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 </div>
 <script>
 const DATA = {
-  generated: "2026-06-20",
+  generated: "2026-06-19",
   sectors: [
     {
       slug: "compute-hardware",
@@ -918,11 +918,11 @@ const STACK={
       {"label":"Model Orchestration & Agentic Frameworks","sector":"AI Model","slug":"ai-model","tier":"Model API & Developer Platform","chips":["CFLT"]}
     ]},
     {"num":"03","name":"Software Infrastructure","hue":268,"tag":"frameworks · kernels · orchestration","boxes":[
-      {"label":"ML Frameworks (training)","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"Distributed Training Orchestration","chips":["CRWV","AMD"]},
-      {"label":"GPU Programming Layer (low-level kernels)","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"Distributed Training Orchestration","chips":["NVDA","AMD"]},
-      {"label":"Distributed Training Systems","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"Distributed Training Orchestration","chips":[]},
-      {"label":"Container Orchestration (Kubernetes)","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"MLOps & Model Lifecycle Management","chips":["DDOG","SNOW","PLTR","MDB"]},
-      {"label":"Inference Optimization Stack","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"Model Optimization & Compilation","chips":[]}
+      {"label":"ML Frameworks (training)","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"ML Frameworks","chips":["CRWV","AMD"]},
+      {"label":"GPU Programming Layer (low-level kernels)","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"GPU Programming Layer","chips":["NVDA","AMD"]},
+      {"label":"Distributed Training Systems","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"Distributed Training Systems","chips":[]},
+      {"label":"Container Orchestration (Kubernetes)","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"Container Orchestration & MLOps","chips":["DDOG","SNOW","PLTR","MDB"]},
+      {"label":"Inference Optimization Stack","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"Inference Optimization Stack","chips":[]}
     ]},
     {"num":"04","name":"Cloud Infrastructure","hue":288,"tag":"hyperscalers · neoclouds · colocation","boxes":[
       {"label":"Hyperscaler Clouds","sector":"Cloud Infrastructure","slug":"cloud-infrastructure","tier":"Hyperscaler & Colocation Operation","chips":["MSFT","AMZN","GOOGL","ORCL"]},
@@ -962,7 +962,7 @@ const STACK={
       {"label":"Fiber Cables","group":"Components · used across all three scales","sector":"Interconnect","slug":"interconnect","tier":"Optical Fiber & Preform Manufacturing","chips":["GLW"]}
     ]},
     {"num":"08","name":"Advanced Packaging","hue":150,"tag":"CoWoS · stacking · substrates","boxes":[
-      {"label":"Wafer-Level Packaging (CoWoS, SoIC)","sector":"Advanced Packaging","slug":"advanced-packaging","tier":"Advanced Packaging (CoWoS / SoIC)","chips":["TSM","AMKR","BESI"]},
+      {"label":"Wafer-Level Packaging (CoWoS, SoIC)","sector":"Advanced Packaging","slug":"advanced-packaging","tier":"Advanced Packaging (CoWoS / SoIC)","chips":["TSM","AMKR"]},
       {"label":"HBM Stacking & Integration","sector":"Advanced Packaging","slug":"advanced-packaging","tier":"Advanced Packaging (CoWoS / SoIC)","chips":["MU","TSM"]},
       {"label":"FC-BGA Substrates","sector":"Electronic Components","slug":"electronic-components","tier":"IC Substrate Manufacturing","chips":[],"choke":true},
       {"label":"Glass Core Substrates (emerging)","sector":"Electronic Components","slug":"electronic-components","tier":"Substrate & Laminate Materials","chips":["GLW","INTC","LPK"]},
@@ -970,7 +970,7 @@ const STACK={
     ]},
     {"num":"09","name":"Semiconductor Foundry","hue":162,"tag":"leading-edge · specialty · OSAT","boxes":[
       {"label":"Leading-Edge Logic Foundry (3nm, 2nm)","sector":"Semiconductor Foundry","slug":"semiconductor-foundry","tier":"Wafer Fabrication (Foundry / IDM)","chips":["TSM","INTC"]},
-      {"label":"Specialty / Mature Logic Foundry (analog, mixed-signal)","sector":"Semiconductor Foundry","slug":"semiconductor-foundry","tier":"Wafer Fabrication (Foundry / IDM)","chips":["GFS","XFAB"]},
+      {"label":"Specialty / Mature Logic Foundry (analog, mixed-signal)","sector":"Semiconductor Foundry","slug":"semiconductor-foundry","tier":"Wafer Fabrication (Foundry / IDM)","chips":["GFS"]},
       {"label":"Silicon Photonics Foundry","sector":"Semiconductor Foundry","slug":"semiconductor-foundry","tier":"Silicon Photonics Platform","chips":["GFS","POET","INTC"]},
       {"label":"Compound Semiconductor Foundry (GaN, SiC, InP)","sector":"Semiconductor Foundry","slug":"semiconductor-foundry","tier":"Compound Semiconductor & SiC Substrate","chips":["STM","WOLF"]},
       {"label":"OSAT (outsourced assembly and test)","sector":"Advanced Packaging","slug":"advanced-packaging","tier":"OSAT — Assembly & Test","chips":["ASX","AMKR"]}
@@ -1115,7 +1115,7 @@ function _railBoxCard(b,railTitle){
   const sName=sector?sector.name:"";
   const chips=(b.chips&&b.chips.length?b.chips:(tier?(tier.companies||[]).map(c=>c.ticker):[]))
     .slice(0,6).map(t=>_chipHtml(t,sName,railTitle,"showLayer(0)")).join("");
-  const onclick=(b.slug&&b.tier)?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\')"':'';
+  const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\')"':'';
   return '<div class="rail-box'+(choke?' choke':'')+'"'+onclick+'>'
     +'<div class="rail-box-label">'+(choke?'<span class="choke-mark">⧫</span>':'')+esc(b.label)+'</div>'
     +'<div class="chip-row">'+chips+'</div></div>';
@@ -1154,7 +1154,7 @@ function _subboxCard(b,i){
   const sName=sector?sector.name:"";
   const chips=(b.chips&&b.chips.length?b.chips:(tier?(tier.companies||[]).map(c=>c.ticker):[]))
     .slice(0,6).map(t=>_chipHtml(t,sName,ctxL,ctxF)).join("");
-  const onclick=(b.slug&&b.tier)?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\','+i+')"':'';
+  const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\','+i+')"':'';
   return '<div class="subbox'+(choke?' choke':'')+'"'+onclick+'>'
     +'<div class="subbox-label">'+(choke?'<span class="choke-mark">⧫</span>':'')+esc(b.label)+'</div>'
     +'<div class="chip-row">'+chips+'</div></div>';
@@ -1187,50 +1187,14 @@ function renderL0(){
     +'<div class="rail">'+rightRail+'</div></div>';
 }
 
-function openTierFallback(slug,tierName,layerIdx){
-  let box=null;
-  const li=layerIdx!==undefined?layerIdx:(_tierLayer[slug+'|'+tierName]!==undefined?_tierLayer[slug+'|'+tierName]:null);
-  const scan=(boxes)=>(boxes||[]).forEach(b=>{if(b.slug===slug&&b.tier===tierName)box=b;});
-  (STACK.layers||[]).forEach(L=>scan(L.boxes));
-  (STACK.rails||[]).forEach(r=>(r.groups||[]).forEach(g=>scan(g.boxes)));
-  if(!box)return;
-  const sectorName=(DATA.sectors.find(x=>x.slug===slug)||{}).name||box.sector||slug;
-  const trail=(li!==null&&li!==undefined)
-    ?[{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:_layerLabel(li),fn:"openLayer("+li+")"},{label:tierName}]
-    :[{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:tierName}];
-  const chokeBlock=box.choke
-    ?'<div class="choke-box"><p>⧫ Supply chain chokepoint — limited substitutes in this tier.</p></div>':'';
-  const chips=(box.chips||[]).map(tk=>{
-    const sn=(TICKER_MAP[tk]&&TICKER_MAP[tk].sectorName)||sectorName;
-    const info=TICKER_MAP[tk]||{name:tk};
-    return '<div class="co-card"><div class="co-header">'
-      +'<a class="co-ticker" href="#" onclick="openTicker(\''+tk+'\',\''+sn.replace(/'/g,"\\'")+'\');return false">'+esc(tk)+'</a>'
-      +(info.name&&info.name!==tk?'<span class="co-name">'+esc(info.name)+'</span>':'')
-      +'</div></div>';
-  }).join('');
-  const coBlock=chips
-    ?'<div class="co-section"><div class="co-section-hdr"><span class="co-section-title">Companies Building Here</span></div>'+chips+'</div>'
-    :'<div class="co-section co-empty"><p>No tickers tracked in this tier yet.</p></div>';
-  document.getElementById("l2").innerHTML=
-    crumbTrail(trail)
-    +'<div class="tier-provenance">'
-    +((li!==null&&li!==undefined)?'<span class="layer-pill" style="--lh:'+STACK.layers[li].hue+'">'+esc(_layerLabel(li))+'</span>':'')
-    +'<span class="sector-tag">'+esc(sectorName)+'</span></div>'
-    +'<div class="tier-detail-name">'+esc(tierName)+'</div>'
-    +chokeBlock
-    +coBlock;
-  showLayer(2);
-}
-
 function openStackTier(slug,tierName,layerIdx){
   const s=DATA.sectors.find(x=>x.slug===slug);
-  if(s){
-    activeSector=s;
-    activeLayerIdx=(layerIdx!==undefined&&layerIdx!==null)?layerIdx:(_tierLayer[slug+"|"+tierName]!==undefined?_tierLayer[slug+"|"+tierName]:null);
-    const idx=s.tiers.findIndex(t=>t.tier===tierName);
-    if(idx>=0){openTier(idx);return;}
-  }
-  openTierFallback(slug,tierName,layerIdx);
+  if(!s){return;}
+  activeSector=s;
+  activeLayerIdx=(layerIdx!==undefined&&layerIdx!==null)?layerIdx:(_tierLayer[slug+"|"+tierName]!==undefined?_tierLayer[slug+"|"+tierName]:null);
+  const idx=s.tiers.findIndex(t=>t.tier===tierName);
+  if(idx<0){return;}
+  openTier(idx);
 }
 
 // Layer view (L1) — replaces the retired cross-cutting sector list.
@@ -1255,7 +1219,7 @@ function _layerBoxCard(b,i){
   const sName=sector?sector.name:"";
   const chips=(b.chips&&b.chips.length?b.chips:(tier?(tier.companies||[]).map(c=>c.ticker):[]))
     .map(t=>_chipHtml(t,sName,ctxL,ctxF)).join("");
-  const onclick=(b.slug&&b.tier)?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\','+i+')"':'';
+  const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\','+i+')"':'';
   const count=tier&&tier.companies?tier.companies.length:0;
   return '<div class="layer-box'+(choke?' choke':'')+'"'+onclick+'>'
     +'<div class="layer-box-head"><span class="layer-box-label">'+(choke?'<span class="choke-mark">⧫</span>':'')+esc(b.label)+'</span>'
@@ -1330,13 +1294,6 @@ function openTier(idx){
     +'<div class="invest-cell"><div class="invest-cell-label">Margin Profile</div><div class="invest-cell-val">'+esc(t.margin_profile||'—')+'</div></div>'
     +'<div class="invest-cell"><div class="invest-cell-label">Chokepoint</div><div class="invest-cell-val invest-choke-'+( t.chokepoint==="Y"?'yes':t.chokepoint==="Partial"?'partial':'no')+'">'+( t.chokepoint==="Y"?"Yes — critical constraint":t.chokepoint==="Partial"?"Partial — some alternatives":"No — competitive market")+'</div></div>'
     +'</div></div>';
-  const _stackChips=(()=>{
-    const found=[];
-    const scan=b=>{if(b.slug===s.slug&&b.tier===t.tier&&b.chips)found.push(...b.chips);};
-    (STACK.layers||[]).forEach(L=>(L.boxes||[]).forEach(scan));
-    (STACK.rails||[]).forEach(r=>(r.groups||[]).forEach(g=>(g.boxes||[]).forEach(scan)));
-    return found;
-  })();
   const coBlock=(t.companies&&t.companies.length>0)
     ?'<div class="co-section"><div class="co-section-hdr"><span class="co-section-title">Companies Building Here</span><span class="co-section-count">'+t.companies.length+' tracked</span></div>'
     +t.companies.map(c=>{
@@ -1350,16 +1307,6 @@ function openTier(idx){
         +'</div>'
         +'<div class="co-notes">'+esc(c.notes)+'</div>'
         +'</div>';
-    }).join('')+'</div>'
-    :_stackChips.length>0
-    ?'<div class="co-section"><div class="co-section-hdr"><span class="co-section-title">Companies Building Here</span></div>'
-    +_stackChips.map(tk=>{
-      const sn=(TICKER_MAP[tk]&&TICKER_MAP[tk].sectorName)||s.name;
-      const info=TICKER_MAP[tk]||{name:tk};
-      return '<div class="co-card"><div class="co-header">'
-        +'<a class="co-ticker" href="#" onclick="openTicker(\''+tk+'\',\''+sn.replace(/'/g,"\\'")+'\');return false">'+esc(tk)+'</a>'
-        +(info.name&&info.name!==tk?'<span class="co-name">'+esc(info.name)+'</span>':'')
-        +'</div></div>';
     }).join('')+'</div>'
     :'<div class="co-section co-empty"><p>No tickers tracked in this tier yet — run <code>/scout-tickers</code> to discover candidates.</p></div>';
   document.getElementById("l2").innerHTML=
@@ -1378,9 +1325,11 @@ function openTier(idx){
 // ── Ticker detail (L3) ──────────────────────────────────────────────────────
 const TICKER_MAP={};
 DATA.sectors.forEach(s=>s.tiers.forEach(t=>(t.companies||[]).forEach(c=>{TICKER_MAP[c.ticker]={...c,sectorName:s.name};})));
-// Seed sectorName from STACK boxes for tickers not yet in TICKER_MAP (DATA companies[] has priority).
-// Run before explicit overrides so overrides take final precedence.
-const _ss=(boxes)=>(boxes||[]).forEach(b=>{if(b.sector&&b.chips)b.chips.forEach(tk=>{if(!TICKER_MAP[tk])TICKER_MAP[tk]={ticker:tk,name:tk,sectorName:b.sector};});});
+// Seed sectorName from STACK boxes whose slug has no DATA entry — these are sectors folded into
+// DATA "Compute Hardware" but whose wiki files live in their own sector folder. STACK.sector is
+// the canonical wiki folder name. Run before explicit overrides so overrides take final precedence.
+const _DS=new Set(DATA.sectors.map(s=>s.slug));
+const _ss=(boxes)=>(boxes||[]).forEach(b=>{if(b.sector&&b.chips&&!_DS.has(b.slug))b.chips.forEach(tk=>{if(TICKER_MAP[tk])TICKER_MAP[tk].sectorName=b.sector;else TICKER_MAP[tk]={ticker:tk,name:tk,sectorName:b.sector};});});
 (STACK.layers||[]).forEach(l=>_ss(l.boxes));
 (STACK.rails||[]).forEach(r=>(r.groups||[]).forEach(g=>_ss(g.boxes)));
 // Explicit overrides: tickers whose DATA sector != wiki folder (STACK seeding above may set wrong
@@ -1615,8 +1564,7 @@ function buildSearchIdx() {
       const li = (layer !== undefined ? layer : "");
       idx.push({ type: "tier", label: t.tier, sub: s.name, slug: s.slug, tierName: t.tier, layerIdx: li, q: (t.tier + " " + (t.fn || "")).toLowerCase() });
       (t.companies || []).forEach(c => {
-        const sn = (TICKER_MAP[c.ticker]&&TICKER_MAP[c.ticker].sectorName) || s.name;
-        idx.push({ type: "company", label: c.name, ticker: c.ticker || "", sectname: sn, sub: t.tier + " · " + s.name, slug: s.slug, tierName: t.tier, layerIdx: li, q: ((c.ticker || "") + " " + c.name + " " + (c.notes || "")).toLowerCase() });
+        idx.push({ type: "company", label: c.name, ticker: c.ticker || "", sub: t.tier + " · " + s.name, slug: s.slug, tierName: t.tier, layerIdx: li, q: ((c.ticker || "") + " " + c.name + " " + (c.notes || "")).toLowerCase() });
       });
     });
   });
@@ -1646,8 +1594,6 @@ function renderSearchResults(q) {
         + (h.slug !== undefined ? " data-slug=\"" + esc(h.slug) + "\"" : "")
         + (h.tierName !== undefined ? " data-tiername=\"" + esc(h.tierName) + "\"" : "")
         + (h.layerIdx !== undefined && h.layerIdx !== "" ? " data-layer=\"" + h.layerIdx + "\"" : "")
-        + (h.ticker ? " data-ticker=\"" + esc(h.ticker) + "\"" : "")
-        + (h.sectname ? " data-sectname=\"" + esc(h.sectname) + "\"" : "")
         + ">"
         + ticker
         + "<div class=\"sr-text\"><div class=\"sr-label\">" + h.label + "</div><div class=\"sr-sub\">" + h.sub + "</div></div>"
@@ -1680,9 +1626,6 @@ document.getElementById("search-results").addEventListener("click", function (e)
   document.getElementById("search-results").hidden = true;
   if (type === "layer") {
     openLayer(Number(layer));
-  } else if (type === "company") {
-    activeSector=null;activeTierIdx=null;activeLayerIdx=null;_fromStack=false;
-    openTicker(item.dataset.ticker, item.dataset.sectname || "");
   } else {
     openStackTier(slug, tierName, layer !== undefined ? Number(layer) : undefined);
   }
