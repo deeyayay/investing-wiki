@@ -24,6 +24,7 @@
 | MSSCorp | Early stage — monitor for catalyst | — |
 | PCL | Early stage — monitor for catalyst | — |
 | AAOI | Applied Optoelectronics; photonics/optical interconnect theme | — |
+| XFAB |  | — |
 
 ---
 
