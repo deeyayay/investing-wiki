@@ -1014,11 +1014,11 @@ function openTier(idx){
 // ── Ticker detail (L3) ──────────────────────────────────────────────────────
 const TICKER_MAP={};
 DATA.sectors.forEach(s=>s.tiers.forEach(t=>(t.companies||[]).forEach(c=>{TICKER_MAP[c.ticker]={...c,sectorName:s.name};})));
-// Seed sectorName from STACK boxes whose slug has no DATA entry — these are sectors folded into
-// DATA "Compute Hardware" but whose wiki files live in their own sector folder. STACK.sector is
-// the canonical wiki folder name. Run before explicit overrides so overrides take final precedence.
+// Seed TICKER_MAP from all STACK boxes — chips[] is the source of truth for which tickers exist.
+// DATA.sectors tiers no longer carry companies[] arrays (new lean format), so STACK is primary.
+// Run before explicit overrides so overrides take final precedence.
 const _DS=new Set(DATA.sectors.map(s=>s.slug));
-const _ss=(boxes)=>(boxes||[]).forEach(b=>{if(b.sector&&b.chips&&!_DS.has(b.slug))b.chips.forEach(tk=>{if(TICKER_MAP[tk])TICKER_MAP[tk].sectorName=b.sector;else TICKER_MAP[tk]={ticker:tk,name:tk,sectorName:b.sector};});});
+const _ss=(boxes)=>(boxes||[]).forEach(b=>{if(b.sector&&b.chips)b.chips.forEach(tk=>{if(TICKER_MAP[tk])TICKER_MAP[tk].sectorName=b.sector;else TICKER_MAP[tk]={ticker:tk,name:tk,sectorName:b.sector};});});
 (STACK.layers||[]).forEach(l=>_ss(l.boxes));
 (STACK.rails||[]).forEach(r=>(r.groups||[]).forEach(g=>_ss(g.boxes)));
 // Explicit overrides: tickers whose DATA sector != wiki folder (STACK seeding above may set wrong
@@ -1257,6 +1257,23 @@ function buildSearchIdx() {
       });
     });
   });
+  // Seed company entries from STACK chips[] — DATA tiers no longer carry companies[].
+  const _seenTk = new Set(idx.filter(x => x.type === "company").map(x => x.ticker));
+  (STACK.layers||[]).forEach((L,li)=>(L.boxes||[]).forEach(b=>{
+    if(!b.sector||!b.chips||b.gap)return;
+    b.chips.forEach(tk=>{
+      if(_seenTk.has(tk))return; _seenTk.add(tk);
+      idx.push({type:"company",label:tk,ticker:tk,sub:(b.tier||b.label)+' · '+b.sector,slug:b.slug||'',tierName:b.tier||'',layerIdx:li,q:tk.toLowerCase()});
+    });
+  }));
+  (STACK.rails||[]).forEach(r=>(r.groups||[]).forEach(g=>(g.boxes||[]).forEach(b=>{
+    if(!b.sector||!b.chips||b.gap)return;
+    b.chips.forEach(tk=>{
+      if(_seenTk.has(tk))return; _seenTk.add(tk);
+      const li=_tierLayer[b.slug+'|'+b.tier];
+      idx.push({type:"company",label:tk,ticker:tk,sub:(b.tier||b.label)+' · '+b.sector,slug:b.slug||'',tierName:b.tier||'',layerIdx:li!==undefined?li:'',q:tk.toLowerCase()});
+    });
+  })));
   return idx;
 }
 
