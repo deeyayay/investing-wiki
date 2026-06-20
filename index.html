@@ -930,11 +930,11 @@ function _layerBoxCard(b,i){
   const chips=(b.chips&&b.chips.length?b.chips:(tier?(tier.companies||[]).map(c=>c.ticker):[]))
     .map(t=>_chipHtml(t,sName,ctxL,ctxF)).join("");
   const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\','+i+')"':'';
-  const count=tier&&tier.companies?tier.companies.length:0;
+  const count=b.chips?b.chips.length:(tier&&tier.companies?tier.companies.length:0);
   return '<div class="layer-box'+(choke?' choke':'')+'"'+onclick+'>'
     +'<div class="layer-box-head"><span class="layer-box-label">'+(choke?'<span class="choke-mark">⧫</span>':'')+esc(b.label)+'</span>'
     +'<span class="layer-box-sector">'+esc(sName)+'</span></div>'
-    +(tier?'<div class="layer-box-fn">'+esc(tier.fn)+'</div>':'')
+    +(tier&&tier.fn?'<div class="layer-box-fn">'+esc(tier.fn)+'</div>':'')
     +'<div class="chip-row">'+chips+'</div>'
     +(count?'<div class="layer-box-count">'+count+' tracked</div>':'')
     +'</div>';
@@ -981,6 +981,14 @@ function renderLayerView(i){
     +'<div class="layer-view-body">'+body+'</div>';
 }
 
+function _stackChips(slug,tierName){
+  const found=[],seen=new Set();
+  const scan=boxes=>(boxes||[]).forEach(b=>{if(b.slug===slug&&b.tier===tierName&&b.chips)b.chips.forEach(tk=>{if(!seen.has(tk)){seen.add(tk);found.push(tk);}});});
+  (STACK.layers||[]).forEach(L=>scan(L.boxes));
+  (STACK.rails||[]).forEach(r=>(r.groups||[]).forEach(g=>scan(g.boxes)));
+  return found;
+}
+
 function openTier(idx){
   activeTierIdx=idx;
   const s=activeSector;
@@ -1004,18 +1012,17 @@ function openTier(idx){
     +'<div class="invest-cell"><div class="invest-cell-label">Margin Profile</div><div class="invest-cell-val">'+esc(t.margin_profile||'—')+'</div></div>'
     +'<div class="invest-cell"><div class="invest-cell-label">Chokepoint</div><div class="invest-cell-val invest-choke-'+( t.chokepoint==="Y"?'yes':t.chokepoint==="Partial"?'partial':'no')+'">'+( t.chokepoint==="Y"?"Yes — critical constraint":t.chokepoint==="Partial"?"Partial — some alternatives":"No — competitive market")+'</div></div>'
     +'</div></div>';
-  const coBlock=(t.companies&&t.companies.length>0)
-    ?'<div class="co-section"><div class="co-section-hdr"><span class="co-section-title">Companies Building Here</span><span class="co-section-count">'+t.companies.length+' tracked</span></div>'
-    +t.companies.map(c=>{
-      const cc=c.mkt_cap==="Large"?"large":c.mkt_cap==="Mid"?"mid":"small";
-      const cl=c.mkt_cap==="Large"?"Large cap":c.mkt_cap==="Mid"?"Mid cap":"Small cap";
+  const _tierChips=_stackChips(s.slug,t.tier);
+  const coBlock=_tierChips.length>0
+    ?'<div class="co-section"><div class="co-section-hdr"><span class="co-section-title">Companies Building Here</span><span class="co-section-count">'+_tierChips.length+' tracked</span></div>'
+    +_tierChips.map(tk=>{
+      const info=TICKER_MAP[tk]||{};
+      const sn=(info.sectorName||s.name).replace(/'/g,"\\'");
       return '<div class="co-card">'
         +'<div class="co-header">'
-        +'<a class="co-ticker" href="#" onclick="openTicker(\''+c.ticker+'\',(TICKER_MAP[\''+c.ticker+'\']&&TICKER_MAP[\''+c.ticker+'\'].sectorName)||\''+s.name+'\');return false">'+c.ticker+'</a>'
-        +'<span class="co-name">'+esc(c.name)+'</span>'
-        +'<span class="co-cap '+cc+'">'+cl+'</span>'
+        +'<a class="co-ticker" href="#" onclick="openTicker(\''+tk+'\',\''+sn+'\');return false">'+esc(tk)+'</a>'
+        +(info.name&&info.name!==tk?'<span class="co-name">'+esc(info.name)+'</span>':'')
         +'</div>'
-        +'<div class="co-notes">'+esc(c.notes)+'</div>'
         +'</div>';
     }).join('')+'</div>'
     :'<div class="co-section co-empty"><p>No tickers tracked in this tier yet — run <code>/scout-tickers</code> to discover candidates.</p></div>';
@@ -1023,8 +1030,7 @@ function openTier(idx){
     crumbTrail(trail)
     +provenance
     +'<div class="tier-detail-name">'+esc(t.tier)+'</div>'
-    +'<div class="tier-section-hdr">What This Tier Does</div>'
-    +'<div class="tier-fn-full">'+esc(t.fn)+'</div>'
+    +(t.fn?'<div class="tier-section-hdr">What This Tier Does</div><div class="tier-fn-full">'+esc(t.fn)+'</div>':'')
     +chokeBlock
     +'<div class="tier-section-hdr">Investment Angle</div>'
     +investHtml
