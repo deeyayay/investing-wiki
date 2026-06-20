@@ -1842,12 +1842,22 @@ async function writeWatchlistMd(content){
   let raw='';
   for(let i=0;i<enc.length;i+=32768)raw+=String.fromCharCode(...enc.subarray(i,i+32768));
   const b64=btoa(raw);
-  const res=await fetch(WL_API,{
-    method:'PUT',
-    headers:{'Authorization':'Bearer '+pat,'Content-Type':'application/json'},
-    body:JSON.stringify({message:'Watchlist update via dashboard',content:b64,sha:_wlSha})
-  });
-  if(!res.ok){const d=await res.json().catch(()=>({}));throw new Error(d.message||'HTTP '+res.status);}
+  async function doPut(sha){
+    return fetch(WL_API,{
+      method:'PUT',
+      headers:{'Authorization':'Bearer '+pat,'Content-Type':'application/json'},
+      body:JSON.stringify({message:'Watchlist update via dashboard',content:b64,sha})
+    });
+  }
+  let res=await doPut(_wlSha);
+  if(!res.ok){
+    const d=await res.json().catch(()=>({}));
+    if(res.status===409||String(d.message||'').includes('does not match')){
+      await fetchWatchlistMd();
+      res=await doPut(_wlSha);
+    }
+    if(!res.ok){const d2=await res.json().catch(()=>({}));throw new Error(d2.message||'HTTP '+res.status);}
+  }
   const d=await res.json();
   if(d.content?.sha)_wlSha=d.content.sha;
 }
