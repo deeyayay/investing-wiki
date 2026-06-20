@@ -414,8 +414,26 @@ const DATA = {
       dimension: "D1",
       description: "NAND flash and non-volatile memory for AI storage and edge deployment",
       tiers: [
-        { tier: "NAND Flash Memory", fn: "Design and fabricate 3D NAND flash memory for enterprise SSDs, AI data storage, and edge devices using vertical charge-trap stacking at 200+ layers with CMOS bonding architecture", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Scale + Process IP", margin_profile: "High (cyclical)", companies: [
+        { tier: "HBM (High-Bandwidth Memory)", fn: "Design and manufacture high-bandwidth memory through 3D-stacked DRAM dies connected by through-silicon vias (TSVs), integrated into GPU packages via CoWoS — delivering 3–4 TB/s aggregate bandwidth per GPU that enables transformer attention operations at AI-training scale. Each H100 requires 6 HBM2e/3 stacks; HBM3E is the current AI-server standard.", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Process IP + CoWoS integration", margin_profile: "Very High (structural premium vs standard DRAM)", companies: [
+          { ticker: "MU", name: "Micron Technology", mkt_cap: "Large", notes: "US HBM3E ramp at Boise; targeting meaningful HBM3E share by end of 2024. Structural AI beneficiary with upcoming earnings 2026-06-24." },
+          { ticker: "000660.KS", name: "SK Hynix", mkt_cap: "Large", notes: "HBM3E market share leader (~50%+); sole-source supplier of NVIDIA H100/H200 HBM. Structural chokepoint today." },
+          { ticker: "005930.KS", name: "Samsung Electronics", mkt_cap: "Large", notes: "HBM3E yield ramp; targeting AI-server qualification in 2024–2025." }
+        ]},
+        { tier: "HBF (High-Bandwidth Flash)", fn: "Develop next-generation compute-near-storage flash architectures combining high-bandwidth NAND with embedded compute — enabling LLM inference at the storage tier for weight-capacity-constrained workloads where model parameters exceed DRAM capacity. Uses CXL 3.0 or PCIe 5.0 to stream transformer weights directly into GPU memory subsystems.", chokepoint: "N", capital_intensity: "High", moat_type: "Interface IP + Process IP", margin_profile: "High (emerging premium)", companies: [
+          { ticker: "SNDK", name: "SanDisk (WDC)", mkt_cap: "Large", notes: "HBF architecture pioneer; joint development with SK Hynix." },
+          { ticker: "000660.KS", name: "SK Hynix", mkt_cap: "Large", notes: "CXL NAND research program for HBF standard." }
+        ]},
+        { tier: "DRAM (System & Server Memory)", fn: "Manufacture DDR5 RDIMMs and LRDIMMs for AI inference servers, storage servers, and network equipment — providing the CPU-accessible system memory tier that runs orchestration software, KV-cache for LLM serving, and operating environments. Each AI server node carries 1–2TB of DDR5 host memory; DDR5 capacity per server doubles roughly every 2 years.", chokepoint: "Partial", capital_intensity: "Very High", moat_type: "Scale + Process IP", margin_profile: "High (cyclical)", companies: [
+          { ticker: "MU", name: "Micron Technology", mkt_cap: "Large", notes: "Largest US DRAM manufacturer; DDR5 and LPDDR5X production at multiple fabs." },
+          { ticker: "005930.KS", name: "Samsung Electronics", mkt_cap: "Large", notes: "Largest DRAM producer globally (~40% share) across DDR5, LPDDR, and HBM." },
+          { ticker: "000660.KS", name: "SK Hynix", mkt_cap: "Large", notes: "#2 DRAM globally; strong DDR5 server positioning." }
+        ]},
+        { tier: "NAND Flash (Storage)", fn: "Design and fabricate 3D NAND flash memory for enterprise SSDs, AI data storage, and edge devices using vertical charge-trap stacking at 200+ layers with CMOS bonding architecture", chokepoint: "Y", capital_intensity: "Very High", moat_type: "Scale + Process IP", margin_profile: "High (cyclical)", companies: [
           { ticker: "285A.T", name: "Kioxia Holdings Corporation", mkt_cap: "Large", notes: "World's #3 NAND flash manufacturer and inventor of NAND (Toshiba lineage, 1987). BiCS10 3D NAND at 332 layers leads on density and power efficiency. Only publicly traded large-scale pure-play NAND company; Flash Ventures JV with SanDisk shares capex across 9 Japan fabs." }
+        ]},
+        { tier: "LPDDR (Low-Power & Edge Memory)", fn: "Design and manufacture LPDDR5X DRAM for mobile, automotive, and edge AI inference — optimizing bandwidth-per-watt to enable on-device LLM inference at 7B+ parameter counts on thermally constrained edge devices (smartphones, automotive SoCs) without data center connectivity.", chokepoint: "N", capital_intensity: "Very High", moat_type: "Process IP + Mobile design-win lock-in", margin_profile: "Medium–High", companies: [
+          { ticker: "MU", name: "Micron Technology", mkt_cap: "Large", notes: "LPDDR5X production for Apple, Qualcomm, and automotive platforms." },
+          { ticker: "005930.KS", name: "Samsung Electronics", mkt_cap: "Large", notes: "LPDDR5X market leader; supplies major mobile SoC vendors." }
         ]}
       ]
     },
