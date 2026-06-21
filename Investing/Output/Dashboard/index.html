@@ -348,7 +348,7 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
     <input id="search-input" type="text" placeholder="Search tickers, sectors, tiers…" autocomplete="off" spellcheck="false">
     <div id="search-results" hidden></div>
   </div>
-  <span class="gen-date">Generated: 2026-06-20</span>
+  <span class="gen-date">Generated: 2026-06-21</span>
 </header>
 <div id="tab-nav">
   <button class="tab-btn active" data-tab="supply-chain" onclick="showTab('supply-chain')">Supply Chain</button>
@@ -365,7 +365,7 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 </div>
 <script>
 const DATA = {
-  generated: "2026-06-20",
+  generated: "2026-06-21",
   sectors: [
     {
       slug: "compute-hardware",
@@ -990,6 +990,78 @@ const DATA = {
         "Q2 2026 earnings (2026-07-30) — first key test of cost-cut benefit; watch automotive inventory destocking end; Q2 guided $190-200M / 17-20% EBITDA",
         "Automotive recovery inflection H2 2026 — Melexis (top automotive client) inventory normalization; XFAB guided \"steady recovery\" H2",
         "photonixFAB development milestone ~Oct 2026 — development phase complete per author estimate; risk production ramp begins; NVIDIA/Nokia consortium update expected"
+      ]
+    },
+    {
+      ticker: "ALAB",
+      name: "Astera Labs, Inc.",
+      category: "Watching",
+      strategy: "",
+      sector: "Interconnect",
+      tier: "Interconnect & SerDes Silicon",
+      exchange: "NASDAQ",
+      next_earnings: "2026-08-11",
+      score: 8.5,
+      thesis: "Pure-play AI connectivity semiconductor company whose PCIe/CXL retimers and Scorpio scale-up switches are the I/O fabric keeping GPU clusters from becoming bandwidth-bottlenecked.",
+      scoring: {product:4,pricing_power:4,leadership:4,financial_health:4,macro:5,future_potential:5,composite:8.5},
+      catalysts: [
+        "Scorpio X-Series production ramp — first meaningful revenue quarter (H2 2026)",
+        "Scorpio P-Series volume ramp — multiple customer shipments expected H2 2026; broader ramp 2027",
+        "Hyperscaler design wins for scale-up switching (displacing InfiniBand or custom)"
+      ]
+    },
+    {
+      ticker: "CRDO",
+      name: "Credo Technology Group Holding Ltd",
+      category: "Watching",
+      strategy: "",
+      sector: "Interconnect",
+      tier: "Interconnect & SerDes Silicon",
+      exchange: "NASDAQ",
+      next_earnings: "2026-09-09",
+      score: 8.0,
+      thesis: "Full-stack SerDes IP owner that has become the de facto AEC standard inside AI GPU clusters — FY2026 revenue tripled to $1.34B at 68% gross margins, now expanding to optical via Hyperlume.",
+      scoring: {product:4,pricing_power:4,leadership:4,financial_health:4,macro:4,future_potential:4,composite:8.0},
+      catalysts: [
+        "Q1 FY2027 earnings — expected 2026-09-02",
+        "Hyperlume microLED integration: first product announcement or design win (H1 FY2027)",
+        "1.6T AEC product launch and first hyperscaler volume orders (H2 2026)"
+      ]
+    },
+    {
+      ticker: "SNDK",
+      name: "SanDisk Corporation",
+      category: "Watching",
+      strategy: "",
+      sector: "Memory",
+      tier: "NAND Flash (Storage)",
+      exchange: "NASDAQ",
+      next_earnings: "2026-07-30",
+      score: 8.5,
+      thesis: "The pure-play NAND vehicle for the agentic-AI and brain-scale data wave — and the pioneer of High-Bandwidth Flash (HBF), a NAND-based, HBM-class-bandwidth memory at 8–16× the capacity that gives flash an HBM-adjacent TAM it never had.",
+      scoring: {product:4,pricing_power:5,leadership:3,financial_health:5,macro:5,future_potential:4,composite:8.5},
+      catalysts: [
+        "Q4 FY2026 results (~July 30, 2026): $7.75–8.25B revenue guided; Non-GAAP EPS $30–33; watch 128TB SSD ramp contribution and Datacenter mix shift",
+        "Q4 FY2026: 128TB enterprise SSD begins shipping — first AI-optimized high-capacity drive; not yet in revenue as of Q3 results",
+        "NBM contract expansion beyond current 5 hyperscalers — each new signing extends the contracted revenue floor"
+      ]
+    },
+    {
+      ticker: "285A.T",
+      name: "KIOXIA Holdings Corporation",
+      category: "Watching",
+      strategy: "",
+      sector: "Memory",
+      tier: "NAND Flash (Storage)",
+      exchange: "TSE (Tokyo) — Prime Market",
+      next_earnings: null,
+      score: 6.5,
+      thesis: "Kioxia's BiCS FLASH 3D NAND IP and Flash Ventures fab scale make it the pure-play beneficiary of AI-driven NAND storage demand.",
+      scoring: {product:3,pricing_power:3,leadership:2,financial_health:4,macro:4,future_potential:3,composite:6.5},
+      catalysts: [
+        "Q1 FY2026 earnings (Apr–Jun 2026 quarter) — expected late July/August 2026; watch BiCS10 ramp yield, NAND ASP, and operating margin",
+        "Bain Capital secondary offering activity — overhang risk; any reduction in stake is positive",
+        "Flash Ventures capex update — Kitakami Fab 2 ramp timeline"
       ]
     }
   ]
