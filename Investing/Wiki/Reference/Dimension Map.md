@@ -40,6 +40,7 @@ Folder names now match layer names 1:1 — no slug overrides needed in the dashb
 | Rail | `Power Infrastructure` | Generation → grid → rack → board | partial | `_Supply Chain Map.md` — from Clean Energy |
 | Rail | `Security` | Wraps every layer; identity · endpoint · network | partial | `_Supply Chain Map.md` — from Cybersecurity |
 | Surface | `Edge & Physical AI` | Physical-world deployment + parallel compute | partial | `_Supply Chain Map.md` — from Robotics & Edge AI; Space & Comms merged in |
+| Adjacent | `Space` | Launch services · space systems · satellite infrastructure | planned | not yet created; run `/map-sector "Space"` |
 | Cross | `Electronic Components` | Passives · discretes · PCB (cross-layer; doesn't fit one L) | partial | `_Supply Chain Map.md` — moved to Advanced Packaging/ |
 
 **Status values:**

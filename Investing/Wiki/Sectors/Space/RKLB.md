@@ -151,3 +151,4 @@ The critical risk is Neutron execution. The current valuation prices in meaningf
 - **May 18, 2026** — 📊 MONITOR | Q1 2026 earnings filed May 7: record $200.3M rev (+63.5% YoY), $2.2B backlog, largest-ever contract; Neutron 5-launch deal booked pre-flight; Q4 2026 debut target maintained; Stage 1 tank rupture in Jan 2026 noted as schedule risk.
 - **June 2, 2026** — stock-research run. All fundamental sections (One-Line Thesis, Investment Thesis, Management & Leadership) already populated from May 18 add-ticker run — no updates required. No --refresh flag passed.
 - **June 2, 2026** — Scored — Composite 7.0/10 Strong | P:4 PP:3 L:4 FH:2 ME:4 FP:4
+- **2026-06-21** — Moved from Edge & Physical AI sector to dedicated Space sector. Monitor Registry.yaml and Dimension Map.md updated.
