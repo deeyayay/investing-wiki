@@ -292,6 +292,51 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 .co-section-count{font-size:11px;color:#9ca3af;font-weight:500}
 .co-empty{background:#f9fafb;border:1px dashed #d1d5db;border-radius:8px;padding:16px;color:#6b7280;font-size:13px;text-align:center}
 .co-empty code{background:#e5e7eb;padding:1px 5px;border-radius:3px;font-size:12px}
+/* ── Watchlist tab ─────────────────────────────────────────────────────────── */
+#watchlist{padding:40px 32px;max-width:1200px;margin:0 auto}
+.wl-page-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:12px}
+.wl-title{font-size:22px;font-weight:700}
+.wl-auth-ok{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted)}
+.wl-btn{padding:6px 12px;border:1px solid var(--border);border-radius:6px;font-size:12px;background:var(--bg2);cursor:pointer;color:var(--text);font-family:inherit}
+.wl-btn:hover{background:var(--bg3)}
+.wl-btn.primary{background:oklch(92% .10 278);color:var(--d1);border-color:oklch(80% .08 278)}
+.wl-pat-prompt{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:18px 20px;margin-bottom:24px}
+.wl-pat-prompt strong{font-size:13px}
+.wl-pat-row{display:flex;gap:8px;margin-top:10px;align-items:center;flex-wrap:wrap}
+.wl-pat-input{padding:7px 10px;border:1px solid var(--border);border-radius:6px;font-size:12px;background:var(--bg);color:var(--text);width:260px;font-family:monospace}
+.wl-pat-note{font-size:11px;color:var(--muted);margin-top:6px}
+.wl-add-row{display:flex;gap:8px;align-items:center;margin-bottom:32px;flex-wrap:wrap}
+.wl-add-input{padding:7px 12px;border:1px solid var(--border);border-radius:6px;font-size:13px;background:var(--bg);color:var(--text);width:140px;font-family:inherit}
+.wl-add-input::placeholder{color:var(--muted)}
+.wl-section-hdr{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:14px;margin-top:36px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.wl-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:16px}
+.wl-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:20px}
+.wl-card-hdr{display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+.wl-ticker{font-family:monospace;font-weight:700;font-size:16px}
+.wl-name{font-size:12px;color:var(--muted);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.wl-score-badge{font-size:11px;font-weight:700;padding:3px 9px;border-radius:99px;flex-shrink:0;white-space:nowrap}
+.wl-score-badge.high{background:oklch(91% .12 142);color:oklch(30% .18 142)}
+.wl-score-badge.mid{background:var(--amber-bg);color:var(--amber)}
+.wl-score-badge.none{background:var(--bg3);color:var(--muted)}
+.wl-remove{background:none;border:none;cursor:pointer;font-size:18px;color:var(--muted);padding:0 4px;line-height:1;flex-shrink:0}
+.wl-remove:hover{color:var(--text)}
+.wl-meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.wl-pill{font-size:11px;padding:2px 8px;border-radius:99px;background:var(--bg3);color:var(--muted)}
+.wl-pill.soon{background:oklch(97% .07 75);color:var(--amber);border:1px solid oklch(82% .14 62)}
+.wl-thesis{font-size:13px;font-style:italic;color:var(--muted);margin-bottom:14px;line-height:1.6}
+.wl-block-hdr{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:8px;margin-top:14px}
+.wl-score-table{width:100%;border-collapse:collapse;font-size:11px;margin-bottom:4px}
+.wl-score-table td{padding:4px 6px;border-bottom:1px solid var(--border)}
+.wl-score-table tr:last-child td{border-bottom:none;font-weight:700}
+.wl-score-val{font-family:monospace;color:var(--text);white-space:nowrap;text-align:right}
+.wl-bar{display:inline-block;height:3px;border-radius:2px;background:oklch(62% .18 142);vertical-align:middle;margin-left:4px;opacity:.7}
+.wl-cat-list{list-style:none;padding:0;margin-bottom:4px}
+.wl-cat-item{font-size:12px;padding:3px 0 3px 22px;position:relative;color:var(--text);line-height:1.5}
+.wl-cat-item::before{content:'☐';position:absolute;left:0;color:var(--muted)}
+.wl-stub{font-size:12px;color:var(--muted);font-style:italic;padding:6px 0;margin:0}
+.wl-empty{text-align:center;padding:60px 0;color:var(--muted);font-size:13px;line-height:2}
+.wl-loading{color:var(--muted);font-size:13px;padding:40px 0;text-align:center}
+@media(max-width:600px){#watchlist{padding:16px}.wl-cards{grid-template-columns:1fr}.wl-add-row{flex-direction:column;align-items:stretch}}
 </style>
 </head>
 <body>
@@ -308,6 +353,7 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 <div id="tab-nav">
   <button class="tab-btn active" data-tab="supply-chain" onclick="showTab('supply-chain')">Supply Chain</button>
   <button class="tab-btn" data-tab="tech-races" onclick="showTab('tech-races')">Tech Races</button>
+  <button class="tab-btn" data-tab="watchlist" onclick="showTab('watchlist')">Watchlist</button>
 </div>
 <div id="l0"></div>
 <div id="l1" hidden></div>
@@ -315,6 +361,7 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 <div id="l3" hidden></div>
 <div id="tech-races" hidden></div>
 <div id="tech-race-detail" hidden></div>
+<div id="watchlist" hidden></div>
 </div>
 <script>
 const DATA = {
@@ -352,6 +399,23 @@ const DATA = {
           { ticker: "NXPI", name: "NXP Semiconductors", mkt_cap: "Large", notes: "Dominates automotive microcontrollers and in-vehicle networking chips — an average car shipped today contains 5–7 NXP MCUs. Also leads in secure NFC chips used in contactless payments and access control, a defensive revenue stream alongside automotive." },
           { ticker: "QBTS", name: "D-Wave Quantum", mkt_cap: "Small", notes: "The only publicly traded quantum annealer — solves discrete optimization problems (routing, scheduling, logistics) using a different architecture than gate-based quantum computers. Commercially deployed with enterprise customers; not a general-purpose computer and not directly competing with IBM or Google Quantum." },
           { ticker: "RGTI", name: "Rigetti Computing", mkt_cap: "Small", notes: "Gate-based quantum computing startup building full-stack hardware and cloud access for quantum algorithms — competing against IBM Quantum and Google Quantai for developer mindshare. Pre-revenue at scale; the thesis is quantum provides exponential speedup for specific problem classes." }
+        ]},
+        { tier: "AI Training GPUs", fn: "Design and sell GPU architectures optimized for the parallel tensor operations required by large-scale AI model training. Training GPUs must maximize floating-point throughput (FLOPS), HBM memory bandwidth (to feed the tensor cores), and inter-GPU communication bandwidth (to enable the distributed training strategies that split 100B+ parameter models across thousands of devices). NVIDIA dominates this tier with the H100 and B200 architectures, which pair 3.35–10+ PFLOPS of FP8/FP4 tensor throughput with up to 8TB/s of HBM3e bandwidth and NVLink-900 interconnect — enabling scale-up to 72 GPUs per DGX B200 system. AMD's MI300X competes on memory bandwidth (5.3TB/s, 192GB HBM3) but trails on software ecosystem depth. Training GPU margins are exceptional: NVDA reports GPU gross margins exceeding 70%, sustained by CUDA lock-in, NVIDIA's supply chain control of TSMC CoWoS capacity, and a 12–18 month demand backlog.", chokepoint: "Y", capital_intensity: "High", moat_type: "CUDA ecosystem + CoWoS supply chain control + first-mover", margin_profile: "Very High — NVDA 70%+ GPU gross margin", companies: [
+          { ticker: "NVDA", name: "NVIDIA", mkt_cap: "Large", notes: "Designs the H100/B200/GB200 training accelerators that run 85%+ of frontier model training runs globally. CUDA ecosystem, CoWoS packaging control, and NVLink interconnect make switching to alternatives a multi-year effort." },
+          { ticker: "AMD", name: "Advanced Micro Devices", mkt_cap: "Large", notes: "MI300X offers 192GB HBM3 and 5.3TB/s bandwidth — outpacing H100 on memory but trailing on CUDA compatibility. ROCm is years behind the CUDA ecosystem, limiting MI300X primarily to customers willing to invest in porting." }
+        ]},
+        { tier: "AI Inference GPUs", fn: "Design and sell GPUs optimized for running trained models in production — serving inference requests at low latency, high throughput, and low cost-per-token. Inference GPU requirements differ materially from training: lower precision arithmetic (INT8/FP8), higher memory capacity to fit large model weights, and better power efficiency (cost per query is the economic metric, not time-to-train). NVIDIA's H100/L40S/H200 dominate enterprise inference; the NIM microservices platform adds software value on top. At scale, inference spend is projected to exceed training spend by 2027 as model deployment eclipses development — making inference GPU economics the central question in AI compute. Both NVIDIA and AMD are major beneficiaries, but custom hyperscaler ASICs (AWS Inferentia, Google TPU) increasingly divert internal inference workloads from merchant GPUs.", chokepoint: "Partial", capital_intensity: "High", moat_type: "CUDA software ecosystem + NIM inference stack", margin_profile: "Very High — driven by inference scaling demand", companies: [
+          { ticker: "NVDA", name: "NVIDIA", mkt_cap: "Large", notes: "H100/L40S/H200 dominate enterprise inference deployments. NIM microservices and TensorRT inference optimization deepen the software lock-in beyond hardware." },
+          { ticker: "AMD", name: "Advanced Micro Devices", mkt_cap: "Large", notes: "MI300X series targets inference use cases with high HBM capacity enabling larger model batches. ROCm inference support improving but still lags CUDA in library coverage." }
+        ]},
+        { tier: "Custom AI ASICs", fn: "Design custom AI accelerators on behalf of hyperscalers and large technology companies, typically under multi-year exclusive chip development agreements. Unlike merchant GPUs sold to the open market, custom ASICs are purpose-built for a single customer's model architecture and data center fabric — allowing hyperscalers to achieve 2–5x better efficiency than general-purpose GPUs at the cost of flexibility. ASIC design services are provided by semiconductor IP companies (Broadcom, Marvell) that handle chip architecture, physical design, and verification while the hyperscaler defines the compute specification. The business model is high-value and annuity-like: once a hyperscaler trains internal teams on a custom ASIC generation, switching to a competing chip designer involves 2–3 year re-design cycles. Google (TPU), Amazon (Trainium/Inferentia), Meta (MTIA), and Microsoft (Maia) have all commissioned custom silicon that displaces NVIDIA GPUs for internal inference workloads.", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Long-term chip development agreements + hyperscaler switching cost", margin_profile: "High — high-value IP and design-services contracts", companies: [
+          { ticker: "AVGO", name: "Broadcom", mkt_cap: "Large", notes: "Designs the TPU for Google and custom AI ASICs for Meta — its XPU business is among the fastest-growing segments, with $60–90B TAM guidance for AI ASICs by 2027. Broadcom's semiconductor IP depth and packaging expertise make it the default custom silicon partner for hyperscalers." },
+          { ticker: "MRVL", name: "Marvell Technology", mkt_cap: "Large", notes: "Primary custom ASIC partner for Amazon (Trainium 2) and Microsoft (Maia 2) — competing directly with Broadcom for hyperscaler custom silicon contracts. Marvell's optical interconnect and SerDes IP integrate tightly with the compute die, providing differentiated system-level performance." }
+        ]},
+        { tier: "Dedicated Inference Accelerators", fn: "Purpose-built silicon architectures optimized exclusively for AI inference — sacrificing training flexibility to achieve step-change improvements in inference efficiency. Unlike general-purpose GPUs that perform both training and inference, dedicated accelerators are architected from first principles for inference workloads: deterministic memory access patterns, compiled execution graphs, and hardware pipelines that eliminate GPU scheduling overhead. Groq's LPU achieves sub-millisecond token generation by eliminating DRAM bottlenecks with on-chip SRAM; Cerebras WSE uses a wafer-scale die to fit entire model weights in on-chip memory. The market is commercially nascent: no pure-play dedicated inference accelerator company is currently publicly traded at meaningful scale. As inference query volumes reach billions per day per application, the cost-per-token advantage of purpose-built silicon over general GPUs becomes material — but ecosystem fragmentation (each architecture requires separate model compilation) limits adoption beyond the most price-sensitive inference operators.", chokepoint: "N", capital_intensity: "High", moat_type: "Architecture specialization — customer traction early-stage", margin_profile: "Unknown — market pre-scale; no public comparables", companies: [] },
+        { tier: "Server CPUs", fn: "Design the x86 and ARM processor architectures that run the AI data center management plane — orchestrating GPU scheduling, running inference serving frameworks (vLLM, TensorRT-LLM), processing agentic workflow logic, and executing the millions of non-tensor operations in every AI pipeline. Every GPU server contains 1–2 server CPUs responsible for memory management, I/O coordination, and job scheduling; every inference cluster runs the model serving stack on CPUs before dispatching tensor compute to accelerators. AI is not a CPU TAM contraction story: the shift to inference-dominated compute expands CPU demand, as agentic applications (multi-step reasoning, tool use, retrieval pipelines) interleave heavy CPU orchestration with GPU inference calls. ARM's architecture dominates mobile and is rapidly gaining data center ground via AWS Graviton, Ampere Altra, and NVIDIA Grace CPU; Intel's Xeon remains the installed-base incumbent while Xeon 6 targets AI-adjacent workloads.", chokepoint: "N", capital_intensity: "High", moat_type: "ISA lock-in (x86: Intel) + architecture licensing (ARM)", margin_profile: "Medium–High — Intel data center declining; ARM licensing growing", companies: [
+          { ticker: "ARM", name: "Arm Holdings", mkt_cap: "Large", notes: "Licenses the ARM ISA used in AWS Graviton, Apple M-series, NVIDIA Grace, and Qualcomm Oryon server CPUs — capturing royalties on every ARM-architecture data center chip shipped. AI accelerates ARM's data center penetration as hyperscalers build custom Grace/Graviton CPUs to co-package with GPU accelerators." },
+          { ticker: "INTC", name: "Intel Corporation", mkt_cap: "Large", notes: "Xeon server CPUs power most of the installed x86 data center base — but Intel is losing share in AI-adjacent workloads to ARM-architecture alternatives. Xeon 6 and Gaudi AI accelerator attempt to recapture relevance in AI data centers." }
         ]},
         { tier: "Interconnect & SerDes Silicon", fn: "Design the retimers, SerDes PHYs, and PCIe/CXL connectivity chips that move data between accelerators, between servers, and across the rack at 112G/224G per lane — the electrical signaling layer that lets compute and memory talk", chokepoint: "Partial", capital_intensity: "Low–Medium", moat_type: "Process IP + Switching cost", margin_profile: "Very High", companies: [
           { ticker: "ALAB", name: "Astera Labs", mkt_cap: "Mid", notes: "Makes the signal-booster (retimer) chips that keep AI servers connected at full speed as rack counts scale — a bottleneck that only appeared when GPU clusters grew to thousands of cards, creating a niche with no entrenched incumbent." },
@@ -418,7 +482,9 @@ const DATA = {
       description: "populated PCB ready for system assembly",
       tiers: [
         { tier: "Dielectric & Conductor Materials", fn: "Synthesize and refine the functional dielectric ceramics, conductive metal powders, and resistive compositions that passive electronic components are built from. Dielectric materials for MLCCs are barium titanate (BaTiO₃) formulations — engineered ceramic powders with precise particle size distribution and dopant chemistry that determine the capacitor's permittivity, temperature coefficient, and voltage coefficient. Conductor materials are silver and silver-palladium pastes printed as internal electrodes, with the palladium content driven by the cofiring temperature the ceramic body requires. Resistive compositions for thick-film resistors are ruthenium oxide (RuO₂) dispersed in glass matrix. The materials at this tier are technically sophisticated despite being invisible in the final component: the step from 1210 to 0402 MLCC case sizes required ceramic powder refinement to sub-100nm particle sizes so that each dielectric layer could be thinned from 20 microns to under 1 micron. Supply is geographically concentrated in Japan (TDK, Murata, Kyocera) and Taiwan (Yageo), with the ceramic powder and conductor paste supply chains concentrated within those same ecosystems.", chokepoint: "Y", capital_intensity: "Medium", moat_type: "Process IP + Geographic monopoly", margin_profile: "Medium", companies: [] },
-        { tier: "Substrate & Laminate Materials", fn: "Produce the insulating base materials — woven glass fiber-reinforced epoxy laminates (FR-4, high-speed MEGTRON, low-loss Rogers), build-up film laminates (ABF, RCF), and specialty ceramic substrates — on which printed circuit boards and IC substrates are constructed. Substrate and laminate materials sit at the crossroads of chemistry, materials science, and electronics manufacturing: the dielectric constant, dissipation factor, and glass transition temperature (Tg) of a PCB laminate directly determine signal propagation speed, insertion loss at high frequency, and thermal reliability — properties that must be co-optimized as AI server boards push 112G/224G signal speeds. Ajinomoto Build-up Film (ABF) is the critical enabling material for advanced IC substrates used in flip-chip BGA packages: its ultra-fine insulation layers (15–25 micron lines/spaces) and laser-drillable microvias enable the fan-out routing between a chip's 10,000+ C4 bumps and the PCB's coarser BGA pattern. ABF supply is controlled by a single company (Ajinomoto Fine-Techno), making it a documented supply chain chokepoint: during the 2020–2021 semiconductor shortage, ABF substrate availability constrained PC, server, and GPU production for 18 months.", chokepoint: "Y", capital_intensity: "Medium", moat_type: "Process IP + Qualification", margin_profile: "Medium–High", companies: [] },
+        { tier: "Substrate & Laminate Materials", fn: "Produce the insulating base materials — woven glass fiber-reinforced epoxy laminates (FR-4, high-speed MEGTRON, low-loss Rogers), build-up film laminates (ABF, RCF), and specialty ceramic substrates — on which printed circuit boards and IC substrates are constructed. Substrate and laminate materials sit at the crossroads of chemistry, materials science, and electronics manufacturing: the dielectric constant, dissipation factor, and glass transition temperature (Tg) of a PCB laminate directly determine signal propagation speed, insertion loss at high frequency, and thermal reliability — properties that must be co-optimized as AI server boards push 112G/224G signal speeds. Ajinomoto Build-up Film (ABF) is the critical enabling material for advanced IC substrates used in flip-chip BGA packages: its ultra-fine insulation layers (15–25 micron lines/spaces) and laser-drillable microvias enable the fan-out routing between a chip's 10,000+ C4 bumps and the PCB's coarser BGA pattern. ABF supply is controlled by a single company (Ajinomoto Fine-Techno), making it a documented supply chain chokepoint: during the 2020–2021 semiconductor shortage, ABF substrate availability constrained PC, server, and GPU production for 18 months.", chokepoint: "Y", capital_intensity: "Medium", moat_type: "Process IP + Qualification", margin_profile: "Medium–High", companies: [
+          { ticker: "LPK", name: "LPKF Laser & Electronics SE", mkt_cap: "Small", notes: "Sole-source LIDE laser drilling equipment for through-glass via (TGV) formation in glass core substrates; NEXAR platform; HVM ramp 2027" }
+        ] },
         { tier: "MLCC Manufacturing", fn: "Stack hundreds of alternating ceramic dielectric and metal electrode layers, cofiring them in a kiln at 1,200°C, then terminating the fired block with conductive end caps to produce multilayer ceramic chip capacitors (MLCCs) — the most ubiquitous passive component in electronics, with approximately 4 trillion units consumed globally per year. MLCCs are the decoupling capacitors that stabilize power delivery to every digital chip: a modern server CPU requires 300–500 MLCCs in its power delivery network to suppress voltage transients during fast load steps; an NVIDIA H100 GPU server contains 10,000+ MLCCs across the mainboard and GPU module. MLCC manufacturing is a precision ceramic process: dielectric layers must be cast as 1–3 micron green ceramic tapes, printed with sub-micron silver electrode patterns, stacked with 200–1,000 alternating layers, and cofired without delamination or camber. The global MLCC market is a tight oligopoly — Murata (~40% share), TDK, Samsung Electro-Mechanics, and Yageo — with the top four players controlling ~80% of volume. AI-server-grade MLCCs command premium pricing due to the X7R/X7T dielectric specification required for stability under the high-frequency switching currents in GPU power delivery networks.", chokepoint: "Partial", capital_intensity: "High", moat_type: "Scale + Process IP", margin_profile: "Medium–High", companies: [
           { ticker: "VSH", name: "Vishay Intertechnology", mkt_cap: "Mid", notes: "Broad-line passives + discretes maker; a quiet AI-server beneficiary as MLCC and passive content per board multiplies. One of the few US-listed full-line passive franchises." }
         ] },
@@ -569,13 +635,16 @@ const DATA = {
           { ticker: "NVT", name: "nVent Electric", mkt_cap: "Large", notes: "Makes thermal management enclosures and power protection systems for datacenters and industrial facilities — its Thermal Management segment directly serves high-density AI server rack deployments. A quieter Vertiv competitor with more diversified end-market exposure." }
         ]},
         { tier: "Data Center Facility & MEP", fn: "Construct and operate the physical plant — civil structure, mechanical systems, electrical infrastructure, plumbing (MEP), and physical security — that provides the controlled environment in which compute hardware operates. Facility is the longest lead-time element in the AI compute buildout: permitting, environmental review, utility interconnect agreements, and construction combine to create 18–36 month delivery timelines that no engineering can compress. AI-optimized facilities require substantially different mechanical design than legacy data centers: reinforced floors for 100kW+ liquid-cooled rack weights, rooftop chiller plants or cooling towers sized for three to five times historical thermal density, on-site 10–40MW substations, and dedicated dark fiber entries. Hyperscalers are committing $200B+ annually to new data center construction globally; critical markets (Northern Virginia, Phoenix, Singapore, Frankfurt, Tokyo) face severe power and land availability constraints that make site control itself a competitive moat. No publicly traded pure-play data center construction company exists independently of large diversified engineering conglomerates.", chokepoint: "N", capital_intensity: "Very High", moat_type: "Geographic monopoly", margin_profile: "Medium", companies: [] },
-        { tier: "Hyperscaler & Colocation Operation", fn: "Operate the data center as a service platform — provision capacity, manage workloads, sell compute, storage, and network as consumption-priced services, and maintain SLA commitments across a global footprint. Hyperscalers and colocation operators are the monetization layer of the entire AI compute stack, aggregating hardware from every lower tier into APIs that enterprises and AI labs access without owning infrastructure. AWS, Azure, and GCP collectively control roughly 65% of cloud infrastructure spending; their AI-optimized GPU instances run on the same NVIDIA silicon that enterprises wait months to receive directly. The growth dynamic is two-sided: hyperscalers invest $200B+ annually in GPU cluster expansion while simultaneously developing custom AI silicon (AWS Trainium, Google TPU, Microsoft Maia, Meta MTIA) to reduce per-inference COGS and NVIDIA dependency. AI-native GPU clouds (CoreWeave, Lambda Labs) serve labs that prefer bare-metal access without managed cloud overhead, typically booking capacity 12–48 months in advance on contract. Revenue visibility across this tier is exceptionally high.", chokepoint: "Partial", capital_intensity: "Very High", moat_type: "Scale + Ecosystem", margin_profile: "High", companies: [
-          { ticker: "IREN", name: "IREN Limited", mkt_cap: "Mid", notes: "A former Bitcoin miner converting its cheap-power sites into AI compute rental — backed by anchor contracts with NVIDIA and Microsoft, with a permitted power pipeline that no non-hyperscaler GPU operator can match." },
+        { tier: "Hyperscaler Cloud Platforms", fn: "Operate the data center as a service platform — provision capacity, manage workloads, sell compute, storage, and network as consumption-priced services, and maintain SLA commitments across a global footprint. Hyperscalers are the monetization layer of the entire AI compute stack, aggregating hardware from every lower tier into APIs that enterprises and AI labs access without owning infrastructure. AWS, Azure, and GCP collectively control roughly 65% of cloud infrastructure spending; their AI-optimized GPU instances run on the same NVIDIA silicon that enterprises wait months to receive directly. The growth dynamic is two-sided: hyperscalers invest $200B+ annually in GPU cluster expansion while simultaneously developing custom AI silicon (AWS Trainium, Google TPU, Microsoft Maia, Meta MTIA) to reduce per-inference COGS and NVIDIA dependency. The hyperscaler model is fundamentally different from AI-specialized neoclouds: hyperscalers compete on breadth of managed developer services, global footprint, and enterprise relationships — not raw GPU access. Revenue visibility is exceptionally high, with multi-year enterprise commitments and consumption-based growth.", chokepoint: "Partial", capital_intensity: "Very High", moat_type: "Scale + Ecosystem + Enterprise lock-in", margin_profile: "High", companies: [
           { ticker: "AMZN", name: "Amazon (AWS)", mkt_cap: "Large", notes: "AWS is the #1 cloud platform by revenue, powering most enterprise AI deployments — also developing custom silicon (Trainium for training, Inferentia for inference) to cut NVIDIA dependence. Cloud distribution plus in-house AI silicon gives AWS unique long-run unit economics." },
           { ticker: "GOOGL", name: "Alphabet (GCP)", mkt_cap: "Large", notes: "GCP is the AI-native cloud with the deepest TPU integration — Google trains Gemini on its own hardware, giving it AI model and infrastructure advantages no other cloud replicates at the same depth. Also the most advanced in custom AI silicon design." },
           { ticker: "MSFT", name: "Microsoft (Azure)", mkt_cap: "Large", notes: "Azure is NVIDIA's largest single customer — its OpenAI partnership and Copilot integration make it the enterprise AI deployment platform of choice. The only hyperscaler with a locked-in AI application distribution advantage via Microsoft 365." },
           { ticker: "META", name: "Meta Platforms", mkt_cap: "Large", notes: "Runs the world's largest private AI compute cluster outside China — building its own AI inference servers (Grand Teton) and custom silicon (MTIA) to serve 3.3B daily users without external cloud costs." },
           { ticker: "ORCL", name: "Oracle Cloud", mkt_cap: "Large", notes: "Oracle Cloud Infrastructure (OCI) is the fastest-growing hyperscaler by percentage — its bare-metal GPU cluster model is preferred by AI labs wanting raw compute without cloud overhead. Increasingly the neutral cloud that AWS/Azure customers use to avoid vendor lock-in." }
+        ]},
+        { tier: "NeoClouds & AI-Specialized Cloud", fn: "AI-specialized GPU cloud providers that offer bare-metal or near-bare-metal GPU cluster access without the managed service overhead of hyperscalers. Unlike AWS, Azure, and GCP (which wrap GPU compute in proprietary managed services), neoclouds sell raw compute capacity — dedicated InfiniBand-connected H100/H200/B200 clusters — directly to AI labs and enterprises that need full hardware control for training runs. The neocloud model is fundamentally different from hyperscaler cloud: neoclouds compete on GPU supply access, interconnect fabric quality, and colocation economics rather than the breadth of developer services. Revenue visibility is high but fragile: long-term GPU contracts (12–48 months) provide backlog clarity, but the model depends on maintaining GPU supply relationships (NVIDIA allocation) and securing anchor customers before clusters are built. Margin dynamics are squeezed on both sides — NVIDIA controls GPU pricing upstream while AWS/Azure/GCP compete on price for enterprise workloads downstream.", chokepoint: "Partial", capital_intensity: "Very High", moat_type: "GPU allocation access + bare-metal customer relationships", margin_profile: "Medium–High — high revenue per GPU-hour; exposed to NVIDIA pricing and hyperscaler competition", companies: [
+          { ticker: "CRWV", name: "CoreWeave", mkt_cap: "Large", notes: "The only pure-play public neocloud — 45,000+ H100s plus growing B200 fleet, anchored by a $10B+ Microsoft GPU lease contract. Built on NVIDIA-exclusive InfiniBand fabric, giving it latency advantages for frontier model training that AWS/Azure managed GPU instances cannot match." },
+          { ticker: "IREN", name: "IREN Limited", mkt_cap: "Mid", notes: "Former Bitcoin miner converting cheap-power sites to AI GPU compute with anchor contracts with NVIDIA and Microsoft. Permitted power pipeline that no non-hyperscaler GPU operator can match at comparable cost basis." }
         ]}
       ]
     },
@@ -848,6 +917,7 @@ const DATA = {
         { ticker: "MU", technology: "HBM + NAND + CXL", exposure: "Partial", weighting: "Market weight" },
         { ticker: "ALAB", technology: "CXL memory fabric / retimers", exposure: "Partial", weighting: "Market weight" },
         { ticker: "COHR", technology: "Photonic interconnect (data movement)", exposure: "Indirect", weighting: "No direct weighting change" },
+        { ticker: "LITE", technology: "Photonic interconnect (data movement)", exposure: "Indirect", weighting: "No direct weighting change" },
         { ticker: "CIEN", technology: "Coherent DWDM (scale-across)", exposure: "Indirect", weighting: "No direct weighting change" },
         { ticker: "BRCHF", technology: "Neuromorphic / in-memory compute", exposure: "Speculative", weighting: "Starter / watch only" },
         { ticker: "LRCX", technology: "NAND / HARC capex equipment", exposure: "Indirect", weighting: "No direct weighting change" }
@@ -871,9 +941,60 @@ const DATA = {
         "Neuromorphic has been 'near commercialization' for a decade; BrainChip is micro-cap and deeply pre-profit"
       ]
     }
+  ],
+  watchlist: [
+    {
+      ticker: "SIVE",
+      name: "Sivers Semiconductors",
+      category: "Watching",
+      strategy: "",
+      sector: "Interconnect",
+      tier: "III-V Substrate & Epitaxial Wafer Growth",
+      exchange: "Nasdaq Stockholm",
+      next_earnings: null,
+      score: 5.5,
+      thesis: "",
+      scoring: null,
+      catalysts: null
+    },
+    {
+      ticker: "BESI",
+      name: "BE Semiconductor Industries N.V.",
+      category: "Watching",
+      strategy: "",
+      sector: "Advanced Packaging",
+      tier: "Advanced Packaging (CoWoS / SoIC)",
+      exchange: "Euronext Amsterdam",
+      next_earnings: "2026-07-24",
+      score: 8.0,
+      thesis: "The dominant pure-play advanced packaging equipment maker with ~75% advanced die attach share and #1 position in hybrid bonding — the interconnect technology that defines post-Moore AI chip scaling.",
+      scoring: {product:4,pricing_power:4,leadership:4,financial_health:4,macro:4,future_potential:4,composite:8.0},
+      catalysts: [
+        "Q2 2026 earnings (~July 24, 2026) — verify +30-40% QoQ guidance execution and hybrid bonding customer expansion",
+        "Hybrid bonding customer base crosses 25 — signals mainstream adoption inflection",
+        "TSMC SoIC-X HVM ramp announcement — most important downstream demand signal for BESI hybrid bonding"
+      ]
+    },
+    {
+      ticker: "XFAB",
+      name: "X-FAB Silicon Foundries",
+      category: "Watching",
+      strategy: "",
+      sector: "Semiconductor Foundry",
+      tier: "Wafer Fabrication (Foundry / IDM)",
+      exchange: "Euronext Paris (EPA:XFAB) / OTC US: XFABF",
+      next_earnings: "2026-07-30",
+      score: 6.5,
+      thesis: "EU's designated silicon photonics foundry for sovereign CPO supply chains — NVIDIA and Nokia consortium partner under photonixFAB — trading near multi-year lows on automotive/SiC drag while the photonics option is priced at zero.",
+      scoring: {product:4,pricing_power:3,leadership:2,financial_health:3,macro:4,future_potential:4,composite:6.5},
+      catalysts: [
+        "Q2 2026 earnings (2026-07-30) — first key test of cost-cut benefit; watch automotive inventory destocking end; Q2 guided $190-200M / 17-20% EBITDA",
+        "Automotive recovery inflection H2 2026 — Melexis (top automotive client) inventory normalization; XFAB guided \"steady recovery\" H2",
+        "photonixFAB development milestone ~Oct 2026 — development phase complete per author estimate; risk production ramp begins; NVIDIA/Nokia consortium update expected"
+      ]
+    }
   ]
 };
-
 
 let activeSector=null;
 let activeTierIdx=null;
@@ -894,6 +1015,7 @@ function showLayer(n){
   document.getElementById("l3").hidden=n!==3;
   document.getElementById("tech-races").hidden=true;
   document.getElementById("tech-race-detail").hidden=true;
+  document.getElementById("watchlist").hidden=true;
   document.querySelectorAll(".tab-btn").forEach(b=>b.classList.toggle("active",b.dataset.tab==="supply-chain"));
 }
 
@@ -916,24 +1038,24 @@ const STACK={
       {"label":"Model Orchestration & Agentic Frameworks","sector":"AI Model","slug":"ai-model","tier":"Model API & Developer Platform","chips":["CFLT"]}
     ]},
     {"num":"03","name":"Software Infrastructure","hue":268,"tag":"frameworks · kernels · orchestration","boxes":[
-      {"label":"ML Frameworks (training)","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"Distributed Training Orchestration","chips":["CRWV","AMD"]},
-      {"label":"GPU Programming Layer (low-level kernels)","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"Distributed Training Orchestration","chips":["NVDA","AMD"]},
-      {"label":"Distributed Training Systems","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"Distributed Training Orchestration","chips":[]},
-      {"label":"Container Orchestration (Kubernetes)","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"MLOps & Model Lifecycle Management","chips":["DDOG","SNOW","PLTR","MDB"]},
-      {"label":"Inference Optimization Stack","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"Model Optimization & Compilation","chips":[]}
+      {"label":"ML Frameworks (training)","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"ML Frameworks","chips":["CRWV","AMD"],"fn":"Software abstraction layers — PyTorch, JAX, TensorFlow — that convert raw GPU hardware into differentiable compute graphs, automatic differentiation engines, and high-level training loops. The ML framework is the compiler of AI: it takes Python tensor operations, traces them into a computation graph, and generates optimized GPU kernel calls. Framework choice determines which hardware accelerators are supported, which distributed training strategies are available, and which ecosystem of pre-built models and libraries a team can draw on. PyTorch dominates AI research (90%+ of papers) and is rapidly displacing TensorFlow in production; JAX has significant Google/DeepMind usage for its functional purity and XLA compilation. Framework lock-in is real but asymmetric — frameworks are open-source and free, so the moat lies in the ecosystem of tooling, tutorials, and pre-trained models built on top, not in licensing.","chokepoint":"Partial","capital_intensity":"Low","moat_type":"Ecosystem lock-in (open-source)","margin_profile":"Indirect — drives GPU cloud spend"},
+      {"label":"GPU Programming Layer (low-level kernels)","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"GPU Programming Layer","chips":["NVDA","AMD"],"fn":"The low-level GPU programming environment that every ML framework and AI application runs on. NVIDIA's CUDA (Compute Unified Device Architecture) is the dominant layer: a C++ extension, compiler toolchain, and runtime that maps compute operations onto GPU streaming multiprocessors. Every major ML framework — PyTorch, JAX, TensorFlow — compiles ultimately to CUDA kernels on NVIDIA hardware. AMD's ROCm is the only serious alternative, with partial compatibility but a 15-year ecosystem deficit. The GPU programming layer is the most durable software moat in AI: CUDA's installed base includes millions of developer-years of kernel code, 10,000+ published GPU-accelerated libraries, and deep integration with every AI training and inference framework. Porting a CUDA codebase to ROCm requires months of engineering work and often produces lower performance — making GPU vendor switching essentially a datacenter-level capital decision, not a software swap.","chokepoint":"Y","capital_intensity":"Low","moat_type":"Proprietary ecosystem (CUDA)","margin_profile":"Very high — software bundled with GPU hardware"},
+      {"label":"Distributed Training Systems","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"Distributed Training Systems","chips":[],"fn":"Frameworks and algorithms coordinating gradient computation and synchronization across hundreds or thousands of GPUs — Megatron-LM, DeepSpeed, PyTorch FSDP, and Ray Train. Training a 70B–1T parameter model requires splitting the model and data across thousands of GPUs simultaneously using four parallelism strategies: data parallelism (each GPU gets a mini-batch), tensor parallelism (matrix multiplications split within a node), pipeline parallelism (model layers assigned to different nodes), and expert parallelism for MoE architectures. The core engineering challenge is overlap: communication of gradients and activations must happen simultaneously with computation, or idle GPU cycles waste millions of dollars per training run. Fault tolerance is equally critical — a single GPU failure in a 10,000-card run must trigger checkpoint recovery in minutes, not hours. Open-source frameworks from Microsoft (DeepSpeed) and NVIDIA (Megatron) dominate, with tight coupling to the underlying InfiniBand or NVLink interconnect fabric.","chokepoint":"N","capital_intensity":"Low","moat_type":"Open-source with hardware-integration advantages","margin_profile":"Low direct — open-source; drives cloud GPU spend"},
+      {"label":"Container Orchestration (Kubernetes)","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"Container Orchestration & MLOps","chips":["DDOG","SNOW","PLTR","MDB"],"fn":"Kubernetes-based infrastructure orchestration, ML pipeline management, experiment tracking, data versioning, and model monitoring — the DevOps and DataOps layer for AI production systems. MLOps platforms convert ad-hoc research experiments into reproducible, scalable production pipelines with automated retraining, A/B testing, and drift detection. The stack spans open-source tools (MLflow, Kubeflow, DVC) and commercial platforms: Datadog for observability, Snowflake and MongoDB for the ML data platform, and Palantir AIP for enterprise AI deployment. Container orchestration manages GPU resource quotas, multi-tenant isolation, and node pool scaling across heterogeneous hardware. As AI systems grow more complex (multi-agent, RAG pipelines, fine-tuning loops), MLOps complexity grows proportionally, driving spend on observability, data quality, and pipeline automation platforms.","chokepoint":"N","capital_intensity":"Low–Medium","moat_type":"Platform stickiness + data integration","margin_profile":"Medium–High (SaaS ARR)"},
+      {"label":"Inference Optimization Stack","sector":"Software Infrastructure","slug":"software-infrastructure","tier":"Inference Optimization Stack","chips":[],"fn":"Post-training optimization runtimes that reduce the compute cost and latency of running trained models in production — quantization (INT4/INT8/FP8), pruning, kernel fusion, speculative decoding, continuous batching, and hardware-specific compilation. Tools include NVIDIA TensorRT, vLLM (open-source inference server), ONNX Runtime, Hugging Face TGI, and OpenVINO for Intel hardware. As inference volume grows to dwarf training spend (60–70% of total AI compute by 2027), inference optimization becomes the primary lever on AI unit economics: a 4x inference efficiency gain on a $100M compute budget is worth more than a 4x improvement in training throughput. The optimization stack is heavily hardware-coupled — TensorRT is explicitly tied to NVIDIA GPUs and achieves 3–8x speedups versus naive PyTorch inference. vLLM's PagedAttention algorithm for KV-cache management has become a de facto standard for large-model serving, adopted by nearly every major inference provider.","chokepoint":"Partial","capital_intensity":"Low","moat_type":"Hardware co-optimization (NVIDIA/TensorRT); open-source alternatives emerging","margin_profile":"High — bundled with GPU hardware or open-source"}
     ]},
     {"num":"04","name":"Cloud Infrastructure","hue":288,"tag":"hyperscalers · neoclouds · colocation","boxes":[
-      {"label":"Hyperscaler Clouds","sector":"Cloud Infrastructure","slug":"cloud-infrastructure","tier":"Hyperscaler & Colocation Operation","chips":["MSFT","AMZN","GOOGL","ORCL"]},
-      {"label":"NeoClouds (GPU-specialized)","sector":"Cloud Infrastructure","slug":"cloud-infrastructure","tier":"Hyperscaler & Colocation Operation","chips":["CRWV","IREN"]},
+      {"label":"Hyperscaler Clouds","sector":"Cloud Infrastructure","slug":"cloud-infrastructure","tier":"Hyperscaler Cloud Platforms","chips":["MSFT","AMZN","GOOGL","ORCL"]},
+      {"label":"NeoClouds (GPU-specialized)","sector":"Cloud Infrastructure","slug":"cloud-infrastructure","tier":"NeoClouds & AI-Specialized Cloud","chips":["CRWV","IREN"]},
       {"label":"Edge / Inference Colocation","gap":true,"chips":["EQIX","VRT"]},
       {"label":"Data Center Colocation","sector":"Cloud Infrastructure","slug":"cloud-infrastructure","tier":"Data Center Facility & MEP","chips":[]}
     ]},
     {"num":"05","name":"Compute Hardware","hue":55,"tag":"GPUs · ASICs · CPUs · NICs","boxes":[
-      {"label":"Training GPUs","sector":"Compute Hardware","slug":"compute-hardware","tier":"Chip Design (Fabless & IDM)","chips":["NVDA","AMD"]},
-      {"label":"Inference GPUs","sector":"Compute Hardware","slug":"compute-hardware","tier":"Chip Design (Fabless & IDM)","chips":["NVDA","AMD"]},
-      {"label":"Custom AI ASICs (hyperscaler silicon)","sector":"Compute Hardware","slug":"compute-hardware","tier":"Chip Design (Fabless & IDM)","chips":["AVGO","MRVL"]},
-      {"label":"Dedicated Inference Accelerators","sector":"Compute Hardware","slug":"compute-hardware","tier":"Chip Design (Fabless & IDM)","chips":[]},
-      {"label":"Server CPUs (orchestration, agentic workloads)","sector":"Compute Hardware","slug":"compute-hardware","tier":"Chip Design (Fabless & IDM)","chips":["ARM","INTC"]},
+      {"label":"Training GPUs","sector":"Compute Hardware","slug":"compute-hardware","tier":"AI Training GPUs","chips":["NVDA","AMD"]},
+      {"label":"Inference GPUs","sector":"Compute Hardware","slug":"compute-hardware","tier":"AI Inference GPUs","chips":["NVDA","AMD"]},
+      {"label":"Custom AI ASICs (hyperscaler silicon)","sector":"Compute Hardware","slug":"compute-hardware","tier":"Custom AI ASICs","chips":["AVGO","MRVL"]},
+      {"label":"Dedicated Inference Accelerators","sector":"Compute Hardware","slug":"compute-hardware","tier":"Dedicated Inference Accelerators","chips":[]},
+      {"label":"Server CPUs (orchestration, agentic workloads)","sector":"Compute Hardware","slug":"compute-hardware","tier":"Server CPUs","chips":["ARM","INTC"]},
       {"label":"Networking ASICs (switch silicon)","sector":"Cloud Infrastructure","slug":"cloud-infrastructure","tier":"High-Speed Networking","chips":["ANET","AVGO","MRVL"]}
     ]},
     {"num":"06","name":"Memory","hue":92,"tag":"HBM · HBF · DRAM · NAND · LPDDR","boxes":[
@@ -960,15 +1082,15 @@ const STACK={
       {"label":"Fiber Cables","group":"Components · used across all three scales","sector":"Interconnect","slug":"interconnect","tier":"Optical Fiber & Preform Manufacturing","chips":["GLW"]}
     ]},
     {"num":"08","name":"Advanced Packaging","hue":150,"tag":"CoWoS · stacking · substrates","boxes":[
-      {"label":"Wafer-Level Packaging (CoWoS, SoIC)","sector":"Advanced Packaging","slug":"advanced-packaging","tier":"Advanced Packaging (CoWoS / SoIC)","chips":["TSM","AMKR"]},
+      {"label":"Wafer-Level Packaging (CoWoS, SoIC)","sector":"Advanced Packaging","slug":"advanced-packaging","tier":"Advanced Packaging (CoWoS / SoIC)","chips":["TSM","AMKR","BESI"]},
       {"label":"HBM Stacking & Integration","sector":"Advanced Packaging","slug":"advanced-packaging","tier":"Advanced Packaging (CoWoS / SoIC)","chips":["MU","TSM"]},
       {"label":"FC-BGA Substrates","sector":"Electronic Components","slug":"electronic-components","tier":"IC Substrate Manufacturing","chips":[],"choke":true},
-      {"label":"Glass Core Substrates (emerging)","sector":"Electronic Components","slug":"electronic-components","tier":"Substrate & Laminate Materials","chips":["GLW","INTC"]},
+      {"label":"Glass Core Substrates (emerging)","sector":"Electronic Components","slug":"electronic-components","tier":"Substrate & Laminate Materials","chips":["GLW","INTC","LPK"]},
       {"label":"Thermal Interface Materials (TIM)","gap":true,"chips":[]}
     ]},
     {"num":"09","name":"Semiconductor Foundry","hue":162,"tag":"leading-edge · specialty · OSAT","boxes":[
       {"label":"Leading-Edge Logic Foundry (3nm, 2nm)","sector":"Semiconductor Foundry","slug":"semiconductor-foundry","tier":"Wafer Fabrication (Foundry / IDM)","chips":["TSM","INTC"]},
-      {"label":"Specialty / Mature Logic Foundry (analog, mixed-signal)","sector":"Semiconductor Foundry","slug":"semiconductor-foundry","tier":"Wafer Fabrication (Foundry / IDM)","chips":["GFS"]},
+      {"label":"Specialty / Mature Logic Foundry (analog, mixed-signal)","sector":"Semiconductor Foundry","slug":"semiconductor-foundry","tier":"Wafer Fabrication (Foundry / IDM)","chips":["GFS","XFAB"]},
       {"label":"Silicon Photonics Foundry","sector":"Semiconductor Foundry","slug":"semiconductor-foundry","tier":"Silicon Photonics Platform","chips":["GFS","POET","INTC"]},
       {"label":"Compound Semiconductor Foundry (GaN, SiC, InP)","sector":"Semiconductor Foundry","slug":"semiconductor-foundry","tier":"Compound Semiconductor & SiC Substrate","chips":["STM","WOLF"]},
       {"label":"OSAT (outsourced assembly and test)","sector":"Advanced Packaging","slug":"advanced-packaging","tier":"OSAT — Assembly & Test","chips":["ASX","AMKR"]}
@@ -1113,7 +1235,7 @@ function _railBoxCard(b,railTitle){
   const sName=sector?sector.name:"";
   const chips=(b.chips&&b.chips.length?b.chips:(tier?(tier.companies||[]).map(c=>c.ticker):[]))
     .slice(0,6).map(t=>_chipHtml(t,sName,railTitle,"showLayer(0)")).join("");
-  const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\')"':'';
+  const onclick=(b.slug&&b.tier)?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\')"':'';
   return '<div class="rail-box'+(choke?' choke':'')+'"'+onclick+'>'
     +'<div class="rail-box-label">'+(choke?'<span class="choke-mark">⧫</span>':'')+esc(b.label)+'</div>'
     +'<div class="chip-row">'+chips+'</div></div>';
@@ -1152,7 +1274,7 @@ function _subboxCard(b,i){
   const sName=sector?sector.name:"";
   const chips=(b.chips&&b.chips.length?b.chips:(tier?(tier.companies||[]).map(c=>c.ticker):[]))
     .slice(0,6).map(t=>_chipHtml(t,sName,ctxL,ctxF)).join("");
-  const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\','+i+')"':'';
+  const onclick=(b.slug&&b.tier)?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\','+i+')"':'';
   return '<div class="subbox'+(choke?' choke':'')+'"'+onclick+'>'
     +'<div class="subbox-label">'+(choke?'<span class="choke-mark">⧫</span>':'')+esc(b.label)+'</div>'
     +'<div class="chip-row">'+chips+'</div></div>';
@@ -1185,14 +1307,64 @@ function renderL0(){
     +'<div class="rail">'+rightRail+'</div></div>';
 }
 
+function openTierFallback(slug,tierName,layerIdx){
+  let box=null;
+  const li=layerIdx!==undefined?layerIdx:(_tierLayer[slug+'|'+tierName]!==undefined?_tierLayer[slug+'|'+tierName]:null);
+  const scan=(boxes)=>(boxes||[]).forEach(b=>{if(b.slug===slug&&b.tier===tierName)box=b;});
+  (STACK.layers||[]).forEach(L=>scan(L.boxes));
+  (STACK.rails||[]).forEach(r=>(r.groups||[]).forEach(g=>scan(g.boxes)));
+  if(!box)return;
+  const sectorName=(DATA.sectors.find(x=>x.slug===slug)||{}).name||box.sector||slug;
+  const trail=(li!==null&&li!==undefined)
+    ?[{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:_layerLabel(li),fn:"openLayer("+li+")"},{label:tierName}]
+    :[{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:tierName}];
+  const cp=box.chokepoint||"";
+  const chokeBlock=cp==="Y"
+    ?'<div class="choke-box"><p>⧫ Supply chain chokepoint — limited substitutes in this tier. Capacity constraints here propagate up the stack.</p></div>'
+    :cp==="Partial"
+    ?'<div class="choke-box-partial"><p>⧫ Partial chokepoint — some alternatives exist, but switching carries meaningful cost or lead time.</p></div>'
+    :(box.choke?'<div class="choke-box"><p>⧫ Supply chain chokepoint — limited substitutes in this tier.</p></div>':'');
+  const investHtml=(box.moat_type||box.capital_intensity||box.margin_profile)
+    ?'<div class="invest-section"><div class="invest-grid">'
+      +'<div class="invest-cell"><div class="invest-cell-label">Competitive Moat</div><div class="invest-cell-val">'+esc(box.moat_type||'—')+'</div></div>'
+      +'<div class="invest-cell"><div class="invest-cell-label">Capital Intensity</div><div class="invest-cell-val">'+esc(box.capital_intensity||'—')+'</div></div>'
+      +'<div class="invest-cell"><div class="invest-cell-label">Margin Profile</div><div class="invest-cell-val">'+esc(box.margin_profile||'—')+'</div></div>'
+      +'<div class="invest-cell"><div class="invest-cell-label">Chokepoint</div><div class="invest-cell-val invest-choke-'+(cp==="Y"?'yes':cp==="Partial"?'partial':'no')+'">'+(cp==="Y"?"Yes — critical constraint":cp==="Partial"?"Partial — some alternatives":"No — competitive market")+'</div></div>'
+      +'</div></div>'
+    :'';
+  const chips=(box.chips||[]).map(tk=>{
+    const sn=(TICKER_MAP[tk]&&TICKER_MAP[tk].sectorName)||sectorName;
+    const info=TICKER_MAP[tk]||{name:tk};
+    return '<div class="co-card"><div class="co-header">'
+      +'<a class="co-ticker" href="#" onclick="openTicker(\''+tk+'\',\''+sn.replace(/'/g,"\\'")+'\');return false">'+esc(tk)+'</a>'
+      +(info.name&&info.name!==tk?'<span class="co-name">'+esc(info.name)+'</span>':'')
+      +'</div></div>';
+  }).join('');
+  const coBlock=chips
+    ?'<div class="co-section"><div class="co-section-hdr"><span class="co-section-title">Companies Building Here</span></div>'+chips+'</div>'
+    :'<div class="co-section co-empty"><p>No tickers tracked in this tier yet — run <code>/scout-tickers</code> to discover candidates.</p></div>';
+  document.getElementById("l2").innerHTML=
+    crumbTrail(trail)
+    +'<div class="tier-provenance">'
+    +((li!==null&&li!==undefined)?'<span class="layer-pill" style="--lh:'+STACK.layers[li].hue+'">'+esc(_layerLabel(li))+'</span>':'')
+    +'<span class="sector-tag">'+esc(sectorName)+'</span></div>'
+    +'<div class="tier-detail-name">'+esc(tierName)+'</div>'
+    +(box.fn?'<div class="tier-section-hdr">What This Tier Does</div><div class="tier-fn-full">'+esc(box.fn)+'</div>':'')
+    +chokeBlock
+    +(investHtml?'<div class="tier-section-hdr">Investment Angle</div>'+investHtml:'')
+    +coBlock;
+  showLayer(2);
+}
+
 function openStackTier(slug,tierName,layerIdx){
   const s=DATA.sectors.find(x=>x.slug===slug);
-  if(!s){return;}
-  activeSector=s;
-  activeLayerIdx=(layerIdx!==undefined&&layerIdx!==null)?layerIdx:(_tierLayer[slug+"|"+tierName]!==undefined?_tierLayer[slug+"|"+tierName]:null);
-  const idx=s.tiers.findIndex(t=>t.tier===tierName);
-  if(idx<0){return;}
-  openTier(idx);
+  if(s){
+    activeSector=s;
+    activeLayerIdx=(layerIdx!==undefined&&layerIdx!==null)?layerIdx:(_tierLayer[slug+"|"+tierName]!==undefined?_tierLayer[slug+"|"+tierName]:null);
+    const idx=s.tiers.findIndex(t=>t.tier===tierName);
+    if(idx>=0){openTier(idx);return;}
+  }
+  openTierFallback(slug,tierName,layerIdx);
 }
 
 // Layer view (L1) — replaces the retired cross-cutting sector list.
@@ -1217,7 +1389,7 @@ function _layerBoxCard(b,i){
   const sName=sector?sector.name:"";
   const chips=(b.chips&&b.chips.length?b.chips:(tier?(tier.companies||[]).map(c=>c.ticker):[]))
     .map(t=>_chipHtml(t,sName,ctxL,ctxF)).join("");
-  const onclick=tier?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\','+i+')"':'';
+  const onclick=(b.slug&&b.tier)?' onclick="openStackTier(\''+b.slug+'\',\''+b.tier.replace(/'/g,"\\'")+'\','+i+')"':'';
   const count=tier&&tier.companies?tier.companies.length:0;
   return '<div class="layer-box'+(choke?' choke':'')+'"'+onclick+'>'
     +'<div class="layer-box-head"><span class="layer-box-label">'+(choke?'<span class="choke-mark">⧫</span>':'')+esc(b.label)+'</span>'
@@ -1292,6 +1464,13 @@ function openTier(idx){
     +'<div class="invest-cell"><div class="invest-cell-label">Margin Profile</div><div class="invest-cell-val">'+esc(t.margin_profile||'—')+'</div></div>'
     +'<div class="invest-cell"><div class="invest-cell-label">Chokepoint</div><div class="invest-cell-val invest-choke-'+( t.chokepoint==="Y"?'yes':t.chokepoint==="Partial"?'partial':'no')+'">'+( t.chokepoint==="Y"?"Yes — critical constraint":t.chokepoint==="Partial"?"Partial — some alternatives":"No — competitive market")+'</div></div>'
     +'</div></div>';
+  const _stackChips=(()=>{
+    const found=[];
+    const scan=b=>{if(b.slug===s.slug&&b.tier===t.tier&&b.chips)found.push(...b.chips);};
+    (STACK.layers||[]).forEach(L=>(L.boxes||[]).forEach(scan));
+    (STACK.rails||[]).forEach(r=>(r.groups||[]).forEach(g=>(g.boxes||[]).forEach(scan)));
+    return found;
+  })();
   const coBlock=(t.companies&&t.companies.length>0)
     ?'<div class="co-section"><div class="co-section-hdr"><span class="co-section-title">Companies Building Here</span><span class="co-section-count">'+t.companies.length+' tracked</span></div>'
     +t.companies.map(c=>{
@@ -1305,6 +1484,16 @@ function openTier(idx){
         +'</div>'
         +'<div class="co-notes">'+esc(c.notes)+'</div>'
         +'</div>';
+    }).join('')+'</div>'
+    :_stackChips.length>0
+    ?'<div class="co-section"><div class="co-section-hdr"><span class="co-section-title">Companies Building Here</span></div>'
+    +_stackChips.map(tk=>{
+      const sn=(TICKER_MAP[tk]&&TICKER_MAP[tk].sectorName)||s.name;
+      const info=TICKER_MAP[tk]||{name:tk};
+      return '<div class="co-card"><div class="co-header">'
+        +'<a class="co-ticker" href="#" onclick="openTicker(\''+tk+'\',\''+sn.replace(/'/g,"\\'")+'\');return false">'+esc(tk)+'</a>'
+        +(info.name&&info.name!==tk?'<span class="co-name">'+esc(info.name)+'</span>':'')
+        +'</div></div>';
     }).join('')+'</div>'
     :'<div class="co-section co-empty"><p>No tickers tracked in this tier yet — run <code>/scout-tickers</code> to discover candidates.</p></div>';
   document.getElementById("l2").innerHTML=
@@ -1323,16 +1512,15 @@ function openTier(idx){
 // ── Ticker detail (L3) ──────────────────────────────────────────────────────
 const TICKER_MAP={};
 DATA.sectors.forEach(s=>s.tiers.forEach(t=>(t.companies||[]).forEach(c=>{TICKER_MAP[c.ticker]={...c,sectorName:s.name};})));
-// Seed sectorName from STACK boxes whose slug has no DATA entry — these are sectors folded into
-// DATA "Compute Hardware" but whose wiki files live in their own sector folder. STACK.sector is
-// the canonical wiki folder name. Run before explicit overrides so overrides take final precedence.
-const _DS=new Set(DATA.sectors.map(s=>s.slug));
-const _ss=(boxes)=>(boxes||[]).forEach(b=>{if(b.sector&&b.chips&&!_DS.has(b.slug))b.chips.forEach(tk=>{if(TICKER_MAP[tk])TICKER_MAP[tk].sectorName=b.sector;else TICKER_MAP[tk]={ticker:tk,name:tk,sectorName:b.sector};});});
+// Seed sectorName from STACK boxes for tickers not yet in TICKER_MAP (DATA companies[] has priority).
+// Run before explicit overrides so overrides take final precedence.
+const _ss=(boxes)=>(boxes||[]).forEach(b=>{if(b.sector&&b.chips)b.chips.forEach(tk=>{if(!TICKER_MAP[tk])TICKER_MAP[tk]={ticker:tk,name:tk,sectorName:b.sector};});});
 (STACK.layers||[]).forEach(l=>_ss(l.boxes));
 (STACK.rails||[]).forEach(r=>(r.groups||[]).forEach(g=>_ss(g.boxes)));
 // Explicit overrides: tickers whose DATA sector != wiki folder (STACK seeding above may set wrong
 // sector for tickers that appear in multiple orphaned boxes, e.g. MU in Advanced Packaging).
 ['SNDK','285A.T','MU','000660.KS','005930.KS'].forEach(t=>{if(TICKER_MAP[t])TICKER_MAP[t].sectorName='Memory';});
+if(TICKER_MAP['LPK'])TICKER_MAP['LPK'].sectorName='Compute Hardware';
 const WIKI_CACHE={};
 
 async function openTicker(ticker,sName){
@@ -1441,7 +1629,7 @@ function parseWiki(md){
     if(/^### /.test(line)){flushTable();flushList();html+='<h3 class="wiki-h3">'+esc(line.slice(4).trim())+'</h3>';continue;}
     if(/^#### /.test(line)){flushTable();flushList();html+='<h4 class="wiki-h4">'+esc(line.slice(5).trim())+'</h4>';continue;}
     if(/^-{3,}$/.test(line.trim())){flushTable();flushList();continue;}
-    if(/^\|/.test(line)){flushList();inTable=true;tableRows.push(line);continue;}
+    if(/^\s*\|/.test(line)){flushList();inTable=true;tableRows.push(line.trimStart());continue;}
     else if(inTable)flushTable();
     if(/^> /.test(line)){flushList();html+='<div class="wiki-blockquote">'+inlineMd(line.slice(2).trim())+'</div>';continue;}
     if(/^- \[[ xX]\]/.test(line)){
@@ -1477,10 +1665,15 @@ function showTab(tab) {
   if(tab==="supply-chain"){
     document.getElementById("tech-races").hidden=true;
     document.getElementById("tech-race-detail").hidden=true;
+    document.getElementById("watchlist").hidden=true;
     showLayer(0);
+  } else if(tab==="watchlist"){
+    ["l0","l1","l2","l3","tech-races","tech-race-detail"].forEach(id=>document.getElementById(id).hidden=true);
+    document.getElementById("watchlist").hidden=false;
+    initWatchlistTab();
   } else {
     renderTechRaces();
-    ["l0","l1","l2","l3","tech-race-detail"].forEach(id=>document.getElementById(id).hidden=true);
+    ["l0","l1","l2","l3","tech-race-detail","watchlist"].forEach(id=>document.getElementById(id).hidden=true);
     document.getElementById("tech-races").hidden=false;
   }
 }
@@ -1561,7 +1754,8 @@ function buildSearchIdx() {
       const li = (layer !== undefined ? layer : "");
       idx.push({ type: "tier", label: t.tier, sub: s.name, slug: s.slug, tierName: t.tier, layerIdx: li, q: (t.tier + " " + (t.fn || "")).toLowerCase() });
       (t.companies || []).forEach(c => {
-        idx.push({ type: "company", label: c.name, ticker: c.ticker || "", sub: t.tier + " · " + s.name, slug: s.slug, tierName: t.tier, layerIdx: li, q: ((c.ticker || "") + " " + c.name + " " + (c.notes || "")).toLowerCase() });
+        const sn = (TICKER_MAP[c.ticker]&&TICKER_MAP[c.ticker].sectorName) || s.name;
+        idx.push({ type: "company", label: c.name, ticker: c.ticker || "", sectname: sn, sub: t.tier + " · " + s.name, slug: s.slug, tierName: t.tier, layerIdx: li, q: ((c.ticker || "") + " " + c.name + " " + (c.notes || "")).toLowerCase() });
       });
     });
   });
@@ -1591,6 +1785,8 @@ function renderSearchResults(q) {
         + (h.slug !== undefined ? " data-slug=\"" + esc(h.slug) + "\"" : "")
         + (h.tierName !== undefined ? " data-tiername=\"" + esc(h.tierName) + "\"" : "")
         + (h.layerIdx !== undefined && h.layerIdx !== "" ? " data-layer=\"" + h.layerIdx + "\"" : "")
+        + (h.ticker ? " data-ticker=\"" + esc(h.ticker) + "\"" : "")
+        + (h.sectname ? " data-sectname=\"" + esc(h.sectname) + "\"" : "")
         + ">"
         + ticker
         + "<div class=\"sr-text\"><div class=\"sr-label\">" + h.label + "</div><div class=\"sr-sub\">" + h.sub + "</div></div>"
@@ -1623,6 +1819,9 @@ document.getElementById("search-results").addEventListener("click", function (e)
   document.getElementById("search-results").hidden = true;
   if (type === "layer") {
     openLayer(Number(layer));
+  } else if (type === "company") {
+    activeSector=null;activeTierIdx=null;activeLayerIdx=null;_fromStack=false;
+    openTicker(item.dataset.ticker, item.dataset.sectname || "");
   } else {
     openStackTier(slug, tierName, layer !== undefined ? Number(layer) : undefined);
   }
@@ -1633,6 +1832,272 @@ document.addEventListener("click", function (e) {
     document.getElementById("search-results").hidden = true;
   }
 });
+
+// ── Watchlist ─────────────────────────────────────────────────────────────────
+const GH_REPO='deeyayay/investing-wiki';
+const WL_PATH='Investing/Wiki/Reference/Watchlist.md';
+const WL_API='https://api.github.com/repos/'+GH_REPO+'/contents/'+WL_PATH;
+let _wlSha=null;
+let _wlInitialized=false;
+
+function wlPat(){return localStorage.getItem('gh-pat')||'';}
+function wlSetPat(p){localStorage.setItem('gh-pat',p.trim());}
+function wlClearPat(){localStorage.removeItem('gh-pat');}
+
+function wlSavePat(){
+  const v=(document.getElementById('wl-pat-input')?.value||'').trim();
+  if(!v){alert('Please enter a PAT.');return;}
+  wlSetPat(v);
+  initWatchlistTab(true);
+}
+
+function wlAddFromInput(){
+  const ticker=(document.getElementById('wl-add-ticker')?.value||'').trim().toUpperCase();
+  if(!ticker)return;
+  addToWatchlist(ticker);
+}
+
+function wlConfirmRemove(ticker){
+  if(!confirm('Remove '+ticker+' from watchlist?'))return;
+  removeFromWatchlist(ticker);
+}
+
+function daysUntil(dateStr){
+  if(!dateStr)return null;
+  const d=new Date(dateStr+'T00:00:00');
+  const now=new Date();
+  now.setHours(0,0,0,0);
+  return Math.round((d-now)/86400000);
+}
+
+async function fetchWatchlistMd(){
+  const pat=wlPat();
+  const headers={'Accept':'application/vnd.github.v3+json'};
+  if(pat)headers['Authorization']='Bearer '+pat;
+  const res=await fetch(WL_API,{headers,cache:'no-store'});
+  if(!res.ok)throw new Error('GitHub API: HTTP '+res.status);
+  const json=await res.json();
+  _wlSha=json.sha;
+  const b64=json.content.replace(/\n/g,'');
+  const bytes=Uint8Array.from(atob(b64),c=>c.charCodeAt(0));
+  return new TextDecoder().decode(bytes);
+}
+
+async function writeWatchlistMd(content){
+  const pat=wlPat();
+  if(!pat)throw new Error('No GitHub PAT stored.');
+  const enc=new TextEncoder().encode(content);
+  let raw='';
+  for(let i=0;i<enc.length;i+=32768)raw+=String.fromCharCode(...enc.subarray(i,i+32768));
+  const b64=btoa(raw);
+  const res=await fetch(WL_API,{
+    method:'PUT',
+    headers:{'Authorization':'Bearer '+pat,'Content-Type':'application/json'},
+    body:JSON.stringify({message:'Watchlist update via dashboard',content:b64,sha:_wlSha})
+  });
+  if(!res.ok){const d=await res.json().catch(()=>({}));throw new Error(d.message||'HTTP '+res.status);}
+  const d=await res.json();
+  if(d.content?.sha)_wlSha=d.content.sha;
+}
+
+function parseWatchlistMd(md){
+  const entries=[];
+  const lines=md.split('\n');
+  let category=null;
+  for(const line of lines){
+    if(line.startsWith('## Core Holdings')){category='Core Holdings';continue;}
+    if(line.startsWith('## High Upside Rockets')){category='Rockets';continue;}
+    if(line.startsWith('## Compounders')){category='Compounders';continue;}
+    if(line.startsWith('## Watching')){category='Watching';continue;}
+    if(line.startsWith('## ')||line.trim()==='---'){category=null;continue;}
+    if(!category||!line.startsWith('|'))continue;
+    const cols=line.split('|').map(c=>c.trim()).filter(c=>c!=='');
+    if(!cols.length)continue;
+    const first=cols[0];
+    if(first==='Ticker'||first.startsWith('---')||first.startsWith(':---'))continue;
+    if(!first||first==='-')continue;
+    const e={ticker:first,category,name:'',notes:'',strategy:'',score:null};
+    if(category==='Core Holdings'&&cols.length>=4){
+      e.name=cols[1]||'';e.notes=cols[2]||'';e.strategy=cols[3]||'';
+      const s=cols[4]||'';e.score=(s&&s!=='—'&&s!=='-')?parseFloat(s)||null:null;
+    } else if(category==='Rockets'&&cols.length>=2){
+      e.notes=cols[1]||'';
+      const s=cols[2]||'';e.score=(s&&s!=='—'&&s!=='-')?parseFloat(s)||null:null;
+    } else if(category==='Compounders'&&cols.length>=3){
+      e.name=cols[1]||'';e.notes=cols[2]||'';
+      const s=cols[3]||'';e.score=(s&&s!=='—'&&s!=='-')?parseFloat(s)||null:null;
+    } else if(category==='Watching'){
+      e.notes=cols[1]||'';
+    } else continue;
+    entries.push(e);
+  }
+  return entries;
+}
+
+function mergeWithDataWatchlist(liveEntries){
+  const rich={};
+  (DATA.watchlist||[]).forEach(e=>{rich[e.ticker]=e;});
+  return liveEntries.map(live=>{
+    const r=rich[live.ticker]||{};
+    return {
+      ticker:live.ticker,
+      name:live.name||r.name||'',
+      category:live.category,
+      strategy:live.strategy||r.strategy||'',
+      notes:live.notes||'',
+      sector:r.sector||'',
+      tier:r.tier||'',
+      exchange:r.exchange||'',
+      next_earnings:r.next_earnings||null,
+      score:live.score!=null?live.score:(r.score!=null?r.score:null),
+      thesis:r.thesis||live.notes||'',
+      scoring:r.scoring||null,
+      catalysts:r.catalysts||null,
+      hasRichData:!!(r.thesis||r.scoring)
+    };
+  });
+}
+
+function _buildAddMd(md,ticker){
+  const WATCH_HDR='## Watching';
+  const WATCH_TABLE_HDR='| Ticker | Notes |\n|--------|-------|';
+  let lines=md.split('\n');
+  const si=lines.findIndex(l=>l.startsWith(WATCH_HDR));
+  if(si===-1){
+    lines=lines.concat(['','---','',WATCH_HDR,'',WATCH_TABLE_HDR,'| '+ticker+' |  |']);
+  } else {
+    let lastRow=-1;
+    for(let i=si+1;i<lines.length;i++){
+      if(lines[i].startsWith('## ')||lines[i].trim()==='---')break;
+      if(lines[i].startsWith('|')&&!lines[i].includes('---'))lastRow=i;
+    }
+    if(lastRow===-1){
+      const thi=lines.findIndex((l,idx)=>idx>si&&l.startsWith('| Ticker'));
+      const ins=thi!==-1?thi+2:si+1;
+      lines.splice(ins,0,'| '+ticker+' |  |');
+    } else {
+      lines.splice(lastRow+1,0,'| '+ticker+' |  |');
+    }
+  }
+  return lines.join('\n');
+}
+
+async function addToWatchlist(ticker){
+  for(let attempt=0;attempt<3;attempt++){
+    let md;
+    try{md=await fetchWatchlistMd();}catch(err){alert('Failed to read Watchlist.md: '+err.message);return;}
+    const existing=parseWatchlistMd(md);
+    if(existing.find(e=>e.ticker===ticker)){alert(ticker+' is already in the watchlist.');return;}
+    try{await writeWatchlistMd(_buildAddMd(md,ticker));await initWatchlistTab(true);return;}
+    catch(err){
+      if(attempt<2&&String(err.message).includes('does not match'))continue;
+      alert('Failed to save: '+err.message);return;
+    }
+  }
+}
+
+async function removeFromWatchlist(ticker){
+  for(let attempt=0;attempt<3;attempt++){
+    let md;
+    try{md=await fetchWatchlistMd();}catch(err){alert('Failed to read Watchlist.md: '+err.message);return;}
+    const filtered=md.split('\n').filter(line=>{
+      if(!line.startsWith('|'))return true;
+      const cols=line.split('|').map(c=>c.trim()).filter(c=>c!=='');
+      return cols[0]!==ticker;
+    });
+    try{await writeWatchlistMd(filtered.join('\n'));await initWatchlistTab(true);return;}
+    catch(err){
+      if(attempt<2&&String(err.message).includes('does not match'))continue;
+      alert('Failed to save: '+err.message);return;
+    }
+  }
+}
+
+function renderWatchlistCard(e,canEdit){
+  const scoreCls=e.score==null?'none':e.score>=8?'high':'mid';
+  const scoreLabel=e.score!=null?e.score.toFixed(1)+'/10':'Unscored';
+  const removeBtn=canEdit?'<button class="wl-remove" onclick="wlConfirmRemove(\''+esc(e.ticker)+'\')" title="Remove">×</button>':'';
+  const days=daysUntil(e.next_earnings);
+  const soon=days!=null&&days>=0&&days<=14;
+  const earningsText=e.next_earnings?(soon?'⚡ ':'')+'Earnings '+e.next_earnings+(days!=null?' ('+(days===0?'today':days+'d')+')':''):'';
+  const metaParts=[
+    e.sector&&'<span class="wl-pill">'+esc(e.sector)+'</span>',
+    e.tier&&'<span class="wl-pill">'+esc(e.tier)+'</span>',
+    e.exchange&&'<span class="wl-pill">'+esc(e.exchange)+'</span>',
+    earningsText&&'<span class="wl-pill'+(soon?' soon':'')+'">'+esc(earningsText)+'</span>'
+  ].filter(Boolean);
+  const metaHtml=metaParts.length?'<div class="wl-meta">'+metaParts.join('')+'</div>':'';
+  const thesisHtml=e.thesis?'<div class="wl-thesis">'+esc(e.thesis)+'</div>':'';
+  let scoringHtml='';
+  if(e.scoring){
+    const crit=[['Product (Love Factor)',e.scoring.product,5],['Pricing Power',e.scoring.pricing_power,5],['Leadership & Alignment',e.scoring.leadership,5],['Financial Health',e.scoring.financial_health,5],['Macro Environment',e.scoring.macro,5],['Future Potential',e.scoring.future_potential,5]];
+    const rows=crit.map(([name,val,max])=>{
+      const v=val!=null?val:'—';
+      const bar=val!=null?'<span class="wl-bar" style="width:'+Math.round((val/max)*56)+'px"></span>':'';
+      return '<tr><td>'+esc(name)+'</td><td class="wl-score-val">'+v+'/'+max+bar+'</td></tr>';
+    });
+    const comp=e.scoring.composite!=null?e.scoring.composite.toFixed(1):'—';
+    rows.push('<tr><td><strong>Composite</strong></td><td class="wl-score-val"><strong>'+comp+'/10</strong></td></tr>');
+    scoringHtml='<div class="wl-block-hdr">Scoring</div><div class="wiki-table-wrap"><table class="wl-score-table"><tbody>'+rows.join('')+'</tbody></table></div>';
+  } else if(!e.hasRichData){
+    scoringHtml='<p class="wl-stub">Run <code>/daily-dashboard --refresh-data</code> to populate scoring &amp; catalysts for this ticker.</p>';
+  }
+  let catalystsHtml='';
+  if(e.catalysts&&e.catalysts.length){
+    catalystsHtml='<div class="wl-block-hdr">Upcoming Catalysts</div><ul class="wl-cat-list">'+e.catalysts.slice(0,3).map(c=>'<li class="wl-cat-item">'+esc(c)+'</li>').join('')+'</ul>';
+  }
+  return '<div class="wl-card">'
+    +'<div class="wl-card-hdr"><span class="wl-ticker">'+esc(e.ticker)+'</span>'
+    +'<span class="wl-name">'+esc(e.name||'')+'</span>'
+    +'<span class="wl-score-badge '+scoreCls+'">'+esc(scoreLabel)+'</span>'
+    +removeBtn+'</div>'
+    +metaHtml+thesisHtml+scoringHtml+catalystsHtml+'</div>';
+}
+
+function renderWatchlist(entries,fallback){
+  const container=document.getElementById('watchlist');
+  const pat=wlPat();
+  const canEdit=!!pat&&!fallback;
+  const headerAuthHtml=pat&&!fallback
+    ?'<div class="wl-auth-ok"><span>🔓 Editing enabled</span><button class="wl-btn" style="margin-left:8px" onclick="wlClearPat();initWatchlistTab(true)">Sign out</button></div>'
+    :'';
+  const patPromptHtml=!pat||fallback
+    ?'<div class="wl-pat-prompt"><strong>Enable editing</strong> — enter a GitHub PAT with <code>contents:write</code> scope on this repo to add/remove tickers from the dashboard.<br><div class="wl-pat-row"><input id="wl-pat-input" class="wl-pat-input" type="password" placeholder="github_pat_…" /><button class="wl-btn primary" onclick="wlSavePat()">Save &amp; Reload</button></div><div class="wl-pat-note">Token stored in your browser\'s localStorage only — it never leaves your device.</div></div>'
+    :'';
+  const addRowHtml=canEdit
+    ?'<div class="wl-add-row"><input id="wl-add-ticker" class="wl-add-input" type="text" placeholder="Add ticker…" onkeydown="if(event.key===\'Enter\')wlAddFromInput()" /><button class="wl-btn primary" onclick="wlAddFromInput()">Add</button></div>'
+    :'';
+  const cats=['Watching','Core Holdings','Rockets','Compounders'];
+  const catLabels={'Watching':'Watching','Core Holdings':'Core Holdings — Active Positions','Rockets':'High Upside Rockets — Speculative','Compounders':'Compounders Watchlist'};
+  const body=cats.map(cat=>{
+    const items=entries.filter(e=>e.category===cat);
+    if(!items.length)return'';
+    return'<div class="wl-section-hdr">'+esc(catLabels[cat])+'</div><div class="wl-cards">'+items.map(e=>renderWatchlistCard(e,canEdit)).join('')+'</div>';
+  }).join('');
+  const emptyHtml=entries.length?''
+    :'<div class="wl-empty">Watchlist is empty.<br>Add a ticker above, or edit <code>Watchlist.md</code> and re-run <code>/daily-dashboard --refresh-data</code>.</div>';
+  container.innerHTML=
+    '<div class="wl-page-hdr"><div class="wl-title">Watchlist</div>'+headerAuthHtml+'</div>'
+    +patPromptHtml+addRowHtml+body+emptyHtml;
+}
+
+async function initWatchlistTab(force){
+  if(!force&&_wlInitialized)return;
+  const container=document.getElementById('watchlist');
+  container.innerHTML='<div class="wl-loading">Loading watchlist…</div>';
+  try{
+    const md=await fetchWatchlistMd();
+    const live=parseWatchlistMd(md);
+    const entries=mergeWithDataWatchlist(live);
+    _wlInitialized=true;
+    renderWatchlist(entries,false);
+  } catch(err){
+    // Fallback: use pre-generated DATA.watchlist (read-only)
+    const entries=(DATA.watchlist||[]).map(e=>({...e,hasRichData:true}));
+    _wlInitialized=true;
+    renderWatchlist(entries,true);
+  }
+}
 </script>
 </body>
 </html>
