@@ -70,7 +70,7 @@ _Evaluated: 2026-06-21_
 | 2026-05-~ | FY2025 PCAOB restatement: net loss SEK 222.6M (was 186.5M) | ↓ | Wider historical losses than disclosed; undermines Financial Health score |
 | 2026-05-~ | DDM Finance EUR 225M bond default; formal restructuring filed | ↓ | Forced-sale of SIVE stake now near-term event risk, not hypothetical |
 | 2026-06-09 | ALL.SPACE $8.2M Ka-band beamforming production order (deliveries through 2027) | ↑ | Wireless division moves from development to volume manufacturing; revenue geography diversification |
-| 2026-06-15 | AGM: Nasdaq vote pulled; incentive plan withdrawn; Duffy/Fällström/Halsey resigned; 53.8M-share mandate approved | ↓ | Board exodus + Nasdaq U-turn removes primary capital/visibility catalyst; short-seller attack concurrent; governance deterioration |
+| 2026-06-15 | AGM: Nasdaq vote pulled; incentive plan withdrawn; Duffy/Fällström/Halsey resigned; 53.8M-share mandate approved; convertible subscribed by Bootstrap Europe 4.0 | ↓ | Board exodus + Nasdaq U-turn removes primary capital/visibility catalyst; Bootstrap Europe as convertible subscriber (unknown entity) warrants monitoring |
 
 ---
 
