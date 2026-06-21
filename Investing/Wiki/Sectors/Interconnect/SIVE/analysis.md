@@ -1,0 +1,134 @@
+# SIVE — Analysis
+*Layer 2 — Thesis, conviction, and scoring. Updated by: /score-ticker, /ticker-monitor (conviction + analyst + catalyst), /add-ticker (initial stub).*
+*Last updated: 2026-06-21*
+
+---
+
+## One-Line Thesis
+Dual-division micro-cap at the AI data center CPO laser bottleneck and mmWave/defense — $799M pipeline, but governance turmoil and the Nasdaq U-turn make execution timing everything.
+
+---
+
+## Investment Thesis
+
+> **Thesis established:** 2026-05-14
+> **Last validated:** 2026-06-21
+> **Drift status:** Drifting — Nasdaq listing vote pulled at June AGM, three directors resigned, Q1 revenue –22% YoY; $799M pipeline and $8.2M ALL.SPACE order partially offset
+
+Sivers Semiconductors operates two divisions: Photonics (InP laser arrays for co-packaged optics) and Wireless (mmWave beamforming transceivers for 5G backhaul, radar, defense, and SATCOM). The photonics division is the primary AI thesis: as hyperscaler GPU clusters push interconnect speeds beyond copper's thermal and latency limits, co-packaged optics (CPO) replaces copper with integrated optical chiplets — and every CPO module requires an external light source (ELS). Sivers designs the InP laser arrays that serve as that ELS. Q1 2026 revenue came in at SEK 61.9M (–22% YoY), impacted by US government shutdown delaying defense budget approvals in Q4 2025. Not yet profitable; management targets 2028 for breakeven and describes 2027 as a "transformational year."
+
+The bull case is CPO adoption timing, the asset-light model, and a maturing defense revenue leg. Sivers uses outsourced manufacturing (Jabil partnership, 1.6T transceiver program), meaning revenue can scale without proportional capex. The March 2026 O-Net/Enablence partnership — developing ELS modules for AI datacenter CPO — is the first commercial validation beyond design-phase. The June 2026 $8.2M ALL.SPACE production contract for Ka-band beamforming chips (deliveries through 2027) marks the wireless division's transition from development to volume manufacturing. The opportunity pipeline grew 77% YTD to $799M, with most orders expected to convert from 2027 onward. Sivers' LiDAR customer is targeting Q4 2026 high-volume ramp with $53–138M in lifecycle value.
+
+The risk picture has worsened materially since the May scoring. Three founders/directors — Tomas Duffy (Vice Chairman), Erik Fällström, and Keith Halsey — resigned before the June 15 AGM. The Nasdaq dual-listing vote was pulled from the AGM agenda at the last minute by the board; a 53.8M-share mandate (~15% dilution) was separately approved but the actual listing remains unexecuted and ungated. The employee incentive program (7M options, items 14–16) was also withdrawn for future EGM consideration. A concurrent short-seller attack has added additional pressure. An ongoing insider trading investigation (Sweden's Economic Crime Authority, prosecutor Jonas Myrdal) — triggered by the Nasdaq announcement leaking ~48 hrs early — remains the primary gating risk for any future US listing attempt. DDM Finance (parent of Achilles Capital, largest SIVE shareholder) defaulted on EUR 225M in bonds in April 2026 and is selling tech/life-science assets valued EUR 30–50M, which almost certainly includes the SIVE position.
+
+**Key moat:** InP DFB laser design expertise with proprietary on-wafer coating enabling high manufacturing yield; CW-WDM MSA founding promoter membership (co-authored the ELS standard); Jabil manufacturing partnership; early CPO design-wins (Ayar Labs SuperNova, O-Net, Enablence); mmWave + photonics duality gives two independent revenue legs.
+
+**Key risks:** Sub-12-month cash runway (serial dilution — 53.8M-share mandate now live); insider trading investigation (Ekobrottsmyndigheten) blocks Nasdaq listing; board exodus (three directors resigned June 2026); DDM Finance forced-sale overhang (EUR 225M bond default); PCAOB-restated 2025 net loss SEK 222.6M (wider than initially disclosed); Q1 2026 revenue –22% YoY; competitive displacement from Coherent/Lumentum (scale incumbents); silicon photonics integration risk (structural ELS displacement); short-seller attack (ongoing).
+
+---
+
+## Scoring Summary
+_Last scored: 2026-05-19 | [[Scoring Rubric]]_ ⚠️ Low-confidence — gross margin absent, insider % unavailable, leadership track record undocumented. Re-score after runway resolution or Q2 results.
+
+| Criterion | Score | Evidence |
+|-----------|-------|----------|
+| Product (Love Factor) | 3/5 | InP ELS laser arrays with proprietary on-wafer coating; O-Net/Enablence + Ayar Labs SuperNova qualification; $799M pipeline; CW-WDM MSA founding promoter |
+| Pricing Power | 2/5 | Substrate layer = low-medium, volatile margin profile; no gross margin data; loss-making; contract sizes $1.5–8.2M |
+| Leadership & Alignment | 2/5 | CEO (Jul 2024) + CFO (Sep 2025) avg tenure ~1.6 yrs; three founders/directors resigned Jun 2026; insider trading probe; DDM Finance overhang; board overhaul |
+| Financial Health | 1/5 | Sub-12-month cash runway; SEK 222.6M net loss (PCAOB restated); 53.8M-share dilution mandate approved; $17M convertible debt; 2028 breakeven |
+| Macro Environment | 4/5 | AI capex hypergrowth drives CPO demand; ELS architecture winning (CW-WDM MSA standardizing); mmWave/defense/SATCOM independent tailwind |
+| Future Potential | 4/5 | $799M pipeline (~24x Q1 annualized revenue); LiDAR Q4 2026 ramp; ALL.SPACE volume orders; 2027 "transformational year" per management |
+| **Composite** | **5.5/10** | **Average** |
+
+**Valuation:** ~31x P/S vs peer avg 17.5x — priced for flawless execution; governance turmoil has not compressed the multiple
+**Growth Potential:** Q1 –22% YoY (temporary: US gov shutdown + FX); 2027 multiple product ramps targeted
+
+## Risk Flags
+_Evaluated: 2026-06-21_
+
+| Flag | Status | Notes |
+|------|--------|-------|
+| Capex sustainability | ⚠️ Watch | Asset-light (Jabil); but cash runway <12 months; 53.8M-share dilution mandate now active |
+| Demand chain health | ✅ OK | CPO + defense + 5G are independent demand legs; pipeline $799M (+77% YTD) |
+| Customer concentration | ⚠️ Watch | Top customer % unknown; pipeline broad but largely unconverted |
+| Circular revenue exposure | ✅ None | No circular exposure identified |
+| Rate sensitivity | → Neutral | SEK-denominated; USD defense revenue; no significant rate-linked floating debt |
+
+---
+
+## Conviction Log
+
+| Date | Event | Δ Conviction | Why |
+|------|-------|-------------|-----|
+| 2026-03 | O-Net/Enablence CPO ELS partnership signed | ↑ | First commercial validation beyond design-phase; AI datacenter CPO rollout |
+| 2026-05-11 | EGM: directed share issue SEK ~125M at SEK 14.5 (8.62M shares) | → | Runway extended; institutional participation (DNB, Hudson Bay, Waterside) = credible buyers; adds dilution |
+| 2026-05-19 | MSCI Sweden Small Cap inclusion (effective May 29) | → | Passive inflow; structural, not thesis-driven |
+| 2026-05-~  | Pentagon EW STAR Year 2: $6.6M CHIPS Act grant (BAE/MIT LL/Columbia) | ↑ | US DoD credentialing; BAE prime contractor lends credibility; wireless division anchored in US defense supply chain |
+| 2026-05-29 | Q1 2026: SEK 61.9M, –22% YoY | ↓ | Revenue decline attributed to US gov shutdown (temporary), but misses 2028 breakeven trajectory |
+| 2026-05-29 | Pipeline $799M (+77% YTD) | ↑ | Demand building faster than revenue converts; 2027 is the test year |
+| 2026-05-~ | Insider trading probe: Economic Crime Authority / prosecutor Myrdal | ↓ | Conviction would block Nasdaq listing; legal overhang with undefined timeline |
+| 2026-05-~ | FY2025 PCAOB restatement: net loss SEK 222.6M (was 186.5M) | ↓ | Wider historical losses than disclosed; undermines Financial Health score |
+| 2026-05-~ | DDM Finance EUR 225M bond default; formal restructuring filed | ↓ | Forced-sale of SIVE stake now near-term event risk, not hypothetical |
+| 2026-06-09 | ALL.SPACE $8.2M Ka-band beamforming production order (deliveries through 2027) | ↑ | Wireless division moves from development to volume manufacturing; revenue geography diversification |
+| 2026-06-15 | AGM: Nasdaq vote pulled; incentive plan withdrawn; Duffy/Fällström/Halsey resigned; 53.8M-share mandate approved | ↓ | Board exodus + Nasdaq U-turn removes primary capital/visibility catalyst; short-seller attack concurrent; governance deterioration |
+
+---
+
+## Cross-Ticker Signals
+
+| Date | Direction | Other Ticker | Signal | Implication |
+|------|-----------|-------------|--------|-------------|
+| 2026-03 | Receives | ALAB | CPO switch ASIC ramp accelerating | Increases demand for ELS laser arrays; direct read-through to Sivers photonics |
+| 2026-03 | Receives | NVDA | Blackwell GPU buildout drives interconnect demand | CPO transition timeline accelerated; ELS laser suppliers benefit |
+| 2026-05 | Emits | AYAR | ELS laser qualification in SuperNova module | Ayar Labs' CPO platform viable; validates full CPO supply chain demand signal |
+
+---
+
+## Catalyst Timeline
+- [ ] Q4 2026 — Strategic LiDAR customer high-volume production ramp ($53–138M lifecycle value; primary near-term revenue catalyst)
+- [ ] O-Net / Enablence CPO ELS modules — commercial production timeline TBD from March 2026 partnership
+- [ ] Jabil 1.6T transceiver program — volume production ramp (first volume orders)
+- [ ] InP photonics design-win with hyperscaler or Tier-1 transceiver customer
+- [ ] mmWave Tier-1 telecom beamformer delivery (end-2026 per Jan 2025 contract; Daybreak FR3 ICs generally available)
+- [ ] EW STAR Year 2 — $6.6M Pentagon CHIPS Act grant execution (BAE Systems / MIT Lincoln Lab / Columbia)
+- [ ] ALL.SPACE Ka-band production deliveries — through 2027 (~$8.2M total)
+- [ ] Future EGM — new employee incentive program (items 14–16 withdrawn from June 15 AGM; to be reproposed)
+- [ ] Nasdaq US dual listing — board mandate approved (53.8M shares); insider trading probe is primary gating risk; no timeline given
+- [ ] Insider trading investigation outcome — prosecutor Jonas Myrdal / Economic Crime Authority; timeline unknown
+- [ ] DDM Finance restructuring resolution — EUR 30–50M asset sale; watch for block sale pressure on SIVE stake
+- [ ] Cash runway — next capital raise (53.8M-share mandate provides board flexibility; watch dilution severity)
+- [x] EGM May 11, 2026 — directed share issue SEK ~125M approved (8.62M shares at SEK 14.5; investors: DNB, Hudson Bay, Waterside, others)
+- [x] MSCI Sweden Global Small Cap inclusion (effective May 29, 2026)
+- [x] Q1 2026 results published May 29 — SEK 61.9M, –22% YoY
+- [x] AGM June 15, 2026 — board refreshed (Nideborn + Svancar elected); Nasdaq vote pulled; incentive plan withdrawn; 53.8M-share mandate approved
+
+---
+
+## Analyst Coverage
+
+- **2026-05-11** — Northland (Tim Savageaux): names SIVE top 2026 pick in Photonics/Lasers; PT raised SEK 8 (from SEK 6), Outperform maintained
+- **2026** — Seeking Alpha: "A small-cap bet on AI's next bottleneck" — CPO laser source; ~31x P/S vs peer avg 17.5x; priced for execution
+- **Consensus (as of mid-2026):** 7 analysts; avg PT SEK 6.87; range SEK 6.06–8.40; consensus Buy
+
+---
+
+## Technology Alignment
+
+| Technology | Preference | This Ticker's Exposure | Weighting Implication |
+|-----------|-----------|----------------------|----------------------|
+| Co-Packaged Optics (CPO) | Strong Tailwind | Primary — InP ELS laser arrays | Core AI buildout exposure; CW-WDM MSA defines the ELS standard |
+| mmWave / 5G / 6G | Tailwind | Primary — beamforming ICs, FR3 | Defense + telecom as counter-cyclical diversification |
+| LiDAR | Emerging | Partial — laser arrays, Q4 2026 ramp | Optionality; $53–138M lifecycle if ramp converts |
+| SATCOM / Space | Tailwind | Partial — Ka-band, ALL.SPACE order | Growing but small revenue leg |
+| Defense / EW | Strong Tailwind | Partial — EW STAR, Ka-band beamforming | US DoD credentialing + CHIPS Act = long-term supply chain anchor |
+
+**Net tech alignment:** Tailwind — multiple independent technology curves converging on Sivers' product portfolio
+
+---
+
+## Ecosystem Links
+- [[Interconnect/_Supply Chain Map]] — CPO supply chain, Tier: ELS Laser Source
+- [[AI Buildout Stack]] — L07 Interconnect layer; CPO ELS sub-stack
+- Upstream: CW-WDM MSA (standard body), GlobalFoundries (silicon photonics integration), InP substrate suppliers
+- Downstream: Ayar Labs (SuperNova ELS module), Jabil (1.6T transceiver manufacturing), O-Net, Enablence, ALL.SPACE
+- Peers / competitors: Coherent Corp (COHR), Lumentum (LITE), MACOM (MTSI) — all CW-WDM MSA promoters
