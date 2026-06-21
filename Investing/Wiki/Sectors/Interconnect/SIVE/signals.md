@@ -92,6 +92,15 @@
 
 - **2026-06-20** — Article ingested (fact-checked): @asianinvestors (X, disclosed SIVE holder) — "The laser debate: why the industry is converging on SIVE's approach." Core ELS architecture thesis is technically sound. Key flags: CW-WDM MSA promoter list omits GlobalFoundries; "Nvidia Spectrum-X Photonics platform" unverified as CPO product; Synopsys CPO report attribution unusual; "Jabil's 1.6T transceivers" is a framing error (Jabil is manufacturer not designer). Promotional; no risk disclosure.
 
+- **2026-04-15** — Jabil 1.6T LRO collaboration: Sivers DFB laser arrays integrated into Jabil's 1.6T Linear Receive Optical (LRO) transceiver module for the pluggable market. LightCounting projects 800G+ pluggables at 225M units/yr by 2030 (~80% of pluggables market).
+  **Why it matters:** Opens a pluggable transceiver revenue leg alongside CPO. Corrects context on the prior @asianinvestors flag: the Jabil 1.6T product is real (Jabil manufactures, Sivers supplies the laser); the "framing error" was about design attribution only.
+
+- **2026-06-02** — GlobalFoundries SCALE CPO platform + Sivers partnership: Sivers laser arrays named as reference laser in GF silicon photonics reference designs. GF SCALE CPO platform launched May 4; Sivers partnership confirmed June 2.
+  **Why it matters:** GF is the only US-owned scaled silicon photonics fab. Reference-laser designation = Sivers designed-in by default across all SCALE-based CPO modules. Directly confirms the @asianinvestors article claim (previously flagged as "unverified"). Deepens US supply chain alignment under CHIPS Act. Also retroactively validates GF as a CW-WDM MSA ecosystem participant despite being omitted from the article's member list.
+
+- **2026-06-02** — Ayar Labs joins NVIDIA NVLink Fusion ecosystem for CPO rack-scale AI interconnect. Ayar SuperNova ELS module sources laser dies from Sivers, Lumentum, and Coherent. Volume ramp targeted 2028. Sivers has confirmed ~$1M order from Ayar Labs.
+  **Why it matters:** Confirms the NVLink Fusion → CPO → ELS demand chain. Sivers is qualified in the Ayar supply chain feeding Nvidia's scale-up interconnect. Nuance: Lumentum and Coherent (both with Nvidia investment backing) are co-qualified — Sivers participates but is not sole-source for this specific pathway.
+
 ---
 
 ## Social Mentions
@@ -103,6 +112,7 @@
 | 2026-05-17 | [[2026-05-17-sive-amzn-alchip-signal]] | tweet |
 | 2026-05-20 | [[2026-05-20-nvda-q1-earnings-preview]] | tweet |
 | 2026-06-20 | [[2026-06-20-sive-cwwdm-els-architecture]] | article — @asianinvestors (X) |
+| 2026-06-21 | [[2026-06-21-sive-serenity-dfb-ramp]] | post — Serenity (social) |
 
 ---
 
@@ -115,3 +125,4 @@
 - **2026-06-20** — Article ingested + fact-checked: @asianinvestors ELS/CPO architecture piece. Key flags documented in News & Alpha Log.
 - **2026-06-21** — 📊 MONITOR | --deep SIVE pass. Migrated legacy SIVE.md to three-layer structure (facts.md + analysis.md + signals.md). Key new findings: Q1 2026 SEK 61.9M –22% YoY; pipeline $799M +77% YTD; AGM June 15 board exodus (Duffy/Fällström/Halsey resigned), Nasdaq vote pulled at last minute, incentive plan withdrawn, 53.8M-share mandate approved; $8.2M ALL.SPACE Ka-band production order; EW STAR $6.6M Pentagon grant; DDM Finance EUR 225M bond default; insider trading probe (Myrdal); short-seller attack. Drift status updated to Drifting. Score unchanged at 5.5 pending Q2 results.
 - **2026-06-21** — 📄 ANNUAL REPORT | FY2025 annual report reviewed. Key new findings vs. wiki: (1) Revenue +40% YoY (not +25%) on PCAOB-restated basis vs. restated 2024 SEK 219.2M; wireless +53%, photonics +17%. (2) Cash at Dec 31 2025: SEK 29.7M — critically low. (3) Going concern explicitly stated in audited accounts. (4) Material weaknesses in internal controls — remediation underway. (5) Cyberattack in 2025: SEK 8.5M non-recurring cost. (6) Bootstrap Europe 4.0 S.à r.l. confirmed as both Feb 2026 lender ($17M) and AGM convertible subscriber — concentrated non-mainstream financial relationship. (7) Erik Fällström held 13.86% voting rights at year-end 2025 as largest shareholder (resigned board June 2026). (8) ESA $900K contract, aiRadar $800K, ALL.SPACE TRL6 US Army, LIGHTIUM AG TFLN, WIN Semi, POET, IRIS2 progress — all added to signals. (9) Top 3 wireless customers = >50% revenue confirmed. Operational thesis ON TRACK; financial/governance thesis WORSE than previously modeled.
+- **2026-06-21** — 📝 BULL VALIDATION | Serenity post on DFB laser production ramp validated. Confirmed: Jabil 1.6T LRO collaboration (Apr 15 2026); GF SCALE CPO reference laser (Jun 2 2026); Ayar Labs NVLink Fusion join (Jun 2 2026). Nuance: Lumentum + Coherent co-qualify as Ayar laser suppliers (both Nvidia-backed; non-exclusive). Marvell acquired Celestial AI (Feb 2 2026) — ecosystem signal only, no Sivers design-in confirmed. Production ramp moat argument validated: InP on-wafer coating yield constraints are a genuine barrier; management's own 2027 "CW laser supply shortage" flag confirms the bottleneck is real. New entries added to News & Alpha Log and Conviction Log.

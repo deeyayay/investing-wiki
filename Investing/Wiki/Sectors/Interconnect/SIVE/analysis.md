@@ -78,6 +78,9 @@ _Evaluated: 2026-06-21_
 | 2025 | ALL.SPACE achieves TRL6 with US Army (NGTT program) | ↑ | Customer's key US defense milestone directly unlocks Sivers production volumes from 2H 2026 |
 | 2025 | LIGHTIUM AG / EU INGENIOUS: TFLN platform with Sivers CW lasers | ↑ | Extends photonics moat into next-gen TFLN architecture; EU-funded = non-dilutive R&D |
 | 2026-06-15 | AGM: Nasdaq vote pulled; incentive plan withdrawn; Duffy/Fällström/Halsey resigned; 53.8M-share mandate approved; convertible subscribed by Bootstrap Europe 4.0 | ↓ | Board exodus + Nasdaq U-turn removes primary capital/visibility catalyst; Bootstrap Europe as both lender and convertible holder warrants close monitoring |
+| 2026-04-15 | Jabil 1.6T LRO collaboration: Sivers DFB laser arrays integrated into Jabil's 1.6T Linear Receive Optical transceiver module | ↑ | Adds pluggable transceiver revenue leg alongside CPO; Jabil confirmed as manufacturing partner for laser-equipped modules, not just CPO assembler |
+| 2026-06-02 | GlobalFoundries SCALE CPO platform: Sivers designated reference laser in GF silicon photonics reference designs | ↑ | Only US-owned scaled silicon photonics fab; reference-laser = designed-in across all SCALE CPO modules; deepens CHIPS Act supply chain alignment |
+| 2026-06-02 | Ayar Labs joins NVIDIA NVLink Fusion CPO ecosystem; Sivers is qualified Ayar SuperNova laser supplier | → | CPO → NVLink Fusion demand chain confirmed; Lumentum + Coherent (Nvidia-backed) co-qualify — Sivers participates but is not sole-source |
 
 ---
 
@@ -88,6 +91,10 @@ _Evaluated: 2026-06-21_
 | 2026-03 | Receives | ALAB | CPO switch ASIC ramp accelerating | Increases demand for ELS laser arrays; direct read-through to Sivers photonics |
 | 2026-03 | Receives | NVDA | Blackwell GPU buildout drives interconnect demand | CPO transition timeline accelerated; ELS laser suppliers benefit |
 | 2026-05 | Emits | AYAR | ELS laser qualification in SuperNova module | Ayar Labs' CPO platform viable; validates full CPO supply chain demand signal |
+| 2026-04-15 | Receives | JBIL | Jabil 1.6T LRO module with Sivers DFB laser arrays | Direct evidence of pluggable module revenue pathway; Jabil is manufacturing partner, Sivers is laser supplier |
+| 2026-06-02 | Receives | GF | GF SCALE CPO platform launch; Sivers named reference laser | Sivers designed-in by default across GF silicon photonics CPO reference specs; CHIPS Act supply chain anchor |
+| 2026-06-02 | Receives | NVDA | NVLink Fusion CPO ecosystem launched; Ayar Labs joins | Sivers qualified in Ayar → NVLink Fusion supply chain; volume ramp 2028; Lumentum/Coherent co-qualified (Nvidia-backed) |
+| 2026-02-02 | Receives | MRVL | Marvell acquires Celestial AI — optical interconnect play | Sivers can supply DFB laser arrays to Marvell/Celestial CPO platform; no design-in announcement yet |
 
 ---
 
