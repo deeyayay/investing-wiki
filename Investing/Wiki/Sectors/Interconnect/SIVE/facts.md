@@ -34,14 +34,14 @@ earnings:
     eps_nongaap: null
     beat: null
     guidance_next_b: null
-    notes: "PCAOB restatement: revenue SEK 306.6M, net loss SEK 222.6M (was 186.5M), operating loss SEK 177.8M"
-  - quarter: FY2025
+    notes: "PCAOB: SEK 306.6M (+40% YoY vs restated 2024 SEK 219.2M); wireless +53% YoY; photonics +17% YoY; op loss SEK -177.8M; net loss SEK -222.6M; adj EBITDA SEK -50.3M (improved SEK 1M YoY); cash Dec 31 SEK 29.7M; non-recurring SEK 43.1M (cyberattack 8.5M + restructuring 11.5M + strat projects 14.7M + incentives 8.5M); GOING CONCERN language explicit; material control weaknesses identified"
+  - quarter: FY2025_original
     date: "2026-03-01"
     revenue_b: 0.304
     eps_nongaap: null
     beat: null
     guidance_next_b: null
-    notes: "+25% YoY; Q4 +17% QoQ; 2028 breakeven target; raised SEK 95M equity + $17M debt"
+    notes: "Pre-restatement report; raised SEK 203M equity (two directed issue tranches) + USD 12M US loan; 311.3M shares outstanding Dec 31; equity SEK 949.8M"
 
 filings:
   - type: "Interim Report Q1"
@@ -80,9 +80,9 @@ tech_exposure:
 demand_chain:
   customer_funding_type: "mixed"
   top_customer_pct: null
-  top_3_customers_pct: null
+  top_3_customers_pct: ">50"
   circular_exposure: "none"
-  notes: "CPO: hyperscaler-funded via Ayar Labs, Jabil 1.6T; Defense: US DoD CHIPS Act; Telecom: Tier-1 vendor; SATCOM: ALL.SPACE (UK)"
+  notes: "Top 3 wireless customers = >50% of FY2025 revenue (explicit concentration risk per annual report). CPO: hyperscaler-funded via Ayar Labs, Jabil 1.6T; Defense: US DoD CHIPS Act; Telecom: Tier-1 vendor; SATCOM: ALL.SPACE (UK, TRL6 US Army)"
 
 metrics:
   score: 5.5

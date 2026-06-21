@@ -6,6 +6,45 @@
 
 ## News & Alpha Log
 
+- **2025-Q1** — Intelsat SATCOM Digitizer Development Program Award won. DIFI Consortium joined (satellite network interoperability). Nisko distribution partnership (wireless market expansion).
+  **Why it matters:** Multiple SATCOM ecosystem engagements in single quarter; DIFI membership signals commitment to interoperability standards.
+
+- **2025-Q1** — WIN Semiconductors partnership announced: high-volume DFB laser production scale-up. CHIPS Act contracts signed with Northeast Microelectronics Coalition Hub.
+  **Why it matters:** WIN Semi partnership directly addresses the "CW laser supply shortage" management flagged for 2027; CHIPS Act integration deepens US government ecosystem access.
+
+- **2025-Q2** — USD 12M loan from US credit institution (existing loans repaid). New US office in San Jose, CA. India (Bangalore) office opened. 130 employees at year-end.
+  **Why it matters:** US credit institution lender is a positive signal vs. Bootstrap Europe; San Jose presence supports hyperscaler customer proximity.
+
+- **2025-Q3** — Directed share issue: 25.7M shares, ~SEK 95M. New pan-European institutional investors.
+  **Why it matters:** Third capital raise in 12 months; European institutional base broadening.
+
+- **2025-Q3** — O-Net Technologies strategic OEM partnership announced (April 2025): high-performance external laser sources for CPO switches and NICs.
+  **Why it matters:** First named OEM partner for CPO ELS modules; directly validates the commercial pathway from R&D to production.
+
+- **2025-Q4** — POET Technologies partnership (November 2025): Sivers DFB arrays + POET Optical Interposer™ → light engines for AI optical connectivity. Prototypes targeted H1 2026; production readiness year-end 2026.
+  **Why it matters:** POET partnership expands Sivers' photonics addressable market to include light engines as well as bare laser arrays.
+
+- **2025-Q4** — LIGHTIUM AG / EU INGENIOUS project: Thin-Film Lithium Niobate (TFLN) platform integrating Sivers CW lasers and photodetectors directly onto TFLN wafers.
+  **Why it matters:** Extends photonics moat into next-generation optical transceiver architecture; EU-funded = non-dilutive R&D.
+
+- **2025-Q4** — ESA $900K contract: next-gen SATCOM beamformer chips aligned with IRIS2 requirements (December 2025).
+  **Why it matters:** IRIS2 is Europe's largest SATCOM infrastructure upgrade; ESA contract validates Sivers as the only EU-based silicon mmWave SATCOM IC supplier bidding into IRIS2. Three user terminal vendors at RFP prototyping stage with Sivers beamformers.
+
+- **2025-Q4** — aiRadar $800K contract: 28 GHz antenna module for defense applications (December 2025). This is the "$800K US defense contract" referenced in later 2026 headlines.
+  **Why it matters:** Adds a named defense customer beyond the CHIPS Act programs; 28 GHz module leverages existing SUMMIT portfolio.
+
+- **2025** — Cyberattack identified. Managed per security procedures; no material operational disruption. Non-recurring cost: SEK 8.5M.
+  **Why it matters:** Unexpected risk materialized; IP/trade secret exposure is a named risk given the company's proprietary on-wafer coating know-how; management cannot rule out future incidents.
+
+- **2025** — ALL.SPACE achieves Technology Readiness Level 6 (TRL6) with US Army under NGTT (Next Generation Tactical Terminal) program. Rapidly expanding production pipeline, increased volumes expected from 2H 2026.
+  **Why it matters:** TRL6 is a critical US DoD procurement gate; Sivers production orders from ALL.SPACE are directly tied to this milestone.
+
+- **2025 (FY2025 annual report, published 2026)** — Going concern language: "material risk and uncertainty factor that the Group and the Parent Company may not be able to continue operations to the planned extent." Material weaknesses in internal controls identified; Board/Audit Committee overseeing remediation (new IT systems, additional review procedures, external advisor engaged). SEK 29.7M cash at Dec 31 2025.
+  **Why it matters:** Explicit going concern language in an audited annual report is stronger than management commentary about runway; combined with material control weaknesses and a cyberattack, this represents a step-change in governance risk. The SEK 29.7M cash position at year-end makes the Feb 2026 Bootstrap Europe loan ($17M) effectively a survival raise.
+
+- **2026-02-24** — Bootstrap Europe 4.0 S.à r.l. provides USD 17M loan facility ($5M secured term + $12M secured convertible). Existing loans of SEK 102.8M repaid. **This is the same entity that subscribed to the convertible at the June 2026 AGM.**
+  **Why it matters:** Bootstrap Europe is both Sivers' primary lender AND its convertible equity holder — a concentrated, non-mainstream financial relationship with an entity of unclear strategic intent. The Feb 2026 loan was effectively a survival raise given the SEK 29.7M cash position at year-end 2025.
+
 - **2025** — Jabil manufacturing partnership confirmed. Asset-light production model for hyperscale deployment.
   **Why it matters:** Outsourced manufacturing means revenue can scale without proportional capex; validates supply chain access for hyperscale volumes.
 
@@ -75,3 +114,4 @@
 - **2026-05-19** — 📰 DAILY-NEWS | MSCI Sweden Global Small Cap index inclusion (effective May 29).
 - **2026-06-20** — Article ingested + fact-checked: @asianinvestors ELS/CPO architecture piece. Key flags documented in News & Alpha Log.
 - **2026-06-21** — 📊 MONITOR | --deep SIVE pass. Migrated legacy SIVE.md to three-layer structure (facts.md + analysis.md + signals.md). Key new findings: Q1 2026 SEK 61.9M –22% YoY; pipeline $799M +77% YTD; AGM June 15 board exodus (Duffy/Fällström/Halsey resigned), Nasdaq vote pulled at last minute, incentive plan withdrawn, 53.8M-share mandate approved; $8.2M ALL.SPACE Ka-band production order; EW STAR $6.6M Pentagon grant; DDM Finance EUR 225M bond default; insider trading probe (Myrdal); short-seller attack. Drift status updated to Drifting. Score unchanged at 5.5 pending Q2 results.
+- **2026-06-21** — 📄 ANNUAL REPORT | FY2025 annual report reviewed. Key new findings vs. wiki: (1) Revenue +40% YoY (not +25%) on PCAOB-restated basis vs. restated 2024 SEK 219.2M; wireless +53%, photonics +17%. (2) Cash at Dec 31 2025: SEK 29.7M — critically low. (3) Going concern explicitly stated in audited accounts. (4) Material weaknesses in internal controls — remediation underway. (5) Cyberattack in 2025: SEK 8.5M non-recurring cost. (6) Bootstrap Europe 4.0 S.à r.l. confirmed as both Feb 2026 lender ($17M) and AGM convertible subscriber — concentrated non-mainstream financial relationship. (7) Erik Fällström held 13.86% voting rights at year-end 2025 as largest shareholder (resigned board June 2026). (8) ESA $900K contract, aiRadar $800K, ALL.SPACE TRL6 US Army, LIGHTIUM AG TFLN, WIN Semi, POET, IRIS2 progress — all added to signals. (9) Top 3 wireless customers = >50% revenue confirmed. Operational thesis ON TRACK; financial/governance thesis WORSE than previously modeled.

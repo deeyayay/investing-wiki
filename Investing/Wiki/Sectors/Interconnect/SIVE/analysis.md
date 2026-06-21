@@ -13,7 +13,7 @@ Dual-division micro-cap at the AI data center CPO laser bottleneck and mmWave/de
 
 > **Thesis established:** 2026-05-14
 > **Last validated:** 2026-06-21
-> **Drift status:** Drifting — Nasdaq listing vote pulled at June AGM, three directors resigned, Q1 revenue –22% YoY; $799M pipeline and $8.2M ALL.SPACE order partially offset
+> **Drift status:** Drifting — Operational thesis (CPO ELS, LiDAR, SATCOM, defense) on track with strong partnerships; financial/governance picture materially worse: going concern explicit, material control weaknesses, cyberattack, Bootstrap Europe concentrated lender relationship, Nasdaq vote pulled, board exodus
 
 Sivers Semiconductors operates two divisions: Photonics (InP laser arrays for co-packaged optics) and Wireless (mmWave beamforming transceivers for 5G backhaul, radar, defense, and SATCOM). The photonics division is the primary AI thesis: as hyperscaler GPU clusters push interconnect speeds beyond copper's thermal and latency limits, co-packaged optics (CPO) replaces copper with integrated optical chiplets — and every CPO module requires an external light source (ELS). Sivers designs the InP laser arrays that serve as that ELS. Q1 2026 revenue came in at SEK 61.9M (–22% YoY), impacted by US government shutdown delaying defense budget approvals in Q4 2025. Not yet profitable; management targets 2028 for breakeven and describes 2027 as a "transformational year."
 
@@ -23,7 +23,7 @@ The risk picture has worsened materially since the May scoring. Three founders/d
 
 **Key moat:** InP DFB laser design expertise with proprietary on-wafer coating enabling high manufacturing yield; CW-WDM MSA founding promoter membership (co-authored the ELS standard); Jabil manufacturing partnership; early CPO design-wins (Ayar Labs SuperNova, O-Net, Enablence); mmWave + photonics duality gives two independent revenue legs.
 
-**Key risks:** Sub-12-month cash runway (serial dilution — 53.8M-share mandate now live); insider trading investigation (Ekobrottsmyndigheten) blocks Nasdaq listing; board exodus (three directors resigned June 2026); DDM Finance forced-sale overhang (EUR 225M bond default); PCAOB-restated 2025 net loss SEK 222.6M (wider than initially disclosed); Q1 2026 revenue –22% YoY; competitive displacement from Coherent/Lumentum (scale incumbents); silicon photonics integration risk (structural ELS displacement); short-seller attack (ongoing).
+**Key risks:** Going concern explicitly stated in FY2025 annual report (stronger than "sub-12-month runway"); SEK 29.7M cash at Dec 31 2025 (critically low); serial dilution (53.8M-share mandate now active); Bootstrap Europe 4.0 S.à r.l. is both the Feb 2026 lender ($17M facility) AND AGM convertible subscriber — concentrated, non-mainstream financial relationship; material weaknesses in internal controls (Board/Audit Committee remediating); cyberattack in 2025 (SEK 8.5M non-recurring cost; future incidents not ruled out); insider trading investigation (Ekobrottsmyndigheten) blocks Nasdaq listing; board exodus (Duffy/Fällström/Halsey resigned June 2026); DDM Finance forced-sale overhang (EUR 225M bond default); >50% wireless revenue from top 3 customers (concentration risk); Q1 2026 –22% YoY; competitive displacement from Coherent/Lumentum; silicon photonics integration risk; short-seller attack.
 
 ---
 
@@ -48,11 +48,12 @@ _Evaluated: 2026-06-21_
 
 | Flag | Status | Notes |
 |------|--------|-------|
-| Capex sustainability | ⚠️ Watch | Asset-light (Jabil); but cash runway <12 months; 53.8M-share dilution mandate now active |
-| Demand chain health | ✅ OK | CPO + defense + 5G are independent demand legs; pipeline $799M (+77% YTD) |
-| Customer concentration | ⚠️ Watch | Top customer % unknown; pipeline broad but largely unconverted |
+| Capex sustainability | 🔴 High | SEK 29.7M cash at Dec 31 2025; going concern explicit; 53.8M-share dilution mandate active; Bootstrap Europe concentrated lender |
+| Demand chain health | ✅ OK | CPO + defense + SATCOM + 5G independent legs; pipeline $799M |
+| Customer concentration | ⚠️ Watch | Top 3 wireless customers = >50% revenue (confirmed by annual report); ALL.SPACE is single most important customer |
 | Circular revenue exposure | ✅ None | No circular exposure identified |
-| Rate sensitivity | → Neutral | SEK-denominated; USD defense revenue; no significant rate-linked floating debt |
+| Internal controls | 🔴 High | Material weaknesses confirmed; cyberattack in 2025; external advisor engaged; remediation underway |
+| Rate sensitivity | → Neutral | SEK-denominated; USD defense revenue; no significant floating-rate exposure |
 
 ---
 
@@ -70,7 +71,13 @@ _Evaluated: 2026-06-21_
 | 2026-05-~ | FY2025 PCAOB restatement: net loss SEK 222.6M (was 186.5M) | ↓ | Wider historical losses than disclosed; undermines Financial Health score |
 | 2026-05-~ | DDM Finance EUR 225M bond default; formal restructuring filed | ↓ | Forced-sale of SIVE stake now near-term event risk, not hypothetical |
 | 2026-06-09 | ALL.SPACE $8.2M Ka-band beamforming production order (deliveries through 2027) | ↑ | Wireless division moves from development to volume manufacturing; revenue geography diversification |
-| 2026-06-15 | AGM: Nasdaq vote pulled; incentive plan withdrawn; Duffy/Fällström/Halsey resigned; 53.8M-share mandate approved; convertible subscribed by Bootstrap Europe 4.0 | ↓ | Board exodus + Nasdaq U-turn removes primary capital/visibility catalyst; Bootstrap Europe as convertible subscriber (unknown entity) warrants monitoring |
+| 2025 | Cyberattack identified; SEK 8.5M non-recurring cost | ↓ | Unexpected risk materialized; management unable to rule out future incidents; adds to governance concerns |
+| 2025 | Going concern language in FY2025 annual report | ↓ | Explicit going concern is stronger than "sub-12-month runway"; material weaknesses in internal controls simultaneously identified |
+| 2025 | Bootstrap Europe 4.0 S.à r.l. is Feb 2026 lender ($17M) AND AGM convertible subscriber | ↓ | Concentrated dependency on a single non-mainstream entity for both debt and equity; opaque counterparty |
+| 2025-12 | ESA $900K SATCOM beamformer contract; aiRadar $800K 28 GHz defense contract | ↑ | Two new government-backed customers diversify defense revenue; IRIS2-aligned ESA contract validates European SATCOM positioning |
+| 2025 | ALL.SPACE achieves TRL6 with US Army (NGTT program) | ↑ | Customer's key US defense milestone directly unlocks Sivers production volumes from 2H 2026 |
+| 2025 | LIGHTIUM AG / EU INGENIOUS: TFLN platform with Sivers CW lasers | ↑ | Extends photonics moat into next-gen TFLN architecture; EU-funded = non-dilutive R&D |
+| 2026-06-15 | AGM: Nasdaq vote pulled; incentive plan withdrawn; Duffy/Fällström/Halsey resigned; 53.8M-share mandate approved; convertible subscribed by Bootstrap Europe 4.0 | ↓ | Board exodus + Nasdaq U-turn removes primary capital/visibility catalyst; Bootstrap Europe as both lender and convertible holder warrants close monitoring |
 
 ---
 
