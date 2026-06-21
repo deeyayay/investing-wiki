@@ -35,7 +35,7 @@ The risk picture is equally specific. Cash runway is under 12 months at current 
 
 **Key moat:** InP laser design expertise with proprietary on-wafer coating enabling high manufacturing yield; Jabil manufacturing partnership (tech-to-hyperscale validation); early CPO design-wins (O-Net/Enablence); mmWave + photonics duality provides two independent revenue legs.
 
-**Key risks:** Sub-12-month cash runway (ongoing dilution risk), 31x P/S valuation (punishes any execution miss), newly assembled leadership team (track record at Sivers unknown), Achilles Capital distress overhang, criminal investigation and delayed annual report (governance red flag), competitive displacement from silicon photonics or hyperscaler vertical integration.
+**Key risks:** Sub-12-month cash runway (ongoing dilution risk), 31x P/S valuation (punishes any execution miss), newly assembled leadership team (track record at Sivers unknown), Achilles Capital / DDM Finance distress overhang (EUR 225M bond default → forced-sale risk), **insider trading investigation** (Sweden's Economic Crime Authority / prosecutor Jonas Myrdal — anonymous social media account posted Nasdaq listing plan ~48 hrs before official announcement; a conviction would block SEC/Nasdaq approval for the US dual-listing), financial restatements widened 2025 net loss to SEK 222.6M (from 186.5M), competitive displacement from silicon photonics or hyperscaler vertical integration.
 
 ---
 
@@ -49,7 +49,7 @@ The risk picture is equally specific. Cash runway is under 12 months at current 
 
 **Execution track record:** Current team is newly assembled — average tenure at Sivers ~1.6 years. Prior CEO Anders Storm grew revenue at 44% CAGR from 2016–2023 and navigated three exchange listing upgrades; his departure in March 2024 marked the leadership transition. Vathulya is a semiconductor industry veteran but specific prior outcomes are not publicly documented. Thorsgaard brings 7 years as CFO of Napatech (public semiconductor company), which is the strongest track record signal on the team.
 
-**Insider ownership / alignment:** Not an SEC filer (Swedish company — no DEF 14A). Largest shareholder: Achilles Capital (parent DDM Finance in restructuring — forced-sale risk is an active overhang). Board members with holdings include Bami Bastani, Tomas Duffy, Karin Raj, Todd Thomson. Specific insider % not available from web search — see Finansinspektionen filings or siverssemiconductors.com/investors/shareholders for current breakdown.
+**Insider ownership / alignment:** Not an SEC filer (Swedish company — no DEF 14A). Largest shareholder: Achilles Capital (parent DDM Finance — defaulted on ~EUR 225M in bonds due April 2026, now in formal restructuring; plans to sell tech/life-science stakes valued EUR 30–50M which likely includes the SIVE position — active forced-sale overhang). Board overhaul underway ahead of Nasdaq listing (June 2026). AGM June 15: shareholders voting on management incentive plan covering up to 7M stock options (~2% additional dilution). Board members with holdings include Bami Bastani, Tomas Duffy, Karin Raj, Todd Thomson. Specific insider % not available from web search — see Finansinspektionen filings or siverssemiconductors.com/investors/shareholders for current breakdown.
 
 ---
 
@@ -59,8 +59,11 @@ The risk picture is equally specific. Cash runway is under 12 months at current 
 - [ ] Jabil manufacturing ramp — first volume production orders
 - [ ] InP photonics design-win announcements with hyperscaler or Tier-1 transceiver customers
 - [ ] mmWave Tier-1 telecom beamformer delivery (end-2026 per Jan 2025 contract)
-- [ ] Potential Nasdaq US dual listing — mentioned in 2025 Annual Report (capital + visibility catalyst)
-- [ ] Achilles Capital / DDM Finance restructuring resolution — removes forced-sale overhang
+- [ ] Nasdaq US dual listing — PCAOB audit complete (financials restated to PCAOB standards); insider trading probe is the key gating risk for SEC/Nasdaq approval
+- [x] AGM June 15, 2026 — vote on management incentive plan (7M stock options, ~2% dilution)
+- [ ] EW STAR Year 2 execution — $6.6M Pentagon CHIPS Act grant (BAE Systems / MIT Lincoln Lab / Columbia University partnership); mmWave beamforming for EW and secure comms
+- [ ] DDM Finance restructuring resolution — bond default (EUR 225M); asset sale EUR 30–50M likely includes SIVE stake; watch for block sale pressure
+- [ ] Insider trading investigation outcome — prosecutor Jonas Myrdal / Economic Crime Authority; timeline unknown
 - [ ] Cash runway — next capital raise timing and terms (watch for dilution severity)
 
 ---
@@ -71,6 +74,8 @@ The risk picture is equally specific. Cash runway is under 12 months at current 
 | Quarter | Revenue | Beat/Miss | EPS | Guidance | Notes |
 |---------|---------|-----------|-----|----------|-------|
 | FY2025 | SEK 304M (~$33M) | — | Loss | 2028 breakeven | +25% YoY; Q4 +17% QoQ sequential; raised SEK 95M equity + $17M debt in FY2025/early 2026 |
+| FY2025 (restated) | SEK 306.6M | — | Net loss SEK 222.6M | 2028 breakeven | Restated to PCAOB standards for Nasdaq listing; operating loss SEK 177.8M; net loss widened from initially disclosed SEK 186.5M |
+| Q1 2026 | TBD | — | — | — | Results delayed to May 29 (from May 20); restated annual accounts filed |
 
 ---
 
@@ -106,7 +111,12 @@ The risk picture is equally specific. Cash runway is under 12 months at current 
 - **2026-05-11** — Note migrated to subfolder. Knowledge base format. No SEC filings — Swedish listed entity.
 - **2026-05-14** — stock-research run (--refresh). Investment thesis, Management & Leadership populated. Key new findings: FY2025 revenue SEK 304M (+25% YoY); CEO/CFO both appointed 2024/2025 (new team); Achilles Capital (largest shareholder) parent in restructuring; criminal investigation + delayed annual report are active governance flags; cash runway <12 months; O-Net/Enablence CPO partnership (March 2026) is primary commercial validation. Sources: company IR, Seeking Alpha, Silicon Matter, Sivers Q4 2025 report.
 - **2026-05-19** — Scored — Composite 5.5/10 Average ⚠️ Low-confidence | P:3 PP:2 L:2 FH:1 ME:4 FP:4 | Valuation: Expensive at ~31x P/S | Monitor Registry + Watchlist (×2) updated. Re-score after runway resolution or next earnings.
-- **2026-05-19** — 📰 DAILY-NEWS | MSCI Sweden Global Small Cap index inclusion (effective May 29); stock +31.3% then –5.49%; Q1 results due tomorrow May 20 (impact 4)
+- **2026-05-19** — 📰 DAILY-NEWS | MSCI Sweden Global Small Cap index inclusion (effective May 29); stock +31.3% then –5.49%; Q1 results delayed to May 29 (from May 20)
+- **2026-05-~** — ⚠️ GOVERNANCE | Sweden's Economic Crime Authority opens preliminary insider trading investigation. Anonymous social media account posted details of Sivers' planned Nasdaq dual-listing ~48 hrs before official announcement, triggering unusual price movement. Prosecutor Jonas Myrdal leading inquiry. A conviction would hand SEC/Nasdaq regulators grounds to deny the US listing application — this is the single biggest structural risk to the Nasdaq catalyst.
+- **2026-05-~** — 💰 FINANCIALS | FY2025 accounts restated to PCAOB standards (prerequisite for Nasdaq listing). Net loss widened: SEK 186.5M → **SEK 222.6M**; revenue revised to SEK 306.6M; operating loss SEK 177.8M. Both 2024 and 2025 consolidated statements restated.
+- **2026-05-~** — 💰 SHAREHOLDER | DDM Finance (parent of Achilles Capital, Sivers' largest shareholder) **defaulted on ~EUR 225M in bonds** due April 2026; filed for formal debt restructuring. Plans to sell tech/life-science stakes EUR 30–50M — almost certainly includes SIVE position. Forced-sale overhang is now a near-term event risk, not a hypothetical.
+- **2026-05-~** — 🇺🇸 DEFENSE | $6.6M Pentagon CHIPS Act grant awarded — Year 2 of EW STAR (Electronic Warfare Systems Technology and Readiness) project under Microelectronics Commons program. Partners: BAE Systems, MIT Lincoln Laboratory, Columbia University. Funds mmWave beamforming for next-gen electronic warfare and secure comms. Stock +~50% over two days (hit 87.70 SEK), driven by defense contract + AI optics narrative. Separate $800K contract also awarded by US defense supplier.
+- **2026-06-15** — 📋 AGM | Annual General Meeting. Shareholders voted on management incentive plan: up to 7M stock options (~2% dilution). Board overhaul underway ahead of Nasdaq listing.
 - **2026-06-20** — 📰 ARTICLE (fact-checked) | @asianinvestors (X, disclosed SIVE holder): "The laser debate: why the industry is converging on SIVE's approach." Thesis: ELS-based CPO is winning over integrated laser; Sivers positioned via CW-WDM MSA membership and Ayar Labs / Jabil / GlobalFoundries partnerships. **Fact-check summary:** Core ELS-vs-integrated architecture framing is technically sound and well-supported. Technical arguments (thermal, yield, serviceability, material compatibility, wavelength flex) are accurate. Ayar Labs SuperNova ELS claim ✅. CW-WDM MSA consortium real ✅. **Flags:** (1) Promoter member list incomplete — omits GlobalFoundries, a founding member per training-data knowledge. (2) "Nvidia Spectrum-X Photonics platform" unverified — Spectrum-X is Ethernet switches, not a CPO product line; may be a roadmap item not yet shipping. (3) "Synopsys January 2026 CPO report" — unusual attribution; Synopsys is EDA/IP, not a CPO market research firm; quote may be real but source unconfirmed (web search unavailable at time of ingestion). (4) "Jabil's 1.6T transceivers" is a framing error — Jabil is Sivers' contract manufacturer, not a transceiver designer. (5) GlobalFoundries AI chip platform integration plausible but lacks primary source. **Bias:** Promotional; author holds SIVE; no mention of cash runway, 31x P/S, governance risk, or criminal investigation. Weight as bullish sentiment, not independent analysis.
 
 ## Social Mentions
