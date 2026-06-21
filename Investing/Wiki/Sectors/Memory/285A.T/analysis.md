@@ -30,20 +30,31 @@ Key risks: (1) **Cyclicality** — NAND is the most volatile commodity semicondu
 ---
 
 ## Scoring Summary
-_Last scored: — | [[Scoring Rubric]]_
+_Last scored: 2026-06-21 | [[Scoring Rubric]]_
 
 | Criterion | Score | Evidence |
 |-----------|-------|----------|
-| Product (Love Factor) | —/5 | |
-| Pricing Power | —/5 | |
-| Leadership & Alignment | —/5 | |
-| Financial Health | —/5 | |
-| Macro Environment | —/5 | |
-| Future Potential | —/5 | |
-| **Composite** | **—/10** | |
+| Product (Love Factor) | 3/5 | BiCS FLASH IP (37-yr lineage, BiCS10 332 layers, 59% density gain) + Apple design-in switching costs; but NAND is competitive vs. Samsung/SK Hynix/Micron — no platform lock-in |
+| Pricing Power | 3/5 | NAND ASPs doubled Q4 FY2025 → ~74% operating margin (record); moat.pricing_power "medium" captures commodity nature — cycle-dependent, not structural |
+| Leadership & Alignment | 2/5 | Both CEO (Oota) and CFO (Kawamura) appointed April 2026 — concurrent leadership transition during BiCS10 ramp; insider ownership null; Bain Capital ~30-37% stake overhang; no conviction log entries |
+| Financial Health | 4/5 | Revenue ~$11.4B FY2025 at ~74% operating margins; forward guidance ¥2.18-2.27T; Flash Ventures 51/49 shared-capex reduces fab burden; FCF-funded hyperscaler + Apple demand chain; note: earnings[] not yet stubbed in facts.md |
+| Macro Environment | 4/5 | AI demand → ~50% of flash TAM by 2029 per Kioxia; supply constrained until late 2027; hyperscaler procurement accelerating; 1 headwind: NAND cycle volatility and Samsung capacity optionality |
+| Future Potential | 3/5 | AI storage TAM expansion (KV-cache tiering, edge AI, enterprise SSDs, BiCS10 density tiers); Flash Ventures JV through 2034; limited true adjacency — single-product (NAND) with no software/platform expansion identified |
+| **Composite** | **6.5/10** | **Strong** |
 
-**Valuation:** ~8.8x forward P/E (estimated, Goldman Sachs basis) — cheap vs. the upcycle if NAND tight through 2028 as GS forecasts.
-**Growth Potential:** — (pending /score-ticker)
+**Valuation:** Cheap | Forward P/E: ~8.8x (Goldman Sachs basis) | GS upgraded to Buy, nearly doubled PT; thesis: NAND tight through 2028
+**Growth Potential:** — (pending real-time data integration)
+
+## Risk Flags
+_Evaluated: 2026-06-21_
+
+| Flag | Status | Notes |
+|------|--------|-------|
+| Capex sustainability | WATCH | IDM with 9 Japan fabs; 74% operating margins cover capex in upcycle but 2022–2024 proved capex can outpace FCF in troughs |
+| Demand chain health | CLEAR | Apple + hyperscalers (AWS/Google/Azure/Meta) are FCF-funded; diversified consumer + enterprise customer base |
+| Customer concentration | WATCH | Apple design-in with package-level validation cycles suggests >20% concentration; specific % not in wiki KB |
+| Circular revenue exposure | CLEAR | NAND demand traceable to real end-user data consumption (consumer devices, hyperscaler inference); not circular |
+| Rate sensitivity | WATCH | BoJ normalization could affect JPY financing costs; Bain Capital LBO debt structure details not in wiki KB |
 
 ---
 

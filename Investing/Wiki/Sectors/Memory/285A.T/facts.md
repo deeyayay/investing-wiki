@@ -35,9 +35,9 @@ tech_exposure:
     notes: "BiCS10 at 332 layers with CMOS Direct Bonding architecture; 59% density gain"
 
 metrics:
-  score: null
-  score_label: "—"
-  last_scored: null
+  score: 6.5
+  score_label: "Strong"
+  last_scored: "2026-06-21"
   valuation_fpe: 8.8
   analyst_pt: null
   analyst_upside_pct: null
