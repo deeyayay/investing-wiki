@@ -337,12 +337,6 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 .wl-empty{text-align:center;padding:60px 0;color:var(--muted);font-size:13px;line-height:2}
 .wl-loading{color:var(--muted);font-size:13px;padding:40px 0;text-align:center}
 @media(max-width:600px){#watchlist{padding:16px}.wl-cards{grid-template-columns:1fr}.wl-add-row{flex-direction:column;align-items:stretch}}
-/* ── Bottleneck rank badges on L0 layer headers and rail titles ── */
-.bn-badge{font-size:9px;font-weight:800;padding:1px 7px;border-radius:99px;letter-spacing:.01em;flex-shrink:0;font-family:ui-monospace,monospace;white-space:nowrap;line-height:1.6}
-.bn-badge.now{background:oklch(88% .14 142);color:oklch(28% .18 142)}
-.bn-badge.near{background:var(--amber-bg);color:var(--amber);border:1px solid oklch(84% .14 62)}
-.bn-badge.mid{background:oklch(95% .06 27);color:var(--d5)}
-.bn-badge.far{background:var(--bg3);color:var(--muted)}
 </style>
 </head>
 <body>
@@ -998,21 +992,6 @@ const DATA = {
         "photonixFAB development milestone ~Oct 2026 — development phase complete per author estimate; risk production ramp begins; NVIDIA/Nokia consortium update expected"
       ]
     }
-  ],
-  bottleneck_ranking: [
-    {rank:1,name:"Memory",zh_name:"存储",subtitle:"HBM · DRAM · eSSD",layer:"L06",rail:null,profit_timing:"Now",rationale:"Already pricing up, long-term contracts signed, margins materializing. HBM supply is gated by CoWoS packaging capacity — whoever controls memory bandwidth controls AI throughput.",tickers:["000660.KS","MU","005930.KS","SNDK"]},
-    {rank:2,name:"Optical Interconnect",zh_name:"光互连",subtitle:"800G / 1.6T · Scale-Up · Scale-Across",layer:"L07",rail:null,profit_timing:"Now",rationale:"Connectivity takes the baton from compute. The 800G → 1.6T upgrade cycle is live now; cluster scaling drives exponential fiber and transceiver demand.",tickers:["COHR","ALAB","CRDO","LITE"]},
-    {rank:3,name:"Advanced Packaging",zh_name:"先进封装",subtitle:"CoWoS · CoPoS · HBM stacking",layer:"L08",rail:null,profit_timing:"Now",rationale:"The prerequisite for both HBM and GPU volume — no CoWoS, no H100/B200/B300. TSMC CoWoS capacity is the hardest physical constraint in the AI supply chain today.",tickers:["BESI","SIVE","ASX"]},
-    {rank:4,name:"ASIC + Networking",zh_name:"自研芯片与交换芯片",subtitle:"Custom ASICs · switch silicon · SerDes · DSP",layer:"L05",rail:null,profit_timing:"Now",rationale:"Hyperscaler custom silicon displaces merchant GPUs for internal inference; MRVL and AVGO sit at the center of both XPU design services and datacenter switching silicon.",tickers:["MRVL","AVGO","ANET"]},
-    {rank:5,name:"Power / AI Factory",zh_name:"电力与AI工厂",subtitle:"Transformers · grid interconnect · UPS · 800V DC · BBU",layer:null,rail:"Power Infrastructure",profit_timing:"2026–2027",rationale:"Grid interconnection capacity is the real bottleneck — AI factories require MW-scale power commitments 3–5 years out. Transformer lead times remain 2+ years and are the critical path for every new AI campus.",tickers:["ETN","VRT","HUBB","POWL"]},
-    {rank:6,name:"Liquid Cooling",zh_name:"液冷",subtitle:"DLC · CDU · cold plates",layer:null,rail:"Thermal Management",profit_timing:"2026–2027",rationale:"High-power GPU racks (>100 kW) make direct liquid cooling mandatory. DLC and CDU attach rates are rising with every new GPU generation and every new AI campus design.",tickers:["VRT","SMCI","DELL"]},
-    {rank:7,name:"Nuclear / Power Generation",zh_name:"核能与发电",subtitle:"SMRs · gas peakers · baseload generation",layer:null,rail:"Power Infrastructure",profit_timing:"2028+",rationale:"Long-term capacity opportunity is enormous, but monetization pace is slow vs. power equipment — SMR projects run 5–10 years from contract signing to first power output.",tickers:["CEG","VST","NNE"]},
-    {rank:8,name:"PCB / ABF / CCL",zh_name:"PCB与基板材料",subtitle:"ABF substrates · CCL · high-layer-count PCB",layer:"L08",rail:null,profit_timing:"2026–2027",rationale:"AI server and advanced packaging demand drives ABF substrate and CCL consumption — real beneficiaries, but with weaker pricing power than packaging or memory players.",tickers:["3037.T","1477.T"]},
-    {rank:9,name:"MLCC / Passive Components",zh_name:"MLCC与被动元件",subtitle:"MLCC · tantalum caps · power inductors",layer:null,rail:null,profit_timing:"2026–2027",rationale:"High-frequency, high-voltage AI server power delivery multiplies passive component content per rack — a companion bottleneck with steady compounding volume growth.",tickers:["6762.T","6981.T"]},
-    {rank:10,name:"Semiconductor Equipment",zh_name:"半导体设备",subtitle:"Inspection · metrology · test · advanced packaging equipment",layer:"L10",rail:null,profit_timing:"2026–2028",rationale:"Sells picks and shovels to the AI gold rush — every fab expansion and CoWoS capacity add requires new lithography, etch, metrology, and test equipment.",tickers:["ASML","AMAT","LRCX","KLAC","TER"]},
-    {rank:11,name:"Physical AI",zh_name:"Physical AI",subtitle:"Robotics · autonomous vehicles · industrial AI",layer:null,rail:"Edge & Physical AI",profit_timing:"2027–2028",rationale:"Direction is clear but commercial scale is still ahead — 2026 remains largely expectation-driven. Revenue inflection expected 2027–2028 as model capability meets real-world deployment readiness.",tickers:["TSLA","NVDA","GOOGL"]},
-    {rank:12,name:"Agent / Data Layer",zh_name:"Agent与数据层",subtitle:"Agentic platforms · data infrastructure · RAG",layer:"L02",rail:null,profit_timing:"2028+",rationale:"Direction is certain but winner selection and profit distribution remain unclear. The value will be large — how it accrues across model providers, platform players, and data infrastructure is the open question.",tickers:["SNOW","MDB","PLTR","CFLT"]},
-    {rank:13,name:"Stablecoin / AI Finance",zh_name:"稳定币与AI金融",subtitle:"AI agent payments · on-chain settlement",layer:"L01",rail:null,profit_timing:"2028+",rationale:"Large long-term opportunity as AI agents become economic actors — but commercial-scale deployment of AI payment rails is still early-stage with no clear near-term earnings path.",tickers:[]}
   ]
 };
 
@@ -1026,14 +1005,6 @@ let _chipOrigin=null;
 function openStackTicker(tk,sName,ctxLabel,ctxFn){_raceOrigin=null;_fromStack=true;_chipOrigin=ctxLabel?{label:ctxLabel,fn:ctxFn}:null;activeSector=null;activeTierIdx=null;activeLayerIdx=null;openTicker(tk,sName);}
 
 const SECTOR_FOLDER={};
-// Bottleneck rank badge timing class
-function _bnTimingClass(t){return t==="Now"?"now":t.startsWith("2026")?"near":t.startsWith("2027")?"mid":"far";}
-const _BN_LAYER={},_BN_RAIL={};
-(DATA.bottleneck_ranking||[]).forEach(r=>{
-  if(r.layer&&(!_BN_LAYER[r.layer]||r.rank<_BN_LAYER[r.layer].rank))_BN_LAYER[r.layer]=r;
-  if(r.rail&&(!_BN_RAIL[r.rail]||r.rank<_BN_RAIL[r.rail].rank))_BN_RAIL[r.rail]=r;
-});
-
 function rawGithubUrl(sName,ticker,legacy){const f=SECTOR_FOLDER[sName]||sName;const base="https://raw.githubusercontent.com/deeyayay/investing-wiki/master/Investing/Wiki/Sectors/"+encodeURIComponent(f)+"/";return legacy?base+ticker+".md":base+encodeURIComponent(ticker)+"/analysis.md";}
 
 function showLayer(n){
@@ -1231,7 +1202,6 @@ const STACK={
         {"label":"Optical / Photonic Computing (emerging)","gap":true,"chips":["LWLG","POET"]}
       ]}
     ]}
-
   ]
 };
 
@@ -1276,8 +1246,7 @@ function _railHtml(rail){
     return '<div class="rail-group"><div class="rail-group-label">'+esc(g.label)+'</div>'
       +'<div class="rail-box-col">'+boxes+'</div></div>';
   }).join("");
-  const _bnR=_BN_RAIL[rail.title];
-  return '<div class="rail-card '+rail.id+(rail.kind==="surface"?' surface':'')+'"><div class="rail-title">'+esc(rail.title)+(_bnR?'<span class="bn-badge '+_bnTimingClass(_bnR.profit_timing)+'">#'+_bnR.rank+'</span>':'')+flow+'</div>'
+  return '<div class="rail-card '+rail.id+(rail.kind==="surface"?' surface':'')+'"><div class="rail-title">'+esc(rail.title)+flow+'</div>'
     +'<div class="rail-cap">'+esc(rail.cap)+'</div>'+groups+'</div>';
 }
 
@@ -1322,7 +1291,6 @@ function renderL0(){
     let html='<div class="layer" style="--lh:'+L.hue+';--lbg:oklch(96.5% .03 '+L.hue+')">'
       +'<div class="layer-head" onclick="openLayer('+i+')" title="View this layer"><span class="layer-num">L'+L.num+'</span>'
       +'<span class="layer-name">'+esc(L.name)+'</span>'
-      +((_BN_LAYER['L'+L.num])?'<span class="bn-badge '+_bnTimingClass(_BN_LAYER['L'+L.num].profit_timing)+'">#'+_BN_LAYER['L'+L.num].rank+'</span>':'')
       +'<span class="layer-tag">'+esc(L.tag)+'</span><span class="layer-go">View ›</span></div>'
       +'<div class="subbox-area">'+inner+'</div></div>';
     if(i<STACK.connectors.length){
