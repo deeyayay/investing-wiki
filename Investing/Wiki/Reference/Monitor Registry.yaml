@@ -712,6 +712,42 @@ tickers:
     score: null
     next_earnings: null
 
+  ISRG:
+    company: "Intuitive Surgical, Inc."
+    cik: "0001035267"
+    exchange: NASDAQ
+    sector: "Healthcare & Life Sciences"
+    path: "Investing/Wiki/Sectors/Healthcare & Life Sciences/ISRG"
+    score: null
+    next_earnings: null
+
+  ILMN:
+    company: "Illumina, Inc."
+    cik: "0001110803"
+    exchange: NASDAQ
+    sector: "Healthcare & Life Sciences"
+    path: "Investing/Wiki/Sectors/Healthcare & Life Sciences/ILMN"
+    score: null
+    next_earnings: null
+
+  MRNA:
+    company: "Moderna, Inc."
+    cik: "0001682852"
+    exchange: NASDAQ
+    sector: "Healthcare & Life Sciences"
+    path: "Investing/Wiki/Sectors/Healthcare & Life Sciences/MRNA"
+    score: null
+    next_earnings: null
+
+  CRSP:
+    company: "CRISPR Therapeutics AG"
+    cik: "0001674416"
+    exchange: NASDAQ
+    sector: "Healthcare & Life Sciences"
+    path: "Investing/Wiki/Sectors/Healthcare & Life Sciences/CRSP"
+    score: null
+    next_earnings: null
+
 # ── Candidates (not yet onboarded) ────────────────────────────────────────
 # Run /add-ticker TICKER --sector "Sector" to onboard any candidate.
 
@@ -1046,13 +1082,7 @@ candidates:
 
   # ── Healthcare & Life Sciences candidates (/map-sector 2026-06-22) ──────────
   # SDGR onboarded 2026-06-22 — moved to tickers section
-  - ticker: ILMN
-    company: "Illumina"
-    sector: "Healthcare & Life Sciences"
-    layer: "Genomics & Biological Measurement"
-    source: "map-sector"
-    added: "2026-06-22"
-    note: "~80% short-read NGS market share; NovaSeq X+ dominant; reagent razor-blade model; chokepoint node"
+  # ILMN onboarded 2026-06-22 — moved to tickers section
 
   - ticker: PACB
     company: "Pacific Biosciences"
@@ -1160,21 +1190,9 @@ candidates:
     added: "2026-06-22"
     note: "AI-native small molecule drug design (ML-generated candidates); Oxford-based; acquired by Recursion (RXRX) ~2024 — verify current listing status before onboarding"
 
-  - ticker: MRNA
-    company: "Moderna"
-    sector: "Healthcare & Life Sciences"
-    layer: "Therapeutics (AI-Designed)"
-    source: "map-sector"
-    added: "2026-06-22"
-    note: "mRNA platform: COVID-19/flu/RSV vaccines + mRNA-4157/V940 personalized cancer vaccine (Phase 3 with MSD)"
+  # MRNA onboarded 2026-06-22 — moved to tickers section
 
-  - ticker: CRSP
-    company: "CRISPR Therapeutics"
-    sector: "Healthcare & Life Sciences"
-    layer: "Therapeutics (AI-Designed)"
-    source: "map-sector"
-    added: "2026-06-22"
-    note: "Casgevy (exa-cel): first approved CRISPR therapy (SCD/beta-thalassemia); CTX112 allogeneic CAR-T in trials"
+  # CRSP onboarded 2026-06-22 — moved to tickers section
 
   - ticker: NTLA
     company: "Intellia Therapeutics"
@@ -1216,13 +1234,7 @@ candidates:
     added: "2026-06-22"
     note: "Full-service global CRO; PRA Health Sciences acquisition; ~$7B revenue; strong oncology + rare disease"
 
-  - ticker: ISRG
-    company: "Intuitive Surgical"
-    sector: "Healthcare & Life Sciences"
-    layer: "Surgical & Physical Delivery"
-    source: "map-sector"
-    added: "2026-06-22"
-    note: "da Vinci 5; ~70% MIS robotic surgery market share; 10M+ procedures performed; cross-link to Edge & Physical AI"
+  # ISRG onboarded 2026-06-22 — moved to tickers section
 
   - ticker: SYK
     company: "Stryker"
