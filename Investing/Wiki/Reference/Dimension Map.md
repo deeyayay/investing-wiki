@@ -1,5 +1,5 @@
 # AI Ecosystem — Dimension Map
-*Last updated: 2026-06-16 — superseded by the 12-layer AI Buildout Stack; kept as the sector registry + slug map.*
+*Last updated: 2026-06-22 — Healthcare & Life Sciences vertical sector added.*
 
 > **Canonical taxonomy moved.** The wiki now organizes the AI buildout as a **12-layer vertical stack** (Application → Critical Minerals) — mapped word-for-word from the *AI Buildout Supply Chain* blueprint graphic — wrapped by **3 cross-cutting rails** (Power / Thermal / Security) and capped by the **Edge & Physical AI deployment surface**. See **`AI Buildout Stack.md`** for the authoritative layer definitions and the machine-readable JSON the dashboard consumes. This file remains the **sector registry** (sector → folder slug → status) and the **D1–D5 → layer crosswalk** for legacy references.
 
@@ -41,6 +41,7 @@ Folder names now match layer names 1:1 — no slug overrides needed in the dashb
 | Rail | `Security` | Wraps every layer; identity · endpoint · network | partial | `_Supply Chain Map.md` — from Cybersecurity |
 | Surface | `Edge & Physical AI` | Physical-world deployment + parallel compute | partial | `_Supply Chain Map.md` — from Robotics & Edge AI; Space & Comms merged in |
 | Cross | `Electronic Components` | Passives · discretes · PCB (cross-layer; doesn't fit one L) | partial | `_Supply Chain Map.md` — moved to Advanced Packaging/ |
+| Vertical | `Healthcare & Life Sciences` | AI drug discovery · genomics · therapeutics · surgical delivery | partial | `_Supply Chain Map.md` — created 2026-06-22; 7 tiers; cross-links to Edge & Physical AI (ISRG/SYK) and AI Model (biological foundation model data) |
 
 **Status values:**
 - `complete` — supply chain map exists with Processes + Key Products columns + Interrelationship Anchors

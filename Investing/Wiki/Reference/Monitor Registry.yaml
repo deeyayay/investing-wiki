@@ -8,7 +8,7 @@
 # To add a ticker: /add-ticker TICKER [--sector "Sector Name"]
 # To add a candidate: append to the sector's candidates list below.
 
-last_updated: "2026-06-19"
+last_updated: "2026-06-22"
 
 tickers:
   # ── Application (L01) ────────────────────────────────────────────────────
@@ -1015,3 +1015,204 @@ candidates:
     source: "map-sector"
     added: "2026-05-31"
     note: "Atlas Vector Search (HNSW/ENN); document store for RAG pipeline metadata"
+
+  # ── Healthcare & Life Sciences candidates (/map-sector 2026-06-22) ──────────
+  - ticker: ILMN
+    company: "Illumina"
+    sector: "Healthcare & Life Sciences"
+    layer: "Genomics & Biological Measurement"
+    source: "map-sector"
+    added: "2026-06-22"
+    note: "~80% short-read NGS market share; NovaSeq X+ dominant; reagent razor-blade model; chokepoint node"
+
+  - ticker: PACB
+    company: "Pacific Biosciences"
+    sector: "Healthcare & Life Sciences"
+    layer: "Genomics & Biological Measurement"
+    source: "map-sector"
+    added: "2026-06-22"
+    note: "Long-read HiFi sequencing (Revio); accuracy competitor to Oxford Nanopore (private, LON:ONT)"
+
+  - ticker: TXG
+    company: "10x Genomics"
+    sector: "Healthcare & Life Sciences"
+    layer: "Genomics & Biological Measurement"
+    source: "map-sector"
+    added: "2026-06-22"
+    note: "scRNA-seq (Chromium) + spatial transcriptomics (Visium, Xenium); dominant in single-cell workflows"
+
+  - ticker: BRKR
+    company: "Bruker Corporation"
+    sector: "Healthcare & Life Sciences"
+    layer: "Genomics & Biological Measurement"
+    source: "map-sector"
+    added: "2026-06-22"
+    note: "Mass spec (timsTOF), NMR, X-ray crystallography, cryo-EM systems"
+
+  - ticker: TMO
+    company: "Thermo Fisher Scientific"
+    sector: "Healthcare & Life Sciences"
+    layer: "Genomics & Biological Measurement"
+    source: "map-sector"
+    added: "2026-06-22"
+    note: "Broadest life sciences tools platform: Orbitrap MS, Applied Biosystems sequencing, Cytiva bioprocessing, Patheon CDMO"
+
+  - ticker: DHR
+    company: "Danaher"
+    sector: "Healthcare & Life Sciences"
+    layer: "Genomics & Biological Measurement"
+    source: "map-sector"
+    added: "2026-06-22"
+    note: "Life sciences instruments via Cytiva, Beckman Coulter, Leica Biosystems, SCIEX; also lab automation (NanoAssemblr)"
+
+  - ticker: TEM
+    company: "Tempus AI"
+    sector: "Healthcare & Life Sciences"
+    layer: "Biological Data Aggregation & Curation"
+    source: "map-sector"
+    added: "2026-06-22"
+    note: "Clinical genomics data platform + AI diagnostics + RWE; spans data aggregation (Tier 2) and AI diagnostics (Tier 4)"
+
+  - ticker: VEEV
+    company: "Veeva Systems"
+    sector: "Healthcare & Life Sciences"
+    layer: "Biological Data Aggregation & Curation"
+    source: "map-sector"
+    added: "2026-06-22"
+    note: "Life sciences CRM (Commercial Cloud) + Vault Clinical (EDC, eTMF, CTMS, Regulatory)"
+
+  - ticker: IQV
+    company: "IQVIA Holdings"
+    sector: "Healthcare & Life Sciences"
+    layer: "Biological Data Aggregation & Curation"
+    source: "map-sector"
+    added: "2026-06-22"
+    note: "Largest health data repository (OCEANS, LAAD) + full-service CRO; dual role Tier 2 (data) + Tier 6 (CRO)"
+
+  - ticker: SDGR
+    company: "Schrodinger"
+    sector: "Healthcare & Life Sciences"
+    layer: "AI Drug Discovery & Molecular Design"
+    source: "map-sector"
+    added: "2026-06-22"
+    note: "Physics-based FEP+ simulation + ML platform; software licensing + proprietary internal drug pipeline"
+
+  - ticker: RXRX
+    company: "Recursion Pharmaceuticals"
+    sector: "Healthcare & Life Sciences"
+    layer: "AI Drug Discovery & Molecular Design"
+    source: "map-sector"
+    added: "2026-06-22"
+    note: "Biological foundation models (Phenom-beta) + BioHive-2 supercomputer + wet lab automation; NVIDIA strategic partner"
+
+  - ticker: GH
+    company: "Guardant Health"
+    sector: "Healthcare & Life Sciences"
+    layer: "AI Diagnostics & Precision Medicine"
+    source: "map-sector"
+    added: "2026-06-22"
+    note: "ctDNA liquid biopsy: Guardant360 CDx + LUNAR-2; Shield multi-cancer early detection (colorectal approved)"
+
+  - ticker: EXAS
+    company: "Exact Sciences"
+    sector: "Healthcare & Life Sciences"
+    layer: "AI Diagnostics & Precision Medicine"
+    source: "map-sector"
+    added: "2026-06-22"
+    note: "Cologuard CRC stool DNA screening test + Oncotype DX genomic recurrence score"
+
+  - ticker: NTRA
+    company: "Natera"
+    sector: "Healthcare & Life Sciences"
+    layer: "AI Diagnostics & Precision Medicine"
+    source: "map-sector"
+    added: "2026-06-22"
+    note: "Signatera ctDNA MRD monitoring; Panorama NIPT; oncology + reproductive health dual focus"
+
+  - ticker: EXAI
+    company: "Exai Bio"
+    sector: "Healthcare & Life Sciences"
+    layer: "AI Diagnostics & Precision Medicine"
+    source: "map-sector"
+    added: "2026-06-22"
+    note: "AI extracellular RNA liquid biopsy for cancer detection; verify ticker symbol and listing status before onboarding"
+
+  - ticker: MRNA
+    company: "Moderna"
+    sector: "Healthcare & Life Sciences"
+    layer: "Therapeutics (AI-Designed)"
+    source: "map-sector"
+    added: "2026-06-22"
+    note: "mRNA platform: COVID-19/flu/RSV vaccines + mRNA-4157/V940 personalized cancer vaccine (Phase 3 with MSD)"
+
+  - ticker: CRSP
+    company: "CRISPR Therapeutics"
+    sector: "Healthcare & Life Sciences"
+    layer: "Therapeutics (AI-Designed)"
+    source: "map-sector"
+    added: "2026-06-22"
+    note: "Casgevy (exa-cel): first approved CRISPR therapy (SCD/beta-thalassemia); CTX112 allogeneic CAR-T in trials"
+
+  - ticker: NTLA
+    company: "Intellia Therapeutics"
+    sector: "Healthcare & Life Sciences"
+    layer: "Therapeutics (AI-Designed)"
+    source: "map-sector"
+    added: "2026-06-22"
+    note: "In vivo CRISPR: NTLA-2001 (TTR amyloidosis Phase 3); liver-targeted LNP delivery platform; Regeneron partner"
+
+  - ticker: BEAM
+    company: "Beam Therapeutics"
+    sector: "Healthcare & Life Sciences"
+    layer: "Therapeutics (AI-Designed)"
+    source: "map-sector"
+    added: "2026-06-22"
+    note: "Base editing platform (A-to-I, C-to-U); BEAM-101 (SCD), BEAM-302 (AAT deficiency) in Phase 1/2"
+
+  - ticker: CRL
+    company: "Charles River Laboratories"
+    sector: "Healthcare & Life Sciences"
+    layer: "Clinical Research & Real-World Evidence"
+    source: "map-sector"
+    added: "2026-06-22"
+    note: "Preclinical CRO: GLP safety pharmacology, toxicology, DMPK, in vitro biology, early discovery services"
+
+  - ticker: MEDP
+    company: "Medpace Holdings"
+    sector: "Healthcare & Life Sciences"
+    layer: "Clinical Research & Real-World Evidence"
+    source: "map-sector"
+    added: "2026-06-22"
+    note: "Therapeutic-focus clinical CRO; oncology/CV/metabolic specialty; high-touch integrated model"
+
+  - ticker: ICLR
+    company: "ICON plc"
+    sector: "Healthcare & Life Sciences"
+    layer: "Clinical Research & Real-World Evidence"
+    source: "map-sector"
+    added: "2026-06-22"
+    note: "Full-service global CRO; PRA Health Sciences acquisition; ~$7B revenue; strong oncology + rare disease"
+
+  - ticker: ISRG
+    company: "Intuitive Surgical"
+    sector: "Healthcare & Life Sciences"
+    layer: "Surgical & Physical Delivery"
+    source: "map-sector"
+    added: "2026-06-22"
+    note: "da Vinci 5; ~70% MIS robotic surgery market share; 10M+ procedures performed; cross-link to Edge & Physical AI"
+
+  - ticker: SYK
+    company: "Stryker"
+    sector: "Healthcare & Life Sciences"
+    layer: "Surgical & Physical Delivery"
+    source: "map-sector"
+    added: "2026-06-22"
+    note: "Mako robotic orthopaedic surgery (knee/hip TKA/THA); trauma implants; surgical navigation"
+
+  - ticker: MDT
+    company: "Medtronic"
+    sector: "Healthcare & Life Sciences"
+    layer: "Surgical & Physical Delivery"
+    source: "map-sector"
+    added: "2026-06-22"
+    note: "Hugo RAS surgical robot (soft tissue, early commercial); neuromodulation; cardiac rhythm; spine surgery"
