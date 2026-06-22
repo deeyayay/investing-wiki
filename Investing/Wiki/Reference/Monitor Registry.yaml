@@ -684,6 +684,34 @@ tickers:
     next_earnings: null
     notes: "Broad-line passives + discretes; tantalum capacitors. Closes L12 Tantalum + Power-rail MLCC/passives boxes."
 
+  # ── Healthcare & Life Sciences (Vertical) ────────────────────────────────
+  SDGR:
+    company: "Schrödinger, Inc."
+    cik: "0001490978"
+    exchange: NASDAQ
+    sector: "Healthcare & Life Sciences"
+    path: "Investing/Wiki/Sectors/Healthcare & Life Sciences/SDGR"
+    score: null
+    next_earnings: null
+
+  RXRX:
+    company: "Recursion Pharmaceuticals, Inc."
+    cik: "0001601830"
+    exchange: NASDAQ
+    sector: "Healthcare & Life Sciences"
+    path: "Investing/Wiki/Sectors/Healthcare & Life Sciences/RXRX"
+    score: null
+    next_earnings: null
+
+  TEM:
+    company: "Tempus AI, Inc."
+    cik: "0001717115"
+    exchange: NASDAQ
+    sector: "Healthcare & Life Sciences"
+    path: "Investing/Wiki/Sectors/Healthcare & Life Sciences/TEM"
+    score: null
+    next_earnings: null
+
 # ── Candidates (not yet onboarded) ────────────────────────────────────────
 # Run /add-ticker TICKER --sector "Sector" to onboard any candidate.
 
@@ -1017,6 +1045,7 @@ candidates:
     note: "Atlas Vector Search (HNSW/ENN); document store for RAG pipeline metadata"
 
   # ── Healthcare & Life Sciences candidates (/map-sector 2026-06-22) ──────────
+  # SDGR onboarded 2026-06-22 — moved to tickers section
   - ticker: ILMN
     company: "Illumina"
     sector: "Healthcare & Life Sciences"
@@ -1065,13 +1094,7 @@ candidates:
     added: "2026-06-22"
     note: "Life sciences instruments via Cytiva, Beckman Coulter, Leica Biosystems, SCIEX; also lab automation (NanoAssemblr)"
 
-  - ticker: TEM
-    company: "Tempus AI"
-    sector: "Healthcare & Life Sciences"
-    layer: "Biological Data Aggregation & Curation"
-    source: "map-sector"
-    added: "2026-06-22"
-    note: "Clinical genomics data platform + AI diagnostics + RWE; spans data aggregation (Tier 2) and AI diagnostics (Tier 4)"
+  # TEM onboarded 2026-06-22 — moved to tickers section
 
   - ticker: VEEV
     company: "Veeva Systems"
