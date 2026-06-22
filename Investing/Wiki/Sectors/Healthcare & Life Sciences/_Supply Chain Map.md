@@ -47,7 +47,7 @@
 | AI Diagnostics & Precision Medicine | GH | Guardant Health | Mid | No | ctDNA liquid biopsy: Guardant360 CDx + LUNAR-2; Shield multi-cancer early detection |
 | AI Diagnostics & Precision Medicine | EXAS | Exact Sciences | Large | No | Cologuard CRC screening test + Oncotype DX recurrence score |
 | AI Diagnostics & Precision Medicine | NTRA | Natera | Mid | No | Signatera ctDNA MRD monitoring; Panorama NIPT; oncology + reproductive health |
-| AI Diagnostics & Precision Medicine | EXAI | Exai Bio | Small | No | AI extracellular RNA liquid biopsy for cancer detection; ⚠️ verify ticker and listing status |
+| AI Drug Discovery & Molecular Design | EXAI | Exscientia | Small | No | AI-native small molecule drug design (ML-generated candidates); Oxford-based; ⚠️ acquired by Recursion (RXRX) ~2024 — verify listing status before onboarding |
 | Therapeutics (AI-Designed) | MRNA | Moderna | Large | No | mRNA platform: COVID-19/flu/RSV vaccines + mRNA-4157/V940 personalized cancer vaccine (with MSD) |
 | Therapeutics (AI-Designed) | CRSP | CRISPR Therapeutics | Mid | No | Casgevy (exa-cel): first approved CRISPR therapy (SCD/β-thal); CTX112 allogeneic CAR-T |
 | Therapeutics (AI-Designed) | NTLA | Intellia Therapeutics | Small-Mid | No | In vivo CRISPR: NTLA-2001 (TTR amyloidosis); liver-targeted LNP delivery platform |
