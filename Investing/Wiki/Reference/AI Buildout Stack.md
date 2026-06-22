@@ -67,7 +67,12 @@ The previous five-dimension stack is superseded but maps cleanly onto the layers
       {"label":"AI Assistants & Chatbots","gap":true,"chips":["META","GOOGL","MSFT"]},
       {"label":"Agentic AI Platforms (multi-step reasoning, tool use)","gap":true,"chips":["PLTR"]},
       {"label":"Enterprise AI SaaS (Copilot-style integrations)","gap":true,"chips":["MSFT","CRM"]},
-      {"label":"AI-Native Vertical Applications (coding, video, drug discovery)","sector":"Application","slug":"application","tier":"AI-Native Fintech & Commerce","chips":["MELI","SOFI","HOOD","NU"]}
+      {"label":"AI-Native Vertical Applications (coding, video, drug discovery)","sector":"Application","slug":"application","tier":"AI-Native Fintech & Commerce","chips":["MELI","SOFI","HOOD","NU"]},
+      {"label":"Genomics & Biological Measurement","sector":"Healthcare & Life Sciences","slug":"healthcare-life-sciences","tier":"Genomics & Biological Measurement","chips":["ILMN"]},
+      {"label":"AI Drug Discovery & Molecular Design","sector":"Healthcare & Life Sciences","slug":"healthcare-life-sciences","tier":"AI Drug Discovery & Molecular Design","chips":["SDGR","RXRX"]},
+      {"label":"AI Diagnostics & Precision Medicine","sector":"Healthcare & Life Sciences","slug":"healthcare-life-sciences","tier":"AI Diagnostics & Precision Medicine","chips":["TEM"]},
+      {"label":"mRNA & Gene Editing Therapeutics","sector":"Healthcare & Life Sciences","slug":"healthcare-life-sciences","tier":"Therapeutics (AI-Designed)","chips":["MRNA","CRSP"]},
+      {"label":"Surgical Robotics & Physical Delivery","sector":"Healthcare & Life Sciences","slug":"healthcare-life-sciences","tier":"Surgical & Physical Delivery","chips":["ISRG"]}
     ]},
     {"num":"02","name":"AI Model","hue":255,"tag":"foundation models · serving · agents","boxes":[
       {"label":"Foundation Models (LLMs, multimodal)","sector":"AI Model","slug":"ai-model","tier":"Foundation Model Development","chips":["META"]},

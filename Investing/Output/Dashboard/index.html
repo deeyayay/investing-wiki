@@ -1052,13 +1052,18 @@ function showLayer(n){
 // Each layer's sub-boxes map to an existing (sector slug, tier) so the drill-down,
 // chokepoint flag, and tracked-company lists are reused from DATA.sectors.
 const STACK={
-  "generated": "2026-06-16",
+  "generated": "2026-06-22",
   "layers": [
     {"num":"01","name":"Application","hue":235,"tag":"AI-native apps · agents · vertical SaaS","boxes":[
       {"label":"AI Assistants & Chatbots","gap":true,"chips":["META","GOOGL","MSFT"]},
       {"label":"Agentic AI Platforms (multi-step reasoning, tool use)","gap":true,"chips":["PLTR"]},
       {"label":"Enterprise AI SaaS (Copilot-style integrations)","gap":true,"chips":["MSFT","CRM"]},
-      {"label":"AI-Native Vertical Applications (coding, video, drug discovery)","sector":"Application","slug":"application","tier":"AI-Native Fintech & Commerce","chips":["MELI","SOFI","HOOD","NU"]}
+      {"label":"AI-Native Vertical Applications (coding, video, drug discovery)","sector":"Application","slug":"application","tier":"AI-Native Fintech & Commerce","chips":["MELI","SOFI","HOOD","NU"]},
+      {"label":"Genomics & Biological Measurement","sector":"Healthcare & Life Sciences","slug":"healthcare-life-sciences","tier":"Genomics & Biological Measurement","chips":["ILMN"]},
+      {"label":"AI Drug Discovery & Molecular Design","sector":"Healthcare & Life Sciences","slug":"healthcare-life-sciences","tier":"AI Drug Discovery & Molecular Design","chips":["SDGR","RXRX"]},
+      {"label":"AI Diagnostics & Precision Medicine","sector":"Healthcare & Life Sciences","slug":"healthcare-life-sciences","tier":"AI Diagnostics & Precision Medicine","chips":["TEM"]},
+      {"label":"mRNA & Gene Editing Therapeutics","sector":"Healthcare & Life Sciences","slug":"healthcare-life-sciences","tier":"Therapeutics (AI-Designed)","chips":["MRNA","CRSP"]},
+      {"label":"Surgical Robotics & Physical Delivery","sector":"Healthcare & Life Sciences","slug":"healthcare-life-sciences","tier":"Surgical & Physical Delivery","chips":["ISRG"]}
     ]},
     {"num":"02","name":"AI Model","hue":255,"tag":"foundation models · serving · agents","boxes":[
       {"label":"Foundation Models (LLMs, multimodal)","sector":"AI Model","slug":"ai-model","tier":"Foundation Model Development","chips":["META"]},
