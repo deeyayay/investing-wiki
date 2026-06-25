@@ -18,11 +18,11 @@ Add a new `## Layer · Tier` heading with a table using the same column structur
 
 ---
 
-## Application · Insurance AI
+## L01 Application · Insurance AI
 
 | Ticker | Company | CIK | Exchange | Path | Score |
 |--------|---------|-----|----------|------|-------|
-| LMND | Lemonade, Inc. | 0001728688 | NYSE | Investing/Wiki/Sectors/Application/Insurance AI/LMND/ | — |
+| LMND | Lemonade, Inc. | 0001728688 | NYSE | Investing/Wiki/Sectors/L01 Application/Insurance AI/LMND/ | — |
 
 <!-- CANDIDATE: ROOT (Root Insurance) — Insurance AI tier. Digital auto insurer; telematics-driven underwriting. Run /add-ticker ROOT --sector "Application" --layer "Insurance AI" to onboard. -->
 <!-- CANDIDATE: GWRE (Guidewire Software) — Insurance AI tier. Insurance platform SaaS; policy/claims/billing core systems. Run /add-ticker GWRE --sector "Application" --layer "Insurance AI" to onboard. -->
@@ -30,12 +30,12 @@ Add a new `## Layer · Tier` heading with a table using the same column structur
 
 ---
 
-## Application · AI-Native Fintech & Commerce
+## L01 Application · AI-Native Fintech & Commerce
 
 | Ticker | Company | CIK | Exchange | Path | Score |
 |--------|---------|-----|----------|------|-------|
-| MELI | MercadoLibre Inc. | 0001099590 | NASDAQ | Investing/Wiki/Sectors/Application/AI-Native Fintech & Commerce/MELI.md | — |
-| SOFI | SoFi Technologies, Inc. | 0001818874 | NASDAQ | Investing/Wiki/Sectors/Application/AI-Native Fintech & Commerce/SOFI/ | 9.0 |
+| MELI | MercadoLibre Inc. | 0001099590 | NASDAQ | Investing/Wiki/Sectors/L01 Application/AI-Native Fintech & Commerce/MELI.md | — |
+| SOFI | SoFi Technologies, Inc. | 0001818874 | NASDAQ | Investing/Wiki/Sectors/L01 Application/AI-Native Fintech & Commerce/SOFI/ | 9.0 |
 
 <!-- CANDIDATE: HOOD (Robinhood Markets) — AI-Native Fintech & Commerce tier. Run /add-ticker HOOD --sector "Application" --layer "AI-Native Fintech & Commerce" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): AFRM (Affirm Holdings) — Buy Now Pay Later / Credit Decisioning layer. AI credit model moat. Run /add-ticker AFRM --sector "Application" --layer "AI-Native Fintech & Commerce" to onboard. -->
@@ -43,14 +43,14 @@ Add a new `## Layer · Tier` heading with a table using the same column structur
 
 ---
 
-## Cloud Infrastructure
+## L04 Cloud Infrastructure
 
 | Ticker | Company | CIK | Exchange | Path | Score |
 |--------|---------|-----|----------|------|-------|
-| IREN | IREN Limited | 0001704720 | NASDAQ | Investing/Wiki/Sectors/Cloud Infrastructure/NeoClouds & AI-Specialized/IREN.md | — |
-| VRT | Vertiv Holdings | 0001793309 | NYSE | Investing/Wiki/Sectors/Cloud Infrastructure/Data Center Facility/VRT/ | — |
-| SMCI | Super Micro Computer | 0001375365 | NASDAQ | Investing/Wiki/Sectors/Cloud Infrastructure/Data Center Facility/SMCI.md | — |
-| BRUN | Boost Run Inc. | 0002090646 | NASDAQ | Investing/Wiki/Sectors/Cloud Infrastructure/NeoClouds & AI-Specialized/BRUN/ | 7.5 |
+| IREN | IREN Limited | 0001704720 | NASDAQ | Investing/Wiki/Sectors/L04 Cloud Infrastructure/NeoClouds & AI-Specialized/IREN.md | — |
+| VRT | Vertiv Holdings | 0001793309 | NYSE | Investing/Wiki/Sectors/L04 Cloud Infrastructure/Data Center Facility/VRT/ | — |
+| SMCI | Super Micro Computer | 0001375365 | NASDAQ | Investing/Wiki/Sectors/L04 Cloud Infrastructure/Data Center Facility/SMCI.md | — |
+| BRUN | Boost Run Inc. | 0002090646 | NASDAQ | Investing/Wiki/Sectors/L04 Cloud Infrastructure/NeoClouds & AI-Specialized/BRUN/ | 7.5 |
 
 <!-- CANDIDATE (/map-sector 2026-05-24): AMZN (Amazon / AWS) — Hyperscaler Clouds tier. #1 cloud; dominant AI training; custom ASIC vertical integration. Run /add-ticker AMZN --sector "Cloud Infrastructure" --layer "Hyperscaler Clouds" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): GOOGL (Alphabet / GCP) — Hyperscaler Clouds tier. GCP + TPU v5; custom silicon moat; AI-native cloud. Run /add-ticker GOOGL --sector "Cloud Infrastructure" --layer "Hyperscaler Clouds" to onboard. -->
@@ -63,15 +63,15 @@ Add a new `## Layer · Tier` heading with a table using the same column structur
 
 ---
 
-## Compute Hardware
+## L05 Compute Hardware
 
 | Ticker | Company | CIK | Exchange | Path | Score |
 |--------|---------|-----|----------|------|-------|
-| NVDA | NVIDIA Corporation | 0001045810 | NASDAQ | Investing/Wiki/Sectors/Compute Hardware/Training GPUs/NVDA/ | 9.5 |
-| ANET | Arista Networks | 0001313925 | NYSE | Investing/Wiki/Sectors/Compute Hardware/Networking ASICs/ANET/ | — |
-| MRVL | Marvell Technology | 0001058057 | NASDAQ | Investing/Wiki/Sectors/Compute Hardware/Networking ASICs/MRVL/ | — |
-| NVTS | Navitas Semiconductor Corp | 0001821769 | NASDAQ | Investing/Wiki/Sectors/Compute Hardware/Power Management/NVTS.md | — |
-| IFX | Infineon Technologies AG | none | XETRA (Frankfurt) | Investing/Wiki/Sectors/Compute Hardware/Server CPUs/IFX.md | — |
+| NVDA | NVIDIA Corporation | 0001045810 | NASDAQ | Investing/Wiki/Sectors/L05 Compute Hardware/Training GPUs/NVDA/ | 9.5 |
+| ANET | Arista Networks | 0001313925 | NYSE | Investing/Wiki/Sectors/L05 Compute Hardware/Networking ASICs/ANET/ | — |
+| MRVL | Marvell Technology | 0001058057 | NASDAQ | Investing/Wiki/Sectors/L05 Compute Hardware/Networking ASICs/MRVL/ | — |
+| NVTS | Navitas Semiconductor Corp | 0001821769 | NASDAQ | Investing/Wiki/Sectors/L05 Compute Hardware/Power Management/NVTS.md | — |
+| IFX | Infineon Technologies AG | none | XETRA (Frankfurt) | Investing/Wiki/Sectors/L05 Compute Hardware/Server CPUs/IFX.md | — |
 
 <!-- CANDIDATE (/map-sector 2026-05-24): AMD (Advanced Micro Devices) — Training GPUs tier. MI300X GPU; ROCm ecosystem; gaining training share. Run /add-ticker AMD --sector "Compute Hardware" --layer "Training GPUs" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): AVGO (Broadcom) — Networking ASICs tier. Custom AI ASICs + networking chips; hyperscaler relationships. Run /add-ticker AVGO --sector "Compute Hardware" --layer "Networking ASICs" to onboard. -->
@@ -83,11 +83,11 @@ Add a new `## Layer · Tier` heading with a table using the same column structur
 
 ---
 
-## Memory
+## L06 Memory
 
 | Ticker | Company | CIK | Exchange | Path | Score |
 |--------|---------|-----|----------|------|-------|
-| MU | Micron Technology | 0000723125 | NASDAQ | Investing/Wiki/Sectors/Memory/HBM/MU/ | — |
+| MU | Micron Technology | 0000723125 | NASDAQ | Investing/Wiki/Sectors/L06 Memory/HBM/MU/ | — |
 
 <!-- CANDIDATE: SK Hynix — HBM tier. #1 HBM market share; HBM3E dominant supplier. Foreign-listed (KRX). Run /add-ticker SK Hynix --sector "Memory" --layer "HBM" to onboard. -->
 <!-- CANDIDATE: Samsung Electronics — DRAM tier. #1 DRAM + NAND globally; HBM3E ramping. Foreign-listed (KRX). Run /add-ticker Samsung --sector "Memory" --layer "DRAM" to onboard. -->
@@ -95,29 +95,29 @@ Add a new `## Layer · Tier` heading with a table using the same column structur
 
 ---
 
-## Interconnect
+## L07 Interconnect
 
 | Ticker | Company | CIK | Exchange | Path | Score |
 |--------|---------|-----|----------|------|-------|
-| COHR | Coherent Corp | 0000820318 | NYSE | Investing/Wiki/Sectors/Interconnect/Pluggable Optical Transceivers/COHR.md | — |
-| LITE | Lumentum Holdings | 0001633978 | NASDAQ | Investing/Wiki/Sectors/Interconnect/Pluggable Optical Transceivers/LITE.md | — |
-| FN | Fabrinet | 0001408710 | NYSE | Investing/Wiki/Sectors/Interconnect/Pluggable Optical Transceivers/FN.md | — |
-| CIEN | Ciena Corporation | 0000936395 | NYSE | Investing/Wiki/Sectors/Interconnect/Pluggable Optical Transceivers/CIEN.md | — |
-| VIAV | Viavi Solutions | 0000912093 | NASDAQ | Investing/Wiki/Sectors/Interconnect/Pluggable Optical Transceivers/VIAV.md | — |
-| AAOI | Applied Optoelectronics | 0001158114 | NASDAQ | Investing/Wiki/Sectors/Interconnect/Pluggable Optical Transceivers/AAOI.md | — |
-| 5801.T | Furukawa Electric Co., Ltd. | none | TSE (Tokyo) | Investing/Wiki/Sectors/Interconnect/Pluggable Optical Transceivers/5801.T.md | — |
-| 6451.TW | ShunSin Technology Holdings Limited | none | TWSE (Taiwan) | Investing/Wiki/Sectors/Interconnect/Pluggable Optical Transceivers/6451.TW/ | — |
-| 6965.T | Hamamatsu Photonics K.K. | none | TSE (Tokyo) | Investing/Wiki/Sectors/Interconnect/Silicon Photonics Engines/6965.T.md | — |
-| 6841.T | Yokogawa Electric Corporation | none | TSE (Tokyo) | Investing/Wiki/Sectors/Interconnect/Silicon Photonics Engines/6841.T.md | — |
-| PRY.MI | Prysmian S.p.A. | none | Euronext Milan | Investing/Wiki/Sectors/Interconnect/Coherent Optical Transport/PRY.MI.md | — |
-| 6754.T | Anritsu Corporation | none | TSE (Tokyo) | Investing/Wiki/Sectors/Interconnect/Coherent Optical Transport/6754.T.md | — |
-| LWLG | Lightwave Logic | 0001325964 | NASDAQ | Investing/Wiki/Sectors/Interconnect/External Light Sources (CW Lasers)/LWLG.md | — |
-| LASR | nLIGHT Inc. | 0001124796 | NASDAQ | Investing/Wiki/Sectors/Interconnect/External Light Sources (CW Lasers)/LASR.md | — |
-| SIVE | Sivers Semiconductors | none | Nasdaq Stockholm | Investing/Wiki/Sectors/Interconnect/External Light Sources (CW Lasers)/SIVE.md | 5.5 |
-| POET | POET Technologies | none | TSX Venture | Investing/Wiki/Sectors/Interconnect/External Light Sources (CW Lasers)/POET.md | — |
-| FOCI | FOCI Fiber Optic Communications, Inc. | none | TPEX (Taiwan) | Investing/Wiki/Sectors/Interconnect/External Light Sources (CW Lasers)/FOCI.md | — |
-| ALAB | Astera Labs, Inc. | 0001736297 | NASDAQ | Investing/Wiki/Sectors/Interconnect/High-Speed Connectivity ICs/ALAB.md | — |
-| CRDO | Credo Technology Group Holding Ltd | 0001807794 | NASDAQ | Investing/Wiki/Sectors/Interconnect/High-Speed Connectivity ICs/CRDO/ | — |
+| COHR | Coherent Corp | 0000820318 | NYSE | Investing/Wiki/Sectors/L07 Interconnect/Pluggable Optical Transceivers/COHR.md | — |
+| LITE | Lumentum Holdings | 0001633978 | NASDAQ | Investing/Wiki/Sectors/L07 Interconnect/Pluggable Optical Transceivers/LITE.md | — |
+| FN | Fabrinet | 0001408710 | NYSE | Investing/Wiki/Sectors/L07 Interconnect/Pluggable Optical Transceivers/FN.md | — |
+| CIEN | Ciena Corporation | 0000936395 | NYSE | Investing/Wiki/Sectors/L07 Interconnect/Pluggable Optical Transceivers/CIEN.md | — |
+| VIAV | Viavi Solutions | 0000912093 | NASDAQ | Investing/Wiki/Sectors/L07 Interconnect/Pluggable Optical Transceivers/VIAV.md | — |
+| AAOI | Applied Optoelectronics | 0001158114 | NASDAQ | Investing/Wiki/Sectors/L07 Interconnect/Pluggable Optical Transceivers/AAOI.md | — |
+| 5801.T | Furukawa Electric Co., Ltd. | none | TSE (Tokyo) | Investing/Wiki/Sectors/L07 Interconnect/Pluggable Optical Transceivers/5801.T.md | — |
+| 6451.TW | ShunSin Technology Holdings Limited | none | TWSE (Taiwan) | Investing/Wiki/Sectors/L07 Interconnect/Pluggable Optical Transceivers/6451.TW/ | — |
+| 6965.T | Hamamatsu Photonics K.K. | none | TSE (Tokyo) | Investing/Wiki/Sectors/L07 Interconnect/Silicon Photonics Engines/6965.T.md | — |
+| 6841.T | Yokogawa Electric Corporation | none | TSE (Tokyo) | Investing/Wiki/Sectors/L07 Interconnect/Silicon Photonics Engines/6841.T.md | — |
+| PRY.MI | Prysmian S.p.A. | none | Euronext Milan | Investing/Wiki/Sectors/L07 Interconnect/Coherent Optical Transport/PRY.MI.md | — |
+| 6754.T | Anritsu Corporation | none | TSE (Tokyo) | Investing/Wiki/Sectors/L07 Interconnect/Coherent Optical Transport/6754.T.md | — |
+| LWLG | Lightwave Logic | 0001325964 | NASDAQ | Investing/Wiki/Sectors/L07 Interconnect/External Light Sources (CW Lasers)/LWLG.md | — |
+| LASR | nLIGHT Inc. | 0001124796 | NASDAQ | Investing/Wiki/Sectors/L07 Interconnect/External Light Sources (CW Lasers)/LASR.md | — |
+| SIVE | Sivers Semiconductors | none | Nasdaq Stockholm | Investing/Wiki/Sectors/L07 Interconnect/External Light Sources (CW Lasers)/SIVE.md | 5.5 |
+| POET | POET Technologies | none | TSX Venture | Investing/Wiki/Sectors/L07 Interconnect/External Light Sources (CW Lasers)/POET.md | — |
+| FOCI | FOCI Fiber Optic Communications, Inc. | none | TPEX (Taiwan) | Investing/Wiki/Sectors/L07 Interconnect/External Light Sources (CW Lasers)/FOCI.md | — |
+| ALAB | Astera Labs, Inc. | 0001736297 | NASDAQ | Investing/Wiki/Sectors/L07 Interconnect/High-Speed Connectivity ICs/ALAB.md | — |
+| CRDO | Credo Technology Group Holding Ltd | 0001807794 | NASDAQ | Investing/Wiki/Sectors/L07 Interconnect/High-Speed Connectivity ICs/CRDO/ | — |
 
 <!-- CANDIDATE (/map-sector 2026-05-24): GLW (Corning Incorporated) — Fiber Array Units & Connectors tier. ~50% global optical fiber market; OVD preform; SMF-28. Run /add-ticker GLW --sector "Interconnect" --layer "Fiber Array Units & Connectors" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): IQE (IQE plc, AIM: IQE) — (primary: Semiconductor Materials · InP & GaAs Substrates). MOCVD epi foundry; VCSEL and GaN epi for transceiver customers. -->
@@ -125,11 +125,11 @@ Add a new `## Layer · Tier` heading with a table using the same column structur
 
 ---
 
-## Advanced Packaging
+## L08 Advanced Packaging
 
 | Ticker | Company | CIK | Exchange | Path | Score |
 |--------|---------|-----|----------|------|-------|
-| AMKR | Amkor Technology, Inc. | 0001047127 | NASDAQ | Investing/Wiki/Sectors/Advanced Packaging/Wafer-Level Packaging (CoWoS)/AMKR.md | — |
+| AMKR | Amkor Technology, Inc. | 0001047127 | NASDAQ | Investing/Wiki/Sectors/L08 Advanced Packaging/Wafer-Level Packaging (CoWoS)/AMKR.md | — |
 
 <!-- CANDIDATE: BESI (BE Semiconductor Industries) — Packaging Equipment tier. Die attach + wire bonding equipment leader. Run /add-ticker BESI --sector "Advanced Packaging" --layer "Packaging Equipment" to onboard. -->
 <!-- CANDIDATE: LPK — FC-BGA Substrates tier. Run /add-ticker LPK --sector "Advanced Packaging" --layer "FC-BGA Substrates" to onboard. -->
@@ -137,13 +137,13 @@ Add a new `## Layer · Tier` heading with a table using the same column structur
 
 ---
 
-## Semiconductor Equipment
+## L10 Semiconductor Equipment
 
 | Ticker | Company | CIK | Exchange | Path | Score |
 |--------|---------|-----|----------|------|-------|
-| AEHR | Aehr Test Systems | 0001040896 | NASDAQ | Investing/Wiki/Sectors/Semiconductor Equipment/Metrology & Inspection/AEHR/ | — |
-| 6857.T | Advantest Corporation | none | TSE (Tokyo) | Investing/Wiki/Sectors/Semiconductor Equipment/Metrology & Inspection/6857.T.md | — |
-| FORM | FormFactor, Inc. | 0001039399 | NASDAQ | Investing/Wiki/Sectors/Semiconductor Equipment/Metrology & Inspection/FORM.md | — |
+| AEHR | Aehr Test Systems | 0001040896 | NASDAQ | Investing/Wiki/Sectors/L10 Semiconductor Equipment/Metrology & Inspection/AEHR/ | — |
+| 6857.T | Advantest Corporation | none | TSE (Tokyo) | Investing/Wiki/Sectors/L10 Semiconductor Equipment/Metrology & Inspection/6857.T.md | — |
+| FORM | FormFactor, Inc. | 0001039399 | NASDAQ | Investing/Wiki/Sectors/L10 Semiconductor Equipment/Metrology & Inspection/FORM.md | — |
 
 <!-- CANDIDATE: ASML (ASML Holding) — EUV tier. Sole EUV scanner supplier; chokepoint. Run /add-ticker ASML --sector "Semiconductor Equipment" --layer "EUV" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): LRCX (Lam Research) — Deposition & Etch tier. Run /add-ticker LRCX --sector "Semiconductor Equipment" --layer "Deposition & Etch" to onboard. -->
@@ -153,7 +153,7 @@ Add a new `## Layer · Tier` heading with a table using the same column structur
 
 ---
 
-## Semiconductor Foundry
+## L09 Semiconductor Foundry
 
 | Ticker | Company | CIK | Exchange | Path | Score |
 |--------|---------|-----|----------|------|-------|
@@ -163,11 +163,11 @@ Add a new `## Layer · Tier` heading with a table using the same column structur
 
 ---
 
-## Semiconductor Materials
+## L11 Semiconductor Materials
 
 | Ticker | Company | CIK | Exchange | Path | Score |
 |--------|---------|-----|----------|------|-------|
-| AXTI | AXT Inc. | 0001051627 | NASDAQ | Investing/Wiki/Sectors/Semiconductor Materials/InP & GaAs Substrates/AXTI.md | — |
+| AXTI | AXT Inc. | 0001051627 | NASDAQ | Investing/Wiki/Sectors/L11 Semiconductor Materials/InP & GaAs Substrates/AXTI.md | — |
 
 <!-- CANDIDATE: IQE (IQE plc) — InP & GaAs Substrates tier. MOCVD epi foundry. UK AIM-listed. Run /add-ticker IQE --sector "Semiconductor Materials" --layer "InP & GaAs Substrates" to onboard. -->
 <!-- CANDIDATE: WOLF (Wolfspeed) — SiC Wafers tier. Only large-scale 4H-SiC substrate maker outside China. Run /add-ticker WOLF --sector "Semiconductor Materials" --layer "SiC Wafers" to onboard. -->
@@ -177,13 +177,13 @@ Add a new `## Layer · Tier` heading with a table using the same column structur
 
 ---
 
-## Critical Minerals
+## L12 Critical Minerals
 
 | Ticker | Company | CIK | Exchange | Path | Score |
 |--------|---------|-----|----------|------|-------|
-| FCX | Freeport-McMoRan | 0000831259 | NYSE | Investing/Wiki/Sectors/Critical Minerals/Copper/FCX.md | — |
-| MP | MP Materials Corp. | 0001801170 | NYSE | Investing/Wiki/Sectors/Critical Minerals/Rare Earths/MP.md | — |
-| ELMT | The Elmet Group Co. | 0002101698 | NASDAQ | Investing/Wiki/Sectors/Critical Minerals/Lithium & Specialty Metals/ELMT.md | — |
+| FCX | Freeport-McMoRan | 0000831259 | NYSE | Investing/Wiki/Sectors/L12 Critical Minerals/Copper/FCX.md | — |
+| MP | MP Materials Corp. | 0001801170 | NYSE | Investing/Wiki/Sectors/L12 Critical Minerals/Rare Earths/MP.md | — |
+| ELMT | The Elmet Group Co. | 0002101698 | NASDAQ | Investing/Wiki/Sectors/L12 Critical Minerals/Lithium & Specialty Metals/ELMT.md | — |
 
 <!-- CANDIDATE (/map-sector 2026-05-24): VALE (Vale S.A.) — Copper/Nickel tier. World's largest nickel producer; iron ore dominant; cobalt byproduct. Run /add-ticker VALE --sector "Critical Minerals" --layer "Copper" to onboard. -->
 <!-- CANDIDATE (/map-sector 2026-05-24): ALB (Albemarle) — Lithium & Specialty Metals tier. #1 lithium chemicals globally. Run /add-ticker ALB --sector "Critical Minerals" --layer "Lithium & Specialty Metals" to onboard. -->

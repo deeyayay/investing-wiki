@@ -1,5 +1,5 @@
 # AI Ecosystem — Dimension Map
-*Last updated: 2026-06-25 — folder structure migrated to Layer → Tier → Ticker hierarchy. `Power Infrastructure/` renamed to `Power/`. Insurance AI now nested under `Application/Insurance AI/`.*
+*Last updated: 2026-06-25 — folder structure migrated to Layer → Tier → Ticker hierarchy. Layer folders renamed with L01–L12 prefix for sort order (e.g. `L01 Application/`). Rails remain plain names (`Power/`, `Security/`, etc.). Insurance AI nested under `L01 Application/Insurance AI/`.*
 
 > **Canonical taxonomy moved.** The wiki now organizes the AI buildout as a **12-layer vertical stack** (Application → Critical Minerals) — mapped word-for-word from the *AI Buildout Supply Chain* blueprint graphic — wrapped by **3 cross-cutting rails** (Power / Thermal / Security) and capped by the **Edge & Physical AI deployment surface**. See **`AI Buildout Stack.md`** for the authoritative layer definitions and the machine-readable JSON the dashboard consumes. This file remains the **sector registry** (sector → folder slug → status) and the **D1–D5 → layer crosswalk** for legacy references.
 
@@ -25,18 +25,18 @@ Folder names now match layer names 1:1 — no slug overrides needed in the dashb
 
 | Layer | Sector Folder | Stack | Status | Supply Chain Map |
 |-------|---------------|-------|--------|-----------------|
-| L01 | `Application` | AI assistants · agents · vertical SaaS | partial | `_Supply Chain Map.md` — from Fintech & E-Commerce; run `/map-sector "Application"` to expand. Tiers: Insurance AI · AI-Native Fintech & Commerce · AI Drug Discovery · Materials Science AI |
-| L02 | `AI Model` | Foundation models · inference · orchestration | partial | `_Supply Chain Map.md` — from AI Model Infrastructure |
-| L03 | `Software Infrastructure` | ML frameworks · kernels · MLOps | planned | not yet created; run `/map-sector "Software Infrastructure"` |
-| L04 | `Cloud Infrastructure` | Hyperscalers · neoclouds · colocation · storage | partial | `_Supply Chain Map.md` — from AI Infrastructure |
-| L05 | `Compute Hardware` | GPUs · ASICs · CPUs · chip design IP | partial | see `Reference/Semiconductor Stack Supply Chain Map.md` (covers L05–L11) |
-| L06 | `Memory` | HBM · HBF · DRAM · NAND · LPDDR | planned | not yet created; run `/map-sector "Memory"` |
-| L07 | `Interconnect` | Scale-up · scale-out · scale-across · optics | partial | `_Supply Chain Map.md` — from Photonics & Optical; covers optical + SerDes |
-| L08 | `Advanced Packaging` | CoWoS/SoIC · HBM stacking · FC-BGA · glass core | partial | `_Supply Chain Map.md` — from Electronic Components (IC substrates) |
-| L09 | `Semiconductor Foundry` | Leading-edge · specialty · silicon photonics · OSAT | planned | not yet created; run `/map-sector "Semiconductor Foundry"` |
-| L10 | `Semiconductor Equipment` | Lithography · deposition · etch · metrology · test | planned | not yet created; run `/map-sector "Semiconductor Equipment"` |
-| L11 | `Semiconductor Materials` | Wafers · SOI · InP/GaAs/SiC · gases · photoresist | planned | not yet created; run `/map-sector "Semiconductor Materials"` |
-| L12 | `Critical Minerals` | Si · Cu · Ga · In · Ge · Hf · rare earths | partial | `_Supply Chain Map.md` — from Metals & Mining |
+| L01 | `L01 Application` | AI assistants · agents · vertical SaaS | partial | `_Supply Chain Map.md` — from Fintech & E-Commerce; run `/map-sector "Application"` to expand. Tiers: Insurance AI · AI-Native Fintech & Commerce · AI Drug Discovery · Materials Science AI |
+| L02 | `L02 AI Model` | Foundation models · inference · orchestration | partial | `_Supply Chain Map.md` — from AI Model Infrastructure |
+| L03 | `L03 Software Infrastructure` | ML frameworks · kernels · MLOps | planned | not yet created; run `/map-sector "Software Infrastructure"` |
+| L04 | `L04 Cloud Infrastructure` | Hyperscalers · neoclouds · colocation · storage | partial | `_Supply Chain Map.md` — from AI Infrastructure |
+| L05 | `L05 Compute Hardware` | GPUs · ASICs · CPUs · chip design IP | partial | see `Reference/Semiconductor Stack Supply Chain Map.md` (covers L05–L11) |
+| L06 | `L06 Memory` | HBM · HBF · DRAM · NAND · LPDDR | planned | not yet created; run `/map-sector "Memory"` |
+| L07 | `L07 Interconnect` | Scale-up · scale-out · scale-across · optics | partial | `_Supply Chain Map.md` — from Photonics & Optical; covers optical + SerDes |
+| L08 | `L08 Advanced Packaging` | CoWoS/SoIC · HBM stacking · FC-BGA · glass core | partial | `_Supply Chain Map.md` — from Electronic Components (IC substrates) |
+| L09 | `L09 Semiconductor Foundry` | Leading-edge · specialty · silicon photonics · OSAT | planned | not yet created; run `/map-sector "Semiconductor Foundry"` |
+| L10 | `L10 Semiconductor Equipment` | Lithography · deposition · etch · metrology · test | planned | not yet created; run `/map-sector "Semiconductor Equipment"` |
+| L11 | `L11 Semiconductor Materials` | Wafers · SOI · InP/GaAs/SiC · gases · photoresist | planned | not yet created; run `/map-sector "Semiconductor Materials"` |
+| L12 | `L12 Critical Minerals` | Si · Cu · Ga · In · Ge · Hf · rare earths | partial | `_Supply Chain Map.md` — from Metals & Mining |
 | Rail | `Power` | Generation → grid → rack → board | partial | `_Supply Chain Map.md` — from Clean Energy. Tiers: Nuclear & Advanced Fission · Gas Turbines & Grid Equipment · Energy Storage · Power Semiconductors |
 | Rail | `Security` | Wraps every layer; identity · endpoint · network | partial | `_Supply Chain Map.md` — from Cybersecurity |
 | Surface | `Edge & Physical AI` | Physical-world deployment + parallel compute | partial | `_Supply Chain Map.md` — from Robotics & Edge AI. Tiers: Edge Compute Module · Perception Layer · Physical Systems |
