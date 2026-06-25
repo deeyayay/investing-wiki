@@ -773,6 +773,15 @@ const DATA = {
       dimension: "D5",
       description: "AI-powered financial services and commerce platforms",
       tiers: [
+        { tier: "Insurance AI", fn: "End-to-end digital insurers and AI-native underwriting platforms that use machine learning to price risk, process claims, and deliver insurance entirely via software. Traditional insurers rely on actuarial tables, manual underwriting, and agent distribution — AI-native insurers (Lemonade, Root) replace each with real-time behavioral data models, instant automated claims adjudication, and direct-to-consumer digital distribution. Lemonade's AI Jim processes claims in seconds versus industry averages of 30+ days. Root prices auto insurance from telematics (actual driving behavior) rather than demographic proxies, enabling fairer pricing and adverse selection reduction. Enterprise InsurTech infrastructure providers (Guidewire, Verisk) supply the claims management and analytics platforms that incumbent carriers run on — creating a two-tier market: pure-play AI insurers attacking personal lines, and B2B platforms modernizing the incumbents from within.", chokepoint: "N", capital_intensity: "Low", moat_type: "Data / Brand / Regulatory license", margin_profile: "High (scale-dependent)", companies: [
+          { ticker: "LMND", name: "Lemonade, Inc.", mkt_cap: "Small", path: "Application/Insurance AI", notes: "AI-native P&C insurer running entirely on behavioral data and instant automated claims — zero human adjusters, near-instant claim payouts, and a charitable 'Giveback' model that removes the insurer incentive to deny claims." },
+          { ticker: "ROOT", name: "Root, Inc.", mkt_cap: "Small", notes: "Telematics-first auto insurer pricing from actual driving behavior rather than demographic proxies — adverse selection moat and improving loss ratio as the behavioral dataset deepens." },
+          { ticker: "GWRE", name: "Guidewire Software", mkt_cap: "Large", notes: "Enterprise core systems (policy, billing, claims) for P&C carriers — deep switching costs and the industry's largest installed base make it the de facto infrastructure backbone for incumbent insurers modernizing with AI." },
+          { ticker: "VRSK", name: "Verisk Analytics", mkt_cap: "Large", notes: "Data analytics and risk assessment platform for insurance, energy, and financial markets — ISO loss costs, actuarial databases, and catastrophe modeling tools that most US insurers depend on for underwriting." }
+        ]},
+        { tier: "AI Drug Discovery", fn: "AI-native biotechs and platforms applying machine learning to identify drug candidates, predict protein structures, design molecules, and optimize clinical trial design — compressing the traditional 10–15 year drug development timeline.", chokepoint: "N", capital_intensity: "Medium", moat_type: "Proprietary data / Platform", margin_profile: "High (post-approval)", companies: [
+          { ticker: "RXRX", name: "Recursion Pharmaceuticals", mkt_cap: "Small", notes: "High-throughput biology platform generating 2.4M+ phenomics images weekly to train foundation models for drug discovery — partnered with NVIDIA and Roche for model development and candidate identification." }
+        ]},
         { tier: "Payment Network Rails & Settlement", fn: "Provides the clearing, netting, and settlement backbone for all electronic money movement — the plumbing layer that processes trillions of dollars in transactions daily without which digital commerce, embedded finance, and AI-powered financial services cannot operate. Payment rails include real-time gross settlement systems (Fedwire, CHAPS), card network authorization and clearing (Visa/Mastercard rails), ACH batch settlement, and emerging real-time payment networks (RTP, FedNow) that enable instant fund transfer without batch delays. The rails layer is the ultimate chokepoint: every payment made through any fintech application — BNPL, neobank, B2B payment, digital wallet — ultimately clears over these rails. The strategic moat is absolute: Visa and Mastercard together process over $20 trillion in annual volume across 4B+ cards with four-party network effects (issuers, acquirers, merchants, cardholders) that have required 50 years to build and cannot be disintermediated without sovereign-level intervention. AI is beginning to penetrate the rails layer through real-time fraud scoring embedded in authorization flows.", chokepoint: "Y", capital_intensity: "Low", moat_type: "Ecosystem / Scale", margin_profile: "Very High", companies: [] },
         { tier: "Core Banking & Ledger Systems", fn: "Maintains the authoritative books of record for financial accounts — the immutable ledgers that track every deposit, withdrawal, transfer, and balance across millions of customer accounts in real time with regulatory-grade auditability. Core banking systems (FIS, Fiserv, Temenos) are the most deeply embedded software in financial services: replacing a bank's core is a multi-year, existential-risk program that most banks attempt only once per decade. Legacy cores (mainframe COBOL systems at US megabanks) process hundreds of millions of transactions daily on systems designed in the 1970s — creating a structural opportunity for cloud-native core banking replacements that offer real-time processing, API connectivity, and AI-native ledger analytics. AI is transforming the ledger layer through real-time transaction categorization, predictive cash flow analytics, and automated reconciliation — services that previously required overnight batch processing. SoFi's Galileo is the leading cloud-native core banking-as-a-service platform, processing payments for 158M+ accounts across challenger banks and fintechs.", chokepoint: "Partial", capital_intensity: "Medium", moat_type: "Switching cost", margin_profile: "High", companies: [] },
         { tier: "Risk & Fraud AI Models", fn: "Detects and suppresses fraudulent transactions, account takeovers, synthetic identity fraud, and credit risk events in real time using machine learning models trained on hundreds of billions of historical transactions. Fraud detection is the highest-ROI AI application in financial services: a model that prevents 0.1% more fraud at a $1T-volume institution saves $1B annually with near-zero incremental cost, justifying enormous investment in model quality. Modern fraud models combine graph neural networks (detecting anomalous relationship patterns between accounts), behavioral biometrics (detecting account takeovers from typing patterns and device telemetry), and real-time velocity checks — all evaluated in under 100ms during payment authorization. The AI investment opportunity at this tier is diffuse: every payment network, bank, and e-commerce platform runs proprietary fraud models, and the market is served by a mix of network-embedded models (Visa Advanced Authorization), bank-internal ML teams, and vendor platforms (NICE Actimize, Featurespace). No large-cap public pure-play in our tracking universe currently.", chokepoint: "Partial", capital_intensity: "Low", moat_type: "Process IP / Switching cost", margin_profile: "Very High", companies: [] },
@@ -1005,7 +1014,7 @@ let _chipOrigin=null;
 function openStackTicker(tk,sName,ctxLabel,ctxFn){_raceOrigin=null;_fromStack=true;_chipOrigin=ctxLabel?{label:ctxLabel,fn:ctxFn}:null;activeSector=null;activeTierIdx=null;activeLayerIdx=null;openTicker(tk,sName);}
 
 const SECTOR_FOLDER={};
-function rawGithubUrl(sName,ticker,legacy){const f=SECTOR_FOLDER[sName]||sName;const base="https://raw.githubusercontent.com/deeyayay/investing-wiki/master/Investing/Wiki/Sectors/"+encodeURIComponent(f)+"/";return legacy?base+ticker+".md":base+encodeURIComponent(ticker)+"/analysis.md";}
+function rawGithubUrl(sName,ticker,legacy,folderPath){const folder=folderPath?folderPath.split('/').map(p=>encodeURIComponent(p)).join('/'):encodeURIComponent(SECTOR_FOLDER[sName]||sName);const base="https://raw.githubusercontent.com/deeyayay/investing-wiki/master/Investing/Wiki/Sectors/"+folder+"/";return legacy?base+ticker+".md":base+encodeURIComponent(ticker)+"/analysis.md";}
 
 function showLayer(n){
   document.getElementById("l0").hidden=n!==0;
@@ -1028,7 +1037,10 @@ const STACK={
       {"label":"AI Assistants & Chatbots","gap":true,"chips":["META","GOOGL","MSFT"]},
       {"label":"Agentic AI Platforms (multi-step reasoning, tool use)","gap":true,"chips":["PLTR"]},
       {"label":"Enterprise AI SaaS (Copilot-style integrations)","gap":true,"chips":["MSFT","CRM"]},
-      {"label":"AI-Native Vertical Applications (coding, video, drug discovery)","sector":"Application","slug":"application","tier":"AI-Native Fintech & Commerce","chips":["MELI","SOFI","HOOD","NU"]}
+      {"label":"Insurance AI (end-to-end digital insurer, ML underwriting)","sector":"Application","slug":"application","tier":"Insurance AI","chips":["LMND","ROOT","GWRE","VRSK"]},
+      {"label":"AI-Native Fintech & Commerce","sector":"Application","slug":"application","tier":"AI-Native Fintech & Commerce","chips":["MELI","SOFI","HOOD","NU"]},
+      {"label":"AI Drug Discovery","sector":"Application","slug":"application","tier":"AI Drug Discovery","chips":["RXRX"]},
+      {"label":"Materials Science AI","sector":"Application","slug":"application","tier":"Materials Science AI","chips":[]}
     ]},
     {"num":"02","name":"AI Model","hue":255,"tag":"foundation models · serving · agents","boxes":[
       {"label":"Foundation Models (LLMs, multimodal)","sector":"AI Model","slug":"ai-model","tier":"Foundation Model Development","chips":["META"]},
@@ -1522,15 +1534,183 @@ const _ss=(boxes)=>(boxes||[]).forEach(b=>{if(b.sector&&b.chips)b.chips.forEach(
 if(TICKER_MAP['LPK'])TICKER_MAP['LPK'].sectorName='Compute Hardware';
 const WIKI_CACHE={};
 
+// Canonical layer/tier folder path for each ticker (layer → tier, no leading slash).
+// Used by rawGithubUrl to construct the correct nested URL after the sector reorganization.
+const PATH_MAP={
+  // AI Model
+  "META":"AI Model/Foundation Models",
+  "CFLT":"AI Model/Model APIs & Dev Platform",
+  // Software Infrastructure
+  "DDOG":"Software Infrastructure/Container Orchestration & MLOps",
+  "SNOW":"Software Infrastructure/Container Orchestration & MLOps",
+  "PLTR":"Software Infrastructure/Container Orchestration & MLOps",
+  "MDB":"Software Infrastructure/Container Orchestration & MLOps",
+  // Cloud Infrastructure
+  "AMZN":"Cloud Infrastructure/Hyperscaler Clouds",
+  "GOOGL":"Cloud Infrastructure/Hyperscaler Clouds",
+  "MSFT":"Cloud Infrastructure/Hyperscaler Clouds",
+  "ORCL":"Cloud Infrastructure/Hyperscaler Clouds",
+  "CRWV":"Cloud Infrastructure/NeoClouds & AI-Specialized",
+  "IREN":"Cloud Infrastructure/NeoClouds & AI-Specialized",
+  "BRUN":"Cloud Infrastructure/NeoClouds & AI-Specialized",
+  "VRT":"Cloud Infrastructure/Data Center Facility",
+  "SMCI":"Cloud Infrastructure/Data Center Facility",
+  "NVT":"Cloud Infrastructure/Data Center Facility",
+  "MOD":"Cloud Infrastructure/Data Center Facility",
+  "PENG":"Cloud Infrastructure/Data Center Facility",
+  "AMZN":"Cloud Infrastructure/Hyperscaler Clouds",
+  "STX":"Cloud Infrastructure/Data Center Facility",
+  "2308.TW":"Cloud Infrastructure/Data Center Facility",
+  "3017.TW":"Cloud Infrastructure/Data Center Facility",
+  "3324.TW":"Cloud Infrastructure/Data Center Facility",
+  "6367.T":"Cloud Infrastructure/Data Center Facility",
+  "6669.TW":"Cloud Infrastructure/Data Center Facility",
+  // Compute Hardware
+  "NVDA":"Compute Hardware/Training GPUs",
+  "AMD":"Compute Hardware/Training GPUs",
+  "AVGO":"Compute Hardware/Networking ASICs",
+  "MRVL":"Compute Hardware/Networking ASICs",
+  "ANET":"Compute Hardware/Networking ASICs",
+  "INTC":"Compute Hardware/Server CPUs",
+  "ARM":"Compute Hardware/Server CPUs",
+  "TXN":"Compute Hardware/Server CPUs",
+  "NXPI":"Compute Hardware/Server CPUs",
+  "STM":"Compute Hardware/Server CPUs",
+  "IFX":"Compute Hardware/Server CPUs",
+  "AAPL":"Compute Hardware/Custom AI ASICs",
+  "IBM":"Compute Hardware/Custom AI ASICs",
+  "INFQ":"Compute Hardware/Custom AI ASICs",
+  "MPWR":"Compute Hardware/Power Management",
+  "NVTS":"Compute Hardware/Power Management",
+  "AOSL":"Compute Hardware/Power Management",
+  "POWI":"Compute Hardware/Power Management",
+  "QBTS":"Compute Hardware/Quantum Computing",
+  "RGTI":"Compute Hardware/Quantum Computing",
+  // Memory
+  "MU":"Memory/HBM",
+  "285A.T":"Memory/HBM",
+  "000660.KS":"Memory/HBM",
+  "005930.KS":"Memory/HBM",
+  "SNDK":"Memory/NAND Flash",
+  // Interconnect
+  "COHR":"Interconnect/Pluggable Optical Transceivers",
+  "LITE":"Interconnect/Pluggable Optical Transceivers",
+  "FN":"Interconnect/Pluggable Optical Transceivers",
+  "AAOI":"Interconnect/Pluggable Optical Transceivers",
+  "CIEN":"Interconnect/Pluggable Optical Transceivers",
+  "VIAV":"Interconnect/Pluggable Optical Transceivers",
+  "5801.T":"Interconnect/Pluggable Optical Transceivers",
+  "6451.TW":"Interconnect/Pluggable Optical Transceivers",
+  "MTSI":"Interconnect/Pluggable Optical Transceivers",
+  "IPGP":"Interconnect/Pluggable Optical Transceivers",
+  "CRDO":"Interconnect/High-Speed Connectivity ICs",
+  "ALAB":"Interconnect/High-Speed Connectivity ICs",
+  "CIEN":"Interconnect/Pluggable Optical Transceivers",
+  "PRY.MI":"Interconnect/Coherent Optical Transport",
+  "6754.T":"Interconnect/Coherent Optical Transport",
+  "POET":"Interconnect/External Light Sources (CW Lasers)",
+  "SIVE":"Interconnect/External Light Sources (CW Lasers)",
+  "FOCI":"Interconnect/External Light Sources (CW Lasers)",
+  "LWLG":"Interconnect/External Light Sources (CW Lasers)",
+  "LASR":"Interconnect/External Light Sources (CW Lasers)",
+  "6965.T":"Interconnect/Silicon Photonics Engines",
+  "6841.T":"Interconnect/Silicon Photonics Engines",
+  "GLW":"Interconnect/Fiber Array Units & Connectors",
+  // Advanced Packaging
+  "AMKR":"Advanced Packaging/Wafer-Level Packaging (CoWoS)",
+  "LPK":"Advanced Packaging/FC-BGA Substrates",
+  "BESI":"Advanced Packaging/Packaging Equipment",
+  "VSH":"Advanced Packaging/Passive Components",
+  // Semiconductor Foundry
+  "TSM":"Semiconductor Foundry/Leading-Edge Logic Foundry",
+  "GFS":"Semiconductor Foundry/Leading-Edge Logic Foundry",
+  "XFAB":"Semiconductor Foundry/Leading-Edge Logic Foundry",
+  // Semiconductor Equipment
+  "ASML":"Semiconductor Equipment/EUV",
+  "AMAT":"Semiconductor Equipment/Deposition & Etch",
+  "LRCX":"Semiconductor Equipment/Deposition & Etch",
+  "KLAC":"Semiconductor Equipment/Metrology & Inspection",
+  "ONTO":"Semiconductor Equipment/Metrology & Inspection",
+  "FORM":"Semiconductor Equipment/Metrology & Inspection",
+  "6857.T":"Semiconductor Equipment/Metrology & Inspection",
+  "AEHR":"Semiconductor Equipment/Metrology & Inspection",
+  "COHU":"Semiconductor Equipment/Test & Burn-In",
+  "CAJ":"Semiconductor Equipment/Lithography Equipment",
+  // Semiconductor Materials
+  "4043.T":"Semiconductor Materials/Silicon Wafers",
+  "4369.T":"Semiconductor Materials/Photoresist & Specialty Gases",
+  "5201.T":"Semiconductor Materials/Photoresist & Specialty Gases",
+  "LIN":"Semiconductor Materials/Photoresist & Specialty Gases",
+  "AXTI":"Semiconductor Materials/InP & GaAs Substrates",
+  "IQE":"Semiconductor Materials/InP & GaAs Substrates",
+  "VNP":"Semiconductor Materials/InP & GaAs Substrates",
+  "WOLF":"Semiconductor Materials/SiC Wafers",
+  "ENTG":"Semiconductor Materials/Photoresist & Specialty Gases",
+  // Critical Minerals
+  "FCX":"Critical Minerals/Copper",
+  "ELMT":"Critical Minerals/Lithium & Specialty Metals",
+  "MP":"Critical Minerals/Rare Earths",
+  "NB":"Critical Minerals/Technology Metals",
+  "ALB":"Critical Minerals/Lithium & Specialty Metals",
+  // Power
+  "OKLO":"Power/Nuclear & Advanced Fission",
+  "VST":"Power/Nuclear & Advanced Fission",
+  "TE":"Power/Nuclear & Advanced Fission",
+  "ASPI":"Power/Nuclear & Advanced Fission",
+  "GEV":"Power/Gas Turbines & Grid Equipment",
+  "7011.T":"Power/Gas Turbines & Grid Equipment",
+  "ETN":"Power/Gas Turbines & Grid Equipment",
+  "FLNC":"Power/Energy Storage",
+  "BE":"Power/Energy Storage",
+  "ENR.DE":"Power/Energy Storage",
+  "VICR":"Power/Power Semiconductors",
+  "CEG":"Power/Nuclear & Advanced Fission",
+  // Security
+  "CRWD":"Security/Endpoint & Cloud Security",
+  "PANW":"Security/Endpoint & Cloud Security",
+  "FTNT":"Security/Endpoint & Cloud Security",
+  "RBRK":"Security/Endpoint & Cloud Security",
+  "SAIL":"Security/Endpoint & Cloud Security",
+  // Edge & Physical AI
+  "AMBA":"Edge & Physical AI/Edge Compute Module",
+  "OUST":"Edge & Physical AI/Perception Layer",
+  "P":"Edge & Physical AI/Perception Layer",
+  "MBLY":"Edge & Physical AI/Perception Layer",
+  "AVAV":"Edge & Physical AI/Physical Systems",
+  "BRCHF":"Edge & Physical AI/Physical Systems",
+  "BOT":"Edge & Physical AI/Physical Systems",
+  "LAZR":"Edge & Physical AI/Perception Layer",
+  "JOBY":"Edge & Physical AI/Physical Systems",
+  "ACHR":"Edge & Physical AI/Physical Systems",
+  // Space & Comms
+  "ASTS":"Space & Comms/Satellite Constellations",
+  "RKLB":"Space & Comms/Launch Vehicles",
+  // Application
+  "LMND":"Application/Insurance AI",
+  "ROOT":"Application/Insurance AI",
+  "GWRE":"Application/Insurance AI",
+  "VRSK":"Application/Insurance AI",
+  "RXRX":"Application/AI Drug Discovery",
+  "SOFI":"Application/AI-Native Fintech & Commerce",
+  "MELI":"Application/AI-Native Fintech & Commerce",
+  "HOOD":"Application/AI-Native Fintech & Commerce",
+  "NU":"Application/AI-Native Fintech & Commerce",
+  "WMT":"Application/AI-Native Fintech & Commerce",
+  "CRM":"Application/AI-Native Fintech & Commerce"
+};
+// Merge PATH_MAP into TICKER_MAP so rawGithubUrl can resolve nested paths.
+Object.keys(PATH_MAP).forEach(tk=>{if(!TICKER_MAP[tk])TICKER_MAP[tk]={ticker:tk,name:tk};TICKER_MAP[tk].path=PATH_MAP[tk];});
+
 async function openTicker(ticker,sName){
   showLayer(3);
   document.getElementById("l3").innerHTML='<div class="wiki-loading">Loading '+ticker+'…</div>';
   if(!(ticker in WIKI_CACHE)){
     try{
       // Try three-layer path first (TICKER/analysis.md), fall back to legacy TICKER.md
-      let r=await fetch(rawGithubUrl(sName,ticker));
+      const _cInfo=TICKER_MAP[ticker];const _fp=_cInfo&&_cInfo.path?_cInfo.path:null;
+      let r=await fetch(rawGithubUrl(sName,ticker,false,_fp));
       if(r.ok){WIKI_CACHE[ticker]=await r.text();}
-      else{r=await fetch(rawGithubUrl(sName,ticker,true));WIKI_CACHE[ticker]=r.ok?await r.text():null;}
+      else{r=await fetch(rawGithubUrl(sName,ticker,true,_fp));WIKI_CACHE[ticker]=r.ok?await r.text():null;}
     }catch(e){WIKI_CACHE[ticker]=null;}
   }
   renderL3(ticker,sName);
