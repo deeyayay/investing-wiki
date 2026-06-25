@@ -26,6 +26,7 @@ Folder names now match layer names 1:1 — no slug overrides needed in the dashb
 | Layer | Sector Folder | Stack | Status | Supply Chain Map |
 |-------|---------------|-------|--------|-----------------|
 | L01 | `Application` | AI assistants · agents · vertical SaaS | partial | `_Supply Chain Map.md` — from Fintech & E-Commerce; run `/map-sector "Application"` to expand |
+| L01 sub | `Insurance AI` | AI-native carriers · underwriting AI · claims automation · fraud detection | partial | `_Supply Chain Map.md` — mapped 2026-06-25; 8 tiers, 2 structural gaps (telematics pure-play, fraud pure-play) |
 | L02 | `AI Model` | Foundation models · inference · orchestration | partial | `_Supply Chain Map.md` — from AI Model Infrastructure |
 | L03 | `Software Infrastructure` | ML frameworks · kernels · MLOps | planned | not yet created; run `/map-sector "Software Infrastructure"` |
 | L04 | `Cloud Infrastructure` | Hyperscalers · neoclouds · colocation · storage | partial | `_Supply Chain Map.md` — from AI Infrastructure |

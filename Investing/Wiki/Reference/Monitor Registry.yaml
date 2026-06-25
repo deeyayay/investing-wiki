@@ -8,9 +8,20 @@
 # To add a ticker: /add-ticker TICKER [--sector "Sector Name"]
 # To add a candidate: append to the sector's candidates list below.
 
-last_updated: "2026-06-19"
+last_updated: "2026-06-25"
 
 tickers:
+  # ── Insurance AI (L01 sub) ───────────────────────────────────────────────
+  LMND:
+    company: "Lemonade, Inc."
+    cik: "0001691421"
+    exchange: NYSE
+    sector: "Insurance AI"
+    path: "Investing/Wiki/Sectors/Insurance AI/LMND"
+    score: null
+    next_earnings: null
+    notes: "AI-native full-stack P&C + life carrier; data flywheel underwriting; Jim claims bot; targeting adj. EBITDA Q4 2026"
+
   # ── Application (L01) ────────────────────────────────────────────────────
   MELI:
     company: "MercadoLibre Inc."
@@ -1015,3 +1026,88 @@ candidates:
     source: "map-sector"
     added: "2026-05-31"
     note: "Atlas Vector Search (HNSW/ENN); document store for RAG pipeline metadata"
+
+  # ── Insurance AI candidates (map-sector 2026-06-25) ──────────────────────
+  # Run /add-ticker TICKER --sector "Insurance AI" to onboard any candidate.
+
+  - ticker: VRSK
+    company: "Verisk Analytics"
+    sector: "Insurance AI"
+    layer: "Actuarial Data & Risk Intelligence / Claims AI & Automation"
+    source: "map-sector"
+    added: "2026-06-25"
+    note: "ISO + AIR cat model + Xactimate claims estimating + PCS nat-cat data; multi-tier data chokepoint across Actuarial and Claims tiers"
+
+  - ticker: GWRE
+    company: "Guidewire Software"
+    sector: "Insurance AI"
+    layer: "Policy Administration Systems"
+    source: "map-sector"
+    added: "2026-06-25"
+    note: "Dominant P&C PAS + billing + claims (InsuranceSuite); 500+ carrier installations globally; migrating to Guidewire Cloud (ARR model)"
+
+  # LMND — onboarded 2026-06-25 via /add-ticker; removed from candidates
+
+  - ticker: ROOT
+    company: "Root Insurance"
+    sector: "Insurance AI"
+    layer: "AI-Native Digital Insurance Carriers / AI Underwriting & Risk Selection"
+    source: "map-sector"
+    added: "2026-06-25"
+    note: "Telematics-first UBI auto insurer; smartphone driving score is the underwriting model; improving loss ratio trajectory"
+
+  - ticker: CCCS
+    company: "CCC Intelligent Solutions Holdings"
+    sector: "Insurance AI"
+    layer: "Claims AI & Automation"
+    source: "map-sector"
+    added: "2026-06-25"
+    note: "Auto claims AI platform; 24M+ appraisals/year; connects insurers, collision repairers, and OEMs; AI damage assessment + workflow SaaS"
+
+  - ticker: MCO
+    company: "Moody's Corporation"
+    sector: "Insurance AI"
+    layer: "Actuarial Data & Risk Intelligence"
+    source: "map-sector"
+    added: "2026-06-25"
+    note: "Moody's RMS (acquired 2021) — primary AIR competitor in cat modeling; also Moody's Analytics insurance risk data"
+
+  - ticker: OSCR
+    company: "Oscar Health"
+    sector: "Insurance AI"
+    layer: "AI-Native Digital Insurance Carriers"
+    source: "map-sector"
+    added: "2026-06-25"
+    note: "AI-native health insurer; ACA individual marketplace + employer group; owns care navigation platform (Oscar Medical Group)"
+
+  - ticker: HIPO
+    company: "Hippo Holdings"
+    sector: "Insurance AI"
+    layer: "AI-Native Digital Insurance Carriers"
+    source: "map-sector"
+    added: "2026-06-25"
+    note: "AI-native homeowners insurer; post-restructuring via Spinnaker carrier merger; monitor portfolio stabilization and cat reinsurance structure"
+
+  - ticker: RNR
+    company: "RenaissanceRe Holdings"
+    sector: "Insurance AI"
+    layer: "Reinsurance Analytics & ILS"
+    source: "map-sector"
+    added: "2026-06-25"
+    note: "Cat-analytics-driven reinsurer; proprietary Kauai cat model; regarded as most analytically sophisticated reinsurer globally"
+
+  - ticker: RGA
+    company: "Reinsurance Group of America"
+    sector: "Insurance AI"
+    layer: "Reinsurance Analytics & ILS"
+    source: "map-sector"
+    added: "2026-06-25"
+    note: "Dominant life/health re; AI predictive mortality and morbidity analytics; proprietary data moat in life underwriting"
+
+  - ticker: EG
+    company: "Everest Group"
+    sector: "Insurance AI"
+    layer: "Reinsurance Analytics & ILS"
+    source: "map-sector"
+    added: "2026-06-25"
+    note: "P&C re + specialty primary; growing insurance segment; analytical underwriting approach"

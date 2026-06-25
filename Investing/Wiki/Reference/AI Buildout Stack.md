@@ -61,13 +61,16 @@ The previous five-dimension stack is superseded but maps cleanly onto the layers
 
 ```json
 {
-  "generated": "2026-06-16",
+  "generated": "2026-06-25",
   "layers": [
     {"num":"01","name":"Application","hue":235,"tag":"AI-native apps · agents · vertical SaaS","boxes":[
       {"label":"AI Assistants & Chatbots","gap":true,"chips":["META","GOOGL","MSFT"]},
       {"label":"Agentic AI Platforms (multi-step reasoning, tool use)","gap":true,"chips":["PLTR"]},
       {"label":"Enterprise AI SaaS (Copilot-style integrations)","gap":true,"chips":["MSFT","CRM"]},
-      {"label":"AI-Native Vertical Applications (coding, video, drug discovery)","sector":"Application","slug":"application","tier":"AI-Native Fintech & Commerce","chips":["MELI","SOFI","HOOD","NU"]}
+      {"label":"AI-Native Fintech & Commerce","sector":"Application","slug":"application","tier":"AI-Native Fintech & Commerce","chips":["MELI","SOFI","HOOD","NU"]},
+      {"label":"Insurance AI (underwriting · claims · fraud)","sector":"Insurance AI","slug":"insurance-ai","tier":"AI-Native Digital Insurance Carriers","chips":["LMND","ROOT","GWRE","VRSK"]},
+      {"label":"AI Drug Discovery (molecular design · clinical AI)","gap":true,"chips":["RXRX","SDGN"]},
+      {"label":"Materials Science AI (simulation · property prediction)","gap":true,"chips":[]}
     ]},
     {"num":"02","name":"AI Model","hue":255,"tag":"foundation models · serving · agents","boxes":[
       {"label":"Foundation Models (LLMs, multimodal)","sector":"AI Model","slug":"ai-model","tier":"Foundation Model Development","chips":["META"]},
