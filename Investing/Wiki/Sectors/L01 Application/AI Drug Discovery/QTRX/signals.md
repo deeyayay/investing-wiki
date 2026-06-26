@@ -14,6 +14,9 @@
 - **2026-06-09** — CFO Vandana Sriram departs June 15; Jason Faessler appointed CFO effective June 22, 2026 (8-K)
   **Why it matters:** Third C-suite change in six months alongside new CEO (Jan 2026) and COO (May 2026); Faessler brings life science tools finance background; management team is essentially brand new during Akoya integration and the critical H2 2026 cash-breakeven execution window.
 
+- **2025-11-20** — Board additions: Garret Hampton, Ph.D. (former President, Clinical NGS & Oncology, Thermo Fisher Scientific) and Alan Sachs, M.D., Ph.D. (former CMO and CSO, Thermo Fisher Scientific) appointed to board; Bill Donnelly elevated to Executive Chair; Jeffrey Elliott as Lead Independent Director
+  **Why it matters:** Sachs (former TFS CMO/CSO) and Hampton bring direct life science tools and diagnostics execution experience — relevant to FDA Alzheimer's IVD clearance process; Donnelly's shift to Executive Chair signals active board oversight during CEO transition and Akoya integration. Positive governance signal but does not resolve C-suite track record gap.
+
 - **2025** — Kent Lake PR LLC (6.9% stake) filed DFAN14A opposing Akoya merger; cooperation agreement reached: new independent director by Dec 2025, board declassification approved at 2025 Annual Meeting
   **Why it matters:** Activist pressure confirms shareholder dissatisfaction with Akoya dilution thesis; cooperation agreement removes proxy risk but highlights governance weaknesses that contributed to the controversy.
 

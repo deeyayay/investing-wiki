@@ -68,6 +68,7 @@ _Evaluated: 2026-06-26_
 | 2026-06-26 | Initial onboarding | → | Thesis established; pending /score-ticker |
 | 2026-05-06 | Q1 2026: organic revenue -21%; NIH cuts hit consumables | ↓ | Legacy Quanterix revenue declining underneath Akoya contribution; reported +20% masked by M&A; GAAP GM guide cut to 41-45% (accounting reclassification adds further optics drag) |
 | 2026-06-09 | CFO Vandana Sriram departs; Jason Faessler appointed eff June 22 | ↓ | Third C-suite change in 6 months (CEO Jan, COO May, CFO June); management continuity risk elevated during critical Akoya integration and H2 breakeven execution window |
+| 2025-11-20 | Board: Hampton + Sachs (ex-Thermo Fisher CMO/CSO) added; Donnelly → Executive Chair | → | Thermo Fisher diagnostics pedigree strengthens board oversight of IVD clearance and Akoya integration; does not close C-suite track record gap; L stays 2/5 pending Q2 execution |
 | 2025 | Kent Lake (6.9% stake) forced cooperation agreement | → | Activist criticized Akoya as dilutive; board accepted new independent director + declassification; governance improving, but confirms board dysfunction during merger; resolved pre-monitor |
 
 ---
