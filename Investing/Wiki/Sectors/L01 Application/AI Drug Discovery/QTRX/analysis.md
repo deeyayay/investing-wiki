@@ -31,31 +31,31 @@ Key risks: The Akoya integration is messy — GAAP gross margin fell from 60.5% 
 ---
 
 ## Scoring Summary
-_Last scored: — | [[Scoring Rubric]]_
+_Last scored: 2026-06-26 | [[Scoring Rubric]]_
 
 | Criterion | Score | Evidence |
 |-----------|-------|----------|
-| Product (Love Factor) | —/5 | |
-| Pricing Power | —/5 | |
-| Leadership & Alignment | —/5 | |
-| Financial Health | —/5 | |
-| Macro Environment | —/5 | |
-| Future Potential | —/5 | |
-| **Composite** | **—/10** | |
+| Product (Love Factor) | 4/5 | Simoa 1000x sensitivity advantage; IP/Patent + Platform moat; 3,600+ citations create self-reinforcing install standard; high switching cost once assays validated |
+| Pricing Power | 3/5 | Consumable reagents locked-in by install base; GAAP GM fell 60.5%→46.8% (Akoya integration, not pricing erosion); 2026 guide 49–53% adj GM — mixed story pending execution |
+| Leadership & Alignment | 2/5 | CEO Cunningham appointed Jan 2026 (new, no track record); CFO transition pending May 2026; COO also new May 2026; ownership_pct null; no guidance history in wiki |
+| Financial Health | 2/5 | $107M net loss FY2025; deeply FCF negative; zero debt + $291.7M cash; biopharma/academia customer base is FCF-funded; H2 2026 cash breakeven guide contingent on revenue ramp |
+| Macro Environment | 4/5 | AD drug approvals (Leqembi, Kisunla) drive patient-selection biomarker demand structurally; spatial biology secular growth; precision medicine 10–15% CAGR; FDA IVD clearance timing is 1 manageable headwind |
+| Future Potential | 4/5 | 3 existing revenue streams (instruments, consumables/CRO, services); Alzheimer's IVD in FDA clearance; Akoya spatial biology cross-sell into ~2,300 combined install base; reference lab accelerator; 2026 guide +22% YoY |
+| **Composite** | **6.5/10** | **Strong** |
 
-**Valuation:** — (not yet scored)
-**Growth Potential:** — (pending)
+**Valuation:** — (no price or analyst PT in wiki; run /ticker-monitor --deep QTRX to populate)
+**Growth Potential:** High if Alzheimer's IVD clears FDA and Akoya cross-sell executes; execution risk on GM recovery is the near-term gating factor
 
 ## Risk Flags
-_Evaluated: —_
+_Evaluated: 2026-06-26_
 
 | Flag | Status | Notes |
 |------|--------|-------|
-| Capex sustainability | — | |
-| Demand chain health | — | |
-| Customer concentration | — | |
-| Circular revenue exposure | none | No hyperscaler or AI capex dependency |
-| Rate sensitivity | — | |
+| Capex sustainability | WATCH | FCF deeply negative ($107M loss 2025) but zero debt and $291.7M cash; H2 2026 breakeven guide pending execution |
+| Demand chain health | CLEAR | Primary customers are biopharma CROs, academic labs, and reference labs — FCF-funded, no neocloud or circular-valuation dependency |
+| Customer concentration | WATCH | top_customer_pct: null — insufficient data; research-tools businesses typically diversified but no confirmation |
+| Circular revenue exposure | CLEAR | demand_chain.circular_exposure: none; demand traces to end-use research and diagnostics spending |
+| Rate sensitivity | CLEAR | Zero debt; rate sensitivity immaterial; no floating-rate exposure |
 
 ---
 

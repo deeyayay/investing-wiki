@@ -59,9 +59,9 @@ demand_chain:
   notes: "Biopharma (CRO + clinical trials), academic labs, and reference labs; no hyperscaler dependency"
 
 metrics:
-  score: null
-  score_label: "—"
-  last_scored: null
+  score: 6.5
+  score_label: "Strong"
+  last_scored: "2026-06-26"
   valuation_fpe: null
   analyst_pt: null
   analyst_upside_pct: null
