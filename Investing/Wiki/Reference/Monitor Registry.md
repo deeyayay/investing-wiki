@@ -48,6 +48,7 @@ Add a new `## Layer · Tier` heading with a table using the same column structur
 | Ticker | Company | CIK | Exchange | Path | Score |
 |--------|---------|-----|----------|------|-------|
 | QTRX | Quanterix Corp | 0001503274 | NASDAQ | Investing/Wiki/Sectors/L01 Application/AI Drug Discovery/QTRX/ | 6.5 |
+| ABCL | AbCellera Biologics Inc. | 0001703057 | NASDAQ | Investing/Wiki/Sectors/L01 Application/AI Drug Discovery/ABCL/ | — |
 
 ---
 

@@ -8,7 +8,7 @@
 # To add a ticker: /add-ticker TICKER [--sector "Sector Name"]
 # To add a candidate: append to the sector's candidates list below.
 
-last_updated: "2026-06-25"
+last_updated: "2026-06-26"
 
 tickers:
   # ── Insurance AI (L01 sub) ───────────────────────────────────────────────
@@ -50,6 +50,25 @@ tickers:
     score: 9.0
     next_earnings: "2026-08-04"
     # migrated to three-layer structure 2026-06-07
+
+  # ── AI Drug Discovery (L01 sub) ──────────────────────────────────────────
+  QTRX:
+    company: "Quanterix Corp"
+    cik: "0001503274"
+    exchange: NASDAQ
+    sector: "L01 Application"
+    path: "Investing/Wiki/Sectors/L01 Application/AI Drug Discovery/QTRX"
+    score: 6.5
+    next_earnings: "2026-08-06"
+
+  ABCL:
+    company: "AbCellera Biologics Inc."
+    cik: "0001703057"
+    exchange: NASDAQ
+    sector: "L01 Application"
+    path: "Investing/Wiki/Sectors/L01 Application/AI Drug Discovery/ABCL"
+    score: null
+    next_earnings: null
 
   # ── Cloud Infrastructure (L04) ───────────────────────────────────────────
   IREN:
