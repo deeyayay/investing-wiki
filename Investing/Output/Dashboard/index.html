@@ -348,7 +348,7 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
     <input id="search-input" type="text" placeholder="Search tickers, sectors, tiers…" autocomplete="off" spellcheck="false">
     <div id="search-results" hidden></div>
   </div>
-  <span class="gen-date">Generated: 2026-06-20</span>
+  <span class="gen-date">Generated: 2026-06-26</span>
 </header>
 <div id="tab-nav">
   <button class="tab-btn active" data-tab="supply-chain" onclick="showTab('supply-chain')">Supply Chain</button>
@@ -780,6 +780,8 @@ const DATA = {
           { ticker: "VRSK", name: "Verisk Analytics", mkt_cap: "Large", notes: "Data analytics and risk assessment platform for insurance, energy, and financial markets — ISO loss costs, actuarial databases, and catastrophe modeling tools that most US insurers depend on for underwriting." }
         ]},
         { tier: "AI Drug Discovery", fn: "AI-native biotechs and platforms applying machine learning to identify drug candidates, predict protein structures, design molecules, and optimize clinical trial design — compressing the traditional 10–15 year drug development timeline.", chokepoint: "N", capital_intensity: "Medium", moat_type: "Proprietary data / Platform", margin_profile: "High (post-approval)", companies: [
+          { ticker: "QTRX", name: "Quanterix Corp", mkt_cap: "Small", notes: "Simoa single-molecule detection platform — 1000x sensitivity vs. standard immunoassay; Akoya spatial biology acquisition; Alzheimer's IVD in FDA clearance; organic revenue under NIH funding headwinds." },
+          { ticker: "ABCL", name: "AbCellera Biologics", mkt_cap: "Small", notes: "AI-native antibody discovery platform using single-cell microfluidics + deep sequencing; 40+ partner programs; ABCL635 (VMS/menopause, NK3R) Phase 2 efficacy readout Q3 2026 is the key catalyst." },
           { ticker: "RXRX", name: "Recursion Pharmaceuticals", mkt_cap: "Small", notes: "High-throughput biology platform generating 2.4M+ phenomics images weekly to train foundation models for drug discovery — partnered with NVIDIA and Roche for model development and candidate identification." }
         ]},
         { tier: "Payment Network Rails & Settlement", fn: "Provides the clearing, netting, and settlement backbone for all electronic money movement — the plumbing layer that processes trillions of dollars in transactions daily without which digital commerce, embedded finance, and AI-powered financial services cannot operate. Payment rails include real-time gross settlement systems (Fedwire, CHAPS), card network authorization and clearing (Visa/Mastercard rails), ACH batch settlement, and emerging real-time payment networks (RTP, FedNow) that enable instant fund transfer without batch delays. The rails layer is the ultimate chokepoint: every payment made through any fintech application — BNPL, neobank, B2B payment, digital wallet — ultimately clears over these rails. The strategic moat is absolute: Visa and Mastercard together process over $20 trillion in annual volume across 4B+ cards with four-party network effects (issuers, acquirers, merchants, cardholders) that have required 50 years to build and cannot be disintermediated without sovereign-level intervention. AI is beginning to penetrate the rails layer through real-time fraud scoring embedded in authorization flows.", chokepoint: "Y", capital_intensity: "Low", moat_type: "Ecosystem / Scale", margin_profile: "Very High", companies: [] },
@@ -1039,7 +1041,7 @@ const STACK={
       {"label":"Enterprise AI SaaS (Copilot-style integrations)","gap":true,"chips":["MSFT","CRM"]},
       {"label":"Insurance AI (end-to-end digital insurer, ML underwriting)","sector":"Application","slug":"application","tier":"Insurance AI","chips":["LMND","ROOT","GWRE","VRSK"]},
       {"label":"AI-Native Fintech & Commerce","sector":"Application","slug":"application","tier":"AI-Native Fintech & Commerce","chips":["MELI","SOFI","HOOD","NU"]},
-      {"label":"AI Drug Discovery","sector":"Application","slug":"application","tier":"AI Drug Discovery","chips":["RXRX"]},
+      {"label":"AI Drug Discovery","sector":"Application","slug":"application","tier":"AI Drug Discovery","chips":["QTRX","ABCL","RXRX"]},
       {"label":"Materials Science AI","sector":"Application","slug":"application","tier":"Materials Science AI","chips":[]}
     ]},
     {"num":"02","name":"AI Model","hue":255,"tag":"foundation models · serving · agents","boxes":[
@@ -1685,6 +1687,7 @@ const PATH_MAP={
   "RKLB":"Space & Comms/Launch Vehicles",
   // L01 Application
   "QTRX":"L01 Application/AI Drug Discovery",
+  "ABCL":"L01 Application/AI Drug Discovery",
   "LMND":"L01 Application/Insurance AI",
   "ROOT":"L01 Application/Insurance AI",
   "GWRE":"L01 Application/Insurance AI",

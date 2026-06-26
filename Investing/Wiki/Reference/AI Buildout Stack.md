@@ -69,7 +69,7 @@ The previous five-dimension stack is superseded but maps cleanly onto the layers
       {"label":"Enterprise AI SaaS (Copilot-style integrations)","gap":true,"chips":["MSFT","CRM"]},
       {"label":"AI-Native Fintech & Commerce","sector":"Application","slug":"application","tier":"AI-Native Fintech & Commerce","chips":["MELI","SOFI","HOOD","NU"]},
       {"label":"Insurance AI (underwriting · claims · fraud)","sector":"Insurance AI","slug":"insurance-ai","tier":"AI-Native Digital Insurance Carriers","chips":["LMND","ROOT","GWRE","VRSK"]},
-      {"label":"AI Drug Discovery (molecular design · clinical AI)","gap":true,"chips":["RXRX","SDGN"]},
+      {"label":"AI Drug Discovery (molecular design · clinical AI)","sector":"L01 Application","slug":"application","tier":"AI Drug Discovery","chips":["QTRX","ABCL","RXRX"]},
       {"label":"Materials Science AI (simulation · property prediction)","gap":true,"chips":[]}
     ]},
     {"num":"02","name":"AI Model","hue":255,"tag":"foundation models · serving · agents","boxes":[
