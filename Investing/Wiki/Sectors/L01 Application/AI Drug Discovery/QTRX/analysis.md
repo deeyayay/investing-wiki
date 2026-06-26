@@ -14,7 +14,7 @@ Quanterix owns the sensitivity floor of protein biomarker detection, converting 
 
 > **Thesis established:** 2026-06-26
 > **Last validated:** 2026-06-26
-> **Drift status:** Early watch — Akoya integration and gross margin recovery are the key execution tests in 2026
+> **Drift status:** Drifting — organic revenue -21% in Q1 2026; US federal research (NIH) funding cuts compressing legacy consumables; three senior leadership changes in 6 months add execution risk
 
 Quanterix built its business on Simoa (Single Molecule Array) — a proprietary detection technology that finds proteins in blood at femtomolar concentrations, roughly 1000x below what standard immunoassays can see. This sensitivity threshold enables biomarker discovery and clinical testing that is simply not possible on competing platforms, creating a defensible position wherever detecting low-abundance proteins matters. More than 3,600 peer-reviewed publications now cite Simoa data, cementing it as the reference standard in neurodegeneration and oncology research.
 
@@ -66,6 +66,9 @@ _Evaluated: 2026-06-26_
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
 | 2026-06-26 | Initial onboarding | → | Thesis established; pending /score-ticker |
+| 2026-05-06 | Q1 2026: organic revenue -21%; NIH cuts hit consumables | ↓ | Legacy Quanterix revenue declining underneath Akoya contribution; reported +20% masked by M&A; GAAP GM guide cut to 41-45% (accounting reclassification adds further optics drag) |
+| 2026-06-09 | CFO Vandana Sriram departs; Jason Faessler appointed eff June 22 | ↓ | Third C-suite change in 6 months (CEO Jan, COO May, CFO June); management continuity risk elevated during critical Akoya integration and H2 breakeven execution window |
+| 2025 | Kent Lake (6.9% stake) forced cooperation agreement | → | Activist criticized Akoya as dilutive; board accepted new independent director + declassification; governance improving, but confirms board dysfunction during merger; resolved pre-monitor |
 
 ---
 
@@ -78,16 +81,19 @@ _Evaluated: 2026-06-26_
 ---
 
 ## Catalyst Timeline
-- [ ] H2 2026 — Cash flow breakeven (management guide)
+- [x] Q1 2026 (May 6) — Revenue $36.4M +20% reported; organic -21%; adj GM 50.9%; guidance maintained
+- [ ] Q2 2026 earnings — August 6, 2026 (after market close); gross margin trajectory vs. 49–53% adj target
+- [ ] H2 2026 — Cash flow breakeven (management guide); requires ~$42M/quarter avg in H2
 - [ ] 2026 — FDA clearance decision on Alzheimer's 5-biomarker multiplex test
 - [ ] 2026 — Akoya integration cost synergies ($20M in year 1, $40M annualized)
-- [ ] Q2 2026 earnings — Gross margin trajectory vs. 49–53% adj target
 - [ ] Ongoing — NY State clinical lab permit enabling nationwide reference lab revenue
 
 ---
 
 ## Analyst Coverage
 *(Rating changes, price target moves, notable commentary — append-only)*
+
+- **2026-05-06** — Canaccord Genuity maintains Hold on QTRX, PT $4.00 (lowered from prior; citing updated fair value assumptions, discount rate, revenue growth and margin revisions post-Q1)
 
 ---
 

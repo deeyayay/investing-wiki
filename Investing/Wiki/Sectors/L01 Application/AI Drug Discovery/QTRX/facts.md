@@ -11,9 +11,9 @@ management:
     ownership_pct: null
     notes: "Appointed Jan 2026; replaced Masoud Toloue; biotech commercial background"
   - role: CFO
-    name: "Amol Chaubal"
+    name: "Jason Faessler"
     ownership_pct: null
-    notes: "CFO since Apr 2019; transition announced May 2026"
+    notes: "Appointed Jun 9 2026, eff Jun 22; succeeded Vandana Sriram (departed May 2026)"
 
 earnings:
   - quarter: Q1_FY2026
@@ -31,7 +31,15 @@ earnings:
     guidance_next_b: 0.172
     notes: "FY2025 rev $138.9M (+1% YoY); net loss $107.2M; GAAP GM 46.8%; 2026 guide $169–174M"
 
-filings: []
+filings:
+  - type: 10-Q
+    period: "Q1_FY2026"
+    date: "2026-05-07"
+    url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001503274&type=10-Q"
+  - type: 8-K
+    period: "CFO appointment"
+    date: "2026-06-09"
+    url: "https://www.sec.gov/Archives/edgar/data/0001503274/000150327426000028/qtrx-20260609.htm"
 
 moat:
   type: "IP/Patent + Platform/Ecosystem"
@@ -67,5 +75,5 @@ metrics:
   analyst_upside_pct: null
 
 last_updated: "2026-06-26"
-next_earnings: null
+next_earnings: "2026-08-06"
 ---
