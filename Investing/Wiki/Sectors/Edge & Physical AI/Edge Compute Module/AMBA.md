@@ -154,6 +154,7 @@ Key risks are structural: Ambarella is not yet profitable at scale and is compet
 
 | Date | Signal | Source |
 |------|--------|--------|
+| 2026-06-27 | [2026-06-27-robotics-sector-rotation-basket](https://x.com/i/status/2070829811111731557) | tweet |
 
 ---
 

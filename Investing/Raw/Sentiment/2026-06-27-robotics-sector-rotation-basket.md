@@ -1,3 +1,14 @@
+---
+date: 2026-06-27
+source: tweet
+tickers: [AMBA, AEVA, BB, CCXI, CGNX, OUST, RR, SERV, SYM, TER]
+sectors: [Edge & Physical AI]
+sector_level: true
+author: ""
+url: "https://x.com/i/status/2070829811111731557"
+tags: [robotics, humanoid, lidar, cobot, machine-vision, sector-rotation]
+---
+
 Ok seems like Robotics is gonna be the play of the next few weeks/months. Here are some good companies worth watching imo
 
 Spread across the stack: the OS, the sensors, the brain, and the body.
@@ -18,7 +29,7 @@ $TER - Teradyne owns Universal Robots (cobots) and MiR (mobile robots), on top o
 
 $SYM - Symbotic automates warehouses with AI-driven robotics, anchored by Walmart. Real revenue at scale, rare for this theme. Customer concentration and lumpy deployments are the risk.
 
-$SERV - Serve Robotics runs autonomous sidewalk delivery, backed by NVIDIA and Uber. Fleet expansion is the growth story. Their robots look kinda ass though. 
+$SERV - Serve Robotics runs autonomous sidewalk delivery, backed by NVIDIA and Uber. Fleet expansion is the growth story. Their robots look kinda ass though.
 
 $CGNX - Cognex is machine vision, the eyes of factory automation and robotic guidance. Established and profitable, levered to capex cycles. Less explosive, more durable.
 

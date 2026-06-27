@@ -1,6 +1,6 @@
 # Sentiment Index
 *Maintained by `/ingest-sentiment` — do not edit the ticker table manually.*
-*Last updated: 2026-06-19 (BESI tech-race thread)*
+*Last updated: 2026-06-27 (robotics sector rotation basket)*
 
 ---
 
@@ -8,6 +8,16 @@
 
 | Ticker | Wiki | Status | Mentions | Last Signal |
 |--------|------|--------|----------|-------------|
+| AMBA | [[AMBA]] | monitored | 1 | 2026-06-27 |
+| AEVA | [[AEVA]] | stub | 1 | 2026-06-27 |
+| BB | [[BB]] | stub | 1 | 2026-06-27 |
+| CCXI | [[CCXI]] | stub | 1 | 2026-06-27 |
+| CGNX | [[CGNX]] | stub | 1 | 2026-06-27 |
+| OUST | [[OUST]] | monitored | 1 | 2026-06-27 |
+| RR | [[RR]] | stub | 1 | 2026-06-27 |
+| SERV | [[SERV]] | stub | 1 | 2026-06-27 |
+| SYM | [[SYM]] | stub | 1 | 2026-06-27 |
+| TER | [[TER]] | stub | 1 | 2026-06-27 |
 | NVDA | [[NVDA]] | monitored | 8 | 2026-05-31 |
 | AMKR | [[AMKR]] | monitored | 1 | 2026-06-19 |
 | BESI | [[BESI]] | monitored | 1 | 2026-06-19 |
@@ -94,6 +104,7 @@
 *Newest first. Max 30 entries.*
 
 <!-- signals appended here by /ingest-sentiment -->
+2026-06-27 · tweet · [[2026-06-27-robotics-sector-rotation-basket]] · AMBA, AEVA, BB, CCXI, CGNX, OUST, RR, SERV, SYM, TER
 2026-06-19 · tweet · [[2026-06-19-besi-advanced-packaging-tech-race]] · AMKR, BESI
 2026-05-31 · tweet · [[2026-05-31-aosl-researching-the-power]] · AOSL, IFX, NVDA, NVTS, POWI, STM, VICR, WOLF
 2026-05-22 · article · [[2026-05-22-amd-a-ton-of]] · AMD, AMZN, GFS, GOOGL, IBM, INFQ, MSFT, NVDA, QBTS, RGTI, WMT

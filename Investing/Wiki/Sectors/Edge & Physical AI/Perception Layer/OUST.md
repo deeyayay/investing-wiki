@@ -153,6 +153,14 @@ See [[Robotics & Edge AI _Sector Framework]] for sector context.
 
 ---
 
+## Social Mentions
+
+| Date | Signal | Source |
+|------|--------|--------|
+| 2026-06-27 | [2026-06-27-robotics-sector-rotation-basket](https://x.com/i/status/2070829811111731557) | tweet |
+
+---
+
 ## Research Log
 *(Reverse-chron append log — newest at bottom)*
 - **2026-05-19** — add-ticker run. Note created from template; fundamental sections populated from web research and SEC DEF 14A. CIK 0001816581, NASDAQ.
