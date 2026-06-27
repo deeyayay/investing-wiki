@@ -194,12 +194,19 @@ All other sections (Scoring Summary, Conviction Log, Cross-Ticker Signals, Catal
 
 ### Write signals.md (Layer 3)
 
-Read `Investing/Wiki/Reference/_signals-template.md`.
+Check if `Investing/Wiki/Sectors/[SECTOR]/[TICKER]/signals.md` already exists (a stub created by `/ingest-sentiment` before full onboarding).
 
-Write `Investing/Wiki/Sectors/[SECTOR]/[TICKER]/signals.md` — replace `TICKER` with the actual ticker symbol. Body is empty (stubs only).
+**If the file already exists:**
+- Read it and extract the full `## Social Mentions` section (header row + all data rows).
+- Write signals.md from the template but insert the preserved Social Mentions table in place of the blank stub — keep every existing row intact.
+- Append the initial Research Log entry below any existing Research Log content (never overwrite it).
+- Remove the stub notice line (`*Social mentions only — not yet in Monitor Registry…*`) if present.
 
-Append the initial Research Log entry:
-`- **[TODAY'S DATE]** — add-ticker run. facts.md + analysis.md populated from web research and SEC EDGAR.`
+**If the file does not exist:**
+- Read `Investing/Wiki/Reference/_signals-template.md`.
+- Write `Investing/Wiki/Sectors/[SECTOR]/[TICKER]/signals.md` — replace `TICKER` with the actual ticker symbol. Body is empty (stubs only).
+- Append the initial Research Log entry:
+  `- **[TODAY'S DATE]** — add-ticker run. facts.md + analysis.md populated from web research and SEC EDGAR.`
 
 ---
 
