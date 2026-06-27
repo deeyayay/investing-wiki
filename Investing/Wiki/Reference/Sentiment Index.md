@@ -1,6 +1,6 @@
 # Sentiment Index
 *Maintained by `/ingest-sentiment` — do not edit the ticker table manually.*
-*Last updated: 2026-06-27 (robotics sector rotation basket)*
+*Last updated: 2026-06-27 (radar robotics play — IFX, GAPW, ACCON)*
 
 ---
 
@@ -66,7 +66,9 @@
 | GLW | [[GLW]] | stub | 1 | 2026-05-20 |
 | GOOGL | [[GOOGL]] | stub | 1 | 2026-05-22 |
 | IBM | [[IBM]] | stub | 1 | 2026-05-22 |
-| IFX | [[IFX]] | monitored | 1 | 2026-05-31 |
+| IFX | [[IFX]] | monitored | 2 | 2026-06-27 |
+| ACCON | [[ACCON]] | stub | 1 | 2026-06-27 |
+| GAPW | [[GAPW]] | stub | 1 | 2026-06-27 |
 | INFQ | [[INFQ]] | stub | 1 | 2026-05-22 |
 | LPK | [[LPK]] | stub | 1 | 2026-05-17 |
 | MOD | [[MOD]] | stub | 1 | 2026-05-18 |
@@ -104,6 +106,7 @@
 *Newest first. Max 30 entries.*
 
 <!-- signals appended here by /ingest-sentiment -->
+2026-06-27 · tweet · [[2026-06-27-ifx-playing-robotics-radar]] · ACCON, GAPW, IFX
 2026-06-27 · tweet · [[2026-06-27-robotics-sector-rotation-basket]] · AMBA, AEVA, BB, CCXI, CGNX, OUST, RR, SERV, SYM, TER
 2026-06-19 · tweet · [[2026-06-19-besi-advanced-packaging-tech-race]] · AMKR, BESI
 2026-05-31 · tweet · [[2026-05-31-aosl-researching-the-power]] · AOSL, IFX, NVDA, NVTS, POWI, STM, VICR, WOLF
