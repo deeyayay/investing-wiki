@@ -1535,6 +1535,14 @@ const _ss=(boxes)=>(boxes||[]).forEach(b=>{if(b.sector&&b.chips)b.chips.forEach(
 ['SNDK','285A.T','MU','000660.KS','005930.KS'].forEach(t=>{if(TICKER_MAP[t])TICKER_MAP[t].sectorName='Memory';});
 if(TICKER_MAP['LPK'])TICKER_MAP['LPK'].sectorName='Compute Hardware';
 const WIKI_CACHE={};
+const SIGNALS_CACHE={};
+
+function signalsGithubUrl(sName,ticker,folderPath){
+  const folder=folderPath?folderPath.split('/').map(p=>encodeURIComponent(p)).join('/')
+    :encodeURIComponent(SECTOR_FOLDER[sName]||sName);
+  const base="https://raw.githubusercontent.com/deeyayay/investing-wiki/master/Investing/Wiki/Sectors/"+folder+"/";
+  return base+encodeURIComponent(ticker)+"/signals.md";
+}
 
 // Canonical layer/tier folder path for each ticker (layer → tier, no leading slash).
 // Used by rawGithubUrl to construct the correct nested URL after the sector reorganization.
@@ -1707,16 +1715,47 @@ Object.keys(PATH_MAP).forEach(tk=>{if(!TICKER_MAP[tk])TICKER_MAP[tk]={ticker:tk,
 async function openTicker(ticker,sName){
   showLayer(3);
   document.getElementById("l3").innerHTML='<div class="wiki-loading">Loading '+ticker+'…</div>';
+  const _cInfo=TICKER_MAP[ticker];const _fp=_cInfo&&_cInfo.path?_cInfo.path:null;
+  const fetches=[];
   if(!(ticker in WIKI_CACHE)){
-    try{
-      // Try three-layer path first (TICKER/analysis.md), fall back to legacy TICKER.md
-      const _cInfo=TICKER_MAP[ticker];const _fp=_cInfo&&_cInfo.path?_cInfo.path:null;
-      let r=await fetch(rawGithubUrl(sName,ticker,false,_fp));
-      if(r.ok){WIKI_CACHE[ticker]=await r.text();}
-      else{r=await fetch(rawGithubUrl(sName,ticker,true,_fp));WIKI_CACHE[ticker]=r.ok?await r.text():null;}
-    }catch(e){WIKI_CACHE[ticker]=null;}
+    fetches.push((async()=>{
+      try{
+        // Try three-layer path first (TICKER/analysis.md), fall back to legacy TICKER.md
+        let r=await fetch(rawGithubUrl(sName,ticker,false,_fp));
+        if(r.ok){WIKI_CACHE[ticker]=await r.text();}
+        else{r=await fetch(rawGithubUrl(sName,ticker,true,_fp));WIKI_CACHE[ticker]=r.ok?await r.text():null;}
+      }catch(e){WIKI_CACHE[ticker]=null;}
+    })());
   }
+  if(!(ticker in SIGNALS_CACHE)){
+    fetches.push((async()=>{
+      try{
+        const r=await fetch(signalsGithubUrl(sName,ticker,_fp));
+        SIGNALS_CACHE[ticker]=r.ok?await r.text():null;
+      }catch(e){SIGNALS_CACHE[ticker]=null;}
+    })());
+  }
+  await Promise.all(fetches);
   renderL3(ticker,sName);
+}
+
+function parseSocialMentions(md){
+  if(!md)return '';
+  const lines=md.split('\n');
+  let inSection=false,tableRows=[];
+  for(const line of lines){
+    if(/^## Social Mentions/.test(line)){inSection=true;continue;}
+    if(inSection&&/^## /.test(line))break;
+    if(inSection&&/^\s*\|/.test(line))tableRows.push(line.trimStart());
+  }
+  const rows=tableRows.filter(r=>!/^\|[\s\-:|]+\|/.test(r));
+  if(!rows.length)return '';
+  const cells=r=>r.split('|').slice(1,-1).map(c=>c.trim());
+  const hdr=cells(rows[0]).map(h=>'<th>'+inlineMd(h)+'</th>').join('');
+  const body=rows.slice(1).map(r=>'<tr>'+cells(r).map(c=>'<td>'+inlineMd(c)+'</td>').join('')+'</tr>').join('');
+  if(!body)return '';
+  return '<div class="wiki-section"><h2 class="wiki-h2">Social Mentions</h2>'
+    +'<div class="wiki-table-wrap"><table class="wiki-table"><thead><tr>'+hdr+'</tr></thead><tbody>'+body+'</tbody></table></div></div>';
 }
 
 function renderL3(ticker,sName){
@@ -1724,9 +1763,10 @@ function renderL3(ticker,sName){
   const cc=c.mkt_cap==="Large"?"large":c.mkt_cap==="Mid"?"mid":"small";
   const cl=c.mkt_cap==="Large"?"Large cap":c.mkt_cap==="Mid"?"Mid cap":"Small cap";
   const md=WIKI_CACHE[ticker];
+  const socialHtml=parseSocialMentions(SIGNALS_CACHE[ticker]);
   const body=md
-    ?parseWiki(md)
-    :'<div class="wiki-empty">No wiki page for '+ticker+' yet.<br>Run <code>/add-ticker '+ticker+'</code> to create one.</div>';
+    ?parseWiki(md)+socialHtml
+    :(socialHtml||'<div class="wiki-empty">No wiki page for '+ticker+' yet.<br>Run <code>/add-ticker '+ticker+'</code> to create one.</div>');
   const fromRace=_raceOrigin;_raceOrigin=null;
   const fromStack=_fromStack;_fromStack=false;
   const chipOrigin=_chipOrigin;_chipOrigin=null;
