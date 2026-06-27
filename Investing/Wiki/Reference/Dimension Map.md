@@ -51,6 +51,20 @@ Folder names now match layer names 1:1 — no slug overrides needed in the dashb
 
 ---
 
+## Dashboard Domain Stacks
+
+The dashboard's **Supply Chain** tab carries a **domain switcher** (added 2026-06-27) — three independent stacks that each render through the same engine. This declutters the AI Buildout map by giving the two largest edge verticals their own purpose-built views. Each domain stack has its own canonical reference file holding the machine-readable JSON the dashboard consumes.
+
+| Domain (switcher key) | Reference file | Shape | Status | Notes |
+|-----------------------|----------------|-------|--------|-------|
+| AI Buildout (`ai-buildout`, default) | `AI Buildout Stack.md` | 12 layers + 3 rails + Edge surface | partial | The comprehensive software→minerals stack. Humanoid Robotics + AI Drug Discovery boxes relocated out to the domains below. |
+| Robotics (`robotics`) | `Robotics Stack.md` | 7-layer humanoid framework, no rails | scaffold | Verbatim from the *7 Layers of a Humanoid Robot* graphic. Most tickers queued as `humanoid-robotics-framework` candidates in `Monitor Registry.yaml`. |
+| Healthcare & Drug Discovery (`healthcare`) | `Healthcare & Drug Discovery Stack.md` | 6-layer first-cut, no rails | scaffold | Mostly `gap` boxes awaiting `/map-sector "Healthcare & Drug Discovery"`. Seeds: QTRX, ABCL, RXRX. |
+
+Robotics and Healthcare tickers still live physically under their existing sector folders (e.g. AI Drug Discovery under `L01 Application/AI Drug Discovery/`); the domain stacks are curated **navigation views**, not new folder hierarchies. Onboarded tickers' chips resolve to their existing wiki pages; not-yet-onboarded chips degrade gracefully until `/add-ticker` runs.
+
+---
+
 ## Stack Diagram
 
 ```

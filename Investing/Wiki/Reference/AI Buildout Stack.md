@@ -11,6 +11,8 @@ Each layer is composed of **sub-boxes** (categories). Sub-box **labels are canon
 
 The `daily-dashboard` skill reads the JSON block below to regenerate the dashboard's `STACK` object. It is the single source of truth — keep it in sync with `Investing/Output/Dashboard/index.html`.
 
+> **Domain split (2026-06-27):** the dashboard's Supply Chain tab now carries a **domain switcher** with three stacks — this one (**AI Buildout**) plus **Robotics** (`Robotics Stack.md`) and **Healthcare & Drug Discovery** (`Healthcare & Drug Discovery Stack.md`). Two verticals were relocated out of this stack to declutter it: the **Humanoid Robotics** box (Edge surface) now lives in the Robotics 7-layer framework, and the **AI Drug Discovery** box (L01) now anchors the Healthcare stack. Autonomous Vehicles, Drones/UAVs, and the parallel-compute paradigms stay here on the Edge & Physical AI surface.
+
 ---
 
 ## The 12 Layers
@@ -69,7 +71,6 @@ The previous five-dimension stack is superseded but maps cleanly onto the layers
       {"label":"Enterprise AI SaaS (Copilot-style integrations)","gap":true,"chips":["MSFT","CRM"]},
       {"label":"AI-Native Fintech & Commerce","sector":"Application","slug":"application","tier":"AI-Native Fintech & Commerce","chips":["MELI","SOFI","HOOD","NU"]},
       {"label":"Insurance AI (underwriting · claims · fraud)","sector":"Insurance AI","slug":"insurance-ai","tier":"AI-Native Digital Insurance Carriers","chips":["LMND","ROOT","GWRE","VRSK"]},
-      {"label":"AI Drug Discovery (molecular design · clinical AI)","sector":"L01 Application","slug":"application","tier":"AI Drug Discovery","chips":["QTRX","ABCL","RXRX"]},
       {"label":"Materials Science AI (simulation · property prediction)","gap":true,"chips":[]}
     ]},
     {"num":"02","name":"AI Model","hue":255,"tag":"foundation models · serving · agents","boxes":[
@@ -228,7 +229,6 @@ The previous five-dimension stack is superseded but maps cleanly onto the layers
     {"id":"edge","side":"right","kind":"surface","title":"Edge & Physical AI","cap":"Deployment paradigm — where the stack meets the physical world.","groups":[
       {"label":"Edge & Physical AI","boxes":[
         {"label":"Autonomous Vehicles","sector":"Edge & Physical AI","slug":"edge-physical-ai","tier":"Autonomous Vehicles & ADAS","chips":["MBLY","OUST","LAZR"]},
-        {"label":"Humanoid Robotics","sector":"Edge & Physical AI","slug":"edge-physical-ai","tier":"System Integration & OEM Assembly","chips":[]},
         {"label":"Drones and UAVs","sector":"Edge & Physical AI","slug":"edge-physical-ai","tier":"UAV & Drone Systems","chips":["AVAV","JOBY","ACHR"]},
         {"label":"Driver / Behavior Monitoring Systems","sector":"Edge & Physical AI","slug":"edge-physical-ai","tier":"Perception Layer","chips":["AMBA"]},
         {"label":"Edge Inference Chips","sector":"Edge & Physical AI","slug":"edge-physical-ai","tier":"Edge Compute Module","chips":["AMBA","SYNA"]},

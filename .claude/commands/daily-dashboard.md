@@ -1,8 +1,11 @@
 # Daily Dashboard — AI Buildout Stack Viewer
 
-Deploys the dashboard to GitHub Pages via `gh-pages`. The HTML lives in `Investing/Output/Dashboard/index.html`. It embeds two objects:
-- **`STACK`** — the canonical 12-layer vertical map (Application → Critical Minerals), mapped word-for-word from the *AI Buildout Supply Chain* blueprint graphic, wrapped by 3 cross-cutting rails (Power / Thermal / Security) + the Edge & Physical AI deployment surface, rendered as the homepage. Source of truth: the JSON block in `Investing/Wiki/Reference/AI Buildout Stack.md`.
-- **`DATA`** — the per-sector tier/company backbone (`sectors`, `tech_races`) used by the drill-down, ticker-wiki, and search. Each `STACK` sub-box maps to a `(sector, tier)` in `DATA.sectors`.
+Deploys the dashboard to GitHub Pages via `gh-pages`. The HTML lives in `Investing/Output/Dashboard/index.html`. It embeds these objects:
+- **`STACKS`** — a registry of the three **domain stacks** the Supply Chain tab's domain switcher toggles between. `STACK` is a `let` pointer at the active one (defaults to `ai-buildout`). Each entry is `{label, stack}`:
+  - `ai-buildout` — canonical 12-layer vertical map (Application → Critical Minerals) + 3 rails (Power / Thermal / Security) + Edge & Physical AI surface. Source: `Investing/Wiki/Reference/AI Buildout Stack.md`.
+  - `robotics` — 7-layer humanoid framework (AI Brains → Energy & Rare Earth Materials), no rails. Source: `Investing/Wiki/Reference/Robotics Stack.md`.
+  - `healthcare` — 6-layer first-cut Healthcare & Drug Discovery stack, no rails. Source: `Investing/Wiki/Reference/Healthcare & Drug Discovery Stack.md`.
+- **`DATA`** — the per-sector tier/company backbone (`sectors`, `tech_races`, `watchlist`) used by the drill-down, ticker-wiki, and search. It is **shared across all three domains** — each stack sub-box maps to a `(sector, tier)` in `DATA.sectors` (or carries `chips` that degrade gracefully for not-yet-onboarded tickers).
 
 **Dashboard URL:** `https://deeyayay.github.io/investing-wiki/`
 *GitHub Pages watches `gh-pages` — every push auto-deploys within ~1 minute.*
@@ -78,8 +81,12 @@ Assemble as `DATA.watchlist` — add this key alongside `sectors`, `edges`, `tec
 
 Run all reads in parallel.
 
-**AI Buildout Stack** (`Investing/Wiki/Reference/AI Buildout Stack.md`) — **canonical taxonomy**:
-- Parse the fenced ```json block. Copy it verbatim into the `const STACK = …` assignment in `index.html` (layers, connectors, rails). The JSON is valid JS — paste it as-is.
+**Three domain stack files** — read all three in the same parallel batch:
+- `Investing/Wiki/Reference/AI Buildout Stack.md` → `ai-buildout` (label "AI Buildout")
+- `Investing/Wiki/Reference/Robotics Stack.md` → `robotics` (label "Robotics")
+- `Investing/Wiki/Reference/Healthcare & Drug Discovery Stack.md` → `healthcare` (label "Healthcare & Drug Discovery")
+
+For each: parse the fenced ```json block and copy it **verbatim** into that domain's `stack` slot in the `const STACKS = {…}` registry in `index.html`. The JSON is valid JS — paste as-is. Notes that apply to the **AI Buildout** stack (canonical taxonomy):
 - Sub-box **labels are canonical** (verbatim from the graphic) — never rename them to match a tier; instead wire the box to the closest `(slug, tier)`.
 - A box with `"gap": true` is an intentional **coverage gap** (blueprint category the KB doesn't cover yet): it has **no** `slug`/`tier`, renders muted ("unmapped"), and is non-clickable. Leave it as a gap — do **not** invent a tier to fill it.
 - A non-gap box's `slug` + `tier` must match a sector/tier in `DATA.sectors` (below) so the drill-down resolves. If a referenced tier is missing, fix the slug/tier in `AI Buildout Stack.md` — do not invent tiers.
@@ -122,7 +129,17 @@ Run all reads in parallel.
 Read `Investing/Output/Dashboard/index.html`.
 
 1. Locate the hardcoded `<span class="gen-date">Generated: YYYY-MM-DD</span>` in the HTML and replace the date with today's date (format: `YYYY-MM-DD`).
-2. Locate `const STACK=` and replace the entire object (through its matching closing `};`) with the JSON block from `AI Buildout Stack.md` (the JSON is JS-compatible — paste as `const STACK=<json>;`). Keep the `generated` field; the render code ignores it. Do not strip `gap`/`group`/`flow`/`kind`/`items` fields — the renderer relies on them.
+2. Locate `const STACKS=` and replace the entire object (through its matching closing `};` that precedes `let STACK=STACKS["ai-buildout"].stack;`) with the reassembled registry:
+   ```js
+   const STACKS={
+   "ai-buildout":{"label":"AI Buildout","stack":<json from AI Buildout Stack.md>},
+   "robotics":{"label":"Robotics","stack":<json from Robotics Stack.md>},
+   "healthcare":{"label":"Healthcare & Drug Discovery","stack":<json from Healthcare & Drug Discovery Stack.md>}
+   };
+   let STACK=STACKS["ai-buildout"].stack;
+   let currentDomain="ai-buildout";
+   ```
+   Paste each stack's JSON verbatim. Keep the `generated`/`intro` fields (the renderer reads `intro`, ignores `generated`). Do not strip `gap`/`group`/`flow`/`kind`/`items`/`rails` fields — the renderer relies on them; robotics and healthcare carry `rails:[]` (no rails) and an `intro` string, and `renderL0()` renders rail-less stacks as a single centered column. The domain switcher (`setDomain()` / `_domainSwitcher()`) and `let STACK`/`let currentDomain` declarations already exist in `index.html` — leave them intact.
 3. Locate `const DATA = {` and replace the entire `DATA` object (through the matching closing `};`) with the newly assembled object:
 
 ```javascript
