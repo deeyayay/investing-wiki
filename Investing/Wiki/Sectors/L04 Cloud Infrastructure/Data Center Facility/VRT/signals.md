@@ -13,8 +13,8 @@ _(Append notable developments: partnerships, product launches, supply chain sign
 
 | Date | Signal | Source |
 |------|--------|--------|
-| 2026-05-18 | [[2026-05-18-gev-ai-supply-chain-chokepoints]] | tweet |
-| 2026-05-20 | [[2026-05-20-nvda-q1-earnings-preview]] | tweet |
+| 2026-05-18 | [2026-05-18-gev-ai-supply-chain-chokepoints](https://x.com/i/status/2055683596057244018) | tweet |
+| 2026-05-20 | [2026-05-20-nvda-q1-earnings-preview](https://x.com/i/status/2057111403324944880) | tweet |
 
 ---
 

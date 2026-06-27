@@ -34,7 +34,7 @@
 
 | Date | Signal | Source |
 |------|--------|--------|
-| 2026-06-19 | [[2026-06-19-xfab-serenity-photonics-chips-thread]] | tweet (4-tweet thread, fact-checked) |
+| 2026-06-19 | [2026-06-19-xfab-serenity-photonics-chips-thread](https://x.com/i/status/2059537337324085541) | tweet (4-tweet thread, fact-checked) |
 
 ---
 
@@ -44,5 +44,5 @@
 - **2026-06-19** — add-ticker run. facts.md + analysis.md populated from web research (Euronext-listed; not an SEC filer). Key data sources: Businesswire Q1 2026 results press release, SimplyWallSt, GrowthInvesting.net, AlphaSpread, InsiderScreener.com. SiC impairment and CEO transition are the dominant thesis variables. Run /ticker-monitor --deep XFAB to pull Q1 2026 results detail and full analyst coverage.
 - **2026-06-19** — 📊 MONITOR | Q1 2026 actuals ingested: beat guidance, microsystems ATH, wide-bandgap +152% YoY; next earnings 2026-07-30; automotive recovery expected H2 2026; analyst consensus updated to €5.53 (8 analysts).
 - **2026-06-19** — Scored — Composite 6.0/10 Strong | P:4 PP:3 L:2 FH:3 ME:3 FP:3
-- **2026-06-19** — 📡 SIGNAL INGESTED | @serenity_invests 4-tweet XFAB thesis (fact-checked). Key findings: photonixFAB silicon photonics (NVDA + Nokia consortium) confirmed but absent from original KB — material thesis upgrade. US CHIPS Act $50M PMT verified (Dec 2024). EU €128M MEMS + €48M photonixFAB grants verified (distinct programs). NVTS + POWI foundry customer relationships confirmed. Score should be refreshed — Macro Environment and Future Potential criteria likely move from 3→4 each, pushing composite toward 7.0. Signal file: [[2026-06-19-xfab-serenity-photonics-chips-thread]]
+- **2026-06-19** — 📡 SIGNAL INGESTED | @serenity_invests 4-tweet XFAB thesis (fact-checked). Key findings: photonixFAB silicon photonics (NVDA + Nokia consortium) confirmed but absent from original KB — material thesis upgrade. US CHIPS Act $50M PMT verified (Dec 2024). EU €128M MEMS + €48M photonixFAB grants verified (distinct programs). NVTS + POWI foundry customer relationships confirmed. Score should be refreshed — Macro Environment and Future Potential criteria likely move from 3→4 each, pushing composite toward 7.0. Signal file: [2026-06-19-xfab-serenity-photonics-chips-thread](https://x.com/i/status/2059537337324085541)
 - **2026-06-19** — Scored — Composite 6.5/10 Strong | P:4 PP:3 L:2 FH:3 ME:4 FP:4

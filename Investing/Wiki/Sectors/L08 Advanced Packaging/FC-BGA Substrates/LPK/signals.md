@@ -42,7 +42,7 @@
 
 | Date | Signal | Source |
 |------|--------|--------|
-| 2026-05-17 | [[2026-05-17-sive-when-i-see]] | tweet |
+| 2026-05-17 | [2026-05-17-sive-when-i-see](https://x.com/i/status/2055822766600016238) | tweet |
 | 2026-06-19 | [[2026-06-19-lpk-investor-meeting-notes]] | tweet |
 | 2026-06-19 | [[2026-06-19-lpk-serenity-meeting-corroboration]] | tweet |
 

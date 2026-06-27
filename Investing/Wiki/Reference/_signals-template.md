@@ -15,6 +15,7 @@
 
 | Date | Signal | Source |
 |------|--------|--------|
+*(Signal cell: `[slug](url)` when a URL is available; `[[slug]]` when not)*
 
 ---
 

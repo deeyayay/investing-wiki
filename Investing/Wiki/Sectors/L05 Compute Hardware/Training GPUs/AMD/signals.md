@@ -15,9 +15,9 @@
 
 | Date | Signal | Source |
 |------|--------|--------|
-| 2026-05-17 | [[2026-05-17-sive-when-i-see]] | tweet |
-| 2026-05-18 | [[2026-05-18-amd-cpu-bottleneck-three-ways]] | tweet |
-| 2026-05-22 | [[2026-05-22-amd-a-ton-of]] | article |
+| 2026-05-17 | [2026-05-17-sive-when-i-see](https://x.com/i/status/2055822766600016238) | tweet |
+| 2026-05-18 | [2026-05-18-amd-cpu-bottleneck-three-ways](https://x.com/i/status/2056022011491811504) | tweet |
+| 2026-05-22 | [2026-05-22-amd-a-ton-of](https://x.com/i/status/2057619315214467073) | article |
 
 ---
 

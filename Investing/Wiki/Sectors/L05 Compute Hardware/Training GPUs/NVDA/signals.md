@@ -21,14 +21,14 @@
 
 | Date | Signal | Source |
 |------|--------|--------|
-| 2026-05-17 | [[2026-05-17-sive-when-i-see]] | tweet |
-| 2026-05-17 | [[2026-05-17-nvda-foci-cpo-undervalued]] | tweet |
-| 2026-05-18 | [[2026-05-18-amd-cpu-bottleneck-three-ways]] | tweet |
-| 2026-05-18 | [[2026-05-18-gev-ai-supply-chain-chokepoints]] | tweet |
-| 2026-05-18 | [[2026-05-18-axti-next-year-im]] | tweet |
-| 2026-05-20 | [[2026-05-20-nvda-q1-earnings-preview]] | tweet |
+| 2026-05-17 | [2026-05-17-sive-when-i-see](https://x.com/i/status/2055822766600016238) | tweet |
+| 2026-05-17 | [2026-05-17-nvda-foci-cpo-undervalued](https://x.com/i/status/2055110412375621643) | tweet |
+| 2026-05-18 | [2026-05-18-amd-cpu-bottleneck-three-ways](https://x.com/i/status/2056022011491811504) | tweet |
+| 2026-05-18 | [2026-05-18-gev-ai-supply-chain-chokepoints](https://x.com/i/status/2055683596057244018) | tweet |
+| 2026-05-18 | [2026-05-18-axti-next-year-im](https://x.com/i/status/2056244818125418979) | tweet |
+| 2026-05-20 | [2026-05-20-nvda-q1-earnings-preview](https://x.com/i/status/2057111403324944880) | tweet |
 | 2026-05-31 | [[2026-05-31-aosl-researching-the-power]] | tweet |
-| 2026-05-22 | [[2026-05-22-amd-a-ton-of]] | article |
+| 2026-05-22 | [2026-05-22-amd-a-ton-of](https://x.com/i/status/2057619315214467073) | article |
 
 ---
 

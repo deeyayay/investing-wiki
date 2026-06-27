@@ -18,7 +18,7 @@
 
 | Date | Signal | Source |
 |------|--------|--------|
-| 2026-06-19 | "Favourite pure-play advanced packaging equipment name" — analyst holds BESI; first-principles tech race thread on advanced packaging as AI bandwidth constraint | [[2026-06-19-besi-advanced-packaging-tech-race]] |
+| 2026-06-19 | "Favourite pure-play advanced packaging equipment name" — analyst holds BESI; first-principles tech race thread on advanced packaging as AI bandwidth constraint | [2026-06-19-besi-advanced-packaging-tech-race](https://x.com/i/status/2067964372530434146) |
 
 ---
 

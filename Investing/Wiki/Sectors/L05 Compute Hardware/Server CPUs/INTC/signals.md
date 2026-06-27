@@ -41,9 +41,9 @@
 
 | Date | Signal | Source |
 |------|--------|--------|
-| 2026-05-17 | [[2026-05-17-sive-when-i-see]] | tweet |
-| 2026-05-18 | [[2026-05-18-amd-cpu-bottleneck-three-ways]] | tweet |
-| 2026-05-18 | [[2026-05-18-gev-ai-supply-chain-chokepoints]] | tweet |
+| 2026-05-17 | [2026-05-17-sive-when-i-see](https://x.com/i/status/2055822766600016238) | tweet |
+| 2026-05-18 | [2026-05-18-amd-cpu-bottleneck-three-ways](https://x.com/i/status/2056022011491811504) | tweet |
+| 2026-05-18 | [2026-05-18-gev-ai-supply-chain-chokepoints](https://x.com/i/status/2055683596057244018) | tweet |
 | 2026-06-07 | CPO/EMIB tweet thread — technical claims validated via deep research. Core EMIB>CoWoS thesis confirmed; "90% market capture" and "no alternative" claims unsupported. OCI chiplet is 4 Tbps (tweet said 2 Tbps). | tweet |
 
 ---

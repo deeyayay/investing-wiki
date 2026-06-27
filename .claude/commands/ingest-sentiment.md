@@ -108,8 +108,9 @@ For each ticker across all filed signals:
 
    | Date | Signal | Source |
    |------|--------|--------|
-   | [date] | [[slug]] | tweet |
+   | [date] | [slug](url) | tweet |
    ```
+   If the signal has no URL, fall back to `[[slug]]`.
 4. If section **exists**: append a new row to the table — never rewrite existing rows
 
 Do NOT read or touch facts.md or analysis.md.
@@ -128,12 +129,13 @@ Do NOT read or touch facts.md or analysis.md.
 
    | Date | Signal | Source |
    |------|--------|--------|
-   | [date] | [[slug]] | tweet |
+   | [date] | [slug](url) | tweet |
 
    ---
 
    ## Research Log
    ```
+   If the signal has no URL, fall back to `[[slug]]`.
 4. If **exists**: append a row to the Social Mentions table
 
 Do NOT register stub tickers in Monitor Registry.yaml.

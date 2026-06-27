@@ -33,7 +33,7 @@
 
 | Date | Signal | Source |
 |------|--------|--------|
-| 2026-05-18 | [[2026-05-18-sofi-top-3-position]] | tweet |
+| 2026-05-18 | [2026-05-18-sofi-top-3-position](https://x.com/i/status/2055673833412280559) | tweet |
 
 ---
 

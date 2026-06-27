@@ -15,8 +15,8 @@
 
 | Date | Signal | Source |
 |------|--------|--------|
-| 2026-05-17 | [[2026-05-17-peng-people-buying-peng]] | tweet |
-| 2026-05-17 | [[2026-05-17-sive-when-i-see]] | tweet |
+| 2026-05-17 | [2026-05-17-peng-people-buying-peng](https://x.com/i/status/2055925643158938050) | tweet |
+| 2026-05-17 | [2026-05-17-sive-when-i-see](https://x.com/i/status/2055822766600016238) | tweet |
 
 ---
 
