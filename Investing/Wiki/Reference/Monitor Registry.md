@@ -236,6 +236,7 @@ Add a new `## Layer · Tier` heading with a table using the same column structur
 
 | Ticker | Company | CIK | Exchange | Path | Score |
 |--------|---------|-----|----------|------|-------|
+| SYNA | Synaptics Incorporated | 0000817720 | NASDAQ | Investing/Wiki/Sectors/Edge & Physical AI/Edge Compute Module/SYNA/ | — |
 | AMBA | Ambarella, Inc. | 0001280263 | NASDAQ | Investing/Wiki/Sectors/Edge & Physical AI/Edge Compute Module/AMBA.md | 8.0 |
 | OUST | Ouster, Inc. | 0001816581 | NASDAQ | Investing/Wiki/Sectors/Edge & Physical AI/Perception Layer/OUST.md | 6.5 |
 | P | Everpure Inc. (fka Pure Storage) | 0001474432 | NYSE | Investing/Wiki/Sectors/Edge & Physical AI/Perception Layer/P.md | — |

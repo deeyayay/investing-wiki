@@ -78,6 +78,7 @@ _Evaluated: —_
 |------|-----------|-------------|--------|-------------|
 | 2026-06-26 | Emits | WOLF | STM SiC #1 share — Catania ramp competes directly for EV design wins | Wolfspeed losing share to STM and onsemi; WOLF financial distress reduces substrate competition |
 | 2026-06-26 | Receives | NVDA | AWS + hyperscaler GPU capex pull → data center power semiconductor demand | STM/AWS collaboration is partly driven by hyperscaler power conversion infrastructure build |
+| 2026-06-27 | Receives | SYNA | onsemi acquires Synaptics for Astra AI + IoT connectivity; raises onsemi edge-AI competitive capability | onsemi (#2 SiC) gains edge-AI software/hardware platform alongside SiC power — creates a more complete "power + intelligence" rival to STM's combined MCU + SiC offering |
 
 ---
 

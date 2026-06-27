@@ -231,7 +231,7 @@ The previous five-dimension stack is superseded but maps cleanly onto the layers
         {"label":"Humanoid Robotics","sector":"Edge & Physical AI","slug":"edge-physical-ai","tier":"System Integration & OEM Assembly","chips":[]},
         {"label":"Drones and UAVs","sector":"Edge & Physical AI","slug":"edge-physical-ai","tier":"UAV & Drone Systems","chips":["AVAV","JOBY","ACHR"]},
         {"label":"Driver / Behavior Monitoring Systems","sector":"Edge & Physical AI","slug":"edge-physical-ai","tier":"Perception Layer","chips":["AMBA"]},
-        {"label":"Edge Inference Chips","sector":"Edge & Physical AI","slug":"edge-physical-ai","tier":"Edge Compute Module","chips":["AMBA"]},
+        {"label":"Edge Inference Chips","sector":"Edge & Physical AI","slug":"edge-physical-ai","tier":"Edge Compute Module","chips":["AMBA","SYNA"]},
         {"label":"AR / VR Devices","gap":true,"chips":["KOPN","META"]}
       ]},
       {"label":"Parallel Compute Paradigms","boxes":[
