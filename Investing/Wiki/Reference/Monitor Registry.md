@@ -166,6 +166,7 @@ Add a new `## Layer · Tier` heading with a table using the same column structur
 
 | Ticker | Company | CIK | Exchange | Path | Score |
 |--------|---------|-----|----------|------|-------|
+| STM | STMicroelectronics N.V. | 0000932787 | NYSE / Euronext Paris | Investing/Wiki/Sectors/L09 Semiconductor Foundry/Compound Semiconductor & SiC/STM/ | — |
 
 <!-- CANDIDATE: TSM (TSMC) — Leading-Edge Logic Foundry tier. N3/N2 process leader; CoWoS packaging. Run /add-ticker TSM --sector "Semiconductor Foundry" --layer "Leading-Edge Logic Foundry" to onboard. -->
 <!-- CANDIDATE: GFS (GlobalFoundries) — Leading-Edge Logic Foundry tier. Mature node + RF/mixed-signal. Run /add-ticker GFS --sector "Semiconductor Foundry" --layer "Leading-Edge Logic Foundry" to onboard. -->
