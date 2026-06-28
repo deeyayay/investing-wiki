@@ -66,7 +66,7 @@ The `daily-dashboard` skill copies the JSON block below verbatim into the `STACK
       {"label":"Motor-Control MCUs","slug":"robotics","tier":"Motor Control MCUs","chips":["TXN"],"fn":"Texas Instruments — motor-control MCUs at scale."},
       {"label":"Silicon Carbide","slug":"robotics","tier":"Silicon Carbide","chips":["WOLF"],"fn":"Wolfspeed — pure-play silicon carbide."},
       {"label":"Industrial / Automotive Motor Control","slug":"robotics","tier":"Industrial Motor Control","chips":["RNECY"],"fn":"Renesas — dominant in automotive and industrial motor control."},
-      {"label":"Automotive-Grade Power","slug":"robotics","tier":"Automotive Power","chips":["IFNNY"],"fn":"Infineon — dominant in automotive-grade power."},
+      {"label":"Automotive-Grade Power","slug":"robotics","tier":"Automotive Power","chips":["IFX"],"fn":"Infineon — dominant in automotive-grade power."},
       {"label":"Broad Motor-Control Portfolio","slug":"robotics","tier":"Broad Motor Control","chips":["STM"],"fn":"STMicroelectronics — broad motor-control portfolio."},
       {"label":"High-Efficiency DC-DC","slug":"robotics","tier":"DC-DC Conversion","chips":["MPWR"],"fn":"Monolithic Power Systems — high-efficiency DC-DC for compact systems."},
       {"label":"Power Management & Sensing","slug":"robotics","tier":"Power Management","chips":["ON"],"fn":"onsemi — power management and sensing."}
@@ -114,14 +114,13 @@ These tickers from the framework are not yet in the wiki. They are queued as CAN
 | Power Electronics & Control | TXN | Texas Instruments | Motor-control MCUs |
 | Power Electronics & Control | WOLF | Wolfspeed | Silicon carbide |
 | Power Electronics & Control | RNECY | Renesas (OTC ADR) | Auto/industrial motor control |
-| Power Electronics & Control | IFNNY | Infineon (OTC ADR) | Automotive-grade power |
 | Power Electronics & Control | ON | onsemi | Power management & sensing |
 | Energy & Rare Earth Materials | ENS | EnerSys | Industrial batteries |
 | Energy & Rare Earth Materials | USAR | USA Rare Earth | Magnet manufacturing |
 | Energy & Rare Earth Materials | LYSCF | Lynas Rare Earths (OTC ADR) | Largest non-Chinese REE producer |
 | Energy & Rare Earth Materials | UUUU | Energy Fuels | Rare earth & uranium |
 
-Already in the wiki (resolve to existing pages): **NVDA, OUST, AMBA, NVTS, STM, MPWR, MP** (and **QCOM**, **IFX**/**STM** family where applicable). Verify exact homes in `Monitor Registry.yaml`.
+Already in the wiki (resolve to existing pages): **NVDA, OUST, AMBA, NVTS, STM, MPWR, MP, IFX** — note **IFX is Infineon**, so the Automotive-Grade Power chip uses IFX (not the IFNNY ADR) and resolves to the existing page. Verify exact homes in `Monitor Registry.yaml`.
 
 ---
 
