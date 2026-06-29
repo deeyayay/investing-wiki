@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inside the Humanoid — Physical AI Bill of Materials</title>
+<style>
+:root {
+  --bg:         #F2EAD4;
+  --bg2:        #E8DFC4;
+  --card:       #FAF5E8;
+  --border:     #D0C4A0;
+  --gd:         #163322;   /* green dark  */
+  --gm:         #244D35;   /* green mid   */
+  --gl:         #3C7A50;   /* green light */
+  --gold:       #B8900A;
+  --gold-bar:   #CCA018;
+  --text:       #1A1A18;
+  --muted:      #6A5E48;
+
+  --t-dom-bg:   #163322; --t-dom-fg:   #96D4AC;
+  --t-nam-bg:   #1E5233; --t-nam-fg:   #B8E8C8;
+  --t-mul-bg:   #163A34; --t-mul-fg:   #96D0C4;
+  --t-nvi-bg:   #2A4A14; --t-nvi-fg:   #96D470;
+  --t-ded-bg:   #142850; --t-ded-fg:   #96B8E8;
+  --t-str-bg:   #3A1450; --t-str-fg:   #C4A0E4;
+  --t-des-bg:   #5A380C; --t-des-fg:   #E8C874;
+  --t-cus-bg:   #5A4A0C; --t-cus-fg:   #E8D874;
+  --t-oem-bg:   #3A142A; --t-oem-fg:   #E4A0C4;
+  --t-inc-bg:   #143050; --t-inc-fg:   #A0C8E8;
+  --t-oem35-bg: #103A30; --t-oem35-fg: #96D0C0;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* ─── PAGE SHELL ─────────────────────────────────────────── */
+.page { max-width: 980px; margin: 0 auto; padding: 24px 24px 0; }
+
+/* ─── MASTHEAD ───────────────────────────────────────────── */
+.masthead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
+  margin-bottom: 16px;
+}
+.masthead-left {
+  font-size: 9.5px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.masthead-brand {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  color: var(--gd);
+}
+.masthead-right {
+  font-size: 9px;
+  color: var(--muted);
+  text-align: right;
+  line-height: 1.6;
+}
+
+/* ─── TITLE ──────────────────────────────────────────────── */
+.report-eyebrow {
+  font-size: 9.5px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.report-title {
+  font-size: 52px;
+  font-weight: 800;
+  color: var(--gd);
+  line-height: .98;
+  letter-spacing: -.025em;
+  font-family: Georgia, 'Times New Roman', serif;
+  margin-bottom: 22px;
+}
+
+/* ─── 3-COL LAYOUT ───────────────────────────────────────── */
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 188px 1fr;
+  gap: 10px;
+  align-items: start;
+  margin-bottom: 10px;
+}
+
+/* ─── ROBOT COLUMN ───────────────────────────────────────── */
+.robot-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4px;
+}
+.robot-svg { width: 168px; }
+
+/* ─── BOTTOM 2-COL ───────────────────────────────────────── */
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* ─── OEM STRIP ──────────────────────────────────────────── */
+.oem-strip {
+  background: var(--gd);
+  margin: 0 -24px;
+  padding: 22px 48px 26px;
+}
+.oem-eyebrow {
+  font-size: 9px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #4A8060;
+  margin-bottom: 2px;
+}
+.oem-hed {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #80C098;
+  margin-bottom: 2px;
+}
+.oem-sub {
+  font-size: 9.5px;
+  color: #4A8060;
+  margin-bottom: 18px;
+  font-style: italic;
+}
+.oem-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+.oem-ticker {
+  font-size: 19px;
+  font-weight: 800;
+  color: #C8EED8;
+  font-family: Georgia, serif;
+  letter-spacing: -.01em;
+  margin-bottom: 3px;
+  line-height: 1;
+}
+.oem-name {
+  font-size: 9px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #4A8060;
+  margin-bottom: 7px;
+}
+.oem-desc { font-size: 10.5px; color: #7AB898; line-height: 1.55; }
+.oem-footer {
+  font-size: 8.5px;
+  color: #2A5A40;
+  margin-top: 18px;
+  padding-top: 12px;
+  border-top: 1px solid #1E4A30;
+  text-align: center;
+  line-height: 1.7;
+}
+
+/* ─── SECTION CARD ───────────────────────────────────────── */
+.sec {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px 13px 10px;
+  margin-bottom: 10px;
+}
+.sec:last-child { margin-bottom: 0; }
+
+.sec-hdr { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 5px; }
+
+.sec-num {
+  width: 21px; height: 21px;
+  border-radius: 50%;
+  background: var(--gd);
+  color: #80C098;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+  font-family: system-ui, sans-serif;
+}
+
+.sec-name {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--gd);
+  line-height: 1.2;
+}
+.sec-desc {
+  font-size: 9px;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 1px;
+}
+
+/* BOM bar */
+.bom-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 6px 0 8px;
+}
+.bom-label {
+  font-size: 8.5px;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.bom-track {
+  flex: 1;
+  height: 4px;
+  background: var(--bg2);
+  border-radius: 99px;
+  overflow: hidden;
+}
+.bom-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold-bar) 0%, #E0C030 100%);
+  border-radius: 99px;
+  transition: width .3s ease;
+}
+.bom-pct {
+  font-size: 9px;
+  font-weight: 700;
+  color: var(--gold);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.sec-divider { height: 1px; background: var(--border); margin: 6px 0; }
+
+/* Ticker rows */
+.tr { padding: 5px 0; border-bottom: 1px solid var(--border); }
+.tr:last-child { border-bottom: none; padding-bottom: 0; }
+
+.tr-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  margin-bottom: 2px;
+}
+.tr-sym {
+  font-weight: 700;
+  font-size: 11.5px;
+  color: var(--gd);
+  font-family: ui-monospace, monospace;
+  letter-spacing: -.01em;
+  white-space: nowrap;
+}
+.tr-desc {
+  font-size: 9.5px;
+  color: var(--muted);
+  line-height: 1.45;
+}
+.china { font-size: 8.5px; color: #C04428; }
+
+/* Tags */
+.tag {
+  font-size: 8px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 3px;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  flex-shrink: 0;
+  font-family: system-ui, sans-serif;
+}
+.dom { background: var(--t-dom-bg); color: var(--t-dom-fg); }
+.nam { background: var(--t-nam-bg); color: var(--t-nam-fg); }
+.mul { background: var(--t-mul-bg); color: var(--t-mul-fg); }
+.nvi { background: var(--t-nvi-bg); color: var(--t-nvi-fg); }
+.ded { background: var(--t-ded-bg); color: var(--t-ded-fg); }
+.str { background: var(--t-str-bg); color: var(--t-str-fg); }
+.des { background: var(--t-des-bg); color: var(--t-des-fg); }
+.cus { background: var(--t-cus-bg); color: var(--t-cus-fg); }
+.oem { background: var(--t-oem-bg); color: var(--t-oem-fg); }
+.inc { background: var(--t-inc-bg); color: var(--t-inc-fg); }
+.o35 { background: var(--t-oem35-bg); color: var(--t-oem35-fg); }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Masthead -->
+  <div class="masthead">
+    <div>
+      <div class="masthead-left">Physical AI · Humanoid Bill of Materials</div>
+      <div class="masthead-brand">Unrivaled Investing</div>
+    </div>
+    <div class="masthead-right">
+      7 layers · 30+ tickers · % of BOM per McKinsey<br>
+      Every name validated against earnings transcripts
+    </div>
+  </div>
+
+  <!-- Title -->
+  <div class="report-eyebrow">Physical AI · Humanoid Bill of Materials</div>
+  <div class="report-title">Inside the<br>Humanoid.</div>
+
+  <!-- ── 3-COL MAIN GRID ───────────────────────────── -->
+  <div class="main-grid">
+
+    <!-- LEFT: sections 1, 2, 3 -->
+    <div>
+
+      <!-- 1 AI BRAINS -->
+      <div class="sec">
+        <div class="sec-hdr">
+          <div class="sec-num">1</div>
+          <div>
+            <div class="sec-name">AI Brains</div>
+            <div class="sec-desc">The robot's central intelligence</div>
+          </div>
+        </div>
+        <div class="bom-row">
+          <span class="bom-label">% of BOM</span>
+          <div class="bom-track"><div class="bom-fill" style="width:15%"></div></div>
+          <span class="bom-pct">10–15%</span>
+        </div>
+        <div class="sec-divider"></div>
+        <div class="tr">
+          <div class="tr-top"><span class="tr-sym">$NVDA</span><span class="tag dom">DOMINANT</span></div>
+          <div class="tr-desc">Jetson Thor + GR00T humanoid foundation model. The default compute pick.</div>
+        </div>
+        <div class="tr">
+          <div class="tr-top"><span class="tr-sym">$QCOM</span><span class="tag nam">NAMED</span></div>
+          <div class="tr-desc">Dragonwing/QCD humanoid-specific SoC. Figure + Neura Robotics design wins.</div>
+        </div>
+      </div>
+
+      <!-- 2 EDGE AI & PERCEPTION SoCs -->
+      <div class="sec">
+        <div class="sec-hdr">
+          <div class="sec-num">2</div>
+          <div>
+            <div class="sec-name">Edge AI &amp; Perception SoCs</div>
+            <div class="sec-desc">On-device vision &amp; inference</div>
+          </div>
+        </div>
+        <div class="bom-row">
+          <span class="bom-label">% of BOM</span>
+          <div class="bom-track"><div class="bom-fill" style="width:10%"></div></div>
+          <span class="bom-pct">5–10%</span>
+        </div>
+        <div class="sec-divider"></div>
+        <div class="tr">
+          <div class="tr-top"><span class="tr-sym">$INDI</span><span class="tag nam">NAMED</span></div>
+          <div class="tr-desc">Indillinx + Figure AI active deployments. DRAM-less vision. INDBS SoC.</div>
+        </div>
+        <div class="tr">
+          <div class="tr-top"><span class="tr-sym">$SYNA</span><span class="tag o35">35 OEM</span></div>
+          <div class="tr-desc">Astra SoC. 35 humanoid OEM engagements per May '26 JPM TMC.</div>
+        </div>
+        <div class="tr">
+          <div class="tr-top"><span class="tr-sym">$AMBA</span><span class="tag mul">MULTI</span></div>
+          <div class="tr-desc">CV7.5nm. Robotics + drone production wins in FY26. 43M SoCs in field.</div>
+        </div>
+      </div>
+
+      <!-- 3 SENSING & FEEL -->
+      <div class="sec">
+        <div class="sec-hdr">
+          <div class="sec-num">3</div>
+          <div>
+            <div class="sec-name">Sensing &amp; Feel</div>
+            <div class="sec-desc">Eyes, force, position, tactile</div>
+          </div>
+        </div>
+        <div class="bom-row">
+          <span class="bom-label">% of BOM</span>
+          <div class="bom-track"><div class="bom-fill" style="width:20%"></div></div>
+          <span class="bom-pct">10–20%</span>
+        </div>
+        <div class="sec-divider"></div>
+        <div class="tr">
+          <div class="tr-top"><span class="tr-sym">$VPG</span><span class="tag cus">4 CUSTOMERS</span></div>
+          <div class="tr-desc">Strain gauges + force sensing. $800K Q1 shipments, doubling Q2.</div>
+        </div>
+        <div class="tr">
+          <div class="tr-top"><span class="tr-sym">$ALCM</span><span class="tag des">DESIGN-IN</span></div>
+          <div class="tr-desc">Magnetic + current sensors, motor driver ICs. Confirmed design wins.</div>
+        </div>
+        <div class="tr">
+          <div class="tr-top">
+            <span class="tr-sym">$HSAI <span class="china">*</span></span>
+            <span class="tag nam">NAMED</span>
+          </div>
+          <div class="tr-desc">JT108 LIDAR powered Honor's Lightning world-record humanoid. <span class="china">*China-only.</span></div>
+        </div>
+      </div>
+
+    </div><!-- /left -->
+
+    <!-- CENTER: robot SVG -->
+    <div class="robot-col">
+      <svg class="robot-svg" viewBox="0 0 100 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Head -->
+        <ellipse cx="50" cy="27" rx="19" ry="21" fill="#1E4A30" opacity=".88"/>
+        <!-- Face plate -->
+        <ellipse cx="50" cy="26" rx="14" ry="15" fill="#163322" opacity=".6"/>
+        <!-- Eyes -->
+        <ellipse cx="43.5" cy="24" rx="3.8" ry="3.2" fill="#2A6A44"/>
+        <ellipse cx="56.5" cy="24" rx="3.8" ry="3.2" fill="#2A6A44"/>
+        <circle cx="43.5" cy="24" r="2.2" fill="#80C880" opacity=".9"/>
+        <circle cx="56.5" cy="24" r="2.2" fill="#80C880" opacity=".9"/>
+        <circle cx="44.2" cy="23.3" r=".8" fill="#C8F0C8" opacity=".8"/>
+        <circle cx="57.2" cy="23.3" r=".8" fill="#C8F0C8" opacity=".8"/>
+        <!-- Mouth -->
+        <rect x="43" y="33" width="14" height="1.5" rx=".75" fill="#3A7A50" opacity=".7"/>
+        <!-- Neck -->
+        <rect x="44" y="47" width="12" height="11" rx="3" fill="#1E4A30" opacity=".82"/>
+        <!-- Neck detail lines -->
+        <rect x="46" y="50" width="8" height="1" rx=".5" fill="#3A7A50" opacity=".5"/>
+        <rect x="46" y="53" width="8" height="1" rx=".5" fill="#3A7A50" opacity=".5"/>
+        <!-- Shoulders (wider blocks) -->
+        <rect x="4"  y="54" width="30" height="9" rx="4.5" fill="#244A35" opacity=".75"/>
+        <rect x="66" y="54" width="30" height="9" rx="4.5" fill="#244A35" opacity=".75"/>
+        <!-- Torso -->
+        <rect x="20" y="57" width="60" height="72" rx="9" fill="#1E4A30" opacity=".88"/>
+        <!-- Torso panel lines -->
+        <rect x="28" y="65" width="44" height="1.5" rx=".75" fill="#3A8060" opacity=".35"/>
+        <rect x="28" y="73" width="44" height="1.5" rx=".75" fill="#3A8060" opacity=".25"/>
+        <!-- Core circle (power) -->
+        <circle cx="50" cy="90" r="9"  fill="#122A1E" opacity=".8"/>
+        <circle cx="50" cy="90" r="6"  fill="#2A6A44" opacity=".55"/>
+        <circle cx="50" cy="90" r="3"  fill="#60D080" opacity=".5"/>
+        <circle cx="50" cy="90" r="1.4" fill="#C0F8C8" opacity=".9"/>
+        <!-- Side accent -->
+        <rect x="20" y="98" width="6"  height="22" rx="3" fill="#2A6A44" opacity=".35"/>
+        <rect x="74" y="98" width="6"  height="22" rx="3" fill="#2A6A44" opacity=".35"/>
+        <!-- Belly dots -->
+        <circle cx="38" cy="112" r="1.8" fill="#3A8060" opacity=".45"/>
+        <circle cx="50" cy="112" r="1.8" fill="#3A8060" opacity=".45"/>
+        <circle cx="62" cy="112" r="1.8" fill="#3A8060" opacity=".45"/>
+        <!-- Arms -->
+        <rect x="5"  y="60" width="17" height="52" rx="8.5" fill="#1E4A30" opacity=".82"/>
+        <rect x="78" y="60" width="17" height="52" rx="8.5" fill="#1E4A30" opacity=".82"/>
+        <!-- Arm joint rings -->
+        <circle cx="13.5" cy="114" r="5.5" fill="#2A6A44" opacity=".6"/>
+        <circle cx="86.5" cy="114" r="5.5" fill="#2A6A44" opacity=".6"/>
+        <circle cx="13.5" cy="114" r="3.2" fill="#163322" opacity=".8"/>
+        <circle cx="86.5" cy="114" r="3.2" fill="#163322" opacity=".8"/>
+        <!-- Hands -->
+        <rect x="5.5" y="110" width="16" height="19" rx="7" fill="#244A35" opacity=".8"/>
+        <rect x="78.5" y="110" width="16" height="19" rx="7" fill="#244A35" opacity=".8"/>
+        <!-- Finger lines (left) -->
+        <rect x="8"  y="118" width="11" height="1" rx=".5" fill="#3A7A50" opacity=".4"/>
+        <rect x="8"  y="121" width="11" height="1" rx=".5" fill="#3A7A50" opacity=".4"/>
+        <!-- Finger lines (right) -->
+        <rect x="81" y="118" width="11" height="1" rx=".5" fill="#3A7A50" opacity=".4"/>
+        <rect x="81" y="121" width="11" height="1" rx=".5" fill="#3A7A50" opacity=".4"/>
+        <!-- Hip block -->
+        <rect x="23" y="127" width="54" height="13" rx="5.5" fill="#163A28" opacity=".85"/>
+        <rect x="32" y="131" width="36" height="1.5" rx=".75" fill="#2A6040" opacity=".4"/>
+        <!-- Legs -->
+        <rect x="23" y="137" width="24" height="66" rx="9" fill="#1E4A30" opacity=".82"/>
+        <rect x="53" y="137" width="24" height="66" rx="9" fill="#1E4A30" opacity=".82"/>
+        <!-- Knee joints -->
+        <rect x="21" y="163" width="28" height="11" rx="5.5" fill="#244A35" opacity=".75"/>
+        <rect x="51" y="163" width="28" height="11" rx="5.5" fill="#244A35" opacity=".75"/>
+        <rect x="28" y="165.5" width="14" height="2" rx="1" fill="#3A8060" opacity=".35"/>
+        <rect x="58" y="165.5" width="14" height="2" rx="1" fill="#3A8060" opacity=".35"/>
+        <!-- Shin accent -->
+        <rect x="28" y="178" width="6" height="18" rx="3" fill="#2A6A44" opacity=".25"/>
+        <rect x="66" y="178" width="6" height="18" rx="3" fill="#2A6A44" opacity=".25"/>
+        <!-- Feet -->
+        <rect x="21" y="197" width="28" height="14" rx="6" fill="#122A1E" opacity=".88"/>
+        <rect x="51" y="197" width="28" height="14" rx="6" fill="#122A1E" opacity=".88"/>
+        <rect x="24" y="207" width="22" height="3" rx="1.5" fill="#2A5A3A" opacity=".4"/>
+        <rect x="54" y="207" width="22" height="3" rx="1.5" fill="#2A5A3A" opacity=".4"/>
+
+        <!-- ── Connector markers ── -->
+        <!-- 1 AI Brains → head left -->
+        <circle cx="18" cy="22" r="6.5" fill="#C8960C" opacity=".92"/>
+        <text x="18" y="25.5" text-anchor="middle" font-size="7.5" font-weight="700" fill="#FFF8E8" font-family="system-ui">1</text>
+        <!-- 2 Edge AI → chest upper-left -->
+        <circle cx="15" cy="70" r="6.5" fill="#C8960C" opacity=".92"/>
+        <text x="15" y="73.5" text-anchor="middle" font-size="7.5" font-weight="700" fill="#FFF8E8" font-family="system-ui">2</text>
+        <!-- 3 Sensing → left hand -->
+        <circle cx="4" cy="124" r="6.5" fill="#C8960C" opacity=".92"/>
+        <text x="4" y="127.5" text-anchor="middle" font-size="7.5" font-weight="700" fill="#FFF8E8" font-family="system-ui">3</text>
+        <!-- 4 Motion → right shoulder joint -->
+        <circle cx="86" cy="58" r="6.5" fill="#C8960C" opacity=".92"/>
+        <text x="86" y="61.5" text-anchor="middle" font-size="7.5" font-weight="700" fill="#FFF8E8" font-family="system-ui">4</text>
+        <!-- 5 Power → right torso side -->
+        <circle cx="86" cy="100" r="6.5" fill="#C8960C" opacity=".92"/>
+        <text x="86" y="103.5" text-anchor="middle" font-size="7.5" font-weight="700" fill="#FFF8E8" font-family="system-ui">5</text>
+        <!-- 6 Battery → hip center -->
+        <circle cx="50" cy="217" r="6.5" fill="#C8960C" opacity=".92"/>
+        <text x="50" y="220.5" text-anchor="middle" font-size="7.5" font-weight="700" fill="#FFF8E8" font-family="system-ui">6</text>
+        <!-- 7 Magnets → right knee -->
+        <circle cx="85" cy="168" r="6.5" fill="#C8960C" opacity=".92"/>
+        <text x="85" y="171.5" text-anchor="middle" font-size="7.5" font-weight="700" fill="#FFF8E8" font-family="system-ui">7</text>
+      </svg>
+    </div><!-- /robot col -->
+
+    <!-- RIGHT: sections 4, 5 -->
+    <div>
+
+      <!-- 4 PRECISION MOTION & ACTUATION -->
+      <div class="sec">
+        <div class="sec-hdr">
+          <div class="sec-num">4</div>
+          <div>
+            <div class="sec-name">Precision Motion &amp; Actuation</div>
+            <div class="sec-desc">The muscles — strain wave, cycloidal, servo</div>
+          </div>
+        </div>
+        <div class="bom-row">
+          <span class="bom-label">% of BOM</span>
+          <div class="bom-track"><div class="bom-fill" style="width:55%"></div></div>
+          <span class="bom-pct">40–60%</span>
+        </div>
+        <div class="sec-divider"></div>
+        <div class="tr">
+          <div class="tr-top"><span class="tr-sym">$TKR</span><span class="tag mul">MULTI</span></div>
+          <div class="tr-desc">Cone Drive harmonic + SPINEA cycloidal + GSI. Full joint coverage.</div>
+        </div>
+        <div class="tr">
+          <div class="tr-top"><span class="tr-sym">$RRX</span><span class="tag mul">MULTI</span></div>
+          <div class="tr-desc">Kollmorgen + Portescap + Thomson. $39M+ humanoid revenue, $200M funnel.</div>
+        </div>
+        <div class="tr">
+          <div class="tr-top"><span class="tr-sym">$ALNT</span><span class="tag nam">NAMED</span></div>
+          <div class="tr-desc">Allied Motion. Slatless BLDC, frameless torque, Pytmos servo drives.</div>
+        </div>
+        <div class="tr">
+          <div class="tr-top"><span class="tr-sym">$NOVT</span><span class="tag nvi">NVIDIA</span></div>
+          <div class="tr-desc">Precision motion + force/torque. In NVIDIA Hales AI Inspection Lab.</div>
+        </div>
+        <div class="tr">
+          <div class="tr-top"><span class="tr-sym">$SHA.DE</span><span class="tag oem">AI OEM</span></div>
+          <div class="tr-desc">Schaeffler. Hexagon. Humanoid UK, Leju, Neura — preferred actuator supplier.</div>
+        </div>
+        <div class="tr">
+          <div class="tr-top"><span class="tr-sym">6324.T</span><span class="tag dom">DOMINANT</span></div>
+          <div class="tr-desc">Harmonic Drive Systems. ×2.5B FY26 humanoid orders, doubling FY27.</div>
+        </div>
+        <div class="tr">
+          <div class="tr-top">
+            <span class="tr-sym">$HSAI <span class="china">*</span></span>
+            <span class="tag nvi">NVIDIA</span>
+          </div>
+          <div class="tr-desc">Sharpe actuator modules — NVIDIA selected reference. <span class="china">*China-only.</span></div>
+        </div>
+      </div>
+
+      <!-- 5 POWER ELECTRONICS -->
+      <div class="sec">
+        <div class="sec-hdr">
+          <div class="sec-num">5</div>
+          <div>
+            <div class="sec-name">Power Electronics</div>
+            <div class="sec-desc">Motor drive, gate drivers, BMS</div>
+          </div>
+        </div>
+        <div class="bom-row">
+          <span class="bom-label">% of BOM</span>
+          <div class="bom-track"><div class="bom-fill" style="width:10%"></div></div>
+          <span class="bom-pct">5–10%</span>
+        </div>
+        <div class="sec-divider"></div>
+        <div class="tr">
+          <div class="tr-top"><span class="tr-sym">$IFNNY</span><span class="tag ded">DEDICATED</span></div>
+          <div class="tr-desc">Dedicated humanoid product page. XMC MCU. MOTIX26 for hand motor control.</div>
+        </div>
+        <div class="tr">
+          <div class="tr-top"><span class="tr-sym">$STM</span><span class="tag ded">DEDICATED</span></div>
+          <div class="tr-desc">Full BOM coverage: head, body, hands, PMU/BMS. Deploying 100+ in own fabs.</div>
+        </div>
+        <div class="tr">
+          <div class="tr-top"><span class="tr-sym">$TXN</span><span class="tag nvi">NVIDIA</span></div>
+          <div class="tr-desc">Published Humanoid Motor Control app brief. NVIDIA partnership Mar '26.</div>
+        </div>
+        <div class="tr">
+          <div class="tr-top"><span class="tr-sym">$MPWR</span><span class="tag ded">DEDICATED</span></div>
+          <div class="tr-desc">$750 of power content per humanoid per Analyst Day. Robotics pipeline.</div>
+        </div>
+        <div class="tr">
+          <div class="tr-top"><span class="tr-sym">$RNECY</span><span class="tag ded">DEDICATED</span></div>
+          <div class="tr-desc">Renesas. Dedicated humanoid page. RZ-T2H 9-axis + RA8T2 1GHz MCU.</div>
+        </div>
+      </div>
+
+    </div><!-- /right -->
+
+  </div><!-- /main-grid -->
+
+  <!-- ── BOTTOM GRID ───────────────────────────────── -->
+  <div class="bottom-grid">
+
+    <!-- 6 BATTERY -->
+    <div class="sec">
+      <div class="sec-hdr">
+        <div class="sec-num">6</div>
+        <div>
+          <div class="sec-name">Battery</div>
+          <div class="sec-desc">Power pack — pouch / cylindrical / solid-state</div>
+        </div>
+      </div>
+      <div class="bom-row">
+        <span class="bom-label">% of BOM</span>
+        <div class="bom-track"><div class="bom-fill" style="width:10%"></div></div>
+        <span class="bom-pct">5–10%</span>
+      </div>
+      <div class="sec-divider"></div>
+      <div class="tr">
+        <div class="tr-top"><span class="tr-sym">373220.KS</span><span class="tag nam">NAMED</span></div>
+        <div class="tr-desc">LG Energy Solution. Confirmed battery supplier for Boston Dynamics Atlas.</div>
+      </div>
+      <div class="tr">
+        <div class="tr-top"><span class="tr-sym">006400.KS</span><span class="tag inc">INCOMING</span></div>
+        <div class="tr-desc">Samsung SDI. Humanoid-specific solid-state unveiled at IntelBattery '26.</div>
+      </div>
+      <div class="tr">
+        <div class="tr-top"><span class="tr-sym">3750.HK</span><span class="tag dom">DOMINANT</span></div>
+        <div class="tr-desc">CATL. Largest cell maker globally. Default scale supplier for China OEMs.</div>
+      </div>
+    </div>
+
+    <!-- 7 RARE EARTH MAGNETS -->
+    <div class="sec">
+      <div class="sec-hdr">
+        <div class="sec-num">7</div>
+        <div>
+          <div class="sec-name">Rare Earth Magnets</div>
+          <div class="sec-desc">NdFeB in every BLDC motor — ~0.5kg per humanoid</div>
+        </div>
+      </div>
+      <div class="bom-row">
+        <span class="bom-label">% of BOM</span>
+        <div class="bom-track">
+          <div class="bom-fill" style="width:100%;background:linear-gradient(90deg,#8A6A08,#C8A018,#8A6A08);background-size:200% 100%;animation:shimmer 2.4s linear infinite"></div>
+        </div>
+        <span class="bom-pct">EMBEDDED</span>
+      </div>
+      <style>@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}</style>
+      <div class="sec-divider"></div>
+      <div class="tr">
+        <div class="tr-top"><span class="tr-sym">$MP</span><span class="tag str">STRATEGIC</span></div>
+        <div class="tr-desc">MP Materials. Only US mine-to-magnet supplier. Pentagon-backed.</div>
+      </div>
+      <div class="tr">
+        <div class="tr-top"><span class="tr-sym">$LYSCF</span><span class="tag str">STRATEGIC</span></div>
+        <div class="tr-desc">Lynas. Largest non-Chinese REE producer at scale.</div>
+      </div>
+      <div class="tr">
+        <div class="tr-top"><span class="tr-sym">$CODI</span><span class="tag str">STRATEGIC</span></div>
+        <div class="tr-desc">Compass Diversified — owns Arnold Magnetic Technologies (NdFeB).</div>
+      </div>
+    </div>
+
+  </div><!-- /bottom-grid -->
+
+  <!-- ── OEM STRIP ─────────────────────────────────── -->
+  <div class="oem-strip">
+    <div class="oem-eyebrow">The OEMs · Publicly-Listed Humanoid Pure-Plays</div>
+    <div class="oem-hed">The robot makers themselves.</div>
+    <div class="oem-sub">Watch these names for valuation inflection.</div>
+    <div class="oem-cards">
+      <div>
+        <div class="oem-ticker">$MBLY</div>
+        <div class="oem-name">Mobileye</div>
+        <div class="oem-desc">Acquired Mentee Robotics Q1 '26. CEO "comprehensive Physical AI leader" — autonomous + humanoid.</div>
+      </div>
+      <div>
+        <div class="oem-ticker">$XPEV</div>
+        <div class="oem-name">Xpeng</div>
+        <div class="oem-desc">IRON humanoid: 6.2 DoF, 22 DoF hands, solid-state battery, mass production targeted end of 2026.</div>
+      </div>
+      <div>
+        <div class="oem-ticker">CCXI + AGLT</div>
+        <div class="oem-name">Agility Robotics</div>
+        <div class="oem-desc">First US-listed pure-play humanoid. ISPAC merger Jun '26. Digit at Amazon, GXO, Toyota, Schaeffler.</div>
+      </div>
+    </div>
+    <div class="oem-footer">
+      BOM weights per McKinsey "Turning humanoid supply chain constraints into billion-dollar wins" (Apr 2025) ·
+      Illustrative research map. Not investment advice. All data publicly available as of June 2026.
+    </div>
+  </div>
+
+</div><!-- /page -->
+</body>
+</html>
