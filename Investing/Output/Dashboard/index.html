@@ -172,8 +172,13 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 .logo-sub{font-size:11px;color:var(--muted);font-weight:400}
 /* ── 12-Layer Buildout Stack (homepage) ── */
 #l0{max-width:1340px;padding:32px 24px}
+.domain-nav{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap}
+.domain-btn{background:var(--bg2);border:1px solid var(--border);border-radius:999px;padding:7px 16px;font:600 13px/1 system-ui,sans-serif;color:var(--muted);cursor:pointer;transition:all .15s}
+.domain-btn:hover{color:var(--text);border-color:var(--text)}
+.domain-btn.active{background:var(--text);border-color:var(--text);color:var(--bg)}
 .stack-intro{font-size:12px;color:var(--muted);margin-bottom:22px;max-width:820px;line-height:1.6}
 .stack-grid{display:grid;grid-template-columns:228px minmax(0,1fr) 232px;gap:18px;align-items:start}
+.stack-grid.solo{grid-template-columns:minmax(0,900px);justify-content:center}
 .rail{display:flex;flex-direction:column;gap:12px}
 .rail-card{border:1px solid var(--border);border-radius:11px;padding:13px 13px 14px;position:relative;overflow:hidden}
 .rail-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--rail-accent,var(--border))}
@@ -348,7 +353,7 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
     <input id="search-input" type="text" placeholder="Search tickers, sectors, tiers…" autocomplete="off" spellcheck="false">
     <div id="search-results" hidden></div>
   </div>
-  <span class="gen-date">Generated: 2026-06-26</span>
+  <span class="gen-date">Generated: 2026-06-27</span>
 </header>
 <div id="tab-nav">
   <button class="tab-btn active" data-tab="supply-chain" onclick="showTab('supply-chain')">Supply Chain</button>
@@ -1030,10 +1035,15 @@ function showLayer(n){
   document.querySelectorAll(".tab-btn").forEach(b=>b.classList.toggle("active",b.dataset.tab==="supply-chain"));
 }
 
-// ── 12-Layer AI Buildout Stack (canonical map) ──────────────────────────────
+// ── Supply-Chain Stacks registry (domain switcher) ──────────────────────────
+// Three domain stacks render through the same renderL0() engine: the canonical
+// 12-layer AI Buildout map, the 7-layer humanoid Robotics framework, and a
+// first-cut Healthcare & Drug Discovery stack. `STACK` points at the active one.
 // Each layer's sub-boxes map to an existing (sector slug, tier) so the drill-down,
-// chokepoint flag, and tracked-company lists are reused from DATA.sectors.
-const STACK={
+// chokepoint flag, and tracked-company lists are reused from DATA.sectors; boxes
+// for not-yet-onboarded tickers carry chips that degrade gracefully.
+const STACKS={
+"ai-buildout":{"label":"AI Buildout","stack":{
   "generated": "2026-06-16",
   "layers": [
     {"num":"01","name":"Application","hue":235,"tag":"AI-native apps · agents · vertical SaaS","boxes":[
@@ -1042,7 +1052,6 @@ const STACK={
       {"label":"Enterprise AI SaaS (Copilot-style integrations)","gap":true,"chips":["MSFT","CRM"]},
       {"label":"Insurance AI (end-to-end digital insurer, ML underwriting)","sector":"Application","slug":"application","tier":"Insurance AI","chips":["LMND","ROOT","GWRE","VRSK"]},
       {"label":"AI-Native Fintech & Commerce","sector":"Application","slug":"application","tier":"AI-Native Fintech & Commerce","chips":["MELI","SOFI","HOOD","NU"]},
-      {"label":"AI Drug Discovery","sector":"Application","slug":"application","tier":"AI Drug Discovery","chips":["QTRX","ABCL","RXRX"]},
       {"label":"Materials Science AI","sector":"Application","slug":"application","tier":"Materials Science AI","chips":[]}
     ]},
     {"num":"02","name":"AI Model","hue":255,"tag":"foundation models · serving · agents","boxes":[
@@ -1201,7 +1210,6 @@ const STACK={
     {"id":"edge","side":"right","kind":"surface","title":"Edge & Physical AI","cap":"Deployment paradigm — where the stack meets the physical world.","groups":[
       {"label":"Edge & Physical AI","boxes":[
         {"label":"Autonomous Vehicles","sector":"Edge & Physical AI","slug":"edge-physical-ai","tier":"Autonomous Vehicles & ADAS","chips":["MBLY","OUST","LAZR"]},
-        {"label":"Humanoid Robotics","sector":"Edge & Physical AI","slug":"edge-physical-ai","tier":"System Integration & OEM Assembly","chips":[]},
         {"label":"Drones and UAVs","sector":"Edge & Physical AI","slug":"edge-physical-ai","tier":"UAV & Drone Systems","chips":["AVAV","JOBY","ACHR"]},
         {"label":"Driver / Behavior Monitoring Systems","sector":"Edge & Physical AI","slug":"edge-physical-ai","tier":"Perception Layer","chips":["AMBA"]},
         {"label":"Edge Inference Chips","sector":"Edge & Physical AI","slug":"edge-physical-ai","tier":"Edge Compute Module","chips":["AMBA"]},
@@ -1218,7 +1226,106 @@ const STACK={
       ]}
     ]}
   ]
+}},
+"robotics":{"label":"Robotics","stack":{
+  "generated":"2026-06-27",
+  "intro":"The humanoid robot as a <strong>7-layer stack</strong> — from AI brains at the top down to the rare-earth magnets in every joint. Each layer is its own supply chain. The winners may not be the robot makers — they may be the companies building the essential technology <strong>inside</strong> every robot. Click a <strong>box</strong> or a <strong>ticker</strong> to drill in.",
+  "layers":[
+    {"num":"01","name":"AI Brains","hue":235,"tag":"the robot's intelligence","boxes":[
+      {"label":"AI Compute & Foundation Model (Jetson · GR00T)","slug":"robotics","tier":"Humanoid AI Compute","chips":["NVDA"],"fn":"Jetson platform for robotics, the GR00T humanoid foundation model, and the dominant pick in AI compute."},
+      {"label":"Low-Power Robotics SoC (RB6)","slug":"robotics","tier":"Low-Power Robotics SoC","chips":["QCOM"],"fn":"Qualcomm Robotics RB6 platform — lower power than NVIDIA, with design wins in industrial robotics."}
+    ]},
+    {"num":"02","name":"Sensors & Perception","hue":205,"tag":"how the robot sees, hears, and understands the world","boxes":[
+      {"label":"Solid-State Lidar","slug":"robotics","tier":"Lidar","chips":["OUST"],"fn":"Solid-state lidar — the leading small-cap pure-play."},
+      {"label":"Industrial Machine Vision","slug":"robotics","tier":"Industrial Vision","chips":["CGNX"],"fn":"Industrial vision systems with a deeper enterprise presence."},
+      {"label":"Magnetic Position Sensors","slug":"robotics","tier":"Position Sensing","chips":["ALGM"],"fn":"Magnetic position sensors — every joint needs them."},
+      {"label":"Strain Gauges & Force Sensing","slug":"robotics","tier":"Force Sensing","chips":["VPG"],"fn":"Strain gauges and force sensing — a niche pure-play."}
+    ]},
+    {"num":"03","name":"Edge AI Inference","hue":172,"tag":"real-time decision making inside the robot","boxes":[
+      {"label":"Edge Vision Processors","slug":"robotics","tier":"Edge Vision SoC","chips":["AMBA"],"fn":"Edge vision processors for automotive and robotics."},
+      {"label":"DSP & AI Inference IP","slug":"robotics","tier":"Inference IP","chips":["CEVA"],"fn":"DSP and AI inference IP on a licensing model."},
+      {"label":"Low-Power FPGAs","slug":"robotics","tier":"Low-Power FPGA","chips":["LSCC"],"fn":"Low-power FPGAs for sensor fusion and motor control."}
+    ]},
+    {"num":"04","name":"Motors & Motion","hue":138,"tag":"the muscles that create movement","boxes":[
+      {"label":"Electric Motors (world's largest maker)","slug":"robotics","tier":"Electric Motors","chips":["NJDCY"],"fn":"Nidec — the world's largest motor maker. OTC: NJDCY."},
+      {"label":"Precision Bearings","slug":"robotics","tier":"Bearings","chips":["RBC"],"fn":"RBC Bearings — precision components."},
+      {"label":"Motors & Drives","slug":"robotics","tier":"Motors & Drives","chips":["RRX"],"fn":"Regal Rexnord — motors and drives."},
+      {"label":"Precision Instruments & Motion","slug":"robotics","tier":"Precision Instruments","chips":["AME"],"fn":"AMETEK — precision instruments and motion."}
+    ]},
+    {"num":"05","name":"Joints & Precision Motion","hue":92,"tag":"the mechanical system that enables human-like movement","boxes":[
+      {"label":"Strain Wave Gears","slug":"robotics","tier":"Strain Wave Gears","chips":["6324.T"],"fn":"Harmonic Drive Systems — the dominant strain wave gear maker (every Optimus joint uses one)."},
+      {"label":"Linear Motion Bearings & Ball Screws","slug":"robotics","tier":"Linear Motion","chips":["6481.T"],"fn":"THK — linear motion bearings and ball screws."},
+      {"label":"Integrated Motion Solutions","slug":"robotics","tier":"Integrated Motion","chips":["ALNT"],"fn":"Allient — integrated motion solutions, a small-cap pure-play."}
+    ]},
+    {"num":"06","name":"Power Electronics & Control","hue":45,"tag":"converting battery energy into controlled motion","boxes":[
+      {"label":"GaN Power Semiconductors","slug":"robotics","tier":"GaN Power","chips":["NVTS"],"fn":"Navitas — GaN power semis, an asymmetric small-cap."},
+      {"label":"Motor-Control MCUs","slug":"robotics","tier":"Motor Control MCUs","chips":["TXN"],"fn":"Texas Instruments — motor-control MCUs at scale."},
+      {"label":"Silicon Carbide","slug":"robotics","tier":"Silicon Carbide","chips":["WOLF"],"fn":"Wolfspeed — pure-play silicon carbide."},
+      {"label":"Industrial / Automotive Motor Control","slug":"robotics","tier":"Industrial Motor Control","chips":["RNECY"],"fn":"Renesas — dominant in automotive and industrial motor control."},
+      {"label":"Automotive-Grade Power","slug":"robotics","tier":"Automotive Power","chips":["IFX"],"fn":"Infineon — dominant in automotive-grade power."},
+      {"label":"Broad Motor-Control Portfolio","slug":"robotics","tier":"Broad Motor Control","chips":["STM"],"fn":"STMicroelectronics — broad motor-control portfolio."},
+      {"label":"High-Efficiency DC-DC","slug":"robotics","tier":"DC-DC Conversion","chips":["MPWR"],"fn":"Monolithic Power Systems — high-efficiency DC-DC for compact systems."},
+      {"label":"Power Management & Sensing","slug":"robotics","tier":"Power Management","chips":["ON"],"fn":"onsemi — power management and sensing."}
+    ]},
+    {"num":"07","name":"Energy & Rare Earth Materials","hue":350,"tag":"the fuel and raw materials powering every robot","boxes":[
+      {"label":"Industrial Batteries","slug":"robotics","tier":"Batteries","chips":["ENS"],"fn":"EnerSys — industrial batteries."},
+      {"label":"US Magnet Manufacturing","slug":"robotics","tier":"Magnet Manufacturing","chips":["MP"],"fn":"MP Materials — US pure-play magnet manufacturing."},
+      {"label":"Rare-Earth Magnets","slug":"robotics","tier":"Rare Earth Magnets","chips":["USAR"],"fn":"USA Rare Earth — magnet manufacturing."},
+      {"label":"Rare-Earth Production","slug":"robotics","tier":"Rare Earth Production","chips":["LYSCF"],"fn":"Lynas — the largest non-Chinese REE producer."},
+      {"label":"Diversified Rare Earth & Uranium","slug":"robotics","tier":"Rare Earth & Uranium","chips":["UUUU"],"fn":"Energy Fuels — diversified rare earth and uranium."}
+    ]}
+  ],
+  "connectors":[
+    {"label":"perceives the world through"},
+    {"label":"runs real-time inference on"},
+    {"label":"issues motion commands to"},
+    {"label":"actuated through"},
+    {"label":"driven by"},
+    {"label":"powered by"}
+  ],
+  "rails":[]
+}},
+"healthcare":{"label":"Healthcare & Drug Discovery","stack":{
+  "generated":"2026-06-27",
+  "intro":"AI-driven <strong>drug discovery & healthcare</strong> as a layered stack — from therapeutic applications at the top down to the genomics and compute that power them. This is a <strong>first-cut scaffold</strong>: many layers are still coverage gaps (hatched) awaiting <code>/map-sector</code> and ticker onboarding. Click a <strong>box</strong> or a <strong>ticker</strong> to drill in.",
+  "layers":[
+    {"num":"01","name":"Therapeutic Applications","hue":200,"tag":"AI-discovered drugs · clinical decision support","boxes":[
+      {"label":"AI-Native Drug Discovery Platforms","slug":"healthcare","tier":"Drug Discovery Platforms","chips":["RXRX","ABCL"],"fn":"End-to-end AI platforms for target identification, molecular design, and candidate generation."},
+      {"label":"Clinical Decision Support & Diagnostic AI","gap":true,"chips":[]}
+    ]},
+    {"num":"02","name":"Molecular Design & Simulation","hue":255,"tag":"generative chemistry · protein structure","boxes":[
+      {"label":"Generative Chemistry & Protein Structure","gap":true,"chips":[]},
+      {"label":"Antibody & Biologics Discovery","slug":"healthcare","tier":"Biologics Discovery","chips":["ABCL"],"fn":"AI-driven antibody discovery platforms."}
+    ]},
+    {"num":"03","name":"Clinical Trial AI","hue":288,"tag":"trial design · patient matching · real-world evidence","boxes":[
+      {"label":"Trial Design & Patient Recruitment AI","gap":true,"chips":[]},
+      {"label":"Real-World Evidence & Data","gap":true,"chips":[]}
+    ]},
+    {"num":"04","name":"Lab Automation & Instruments","hue":150,"tag":"biomarker detection · wet-lab robotics","boxes":[
+      {"label":"Ultra-Sensitive Detection & Biomarkers","slug":"healthcare","tier":"Biomarker Detection","chips":["QTRX"],"fn":"Quanterix Simoa — ultrasensitive digital protein detection for biomarkers."},
+      {"label":"Lab Automation & Robotics","gap":true,"chips":[]}
+    ]},
+    {"num":"05","name":"Genomics & Sequencing","hue":92,"tag":"sequencing · multi-omics data","boxes":[
+      {"label":"Sequencing Platforms","gap":true,"chips":["ILMN"]},
+      {"label":"Multi-Omics & Spatial Biology","gap":true,"chips":[]}
+    ]},
+    {"num":"06","name":"Compute & Data Infrastructure","hue":42,"tag":"GPU compute · biomedical data platforms","boxes":[
+      {"label":"AI Compute for Biology","gap":true,"chips":["NVDA"]},
+      {"label":"Biomedical Data Platforms","gap":true,"chips":[]}
+    ]}
+  ],
+  "connectors":[
+    {"label":"designed by"},
+    {"label":"validated through"},
+    {"label":"measured by"},
+    {"label":"informed by"},
+    {"label":"computed on"}
+  ],
+  "rails":[]
+}}
 };
+let STACK=STACKS["ai-buildout"].stack;
+let currentDomain="ai-buildout";
 
 // tier → layer reverse index ("slug|tier" → layer index)
 const _tierLayer={};
@@ -1294,8 +1401,9 @@ function _subboxCard(b,i){
     +'<div class="chip-row">'+chips+'</div></div>';
 }
 function renderL0(){
-  const leftRail=STACK.rails.filter(r=>r.side==="left").map(_railHtml).join("");
-  const rightRail=STACK.rails.filter(r=>r.side==="right").map(_railHtml).join("");
+  const rails=STACK.rails||[];
+  const leftRail=rails.filter(r=>r.side==="left").map(_railHtml).join("");
+  const rightRail=rails.filter(r=>r.side==="right").map(_railHtml).join("");
   const stack=STACK.layers.map((L,i)=>{
     const inner=_groupBoxes(L.boxes).map(g=>{
       const cards=g.boxes.map(b=>_subboxCard(b,i)).join("");
@@ -1314,11 +1422,25 @@ function renderL0(){
     }
     return html;
   }).join("");
-  document.getElementById("l0").innerHTML=
-    '<div class="stack-intro">The AI buildout as a single dependency stack — each layer <strong>runs on</strong> the one below it, all the way down to the critical minerals at the bedrock. The rails frame it: <strong>Power</strong> comes in (left), <strong>Heat</strong> comes out &amp; <strong>Security</strong> wraps around (right), and <strong>Edge &amp; Physical AI</strong> is where it all deploys into the world. Amber <span style="color:var(--amber)">⧫</span> marks chokepoints; hatched boxes are <strong>unmapped</strong> coverage gaps. Click a <strong>layer header</strong>, a <strong>sub-box</strong>, or a <strong>ticker</strong> to drill in.</div>'
-    +'<div class="stack-grid"><div class="rail">'+leftRail+'</div>'
-    +'<div class="stack">'+stack+'</div>'
-    +'<div class="rail">'+rightRail+'</div></div>';
+  const defaultIntro='The AI buildout as a single dependency stack — each layer <strong>runs on</strong> the one below it, all the way down to the critical minerals at the bedrock. The rails frame it: <strong>Power</strong> comes in (left), <strong>Heat</strong> comes out &amp; <strong>Security</strong> wraps around (right), and <strong>Edge &amp; Physical AI</strong> is where it all deploys into the world. Amber <span style="color:var(--amber)">⧫</span> marks chokepoints; hatched boxes are <strong>unmapped</strong> coverage gaps. Click a <strong>layer header</strong>, a <strong>sub-box</strong>, or a <strong>ticker</strong> to drill in.';
+  const grid=(leftRail||rightRail)
+    ? '<div class="stack-grid"><div class="rail">'+leftRail+'</div><div class="stack">'+stack+'</div><div class="rail">'+rightRail+'</div></div>'
+    : '<div class="stack-grid solo"><div class="stack">'+stack+'</div></div>';
+  document.getElementById("l0").innerHTML=_domainSwitcher()
+    +'<div class="stack-intro">'+(STACK.intro||defaultIntro)+'</div>'+grid;
+}
+function _rootLabel(){return (STACKS[currentDomain]?STACKS[currentDomain].label:"AI Buildout")+" Stack";}
+function _domainSwitcher(){
+  return '<div class="domain-nav">'+Object.keys(STACKS).map(k=>
+    '<button class="domain-btn'+(k===currentDomain?' active':'')+'" data-domain="'+k+'" onclick="setDomain(\''+k+'\')">'+esc(STACKS[k].label)+'</button>'
+  ).join("")+'</div>';
+}
+function setDomain(key){
+  if(!STACKS[key])return;
+  currentDomain=key;
+  STACK=STACKS[key].stack;
+  renderL0();
+  showLayer(0);
 }
 
 function openTierFallback(slug,tierName,layerIdx){
@@ -1330,8 +1452,8 @@ function openTierFallback(slug,tierName,layerIdx){
   if(!box)return;
   const sectorName=(DATA.sectors.find(x=>x.slug===slug)||{}).name||box.sector||slug;
   const trail=(li!==null&&li!==undefined)
-    ?[{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:_layerLabel(li),fn:"openLayer("+li+")"},{label:tierName}]
-    :[{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:tierName}];
+    ?[{label:_rootLabel(),fn:"showLayer(0)"},{label:_layerLabel(li),fn:"openLayer("+li+")"},{label:tierName}]
+    :[{label:_rootLabel(),fn:"showLayer(0)"},{label:tierName}];
   const cp=box.chokepoint||"";
   const chokeBlock=cp==="Y"
     ?'<div class="choke-box"><p>⧫ Supply chain chokepoint — limited substitutes in this tier. Capacity constraints here propagate up the stack.</p></div>'
@@ -1446,7 +1568,7 @@ function renderLayerView(i){
     +'</div>'
     :'';
   document.getElementById("l1").innerHTML=
-    crumbTrail([{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:_layerLabel(i)}])
+    crumbTrail([{label:_rootLabel(),fn:"showLayer(0)"},{label:_layerLabel(i)}])
     +'<div class="layer-view-hdr" style="--lh:'+L.hue+'"><span class="layer-view-num">L'+L.num+'</span>'
     +'<span class="layer-view-name">'+esc(L.name)+'</span></div>'
     +'<div class="layer-view-tag">'+esc(L.tag)+'</div>'
@@ -1461,8 +1583,8 @@ function openTier(idx){
   const t=s.tiers[idx];
   const li=activeLayerIdx;
   const trail=(li!==null&&li!==undefined)
-    ?[{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:_layerLabel(li),fn:"openLayer("+li+")"},{label:t.tier}]
-    :[{label:"AI Buildout Stack",fn:"showLayer(0)"},{label:t.tier}];
+    ?[{label:_rootLabel(),fn:"showLayer(0)"},{label:_layerLabel(li),fn:"openLayer("+li+")"},{label:t.tier}]
+    :[{label:_rootLabel(),fn:"showLayer(0)"},{label:t.tier}];
   const provenance='<div class="tier-provenance">'
     +((li!==null&&li!==undefined)?'<span class="layer-pill" style="--lh:'+STACK.layers[li].hue+'">'+esc(_layerLabel(li))+'</span>':'')
     +'<span class="sector-tag">'+esc(s.name)+'</span></div>';
@@ -1778,13 +1900,13 @@ function renderL3(ticker,sName){
   if(fromRace){
     crumbs=crumbTrail([{label:"Tech Races",fn:"showTab('tech-races')"},{label:fromRace.name,fn:"openRace('"+fromRace.id+"')"},{label:ticker}]);
   }else if(fromStack||!activeSector||activeTierIdx===null){
-    const parts=[{label:"AI Buildout Stack",fn:"showLayer(0)"}];
+    const parts=[{label:_rootLabel(),fn:"showLayer(0)"}];
     if(chipOrigin)parts.push({label:chipOrigin.label,fn:chipOrigin.fn});
     parts.push({label:ticker});
     crumbs=crumbTrail(parts);
   }else{
     const mid=(li!==null&&li!==undefined)?{label:_layerLabel(li),fn:"openLayer("+li+")"}:null;
-    const parts=[{label:"AI Buildout Stack",fn:"showLayer(0)"}];
+    const parts=[{label:_rootLabel(),fn:"showLayer(0)"}];
     if(mid)parts.push(mid);
     parts.push({label:activeSector.tiers[activeTierIdx].tier,fn:"openTier("+activeTierIdx+")"});
     parts.push({label:ticker});
