@@ -39,7 +39,7 @@ Folder names now match layer names 1:1 — no slug overrides needed in the dashb
 | L12 | `L12 Critical Minerals` | Si · Cu · Ga · In · Ge · Hf · rare earths | partial | `_Supply Chain Map.md` — from Metals & Mining |
 | Rail | `Power` | Generation → grid → rack → board | partial | `_Supply Chain Map.md` — from Clean Energy. Tiers: Nuclear & Advanced Fission · Gas Turbines & Grid Equipment · Energy Storage · Power Semiconductors |
 | Rail | `Security` | Wraps every layer; identity · endpoint · network | partial | `_Supply Chain Map.md` — from Cybersecurity |
-| Surface | `Edge & Physical AI` | Physical-world deployment + parallel compute | partial | `_Supply Chain Map.md` — from Robotics & Edge AI. Tiers: Edge Compute Module · Perception Layer · Physical Systems |
+| Surface | `Edge & Physical AI` | Physical-world deployment + parallel compute | partial | `_Supply Chain Map.md` — from Robotics & Edge AI. Tiers: Edge Compute Module · Perception Layer · Actuators & Motors · Robot OS & Middleware · AI Model Training · System Integration · Fleet Management. Sub-map: `Robotics/_Supply Chain Map.md` (2026-07-01) — actuator supply chain depth; 15 new candidates |
 | Cross | `Space & Comms` | Satellite constellations · launch vehicles · ground segment | partial | `_Supply Chain Map.md`. Tiers: Satellite Constellations · Launch Vehicles |
 | Cross | `Electronic Components` | Passives · discretes · PCB (cross-layer; doesn't fit one L) | partial | `_Supply Chain Map.md` — moved to Advanced Packaging/ |
 
