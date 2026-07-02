@@ -1,6 +1,6 @@
 ---
 description: Token-efficient daily watchlist refresh. A local script fetches news headlines for up to 50 registry tickers (zero model tokens), dedupes against a seen-cache, and pairs each ticker's headlines with its One-Line Thesis + Drift status. Claude only triages the resulting digest for thesis drift. Material items → signals.md; drift/conviction changes → analysis.md; compact daily summary → Output/Digest. Designed for a Claude Pro budget, 1–2 runs/day. Scans Watchlist.md tickers by default; --all widens to the full registry. Usage: /watchlist-refresh [--all] [--limit N] [--hours H] [--tickers CSV]
-allowed-tools: Bash(python3 scripts/watchlist_refresh_fetch.py:*), Read, Edit, Write
+allowed-tools: Bash(python3 scripts/watchlist_refresh_fetch.py:*), Bash(git add:*), Bash(git commit:*), Bash(git push:*), Read, Edit, Write
 ---
 
 # Watchlist Refresh — Daily Thesis-Drift Pass
@@ -79,7 +79,17 @@ Scanned N | with news M | material K | drift flags J | errors E
 **Not onboarded:** TICK1, TICK2 (run /add-ticker)
 ```
 
-Print the same summary in chat. Done.
+Print the same summary in chat.
+
+## Phase 6 — Publish (skip with --no-push)
+
+The dashboard's Watchlist tab fetches
+`Investing/Raw/Inbox/watchlist-refresh-digest.json` from `master` via
+raw.githubusercontent at page load — new headlines appear on the deployed
+dashboard only after a push. Commit everything the run touched (digest,
+state file, signals.md / analysis.md edits, Output/Digest summary) with
+message `Watchlist refresh YYYY-MM-DD` and `git push`. No gh-pages deploy
+needed — the dashboard HTML doesn't change, only the data it fetches.
 
 ## Token discipline
 
