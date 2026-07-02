@@ -8,6 +8,7 @@ Investment research knowledge base. All paths are relative to the repo root.
 Investing/
   Raw/
     Inbox/Tweets.md          ← staging area for sentiment ingestion
+    Inbox/watchlist-refresh-digest.json ← headline digest written by scripts/watchlist_refresh_fetch.py
     Sentiment/               ← individual signal notes (one .md per signal)
     Filings/                 ← SEC filing documents by ticker
   Output/
@@ -35,6 +36,8 @@ Investing/
         _Supply Chain Map.md ← company-agnostic tier diagram (created by /map-sector)
         _Customer Matrix.md  ← supplier × end-customer dependency table
         _Sector Framework.md ← sector thesis — written LAST, after map + matrix exist
+scripts/
+  watchlist_refresh_fetch.py ← zero-token news fetcher for /watchlist-refresh (stdlib only)
 gemini-scribe/
   Prompts/                   ← reusable prompt templates
   Scheduled-Tasks/           ← scheduled task state (JSON)
@@ -65,6 +68,7 @@ Each ticker has three files in a dedicated folder. Skills read only the layers t
 | `/add-ticker` | `/add-ticker TICKER [--sector "Sector"] [--refresh-research]` | Onboard a new company: creates three-layer folder, registers in Monitor Registry.yaml, populates facts.md + analysis.md with research |
 | `/stock-research-all` | `/stock-research-all [--refresh] [--sector SECTOR]` | Batch refresh facts.md + analysis.md thesis across all tickers (5 concurrent agents) |
 | `/ticker-monitor` | `/ticker-monitor [--force] [--dry-run] [--sector SECTOR] [--deep TICKER] [--news-only]` | Weekly update pass: earnings/filings → facts.md; conviction/analyst/catalyst → analysis.md; news → signals.md. Use `--news-only` for daily lightweight news pass |
+| `/watchlist-refresh` | `/watchlist-refresh [--limit N] [--hours H] [--tickers CSV]` | **Preferred daily pass.** Script fetches news RSS for up to 50 tickers (zero model tokens) + dedupes; Claude triages headlines against each One-Line Thesis for drift. Material → signals.md; drift → analysis.md; summary → Output/Digest. Pro-plan budget, 1–2×/day |
 | `/ingest-sentiment` | `/ingest-sentiment [--source article\|musing] [--author "@handle"]` | Parse Tweets.md into signal notes; update Social Mentions in signals.md |
 | `/score-ticker` | `/score-ticker TICKER [--refresh]` | Score on 6-criterion rubric; writes Scoring Summary to analysis.md, updates facts.md metrics + Monitor Registry.yaml |
 | `/build-customer-matrix` | `/build-customer-matrix "Sector Name"` | Build supplier × end-customer dependency matrix from facts.md + analysis.md; writes `_Customer Matrix.md` |
@@ -92,7 +96,7 @@ The Sector Framework is written **last** — it's the synthesis output, not the 
 /add-ticker TICKER --sector "Sector"  → three-layer folder + fundamentals populated
 /ticker-monitor --deep TICKER         → pulls recent SEC filings, news, analyst coverage
 /ingest-sentiment                     → files social signals from Tweets.md
-/ticker-monitor --news-only           → daily lightweight news pass
+/watchlist-refresh                    → daily thesis-drift pass (script-fetched headlines)
 /ticker-monitor                       → weekly full pass
 ```
 
