@@ -336,6 +336,13 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 .wl-stub{font-size:12px;color:var(--muted);font-style:italic;padding:6px 0;margin:0}
 .wl-empty{text-align:center;padding:60px 0;color:var(--muted);font-size:13px;line-height:2}
 .wl-loading{color:var(--muted);font-size:13px;padding:40px 0;text-align:center}
+.wl-refresh-banner{font-size:12px;color:var(--muted);background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin-bottom:24px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.wl-refresh-banner strong{color:var(--text)}
+.wl-news-list{list-style:none;padding:0;margin-bottom:4px}
+.wl-news-item{font-size:12px;padding:3px 0 3px 22px;position:relative;color:var(--text);line-height:1.5}
+.wl-news-item::before{content:'📰';position:absolute;left:0;font-size:10px}
+.wl-news-date{font-family:monospace;font-size:10px;color:var(--muted);margin-right:6px}
+.wl-news-src{font-size:10px;color:var(--muted)}
 @media(max-width:600px){#watchlist{padding:16px}.wl-cards{grid-template-columns:1fr}.wl-add-row{flex-direction:column;align-items:stretch}}
 </style>
 </head>
@@ -2061,6 +2068,16 @@ document.addEventListener("click", function (e) {
 const GH_REPO='deeyayay/investing-wiki';
 const WL_PATH='Investing/Wiki/Reference/Watchlist.md';
 const WL_API='https://api.github.com/repos/'+GH_REPO+'/contents/'+WL_PATH;
+const WL_REFRESH_URL='https://raw.githubusercontent.com/'+GH_REPO+'/master/Investing/Raw/Inbox/watchlist-refresh-digest.json';
+let _wlRefresh=null;
+// Latest /watchlist-refresh digest (headlines per ticker). Missing file = feature not run yet; render nothing.
+async function fetchWatchlistRefresh(){
+  try{
+    const res=await fetch(WL_REFRESH_URL,{cache:'no-store'});
+    if(!res.ok)return null;
+    return await res.json();
+  }catch(e){return null;}
+}
 let _wlSha=null;
 let _wlInitialized=false;
 
@@ -2244,11 +2261,14 @@ function renderWatchlistCard(e,canEdit){
   const days=daysUntil(e.next_earnings);
   const soon=days!=null&&days>=0&&days<=14;
   const earningsText=e.next_earnings?(soon?'⚡ ':'')+'Earnings '+e.next_earnings+(days!=null?' ('+(days===0?'today':days+'d')+')':''):'';
+  const rf=_wlRefresh&&(_wlRefresh.tickers||[]).find(t=>t.ticker===e.ticker);
+  const driftHead=rf&&rf.drift?rf.drift.split('—')[0].split('.')[0].trim():'';
   const metaParts=[
     e.sector&&'<span class="wl-pill">'+esc(e.sector)+'</span>',
     e.tier&&'<span class="wl-pill">'+esc(e.tier)+'</span>',
     e.exchange&&'<span class="wl-pill">'+esc(e.exchange)+'</span>',
-    earningsText&&'<span class="wl-pill'+(soon?' soon':'')+'">'+esc(earningsText)+'</span>'
+    earningsText&&'<span class="wl-pill'+(soon?' soon':'')+'">'+esc(earningsText)+'</span>',
+    driftHead&&'<span class="wl-pill" title="'+esc(rf.drift)+'">Drift: '+esc(driftHead)+'</span>'
   ].filter(Boolean);
   const metaHtml=metaParts.length?'<div class="wl-meta">'+metaParts.join('')+'</div>':'';
   const thesisHtml=e.thesis?'<div class="wl-thesis">'+esc(e.thesis)+'</div>':'';
@@ -2270,12 +2290,17 @@ function renderWatchlistCard(e,canEdit){
   if(e.catalysts&&e.catalysts.length){
     catalystsHtml='<div class="wl-block-hdr">Upcoming Catalysts</div><ul class="wl-cat-list">'+e.catalysts.slice(0,3).map(c=>'<li class="wl-cat-item">'+esc(c)+'</li>').join('')+'</ul>';
   }
+  let newsHtml='';
+  if(rf&&rf.headlines&&rf.headlines.length){
+    newsHtml='<div class="wl-block-hdr">Latest Headlines — '+esc((_wlRefresh.generated||'').slice(0,10))+'</div><ul class="wl-news-list">'
+      +rf.headlines.map(h=>'<li class="wl-news-item"><span class="wl-news-date">'+esc(h.d||'')+'</span>'+esc(h.t)+(h.src?' <span class="wl-news-src">— '+esc(h.src)+'</span>':'')+'</li>').join('')+'</ul>';
+  }
   return '<div class="wl-card">'
     +'<div class="wl-card-hdr"><span class="wl-ticker">'+esc(e.ticker)+'</span>'
     +'<span class="wl-name">'+esc(e.name||'')+'</span>'
     +'<span class="wl-score-badge '+scoreCls+'">'+esc(scoreLabel)+'</span>'
     +removeBtn+'</div>'
-    +metaHtml+thesisHtml+scoringHtml+catalystsHtml+'</div>';
+    +metaHtml+thesisHtml+newsHtml+scoringHtml+catalystsHtml+'</div>';
 }
 
 function renderWatchlist(entries,fallback){
@@ -2300,23 +2325,29 @@ function renderWatchlist(entries,fallback){
   }).join('');
   const emptyHtml=entries.length?''
     :'<div class="wl-empty">Watchlist is empty.<br>Add a ticker above, or edit <code>Watchlist.md</code> and re-run <code>/daily-dashboard --refresh-data</code>.</div>';
+  const refreshBanner=_wlRefresh
+    ?'<div class="wl-refresh-banner"><span>📰 <strong>Watchlist refresh</strong> '+esc((_wlRefresh.generated||'').slice(0,16).replace('T',' '))+' UTC</span><span>'+(_wlRefresh.scanned||0)+' scanned · '+(_wlRefresh.with_news||0)+' with new headlines'+((_wlRefresh.errors||[]).length?' · '+_wlRefresh.errors.length+' fetch errors':'')+'</span></div>'
+    :'';
   container.innerHTML=
     '<div class="wl-page-hdr"><div class="wl-title">Watchlist</div>'+headerAuthHtml+'</div>'
-    +patPromptHtml+addRowHtml+body+emptyHtml;
+    +refreshBanner+patPromptHtml+addRowHtml+body+emptyHtml;
 }
 
 async function initWatchlistTab(force){
   if(!force&&_wlInitialized)return;
   const container=document.getElementById('watchlist');
   container.innerHTML='<div class="wl-loading">Loading watchlist…</div>';
+  const refreshP=fetchWatchlistRefresh();
   try{
     const md=await fetchWatchlistMd();
+    _wlRefresh=await refreshP;
     const live=parseWatchlistMd(md);
     const entries=mergeWithDataWatchlist(live);
     _wlInitialized=true;
     renderWatchlist(entries,false);
   } catch(err){
     // Fallback: use pre-generated DATA.watchlist (read-only)
+    _wlRefresh=await refreshP;
     const entries=(DATA.watchlist||[]).map(e=>({...e,hasRichData:true}));
     _wlInitialized=true;
     renderWatchlist(entries,true);
