@@ -2,7 +2,8 @@
 """Watchlist refresh fetcher — the zero-token half of /watchlist-refresh.
 
 Does every mechanical step outside the model:
-  1. Parses Monitor Registry.yaml for the ticker universe (no PyYAML needed).
+  1. Builds the ticker universe: tickers named in Watchlist.md, resolved
+     against Monitor Registry.yaml (--all widens to the full registry).
   2. Resolves each ticker's folder on disk (registry paths can go stale).
   3. Extracts the One-Line Thesis + Drift status from analysis.md.
   4. Fetches Google News RSS headlines per ticker (last --hours, default 36).
@@ -12,7 +13,7 @@ Does every mechanical step outside the model:
 Only tickers with new, unseen headlines appear in the digest. Stdlib only.
 
 Usage:
-  python3 scripts/watchlist_refresh_fetch.py [--limit 50] [--hours 36]
+  python3 scripts/watchlist_refresh_fetch.py [--all] [--limit 50] [--hours 36]
       [--max-per-ticker 5] [--tickers CRDO,SNDK] [--dry-run]
 
 Output:  Investing/Raw/Inbox/watchlist-refresh-digest.json  (overwritten each run)
@@ -223,9 +224,13 @@ def save_state(state):
         json.dump(state, f, indent=1, sort_keys=True)
 
 
-def select_tickers(entries, watchlist, state, limit):
-    """Priority: Watchlist.md names, then scored tickers, then everyone else on a
-    least-recently-covered rotation — so a >limit universe still cycles fully."""
+def select_tickers(entries, watchlist, state, limit, include_all):
+    """Default universe: tickers named in Watchlist.md. With --all, the whole
+    registry, prioritized Watchlist.md > scored > rest. Either way, ties break
+    on a least-recently-covered rotation so a >limit universe cycles fully."""
+    if not include_all:
+        entries = [e for e in entries if e["ticker"] in watchlist]
+
     def sort_key(e):
         tier = 0 if e["ticker"] in watchlist else (1 if e.get("score") else 2)
         last = state["last_included"].get(e["ticker"], "")
@@ -240,6 +245,8 @@ def main(argv=None):
     ap.add_argument("--hours", type=float, default=36, help="headline lookback window (default 36)")
     ap.add_argument("--max-per-ticker", type=int, default=5, help="max headlines kept per ticker")
     ap.add_argument("--tickers", help="comma-separated override list (skips selection logic)")
+    ap.add_argument("--all", action="store_true",
+                    help="scan the full registry instead of just Watchlist.md tickers")
     ap.add_argument("--dry-run", action="store_true", help="resolve + select only; no network, no writes")
     ap.add_argument("--output", default=DIGEST_PATH, help="digest path (default %(default)s)")
     args = ap.parse_args(argv)
@@ -252,7 +259,9 @@ def main(argv=None):
         wanted = {t.strip().upper() for t in args.tickers.split(",")}
         selected = [e for e in entries if e["ticker"].upper() in wanted]
     else:
-        selected = select_tickers(entries, watchlist, state, args.limit)
+        selected = select_tickers(entries, watchlist, state, args.limit, args.all)
+
+    not_in_registry = sorted(watchlist - {e["ticker"] for e in entries})
 
     for e in selected:
         e["folder"] = resolve_folder(e["ticker"], e.get("path"))
@@ -264,7 +273,9 @@ def main(argv=None):
             last = state["last_included"].get(e["ticker"], "never")[:10]
             print(f"{e['ticker']:<8} {'yes' if e['thesis'] else 'NO':<7} {last:<12} {e['company']}")
         print(f"\n{len(selected)} of {len(entries)} registry tickers selected "
-              f"({len(watchlist)} watchlist-priority).")
+              f"({len(watchlist)} on Watchlist.md; scope: {'full registry' if args.all else 'watchlist only'}).")
+        if not_in_registry:
+            print(f"On Watchlist.md but NOT in registry (skipped): {', '.join(not_in_registry)}")
         return 0
 
     now = datetime.now(timezone.utc)
@@ -311,6 +322,7 @@ def main(argv=None):
                         if e["ticker"] not in {d["ticker"] for d in digest_tickers}
                         and e["ticker"] not in {x["ticker"] for x in errors}),
         "errors": errors,
+        "not_in_registry": not_in_registry,
         "tickers": digest_tickers,
     }
     os.makedirs(os.path.dirname(args.output), exist_ok=True)

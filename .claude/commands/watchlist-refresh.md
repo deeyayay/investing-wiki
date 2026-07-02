@@ -1,5 +1,5 @@
 ---
-description: Token-efficient daily watchlist refresh. A local script fetches news headlines for up to 50 registry tickers (zero model tokens), dedupes against a seen-cache, and pairs each ticker's headlines with its One-Line Thesis + Drift status. Claude only triages the resulting digest for thesis drift. Material items → signals.md; drift/conviction changes → analysis.md; compact daily summary → Output/Digest. Designed for a Claude Pro budget, 1–2 runs/day. Usage: /watchlist-refresh [--limit N] [--hours H] [--tickers CSV]
+description: Token-efficient daily watchlist refresh. A local script fetches news headlines for up to 50 registry tickers (zero model tokens), dedupes against a seen-cache, and pairs each ticker's headlines with its One-Line Thesis + Drift status. Claude only triages the resulting digest for thesis drift. Material items → signals.md; drift/conviction changes → analysis.md; compact daily summary → Output/Digest. Designed for a Claude Pro budget, 1–2 runs/day. Scans Watchlist.md tickers by default; --all widens to the full registry. Usage: /watchlist-refresh [--all] [--limit N] [--hours H] [--tickers CSV]
 allowed-tools: Bash(python3 scripts/watchlist_refresh_fetch.py:*), Read, Edit, Write
 ---
 
@@ -19,8 +19,12 @@ deep-pass queue (`/ticker-monitor --deep TICKER`) in the summary instead.
 python3 scripts/watchlist_refresh_fetch.py $ARGUMENTS
 ```
 
-Defaults: 50 tickers (Watchlist.md names first, then scored tickers, then
-least-recently-covered rotation), 36 h lookback, ≤5 unseen headlines/ticker.
+Default universe: **only tickers named in Watchlist.md** (resolved against
+Monitor Registry.yaml). `--all` widens to the full registry (Watchlist first,
+then scored, then least-recently-covered rotation). 36 h lookback, ≤5 unseen
+headlines/ticker, ≤50 tickers/run. Watchlist names missing from the registry
+are reported in the digest as `not_in_registry` — surface them in the summary
+with a `/add-ticker` pointer.
 
 ## Phase 2 — Read the digest
 
