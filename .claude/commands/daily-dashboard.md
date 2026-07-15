@@ -7,6 +7,8 @@ Deploys the dashboard to GitHub Pages via `gh-pages`. The HTML lives in `Investi
 **Dashboard URL:** `https://deeyayay.github.io/investing-wiki/`
 *GitHub Pages watches `gh-pages` — every push auto-deploys within ~1 minute.*
 
+**Ticker one-pager (no refresh step needed):** the ticker wiki page (L3) renders a *Financial Summary* panel — KPI tiles, revenue trajectory bars, EBIT margin line, segment mix, key subsidiaries — from the ticker's `facts.md` (`profile` / `financial_history` / `balance_sheet` / `segments` / `business_units` blocks). facts.md is fetched from raw.githubusercontent (master) at view time and parsed client-side, exactly like analysis.md/signals.md — so the panel is always current with the repo and needs **no** `--refresh-data` embedding. Tickers whose facts.md lacks those blocks simply don't show the panel (run `/ticker-monitor` to backfill).
+
 **Flags:**
 - *(none)* — deploy existing `index.html` to gh-pages as-is
 - `--refresh-data` — re-read source files, update the `DATA` block in `index.html`, then deploy
