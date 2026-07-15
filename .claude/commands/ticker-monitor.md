@@ -1,6 +1,6 @@
 ---
 description: Recurring update pass across all wiki ticker pages. Searches for new SEC filings, earnings, analyst coverage, and upcoming catalysts. Layered writes — earnings/filings go to facts.md (Layer 1), conviction/analyst/catalyst go to analysis.md (Layer 2), news and research log go to signals.md (Layer 3). Append-only. Run weekly or on-demand. Usage: /ticker-monitor [--force] [--dry-run] [--sector SECTOR] [--deep TICKER] [--news-only]
-allowed-tools: WebSearch, WebFetch, Read, Edit, Agent
+allowed-tools: WebSearch, WebFetch, Read, Edit, Agent, Bash
 ---
 
 # Ticker Monitor — Recurring Update Pass
@@ -36,7 +36,7 @@ For any `.md` file found directly in a sector folder (not inside a ticker subfol
 When `--deep TICKER` is run on a legacy ticker, perform the migration at the start of Phase 3:
 1. Read the existing `[TICKER].md` in full
 2. Create `[TICKER]/` subfolder
-3. Write `facts.md` — extract YAML from: management table rows, earnings table rows, SEC filings table rows; populate moat fields from Investment Thesis key moat line; set last_updated to today
+3. Write `facts.md` — extract YAML from: management table rows, earnings table rows, SEC filings table rows; populate moat fields from Investment Thesis key moat line; set last_updated to today. Include the visual-summary blocks (`profile`, `financial_history`, `balance_sheet`, `segments`, `business_units` — see `_facts-template.md`): for SEC filers run `python3 scripts/financials_backfill_fetch.py --ticker [TICKER] --cik [CIK]` and paste its output; segments/business_units from the Search 4 research
 4. Write `analysis.md` — move One-Line Thesis, Scoring Summary, Investment Thesis (including Thesis Drift block), Conviction Log, Cross-Ticker Signals, Catalyst Timeline, Analyst Coverage, Ecosystem Links
 5. Write `signals.md` — move News & Alpha Log, Social Mentions table, Research Log
 6. Delete the old `[TICKER].md`
@@ -138,7 +138,7 @@ Collect all agent results before Phase 3.
 
 ## Phase 3 — Layered writes
 
-For each ticker, process its agent result. Skip if `nothing_new: true`. If `--dry-run`, print planned writes instead.
+For each ticker, process its agent result. Skip if `nothing_new: true` — except the financial_history catch-up trigger below, which runs even on quiet tickers (a missing/empty `financial_history` block is itself the work). If `--dry-run`, print planned writes instead.
 
 ### facts.md — Layer 1 writes (earnings + filings only)
 
@@ -150,7 +150,25 @@ For each ticker, process its agent result. Skip if `nothing_new: true`. If `--dr
 
 **next_earnings:** If G1 or the per-ticker agent returned a future earnings date for this ticker, update the `next_earnings` field to that date (`"YYYY-MM-DD"`). If the existing value is already a future date and no newer date was found, leave it unchanged. If the date has now passed (≤ today), clear it to `null`. Also update the `next_earnings` field in Monitor Registry.yaml for the same ticker.
 
-Do not touch any other facts.md fields.
+**financial_history + balance_sheet (annual refresh):** Run only when one of these triggers fires — otherwise leave both blocks untouched:
+- a `new_filings` entry is an annual report (`10-K` / `20-F` / `40-F`), or
+- facts.md has no `financial_history` key or it is `[]` (ticker predates the schema — one-time catch-up), or
+- `--deep` mode.
+
+For SEC filers (CIK not null), run the zero-token fetcher:
+```
+python3 scripts/financials_backfill_fetch.py --ticker [TICKER] --cik [CIK]
+```
+Merge its output into facts.md:
+- **Append** `financial_history` rows for fiscal years not already present (insert in most-recent-first order). Never modify existing `estimate: false` rows.
+- **Replace** the `balance_sheet` block wholesale — it is a point-in-time snapshot, not a log.
+- If `profile.currency` is missing, set it from the script header comment.
+
+For foreign non-filers (CIK null): refresh only in `--deep` mode, from annual-report figures via web search (never estimate historical numbers; `null` for anything not found).
+
+**Estimate row:** if new guidance (from `new_earnings.guidance_next_b` or `--deep` Search 3) implies a materially different full-year outlook, **replace** the single `estimate: true` row (`source: "guidance"` or `"consensus"`). Once the actual fiscal year the estimate covered has been reported, the appended actual row supersedes it — delete the stale estimate row for that year.
+
+Do not touch any other facts.md fields. Skip the financial refresh entirely in `--news-only` mode.
 
 ### analysis.md — Layer 2 writes
 
@@ -234,7 +252,7 @@ Where Status: `Updated` / `No new data` / `Skipped (recent)` / `Migrated` / `Err
 
 - **Layered writes only.** Earnings/filings → facts.md YAML. Conviction/analyst/catalyst/thesis drift → analysis.md. News/research log → signals.md.
 - **Never read signals.md.** It is write-only during a monitor pass. Only the --news-only mode and ingest-sentiment append to it.
-- **Append only.** Never modify or delete existing YAML array entries or table rows.
+- **Append only.** Never modify or delete existing YAML array entries or table rows. Two sanctioned exceptions: the `balance_sheet` block is replaced wholesale (snapshot), and the single `estimate: true` row in `financial_history` is replaced on guidance changes / deleted once the actual year is reported. Reported (`estimate: false`) rows are never touched.
 - **No duplicates.** Check the existing array (facts.md) or table rows (analysis.md) before appending.
 - **Material news only.** Skip routine price moves, earnings whispers, articles recapping old news.
 - **Compact.** News ≤25 words. Analyst entries ≤15 words. Research Log one sentence.
