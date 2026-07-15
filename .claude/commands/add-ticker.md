@@ -109,6 +109,9 @@ If CIK is null, skip Search B and note `— (not an SEC filer)`.
 **Search C — Key metrics:**
 `[TICKER] [Company Name] revenue earnings gross margin P/B P/E forward guidance 2026`
 
+**Search D — Segments & structure (for the visual-summary blocks):**
+`[TICKER] [Company Name] business segments revenue breakdown subsidiaries 10-K`
+
 From the research results, extract:
 - One-line thesis (max 25 words, present tense, lead with core differentiation)
 - Business description and bull case (2–4 paragraphs)
@@ -117,6 +120,29 @@ From the research results, extract:
 - Execution track record (1–2 sentences)
 - Latest revenue, gross margin, forward P/E or P/B if available
 - Moat type, pricing power assessment, competitive intensity
+- Business segments (name + ~% of revenue + one-liner) from the latest 10-K/annual report
+- Named subsidiaries/operating units worth tracking (holdings/conglomerates only); flag the standout asset `crown_jewel`
+- Dividend policy and reporting currency
+
+---
+
+## Step 4b — Financial history backfill (zero-token script)
+
+Populates `financial_history` + `balance_sheet` for the ticker-page visual summary (revenue trajectory, EBIT margin evolution, KPI tiles).
+
+**If CIK is not null (SEC filer):** run the fetcher — it prints a ready-to-paste YAML snippet:
+
+```
+python3 scripts/financials_backfill_fetch.py --ticker [TICKER] --cik [CIK]
+```
+
+Use its `financial_history` and `balance_sheet` output verbatim in facts.md (Step 5). If the script errors (IFRS-only filer, network), fall back to the foreign-filer path below.
+
+**If CIK is null (foreign non-filer):** extract ~5 fiscal years of annual revenue, EBIT (operating income), and cash/debt from the company's annual reports via web search:
+`[Company Name] annual report revenue EBIT [year range]`
+Record figures in millions of the company's reporting currency; set `profile.currency` accordingly. Use `null` for anything not found — never estimate historical figures.
+
+**Both paths — add the forward estimate row:** from company guidance (preferred) or analyst consensus found in Step 4, append one row with `estimate: true`, `fy` = next fiscal year (e.g. `FY2027e` → use `FY2027`, `estimate: true` marks it), and `source: "guidance"` or `"consensus"`. Skip the row if neither exists.
 
 ---
 
@@ -141,6 +167,11 @@ cik: "[CIK or null]"
 exchange: [Exchange]
 sector: "[SECTOR]"
 
+profile:
+  currency: [USD or reporting currency from Step 4b]
+  fiscal_year_end: "[MM-DD or null]"
+  dividend: [none | paying | suspended | null]
+
 management:
   - role: CEO
     name: "[Name]"
@@ -150,6 +181,25 @@ management:
     name: "[Name]"
     ownership_pct: [% or null]
     notes: "[max 12 words]"
+
+financial_history:
+  [rows from Step 4b — script output verbatim for SEC filers, or web-researched
+   annual rows for foreign filers, plus the estimate: true forward row]
+
+balance_sheet:
+  as_of: "[YYYY-MM-DD or null]"
+  cash_m: [value or null]
+  debt_m: [value or null]
+  net_cash_m: [cash_m - debt_m, or null]
+
+segments:
+  - name: "[Segment Name]"
+    revenue_pct: [~% of latest FY revenue]
+    description: "[max 12 words]"
+  [largest first; [] if the company reports a single segment]
+
+business_units: []
+# populate only for holdings/conglomerates — {name, tag: crown_jewel|null, description}
 
 earnings: []
 
@@ -240,6 +290,7 @@ For new ticker:
 
    📁 Folder:    Investing/Wiki/Sectors/[SECTOR]/[TICKER]/
    📊 facts.md:  CIK [CIK] ([Exchange]) · moat: [type] · [pricing_power] pricing power
+   📈 Financials: [N] FY of history ([FYxxxx]–[FYxxxx]) + [estimate row? / no estimate] · [N] segments · cash [X]m [CCY]
    📝 analysis.md: One-Line Thesis + Investment Thesis + Management populated
    📡 signals.md: empty (ready for news + sentiment)
    📋 Registry:  Monitor Registry.yaml updated
@@ -254,7 +305,7 @@ For `--refresh-research`:
 ```
 ✅ [TICKER] — research refreshed
 
-   📊 facts.md:  management + moat + metrics updated
+   📊 facts.md:  management + moat + metrics + financial_history/balance_sheet/segments updated
    📝 analysis.md: One-Line Thesis + Investment Thesis updated
    📋 Registry:  score preserved (re-run /score-ticker to update)
 ```
@@ -264,7 +315,8 @@ For `--refresh-research`:
 ## Rules
 
 - **Never overwrite an existing three-layer folder.** If `facts.md` already exists and `--refresh-research` is not set, abort (Step 2).
-- **`--refresh-research` updates, never deletes.** It rewrites One-Line Thesis, Investment Thesis, and management rows in facts.md. It never touches Conviction Log, Cross-Ticker Signals, Scoring Summary, or Research Log.
+- **`--refresh-research` updates, never deletes.** It rewrites One-Line Thesis, Investment Thesis, and management rows in facts.md, and refreshes `financial_history` / `balance_sheet` / `segments` (re-run Step 4b). It never touches Conviction Log, Cross-Ticker Signals, Scoring Summary, or Research Log.
+- **Historical figures are facts, estimates are labeled.** `financial_history` rows come from filings/annual reports (script output or reported numbers) — never model or extrapolate them. Exactly one row may carry `estimate: true`; it is the only row that gets replaced rather than appended when guidance changes.
 - **YAML must be valid.** All string values with special characters must be quoted. Null values use `null`, not `—`.
 - **Fail gracefully.** If EDGAR is unavailable, continue with `null` for CIK and note the source. If web search returns thin results, write what's available and note the gap in signals.md Research Log.
 - **No old-format creation.** Never create a single `[TICKER].md` file. Always use the three-file folder structure.

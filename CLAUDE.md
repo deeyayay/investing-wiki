@@ -38,6 +38,7 @@ Investing/
         _Sector Framework.md ← sector thesis — written LAST, after map + matrix exist
 scripts/
   watchlist_refresh_fetch.py ← zero-token news fetcher for /watchlist-refresh (stdlib only)
+  financials_backfill_fetch.py ← zero-token EDGAR XBRL annual financials fetcher for facts.md financial_history/balance_sheet (stdlib only)
 gemini-scribe/
   Prompts/                   ← reusable prompt templates
   Scheduled-Tasks/           ← scheduled task state (JSON)
