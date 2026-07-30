@@ -8,7 +8,8 @@ Investment research knowledge base. All paths are relative to the repo root.
 Investing/
   Raw/
     Inbox/Tweets.md          ← staging area for sentiment ingestion
-    Inbox/watchlist-refresh-digest.json ← headline digest written by scripts/watchlist_refresh_fetch.py
+    Inbox/watchlist-refresh-digest.json ← headline (+ optional social) digest written by scripts/watchlist_refresh_fetch.py
+    Inbox/social-pulse-digest.json      ← StockTwits/Reddit digest when scripts/social_pulse.py runs standalone
     Sentiment/               ← individual signal notes (one .md per signal)
     Filings/                 ← SEC filing documents by ticker
   Output/
@@ -38,6 +39,8 @@ Investing/
         _Sector Framework.md ← sector thesis — written LAST, after map + matrix exist
 scripts/
   watchlist_refresh_fetch.py ← zero-token news fetcher for /watchlist-refresh (stdlib only)
+  social_pulse.py            ← zero-token StockTwits + Reddit fetcher; folded in via --social
+  test_social_pulse.py       ← offline fixture test for the --social merge path
 gemini-scribe/
   Prompts/                   ← reusable prompt templates
   Scheduled-Tasks/           ← scheduled task state (JSON)
@@ -68,7 +71,7 @@ Each ticker has three files in a dedicated folder. Skills read only the layers t
 | `/add-ticker` | `/add-ticker TICKER [--sector "Sector"] [--refresh-research]` | Onboard a new company: creates three-layer folder, registers in Monitor Registry.yaml, populates facts.md + analysis.md with research |
 | `/stock-research-all` | `/stock-research-all [--refresh] [--sector SECTOR]` | Batch refresh facts.md + analysis.md thesis across all tickers (5 concurrent agents) |
 | `/ticker-monitor` | `/ticker-monitor [--force] [--dry-run] [--sector SECTOR] [--deep TICKER] [--news-only]` | Weekly update pass: earnings/filings → facts.md; conviction/analyst/catalyst → analysis.md; news → signals.md. Use `--news-only` for daily lightweight news pass |
-| `/watchlist-refresh` | `/watchlist-refresh [--all] [--limit N] [--hours H] [--tickers CSV]` | **Preferred daily pass.** Script fetches news RSS for Watchlist.md tickers (zero model tokens; `--all` = full registry, ≤50/run) + dedupes; Claude triages headlines against each One-Line Thesis for drift. Material → signals.md; drift → analysis.md; summary → Output/Digest. Pro-plan budget, 1–2×/day |
+| `/watchlist-refresh` | `/watchlist-refresh [--all] [--social] [--limit N] [--hours H] [--tickers CSV]` | **Preferred daily pass.** Script fetches news RSS for Watchlist.md tickers (zero model tokens; `--all` = full registry, ≤50/run) + dedupes; Claude triages headlines against each One-Line Thesis for drift. `--social` folds in StockTwits + Reddit, flagging chatter spikes / sentiment flips / Reddit traction. Material → signals.md; social → Social Mentions; drift → analysis.md; summary → Output/Digest. Pro-plan budget, 1–2×/day |
 | `/ingest-sentiment` | `/ingest-sentiment [--source article\|musing] [--author "@handle"]` | Parse Tweets.md into signal notes; update Social Mentions in signals.md |
 | `/score-ticker` | `/score-ticker TICKER [--refresh]` | Score on 6-criterion rubric; writes Scoring Summary to analysis.md, updates facts.md metrics + Monitor Registry.yaml |
 | `/build-customer-matrix` | `/build-customer-matrix "Sector Name"` | Build supplier × end-customer dependency matrix from facts.md + analysis.md; writes `_Customer Matrix.md` |
@@ -149,5 +152,7 @@ Deployment surface:   Edge & Physical AI (right) — physical-world deployment +
 - All skills are append-only on existing content (YAML arrays, markdown tables, log sections). Never rewrite or delete existing entries.
 - Foreign-listed tickers (SIVE, POET) are not SEC filers — `cik: null` in facts.md; skip EDGAR steps.
 - `ingest-sentiment` uses the Obsidian MCP tools if available; falls back to Read/Write otherwise.
+- **Social signal is sentiment, not fact.** StockTwits volume/bull% and Reddit scores measure attention. They belong in signals.md Social Mentions and may queue a deep pass; they never by themselves move a Conviction Log entry or Drift status in analysis.md.
+- StockTwits' keyless symbol stream and Reddit's `.json` listings are undocumented and can gate access without notice. `social_pulse.py` degrades to a per-source error rather than failing the run; diagnose with `python3 scripts/social_pulse.py --probe TICKER`. StockTwits is skipped for foreign primary listings (BESI, SIVE, XFAB, 285A.T) — those still get a Reddit pass under their company name.
 - Stub ticker pages (social mentions only, not yet in Monitor Registry.yaml) have a `signals.md` file with a note to run `/add-ticker` to onboard fully.
 - **Migration:** Existing single-file `[TICKER].md` pages are old-format. Run `/ticker-monitor --deep TICKER` to migrate each one to the three-layer structure. Old files are detected automatically by skills and flagged with a migration notice.

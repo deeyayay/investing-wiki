@@ -8,13 +8,16 @@ Does every mechanical step outside the model:
   3. Extracts the One-Line Thesis + Drift status from analysis.md.
   4. Fetches Google News RSS headlines per ticker (last --hours, default 36).
   5. Dedupes against a seen-headline cache so twice-daily runs stay cheap.
-  6. Writes ONE compact digest JSON for Claude to triage.
+  6. With --social, folds in StockTwits + Reddit chatter (see social_pulse.py).
+  7. Writes ONE compact digest JSON for Claude to triage.
 
-Only tickers with new, unseen headlines appear in the digest. Stdlib only.
+Only tickers with new, unseen headlines appear in the digest — plus, under
+--social, tickers whose chatter is genuinely unusual even when the news was
+quiet. Stdlib only.
 
 Usage:
   python3 scripts/watchlist_refresh_fetch.py [--all] [--limit 50] [--hours 36]
-      [--max-per-ticker 5] [--tickers CRDO,SNDK] [--dry-run]
+      [--max-per-ticker 5] [--tickers CRDO,SNDK] [--social] [--dry-run]
 
 Output:  Investing/Raw/Inbox/watchlist-refresh-digest.json  (overwritten each run)
 State:   Investing/Raw/Inbox/.watchlist-refresh-state.json  (seen cache + rotation)
@@ -92,7 +95,7 @@ def parse_registry(path):
             m = field_re.match(line)
             if m:
                 key, val = m.group(1), m.group(2).strip().strip('"')
-                if key in ("company", "sector", "path", "score"):
+                if key in ("company", "sector", "path", "score", "exchange"):
                     current[key] = None if val in ("null", "") else val
     return [t for t in tickers if t.get("company")]
 
@@ -247,9 +250,20 @@ def main(argv=None):
     ap.add_argument("--tickers", help="comma-separated override list (skips selection logic)")
     ap.add_argument("--all", action="store_true",
                     help="scan the full registry instead of just Watchlist.md tickers")
+    ap.add_argument("--social", action="store_true",
+                    help="also fetch StockTwits + Reddit chatter into the same digest")
+    ap.add_argument("--no-stocktwits", action="store_true", help="with --social: skip StockTwits")
+    ap.add_argument("--no-reddit", action="store_true", help="with --social: skip Reddit")
+    ap.add_argument("--social-pause", type=float, default=1.0,
+                    help="with --social: seconds between tickers (default 1.0)")
     ap.add_argument("--dry-run", action="store_true", help="resolve + select only; no network, no writes")
     ap.add_argument("--output", default=DIGEST_PATH, help="digest path (default %(default)s)")
     args = ap.parse_args(argv)
+
+    if not args.social and (args.no_stocktwits or args.no_reddit):
+        ap.error("--no-stocktwits/--no-reddit only apply to --social runs")
+    if args.social and args.no_stocktwits and args.no_reddit:
+        ap.error("--social with both sources disabled leaves nothing to fetch")
 
     entries = parse_registry(REGISTRY)
     watchlist = parse_watchlist_tickers(WATCHLIST)
@@ -280,13 +294,13 @@ def main(argv=None):
 
     now = datetime.now(timezone.utc)
     today = now.strftime("%Y-%m-%d")
-    digest_tickers, errors = [], []
+    news_by_ticker, errors = {}, []
     for e in selected:
         url = news_query_url(e["company"], e["ticker"], args.hours)
         try:
             items = parse_rss_items(fetch_rss(url), args.hours)
         except Exception as exc:  # network errors must never kill the batch
-            errors.append({"ticker": e["ticker"], "error": str(exc)[:120]})
+            errors.append({"ticker": e["ticker"], "source": "news", "error": str(exc)[:120]})
             continue
         fresh = []
         for item in items:
@@ -301,37 +315,86 @@ def main(argv=None):
                 break
         state["last_included"][e["ticker"]] = today
         if fresh:
-            folder_rel = os.path.relpath(e["folder"], REPO_ROOT) if e["folder"] else None
-            digest_tickers.append({
-                "ticker": e["ticker"],
-                "company": e["company"],
-                "sector": e.get("sector"),
-                "thesis": e["thesis"],
-                "drift": e["drift"],
-                "folder": folder_rel,
-                "headlines": fresh,
-            })
+            news_by_ticker[e["ticker"]] = fresh
         time.sleep(0.5)
 
+    # Social pass is opt-in and additive: it can decorate a ticker that already
+    # has headlines, or pull in one that was quiet on news but is spiking on
+    # chatter — that combination is the whole point of running it.
+    social_by_ticker = {}
+    if args.social:
+        import social_pulse  # lazy: keeps the news-only path import-free
+
+        social_state = social_pulse.load_state()
+        social_by_ticker, social_errors = social_pulse.collect(
+            selected, args.hours, social_state, today,
+            use_stocktwits=not args.no_stocktwits,
+            use_reddit=not args.no_reddit,
+            pause=args.social_pause,
+        )
+        errors.extend(social_errors)
+        social_pulse.save_state(social_state)
+
+    digest_tickers = []
+    for e in selected:
+        ticker = e["ticker"]
+        fresh = news_by_ticker.get(ticker)
+        social = social_by_ticker.get(ticker)
+        if not fresh and not social:
+            continue
+        # Quoted messages enrich a ticker that already has news, but they must
+        # not resurrect a news-quiet one on their own: any liquid ticker always
+        # has *someone* posting, and the seen-cache would just walk further
+        # down the message pool every run. Only a flag or a real Reddit thread
+        # earns a quiet ticker a slot.
+        if not fresh and not (social.get("flags") or social.get("reddit")):
+            continue
+        entry = {
+            "ticker": ticker,
+            "company": e["company"],
+            "sector": e.get("sector"),
+            "thesis": e["thesis"],
+            "drift": e["drift"],
+            "folder": os.path.relpath(e["folder"], REPO_ROOT) if e["folder"] else None,
+            "headlines": fresh or [],
+        }
+        if social:
+            entry["social"] = {k: v for k, v in social.items()
+                               if k in ("flags", "stocktwits", "reddit")}
+        digest_tickers.append(entry)
+
+    covered = {d["ticker"] for d in digest_tickers} | {x["ticker"] for x in errors}
     digest = {
         "generated": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
         "window_hours": args.hours,
         "scanned": len(selected),
-        "with_news": len(digest_tickers),
-        "quiet": sorted(e["ticker"] for e in selected
-                        if e["ticker"] not in {d["ticker"] for d in digest_tickers}
-                        and e["ticker"] not in {x["ticker"] for x in errors}),
+        "with_news": len(news_by_ticker),
+        "quiet": sorted(e["ticker"] for e in selected if e["ticker"] not in covered),
         "errors": errors,
         "not_in_registry": not_in_registry,
         "tickers": digest_tickers,
     }
+    if args.social:
+        # Counted off the digest, not off the raw collect result — blocks the
+        # merge dropped as "chatty, not unusual" are not signal.
+        kept_social = [d["ticker"] for d in digest_tickers if "social" in d]
+        digest["social_scanned"] = True
+        digest["with_social"] = len(kept_social)
+        digest["social_flagged"] = sorted(
+            t for t in kept_social if social_by_ticker[t].get("flags")
+        )
     os.makedirs(os.path.dirname(args.output), exist_ok=True)
     with open(args.output, "w", encoding="utf-8") as f:
         json.dump(digest, f, indent=1, ensure_ascii=False)
     save_state(state)
 
-    print(f"Scanned {len(selected)} tickers → {len(digest_tickers)} with new headlines, "
-          f"{len(errors)} fetch errors. Digest: {os.path.relpath(args.output, REPO_ROOT)}")
+    summary = (f"Scanned {len(selected)} tickers → {len(news_by_ticker)} with new headlines")
+    if args.social:
+        summary += (f", {digest['with_social']} with social signal "
+                    f"({len(digest['social_flagged'])} flagged)")
+    summary += (f", {len(errors)} fetch errors. "
+                f"Digest: {os.path.relpath(args.output, REPO_ROOT)}")
+    print(summary)
     return 0
 
 
