@@ -67,14 +67,24 @@ Each ticker has three files in a dedicated folder. Skills read only the layers t
 
 ## Available Skills
 
-Three skills. Everything else was archived on 2026-08-23 to
-`.claude/archived-commands/` — unloaded, not deleted; see the README there.
+Four skills — three for the loop, one for the surface you read it on. Everything else was
+archived on 2026-08-23 to `.claude/archived-commands/` — unloaded, not deleted; see the README.
 
 | Skill | Usage | When |
 |-------|-------|------|
 | `/brief` | `/brief [--all] [--hours H] [--tickers CSV] [--no-topics] [--no-push]` | **The daily pass.** Script fetches news + SEC filings + topic themes at zero model tokens; Claude triages the digest against each One-Line Thesis. Material → signals.md, drift → analysis.md, summary → Output/Digest. Also files social signals staged in Tweets.md. Never searches. |
 | `/dig` | `/dig TICKER [--filings-only] [--score] [--no-push]` | On-demand deep dive when `/brief` flags something a headline cannot settle. Reads actual filings, re-tests the thesis leg by leg. The expensive one — use it on a handful of names. |
 | `/track` | `/track TICKER [--sector "S"] [--tier core\|rocket\|compounder] [--note "why"]` | Put a name on the watchlist: registry entry + one-file page + Watchlist row. No three-layer scaffolding, no research pass. |
+| `/dashboard` | `/dashboard [--refresh-data] [--stack-only]` | Deploy/refresh the GitHub Pages dashboard — **the read surface.** The 12-layer stack map, sector drill-downs, ticker pages, and the brief's digest. Phone-friendly. |
+
+### Output — where this gets read
+
+`https://deeyayay.github.io/investing-wiki/` is the single destination. The Watchlist tab fetches
+the digest from `master` at page load, so **a `/brief` push updates the deployed dashboard with no
+redeploy.** There is no Slack/Notion/Obsidian mirror by design — one surface, nothing to sync.
+
+Consequence: changing the digest schema in `scripts/watchlist_refresh_fetch.py` without updating
+the tab in `index.html` makes a section *silently vanish* rather than error. Keep them in step.
 
 ### The loop
 
