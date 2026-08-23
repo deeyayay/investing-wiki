@@ -8,7 +8,7 @@
 # To add a ticker: /add-ticker TICKER [--sector "Sector Name"]
 # To add a candidate: append to the sector's candidates list below.
 
-last_updated: "2026-06-26"
+last_updated: "2026-08-23"
 
 tickers:
   # ── Insurance AI (L01 sub) ───────────────────────────────────────────────
@@ -16,8 +16,9 @@ tickers:
     company: "Lemonade, Inc."
     cik: "0001691421"
     exchange: NYSE
-    sector: "Insurance AI"
-    path: "Investing/Wiki/Sectors/Insurance AI/LMND"
+    sector: "Application"
+    path: "Investing/Wiki/Sectors/L01 Application/Insurance AI/LMND"
+    layout: three-layer
     score: null
     next_earnings: null
     notes: "AI-native full-stack P&C + life carrier; data flywheel underwriting; Jim claims bot; targeting adj. EBITDA Q4 2026"
@@ -28,7 +29,8 @@ tickers:
     cik: "0001099590"
     exchange: NASDAQ
     sector: "Application"
-    path: "Investing/Wiki/Sectors/Application/MELI"
+    path: "Investing/Wiki/Sectors/L01 Application/AI-Native Fintech & Commerce/MELI.md"
+    layout: legacy
     score: null
     next_earnings: "2026-08-03"
 
@@ -38,6 +40,7 @@ tickers:
     exchange: NASDAQ
     sector: "Application"
     path: "Investing/Wiki/Sectors/Application/HOOD"
+    layout: unpaged
     score: null
     next_earnings: "2026-08-05"
 
@@ -46,7 +49,8 @@ tickers:
     cik: "0001818874"
     exchange: NASDAQ
     sector: "Application"
-    path: "Investing/Wiki/Sectors/Application/SOFI"
+    path: "Investing/Wiki/Sectors/L01 Application/AI-Native Fintech & Commerce/SOFI"
+    layout: three-layer
     score: 9.0
     next_earnings: "2026-08-04"
     # migrated to three-layer structure 2026-06-07
@@ -56,8 +60,9 @@ tickers:
     company: "Quanterix Corp"
     cik: "0001503274"
     exchange: NASDAQ
-    sector: "L01 Application"
+    sector: "Application"
     path: "Investing/Wiki/Sectors/L01 Application/AI Drug Discovery/QTRX"
+    layout: three-layer
     score: 6.5
     next_earnings: "2026-08-06"
 
@@ -65,8 +70,9 @@ tickers:
     company: "AbCellera Biologics Inc."
     cik: "0001703057"
     exchange: NASDAQ
-    sector: "L01 Application"
+    sector: "Application"
     path: "Investing/Wiki/Sectors/L01 Application/AI Drug Discovery/ABCL"
+    layout: three-layer
     score: null
     next_earnings: null
 
@@ -76,7 +82,8 @@ tickers:
     cik: "0001704720"
     exchange: NASDAQ
     sector: "Cloud Infrastructure"
-    path: "Investing/Wiki/Sectors/Cloud Infrastructure/IREN"
+    path: "Investing/Wiki/Sectors/L04 Cloud Infrastructure/NeoClouds & AI-Specialized/IREN.md"
+    layout: legacy
     score: null
     next_earnings: "2026-09-16"
 
@@ -85,7 +92,8 @@ tickers:
     cik: "0001018724"
     exchange: NASDAQ
     sector: "Cloud Infrastructure"
-    path: "Investing/Wiki/Sectors/Cloud Infrastructure/AMZN"
+    path: "Investing/Wiki/Sectors/L04 Cloud Infrastructure/Hyperscaler Clouds/AMZN"
+    layout: three-layer
     score: null
 
   GOOGL:
@@ -93,15 +101,17 @@ tickers:
     cik: "0001652044"
     exchange: NASDAQ
     sector: "Cloud Infrastructure"
-    path: "Investing/Wiki/Sectors/Cloud Infrastructure/GOOGL"
+    path: "Investing/Wiki/Sectors/L04 Cloud Infrastructure/Hyperscaler Clouds/GOOGL"
+    layout: three-layer
     score: null
 
   ANET:
     company: "Arista Networks"
     cik: "0001313925"
     exchange: NYSE
-    sector: "Cloud Infrastructure"
-    path: "Investing/Wiki/Sectors/Cloud Infrastructure/ANET"
+    sector: "Compute Hardware"
+    path: "Investing/Wiki/Sectors/L05 Compute Hardware/Networking ASICs/ANET"
+    layout: three-layer
     score: 8.0
     next_earnings: "2026-08-03"
 
@@ -110,7 +120,8 @@ tickers:
     cik: "0001793309"
     exchange: NYSE
     sector: "Cloud Infrastructure"
-    path: "Investing/Wiki/Sectors/Cloud Infrastructure/VRT"
+    path: "Investing/Wiki/Sectors/L04 Cloud Infrastructure/Data Center Facility/VRT"
+    layout: three-layer
     score: 7.5
     next_earnings: "2026-08-05"
     # scored 2026-06-17; migrated to three-layer structure
@@ -120,7 +131,8 @@ tickers:
     cik: "0001375365"
     exchange: NASDAQ
     sector: "Cloud Infrastructure"
-    path: "Investing/Wiki/Sectors/Cloud Infrastructure/SMCI"
+    path: "Investing/Wiki/Sectors/L04 Cloud Infrastructure/Data Center Facility/SMCI.md"
+    layout: legacy
     score: null
     next_earnings: "2026-08-11"
 
@@ -128,8 +140,9 @@ tickers:
     company: "Everpure Inc. (fka Pure Storage)"
     cik: "0001474432"
     exchange: NYSE
-    sector: "Cloud Infrastructure"
-    path: "Investing/Wiki/Sectors/Cloud Infrastructure/P"
+    sector: "Edge & Physical AI"
+    path: "Investing/Wiki/Sectors/Edge & Physical AI/Perception Layer/P.md"
+    layout: legacy
     score: null
     next_earnings: null
 
@@ -138,7 +151,8 @@ tickers:
     cik: "0001137789"
     exchange: NASDAQ
     sector: "Cloud Infrastructure"
-    path: "Investing/Wiki/Sectors/Cloud Infrastructure/STX"
+    path: "Investing/Wiki/Sectors/L04 Cloud Infrastructure/Data Center Facility/STX"
+    layout: three-layer
     score: null
     next_earnings: null
 
@@ -147,7 +161,8 @@ tickers:
     cik: "0002090646"
     exchange: NASDAQ
     sector: "Cloud Infrastructure"
-    path: "Investing/Wiki/Sectors/Cloud Infrastructure/BRUN"
+    path: "Investing/Wiki/Sectors/L04 Cloud Infrastructure/NeoClouds & AI-Specialized/BRUN"
+    layout: three-layer
     score: 7.5
     next_earnings: "2026-09-02"
     # migrated to three-layer structure 2026-06-07
@@ -157,8 +172,9 @@ tickers:
     company: "LPKF Laser & Electronics SE"
     cik: null
     exchange: "XETRA (Frankfurt)"
-    sector: "Compute Hardware"
-    path: "Investing/Wiki/Sectors/Compute Hardware/LPK"
+    sector: "Advanced Packaging"
+    path: "Investing/Wiki/Sectors/L08 Advanced Packaging/FC-BGA Substrates/LPK"
+    layout: three-layer
     score: 6.5
     next_earnings: "2026-07-23"
     notes: "Sole-source LIDE glass substrate equipment; NEXAR platform; CEO 70% share target; HVM ramp 2027"
@@ -168,7 +184,8 @@ tickers:
     cik: "0001045810"
     exchange: NASDAQ
     sector: "Compute Hardware"
-    path: "Investing/Wiki/Sectors/Compute Hardware/NVDA"
+    path: "Investing/Wiki/Sectors/L05 Compute Hardware/Training GPUs/NVDA"
+    layout: three-layer
     score: 9.5
     next_earnings: "2026-08-26"
     # migrated to three-layer structure 2026-06-07
@@ -178,7 +195,8 @@ tickers:
     cik: "0000002488"
     exchange: NASDAQ
     sector: "Compute Hardware"
-    path: "Investing/Wiki/Sectors/Compute Hardware/AMD"
+    path: "Investing/Wiki/Sectors/L05 Compute Hardware/Training GPUs/AMD"
+    layout: three-layer
     score: null
 
   INTC:
@@ -186,7 +204,8 @@ tickers:
     cik: "0000050863"
     exchange: NASDAQ
     sector: "Compute Hardware"
-    path: "Investing/Wiki/Sectors/Compute Hardware/INTC"
+    path: "Investing/Wiki/Sectors/L05 Compute Hardware/Server CPUs/INTC"
+    layout: three-layer
     score: 6.5
     next_earnings: null
 
@@ -195,7 +214,8 @@ tickers:
     cik: "0001058057"
     exchange: NASDAQ
     sector: "Compute Hardware"
-    path: "Investing/Wiki/Sectors/Compute Hardware/MRVL"
+    path: "Investing/Wiki/Sectors/L05 Compute Hardware/Networking ASICs/MRVL"
+    layout: three-layer
     score: 7.5
     next_earnings: "2026-08-27"
 
@@ -204,7 +224,8 @@ tickers:
     cik: "0001821769"
     exchange: NASDAQ
     sector: "Compute Hardware"
-    path: "Investing/Wiki/Sectors/Compute Hardware/NVTS"
+    path: "Investing/Wiki/Sectors/L05 Compute Hardware/Power Management/NVTS.md"
+    layout: legacy
     score: null
     next_earnings: "2026-08-17"
 
@@ -213,7 +234,8 @@ tickers:
     cik: null
     exchange: "XETRA (Frankfurt)"
     sector: "Compute Hardware"
-    path: "Investing/Wiki/Sectors/Compute Hardware/IFX"
+    path: "Investing/Wiki/Sectors/L05 Compute Hardware/Power Management/IFX"
+    layout: three-layer
     score: null
     next_earnings: null
 
@@ -222,7 +244,8 @@ tickers:
     cik: "0001280452"
     exchange: NASDAQ
     sector: "Compute Hardware"
-    path: "Investing/Wiki/Sectors/Compute Hardware/MPWR"
+    path: "Investing/Wiki/Sectors/L05 Compute Hardware/Power Management/MPWR"
+    layout: three-layer
     score: null
     next_earnings: null
     notes: "Fabless PMIC designer; vertical power modules into NVIDIA board power. Anchors Power Management ICs & Gate Drivers tier; closes Power-rail PMIC box."
@@ -233,7 +256,8 @@ tickers:
     cik: "0000723125"
     exchange: NASDAQ
     sector: "Memory"
-    path: "Investing/Wiki/Sectors/Memory/MU"
+    path: "Investing/Wiki/Sectors/L06 Memory/HBM/MU"
+    layout: three-layer
     score: 6.5
     next_earnings: "2026-06-24"
     # migrated to three-layer structure 2026-06-17
@@ -243,7 +267,8 @@ tickers:
     cik: "0001110803"
     exchange: NASDAQ
     sector: "Memory"
-    path: "Investing/Wiki/Sectors/Memory/SNDK"
+    path: "Investing/Wiki/Sectors/L06 Memory/NAND Flash/SNDK"
+    layout: three-layer
     score: 8.5
     next_earnings: "2026-07-30"
 
@@ -252,7 +277,8 @@ tickers:
     cik: null
     exchange: "TSE (Tokyo) — Prime Market"
     sector: "Memory"
-    path: "Investing/Wiki/Sectors/Memory/285A.T"
+    path: "Investing/Wiki/Sectors/L06 Memory/HBM/285A.T"
+    layout: three-layer
     score: null
     next_earnings: null
 
@@ -262,7 +288,8 @@ tickers:
     cik: "0001807794"
     exchange: NASDAQ
     sector: "Interconnect"
-    path: "Investing/Wiki/Sectors/Interconnect/CRDO"
+    path: "Investing/Wiki/Sectors/L07 Interconnect/High-Speed Connectivity ICs/CRDO"
+    layout: three-layer
     score: 8.0
     next_earnings: "2026-09-09"
     # migrated to three-layer structure 2026-06-07
@@ -272,7 +299,8 @@ tickers:
     cik: "0001736297"
     exchange: NASDAQ
     sector: "Interconnect"
-    path: "Investing/Wiki/Sectors/Interconnect/ALAB"
+    path: "Investing/Wiki/Sectors/L07 Interconnect/High-Speed Connectivity ICs/ALAB.md"
+    layout: legacy
     score: null
     next_earnings: "2026-08-11"
 
@@ -281,7 +309,8 @@ tickers:
     cik: "0000820318"
     exchange: NYSE
     sector: "Interconnect"
-    path: "Investing/Wiki/Sectors/Interconnect/COHR"
+    path: "Investing/Wiki/Sectors/L07 Interconnect/Pluggable Optical Transceivers/COHR.md"
+    layout: legacy
     score: null
     next_earnings: "2026-08-13"
 
@@ -290,7 +319,8 @@ tickers:
     cik: "0001633978"
     exchange: NASDAQ
     sector: "Interconnect"
-    path: "Investing/Wiki/Sectors/Interconnect/LITE"
+    path: "Investing/Wiki/Sectors/L07 Interconnect/Pluggable Optical Transceivers/LITE.md"
+    layout: legacy
     score: null
     next_earnings: "2026-08-18"
 
@@ -299,7 +329,8 @@ tickers:
     cik: "0001408710"
     exchange: NYSE
     sector: "Interconnect"
-    path: "Investing/Wiki/Sectors/Interconnect/FN"
+    path: "Investing/Wiki/Sectors/L07 Interconnect/Pluggable Optical Transceivers/FN.md"
+    layout: legacy
     score: null
     next_earnings: "2026-08-24"
 
@@ -308,7 +339,8 @@ tickers:
     cik: "0000936395"
     exchange: NYSE
     sector: "Interconnect"
-    path: "Investing/Wiki/Sectors/Interconnect/CIEN"
+    path: "Investing/Wiki/Sectors/L07 Interconnect/Pluggable Optical Transceivers/CIEN.md"
+    layout: legacy
     score: null
     next_earnings: "2026-09-03"
 
@@ -317,7 +349,8 @@ tickers:
     cik: "0000912093"
     exchange: NASDAQ
     sector: "Interconnect"
-    path: "Investing/Wiki/Sectors/Interconnect/VIAV"
+    path: "Investing/Wiki/Sectors/L07 Interconnect/Pluggable Optical Transceivers/VIAV.md"
+    layout: legacy
     score: null
     next_earnings: null
 
@@ -326,7 +359,8 @@ tickers:
     cik: "0001158114"
     exchange: NASDAQ
     sector: "Interconnect"
-    path: "Investing/Wiki/Sectors/Interconnect/AAOI"
+    path: "Investing/Wiki/Sectors/L07 Interconnect/Pluggable Optical Transceivers/AAOI.md"
+    layout: legacy
     score: null
     next_earnings: "2026-08-06"
 
@@ -335,7 +369,8 @@ tickers:
     cik: "0001325964"
     exchange: NASDAQ
     sector: "Interconnect"
-    path: "Investing/Wiki/Sectors/Interconnect/LWLG"
+    path: "Investing/Wiki/Sectors/L07 Interconnect/External Light Sources (CW Lasers)/LWLG.md"
+    layout: legacy
     score: null
     next_earnings: "2026-08-18"
 
@@ -344,7 +379,8 @@ tickers:
     cik: "0001124796"
     exchange: NASDAQ
     sector: "Interconnect"
-    path: "Investing/Wiki/Sectors/Interconnect/LASR"
+    path: "Investing/Wiki/Sectors/L07 Interconnect/External Light Sources (CW Lasers)/LASR.md"
+    layout: legacy
     score: null
     next_earnings: "2026-08-06"
 
@@ -353,7 +389,8 @@ tickers:
     cik: null
     exchange: "Nasdaq Stockholm"
     sector: "Interconnect"
-    path: "Investing/Wiki/Sectors/Interconnect/SIVE"
+    path: "Investing/Wiki/Sectors/L07 Interconnect/External Light Sources (CW Lasers)/SIVE.md"
+    layout: legacy
     score: 5.5
     next_earnings: null
 
@@ -362,7 +399,8 @@ tickers:
     cik: null
     exchange: "TSX Venture"
     sector: "Interconnect"
-    path: "Investing/Wiki/Sectors/Interconnect/POET"
+    path: "Investing/Wiki/Sectors/L07 Interconnect/External Light Sources (CW Lasers)/POET.md"
+    layout: legacy
     score: null
     next_earnings: null
 
@@ -371,7 +409,8 @@ tickers:
     cik: null
     exchange: "TPEX (Taiwan)"
     sector: "Interconnect"
-    path: "Investing/Wiki/Sectors/Interconnect/FOCI"
+    path: "Investing/Wiki/Sectors/L07 Interconnect/External Light Sources (CW Lasers)/FOCI.md"
+    layout: legacy
     score: null
     next_earnings: null
 
@@ -380,7 +419,8 @@ tickers:
     cik: null
     exchange: "TSE (Tokyo)"
     sector: "Interconnect"
-    path: "Investing/Wiki/Sectors/Interconnect/6965.T"
+    path: "Investing/Wiki/Sectors/L07 Interconnect/Silicon Photonics Engines/6965.T.md"
+    layout: legacy
     score: null
     next_earnings: null
 
@@ -389,7 +429,8 @@ tickers:
     cik: null
     exchange: "Euronext Milan"
     sector: "Interconnect"
-    path: "Investing/Wiki/Sectors/Interconnect/PRY.MI"
+    path: "Investing/Wiki/Sectors/L07 Interconnect/Coherent Optical Transport/PRY.MI.md"
+    layout: legacy
     score: null
     next_earnings: null
 
@@ -398,7 +439,8 @@ tickers:
     cik: null
     exchange: "TSE (Tokyo)"
     sector: "Interconnect"
-    path: "Investing/Wiki/Sectors/Interconnect/5801.T"
+    path: "Investing/Wiki/Sectors/L07 Interconnect/Pluggable Optical Transceivers/5801.T.md"
+    layout: legacy
     score: null
     next_earnings: null
 
@@ -407,7 +449,8 @@ tickers:
     cik: null
     exchange: "TWSE (Taiwan)"
     sector: "Interconnect"
-    path: "Investing/Wiki/Sectors/Interconnect/6451.TW"
+    path: "Investing/Wiki/Sectors/L07 Interconnect/Pluggable Optical Transceivers/6451.TW"
+    layout: three-layer
     score: 5.5
     next_earnings: "2026-07-31"
 
@@ -416,7 +459,8 @@ tickers:
     cik: null
     exchange: "TSE (Tokyo)"
     sector: "Interconnect"
-    path: "Investing/Wiki/Sectors/Interconnect/6841.T"
+    path: "Investing/Wiki/Sectors/L07 Interconnect/Silicon Photonics Engines/6841.T.md"
+    layout: legacy
     score: null
     next_earnings: null
 
@@ -425,7 +469,8 @@ tickers:
     cik: null
     exchange: "TSE (Tokyo)"
     sector: "Interconnect"
-    path: "Investing/Wiki/Sectors/Interconnect/6754.T"
+    path: "Investing/Wiki/Sectors/L07 Interconnect/Coherent Optical Transport/6754.T.md"
+    layout: legacy
     score: null
     next_earnings: null
 
@@ -434,7 +479,8 @@ tickers:
     cik: "0001111928"
     exchange: NASDAQ
     sector: "Interconnect"
-    path: "Investing/Wiki/Sectors/Interconnect/IPGP"
+    path: "Investing/Wiki/Sectors/L07 Interconnect/Pluggable Optical Transceivers/IPGP"
+    layout: three-layer
     score: null
     next_earnings: null
     notes: "Dominant vertically-integrated fiber-laser maker; closes L07 External Light Sources / Optical Engines. Directed-energy (CROSSBOW) optionality."
@@ -444,7 +490,8 @@ tickers:
     cik: "0001493594"
     exchange: NASDAQ
     sector: "Interconnect"
-    path: "Investing/Wiki/Sectors/Interconnect/MTSI"
+    path: "Investing/Wiki/Sectors/L07 Interconnect/Pluggable Optical Transceivers/MTSI.md"
+    layout: legacy
     score: null
     next_earnings: null
 
@@ -453,8 +500,9 @@ tickers:
     company: "STMicroelectronics N.V."
     cik: "0000932787"
     exchange: "NYSE / Euronext Paris"
-    sector: "L09 Semiconductor Foundry"
+    sector: "Semiconductor Foundry"
     path: "Investing/Wiki/Sectors/L09 Semiconductor Foundry/Compound Semiconductor & SiC/STM"
+    layout: three-layer
     score: null
     next_earnings: null
 
@@ -463,7 +511,8 @@ tickers:
     cik: null
     exchange: "Euronext Paris (EPA:XFAB) / OTC US: XFABF"
     sector: "Semiconductor Foundry"
-    path: "Investing/Wiki/Sectors/Semiconductor Foundry/XFAB"
+    path: "Investing/Wiki/Sectors/L09 Semiconductor Foundry/Leading-Edge Logic Foundry/XFAB"
+    layout: three-layer
     score: 6.5
     next_earnings: "2026-07-30"
 
@@ -473,7 +522,8 @@ tickers:
     cik: "0001047127"
     exchange: NASDAQ
     sector: "Advanced Packaging"
-    path: "Investing/Wiki/Sectors/Advanced Packaging/AMKR"
+    path: "Investing/Wiki/Sectors/L08 Advanced Packaging/Wafer-Level Packaging (CoWoS)/AMKR.md"
+    layout: legacy
     score: null
     next_earnings: "2026-07-27"
 
@@ -482,7 +532,8 @@ tickers:
     cik: null
     exchange: "Euronext Amsterdam"
     sector: "Advanced Packaging"
-    path: "Investing/Wiki/Sectors/Advanced Packaging/BESI"
+    path: "Investing/Wiki/Sectors/L08 Advanced Packaging/Packaging Equipment/BESI"
+    layout: three-layer
     score: 8.0
     next_earnings: "2026-07-24"
     notes: "Pure-play advanced packaging equipment: die attach, flip chip, hybrid bonding. ~75% advanced die attach share, #1 hybrid bonding. OTC ADR: BESIY."
@@ -493,7 +544,8 @@ tickers:
     cik: "0001040470"
     exchange: NASDAQ
     sector: "Semiconductor Equipment"
-    path: "Investing/Wiki/Sectors/Semiconductor Equipment/AEHR"
+    path: "Investing/Wiki/Sectors/L10 Semiconductor Equipment/Metrology & Inspection/AEHR"
+    layout: three-layer
     score: 7.5
     next_earnings: "2026-07-21"
     # migrated to three-layer structure 2026-06-17
@@ -503,7 +555,8 @@ tickers:
     cik: null
     exchange: "TSE (Tokyo)"
     sector: "Semiconductor Equipment"
-    path: "Investing/Wiki/Sectors/Semiconductor Equipment/6857.T"
+    path: "Investing/Wiki/Sectors/L10 Semiconductor Equipment/Metrology & Inspection/6857.T.md"
+    layout: legacy
     score: null
     next_earnings: null
 
@@ -512,7 +565,8 @@ tickers:
     cik: "0001039399"
     exchange: NASDAQ
     sector: "Semiconductor Equipment"
-    path: "Investing/Wiki/Sectors/Semiconductor Equipment/FORM"
+    path: "Investing/Wiki/Sectors/L10 Semiconductor Equipment/Metrology & Inspection/FORM.md"
+    layout: legacy
     score: null
     next_earnings: "2026-07-29"
 
@@ -522,7 +576,8 @@ tickers:
     cik: "0001707092"
     exchange: NASDAQ
     sector: "Semiconductor Materials"
-    path: "Investing/Wiki/Sectors/Semiconductor Materials/LIN"
+    path: "Investing/Wiki/Sectors/L11 Semiconductor Materials/Photoresist & Specialty Gases/LIN"
+    layout: three-layer
     score: null
     next_earnings: null
     notes: "World's largest industrial-gas major; ultra-high-purity + specialty fab gases (neon/rare gases). Closes L11 Specialty Gases gap box."
@@ -532,7 +587,8 @@ tickers:
     cik: "0001051627"
     exchange: NASDAQ
     sector: "Semiconductor Materials"
-    path: "Investing/Wiki/Sectors/Semiconductor Materials/AXTI"
+    path: "Investing/Wiki/Sectors/L11 Semiconductor Materials/InP & GaAs Substrates/AXTI.md"
+    layout: legacy
     score: null
     next_earnings: "2026-07-29"
 
@@ -542,7 +598,8 @@ tickers:
     cik: "0000831259"
     exchange: NYSE
     sector: "Critical Minerals"
-    path: "Investing/Wiki/Sectors/Critical Minerals/FCX"
+    path: "Investing/Wiki/Sectors/L12 Critical Minerals/Copper/FCX.md"
+    layout: legacy
     score: null
     next_earnings: "2026-07-23"
 
@@ -551,7 +608,8 @@ tickers:
     cik: "0001801170"
     exchange: NYSE
     sector: "Critical Minerals"
-    path: "Investing/Wiki/Sectors/Critical Minerals/MP"
+    path: "Investing/Wiki/Sectors/L12 Critical Minerals/Rare Earths/MP.md"
+    layout: legacy
     score: null
     next_earnings: "2026-07-30"
 
@@ -560,7 +618,8 @@ tickers:
     cik: "0001512228"
     exchange: NASDAQ
     sector: "Critical Minerals"
-    path: "Investing/Wiki/Sectors/Critical Minerals/NB"
+    path: "Investing/Wiki/Sectors/L12 Critical Minerals/Technology Metals/NB"
+    layout: three-layer
     score: null
     next_earnings: null
 
@@ -569,7 +628,8 @@ tickers:
     cik: "0002101698"
     exchange: NASDAQ
     sector: "Critical Minerals"
-    path: "Investing/Wiki/Sectors/Critical Minerals/ELMT"
+    path: "Investing/Wiki/Sectors/L12 Critical Minerals/Lithium & Specialty Metals/ELMT.md"
+    layout: legacy
     score: null
     next_earnings: "2026-08-25"
 
@@ -578,8 +638,9 @@ tickers:
     company: "Oklo Inc."
     cik: "0001828937"
     exchange: NYSE
-    sector: "Power Infrastructure"
-    path: "Investing/Wiki/Sectors/Power Infrastructure/OKLO"
+    sector: "Power"
+    path: "Investing/Wiki/Sectors/Power/Nuclear & Advanced Fission/OKLO.md"
+    layout: legacy
     score: null
     next_earnings: "2026-08-18"
 
@@ -587,8 +648,9 @@ tickers:
     company: "T1 Energy Inc."
     cik: "0001992243"
     exchange: NYSE
-    sector: "Power Infrastructure"
-    path: "Investing/Wiki/Sectors/Power Infrastructure/TE"
+    sector: "Power"
+    path: "Investing/Wiki/Sectors/Power/Nuclear & Advanced Fission/TE.md"
+    layout: legacy
     score: null
     next_earnings: "2026-08-07"
 
@@ -596,8 +658,9 @@ tickers:
     company: "ASP Isotopes Inc."
     cik: "0001921865"
     exchange: NASDAQ
-    sector: "Power Infrastructure"
-    path: "Investing/Wiki/Sectors/Power Infrastructure/ASPI"
+    sector: "Power"
+    path: "Investing/Wiki/Sectors/Power/Nuclear & Advanced Fission/ASPI.md"
+    layout: legacy
     score: null
     next_earnings: "2026-08-12"
 
@@ -605,8 +668,9 @@ tickers:
     company: "Vicor Corporation"
     cik: "0000751858"
     exchange: NASDAQ
-    sector: "Power Infrastructure"
-    path: "Investing/Wiki/Sectors/Power Infrastructure/VICR"
+    sector: "Power"
+    path: "Investing/Wiki/Sectors/Power/Power Semiconductors/VICR.md"
+    layout: legacy
     score: null
     next_earnings: null
 
@@ -616,7 +680,8 @@ tickers:
     cik: "0001327567"
     exchange: NASDAQ
     sector: "Security"
-    path: "Investing/Wiki/Sectors/Security/PANW"
+    path: "Investing/Wiki/Sectors/Security/Endpoint & Cloud Security/PANW"
+    layout: three-layer
     score: null
 
   CRWD:
@@ -624,7 +689,8 @@ tickers:
     cik: "0001535527"
     exchange: NASDAQ
     sector: "Security"
-    path: "Investing/Wiki/Sectors/Security/CRWD"
+    path: "Investing/Wiki/Sectors/Security/Endpoint & Cloud Security/CRWD"
+    layout: three-layer
     score: null
 
   RBRK:
@@ -632,7 +698,8 @@ tickers:
     cik: "0001943896"
     exchange: NYSE
     sector: "Security"
-    path: "Investing/Wiki/Sectors/Security/RBRK"
+    path: "Investing/Wiki/Sectors/Security/Endpoint & Cloud Security/RBRK.md"
+    layout: legacy
     score: null
     next_earnings: "2026-09-08"
 
@@ -641,7 +708,8 @@ tickers:
     cik: "0002030781"
     exchange: NASDAQ
     sector: "Security"
-    path: "Investing/Wiki/Sectors/Security/SAIL"
+    path: "Investing/Wiki/Sectors/Security/Endpoint & Cloud Security/SAIL.md"
+    layout: legacy
     score: null
     next_earnings: "2026-06-09"
 
@@ -652,6 +720,7 @@ tickers:
     exchange: NASDAQ
     sector: "Edge & Physical AI"
     path: "Investing/Wiki/Sectors/Edge & Physical AI/Edge Compute Module/SYNA"
+    layout: three-layer
     score: null
     next_earnings: "2026-08-06"
     notes: "Fabless edge-AI + IoT connectivity ICs (Astra AI, Wi-Fi 7); pending onsemi all-stock acquisition ($7B EV, 1.35x ratio, mid-2027 close)"
@@ -661,7 +730,8 @@ tickers:
     cik: "0001280263"
     exchange: NASDAQ
     sector: "Edge & Physical AI"
-    path: "Investing/Wiki/Sectors/Edge & Physical AI/AMBA"
+    path: "Investing/Wiki/Sectors/Edge & Physical AI/Edge Compute Module/AMBA.md"
+    layout: legacy
     score: 8.5
     next_earnings: "2026-09-01"
 
@@ -670,7 +740,8 @@ tickers:
     cik: "0001816581"
     exchange: NASDAQ
     sector: "Edge & Physical AI"
-    path: "Investing/Wiki/Sectors/Edge & Physical AI/OUST"
+    path: "Investing/Wiki/Sectors/Edge & Physical AI/Perception Layer/OUST.md"
+    layout: legacy
     score: 6.5
     next_earnings: "2026-08-06"
 
@@ -679,7 +750,8 @@ tickers:
     cik: null
     exchange: "OTC Markets (US)"
     sector: "Edge & Physical AI"
-    path: "Investing/Wiki/Sectors/Edge & Physical AI/BRCHF"
+    path: "Investing/Wiki/Sectors/Edge & Physical AI/Physical Systems/BRCHF"
+    layout: three-layer
     score: null
     next_earnings: null
     notes: "Dual-listed; primary listing ASX: BRN (BRN.AX). Neuromorphic (Akida) pure-play."
@@ -689,7 +761,8 @@ tickers:
     cik: "0001800227"
     exchange: NASDAQ
     sector: "Edge & Physical AI"
-    path: "Investing/Wiki/Sectors/Edge & Physical AI/MBLY"
+    path: "Investing/Wiki/Sectors/Edge & Physical AI/Perception Layer/MBLY"
+    layout: three-layer
     score: null
     next_earnings: null
     notes: "Intel-controlled AV/ADAS pure-play; EyeQ SoC + REM mapping + RSS. Anchors the Autonomous Vehicles & ADAS tier."
@@ -699,7 +772,8 @@ tickers:
     cik: "0000817093"
     exchange: NASDAQ
     sector: "Edge & Physical AI"
-    path: "Investing/Wiki/Sectors/Edge & Physical AI/AVAV"
+    path: "Investing/Wiki/Sectors/Edge & Physical AI/Physical Systems/AVAV"
+    layout: three-layer
     score: null
     next_earnings: null
     notes: "US military's primary sUAS + loitering-munitions (Switchblade) supplier; multi-domain post-BlueHalo. Anchors the UAV & Drone Systems tier."
@@ -708,8 +782,9 @@ tickers:
     company: "AST SpaceMobile"
     cik: "0001780530"
     exchange: NASDAQ
-    sector: "Edge & Physical AI"
-    path: "Investing/Wiki/Sectors/Edge & Physical AI/ASTS"
+    sector: "Space & Comms"
+    path: "Investing/Wiki/Sectors/Space & Comms/Satellite Constellations/ASTS.md"
+    layout: legacy
     score: null
     next_earnings: "2026-08-17"
 
@@ -717,8 +792,9 @@ tickers:
     company: "Rocket Lab USA, Inc."
     cik: "0001819994"
     exchange: NASDAQ
-    sector: "Edge & Physical AI"
-    path: "Investing/Wiki/Sectors/Edge & Physical AI/RKLB"
+    sector: "Space & Comms"
+    path: "Investing/Wiki/Sectors/Space & Comms/Launch Vehicles/RKLB.md"
+    layout: legacy
     score: 7.0
     next_earnings: "2026-08-06"
 
@@ -727,8 +803,9 @@ tickers:
     company: "Vishay Intertechnology, Inc."
     cik: "0000103730"
     exchange: NYSE
-    sector: "Electronic Components"
-    path: "Investing/Wiki/Sectors/Electronic Components/VSH"
+    sector: "Advanced Packaging"
+    path: "Investing/Wiki/Sectors/L08 Advanced Packaging/Passive Components/VSH"
+    layout: three-layer
     score: null
     next_earnings: null
     notes: "Broad-line passives + discretes; tantalum capacitors. Closes L12 Tantalum + Power-rail MLCC/passives boxes."

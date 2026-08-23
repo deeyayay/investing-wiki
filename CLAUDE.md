@@ -111,7 +111,31 @@ Review Monitor Registry.yaml candidates
 
 ## Key Reference Files
 
-- **Monitor Registry** (`Investing/Wiki/Reference/Monitor Registry.yaml`) — machine-readable YAML index. All skills read this to locate ticker folder paths. Format: `TICKER → { sector, path, score }` + `candidates:` list.
+- **Monitor Registry** (`Investing/Wiki/Reference/Monitor Registry.yaml`) — machine-readable YAML index. All skills read this to locate ticker folder paths. Format: `TICKER → { sector, path, layout, score }` + `candidates:` list.
+
+### Registry path convention
+
+Sector folders are **layer-prefixed on disk** (`L05 Compute Hardware`, `L07 Interconnect`); the
+un-prefixed folders `Edge & Physical AI`, `Power`, `Security`, `Space & Comms` sit outside the
+12-layer stack and stay as-is. The registry's `sector:` is that top-level folder name with any
+`Lxx ` prefix stripped — so `sector` and `path` can never disagree.
+
+Each ticker carries a `layout:` field naming what its `path:` points at:
+
+| `layout` | `path:` points to | Meaning |
+|---|---|---|
+| `three-layer` | a folder | holds `facts.md` + `analysis.md` + `signals.md` |
+| `legacy` | a single `.md` file | not yet migrated — run `/ticker-monitor --deep TICKER` |
+| `unpaged` | (stale, ignore) | registered but no page exists on disk yet |
+
+**Renaming a sector folder breaks every skill.** After any rename, re-run the repair and check:
+
+```bash
+python3 scripts/repair_registry.py   # rewrite path/sector/layout to match disk
+python3 scripts/check_registry.py    # verify; exit 1 on any error
+```
+
+`check_registry.py` also warns about ticker pages on disk that no registry entry claims.
 - **Sentiment Index** (`Investing/Wiki/Reference/Sentiment Index.md`) — social signal counts and recency by ticker.
 - **Watchlist** (`Investing/Wiki/Reference/Watchlist.md`) — curated view of holdings, rockets, and compounders with one-line theses.
 - **AI Buildout Stack** (`Investing/Wiki/Reference/AI Buildout Stack.md`) — canonical 12-layer taxonomy (Application → Critical Minerals), mapped word-for-word from the *AI Buildout Supply Chain* blueprint graphic, + 3 cross-cutting rails and the Edge & Physical AI deployment surface. Holds the machine-readable JSON that `/daily-dashboard` renders as the vertical stack map. Sub-box labels are canonical; `gap` boxes flag KB coverage gaps; `group` tags cluster boxes visually (no extra depth).
