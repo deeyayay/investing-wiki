@@ -50,8 +50,23 @@ dead too, not just the news fetcher.
 The committed seed digest admits it in its own `note` field: *"RSS egress blocked; subsequent runs
 come from scripts/watchlist_refresh_fetch.py."* They never did.
 
-**The new cloud container is provisioned to fix this. Verify before building on top of it** — see
-"First steps" below.
+**Verified 2026-08-23 in the new container — egress is partially fixed.** What actually works:
+
+| Endpoint | Status | Use |
+|---|---|---|
+| `news.google.com/rss/search` | **200** | headline fetch — `watchlist_refresh_fetch.py` runs |
+| `www.sec.gov/cgi-bin/browse-edgar?...&output=atom` | **200** | per-CIK filing list (replaces `data.sec.gov`) |
+| `www.sec.gov/Archives/...` | **200** | the filing documents themselves |
+| `efts.sec.gov/LATEST/search-index` | **200** | EDGAR full-text search across all filings |
+| `data.sec.gov` (submissions + XBRL JSON) | blocked | superseded by browse-edgar atom |
+| Yahoo, Bing, Nasdaq, MarketWatch, CNBC, Reuters, Seeking Alpha, GlobeNewswire, PRNewswire, Businesswire, Reddit | blocked | — |
+
+Note `https://www.sec.gov/` **root** returns 403 while its sub-paths return 200 — probe a real
+endpoint, not the root, or you will conclude SEC is blocked when it is not.
+
+Consequences: the news pipeline runs, and **primary-source verification for step 6 is viable at
+zero token cost** via browse-edgar + full-text search. The exposure is that every *headline* now
+arrives through a single host (Google News) with no reachable alternative.
 
 Nothing is scheduled either: no GitHub Actions, and `gemini-scribe/Scheduled-Tasks/scheduled-tasks-state.json`
 is `{}`. "Daily pass" has only ever meant the owner opening a session and typing.
@@ -99,8 +114,14 @@ still matter, because this exact failure hid for seven weeks:
 - **Never overwrite a good digest with an empty one.**
 - Add `Investing/Raw/Inbox/.watchlist-refresh-state.json` to `.gitignore` — it's a machine-local
   seen-cache that currently shows up as untracked debris on every run.
-- Optional now rather than required: a pluggable provider backend with `WebSearch` as fallback, so
-  one blocked domain can't silently kill the pipeline again.
+- A pluggable provider backend, so one blocked domain can't silently kill the pipeline again.
+  **Not `WebSearch`** — it is a model tool, so every query and its results land in context. At
+  ~50 tickers/run that is roughly two orders of magnitude more expensive than the RSS path, which
+  costs zero model tokens and hands the model one compact digest. That defeats the point of the
+  script on a Pro budget. Use the zero-token HTTP providers that are actually reachable instead:
+  Google News RSS (primary), EDGAR browse-edgar atom and EDGAR full-text search (independent of
+  Google, so a Google outage degrades rather than kills). Reserve `WebSearch` as a manual
+  escape hatch for a single ticker in `/dig`, never in the daily loop.
 
 ### 3. Topics, not just tickers
 
@@ -161,17 +182,21 @@ Confirm egress actually works before building on it:
 ```bash
 python3 scripts/watchlist_refresh_fetch.py --tickers NVDA,CRDO --hours 168
 # expect: "2 tickers → N with new headlines, 0 fetch errors"
-# if 403 Forbidden → egress didn't take effect; sort that first
 
-curl -sS -o /dev/null -w '%{http_code}\n' https://data.sec.gov/submissions/CIK0001045810.json
-# expect 200 — the filings skills need this
+curl -sS -o /dev/null -w '%{http_code}\n' -A 'investing-wiki' \
+  'https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001045810&type=8-K&count=5&output=atom'
+# expect 200 — the filings + verification path. Do NOT probe https://www.sec.gov/ (403 at root).
 ```
 
-Then start on step 1. The registry repair needs no network and unblocks the rest.
+**Step 1 (registry repair) is done** — `scripts/repair_registry.py` +
+`scripts/check_registry.py`, 76 of 77 paths resolve, 0 errors. Two findings it turned up:
+HOOD is registered with no page anywhere on disk (`layout: unpaged`), and 56 ticker pages exist
+on disk that no registry entry claims — so the skills cannot see them. Both matter for step 3
+(Watchlist rebuild) and step 7 (pruning).
 
 ## Open decisions
 
 - **Digest delivery** — Slack DM, Notion page, or both?
-- **Provider fallback** — worth building the `WebSearch` backend now, or rely on RSS while egress holds?
+- **Provider fallback** — resolved: build the zero-token provider backend (Google News RSS + EDGAR), not `WebSearch`. See step 2.
 
 Everything else has a sensible default.
