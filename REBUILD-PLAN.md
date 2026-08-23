@@ -123,7 +123,7 @@ still matter, because this exact failure hid for seven weeks:
   Google, so a Google outage degrades rather than kills). Reserve `WebSearch` as a manual
   escape hatch for a single ticker in `/dig`, never in the daily loop.
 
-### 3. Topics, not just tickers
+### 3. Topics, not just tickers — DONE
 
 The system is 100% ticker-keyed today. Add a small `Topics.yaml` — *humanoid robotics, physical AI,
 HBM supply, radar vs. lidar, NVDA downstream effects*. This buys two things: coverage of themes

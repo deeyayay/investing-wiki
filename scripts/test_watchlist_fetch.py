@@ -19,6 +19,15 @@ import watchlist_refresh_fetch as w  # noqa: E402
 
 GOOD_DIGEST = {"tickers": [{"ticker": "NVDA", "headlines": [{"t": "old news"}]}]}
 
+RSS_TWO_ITEMS = """<rss><channel>
+<item><title>Humanoid robot maker (NASDAQ: FIGR) ships units</title>
+<source>Test Wire</source><pubDate>%s</pubDate></item>
+<item><title>HBM4 capacity sold out through next year</title>
+<source>Test Wire</source><pubDate>%s</pubDate></item>
+</channel></rss>""" % (((__import__("email.utils", fromlist=["x"])
+                         .format_datetime(__import__("datetime")
+                                          .datetime.now(__import__("datetime").timezone.utc))),) * 2)
+
 
 def item(title, kind="news", url=None):
     return {"t": title, "src": "Test", "d": "2026-08-23", "kind": kind, "url": url}
@@ -46,7 +55,7 @@ class GuardTests(unittest.TestCase):
         w.PROVIDERS.clear()
         w.PROVIDERS["test"] = provider
         return w.main(["--tickers", "NVDA,CRDO", "--providers", "test",
-                       "--output", self.digest])
+                       "--no-topics", "--output", self.digest])
 
     def digest_tickers(self):
         with open(self.digest) as f:
@@ -94,7 +103,7 @@ class GuardTests(unittest.TestCase):
             raise OSError("blocked")
         w.PROVIDERS["dead"] = boom
         rc = w.main(["--tickers", "NVDA", "--providers", "alive,dead",
-                     "--output", self.digest])
+                     "--no-topics", "--output", self.digest])
         self.assertEqual(rc, 1, "a dead provider must be reported in the exit status")
         self.assertTrue(self.digest_tickers(), "live provider's items must still be written")
 
@@ -113,9 +122,54 @@ class GuardTests(unittest.TestCase):
         self.run_fetch(two_8ks)
         self.assertEqual(len(self.digest_tickers()[0]["headlines"]), 2)
 
+    def test_topic_pass_records_hits_and_gaps(self):
+        """Topics run off the same RSS host, so fetch_url is stubbed to stay offline."""
+        saved = w.fetch_url
+        w.fetch_url = lambda url, **kw: RSS_TWO_ITEMS
+        try:
+            w.PROVIDERS.clear()
+            w.PROVIDERS["test"] = lambda entry, hours: []
+            w.main(["--tickers", "NVDA", "--providers", "test", "--output", self.digest])
+        finally:
+            w.fetch_url = saved
+        with open(self.digest) as f:
+            topics = json.load(f)["topics"]
+        self.assertTrue(topics, "topic pass produced nothing")
+        self.assertTrue(any(t["gaps"] for t in topics),
+                        "gaps must survive into the digest — they are the onboarding queue")
+
+    def test_discovery_only_accepts_exchange_tagged_tickers(self):
+        """Bare capitalised words (AI, CEO, US) must not become candidates."""
+        items = [{"t": "AI startup CEO says US demand is strong"},
+                 {"t": "Figure AI rival (NASDAQ: FIGR) raises a round"},
+                 {"t": "Another story about (NYSE: XYZ) and NVDA"}]
+        found = {d["ticker"] for d in w.discover_tickers(items, known={"NVDA"})}
+        self.assertEqual(found, {"FIGR", "XYZ"})
+
+    def test_discovery_skips_already_tracked_tickers(self):
+        items = [{"t": "Report on (NASDAQ: NVDA) supply"}]
+        self.assertEqual(w.discover_tickers(items, known={"NVDA"}), [])
+
+    def test_topic_query_keeps_inner_quotes(self):
+        """A query like '\"HBM\" OR \"HBM4\"' loses its phrase grouping if both
+        quote characters get stripped — which silently widens every search."""
+        topics = w.parse_topics(w.TOPICS)
+        hbm = next(t for t in topics if t["id"] == "hbm-supply")
+        self.assertIn('"HBM"', hbm["query"])
+
+    def test_every_topic_ticker_is_registered(self):
+        """A topic naming an unregistered ticker cannot be resolved to a folder."""
+        known = {e["ticker"] for e in w.parse_registry(w.REGISTRY)}
+        for topic in w.parse_topics(w.TOPICS):
+            for t in topic["tickers"]:
+                self.assertIn(t, known,
+                              "topic %s lists unregistered ticker %s (use gaps:)"
+                              % (topic["id"], t))
+
     def test_unknown_provider_name_is_rejected(self):
         with self.assertRaises(SystemExit):
-            w.main(["--tickers", "NVDA", "--providers", "nope", "--output", self.digest])
+            w.main(["--tickers", "NVDA", "--providers", "nope", "--no-topics",
+                    "--output", self.digest])
 
 
 if __name__ == "__main__":

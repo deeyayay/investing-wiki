@@ -17,6 +17,7 @@ Investing/
   Wiki/
     Reference/
       Monitor Registry.yaml        ← master ticker index (machine-readable YAML)
+      Topics.yaml                  ← theme registry (news themes, not tickers)
       Sentiment Index.md           ← aggregated sentiment tracking
       Watchlist.md                 ← core holdings + speculative + compounders
       AI Buildout Stack.md         ← canonical 12-layer taxonomy + dashboard JSON
@@ -114,6 +115,22 @@ Review Monitor Registry.yaml candidates
 
 ## Key Reference Files
 
+### Topics — theme coverage alongside tickers
+
+`Investing/Wiki/Reference/Topics.yaml` tracks **themes**, which the ticker-keyed registry cannot:
+a subject stays invisible until you already own a name in it. Seven topics today. Each carries a
+news `query`, the registered `tickers` it bears on, and `gaps` — names that matter to the theme but
+are not registered, which doubles as the `/add-ticker` queue.
+
+The daily pass scans topics alongside tickers into the same digest (`--no-topics` to skip). Topic
+headlines also feed a **discovery funnel**: company names are matched against SEC's registrant list
+(10,403 companies, cached weekly at `Investing/Raw/Inbox/.sec-company-tickers.json`) and anything
+untracked lands in the digest's `discovered` list. These are candidates for triage, deliberately
+*not* auto-written into the registry — a regex match is a lead, not a decision.
+
+Topic hits do **not** count as content for the empty-digest guard. A run whose ticker pass wholly
+failed is broken even if the themes came back fine.
+
 ### News + filings providers
 
 `scripts/watchlist_refresh_fetch.py` fetches from independent providers so one blocked host
@@ -165,7 +182,8 @@ python3 scripts/check_registry.py    # verify; exit 1 on any error
 
 `check_registry.py` also warns about ticker pages on disk that no registry entry claims.
 - **Sentiment Index** (`Investing/Wiki/Reference/Sentiment Index.md`) — social signal counts and recency by ticker.
-- **Watchlist** (`Investing/Wiki/Reference/Watchlist.md`) — curated view of holdings, rockets, and compounders with one-line theses.
+- **Watchlist** (`Investing/Wiki/Reference/Watchlist.md`) — **the scope input for the daily pass.** Every ticker named in one of its tables gets scanned; a ticker absent from it is not watched daily (`--all` widens to the full registry). Core Holdings is owner-maintained and intentionally empty — positions are not inferable from scores. High Conviction / Drift Watch / Active Coverage are derived from each `analysis.md`.
+- **Topics** (`Investing/Wiki/Reference/Topics.yaml`) — theme registry + discovery funnel. See above.
 - **AI Buildout Stack** (`Investing/Wiki/Reference/AI Buildout Stack.md`) — canonical 12-layer taxonomy (Application → Critical Minerals), mapped word-for-word from the *AI Buildout Supply Chain* blueprint graphic, + 3 cross-cutting rails and the Edge & Physical AI deployment surface. Holds the machine-readable JSON that `/daily-dashboard` renders as the vertical stack map. Sub-box labels are canonical; `gap` boxes flag KB coverage gaps; `group` tags cluster boxes visually (no extra depth).
 - **Dimension Map** (`Investing/Wiki/Reference/Dimension Map.md`) — sector registry, folder slugs, supply chain map status, and the legacy D1–D5 → layer crosswalk.
 - **Ecosystem Interrelationships** (`Investing/Wiki/Reference/Ecosystem Interrelationships.md`) — cross-sector dependency graph. Source of truth for flow diagram rendering and multi-sector signal propagation.

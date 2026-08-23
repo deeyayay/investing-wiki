@@ -57,10 +57,15 @@ from email.utils import parsedate_to_datetime
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REGISTRY = os.path.join(REPO_ROOT, "Investing", "Wiki", "Reference", "Monitor Registry.yaml")
 WATCHLIST = os.path.join(REPO_ROOT, "Investing", "Wiki", "Reference", "Watchlist.md")
+TOPICS = os.path.join(REPO_ROOT, "Investing", "Wiki", "Reference", "Topics.yaml")
 SECTORS_DIR = os.path.join(REPO_ROOT, "Investing", "Wiki", "Sectors")
 INBOX_DIR = os.path.join(REPO_ROOT, "Investing", "Raw", "Inbox")
 DIGEST_PATH = os.path.join(INBOX_DIR, "watchlist-refresh-digest.json")
 STATE_PATH = os.path.join(INBOX_DIR, ".watchlist-refresh-state.json")
+# SEC's full company->ticker map, cached locally. 800KB, refreshed weekly.
+SEC_TICKERS_PATH = os.path.join(INBOX_DIR, ".sec-company-tickers.json")
+SEC_TICKERS_URL = "https://www.sec.gov/files/company_tickers.json"
+SEC_TICKERS_MAX_AGE_DAYS = 7
 
 USER_AGENT = "Mozilla/5.0 (investing-wiki watchlist-refresh)"
 # SEC fair-access REQUIRES a contact email in the User-Agent — it answers 403 to
@@ -229,6 +234,142 @@ def news_query_url(company, ticker, hours):
     )
 
 
+def unquote(value):
+    """Strip ONE matching pair of outer quotes. Stripping both quote characters
+    would eat the inner quotes of a query like '"HBM" OR "HBM4"'."""
+    if len(value) >= 2 and value[0] == value[-1] and value[0] in "\"'":
+        return value[1:-1]
+    return value
+
+
+def parse_topics(path):
+    """Parse Topics.yaml. Regex-based to match parse_registry — stdlib only, and
+    the file is a fixed list-of-mappings shape."""
+    if not os.path.exists(path):
+        return []
+    topics, current = [], None
+    with open(path, encoding="utf-8") as f:
+        for line in f:
+            line = line.rstrip("\n")
+            m = re.match(r"^  - id:\s*(\S+)", line)
+            if m:
+                current = {"id": m.group(1), "tickers": [], "gaps": []}
+                topics.append(current)
+                continue
+            if current is None:
+                continue
+            m = re.match(r'^    (label|query):\s*(.*)$', line)
+            if m:
+                current[m.group(1)] = unquote(m.group(2).strip())
+                continue
+            m = re.match(r"^    (tickers|gaps):\s*\[(.*)\]", line)
+            if m:
+                current[m.group(1)] = [
+                    t.strip().strip('"\'') for t in m.group(2).split(",") if t.strip()]
+    return [t for t in topics if t.get("query")]
+
+
+# Financial headlines sometimes tag a company with its exchange. Reliable when
+# present, but rare in RSS titles — which is why the name index below exists.
+EXCHANGE_TICKER_RE = re.compile(
+    r"\b(?:NASDAQ|NYSE|NYSEARCA|AMEX|OTC|TSX|LSE|ETR|EPA)\s*[:\-]\s*([A-Z]{1,5}(?:\.[A-Z]{1,2})?)\b")
+
+# Company names too generic to match on. Every one of these is a real SEC
+# registrant whose name is also an ordinary English word, so an unguarded match
+# turns any headline using the word into a false candidate.
+NAME_STOPLIST = {
+    "apple", "block", "sea", "arm", "now", "open", "match", "gap", "target",
+    "shell", "total", "unity", "corning", "marathon", "carvana", "root", "core",
+    "compass", "olo", "rocket", "paycom", "science", "energy", "power", "vision",
+    "global", "national", "american", "general", "united", "first", "new",
+}
+
+# Wire services and data vendors appear in bylines on a large share of
+# headlines, so matching their names produces a steady stream of junk
+# candidates ("ACCESS Newswire" -> ACCS) that has nothing to do with the story.
+NAME_STOPWORD_RE = re.compile(
+    r"newswire|news wire|business wire|globe ?newswire|pr ?newswire|"
+    r"tradingview|benzinga|zacks|marketbeat|simply wall|motley fool|"
+    r"seeking ?alpha|barron|reuters|bloomberg|associated press",
+    re.IGNORECASE)
+
+
+def load_sec_company_names():
+    """{normalized company name: ticker} for every SEC registrant.
+
+    Turns a company NAME in a headline into a ticker, which is what the
+    discovery funnel actually needs — RSS titles say "Cloverleaf Infrastructure",
+    not "(NASDAQ: XXXX)". Cached for a week; a fetch failure is non-fatal, the
+    funnel just falls back to exchange tags.
+    """
+    raw = None
+    try:
+        age_days = (time.time() - os.path.getmtime(SEC_TICKERS_PATH)) / 86400
+        if age_days < SEC_TICKERS_MAX_AGE_DAYS:
+            with open(SEC_TICKERS_PATH, encoding="utf-8") as f:
+                raw = json.load(f)
+    except (OSError, ValueError):
+        pass
+    if raw is None:
+        try:
+            raw = json.loads(fetch_url(SEC_TICKERS_URL, timeout=30,
+                                       user_agent=SEC_USER_AGENT))
+            os.makedirs(os.path.dirname(SEC_TICKERS_PATH), exist_ok=True)
+            with open(SEC_TICKERS_PATH, "w", encoding="utf-8") as f:
+                json.dump(raw, f)
+        except Exception:
+            return {}
+    index = {}
+    for row in raw.values():
+        name = COMPANY_SUFFIX_RE.sub("", (row.get("title") or "").strip()).lower()
+        name = re.sub(r"[^a-z0-9 ]+", " ", name)
+        name = re.sub(r"\s+", " ", name).strip()
+        # One short word is almost always an English word too; require either
+        # multiple words or a distinctly long single one.
+        if not name or name in NAME_STOPLIST or NAME_STOPWORD_RE.search(name):
+            continue
+        if len(name.split()) < 2 and len(name) < 7:
+            continue
+        index.setdefault(name, row.get("ticker"))
+    return index
+
+
+def discover_tickers(items, known, name_index=None):
+    """Untracked companies named in topic headlines — the discovery funnel.
+
+    Two passes, both zero-token: an exchange tag when the headline carries one,
+    otherwise a company-name match against SEC's registrant list. Bare
+    capitalised words are never matched — "AI", "CEO" and "US" would swamp the
+    result with noise that costs tokens to triage downstream.
+    """
+    found = {}
+
+    def add(sym, title):
+        if not sym or sym.upper() in known:
+            return
+        found.setdefault(sym.upper(), []).append(title[:100])
+
+    for item in items:
+        title = item.get("t", "")
+        for sym in EXCHANGE_TICKER_RE.findall(title):
+            add(sym, title)
+        if name_index:
+            haystack = re.sub(r"[^a-z0-9 ]+", " ", title.lower())
+            haystack = " %s " % re.sub(r"\s+", " ", haystack).strip()
+            for name, sym in name_index.items():
+                if " %s " % name in haystack:
+                    add(sym, title)
+    return [{"ticker": k, "seen_in": v[:3]} for k, v in sorted(found.items())]
+
+
+def topic_query_url(query, hours):
+    return (
+        "https://news.google.com/rss/search?q="
+        + urllib.request.quote("%s when:%dh" % (query, max(1, round(hours))))
+        + "&hl=en-US&gl=US&ceid=US:en"
+    )
+
+
 def provider_googlenews(entry, hours):
     """Google News RSS headlines for one ticker. kind='news'."""
     items = parse_rss_items(fetch_url(news_query_url(entry["company"], entry["ticker"], hours)),
@@ -366,6 +507,10 @@ def main(argv=None):
     ap.add_argument("--tickers", help="comma-separated override list (skips selection logic)")
     ap.add_argument("--all", action="store_true",
                     help="scan the full registry instead of just Watchlist.md tickers")
+    ap.add_argument("--topics", dest="topics", action="store_true", default=True,
+                    help="also scan Topics.yaml themes (default on)")
+    ap.add_argument("--no-topics", dest="topics", action="store_false",
+                    help="ticker pass only")
     ap.add_argument("--providers", default=DEFAULT_PROVIDERS,
                     help="comma-separated providers (default %(default)s; available: "
                          + ",".join(sorted(PROVIDERS)) + ")")
@@ -455,6 +600,53 @@ def main(argv=None):
                 "headlines": fresh,
             })
 
+    # ---- topic pass ---------------------------------------------------------
+    # Themes, not tickers: coverage of a subject before there is a name for it,
+    # plus the discovery funnel for untracked companies named in the results.
+    topic_results, discovered = [], []
+    topic_stats = {"attempts": 0, "failures": 0, "items": 0}
+    if args.topics:
+        known = {e["ticker"].upper() for e in entries}
+        name_index = load_sec_company_names()
+        for topic in parse_topics(TOPICS):
+            topic_stats["attempts"] += 1
+            try:
+                items = parse_rss_items(
+                    fetch_url(topic_query_url(topic["query"], args.hours)), args.hours)
+            except Exception as exc:
+                topic_stats["failures"] += 1
+                errors.append({"ticker": "topic:" + topic["id"], "provider": "googlenews",
+                               "error": str(exc)[:120]})
+                continue
+            topic_stats["items"] += len(items)
+            fresh = []
+            for item in items:
+                if NOISE_RE.search(item["t"]):
+                    continue
+                key = item_key(item)
+                if key in state["seen"]:
+                    continue
+                state["seen"][key] = today
+                fresh.append(item)
+                if len(fresh) >= args.max_per_ticker:
+                    break
+            discovered.extend(discover_tickers(fresh, known, name_index))
+            if fresh:
+                topic_results.append({
+                    "id": topic["id"],
+                    "label": topic.get("label", topic["id"]),
+                    "tickers": topic.get("tickers", []),
+                    "gaps": topic.get("gaps", []),
+                    "headlines": fresh,
+                })
+            time.sleep(0.5)
+        # collapse duplicates discovered across several topics
+        merged = {}
+        for d in discovered:
+            merged.setdefault(d["ticker"], set()).update(d["seen_in"])
+        discovered = [{"ticker": k, "seen_in": sorted(v)[:3]}
+                      for k, v in sorted(merged.items())]
+
     digest = {
         "generated": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
         "window_hours": args.hours,
@@ -465,8 +657,11 @@ def main(argv=None):
                         and e["ticker"] not in {x["ticker"] for x in errors}),
         "errors": errors,
         "providers": stats,
+        "topic_stats": topic_stats,
         "not_in_registry": not_in_registry,
         "tickers": digest_tickers,
+        "topics": topic_results,
+        "discovered": discovered,
     }
 
     # A broken run produces a well-formed digest with zero headlines, which is
@@ -483,6 +678,9 @@ def main(argv=None):
     total_items = sum(v["items"] for v in stats.values())
     all_failed = total_attempts > 0 and total_failures == total_attempts
     no_raw_items = total_attempts > 0 and total_items == 0
+    # Topic hits deliberately do NOT count here. A digest whose ticker pass
+    # wholly failed is a broken run even if the themes came back fine, and
+    # writing it would quietly drop every ticker the previous one held.
     would_clobber = not digest_tickers and existing_digest_has_content(args.output)
 
     failing = [n for n, v in stats.items() if v["attempts"] and v["failures"] == v["attempts"]]
@@ -513,9 +711,15 @@ def main(argv=None):
     save_state(state)
 
     summary = ", ".join("%s %d" % (n, v["items"]) for n, v in stats.items())
+    if args.topics:
+        summary += ", topics %d" % topic_stats["items"]
     print(f"Scanned {len(selected)} tickers → {len(digest_tickers)} with new items, "
-          f"{len(errors)} fetch errors. Items by provider: {summary}. "
+          f"{len(topic_results)} topics with hits, {len(errors)} fetch errors. "
+          f"Items by provider: {summary}. "
           f"Digest: {os.path.relpath(args.output, REPO_ROOT)}")
+    if discovered:
+        print("Discovered %d untracked ticker(s): %s"
+              % (len(discovered), ", ".join(d["ticker"] for d in discovered)))
     for name in failing:
         print("WARNING: provider %s failed on all %d attempts — it may be blocked."
               % (name, stats[name]["attempts"]), file=sys.stderr)
