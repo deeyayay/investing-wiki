@@ -1,4 +1,9 @@
 # Monitor Registry
+
+> **Superseded.** The live registry is `Monitor Registry.yaml`; every skill reads that.
+> This file is kept as the historical candidate record. Its `/add-ticker` and `/map-sector`
+> instructions refer to skills archived on 2026-08-23 — use `/track TICKER` instead.
+
 *The research-monitor skill reads this file on every run. Add tickers here — no skill update needed.*
 *Last updated: 2026-06-25 — Reorganized to Layer → Tier → Ticker taxonomy matching the AI Buildout Stack dashboard.*
 

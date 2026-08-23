@@ -1,5 +1,5 @@
 # TICKER — Analysis
-*Layer 2 — Thesis, conviction, and scoring. Updated by: /score-ticker, /ticker-monitor (conviction + analyst + catalyst), /add-ticker (initial stub).*
+*Layer 2 — Thesis, conviction, and scoring. Updated by: /dig (thesis verdict, conviction, drift), /dig --score (scoring), /brief (drift only).*
 *Last updated: {{date}}*
 
 ---

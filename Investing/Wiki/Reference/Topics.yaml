@@ -1,0 +1,94 @@
+# Topics — theme-keyed coverage alongside the ticker-keyed Monitor Registry.
+#
+# Why this exists: the KB is 100% ticker-keyed, so a theme is only visible once
+# you already own a name in it. Topics buy two things:
+#   1. coverage of a theme BEFORE there is a ticker for it
+#   2. a discovery funnel — a topic headline naming an untracked company becomes
+#      a registry candidate as a byproduct of the daily pass, not a separate ritual
+#
+# Consumed by scripts/watchlist_refresh_fetch.py --topics (zero model tokens).
+#
+# Fields
+#   id       slug, stable — the digest and seen-cache key off this
+#   label    display name
+#   query    news query. Quote multi-word phrases; OR is supported.
+#            Keep it tight — a loose query buys noise, and noise costs tokens
+#            downstream when Claude triages the digest.
+#   tickers  REGISTERED tickers this theme bears on (must exist in Monitor
+#            Registry.yaml; test_watchlist_fetch.py enforces this)
+#   gaps     names known to matter here that are NOT registered. This is the
+#            queue for /track, and the honest record of what the theme
+#            covers that the KB does not.
+#   why      one line — what a hit here would actually change
+#
+# Add a topic: append an entry. Verify: python3 scripts/test_watchlist_fetch.py
+
+last_updated: "2026-08-23"
+
+topics:
+  - id: humanoid-robotics
+    label: "Humanoid Robotics"
+    query: '"humanoid robot" OR "humanoid robotics" OR "general purpose robot"'
+    tickers: [AVAV, BRCHF]
+    gaps: [SERV, SYM, TER, RR, BOT]
+    why: >-
+      The KB has almost no registered coverage here — 2 names against 5 pages
+      sitting unregistered on disk. Treat hits as an onboarding queue first and
+      a signal second.
+
+  - id: physical-ai
+    label: "Physical AI & Embodied Perception"
+    query: '"physical AI" OR "embodied AI" OR "robotics foundation model"'
+    tickers: [MBLY, SYNA, AMBA, OUST, P]
+    gaps: [AEVA, CGNX]
+    why: >-
+      The deployment surface for the whole stack. A credible foundation-model-
+      for-robotics result moves the perception and edge-compute names together.
+
+  - id: hbm-supply
+    label: "HBM Supply & Memory Bottleneck"
+    query: '"HBM" OR "high bandwidth memory" OR "HBM4"'
+    tickers: [MU, SNDK, 285A.T, BESI, AMKR, LPK, VSH]
+    gaps: ["Samsung", "SK Hynix"]
+    why: >-
+      Memory is the binding constraint on accelerator shipments. HBM4 timing
+      slipping or capacity being pre-sold reprices MU and the packaging chain
+      before it shows up in NVDA's numbers.
+
+  - id: lidar-vs-radar
+    label: "Lidar vs. Radar — Sensor Architecture"
+    query: '(lidar OR "4D radar" OR "imaging radar") AND (autonomous OR ADAS OR robotaxi)'
+    tickers: [OUST, MBLY, LASR]
+    gaps: [AEVA, INFQ]
+    why: >-
+      An architectural bet, not a news feed. A major OEM dropping lidar for
+      camera+radar, or the reverse, invalidates a thesis rather than dents it.
+
+  - id: nvda-downstream
+    label: "NVDA Downstream Effects"
+    query: '(Nvidia OR NVDA) AND (supplier OR partner OR "supply chain" OR allocation OR investment)'
+    tickers: [NVDA, CRDO, ALAB, ANET, MRVL, VRT, BRUN, IREN, SMCI]
+    gaps: [MOD]
+    why: >-
+      The owner's stated strength on X is downstream-impact reads off NVDA
+      announcements. This makes that systematic — one NVDA event, every name it
+      touches, in one place.
+
+  - id: co-packaged-optics
+    label: "Co-Packaged Optics & Optical I/O"
+    query: '"co-packaged optics" OR "optical I/O" OR "silicon photonics"'
+    tickers: [CRDO, 6451.TW, LPK, POET, XFAB, FOCI, AAOI, LITE, COHR, FN]
+    gaps: []
+    why: >-
+      The best-covered theme in the KB (10 registered names, no gaps). CPO
+      displacing pluggables is the single largest structural shift the
+      Interconnect sector is exposed to.
+
+  - id: power-constraint
+    label: "Datacenter Power Constraint"
+    query: '"data center" AND (power OR grid OR nuclear OR SMR OR interconnection queue)'
+    tickers: [OKLO, VICR, TE, MPWR, IFX]
+    gaps: [VST, GEV, BE, FLNC]
+    why: >-
+      Power, not silicon, is the near-term ceiling on buildout. Half the names
+      that matter here are unregistered — same gap pattern as humanoid robotics.
