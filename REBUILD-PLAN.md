@@ -132,7 +132,7 @@ become candidates automatically, as a byproduct rather than a separate `/scout-t
 
 Rebuild `Watchlist.md` at the same time; it's the scope input for everything.
 
-### 4. Collapse 13 skills to 3
+### 4. Collapse 13 skills to 3 — DONE
 
 | Keep | Does |
 |---|---|

@@ -5,7 +5,7 @@
 #   analysis.md → [path]/analysis.md (Layer 2 — thesis + conviction)
 #   signals.md  → [path]/signals.md  (Layer 3 — news, sentiment, research log)
 #
-# To add a ticker: /add-ticker TICKER [--sector "Sector Name"]
+# To add a ticker: /track TICKER [--sector "Sector Name"]
 # To add a candidate: append to the sector's candidates list below.
 
 last_updated: "2026-08-23"
@@ -811,7 +811,7 @@ tickers:
     notes: "Broad-line passives + discretes; tantalum capacitors. Closes L12 Tantalum + Power-rail MLCC/passives boxes."
 
 # ── Candidates (not yet onboarded) ────────────────────────────────────────
-# Run /add-ticker TICKER --sector "Sector" to onboard any candidate.
+# Run /track TICKER --sector "Sector" to onboard any candidate.
 
 candidates:
   - ticker: GLW
@@ -1143,7 +1143,7 @@ candidates:
     note: "Atlas Vector Search (HNSW/ENN); document store for RAG pipeline metadata"
 
   # ── Insurance AI candidates (map-sector 2026-06-25) ──────────────────────
-  # Run /add-ticker TICKER --sector "Insurance AI" to onboard any candidate.
+  # Run /track TICKER --sector "Application" to onboard any candidate.
 
   - ticker: VRSK
     company: "Verisk Analytics"

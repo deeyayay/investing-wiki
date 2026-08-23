@@ -103,7 +103,7 @@ _Sources in wiki: Earnings & Financials (balance sheet notes), Research Log, SEC
 
 ### Risk Flags (separate from composite)
 
-Risk Flags are evaluated by `/score-ticker` and appended below the Scoring Summary table. They are **not included in the composite** — the same model as the Valuation snapshot. Their purpose is to surface structural fragilities that a per-criterion score can miss because it evaluates the ticker in isolation.
+Risk Flags are evaluated by `/dig --score` and appended below the Scoring Summary table. They are **not included in the composite** — the same model as the Valuation snapshot. Their purpose is to surface structural fragilities that a per-criterion score can miss because it evaluates the ticker in isolation.
 
 **Five flags, each assigned CLEAR / WATCH / FLAG:**
 

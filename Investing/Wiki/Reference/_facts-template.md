@@ -1,8 +1,8 @@
 ---
 # Layer 1 — Facts KB (machine-readable)
 # YAML frontmatter only. Obsidian renders this as a Properties panel.
-# Written by: /add-ticker (initial), /ticker-monitor (earnings + filings updates).
-# Read by: /score-ticker, /screen-stocks, /build-customer-matrix, /ticker-monitor, /daily-dashboard.
+# Written by: /dig (earnings + filings updates).
+# Read by: /dig.
 # Do NOT add prose to the body of this file — all content lives in the YAML block above the closing ---.
 
 ticker: TICKER
@@ -63,7 +63,7 @@ demand_chain:
   notes: "—"                   # brief description of primary customer ecosystem
 
 metrics:
-  score: null            # Composite score from /score-ticker (0–10)
+  score: null            # Composite score from /dig --score (0–10)
   score_label: "—"       # Unrivaled / Strong / Average / Reassess
   last_scored: null      # "YYYY-MM-DD"
   valuation_fpe: null    # Forward P/E
@@ -71,5 +71,5 @@ metrics:
   analyst_upside_pct: null
 
 last_updated: "YYYY-MM-DD"
-next_earnings: null      # "YYYY-MM-DD" — predicted date of next earnings release; updated by /ticker-monitor
+next_earnings: null      # "YYYY-MM-DD" — predicted date of next earnings release; updated by /dig
 ---

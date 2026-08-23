@@ -5,7 +5,10 @@
       "Bash(curl -s -H \"User-Agent: *\" \"https://www.sec.gov/cgi-bin/browse-edgar*\")",
       "Bash(Start-Sleep -Seconds *)",
       "Bash(mkdir *)",
-      "Bash(python3 scripts/watchlist_refresh_fetch.py*)"
+      "Bash(python3 scripts/watchlist_refresh_fetch.py*)",
+      "Bash(python3 scripts/check_registry.py*)",
+      "Bash(python3 scripts/repair_registry.py*)",
+      "Bash(python3 scripts/test_watchlist_fetch.py*)"
     ]
   },
   "hooks": {

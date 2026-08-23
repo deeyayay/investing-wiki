@@ -9,7 +9,7 @@
 - [x] Supply chain mapped
 - [x] Process/product depth added (2026-05-24)
 - [x] Interrelationship Anchors documented (2026-05-24)
-- [ ] Nodes registered (`/add-ticker TICKER --layer "Layer"` for each below)
+- [ ] Nodes registered (`/track TICKER --sector "Sector"` for each below)
 - [ ] Ground truth pulled (`/stock-research TICKER` per node)
 - [x] Customer matrix built (`/build-customer-matrix "Semiconductors"`) — 2026-05-24
 - [ ] Sector Framework written (only after above steps complete)

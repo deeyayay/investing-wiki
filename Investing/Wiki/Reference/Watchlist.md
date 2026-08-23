@@ -25,7 +25,7 @@ subjects the KB has no ticker for yet. Both feed one digest.
 
 ## High Conviction (scored ≥ 7.5)
 
-*Derived from Scoring Summary in each analysis.md. Refresh with `/score-ticker`.*
+*Derived from the Scoring Summary in each analysis.md. Refresh with `/dig TICKER --score`.*
 
 | Ticker | Name | Sector | Score | One-Line Thesis |
 |--------|------|--------|-------|-----------------|
@@ -90,5 +90,5 @@ subjects the KB has no ticker for yet. Both feed one digest.
 42 of the 77 registered tickers have no One-Line Thesis, so they are absent above and
 invisible to thesis-drift triage. A further 56 ticker pages exist on disk that the
 registry does not claim at all (`python3 scripts/check_registry.py` lists them).
-Run `/ticker-monitor --deep TICKER` to bring one into coverage.
+Run `/dig TICKER` to establish a thesis, or `/track TICKER` to register an unclaimed page.
 
