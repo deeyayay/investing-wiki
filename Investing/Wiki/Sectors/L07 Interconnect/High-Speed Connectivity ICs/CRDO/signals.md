@@ -5,6 +5,9 @@
 
 ## News & Alpha Log
 
+- **2026-08-22** — Wall Street raises Credo price targets again; stock +71% YTD.
+  **Why it matters:** Sell-side is marking to the AEC ramp rather than fading it — consistent with the current On track drift, but headline-level only, no new operating datapoint.
+
 - **2026-06-07** — Credo acquires Hyperlume for $92M, adding microLED-based optical interconnect technology to its portfolio.
   **Why it matters:** Deploys ATM capital into optical adjacency, directly hedging the thesis risk that copper AEC gets displaced by optical at future AI rack generations (3.2T+); expands Credo's TAM and product roadmap beyond copper SerDes.
 
@@ -33,3 +36,4 @@
 - **2026-06-07** — 📊 SCORE | Composite 8.0/10 Unrivaled | P:4 PP:4 L:4 FH:4 ME:4 FP:4 | Analyst PT consensus $278 (4 firms). Scored on Q4 FY2026 data.
 - **2026-06-07** — 📊 MONITOR --deep | Material new item: Hyperlume acquisition ($92M, microLED optical interconnect, announced 2026-06-01). Rothschild & Co Buy initiation added. EDGAR direct fetch blocked (403); used search fallback — no new filings beyond Q4 8-K (2026-06-01). 10-K FY2026 not yet filed (expected ~Jul 2026).
 - **2026-06-07** — 📊 REFRESH | --refresh-research: Q1/Q2/Q3 FY2026 earnings backfilled (dates, revenue, EPS, GM, guidance); CFO Dan Fleming added; CTO/COO ownership_pct populated (3.95%/2.01%); Q1/Q2 8-Ks + Form SD added to filings; One-Line Thesis + Investment Thesis refreshed to reflect FY2026 full-year data, Hyperlume acquisition, 5th hyperscaler qualification, ~75% AEC market share.
+- **2026-08-23** — 📰 WATCHLIST-REFRESH | 2 headlines triaged, 1 logged
