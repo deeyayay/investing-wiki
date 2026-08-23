@@ -37,7 +37,10 @@ Investing/
         _Customer Matrix.md  ← supplier × end-customer dependency table
         _Sector Framework.md ← sector thesis — written LAST, after map + matrix exist
 scripts/
-  watchlist_refresh_fetch.py ← zero-token news fetcher for /watchlist-refresh (stdlib only)
+  watchlist_refresh_fetch.py ← zero-token news + filings fetcher for /watchlist-refresh (stdlib only)
+  test_watchlist_fetch.py    ← guard tests for the fetcher (no network)
+  repair_registry.py         ← rewrite registry path/sector/layout to match disk
+  check_registry.py          ← verify the registry; exit 1 on any error
 gemini-scribe/
   Prompts/                   ← reusable prompt templates
   Scheduled-Tasks/           ← scheduled task state (JSON)
@@ -110,6 +113,31 @@ Review Monitor Registry.yaml candidates
 ```
 
 ## Key Reference Files
+
+### News + filings providers
+
+`scripts/watchlist_refresh_fetch.py` fetches from independent providers so one blocked host
+degrades a run instead of killing it. Both cost **zero model tokens**.
+
+| Provider | Source | Emits |
+|---|---|---|
+| `googlenews` | Google News RSS | `kind: news` |
+| `edgar` | SEC `browse-edgar` atom feed per CIK | `kind: filing` |
+
+Filings rank above headlines in the digest — a primary source outranks a story about it. Tickers
+with `cik: null` (foreign listings) skip EDGAR silently; that is not an error.
+
+**`WebSearch` is deliberately not a provider.** It is a model tool, so its results land in
+context — roughly two orders of magnitude more expensive per run than this script. Reserve it for
+a single ticker on demand, never the daily loop.
+
+**SEC requires a contact email in the User-Agent** or it answers 403. The default is a placeholder;
+set `SEC_USER_AGENT="your-name your@email"` so SEC can reach you before they rate-limit you.
+
+Exit status: `0` ran clean · `1` a provider was dead, or an empty digest would have overwritten a
+good one. A provider that answers 200 with zero items counts as dead — that silent mode is how the
+pipeline stayed broken for seven weeks. Run `python3 scripts/test_watchlist_fetch.py` after
+touching any of this.
 
 - **Monitor Registry** (`Investing/Wiki/Reference/Monitor Registry.yaml`) — machine-readable YAML index. All skills read this to locate ticker folder paths. Format: `TICKER → { sector, path, layout, score }` + `candidates:` list.
 

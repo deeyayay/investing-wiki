@@ -104,7 +104,7 @@ Mechanical, needs no network, unblocks every other skill. Rewrite `path:` values
 folders on disk, then settle on **one** sector naming convention so it can't rot again. Add a
 cheap integrity check (the loop above) so drift surfaces immediately next time.
 
-### 2. Harden the fetcher
+### 2. Harden the fetcher — DONE
 
 Assuming egress now works, the RSS path runs at zero token cost and this shrinks a lot. Two fixes
 still matter, because this exact failure hid for seven weeks:

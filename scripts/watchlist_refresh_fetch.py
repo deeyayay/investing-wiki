@@ -6,15 +6,37 @@ Does every mechanical step outside the model:
      against Monitor Registry.yaml (--all widens to the full registry).
   2. Resolves each ticker's folder on disk (registry paths can go stale).
   3. Extracts the One-Line Thesis + Drift status from analysis.md.
-  4. Fetches Google News RSS headlines per ticker (last --hours, default 36).
-  5. Dedupes against a seen-headline cache so twice-daily runs stay cheap.
+  4. Fetches items per ticker from every enabled provider (last --hours,
+     default 36). Providers are independent, so one blocked host degrades the
+     run instead of killing it.
+  5. Dedupes against a seen-item cache so twice-daily runs stay cheap.
   6. Writes ONE compact digest JSON for Claude to triage.
 
-Only tickers with new, unseen headlines appear in the digest. Stdlib only.
+Only tickers with new, unseen items appear in the digest. Stdlib only, and no
+model tokens are spent here — that is the whole point of this script.
+
+Providers (--providers, default "googlenews,edgar"):
+  googlenews  Google News RSS headlines.       kind="news"
+  edgar       SEC EDGAR browse-edgar atom      kind="filing"
+              feed of the ticker's filings.
+              Needs cik: in the registry;
+              foreign listings without one
+              are skipped silently.
+
+The two reach different hosts on purpose. Google News is the only reachable
+headline source, so EDGAR is what keeps the pipeline producing something if it
+goes dark. WebSearch is deliberately NOT a provider: it is a model tool, so its
+results land in context and cost roughly two orders of magnitude more per run
+than this script.
 
 Usage:
   python3 scripts/watchlist_refresh_fetch.py [--all] [--limit 50] [--hours 36]
-      [--max-per-ticker 5] [--tickers CRDO,SNDK] [--dry-run]
+      [--max-per-ticker 5] [--tickers CRDO,SNDK] [--providers googlenews,edgar]
+      [--dry-run]
+
+Exit status:
+  0  ran (even on a legitimately quiet day)
+  1  every fetch failed, or an empty digest would have overwritten a good one
 
 Output:  Investing/Raw/Inbox/watchlist-refresh-digest.json  (overwritten each run)
 State:   Investing/Raw/Inbox/.watchlist-refresh-state.json  (seen cache + rotation)
@@ -41,6 +63,12 @@ DIGEST_PATH = os.path.join(INBOX_DIR, "watchlist-refresh-digest.json")
 STATE_PATH = os.path.join(INBOX_DIR, ".watchlist-refresh-state.json")
 
 USER_AGENT = "Mozilla/5.0 (investing-wiki watchlist-refresh)"
+# SEC fair-access REQUIRES a contact email in the User-Agent — it answers 403 to
+# any UA without one, including a browser string. The default below satisfies the
+# format check but is a placeholder, not a real mailbox; set SEC_USER_AGENT to
+# "your-name your@email" so SEC can reach you before they rate-limit you.
+SEC_UA_PLACEHOLDER = "investing-wiki set-SEC_USER_AGENT@example.com"
+SEC_USER_AGENT = os.environ.get("SEC_USER_AGENT", SEC_UA_PLACEHOLDER)
 SEEN_RETENTION_DAYS = 21
 
 # Headline patterns that are never thesis-relevant — dropped before they cost tokens.
@@ -92,7 +120,7 @@ def parse_registry(path):
             m = field_re.match(line)
             if m:
                 key, val = m.group(1), m.group(2).strip().strip('"')
-                if key in ("company", "sector", "path", "score"):
+                if key in ("company", "sector", "path", "score", "cik"):
                     current[key] = None if val in ("null", "") else val
     return [t for t in tickers if t.get("company")]
 
@@ -155,8 +183,8 @@ def clean_company_name(company):
     return name or company
 
 
-def fetch_rss(url, timeout=15):
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+def fetch_url(url, timeout=15, user_agent=USER_AGENT):
+    req = urllib.request.Request(url, headers={"User-Agent": user_agent})
     with urllib.request.urlopen(req, timeout=timeout) as resp:
         return resp.read().decode("utf-8", "replace")
 
@@ -201,8 +229,99 @@ def news_query_url(company, ticker, hours):
     )
 
 
-def headline_key(title):
-    normalized = re.sub(r"[^a-z0-9]+", "", title.lower())
+def provider_googlenews(entry, hours):
+    """Google News RSS headlines for one ticker. kind='news'."""
+    items = parse_rss_items(fetch_url(news_query_url(entry["company"], entry["ticker"], hours)),
+                            hours)
+    for item in items:
+        item["kind"] = "news"
+    return items
+
+
+def edgar_atom_url(cik, count=10):
+    return (
+        "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK="
+        + urllib.request.quote(str(cik))
+        + "&type=&dateb=&owner=include&count=%d&output=atom" % count
+    )
+
+
+def parse_edgar_atom(xml_text, max_age_hours):
+    """Return filings newer than the window from a browse-edgar atom feed.
+
+    Titles are built from the form type plus, for an 8-K, its item numbers —
+    'items 1.01, 2.03' is the part that says whether a filing is worth reading.
+    """
+    items = []
+    cutoff = (datetime.now(timezone.utc) - timedelta(hours=max_age_hours)).date()
+    for chunk in re.findall(r"<entry>(.*?)</entry>", xml_text, re.S):
+        def field(name):
+            m = re.search(r"<%s>(.*?)</%s>" % (name, name), chunk, re.S)
+            return html.unescape(m.group(1)).strip() if m else ""
+
+        date_str = field("filing-date")
+        if not date_str:
+            continue
+        try:
+            if datetime.strptime(date_str, "%Y-%m-%d").date() < cutoff:
+                continue
+        except ValueError:
+            continue
+        form = field("filing-type") or field("form-name")
+        if not form:
+            continue
+        title = form
+        desc = field("form-name")
+        if desc and desc.lower() != form.lower():
+            title += " — " + desc
+        item_desc = field("items-desc")
+        if item_desc:
+            title += " (%s)" % re.sub(r"\s+", " ", item_desc)
+        items.append({
+            "t": title,
+            "src": "SEC EDGAR",
+            "d": date_str,
+            "kind": "filing",
+            "url": field("filing-href"),
+        })
+    return items
+
+
+def provider_edgar(entry, hours):
+    """SEC filings for one ticker. kind='filing'.
+
+    Returns nothing for a company with no cik — foreign listings are not SEC
+    filers, and that is a normal state, not a fetch error.
+    """
+    cik = entry.get("cik")
+    if not cik:
+        return []
+    # EDGAR indexes by filing DATE, not timestamp, so ask for whole days.
+    return parse_edgar_atom(
+        fetch_url(edgar_atom_url(cik), user_agent=SEC_USER_AGENT), hours)
+
+
+PROVIDERS = {
+    "googlenews": provider_googlenews,
+    "edgar": provider_edgar,
+}
+DEFAULT_PROVIDERS = "googlenews,edgar"
+
+
+def existing_digest_has_content(path):
+    """True if a digest already on disk holds headlines worth not destroying."""
+    try:
+        with open(path, encoding="utf-8") as f:
+            return bool(json.load(f).get("tickers"))
+    except (OSError, ValueError):
+        return False
+
+
+def item_key(item):
+    """Stable dedupe key. Filings key on their URL — every 8-K shares the title
+    '8-K — Current report', so keying on text alone would hide all but the first."""
+    basis = item.get("url") or item.get("t", "")
+    normalized = re.sub(r"[^a-z0-9]+", "", basis.lower())
     return hashlib.sha1(normalized.encode()).hexdigest()[:16]
 
 
@@ -247,9 +366,18 @@ def main(argv=None):
     ap.add_argument("--tickers", help="comma-separated override list (skips selection logic)")
     ap.add_argument("--all", action="store_true",
                     help="scan the full registry instead of just Watchlist.md tickers")
+    ap.add_argument("--providers", default=DEFAULT_PROVIDERS,
+                    help="comma-separated providers (default %(default)s; available: "
+                         + ",".join(sorted(PROVIDERS)) + ")")
     ap.add_argument("--dry-run", action="store_true", help="resolve + select only; no network, no writes")
     ap.add_argument("--output", default=DIGEST_PATH, help="digest path (default %(default)s)")
     args = ap.parse_args(argv)
+
+    chosen = [p.strip() for p in args.providers.split(",") if p.strip()]
+    unknown = [p for p in chosen if p not in PROVIDERS]
+    if unknown or not chosen:
+        ap.error("unknown provider(s): %s (available: %s)"
+                 % (", ".join(unknown) or "none given", ", ".join(sorted(PROVIDERS))))
 
     entries = parse_registry(REGISTRY)
     watchlist = parse_watchlist_tickers(WATCHLIST)
@@ -281,18 +409,33 @@ def main(argv=None):
     now = datetime.now(timezone.utc)
     today = now.strftime("%Y-%m-%d")
     digest_tickers, errors = [], []
+    # attempts/failures per provider — a provider that fails everywhere is the
+    # signal that a host went dark, which is exactly what hid for seven weeks.
+    stats = {name: {"attempts": 0, "failures": 0, "items": 0} for name in chosen}
     for e in selected:
-        url = news_query_url(e["company"], e["ticker"], args.hours)
-        try:
-            items = parse_rss_items(fetch_rss(url), args.hours)
-        except Exception as exc:  # network errors must never kill the batch
-            errors.append({"ticker": e["ticker"], "error": str(exc)[:120]})
-            continue
+        items, ticker_failed = [], 0
+        for name in chosen:
+            stats[name]["attempts"] += 1
+            try:
+                got = PROVIDERS[name](e, args.hours)
+            except Exception as exc:  # one provider failing must not lose the others
+                stats[name]["failures"] += 1
+                ticker_failed += 1
+                errors.append({"ticker": e["ticker"], "provider": name,
+                               "error": str(exc)[:120]})
+                continue
+            stats[name]["items"] += len(got)
+            items.extend(got)
+            time.sleep(0.5)
+        if ticker_failed == len(chosen):
+            continue  # nothing came back at all; already recorded in errors
+        # Filings first: a primary source outranks a headline about it.
+        items.sort(key=lambda i: (i.get("kind") != "filing", i.get("d") or ""), reverse=False)
         fresh = []
         for item in items:
-            if NOISE_RE.search(item["t"]):
+            if item.get("kind") == "news" and NOISE_RE.search(item["t"]):
                 continue
-            key = headline_key(item["t"])
+            key = item_key(item)
             if key in state["seen"]:
                 continue
             state["seen"][key] = today
@@ -311,7 +454,6 @@ def main(argv=None):
                 "folder": folder_rel,
                 "headlines": fresh,
             })
-        time.sleep(0.5)
 
     digest = {
         "generated": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -322,17 +464,65 @@ def main(argv=None):
                         if e["ticker"] not in {d["ticker"] for d in digest_tickers}
                         and e["ticker"] not in {x["ticker"] for x in errors}),
         "errors": errors,
+        "providers": stats,
         "not_in_registry": not_in_registry,
         "tickers": digest_tickers,
     }
+
+    # A broken run produces a well-formed digest with zero headlines, which is
+    # indistinguishable from a quiet day once written. That is how a seven-week
+    # outage stayed invisible. Refuse to publish one over a digest that has
+    # content, and treat a provider that returned nothing as suspect.
+    #
+    # Two ways a provider dies, and the silent one is the dangerous one:
+    #   failing   — raises, lands in errors, obvious
+    #   silent    — answers 200 with zero items, e.g. a feed format change that
+    #               no longer matches the parser. Invisible without this check.
+    total_attempts = sum(v["attempts"] for v in stats.values())
+    total_failures = sum(v["failures"] for v in stats.values())
+    total_items = sum(v["items"] for v in stats.values())
+    all_failed = total_attempts > 0 and total_failures == total_attempts
+    no_raw_items = total_attempts > 0 and total_items == 0
+    would_clobber = not digest_tickers and existing_digest_has_content(args.output)
+
+    failing = [n for n, v in stats.items() if v["attempts"] and v["failures"] == v["attempts"]]
+    silent = [n for n, v in stats.items()
+              if v["attempts"] and not v["failures"] and v["items"] == 0]
+    dead = failing + silent
+
+    if all_failed or (would_clobber and (errors or no_raw_items)):
+        reason = ("every fetch failed" if all_failed
+                  else "no new items and %d fetch errors" % len(errors) if errors
+                  else "no provider returned a single item")
+        print("REFUSING to write digest: %s — leaving %s untouched."
+              % (reason, os.path.relpath(args.output, REPO_ROOT)), file=sys.stderr)
+        for name in failing:
+            print("  provider %s failed on all %d attempts"
+                  % (name, stats[name]["attempts"]), file=sys.stderr)
+        for name in silent:
+            print("  provider %s answered on all %d attempts but returned nothing "
+                  "— check whether its feed format changed"
+                  % (name, stats[name]["attempts"]), file=sys.stderr)
+        for err in errors[:5]:
+            print("  %s/%s: %s" % (err["ticker"], err["provider"], err["error"]), file=sys.stderr)
+        return 1
+
     os.makedirs(os.path.dirname(args.output), exist_ok=True)
     with open(args.output, "w", encoding="utf-8") as f:
         json.dump(digest, f, indent=1, ensure_ascii=False)
     save_state(state)
 
-    print(f"Scanned {len(selected)} tickers → {len(digest_tickers)} with new headlines, "
-          f"{len(errors)} fetch errors. Digest: {os.path.relpath(args.output, REPO_ROOT)}")
-    return 0
+    summary = ", ".join("%s %d" % (n, v["items"]) for n, v in stats.items())
+    print(f"Scanned {len(selected)} tickers → {len(digest_tickers)} with new items, "
+          f"{len(errors)} fetch errors. Items by provider: {summary}. "
+          f"Digest: {os.path.relpath(args.output, REPO_ROOT)}")
+    for name in failing:
+        print("WARNING: provider %s failed on all %d attempts — it may be blocked."
+              % (name, stats[name]["attempts"]), file=sys.stderr)
+    for name in silent:
+        print("WARNING: provider %s returned zero items on all %d attempts — it may "
+              "have changed format." % (name, stats[name]["attempts"]), file=sys.stderr)
+    return 1 if dead else 0
 
 
 if __name__ == "__main__":
