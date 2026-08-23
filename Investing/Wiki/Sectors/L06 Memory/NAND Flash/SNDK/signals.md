@@ -7,6 +7,8 @@
 
 | Date | Headline | Source | So-what |
 |------|----------|--------|---------|
+| 2026-08-23 | WSJ report sends memory stocks down: SNDK -9%, Micron -7%, Western Digital -5% | WSJ via AOL | Sector-wide memory de-rate on an unspecified WSJ report; NAND/DRAM pricing is the named bear watch item in the current drift status - content unverified, queued for deep pass |
+| 2026-08-23 | SanDisk fair-value estimates lifted following Investor Day and earnings | Yahoo Finance | Sell-side marking up on Investor Day disclosures; directionally supports the NBM/HBF leg but no new primary datapoint at headline level |
 | 2026-06-17 | Q3 FY2026: Revenue $5.95B (+251% YoY, +24% vs. $4.4–4.8B guidance); Non-GAAP EPS $23.41 vs. $12–14 guided (+68% beat); free cash flow $2.955B | SEC 8-K / earnings release 2026-04-30 | Largest beat in company's independent history; Datacenter gross margin 22%→78% YoY — pricing power confirmed structural; FY2027 analyst consensus now $45B |
 | 2026-06-17 | Q4 FY2026 guidance: $7.75–8.25B revenue (midpoint $8B), Non-GAAP EPS $30–33; 128TB AI enterprise SSD begins shipping | Earnings call 2026-04-30 | Single quarter at guidance midpoint exceeds any prior-year full-quarter precedent; 128TB drive is first AI-purpose-built high-density product entering revenue |
 | 2026-06-17 | Jan 29, 2026: Kioxia and SanDisk extend Yokkaichi JV to Dec 31, 2034 with $1.165B committed manufacturing payments 2026–2029; stock +31.8% | BusinessWire / SEC 8-K | Removes largest supply-continuity risk through 2034; aligned capex commitment is mutual vote of confidence in AI NAND demand decade |
@@ -37,3 +39,4 @@
 | 2026-06-16 | Ingested Substack deep-dive by Ren (rensub.substack.com): full financial profile, NBM structure, HBF thesis, valuation framework | Full article archived at `Investing/Raw/Filings/SNDK/2026-06-16-rensub-sandisk-ai-revolution.md`; facts.md updated with Q4 FY2026 financials, management (Visoso/Sivaram), metrics, moat notes; analysis.md updated with conviction entry, analyst coverage table, CXMT cross-ticker, expanded catalyst timeline |
 | 2026-06-17 | 📊 MONITOR --deep SNDK | facts.md: Q3 FY2026 earnings row ($5.95B, EPS $23.41, FCF $2.955B), Q4 guidance entry, 10-Q + 8-K filings with URLs, analyst consensus 22-analyst Buy ($1,751 avg, Citi $2,025 high). analysis.md: 3 conviction rows (earnings beat ↑↑, Kioxia JV extension ↑, SK Hynix sellout ↑), 2 cross-ticker signals, analyst rows, thesis drift updated. Kioxia JV formally extended to 2034 Jan 29. Next earnings est. 2026-07-30. |
 | 2026-06-17 | 📊 SCORE | Composite 8.5/10 Unrivaled \| P:4 PP:5 L:3 FH:5 ME:5 FP:4 |
+| 2026-08-23 | 📰 WATCHLIST-REFRESH | 5 headlines triaged, 2 logged; WSJ memory-stock report queued for /ticker-monitor --deep SNDK |
