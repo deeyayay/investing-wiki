@@ -4,6 +4,8 @@ Deploys the dashboard to GitHub Pages via `gh-pages`. The HTML lives in `Investi
 - **`STACK`** — the canonical 12-layer vertical map (Application → Critical Minerals), mapped word-for-word from the *AI Buildout Supply Chain* blueprint graphic, wrapped by 3 cross-cutting rails (Power / Thermal / Security) + the Edge & Physical AI deployment surface, rendered as the homepage. Source of truth: the JSON block in `Investing/Wiki/Reference/AI Buildout Stack.md`.
 - **`DATA`** — the per-sector tier/company backbone (`sectors`, `tech_races`) used by the drill-down, ticker-wiki, and search. Each `STACK` sub-box maps to a `(sector, tier)` in `DATA.sectors`.
 
+**`AI & Robotics News` tab** — a client-side aggregator, **not** an embedded data block. It fetches the latest `/watchlist-refresh` digest (`Investing/Raw/Inbox/watchlist-refresh-digest.json`) from raw.githubusercontent at page load, flattens every ticker's headlines into one dated feed, keyword-tags each headline by theme (Robotics & Physical AI, AI Compute, Memory, Foundry, Interconnect, Power, Datacenter, Capital, Policy, Earnings, Analyst), and filters by theme chip / sector / free text. It shares the digest fetch with the Watchlist tab (`_wlRefresh`), so no extra request. Because it reads the digest live, `--refresh-data` does **not** need to touch it — a new `/watchlist-refresh` run updates the tab on its own. Missing digest = empty state pointing at `/watchlist-refresh`. Ticker chips drill into the existing wiki view (`openTicker`).
+
 **Dashboard URL:** `https://deeyayay.github.io/investing-wiki/`
 *GitHub Pages watches `gh-pages` — every push auto-deploys within ~1 minute.*
 
