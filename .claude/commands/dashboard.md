@@ -1,13 +1,37 @@
+---
+description: Deploy and refresh the AI Buildout Stack dashboard — the visual, phone-friendly surface for the wiki. Renders the 12-layer vertical stack map, per-sector drill-downs, ticker pages, and the daily brief's digest (news, filings, themes, discovered names). Deploys to GitHub Pages. Usage: /dashboard [--refresh-data] [--stack-only]
+allowed-tools: Bash(git:*), Bash(python3 scripts/check_registry.py:*), Read, Edit, Write, Glob, Grep
+---
+
 # Daily Dashboard — AI Buildout Stack Viewer
 
 Deploys the dashboard to GitHub Pages via `gh-pages`. The HTML lives in `Investing/Output/Dashboard/index.html`. It embeds two objects:
 - **`STACK`** — the canonical 12-layer vertical map (Application → Critical Minerals), mapped word-for-word from the *AI Buildout Supply Chain* blueprint graphic, wrapped by 3 cross-cutting rails (Power / Thermal / Security) + the Edge & Physical AI deployment surface, rendered as the homepage. Source of truth: the JSON block in `Investing/Wiki/Reference/AI Buildout Stack.md`.
 - **`DATA`** — the per-sector tier/company backbone (`sectors`, `tech_races`) used by the drill-down, ticker-wiki, and search. Each `STACK` sub-box maps to a `(sector, tier)` in `DATA.sectors`.
 
-**`AI & Robotics News` tab** — a client-side aggregator, **not** an embedded data block. It fetches the latest `/watchlist-refresh` digest (`Investing/Raw/Inbox/watchlist-refresh-digest.json`) from raw.githubusercontent at page load, flattens every ticker's headlines into one dated feed, keyword-tags each headline by theme (Robotics & Physical AI, AI Compute, Memory, Foundry, Interconnect, Power, Datacenter, Capital, Policy, Earnings, Analyst), and filters by theme chip / sector / free text. It shares the digest fetch with the Watchlist tab (`_wlRefresh`), so no extra request. Because it reads the digest live, `--refresh-data` does **not** need to touch it — a new `/watchlist-refresh` run updates the tab on its own. Missing digest = empty state pointing at `/watchlist-refresh`. Ticker chips drill into the existing wiki view (`openTicker`).
+**`AI & Robotics News` tab** — a client-side aggregator, **not** an embedded data block. It fetches the latest `/brief` digest (`Investing/Raw/Inbox/watchlist-refresh-digest.json`) from raw.githubusercontent at page load, flattens every ticker's headlines into one dated feed, keyword-tags each item by theme (Robotics & Physical AI, AI Compute, Memory, Foundry, Interconnect, Power, Datacenter, Capital, Policy, Earnings, Analyst), and filters by theme chip / sector / free text. Items with `kind: "filing"` get an SEC Filings chip, a Filing badge, and link to their own `url`; news items without a `url` link to a Google News search for the title. It shares the digest fetch with the Watchlist tab (`_wlRefresh`), so no extra request. Because it reads the digest live, `--refresh-data` does **not** need to touch it — a new `/brief` run updates the tab on its own. Missing digest = empty state pointing at `/brief`. Ticker chips drill into the existing wiki view (`openTicker`).
 
 **Dashboard URL:** `https://deeyayay.github.io/investing-wiki/`
 *GitHub Pages watches `gh-pages` — every push auto-deploys within ~1 minute.*
+
+## What this surfaces from the daily brief
+
+The Watchlist tab fetches `Investing/Raw/Inbox/watchlist-refresh-digest.json` from `master` at
+page load, so **a `/brief` push updates the deployed dashboard without redeploying the HTML.**
+That is the whole delivery path — there is no separate digest destination.
+
+The digest keys the tab renders:
+
+| Key | Renders as |
+|---|---|
+| `tickers[].headlines[]` | per-ticker news list; `kind:"filing"` items are badged and linked to the SEC document, and sort above news |
+| `topics[]` | the Themes section — `tickers` as chips, `gaps` as the unregistered names |
+| `discovered[]` | untracked names matched in theme coverage, each with a `/track` command |
+| `providers{}` | per-provider item counts in the banner; a provider with zero items raises a visible "digest is incomplete" warning |
+
+**If you change the digest schema in `scripts/watchlist_refresh_fetch.py`, update the tab.**
+The dashboard fails silently on a key it does not know — it renders nothing rather than erroring,
+which is how a whole section can quietly disappear.
 
 **Flags:**
 - *(none)* — deploy existing `index.html` to gh-pages as-is
@@ -29,10 +53,15 @@ Run the deploy steps in Phase 3. No file reads needed.
 Also read these files **in the same parallel batch** (alongside the existing Phase 1 reads):
 
 **Watchlist** (`Investing/Wiki/Reference/Watchlist.md`):
-- Parse ticker rows from the three category sections:
-  - `## Core Holdings (Active Positions)` → category: `"Core Holdings"`, columns: Ticker | Name | Thesis Summary | Strategy | Score
-  - `## High Upside Rockets (Speculative)` → category: `"Rockets"`, columns: Ticker | Notes | Score
-  - `## Compounders Watchlist` → category: `"Compounders"`, columns: Ticker | Name | Notes | Score
+- Parse ticker rows from the four category sections (rebuilt 2026-08-23):
+  - `## Core Holdings (Active Positions)` → `"Core Holdings"`, columns: Ticker | Name | Tier | Thesis Summary | Score
+  - `## High Conviction` → `"High Conviction"`, columns: Ticker | Name | Sector | Score | One-Line Thesis
+  - `## Drift Watch` → `"Drift Watch"`, columns: Ticker | Name | Score | Drift Status
+  - `## Active Coverage` → `"Active Coverage"`, columns: Ticker | Name | Sector | Score | One-Line Thesis
+- Core Holdings is owner-maintained and often empty — that is expected, not a parse failure.
+  The other three are derived from each `analysis.md`, so they change as theses do.
+- The pre-2026-08 sections (`Rockets`, `Compounders`, `Watching`) are still parsed by
+  `index.html` for backwards compatibility, but are no longer written.
 - Stop parsing each section at the next `---` or `##` line
 - Skip header rows and separator rows (cells starting with `---`)
 - Extract: ticker, name (or blank), notes/thesis_summary, strategy, raw score (null if `—` or blank)
@@ -87,7 +116,7 @@ Run all reads in parallel.
 - A non-gap box's `slug` + `tier` must match a sector/tier in `DATA.sectors` (below) so the drill-down resolves. If a referenced tier is missing, fix the slug/tier in `AI Buildout Stack.md` — do not invent tiers.
 - `"group"` on a box is a **visual tag** that clusters boxes into a labeled band within a layer (e.g. L07 Scale-Up/Out/Across/Components, L10 Lithography). It is *not* a drill-down level — preserve it.
 - Rails carry `"flow"` (`in`/`out`/`wrap` → drives the "power in / heat out / wraps" badge) and an optional `"kind":"surface"` (Edge & Physical AI deployment surface). Each rail group holds a `"boxes"` array of individual sub-boxes — same `{label, slug, tier, chips, gap, choke}` shape as layer boxes — rendered as compact cards that drill into their KB tier (or render as `gap`). Do not collapse them back into a flat `items` list.
-- `chips[]` are ticker symbols; they need not all be onboarded (candidates render and degrade gracefully to a "run /add-ticker" notice).
+- `chips[]` are ticker symbols; they need not all be onboarded (candidates render and degrade gracefully to a "run /track" notice).
 
 **Technology Preferences** (`Investing/Wiki/Reference/Technology Preferences.md`):
 - Find all `## Sector Group: [Name]` headings → track `current_group`
@@ -161,7 +190,7 @@ const DATA = {
     // ... one entry per ### Race block in Technology Preferences.md
   ],
   watchlist: [
-    // One entry per row in Watchlist.md (Core Holdings / Rockets / Compounders sections).
+    // One entry per row in Watchlist.md (Core Holdings / High Conviction / Drift Watch / Active Coverage).
     // Tickers not yet in Monitor Registry or without an analysis.md still appear;
     // set thesis:"", scoring:null, catalysts:null for those.
     { ticker: "NVDA", name: "NVIDIA Corporation", category: "Core Holdings",

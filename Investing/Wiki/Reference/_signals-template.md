@@ -1,6 +1,6 @@
 # TICKER — Signals
 *Layer 3 — News, sentiment, and research audit trail. Append-only. Never read for structured data.*
-*Updated by: /ticker-monitor (news + research log), /ticker-monitor --news-only, /ingest-sentiment.*
+*Updated by: /brief (news, social mentions, research log), /dig (research log).*
 
 ---
 
