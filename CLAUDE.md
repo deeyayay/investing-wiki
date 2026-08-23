@@ -86,6 +86,34 @@ redeploy.** There is no Slack/Notion/Obsidian mirror by design — one surface, 
 Consequence: changing the digest schema in `scripts/watchlist_refresh_fetch.py` without updating
 the tab in `index.html` makes a section *silently vanish* rather than error. Keep them in step.
 
+### Scheduling — and the environment it must run in
+
+Two Routines run `/brief` on weekdays, both **pinned to `env_01QnkyPvexoVFiduw3Bd4MK6`
+("Custom Cloud Env")**:
+
+| When (UTC) | US Eastern | Catches |
+|---|---|---|
+| `30 11 * * 1-5` | ~7:30am | overnight news + pre-market, before the 9:30 open |
+| `30 21 * * 1-5` | ~5:30pm | the full session plus after-close 8-Ks, which is when they drop |
+
+**The environment pin is load-bearing, not a detail.** The account has two environments:
+
+| Environment | Egress |
+|---|---|
+| `env_01QnkyPvexoVFiduw3Bd4MK6` — Custom Cloud Env | Google News + SEC reachable — **the sanctioned one** |
+| `env_01FdfJe45TiM8KuNNWuvkwau` — Default Cloud Environment | everything blocked |
+
+The Default environment is where this pipeline sat dead for seven weeks. A Routine that inherits
+or defaults into it produces a well-formed digest with zero headlines and no error, which is
+indistinguishable from a quiet day. If briefs go quiet, **check which environment fired before
+looking for a bug** — and note the fetcher's non-zero exit is now the tripwire for exactly this.
+
+Timezone caveat: cron is fixed UTC while US Eastern shifts. These fire an hour earlier in local
+terms once EST starts in November — re-cut to `30 12` / `30 22` then if the timing matters.
+
+Both Routines run on **`master`**, and the deployed dashboard reads the digest from `master`. A
+brief that runs on a branch is invisible.
+
 ### The loop
 
 ```
