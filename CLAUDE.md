@@ -91,10 +91,12 @@ the tab in `index.html` makes a section *silently vanish* rather than error. Kee
 Two Routines run `/brief` on weekdays, both **pinned to `env_01QnkyPvexoVFiduw3Bd4MK6`
 ("Custom Cloud Env")**:
 
-| When (UTC) | US Eastern | Catches |
-|---|---|---|
-| `30 11 * * 1-5` | ~7:30am | overnight news + pre-market, before the 9:30 open |
-| `30 21 * * 1-5` | ~5:30pm | the full session plus after-close 8-Ks, which is when they drop |
+| When (UTC) | US Eastern | Trigger ID | Catches |
+|---|---|---|---|
+| `30 11 * * 1-5` | ~7:30am | `trig_01UffnvE7j3KE3SYWHxPz9fn` | overnight news + pre-market, before the 9:30 open |
+| `30 21 * * 1-5` | ~5:30pm | `trig_01HGRMHZXwBLith1EuQab4b9` | the full session plus after-close 8-Ks, which is when they drop |
+
+Each fires a **fresh session** (no carried context) and pushes to `master` when it finishes.
 
 **The environment pin is load-bearing, not a detail.** The account has two environments:
 
