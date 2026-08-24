@@ -381,12 +381,45 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 .nw-line2{font-size:10px;color:var(--muted);margin-top:5px;display:flex;gap:7px;flex-wrap:wrap;align-items:center}
 .nw-tag{font-size:10px;padding:1px 7px;border-radius:99px;background:var(--bg3);color:var(--muted)}
 .nw-tag.robo{background:oklch(93% .06 310);color:var(--d4);font-weight:600}
+.nw-kind{font-size:9px;font-weight:700;letter-spacing:.06em;padding:1px 5px;border-radius:3px;background:oklch(89% .14 258);color:var(--d3);vertical-align:1px}
 .nw-drift{font-size:10px;padding:1px 7px;border-radius:99px;background:var(--amber-bg);color:var(--amber);border:1px solid oklch(82% .14 62)}
 .nw-empty{text-align:center;padding:60px 20px;color:var(--muted);font-size:13px;line-height:2}
 .nw-empty code{font-family:monospace;background:var(--bg3);padding:2px 6px;border-radius:4px;font-size:12px}
 .nw-loading{color:var(--muted);font-size:13px;padding:40px 0;text-align:center}
 @media(max-width:600px){#news{padding:16px}.nw-item{flex-direction:column;gap:4px}.nw-tk{width:auto}.nw-input{min-width:0}}
-</style>
+/* ---- Brief: filings, themes, discovery (added 2026-08-23) ----
+   Uses only the :root tokens above. The dashboard is a single light theme;
+   hardcoding a dark card here made theme headlines unreadable. */
+.wl-news-item.is-filing{background:oklch(96% .035 258);border-left:2px solid var(--d3);
+  padding-left:8px;border-radius:3px}
+.wl-kind{display:inline-block;font-size:9px;font-weight:700;letter-spacing:.06em;
+  padding:1px 5px;border-radius:3px;margin-right:6px;vertical-align:1px}
+.wl-kind-filing{background:oklch(89% .14 258);color:var(--d3)}
+.wl-news-link{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.wl-news-link:hover{color:var(--d3)}
+.wl-refresh-warn{margin:6px 0 0;padding:7px 10px;border-radius:6px;font-size:12px;
+  background:var(--amber-bg);border:1px solid var(--amber);color:var(--text)}
+.wl-topics{display:grid;gap:10px;margin-bottom:14px}
+.wl-topic{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
+.wl-topic-hdr{display:flex;flex-wrap:wrap;align-items:center;gap:6px;
+  font-weight:700;font-size:14px;color:var(--text);margin-bottom:8px}
+.wl-topic-chips{display:inline-flex;flex-wrap:wrap;gap:4px}
+.wl-chip{display:inline-block;font-size:10px;font-weight:700;padding:2px 7px;
+  border-radius:99px;background:oklch(89% .14 258);color:var(--d3)}
+.wl-chip-new{background:oklch(89% .12 148);color:var(--d2)}
+.wl-topic-gaps{font-size:11px;color:var(--muted);font-style:italic}
+.wl-disc{display:grid;gap:6px;margin-bottom:14px}
+.wl-disc-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:12px;
+  padding:9px 12px;border-radius:8px;background:var(--bg2);border:1px solid var(--border)}
+.wl-disc-ctx{flex:1;min-width:150px;color:var(--muted)}
+.wl-disc-row code{font-size:11px;background:var(--bg3);color:var(--text);
+  padding:2px 7px;border-radius:4px;white-space:nowrap}
+.wl-disc-note{font-size:11px;color:var(--muted);font-style:italic;padding-left:2px}
+@media(max-width:600px){
+  .wl-topic-hdr{font-size:13px}
+  .wl-disc-ctx{min-width:100%;order:3}
+  .wl-news-item{font-size:12px;line-height:1.45}
+}</style>
 </head>
 <body>
 <div id="app">
@@ -2313,6 +2346,10 @@ function parseWatchlistMd(md){
   let category=null;
   for(const line of lines){
     if(line.startsWith('## Core Holdings')){category='Core Holdings';continue;}
+    if(line.startsWith('## High Conviction')){category='High Conviction';continue;}
+    if(line.startsWith('## Drift Watch')){category='Drift Watch';continue;}
+    if(line.startsWith('## Active Coverage')){category='Active Coverage';continue;}
+    // Pre-2026-08 section names, kept so an older Watchlist.md still renders.
     if(line.startsWith('## High Upside Rockets')){category='Rockets';continue;}
     if(line.startsWith('## Compounders')){category='Compounders';continue;}
     if(line.startsWith('## Watching')){category='Watching';continue;}
@@ -2323,10 +2360,17 @@ function parseWatchlistMd(md){
     const first=cols[0];
     if(first==='Ticker'||first.startsWith('---')||first.startsWith(':---'))continue;
     if(!first||first==='-')continue;
-    const e={ticker:first,category,name:'',notes:'',strategy:'',score:null};
+    const e={ticker:first,category,name:'',notes:'',strategy:'',score:null,sector:''};
+    const num=v=>(v&&v!=='—'&&v!=='-')?(parseFloat(String(v).replace(/\*/g,''))||null):null;
     if(category==='Core Holdings'&&cols.length>=4){
-      e.name=cols[1]||'';e.notes=cols[2]||'';e.strategy=cols[3]||'';
-      const s=cols[4]||'';e.score=(s&&s!=='—'&&s!=='-')?parseFloat(s)||null:null;
+      // | Ticker | Name | Tier | Thesis Summary | Score |
+      e.name=cols[1]||'';e.strategy=cols[2]||'';e.notes=cols[3]||'';e.score=num(cols[4]);
+    } else if(category==='High Conviction'||category==='Active Coverage'){
+      // | Ticker | Name | Sector | Score | One-Line Thesis |
+      e.name=cols[1]||'';e.sector=cols[2]||'';e.score=num(cols[3]);e.notes=cols[4]||'';
+    } else if(category==='Drift Watch'){
+      // | Ticker | Name | Score | Drift Status |
+      e.name=cols[1]||'';e.score=num(cols[2]);e.notes=cols[3]||'';
     } else if(category==='Rockets'&&cols.length>=2){
       e.notes=cols[1]||'';
       const s=cols[2]||'';e.score=(s&&s!=='—'&&s!=='-')?parseFloat(s)||null:null;
@@ -2459,7 +2503,7 @@ function renderWatchlistCard(e,canEdit){
   let newsHtml='';
   if(rf&&rf.headlines&&rf.headlines.length){
     newsHtml='<div class="wl-block-hdr">Latest Headlines — '+esc((_wlRefresh.generated||'').slice(0,10))+'</div><ul class="wl-news-list">'
-      +rf.headlines.map(h=>'<li class="wl-news-item"><span class="wl-news-date">'+esc(h.d||'')+'</span>'+esc(h.t)+(h.src?' <span class="wl-news-src">— '+esc(h.src)+'</span>':'')+'</li>').join('')+'</ul>';
+      +rf.headlines.map(h=>{const isF=h.kind==='filing';const label=isF?'<span class="wl-kind wl-kind-filing">FILING</span>':'';const body=esc(h.t);const txt=(isF&&h.url)?'<a class="wl-news-link" href="'+esc(h.url)+'" target="_blank" rel="noopener">'+body+'</a>':body;return '<li class="wl-news-item'+(isF?' is-filing':'')+'"><span class="wl-news-date">'+esc(h.d||'')+'</span>'+label+txt+(h.src?' <span class="wl-news-src">— '+esc(h.src)+'</span>':'')+'</li>';}).join('')+'</ul>';
   }
   return '<div class="wl-card">'
     +'<div class="wl-card-hdr"><span class="wl-ticker">'+esc(e.ticker)+'</span>'
@@ -2482,8 +2526,8 @@ function renderWatchlist(entries,fallback){
   const addRowHtml=canEdit
     ?'<div class="wl-add-row"><input id="wl-add-ticker" class="wl-add-input" type="text" placeholder="Add ticker…" onkeydown="if(event.key===\'Enter\')wlAddFromInput()" /><button class="wl-btn primary" onclick="wlAddFromInput()">Add</button></div>'
     :'';
-  const cats=['Watching','Core Holdings','Rockets','Compounders'];
-  const catLabels={'Watching':'Watching','Core Holdings':'Core Holdings — Active Positions','Rockets':'High Upside Rockets — Speculative','Compounders':'Compounders Watchlist'};
+  const cats=['Core Holdings','Drift Watch','High Conviction','Active Coverage','Watching','Rockets','Compounders'];
+  const catLabels={'Core Holdings':'Core Holdings — Active Positions','Drift Watch':'Drift Watch — thesis moved, look here first','High Conviction':'High Conviction — scored 7.5+','Active Coverage':'Active Coverage — thesis established','Watching':'Watching','Rockets':'High Upside Rockets — Speculative','Compounders':'Compounders Watchlist'};
   const body=cats.map(cat=>{
     const items=entries.filter(e=>e.category===cat);
     if(!items.length)return'';
@@ -2491,12 +2535,43 @@ function renderWatchlist(entries,fallback){
   }).join('');
   const emptyHtml=entries.length?''
     :'<div class="wl-empty">Watchlist is empty.<br>Add a ticker above, or edit <code>Watchlist.md</code> and re-run <code>/daily-dashboard --refresh-data</code>.</div>';
+  // A provider that answered but returned nothing is the failure mode that hid a
+  // seven-week outage — surface it here rather than letting it look like a quiet day.
+  const provStats=(_wlRefresh&&_wlRefresh.providers)||{};
+  const deadProviders=Object.keys(provStats).filter(n=>{
+    const v=provStats[n]||{};return v.attempts&&(v.failures===v.attempts||v.items===0);});
+  const provHtml=Object.keys(provStats).length
+    ?' · '+Object.keys(provStats).map(n=>esc(n)+' '+(provStats[n].items||0)).join(', '):'';
+  const staleHtml=deadProviders.length
+    ?'<div class="wl-refresh-warn">⚠️ provider'+(deadProviders.length>1?'s':'')+' returned nothing: <strong>'
+      +deadProviders.map(esc).join(', ')+'</strong> — this digest is incomplete.</div>':'';
   const refreshBanner=_wlRefresh
-    ?'<div class="wl-refresh-banner"><span>📰 <strong>Watchlist refresh</strong> '+esc((_wlRefresh.generated||'').slice(0,16).replace('T',' '))+' UTC</span><span>'+(_wlRefresh.scanned||0)+' scanned · '+(_wlRefresh.with_news||0)+' with new headlines'+((_wlRefresh.errors||[]).length?' · '+_wlRefresh.errors.length+' fetch errors':'')+'</span></div>'
+    ?'<div class="wl-refresh-banner"><span>📰 <strong>Brief</strong> '+esc((_wlRefresh.generated||'').slice(0,16).replace('T',' '))+' UTC</span><span>'+(_wlRefresh.scanned||0)+' scanned · '+(_wlRefresh.with_news||0)+' with new items'+provHtml+((_wlRefresh.errors||[]).length?' · '+_wlRefresh.errors.length+' fetch errors':'')+'</span></div>'+staleHtml
+    :'';
+
+  // Topics — themes the registry cannot express, because a subject stays invisible
+  // until a ticker is already owned in it. gaps: are the unregistered names.
+  const topics=(_wlRefresh&&_wlRefresh.topics)||[];
+  const topicsHtml=topics.length
+    ?'<div class="wl-section-hdr">Themes — '+topics.length+' with hits</div><div class="wl-topics">'
+      +topics.map(t=>'<div class="wl-topic"><div class="wl-topic-hdr">'+esc(t.label||t.id)
+        +(t.tickers&&t.tickers.length?'<span class="wl-topic-chips">'+t.tickers.map(x=>'<span class="wl-chip">'+esc(x)+'</span>').join('')+'</span>':'')
+        +(t.gaps&&t.gaps.length?'<span class="wl-topic-gaps">gaps: '+t.gaps.map(esc).join(', ')+'</span>':'')
+        +'</div><ul class="wl-news-list">'
+        +(t.headlines||[]).map(h=>'<li class="wl-news-item"><span class="wl-news-date">'+esc(h.d||'')+'</span>'+esc(h.t)+(h.src?' <span class="wl-news-src">— '+esc(h.src)+'</span>':'')+'</li>').join('')
+        +'</ul></div>').join('')+'</div>'
+    :'';
+
+  // Discovered — a name match in a topic headline. A lead, never a decision.
+  const disc=(_wlRefresh&&_wlRefresh.discovered)||[];
+  const discHtml=disc.length
+    ?'<div class="wl-section-hdr">Discovered — untracked names in theme coverage</div>'
+      +'<div class="wl-disc">'+disc.map(d=>'<div class="wl-disc-row"><span class="wl-chip wl-chip-new">'+esc(d.ticker)+'</span><span class="wl-disc-ctx">'+esc((d.seen_in||[])[0]||'')+'</span><code>/track '+esc(d.ticker)+'</code></div>').join('')
+      +'<div class="wl-disc-note">Matched from a company name in a headline — verify before tracking.</div></div>'
     :'';
   container.innerHTML=
     '<div class="wl-page-hdr"><div class="wl-title">Watchlist</div>'+headerAuthHtml+'</div>'
-    +refreshBanner+patPromptHtml+addRowHtml+body+emptyHtml;
+    +refreshBanner+patPromptHtml+addRowHtml+body+emptyHtml+topicsHtml+discHtml;
 }
 
 async function initWatchlistTab(force){
@@ -2544,12 +2619,15 @@ NEWS_THEMES.forEach(t=>{
 });
 const NEWS_THEME_BY_ID={};NEWS_THEMES.forEach(t=>{NEWS_THEME_BY_ID[t.id]=t;});
 
-function newsThemesFor(title){
+function newsThemesFor(title,kind){
   const hits=NEWS_THEMES.filter(t=>t.re.test(title)).map(t=>t.id);
+  if(kind==='filing')hits.unshift('filing');
   return hits.length?hits:['other'];
 }
-function newsThemeLabel(id){return id==='other'?'Other':(NEWS_THEME_BY_ID[id]?NEWS_THEME_BY_ID[id].label:id);}
+const NEWS_EXTRA_LABELS={other:'Other',filing:'SEC Filings'};
+function newsThemeLabel(id){return NEWS_EXTRA_LABELS[id]||(NEWS_THEME_BY_ID[id]?NEWS_THEME_BY_ID[id].label:id);}
 function newsSearchUrl(title){return 'https://news.google.com/search?q='+encodeURIComponent(title);}
+function newsItemUrl(it){return it.url||newsSearchUrl(it.title);}
 
 let _newsInitialized=false;
 let _newsItems=[];
@@ -2562,7 +2640,8 @@ function buildNewsItems(digest){
     (t.headlines||[]).forEach(h=>{
       if(!h||!h.t)return;
       out.push({ticker:t.ticker,company:t.company||'',sector:t.sector||'',
-        drift:t.drift||'',date:h.d||'',title:h.t,src:h.src||'',themes:newsThemesFor(h.t)});
+        drift:t.drift||'',date:h.d||'',title:h.t,src:h.src||'',
+        kind:h.kind||'news',url:h.url||'',themes:newsThemesFor(h.t,h.kind)});
     });
   });
   out.sort((a,b)=>(b.date||'').localeCompare(a.date||'')||a.ticker.localeCompare(b.ticker));
@@ -2604,7 +2683,7 @@ function renderNewsChips(){
   if(!el)return;
   const counts={};
   _newsItems.forEach(it=>it.themes.forEach(t=>{counts[t]=(counts[t]||0)+1;}));
-  const ids=NEWS_THEMES.map(t=>t.id).concat(counts.other?['other']:[]).filter(id=>counts[id]);
+  const ids=['filing'].concat(NEWS_THEMES.map(t=>t.id),['other']).filter(id=>counts[id]);
   el.innerHTML=ids.map(id=>{
     const th=NEWS_THEME_BY_ID[id];
     const cls='nw-chip'+(th&&th.robo?' robo':'')+(_newsFilter.themes.has(id)?' on':'');
@@ -2623,7 +2702,8 @@ function renderNewsItem(it){
   return '<div class="nw-item">'
     +'<a class="nw-tk" href="#" onclick="newsOpenTicker(\''+esc(it.ticker)+'\',\''+esc(it.sector).replace(/'/g,"\\'")+'\');return false">'+esc(it.ticker)+'</a>'
     +'<div class="nw-body">'
-    +'<a class="nw-headline" href="'+esc(newsSearchUrl(it.title))+'" target="_blank" rel="noopener noreferrer">'+esc(it.title)+'</a>'
+    +(it.kind==='filing'?'<span class="nw-kind">Filing</span> ':'')
+    +'<a class="nw-headline" href="'+esc(newsItemUrl(it))+'" target="_blank" rel="noopener noreferrer">'+esc(it.title)+'</a>'
     +'<div class="nw-line2">'
     +(it.src?'<span>'+esc(it.src)+'</span>':'')
     +(it.sector?'<span>· '+esc(it.sector)+'</span>':'')
@@ -2652,22 +2732,24 @@ function renderNewsTab(digest){
   if(!digest||!(digest.tickers||[]).length){
     container.innerHTML='<div class="nw-title">AI &amp; Robotics News</div>'
       +'<div class="nw-empty">No headline digest available yet.<br>'
-      +'Run <code>/watchlist-refresh</code> (or <code>python3 scripts/watchlist_refresh_fetch.py</code>)<br>'
+      +'Run <code>/brief</code> (or <code>python3 scripts/watchlist_refresh_fetch.py</code>)<br>'
       +'to generate <code>Investing/Raw/Inbox/watchlist-refresh-digest.json</code>, then reload.</div>';
     return;
   }
   _newsItems=buildNewsItems(digest);
   const sectors=[...new Set(_newsItems.map(i=>i.sector).filter(Boolean))].sort();
   const roboCount=_newsItems.filter(i=>i.themes.includes('robotics')).length;
+  const filingCount=_newsItems.filter(i=>i.kind==='filing').length;
   const gen=(digest.generated||'').slice(0,16).replace('T',' ');
   container.innerHTML='<div class="nw-title">AI &amp; Robotics News</div>'
-    +'<div class="nw-sub">Every headline from the latest <code>/watchlist-refresh</code> pass, rolled up across tickers and tagged by theme. '
+    +'<div class="nw-sub">Every headline from the latest <code>/brief</code> pass, rolled up across tickers and tagged by theme. '
     +'Generated '+esc(gen)+' UTC · '+(digest.window_hours||'?')+'h window · '+(digest.scanned||0)+' tickers scanned'
     +((digest.errors||[]).length?' · '+digest.errors.length+' fetch errors':'')+'.</div>'
     +'<div class="nw-stats">'
     +'<div class="nw-stat"><div class="nw-stat-val">'+_newsItems.length+'</div><div class="nw-stat-lbl">Headlines</div></div>'
     +'<div class="nw-stat"><div class="nw-stat-val">'+(digest.with_news||0)+'</div><div class="nw-stat-lbl">Tickers</div></div>'
     +'<div class="nw-stat"><div class="nw-stat-val">'+roboCount+'</div><div class="nw-stat-lbl">Robotics</div></div>'
+    +'<div class="nw-stat"><div class="nw-stat-val">'+filingCount+'</div><div class="nw-stat-lbl">Filings</div></div>'
     +'<div class="nw-stat"><div class="nw-stat-val">'+sectors.length+'</div><div class="nw-stat-lbl">Sectors</div></div>'
     +'<div class="nw-stat"><div class="nw-stat-val">'+((digest.quiet||[]).length)+'</div><div class="nw-stat-lbl">Quiet</div></div>'
     +'</div>'
