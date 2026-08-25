@@ -54,6 +54,7 @@ _Evaluated: 2026-06-17_
 | 2026-05-07 | UP | Initial coverage | Flagged from NVDA ecosystem map Tier 2. AI infrastructure picks-and-shovels; chip-agnostic moat; backlog compounding story. |
 | 2026-05-07 | UP | NVDA $2.1B IREN investment | NVDA's 5GW AI infrastructure commitment is a direct demand signal for VRT liquid cooling and power systems. |
 | 2026-05-19 | UP | NVDA Q1 FY2027 earnings | VRT named in NVDA earnings shockwave infographic as heat dissipation supplier -- confirms chip-agnostic positioning in GPU supply chain. |
+| 2026-08-25 | UP | Lancium/NVIDIA gigawatt-scale AI data center partnership | Another gigawatt-scale buildout announcement reinforces chip-agnostic infrastructure demand -- direct read-through to VRT backlog regardless of GPU vendor. |
 
 ---
 

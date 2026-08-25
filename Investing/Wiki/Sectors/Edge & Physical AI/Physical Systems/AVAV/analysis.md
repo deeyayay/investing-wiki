@@ -7,7 +7,7 @@ The US military's primary small-drone and loitering-munitions supplier (Puma, Ra
 
 ## Investment Thesis
 
-> **Thesis established:** 2026-06-15 / **Last validated:** 2026-06-15 / **Drift status:** New
+> **Thesis established:** 2026-06-15 / **Last validated:** 2026-08-25 / **Drift status:** On track — $30.9M German Puma UAS order confirms continued allied order flow on the core product line
 
 AeroVironment is the entrenched Western incumbent in small unmanned aircraft systems and loitering munitions. Its Puma/Raven/Wasp/JUMP 20 sUAS and the Switchblade family are embedded in US and allied programs of record and have been combat-validated at scale in Ukraine — incumbency, ITAR/classified barriers, and battlefield reputation are the moat. The 2025 BlueHalo combination transformed AV from a drone manufacturer into a multi-domain platform spanning space, counter-UAS, electronic warfare, and directed energy, enlarging the addressable defense budget it can capture.
 
@@ -24,6 +24,7 @@ _Not yet scored — run `/score-ticker AVAV`._
 | Date | Event | Δ Conviction | Why |
 |------|-------|--------------|-----|
 | 2026-06-15 | Onboarded to wiki | New | Closes the Edge-surface "Drones and UAVs" box; anchors new UAV & Drone Systems tier; structural defense-drone cycle. |
+| 2026-08-25 | $30.9M German Puma UAS contract win | ↑ Strengthened | Direct, named order flow on the core Puma product line confirms continued allied demand post-BlueHalo. |
 
 ## Cross-Ticker Signals
 

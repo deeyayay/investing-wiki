@@ -13,8 +13,8 @@ AbCellera's AI-native antibody discovery platform converts partner drug royaltie
 ## Investment Thesis
 
 > **Thesis established:** 2026-06-26
-> **Last validated:** 2026-06-26
-> **Drift status:** On track — ABCL635 Phase 1 interim positive; transitional revenue period manageable with $700M liquidity
+> **Last validated:** 2026-08-25
+> **Drift status:** Drifting — surprise dilutive equity offering (2026-08-25) tests the "$700M liquidity is manageable without dilution" assumption; terms/size unconfirmed, needs /dig
 
 AbCellera built its business around a differentiated antibody discovery platform that combines proprietary microfluidics hardware, single-cell functional screening, paired heavy/light chain sequencing, and AI/ML models trained on 14 years of proprietary data. The platform's defining advantage is native B-cell diversity: it screens millions of real immune cells rather than synthetic libraries, recovering rare high-affinity antibodies that competitors' methods miss. The commercial proof was Bamlanivimab (LY-CoV555), the COVID-19 antibody discovered for Eli Lilly in 11 months — a speed record enabled by the platform — which generated hundreds of millions in royalties at the pandemic peak.
 
@@ -66,6 +66,7 @@ _Evaluated: —_
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
 | 2026-06-26 | Initial onboarding | → | Thesis established; pending /score-ticker and /ticker-monitor --deep |
+| 2026-08-25 | Dilutive equity offering surprises market ("shock") | ↓ Weakened | Directly tests the liquidity-is-manageable assumption underpinning the thesis; no size/terms yet — flagged for /dig |
 
 ---
 

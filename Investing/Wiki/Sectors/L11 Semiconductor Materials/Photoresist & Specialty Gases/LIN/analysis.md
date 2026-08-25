@@ -7,7 +7,7 @@ The world's largest industrial gas company and a quiet picks-and-shovels supplie
 
 ## Investment Thesis
 
-> **Thesis established:** 2026-06-15 / **Last validated:** 2026-06-15 / **Drift status:** New
+> **Thesis established:** 2026-06-15 / **Last validated:** 2026-08-25 / **Drift status:** On track — EPS miss offset by reaffirmed 2026 guidance and record $10B backlog
 
 Linde is a defensive compounder whose moat is structural: industrial gases are expensive to ship, so production density within a region confers durable local pricing power, and the on-site business runs on 10–20 year take-or-pay contracts that lock in volumes and returns. The result is a low-competition oligopoly (with Air Products, Air Liquide, Taiyo Nippon Sanso) that compounds earnings through cycles with steady price/cost discipline and a large project backlog.
 
@@ -24,6 +24,7 @@ _Not yet scored — run `/score-ticker LIN`._
 | Date | Event | Δ Conviction | Why |
 |------|-------|--------------|-----|
 | 2026-06-15 | Onboarded to wiki | New | Closes the L11 "Specialty Gases" gap box; oligopoly supplier of fab gases with high pricing power. |
+| 2026-08-25 | EPS miss vs. estimates, but 2026 guidance and $10B backlog reaffirmed | → Neutral | Headline miss doesn't touch the take-or-pay backlog thesis; guidance reaffirmation is the more relevant data point. |
 
 ## Cross-Ticker Signals
 

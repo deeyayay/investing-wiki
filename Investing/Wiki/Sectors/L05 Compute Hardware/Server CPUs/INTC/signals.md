@@ -35,6 +35,9 @@
 - **2026-06-02** — Mizuho raises PT to $128, Wells Fargo to $110, Barclays to $100 — all on same day; broad tier-1 bullish rerating.
   **Why it matters:** Coordinated upgrades suggest institutional read-through on Apple deal + Q1 beat + IFS acceleration; PT range now skewed meaningfully above prior consensus of $79.
 
+- **2026-08-25** — Two independent packaging confirmations via the HBM/Memory topic feed: (1) EE Times reports TSMC HBM-packaging yield issues are helping Intel win share, per analysts; (2) TechPowerUp reports SK Hynix's next-gen HBM will use Intel EMIB-T packaging.
+  **Why it matters:** An external customer (SK Hynix) committing to EMIB-T for next-gen HBM is exactly the kind of non-Apple, non-NVIDIA validation the IFS thesis needs — and a rival foundry's (TSMC) packaging yield stumble is a direct competitive tailwind for Intel's packaging platform.
+
 ---
 
 ## Social Mentions
@@ -54,3 +57,4 @@
 - **2026-06-07** — add-ticker run. facts.md + analysis.md populated from web research, SEC EDGAR (CIK 0000050863), and deep-research validation of CPO/EMIB tweet thread. Legacy INTC.md social mentions migrated here. Key sources: Intel OFC 2024 press release, IEEE EMIB fiber CPO reliability paper, WccfTech EMIB yield analyst report, Broadcom CPO shipment data, Ayar Labs Series E coverage.
 - **2026-06-07** — 📊 MONITOR --deep | Q1 FY2026 data confirmed ($13.6B rev, $0.29 non-GAAP EPS, IFS $5.4B +20% QoQ); Apple preliminary IFS deal identified; Fab 34 Ireland buyback ($14.2B) confirmed; Mizuho/WF/Barclays upgrade cluster June 2; 10-Q + 8-K filings logged; legacy INTC.md stub deleted.
 - **2026-06-07** — Scored — Composite 6.5/10 Strong | P:3 PP:3 L:3 FH:2 ME:4 FP:4
+- **2026-08-25** — 📰 BRIEF | 5 items triaged, 1 logged (topic feed), drift flagged

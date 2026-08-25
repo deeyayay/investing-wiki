@@ -15,6 +15,9 @@
 
 - **2026-05-20 — CPO / PHOTONICS** | Spectrum-X and Quantum-X silicon photonics networking switches confirmed — enabling AI factories to connect millions of GPUs across sites. CPO built on 200G SerDes; 5x better power efficiency and 10x higher network resiliency vs. pluggable. No explicit Spectrum-X deferral language. Rubin SiPh architecture details not broken out separately on the call.
 
+- **2026-08-25** — Jensen Huang: NVIDIA's $30B OpenAI investment "might be the last," but NVIDIA has now guaranteed up to $105B of OpenAI's compute leases (Motley Fool). Separately, NVIDIA revealed a 9%+ equity stake in Nebius (NBIS), sending NBIS shares sharply higher overnight.
+  **Why it matters:** NVIDIA is underwriting customer demand with its own balance sheet — a $105B lease guarantee is a direct backstop of the capex cycle the thesis depends on, and the Nebius stake extends NVIDIA's neocloud ecosystem reach beyond IREN.
+
 ---
 
 ## Social Mentions
@@ -42,3 +45,4 @@
 - **2026-05-20 — 🔥 EARNINGS** | Q1 FY2027: Rev $81.6B (+85% YoY), non-GAAP EPS $1.87 (beat $1.76 est), DC $75B (+92%). Q2 guide $91.0B ±2% — 4-5% above the $87.4B consensus. Non-GAAP GM 75.0% — held flat, no compression from Blackwell ramp. Networking +199% YoY. Vera Rubin samples in customer hands; starts revenue Q2 (pull-in from prior "Q3 timeframe" language). No Spectrum-X deferral. Physical AI declared the next platform: Isaac GR00T N1/N1.5, Cosmos, IGX Thor GA. GM collaboration (Omniverse + Cosmos + DRIVE AGX). Dividend 25x raise. Stock -AH despite beat. Source: NVIDIA Newsroom / CNBC / Motley Fool transcript.
 - **2026-05-22** — Scored — Composite 9.5/10 Unrivaled | P:5 PP:5 L:4 FH:5 ME:5 FP:5
 - **2026-06-07** — 📊 MIGRATE | Legacy NVDA.md split into three-layer structure (facts.md + analysis.md + signals.md).
+- **2026-08-25** — 📰 BRIEF | 5 items triaged, 2 logged, drift flagged

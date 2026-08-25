@@ -56,6 +56,7 @@ _Last scored: 2026-06-07 | [[Scoring Rubric]]_
 | 2026-06-07 | CPO tweet validated; OFC 2024 OCI chiplet confirmed 4 Tbps @ 5 pJ/bit via EMIB | ↑ | Technical claim core is correct; EMIB thermal/yield advantage vs CoWoS-S verified |
 | 2026-06-07 | NVIDIA $5B + SoftBank $2B strategic investments confirmed | ↑ | Anchor customers validating IFS; strategic not just financial |
 | 2026-06-07 | Broadcom shipping 50K+ CPO switches, Ayar Labs $870M raised | ↓ | CPO not an Intel monopoly; competition already in production |
+| 2026-08-25 | SK Hynix next-gen HBM to use Intel EMIB-T packaging; TSMC HBM-packaging yield issues reported to be helping Intel win share | ↑ | First reported non-NVIDIA, non-Apple external commitment to EMIB-T for HBM, plus a direct competitive tailwind from a rival's yield stumble |
 | 2026-06-07 | Q1 FY2026: revenue $13.6B (+7% YoY, beat $12.7B guide); non-GAAP EPS $0.29; IFS +20% QoQ | ↑ | Strong execution against guidance; IFS acceleration early; Q2 guided $13.8-14.8B |
 | 2026-06-07 | Apple preliminary deal to manufacture chips at Intel US fabs starting 2026 | ↑ | Most significant potential IFS external customer; validates 18A commercial readiness; watch for confirmation |
 | 2026-06-07 | Intel repurchases Apollo's 49% Fab 34 Ireland stake for $14.2B (cash + $6.5B bridge loan) | ↑ | Full fab ownership strengthens IFS vertical control; large debt load is tail risk but shows conviction |

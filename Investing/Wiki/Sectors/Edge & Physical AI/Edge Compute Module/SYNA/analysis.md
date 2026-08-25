@@ -67,6 +67,7 @@ _Evaluated: —_
 |------|-------|-------------|-----|
 | 2026-06-27 | Initial onboarding | → | Thesis established; onsemi acquisition announced June 25 makes this a merger arb position pending /score-ticker |
 | 2026-06-25 | onsemi all-stock acquisition announced ($7B EV, 1.35x share ratio, mid-2027 close) | → | Strategic validation of Astra AI + IoT thesis; standalone growth story replaced by deal arbitrage; return now linked to ON stock + deal close probability |
+| 2026-08-24 | PR Newswire piece questions whether SYNA (and peers) are getting a fair deal | → Neutral | Raises the deal-fairness question without a specific new fact (no litigation/proxy fight cited) — worth monitoring if scrutiny escalates into an actual shareholder challenge |
 
 ---
 

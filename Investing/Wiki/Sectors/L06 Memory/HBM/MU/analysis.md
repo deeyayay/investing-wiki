@@ -61,6 +61,7 @@ _Evaluated: 2026-06-17_
 | 2026-05-07 | Note initialized; HBM thesis identified | → Neutral | Priority research candidate from NVDA ecosystem map; HBM as structural differentiator from prior memory cycles |
 | 2026-05-19 | NVDA Q1 FY2027 earnings beat; MU named as HBM + SSD supplier | ↑ Strengthened | NVDA demand beat = direct pull-through on MU HBM3E allocation and pricing power heading into HBM4 ramp |
 | 2026-06-17 | Score-ticker run; composite 6.5/10 Strong | → Neutral | Thesis confirmed: AI HBM demand is structural; NAND underappreciated. Score constrained by insufficient data (analyst coverage, balance sheet, ownership %) and partial tech alignment vs. SNDK pure-play |
+| 2026-08-25 | CEO: AI memory supply may not catch up until 2028; Hot Chips 2026: HBM/DDR5 silicon gap widening | ↑ Strengthened | Direct executive confirmation of the structural demand tailwind, even as the stock sold off with the broader semiconductor group |
 
 ---
 

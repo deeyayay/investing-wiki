@@ -16,6 +16,9 @@
 - **2026-05-19** — NVDA Q1 FY2027 earnings event; MU named in earnings shockwave infographic as HBM and SSD supplier.
   **Why it matters:** HBM is ~30% of GPU BOM — NVDA demand beat is a direct pull-through on MU HBM3E allocation and pricing power heading into HBM4 ramp.
 
+- **2026-08-24/25** — Micron CEO: "AI memory crunch" — supply may not catch up until 2028 as demand keeps growing (MU stock still fell ~4-6.9% on the day). Separately at Hot Chips 2026, Micron said the silicon gap between HBM and DDR5 is widening with every generation.
+  **Why it matters:** Direct executive confirmation of the structural AI demand tailwind the thesis depends on — the stock's selloff reads as sector-wide semiconductor risk-off, not a change in MU's own supply/demand picture, which the CEO commentary actually strengthens.
+
 ---
 
 ## Social Mentions
@@ -34,3 +37,4 @@
 | 2026-05-07 | INIT | Note initialized from NVDA ecosystem map. HBM thesis identified as structural differentiator. |
 | 2026-05-14 | RESEARCH | stock-research run. Fundamental sections populated from web research and SEC DEF 14A. |
 | 2026-06-17 | 📊 SCORE | Composite 6.5/10 Strong \| P:3 PP:3 L:3 FH:3 ME:4 FP:3 |
+| 2026-08-25 | BRIEF | 📰 5 items triaged, 1 logged, drift flagged |

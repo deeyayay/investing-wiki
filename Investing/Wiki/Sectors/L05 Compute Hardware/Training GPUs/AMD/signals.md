@@ -8,6 +8,9 @@
 *(Append notable developments: partnerships, product launches, supply chain signals, earnings highlights)*
 *(For each entry: **Why it matters:** — the mechanism, not just the event)*
 
+- **2026-08-25** — AMD stock down ~6.5% after a $4.75B debt raise paired with a "Taiwan AI push"; separately, multiple Form 144 insider sale notices filed and one MarketBeat piece flagged insider selling.
+  **Why it matters:** A large debt raise funding AI-related expansion is a capital-structure event worth tracking, though it doesn't yet touch the core GPU-share thesis directly.
+
 ---
 
 ## Social Mentions
@@ -24,3 +27,4 @@
 ## Research Log
 *(Reverse-chron append log — newest at bottom)*
 - **2026-06-16** — add-ticker run. facts.md + analysis.md populated from web research and SEC EDGAR.
+- **2026-08-25** — 📰 BRIEF | 5 items triaged, 1 logged

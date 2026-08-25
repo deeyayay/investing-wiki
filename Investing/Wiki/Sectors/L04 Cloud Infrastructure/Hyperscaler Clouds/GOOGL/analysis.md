@@ -51,6 +51,7 @@ _Last scored: — | [[Scoring Rubric]]_
 
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
+| 2026-08-25 | Reports of new "Frozen" custom inference chip to boost Gemini efficiency | ↑ Strengthened | Extends the proprietary silicon-to-inference stack the thesis depends on — another purpose-built chip beyond Ironwood TPU. |
 
 ---
 

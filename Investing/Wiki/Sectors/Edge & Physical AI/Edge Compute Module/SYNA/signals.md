@@ -14,6 +14,9 @@
 - **2025-01** — Synaptics acquires Broadcom's Wi-Fi connectivity business assets; establishes Wi-Fi 7/8 leadership in Core IoT segment
   **Why it matters:** The Wi-Fi acquisition turbo-charged the Core IoT segment from ~19% to ~33% of revenue in two years and created the #1 Wi-Fi 7 IoT SoC position that ultimately attracted onsemi as an acquirer.
 
+- **2026-08-24** — PR Newswire piece asks "Are ITGR, VREX, HZO, SYNA Obtaining Fair Deals for their Shareholders?" — questioning deal-fairness across several recent M&A targets including SYNA/onsemi.
+  **Why it matters:** SYNA is now primarily a merger-arb situation — a public fairness-of-terms question is directly relevant to the current thesis, though the article gives no specific new fact (litigation, proxy fight) beyond raising the question. Worth a closer read if similar scrutiny escalates.
+
 ---
 
 ## Social Mentions
@@ -28,3 +31,4 @@
 *(Reverse-chron append log — newest at bottom)*
 
 - **2026-06-27** — add-ticker run. facts.md + analysis.md populated from web research and SEC EDGAR (CIK 0000817720). Key sources: Q3 FY2026 earnings (rev $294.2M +10% YoY, non-GAAP GM 53.6%), FY2025 annual (rev $1.07B, EPS $3.62 +61% YoY), DEF 14A Sept 2025 (aggregate insider ownership ~2.5%), onsemi all-stock acquisition announcement June 25 2026 ($7B EV, 1.35x ratio, mid-2027 close). Sector: Edge & Physical AI / Edge Compute Module. Merger arb context noted prominently in analysis.md thesis and conviction log.
+- **2026-08-25** — 📰 BRIEF | 3 items triaged, 1 logged

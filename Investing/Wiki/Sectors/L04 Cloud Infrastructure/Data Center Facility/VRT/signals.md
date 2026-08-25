@@ -7,6 +7,9 @@ _Migrated from legacy VRT.md on 2026-06-17. Append-only._
 ## News & Alpha Log
 _(Append notable developments: partnerships, product launches, supply chain signals)_
 
+- **2026-08-25** — Lancium and NVIDIA partner on gigawatt-scale AI data centers (Data Center Knowledge, via the AI Datacenter Compute topic feed).
+  **Why it matters:** Every new gigawatt-scale AI data center buildout is direct demand for VRT's liquid cooling and power infrastructure regardless of whose GPUs go inside — reinforces the picks-and-shovels thesis independent of NVDA vs. AMD chip share.
+
 ---
 
 ## Social Mentions
@@ -27,3 +30,4 @@ _(Append notable developments: partnerships, product launches, supply chain sign
 | 2026-05-14 | RESEARCH | stock-research run. Fundamental sections populated from web research and SEC DEF 14A. CFO, Execution track record, and Insider ownership/alignment filled; One-Line Thesis and Investment Thesis were already populated and left unchanged. |
 | 2026-06-17 | MIGRATE | Legacy VRT.md migrated to three-layer structure (facts.md + analysis.md + signals.md). |
 | 2026-06-17 | SCORE | Composite 7.5/10 Strong \| P:4 PP:3 L:3 FH:4 ME:5 FP:3 |
+| 2026-08-25 | BRIEF | 📰 5 items triaged, 1 logged (topic feed), drift flagged |

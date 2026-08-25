@@ -8,6 +8,9 @@
 *(Append notable developments: partnerships, product launches, supply chain signals, earnings highlights)*
 *(For each entry: **Why it matters:** — the mechanism, not just the event)*
 
+- **2026-08-25** — Barron's: "Marvell's $120 Billion Google Deal Changes Everything Ahead of Earnings" (MRVL reports Q2 earnings 2026-08-27).
+  **Why it matters:** Directly touches the custom-ASIC/Google leg of the thesis, but the $120B figure is unverified (likely a multi-year TAM/roadmap estimate rather than a signed contract value) — needs /dig before earnings to confirm what was actually announced.
+
 ---
 
 ## Social Mentions
@@ -29,3 +32,4 @@
 | 2026-05-07 | SIGNAL | NVDA-IREN partnership + hyperscaler AI capex validates MRVL custom silicon and interconnect thesis. AMD beat positive for AI silicon sentiment. |
 | 2026-05-14 | RESEARCH | stock-research run. Fundamental sections populated from web research and SEC DEF 14A. CFO Willem Meintjes confirmed. |
 | 2026-06-17 | SCORE | Composite 7.5/10 Strong \| P:4 PP:3 L:3 FH:3 ME:5 FP:4 |
+| 2026-08-25 | BRIEF | 📰 5 items triaged, 1 logged — flagged for /dig ahead of 2026-08-27 earnings |

@@ -8,6 +8,9 @@
 *(Append notable developments: partnerships, product launches, supply chain signals, earnings highlights)*
 *(For each entry: **Why it matters:** — the mechanism, not just the event)*
 
+- **2026-08-24** — Needham raises PT ahead of Q4 results; Barchart notes analysts hiking revenue forecasts, framing the stock as worth "$433, 21% more."
+  **Why it matters:** Cluster of pre-earnings analyst target increases — sentiment note, not yet a fundamental confirmation of the thesis.
+
 ---
 
 ## Social Mentions
@@ -21,3 +24,4 @@
 ## Research Log
 *(Reverse-chron append log — newest at bottom)*
 - **2026-06-16** — add-ticker run. facts.md + analysis.md populated from web research and SEC EDGAR.
+- **2026-08-25** — 📰 BRIEF | 5 items triaged, 1 logged

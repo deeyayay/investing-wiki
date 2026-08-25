@@ -27,6 +27,9 @@
 - **June 2, 2026** — BRUN files 8-K investor metrics presentation; current stock price $36.74, market cap ~$2.3B at filing date.
   **Why it matters:** First formal ARR progress data point post-listing; confirms backlog deployment tracking against the $375M year-end ARR target — most important pre-Q2-earnings read on execution.
 
+- **2026-08-25** — BRUN filed a 25-NSE removing a warrant class from Nasdaq listing/registration ("matured, redeemed or retired securities"); confirmed by a same-day Stock Titan headline ("Boost Run ends Nasdaq listing for warrant class").
+  **Why it matters:** Routine post-SPAC warrant wind-down, not a change to the operating business — logged for the audit trail.
+
 ---
 
 ## Social Mentions
@@ -42,3 +45,4 @@
 - **2026-06-04** — 📊 MONITOR | Q1 10-Q filed June 1 (governance concern resolved); DA Davidson raised PT $25→$45 (Buy); investor metrics 8-K June 2; stock $36.74, mkt cap ~$2.3B; 2 analysts, consensus Strong Buy, PT range $30–$45.
 - **2026-06-04** — Scored (revised) — Composite 7.5/10 Strong | P:4 PP:4 L:4 FH:3 ME:4 FP:4 | Revision driven by verified NVIDIA Exemplar Cloud (Blackwell) certification, Dell DFS $1.44B financing eliminating dilution risk, CEO Blue Fire Capital/Galaxy Digital exit validating leadership, and TML concentration reframed (33% of $1.41B total backlog, not 50%)
 - **2026-06-07** — 📊 MIGRATE | Legacy BRUN.md split into three-layer structure (facts.md + analysis.md + signals.md).
+- **2026-08-25** — 📰 BRIEF | 5 items triaged, 1 logged
