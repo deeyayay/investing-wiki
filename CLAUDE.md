@@ -93,10 +93,20 @@ Two Routines run `/brief` on weekdays, both **pinned to `env_01QnkyPvexoVFiduw3B
 
 | When (UTC) | US Eastern | Trigger ID | Catches |
 |---|---|---|---|
-| `30 11 * * 1-5` | ~7:30am | `trig_01UffnvE7j3KE3SYWHxPz9fn` | overnight news + pre-market, before the 9:30 open |
-| `30 21 * * 1-5` | ~5:30pm | `trig_01HGRMHZXwBLith1EuQab4b9` | the full session plus after-close 8-Ks, which is when they drop |
+| `15 14 * * 1-5` | ~10:15am | `trig_01UffnvE7j3KE3SYWHxPz9fn` | overnight + pre-market + the first 45 min of trading |
+| `30 1 * * 2-6` | ~9:30pm | `trig_01HGRMHZXwBLith1EuQab4b9` | midday, the close, and the full after-hours filing window |
 
 Each fires a **fresh session** (no carried context) and pushes to `master` when it finishes.
+
+**The times track when the owner reads, not market milestones.** He checks about an hour after
+the open — so a pre-market run is stale and, worse, structurally cannot contain the opening
+reaction he is looking for — and again last thing at night, by which point the after-hours 8-Ks
+have landed. Each pass runs shortly *before* a reading, and the two together split the day with
+no gap.
+
+**The evening cron is `2-6`, not `1-5`, and that is not a typo.** 9:30pm US Eastern is 01:30 UTC
+the *next day*, so weekday-evenings in Eastern are Tue–Sat in UTC. Setting `1-5` here would run
+Sunday nights and skip Friday.
 
 **The environment pin is load-bearing, not a detail.** The account has two environments:
 
@@ -111,7 +121,8 @@ indistinguishable from a quiet day. If briefs go quiet, **check which environmen
 looking for a bug** — and note the fetcher's non-zero exit is now the tripwire for exactly this.
 
 Timezone caveat: cron is fixed UTC while US Eastern shifts. These fire an hour earlier in local
-terms once EST starts in November — re-cut to `30 12` / `30 22` then if the timing matters.
+terms once EST starts on 1 November 2026 — re-cut to `15 15 * * 1-5` and `30 2 * * 2-6` then to
+hold 10:15am / 9:30pm Eastern.
 
 Both Routines run on **`master`**, and the deployed dashboard reads the digest from `master`. A
 brief that runs on a branch is invisible.
