@@ -142,7 +142,7 @@ Rebuild `Watchlist.md` at the same time; it's the scope input for everything.
 
 Move the other 10 to `.claude/commands/_archive/` — not deleted, just unloaded and unmaintained.
 
-### 5. Schedule it, and pin the environment — DONE
+### 5. Schedule it, and pin the environment — BLOCKED (see CLAUDE.md)
 
 A weekday-morning Routine is the difference between a tool that gets used and a repo that generates
 guilt. **The Routine must be pinned to the environment that has egress** — if it fires into a

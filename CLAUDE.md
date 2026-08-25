@@ -108,6 +108,22 @@ no gap.
 the *next day*, so weekday-evenings in Eastern are Tue–Sat in UTC. Setting `1-5` here would run
 Sunday nights and skip Friday.
 
+**A Routine also needs a repository attached, and the MCP tool cannot attach one.**
+Verified 2026-08-25: both Routines fired three times (24 Aug 11:33 and 21:37, 25 Aug 14:19 UTC)
+and committed nothing. A session created without an explicit source gets **no repo** — the
+environment does not supply one — so `git checkout master` fails and the run dies before it does
+any work. Symptoms, none of which look like an error:
+
+- the digest on `master` simply stops advancing
+- `list_triggers` shows `last_fired_at` but **no `last_run`** — the run never got far enough to record
+- nothing appears in the session list, because trigger-fired runs are excluded from it
+
+Diagnosis: read the trigger's `job_config.ccr.session_context`. A working Routine carries
+`sources` (and `outcomes`) naming the repo; one created through `create_trigger` carries only
+`allowed_tools`. **Create brief Routines from the claude.ai Routines UI**, where a repository can
+be attached — `create_trigger` has no source parameter, so a Routine made that way can never run
+this repo's skills.
+
 **The environment pin is load-bearing, not a detail.** The account has two environments:
 
 | Environment | Egress |
