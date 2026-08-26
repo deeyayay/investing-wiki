@@ -17,6 +17,9 @@
 **2026-05-14** — stock-research run completed. Fundamental sections populated from web research and SEC DEF 14A. FY2025 data confirmed: 29% revenue growth, 48% non-GAAP operating margin, $1B Q4 net income milestone, $10B revenue target accelerated 2yr.
 *Why it matters:* Financial discipline at scale — operating margins at 48% with 29% growth is a rare combination in enterprise tech.
 
+**2026-08-26** — Stock fell 6.8% despite "surging AI orders" and a 2026 outlook hike (simplywall.st).
+*Why it matters:* A guidance raise driven by AI order strength is a direct confirmation of the hyperscaler AI capex demand thesis — the negative price reaction is a valuation/sentiment question, not a fundamental one.
+
 ---
 
 ## Social Mentions
@@ -36,3 +39,4 @@
 | 2026-05-14 | RESEARCH | stock-research run; fundamental sections populated from web + DEF 14A |
 | 2026-06-17 | MIGRATE | Migrated from legacy ANET.md to three-layer structure (facts/analysis/signals) |
 | 2026-06-17 | SCORE | Composite 8.0/10 Unrivaled \| P:4 PP:4 L:4 FH:5 ME:4 FP:3 |
+| 2026-08-26 | BRIEF (Run 2) | 5 items triaged, 1 logged, drift flagged — AI order surge + outlook hike vs. stock decline |

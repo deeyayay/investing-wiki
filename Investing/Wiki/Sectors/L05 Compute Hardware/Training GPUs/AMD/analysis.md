@@ -53,6 +53,7 @@ _Last scored: — | [[Scoring Rubric]]_
 
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
+| 2026-08-26 | Raymond James upgrades to Strong Buy, argues AMD "could outperform Nvidia" | ↑ Strengthened | Analyst reasoning directly backs the open-source-alternative share-capture thesis |
 
 ---
 

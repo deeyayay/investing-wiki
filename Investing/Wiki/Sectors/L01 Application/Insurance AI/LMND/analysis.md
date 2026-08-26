@@ -64,6 +64,7 @@ _Evaluated: 2026-06-25_
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
 | 2026-06-25 | Initial thesis established | → Neutral | First look; strong thesis but needs score and CAT exposure analysis |
+| 2026-08-26 | Morgan Stanley backs LMND's early bet on autonomous vehicle insurance | ↑ Strengthened | Sell-side validation of the AV-insurance data-moat leg established at the January 2026 Tesla FSD launch |
 
 ---
 

@@ -10,6 +10,7 @@
 | 2024-03 | David McConnell appointed EVP & CFO | company filing | Continuity (32-yr Vishay veteran) under CEO Smejkal. |
 | 2026 | "Vishay 3.0" internal-capacity expansion continues | company / trade press | Capacity build to capture electrification + AI content cycle. |
 | 2026-08-24 | Q2 2026 EPS prints above forecast; shares fell ~4.8% same day. Separately, VSH expands automotive-grade common-mode-choke portfolio with 4 new surface-mount devices. | vinanet.vn / Quiver Quantitative | Earnings beat despite a negative price reaction; new automotive product SKUs are incremental support for the "content per server/vehicle" leg of the thesis. |
+| 2026-08-26 | VSH to showcase AI infrastructure and Physical AI solutions at PCIM Asia 2026, and AI components (power grids to humanoid robots) at a China trade show | Yahoo Finance / Stock Titan | Product-visibility evidence for the "quiet AI-infrastructure beneficiary" leg — passive/power-discrete content positioning across AI power and humanoid-robot applications, not yet a hard revenue datapoint. |
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -20,3 +21,4 @@ _None yet — seeded on onboarding._
 |------|----------|--------|
 | 2026-06-15 | Onboarded via /add-ticker; web-verified CEO/CFO, Q1 2026 results + Q2 guide | facts.md + analysis.md + signals.md created; wired to L12 Tantalum + Power-rail MLCC/passives; added to Film&Electrolytic + MLCC DATA tiers. |
 | 2026-08-25 | 📰 BRIEF | 5 items triaged, 1 logged |
+| 2026-08-26 | 📰 BRIEF (Run 2) | 5 items triaged, 1 logged — AI infra trade-show showcases (PCIM Asia, China); 2 routine 13F institutional-buy disclosures not logged |

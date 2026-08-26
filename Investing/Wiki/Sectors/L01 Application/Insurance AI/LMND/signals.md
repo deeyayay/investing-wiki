@@ -17,6 +17,9 @@
 - **2026-Q1** — Q1 2026 earnings: revenue $258M (+71% YoY), gross profit $100M (+159%), adj. EBITDA loss narrowed 64% to $17M, IFP $1.33B (+32%), loss/share $0.47 vs $0.86.
   **Why it matters:** Tenth consecutive quarter of IFP growth acceleration. Gross loss ratio improving structurally (not just seasonally). EBITDA profitability on track for Q4 2026.
 
+- **2026-08-26** — Morgan Stanley "backs its early bet on autonomous vehicle insurance" (Stocktwits); LMND rises pre-market.
+  **Why it matters:** Sell-side validation of the first-mover AV-insurance data advantage flagged at the January 2026 Tesla FSD launch — the data-moat thesis is starting to get analyst recognition, not just internal conviction.
+
 ---
 
 ## Social Mentions
@@ -31,3 +34,4 @@
 *(Reverse-chron append log — newest at bottom)*
 
 - **2026-06-25** — add-ticker run. facts.md + analysis.md populated from web research (Q1 2026 earnings, business model, management). CIK 0001691421 confirmed via SEC EDGAR filing URL. EDGAR direct search returned 403; CIK extracted from 10-Q filing URL in search results.
+- **2026-08-26** — 📰 BRIEF (Run 2) | 4 items triaged, 1 logged, drift confirmed — Morgan Stanley backs the AV insurance bet; 3 institutional 13F disclosures (PDT Partners, EFG International, BlackRock) treated as routine, not logged

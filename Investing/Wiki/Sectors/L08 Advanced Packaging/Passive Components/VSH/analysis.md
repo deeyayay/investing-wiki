@@ -24,6 +24,7 @@ _Not yet scored — run `/score-ticker VSH`._
 | Date | Event | Δ Conviction | Why |
 |------|-------|--------------|-----|
 | 2026-06-15 | Onboarded to wiki | New | Closes L12 "Tantalum (capacitors)" + Power-rail "MLCC and Passive Components" gap boxes; cycle turning on Q1/Q2 2026 prints. |
+| 2026-08-26 | AI infrastructure / Physical AI product showcases at PCIM Asia 2026 and a China trade show | ↑ Strengthened | Product-visibility evidence for the AI-infrastructure-content thesis; not yet a hard revenue datapoint but consistent with the "content per server multiplies" bet |
 
 ## Cross-Ticker Signals
 

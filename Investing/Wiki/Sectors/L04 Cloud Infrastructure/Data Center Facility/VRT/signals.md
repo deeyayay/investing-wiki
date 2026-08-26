@@ -13,6 +13,9 @@ _(Append notable developments: partnerships, product launches, supply chain sign
 - **2026-08-25** — Mixed signal day: TIKR argues the stock's -33% pullback from its high wasn't driven by weak demand; separately Stocktwits reports "Vertiv Optimistic On Data Center Demand" even as its Q1 report "dampened investor expectations"; a Stocktwits piece also references a "Strategic Thermal Labs" development.
   **Why it matters:** Directly touches the Demand chain health scoring flag (currently CLEAR) — if the sell-off genuinely isn't demand-driven that's reassuring, but a report that "dampened investor expectations" pulling in the opposite direction means the headlines don't agree with each other. Flagged for /dig to reconcile the share-price decline against actual demand commentary, and to identify what "Strategic Thermal Labs" refers to.
 
+- **2026-08-26** — Stocktwits: "VRT Stock Surges Pre-Market On Blowout 2026 Forecast On AI Data Centre Demand."
+  **Why it matters:** Adds to the "demand intact" side of the 08-25 conflicting headlines, but doesn't by itself reconcile the earlier "dampened investor expectations" framing — logged alongside the standing /dig item rather than resolving it.
+
 ---
 
 ## Social Mentions
@@ -35,3 +38,4 @@ _(Append notable developments: partnerships, product launches, supply chain sign
 | 2026-06-17 | SCORE | Composite 7.5/10 Strong \| P:4 PP:3 L:3 FH:4 ME:5 FP:3 |
 | 2026-08-25 | BRIEF | 📰 5 items triaged, 1 logged (topic feed), drift flagged |
 | 2026-08-26 | BRIEF | 📰 5 items triaged, 1 logged — conflicting demand-signal headlines flagged for /dig |
+| 2026-08-26 | BRIEF (Run 2) | 📰 5 items triaged, 1 logged — blowout 2026 forecast pre-market surge added to the standing /dig item |

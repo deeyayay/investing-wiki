@@ -52,6 +52,7 @@ _Last scored: 2026-06-04 (revised) | [[Scoring Rubric]]_
 |------|-------|-------------|-----|
 | 2026-06-01 | Q1 2026 10-Q filed by self-imposed June 1 deadline after May 26 delay disclosure | → | Filing resolved without SEC comment letter; internal controls appear intact for a scale-up company; governance concern downgraded from active risk to watch item |
 | 2026-06-04 | NVIDIA Exemplar Cloud (Blackwell) verified; Dell DFS $1.44B financing confirmed; CEO Blue Fire Capital → Galaxy Digital exit verified; backlog $1.45B (12x in 6 months); TML take-or-pay confirmed = 33% of total backlog not 50% | ↑ | Multiple thesis-strengthening data points verified simultaneously: NVIDIA certification places BRUN in peer tier with CRWV/NBIS/OCI/Azure; Dell DFS eliminates dilution risk thesis had flagged; CEO prior exit validates commercial execution DNA; TML concentration overstated — pre-listing $940M backlog came from diversified customers |
+| 2026-08-26 | Warrant redemption completed; $130M raised from exercise of pre-existing warrants | → Neutral | Adds liquidity without a new dilutive raise; reinforces rather than tests the "Dell DFS removes dilution risk" leg |
 
 ---
 

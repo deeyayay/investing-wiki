@@ -61,6 +61,7 @@ _Evaluated: 2026-06-17_
 | 2026-05-07 | Note initialized from NVDA ecosystem map | → Neutral | Flagged as Ethernet-over-InfiniBand thesis play; not yet scored |
 | 2026-05-07 | NVDA-IREN $2.1B AI infrastructure deal | ↑ Strengthened | AI data center buildout reinforces ANET networking demand; hyperscaler cluster expansion accelerating |
 | 2026-06-17 | Initial scoring run | ↑ Strengthened | 8.0/10 Unrivaled composite; FCF health and hyperscaler customer base de-risks demand chain |
+| 2026-08-26 | Stock fell 6.8% despite surging AI orders and a 2026 outlook hike | ↑ Strengthened | Guidance raise driven by AI order strength confirms hyperscaler demand; the sell-off reads as sentiment/valuation, not a fundamental miss |
 
 ---
 

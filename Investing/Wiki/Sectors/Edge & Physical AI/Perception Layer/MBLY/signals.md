@@ -10,6 +10,7 @@
 | 2026 | Drive robotaxi platform partnerships advance | company | Long-dated optionality on full autonomy. |
 | 2022 | IPO; Intel retains controlling stake | filings | Stability anchor + potential secondary-sale overhang. |
 | 2026-08-25 | "Intel-Backed Mobileye Faces Fresh Analyst Skepticism Over Robotaxi Ambitions – But Retail Remains Bullish" | Stocktwits | Directly touches the robotaxi/full self-drive leg of the thesis; no specifics given on which analyst or why — needs /dig to assess whether this is a real thesis test. |
+| 2026-08-26 | Earnings report: bottom-line figure beats estimates; shares move 4.32% lower on the day (downward estimate revision noted) | vinanet.vn | First hard earnings data point since onboarding — a bottom-line beat alongside a negative price reaction and forward estimate cut is a mixed signal; worth reading against the 08-25 robotaxi-skepticism item once /dig runs. |
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -20,3 +21,4 @@ _None yet — seeded on onboarding._
 |------|----------|--------|
 | 2026-06-15 | Onboarded via /add-ticker; verified Intel control, EyeQ/REM/RSS stack, CEO Shashua | facts.md + analysis.md + signals.md created; new "Autonomous Vehicles & ADAS" tier; wired to Edge-surface AV box. |
 | 2026-08-25 | 📰 BRIEF | 5 items triaged, 1 logged — flagged for /dig |
+| 2026-08-26 | 📰 BRIEF (Run 2) | 2 items triaged, 1 logged — earnings beat/estimate-cut mixed signal, deep-pass carried forward |

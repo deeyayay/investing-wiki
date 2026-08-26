@@ -56,6 +56,7 @@ _Evaluated: 2026-06-17_
 | 2026-05-19 | UP | NVDA Q1 FY2027 earnings | VRT named in NVDA earnings shockwave infographic as heat dissipation supplier -- confirms chip-agnostic positioning in GPU supply chain. |
 | 2026-08-25 | UP | Lancium/NVIDIA gigawatt-scale AI data center partnership | Another gigawatt-scale buildout announcement reinforces chip-agnostic infrastructure demand -- direct read-through to VRT backlog regardless of GPU vendor. |
 | 2026-08-25 | MIXED | Stock -33% from its high; one outlet says the reason wasn't weak demand, another says a Q1 report "dampened investor expectations" | Conflicting headline framings on whether demand is actually intact -- flagged for /dig to reconcile against the Demand chain health (currently CLEAR) scoring flag before treating the pullback as valuation-only. |
+| 2026-08-26 | UP | Stock surges pre-market on a "blowout 2026 forecast" for AI data center demand | Adds to the demand-intact side of the 08-25 conflicting headlines; doesn't resolve the "dampened investor expectations" framing on its own -- /dig still queued to reconcile the full picture. |
 
 ---
 

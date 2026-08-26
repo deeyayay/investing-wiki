@@ -21,6 +21,9 @@
 - **2026-08-24/25** — Q2 FY2027 earnings report today (2026-08-26); tonight's digest carries only pre-earnings speculation ("Broken Stock," "Could Drop 20% On Poor Earnings") and no confirmed results. Separately, CoreWeave reportedly announced news framed as positive for NVDA, and NVIDIA is reported to be deepening AI-portfolio investments (Perplexity ~$30B valuation talk, a Poolside deal) alongside the OpenAI/Nebius moves logged above.
   **Why it matters:** Today's earnings print is the single largest catalyst of the week for the entire book (MRVL, ANET, VRT, CRDO, MU, SNDK all cross-reference NVDA demand signals) — flagged for /dig to pull the actual print once available. The expanding startup-investment pattern (OpenAI, Nebius, Perplexity, Poolside) is worth watching as a circularity/concentration risk even as it supports near-term demand.
 
+- **2026-08-26** — Reports of a $21B NVIDIA equity stake in SpaceX (The Globe and Mail); separately, digitimes reports a TSMC CoWoS packaging capacity shift could grow AMD's share and trim NVIDIA's allocation.
+  **Why it matters:** The SpaceX stake extends the same balance-sheet-backed ecosystem investment pattern already flagged as a watch item. The CoWoS allocation shift is a genuine supply-side competitive risk (less advanced-packaging capacity for NVDA if TSMC reallocates to AMD) — still no earnings print in this digest, so both fold into the existing /dig NVDA queue.
+
 ---
 
 ## Social Mentions
@@ -50,3 +53,4 @@
 - **2026-06-07** — 📊 MIGRATE | Legacy NVDA.md split into three-layer structure (facts.md + analysis.md + signals.md).
 - **2026-08-25** — 📰 BRIEF | 5 items triaged, 2 logged, drift flagged
 - **2026-08-26** — 📰 BRIEF | 5 items triaged, 1 logged — Q2 FY2027 earnings today, no confirmed results in digest, flagged for /dig
+- **2026-08-26** — 📰 BRIEF (Run 2) | 5 items + 3 topic hits triaged, 1 logged — SpaceX stake + TSMC CoWoS allocation shift added to the /dig queue; still no confirmed earnings print (reports after close today)

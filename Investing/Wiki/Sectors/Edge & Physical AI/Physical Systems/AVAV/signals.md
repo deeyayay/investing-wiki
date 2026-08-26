@@ -12,6 +12,8 @@
 | 2026-08-24 | AeroVironment wins $30.9M contract for German Puma UAS | scanx.trade | Direct order flow confirmation on the core Puma product line named in the thesis; allied-demand validation. |
 | 2026-08-24 | AeroVironment plans $100M campus to unite five California locations | Stock Titan / Benzinga / Seeking Alpha | Capacity expansion supporting the broader multi-domain platform build-out post-BlueHalo, even as shares fell 7.5% on the announcement. |
 | 2026-08-25 | AVAV highlights MAYHEM 10, an AI-powered multi-role warfare system | Stocktwits | Product-line evidence that the "broader multi-domain defense-tech platform" leg of the thesis is expanding beyond the legacy Puma/Raven/Switchblade line into AI-native multi-role systems. |
+| 2026-08-26 | AeroVironment wins $80.5M Titan MS order for Domestic Shield; Switchblade 600 fielded across 20+ Army brigade combat teams; CEO cites "unprecedented" defense demand over next two years | scanx.trade / Stock Titan / Stocktwits | New order flow plus broad fielding of the loitering-munitions line directly confirms core-product demand; CEO commentary reinforces the multi-year outlook. |
+| 2026-08-26 | ManTech CFO Michael Ruppert appointed to AVAV board; separately, Bragar Eagel opened an investigation into alleged fiduciary breaches (no specifics disclosed) | scanx.trade | Board appointment is a minor governance positive; the law-firm probe is boilerplate solicitation seen after most stock moves — logged for the audit trail, not treated as a thesis signal without specifics. |
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -23,3 +25,4 @@ _None yet — seeded on onboarding._
 | 2026-06-15 | Onboarded via /add-ticker; verified CEO Nawabi, Switchblade/sUAS lines, BlueHalo combination | facts.md + analysis.md + signals.md created; new "UAV & Drone Systems" tier; wired to Edge-surface Drones & UAVs box. |
 | 2026-08-25 | 📰 BRIEF | 5 items triaged, 2 logged, drift flagged |
 | 2026-08-26 | 📰 BRIEF | 4 items triaged, 1 logged (MAYHEM 10) — "contract fallout" headline was a repeat of the already-logged 08-24 campus-announcement drop |
+| 2026-08-26 | 📰 BRIEF (Run 2) | 5 items triaged, 2 logged — Titan MS order + Switchblade fielding + CEO demand comments, board appointment, law-firm probe |
