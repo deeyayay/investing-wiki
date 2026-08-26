@@ -19,6 +19,12 @@
 - **2026-08-24/25** — Micron CEO: "AI memory crunch" — supply may not catch up until 2028 as demand keeps growing (MU stock still fell ~4-6.9% on the day). Separately at Hot Chips 2026, Micron said the silicon gap between HBM and DDR5 is widening with every generation.
   **Why it matters:** Direct executive confirmation of the structural AI demand tailwind the thesis depends on — the stock's selloff reads as sector-wide semiconductor risk-off, not a change in MU's own supply/demand picture, which the CEO commentary actually strengthens.
 
+- **2026-08-24** — Barron's: "Micron Stock Is Falling. A New Chinese IPO Is Raising the Pressure."
+  **Why it matters:** A new named competitive-pressure angle (Chinese memory IPO) distinct from the AI-demand-crunch narrative above — worth tracking as a separate watch item, not yet enough detail to assess overlap with MU's HBM/NAND segments.
+
+- **2026-08-25** — Korea DRAM prices surge as the HBM shift deepens a global supply shortfall (Chosunbiz, via the HBM Supply & Memory Bottleneck topic feed).
+  **Why it matters:** Independent confirmation of the same structural AI memory tailwind from the supply side (Korean DRAM pricing) rather than company commentary — corroborates the CEO's "AI memory crunch" framing above.
+
 ---
 
 ## Social Mentions
@@ -38,3 +44,4 @@
 | 2026-05-14 | RESEARCH | stock-research run. Fundamental sections populated from web research and SEC DEF 14A. |
 | 2026-06-17 | 📊 SCORE | Composite 6.5/10 Strong \| P:3 PP:3 L:3 FH:3 ME:4 FP:3 |
 | 2026-08-25 | BRIEF | 📰 5 items triaged, 1 logged, drift flagged |
+| 2026-08-26 | BRIEF | 📰 5 items + 1 topic hit triaged, 2 logged |

@@ -11,6 +11,7 @@
 | 2026 | Budget/continuing-resolution timing affects program funding | sell-side | The recurring lumpiness risk for defense revenue. |
 | 2026-08-24 | AeroVironment wins $30.9M contract for German Puma UAS | scanx.trade | Direct order flow confirmation on the core Puma product line named in the thesis; allied-demand validation. |
 | 2026-08-24 | AeroVironment plans $100M campus to unite five California locations | Stock Titan / Benzinga / Seeking Alpha | Capacity expansion supporting the broader multi-domain platform build-out post-BlueHalo, even as shares fell 7.5% on the announcement. |
+| 2026-08-25 | AVAV highlights MAYHEM 10, an AI-powered multi-role warfare system | Stocktwits | Product-line evidence that the "broader multi-domain defense-tech platform" leg of the thesis is expanding beyond the legacy Puma/Raven/Switchblade line into AI-native multi-role systems. |
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -21,3 +22,4 @@ _None yet — seeded on onboarding._
 |------|----------|--------|
 | 2026-06-15 | Onboarded via /add-ticker; verified CEO Nawabi, Switchblade/sUAS lines, BlueHalo combination | facts.md + analysis.md + signals.md created; new "UAV & Drone Systems" tier; wired to Edge-surface Drones & UAVs box. |
 | 2026-08-25 | 📰 BRIEF | 5 items triaged, 2 logged, drift flagged |
+| 2026-08-26 | 📰 BRIEF | 4 items triaged, 1 logged (MAYHEM 10) — "contract fallout" headline was a repeat of the already-logged 08-24 campus-announcement drop |

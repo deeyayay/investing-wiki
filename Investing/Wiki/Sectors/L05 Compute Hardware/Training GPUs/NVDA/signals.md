@@ -18,6 +18,9 @@
 - **2026-08-25** — Jensen Huang: NVIDIA's $30B OpenAI investment "might be the last," but NVIDIA has now guaranteed up to $105B of OpenAI's compute leases (Motley Fool). Separately, NVIDIA revealed a 9%+ equity stake in Nebius (NBIS), sending NBIS shares sharply higher overnight.
   **Why it matters:** NVIDIA is underwriting customer demand with its own balance sheet — a $105B lease guarantee is a direct backstop of the capex cycle the thesis depends on, and the Nebius stake extends NVIDIA's neocloud ecosystem reach beyond IREN.
 
+- **2026-08-24/25** — Q2 FY2027 earnings report today (2026-08-26); tonight's digest carries only pre-earnings speculation ("Broken Stock," "Could Drop 20% On Poor Earnings") and no confirmed results. Separately, CoreWeave reportedly announced news framed as positive for NVDA, and NVIDIA is reported to be deepening AI-portfolio investments (Perplexity ~$30B valuation talk, a Poolside deal) alongside the OpenAI/Nebius moves logged above.
+  **Why it matters:** Today's earnings print is the single largest catalyst of the week for the entire book (MRVL, ANET, VRT, CRDO, MU, SNDK all cross-reference NVDA demand signals) — flagged for /dig to pull the actual print once available. The expanding startup-investment pattern (OpenAI, Nebius, Perplexity, Poolside) is worth watching as a circularity/concentration risk even as it supports near-term demand.
+
 ---
 
 ## Social Mentions
@@ -46,3 +49,4 @@
 - **2026-05-22** — Scored — Composite 9.5/10 Unrivaled | P:5 PP:5 L:4 FH:5 ME:5 FP:5
 - **2026-06-07** — 📊 MIGRATE | Legacy NVDA.md split into three-layer structure (facts.md + analysis.md + signals.md).
 - **2026-08-25** — 📰 BRIEF | 5 items triaged, 2 logged, drift flagged
+- **2026-08-26** — 📰 BRIEF | 5 items triaged, 1 logged — Q2 FY2027 earnings today, no confirmed results in digest, flagged for /dig

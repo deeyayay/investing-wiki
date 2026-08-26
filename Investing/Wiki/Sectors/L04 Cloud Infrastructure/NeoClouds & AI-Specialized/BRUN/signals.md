@@ -30,6 +30,9 @@
 - **2026-08-25** — BRUN filed a 25-NSE removing a warrant class from Nasdaq listing/registration ("matured, redeemed or retired securities"); confirmed by a same-day Stock Titan headline ("Boost Run ends Nasdaq listing for warrant class").
   **Why it matters:** Routine post-SPAC warrant wind-down, not a change to the operating business — logged for the audit trail.
 
+- **2026-08-25** — TipRanks: "Boost Run Inc. Earnings Call Signals High-Velocity Growth."
+  **Why it matters:** Directionally supports the margin/backlog growth thesis, but the headline carries no hard numbers — logged for the audit trail rather than treated as a conviction-moving data point.
+
 ---
 
 ## Social Mentions
@@ -46,3 +49,4 @@
 - **2026-06-04** — Scored (revised) — Composite 7.5/10 Strong | P:4 PP:4 L:4 FH:3 ME:4 FP:4 | Revision driven by verified NVIDIA Exemplar Cloud (Blackwell) certification, Dell DFS $1.44B financing eliminating dilution risk, CEO Blue Fire Capital/Galaxy Digital exit validating leadership, and TML concentration reframed (33% of $1.41B total backlog, not 50%)
 - **2026-06-07** — 📊 MIGRATE | Legacy BRUN.md split into three-layer structure (facts.md + analysis.md + signals.md).
 - **2026-08-25** — 📰 BRIEF | 5 items triaged, 1 logged
+- **2026-08-26** — 📰 BRIEF | 4 items triaged, 1 logged

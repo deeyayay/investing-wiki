@@ -67,6 +67,7 @@ _Evaluated: —_
 |------|-------|-------------|-----|
 | 2026-06-26 | Initial onboarding | → | Thesis established; pending /score-ticker and /ticker-monitor --deep |
 | 2026-08-25 | Dilutive equity offering surprises market ("shock") | ↓ Weakened | Directly tests the liquidity-is-manageable assumption underpinning the thesis; no size/terms yet — flagged for /dig |
+| 2026-08-25 | Offering terms confirmed at $200M; same-day ABCL635 hot-flash data reprices the market positively | → Neutral | $200M against ~$700M liquidity is meaningful but not existential — resolves the size question but not the "why now" question; positive ABCL635 data the same day is the more likely explanation than distress. Still needs /dig for share-count impact. |
 
 ---
 

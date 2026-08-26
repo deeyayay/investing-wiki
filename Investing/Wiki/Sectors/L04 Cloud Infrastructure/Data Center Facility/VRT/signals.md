@@ -10,6 +10,9 @@ _(Append notable developments: partnerships, product launches, supply chain sign
 - **2026-08-25** — Lancium and NVIDIA partner on gigawatt-scale AI data centers (Data Center Knowledge, via the AI Datacenter Compute topic feed).
   **Why it matters:** Every new gigawatt-scale AI data center buildout is direct demand for VRT's liquid cooling and power infrastructure regardless of whose GPUs go inside — reinforces the picks-and-shovels thesis independent of NVDA vs. AMD chip share.
 
+- **2026-08-25** — Mixed signal day: TIKR argues the stock's -33% pullback from its high wasn't driven by weak demand; separately Stocktwits reports "Vertiv Optimistic On Data Center Demand" even as its Q1 report "dampened investor expectations"; a Stocktwits piece also references a "Strategic Thermal Labs" development.
+  **Why it matters:** Directly touches the Demand chain health scoring flag (currently CLEAR) — if the sell-off genuinely isn't demand-driven that's reassuring, but a report that "dampened investor expectations" pulling in the opposite direction means the headlines don't agree with each other. Flagged for /dig to reconcile the share-price decline against actual demand commentary, and to identify what "Strategic Thermal Labs" refers to.
+
 ---
 
 ## Social Mentions
@@ -31,3 +34,4 @@ _(Append notable developments: partnerships, product launches, supply chain sign
 | 2026-06-17 | MIGRATE | Legacy VRT.md migrated to three-layer structure (facts.md + analysis.md + signals.md). |
 | 2026-06-17 | SCORE | Composite 7.5/10 Strong \| P:4 PP:3 L:3 FH:4 ME:5 FP:3 |
 | 2026-08-25 | BRIEF | 📰 5 items triaged, 1 logged (topic feed), drift flagged |
+| 2026-08-26 | BRIEF | 📰 5 items triaged, 1 logged — conflicting demand-signal headlines flagged for /dig |

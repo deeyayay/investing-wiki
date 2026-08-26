@@ -12,8 +12,8 @@ The pure-play NAND vehicle for the agentic-AI and brain-scale data wave — and 
 ## Investment Thesis
 
 > **Thesis established:** 2026-06-15
-> **Last validated:** 2026-06-17
-> **Drift status:** On track, accelerating — Q3 FY2026 beat and Kioxia JV extension to 2034 confirm both legs of the thesis (NAND AI demand + supply moat). FY2027 consensus $45B. TrendForce DDR5 pricing is the key bear watch item.
+> **Last validated:** 2026-08-26
+> **Drift status:** Drifting — three consecutive sessions of sharp decline (08-23 WSJ Apple/Chinese-chips report; 08-25/26 coverage reframes it as "Samsung headwinds," cumulative decline cited up to -37%) with the causal story still unresolved between competing narratives; still needs /dig to verify magnitude and cause. NBM contracts and HBF roadmap unaffected by headline evidence so far — Q3 FY2026 beat and Kioxia JV extension to 2034 remain the fundamental baseline.
 
 SanDisk became a standalone, ~pure-play NAND/flash company when Western Digital completed the spinoff on February 21, 2025 (WDC retained the HDD business). It produces leading-edge NAND through its long-standing joint venture with Kioxia — together roughly a third of global NAND bits — spanning enterprise NVMe SSD, client SSD, and embedded/edge flash.
 
@@ -65,6 +65,7 @@ _Evaluated: 2026-06-17_
 | 2026-06-17 | June 11, 2026: SNDK +14% in single session on SK Hynix capacity plan; SK Hynix HBM sold out through 2026; SK Hynix crossed $1T market cap (May 27) | ↑ | SK Hynix HBM sellout is a direct read-through for AI memory undersupply. SNDK benefits from same demand wave — market pricing it as the pure-play NAND winner. YTD +623% validates the structural thesis, not just cyclical momentum. |
 | 2026-02-25 | SanDisk + SK Hynix begin global HBF standardization | ↑ | A second major memory maker backing the HBF spec materially de-risks ecosystem adoption. |
 | 2025-08-06 | SanDisk–SK Hynix HBF standardization MOU | ↑ | Moves HBF from single-vendor concept toward an industry standard. |
+| 2026-08-25/26 | Third straight session of sharp decline, now framed as "Samsung headwinds" vs. the 08-23 Apple/Chinese-chips narrative; cumulative decline cited up to -37% | ↓ Weakened | Two competing, unverified causal stories across three nights of coverage is itself a signal that the market doesn't have a clean explanation — raises the priority of the standing /dig SNDK item. No fundamental (NBM, HBF, Kioxia JV) data point has actually moved. |
 
 ---
 
