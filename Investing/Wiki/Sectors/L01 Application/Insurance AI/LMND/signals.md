@@ -20,6 +20,9 @@
 - **2026-08-26** — Morgan Stanley "backs its early bet on autonomous vehicle insurance" (Stocktwits); LMND rises pre-market.
   **Why it matters:** Sell-side validation of the first-mover AV-insurance data advantage flagged at the January 2026 Tesla FSD launch — the data-moat thesis is starting to get analyst recognition, not just internal conviction.
 
+- **2026-08-26** — Lemonade expands car insurance to Florida.
+  **Why it matters:** Incremental geographic expansion of the auto book — supports growth trajectory but doesn't move the loss-ratio/EBITDA-timeline leg the thesis actually hinges on.
+
 ---
 
 ## Social Mentions
@@ -35,3 +38,4 @@
 
 - **2026-06-25** — add-ticker run. facts.md + analysis.md populated from web research (Q1 2026 earnings, business model, management). CIK 0001691421 confirmed via SEC EDGAR filing URL. EDGAR direct search returned 403; CIK extracted from 10-Q filing URL in search results.
 - **2026-08-26** — 📰 BRIEF (Run 2) | 4 items triaged, 1 logged, drift confirmed — Morgan Stanley backs the AV insurance bet; 3 institutional 13F disclosures (PDT Partners, EFG International, BlackRock) treated as routine, not logged
+- **2026-08-26** — 📰 BRIEF (Run 3) | 2 items triaged, 1 logged — Florida auto expansion

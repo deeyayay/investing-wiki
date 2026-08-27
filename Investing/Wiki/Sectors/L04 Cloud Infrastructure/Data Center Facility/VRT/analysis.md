@@ -57,6 +57,7 @@ _Evaluated: 2026-06-17_
 | 2026-08-25 | UP | Lancium/NVIDIA gigawatt-scale AI data center partnership | Another gigawatt-scale buildout announcement reinforces chip-agnostic infrastructure demand -- direct read-through to VRT backlog regardless of GPU vendor. |
 | 2026-08-25 | MIXED | Stock -33% from its high; one outlet says the reason wasn't weak demand, another says a Q1 report "dampened investor expectations" | Conflicting headline framings on whether demand is actually intact -- flagged for /dig to reconcile against the Demand chain health (currently CLEAR) scoring flag before treating the pullback as valuation-only. |
 | 2026-08-26 | UP | Stock surges pre-market on a "blowout 2026 forecast" for AI data center demand | Adds to the demand-intact side of the 08-25 conflicting headlines; doesn't resolve the "dampened investor expectations" framing on its own -- /dig still queued to reconcile the full picture. |
+| 2026-08-26 | MIXED | Stock reported to plunge 17% on a Q2 miss, directly contradicting the same-day pre-market "blowout 2026 forecast" surge headline already logged | Third consecutive day of contradictory demand/earnings framing; EDGAR timed out again so there's no primary filing to reconcile against -- /dig VRT is now overdue rather than merely queued. |
 
 ---
 

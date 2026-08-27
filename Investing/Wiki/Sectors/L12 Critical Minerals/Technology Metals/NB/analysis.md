@@ -37,6 +37,7 @@ _Not yet scored — run `/score-ticker NB`. (Expect a low composite: the thesis 
 | 2026-06-15 | Onboarded as the L12 critical-minerals / magnetic-REE leg (with MP) | → | Establishes coverage; EXIM financing close is the single gating catalyst. |
 | 2026-02 | Began detailed engineering on the ~$45M Elk Creek mine portal | ↑ | First physical-progress step; signals intent to move toward construction ahead of full financing. |
 | 2026-08-24 | Elk Creek economic assessment raised, PT increased to $12 | ↑ Strengthened | Upgraded project economics directly improves the underlying asset value the financing-gated thesis is optioned on. |
+| 2026-08-26 | Railveyor automated haulage system embedded in Elk Creek mine plan | ↑ | Incremental engineering derisking of the construction plan — another physical-progress step ahead of the EXIM financing decision that gates the whole thesis. |
 
 ---
 

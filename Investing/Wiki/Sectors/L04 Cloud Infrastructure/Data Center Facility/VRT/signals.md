@@ -16,6 +16,9 @@ _(Append notable developments: partnerships, product launches, supply chain sign
 - **2026-08-26** — Stocktwits: "VRT Stock Surges Pre-Market On Blowout 2026 Forecast On AI Data Centre Demand."
   **Why it matters:** Adds to the "demand intact" side of the 08-25 conflicting headlines, but doesn't by itself reconcile the earlier "dampened investor expectations" framing — logged alongside the standing /dig item rather than resolving it.
 
+- **2026-08-26** — Pluang: "Vertiv stock plunges 17% after Q2 miss sparks s[elloff]..." — directly contradicts the same-day "blowout 2026 forecast" pre-market surge headline logged above. EDGAR timed out again tonight, so there's no primary 8-K/10-Q to check.
+  **Why it matters:** Three straight days of contradictory demand/earnings framing (-33%-from-high pullback "not demand-driven" on 08-25, "blowout forecast" pre-market surge this morning, "Q2 miss" 17% plunge tonight) with no primary source available twice in a row due to EDGAR timeouts. This is now the single most unresolved thesis question in the book — /dig VRT is overdue.
+
 ---
 
 ## Social Mentions
@@ -39,3 +42,4 @@ _(Append notable developments: partnerships, product launches, supply chain sign
 | 2026-08-25 | BRIEF | 📰 5 items triaged, 1 logged (topic feed), drift flagged |
 | 2026-08-26 | BRIEF | 📰 5 items triaged, 1 logged — conflicting demand-signal headlines flagged for /dig |
 | 2026-08-26 | BRIEF (Run 2) | 📰 5 items triaged, 1 logged — blowout 2026 forecast pre-market surge added to the standing /dig item |
+| 2026-08-26 | BRIEF (Run 3) | 📰 5 items triaged, 1 logged — Q2 miss / 17% plunge headline directly contradicts this morning's "blowout forecast" surge; EDGAR timeout again; /dig VRT escalated |

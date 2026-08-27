@@ -49,6 +49,7 @@ _Last scored: 2026-05-22 | [[Scoring Rubric]]_
 | 2026-05-07 | NVDA invests $2.1B in IREN (warrant); designates Sweetwater as DSX flagship | ↑ Strengthened | NVIDIA investing its own capital into AI infrastructure buildout signals confidence in demand duration — companies don't make multi-billion equity bets on a capex cycle they expect to moderate |
 | 2026-05-07 | AMD Q1 beat ($1.37 vs $1.30 est, +18.6%) — positive read-through for AI compute | → Neutral | AMD's gain in GPU share is real but incremental; CUDA moat and Blackwell performance lead remain intact for frontier training workloads |
 | 2026-08-25 | NVDA guarantees up to $105B of OpenAI leases; reveals 9%+ stake in Nebius | ↑ Strengthened | Balance-sheet-backed demand guarantee for its largest customer plus an expanding neocloud equity network both reinforce the durability of the capex cycle the thesis depends on |
+| 2026-08-26 | Q2 FY2027 10-Q + 8-K filed; official results announced; 70% revenue growth projected for 2028 (Axios); $18B additional AI investment committed this fiscal year; Lancium gigawatt AI factory stake | ↑ | Confirms earnings actually landed after three runs of speculation-only coverage; the 2028 growth framing plus continued balance-sheet-backed downstream investment both extend the demand-durability case — though the exact Q2 print itself still needs /dig to confirm against guidance. |
 
 ---
 

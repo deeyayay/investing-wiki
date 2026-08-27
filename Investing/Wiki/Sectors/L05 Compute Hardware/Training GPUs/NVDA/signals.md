@@ -24,6 +24,9 @@
 - **2026-08-26** — Reports of a $21B NVIDIA equity stake in SpaceX (The Globe and Mail); separately, digitimes reports a TSMC CoWoS packaging capacity shift could grow AMD's share and trim NVIDIA's allocation.
   **Why it matters:** The SpaceX stake extends the same balance-sheet-backed ecosystem investment pattern already flagged as a watch item. The CoWoS allocation shift is a genuine supply-side competitive risk (less advanced-packaging capacity for NVDA if TSMC reallocates to AMD) — still no earnings print in this digest, so both fold into the existing /dig NVDA queue.
 
+- **2026-08-26 — EARNINGS CONFIRMED** | NVIDIA files a 10-Q and an 8-K (items 2.02, 9.01) and issues official Q2 FY2027 results via NVIDIA Newsroom, resolving the print this digest had been waiting on since Run 1. Axios reports NVIDIA is now projecting 70% revenue growth in 2028. CNBC's Bespoke commentary argues "the days of hypergrowth in the stock price are behind it" — a bearish read on valuation, not on the growth numbers. The nvda-downstream topic feed adds: Jensen Huang has committed to $18B of additional AI investment this fiscal year (Business Insider), and Lancium/NVIDIA are partnering on gigawatt-scale AI factory campuses with NVIDIA taking a strategic stake (Daily Energy Insider).
+  **Why it matters:** The actual Q2 FY2027 print is finally confirmed after three straight runs of pre-earnings speculation — but no headline in tonight's digest carries the hard revenue/EPS numbers, only the 2028 growth framing and the primary-source filing links. /dig NVDA is now the highest-priority item in the queue: pull the 10-Q and 8-K directly for the actual quarter. The $18B incremental investment and Lancium stake both extend the balance-sheet-backed demand-underwriting pattern already flagged (OpenAI $105B lease guarantee, Nebius/SpaceX stakes).
+
 ---
 
 ## Social Mentions
@@ -54,3 +57,4 @@
 - **2026-08-25** — 📰 BRIEF | 5 items triaged, 2 logged, drift flagged
 - **2026-08-26** — 📰 BRIEF | 5 items triaged, 1 logged — Q2 FY2027 earnings today, no confirmed results in digest, flagged for /dig
 - **2026-08-26** — 📰 BRIEF (Run 2) | 5 items + 3 topic hits triaged, 1 logged — SpaceX stake + TSMC CoWoS allocation shift added to the /dig queue; still no confirmed earnings print (reports after close today)
+- **2026-08-26** — 📰 BRIEF (Run 3) | 5 items + 3 topic hits triaged, 1 logged, drift flagged — Q2 FY2027 earnings 8-K/10-Q filed and official results announced (resolving the three-run-standing /dig item), but no hard numbers in the digest; $18B additional FY investment + Lancium gigawatt AI factory stake also logged; /dig NVDA still queued to pull the actual print

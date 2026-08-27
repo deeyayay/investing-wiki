@@ -11,6 +11,9 @@
 - **2026-04-23** — Q1 2026 results: Revenue €184.9M (+28.3% YoY), Orders record €269.7M (+104.5% YoY), hybrid bonding unit orders doubled QoQ, customer base expanded to 20, GM 63.5%, net income €51.6M (+63.8% YoY). Q2 guide: +30-40% QoQ revenue, GM 64-66%.
   **Why it matters:** Orders leading revenue by ~1–2 quarters. The +104.5% YoY order surge is the strongest signal yet that the hybrid bonding ramp is structural and multi-customer — not a single foundry pull-forward. GM expansion to 64-66% guidance reflects hybrid bonding mix growing, which carries higher ASP than conventional die attach.
 
+- **2026-08-26** — BE Semiconductor Industries announces transactions under its share repurchase program.
+  **Why it matters:** Routine buyback execution — a capital-return signal, not a new fact about the hybrid-bonding order thesis.
+
 ---
 
 ## Social Mentions
@@ -26,3 +29,4 @@
 *(Reverse-chron append log — newest at bottom)*
 - **2026-06-19** — add-ticker run. facts.md + analysis.md populated from web research (Quartr, TipRanks, GlobeNewswire, Seeking Alpha). No SEC EDGAR CIK (Netherlands-listed, Euronext Amsterdam). Q1 2026 and FY2025 earnings data ingested. Hybrid bonding market position confirmed via multiple sources. Management: Richard Blickman (CEO/founder, ~30yr), Andrea Kopp-Battaglia (SVP Finance). Onboarded from candidate entry added 2026-06-19 via ingest-sentiment of tech-race tweet.
 - **2026-06-19** — Scored — Composite 8.0/10 Unrivaled | P:4 PP:4 L:4 FH:4 ME:4 FP:4 | Valuation: Expensive (80.65x fwd P/E); analyst avg PT €238.73 Buy consensus. No Sector Framework for Advanced Packaging — Macro scored from Technology Alignment. Risk flags: Customer concentration WATCH (top customer % undisclosed), Rate sensitivity WATCH (high PE duration risk).
+- **2026-08-26** — 📰 BRIEF (Run 3) | 3 items triaged, 1 logged — share repurchase transactions
