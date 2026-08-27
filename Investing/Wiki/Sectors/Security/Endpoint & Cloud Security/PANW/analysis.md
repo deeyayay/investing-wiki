@@ -51,6 +51,7 @@ _Last scored: — | [[Scoring Rubric]]_
 
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
+| 2026-08-27 | CEO held acquisition talks with Okta and Datadog; signals more deals coming | ↑ | Concrete evidence of the active platform-consolidation strategy central to the thesis — PANW pursuing M&A, not just organic cross-sell. |
 
 ---
 

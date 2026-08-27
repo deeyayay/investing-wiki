@@ -51,6 +51,7 @@ _Last scored: — | [[Scoring Rubric]]_
 
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
+| 2026-08-27 | Amazon confirms in-house AI chip (Trainium) business growing fast | ↑ | Reinforces the Trainium cost-and-margin moat central to the AWS thesis. |
 
 ---
 

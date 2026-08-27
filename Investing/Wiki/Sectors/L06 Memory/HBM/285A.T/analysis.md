@@ -54,6 +54,7 @@ _Last scored: — | [[Scoring Rubric]]_
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
 | 2026-08-26 | Kioxia commits $6.27B to a new Japan memory facility | ↑ | Direct capital commitment to new capacity confirms the AI-driven NAND demand thesis is real enough to justify greenfield investment ahead of the 2027 supply-tightness window management has guided to. |
+| 2026-08-27 | Kioxia commits $31.4B to boost AI chip production (Iwate facility) | ↑ | Second major capex commitment in two runs; further confirms the AI-driven NAND demand thesis. |
 
 ---
 

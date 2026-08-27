@@ -26,6 +26,7 @@ _Not yet scored — run `/score-ticker AVAV`._
 | 2026-06-15 | Onboarded to wiki | New | Closes the Edge-surface "Drones and UAVs" box; anchors new UAV & Drone Systems tier; structural defense-drone cycle. |
 | 2026-08-25 | $30.9M German Puma UAS contract win | ↑ Strengthened | Direct, named order flow on the core Puma product line confirms continued allied demand post-BlueHalo. |
 | 2026-08-26 | $80.5M Titan MS order; Switchblade 600 fielded across 20+ Army brigade combat teams; CEO cites "unprecedented" demand outlook | ↑ Strengthened | New order flow plus broad Army adoption of the loitering-munitions line and management's own multi-year demand framing reinforce the core-product thesis. |
+| 2026-08-27 | $51M Army order for Switchblade systems | ↑ Strengthened | Continues confirmed order-flow pattern on the core product line. |
 
 ## Cross-Ticker Signals
 

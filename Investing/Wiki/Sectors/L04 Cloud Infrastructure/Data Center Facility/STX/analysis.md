@@ -12,8 +12,8 @@ The areal-density leader of the HDD duopoly — Seagate's HAMR "Mozaic" platform
 ## Investment Thesis
 
 > **Thesis established:** 2026-06-15
-> **Last validated:** 2026-06-15
-> **Drift status:** New — onboarded as the cold-archive leg of the memory & storage thesis (Technology Preferences Race 4)
+> **Last validated:** 2026-08-27
+> **Drift status:** On track — record 2026 results + raised guidance confirm HAMR/cold-archive exabyte-tier demand
 
 Seagate and Western Digital are the HDD duopoly; Seagate's HAMR-based **Mozaic** platform is the per-disk areal-density leader. Mozaic 3+ shipped 30TB drives in 2024 and sampled 36TB in early 2025; **Mozaic 4+ began shipping 44TB drives in volume to hyperscalers in March 2026**, with a roadmap toward 100TB by ~2028. The investable point: as AI training corpora and scientific datasets (including petabyte-to-exabyte connectomes) explode, the bytes have to land somewhere cheap, and **HDD still costs 4–22× less per TB than QLC SSD in 2026** — so Seagate owns the warm/cold/nearline archive tier for years, not quarters.
 
@@ -36,6 +36,7 @@ _Not yet scored — run `/score-ticker STX`._
 |------|-------|-------------|-----|
 | 2026-06-15 | Onboarded as the HAMR cold-archive exposure for the memory/storage thesis | → | Establishes coverage; HAMR ramp + nearline pricing are the watch items. |
 | 2026-03-03 | Seagate ships 44TB Mozaic 4+ in volume to hyperscalers | ↑ | Areal-density lead extends; supports capacity-led margin expansion. |
+| 2026-08-27 | Record 2026 results + raised guidance reported | ↑ | First earnings-level confirmation of the HAMR cold-archive thesis since onboarding — supports the areal-density margin story beyond capacity announcements alone. |
 
 ---
 

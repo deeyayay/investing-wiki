@@ -17,6 +17,9 @@
 - **2026-08-26** — Kioxia to invest $6.27 billion in a new Japan memory facility (Nikkei, via Investing.com South Africa).
   **Why it matters:** A fresh multi-billion-dollar capacity commitment directly confirms the AI-driven NAND demand thesis — new greenfield capacity was flagged as unable to come online before late 2027, and this is Kioxia moving to close that gap.
 
+- **2026-08-27** — Kioxia plans $31.4 billion investment to boost AI chip production; separate Tokyo-market coverage cites a new Iwate building investment and production increase (GuruFocus, Moomoo).
+  **Why it matters:** A second major capacity commitment in as many runs (following the $6.27B Japan facility logged 08-26) — reinforces that the AI-driven NAND demand thesis is strong enough to justify sustained greenfield investment.
+
 ---
 
 ## Social Mentions

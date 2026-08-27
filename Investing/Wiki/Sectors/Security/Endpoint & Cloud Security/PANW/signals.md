@@ -14,6 +14,9 @@
 - **2026-08-25** — JPMorgan raises Palo Alto Networks price target, citing platform strength.
   **Why it matters:** Second analyst target raise in three days (after Needham 08-24) — sentiment cluster ahead of earnings, still not a fundamental confirmation.
 
+- **2026-08-27** — Q3 2026 earnings call transcript published; reports the CEO held acquisition talks with both Okta and Datadog, and signals more deals are coming.
+  **Why it matters:** M&A talks with Okta/Datadog is a concrete data point on PANW's platform-consolidation strategy — actively pursuing acquisitions beyond organic cross-sell, which is the central mechanism of the thesis.
+
 ---
 
 ## Social Mentions
@@ -29,3 +32,4 @@
 - **2026-06-16** — add-ticker run. facts.md + analysis.md populated from web research and SEC EDGAR.
 - **2026-08-25** — 📰 BRIEF | 5 items triaged, 1 logged
 - **2026-08-26** — 📰 BRIEF (Run 3) | 5 items triaged, 1 logged — JPMorgan PT raise
+- **2026-08-27** — 📰 BRIEF | 5 items triaged, 1 logged — CEO M&A talks with Okta/Datadog confirm active consolidation strategy
