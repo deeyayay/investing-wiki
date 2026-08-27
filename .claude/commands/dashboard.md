@@ -26,6 +26,28 @@ The digest keys the tab renders:
 | `topics[]` | the Themes section — `tickers` as chips, `gaps` as the unregistered names |
 | `discovered[]` | untracked names matched in theme coverage, each with a `/track` command |
 | `providers{}` | per-provider item counts in the banner; a provider with zero items raises a visible "digest is incomplete" warning |
+| `drift_index{}` | the thesis-drift flag on every ticker card — `ticker -> drift status` for **every scanned ticker**, not just the ones with news, so the flag doesn't blink in and out with the news cycle |
+
+### Thesis drift flags
+
+Each ticker card carries a flag derived from its `**Drift status:**` line in `analysis.md`:
+
+| Status head | Flag | Card accent |
+|---|---|---|
+| `On track, accelerating` / `strengthened` | ▲ Strengthening (green) | green rail |
+| `On track` (incl. `evolving`) | ▶ On track (grey) | none |
+| `New` | ● New (grey) | none |
+| `Drifting` / `Material change` | ▼ Drifting (amber) | amber rail |
+| `Broken` | ▼ Broken (red) | red rail |
+
+Only the states that need attention get a card accent, so scanning the list surfaces
+exactly the names that moved.
+
+**This encodes drift, not price direction.** "On track" means the thesis is holding —
+which is not the same as bullish, and would be actively wrong for a cautious or avoid
+thesis. Classification reads the **status head only** (the text before the em dash),
+because the explanation after it is prose: "On track — AI storage demand accelerating"
+is on track, not strengthening.
 
 **If you change the digest schema in `scripts/watchlist_refresh_fetch.py`, update the tab.**
 The dashboard fails silently on a key it does not know — it renders nothing rather than erroring,

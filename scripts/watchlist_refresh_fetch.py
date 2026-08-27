@@ -659,6 +659,10 @@ def main(argv=None):
         "providers": stats,
         "topic_stats": topic_stats,
         "not_in_registry": not_in_registry,
+        # Drift for EVERY scanned ticker, not just the ones with news. The
+        # dashboard flags thesis drift per card, and a flag that only appears
+        # when a ticker happens to have a headline is worse than no flag.
+        "drift_index": {e["ticker"]: e["drift"] for e in selected if e.get("drift")},
         "tickers": digest_tickers,
         "topics": topic_results,
         "discovered": discovered,

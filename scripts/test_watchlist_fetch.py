@@ -166,6 +166,22 @@ class GuardTests(unittest.TestCase):
                               "topic %s lists unregistered ticker %s (use gaps:)"
                               % (topic["id"], t))
 
+    def test_drift_index_covers_quiet_tickers(self):
+        """A drift flag that only shows up when a ticker had news is useless for
+        scanning, so drift must be emitted for every scanned ticker."""
+        saved = w.extract_thesis
+        w.extract_thesis = lambda folder: ("a thesis", "Drifting — made up for the test")
+        try:
+            # NVDA gets an item, CRDO stays quiet; both must appear in drift_index.
+            self.run_fetch(lambda entry, hours:
+                           [item("headline")] if entry["ticker"] == "NVDA" else [])
+        finally:
+            w.extract_thesis = saved
+        with open(self.digest) as f:
+            digest = json.load(f)
+        self.assertEqual(sorted(digest["drift_index"]), ["CRDO", "NVDA"])
+        self.assertEqual([t["ticker"] for t in digest["tickers"]], ["NVDA"])
+
     def test_unknown_provider_name_is_rejected(self):
         with self.assertRaises(SystemExit):
             w.main(["--tickers", "NVDA", "--providers", "nope", "--no-topics",
