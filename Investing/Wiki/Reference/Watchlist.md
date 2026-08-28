@@ -71,7 +71,6 @@ subjects the KB has no ticker for yet. Both feed one digest.
 | MU | Micron Technology | Memory | 6.5 | Only US-domiciled HBM supplier — stacked on every NVDA GPU — with structural AI demand tailwin… |
 | CRWD | CrowdStrike Holdings, Inc. | Security | — | CrowdStrike is the AI-native cybersecurity platform consolidator whose Falcon data flywheel an… |
 | PANW | Palo Alto Networks, Inc. | Security | — | Palo Alto Networks consolidates enterprise security into a unified AI-native platform, driving… |
-| STM | STMicroelectronics N.V. | Semiconductor Foundry | — | STMicroelectronics' vertically integrated SiC power platform and STM32 MCU ecosystem lock in a… |
 | XFAB | X-FAB Silicon Foundries SE | Semiconductor Foundry | 6.5 | EU's designated silicon photonics foundry for sovereign CPO supply chains — NVIDIA and Nokia c… |
 | LIN | Linde plc | Semiconductor Materials | — | The world's largest industrial gas company and a quiet picks-and-shovels supplier to the leadi… |
 
