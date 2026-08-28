@@ -34,7 +34,6 @@ subjects the KB has no ticker for yet. Both feed one digest.
 | SNDK | SanDisk Corporation | Memory | **8.5** | The pure-play NAND vehicle for the agentic-AI and brain-scale data wave — and the pioneer of High-Bandwi… |
 | ANET | Arista Networks | Compute Hardware | **8.0** | The dominant Ethernet switching platform for hyperscaler AI clusters; as AI workloads shift from InfiniB… |
 | CRDO | Credo Technology Group Hold… | Interconnect | **8.0** | Full-stack SerDes IP owner that has become the de facto AEC standard inside AI GPU clusters — FY2026 rev… |
-| BESI | BE Semiconductor Industries… | Advanced Packaging | **8.0** | The dominant pure-play advanced packaging equipment maker with ~75% advanced die attach share and #1 pos… |
 | BRUN | Boost Run Inc. | Cloud Infrastructure | **7.5** | NVIDIA Exemplar Cloud-certified GPU neocloud (fewer than 10 globally) with 85%+ gross margins, $1.45B ta… |
 | MRVL | Marvell Technology | Compute Hardware | **7.5** | Custom AI ASIC designer for hyperscalers (Google, Amazon) plus high-speed SerDes/DSP interconnect — prof… |
 | AEHR | Aehr Test Systems | Semiconductor Equipment | **7.5** | Only production-ready wafer-level burn-in system at scale, pivoting from SiC/EV to AI processors — 3.5x… |
