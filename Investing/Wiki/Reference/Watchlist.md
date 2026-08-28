@@ -62,7 +62,6 @@ subjects the KB has no ticker for yet. Both feed one digest.
 | STX | Seagate Technology Holdin… | Cloud Infrastructure | — | The areal-density leader of the HDD duopoly — Seagate's HAMR "Mozaic" platform owns the exabyt… |
 | AMD | Advanced Micro Devices, I… | Compute Hardware | — | AMD leverages Zen and CDNA architecture leadership to capture data center compute share as the… |
 | INTC | Intel Corporation | Compute Hardware | 6.5 | Intel's EMIB packaging + 25-year in-house silicon photonics stack is the only IDM-foundry plat… |
-| MPWR | Monolithic Power Systems,… | Compute Hardware | — | The fastest-growing fabless power-management IC designer and a disproportionate AI/data-center… |
 | NB | NioCorp Developments Ltd. | Critical Minerals | — | The leading US development-stage source of niobium, scandium, titanium, and magnetic rare eart… |
 | AVAV | AeroVironment, Inc. | Edge & Physical AI | — | The US military's primary small-drone and loitering-munitions supplier (Puma, Raven, Switchbla… |
 | BRCHF | BrainChip Holdings Ltd | Edge & Physical AI | — | The only publicly listed neuromorphic pure-play — a high-risk, high-optionality call option on… |
