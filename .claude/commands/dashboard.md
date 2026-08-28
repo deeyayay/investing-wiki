@@ -28,6 +28,24 @@ The digest keys the tab renders:
 | `providers{}` | per-provider item counts in the banner; a provider with zero items raises a visible "digest is incomplete" warning |
 | `drift_index{}` | the thesis-drift flag on every ticker card — `ticker -> drift status` for **every scanned ticker**, not just the ones with news, so the flag doesn't blink in and out with the news cycle |
 
+### The Dig button
+
+Every ticker card and the ticker drill-down carry a **Dig** button that copies
+`/dig TICKER --score` to the clipboard, to paste into a Claude Code session.
+
+**It copies rather than fires, and that is a constraint, not a shortcut.** The
+dashboard is a static GitHub Pages document with no backend, and the Routines
+API cannot be called from a browser: its `/fire` endpoint answers `OPTIONS` with
+`405` and no `Access-Control-Allow-Origin`, so the preflight fails before the
+POST is sent. Verified 2026-08-28. Firing directly would need either a proxy
+holding the token server-side (a Cloudflare Worker will do) or a token embedded
+in a public page, which is not an option.
+
+The click handler prefers `navigator.clipboard` and falls back to a hidden
+textarea plus `execCommand`, which is still the only path in some mobile
+webviews; if both fail it prints the command for manual copying rather than
+silently doing nothing.
+
 ### Thesis drift flags
 
 Each ticker card carries a flag derived from its `**Drift status:**` line in `analysis.md`:
