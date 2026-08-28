@@ -56,7 +56,6 @@ subjects the KB has no ticker for yet. Both feed one digest.
 | Ticker | Name | Sector | Score | One-Line Thesis |
 |--------|------|--------|-------|-----------------|
 | LPK | LPKF Laser & Electronics… | Advanced Packaging | 6.5 | LPKF owns the sole industrial process for glass substrate via drilling, making it indispensabl… |
-| VSH | Vishay Intertechnology, I… | Advanced Packaging | — | The broadest US-listed passive- and discrete-components franchise — tantalum capacitors, MLCCs… |
 | LMND | Lemonade, Inc. | Application | — | AI-native full-stack insurer using a proprietary claims data flywheel to compress loss ratios… |
 | AMZN | Amazon.com, Inc. | Cloud Infrastructure | — | AWS is the dominant AI cloud infrastructure platform, accelerating at 28% growth as proprietar… |
 | GOOGL | Alphabet Inc. | Cloud Infrastructure | — | Google Cloud's 63% revenue growth and $462B backlog make Alphabet the vertically-integrated AI… |
