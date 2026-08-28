@@ -63,8 +63,7 @@ _Evaluated: 2026-06-17_
 | 2026-05-07 | Note initialized from NVDA ecosystem map | → Neutral | Dual-angle thesis identified: custom ASICs + interconnect DSPs |
 | 2026-05-07 | NVDA-IREN partnership + hyperscaler AI capex commentary | ↑ Strengthened | Custom silicon and interconnect thesis validated by continued hyperscaler spending |
 | 2026-05-19 | NVDA Q1 FY2027 earnings — MRVL named as interconnect chip supplier | ↑ Strengthened | SerDes/DSP design-win cycle confirmed; strong NVDA guidance extends the interconnect pipeline |
-
----
+| 2026-08-27 | Q2 FY2027 beat-and-raise confirmed; shares fell as "Google deal questions linger" (Reuters) | → Mixed | Revenue/earnings beat and raised forecast confirm the custom-ASIC demand leg, but the market's reaction signals the pre-earnings $120B Google framing was never resolved — flagged for /dig before treating the Google leg of the dual-angle thesis as intact. |
 
 ## Cross-Ticker Signals
 <!-- Log signals this ticker emits to or receives from other monitored names. -->

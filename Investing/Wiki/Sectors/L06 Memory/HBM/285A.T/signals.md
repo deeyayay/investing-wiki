@@ -20,6 +20,9 @@
 - **2026-08-27** — Kioxia plans $31.4 billion investment to boost AI chip production; separate Tokyo-market coverage cites a new Iwate building investment and production increase (GuruFocus, Moomoo).
   **Why it matters:** A second major capacity commitment in as many runs (following the $6.27B Japan facility logged 08-26) — reinforces that the AI-driven NAND demand thesis is strong enough to justify sustained greenfield investment.
 
+- **2026-08-27/28** — Competitive read-through: SK hynix holds groundbreaking ceremony for its first US HBM production base in Indiana, targeting a key memory production role by 2030 (SK hynix, CNBC, Korea Herald).
+  **Why it matters:** A rival breaking ground on US soil doesn't touch Kioxia's Japan-based NAND fab scale directly, but it's a reminder that the memory-onshoring wave benefiting the sector isn't Kioxia-exclusive — long multi-year timeline (2030), not a near-term competitive threat.
+
 ---
 
 ## Social Mentions
@@ -37,3 +40,4 @@
 - **2026-08-23** — 📰 WATCHLIST-REFRESH | 5 headlines triaged, 1 logged
 - **2026-08-26** — 📰 BRIEF | 5 items triaged, 1 logged — split/merger corporate-action story still unresolved, queued for /dig
 - **2026-08-26** — 📰 BRIEF (Run 3) | 5 items triaged, 1 logged, drift flagged — $6.27B Japan facility investment confirms capacity-expansion thesis; split/merger story still unresolved from prior runs
+- **2026-08-28** — 📰 BRIEF | 5 items + 1 topic hit triaged, 2 logged — SK hynix Indiana HBM groundbreaking noted as competitive context (2030 timeline, not near-term)

@@ -30,6 +30,9 @@
 - **2026-08-27** — Q2 FY2027 beat-and-raise confirmed at the headline level: WSJ reports NVIDIA "says demand for AI chips is getting even hotter," Investor's Business Daily reports shares rallying "on major Amazon contract, fiscal Q2 beat-and-raise report," CNN notes revenue roughly doubled; Reuters/CNBC note shares initially dipped before recovering, with some analysts flagging valuation-fatigue even as the growth numbers hold up.
   **Why it matters:** Finally resolves the three-run-standing /dig item — a confirmed beat-and-raise with an explicit Amazon contract mention is enough to close the print-confirmation queue item, even though exact revenue/EPS figures still aren't spelled out in any single headline.
 
+- **2026-08-28** — Yahoo Finance (via the NVDA Downstream Effects topic feed): "NVIDIA's Data Center Strategy Deepens With Cloverleaf Investment."
+  **Why it matters:** Another entry in the same balance-sheet-backed ecosystem-investment pattern already flagged (OpenAI $105B lease guarantee, Nebius/SpaceX stakes) — extends rather than changes the demand-durability thesis; headline alone doesn't give deal size.
+
 ---
 
 ## Social Mentions
@@ -62,3 +65,4 @@
 - **2026-08-26** — 📰 BRIEF (Run 2) | 5 items + 3 topic hits triaged, 1 logged — SpaceX stake + TSMC CoWoS allocation shift added to the /dig queue; still no confirmed earnings print (reports after close today)
 - **2026-08-26** — 📰 BRIEF (Run 3) | 5 items + 3 topic hits triaged, 1 logged, drift flagged — Q2 FY2027 earnings 8-K/10-Q filed and official results announced (resolving the three-run-standing /dig item), but no hard numbers in the digest; $18B additional FY investment + Lancium gigawatt AI factory stake also logged; /dig NVDA still queued to pull the actual print
 - **2026-08-27** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged — Q2 FY2027 beat-and-raise confirmed via WSJ/IBD/CNBC (demand "getting even hotter," Amazon contract), closing the three-run /dig queue item; exact revenue/EPS figures still not in a single headline
+- **2026-08-28** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged — Cloverleaf investment extends the balance-sheet-backed ecosystem-investment pattern; main ticker headlines were repeats of the 08-27 beat-and-raise coverage

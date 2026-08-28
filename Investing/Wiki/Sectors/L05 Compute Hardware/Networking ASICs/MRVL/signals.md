@@ -14,6 +14,9 @@
 - **2026-08-25** — Susquehanna raises price target ahead of Q2 results (reports 2026-08-27).
   **Why it matters:** Pre-earnings analyst positioning — directionally bullish but routine ahead of tomorrow's print; the still-unverified "$120B Google deal" framing from the same news cycle remains the bigger open question.
 
+- **2026-08-27 — EARNINGS** | Q2 FY2027 results: revenue and earnings beat estimates, annual forecasts raised — but shares fell as "Google deal questions linger" (Reuters).
+  **Why it matters:** Resolves the print itself (beat-and-raise, confirming hyperscaler custom-silicon demand), but the market's reaction shows the 08-25 "$120B Google deal" ambiguity was never actually cleared up — Reuters' framing suggests something specific about the Google relationship is now in doubt. This is the open item /dig MRVL needs to settle before treating the Google leg of the thesis as intact.
+
 ---
 
 ## Social Mentions
@@ -37,3 +40,4 @@
 | 2026-06-17 | SCORE | Composite 7.5/10 Strong \| P:4 PP:3 L:3 FH:3 ME:5 FP:4 |
 | 2026-08-25 | BRIEF | 📰 5 items triaged, 1 logged — flagged for /dig ahead of 2026-08-27 earnings |
 | 2026-08-26 | BRIEF (Run 3) | 📰 5 items triaged, 1 logged — Susquehanna PT raise ahead of tomorrow's earnings; /dig still queued to verify $120B Google-deal framing before the print |
+| 2026-08-28 | BRIEF | 📰 5 items triaged, 1 logged, drift flagged — Q2 beat-and-raise confirmed but shares fell on lingering Google-deal questions; /dig MRVL escalated to resolve the Google relationship ambiguity |

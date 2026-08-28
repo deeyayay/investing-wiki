@@ -12,8 +12,8 @@ Only US-domiciled HBM supplier — stacked on every NVDA GPU — with structural
 ## Investment Thesis
 
 > **Thesis established:** 2026-05-07
-> **Last validated:** 2026-06-17
-> **Drift status:** On track — HBM4 ramp on schedule; CY2026 supply contracted; earnings in 7 days (2026-06-24)
+> **Last validated:** 2026-08-28
+> **Drift status:** On track — HBM4 ramp on schedule; CY2026 supply contracted; SK hynix's Indiana HBM plant (groundbreaking 2026-08-27, targeting 2030) is a long-horizon watch item on the "only US-domiciled" claim, not a near-term change
 
 Micron is a cyclical semiconductor company that has found a secular growth engine inside the AI capex supercycle. HBM3E is stacked directly onto NVDA's H200 and Blackwell GPUs — roughly 30% of the GPU's bill of materials — meaning every GPU shipped is a Micron revenue event. Historically memory was a brutal commodity business (DRAM, NAND), but HBM is different: it requires advanced packaging expertise, has a limited supplier base (Micron, SK Hynix, Samsung), and commands premium pricing with long-term supply agreements. Micron is gaining share vs. SK Hynix and is the only US-domiciled HBM supplier — giving it geopolitical tailwinds as the US pushes to onshore critical semiconductor supply.
 
@@ -63,6 +63,7 @@ _Evaluated: 2026-06-17_
 | 2026-06-17 | Score-ticker run; composite 6.5/10 Strong | → Neutral | Thesis confirmed: AI HBM demand is structural; NAND underappreciated. Score constrained by insufficient data (analyst coverage, balance sheet, ownership %) and partial tech alignment vs. SNDK pure-play |
 | 2026-08-25 | CEO: AI memory supply may not catch up until 2028; Hot Chips 2026: HBM/DDR5 silicon gap widening | ↑ Strengthened | Direct executive confirmation of the structural demand tailwind, even as the stock sold off with the broader semiconductor group |
 | 2026-08-26 | Rack-scale AI memory pooling breakthrough shown; separately, Barron's argues long-term contracts cap memory-boom upside; 8-K discloses an officer departure (unnamed) | → Neutral | Mixed: a genuine product proof point against a real nuance on upside capture — net doesn't move Drift; 8-K departure flagged for /dig before assessing management-continuity impact |
+| 2026-08-28 | SK hynix breaks ground on first US HBM plant (Indiana), targeting 2030 | → Neutral | Long-horizon competitive watch item on the "only US-domiciled HBM supplier" claim — does not change the current-state moat, worth tracking as the build progresses. |
 
 ---
 

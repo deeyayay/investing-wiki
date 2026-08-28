@@ -51,6 +51,7 @@ _Last scored: 2026-05-22 | [[Scoring Rubric]]_
 | 2026-08-25 | NVDA guarantees up to $105B of OpenAI leases; reveals 9%+ stake in Nebius | ↑ Strengthened | Balance-sheet-backed demand guarantee for its largest customer plus an expanding neocloud equity network both reinforce the durability of the capex cycle the thesis depends on |
 | 2026-08-26 | Q2 FY2027 10-Q + 8-K filed; official results announced; 70% revenue growth projected for 2028 (Axios); $18B additional AI investment committed this fiscal year; Lancium gigawatt AI factory stake | ↑ | Confirms earnings actually landed after three runs of speculation-only coverage; the 2028 growth framing plus continued balance-sheet-backed downstream investment both extend the demand-durability case — though the exact Q2 print itself still needs /dig to confirm against guidance. |
 | 2026-08-27 | Q2 FY2027 beat-and-raise confirmed (WSJ, IBD, CNBC); Amazon contract cited; demand "getting even hotter" | ↑ | Resolves the three-run-standing print-confirmation item; reinforces GPU demand durability, though exact revenue/EPS figures still pending a headline-level number. |
+| 2026-08-28 | NVIDIA deepens data center strategy with Cloverleaf investment | ↑ | Extends the balance-sheet-backed ecosystem-investment pattern (OpenAI, Nebius, SpaceX) — reinforces demand-durability thesis; deal size not yet disclosed at headline level. |
 
 ---
 

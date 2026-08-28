@@ -36,6 +36,9 @@
 - **2026-08-26** — Warrant redemption completed; BRUN raises $130M from warrant exercises (Yahoo! Finance Canada, Investing.com).
   **Why it matters:** Resolves the 08-25 warrant-class delisting into a hard number — $130M in cash from exercise of pre-existing warrants (not a new dilutive raise) adds to liquidity alongside the Dell DFS financing that already removes the primary dilution risk flagged in the thesis.
 
+- **2026-08-26** — AiThority: "Boost Run Announces Completion of Warrant Redemption" — same warrant-redemption event as above, confirmed by a second outlet.
+  **Why it matters:** No new fact; corroborates the $130M warrant-exercise liquidity event already logged.
+
 ---
 
 ## Social Mentions
@@ -54,3 +57,4 @@
 - **2026-08-25** — 📰 BRIEF | 5 items triaged, 1 logged
 - **2026-08-26** — 📰 BRIEF | 4 items triaged, 1 logged
 - **2026-08-26** — 📰 BRIEF (Run 2) | 2 items triaged, 1 logged — warrant redemption completed, $130M raised (resolves 08-25 delisting item)
+- **2026-08-28** — 📰 BRIEF | 3 items triaged, 1 logged — second outlet confirms warrant redemption, no new fact; other 2 items (airline stocks, oil refiners) unrelated mismatches, skipped

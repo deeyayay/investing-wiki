@@ -20,6 +20,9 @@
 **2026-08-26** — Stock fell 6.8% despite "surging AI orders" and a 2026 outlook hike (simplywall.st).
 *Why it matters:* A guidance raise driven by AI order strength is a direct confirmation of the hyperscaler AI capex demand thesis — the negative price reaction is a valuation/sentiment question, not a fundamental one.
 
+**2026-08-26/27** — Later same-cycle coverage reverses the framing: shares reported "surging 5.9%" with a GF Score of 98, outperforming peers on AI networking strength and analyst optimism (MarketWatch, GuruFocus, Quiver Quantitative).
+*Why it matters:* Same underlying earnings/guidance event as the 08-26 entry above, now read positively rather than negatively — the initial 6.8% drop reversed. No new fundamental fact; reinforces that the guidance raise itself, not the stock's day-to-day direction, is what confirms the thesis.
+
 ---
 
 ## Social Mentions
@@ -40,3 +43,4 @@
 | 2026-06-17 | MIGRATE | Migrated from legacy ANET.md to three-layer structure (facts/analysis/signals) |
 | 2026-06-17 | SCORE | Composite 8.0/10 Unrivaled \| P:4 PP:4 L:4 FH:5 ME:4 FP:3 |
 | 2026-08-26 | BRIEF (Run 2) | 5 items triaged, 1 logged, drift flagged — AI order surge + outlook hike vs. stock decline |
+| 2026-08-28 | BRIEF | 5 items triaged, 1 logged — same earnings cycle reversed to a 5.9% surge; no new fundamental fact |

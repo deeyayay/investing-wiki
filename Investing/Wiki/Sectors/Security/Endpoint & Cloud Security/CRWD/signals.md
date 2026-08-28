@@ -14,6 +14,9 @@
 - **2026-08-27** — Confirmed Q2 FY2027 results: record quarter, +$333M net-new ARR, revenue beat, raised FY guidance (CNBC "Mythos moment... AI cyber wave"; Bloomberg; Stock Titan; SiliconANGLE — also notes Okta beat same day).
   **Why it matters:** Resolves the 08-26 open item — headlines now carry the actual net-new ARR figure and a raised outlook, directly confirming the cross-sell/ARR-compounding leg of the thesis; the "billings watch" concern is answered in the affirmative.
 
+- **2026-08-27** — 10-Q filed (formalizing the Q2 FY2027 results); Form 4 filed (routine insider ownership change).
+  **Why it matters:** Primary-source filing corroborates the confirmed earnings print already logged; no new fact.
+
 ---
 
 ## Social Mentions
@@ -29,3 +32,4 @@
 - **2026-06-16** — add-ticker run. facts.md + analysis.md populated from web research and SEC EDGAR.
 - **2026-08-26** — 📰 BRIEF (Run 3) | 5 items triaged, 1 logged, drift flagged — Q2 FY2027 earnings 8-K filed, no confirmed figures in digest, queued for /dig
 - **2026-08-27** — 📰 BRIEF | 5 items triaged, 1 logged — Q2 FY2027 hard numbers confirmed ($333M net-new ARR, raised guide), resolving 08-26's open /dig item
+- **2026-08-28** — 📰 BRIEF | 5 items triaged, 1 logged — 10-Q/Form 4 filings corroborate the confirmed print, no new fact

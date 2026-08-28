@@ -34,6 +34,9 @@
 - **2026-08-26** — Barron's: "Micron's Long-Term Contracts Cap Memory-Boom Upside."
   **Why it matters:** A nuance that cuts against the "market underpricing NAND upside" leg — if HBM/DRAM output is pre-sold under long-term contracts, MU may not fully capture spot-price spikes. Single-source opinion piece; doesn't change Drift on its own but worth weighing against the crunch narrative on the next /dig.
 
+- **2026-08-27/28** — SK hynix holds groundbreaking ceremony for its first US HBM production base (Indiana), CEO says it will be a key memory production hub by 2030 (SK hynix, CNBC, Korea Herald, via the HBM Supply & Memory Bottleneck topic feed).
+  **Why it matters:** Directly touches the "only US-domiciled HBM supplier" leg of the thesis — a competitor building US capacity is a long-horizon (2030) structural watch item, not an immediate threat, since MU remains the only current US-domiciled producer. Worth tracking as the Indiana build progresses.
+
 ---
 
 ## Social Mentions
@@ -55,3 +58,4 @@
 | 2026-08-25 | BRIEF | 📰 5 items triaged, 1 logged, drift flagged |
 | 2026-08-26 | BRIEF | 📰 5 items + 1 topic hit triaged, 2 logged |
 | 2026-08-26 | BRIEF (Run 2) | 📰 4 items triaged, 3 logged — 8-K officer departure (deep-pass queued), rack-scale memory pooling breakthrough, long-term-contracts-cap-upside nuance |
+| 2026-08-28 | BRIEF | 📰 5 items + 1 topic hit triaged, 1 logged — SK hynix Indiana HBM groundbreaking touches the "only US-domiciled" thesis leg as a 2030-horizon watch item |

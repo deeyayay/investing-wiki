@@ -10,6 +10,11 @@ The picks-and-shovels play on AI data center thermal management and power delive
 ---
 
 ## Investment Thesis
+
+> **Thesis established:** 2026-05-07
+> **Last validated:** 2026-08-28
+> **Drift status:** Drifting — Q2 2026 miss reportedly triggered a 17% single-day decline (2026-08-26); cause (demand softness vs. execution/one-off) still contested across contradictory same-week headlines, and EDGAR has twice failed to return the primary filing — /dig VRT is overdue to resolve this before treating the pullback as valuation-only or fundamental
+
 Vertiv makes the critical infrastructure that keeps data centers running: power distribution, UPS systems, thermal management (air and liquid cooling), and monitoring software. The AI era has dramatically increased demand for Vertiv's products because GPU clusters (especially NVL72 Blackwell racks) generate heat densities that legacy air cooling cannot handle -- liquid cooling is now mandatory at scale. Crucially, Vertiv is chip-agnostic: they get the order whether the data center runs NVDA, AMD, or custom silicon. The company has a long installed base of legacy data center customers who are now upgrading to AI-ready infrastructure -- a massive replacement cycle. CEO Giordano Albertazzi has been executing well on backlog conversion.
 
 **Key moat:** Installed base and service contracts (recurring revenue), data center design expertise, liquid cooling IP, global service network, long-term supply agreements with hyperscalers.
@@ -58,6 +63,7 @@ _Evaluated: 2026-06-17_
 | 2026-08-25 | MIXED | Stock -33% from its high; one outlet says the reason wasn't weak demand, another says a Q1 report "dampened investor expectations" | Conflicting headline framings on whether demand is actually intact -- flagged for /dig to reconcile against the Demand chain health (currently CLEAR) scoring flag before treating the pullback as valuation-only. |
 | 2026-08-26 | UP | Stock surges pre-market on a "blowout 2026 forecast" for AI data center demand | Adds to the demand-intact side of the 08-25 conflicting headlines; doesn't resolve the "dampened investor expectations" framing on its own -- /dig still queued to reconcile the full picture. |
 | 2026-08-26 | MIXED | Stock reported to plunge 17% on a Q2 miss, directly contradicting the same-day pre-market "blowout 2026 forecast" surge headline already logged | Third consecutive day of contradictory demand/earnings framing; EDGAR timed out again so there's no primary filing to reconcile against -- /dig VRT is now overdue rather than merely queued. |
+| 2026-08-28 | DOWN | Drift status formalized to Drifting; law-firm loss-solicitation logged (boilerplate); Trefis piece by title suggests the miss may not be demand-driven | Formalizes what the last three sessions of contradictory coverage already implied -- conviction not lowered further pending /dig, but the unresolved cause (demand vs. execution) is now tracked as an open thesis question rather than just a signals-log curiosity. |
 
 ---
 
