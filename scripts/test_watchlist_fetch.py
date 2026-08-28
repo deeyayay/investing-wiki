@@ -182,6 +182,20 @@ class GuardTests(unittest.TestCase):
         self.assertEqual(sorted(digest["drift_index"]), ["CRDO", "NVDA"])
         self.assertEqual([t["ticker"] for t in digest["tickers"]], ["NVDA"])
 
+    def test_edgar_window_has_a_floor_below_the_news_window(self):
+        """EDGAR's cutoff is date-granular, so the default 36h news window can
+        cover barely one calendar day and silently drop filings."""
+        seen = {}
+        saved = w.fetch_url
+        w.fetch_url = lambda url, **kw: (seen.setdefault('url', url), '<feed></feed>')[1]
+        try:
+            w.parse_edgar_atom = lambda xml, hours: seen.setdefault('hours', hours) and []
+            w.provider_edgar({'ticker': 'NVDA', 'cik': '0001045810'}, 36)
+        finally:
+            w.fetch_url = saved
+        self.assertGreaterEqual(seen.get('hours', 0), 96,
+                                'filings must look back further than headlines')
+
     def test_unknown_provider_name_is_rejected(self):
         with self.assertRaises(SystemExit):
             w.main(["--tickers", "NVDA", "--providers", "nope", "--no-topics",

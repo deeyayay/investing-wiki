@@ -349,7 +349,44 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 .wl-news-date{font-family:monospace;font-size:10px;color:var(--muted);margin-right:6px}
 .wl-news-src{font-size:10px;color:var(--muted)}
 @media(max-width:600px){#watchlist{padding:16px}.wl-cards{grid-template-columns:1fr}.wl-add-row{flex-direction:column;align-items:stretch}}
-
+#news{padding:40px 32px;max-width:1100px;margin:0 auto}
+.nw-title{font-size:20px;font-weight:700;margin-bottom:4px}
+.nw-sub{font-size:12px;color:var(--muted);line-height:1.6}
+.nw-stats{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 20px}
+.nw-stat{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:10px 14px;min-width:92px}
+.nw-stat-val{font-size:18px;font-weight:700;font-family:monospace;line-height:1.2}
+.nw-stat-lbl{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-top:3px}
+.nw-controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+.nw-input{padding:7px 12px;border:1px solid var(--border);border-radius:6px;font-size:13px;background:var(--bg);color:var(--text);font-family:inherit;min-width:220px;flex:1}
+.nw-input::placeholder{color:var(--muted)}
+.nw-select{padding:7px 10px;border:1px solid var(--border);border-radius:6px;font-size:12px;background:var(--bg);color:var(--text);font-family:inherit}
+.nw-chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px}
+.nw-chip{font-size:11px;padding:4px 10px;border-radius:99px;border:1px solid var(--border);background:var(--bg2);color:var(--muted);cursor:pointer;user-select:none;font-family:inherit}
+.nw-chip:hover{color:var(--text)}
+.nw-chip.on{background:var(--text);border-color:var(--text);color:var(--bg);font-weight:600}
+.nw-chip.robo{border-color:oklch(78% .12 310)}
+.nw-chip.robo.on{background:var(--d4);border-color:var(--d4);color:#fff}
+.nw-chip-n{opacity:.55;margin-left:5px;font-family:monospace}
+.nw-clear{font-size:11px;color:var(--muted);background:none;border:none;cursor:pointer;text-decoration:underline;padding:4px 2px;font-family:inherit}
+.nw-clear:hover{color:var(--text)}
+.nw-count{font-size:11px;color:var(--muted);margin:14px 0 0}
+.nw-day{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:24px 0 2px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.nw-item{display:flex;gap:12px;padding:11px 0;border-bottom:1px solid var(--border);align-items:baseline}
+.nw-item:last-child{border-bottom:none}
+.nw-tk{font-family:monospace;font-weight:700;font-size:12px;color:var(--text);text-decoration:none;flex-shrink:0;width:64px}
+.nw-tk:hover{text-decoration:underline}
+.nw-body{flex:1;min-width:0}
+.nw-headline{font-size:13px;line-height:1.55;color:var(--text);text-decoration:none}
+.nw-headline:hover{text-decoration:underline}
+.nw-line2{font-size:10px;color:var(--muted);margin-top:5px;display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+.nw-tag{font-size:10px;padding:1px 7px;border-radius:99px;background:var(--bg3);color:var(--muted)}
+.nw-tag.robo{background:oklch(93% .06 310);color:var(--d4);font-weight:600}
+.nw-kind{font-size:9px;font-weight:700;letter-spacing:.06em;padding:1px 5px;border-radius:3px;background:oklch(89% .14 258);color:var(--d3);vertical-align:1px}
+.nw-drift{font-size:10px;padding:1px 7px;border-radius:99px;background:var(--amber-bg);color:var(--amber);border:1px solid oklch(82% .14 62)}
+.nw-empty{text-align:center;padding:60px 20px;color:var(--muted);font-size:13px;line-height:2}
+.nw-empty code{font-family:monospace;background:var(--bg3);padding:2px 6px;border-radius:4px;font-size:12px}
+.nw-loading{color:var(--muted);font-size:13px;padding:40px 0;text-align:center}
+@media(max-width:600px){#news{padding:16px}.nw-item{flex-direction:column;gap:4px}.nw-tk{width:auto}.nw-input{min-width:0}}
 /* ---- Brief: filings, themes, discovery (added 2026-08-23) ----
    Uses only the :root tokens above. The dashboard is a single light theme;
    hardcoding a dark card here made theme headlines unreadable. */
@@ -383,28 +420,39 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
   .wl-disc-ctx{min-width:100%;order:3}
   .wl-news-item{font-size:12px;line-height:1.45}
 }
+/* ---- Thesis drift flags (added 2026-08-28) ----
+   Status colours, not categorical. Every flag ships a glyph AND a label so the
+   state never depends on colour alone. Encodes DRIFT (is the thesis holding?),
+   which is a different axis from bullish/bearish. */
+.wl-flag,.nw-flag{display:inline-flex;align-items:center;gap:5px;
+  font-family:system-ui,-apple-system,sans-serif;
+  font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+  padding:2px 8px;border-radius:99px;border:1px solid transparent;white-space:nowrap}
+.flag-glyph{font-size:8.5px;line-height:1}
+.wl-flag-strong,.nw-flag-strong    {background:oklch(93% .055 148);color:oklch(40% .13 148);border-color:oklch(78% .10 148)}
+.wl-flag-drifting,.nw-flag-drifting{background:oklch(94% .07 75);color:oklch(43% .14 55);border-color:oklch(76% .13 62)}
+.wl-flag-broken,.nw-flag-broken    {background:oklch(93% .06 25);color:oklch(43% .18 25);border-color:oklch(74% .15 25)}
+.wl-flag-ontrack,.nw-flag-ontrack,
+.wl-flag-new,.nw-flag-new          {background:var(--bg3);color:var(--muted);border-color:var(--border)}
 
-/* ---- Thesis drift flags (added 2026-08-26) ----
-   Status colours, not categorical: each ships a glyph AND a label so the state
-   never depends on colour alone. This encodes DRIFT (is the thesis holding?),
-   which is not the same axis as bullish/bearish. */
-.wl-flag{display:inline-flex;align-items:center;gap:5px;
-  font-family:"IBM Plex Sans",system-ui,-apple-system,sans-serif;
-  font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
-  padding:3px 9px;border-radius:99px;border:1px solid transparent;white-space:nowrap}
-.wl-flag-glyph{font-size:9px;line-height:1}
-.wl-flag-strong  {background:oklch(93% .055 148);color:oklch(42% .13 148);border-color:oklch(80% .09 148)}
-.wl-flag-ontrack {background:var(--bg3);color:var(--muted);border-color:var(--border)}
-.wl-flag-new     {background:var(--bg3);color:var(--muted);border-color:var(--border)}
-.wl-flag-drifting{background:oklch(94% .07 75);color:oklch(45% .13 62);border-color:oklch(78% .12 62)}
-.wl-flag-broken  {background:oklch(94% .05 25);color:oklch(45% .17 25);border-color:oklch(78% .13 25)}
-/* Card accent — only the states that need attention get one, so a scan down the
-   list surfaces exactly the names that moved. */
+/* Card / row accents — ONLY the states worth stopping on get one, so scanning
+   the feed surfaces exactly the names whose thesis has moved. */
 .wl-card.wl-drift-drifting{border-left:3px solid oklch(66% .16 62)}
 .wl-card.wl-drift-broken  {border-left:3px solid oklch(55% .19 25)}
 .wl-card.wl-drift-strong  {border-left:3px solid oklch(55% .14 148)}
+
+.nw-item{border-left:3px solid transparent;padding-left:11px;transition:none}
+.nw-item.nw-drift-drifting{border-left-color:oklch(66% .16 62);background:oklch(98.5% .015 75)}
+.nw-item.nw-drift-broken  {border-left-color:oklch(55% .19 25);background:oklch(98.5% .012 25)}
+.nw-item.nw-drift-strong  {border-left-color:oklch(55% .14 148);background:oklch(98.5% .012 148)}
+/* A filing on a moved thesis is the strongest signal in the feed. */
+.nw-item.is-filing .nw-kind{background:oklch(89% .12 258);color:oklch(38% .15 258);
+  font-weight:700;letter-spacing:.05em}
+.nw-item.is-filing.nw-drift-drifting,
+.nw-item.is-filing.nw-drift-broken{box-shadow:inset 0 0 0 1px oklch(88% .07 62)}
 @media(max-width:600px){
-  .wl-flag{font-size:10px;padding:2px 8px}
+  .wl-flag,.nw-flag{font-size:9.5px;padding:2px 7px}
+  .nw-item{padding-left:9px}
 }
 </style>
 </head>
@@ -423,6 +471,7 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
   <button class="tab-btn active" data-tab="supply-chain" onclick="showTab('supply-chain')">Supply Chain</button>
   <button class="tab-btn" data-tab="tech-races" onclick="showTab('tech-races')">Tech Races</button>
   <button class="tab-btn" data-tab="watchlist" onclick="showTab('watchlist')">Watchlist</button>
+  <button class="tab-btn" data-tab="news" onclick="showTab('news')">AI &amp; Robotics News</button>
 </div>
 <div id="l0"></div>
 <div id="l1" hidden></div>
@@ -431,6 +480,7 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 <div id="tech-races" hidden></div>
 <div id="tech-race-detail" hidden></div>
 <div id="watchlist" hidden></div>
+<div id="news" hidden></div>
 </div>
 <script>
 const DATA = {
@@ -2076,14 +2126,19 @@ function showTab(tab) {
     document.getElementById("tech-races").hidden=true;
     document.getElementById("tech-race-detail").hidden=true;
     document.getElementById("watchlist").hidden=true;
+    document.getElementById("news").hidden=true;
     showLayer(0);
   } else if(tab==="watchlist"){
-    ["l0","l1","l2","l3","tech-races","tech-race-detail"].forEach(id=>document.getElementById(id).hidden=true);
+    ["l0","l1","l2","l3","tech-races","tech-race-detail","news"].forEach(id=>document.getElementById(id).hidden=true);
     document.getElementById("watchlist").hidden=false;
     initWatchlistTab();
+  } else if(tab==="news"){
+    ["l0","l1","l2","l3","tech-races","tech-race-detail","watchlist"].forEach(id=>document.getElementById(id).hidden=true);
+    document.getElementById("news").hidden=false;
+    initNewsTab();
   } else {
     renderTechRaces();
-    ["l0","l1","l2","l3","tech-race-detail","watchlist"].forEach(id=>document.getElementById(id).hidden=true);
+    ["l0","l1","l2","l3","tech-race-detail","watchlist","news"].forEach(id=>document.getElementById(id).hidden=true);
     document.getElementById("tech-races").hidden=false;
   }
 }
@@ -2444,33 +2499,32 @@ async function removeFromWatchlist(ticker){
   }
 }
 
-// Thesis drift -> a status state. This is drift, NOT price direction: "On track"
-// means the thesis is holding, which is not the same as bullish. Order matters —
-// "On track, accelerating" must match strengthening before it matches on-track.
+// Thesis drift -> a status state, shared by the watchlist cards and the news feed.
+// This is DRIFT (is the thesis holding?), not price direction: "On track" is not
+// the same as bullish and would be wrong for a cautious thesis.
+// Classify the STATUS HEAD only — the text after the em dash is prose, so
+// "On track — AI storage demand accelerating" is on track, not strengthening.
 function driftState(text){
-  // Classify the STATUS HEAD only. Drift is written "Status — explanation", and
-  // the explanation is prose: "On track — AI storage demand accelerating" is on
-  // track, not strengthening. Matching the whole string promotes it wrongly.
   const t=(text||'').split('\u2014')[0].split(';')[0].split('.')[0].trim().toLowerCase();
-  if(!t) return null;
-  if(t.indexOf('broken')===0||/\bbroken\b/.test(t))
-    return {key:'broken',  label:'Broken',        glyph:'▼', title:'A load-bearing claim has failed'};
+  if(!t||/^(none|no drift|n\/a|-)$/.test(t)) return null;
+  if(/\bbroken\b/.test(t))
+    return {key:'broken',  label:'Broken',        glyph:'\u25BC', title:'A load-bearing claim has failed'};
   if(/drifting|material change|weaken/.test(t))
-    return {key:'drifting',label:'Drifting',      glyph:'▼', title:'Evidence accumulating against the thesis'};
+    return {key:'drifting',label:'Drifting',      glyph:'\u25BC', title:'Evidence accumulating against the thesis'};
   if(/accelerating|strengthen/.test(t))
-    return {key:'strong',  label:'Strengthening', glyph:'▲', title:'Thesis confirmed and accelerating'};
+    return {key:'strong',  label:'Strengthening', glyph:'\u25B2', title:'Thesis confirmed and accelerating'};
   if(/on track/.test(t))
-    return {key:'ontrack', label:'On track',      glyph:'▶', title:'Thesis holding; nothing contradicts it'};
+    return {key:'ontrack', label:'On track',      glyph:'\u25B6', title:'Thesis holding; nothing contradicts it'};
   if(/^new\b/.test(t))
-    return {key:'new',     label:'New',           glyph:'●', title:'Recently onboarded; no drift history yet'};
-  return {key:'ontrack',   label:'Tracked',       glyph:'▶', title:text};
+    return {key:'new',     label:'New',           glyph:'\u25CF', title:'Recently onboarded; no drift history yet'};
+  return {key:'ontrack',   label:'Tracked',       glyph:'\u25B6', title:text};
 }
 
-function driftFlagHtml(text){
+function driftFlagHtml(text,cls){
   const st=driftState(text);
   if(!st) return '';
-  return '<span class="wl-flag wl-flag-'+st.key+'" title="'+esc(st.title+' — '+(text||''))+'">'
-    +'<span class="wl-flag-glyph" aria-hidden="true">'+st.glyph+'</span>'+esc(st.label)+'</span>';
+  return '<span class="'+(cls||'wl-flag')+' '+(cls||'wl-flag')+'-'+st.key+'" title="'+esc(st.title+' \u2014 '+(text||''))+'">'
+    +'<span class="flag-glyph" aria-hidden="true">'+st.glyph+'</span>'+esc(st.label)+'</span>';
 }
 
 function renderWatchlistCard(e,canEdit){
@@ -2606,6 +2660,193 @@ async function initWatchlistTab(force){
     _wlInitialized=true;
     renderWatchlist(entries,true);
   }
+}
+
+// ── AI & Robotics News ────────────────────────────────────────────────────────
+// Cross-ticker roll-up of the latest /watchlist-refresh digest: every ticker's
+// headlines flattened into one dated feed, keyword-tagged by theme, and filtered
+// by theme / sector / free text. Shares the digest fetch with the Watchlist tab.
+const NEWS_THEMES=[
+  {id:'robotics',label:'Robotics & Physical AI',robo:true,kw:['humanoid','robot','robots','robotic','robotics','cobot','actuator','actuators','servo','lidar','drone','drones','autonomous vehicle','autonomous driving','autonomy','self-driving','robotaxi','teleoperation','teleoperated','warehouse automation','physical ai','embodied ai','embodied intelligence','exoskeleton','machine vision','agv','amr','factory automation','motion control']},
+  {id:'compute',label:'AI Compute',kw:['gpu','gpus','accelerator','accelerators','asic','asics','tpu','npu','blackwell','rubin','instinct','inference chip','training chip','cuda','superchip','ai chip','ai chips','silicon']},
+  {id:'memory',label:'Memory & Storage',kw:['hbm','hbm3','hbm4','hbf','dram','nand','ssd','ssds','flash memory','lpddr','memory chip','memory prices','storage']},
+  {id:'foundry',label:'Foundry & Equipment',kw:['foundry','fab','fabs','wafer','wafers','euv','duv','lithography','process node','advanced packaging','cowos','soic','etch','deposition','metrology','yield','tapeout','2nm','3nm','angstrom']},
+  {id:'interconnect',label:'Interconnect & Optics',kw:['optical','photonic','photonics','transceiver','transceivers','co-packaged','nvlink','infiniband','ethernet switch','800g','1.6t','fiber','dsp','retimer','cable']},
+  {id:'power',label:'Power & Thermal',kw:['power','grid','nuclear','smr','turbine','transformer','substation','megawatt','gigawatt','electricity','energy','liquid cooling','cooling','thermal','ups','generator']},
+  {id:'datacenter',label:'Datacenter & Cloud',kw:['data center','data centers','datacenter','hyperscaler','hyperscalers','capex','cloud','neocloud','colocation','campus','compute cluster','supercomputer']},
+  {id:'capital',label:'Capital & M&A',kw:['acquisition','acquires','acquire','merger','takeover','stake','ipo','offering','buyback','dividend','raises','funding round','investment','spin-off','divest','joint venture','partnership']},
+  {id:'policy',label:'Policy & Export',kw:['export control','export controls','tariff','tariffs','sanction','sanctions','chips act','ban','banned','regulation','regulator','regulators','national security','commerce department','license','licenses','subsidy','subsidies','antitrust']},
+  {id:'earnings',label:'Earnings & Guidance',kw:['earnings','guidance','revenue','results','beats','misses','outlook','forecast','eps','margin','margins','quarter','quarterly','q1','q2','q3','q4','backlog','bookings']},
+  {id:'analyst',label:'Analyst Moves',kw:['upgrade','upgrades','downgrade','downgrades','price target','initiates coverage','initiated coverage','rating','overweight','underweight','outperform','buy rating','sell rating']}
+];
+NEWS_THEMES.forEach(t=>{
+  const alts=t.kw.slice().sort((a,b)=>b.length-a.length)
+    .map(k=>k.replace(/[.*+?^${}()|[\]\\]/g,'\\$&').replace(/[-\s]+/g,'[-\\s]+'));
+  t.re=new RegExp('(^|[^\\w])(?:'+alts.join('|')+')(?![\\w])','i');
+});
+const NEWS_THEME_BY_ID={};NEWS_THEMES.forEach(t=>{NEWS_THEME_BY_ID[t.id]=t;});
+
+function newsThemesFor(title,kind){
+  const hits=NEWS_THEMES.filter(t=>t.re.test(title)).map(t=>t.id);
+  if(kind==='filing')hits.unshift('filing');
+  return hits.length?hits:['other'];
+}
+const NEWS_EXTRA_LABELS={other:'Other',filing:'SEC Filings'};
+function newsThemeLabel(id){return NEWS_EXTRA_LABELS[id]||(NEWS_THEME_BY_ID[id]?NEWS_THEME_BY_ID[id].label:id);}
+function newsSearchUrl(title){return 'https://news.google.com/search?q='+encodeURIComponent(title);}
+function newsItemUrl(it){return it.url||newsSearchUrl(it.title);}
+
+let _newsInitialized=false;
+let _newsItems=[];
+const _newsFilter={q:'',themes:new Set(),sector:''};
+
+// Flatten digest.tickers[].headlines[] → one feed item per headline.
+function buildNewsItems(digest){
+  const out=[];
+  (digest&&digest.tickers||[]).forEach(t=>{
+    (t.headlines||[]).forEach(h=>{
+      if(!h||!h.t)return;
+      out.push({ticker:t.ticker,company:t.company||'',sector:t.sector||'',
+        drift:t.drift||'',date:h.d||'',title:h.t,src:h.src||'',
+        kind:h.kind||'news',url:h.url||'',themes:newsThemesFor(h.t,h.kind)});
+    });
+  });
+  out.sort((a,b)=>(b.date||'').localeCompare(a.date||'')||a.ticker.localeCompare(b.ticker));
+  return out;
+}
+
+function newsFiltered(){
+  const q=_newsFilter.q.trim().toLowerCase();
+  return _newsItems.filter(it=>{
+    if(_newsFilter.sector&&it.sector!==_newsFilter.sector)return false;
+    if(_newsFilter.themes.size&&!it.themes.some(t=>_newsFilter.themes.has(t)))return false;
+    if(q&&!(it.title.toLowerCase().includes(q)||it.ticker.toLowerCase().includes(q)
+      ||it.company.toLowerCase().includes(q)||it.src.toLowerCase().includes(q)))return false;
+    return true;
+  });
+}
+
+function newsSetQuery(v){_newsFilter.q=v;renderNewsFeed();}
+function newsSetSector(v){_newsFilter.sector=v;renderNewsFeed();}
+function newsToggleTheme(id){
+  if(_newsFilter.themes.has(id))_newsFilter.themes.delete(id);else _newsFilter.themes.add(id);
+  renderNewsChips();renderNewsFeed();
+}
+function newsClearFilters(){
+  _newsFilter.q='';_newsFilter.themes.clear();_newsFilter.sector='';
+  const qi=document.getElementById('nw-q');if(qi)qi.value='';
+  const si=document.getElementById('nw-sector');if(si)si.value='';
+  renderNewsChips();renderNewsFeed();
+}
+// Ticker chip → existing wiki drill-down (layer 3), which lives under the Supply Chain tab.
+function newsOpenTicker(tk,sector){
+  document.getElementById('news').hidden=true;
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.toggle('active',b.dataset.tab==='supply-chain'));
+  openTicker(tk,(TICKER_MAP[tk]&&TICKER_MAP[tk].sectorName)||sector||'');
+}
+
+function renderNewsChips(){
+  const el=document.getElementById('nw-chips');
+  if(!el)return;
+  const counts={};
+  _newsItems.forEach(it=>it.themes.forEach(t=>{counts[t]=(counts[t]||0)+1;}));
+  const ids=['filing'].concat(NEWS_THEMES.map(t=>t.id),['other']).filter(id=>counts[id]);
+  el.innerHTML=ids.map(id=>{
+    const th=NEWS_THEME_BY_ID[id];
+    const cls='nw-chip'+(th&&th.robo?' robo':'')+(_newsFilter.themes.has(id)?' on':'');
+    return '<button class="'+cls+'" onclick="newsToggleTheme(\''+id+'\')">'+esc(newsThemeLabel(id))
+      +'<span class="nw-chip-n">'+counts[id]+'</span></button>';
+  }).join('')
+  +((_newsFilter.themes.size||_newsFilter.q||_newsFilter.sector)
+    ?'<button class="nw-clear" onclick="newsClearFilters()">Clear filters</button>':'');
+}
+
+function renderNewsItem(it){
+  const tags=it.themes.map(t=>'<span class="nw-tag'+(NEWS_THEME_BY_ID[t]&&NEWS_THEME_BY_ID[t].robo?' robo':'')+'">'
+    +esc(newsThemeLabel(t))+'</span>').join('');
+  // Ticker-level thesis state. The full text goes in the tooltip — dumping it
+  // inline made every row a three-line amber blob with no state distinction.
+  const dSt=driftState(it.drift);
+  const drift=driftFlagHtml(it.drift,'nw-flag');
+  // A filing is a primary source, so it outranks any headline about the same
+  // event; combined with a moved thesis it is the most structural row on screen.
+  const rowCls='nw-item'
+    +(dSt?' nw-drift-'+dSt.key:'')
+    +(it.kind==='filing'?' is-filing':'');
+  return '<div class="'+rowCls+'">'
+    +'<a class="nw-tk" href="#" onclick="newsOpenTicker(\''+esc(it.ticker)+'\',\''+esc(it.sector).replace(/'/g,"\\'")+'\');return false">'+esc(it.ticker)+'</a>'
+    +'<div class="nw-body">'
+    +(it.kind==='filing'?'<span class="nw-kind">Filing</span> ':'')
+    +'<a class="nw-headline" href="'+esc(newsItemUrl(it))+'" target="_blank" rel="noopener noreferrer">'+esc(it.title)+'</a>'
+    +'<div class="nw-line2">'
+    +(it.src?'<span>'+esc(it.src)+'</span>':'')
+    +(it.sector?'<span>· '+esc(it.sector)+'</span>':'')
+    +drift+tags
+    +'</div></div></div>';
+}
+
+function renderNewsFeed(){
+  const el=document.getElementById('nw-feed');
+  if(!el)return;
+  const items=newsFiltered();
+  const cnt=document.getElementById('nw-count');
+  if(cnt)cnt.textContent=items.length+' of '+_newsItems.length+' headlines';
+  if(!items.length){
+    el.innerHTML='<div class="nw-empty">No headlines match these filters.<br><button class="nw-clear" onclick="newsClearFilters()">Clear filters</button></div>';
+    return;
+  }
+  const days=[];const byDay={};
+  items.forEach(it=>{const d=it.date||'Undated';if(!byDay[d]){byDay[d]=[];days.push(d);}byDay[d].push(it);});
+  el.innerHTML=days.map(d=>'<div class="nw-day">'+esc(d)+' <span class="nw-chip-n">'+byDay[d].length+'</span></div>'
+    +byDay[d].map(renderNewsItem).join('')).join('');
+}
+
+function renderNewsTab(digest){
+  const container=document.getElementById('news');
+  if(!digest||!(digest.tickers||[]).length){
+    container.innerHTML='<div class="nw-title">AI &amp; Robotics News</div>'
+      +'<div class="nw-empty">No headline digest available yet.<br>'
+      +'Run <code>/brief</code> (or <code>python3 scripts/watchlist_refresh_fetch.py</code>)<br>'
+      +'to generate <code>Investing/Raw/Inbox/watchlist-refresh-digest.json</code>, then reload.</div>';
+    return;
+  }
+  _newsItems=buildNewsItems(digest);
+  const sectors=[...new Set(_newsItems.map(i=>i.sector).filter(Boolean))].sort();
+  const roboCount=_newsItems.filter(i=>i.themes.includes('robotics')).length;
+  const filingCount=_newsItems.filter(i=>i.kind==='filing').length;
+  const gen=(digest.generated||'').slice(0,16).replace('T',' ');
+  container.innerHTML='<div class="nw-title">AI &amp; Robotics News</div>'
+    +'<div class="nw-sub">Every headline from the latest <code>/brief</code> pass, rolled up across tickers and tagged by theme. '
+    +'Generated '+esc(gen)+' UTC · '+(digest.window_hours||'?')+'h window · '+(digest.scanned||0)+' tickers scanned'
+    +((digest.errors||[]).length?' · '+digest.errors.length+' fetch errors':'')+'.</div>'
+    +'<div class="nw-stats">'
+    +'<div class="nw-stat"><div class="nw-stat-val">'+_newsItems.length+'</div><div class="nw-stat-lbl">Headlines</div></div>'
+    +'<div class="nw-stat"><div class="nw-stat-val">'+(digest.with_news||0)+'</div><div class="nw-stat-lbl">Tickers</div></div>'
+    +'<div class="nw-stat"><div class="nw-stat-val">'+roboCount+'</div><div class="nw-stat-lbl">Robotics</div></div>'
+    +'<div class="nw-stat"><div class="nw-stat-val">'+filingCount+'</div><div class="nw-stat-lbl">Filings</div></div>'
+    +'<div class="nw-stat"><div class="nw-stat-val">'+sectors.length+'</div><div class="nw-stat-lbl">Sectors</div></div>'
+    +'<div class="nw-stat"><div class="nw-stat-val">'+((digest.quiet||[]).length)+'</div><div class="nw-stat-lbl">Quiet</div></div>'
+    +'</div>'
+    +'<div class="nw-controls">'
+    +'<input id="nw-q" class="nw-input" type="text" placeholder="Filter headlines, tickers, sources…" autocomplete="off" spellcheck="false" oninput="newsSetQuery(this.value)">'
+    +'<select id="nw-sector" class="nw-select" onchange="newsSetSector(this.value)"><option value="">All sectors</option>'
+    +sectors.map(s=>'<option value="'+esc(s)+'">'+esc(s)+'</option>').join('')+'</select>'
+    +'</div>'
+    +'<div id="nw-chips" class="nw-chips"></div>'
+    +'<div id="nw-count" class="nw-count"></div>'
+    +'<div id="nw-feed"></div>';
+  renderNewsChips();
+  renderNewsFeed();
+}
+
+async function initNewsTab(force){
+  if(!force&&_newsInitialized)return;
+  const container=document.getElementById('news');
+  if(_wlRefresh){_newsInitialized=true;renderNewsTab(_wlRefresh);return;}
+  container.innerHTML='<div class="nw-loading">Loading headlines…</div>';
+  _wlRefresh=await fetchWatchlistRefresh();
+  _newsInitialized=true;
+  renderNewsTab(_wlRefresh);
 }
 </script>
 </body>

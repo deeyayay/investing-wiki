@@ -66,6 +66,8 @@ STATE_PATH = os.path.join(INBOX_DIR, ".watchlist-refresh-state.json")
 SEC_TICKERS_PATH = os.path.join(INBOX_DIR, ".sec-company-tickers.json")
 SEC_TICKERS_URL = "https://www.sec.gov/files/company_tickers.json"
 SEC_TICKERS_MAX_AGE_DAYS = 7
+# Filings look back at least this far regardless of --hours (see provider_edgar).
+EDGAR_MIN_WINDOW_HOURS = 96
 
 USER_AGENT = "Mozilla/5.0 (investing-wiki watchlist-refresh)"
 # SEC fair-access REQUIRES a contact email in the User-Agent — it answers 403 to
@@ -437,9 +439,14 @@ def provider_edgar(entry, hours):
     cik = entry.get("cik")
     if not cik:
         return []
-    # EDGAR indexes by filing DATE, not timestamp, so ask for whole days.
+    # EDGAR indexes by filing DATE, not timestamp, so the window is whole days.
+    # At the default 36h that can leave barely one calendar day, which silently
+    # drops filings the brief exists to surface — a 10-Q filed Wednesday is gone
+    # by Friday's run. Give filings a wider floor than headlines; the seen-cache
+    # stops the extra days from showing up twice.
     return parse_edgar_atom(
-        fetch_url(edgar_atom_url(cik), user_agent=SEC_USER_AGENT), hours)
+        fetch_url(edgar_atom_url(cik), user_agent=SEC_USER_AGENT),
+        max(hours, EDGAR_MIN_WINDOW_HOURS))
 
 
 PROVIDERS = {
