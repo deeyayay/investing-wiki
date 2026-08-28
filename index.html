@@ -454,6 +454,30 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
   .wl-flag,.nw-flag{font-size:9.5px;padding:2px 7px}
   .nw-item{padding-left:9px}
 }
+
+/* ---- Deep-dive command button (added 2026-08-28) ---- */
+.dig-btn{display:inline-flex;align-items:center;gap:5px;cursor:pointer;
+  font-family:system-ui,-apple-system,sans-serif;
+  font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+  padding:3px 10px;border-radius:99px;white-space:nowrap;
+  border:1px solid oklch(80% .09 258);background:oklch(95% .035 258);color:oklch(40% .15 258)}
+.dig-btn:hover{background:oklch(92% .05 258)}
+.dig-btn:active{transform:translateY(1px)}
+.dig-btn:focus-visible{outline:2px solid oklch(55% .16 258);outline-offset:2px}
+.dig-btn.done{border-color:oklch(78% .10 148);background:oklch(93% .055 148);color:oklch(40% .13 148)}
+.dig-btn.failed{border-color:var(--border);background:var(--bg3);color:var(--text);
+  text-transform:none;letter-spacing:0;font-family:ui-monospace,monospace;font-weight:500}
+.dig-ico{font-size:10px;line-height:1}
+.ticker-hdr .dig-btn{margin-left:10px;vertical-align:middle}
+/* The header row gained a drift flag and this button, and .wl-name is flex:1
+   with min-width:0 — so on a phone the company name collapsed to an ellipsis.
+   Give the name a floor and the chips wrap to their own line instead. */
+.wl-card-hdr .wl-name{min-width:6.5em}
+@media(max-width:600px){
+  .dig-btn{font-size:10px;padding:3px 9px}
+  .wl-card-hdr{gap:7px}
+  .wl-card-hdr .wl-name{min-width:5.5em}
+}
 </style>
 </head>
 <body>
@@ -2032,6 +2056,7 @@ function renderL3(ticker,sName){
     +'<div class="ticker-hdr">'
     +'<span class="ticker-sym">'+esc(ticker)+'</span>'
     +'<span class="ticker-fullname">'+esc(c.name)+'</span>'
+    +digButtonHtml(ticker)
     +'</div>'
     +'<div class="ticker-meta">'
     +(c.mkt_cap?'<span class="co-cap '+cc+'">'+cl+'</span>':'')
@@ -2042,6 +2067,47 @@ function renderL3(ticker,sName){
 }
 
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+// ---- Deep-dive command button -------------------------------------------
+// The dashboard is a static page with no backend, and the Routines API rejects
+// browser calls (its /fire endpoint answers OPTIONS with 405 and no CORS
+// headers, so the preflight fails). So the button hands you the command rather
+// than pretending to run it — no token in a public page, nothing to break.
+function digCmd(ticker){ return '/dig '+ticker+' --score'; }
+
+function digButtonHtml(ticker){
+  return '<button class="dig-btn" data-ticker="'+esc(ticker)+'" onclick="digCopy(this);return false"'
+    +' title="Copy the deep-dive command for '+esc(ticker)+' — paste it into a Claude Code session">'
+    +'<span class="dig-ico" aria-hidden="true">\u2318</span>Dig</button>';
+}
+
+function digCopy(btn){
+  const ticker=btn.getAttribute('data-ticker');
+  const text=digCmd(ticker);
+  const done=function(ok){
+    btn.classList.toggle('done',ok); btn.classList.toggle('failed',!ok);
+    btn.innerHTML=ok?'<span class="dig-ico" aria-hidden="true">\u2713</span>Copied'
+                    :'<span class="dig-ico" aria-hidden="true">!</span>'+esc(text);
+    if(ok) setTimeout(function(){
+      btn.classList.remove('done');
+      btn.innerHTML='<span class="dig-ico" aria-hidden="true">\u2318</span>Dig';
+    },2000);
+  };
+  const fallback=function(){
+    // execCommand is deprecated but still the only path in some mobile webviews
+    // and any non-secure context; on failure we show the command to copy by hand.
+    try{
+      const ta=document.createElement('textarea');
+      ta.value=text; ta.setAttribute('readonly','');
+      ta.style.position='fixed'; ta.style.top='-1000px';
+      document.body.appendChild(ta); ta.select();
+      const ok=document.execCommand('copy'); document.body.removeChild(ta); done(ok);
+    }catch(e){ done(false); }
+  };
+  if(navigator.clipboard&&navigator.clipboard.writeText&&window.isSecureContext){
+    navigator.clipboard.writeText(text).then(function(){done(true);},fallback);
+  } else { fallback(); }
+}
 
 // Hierarchical breadcrumb trail. parts: [{label, fn?}, …]; an item without fn is the current (non-clickable) crumb.
 function crumbTrail(parts){
@@ -2576,6 +2642,7 @@ function renderWatchlistCard(e,canEdit){
     +'<span class="wl-name">'+esc(e.name||'')+'</span>'
     +'<span class="wl-score-badge '+scoreCls+'">'+esc(scoreLabel)+'</span>'
     +driftFlagHtml(driftText)
+    +digButtonHtml(e.ticker)
     +removeBtn+'</div>'
     +metaHtml+thesisHtml+newsHtml+scoringHtml+catalystsHtml+'</div>';
 }
