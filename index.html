@@ -419,7 +419,42 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
   .wl-topic-hdr{font-size:13px}
   .wl-disc-ctx{min-width:100%;order:3}
   .wl-news-item{font-size:12px;line-height:1.45}
-}</style>
+}
+/* ---- Thesis drift flags (added 2026-08-28) ----
+   Status colours, not categorical. Every flag ships a glyph AND a label so the
+   state never depends on colour alone. Encodes DRIFT (is the thesis holding?),
+   which is a different axis from bullish/bearish. */
+.wl-flag,.nw-flag{display:inline-flex;align-items:center;gap:5px;
+  font-family:system-ui,-apple-system,sans-serif;
+  font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+  padding:2px 8px;border-radius:99px;border:1px solid transparent;white-space:nowrap}
+.flag-glyph{font-size:8.5px;line-height:1}
+.wl-flag-strong,.nw-flag-strong    {background:oklch(93% .055 148);color:oklch(40% .13 148);border-color:oklch(78% .10 148)}
+.wl-flag-drifting,.nw-flag-drifting{background:oklch(94% .07 75);color:oklch(43% .14 55);border-color:oklch(76% .13 62)}
+.wl-flag-broken,.nw-flag-broken    {background:oklch(93% .06 25);color:oklch(43% .18 25);border-color:oklch(74% .15 25)}
+.wl-flag-ontrack,.nw-flag-ontrack,
+.wl-flag-new,.nw-flag-new          {background:var(--bg3);color:var(--muted);border-color:var(--border)}
+
+/* Card / row accents — ONLY the states worth stopping on get one, so scanning
+   the feed surfaces exactly the names whose thesis has moved. */
+.wl-card.wl-drift-drifting{border-left:3px solid oklch(66% .16 62)}
+.wl-card.wl-drift-broken  {border-left:3px solid oklch(55% .19 25)}
+.wl-card.wl-drift-strong  {border-left:3px solid oklch(55% .14 148)}
+
+.nw-item{border-left:3px solid transparent;padding-left:11px;transition:none}
+.nw-item.nw-drift-drifting{border-left-color:oklch(66% .16 62);background:oklch(98.5% .015 75)}
+.nw-item.nw-drift-broken  {border-left-color:oklch(55% .19 25);background:oklch(98.5% .012 25)}
+.nw-item.nw-drift-strong  {border-left-color:oklch(55% .14 148);background:oklch(98.5% .012 148)}
+/* A filing on a moved thesis is the strongest signal in the feed. */
+.nw-item.is-filing .nw-kind{background:oklch(89% .12 258);color:oklch(38% .15 258);
+  font-weight:700;letter-spacing:.05em}
+.nw-item.is-filing.nw-drift-drifting,
+.nw-item.is-filing.nw-drift-broken{box-shadow:inset 0 0 0 1px oklch(88% .07 62)}
+@media(max-width:600px){
+  .wl-flag,.nw-flag{font-size:9.5px;padding:2px 7px}
+  .nw-item{padding-left:9px}
+}
+</style>
 </head>
 <body>
 <div id="app">
@@ -2464,6 +2499,34 @@ async function removeFromWatchlist(ticker){
   }
 }
 
+// Thesis drift -> a status state, shared by the watchlist cards and the news feed.
+// This is DRIFT (is the thesis holding?), not price direction: "On track" is not
+// the same as bullish and would be wrong for a cautious thesis.
+// Classify the STATUS HEAD only — the text after the em dash is prose, so
+// "On track — AI storage demand accelerating" is on track, not strengthening.
+function driftState(text){
+  const t=(text||'').split('\u2014')[0].split(';')[0].split('.')[0].trim().toLowerCase();
+  if(!t||/^(none|no drift|n\/a|-)$/.test(t)) return null;
+  if(/\bbroken\b/.test(t))
+    return {key:'broken',  label:'Broken',        glyph:'\u25BC', title:'A load-bearing claim has failed'};
+  if(/drifting|material change|weaken/.test(t))
+    return {key:'drifting',label:'Drifting',      glyph:'\u25BC', title:'Evidence accumulating against the thesis'};
+  if(/accelerating|strengthen/.test(t))
+    return {key:'strong',  label:'Strengthening', glyph:'\u25B2', title:'Thesis confirmed and accelerating'};
+  if(/on track/.test(t))
+    return {key:'ontrack', label:'On track',      glyph:'\u25B6', title:'Thesis holding; nothing contradicts it'};
+  if(/^new\b/.test(t))
+    return {key:'new',     label:'New',           glyph:'\u25CF', title:'Recently onboarded; no drift history yet'};
+  return {key:'ontrack',   label:'Tracked',       glyph:'\u25B6', title:text};
+}
+
+function driftFlagHtml(text,cls){
+  const st=driftState(text);
+  if(!st) return '';
+  return '<span class="'+(cls||'wl-flag')+' '+(cls||'wl-flag')+'-'+st.key+'" title="'+esc(st.title+' \u2014 '+(text||''))+'">'
+    +'<span class="flag-glyph" aria-hidden="true">'+st.glyph+'</span>'+esc(st.label)+'</span>';
+}
+
 function renderWatchlistCard(e,canEdit){
   const scoreCls=e.score==null?'none':e.score>=8?'high':'mid';
   const scoreLabel=e.score!=null?e.score.toFixed(1)+'/10':'Unscored';
@@ -2472,13 +2535,16 @@ function renderWatchlistCard(e,canEdit){
   const soon=days!=null&&days>=0&&days<=14;
   const earningsText=e.next_earnings?(soon?'⚡ ':'')+'Earnings '+e.next_earnings+(days!=null?' ('+(days===0?'today':days+'d')+')':''):'';
   const rf=_wlRefresh&&(_wlRefresh.tickers||[]).find(t=>t.ticker===e.ticker);
-  const driftHead=rf&&rf.drift?rf.drift.split('—')[0].split('.')[0].trim():'';
+  // drift_index carries every scanned ticker; rf.drift only the ones with news.
+  const driftText=(rf&&rf.drift)
+    ||(_wlRefresh&&_wlRefresh.drift_index&&_wlRefresh.drift_index[e.ticker])
+    ||(e.category==='Drift Watch'?e.notes:'')||'';
+  const driftSt=driftState(driftText);
   const metaParts=[
     e.sector&&'<span class="wl-pill">'+esc(e.sector)+'</span>',
     e.tier&&'<span class="wl-pill">'+esc(e.tier)+'</span>',
     e.exchange&&'<span class="wl-pill">'+esc(e.exchange)+'</span>',
-    earningsText&&'<span class="wl-pill'+(soon?' soon':'')+'">'+esc(earningsText)+'</span>',
-    driftHead&&'<span class="wl-pill" title="'+esc(rf.drift)+'">Drift: '+esc(driftHead)+'</span>'
+    earningsText&&'<span class="wl-pill'+(soon?' soon':'')+'">'+esc(earningsText)+'</span>'
   ].filter(Boolean);
   const metaHtml=metaParts.length?'<div class="wl-meta">'+metaParts.join('')+'</div>':'';
   const thesisHtml=e.thesis?'<div class="wl-thesis">'+esc(e.thesis)+'</div>':'';
@@ -2505,10 +2571,11 @@ function renderWatchlistCard(e,canEdit){
     newsHtml='<div class="wl-block-hdr">Latest Headlines — '+esc((_wlRefresh.generated||'').slice(0,10))+'</div><ul class="wl-news-list">'
       +rf.headlines.map(h=>{const isF=h.kind==='filing';const label=isF?'<span class="wl-kind wl-kind-filing">FILING</span>':'';const body=esc(h.t);const txt=(isF&&h.url)?'<a class="wl-news-link" href="'+esc(h.url)+'" target="_blank" rel="noopener">'+body+'</a>':body;return '<li class="wl-news-item'+(isF?' is-filing':'')+'"><span class="wl-news-date">'+esc(h.d||'')+'</span>'+label+txt+(h.src?' <span class="wl-news-src">— '+esc(h.src)+'</span>':'')+'</li>';}).join('')+'</ul>';
   }
-  return '<div class="wl-card">'
+  return '<div class="wl-card'+(driftSt?' wl-drift-'+driftSt.key:'')+'">'
     +'<div class="wl-card-hdr"><span class="wl-ticker">'+esc(e.ticker)+'</span>'
     +'<span class="wl-name">'+esc(e.name||'')+'</span>'
     +'<span class="wl-score-badge '+scoreCls+'">'+esc(scoreLabel)+'</span>'
+    +driftFlagHtml(driftText)
     +removeBtn+'</div>'
     +metaHtml+thesisHtml+newsHtml+scoringHtml+catalystsHtml+'</div>';
 }
@@ -2697,9 +2764,16 @@ function renderNewsChips(){
 function renderNewsItem(it){
   const tags=it.themes.map(t=>'<span class="nw-tag'+(NEWS_THEME_BY_ID[t]&&NEWS_THEME_BY_ID[t].robo?' robo':'')+'">'
     +esc(newsThemeLabel(t))+'</span>').join('');
-  const drift=(it.drift&&!/^(none|no drift|n\/a|—|-)$/i.test(it.drift.trim()))
-    ?'<span class="nw-drift">drift: '+esc(it.drift)+'</span>':'';
-  return '<div class="nw-item">'
+  // Ticker-level thesis state. The full text goes in the tooltip — dumping it
+  // inline made every row a three-line amber blob with no state distinction.
+  const dSt=driftState(it.drift);
+  const drift=driftFlagHtml(it.drift,'nw-flag');
+  // A filing is a primary source, so it outranks any headline about the same
+  // event; combined with a moved thesis it is the most structural row on screen.
+  const rowCls='nw-item'
+    +(dSt?' nw-drift-'+dSt.key:'')
+    +(it.kind==='filing'?' is-filing':'');
+  return '<div class="'+rowCls+'">'
     +'<a class="nw-tk" href="#" onclick="newsOpenTicker(\''+esc(it.ticker)+'\',\''+esc(it.sector).replace(/'/g,"\\'")+'\');return false">'+esc(it.ticker)+'</a>'
     +'<div class="nw-body">'
     +(it.kind==='filing'?'<span class="nw-kind">Filing</span> ':'')
