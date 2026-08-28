@@ -23,6 +23,9 @@
 **2026-08-26/27** — Later same-cycle coverage reverses the framing: shares reported "surging 5.9%" with a GF Score of 98, outperforming peers on AI networking strength and analyst optimism (MarketWatch, GuruFocus, Quiver Quantitative).
 *Why it matters:* Same underlying earnings/guidance event as the 08-26 entry above, now read positively rather than negatively — the initial 6.8% drop reversed. No new fundamental fact; reinforces that the guidance raise itself, not the stock's day-to-day direction, is what confirms the thesis.
 
+**2026-08-28 (post-open)** — TIKR.com names a specific metric behind the guidance raise: "Arista Networks' AI Fabrics Now Serve 100+ Customers." BofA reiterates Buy, $240 PT.
+*Why it matters:* A concrete customer count is a harder data point than the general "surging AI orders" framing already logged — directly confirms the Ethernet-at-hyperscaler-scale leg of the thesis with a number, not just sentiment.
+
 ---
 
 ## Social Mentions
@@ -44,3 +47,4 @@
 | 2026-06-17 | SCORE | Composite 8.0/10 Unrivaled \| P:4 PP:4 L:4 FH:5 ME:4 FP:3 |
 | 2026-08-26 | BRIEF (Run 2) | 5 items triaged, 1 logged, drift flagged — AI order surge + outlook hike vs. stock decline |
 | 2026-08-28 | BRIEF | 5 items triaged, 1 logged — same earnings cycle reversed to a 5.9% surge; no new fundamental fact |
+| 2026-08-28 | BRIEF (Run 2 — post-open) | 5 items triaged, 1 logged — "AI Fabrics 100+ customers" is a new concrete metric behind the guidance raise |

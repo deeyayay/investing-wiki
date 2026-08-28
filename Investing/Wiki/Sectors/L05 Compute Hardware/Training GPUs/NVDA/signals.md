@@ -33,6 +33,9 @@
 - **2026-08-28** — Yahoo Finance (via the NVDA Downstream Effects topic feed): "NVIDIA's Data Center Strategy Deepens With Cloverleaf Investment."
   **Why it matters:** Another entry in the same balance-sheet-backed ecosystem-investment pattern already flagged (OpenAI $105B lease guarantee, Nebius/SpaceX stakes) — extends rather than changes the demand-durability thesis; headline alone doesn't give deal size.
 
+- **2026-08-28 (post-open)** — Bloomberg: "Nvidia Adds $442 Billion in Second Biggest Ever Stock Surge" — quantifies the beat-and-raise reaction already logged 08-27. Separately, two more pointed items: IBD reports "Nvidia Soars As Circular Financing Seen Paying Off Two Times" (bull framing of the same OpenAI/Nebius-style investment pattern already flagged as a watch item), and the AI Compute/Networking topic feed carries Tom's Hardware reporting NVIDIA denies pausing AI cloud commitments after a report that it told cloud providers it could only lease GPUs to "NVIDIA-approved" customers.
+  **Why it matters:** The $442B figure is the hardest confirmation yet of the market's reaction to the beat-and-raise. The GPU-leasing-restriction report (denied by NVIDIA) is a new and different kind of item — a customer-access/anti-competitive framing rather than a demand-durability one — worth watching for whether it resurfaces with more specificity, since it would matter directly to neocloud names in the book (BRUN, IREN).
+
 ---
 
 ## Social Mentions
@@ -66,3 +69,4 @@
 - **2026-08-26** — 📰 BRIEF (Run 3) | 5 items + 3 topic hits triaged, 1 logged, drift flagged — Q2 FY2027 earnings 8-K/10-Q filed and official results announced (resolving the three-run-standing /dig item), but no hard numbers in the digest; $18B additional FY investment + Lancium gigawatt AI factory stake also logged; /dig NVDA still queued to pull the actual print
 - **2026-08-27** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged — Q2 FY2027 beat-and-raise confirmed via WSJ/IBD/CNBC (demand "getting even hotter," Amazon contract), closing the three-run /dig queue item; exact revenue/EPS figures still not in a single headline
 - **2026-08-28** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged — Cloverleaf investment extends the balance-sheet-backed ecosystem-investment pattern; main ticker headlines were repeats of the 08-27 beat-and-raise coverage
+- **2026-08-28** — 📰 BRIEF (Run 2 — post-open) | 5 items + 1 topic hit triaged, 1 logged — $442B stock surge quantifies the beat-and-raise reaction; GPU-leasing-restriction report (denied by NVIDIA) noted as a new watch item touching BRUN/IREN

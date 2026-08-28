@@ -38,6 +38,9 @@
 - **2026-08-25** — Two independent packaging confirmations via the HBM/Memory topic feed: (1) EE Times reports TSMC HBM-packaging yield issues are helping Intel win share, per analysts; (2) TechPowerUp reports SK Hynix's next-gen HBM will use Intel EMIB-T packaging.
   **Why it matters:** An external customer (SK Hynix) committing to EMIB-T for next-gen HBM is exactly the kind of non-Apple, non-NVIDIA validation the IFS thesis needs — and a rival foundry's (TSMC) packaging yield stumble is a direct competitive tailwind for Intel's packaging platform.
 
+- **2026-08-28 (post-open)** — TIKR.com: Intel raised $23B (equity/convertible), and the stock fell below the offer price — CFO addressed the reaction directly with investors. Separately, HSBC reiterates Buy despite the stock sinking 15% this week (Startup Fortune).
+  **Why it matters:** A raise pricing below where the stock now trades is a genuine capital-markets fact (dilution optics, funding for the IFS buildout), distinct from the Apple/SK Hynix validation items already logged. HSBC holding Buy through a 15% weekly drop is an analyst action with reasoning — sell-side isn't fading the rerate thesis on the pullback, even as the raise weighs on sentiment near-term.
+
 ---
 
 ## Social Mentions
@@ -58,3 +61,4 @@
 - **2026-06-07** — 📊 MONITOR --deep | Q1 FY2026 data confirmed ($13.6B rev, $0.29 non-GAAP EPS, IFS $5.4B +20% QoQ); Apple preliminary IFS deal identified; Fab 34 Ireland buyback ($14.2B) confirmed; Mizuho/WF/Barclays upgrade cluster June 2; 10-Q + 8-K filings logged; legacy INTC.md stub deleted.
 - **2026-06-07** — Scored — Composite 6.5/10 Strong | P:3 PP:3 L:3 FH:2 ME:4 FP:4
 - **2026-08-25** — 📰 BRIEF | 5 items triaged, 1 logged (topic feed), drift flagged
+- **2026-08-28** — 📰 BRIEF (Run 2 — post-open) | 5 items triaged, 1 logged — $23B raise priced below current trade + HSBC Buy reiteration through the weekly decline

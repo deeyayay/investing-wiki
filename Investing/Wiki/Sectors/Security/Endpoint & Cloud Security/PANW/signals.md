@@ -17,6 +17,9 @@
 - **2026-08-27** — Q3 2026 earnings call transcript published; reports the CEO held acquisition talks with both Okta and Datadog, and signals more deals are coming.
   **Why it matters:** M&A talks with Okta/Datadog is a concrete data point on PANW's platform-consolidation strategy — actively pursuing acquisitions beyond organic cross-sell, which is the central mechanism of the thesis.
 
+- **2026-08-28 (post-open)** — TradingView: "Palo Alto Networks Stock Soars on Okta Takeover Talks Report" — the previously-logged CEO comments are now circulating as a specific takeover-talks report, with a stock reaction attached. Separately, PANW announces Active Directory Security Posture Management inside Cortex XSIAM.
+  **Why it matters:** Moves the Okta story from a CEO remark to a report the market is actively pricing — a stronger confirmation of the platform-consolidation thesis than the 08-27 transcript alone, though the deal itself remains unconfirmed. The XSIAM product add is routine platform-breadth expansion.
+
 ---
 
 ## Social Mentions
@@ -33,3 +36,4 @@
 - **2026-08-25** — 📰 BRIEF | 5 items triaged, 1 logged
 - **2026-08-26** — 📰 BRIEF (Run 3) | 5 items triaged, 1 logged — JPMorgan PT raise
 - **2026-08-27** — 📰 BRIEF | 5 items triaged, 1 logged — CEO M&A talks with Okta/Datadog confirm active consolidation strategy
+- **2026-08-28** — 📰 BRIEF (Run 2 — post-open) | 5 items triaged, 1 logged — Okta talks now a specific market-moving report, not just CEO remarks

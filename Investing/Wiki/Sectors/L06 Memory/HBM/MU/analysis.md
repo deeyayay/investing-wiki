@@ -64,6 +64,7 @@ _Evaluated: 2026-06-17_
 | 2026-08-25 | CEO: AI memory supply may not catch up until 2028; Hot Chips 2026: HBM/DDR5 silicon gap widening | ↑ Strengthened | Direct executive confirmation of the structural demand tailwind, even as the stock sold off with the broader semiconductor group |
 | 2026-08-26 | Rack-scale AI memory pooling breakthrough shown; separately, Barron's argues long-term contracts cap memory-boom upside; 8-K discloses an officer departure (unnamed) | → Neutral | Mixed: a genuine product proof point against a real nuance on upside capture — net doesn't move Drift; 8-K departure flagged for /dig before assessing management-continuity impact |
 | 2026-08-28 | SK hynix breaks ground on first US HBM plant (Indiana), targeting 2030 | → Neutral | Long-horizon competitive watch item on the "only US-domiciled HBM supplier" claim — does not change the current-state moat, worth tracking as the build progresses. |
+| 2026-08-28 (post-open) | Micron doubles capex as AI memory shortage deepens (TradingView) | ↑ Strengthened | A capital commitment is a stronger confirmation of the demand-crunch thesis than executive commentary alone — management is putting money behind the shortage claim. |
 
 ---
 

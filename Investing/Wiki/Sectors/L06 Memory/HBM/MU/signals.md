@@ -37,6 +37,9 @@
 - **2026-08-27/28** — SK hynix holds groundbreaking ceremony for its first US HBM production base (Indiana), CEO says it will be a key memory production hub by 2030 (SK hynix, CNBC, Korea Herald, via the HBM Supply & Memory Bottleneck topic feed).
   **Why it matters:** Directly touches the "only US-domiciled HBM supplier" leg of the thesis — a competitor building US capacity is a long-horizon (2030) structural watch item, not an immediate threat, since MU remains the only current US-domiciled producer. Worth tracking as the Indiana build progresses.
 
+- **2026-08-28 (post-open)** — TradingView: "Micron Technology Doubles Capex as AI Memory Shortage Deepens." Separately, Barron's argues MU "should profit from Nvidia's memory price warning" but notes the stock "hasn't budged" yet; the HBM Supply & Memory Bottleneck topic feed also surfaces NVIDIA's new NVHBM architecture (memory controller moved into the HBM stack, Amazon Trainium4 named as first adopter).
+  **Why it matters:** A capex doubling is a harder confirmation of the "AI memory crunch" thesis than the CEO commentary already logged (08-25) — management is putting capital behind the shortage claim, not just describing it. The NVHBM architecture shift is a technology-roadmap item worth tracking for how it reallocates HBM design wins among suppliers.
+
 ---
 
 ## Social Mentions
@@ -59,3 +62,4 @@
 | 2026-08-26 | BRIEF | 📰 5 items + 1 topic hit triaged, 2 logged |
 | 2026-08-26 | BRIEF (Run 2) | 📰 4 items triaged, 3 logged — 8-K officer departure (deep-pass queued), rack-scale memory pooling breakthrough, long-term-contracts-cap-upside nuance |
 | 2026-08-28 | BRIEF | 📰 5 items + 1 topic hit triaged, 1 logged — SK hynix Indiana HBM groundbreaking touches the "only US-domiciled" thesis leg as a 2030-horizon watch item |
+| 2026-08-28 | BRIEF (Run 2 — post-open) | 📰 5 items + 1 topic hit triaged, 1 logged — capex doubling confirms AI memory shortage thesis with a harder data point than prior CEO commentary; NVHBM architecture shift noted as a watch item |

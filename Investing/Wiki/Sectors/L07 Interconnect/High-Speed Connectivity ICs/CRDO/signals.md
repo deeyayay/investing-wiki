@@ -5,6 +5,9 @@
 
 ## News & Alpha Log
 
+- **2026-08-28 (post-open)** — Shares surge 6.1% (GuruFocus) the same day TipRanks reports "Credo Technology Stock Hit By Harsh Sell Call" and Seeking Alpha runs a bearish "Time To Step Aside, Not Stand In Front" piece; separately, Credo is set to present at the Goldman Sachs Communacopia + Technology Conference.
+  **Why it matters:** A same-day sell rating against a 6.1% rally is a genuine divergence worth tracking — an analyst action with reasoning per the triage rubric — but neither piece cites a new operating fact, so this doesn't move drift on its own; conference presence in ~2 weeks is the next scheduled catalyst.
+
 - **2026-08-22** — Wall Street raises Credo price targets again; stock +71% YTD.
   **Why it matters:** Sell-side is marking to the AEC ramp rather than fading it — consistent with the current On track drift, but headline-level only, no new operating datapoint.
 
@@ -37,3 +40,4 @@
 - **2026-06-07** — 📊 MONITOR --deep | Material new item: Hyperlume acquisition ($92M, microLED optical interconnect, announced 2026-06-01). Rothschild & Co Buy initiation added. EDGAR direct fetch blocked (403); used search fallback — no new filings beyond Q4 8-K (2026-06-01). 10-K FY2026 not yet filed (expected ~Jul 2026).
 - **2026-06-07** — 📊 REFRESH | --refresh-research: Q1/Q2/Q3 FY2026 earnings backfilled (dates, revenue, EPS, GM, guidance); CFO Dan Fleming added; CTO/COO ownership_pct populated (3.95%/2.01%); Q1/Q2 8-Ks + Form SD added to filings; One-Line Thesis + Investment Thesis refreshed to reflect FY2026 full-year data, Hyperlume acquisition, 5th hyperscaler qualification, ~75% AEC market share.
 - **2026-08-23** — 📰 WATCHLIST-REFRESH | 2 headlines triaged, 1 logged
+- **2026-08-28** — 📰 BRIEF (Run 2 — post-open) | 4 items triaged, 1 logged — sell call vs. 6.1% surge divergence, no new operating fact

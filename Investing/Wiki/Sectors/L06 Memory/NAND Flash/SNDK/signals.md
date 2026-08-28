@@ -27,6 +27,7 @@
 | 2025-08-06 | SanDisk to collaborate with SK Hynix to drive HBF standardization (MOU) | SanDisk newsroom / Tom's Hardware | HBF = NAND-based HBM alternative; 8–16× capacity vs HBM |
 | 2025-07-24 | SanDisk forms HBF Technical Advisory Board (incl. David Patterson, Raja Koduri) | SanDisk newsroom | Signals serious roadmap commitment to HBF |
 | 2025-02-21 | Western Digital completes SanDisk spinoff; SNDK trades on NASDAQ | WDC 8-K (SEC) | SanDisk becomes a ~pure-play NAND/flash company |
+| 2026-08-28 (post-open) | Stock hits 52-week highs and jumps ~5% premarket on the same NVIDIA memory-price-warning read-through already logged for MU, one day after the Citron "commodity, not moat" bear note | TradingView / Stocktwits | Price action is now moving opposite the Citron thesis and the "Samsung headwinds" decline narrative — doesn't resolve the standing /dig question (Apple/Samsung cause, commodity-vs-differentiated), but is a genuine reversal worth tracking against it. |
 
 ---
 
@@ -53,3 +54,4 @@
 | 2026-08-26 | 📰 BRIEF (Run 3) | 5 items triaged, 1 logged — Israel layoffs/India transfer; /dig still queued, cause of selloff still unresolved |
 | 2026-08-27 | 📰 BRIEF | 5 items triaged, 1 logged — contradictory recovery/selloff headlines on the same open Apple-vs-Samsung question; /dig still queued |
 | 2026-08-28 | 📰 BRIEF | 5 items triaged, 2 logged — Citron bear note ("commodity, not moat") adds a second question to the standing /dig item; buyback highlight logged as minor counter-signal |
+| 2026-08-28 | 📰 BRIEF (Run 2 — post-open) | 5 items triaged, 1 logged — stock reverses to 52-week highs on NVDA memory-price read-through, day after the Citron bear note; /dig still queued |

@@ -67,6 +67,7 @@ _Evaluated: 2026-06-17_
 | 2025-08-06 | SanDisk–SK Hynix HBF standardization MOU | ↑ | Moves HBF from single-vendor concept toward an industry standard. |
 | 2026-08-25/26 | Third straight session of sharp decline, now framed as "Samsung headwinds" vs. the 08-23 Apple/Chinese-chips narrative; cumulative decline cited up to -37% | ↓ Weakened | Two competing, unverified causal stories across three nights of coverage is itself a signal that the market doesn't have a clean explanation — raises the priority of the standing /dig SNDK item. No fundamental (NBM, HBF, Kioxia JV) data point has actually moved. |
 | 2026-08-26 | Citron Research: "Nvidia Has A Moat. SanDisk Sells A Commodity" | ↓ Weakened | A named bear thesis directly challenging the NBM/HBF differentiation argument — headline evidence alone doesn't set Broken, but it sharpens the standing /dig SNDK item into a specific falsifiable claim (differentiated vs. commodity) worth testing against the actual NBM contract terms and HBF roadmap. |
+| 2026-08-28 (post-open) | Stock reverses to 52-week highs, +5% premarket, on NVDA memory-price read-through — one day after the Citron bear note | → Neutral | Market isn't (yet) siding with the commodity thesis, but a price bounce doesn't resolve the underlying NBM/HBF-vs-commodity question either — /dig SNDK remains the item that actually settles this. |
 
 ---
 

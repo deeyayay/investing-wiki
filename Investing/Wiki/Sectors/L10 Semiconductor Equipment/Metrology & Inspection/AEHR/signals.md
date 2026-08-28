@@ -14,6 +14,9 @@
 - **2026-04-07** — FY2026 full-year guidance reiterated: high side of $45–50M; H2 guidance $25–30M revenue; non-GAAP loss $(0.09)–$(0.05)/share
   **Why it matters:** Management reiteration after a bookings beat signals confidence in backlog conversion; Q4 FY2026 results (~July 21) are the next validation gate
 
+- **2026-08-28 (post-open)** — Trefis: "Aehr Test Systems Stock 8-Day Losing Spree: Stock Falls 38%."
+  **Why it matters:** A large, sustained drawdown with no causal headline attached — no new fact about bookings, backlog, or the SiC/EV drag already named in the thesis. Logged as a flag rather than a triaged fact; magnitude alone (38% over 8 sessions) is enough to queue for /dig to check against the Q4 FY2026 print and backlog trajectory.
+
 ---
 
 ## Social Mentions
@@ -30,3 +33,4 @@
 - **2026-05-14** — stock-research run. Fundamental sections populated from web research and SEC DEF 14A.
 - **2026-06-17** — 📊 MONITOR --deep AEHR | Migrated legacy AEHR.md → three-layer structure. Q3 FY2026 earnings logged ($10.3M revenue, $37.2M bookings, 3.5x BTB); ISE Labs AI OSAT partnership (Nov 2025) logged; William Blair upgrade (Mar 2, 2026) and Lake Street PT raise to $56 logged. AI pivot thesis written. CIK corrected to 0001040470. Next earnings est. 2026-07-21.
 - **2026-06-17** — Scored — Composite 7.5/10 Strong | P:5 PP:3 L:3 FH:3 ME:4 FP:4
+- **2026-08-28** — 📰 BRIEF (Run 2 — post-open) | 3 items triaged, 1 logged — 38% 8-day decline flagged, no causal fact in headlines; queued for /dig
