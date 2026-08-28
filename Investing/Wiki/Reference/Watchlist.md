@@ -47,7 +47,6 @@ subjects the KB has no ticker for yet. Both feed one digest.
 
 | Ticker | Name | Score | Drift Status |
 |--------|------|-------|--------------|
-| QTRX | Quanterix Corp | 6.5 | Drifting — organic revenue -21% in Q1 2026; US federal research (NIH) funding cuts compressing… |
 | SYNA | Synaptics Incorporated | — | Material change — onsemi all-stock acquisition announced June 25, 2026; SYNA is now primarily… |
 
 ---
