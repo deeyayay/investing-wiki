@@ -67,7 +67,6 @@ subjects the KB has no ticker for yet. Both feed one digest.
 | BRCHF | BrainChip Holdings Ltd | Edge & Physical AI | — | The only publicly listed neuromorphic pure-play — a high-risk, high-optionality call option on… |
 | MBLY | Mobileye Global Inc. | Edge & Physical AI | — | Intel-controlled autonomous-driving and ADAS pure-play — the EyeQ system-on-chip, REM crowdsou… |
 | 6451.TW | ShunSin Technology Holdin… | Interconnect | 5.5 | Foxconn's precision optical packaging arm — positioned to capture a structural margin step-up… |
-| IPGP | IPG Photonics Corporation | Interconnect | — | The world's dominant vertically-integrated fiber-laser manufacturer; its CW and pulsed fiber l… |
 | 285A.T | KIOXIA Holdings Corporati… | Memory | — | Kioxia's BiCS FLASH 3D NAND IP and Flash Ventures fab scale make it the pure-play beneficiary… |
 | MU | Micron Technology | Memory | 6.5 | Only US-domiciled HBM supplier — stacked on every NVDA GPU — with structural AI demand tailwin… |
 | CRWD | CrowdStrike Holdings, Inc. | Security | — | CrowdStrike is the AI-native cybersecurity platform consolidator whose Falcon data flywheel an… |
