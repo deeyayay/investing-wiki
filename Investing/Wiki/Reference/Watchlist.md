@@ -47,7 +47,6 @@ subjects the KB has no ticker for yet. Both feed one digest.
 
 | Ticker | Name | Score | Drift Status |
 |--------|------|-------|--------------|
-| SYNA | Synaptics Incorporated | — | Material change — onsemi all-stock acquisition announced June 25, 2026; SYNA is now primarily… |
 
 ---
 
