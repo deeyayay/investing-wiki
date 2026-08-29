@@ -13,6 +13,9 @@
 
 - **2026-05-20 — PHYSICAL AI / ROBOTICS** | Jensen framed physical AI as the next era: "The world is rebuilding computing for agentic AI and robotic AI — Nvidia sits at the center of it all." Announced Isaac GR00T N1 and N1.5 (world's first open humanoid robot foundation model), Isaac GR00T-Dreams (synthetic motion data), Cosmos simulation platform, and general availability of IGX Thor. GM collaboration announced: NVIDIA Omniverse + Cosmos + DRIVE AGX across GM vehicles, factories, and robots. T-Mobile/Nokia collaboration on physical AI apps on AI-RAN infrastructure. Jensen: "Industrial AI companies will be bigger over time than consumer AI companies."
 
+- **2026-08-29** — Q2 FY2027 revenue confirmed at $96.2B (Intellectia AI); UBS raises PT to $300 following the print.
+  **Why it matters:** Closes the gap flagged 08-27/08-28 — the exact revenue figure wasn't in a single headline until now. $96.2B confirms Blackwell demand is translating into a record print, not just qualitative "beat-and-raise" coverage.
+
 - **2026-05-20 — CPO / PHOTONICS** | Spectrum-X and Quantum-X silicon photonics networking switches confirmed — enabling AI factories to connect millions of GPUs across sites. CPO built on 200G SerDes; 5x better power efficiency and 10x higher network resiliency vs. pluggable. No explicit Spectrum-X deferral language. Rubin SiPh architecture details not broken out separately on the call.
 
 - **2026-08-25** — Jensen Huang: NVIDIA's $30B OpenAI investment "might be the last," but NVIDIA has now guaranteed up to $105B of OpenAI's compute leases (Motley Fool). Separately, NVIDIA revealed a 9%+ equity stake in Nebius (NBIS), sending NBIS shares sharply higher overnight.
@@ -70,3 +73,4 @@
 - **2026-08-27** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged — Q2 FY2027 beat-and-raise confirmed via WSJ/IBD/CNBC (demand "getting even hotter," Amazon contract), closing the three-run /dig queue item; exact revenue/EPS figures still not in a single headline
 - **2026-08-28** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged — Cloverleaf investment extends the balance-sheet-backed ecosystem-investment pattern; main ticker headlines were repeats of the 08-27 beat-and-raise coverage
 - **2026-08-28** — 📰 BRIEF (Run 2 — post-open) | 5 items + 1 topic hit triaged, 1 logged — $442B stock surge quantifies the beat-and-raise reaction; GPU-leasing-restriction report (denied by NVIDIA) noted as a new watch item touching BRUN/IREN
+- **2026-08-29** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged — $96.2B Q2 revenue figure finally confirmed at headline level; UBS PT raised to $300

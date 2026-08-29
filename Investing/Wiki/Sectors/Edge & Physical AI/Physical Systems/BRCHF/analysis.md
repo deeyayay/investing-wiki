@@ -36,6 +36,7 @@ _Not yet scored — run `/score-ticker BRCHF`. (Expect a low composite given pre
 |------|-------|-------------|-----|
 | 2026-06-15 | Onboarded as the speculative neuromorphic leg of the memory/storage thesis | → | Establishes coverage as a watch/starter; commercial traction of Akida is the gating variable. |
 | 2026-08-26 | H1 CY2026 results: revenue up, loss widens | → Neutral | First earnings data point since onboarding; revenue growth continues but no scale/profitability signal yet — still watch/starter only. |
+| 2026-08-29 | First production batch arrives; loss ledger grows faster | → Neutral | Execution milestone (product shipping) offset by widening losses — mixed, no change to the speculative watch/starter stance. |
 
 ---
 

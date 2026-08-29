@@ -15,6 +15,7 @@
 | 2023-03-21 | NioCorp begins trading on Nasdaq under ticker NB | SEC 8-K | US listing |
 | 2026-08-24 | NioCorp raises the economic assessment of the Elk Creek project; price target increased to $12 | Freedom Broker | Direct upgrade to the core Elk Creek asset economics that the entire thesis rests on. |
 | 2026-08-26 | NioCorp embeds Railveyor automated haulage system into the Elk Creek mine plan | Metal Tech News | Engineering-detail progress on the mine design — incremental derisking of the construction plan ahead of the financing-gated build decision. |
+| 2026-08-29 | CEO Mark Smith detail on updated feasibility study: 8 products from one ore body, $560/ton margin | YouTube | Granular margin figure behind the 08-24 "economic assessment raised, PT $12" upgrade — no change to the verdict, adds the number underneath it. |
 
 ---
 
@@ -30,3 +31,4 @@ _None yet — seeded on onboarding._
 | 2026-06-15 | /add-ticker NB — web verification of company identity, Elk Creek stage, and EXIM financing status | Confirmed NB = NioCorp Developments (CIK 0001512228; Nb/Sc/Ti/REE; pre-construction, financing-gated); onboarded into Metals & Mining; wired to L12 Rare Earths box |
 | 2026-08-25 | 📰 BRIEF | 5 items triaged, 1 logged, drift flagged |
 | 2026-08-26 | 📰 BRIEF (Run 3) | 2 items triaged, 1 logged, drift flagged — Railveyor haulage system added to Elk Creek engineering plan |
+| 2026-08-29 | 📰 BRIEF | 1 item triaged, 1 logged — $560/ton margin detail on the already-logged feasibility-study raise |

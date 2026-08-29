@@ -10,6 +10,8 @@
 | 2026 | Counter-UAS / attritable autonomy named DoD priorities | defense press | Structural tailwind for AV's product mix. |
 | 2026 | Budget/continuing-resolution timing affects program funding | sell-side | The recurring lumpiness risk for defense revenue. |
 | 2026-08-24 | AeroVironment wins $30.9M contract for German Puma UAS | scanx.trade | Direct order flow confirmation on the core Puma product line named in the thesis; allied-demand validation. |
+| 2026-08-29 | Greek expansion announced alongside a record backlog | Ad-hoc-news.de | Broadens the international order book beyond the German Puma deal — backlog record confirms continued demand even as the stock lags. |
+| 2026-08-29 | NASA taps AeroVironment for three Mars helicopters, 2028 mission | Stocktwits | New line of business outside defense — extends the "multi-domain platform" thesis into space/NASA work, though small relative to the core defense order book. |
 | 2026-08-24 | AeroVironment plans $100M campus to unite five California locations | Stock Titan / Benzinga / Seeking Alpha | Capacity expansion supporting the broader multi-domain platform build-out post-BlueHalo, even as shares fell 7.5% on the announcement. |
 | 2026-08-25 | AVAV highlights MAYHEM 10, an AI-powered multi-role warfare system | Stocktwits | Product-line evidence that the "broader multi-domain defense-tech platform" leg of the thesis is expanding beyond the legacy Puma/Raven/Switchblade line into AI-native multi-role systems. |
 | 2026-08-26 | AeroVironment wins $80.5M Titan MS order for Domestic Shield; Switchblade 600 fielded across 20+ Army brigade combat teams; CEO cites "unprecedented" defense demand over next two years | scanx.trade / Stock Titan / Stocktwits | New order flow plus broad fielding of the loitering-munitions line directly confirms core-product demand; CEO commentary reinforces the multi-year outlook. |
@@ -30,3 +32,4 @@ _None yet — seeded on onboarding._
 | 2026-08-26 | 📰 BRIEF (Run 2) | 5 items triaged, 2 logged — Titan MS order + Switchblade fielding + CEO demand comments, board appointment, law-firm probe |
 | 2026-08-27 | 📰 BRIEF | 5 items triaged, 1 logged — $51M Army Switchblade order continues confirmed order-flow pattern |
 | 2026-08-28 | 📰 BRIEF | 5 items triaged, 0 new logged — CFO board appointment and Bragar Eagel probe recur with no new specifics; humanoid-robotics topic hit had no AVAV-specific development |
+| 2026-08-29 | 📰 BRIEF | 5 items triaged, 2 logged, drift flagged — Greek expansion + record backlog, NASA Mars helicopter contract |
