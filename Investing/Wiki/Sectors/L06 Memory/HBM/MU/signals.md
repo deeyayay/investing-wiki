@@ -40,6 +40,9 @@
 - **2026-08-28 (post-open)** — TradingView: "Micron Technology Doubles Capex as AI Memory Shortage Deepens." Separately, Barron's argues MU "should profit from Nvidia's memory price warning" but notes the stock "hasn't budged" yet; the HBM Supply & Memory Bottleneck topic feed also surfaces NVIDIA's new NVHBM architecture (memory controller moved into the HBM stack, Amazon Trainium4 named as first adopter).
   **Why it matters:** A capex doubling is a harder confirmation of the "AI memory crunch" thesis than the CEO commentary already logged (08-25) — management is putting capital behind the shortage claim, not just describing it. The NVHBM architecture shift is a technology-roadmap item worth tracking for how it reallocates HBM design wins among suppliers.
 
+- **2026-08-31 (post-open)** — TechStock²: "Micron Shares Edge Down 0.3% After $50 Billion Quarter Sets Higher Bar for September 30." Separately, the HBM Supply & Memory Bottleneck topic feed carries Samsung locking 70% of memory capacity into 2031 deals (long-term contracts running 5× cheaper than spot) and HBM spot prices soaring to 5× long-term contract levels on HBM4 yield pressure (Wccftech, Moomoo).
+  **Why it matters:** The $50B-quarter framing raises the bar management now has to clear at the Sept 30 print. The Samsung capacity-lock and 5× spot-price spike are independent, sector-wide confirmation of the same supply-tightness thesis from the competitive/pricing side, not just Micron's own commentary — reinforces the demand-crunch thesis with a harder market-structure data point.
+
 ---
 
 ## Social Mentions
@@ -63,3 +66,4 @@
 | 2026-08-26 | BRIEF (Run 2) | 📰 4 items triaged, 3 logged — 8-K officer departure (deep-pass queued), rack-scale memory pooling breakthrough, long-term-contracts-cap-upside nuance |
 | 2026-08-28 | BRIEF | 📰 5 items + 1 topic hit triaged, 1 logged — SK hynix Indiana HBM groundbreaking touches the "only US-domiciled" thesis leg as a 2030-horizon watch item |
 | 2026-08-28 | BRIEF (Run 2 — post-open) | 📰 5 items + 1 topic hit triaged, 1 logged — capex doubling confirms AI memory shortage thesis with a harder data point than prior CEO commentary; NVHBM architecture shift noted as a watch item |
+| 2026-08-31 | BRIEF (post-open) | 📰 5 items + 1 topic hit triaged, 1 logged, drift flagged — $50B-quarter framing raises the bar ahead of Sept 30; Samsung's 70% capacity lock + 5× HBM spot-price spike reinforce the supply-tightness thesis |

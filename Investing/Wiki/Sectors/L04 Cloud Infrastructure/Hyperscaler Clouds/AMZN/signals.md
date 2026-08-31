@@ -17,6 +17,9 @@
 - **2026-08-29** — Amazon adds 2 million GPUs and expands its Nvidia partnership (Yahoo Finance, Blockonomi); stock fell on the news despite the scale of the buildout. EDGAR timed out for AMZN again tonight.
   **Why it matters:** A 2M-GPU addition is third-party (Nvidia) capacity, not proprietary Trainium — it confirms the scale of AWS's infrastructure buildout continuing to accelerate, but doesn't by itself add evidence to the Trainium cost-and-margin moat leg specifically.
 
+- **2026-08-31 (post-open)** — Amazon announces a multibillion-dollar data center expansion in Missouri; stock jumps on the news (Stocktwits). Two routine Form 144/Form 4 insider-sale filings also on EDGAR.
+  **Why it matters:** A new, named greenfield data-center commitment is direct confirmation of the AWS infrastructure buildout the thesis depends on — distinct from the 08-29 GPU-purchase item, this is Amazon's own capacity expansion.
+
 ---
 
 ## Social Mentions
@@ -33,3 +36,4 @@
 - **2026-08-27** — 📰 BRIEF | 5 items triaged, 1 logged — Trainium AI chip business growth confirms custom-silicon moat leg
 - **2026-08-28** — 📰 BRIEF | 5 items triaged, 1 logged — DuckLabs acquisition (no deal detail yet); EDGAR timed out for AMZN tonight
 - **2026-08-29** — 📰 BRIEF | 5 items triaged, 1 logged — 2M-GPU buildout + Nvidia partnership expansion confirms infra scale; EDGAR timed out for AMZN again
+- **2026-08-31** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — Missouri data center expansion confirms AWS capex thesis; 2 routine insider filings not logged

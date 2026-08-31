@@ -67,6 +67,7 @@ _Evaluated: 2026-06-19_
 | 2026-06-19 | Initial add-ticker pass | → Neutral | SiC headwinds weigh on near-term but structural moat intact; watch Q2 2026 results and SiC order trends |
 | 2026-06-19 | Q1 2026: revenue beat, microsystems ATH, wide-bandgap +152% YoY | ↑ Strengthened | Revenue above guidance despite automotive softness; non-auto segments (industrial, medical, microsystems, wide-bandgap) all accelerating — broadens the base beyond SiC/auto dependency; H2 2026 automotive recovery anticipated |
 | 2026-06-19 | photonixFAB confirmed: XFAB leads EU silicon photonics consortium with NVIDIA + Nokia; US/EU CHIPS Act backstop (~€225M+) | ↑ Strengthened | Major thesis upgrade — silicon photonics CPO optionality priced at zero; NVIDIA consortium partner (not just evaluation vendor); EU Chips Act 2.0 (Jun 3 2026) explicitly targets photonics; US NIST confirms XFAB as "critical infrastructure" for SiC. Raises Future Potential and Macro Environment scores — consider re-scoring. |
+| 2026-08-31 | TSMC exec confirms silicon photonics >50% of transceiver market by 2027, CPO mass production starts H2 2026 | ↑ Strengthened | Independent, foundry-level confirmation of the CPO adoption curve corroborates the photonixFAB consortium timeline with a concrete industry-wide data point |
 
 ---
 

@@ -61,6 +61,7 @@ _Last scored: 2026-06-07 | [[Scoring Rubric]]_
 | 2026-06-07 | Apple preliminary deal to manufacture chips at Intel US fabs starting 2026 | ↑ | Most significant potential IFS external customer; validates 18A commercial readiness; watch for confirmation |
 | 2026-06-07 | Intel repurchases Apollo's 49% Fab 34 Ireland stake for $14.2B (cash + $6.5B bridge loan) | ↑ | Full fab ownership strengthens IFS vertical control; large debt load is tail risk but shows conviction |
 | 2026-06-07 | Mizuho ↑ $128, Wells Fargo ↑ $110, Barclays ↑ $100 (all June 2, 2026) | ↑ | Tier-1 analyst upgrades reflect improving IFS credibility; PT dispersion narrowing bullishly |
+| 2026-08-31 | HSBC: foundry business "Too Good to Ignore," sees another 60% upside | ↑ | Escalation from Buy-reiteration to a quantified upside call; sell-side raising conviction on the rerate through the post-raise pullback |
 
 ---
 

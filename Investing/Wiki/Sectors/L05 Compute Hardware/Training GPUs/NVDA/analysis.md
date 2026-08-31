@@ -54,6 +54,7 @@ _Last scored: 2026-05-22 | [[Scoring Rubric]]_
 | 2026-08-28 | NVIDIA deepens data center strategy with Cloverleaf investment | ↑ | Extends the balance-sheet-backed ecosystem-investment pattern (OpenAI, Nebius, SpaceX) — reinforces demand-durability thesis; deal size not yet disclosed at headline level. |
 | 2026-08-28 (post-open) | Stock adds $442B in market value — "second biggest ever" single-day surge (Bloomberg); NVIDIA denies a report it restricted GPU leasing to "approved" cloud customers | ↑ | The $442B figure is the clearest confirmation yet that the market read the beat-and-raise as durable, not priced-in. The leasing-restriction story is a distinct risk thread (customer-access, not demand) — denied, unconfirmed, but worth tracking given its direct relevance to neocloud names in the book. |
 | 2026-08-29 | Q2 FY2027 revenue confirmed at $96.2B (Intellectia AI); UBS raises PT to $300 | ↑ | First single-headline confirmation of the actual revenue figure, closing the gap flagged in the 08-27/08-28 entries. UBS's target raise is an analyst action with explicit reasoning tied to the print. |
+| 2026-08-31 | $3.5B MediaTek investment extends ecosystem-investment pattern into ASIC/custom silicon | ↑ | New concrete dollar figure on the balance-sheet-backed investment pattern already flagged (OpenAI, Nebius, SpaceX, Cloverleaf); circular-financing narrative now has competing bull/bear framings but no new fact either way |
 
 ---
 

@@ -49,6 +49,7 @@ _Last scored: 2026-06-07 | [[Scoring Rubric]]_
 
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
+| 2026-08-31 | Toucan PCIe retimer achieves PCIe compliance, joins PCIe 6.x Integrators List; TSMC confirms CPO mass production H2 2026 | ↑ | Guided-to next catalyst (PCIe retimer) materializes as a concrete qualification milestone; TSMC's public CPO timeline independently corroborates the Hyperlume optical hedge |
 | 2026-06-07 | Acquired Hyperlume for $92M — microLED-based optical interconnect technology | ↑ | Deploys ATM capital into optical adjacency, directly hedging the copper AEC displacement risk; expands Credo's TAM into optical interconnect and signals management is positioning for post-copper AI rack generations at 3.2T+. |
 | 2026-06-01 | Q4 FY2026: $437M +157% YoY, EPS $1.16, guidance $470M midpoint | ↑ | Consecutive beat with accelerating sequential growth and above-consensus guidance confirms hyperscaler AEC demand is durable, not pull-forward. FY2026 full-year $1.34B at ~68% GM materially ahead of prior expectations. |
 | 2026-06-01 | CEO William Brennan granted performance-based PSU award with stretch milestones | ↑ | PSU structure ties compensation to long-duration revenue/margin targets rather than time-vesting, strengthening CEO-shareholder alignment and reducing near-term equity overhang risk. |

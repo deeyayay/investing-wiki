@@ -8,6 +8,9 @@
 - **2026-08-28 (post-open)** — Shares surge 6.1% (GuruFocus) the same day TipRanks reports "Credo Technology Stock Hit By Harsh Sell Call" and Seeking Alpha runs a bearish "Time To Step Aside, Not Stand In Front" piece; separately, Credo is set to present at the Goldman Sachs Communacopia + Technology Conference.
   **Why it matters:** A same-day sell rating against a 6.1% rally is a genuine divergence worth tracking — an analyst action with reasoning per the triage rubric — but neither piece cites a new operating fact, so this doesn't move drift on its own; conference presence in ~2 weeks is the next scheduled catalyst.
 
+- **2026-08-31 (post-open)** — Credo's Toucan PCIe Retimer achieves PCI Express compliance and joins the PCIe 6.x Integrators List (company IR); separately, the co-packaged-optics topic feed carries TSMC confirming CPO mass production H2 2026 and silicon photonics >50% of the transceiver market by 2027. Q1 FY2027 earnings due 2026-09-09; sell-side raising targets ahead of the print (Seeking Alpha, Benzinga, scanx.trade).
+  **Why it matters:** The PCIe retimer compliance is the next named catalyst from the drift status materializing — a concrete product-qualification milestone, not just guidance. TSMC's public CPO timeline independently corroborates the optical-displacement hedge behind the Hyperlume acquisition.
+
 - **2026-08-22** — Wall Street raises Credo price targets again; stock +71% YTD.
   **Why it matters:** Sell-side is marking to the AEC ramp rather than fading it — consistent with the current On track drift, but headline-level only, no new operating datapoint.
 
@@ -41,3 +44,4 @@
 - **2026-06-07** — 📊 REFRESH | --refresh-research: Q1/Q2/Q3 FY2026 earnings backfilled (dates, revenue, EPS, GM, guidance); CFO Dan Fleming added; CTO/COO ownership_pct populated (3.95%/2.01%); Q1/Q2 8-Ks + Form SD added to filings; One-Line Thesis + Investment Thesis refreshed to reflect FY2026 full-year data, Hyperlume acquisition, 5th hyperscaler qualification, ~75% AEC market share.
 - **2026-08-23** — 📰 WATCHLIST-REFRESH | 2 headlines triaged, 1 logged
 - **2026-08-28** — 📰 BRIEF (Run 2 — post-open) | 4 items triaged, 1 logged — sell call vs. 6.1% surge divergence, no new operating fact
+- **2026-08-31** — 📰 BRIEF (post-open) | 4 items + 1 topic hit triaged, 1 logged, drift confirmed — Toucan PCIe retimer compliance is the guided-to next catalyst materializing; TSMC CPO timeline corroborates the optical hedge

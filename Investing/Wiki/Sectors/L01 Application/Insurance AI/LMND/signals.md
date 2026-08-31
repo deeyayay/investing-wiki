@@ -23,6 +23,9 @@
 - **2026-08-26** — Lemonade expands car insurance to Florida.
   **Why it matters:** Incremental geographic expansion of the auto book — supports growth trajectory but doesn't move the loss-ratio/EBITDA-timeline leg the thesis actually hinges on.
 
+- **2026-08-31 (post-open)** — Follow-on coverage of the Florida auto launch adds a scale detail: the rollout now brings Lemonade auto to "near-half" of US states (simplywall.st).
+  **Why it matters:** Builds on the 08-26 Florida entry with a concrete reach metric — incremental confirmation of the geographic-expansion growth trajectory, still doesn't touch the loss-ratio/EBITDA-timeline leg the thesis hinges on.
+
 ---
 
 ## Social Mentions
@@ -39,3 +42,4 @@
 - **2026-06-25** — add-ticker run. facts.md + analysis.md populated from web research (Q1 2026 earnings, business model, management). CIK 0001691421 confirmed via SEC EDGAR filing URL. EDGAR direct search returned 403; CIK extracted from 10-Q filing URL in search results.
 - **2026-08-26** — 📰 BRIEF (Run 2) | 4 items triaged, 1 logged, drift confirmed — Morgan Stanley backs the AV insurance bet; 3 institutional 13F disclosures (PDT Partners, EFG International, BlackRock) treated as routine, not logged
 - **2026-08-26** — 📰 BRIEF (Run 3) | 2 items triaged, 1 logged — Florida auto expansion
+- **2026-08-31** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — "near-half US reach" scale detail builds on the 08-26 Florida launch

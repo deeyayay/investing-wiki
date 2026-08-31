@@ -65,6 +65,7 @@ _Evaluated: 2026-06-17_
 | 2026-08-26 | Rack-scale AI memory pooling breakthrough shown; separately, Barron's argues long-term contracts cap memory-boom upside; 8-K discloses an officer departure (unnamed) | → Neutral | Mixed: a genuine product proof point against a real nuance on upside capture — net doesn't move Drift; 8-K departure flagged for /dig before assessing management-continuity impact |
 | 2026-08-28 | SK hynix breaks ground on first US HBM plant (Indiana), targeting 2030 | → Neutral | Long-horizon competitive watch item on the "only US-domiciled HBM supplier" claim — does not change the current-state moat, worth tracking as the build progresses. |
 | 2026-08-28 (post-open) | Micron doubles capex as AI memory shortage deepens (TradingView) | ↑ Strengthened | A capital commitment is a stronger confirmation of the demand-crunch thesis than executive commentary alone — management is putting money behind the shortage claim. |
+| 2026-08-31 (post-open) | "$50B quarter sets higher bar" for Sept 30 print; Samsung locks 70% of memory capacity into 2031 deals; HBM spot prices spike to 5× long-term contract levels | ↑ Strengthened | Independent, sector-wide confirmation of supply tightness (competitor capacity lock, spot-price spike) reinforces the demand-crunch thesis from the market-structure side, not just company commentary |
 
 ---
 

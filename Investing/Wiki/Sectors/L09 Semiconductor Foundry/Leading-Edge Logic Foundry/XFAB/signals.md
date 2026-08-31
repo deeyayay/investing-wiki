@@ -28,6 +28,9 @@
 - **2026-06-19** — Foundry customer confirmations: (a) POWI (Power Integrations): SEC EDGAR file POWI-EX10.2 is a wafer supply agreement with X-FAB; PCN added XFAB Lubbock as qualified fab for power-switch die. (b) NVTS (Navitas): uses XFAB Texas for SiC manufacturing. Note: NVTS also announced GaN partnership with GlobalFoundries (Nov 2025) and PSMC (Jul 2025) — XFAB is NVTS's SiC foundry specifically.
   **Why it matters:** POWI is an established, multi-year customer relationship (not speculative). NVTS SiC demand flows directly to XFAB Lubbock — the wide-bandgap +152% YoY in Q1 is partly driven by these customer ramps.
 
+- **2026-08-31** — TSMC executive publicly confirms silicon photonics will surpass 50% of the transceiver market by 2027, with CPO mass production beginning H2 2026 (TrendForce, finance.biggo.com, GuruFocus), via the co-packaged-optics topic feed.
+  **Why it matters:** Independent, foundry-level confirmation of the CPO adoption curve from the industry's largest player — directly corroborates the photonixFAB thesis (NVIDIA + Nokia consortium) with a concrete industry timeline, not just XFAB's own consortium participation.
+
 ---
 
 ## Social Mentions
@@ -46,3 +49,4 @@
 - **2026-06-19** — Scored — Composite 6.0/10 Strong | P:4 PP:3 L:2 FH:3 ME:3 FP:3
 - **2026-06-19** — 📡 SIGNAL INGESTED | @serenity_invests 4-tweet XFAB thesis (fact-checked). Key findings: photonixFAB silicon photonics (NVDA + Nokia consortium) confirmed but absent from original KB — material thesis upgrade. US CHIPS Act $50M PMT verified (Dec 2024). EU €128M MEMS + €48M photonixFAB grants verified (distinct programs). NVTS + POWI foundry customer relationships confirmed. Score should be refreshed — Macro Environment and Future Potential criteria likely move from 3→4 each, pushing composite toward 7.0. Signal file: [2026-06-19-xfab-serenity-photonics-chips-thread](https://x.com/i/status/2059537337324085541)
 - **2026-06-19** — Scored — Composite 6.5/10 Strong | P:4 PP:3 L:2 FH:3 ME:4 FP:4
+- **2026-08-31** — 📰 BRIEF (post-open) | 1 item + 1 topic hit triaged, 1 logged, drift confirmed — TSMC publicly confirms CPO mass production H2 2026 and >50% silicon photonics penetration by 2027

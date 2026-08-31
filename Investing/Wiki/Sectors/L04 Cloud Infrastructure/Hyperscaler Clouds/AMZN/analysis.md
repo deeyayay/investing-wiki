@@ -53,6 +53,7 @@ _Last scored: — | [[Scoring Rubric]]_
 |------|-------|-------------|-----|
 | 2026-08-27 | Amazon confirms in-house AI chip (Trainium) business growing fast | ↑ | Reinforces the Trainium cost-and-margin moat central to the AWS thesis. |
 | 2026-08-29 | Amazon adds 2M GPUs, expands Nvidia partnership | → Neutral | Confirms continued infrastructure buildout at scale, but third-party GPU capacity doesn't add direct evidence to the Trainium moat leg specifically. |
+| 2026-08-31 | Amazon announces multibillion-dollar Missouri data center expansion | ↑ | Direct capacity-buildout confirmation, own-account facility rather than third-party GPU purchase |
 
 ---
 

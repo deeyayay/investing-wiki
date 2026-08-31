@@ -20,6 +20,9 @@
 - **2026-08-28 (post-open)** — TNGlobal: Foxconn's ShunSin to invest $65M in chip-packaging lines at its Vietnam unit.
   **Why it matters:** A capacity commitment outside Taiwan diversifies the manufacturing footprint, but the headline describes general "chip-packaging" capacity, not specifically CPO/FAU assembly lines — logged as MATERIAL capacity-expansion evidence, not yet confirmed as CPO-specific.
 
+- **2026-08-31** — TSMC executive publicly confirms silicon photonics will surpass 50% of the transceiver market by 2027, with CPO mass production beginning H2 2026 (TrendForce, finance.biggo.com, GuruFocus); separately, SEMICON Taiwan puts CPO and silicon photonics commercialization center stage (Taipei Times, Focus Taiwan).
+  **Why it matters:** The foundry directly enabling the CPO transition putting a public timeline on mass production (H2 2026) and market penetration (>50% by 2027) is harder confirmation than the Goldman Sachs TAM projection already logged — ShunSin's CPO assembly layer sits directly upstream of this ramp.
+
 ---
 
 ## Social Mentions
@@ -35,3 +38,4 @@
 - **2026-06-18** — Scored — Composite 5.5/10 Average | P:3 PP:2 L:2 FH:2 ME:4 FP:3 | ⚠️ Low-confidence: revenue/balance sheet absent; re-score after migration to three-layer + financials refresh.
 - **2026-06-18** — 📊 MONITOR --deep 6451.TW | Migrated legacy 6451.TW.md → three-layer structure. FY2025 earnings logged (NT$7.53B +45% YoY, net margin 0.4%); CPO TAM Goldman Sachs $164M→$91B logged; TSMC COUPE mass production confirmed; analyst consensus "Taiwan NVDA CPO supply chain #1" logged. Next earnings est. 2026-07-31. Score 5.5/10 Average (low-confidence); re-score after Q2 2026 earnings.
 - **2026-08-28** — 📰 BRIEF (Run 2 — post-open) | 2 items triaged, 1 logged — $65M Vietnam packaging-line investment, not confirmed CPO-specific
+- **2026-08-31** — 📰 BRIEF (post-open) | 2 items + 1 topic hit triaged, 1 logged, drift confirmed — TSMC publicly confirms CPO mass production H2 2026 and >50% silicon photonics penetration by 2027

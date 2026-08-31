@@ -39,6 +39,9 @@
 - **2026-08-28 (post-open)** — Bloomberg: "Nvidia Adds $442 Billion in Second Biggest Ever Stock Surge" — quantifies the beat-and-raise reaction already logged 08-27. Separately, two more pointed items: IBD reports "Nvidia Soars As Circular Financing Seen Paying Off Two Times" (bull framing of the same OpenAI/Nebius-style investment pattern already flagged as a watch item), and the AI Compute/Networking topic feed carries Tom's Hardware reporting NVIDIA denies pausing AI cloud commitments after a report that it told cloud providers it could only lease GPUs to "NVIDIA-approved" customers.
   **Why it matters:** The $442B figure is the hardest confirmation yet of the market's reaction to the beat-and-raise. The GPU-leasing-restriction report (denied by NVIDIA) is a new and different kind of item — a customer-access/anti-competitive framing rather than a demand-durability one — worth watching for whether it resurfaces with more specificity, since it would matter directly to neocloud names in the book (BRUN, IREN).
 
+- **2026-08-31 (post-open)** — Nvidia deepens its AI collaboration with MediaTek via a new $3.5B investment (Seeking Alpha, Moomoo) — Moomoo frames it as NVIDIA "networking itself into the broader ASIC ecosystem, from Marvell to MediaTek." Separately, the nvda-downstream topic feed carries Yahoo Finance: "Nvidia's Investment in OpenAI Highlights Circular Financing Concerns" — a bearish counter-framing of the same investment pattern the 08-28 IBD piece read bullishly.
+  **Why it matters:** The MediaTek deal is a new, concrete dollar figure extending the balance-sheet-backed ecosystem-investment pattern (OpenAI, Nebius, SpaceX, Cloverleaf) into the ASIC/custom-silicon space — worth watching for competitive read-through on MRVL. The circular-financing narrative now has both a bull and a bear framing on the same pattern within a week; neither headline adds a new fact, so this stays a watch item, not a drift-moving one.
+
 ---
 
 ## Social Mentions
@@ -74,3 +77,4 @@
 - **2026-08-28** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged — Cloverleaf investment extends the balance-sheet-backed ecosystem-investment pattern; main ticker headlines were repeats of the 08-27 beat-and-raise coverage
 - **2026-08-28** — 📰 BRIEF (Run 2 — post-open) | 5 items + 1 topic hit triaged, 1 logged — $442B stock surge quantifies the beat-and-raise reaction; GPU-leasing-restriction report (denied by NVIDIA) noted as a new watch item touching BRUN/IREN
 - **2026-08-29** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged — $96.2B Q2 revenue figure finally confirmed at headline level; UBS PT raised to $300
+- **2026-08-31** — 📰 BRIEF (post-open) | 5 items + 1 topic hit triaged, 1 logged — $3.5B MediaTek investment extends the ecosystem-investment pattern into ASIC/custom silicon (watch for MRVL read-through); circular-financing narrative now has both bull and bear framings, no new fact

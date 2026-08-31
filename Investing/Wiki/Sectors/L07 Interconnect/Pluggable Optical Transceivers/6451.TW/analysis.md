@@ -66,6 +66,7 @@ _Evaluated: 2026-06-18_
 | 2026-05-31 | Onboarded; CPO FAU alignment in NVIDIA supply chain thesis established | → | Early-stage positioning; margin inflection thesis requires CPO revenue confirmation |
 | 2026-05-05 | FY2025: Revenue NT$7.53B (+45% YoY); net margin collapses to 0.4% | ↑ | Volume ramp confirmed; margin trough is expected CPO transition pattern; 1,240% EPS growth forecast for 2026 signals inflection ahead |
 | 2026-02-28 | Goldman Sachs CPO TAM: $164M (2026) → $91B (2028); TSMC COUPE enters mass production | ↑ | 55× TAM expansion in 2 years with foundry enablement confirmed; ShunSin is directly upstream of COUPE integration layer |
+| 2026-08-31 | TSMC exec confirms silicon photonics >50% of transceiver market by 2027, CPO mass production starts H2 2026 | ↑ | Foundry-level public timeline is a harder confirmation than the prior TAM projection — ShunSin sits directly upstream of TSMC's CPO ramp |
 
 ---
 

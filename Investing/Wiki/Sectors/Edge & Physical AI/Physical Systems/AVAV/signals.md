@@ -18,6 +18,7 @@
 | 2026-08-26 | ManTech CFO Michael Ruppert appointed to AVAV board; separately, Bragar Eagel opened an investigation into alleged fiduciary breaches (no specifics disclosed) | scanx.trade | Board appointment is a minor governance positive; the law-firm probe is boilerplate solicitation seen after most stock moves — logged for the audit trail, not treated as a thesis signal without specifics. |
 | 2026-08-27 | AeroVironment secures $51M Army order for Switchblade systems | Intellectia AI | Continues the confirmed order-flow pattern on the core loitering-munitions line (German Puma $30.9M, Titan MS $80.5M). |
 | 2026-08-26/27 | Bragar Eagel fiduciary-breach probe and ManTech CFO board appointment continue to recur in coverage alongside the confirmed order-flow items | scanx.trade | No new specifics on either item since first logged — no change to thesis-relevant status. |
+| 2026-08-31 | Trump administration imposes steep tariffs on drones; separately, a $500M Army contract is cited alongside a 133% revenue beat (TradingKey), and the Greek JV / NASA Mars items recur | Stocktwits / TradingKey / scanx.trade | Tariffs are new and genuinely ambiguous for AVAV — could raise import-component costs or protect US-based drone makers from cheap foreign competition; the headline doesn't specify which. Greek JV and NASA Mars items are recaps of the 08-29 entries, not new. |
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -33,3 +34,4 @@ _None yet — seeded on onboarding._
 | 2026-08-27 | 📰 BRIEF | 5 items triaged, 1 logged — $51M Army Switchblade order continues confirmed order-flow pattern |
 | 2026-08-28 | 📰 BRIEF | 5 items triaged, 0 new logged — CFO board appointment and Bragar Eagel probe recur with no new specifics; humanoid-robotics topic hit had no AVAV-specific development |
 | 2026-08-29 | 📰 BRIEF | 5 items triaged, 2 logged, drift flagged — Greek expansion + record backlog, NASA Mars helicopter contract |
+| 2026-08-31 | 📰 BRIEF (post-open) | 5 items triaged, 1 logged — new Trump drone-tariff headline (ambiguous impact); Greek JV/NASA Mars items were recaps of 08-29 |

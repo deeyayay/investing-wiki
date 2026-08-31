@@ -41,7 +41,8 @@
 - **2026-08-28 (post-open)** — TIKR.com: Intel raised $23B (equity/convertible), and the stock fell below the offer price — CFO addressed the reaction directly with investors. Separately, HSBC reiterates Buy despite the stock sinking 15% this week (Startup Fortune).
   **Why it matters:** A raise pricing below where the stock now trades is a genuine capital-markets fact (dilution optics, funding for the IFS buildout), distinct from the Apple/SK Hynix validation items already logged. HSBC holding Buy through a 15% weekly drop is an analyst action with reasoning — sell-side isn't fading the rerate thesis on the pullback, even as the raise weighs on sentiment near-term.
 
----
+- **2026-08-31 (post-open)** — HSBC escalates from Buy-reiteration to a specific call: "Too Good to Ignore," sees another 60% upside on the foundry business, after the stock is already +233% YTD (Stocktwits). Separately, shares are reported down 2.9% and still 5.8% under the $95 offering price even as the company posted a 25% revenue gain (TechStock²).
+  **Why it matters:** A quantified 60% further-upside call from HSBC is a harder analyst-conviction data point than the 08-28 Buy-reiteration — sell-side isn't just holding the rating through the pullback, it's raising the stakes on the foundry rerate. The stock still trading below the $23B raise price despite a reported 25% revenue gain is the same dilution-optics divergence flagged 08-28, still unresolved.
 
 ## Social Mentions
 
@@ -62,3 +63,4 @@
 - **2026-06-07** — Scored — Composite 6.5/10 Strong | P:3 PP:3 L:3 FH:2 ME:4 FP:4
 - **2026-08-25** — 📰 BRIEF | 5 items triaged, 1 logged (topic feed), drift flagged
 - **2026-08-28** — 📰 BRIEF (Run 2 — post-open) | 5 items triaged, 1 logged — $23B raise priced below current trade + HSBC Buy reiteration through the weekly decline
+- **2026-08-31** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, drift flagged — HSBC escalates to "Too Good to Ignore," +60% upside call; stock still below the $23B raise price despite a reported 25% revenue gain
