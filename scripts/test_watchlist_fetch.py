@@ -196,6 +196,60 @@ class GuardTests(unittest.TestCase):
         self.assertGreaterEqual(seen.get('hours', 0), 96,
                                 'filings must look back further than headlines')
 
+    # ---- impact scoring -------------------------------------------------
+    # Real headlines from the feed. The false positives below all shipped in a
+    # first draft, so they stay as regression guards.
+    def test_impact_ranks_structural_news_above_noise(self):
+        cases = [
+            ("Amazon's stock slips as the FTC alleges billions in hidden ad fees", "regulatory"),
+            ("AeroVironment Pockets $51M Army Contract", "deal"),
+            ("Nvidia Stock Up 1.5% as $20 Billion Buyback Represents 0.4% of Market Cap", "capital"),
+            ("Palo Alto Networks Q4 earnings face a higher bar", "earnings"),
+            ("Arista Networks initiated with a Buy at Deutsche Bank", "analyst"),
+        ]
+        for title, tag in cases:
+            sc, got = w.score_impact({"t": title, "kind": "news"})
+            self.assertEqual(got, tag, title)
+            self.assertGreaterEqual(sc, 40, title)
+
+    def test_impact_sinks_formulaic_filler(self):
+        for title, tag in [
+            ("Royal London Asset Management Ltd. Purchases 62,892 Shares of SoFi", "ownership"),
+            ("Rational Advisors Inc. Decreases Stake in Advanced Micro Devices", "ownership"),
+            ("AMD Options Spot-On: On August 31st, 354.77K Contracts Were Traded", "options"),
+            ("Amazon.com Inc Stock (AMZN) Moved Down by 3.06% on Aug 31", "pricemove"),
+            ("Japan, South Korea Stocks Open Lower and Extend Losses; Kospi drops", "roundup"),
+        ]:
+            sc, got = w.score_impact({"t": title, "kind": "news"})
+            self.assertEqual(got, tag, title)
+            self.assertEqual(w.impact_tier(sc), "low", title)
+
+    def test_impact_does_not_promote_clickbait_or_13f_as_deals(self):
+        """'to buy' and a bare 'acquires' matched 'A $31 Billion Reason to Buy'
+        and 'Acquires Shares of 5,871', ranking both as major deals."""
+        for title in ["A $31 Billion Reason to Buy Sandisk Stock Now",
+                      "CEO Lip-Bu Tan Just Gave 12 Million Reasons to Buy Intel Stock",
+                      "Analysts Expect Nvidia Stock to Soar 47%, But You Shouldn't Rush to Buy"]:
+            sc, tag = w.score_impact({"t": title, "kind": "news"})
+            self.assertNotEqual(tag, "deal", title)
+        sc, tag = w.score_impact(
+            {"t": "Old North State Trust LLC Acquires Shares of 5,871 AMD", "kind": "news"})
+        self.assertEqual(tag, "ownership")
+
+    def test_price_recap_is_not_a_product_launch(self):
+        """'Key Drivers Unveiled' made a percent-move recap look like a launch."""
+        sc, tag = w.score_impact(
+            {"t": "SanDisk Stock (SNDK) Moved Up by 3.37% on Aug 31: Key Drivers Unveiled",
+             "kind": "news"})
+        self.assertEqual(w.impact_tier(sc), "low")
+
+    def test_filings_outrank_every_headline(self):
+        f, _ = w.score_impact({"t": "8-K — Current report (items 1.01, 2.03)", "kind": "filing"})
+        best_news = max(sc for sc, _ in
+                        (w.score_impact({"t": t, "kind": "news"}) for t in
+                         ["FTC sues Amazon", "Company awarded a contract", "raises full-year guidance"]))
+        self.assertGreater(f, best_news)
+
     def test_unknown_provider_name_is_rejected(self):
         with self.assertRaises(SystemExit):
             w.main(["--tickers", "NVDA", "--providers", "nope", "--no-topics",

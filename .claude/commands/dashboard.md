@@ -46,6 +46,34 @@ textarea plus `execCommand`, which is still the only path in some mobile
 webviews; if both fail it prints the command for manual copying rather than
 silently doing nothing.
 
+### Impact ranking on the news feed
+
+Each headline is scored by event type so the formulaic filler sinks. The feed
+sorts by impact **within each day** (the day grouping is how it gets read; a
+global sort would scatter today's news), with a Show filter for `Everything /
+Medium+ / High only` and a sort toggle back to plain chronological.
+
+| Tier | Tags | Treatment |
+|---|---|---|
+| high (≥70) | filing · regulatory · deal · guidance · capital · management | blue badge, bold headline |
+| medium (40–69) | earnings · product · analyst | grey badge |
+| low (<40) | unclassified · roundup · pricemove · options · ownership | dimmed to 62%, lifts on hover |
+
+Nothing is hidden by default — low items recede rather than disappear, because a
+wrong call should cost a glance, not a missed story. Every row shows the tag
+that produced its score, so a misfire is visible instead of opaque.
+
+**The rules live in two places on purpose.** `score_impact()` in
+`scripts/watchlist_refresh_fetch.py` decides *which* headlines survive the
+per-ticker cap; `nwScoreImpact()` in `index.html` decides *how they rank on
+screen*. Scoring in the page as well means ranking works on digests written
+before the classifier existed. Keep the two in step when editing either.
+
+**This is event-type classification, not a thesis judgement.** It reads the
+headline, not the ticker's thesis, so it cannot know that a routine-looking item
+matters to one specific name. `/brief`'s triage is the real verdict; this is the
+floor that exists on every item of every run.
+
 ### Thesis drift flags
 
 Each ticker card carries a flag derived from its `**Drift status:**` line in `analysis.md`:

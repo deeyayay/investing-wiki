@@ -465,6 +465,102 @@ def existing_digest_has_content(path):
         return False
 
 
+# ---- impact scoring -------------------------------------------------------
+# Ranks each item so the dashboard can sort the loud, formulaic stuff below the
+# things that actually move a thesis. Zero model tokens: this is event-TYPE
+# classification from the headline, a proxy for impact, not a judgement about
+# any particular thesis. /brief's triage is the real verdict; this is the floor
+# that exists on every item of every run.
+#
+# Scores are deliberately spread so ties break sensibly, and every item carries
+# the tag that produced its score so a wrong call is visible rather than opaque.
+IMPACT_RULES = [
+    ("regulatory", 85, r"\b(ftc|doj|sec (probe|investigat)|antitrust|lawsuit|sued|settlement|"
+                       r"injunction|export control|sanction|tariff|ban(ned|s)?\b|subpoena|"
+                       r"recall|consent decree|fined)\b"),
+    # "to buy" and a bare "acquires" matched clickbait ("A $31 Billion Reason to
+    # Buy") and 13F filings ("Acquires Shares of 5,871") respectively, so both
+    # are now anchored to an actual transaction.
+    ("deal",       80, r"\b(contract|design win|supply agreement|partnership|partners with|"
+                       r"merger|takeover|joint venture|awarded|agrees to (buy|acquire)|"
+                       r"acquires? (?!shares|stake|a stake|holdings)\w+|"
+                       r"wins? (a |the )?(deal|order|contract)|signs? (a |the )?(deal|contract|agreement)|"
+                       r"lands? (a |the )?(deal|contract))\b"),
+    ("guidance",   78, r"\b(guidance|outlook|forecast|pre-?announc\w+|raises? (its )?(full[- ]year|fy|q\d)|"
+                       r"cuts? (its )?(full[- ]year|fy|q\d)|warns?\b|profit warning)\b"),
+    ("capital",    72, r"\b(buyback|repurchase|dividend|secondary offering|equity offering|"
+                       r"convertible|dilut\w+|capital raise|debt offering|spin-?off|ipo)\b"),
+    ("management", 70, r"\b(ceo|cfo|coo|chairman|president)\b.{0,40}\b(steps? down|resign\w*|"
+                       r"depart\w*|appoint\w*|names?|hires?|succeed\w*|ousted|fired)\b"),
+    # earnings is tested before product: "earnings on deck: can the ramp continue"
+    # is an earnings item, and "unveiled"/"milestone" were pulling in price
+    # recaps ("Moved Up 3.37% ... Key Drivers Unveiled"), so both are gone.
+    ("earnings",   55, r"\b(earnings|quarterly results|q[1-4] (results|report)|reports? (q[1-4]|results)|"
+                       r"beats?\b|misses?\b|revenue (rose|fell|up|down))\b"),
+    ("product",    52, r"\b(launch\w*|ships?\b|shipping|tape-?out|qualif\w+|ramp\w*|"
+                       r"capacity|new fab|foundry deal|volume production)\b"),
+    ("analyst",    45, r"\b(upgrade[sd]?|downgrade[sd]?|initiated? (with )?(a )?(buy|sell|hold|"
+                       r"outperform|neutral)|price target|reiterat\w+|maintains?\b|"
+                       r"raises? target|cuts? target)\b"),
+]
+# Formulaic filler. These fire AFTER the signal rules above, so a real event
+# mentioning a price move still ranks on the event.
+IMPACT_NOISE_RULES = [
+    ("ownership", 8,  r"\b(increases?|decreases?|boosts?|trims?|lowers?|raises?|purchases?|sells?|"
+                      r"acquires?|makes? (a )?new investment|buys?) (its )?(stake|position|holdings|"
+                      r"shares? of|\d[\d,\.]* shares)|\b13f\b|\bstake in\b"),
+    ("options",   10, r"\b(options?|contracts?) (spot-?on|volume|activity)|\b\d[\d,\.]*k? contracts "
+                      r"were traded\b|unusual options"),
+    # The percentage is often separated from the verb ("Moved Down BY 3.06%"),
+    # so the connector is optional rather than absent.
+    ("pricemove", 15, r"\b(moved (up|down)|trading|rises?|falls?|slips?|jumps?|drops?|gains?|"
+                      r"climbs?|dips?|soars?|sinks?|surges?|plunges?|up|down)"
+                      r"(\s+(by|over|nearly|about|more than))?\s+[\d.]+\s*%"
+                      r"|\b(premarket|pre-?market) (price|move|action)"
+                      r"|facts behind the movement|% (higher|lower)|key drivers"),
+    ("roundup",   20, r"\b(top \d+|best|worst) .{0,24}stocks?\b|stocks? (to watch|to buy)|"
+                      r"morning squawk|market (wrap|roundup|open|close)|stocks? open (lower|higher)|"
+                      r"msci|s&p 500 (entry|inclusion)|index inclusion|nikkei|kospi"),
+]
+IMPACT_COMPILED = [(t, sc, re.compile(p, re.I)) for t, sc, p in IMPACT_RULES]
+IMPACT_NOISE_COMPILED = [(t, sc, re.compile(p, re.I)) for t, sc, p in IMPACT_NOISE_RULES]
+# 8-K item numbers that carry real weight; a Form 4 or 13F is routine.
+FILING_WEIGHT = [
+    (r"\b(1\.01|2\.01|5\.02|8\.01)\b", 100),   # material agreement, acquisition, officer change
+    (r"\b(2\.02|7\.01|9\.01)\b", 92),           # results, Reg FD
+    (r"\b10-K\b", 95), (r"\b10-Q\b", 90), (r"\b8-K\b", 88),
+    (r"\b(425|S-1|S-3|424B)\b", 86),               # M&A / offering paperwork
+    (r"\bSC 13[DG]\b", 40), (r"\bForm 4\b|\b\b4 —", 35),
+]
+FILING_COMPILED = [(re.compile(p, re.I), sc) for p, sc in FILING_WEIGHT]
+
+
+def score_impact(item):
+    """Return (score, tag). Higher = more likely to matter."""
+    title = item.get("t", "") or ""
+    if item.get("kind") == "filing":
+        for rx, sc in FILING_COMPILED:
+            if rx.search(title):
+                return sc, "filing"
+        return 84, "filing"
+    # 13F/ownership phrasing is unambiguous and routinely collides with the deal
+    # vocabulary, so it wins outright rather than falling through the signal rules.
+    own_tag, own_sc, own_rx = IMPACT_NOISE_COMPILED[0]
+    if own_rx.search(title):
+        return own_sc, own_tag
+    for tag, sc, rx in IMPACT_COMPILED:
+        if rx.search(title):
+            return sc, tag
+    for tag, sc, rx in IMPACT_NOISE_COMPILED:
+        if rx.search(title):
+            return sc, tag
+    return 30, "unclassified"
+
+
+def impact_tier(score):
+    return "high" if score >= 70 else ("medium" if score >= 40 else "low")
+
+
 def item_key(item):
     """Stable dedupe key. Filings key on their URL — every 8-K shares the title
     '8-K — Current report', so keying on text alone would hide all but the first."""
@@ -591,9 +687,13 @@ def main(argv=None):
             if key in state["seen"]:
                 continue
             state["seen"][key] = today
+            item["impact"], item["impact_tag"] = score_impact(item)
+            item["impact_tier"] = impact_tier(item["impact"])
             fresh.append(item)
             if len(fresh) >= args.max_per_ticker:
                 break
+        # Best items first within a ticker, so a truncated list keeps the signal.
+        fresh.sort(key=lambda i: (-i.get("impact", 0), i.get("d") or ""), reverse=False)
         state["last_included"][e["ticker"]] = today
         if fresh:
             folder_rel = os.path.relpath(e["folder"], REPO_ROOT) if e["folder"] else None
