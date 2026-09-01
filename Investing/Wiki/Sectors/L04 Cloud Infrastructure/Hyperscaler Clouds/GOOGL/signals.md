@@ -17,6 +17,9 @@
 - **2026-08-31 (evening)** — Waymo targets Germany in its next robotaxi rollout phase (Stocktwits); a Form 4 filing also on EDGAR today.
   **Why it matters:** Business-line expansion, but Waymo sits outside the Google Cloud/AI-hyperscaler thesis leg specifically — logged for the audit trail as a company development, not a thesis-moving item.
 
+- **2026-09-01 (post-open)** — TradingView: UK regulators reach a £260M App Store settlement with Google.
+  **Why it matters:** A real legal/regulatory cost, but it's a Play Store matter unrelated to the Google Cloud/AI-hyperscaler thesis leg — logged for the audit trail, not thesis-moving.
+
 ---
 
 ## Social Mentions
@@ -33,3 +36,4 @@
 - **2026-08-25** — 📰 BRIEF | 5 items triaged, 1 logged, drift flagged
 - **2026-08-26** — 📰 BRIEF (Run 2) | 5 items triaged, 1 logged — Berkshire $10B direct-purchase claim, unverified, flagged for /dig
 - **2026-08-31** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — Waymo Germany expansion (adjacent, not core thesis); Form 4 not logged (routine); rest of the mix was mismatch/listicle noise
+- **2026-09-01** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — £260M UK App Store settlement (adjacent, not core Cloud thesis); director sale not logged (routine 10b5-1)

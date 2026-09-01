@@ -20,6 +20,9 @@
 - **2026-08-31 (evening)** — simplywall.st: "CrowdStrike Stock And 2 AI Security Names In Focus After Washington Warning." Two more Form 4 filings also on EDGAR today.
   **Why it matters:** Headline doesn't specify whether the "Washington warning" is a government threat advisory (demand tailwind) or scrutiny of the company itself — logged as MATERIAL but ambiguous; needs a follow-up headline with the actual content before it moves drift. Form 4s not logged (routine).
 
+- **2026-09-01 (post-open)** — Stock Titan: CrowdStrike launches a new certification giving partner-built AI agents a path onto its Marketplace.
+  **Why it matters:** Product-level platform expansion into agentic-AI partner distribution — extends the cross-sell/consolidation flywheel the thesis rests on, though headline-level detail is thin (no partner count or revenue framing yet).
+
 ---
 
 ## Social Mentions
@@ -37,3 +40,4 @@
 - **2026-08-27** — 📰 BRIEF | 5 items triaged, 1 logged — Q2 FY2027 hard numbers confirmed ($333M net-new ARR, raised guide), resolving 08-26's open /dig item
 - **2026-08-28** — 📰 BRIEF | 5 items triaged, 1 logged — 10-Q/Form 4 filings corroborate the confirmed print, no new fact
 - **2026-08-31** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — "Washington warning" headline logged as ambiguous, needs follow-up; 2 Form 4 filings not logged (routine)
+- **2026-09-01** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — new AI-agent Marketplace certification extends the platform-consolidation flywheel

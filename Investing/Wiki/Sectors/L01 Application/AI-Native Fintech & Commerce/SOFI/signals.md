@@ -30,6 +30,9 @@
 - **2026-08-24** — Morgan Stanley cuts price target; shares under pressure alongside routine EVP/exec share sales under 10b5-1 plans.
   **Why it matters:** Joins the Truist/GS/DB cut cluster logged 2026-05-18 — one more data point in the same rate/credit-concern camp, not a new thesis leg.
 
+- **2026-09-01 (post-open)** — Stocktwits: A short seller levels "Enron-esque" accounting claims against SoFi; CEO Anthony Noto responds by putting $500K of his own money on the line.
+  **Why it matters:** A named accounting-fraud allegation is potentially thesis-breaking if substantiated — headline gives no specifics on what's being alleged, so this can't be assessed from news alone. The CEO's public personal-capital response is a strong signal of confidence but isn't independent verification. Flagged for /dig SOFI to pull the actual short report and check it against the filed financials; drift stays On track pending that — headline evidence alone doesn't set Broken.
+
 ---
 
 ## Social Mentions
@@ -48,3 +51,4 @@
 - **2026-08-25** — 📰 BRIEF | 4 items triaged, 1 logged
 - **2026-05-18** — Scored — Composite 9.0/10 Unrivaled | P:5 PP:4 L:5 FH:4 ME:4 FP:5 | Valuation: Reasonable at ~$16 | Monitor Registry updated.
 - **2026-06-07** — 📊 MIGRATE | Legacy SOFI.md split into three-layer structure (facts.md + analysis.md + signals.md).
+- **2026-09-01** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, drift flagged (not moved) — short-seller "Enron-esque" accounting claims + CEO $500K personal buy escalated to /dig queue

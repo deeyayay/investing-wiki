@@ -44,6 +44,9 @@
 - **2026-08-31 (post-open)** — HSBC escalates from Buy-reiteration to a specific call: "Too Good to Ignore," sees another 60% upside on the foundry business, after the stock is already +233% YTD (Stocktwits). Separately, shares are reported down 2.9% and still 5.8% under the $95 offering price even as the company posted a 25% revenue gain (TechStock²).
   **Why it matters:** A quantified 60% further-upside call from HSBC is a harder analyst-conviction data point than the 08-28 Buy-reiteration — sell-side isn't just holding the rating through the pullback, it's raising the stakes on the foundry rerate. The stock still trading below the $23B raise price despite a reported 25% revenue gain is the same dilution-optics divergence flagged 08-28, still unresolved.
 
+- **2026-09-01 (post-open)** — The Motley Fool / Finbold: CEO Lip-Bu Tan bought ~$12M of INTC shares in the open market (exact purchase date not given at headline level; coverage frames it against the stock's move since).
+  **Why it matters:** First time this CEO open-market purchase is confirmed at headline level — a high-conviction insider signal that fits the rerate narrative behind the 08-28/08-31 HSBC coverage, though timing needs a filing check before treating it as a fresh event.
+
 ## Social Mentions
 
 | Date | Signal | Source |
@@ -64,3 +67,4 @@
 - **2026-08-25** — 📰 BRIEF | 5 items triaged, 1 logged (topic feed), drift flagged
 - **2026-08-28** — 📰 BRIEF (Run 2 — post-open) | 5 items triaged, 1 logged — $23B raise priced below current trade + HSBC Buy reiteration through the weekly decline
 - **2026-08-31** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, drift flagged — HSBC escalates to "Too Good to Ignore," +60% upside call; stock still below the $23B raise price despite a reported 25% revenue gain
+- **2026-09-01** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — CEO Lip-Bu Tan's ~$12M open-market share purchase confirmed at headline level for the first time

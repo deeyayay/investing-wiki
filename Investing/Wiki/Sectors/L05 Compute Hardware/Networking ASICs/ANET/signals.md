@@ -26,6 +26,9 @@
 **2026-08-28 (post-open)** — TIKR.com names a specific metric behind the guidance raise: "Arista Networks' AI Fabrics Now Serve 100+ Customers." BofA reiterates Buy, $240 PT.
 *Why it matters:* A concrete customer count is a harder data point than the general "surging AI orders" framing already logged — directly confirms the Ethernet-at-hyperscaler-scale leg of the thesis with a number, not just sentiment.
 
+**2026-09-01 (post-open)** — Deutsche Bank initiates coverage with a Buy rating; separately, an ANET director sold $60.78M in shares (Investing.com).
+*Why it matters:* A new sell-side initiation with a Buy rating is a fresh confirming data point, though the headline gives no valuation reasoning. The director sale is large but logged as a routine insider transaction absent any 10b5-1/timing red flag in the headline.
+
 ---
 
 ## Social Mentions
@@ -48,3 +51,4 @@
 | 2026-08-26 | BRIEF (Run 2) | 5 items triaged, 1 logged, drift flagged — AI order surge + outlook hike vs. stock decline |
 | 2026-08-28 | BRIEF | 5 items triaged, 1 logged — same earnings cycle reversed to a 5.9% surge; no new fundamental fact |
 | 2026-08-28 | BRIEF (Run 2 — post-open) | 5 items triaged, 1 logged — "AI Fabrics 100+ customers" is a new concrete metric behind the guidance raise |
+| 2026-09-01 | BRIEF (post-open) | 5 items triaged, 1 logged — Deutsche Bank Buy initiation + $60.78M director share sale (routine) |

@@ -20,6 +20,9 @@
 - **2026-08-28 (post-open)** — TradingView: "Palo Alto Networks Stock Soars on Okta Takeover Talks Report" — the previously-logged CEO comments are now circulating as a specific takeover-talks report, with a stock reaction attached. Separately, PANW announces Active Directory Security Posture Management inside Cortex XSIAM.
   **Why it matters:** Moves the Okta story from a CEO remark to a report the market is actively pricing — a stronger confirmation of the platform-consolidation thesis than the 08-27 transcript alone, though the deal itself remains unconfirmed. The XSIAM product add is routine platform-breadth expansion.
 
+- **2026-09-01 (post-open)** — Scotiabank maintains Buy, raises PT to $430, ahead of Q4 earnings.
+  **Why it matters:** Joins the JPMorgan/Needham pre-earnings PT-raise cluster already logged — sentiment confirmation ahead of the print, not a new fundamental fact.
+
 ---
 
 ## Social Mentions
@@ -37,3 +40,4 @@
 - **2026-08-26** — 📰 BRIEF (Run 3) | 5 items triaged, 1 logged — JPMorgan PT raise
 - **2026-08-27** — 📰 BRIEF | 5 items triaged, 1 logged — CEO M&A talks with Okta/Datadog confirm active consolidation strategy
 - **2026-08-28** — 📰 BRIEF (Run 2 — post-open) | 5 items triaged, 1 logged — Okta talks now a specific market-moving report, not just CEO remarks
+- **2026-09-01** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — Scotiabank PT raise to $430 joins the pre-earnings analyst cluster; EDGAR timed out

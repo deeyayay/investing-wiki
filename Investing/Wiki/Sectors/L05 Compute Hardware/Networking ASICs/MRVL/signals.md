@@ -26,6 +26,9 @@
 - **2026-08-30 (evening)** — Follow-on Q2 FY2027 coverage supplies the numbers the standing /dig queue was waiting on: data center revenue +46% YoY to a record $2.74B quarter (Pulse 2.0); management guides data center chip revenue to $18B by 2028 (Startup Fortune); Barchart frames the Google relationship as a **$12B** bet, not the unverified $120B figure from 08-25. Separately, TechStock² reports shares dropped 10.3% (-$22B market cap) on news that Google AI revenue is delayed beyond 2029.
   **Why it matters:** The record quarter and $18B-by-2028 guide directly confirm the custom-ASIC/hyperscaler leg of the thesis with hard numbers, and the $12B figure likely explains where the inflated "$120B" framing came from. But the delay-beyond-2029 detail is a genuinely new, specific negative — it's the first concrete driver behind the "Google deal questions" that have lingered since the print, not just sentiment. Standing /dig MRVL item narrows to: confirm the delay's scope and whether it affects near-term (pre-2029) revenue recognition, alongside the outgoing CFO's $65M share sale.
 
+- **2026-09-01 (post-open)** — Stocktwits: Marvell has shipped over 5M photonic chips ahead of its S&P 500 index entry.
+  **Why it matters:** A concrete shipment-volume data point on the interconnect/optics side of the dual-angle thesis — direct execution proof rather than guidance language. The S&P 500 entry is a market-structure event (index-fund buying) rather than a fundamental one.
+
 ---
 
 ## Social Mentions
@@ -53,3 +56,4 @@
 | 2026-08-29 | BRIEF | 📰 5 items triaged, 1 logged, drift flagged — second causal story ("outlook underwhelms") on the same selloff; /dig MRVL still queued, now to resolve both the Google-deal and guidance questions |
 | 2026-08-31 | BRIEF (post-open) | 📰 5 items + 1 topic hit triaged, 1 logged — outgoing CFO $65M share sale added to /dig queue; NVDA-MediaTek $3.5B deal noted as a competitive-dynamics watch item |
 | 2026-08-31 | BRIEF (evening) | 📰 5 items triaged, 1 logged, drift note updated — record $2.74B DC quarter (+46%), $18B-by-2028 guide, and the real $12B Google figure largely resolve the standing Google-deal ambiguity; new delay-beyond-2029 detail narrows /dig queue rather than closing it |
+| 2026-09-01 | BRIEF (post-open) | 📰 5 items triaged, 1 logged, conviction ↑ — 5M photonic chips shipped confirms interconnect/optics execution ahead of S&P 500 entry |

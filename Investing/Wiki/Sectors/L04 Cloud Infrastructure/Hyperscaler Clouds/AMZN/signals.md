@@ -23,6 +23,9 @@
 - **2026-08-30/31 (evening)** — AWS sticks with its Nvidia GPU bet even amid surging demand for in-house Trainium chips (Stocktwits); separately, Amazon shuts a UAE data center after a strike sparked a fire amid the escalating US-Iran conflict.
   **Why it matters:** The Nvidia-reliance framing is a continuation of the 08-29 buildout item, not a new fact. The UAE facility shutdown is genuinely new — a regional operational disruption tied to geopolitical conflict; small relative to AWS's global footprint but worth tracking if the conflict widens to other Gulf infrastructure.
 
+- **2026-09-01 (post-open)** — MarketWatch/Investing.com: FTC reportedly suing Amazon over billions in allegedly hidden ad fees, shares fell ~3% on the report. Separately, Citizens reiterated its Amazon rating citing AWS GPU expansion.
+  **Why it matters:** A regulatory suit over ad-fee disclosure is a real legal/reputational cost but sits outside the AWS/Trainium thesis leg specifically — logged as company-level material, not thesis-moving. The Citizens reiteration is a minor confirming data point on the AWS/GPU capacity leg already tracked.
+
 ---
 
 ## Social Mentions
@@ -41,3 +44,4 @@
 - **2026-08-29** — 📰 BRIEF | 5 items triaged, 1 logged — 2M-GPU buildout + Nvidia partnership expansion confirms infra scale; EDGAR timed out for AMZN again
 - **2026-08-31** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — Missouri data center expansion confirms AWS capex thesis; 2 routine insider filings not logged
 - **2026-08-31** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — UAE data center shutdown (regional, conflict-driven) new; Nvidia-reliance framing recaps 08-29 buildout item
+- **2026-09-01** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — FTC sues Amazon over alleged hidden ad fees, shares fell ~3% on the report; Citizens reiterated its rating citing AWS GPU expansion

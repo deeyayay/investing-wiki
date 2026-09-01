@@ -16,6 +16,7 @@
 | 2026-08-24 | NioCorp raises the economic assessment of the Elk Creek project; price target increased to $12 | Freedom Broker | Direct upgrade to the core Elk Creek asset economics that the entire thesis rests on. |
 | 2026-08-26 | NioCorp embeds Railveyor automated haulage system into the Elk Creek mine plan | Metal Tech News | Engineering-detail progress on the mine design — incremental derisking of the construction plan ahead of the financing-gated build decision. |
 | 2026-08-29 | CEO Mark Smith detail on updated feasibility study: 8 products from one ore body, $560/ton margin | YouTube | Granular margin figure behind the 08-24 "economic assessment raised, PT $12" upgrade — no change to the verdict, adds the number underneath it. |
+| 2026-09-01 | William Blair adds NioCorp to its stock Conviction List | Seeking Alpha | A second sell-side analyst action (following Freedom Broker's 08-24 PT raise to $12) — reinforces the Elk Creek economics upgrade with a new institutional voice, no new detail at headline level. |
 
 ---
 
@@ -32,3 +33,4 @@ _None yet — seeded on onboarding._
 | 2026-08-25 | 📰 BRIEF | 5 items triaged, 1 logged, drift flagged |
 | 2026-08-26 | 📰 BRIEF (Run 3) | 2 items triaged, 1 logged, drift flagged — Railveyor haulage system added to Elk Creek engineering plan |
 | 2026-08-29 | 📰 BRIEF | 1 item triaged, 1 logged — $560/ton margin detail on the already-logged feasibility-study raise |
+| 2026-09-01 | 📰 BRIEF (post-open) | 1 item triaged, 1 logged — William Blair Conviction List addition joins Freedom Broker's PT raise |

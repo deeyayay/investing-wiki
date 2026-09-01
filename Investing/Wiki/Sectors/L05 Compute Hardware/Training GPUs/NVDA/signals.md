@@ -45,6 +45,9 @@
 - **2026-08-31 (evening)** — Supply Chain Dive: "Nvidia says supply shortages are limiting AI revenue growth" (nvda-downstream topic).
   **Why it matters:** A direct management admission that revenue is capped by supply, not demand — consistent with and slightly sharper than the existing "Blackwell demand intact" framing; confirms the demand side of the thesis remains structurally strong even as it caps near-term upside. Not a drift change, but the clearest management statement yet on the supply constraint itself.
 
+- **2026-09-01 (post-open)** — TechStock²: Nvidia's $20B buyback (0.4% of market cap) cited alongside the stock's 1.5% gain; separately, nvda-downstream topic feed carries Nvidia's $3B investment in SB Energy anchoring SoftBank's data-center IPO push (TradingView).
+  **Why it matters:** The buyback is a routine capital-return data point, small relative to market cap. The SB Energy investment extends the same balance-sheet-backed ecosystem-investment pattern (OpenAI, Nebius, SpaceX, Cloverleaf, MediaTek) into power/data-center infrastructure — a demand-side signal, not a new fact about the GPU/CUDA thesis itself.
+
 ---
 
 ## Social Mentions
@@ -82,3 +85,4 @@
 - **2026-08-29** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged — $96.2B Q2 revenue figure finally confirmed at headline level; UBS PT raised to $300
 - **2026-08-31** — 📰 BRIEF (post-open) | 5 items + 1 topic hit triaged, 1 logged — $3.5B MediaTek investment extends the ecosystem-investment pattern into ASIC/custom silicon (watch for MRVL read-through); circular-financing narrative now has both bull and bear framings, no new fact
 - **2026-08-31** — 📰 BRIEF (evening) | 5 items + 1 topic hit triaged, 1 logged — Nvidia says supply shortages are limiting AI revenue growth; MediaTek follow-on coverage was recap of the 08-31 item, EDGAR timed out
+- **2026-09-01** — 📰 BRIEF (post-open) | 5 items + 1 topic hit triaged, 1 logged — $20B buyback (routine) + $3B SB Energy investment extends the ecosystem-investment pattern into power infrastructure; EDGAR timed out again
