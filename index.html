@@ -478,6 +478,32 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
   .wl-card-hdr{gap:7px}
   .wl-card-hdr .wl-name{min-width:5.5em}
 }
+
+/* ---- Impact ranking (added 2026-08-28) ----
+   The feed is dominated by formulaic filler — 13F churn, options-volume dumps,
+   percent-move recaps. Ranking pushes those down; de-emphasis makes the ones
+   that remain cheap to skip without hiding them. */
+.nw-tiers{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:0 0 10px}
+.nw-tiers-lbl{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-right:2px}
+.nw-tierbtn{font-size:11px;padding:4px 11px;border-radius:99px;cursor:pointer;font-family:inherit;
+  border:1px solid var(--border);background:var(--bg2);color:var(--muted)}
+.nw-tierbtn:hover{color:var(--text)}
+.nw-tierbtn.on{background:oklch(89% .12 258);border-color:oklch(72% .13 258);
+  color:oklch(35% .16 258);font-weight:700}
+.nw-tierbtn:focus-visible{outline:2px solid oklch(55% .16 258);outline-offset:2px}
+.nw-imp{display:inline-block;font-size:9.5px;font-weight:700;letter-spacing:.06em;
+  text-transform:uppercase;padding:1px 7px;border-radius:99px;border:1px solid transparent}
+.nw-imp-high{background:oklch(90% .13 258);color:oklch(34% .16 258);border-color:oklch(74% .13 258)}
+.nw-imp-medium{background:var(--bg3);color:var(--muted);border-color:var(--border)}
+.nw-imp-low{background:transparent;color:var(--muted);border-color:var(--border);opacity:.8}
+/* Low-impact rows stay readable but recede, and lift on hover so nothing is lost. */
+.nw-item.nw-imp-low{opacity:.62}
+.nw-item.nw-imp-low:hover,.nw-item.nw-imp-low:focus-within{opacity:1}
+.nw-item.nw-imp-high .nw-headline{font-weight:600}
+@media(max-width:600px){
+  .nw-tierbtn{font-size:10.5px;padding:4px 10px}
+  .nw-item.nw-imp-low{opacity:.68}
+}
 </style>
 </head>
 <body>
@@ -2765,26 +2791,77 @@ function newsItemUrl(it){return it.url||newsSearchUrl(it.title);}
 
 let _newsInitialized=false;
 let _newsItems=[];
-const _newsFilter={q:'',themes:new Set(),sector:''};
+const _newsFilter={q:'',themes:new Set(),sector:'',minTier:'low',sort:'impact'};
 
 // Flatten digest.tickers[].headlines[] → one feed item per headline.
+// ---- impact ranking ------------------------------------------------------
+// Mirrors score_impact() in scripts/watchlist_refresh_fetch.py. The two have
+// separate jobs: Python decides WHICH headlines survive the per-ticker cap,
+// this decides HOW they are ranked on screen. Scoring here as well means the
+// ranking works on digests written before the classifier existed, instead of
+// waiting for the next brief. Keep the rules in step when editing either.
+const NW_IMPACT_RULES=[
+  ['regulatory',85,/\b(ftc|doj|sec (probe|investigat)|antitrust|lawsuit|sued|suing|settlement|injunction|export control|sanction|tariff|ban(ned|s)?\b|subpoena|recall|fined)\b/i],
+  ['deal',80,/\b(contract|design win|supply agreement|partnership|partners with|merger|takeover|joint venture|awarded|agrees to (buy|acquire)|acquires? (?!shares|stake|a stake|holdings)\w+|wins? (a |the )?(deal|order|contract)|signs? (a |the )?(deal|contract|agreement)|lands? (a |the )?(deal|contract))\b/i],
+  ['guidance',78,/\b(guidance|pre-?announc\w+|profit warning|(raises?|cuts?|lifts?|lowers?|reaffirms?|withdraws?) (its |the |full[- ]year |fy ?\d*|q\d )*(guidance|outlook|forecast)|(full[- ]year|fy|q\d) (guidance|outlook|forecast)|warns? (on|of|that))\b/i],
+  ['capital',72,/\b(buyback|repurchase|secondary offering|equity offering|convertible|dilut\w+|capital raise|debt offering|spin-?off|\bipo\b|(declares?|raises?|hikes?|cuts?|suspends?|initiates?) (a |its |the )?(quarterly )?dividend|dividend (increase|hike|cut|suspension))\b/i],
+  ['management',70,/\b(ceo|cfo|coo|chairman|president)\b.{0,40}\b(steps? down|resign\w*|depart\w*|appoint\w*|names?|hires?|succeed\w*|ousted|fired)\b/i],
+  ['earnings',55,/\b(earnings|quarterly results|q[1-4] (results|report)|reports? (q[1-4]|results)|beats?|misses?|revenue (rose|fell|up|down))\b/i],
+  ['product',52,/\b(launch\w*|ships?|shipping|tape-?out|qualif\w+|ramp\w*|capacity|new fab|foundry deal|volume production)\b/i],
+  ['analyst',45,/\b(upgrade[sd]?|downgrade[sd]?|initiated? (with )?(a )?(buy|sell|hold|outperform|neutral)|price target|reiterat\w+|maintains?|raises? target|cuts? target)\b/i]
+];
+const NW_OWNERSHIP=/\b(increases?|decreases?|boosts?|trims?|lowers?|raises?|purchases?|sells?|acquires?|makes? (a )?new investment|buys?) (its )?(stake|position|holdings|shares? of|\d[\d,\.]* shares)|\b13f\b|\bstake in\b/i;
+const NW_NOISE_RULES=[
+  ['options',10,/\b(options?|contracts?) (spot-?on|volume|activity)|\b\d[\d,\.]*k? contracts were traded\b|unusual options/i],
+  ['pricemove',15,/\b(moved (up|down)|trading|rises?|falls?|slips?|jumps?|drops?|gains?|climbs?|dips?|soars?|sinks?|surges?|plunges?|up|down)(\s+(by|over|nearly|about|more than))?\s+[\d.]+\s*%|\b(premarket|pre-?market) (price|move|action)|facts behind the movement|% (higher|lower)|key drivers/i],
+  ['roundup',20,/\b(top \d+|best|worst) .{0,24}stocks?\b|stocks? (to watch|to buy)|morning squawk|market (wrap|roundup|open|close)|stocks? open (lower|higher)|msci|s&p 500 (entry|inclusion)|index inclusion|nikkei|kospi/i]
+];
+// Form 4s, 144s and N-PX proxy-voting reports are routine paperwork that
+// arrives constantly — ranking them as "a filing" put "N-PX — Annual Report of
+// proxy voting record" above real news.
+const NW_FILING_WEIGHT=[[/\b(1\.01|2\.01|5\.02|8\.01)\b/,100],[/\b(2\.02|7\.01|9\.01)\b/,92],
+  [/^\s*10-K\b|\b10-K —/i,95],[/^\s*10-Q\b|\b10-Q —/i,90],[/^\s*8-K\b|\b8-K —/i,88],
+  [/^\s*(425|S-1|S-3|424B)\b/i,86],[/^\s*DEF ?14A\b|proxy statement/i,62],
+  [/^\s*SC 13[DG]\b|schedule 13[dg]/i,42],
+  [/^\s*4\/?A?\b|statement of changes in beneficial/i,22],
+  [/^\s*144\b|proposed sale of securities/i,18],
+  [/^\s*N-PX\b|proxy voting record/i,12]];
+
+function nwScoreImpact(title,kind){
+  title=title||'';
+  if(kind==='filing'){
+    for(const [rx,sc] of NW_FILING_WEIGHT) if(rx.test(title)) return [sc,'filing'];
+    return [58,'filing'];
+  }
+  if(NW_OWNERSHIP.test(title)) return [8,'ownership'];
+  for(const [tag,sc,rx] of NW_IMPACT_RULES) if(rx.test(title)) return [sc,tag];
+  for(const [tag,sc,rx] of NW_NOISE_RULES) if(rx.test(title)) return [sc,tag];
+  return [30,'unclassified'];
+}
+function nwTier(sc){ return sc>=70?'high':(sc>=40?'medium':'low'); }
+
 function buildNewsItems(digest){
   const out=[];
   (digest&&digest.tickers||[]).forEach(t=>{
     (t.headlines||[]).forEach(h=>{
       if(!h||!h.t)return;
+      const sc=nwScoreImpact(h.t,h.kind||'news');
       out.push({ticker:t.ticker,company:t.company||'',sector:t.sector||'',
         drift:t.drift||'',date:h.d||'',title:h.t,src:h.src||'',
-        kind:h.kind||'news',url:h.url||'',themes:newsThemesFor(h.t,h.kind)});
+        kind:h.kind||'news',url:h.url||'',themes:newsThemesFor(h.t,h.kind),
+        impact:sc[0],impactTag:sc[1],impactTier:nwTier(sc[0])});
     });
   });
   out.sort((a,b)=>(b.date||'').localeCompare(a.date||'')||a.ticker.localeCompare(b.ticker));
   return out;
 }
 
+const NW_TIER_RANK={low:0,medium:1,high:2};
 function newsFiltered(){
   const q=_newsFilter.q.trim().toLowerCase();
+  const minTier=NW_TIER_RANK[_newsFilter.minTier||'low'];
   return _newsItems.filter(it=>{
+    if(NW_TIER_RANK[it.impactTier]<minTier)return false;
     if(_newsFilter.sector&&it.sector!==_newsFilter.sector)return false;
     if(_newsFilter.themes.size&&!it.themes.some(t=>_newsFilter.themes.has(t)))return false;
     if(q&&!(it.title.toLowerCase().includes(q)||it.ticker.toLowerCase().includes(q)
@@ -2793,6 +2870,13 @@ function newsFiltered(){
   });
 }
 
+function newsSetSort(v){_newsFilter.sort=v;renderNewsFeed();}
+function newsSetMinTier(v){
+  _newsFilter.minTier=v;
+  document.querySelectorAll('.nw-tierbtn').forEach(b=>
+    b.classList.toggle('on',b.getAttribute('data-tier')===v));
+  renderNewsFeed();
+}
 function newsSetQuery(v){_newsFilter.q=v;renderNewsFeed();}
 function newsSetSector(v){_newsFilter.sector=v;renderNewsFeed();}
 function newsToggleTheme(id){
@@ -2801,6 +2885,9 @@ function newsToggleTheme(id){
 }
 function newsClearFilters(){
   _newsFilter.q='';_newsFilter.themes.clear();_newsFilter.sector='';
+  _newsFilter.minTier='low';_newsFilter.sort='impact';
+  document.querySelectorAll('.nw-tierbtn').forEach(b=>
+    b.classList.toggle('on',b.getAttribute('data-tier')==='low'));
   const qi=document.getElementById('nw-q');if(qi)qi.value='';
   const si=document.getElementById('nw-sector');if(si)si.value='';
   renderNewsChips();renderNewsFeed();
@@ -2837,9 +2924,12 @@ function renderNewsItem(it){
   const drift=driftFlagHtml(it.drift,'nw-flag');
   // A filing is a primary source, so it outranks any headline about the same
   // event; combined with a moved thesis it is the most structural row on screen.
-  const rowCls='nw-item'
+  const rowCls='nw-item nw-imp-'+(it.impactTier||'low')
     +(dSt?' nw-drift-'+dSt.key:'')
     +(it.kind==='filing'?' is-filing':'');
+  const impact=it.impactTag&&it.impactTag!=='unclassified'
+    ?'<span class="nw-imp nw-imp-'+esc(it.impactTier)+'" title="Ranked '
+      +esc(it.impactTier)+' impact — matched: '+esc(it.impactTag)+'">'+esc(it.impactTag)+'</span>':'';
   return '<div class="'+rowCls+'">'
     +'<a class="nw-tk" href="#" onclick="newsOpenTicker(\''+esc(it.ticker)+'\',\''+esc(it.sector).replace(/'/g,"\\'")+'\');return false">'+esc(it.ticker)+'</a>'
     +'<div class="nw-body">'
@@ -2848,7 +2938,7 @@ function renderNewsItem(it){
     +'<div class="nw-line2">'
     +(it.src?'<span>'+esc(it.src)+'</span>':'')
     +(it.sector?'<span>· '+esc(it.sector)+'</span>':'')
-    +drift+tags
+    +impact+drift+tags
     +'</div></div></div>';
 }
 
@@ -2864,6 +2954,10 @@ function renderNewsFeed(){
   }
   const days=[];const byDay={};
   items.forEach(it=>{const d=it.date||'Undated';if(!byDay[d]){byDay[d]=[];days.push(d);}byDay[d].push(it);});
+  // Rank within the day rather than across the whole feed: the day grouping is
+  // how this gets read, and a global sort would scatter today's news through it.
+  if((_newsFilter.sort||'impact')==='impact')
+    days.forEach(d=>byDay[d].sort((a,b)=>(b.impact-a.impact)||a.ticker.localeCompare(b.ticker)));
   el.innerHTML=days.map(d=>'<div class="nw-day">'+esc(d)+' <span class="nw-chip-n">'+byDay[d].length+'</span></div>'
     +byDay[d].map(renderNewsItem).join('')).join('');
 }
@@ -2898,6 +2992,14 @@ function renderNewsTab(digest){
     +'<input id="nw-q" class="nw-input" type="text" placeholder="Filter headlines, tickers, sources…" autocomplete="off" spellcheck="false" oninput="newsSetQuery(this.value)">'
     +'<select id="nw-sector" class="nw-select" onchange="newsSetSector(this.value)"><option value="">All sectors</option>'
     +sectors.map(s=>'<option value="'+esc(s)+'">'+esc(s)+'</option>').join('')+'</select>'
+    +'<select id="nw-sort" class="nw-select" onchange="newsSetSort(this.value)">'
+    +'<option value="impact">Sort: impact</option><option value="date">Sort: newest</option></select>'
+    +'</div>'
+    +'<div class="nw-tiers">'
+    +'<span class="nw-tiers-lbl">Show</span>'
+    +'<button class="nw-tierbtn on" data-tier="low" onclick="newsSetMinTier(\'low\')">Everything</button>'
+    +'<button class="nw-tierbtn" data-tier="medium" onclick="newsSetMinTier(\'medium\')">Medium&nbsp;+</button>'
+    +'<button class="nw-tierbtn" data-tier="high" onclick="newsSetMinTier(\'high\')">High only</button>'
     +'</div>'
     +'<div id="nw-chips" class="nw-chips"></div>'
     +'<div id="nw-count" class="nw-count"></div>'
