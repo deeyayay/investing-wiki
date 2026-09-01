@@ -11,6 +11,9 @@
 - **2026-08-31 (post-open)** — Credo's Toucan PCIe Retimer achieves PCI Express compliance and joins the PCIe 6.x Integrators List (company IR); separately, the co-packaged-optics topic feed carries TSMC confirming CPO mass production H2 2026 and silicon photonics >50% of the transceiver market by 2027. Q1 FY2027 earnings due 2026-09-09; sell-side raising targets ahead of the print (Seeking Alpha, Benzinga, scanx.trade).
   **Why it matters:** The PCIe retimer compliance is the next named catalyst from the drift status materializing — a concrete product-qualification milestone, not just guidance. TSMC's public CPO timeline independently corroborates the optical-displacement hedge behind the Hyperlume acquisition.
 
+- **2026-08-31 (evening)** — Credo joins a consortium developing optical connections closer to AI chips (Stock Titan).
+  **Why it matters:** A second, distinct optical-adjacency data point in the same week as the Toucan retimer milestone — direct evidence the Hyperlume optical hedge is an active industry-collaboration strategy, not a standalone acquisition sitting idle.
+
 - **2026-08-22** — Wall Street raises Credo price targets again; stock +71% YTD.
   **Why it matters:** Sell-side is marking to the AEC ramp rather than fading it — consistent with the current On track drift, but headline-level only, no new operating datapoint.
 
@@ -45,3 +48,4 @@
 - **2026-08-23** — 📰 WATCHLIST-REFRESH | 2 headlines triaged, 1 logged
 - **2026-08-28** — 📰 BRIEF (Run 2 — post-open) | 4 items triaged, 1 logged — sell call vs. 6.1% surge divergence, no new operating fact
 - **2026-08-31** — 📰 BRIEF (post-open) | 4 items + 1 topic hit triaged, 1 logged, drift confirmed — Toucan PCIe retimer compliance is the guided-to next catalyst materializing; TSMC CPO timeline corroborates the optical hedge
+- **2026-08-31** — 📰 BRIEF (evening) | 4 items triaged, 1 logged — optical-connections consortium membership adds a second optical-hedge data point; earnings-preview and insider-selling headlines were noise ahead of the 09-09 print

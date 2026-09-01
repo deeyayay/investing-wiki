@@ -17,6 +17,9 @@
 - **2026-08-27** — 10-Q filed (formalizing the Q2 FY2027 results); Form 4 filed (routine insider ownership change).
   **Why it matters:** Primary-source filing corroborates the confirmed earnings print already logged; no new fact.
 
+- **2026-08-31 (evening)** — simplywall.st: "CrowdStrike Stock And 2 AI Security Names In Focus After Washington Warning." Two more Form 4 filings also on EDGAR today.
+  **Why it matters:** Headline doesn't specify whether the "Washington warning" is a government threat advisory (demand tailwind) or scrutiny of the company itself — logged as MATERIAL but ambiguous; needs a follow-up headline with the actual content before it moves drift. Form 4s not logged (routine).
+
 ---
 
 ## Social Mentions
@@ -33,3 +36,4 @@
 - **2026-08-26** — 📰 BRIEF (Run 3) | 5 items triaged, 1 logged, drift flagged — Q2 FY2027 earnings 8-K filed, no confirmed figures in digest, queued for /dig
 - **2026-08-27** — 📰 BRIEF | 5 items triaged, 1 logged — Q2 FY2027 hard numbers confirmed ($333M net-new ARR, raised guide), resolving 08-26's open /dig item
 - **2026-08-28** — 📰 BRIEF | 5 items triaged, 1 logged — 10-Q/Form 4 filings corroborate the confirmed print, no new fact
+- **2026-08-31** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — "Washington warning" headline logged as ambiguous, needs follow-up; 2 Form 4 filings not logged (routine)

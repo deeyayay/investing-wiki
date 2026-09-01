@@ -12,8 +12,8 @@ Only US-domiciled HBM supplier — stacked on every NVDA GPU — with structural
 ## Investment Thesis
 
 > **Thesis established:** 2026-05-07
-> **Last validated:** 2026-08-28
-> **Drift status:** On track — HBM4 ramp on schedule; CY2026 supply contracted; SK hynix's Indiana HBM plant (groundbreaking 2026-08-27, targeting 2030) is a long-horizon watch item on the "only US-domiciled" claim, not a near-term change
+> **Last validated:** 2026-08-31
+> **Drift status:** On track — HBM4 ramp on schedule; CY2026 supply contracted; $250M AI investment + $22B supply-deal book reinforce demand; SK hynix's Indiana HBM plant is a long-horizon (2030) watch item on the "only US-domiciled" claim; Nvidia's newly-unveiled alternative HBM technology is an escalated watch item on the "stacked on every NVDA GPU" claim, not yet confirmed enough to move drift — flagged for /dig
 
 Micron is a cyclical semiconductor company that has found a secular growth engine inside the AI capex supercycle. HBM3E is stacked directly onto NVDA's H200 and Blackwell GPUs — roughly 30% of the GPU's bill of materials — meaning every GPU shipped is a Micron revenue event. Historically memory was a brutal commodity business (DRAM, NAND), but HBM is different: it requires advanced packaging expertise, has a limited supplier base (Micron, SK Hynix, Samsung), and commands premium pricing with long-term supply agreements. Micron is gaining share vs. SK Hynix and is the only US-domiciled HBM supplier — giving it geopolitical tailwinds as the US pushes to onshore critical semiconductor supply.
 
@@ -58,6 +58,8 @@ _Evaluated: 2026-06-17_
 
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
+| 2026-08-31 | Nvidia officially unveils an alternative high-bandwidth memory technology (escalating the 08-28 NVHBM watch item) | ↓ | A named alternative to standard HBM stacking is a direct challenge to the "stacked on every NVDA GPU" moat claim if it reallocates design wins away from Micron; not yet confirmed at the detail level, so flagged for /dig rather than a drift change |
+| 2026-08-31 | $250M AI capital commitment + $22B supply-deal book disclosed | ↑ | Two independent hard-number confirmations of the structural AI memory demand thesis, alongside the already-logged capex doubling and $50B-quarter framing |
 | 2026-05-07 | Note initialized; HBM thesis identified | → Neutral | Priority research candidate from NVDA ecosystem map; HBM as structural differentiator from prior memory cycles |
 | 2026-05-19 | NVDA Q1 FY2027 earnings beat; MU named as HBM + SSD supplier | ↑ Strengthened | NVDA demand beat = direct pull-through on MU HBM3E allocation and pricing power heading into HBM4 ramp |
 | 2026-06-17 | Score-ticker run; composite 6.5/10 Strong | → Neutral | Thesis confirmed: AI HBM demand is structural; NAND underappreciated. Score constrained by insufficient data (analyst coverage, balance sheet, ownership %) and partial tech alignment vs. SNDK pure-play |

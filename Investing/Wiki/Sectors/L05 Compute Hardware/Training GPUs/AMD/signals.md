@@ -20,6 +20,9 @@
 - **2026-08-31 (post-open)** — AMD flagged as exposed to proposed US chip tariffs (Yahoo Finance); separately, a board/governance headline asks what Tim Ryan's appointment could mean for AMD.
   **Why it matters:** Tariff exposure is a regulatory risk factor common to the whole semiconductor group, not AMD-specific — logged as MATERIAL but ambiguous impact (could raise input costs or protect US-based competitiveness depending on scope, which the headline doesn't specify). The appointment headline lacks role/board detail at this level — logged for the audit trail, not yet confirmed as a governance fact.
 
+- **2026-08-31 (evening)** — AMD Stock Alert: Advanced Micro Devices teams up with Cisco on AI infrastructure (Barchart.com).
+  **Why it matters:** A named partnership with a networking incumbent extends AMD's AI infrastructure footprint beyond silicon alone; headline lacks deal-structure detail (co-development vs. reseller), so logged as MATERIAL rather than a thesis-leg confirmation.
+
 ---
 
 ## Social Mentions
@@ -40,3 +43,4 @@
 - **2026-08-26** — 📰 BRIEF (Run 2) | 5 items triaged, 1 logged, drift flagged
 - **2026-08-29** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged — HBM supply-constraint risk flagged as a watch item
 - **2026-08-31** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — proposed US chip tariff exposure (ambiguous impact) + unconfirmed board appointment headline; insider-sale filings not logged (routine)
+- **2026-08-31** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — Cisco AI infrastructure partnership; rest of the mix was recap/listicle/price-move noise

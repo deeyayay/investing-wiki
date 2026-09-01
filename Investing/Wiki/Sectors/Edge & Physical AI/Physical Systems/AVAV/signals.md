@@ -19,6 +19,7 @@
 | 2026-08-27 | AeroVironment secures $51M Army order for Switchblade systems | Intellectia AI | Continues the confirmed order-flow pattern on the core loitering-munitions line (German Puma $30.9M, Titan MS $80.5M). |
 | 2026-08-26/27 | Bragar Eagel fiduciary-breach probe and ManTech CFO board appointment continue to recur in coverage alongside the confirmed order-flow items | scanx.trade | No new specifics on either item since first logged — no change to thesis-relevant status. |
 | 2026-08-31 | Trump administration imposes steep tariffs on drones; separately, a $500M Army contract is cited alongside a 133% revenue beat (TradingKey), and the Greek JV / NASA Mars items recur | Stocktwits / TradingKey / scanx.trade | Tariffs are new and genuinely ambiguous for AVAV — could raise import-component costs or protect US-based drone makers from cheap foreign competition; the headline doesn't specify which. Greek JV and NASA Mars items are recaps of the 08-29 entries, not new. |
+| 2026-08-30 | AVAV successfully executes a Counter-Unmanned Aircraft System laser test, ending a three-session losing streak | Stocktwits | New product-capability demonstration — directed-energy counter-UAS is part of the post-BlueHalo multi-domain platform expansion, distinct from the kinetic Puma/Switchblade line. |
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -35,3 +36,4 @@ _None yet — seeded on onboarding._
 | 2026-08-28 | 📰 BRIEF | 5 items triaged, 0 new logged — CFO board appointment and Bragar Eagel probe recur with no new specifics; humanoid-robotics topic hit had no AVAV-specific development |
 | 2026-08-29 | 📰 BRIEF | 5 items triaged, 2 logged, drift flagged — Greek expansion + record backlog, NASA Mars helicopter contract |
 | 2026-08-31 | 📰 BRIEF (post-open) | 5 items triaged, 1 logged — new Trump drone-tariff headline (ambiguous impact); Greek JV/NASA Mars items were recaps of 08-29 |
+| 2026-08-31 | 📰 BRIEF (evening) | 5 items triaged, 1 logged — CUAS laser test success; "Contract Fallout" headline is a repeat of the 08-24 campus-announcement drop, MAYHEM 10 repeats 08-25, Susquehanna 12.1K-share sale is routine |

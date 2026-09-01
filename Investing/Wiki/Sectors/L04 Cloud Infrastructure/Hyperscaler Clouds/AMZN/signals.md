@@ -20,6 +20,9 @@
 - **2026-08-31 (post-open)** — Amazon announces a multibillion-dollar data center expansion in Missouri; stock jumps on the news (Stocktwits). Two routine Form 144/Form 4 insider-sale filings also on EDGAR.
   **Why it matters:** A new, named greenfield data-center commitment is direct confirmation of the AWS infrastructure buildout the thesis depends on — distinct from the 08-29 GPU-purchase item, this is Amazon's own capacity expansion.
 
+- **2026-08-30/31 (evening)** — AWS sticks with its Nvidia GPU bet even amid surging demand for in-house Trainium chips (Stocktwits); separately, Amazon shuts a UAE data center after a strike sparked a fire amid the escalating US-Iran conflict.
+  **Why it matters:** The Nvidia-reliance framing is a continuation of the 08-29 buildout item, not a new fact. The UAE facility shutdown is genuinely new — a regional operational disruption tied to geopolitical conflict; small relative to AWS's global footprint but worth tracking if the conflict widens to other Gulf infrastructure.
+
 ---
 
 ## Social Mentions
@@ -37,3 +40,4 @@
 - **2026-08-28** — 📰 BRIEF | 5 items triaged, 1 logged — DuckLabs acquisition (no deal detail yet); EDGAR timed out for AMZN tonight
 - **2026-08-29** — 📰 BRIEF | 5 items triaged, 1 logged — 2M-GPU buildout + Nvidia partnership expansion confirms infra scale; EDGAR timed out for AMZN again
 - **2026-08-31** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — Missouri data center expansion confirms AWS capex thesis; 2 routine insider filings not logged
+- **2026-08-31** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — UAE data center shutdown (regional, conflict-driven) new; Nvidia-reliance framing recaps 08-29 buildout item

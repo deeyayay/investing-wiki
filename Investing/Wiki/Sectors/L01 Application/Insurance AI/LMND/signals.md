@@ -26,6 +26,9 @@
 - **2026-08-31 (post-open)** — Follow-on coverage of the Florida auto launch adds a scale detail: the rollout now brings Lemonade auto to "near-half" of US states (simplywall.st).
   **Why it matters:** Builds on the 08-26 Florida entry with a concrete reach metric — incremental confirmation of the geographic-expansion growth trajectory, still doesn't touch the loss-ratio/EBITDA-timeline leg the thesis hinges on.
 
+- **2026-08-30 (evening)** — TipRanks: "Lemonade (LE0) Q2 2026 Earnings Report - Results, Call & Slides" — headline carries no figures.
+  **Why it matters:** This is the next quarterly print after the Q1 2026 numbers already on file (revenue +71% YoY, EBITDA loss narrowing toward the Q4 2026 profitability target) — directly thesis-relevant but no hard numbers in today's digest. Flagged for /dig to pull actual loss-ratio/EBITDA figures.
+
 ---
 
 ## Social Mentions
@@ -43,3 +46,4 @@
 - **2026-08-26** — 📰 BRIEF (Run 2) | 4 items triaged, 1 logged, drift confirmed — Morgan Stanley backs the AV insurance bet; 3 institutional 13F disclosures (PDT Partners, EFG International, BlackRock) treated as routine, not logged
 - **2026-08-26** — 📰 BRIEF (Run 3) | 2 items triaged, 1 logged — Florida auto expansion
 - **2026-08-31** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — "near-half US reach" scale detail builds on the 08-26 Florida launch
+- **2026-08-31** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — Q2 2026 earnings report headline (no figures), flagged for /dig; insider-sale filing not logged (routine)

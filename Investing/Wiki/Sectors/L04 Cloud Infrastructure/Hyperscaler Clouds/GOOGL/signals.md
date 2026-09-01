@@ -14,6 +14,9 @@
 - **2026-08-26** — Yahoo Finance: "Berkshire Hathaway Bought $10 Billion of Alphabet Straight From the Company, Bypassing the Open Market."
   **Why it matters:** An unusual, large claim (a direct-from-issuer placement rather than an open-market buy) with no filing corroboration in this digest — logged as MATERIAL but unverified; needs /dig to confirm via 8-K/13F before treating it as a fact.
 
+- **2026-08-31 (evening)** — Waymo targets Germany in its next robotaxi rollout phase (Stocktwits); a Form 4 filing also on EDGAR today.
+  **Why it matters:** Business-line expansion, but Waymo sits outside the Google Cloud/AI-hyperscaler thesis leg specifically — logged for the audit trail as a company development, not a thesis-moving item.
+
 ---
 
 ## Social Mentions
@@ -29,3 +32,4 @@
 - **2026-06-16** — add-ticker run. facts.md + analysis.md populated from web research and SEC EDGAR.
 - **2026-08-25** — 📰 BRIEF | 5 items triaged, 1 logged, drift flagged
 - **2026-08-26** — 📰 BRIEF (Run 2) | 5 items triaged, 1 logged — Berkshire $10B direct-purchase claim, unverified, flagged for /dig
+- **2026-08-31** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — Waymo Germany expansion (adjacent, not core thesis); Form 4 not logged (routine); rest of the mix was mismatch/listicle noise

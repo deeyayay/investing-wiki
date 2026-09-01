@@ -43,6 +43,12 @@
 - **2026-08-31 (post-open)** — TechStock²: "Micron Shares Edge Down 0.3% After $50 Billion Quarter Sets Higher Bar for September 30." Separately, the HBM Supply & Memory Bottleneck topic feed carries Samsung locking 70% of memory capacity into 2031 deals (long-term contracts running 5× cheaper than spot) and HBM spot prices soaring to 5× long-term contract levels on HBM4 yield pressure (Wccftech, Moomoo).
   **Why it matters:** The $50B-quarter framing raises the bar management now has to clear at the Sept 30 print. The Samsung capacity-lock and 5× spot-price spike are independent, sector-wide confirmation of the same supply-tightness thesis from the competitive/pricing side, not just Micron's own commentary — reinforces the demand-crunch thesis with a harder market-structure data point.
 
+- **2026-08-30 (evening)** — The Motley Fool: Micron makes a "$250M AI bet" it calls a "critical next phase for memory"; biggo.com separately reports "$22 Billion in Supply Deals Signal AI Memory Boom Has Legs" per a named top investor.
+  **Why it matters:** Two independent hard-number data points on the same demand-crunch thesis: a direct capital commitment ($250M) and a quantified supply-contract book ($22B) — both reinforce the "structural AI demand tailwind" leg with figures rather than executive commentary, consistent with the capex-doubling and $50B-quarter items already on file.
+
+- **2026-08-31 (evening)** — Network World: "Nvidia unveils alternative high-bandwidth technology to bolster AI cards" (hbm-supply topic); separately, The Information reports China's CXMT made a "breakthrough in advanced memory chips."
+  **Why it matters:** The Nvidia item reads as the same NVHBM architecture shift flagged as a watch item on 08-28 (memory controller moved into the HBM stack), now getting an "unveils" framing in broader trade press — worth escalating from watch item to /dig candidate since a named, official alternative to standard HBM stacking is a direct challenge to the "stacked on every NVDA GPU" moat claim if it changes who supplies the stack. CXMT's breakthrough is a second, distinct competitive thread (Chinese DRAM/NAND capability) alongside the Chinese-IPO pressure already logged 08-24 — not yet enough detail to assess overlap with MU's specific product lines, but the pattern of Chinese competitive headlines is recurring.
+
 ---
 
 ## Social Mentions
@@ -67,3 +73,4 @@
 | 2026-08-28 | BRIEF | 📰 5 items + 1 topic hit triaged, 1 logged — SK hynix Indiana HBM groundbreaking touches the "only US-domiciled" thesis leg as a 2030-horizon watch item |
 | 2026-08-28 | BRIEF (Run 2 — post-open) | 📰 5 items + 1 topic hit triaged, 1 logged — capex doubling confirms AI memory shortage thesis with a harder data point than prior CEO commentary; NVHBM architecture shift noted as a watch item |
 | 2026-08-31 | BRIEF (post-open) | 📰 5 items + 1 topic hit triaged, 1 logged, drift flagged — $50B-quarter framing raises the bar ahead of Sept 30; Samsung's 70% capacity lock + 5× HBM spot-price spike reinforce the supply-tightness thesis |
+| 2026-08-31 | BRIEF (evening) | 📰 5 items + 2 topic hits triaged, 2 logged — $250M AI investment + $22B supply-deal book reinforce demand thesis; Nvidia's "alternative HBM tech" escalates the 08-28 NVHBM watch item to a /dig candidate; CXMT breakthrough adds a second Chinese-competition thread; Samsung capacity-lock repeat not re-logged |

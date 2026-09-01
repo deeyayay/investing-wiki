@@ -42,6 +42,9 @@
 - **2026-08-31 (post-open)** — Nvidia deepens its AI collaboration with MediaTek via a new $3.5B investment (Seeking Alpha, Moomoo) — Moomoo frames it as NVIDIA "networking itself into the broader ASIC ecosystem, from Marvell to MediaTek." Separately, the nvda-downstream topic feed carries Yahoo Finance: "Nvidia's Investment in OpenAI Highlights Circular Financing Concerns" — a bearish counter-framing of the same investment pattern the 08-28 IBD piece read bullishly.
   **Why it matters:** The MediaTek deal is a new, concrete dollar figure extending the balance-sheet-backed ecosystem-investment pattern (OpenAI, Nebius, SpaceX, Cloverleaf) into the ASIC/custom-silicon space — worth watching for competitive read-through on MRVL. The circular-financing narrative now has both a bull and a bear framing on the same pattern within a week; neither headline adds a new fact, so this stays a watch item, not a drift-moving one.
 
+- **2026-08-31 (evening)** — Supply Chain Dive: "Nvidia says supply shortages are limiting AI revenue growth" (nvda-downstream topic).
+  **Why it matters:** A direct management admission that revenue is capped by supply, not demand — consistent with and slightly sharper than the existing "Blackwell demand intact" framing; confirms the demand side of the thesis remains structurally strong even as it caps near-term upside. Not a drift change, but the clearest management statement yet on the supply constraint itself.
+
 ---
 
 ## Social Mentions
@@ -78,3 +81,4 @@
 - **2026-08-28** — 📰 BRIEF (Run 2 — post-open) | 5 items + 1 topic hit triaged, 1 logged — $442B stock surge quantifies the beat-and-raise reaction; GPU-leasing-restriction report (denied by NVIDIA) noted as a new watch item touching BRUN/IREN
 - **2026-08-29** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged — $96.2B Q2 revenue figure finally confirmed at headline level; UBS PT raised to $300
 - **2026-08-31** — 📰 BRIEF (post-open) | 5 items + 1 topic hit triaged, 1 logged — $3.5B MediaTek investment extends the ecosystem-investment pattern into ASIC/custom silicon (watch for MRVL read-through); circular-financing narrative now has both bull and bear framings, no new fact
+- **2026-08-31** — 📰 BRIEF (evening) | 5 items + 1 topic hit triaged, 1 logged — Nvidia says supply shortages are limiting AI revenue growth; MediaTek follow-on coverage was recap of the 08-31 item, EDGAR timed out

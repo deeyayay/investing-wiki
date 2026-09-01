@@ -12,8 +12,8 @@ Custom AI ASIC designer for hyperscalers (Google, Amazon) plus high-speed SerDes
 ## Investment Thesis
 
 > **Thesis established:** 2026-05-07
-> **Last validated:** 2026-06-17
-> **Drift status:** On track — Amazon Trainium2 design win confirmed; hyperscaler custom silicon capex expanding
+> **Last validated:** 2026-08-31
+> **Drift status:** On track — record $2.74B data center quarter (+46% YoY), $18B-by-2028 DC chip guide, Google relationship sized at $12B (resolves the unverified "$120B" framing); delay of some Google AI revenue beyond 2029 is a new open question, not yet a drift change
 
 Marvell is a dual-angle play in AI silicon. First, they design custom AI accelerators (ASICs) for hyperscalers who want to reduce NVDA dependency — Google's TPU, Amazon's Trainium, and potentially Microsoft's Maia all have Marvell silicon inside or adjacent. Second, Marvell makes the SerDes (high-speed interconnect) and PAM4 DSP chips that sit inside optical transceivers and switch fabrics — the plumbing that connects GPUs to each other and to storage. This means Marvell profits whether the AI compute layer is NVDA or custom silicon. CEO Matt Murphy has transformed Marvell from a commoditized storage chip company into an AI silicon platform. Revenue grew from ~$2.3B (FY2017) to $8.2B (FY2026), +42% YoY.
 
@@ -60,6 +60,7 @@ _Evaluated: 2026-06-17_
 
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
+| 2026-08-31 | Record $2.74B DC quarter (+46% YoY), $18B-by-2028 guide, Google deal sized at $12B; shares fell 10.3% on news Google AI revenue is delayed beyond 2029 | ↑ Strengthened | Hard numbers resolve the standing Google-deal ambiguity in the thesis's favor; the delay is a specific, narrower risk than the prior open-ended uncertainty, and doesn't touch the confirmed DC growth rate or 2028 guide |
 | 2026-05-07 | Note initialized from NVDA ecosystem map | → Neutral | Dual-angle thesis identified: custom ASICs + interconnect DSPs |
 | 2026-05-07 | NVDA-IREN partnership + hyperscaler AI capex commentary | ↑ Strengthened | Custom silicon and interconnect thesis validated by continued hyperscaler spending |
 | 2026-05-19 | NVDA Q1 FY2027 earnings — MRVL named as interconnect chip supplier | ↑ Strengthened | SerDes/DSP design-win cycle confirmed; strong NVDA guidance extends the interconnect pipeline |
