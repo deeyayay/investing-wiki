@@ -2803,8 +2803,8 @@ const _newsFilter={q:'',themes:new Set(),sector:'',minTier:'low',sort:'impact'};
 const NW_IMPACT_RULES=[
   ['regulatory',85,/\b(ftc|doj|sec (probe|investigat)|antitrust|lawsuit|sued|suing|settlement|injunction|export control|sanction|tariff|ban(ned|s)?\b|subpoena|recall|fined)\b/i],
   ['deal',80,/\b(contract|design win|supply agreement|partnership|partners with|merger|takeover|joint venture|awarded|agrees to (buy|acquire)|acquires? (?!shares|stake|a stake|holdings)\w+|wins? (a |the )?(deal|order|contract)|signs? (a |the )?(deal|contract|agreement)|lands? (a |the )?(deal|contract))\b/i],
-  ['guidance',78,/\b(guidance|outlook|forecast|pre-?announc\w+|raises? (its )?(full[- ]year|fy|q\d)|cuts? (its )?(full[- ]year|fy|q\d)|warns?|profit warning)\b/i],
-  ['capital',72,/\b(buyback|repurchase|dividend|secondary offering|equity offering|convertible|dilut\w+|capital raise|debt offering|spin-?off|ipo)\b/i],
+  ['guidance',78,/\b(guidance|pre-?announc\w+|profit warning|(raises?|cuts?|lifts?|lowers?|reaffirms?|withdraws?) (its |the |full[- ]year |fy ?\d*|q\d )*(guidance|outlook|forecast)|(full[- ]year|fy|q\d) (guidance|outlook|forecast)|warns? (on|of|that))\b/i],
+  ['capital',72,/\b(buyback|repurchase|secondary offering|equity offering|convertible|dilut\w+|capital raise|debt offering|spin-?off|\bipo\b|(declares?|raises?|hikes?|cuts?|suspends?|initiates?) (a |its |the )?(quarterly )?dividend|dividend (increase|hike|cut|suspension))\b/i],
   ['management',70,/\b(ceo|cfo|coo|chairman|president)\b.{0,40}\b(steps? down|resign\w*|depart\w*|appoint\w*|names?|hires?|succeed\w*|ousted|fired)\b/i],
   ['earnings',55,/\b(earnings|quarterly results|q[1-4] (results|report)|reports? (q[1-4]|results)|beats?|misses?|revenue (rose|fell|up|down))\b/i],
   ['product',52,/\b(launch\w*|ships?|shipping|tape-?out|qualif\w+|ramp\w*|capacity|new fab|foundry deal|volume production)\b/i],
@@ -2816,15 +2816,22 @@ const NW_NOISE_RULES=[
   ['pricemove',15,/\b(moved (up|down)|trading|rises?|falls?|slips?|jumps?|drops?|gains?|climbs?|dips?|soars?|sinks?|surges?|plunges?|up|down)(\s+(by|over|nearly|about|more than))?\s+[\d.]+\s*%|\b(premarket|pre-?market) (price|move|action)|facts behind the movement|% (higher|lower)|key drivers/i],
   ['roundup',20,/\b(top \d+|best|worst) .{0,24}stocks?\b|stocks? (to watch|to buy)|morning squawk|market (wrap|roundup|open|close)|stocks? open (lower|higher)|msci|s&p 500 (entry|inclusion)|index inclusion|nikkei|kospi/i]
 ];
+// Form 4s, 144s and N-PX proxy-voting reports are routine paperwork that
+// arrives constantly — ranking them as "a filing" put "N-PX — Annual Report of
+// proxy voting record" above real news.
 const NW_FILING_WEIGHT=[[/\b(1\.01|2\.01|5\.02|8\.01)\b/,100],[/\b(2\.02|7\.01|9\.01)\b/,92],
-  [/\b10-K\b/i,95],[/\b10-Q\b/i,90],[/\b8-K\b/i,88],[/\b(425|S-1|S-3|424B)\b/i,86],
-  [/\bSC 13[DG]\b/i,40],[/\bForm 4\b|^4 —/i,35]];
+  [/^\s*10-K\b|\b10-K —/i,95],[/^\s*10-Q\b|\b10-Q —/i,90],[/^\s*8-K\b|\b8-K —/i,88],
+  [/^\s*(425|S-1|S-3|424B)\b/i,86],[/^\s*DEF ?14A\b|proxy statement/i,62],
+  [/^\s*SC 13[DG]\b|schedule 13[dg]/i,42],
+  [/^\s*4\/?A?\b|statement of changes in beneficial/i,22],
+  [/^\s*144\b|proposed sale of securities/i,18],
+  [/^\s*N-PX\b|proxy voting record/i,12]];
 
 function nwScoreImpact(title,kind){
   title=title||'';
   if(kind==='filing'){
     for(const [rx,sc] of NW_FILING_WEIGHT) if(rx.test(title)) return [sc,'filing'];
-    return [84,'filing'];
+    return [58,'filing'];
   }
   if(NW_OWNERSHIP.test(title)) return [8,'ownership'];
   for(const [tag,sc,rx] of NW_IMPACT_RULES) if(rx.test(title)) return [sc,tag];

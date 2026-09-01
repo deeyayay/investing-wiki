@@ -486,10 +486,17 @@ IMPACT_RULES = [
                        r"acquires? (?!shares|stake|a stake|holdings)\w+|"
                        r"wins? (a |the )?(deal|order|contract)|signs? (a |the )?(deal|contract|agreement)|"
                        r"lands? (a |the )?(deal|contract))\b"),
-    ("guidance",   78, r"\b(guidance|outlook|forecast|pre-?announc\w+|raises? (its )?(full[- ]year|fy|q\d)|"
-                       r"cuts? (its )?(full[- ]year|fy|q\d)|warns?\b|profit warning)\b"),
-    ("capital",    72, r"\b(buyback|repurchase|dividend|secondary offering|equity offering|"
-                       r"convertible|dilut\w+|capital raise|debt offering|spin-?off|ipo)\b"),
+    # A bare "outlook" matched clickbait framing ("Weekend Outlook", "Analyst
+    # Outlook"), so it now has to be the company's own outlook being changed.
+    ("guidance",   78, r"\b(guidance|pre-?announc\w+|profit warning|"
+                       r"(raises?|cuts?|lifts?|lowers?|reaffirms?|withdraws?) (its |the |full[- ]year |fy ?\d*|q\d )*"
+                       r"(guidance|outlook|forecast)|"
+                       r"(full[- ]year|fy|q\d) (guidance|outlook|forecast)|warns? (on|of|that))\b"),
+    # "dividend" alone matched yield commentary, so it needs an actual action.
+    ("capital",    72, r"\b(buyback|repurchase|secondary offering|equity offering|"
+                       r"convertible|dilut\w+|capital raise|debt offering|spin-?off|\bipo\b|"
+                       r"(declares?|raises?|hikes?|cuts?|suspends?|initiates?) (a |its |the )?"
+                       r"(quarterly )?dividend|dividend (increase|hike|cut|suspension))\b"),
     ("management", 70, r"\b(ceo|cfo|coo|chairman|president)\b.{0,40}\b(steps? down|resign\w*|"
                        r"depart\w*|appoint\w*|names?|hires?|succeed\w*|ousted|fired)\b"),
     # earnings is tested before product: "earnings on deck: can the ramp continue"
@@ -525,12 +532,22 @@ IMPACT_NOISE_RULES = [
 IMPACT_COMPILED = [(t, sc, re.compile(p, re.I)) for t, sc, p in IMPACT_RULES]
 IMPACT_NOISE_COMPILED = [(t, sc, re.compile(p, re.I)) for t, sc, p in IMPACT_NOISE_RULES]
 # 8-K item numbers that carry real weight; a Form 4 or 13F is routine.
+# Not every filing is a signal. Form 4s, 144s and N-PX proxy-voting reports are
+# routine paperwork that arrives constantly; ranking them as "a filing" put
+# "N-PX — Annual Report of proxy voting record" above real news and let three of
+# them eat a ticker's whole per-ticker allowance.
 FILING_WEIGHT = [
     (r"\b(1\.01|2\.01|5\.02|8\.01)\b", 100),   # material agreement, acquisition, officer change
     (r"\b(2\.02|7\.01|9\.01)\b", 92),           # results, Reg FD
-    (r"\b10-K\b", 95), (r"\b10-Q\b", 90), (r"\b8-K\b", 88),
-    (r"\b(425|S-1|S-3|424B)\b", 86),               # M&A / offering paperwork
-    (r"\bSC 13[DG]\b", 40), (r"\bForm 4\b|\b\b4 —", 35),
+    (r"^\s*10-K\b|\b10-K —", 95),
+    (r"^\s*10-Q\b|\b10-Q —", 90),
+    (r"^\s*8-K\b|\b8-K —", 88),
+    (r"^\s*(425|S-1|S-3|424B)\b", 86),             # M&A / offering paperwork
+    (r"^\s*DEF ?14A\b|proxy statement", 62),
+    (r"^\s*SC 13[DG]\b|schedule 13[dg]", 42),      # activist/large-holder, occasionally matters
+    (r"^\s*4/?A?\b|statement of changes in beneficial", 22),   # Form 4 insider routine
+    (r"^\s*144\b|proposed sale of securities", 18),
+    (r"^\s*N-PX\b|proxy voting record", 12),       # fund proxy voting — pure noise
 ]
 FILING_COMPILED = [(re.compile(p, re.I), sc) for p, sc in FILING_WEIGHT]
 
@@ -542,7 +559,7 @@ def score_impact(item):
         for rx, sc in FILING_COMPILED:
             if rx.search(title):
                 return sc, "filing"
-        return 84, "filing"
+        return 58, "filing"
     # 13F/ownership phrasing is unambiguous and routinely collides with the deal
     # vocabulary, so it wins outright rather than falling through the signal rules.
     own_tag, own_sc, own_rx = IMPACT_NOISE_COMPILED[0]
@@ -677,8 +694,11 @@ def main(argv=None):
             time.sleep(0.5)
         if ticker_failed == len(chosen):
             continue  # nothing came back at all; already recorded in errors
-        # Filings first: a primary source outranks a headline about it.
-        items.sort(key=lambda i: (i.get("kind") != "filing", i.get("d") or ""), reverse=False)
+        # Rank by impact, not by kind. A material 8-K still beats any headline,
+        # but a Form 4 no longer displaces real news just for being a filing.
+        for it in items:
+            it["impact"], it["impact_tag"] = score_impact(it)
+        items.sort(key=lambda i: (-i["impact"], i.get("d") or ""))
         fresh = []
         for item in items:
             if item.get("kind") == "news" and NOISE_RE.search(item["t"]):
@@ -687,13 +707,11 @@ def main(argv=None):
             if key in state["seen"]:
                 continue
             state["seen"][key] = today
-            item["impact"], item["impact_tag"] = score_impact(item)
             item["impact_tier"] = impact_tier(item["impact"])
             fresh.append(item)
             if len(fresh) >= args.max_per_ticker:
                 break
         # Best items first within a ticker, so a truncated list keeps the signal.
-        fresh.sort(key=lambda i: (-i.get("impact", 0), i.get("d") or ""), reverse=False)
         state["last_included"][e["ticker"]] = today
         if fresh:
             folder_rel = os.path.relpath(e["folder"], REPO_ROOT) if e["folder"] else None

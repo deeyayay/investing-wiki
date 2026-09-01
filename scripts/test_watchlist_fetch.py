@@ -236,6 +236,18 @@ class GuardTests(unittest.TestCase):
             {"t": "Old North State Trust LLC Acquires Shares of 5,871 AMD", "kind": "news"})
         self.assertEqual(tag, "ownership")
 
+    def test_analyst_price_target_is_not_company_guidance(self):
+        """'Raises Target Price' is an analyst action; putting 'target' in the
+        guidance pattern ranked broker notes alongside a real guidance change."""
+        sc, tag = w.score_impact(
+            {"t": "Scotiabank Maintains Palo Alto Networks With Buy Rating, Raises Target Price to $250",
+             "kind": "news"})
+        self.assertEqual(tag, "analyst")
+        sc2, tag2 = w.score_impact(
+            {"t": "Arista Networks Is Still a Buy After a Third Guidance Hike?", "kind": "news"})
+        self.assertEqual(tag2, "guidance")
+        self.assertGreater(sc2, sc)
+
     def test_price_recap_is_not_a_product_launch(self):
         """'Key Drivers Unveiled' made a percent-move recap look like a launch."""
         sc, tag = w.score_impact(
@@ -243,12 +255,39 @@ class GuardTests(unittest.TestCase):
              "kind": "news"})
         self.assertEqual(w.impact_tier(sc), "low")
 
-    def test_filings_outrank_every_headline(self):
+    def test_material_filings_outrank_headlines(self):
         f, _ = w.score_impact({"t": "8-K — Current report (items 1.01, 2.03)", "kind": "filing"})
         best_news = max(sc for sc, _ in
                         (w.score_impact({"t": t, "kind": "news"}) for t in
                          ["FTC sues Amazon", "Company awarded a contract", "raises full-year guidance"]))
         self.assertGreater(f, best_news)
+
+    def test_routine_paperwork_does_not_rank_as_a_filing(self):
+        """Form 4s, 144s and N-PX reports arrive constantly. Ranking them as
+        "a filing" put proxy-voting records above real news and let three of
+        them consume a ticker's entire per-ticker allowance."""
+        for title in ["N-PX — Annual Report of proxy voting record",
+                      "144 — Report of proposed sale of securities",
+                      "4 — Statement of changes in beneficial ownership of securities"]:
+            sc, _ = w.score_impact({"t": title, "kind": "filing"})
+            self.assertEqual(w.impact_tier(sc), "low", title)
+        material, _ = w.score_impact({"t": "8-K — Current report", "kind": "filing"})
+        routine, _ = w.score_impact({"t": "4 — Statement of changes", "kind": "filing"})
+        self.assertGreater(material, routine)
+
+    def test_routine_filings_do_not_crowd_out_news(self):
+        """Three Form 4s used to take three of a ticker's five slots purely for
+        being filings, pushing real headlines out of the digest entirely."""
+        def mixed(entry, hours):
+            return ([item("4 — Statement of changes in beneficial ownership",
+                          kind="filing", url="f%d" % i) for i in range(3)]
+                    + [item("Company awarded a $500M supply contract"),
+                       item("FTC opens an antitrust investigation"),
+                       item("raises full-year guidance")])
+        self.run_fetch(mixed)
+        kept = [h["t"] for h in self.digest_tickers()[0]["headlines"]]
+        self.assertNotIn("4 — Statement of changes in beneficial ownership", kept[:3],
+                         "routine filings displaced real news: %r" % kept)
 
     def test_unknown_provider_name_is_rejected(self):
         with self.assertRaises(SystemExit):
