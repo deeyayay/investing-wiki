@@ -24,6 +24,13 @@ management:
     notes: "Co-founder; 3.47M shares (Oct 2025); operational execution lead"
 
 earnings:
+  - quarter: Q1_FY2027
+    date: "2026-09-01"
+    revenue_b: 0.479
+    eps_nongaap: 1.20
+    beat: true
+    guidance_next_b: 0.530
+    notes: "Period ended 2026-08-01; +9.6% QoQ, +114.7% YoY; GAAP GM 64.5% (down from 68.2% prior Q) vs. non-GAAP GM 68.0% (flat vs. 68.3% prior Q) — GAAP/non-GAAP gap widened to 3.5pt from $11.0M of DustPhotonics-related intangible amortization now in COGS (was $0 prior Q); shares -11.8% on the GAAP margin optics despite the revenue/EPS beat. Q2 FY2027 guide: rev $525-535M, non-GAAP GM 67-69% (GAAP 62.9-64.9%, ~4.1pt gap guided). Corrects prior-record's 2026-09-09 earnings-date assumption — actual report date was 2026-09-01."
   - quarter: Q4_FY2026
     date: "2026-06-01"
     revenue_b: 0.437
@@ -61,6 +68,14 @@ earnings:
     notes: "+126% YoY; GAAP net income $52.2M (+284% YoY); gross margin ~67%"
 
 filings:
+  - type: 8-K
+    period: Q1_FY2027
+    date: "2026-09-01"
+    url: "https://www.sec.gov/Archives/edgar/data/1807794/000162828026059795/crdo-20260901.htm"
+  - type: 10-K
+    period: FY2026
+    date: "2026-06-15"
+    url: "https://www.sec.gov/Archives/edgar/data/1807794/000162828026043303/0001628280-26-043303-index.htm"
   - type: "Form SD"
     period: CY2025_Minerals
     date: "2026-06-01"
@@ -70,7 +85,7 @@ filings:
     date: "2026-06-01"
     url: "https://www.sec.gov/Archives/edgar/data/0001807794/000162828026039474/crdo-20260528.htm"
   - type: 8-K
-    period: ATM_Offering
+    period: DustPhotonics_Agreement_and_ATM_Offering
     date: "2026-04-13"
     url: "https://www.sec.gov/Archives/edgar/data/1807794/000162828026024892/crdo-20260413.htm"
   - type: 8-K
@@ -98,12 +113,27 @@ filings:
     date: "2025-08-21"
     url: "https://www.sec.gov/Archives/edgar/data/0001807794/000180779425000010/crdo-20250825.htm"
 
+acquisitions:
+  - target: DustPhotonics
+    announced: "2026-04-13"
+    closed: "2026-05-28"
+    consideration: "$750M cash + ~0.92M CRDO shares upfront; up to 3.21M additional shares contingent on financial milestones"
+    rationale: "Israel-based fabless SiPho PIC (silicon photonics photonic integrated circuit) developer, 400G/800G/1.6T with 3.2T roadmap; brings SiPho PIC in-house for Credo's ZeroFlap optical transceiver platform, feeds NPO/CPO design wins; LightCounting est. SiPho PIC TAM $6B by 2030"
+    balance_sheet_impact: "Goodwill $92.8M→$986.4M and intangibles $29.3M→$378.8M between the May 2, 2026 and Aug 1, 2026 quarter-ends; cash+ST investments fell ~$679M same period; drives $11.0M/quarter of intangible amortization now embedded in COGS (was $0 pre-close), source of the Q1 FY2027 GAAP-vs-non-GAAP gross margin gap widening (64.5% GAAP vs 68.0% non-GAAP)"
+    source: "SEC 8-K EX-99.1, 2026-04-13 (https://www.sec.gov/Archives/edgar/data/1807794/000162828026024892/april20268-kex991.htm)"
+  - target: Hyperlume
+    announced: null
+    closed: "on or before 2026-05-02 (Q4 FY2026)"
+    consideration: "$92M"
+    rationale: "microLED-based optical interconnect technology"
+    source: "analysis.md Conviction Log 2026-06-07; balance sheet goodwill $92.798M as of 2026-05-02 matches this deal, distinct from and prior to DustPhotonics"
+
 moat:
   type: "IP/Patent"
   pricing_power: high
   competition_intensity: medium
   made_in_usa: false
-  notes: "Proprietary SerDes IP end-to-end; hyperscaler design-win co-dev creates switching costs"
+  notes: "Proprietary SerDes IP end-to-end; hyperscaler design-win co-dev creates switching costs; DustPhotonics (closed 2026-05-28) brings silicon photonics PIC in-house, extending the stack to SerDes + DSP + SiPho + system integration"
 
 metrics:
   score: 8.0
@@ -113,6 +143,6 @@ metrics:
   analyst_pt: 278
   analyst_upside_pct: null
 
-last_updated: "2026-06-07"
-next_earnings: "2026-09-09"
+last_updated: "2026-09-02"
+next_earnings: "~2026-12-02 (est., pattern-based — Q2 FY2027 ends 2026-10-31, company has reported ~4-5 weeks after quarter-end each of the last 4 quarters; no confirmed date given in the Q1 FY2027 release)"
 ---
