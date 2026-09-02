@@ -58,6 +58,7 @@ _Evaluated: 2026-06-17_
 
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
+| 2026-09-02 | Micron's tightly-coupled DRAM claim (>10x HBM bandwidth) + NVIDIA Rubin CPX confirmed on HBM4 | ↑ | Micron's own next-gen roadmap item plus continued HBM4 pull-through from NVIDIA's next GPU architecture reinforce the demand-side thesis; a $100B backlog figure in the same cycle is unconfirmed and queued for /dig |
 | 2026-08-31 | Nvidia officially unveils an alternative high-bandwidth memory technology (escalating the 08-28 NVHBM watch item) | ↓ | A named alternative to standard HBM stacking is a direct challenge to the "stacked on every NVDA GPU" moat claim if it reallocates design wins away from Micron; not yet confirmed at the detail level, so flagged for /dig rather than a drift change |
 | 2026-08-31 | $250M AI capital commitment + $22B supply-deal book disclosed | ↑ | Two independent hard-number confirmations of the structural AI memory demand thesis, alongside the already-logged capex doubling and $50B-quarter framing |
 | 2026-05-07 | Note initialized; HBM thesis identified | → Neutral | Priority research candidate from NVDA ecosystem map; HBM as structural differentiator from prior memory cycles |

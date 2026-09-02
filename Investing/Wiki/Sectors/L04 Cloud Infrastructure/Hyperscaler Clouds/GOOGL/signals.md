@@ -20,6 +20,9 @@
 - **2026-09-01 (post-open)** — TradingView: UK regulators reach a £260M App Store settlement with Google.
   **Why it matters:** A real legal/regulatory cost, but it's a Play Store matter unrelated to the Google Cloud/AI-hyperscaler thesis leg — logged for the audit trail, not thesis-moving.
 
+- **2026-09-02 (post-open)** — Traders Union: Google launches Gemini Enterprise for Financial Services.
+  **Why it matters:** A named vertical-AI enterprise product built on Gemini — downstream application layer rather than the Cloud infrastructure/inference-stack leg itself, but it is evidence the proprietary model is being packaged into sellable enterprise products. Logged as MATERIAL, adjacent to the core thesis.
+
 ---
 
 ## Social Mentions
@@ -37,3 +40,4 @@
 - **2026-08-26** — 📰 BRIEF (Run 2) | 5 items triaged, 1 logged — Berkshire $10B direct-purchase claim, unverified, flagged for /dig
 - **2026-08-31** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — Waymo Germany expansion (adjacent, not core thesis); Form 4 not logged (routine); rest of the mix was mismatch/listicle noise
 - **2026-09-01** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — £260M UK App Store settlement (adjacent, not core Cloud thesis); director sale not logged (routine 10b5-1)
+- **2026-09-02** — 📰 BRIEF (post-open) | 5 items + 1 topic hit triaged, 1 logged — Gemini Enterprise for Financial Services launch (adjacent product, not core Cloud thesis); Meta-focused headline was a company mismatch, rest was market-move noise

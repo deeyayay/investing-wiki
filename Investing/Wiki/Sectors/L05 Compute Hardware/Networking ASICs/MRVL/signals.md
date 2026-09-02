@@ -29,6 +29,9 @@
 - **2026-09-01 (post-open)** — Stocktwits: Marvell has shipped over 5M photonic chips ahead of its S&P 500 index entry.
   **Why it matters:** A concrete shipment-volume data point on the interconnect/optics side of the dual-angle thesis — direct execution proof rather than guidance language. The S&P 500 entry is a market-structure event (index-fund buying) rather than a fundamental one.
 
+- **2026-09-02 (post-open)** — co-packaged-optics topic feed: digitimes reports Marvell sees silicon photonics scaling from late 2027, with Taiwan and TSMC at the center.
+  **Why it matters:** A forward timeline detail on the same interconnect/optics leg as the 09-01 photonic-chip shipment item — names TSMC as a manufacturing partner, worth tracking alongside the standing Google-deal /dig queue but not itself a new demand data point.
+
 ---
 
 ## Social Mentions
@@ -57,3 +60,4 @@
 | 2026-08-31 | BRIEF (post-open) | 📰 5 items + 1 topic hit triaged, 1 logged — outgoing CFO $65M share sale added to /dig queue; NVDA-MediaTek $3.5B deal noted as a competitive-dynamics watch item |
 | 2026-08-31 | BRIEF (evening) | 📰 5 items triaged, 1 logged, drift note updated — record $2.74B DC quarter (+46%), $18B-by-2028 guide, and the real $12B Google figure largely resolve the standing Google-deal ambiguity; new delay-beyond-2029 detail narrows /dig queue rather than closing it |
 | 2026-09-01 | BRIEF (post-open) | 📰 5 items triaged, 1 logged, conviction ↑ — 5M photonic chips shipped confirms interconnect/optics execution ahead of S&P 500 entry |
+| 2026-09-02 | BRIEF (post-open) | 📰 5 items + 1 topic hit triaged, 1 logged — silicon photonics scaling from late 2027 (TSMC-centered) adds a timeline detail to the optics leg; earnings-recap and Form 144 headlines were repeats/routine |

@@ -26,6 +26,9 @@
 - **2026-09-01 (post-open)** — MarketWatch/Investing.com: FTC reportedly suing Amazon over billions in allegedly hidden ad fees, shares fell ~3% on the report. Separately, Citizens reiterated its Amazon rating citing AWS GPU expansion.
   **Why it matters:** A regulatory suit over ad-fee disclosure is a real legal/reputational cost but sits outside the AWS/Trainium thesis leg specifically — logged as company-level material, not thesis-moving. The Citizens reiteration is a minor confirming data point on the AWS/GPU capacity leg already tracked.
 
+- **2026-09-02 (post-open)** — The FTC suit quantifies its claim at more than $20B in allegedly hidden ad overcharges; shares dropped 4.6% on the news, a sharper reaction than the ~3% move on the 09-01 initial report.
+  **Why it matters:** Confirms the 09-01 item was accurate and puts a hard number on the exposure — still an ad-business legal matter outside the AWS/Trainium thesis leg, logged for the audit trail as an escalation of the same case, not thesis-moving.
+
 ---
 
 ## Social Mentions
@@ -45,3 +48,4 @@
 - **2026-08-31** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — Missouri data center expansion confirms AWS capex thesis; 2 routine insider filings not logged
 - **2026-08-31** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — UAE data center shutdown (regional, conflict-driven) new; Nvidia-reliance framing recaps 08-29 buildout item
 - **2026-09-01** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — FTC sues Amazon over alleged hidden ad fees, shares fell ~3% on the report; Citizens reiterated its rating citing AWS GPU expansion
+- **2026-09-02** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — FTC suit quantified at $20B, shares down 4.6% (escalation of 09-01 item, not thesis-moving)

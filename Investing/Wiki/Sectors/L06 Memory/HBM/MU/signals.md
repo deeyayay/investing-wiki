@@ -55,6 +55,9 @@
 - **2026-09-01 (evening)** — The Globe and Mail: Stanley Druckenmiller's family office exited its Micron position in Q2, rotating into an unnamed "AI superstar" name; separately Jim Cramer reiterates a bullish MU stance despite Samsung buyback-related fallout coverage.
   **Why it matters:** A high-profile macro investor's Q2 13F exit is notable sentiment/positioning context but is a backward-looking filing, not a new fundamental fact — doesn't touch the HBM4 ramp, supply-deal book, or either open /dig watch item (SK hynix Indiana, Nvidia's NVHBM). Logged as MATERIAL context only.
 
+- **2026-09-02 (post-open)** — hbm-supply topic feed: Micron says its own tightly-coupled DRAM architecture could deliver more than 10x HBM bandwidth (digitimes); separately, NVIDIA's newly-detailed "Rubin CPX" GPU spec uses HBM4 memory with no GDDR7 (TechPowerUp). Also finance.biggo.com: Micron's contract backlog now framed at $100B, up from the $22B supply-deal book logged 08-30.
+  **Why it matters:** The tightly-coupled DRAM claim is Micron's own next-gen roadmap item — a potential future alternative/complement to HBM rather than a competitive threat, worth tracking alongside the standing NVHBM/zHBM watch item. Rubin CPX's HBM4 spec is direct hyperscaler-GPU pull-through confirming continued HBM4 demand into NVIDIA's next architecture. The $100B backlog figure, if accurate, is a large step up from the $22B previously logged and reinforces the structural AI demand tailwind leg — but the framing is a single secondary source, so treat the number as unconfirmed pending a primary-source figure.
+
 ---
 
 ## Social Mentions
@@ -82,3 +85,4 @@
 | 2026-08-31 | BRIEF (evening) | 📰 5 items + 2 topic hits triaged, 2 logged — $250M AI investment + $22B supply-deal book reinforce demand thesis; Nvidia's "alternative HBM tech" escalates the 08-28 NVHBM watch item to a /dig candidate; CXMT breakthrough adds a second Chinese-competition thread; Samsung capacity-lock repeat not re-logged |
 | 2026-09-01 | BRIEF (post-open) | 📰 5 items + 1 topic hit triaged, 1 logged — continued NVHBM coverage plus Samsung's new zHBM roadmap add a second competitive thread to the standing /dig candidate on the "stacked on every NVDA GPU" claim |
 | 2026-09-01 | BRIEF (evening) | 📰 5 items triaged, 1 logged — Druckenmiller's Q2 13F exit noted as sentiment context; MU earnings-recap headlines (JPMorgan PT, "blowout Q3") were repeats of the already-logged $50B-quarter print |
+| 2026-09-02 | BRIEF (post-open) | 📰 5 items + 1 topic hit triaged, 1 logged, conviction ↑ — Micron's own tightly-coupled DRAM (>10x HBM bandwidth) claim + NVIDIA Rubin CPX HBM4 spec confirm demand pipeline; $100B backlog figure unconfirmed, added to /dig queue alongside NVHBM/zHBM |
