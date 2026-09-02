@@ -23,6 +23,9 @@
 - **2026-08-27/28** — Competitive read-through: SK hynix holds groundbreaking ceremony for its first US HBM production base in Indiana, targeting a key memory production role by 2030 (SK hynix, CNBC, Korea Herald).
   **Why it matters:** A rival breaking ground on US soil doesn't touch Kioxia's Japan-based NAND fab scale directly, but it's a reminder that the memory-onshoring wave benefiting the sector isn't Kioxia-exclusive — long multi-year timeline (2030), not a near-term competitive threat.
 
+- **2026-09-01 (evening)** — Seeking Alpha issues a rating downgrade on Kioxia (OTCMKTS:KXHCF), framed around supply/demand dynamics; separately, the already-logged $31B Japan investment recurs across three more outlets (FXLeaders, inkl.com).
+  **Why it matters:** First bearish analyst take seen in this ticker's coverage — worth noting as a counter-signal amid an otherwise uniformly bullish capacity-expansion narrative, though the headline gives no specific concern beyond "supply and demand." Not thesis-breaking on its own.
+
 ---
 
 ## Social Mentions
@@ -41,3 +44,4 @@
 - **2026-08-26** — 📰 BRIEF | 5 items triaged, 1 logged — split/merger corporate-action story still unresolved, queued for /dig
 - **2026-08-26** — 📰 BRIEF (Run 3) | 5 items triaged, 1 logged, drift flagged — $6.27B Japan facility investment confirms capacity-expansion thesis; split/merger story still unresolved from prior runs
 - **2026-08-28** — 📰 BRIEF | 5 items + 1 topic hit triaged, 2 logged — SK hynix Indiana HBM groundbreaking noted as competitive context (2030 timeline, not near-term)
+- **2026-09-01** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — first bearish analyst take (Seeking Alpha downgrade) logged as a counter-signal; $31B Japan investment recap not re-logged

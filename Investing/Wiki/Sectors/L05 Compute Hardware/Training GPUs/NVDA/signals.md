@@ -48,6 +48,9 @@
 - **2026-09-01 (post-open)** — TechStock²: Nvidia's $20B buyback (0.4% of market cap) cited alongside the stock's 1.5% gain; separately, nvda-downstream topic feed carries Nvidia's $3B investment in SB Energy anchoring SoftBank's data-center IPO push (TradingView).
   **Why it matters:** The buyback is a routine capital-return data point, small relative to market cap. The SB Energy investment extends the same balance-sheet-backed ecosystem-investment pattern (OpenAI, Nebius, SpaceX, Cloverleaf, MediaTek) into power/data-center infrastructure — a demand-side signal, not a new fact about the GPU/CUDA thesis itself.
 
+- **2026-09-01 (evening)** — finance.yahoo.com: Nvidia expands its AI partnership with Amazon Web Services.
+  **Why it matters:** AWS is simultaneously NVIDIA's largest customer and Trainium's builder — a partnership expansion even as AWS pushes custom silicon is a data point that GPU demand isn't being displaced yet, reinforcing the CUDA-ecosystem switching-cost thesis. Headline lacks deal specifics (compute commitment size, timeline).
+
 ---
 
 ## Social Mentions
@@ -86,3 +89,4 @@
 - **2026-08-31** — 📰 BRIEF (post-open) | 5 items + 1 topic hit triaged, 1 logged — $3.5B MediaTek investment extends the ecosystem-investment pattern into ASIC/custom silicon (watch for MRVL read-through); circular-financing narrative now has both bull and bear framings, no new fact
 - **2026-08-31** — 📰 BRIEF (evening) | 5 items + 1 topic hit triaged, 1 logged — Nvidia says supply shortages are limiting AI revenue growth; MediaTek follow-on coverage was recap of the 08-31 item, EDGAR timed out
 - **2026-09-01** — 📰 BRIEF (post-open) | 5 items + 1 topic hit triaged, 1 logged — $20B buyback (routine) + $3B SB Energy investment extends the ecosystem-investment pattern into power infrastructure; EDGAR timed out again
+- **2026-09-01** — 📰 BRIEF (evening) | 5 items + 1 topic hit triaged, 1 logged — AWS partnership expansion reinforces GPU demand persistence even as AWS builds Trainium; $20B buyback recap not re-logged, Cramer buyback-size opinions were noise

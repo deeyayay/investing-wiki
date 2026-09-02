@@ -13,7 +13,7 @@ The pure-play NAND vehicle for the agentic-AI and brain-scale data wave — and 
 
 > **Thesis established:** 2026-06-15
 > **Last validated:** 2026-08-26
-> **Drift status:** Drifting — three consecutive sessions of sharp decline (08-23 WSJ Apple/Chinese-chips report; 08-25/26 coverage reframes it as "Samsung headwinds," cumulative decline cited up to -37%) with the causal story still unresolved between competing narratives; still needs /dig to verify magnitude and cause. NBM contracts and HBF roadmap unaffected by headline evidence so far — Q3 FY2026 beat and Kioxia JV extension to 2034 remain the fundamental baseline.
+> **Drift status:** Drifting — three consecutive sessions of sharp decline (08-23 WSJ Apple/Chinese-chips report; 08-25/26 coverage reframes it as "Samsung headwinds," cumulative decline cited up to -37%) with the causal story still unresolved between competing narratives; still needs /dig to verify magnitude and cause. NBM contracts and HBF roadmap unaffected by headline evidence so far — Q3 FY2026 beat, Kioxia JV extension to 2034, and the 09-01 512GB HBF spec release strengthen the fundamental baseline further, independent of the still-open price-decline question.
 
 SanDisk became a standalone, ~pure-play NAND/flash company when Western Digital completed the spinoff on February 21, 2025 (WDC retained the HDD business). It produces leading-edge NAND through its long-standing joint venture with Kioxia — together roughly a third of global NAND bits — spanning enterprise NVMe SSD, client SSD, and embedded/edge flash.
 
@@ -69,6 +69,7 @@ _Evaluated: 2026-06-17_
 | 2026-08-26 | Citron Research: "Nvidia Has A Moat. SanDisk Sells A Commodity" | ↓ Weakened | A named bear thesis directly challenging the NBM/HBF differentiation argument — headline evidence alone doesn't set Broken, but it sharpens the standing /dig SNDK item into a specific falsifiable claim (differentiated vs. commodity) worth testing against the actual NBM contract terms and HBF roadmap. |
 | 2026-08-28 (post-open) | Stock reverses to 52-week highs, +5% premarket, on NVDA memory-price read-through — one day after the Citron bear note | → Neutral | Market isn't (yet) siding with the commodity thesis, but a price bounce doesn't resolve the underlying NBM/HBF-vs-commodity question either — /dig SNDK remains the item that actually settles this. |
 | 2026-08-29 | SanDisk-Kioxia $31B Japan investment; NVIDIA's $279B memory commitment cited as sector context | → Neutral | Both weigh against the Citron "commodity" bear case (capacity + demand tailwinds), but neither addresses the still-open Apple-vs-Samsung causal question behind the price decline — /dig SNDK remains the item that resolves this. |
+| 2026-09-01 | SK hynix/SanDisk unveil 512GB HBF spec | ↑ | First concrete published HBF spec (not just a roadmap target) since thesis onboarding — direct confirmation of the second thesis leg and the strongest counter yet to the Citron "commodity" claim, independent of the unresolved price-decline question. |
 
 ---
 

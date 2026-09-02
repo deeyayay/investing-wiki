@@ -47,6 +47,9 @@
 - **2026-09-01 (post-open)** — The Motley Fool / Finbold: CEO Lip-Bu Tan bought ~$12M of INTC shares in the open market (exact purchase date not given at headline level; coverage frames it against the stock's move since).
   **Why it matters:** First time this CEO open-market purchase is confirmed at headline level — a high-conviction insider signal that fits the rerate narrative behind the 08-28/08-31 HSBC coverage, though timing needs a filing check before treating it as a fresh event.
 
+- **2026-09-01 (evening)** — Stocktwits: Intel's Xeon 6 data-center CPU launch gets overshadowed after Nvidia unveils a new PC processor; INTC and AMD both slide premarket.
+  **Why it matters:** A genuine product launch (Xeon 6) getting drowned out by a competitor announcement is a market-attention/competitive-narrative data point, not a change to the EMIB/foundry thesis directly — logged as MATERIAL context, not thesis-moving.
+
 ## Social Mentions
 
 | Date | Signal | Source |
@@ -68,3 +71,4 @@
 - **2026-08-28** — 📰 BRIEF (Run 2 — post-open) | 5 items triaged, 1 logged — $23B raise priced below current trade + HSBC Buy reiteration through the weekly decline
 - **2026-08-31** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, drift flagged — HSBC escalates to "Too Good to Ignore," +60% upside call; stock still below the $23B raise price despite a reported 25% revenue gain
 - **2026-09-01** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — CEO Lip-Bu Tan's ~$12M open-market share purchase confirmed at headline level for the first time
+- **2026-09-01** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — Xeon 6 launch overshadowed by Nvidia's new PC processor unveiling; $20B offering-dilution headlines recap the already-logged $23B raise, Clear Harbor 13F filing routine

@@ -54,6 +54,7 @@ _Last scored: — | [[Scoring Rubric]]_
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
 | 2026-08-26 | Raymond James upgrades to Strong Buy, argues AMD "could outperform Nvidia" | ↑ Strengthened | Analyst reasoning directly backs the open-source-alternative share-capture thesis |
+| 2026-09-01 | AMD launches a Sovereign AI Platform in Saudi Arabia | ↑ Strengthened | New international deployment channel outside the core hyperscaler MI300/MI350 ramp — supports the data-center compute-share-capture thesis with a distinct growth vector |
 
 ---
 

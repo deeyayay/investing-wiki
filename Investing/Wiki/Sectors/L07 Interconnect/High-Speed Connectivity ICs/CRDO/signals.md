@@ -14,6 +14,9 @@
 - **2026-08-31 (evening)** — Credo joins a consortium developing optical connections closer to AI chips (Stock Titan).
   **Why it matters:** A second, distinct optical-adjacency data point in the same week as the Toucan retimer milestone — direct evidence the Hyperlume optical hedge is an active industry-collaboration strategy, not a standalone acquisition sitting idle.
 
+- **2026-09-01** — SEC 8-K filed (items 2.02 Results of Operations, 9.01 Financial Statements); shares slide 11.8% as margin guidance dulls an otherwise-strong revenue outperformance (TechStock²); earnings-call highlights also carried (Yahoo Finance).
+  **Why it matters:** The 8-K's item 2.02 confirms an actual earnings release landed — contradicting the 08-31 entry's "Q1 FY2027 earnings due 2026-09-09" note, a discrepancy that itself needs resolving. If real, this is the first negative data point on the thesis's quantified ~68% gross-margin leg since the Q4 FY2026 beat: revenue reportedly outperformed but forward margin guidance disappointed enough to move the stock -11.8%. Headline level gives no actual guided-margin number. Escalated to /dig to (a) confirm which earnings period this 8-K covers and (b) read the actual guide against the 68% baseline.
+
 - **2026-08-22** — Wall Street raises Credo price targets again; stock +71% YTD.
   **Why it matters:** Sell-side is marking to the AEC ramp rather than fading it — consistent with the current On track drift, but headline-level only, no new operating datapoint.
 
@@ -49,3 +52,4 @@
 - **2026-08-28** — 📰 BRIEF (Run 2 — post-open) | 4 items triaged, 1 logged — sell call vs. 6.1% surge divergence, no new operating fact
 - **2026-08-31** — 📰 BRIEF (post-open) | 4 items + 1 topic hit triaged, 1 logged, drift confirmed — Toucan PCIe retimer compliance is the guided-to next catalyst materializing; TSMC CPO timeline corroborates the optical hedge
 - **2026-08-31** — 📰 BRIEF (evening) | 4 items triaged, 1 logged — optical-connections consortium membership adds a second optical-hedge data point; earnings-preview and insider-selling headlines were noise ahead of the 09-09 print
+- **2026-09-01** — 📰 BRIEF (evening) | 4 items + 1 filing triaged, 2 logged, drift flagged — 8-K (items 2.02/9.01) + margin-guidance-miss headlines conflict with the standing "earnings due 09-09" note; escalated to /dig to confirm the period and verify the 68% GM leg

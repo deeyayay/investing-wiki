@@ -33,6 +33,9 @@
 - **2026-09-01 (post-open)** — Stocktwits: A short seller levels "Enron-esque" accounting claims against SoFi; CEO Anthony Noto responds by putting $500K of his own money on the line.
   **Why it matters:** A named accounting-fraud allegation is potentially thesis-breaking if substantiated — headline gives no specifics on what's being alleged, so this can't be assessed from news alone. The CEO's public personal-capital response is a strong signal of confidence but isn't independent verification. Flagged for /dig SOFI to pull the actual short report and check it against the filed financials; drift stays On track pending that — headline evidence alone doesn't set Broken.
 
+- **2026-09-01 (evening)** — TechStock²: SoFi stock drops 4.2% as its ~29x earnings valuation multiple faces scrutiny over slower loan expansion.
+  **Why it matters:** Loan-platform growth deceleration would directly test the thesis's LPB-expansion leg — headline gives no specifics on magnitude or which loan category is slowing, so this folds into the standing /dig SOFI queued this morning for the short-seller allegation rather than opening a second investigation.
+
 ---
 
 ## Social Mentions
@@ -52,3 +55,4 @@
 - **2026-05-18** — Scored — Composite 9.0/10 Unrivaled | P:5 PP:4 L:5 FH:4 ME:4 FP:5 | Valuation: Reasonable at ~$16 | Monitor Registry updated.
 - **2026-06-07** — 📊 MIGRATE | Legacy SOFI.md split into three-layer structure (facts.md + analysis.md + signals.md).
 - **2026-09-01** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, drift flagged (not moved) — short-seller "Enron-esque" accounting claims + CEO $500K personal buy escalated to /dig queue
+- **2026-09-01** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — slower-loan-expansion headline folds into the standing /dig SOFI queue; rest was opinion/technical noise

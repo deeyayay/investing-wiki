@@ -23,6 +23,9 @@
 - **2026-08-31 (evening)** — AMD Stock Alert: Advanced Micro Devices teams up with Cisco on AI infrastructure (Barchart.com).
   **Why it matters:** A named partnership with a networking incumbent extends AMD's AI infrastructure footprint beyond silicon alone; headline lacks deal-structure detail (co-development vs. reseller), so logged as MATERIAL rather than a thesis-leg confirmation.
 
+- **2026-09-01 (post-open)** — simplywall.st: AMD launches a Sovereign AI Platform in Saudi Arabia.
+  **Why it matters:** Extends AMD's AI infrastructure footprint into a new international sovereign-AI deployment channel, reinforcing the "credible alternative to NVIDIA" positioning beyond the hyperscaler MI300/MI350 ramp already tracked.
+
 ---
 
 ## Social Mentions
@@ -44,3 +47,4 @@
 - **2026-08-29** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged — HBM supply-constraint risk flagged as a watch item
 - **2026-08-31** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — proposed US chip tariff exposure (ambiguous impact) + unconfirmed board appointment headline; insider-sale filings not logged (routine)
 - **2026-08-31** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — Cisco AI infrastructure partnership; rest of the mix was recap/listicle/price-move noise
+- **2026-09-01** — 📰 BRIEF (evening) | 5 items triaged, 1 logged, conviction ↑ — Saudi Arabia sovereign AI platform launch extends international footprint; Cisco partnership headline was a repeat, wealth-mgmt 13F and NVDA-earnings headlines were noise

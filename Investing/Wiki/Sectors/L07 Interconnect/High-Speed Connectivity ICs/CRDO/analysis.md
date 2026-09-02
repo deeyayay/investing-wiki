@@ -12,8 +12,8 @@ Full-stack SerDes IP owner that has become the de facto AEC standard inside AI G
 ## Investment Thesis
 
 > **Thesis established:** May 19, 2026
-> **Last validated:** 2026-06-07
-> **Drift status:** On track — Q4 FY2026 beat validates hyperscaler AEC ramp; Hyperlume acquisition hedges optical displacement risk; 1.6T cycle and PCIe retimer remain next catalysts
+> **Last validated:** 2026-09-01
+> **Drift status:** Drifting — 8-K filed 2026-09-01 (items 2.02/9.01) with shares down 11.8% on margin guidance dulling a reported revenue outperformance; this conflicts with the 08-31 note that earnings were due 2026-09-09, so both the period covered and the guided-margin number need /dig verification against the thesis's ~68% GM baseline before treating this as confirmed. Hyperlume acquisition and 1.6T/PCIe retimer catalysts unaffected by headline evidence so far.
 
 Credo designs SerDes (serializer/deserializer) chips, retimers, and Active Electrical Cables (AECs) — the components that move data at 400G/800G/1.6T between GPUs, switches, and storage within AI data center racks. As hyperscalers build 100,000+ GPU clusters for AI training and inference, intra-rack connectivity has become a first-order engineering constraint. Credo's AECs address it: a chip-embedded-in-cable approach that extends signal reach while consuming roughly half the power of optical transceivers, with 100× the reliability. FY2026 revenue tripled to $1.34B at ~68% non-GAAP gross margins — a fabless semiconductor company compounding revenue at hyperscale rates while sustaining margins that would be exceptional even for a software business.
 
@@ -49,6 +49,7 @@ _Last scored: 2026-06-07 | [[Scoring Rubric]]_
 
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
+| 2026-09-01 | 8-K filed (items 2.02/9.01); shares -11.8% as margin guidance dulls a reported revenue outperformance | ↓ | First negative data point on the thesis's ~68% GM leg since the Q4 FY2026 beat — but conflicts with the standing "earnings due 09-09" note, so period and magnitude are unconfirmed pending /dig |
 | 2026-08-31 (evening) | Credo joins a consortium developing optical connections closer to AI chips | ↑ | Second optical-adjacency data point in the same week — corroborates the Hyperlume hedge as an active collaboration strategy, not an idle acquisition |
 | 2026-08-31 | Toucan PCIe retimer achieves PCIe compliance, joins PCIe 6.x Integrators List; TSMC confirms CPO mass production H2 2026 | ↑ | Guided-to next catalyst (PCIe retimer) materializes as a concrete qualification milestone; TSMC's public CPO timeline independently corroborates the Hyperlume optical hedge |
 | 2026-06-07 | Acquired Hyperlume for $92M — microLED-based optical interconnect technology | ↑ | Deploys ATM capital into optical adjacency, directly hedging the copper AEC displacement risk; expands Credo's TAM into optical interconnect and signals management is positioning for post-copper AI rack generations at 3.2T+. |

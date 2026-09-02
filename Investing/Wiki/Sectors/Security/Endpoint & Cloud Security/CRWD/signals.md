@@ -23,6 +23,9 @@
 - **2026-09-01 (post-open)** — Stock Titan: CrowdStrike launches a new certification giving partner-built AI agents a path onto its Marketplace.
   **Why it matters:** Product-level platform expansion into agentic-AI partner distribution — extends the cross-sell/consolidation flywheel the thesis rests on, though headline-level detail is thin (no partner count or revenue framing yet).
 
+- **2026-09-01 (evening)** — Fal.Con news cluster: CrowdStrike puts Falcon on Google Cloud and arms partners with AI agents (stock +4%, finance.yahoo.com); separately partners with Cerebras to power Falcon AI detection (scanx.trade) and surpasses $2B in total contract value (stock +5.7%, Traders Union). Also beats Q2 earnings and raises guidance (eciks.org), though one outlet frames it as a "guidance reality check" (finance.yahoo.com). Nvidia's Jensen Huang separately calls CrowdStrike Nvidia's "No. 1 cybersecurity partner" (nvda-downstream topic feed).
+  **Why it matters:** A cluster of platform-expansion and distribution wins (Google Cloud, Cerebras, AI-agent ecosystem, $2B TCV) landing alongside a Q2 beat-and-raise is direct, multi-source confirmation of the Falcon-flywheel/cross-sell thesis. Jensen Huang's public endorsement is independent third-party validation of CrowdStrike's AI-native security positioning, though the "guidance reality check" framing suggests some of the raise was already priced in.
+
 ---
 
 ## Social Mentions
@@ -41,3 +44,4 @@
 - **2026-08-28** — 📰 BRIEF | 5 items triaged, 1 logged — 10-Q/Form 4 filings corroborate the confirmed print, no new fact
 - **2026-08-31** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — "Washington warning" headline logged as ambiguous, needs follow-up; 2 Form 4 filings not logged (routine)
 - **2026-09-01** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — new AI-agent Marketplace certification extends the platform-consolidation flywheel
+- **2026-09-01** — 📰 BRIEF (evening) | 5 items + 1 topic hit triaged, 1 logged, conviction ↑ — Fal.Con cluster (Google Cloud, Cerebras, $2B TCV, Q2 beat-and-raise) plus Jensen Huang's "No.1 cybersecurity partner" comment

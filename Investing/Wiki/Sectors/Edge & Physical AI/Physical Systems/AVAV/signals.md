@@ -37,3 +37,4 @@ _None yet — seeded on onboarding._
 | 2026-08-29 | 📰 BRIEF | 5 items triaged, 2 logged, drift flagged — Greek expansion + record backlog, NASA Mars helicopter contract |
 | 2026-08-31 | 📰 BRIEF (post-open) | 5 items triaged, 1 logged — new Trump drone-tariff headline (ambiguous impact); Greek JV/NASA Mars items were recaps of 08-29 |
 | 2026-08-31 | 📰 BRIEF (evening) | 5 items triaged, 1 logged — CUAS laser test success; "Contract Fallout" headline is a repeat of the 08-24 campus-announcement drop, MAYHEM 10 repeats 08-25, Susquehanna 12.1K-share sale is routine |
+| 2026-09-01 | 📰 BRIEF (evening) | 5 items triaged, 0 new logged — "$51M Army Contract" headline recycles the 08-27 Switchblade order; rest was unrelated-ticker mismatch and listicle noise |

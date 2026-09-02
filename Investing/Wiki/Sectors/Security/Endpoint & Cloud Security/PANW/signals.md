@@ -23,6 +23,9 @@
 - **2026-09-01 (post-open)** — Scotiabank maintains Buy, raises PT to $430, ahead of Q4 earnings.
   **Why it matters:** Joins the JPMorgan/Needham pre-earnings PT-raise cluster already logged — sentiment confirmation ahead of the print, not a new fundamental fact.
 
+- **2026-09-01 (evening)** — Palo Alto Networks beats Q4 earnings estimates and acquires Console, an agentic-AI security platform (Reuters, PR Newswire, SecurityWeek, Seeking Alpha, marketscreener.com).
+  **Why it matters:** A direct acquisition into the agentic-AI security space is exactly the "unified AI-native platform" consolidation the thesis rests on — not adjacent tooling, but the core moat-building pattern (buy vs. build into AI-native categories), landing alongside the Q4 beat that resolves the morning's "ahead of earnings" framing.
+
 ---
 
 ## Social Mentions
@@ -41,3 +44,4 @@
 - **2026-08-27** — 📰 BRIEF | 5 items triaged, 1 logged — CEO M&A talks with Okta/Datadog confirm active consolidation strategy
 - **2026-08-28** — 📰 BRIEF (Run 2 — post-open) | 5 items triaged, 1 logged — Okta talks now a specific market-moving report, not just CEO remarks
 - **2026-09-01** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — Scotiabank PT raise to $430 joins the pre-earnings analyst cluster; EDGAR timed out
+- **2026-09-01** — 📰 BRIEF (evening) | 5 items triaged, 1 logged, conviction ↑ — Console acquisition (agentic-AI security) + Q4 beat is the clearest confirmation yet of the AI-native consolidation thesis
