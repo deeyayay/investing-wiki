@@ -29,6 +29,9 @@
 - **2026-09-01 (evening)** — Fal.Con news cluster: CrowdStrike puts Falcon on Google Cloud and arms partners with AI agents (stock +4%, finance.yahoo.com); separately partners with Cerebras to power Falcon AI detection (scanx.trade) and surpasses $2B in total contract value (stock +5.7%, Traders Union). Also beats Q2 earnings and raises guidance (eciks.org), though one outlet frames it as a "guidance reality check" (finance.yahoo.com). Nvidia's Jensen Huang separately calls CrowdStrike Nvidia's "No. 1 cybersecurity partner" (nvda-downstream topic feed).
   **Why it matters:** A cluster of platform-expansion and distribution wins (Google Cloud, Cerebras, AI-agent ecosystem, $2B TCV) landing alongside a Q2 beat-and-raise is direct, multi-source confirmation of the Falcon-flywheel/cross-sell thesis. Jensen Huang's public endorsement is independent third-party validation of CrowdStrike's AI-native security positioning, though the "guidance reality check" framing suggests some of the raise was already priced in.
 
+- **2026-09-02/03** — CrowdStrike expands its partnership with OpenAI (TipRanks).
+  **Why it matters:** A distribution/integration win with a leading foundation-model provider is a direct extension of the AI-native platform-consolidation thesis — the same flywheel mechanism as the Google Cloud/Cerebras wins already logged, now with the most prominent model provider. DA Davidson, TD Cowen, and Jefferies analyst reiterations (no rating or PT changes) were routine and not logged.
+
 ---
 
 ## Social Mentions
@@ -50,3 +53,4 @@
 - **2026-09-01** — 📰 BRIEF (evening) | 5 items + 1 topic hit triaged, 1 logged, conviction ↑ — Fal.Con cluster (Google Cloud, Cerebras, $2B TCV, Q2 beat-and-raise) plus Jensen Huang's "No.1 cybersecurity partner" comment
 - **2026-09-02** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — "guidance reality check" framing plus Truist PT raise ($300) and TD Cowen's agentic-AI-risk flag; Jensen Huang quote was a repeat of the already-logged 09-01 evening item
 - **2026-09-02** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — $2B TCV, Truist $300 PT, and TD Cowen agentic-AI-risk flag all recap items already logged 09-01 evening / 09-02 post-open; DA Davidson reiteration was routine
+- **2026-09-03** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, conviction ↑ — OpenAI partnership expansion extends the AI-native platform flywheel; 3 analyst reiterations (DA Davidson, TD Cowen, Jefferies) were routine, no rating/PT change

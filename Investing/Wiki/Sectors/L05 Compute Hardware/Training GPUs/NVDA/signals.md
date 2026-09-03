@@ -54,6 +54,9 @@
 - **2026-09-02 (evening)** — 24/7 Wall St.: NVIDIA rises 4% on a reported $12.9B Hugging Face deal; separately deepens its AI inference partnership with Equinix and Together AI (Yahoo Finance), and returns a record $26B to shareholders after raising its dividend 2,400% (Motley Fool). nvda-downstream topic feed adds Korea's trillion-dollar sovereign AI investment naming NVIDIA as the winner (SK hynix as the relative loser, SemiAnalysis).
   **Why it matters:** The $12.9B Hugging Face figure, if accurate, is a large new demand data point extending the balance-sheet-backed ecosystem-investment pattern (OpenAI, Nebius, SpaceX, Cloverleaf, MediaTek, SB Energy) into the open-source model-hosting layer — direct confirmation the demand leg is still accelerating, not just capex commentary. The Equinix/Together AI inference partnership and Korea sovereign-AI win are further breadth-of-demand confirmation. The $26B shareholder return is a capital-allocation data point, not a demand signal, logged separately.
 
+- **2026-09-03 (post-open)** — 8-K filed (item 8.01, Other Events) on EDGAR. No headline coverage in tonight's digest carries the content. Two routine Form 4 filings and two Form 144 proposed-sale notices also on EDGAR today.
+  **Why it matters:** Item 8.01 is a catch-all disclosure category that can range from routine to material — the filing metadata alone can't say which; flagged for /dig NVDA to pull the actual content before it moves conviction either way. Form 4/144 insider filings not logged (routine).
+
 ---
 
 ## Social Mentions
@@ -94,3 +97,4 @@
 - **2026-09-01** — 📰 BRIEF (post-open) | 5 items + 1 topic hit triaged, 1 logged — $20B buyback (routine) + $3B SB Energy investment extends the ecosystem-investment pattern into power infrastructure; EDGAR timed out again
 - **2026-09-01** — 📰 BRIEF (evening) | 5 items + 1 topic hit triaged, 1 logged — AWS partnership expansion reinforces GPU demand persistence even as AWS builds Trainium; $20B buyback recap not re-logged, Cramer buyback-size opinions were noise
 - **2026-09-02** — 📰 BRIEF (evening) | 5 items + 1 topic hit triaged, 1 logged, conviction ↑ — $12.9B Hugging Face deal + Equinix/Together AI inference partnership + Korea sovereign-AI win extend the ecosystem-demand pattern; $26B shareholder-return/dividend item logged as capital-allocation context
+- **2026-09-03** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, drift flagged — new 8-K (item 8.01) has no confirmed content in the digest, queued for /dig; routine Form 4/144 filings not logged

@@ -29,6 +29,9 @@
 - **2026-09-02 (post-open)** — The FTC suit quantifies its claim at more than $20B in allegedly hidden ad overcharges; shares dropped 4.6% on the news, a sharper reaction than the ~3% move on the 09-01 initial report.
   **Why it matters:** Confirms the 09-01 item was accurate and puts a hard number on the exposure — still an ad-business legal matter outside the AWS/Trainium thesis leg, logged for the audit trail as an escalation of the same case, not thesis-moving.
 
+- **2026-09-03 (post-open)** — DOJ broadens its retail beef-pricing inquiry, seeking data from Amazon and Walmart (Seeking Alpha, Benzinga); separately, Amazon Teamsters stage a one-day strike at a California warehouse.
+  **Why it matters:** Both are new regulatory/labor facts about Amazon's core retail and logistics operations, distinct from the FTC ad-fee case already tracked — neither touches the AWS/Trainium cloud-infrastructure thesis leg, logged as company-level material only.
+
 ---
 
 ## Social Mentions
@@ -50,3 +53,4 @@
 - **2026-09-01** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — FTC sues Amazon over alleged hidden ad fees, shares fell ~3% on the report; Citizens reiterated its rating citing AWS GPU expansion
 - **2026-09-02** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — FTC suit quantified at $20B, shares down 4.6% (escalation of 09-01 item, not thesis-moving)
 - **2026-09-02** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — all three items were the same FTC $20B ad-lawsuit story already logged post-open, recirculated across additional outlets
+- **2026-09-03** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — DOJ beef-pricing inquiry + Teamsters warehouse strike logged as company-level material; FTC ad-fee item was a repeat of 09-02
