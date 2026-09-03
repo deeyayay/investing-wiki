@@ -34,3 +34,4 @@
 - **2026-06-17** — 📊 MONITOR --deep AEHR | Migrated legacy AEHR.md → three-layer structure. Q3 FY2026 earnings logged ($10.3M revenue, $37.2M bookings, 3.5x BTB); ISE Labs AI OSAT partnership (Nov 2025) logged; William Blair upgrade (Mar 2, 2026) and Lake Street PT raise to $56 logged. AI pivot thesis written. CIK corrected to 0001040470. Next earnings est. 2026-07-21.
 - **2026-06-17** — Scored — Composite 7.5/10 Strong | P:5 PP:3 L:3 FH:3 ME:4 FP:4
 - **2026-08-28** — 📰 BRIEF (Run 2 — post-open) | 3 items triaged, 1 logged — 38% 8-day decline flagged, no causal fact in headlines; queued for /dig
+- **2026-09-02** — 📰 BRIEF (evening) | 3 items triaged, 0 new logged — stock-move commentary and a Cohu (competitor) sell-off headline; routine Form 4 insider filing not logged; /dig item still open

@@ -20,6 +20,7 @@
 | 2026-08-26/27 | Bragar Eagel fiduciary-breach probe and ManTech CFO board appointment continue to recur in coverage alongside the confirmed order-flow items | scanx.trade | No new specifics on either item since first logged — no change to thesis-relevant status. |
 | 2026-08-31 | Trump administration imposes steep tariffs on drones; separately, a $500M Army contract is cited alongside a 133% revenue beat (TradingKey), and the Greek JV / NASA Mars items recur | Stocktwits / TradingKey / scanx.trade | Tariffs are new and genuinely ambiguous for AVAV — could raise import-component costs or protect US-based drone makers from cheap foreign competition; the headline doesn't specify which. Greek JV and NASA Mars items are recaps of the 08-29 entries, not new. |
 | 2026-08-30 | AVAV successfully executes a Counter-Unmanned Aircraft System laser test, ending a three-session losing streak | Stocktwits | New product-capability demonstration — directed-energy counter-UAS is part of the post-BlueHalo multi-domain platform expansion, distinct from the kinetic Puma/Switchblade line. |
+| 2026-09-02/03 | AeroVironment wins $465M Army contract for laser weapons | Stocktwits / Seeking Alpha | Largest single order logged for AV to date — converts the 08-30 CUAS laser test demonstration into a funded program, confirming directed energy as a real, revenue-generating leg of the post-BlueHalo multi-domain platform, not just a capability demo. |
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -38,3 +39,4 @@ _None yet — seeded on onboarding._
 | 2026-08-31 | 📰 BRIEF (post-open) | 5 items triaged, 1 logged — new Trump drone-tariff headline (ambiguous impact); Greek JV/NASA Mars items were recaps of 08-29 |
 | 2026-08-31 | 📰 BRIEF (evening) | 5 items triaged, 1 logged — CUAS laser test success; "Contract Fallout" headline is a repeat of the 08-24 campus-announcement drop, MAYHEM 10 repeats 08-25, Susquehanna 12.1K-share sale is routine |
 | 2026-09-01 | 📰 BRIEF (evening) | 5 items triaged, 0 new logged — "$51M Army Contract" headline recycles the 08-27 Switchblade order; rest was unrelated-ticker mismatch and listicle noise |
+| 2026-09-02/03 | 📰 BRIEF (evening) | 5 items triaged, 1 logged, drift reinforced — $465M Army laser weapons contract converts the 08-30 CUAS laser demo into a funded program; earnings-date/move-size headlines were routine pre-earnings noise |

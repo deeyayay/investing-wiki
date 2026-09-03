@@ -56,6 +56,7 @@ _Last scored: 2026-05-22 | [[Scoring Rubric]]_
 | 2026-08-29 | Q2 FY2027 revenue confirmed at $96.2B (Intellectia AI); UBS raises PT to $300 | ↑ | First single-headline confirmation of the actual revenue figure, closing the gap flagged in the 08-27/08-28 entries. UBS's target raise is an analyst action with explicit reasoning tied to the print. |
 | 2026-08-31 | $3.5B MediaTek investment extends ecosystem-investment pattern into ASIC/custom silicon | ↑ | New concrete dollar figure on the balance-sheet-backed investment pattern already flagged (OpenAI, Nebius, SpaceX, Cloverleaf); circular-financing narrative now has competing bull/bear framings but no new fact either way |
 | 2026-09-01 | Nvidia expands AI partnership with AWS | ↑ | AWS deepening its Nvidia relationship even while building Trainium is evidence GPU demand isn't being displaced by custom silicon yet — reinforces the CUDA-moat switching-cost thesis |
+| 2026-09-02 | $12.9B Hugging Face deal (reported); Equinix/Together AI inference partnership deepened; Korea sovereign-AI investment names NVIDIA the winner | ↑ | Another large demand data point on the balance-sheet-backed ecosystem-investment pattern, plus breadth confirmation (inference-layer partnership, sovereign-AI win) — the demand leg keeps widening, not just deepening with existing hyperscalers. |
 
 ---
 

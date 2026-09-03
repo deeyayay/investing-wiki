@@ -49,3 +49,4 @@
 - **2026-09-01** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — new AI-agent Marketplace certification extends the platform-consolidation flywheel
 - **2026-09-01** — 📰 BRIEF (evening) | 5 items + 1 topic hit triaged, 1 logged, conviction ↑ — Fal.Con cluster (Google Cloud, Cerebras, $2B TCV, Q2 beat-and-raise) plus Jensen Huang's "No.1 cybersecurity partner" comment
 - **2026-09-02** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — "guidance reality check" framing plus Truist PT raise ($300) and TD Cowen's agentic-AI-risk flag; Jensen Huang quote was a repeat of the already-logged 09-01 evening item
+- **2026-09-02** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — $2B TCV, Truist $300 PT, and TD Cowen agentic-AI-risk flag all recap items already logged 09-01 evening / 09-02 post-open; DA Davidson reiteration was routine

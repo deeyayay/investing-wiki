@@ -49,3 +49,4 @@
 - **2026-08-31** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — UAE data center shutdown (regional, conflict-driven) new; Nvidia-reliance framing recaps 08-29 buildout item
 - **2026-09-01** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — FTC sues Amazon over alleged hidden ad fees, shares fell ~3% on the report; Citizens reiterated its rating citing AWS GPU expansion
 - **2026-09-02** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — FTC suit quantified at $20B, shares down 4.6% (escalation of 09-01 item, not thesis-moving)
+- **2026-09-02** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — all three items were the same FTC $20B ad-lawsuit story already logged post-open, recirculated across additional outlets

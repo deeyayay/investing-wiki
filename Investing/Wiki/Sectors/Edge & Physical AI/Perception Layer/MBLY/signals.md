@@ -22,3 +22,4 @@ _None yet — seeded on onboarding._
 | 2026-06-15 | Onboarded via /add-ticker; verified Intel control, EyeQ/REM/RSS stack, CEO Shashua | facts.md + analysis.md + signals.md created; new "Autonomous Vehicles & ADAS" tier; wired to Edge-surface AV box. |
 | 2026-08-25 | 📰 BRIEF | 5 items triaged, 1 logged — flagged for /dig |
 | 2026-08-26 | 📰 BRIEF (Run 2) | 2 items triaged, 1 logged — earnings beat/estimate-cut mixed signal, deep-pass carried forward |
+| 2026-09-02 | 📰 BRIEF (evening) | 5 items triaged, 0 new logged — technical-reaction commentary, an unrelated Apple-CEO-succession item, and undervalued-stock listicles; no MBLY-specific fact |

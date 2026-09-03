@@ -7,7 +7,7 @@ The US military's primary small-drone and loitering-munitions supplier (Puma, Ra
 
 ## Investment Thesis
 
-> **Thesis established:** 2026-06-15 / **Last validated:** 2026-08-25 / **Drift status:** On track — $30.9M German Puma UAS order confirms continued allied order flow on the core product line
+> **Thesis established:** 2026-06-15 / **Last validated:** 2026-09-02 / **Drift status:** On track, strengthening — $465M Army laser weapons contract confirms directed energy as a funded, revenue-generating leg of the multi-domain platform, alongside continued core-product order flow
 
 AeroVironment is the entrenched Western incumbent in small unmanned aircraft systems and loitering munitions. Its Puma/Raven/Wasp/JUMP 20 sUAS and the Switchblade family are embedded in US and allied programs of record and have been combat-validated at scale in Ukraine — incumbency, ITAR/classified barriers, and battlefield reputation are the moat. The 2025 BlueHalo combination transformed AV from a drone manufacturer into a multi-domain platform spanning space, counter-UAS, electronic warfare, and directed energy, enlarging the addressable defense budget it can capture.
 
@@ -28,6 +28,7 @@ _Not yet scored — run `/score-ticker AVAV`._
 | 2026-08-26 | $80.5M Titan MS order; Switchblade 600 fielded across 20+ Army brigade combat teams; CEO cites "unprecedented" demand outlook | ↑ Strengthened | New order flow plus broad Army adoption of the loitering-munitions line and management's own multi-year demand framing reinforce the core-product thesis. |
 | 2026-08-27 | $51M Army order for Switchblade systems | ↑ Strengthened | Continues confirmed order-flow pattern on the core product line. |
 | 2026-08-29 | Greek expansion + record backlog; NASA taps AVAV for three Mars helicopters (2028 mission) | ↑ Strengthened | Record backlog confirms demand independent of the stock's price action; the NASA contract is a new, non-defense revenue line that broadens the "multi-domain platform" thesis beyond military drones. |
+| 2026-09-02/03 | $465M Army contract for laser weapons | ↑ Strengthened | Converts the 08-30 CUAS laser test demo into a funded program — directed energy is now a confirmed, funded revenue leg of the post-BlueHalo platform, not just a capability demo; largest single order logged to date. |
 
 ## Cross-Ticker Signals
 

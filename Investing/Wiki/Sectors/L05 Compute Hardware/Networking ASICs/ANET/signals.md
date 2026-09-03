@@ -52,3 +52,4 @@
 | 2026-08-28 | BRIEF | 5 items triaged, 1 logged — same earnings cycle reversed to a 5.9% surge; no new fundamental fact |
 | 2026-08-28 | BRIEF (Run 2 — post-open) | 5 items triaged, 1 logged — "AI Fabrics 100+ customers" is a new concrete metric behind the guidance raise |
 | 2026-09-01 | BRIEF (post-open) | 5 items triaged, 1 logged — Deutsche Bank Buy initiation + $60.78M director share sale (routine) |
+| 2026-09-02 | BRIEF (evening) | 5 items triaged, 0 new logged — earnings-call announcement (no numbers), unrelated Palo Alto Networks headline, minor stake filing, and a Deutsche Bank pick naming Lumentum/Coherent (not ANET) — all noise |

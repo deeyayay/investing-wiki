@@ -58,6 +58,9 @@
 - **2026-09-02 (post-open)** — hbm-supply topic feed: Micron says its own tightly-coupled DRAM architecture could deliver more than 10x HBM bandwidth (digitimes); separately, NVIDIA's newly-detailed "Rubin CPX" GPU spec uses HBM4 memory with no GDDR7 (TechPowerUp). Also finance.biggo.com: Micron's contract backlog now framed at $100B, up from the $22B supply-deal book logged 08-30.
   **Why it matters:** The tightly-coupled DRAM claim is Micron's own next-gen roadmap item — a potential future alternative/complement to HBM rather than a competitive threat, worth tracking alongside the standing NVHBM/zHBM watch item. Rubin CPX's HBM4 spec is direct hyperscaler-GPU pull-through confirming continued HBM4 demand into NVIDIA's next architecture. The $100B backlog figure, if accurate, is a large step up from the $22B previously logged and reinforces the structural AI demand tailwind leg — but the framing is a single secondary source, so treat the number as unconfirmed pending a primary-source figure.
 
+- **2026-09-02 (evening)** — Reuters: Micron's Taiwan unions threaten a strike over a bonus dispute; separately, hbm-supply topic feed reports TSMC is delaying its hybrid-bonding investment for HBM and opting for microbumps instead (TechPowerUp).
+  **Why it matters:** The Taiwan strike threat is a new operational risk to Micron's own fab/assembly capacity — not yet an actual work stoppage, but worth a watch item alongside the HBM4 ramp thesis leg. TSMC's hybrid-bonding delay is a foundry-side packaging-roadmap shift for the broader HBM supply chain (not Micron-specific — Micron does its own DRAM stacking), logged as sector context rather than a direct Micron fact.
+
 ---
 
 ## Social Mentions
@@ -86,3 +89,4 @@
 | 2026-09-01 | BRIEF (post-open) | 📰 5 items + 1 topic hit triaged, 1 logged — continued NVHBM coverage plus Samsung's new zHBM roadmap add a second competitive thread to the standing /dig candidate on the "stacked on every NVDA GPU" claim |
 | 2026-09-01 | BRIEF (evening) | 📰 5 items triaged, 1 logged — Druckenmiller's Q2 13F exit noted as sentiment context; MU earnings-recap headlines (JPMorgan PT, "blowout Q3") were repeats of the already-logged $50B-quarter print |
 | 2026-09-02 | BRIEF (post-open) | 📰 5 items + 1 topic hit triaged, 1 logged, conviction ↑ — Micron's own tightly-coupled DRAM (>10x HBM bandwidth) claim + NVIDIA Rubin CPX HBM4 spec confirm demand pipeline; $100B backlog figure unconfirmed, added to /dig queue alongside NVHBM/zHBM |
+| 2026-09-02 | BRIEF (evening) | 📰 5 items + 1 topic hit triaged, 1 logged — Taiwan union strike threat (new operational risk) + TSMC hybrid-bonding delay (sector packaging context); $100B backlog headline was a repeat of the post-open item, still unconfirmed |

@@ -61,3 +61,4 @@
 | 2026-08-31 | BRIEF (evening) | 📰 5 items triaged, 1 logged, drift note updated — record $2.74B DC quarter (+46%), $18B-by-2028 guide, and the real $12B Google figure largely resolve the standing Google-deal ambiguity; new delay-beyond-2029 detail narrows /dig queue rather than closing it |
 | 2026-09-01 | BRIEF (post-open) | 📰 5 items triaged, 1 logged, conviction ↑ — 5M photonic chips shipped confirms interconnect/optics execution ahead of S&P 500 entry |
 | 2026-09-02 | BRIEF (post-open) | 📰 5 items + 1 topic hit triaged, 1 logged — silicon photonics scaling from late 2027 (TSMC-centered) adds a timeline detail to the optics leg; earnings-recap and Form 144 headlines were repeats/routine |
+| 2026-09-02 | BRIEF (evening) | 📰 5 items triaged, 0 new logged — post-earnings malaise/bear-case commentary and a Credo/Broadcom earnings-recap mix; EDGAR timed out, no new fact |

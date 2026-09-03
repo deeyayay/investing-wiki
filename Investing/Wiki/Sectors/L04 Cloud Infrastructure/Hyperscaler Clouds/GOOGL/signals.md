@@ -41,3 +41,4 @@
 - **2026-08-31** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — Waymo Germany expansion (adjacent, not core thesis); Form 4 not logged (routine); rest of the mix was mismatch/listicle noise
 - **2026-09-01** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — £260M UK App Store settlement (adjacent, not core Cloud thesis); director sale not logged (routine 10b5-1)
 - **2026-09-02** — 📰 BRIEF (post-open) | 5 items + 1 topic hit triaged, 1 logged — Gemini Enterprise for Financial Services launch (adjacent product, not core Cloud thesis); Meta-focused headline was a company mismatch, rest was market-move noise
+- **2026-09-02** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — Gemini Enterprise for Financial Services headline recaps the item already logged post-open; rest was stock-commentary/listicle noise

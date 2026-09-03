@@ -26,6 +26,9 @@
 - **2026-09-01 (evening)** — Seeking Alpha issues a rating downgrade on Kioxia (OTCMKTS:KXHCF), framed around supply/demand dynamics; separately, the already-logged $31B Japan investment recurs across three more outlets (FXLeaders, inkl.com).
   **Why it matters:** First bearish analyst take seen in this ticker's coverage — worth noting as a counter-signal amid an otherwise uniformly bullish capacity-expansion narrative, though the headline gives no specific concern beyond "supply and demand." Not thesis-breaking on its own.
 
+- **2026-09-02 (evening)** — SK Group Chairman Chey Tae-won is weighing a Kioxia partnership on a Japan plant (Businesskorea); separately, JV partner SanDisk claims its HBF (High Bandwidth Flash) tech can match HBM bandwidth at up to 16x the capacity (digitimes, hbm-supply topic feed).
+  **Why it matters:** A prospective SK–Kioxia tie-up is early-stage ("weighs") but notable given SK hynix is Kioxia's chief HBM-era rival — worth a watch item, not yet a fact. The HBF bandwidth-parity claim is JV-partner (SanDisk) tech news that bears directly on the Flash Ventures/BiCS thesis leg if it holds up; no primary source yet.
+
 ---
 
 ## Social Mentions
@@ -45,3 +48,4 @@
 - **2026-08-26** — 📰 BRIEF (Run 3) | 5 items triaged, 1 logged, drift flagged — $6.27B Japan facility investment confirms capacity-expansion thesis; split/merger story still unresolved from prior runs
 - **2026-08-28** — 📰 BRIEF | 5 items + 1 topic hit triaged, 2 logged — SK hynix Indiana HBM groundbreaking noted as competitive context (2030 timeline, not near-term)
 - **2026-09-01** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — first bearish analyst take (Seeking Alpha downgrade) logged as a counter-signal; $31B Japan investment recap not re-logged
+- **2026-09-02** — 📰 BRIEF (evening) | 5 items + 1 topic hit triaged, 1 logged — SK Chairman weighs Kioxia partnership on Japan plant (early-stage) + JV partner SanDisk's HBF bandwidth-parity claim; rest was stock-move/listicle noise

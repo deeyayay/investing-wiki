@@ -29,6 +29,9 @@
 - **2026-08-30 (evening)** — TipRanks: "Lemonade (LE0) Q2 2026 Earnings Report - Results, Call & Slides" — headline carries no figures.
   **Why it matters:** This is the next quarterly print after the Q1 2026 numbers already on file (revenue +71% YoY, EBITDA loss narrowing toward the Q4 2026 profitability target) — directly thesis-relevant but no hard numbers in today's digest. Flagged for /dig to pull actual loss-ratio/EBITDA figures.
 
+- **2026-09-02 (evening)** — Lemonade launches car insurance in Missouri with a Tesla discount; separately, expands renters insurance to Kansas.
+  **Why it matters:** Two more state-expansion moves in the same week — auto now explicitly pairs with the Tesla-FSD data-moat angle again (Missouri), and renters adds another state to the base-business geographic footprint. Both extend the growth trajectory the thesis leans on; neither touches the loss-ratio/EBITDA-timeline leg still pending /dig.
+
 ---
 
 ## Social Mentions
@@ -47,3 +50,4 @@
 - **2026-08-26** — 📰 BRIEF (Run 3) | 2 items triaged, 1 logged — Florida auto expansion
 - **2026-08-31** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — "near-half US reach" scale detail builds on the 08-26 Florida launch
 - **2026-08-31** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — Q2 2026 earnings report headline (no figures), flagged for /dig; insider-sale filing not logged (routine)
+- **2026-09-02** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — Missouri auto (Tesla discount) + Kansas renters expansion continue the state-count growth trajectory; Q2-earnings-figures /dig item still open

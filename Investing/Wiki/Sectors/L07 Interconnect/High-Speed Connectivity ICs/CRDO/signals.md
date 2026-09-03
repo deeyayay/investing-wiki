@@ -20,6 +20,9 @@
 - **2026-08-22** — Wall Street raises Credo price targets again; stock +71% YTD.
   **Why it matters:** Sell-side is marking to the AEC ramp rather than fading it — consistent with the current On track drift, but headline-level only, no new operating datapoint.
 
+- **2026-09-02 (evening)** — TradingView sizes "Credo's Optical Bet" — the DustPhotonics/Hyperlume silicon-photonics push — as a $600M+ revenue opportunity; separately, a 10-Q formalizes the Q1 FY2027 figures the 09-02 /dig already confirmed, and an S-8 registers routine employee-benefit-plan shares.
+  **Why it matters:** First sell-side sizing of the optical-expansion vehicle the 09-02 DIG surfaced — a concrete number against the "DustPhotonics SiPho PIC integration" catalyst-timeline item, though it's analyst framing, not company guidance. 10-Q/S-8 are formalization of already-logged facts, not new.
+
 - **2026-06-07** — Credo acquires Hyperlume for $92M, adding microLED-based optical interconnect technology to its portfolio.
   **Why it matters:** Deploys ATM capital into optical adjacency, directly hedging the thesis risk that copper AEC gets displaced by optical at future AI rack generations (3.2T+); expands Credo's TAM and product roadmap beyond copper SerDes.
 
@@ -54,3 +57,4 @@
 - **2026-08-31** — 📰 BRIEF (evening) | 4 items triaged, 1 logged — optical-connections consortium membership adds a second optical-hedge data point; earnings-preview and insider-selling headlines were noise ahead of the 09-09 print
 - **2026-09-01** — 📰 BRIEF (evening) | 4 items + 1 filing triaged, 2 logged, drift flagged — 8-K (items 2.02/9.01) + margin-guidance-miss headlines conflict with the standing "earnings due 09-09" note; escalated to /dig to confirm the period and verify the 68% GM leg
 - **2026-09-02** — 🔬 DIG | 4 filings read (09-01 8-K + EX-99.1, 04-13 8-K + EX-99.1, balance sheet across 2 quarters), 6 claims tested, verdict: 5 CONFIRMED, 1 INTACT — resolves the 09-01 margin scare as non-cash DustPhotonics purchase-accounting amortization, and surfaces a previously unlogged $750M DustPhotonics acquisition (closed 2026-05-28) as the real story behind the 04-13 ATM raise. Drift: Drifting → On track, evolving.
+- **2026-09-02** — 📰 BRIEF (evening) | 5 items + 1 topic hit triaged, 1 logged — TradingView's $600M+ sizing of the DustPhotonics/Hyperlume optical opportunity is a new sell-side data point; 8-K/10-Q/S-8/earnings-call headlines all recap facts the same-day DIG already captured

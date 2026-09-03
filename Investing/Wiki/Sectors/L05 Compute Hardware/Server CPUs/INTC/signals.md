@@ -72,3 +72,4 @@
 - **2026-08-31** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, drift flagged — HSBC escalates to "Too Good to Ignore," +60% upside call; stock still below the $23B raise price despite a reported 25% revenue gain
 - **2026-09-01** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — CEO Lip-Bu Tan's ~$12M open-market share purchase confirmed at headline level for the first time
 - **2026-09-01** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — Xeon 6 launch overshadowed by Nvidia's new PC processor unveiling; $20B offering-dilution headlines recap the already-logged $23B raise, Clear Harbor 13F filing routine
+- **2026-09-02** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — Xeon 6/Nvidia-PC-processor headline recaps the 09-01 evening item; dilution-concerns and 13F-holdings headlines are routine sentiment/ownership noise

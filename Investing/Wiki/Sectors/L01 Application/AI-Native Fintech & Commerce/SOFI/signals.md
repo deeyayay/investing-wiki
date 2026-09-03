@@ -56,3 +56,4 @@
 - **2026-06-07** — 📊 MIGRATE | Legacy SOFI.md split into three-layer structure (facts.md + analysis.md + signals.md).
 - **2026-09-01** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, drift flagged (not moved) — short-seller "Enron-esque" accounting claims + CEO $500K personal buy escalated to /dig queue
 - **2026-09-01** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — slower-loan-expansion headline folds into the standing /dig SOFI queue; rest was opinion/technical noise
+- **2026-09-02** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — valuation-multiple and momentum-trader commentary, all recapping the standing 09-01 /dig items; no new fact
