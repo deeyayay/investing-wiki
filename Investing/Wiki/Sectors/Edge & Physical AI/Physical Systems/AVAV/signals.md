@@ -22,6 +22,7 @@
 | 2026-08-30 | AVAV successfully executes a Counter-Unmanned Aircraft System laser test, ending a three-session losing streak | Stocktwits | New product-capability demonstration — directed-energy counter-UAS is part of the post-BlueHalo multi-domain platform expansion, distinct from the kinetic Puma/Switchblade line. |
 | 2026-09-02/03 | AeroVironment wins $465M Army contract for laser weapons | Stocktwits / Seeking Alpha | Largest single order logged for AV to date — converts the 08-30 CUAS laser test demonstration into a funded program, confirming directed energy as a real, revenue-generating leg of the post-BlueHalo multi-domain platform, not just a capability demo. |
 | 2026-09-03 | Trump's 100% tariff on drone imports takes effect; sector coverage frames it as "drone stocks fly" | Investor's Business Daily | Resolves the 08-31 ambiguity (raise import costs vs. protect domestic makers) in the bullish direction — a tariff wall against cheap foreign (e.g. DJI-class) competition reinforces AVAV's position as the primary US-vehicle for battlefield-proven drone exposure. |
+| 2026-09-03 | RBC Capital downgrades AeroVironment to Sector Perform, cuts target to $180 | scanx.trade | First rating downgrade logged for AVAV — a valuation call after the run-up on the $465M laser contract + tariff tailwind, not a challenge to the core order-flow/platform thesis; tension with "strengthening" drift noted, not enough on its own to move it. |
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -42,3 +43,4 @@ _None yet — seeded on onboarding._
 | 2026-09-01 | 📰 BRIEF (evening) | 5 items triaged, 0 new logged — "$51M Army Contract" headline recycles the 08-27 Switchblade order; rest was unrelated-ticker mismatch and listicle noise |
 | 2026-09-02/03 | 📰 BRIEF (evening) | 5 items triaged, 1 logged, drift reinforced — $465M Army laser weapons contract converts the 08-30 CUAS laser demo into a funded program; earnings-date/move-size headlines were routine pre-earnings noise |
 | 2026-09-04 | 📰 BRIEF (evening) | 5 items triaged, 1 logged — 100% drone-import tariff takes effect, resolving the 08-31 ambiguity bullish for AVAV; laser-contract/E-HEL headlines were repeats of 09-02/03, earnings-move-size and price-quote items were noise |
+| 2026-09-04 | 📰 BRIEF (post-open) | 5 items triaged, 1 logged — RBC downgrade to Sector Perform ($180 PT) is the first rating cut on file; tariff and laser-contract headlines repeated 09-03/09-02 |

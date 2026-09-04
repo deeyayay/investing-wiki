@@ -64,6 +64,9 @@
 - **2026-09-04 (evening)** — businesskorea.co.kr (hbm-supply topic feed): "Micron Joins Race for Post-HBM Memory."
   **Why it matters:** A forward R&D signal that Micron isn't treating HBM4 as the ceiling — continuing technology leadership on the next memory generation, consistent with the "structural AI demand tailwind" leg. Thin at headline level (no spec or timeline given), so logged as context rather than a conviction-moving event.
 
+- **2026-09-04 (post-open)** — digitimes/trendforce (hbm-supply topic feed): Micron reportedly adding 60K HBM wafers/month, reaching 100K by year-end, to narrow the capacity gap with Samsung and SK hynix, who still hold the scale edge.
+  **Why it matters:** A harder, numbers-backed capacity-execution data point on the HBM4 ramp than the "post-HBM race" R&D signal logged 09-04 evening — confirms Micron is scaling output, not just roadmap, though the framing (two secondary sources, Samsung/SK hynix still ahead on scale) keeps this a competitive-context item rather than a drift-moving one.
+
 ---
 
 ## Social Mentions
@@ -94,3 +97,4 @@
 | 2026-09-02 | BRIEF (post-open) | 📰 5 items + 1 topic hit triaged, 1 logged, conviction ↑ — Micron's own tightly-coupled DRAM (>10x HBM bandwidth) claim + NVIDIA Rubin CPX HBM4 spec confirm demand pipeline; $100B backlog figure unconfirmed, added to /dig queue alongside NVHBM/zHBM |
 | 2026-09-02 | BRIEF (evening) | 📰 5 items + 1 topic hit triaged, 1 logged — Taiwan union strike threat (new operational risk) + TSMC hybrid-bonding delay (sector packaging context); $100B backlog headline was a repeat of the post-open item, still unconfirmed |
 | 2026-09-04 | BRIEF (evening) | 📰 5 items + 1 topic hit triaged, 1 logged — "post-HBM" R&D race headline is thin, logged as context; ticker headlines (guidance-gain recap, pre-earnings opinion pieces, Fed-decision framing) were all noise |
+| 2026-09-04 | BRIEF (post-open) | 📰 5 items + 1 topic hit triaged, 1 logged — 60K→100K HBM wafers/month capacity-ramp detail (digitimes/trendforce) is a harder confirmation than the 09-04 evening "post-HBM race" item; ticker headlines (guidance recap, Fed-decision framing, "impossible expectations" opinion piece) were noise |

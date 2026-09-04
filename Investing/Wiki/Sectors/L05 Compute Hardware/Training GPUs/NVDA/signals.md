@@ -57,6 +57,9 @@
 - **2026-09-03 (post-open)** — 8-K filed (item 8.01, Other Events) on EDGAR. No headline coverage in tonight's digest carries the content. Two routine Form 4 filings and two Form 144 proposed-sale notices also on EDGAR today.
   **Why it matters:** Item 8.01 is a catch-all disclosure category that can range from routine to material — the filing metadata alone can't say which; flagged for /dig NVDA to pull the actual content before it moves conviction either way. Form 4/144 insider filings not logged (routine).
 
+- **2026-09-04 (post-open)** — CNBC/The Tech Buzz/TradingKey: Nvidia's total AI-company investments now total $99B; separately in discussions for a $2.5B stake in Mira Murati's Thinking Machines Lab.
+  **Why it matters:** Another concrete entry in the balance-sheet-backed ecosystem-investment pattern (OpenAI, Nebius, SpaceX, Cloverleaf, MediaTek, SB Energy, Hugging Face) — the $99B aggregate figure is the first headline-level total for the whole pattern, and Thinking Machines Lab extends it into another frontier-lab stake.
+
 ---
 
 ## Social Mentions
@@ -99,3 +102,4 @@
 - **2026-09-02** — 📰 BRIEF (evening) | 5 items + 1 topic hit triaged, 1 logged, conviction ↑ — $12.9B Hugging Face deal + Equinix/Together AI inference partnership + Korea sovereign-AI win extend the ecosystem-demand pattern; $26B shareholder-return/dividend item logged as capital-allocation context
 - **2026-09-03** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, drift flagged — new 8-K (item 8.01) has no confirmed content in the digest, queued for /dig; routine Form 4/144 filings not logged
 - **2026-09-04** — 📰 BRIEF (evening) | 1 filing + 4 items + 1 topic hit triaged, 0 new logged — the 09-03 8-K (item 8.01) is now confirmed as the $12.9B Hugging Face acquisition disclosure via FT/TIKR/TradingKey coverage, resolving the morning's /dig flag — but the deal itself was already logged 09-02 evening; Equinix/Together AI inference-partnership mention was also a repeat of 09-02
+- **2026-09-04** — 📰 BRIEF (post-open) | 2 items + 1 topic hit triaged, 1 logged, conviction ↑ — $99B aggregate AI-investment figure + $2.5B Thinking Machines Lab stake extend the ecosystem-investment pattern; 8-K/Form 4/144 filings repeat 09-03, Hugging Face coverage repeats 09-02
