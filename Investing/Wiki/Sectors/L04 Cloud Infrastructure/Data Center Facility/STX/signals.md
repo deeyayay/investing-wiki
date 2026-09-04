@@ -31,3 +31,4 @@ _None yet — seeded on onboarding._
 | 2026-08-26 | 📰 BRIEF (Run 2) | 5 items triaged, 1 logged — director sale resolves part of the 08-24 Form 4 cluster |
 | 2026-08-27 | 📰 BRIEF | 5 items triaged, 1 logged, drift flagged — record 2026 results + raised guidance is the first earnings-level confirmation of the thesis since onboarding |
 | 2026-09-02 | 📰 BRIEF (evening) | 5 items + 1 filing triaged, 0 new logged — earnings-reaction/competitor-comparison commentary and a routine Rule 144 pre-set-plan sale filing; no new fact beyond the already-logged record results |
+| 2026-09-04 | 📰 BRIEF (evening) | 1 filing + 4 items triaged, 0 new logged — routine Form 4 insider filing, Supermicro-partner recap, and stock-underperformance/insider-sale commentary; no new fact |

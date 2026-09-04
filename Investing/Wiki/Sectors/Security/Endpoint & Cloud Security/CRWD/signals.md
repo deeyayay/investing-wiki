@@ -32,6 +32,9 @@
 - **2026-09-02/03** — CrowdStrike expands its partnership with OpenAI (TipRanks).
   **Why it matters:** A distribution/integration win with a leading foundation-model provider is a direct extension of the AI-native platform-consolidation thesis — the same flywheel mechanism as the Google Cloud/Cerebras wins already logged, now with the most prominent model provider. DA Davidson, TD Cowen, and Jefferies analyst reiterations (no rating or PT changes) were routine and not logged.
 
+- **2026-09-04 (evening)** — CrowdStrike launches Agentic SOC and Falcon Guardian, betting big on AI security (TradingView).
+  **Why it matters:** A new named product line extends the Falcon flywheel into autonomous SOC operations — the same platform-consolidation mechanism as the Google Cloud/Cerebras/OpenAI wins already logged, now as a shipped product rather than a partnership. DA Davidson, Piper Sandler, RBC reiterations and Raymond James's PT raise (no rating change) were routine and not logged.
+
 ---
 
 ## Social Mentions
@@ -54,3 +57,4 @@
 - **2026-09-02** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — "guidance reality check" framing plus Truist PT raise ($300) and TD Cowen's agentic-AI-risk flag; Jensen Huang quote was a repeat of the already-logged 09-01 evening item
 - **2026-09-02** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — $2B TCV, Truist $300 PT, and TD Cowen agentic-AI-risk flag all recap items already logged 09-01 evening / 09-02 post-open; DA Davidson reiteration was routine
 - **2026-09-03** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, conviction ↑ — OpenAI partnership expansion extends the AI-native platform flywheel; 3 analyst reiterations (DA Davidson, TD Cowen, Jefferies) were routine, no rating/PT change
+- **2026-09-04** — 📰 BRIEF (evening) | 5 items triaged, 1 logged, conviction ↑ — Agentic SOC/Falcon Guardian launch extends the platform flywheel into shipped product; 4 analyst reiterations/PT raise were routine, no rating change

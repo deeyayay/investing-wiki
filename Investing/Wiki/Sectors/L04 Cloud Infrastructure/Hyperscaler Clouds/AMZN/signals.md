@@ -54,3 +54,4 @@
 - **2026-09-02** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — FTC suit quantified at $20B, shares down 4.6% (escalation of 09-01 item, not thesis-moving)
 - **2026-09-02** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — all three items were the same FTC $20B ad-lawsuit story already logged post-open, recirculated across additional outlets
 - **2026-09-03** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — DOJ beef-pricing inquiry + Teamsters warehouse strike logged as company-level material; FTC ad-fee item was a repeat of 09-02
+- **2026-09-04** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — DOJ beef-pricing headline recirculated across 4 outlets, repeat of 09-03; Chinese-AI-IPO investment mention was capital-markets noise, not an AWS/Trainium fact

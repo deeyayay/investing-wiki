@@ -37,3 +37,4 @@ _None yet — seeded on onboarding._
 | 2026-09-01 | 📰 BRIEF (post-open) | 1 item triaged, 1 logged — William Blair Conviction List addition joins Freedom Broker's PT raise |
 | 2026-09-02 | 📰 BRIEF (post-open) | 2 items triaged, 1 logged, conviction → — Jefferies initiates Hold on financing uncertainty, the first cautionary analyst action; Lockheed Martin "obscure metal" headline too vague to confirm as NB-specific, not logged |
 | 2026-09-02 | 📰 BRIEF (evening) | 5 items triaged, 0 new logged — Jefferies Hold initiation recaps the post-open item across more outlets (USA Rare Earth, other critical-minerals names initiated alongside); Lockheed "obscure metal" headline still too vague to confirm as NB-specific |
+| 2026-09-04 | 📰 BRIEF (evening) | 4 items triaged, 0 new logged — Jefferies Hold initiation and sector-bottleneck commentary recap the 09-02 items across further outlets; USA Rare Earth Buy initiation is not an NB-specific action |

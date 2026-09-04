@@ -23,6 +23,9 @@
 - **2026-09-02 (post-open)** — Traders Union: Google launches Gemini Enterprise for Financial Services.
   **Why it matters:** A named vertical-AI enterprise product built on Gemini — downstream application layer rather than the Cloud infrastructure/inference-stack leg itself, but it is evidence the proprietary model is being packaged into sellable enterprise products. Logged as MATERIAL, adjacent to the core thesis.
 
+- **2026-09-04 (evening)** — Alphabet drops new Gemini 3.8 models and wins a major antitrust ruling in the same session (TIKR.com / fool.com / TipRanks / Traders Union).
+  **Why it matters:** Two thesis-relevant facts in one event: a new Gemini model generation directly extends the "deepest proprietary inference stack" leg, and the antitrust win removes near-term weight on the standing "DOJ antitrust remedy risk" listed in Key Risks — the first favorable court outcome logged on that item.
+
 ---
 
 ## Social Mentions
@@ -42,3 +45,4 @@
 - **2026-09-01** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — £260M UK App Store settlement (adjacent, not core Cloud thesis); director sale not logged (routine 10b5-1)
 - **2026-09-02** — 📰 BRIEF (post-open) | 5 items + 1 topic hit triaged, 1 logged — Gemini Enterprise for Financial Services launch (adjacent product, not core Cloud thesis); Meta-focused headline was a company mismatch, rest was market-move noise
 - **2026-09-02** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — Gemini Enterprise for Financial Services headline recaps the item already logged post-open; rest was stock-commentary/listicle noise
+- **2026-09-04** — 📰 BRIEF (evening) | 5 items triaged, 1 logged, conviction ↑ — Gemini 3.8 launch + DOJ antitrust ruling win, same session; all 5 headlines covered the same event across different outlets

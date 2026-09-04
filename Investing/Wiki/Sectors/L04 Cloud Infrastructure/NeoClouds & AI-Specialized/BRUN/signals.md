@@ -63,3 +63,4 @@
 - **2026-08-28** — 📰 BRIEF | 3 items triaged, 1 logged — second outlet confirms warrant redemption, no new fact; other 2 items (airline stocks, oil refiners) unrelated mismatches, skipped
 - **2026-08-31** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — activist stake to 10.28% ties back to the 08-26 warrant redemption; CEO home-purchase and unrelated mismatches skipped
 - **2026-09-02** — 📰 BRIEF (evening) | 2 items triaged, 0 new logged — both headlines (Texans NFL roster, Cal football transfer) were company-name mismatches, no BRUN-specific content
+- **2026-09-04** — 📰 BRIEF (evening) | 2 items triaged, 0 new logged — both headlines (Cal football transfer, Gold Coast real estate listing) were company-name mismatches, no BRUN-specific content

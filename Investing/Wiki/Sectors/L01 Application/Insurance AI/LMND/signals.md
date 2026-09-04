@@ -51,3 +51,4 @@
 - **2026-08-31** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — "near-half US reach" scale detail builds on the 08-26 Florida launch
 - **2026-08-31** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — Q2 2026 earnings report headline (no figures), flagged for /dig; insider-sale filing not logged (routine)
 - **2026-09-02** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — Missouri auto (Tesla discount) + Kansas renters expansion continue the state-count growth trajectory; Q2-earnings-figures /dig item still open
+- **2026-09-04** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — Missouri Tesla-discount headlines recap the already-logged 09-02 item; routine exec share sale and institutional 13F not logged; EDGAR timed out

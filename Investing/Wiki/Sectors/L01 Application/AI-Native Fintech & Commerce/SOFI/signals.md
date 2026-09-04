@@ -36,6 +36,9 @@
 - **2026-09-01 (evening)** — TechStock²: SoFi stock drops 4.2% as its ~29x earnings valuation multiple faces scrutiny over slower loan expansion.
   **Why it matters:** Loan-platform growth deceleration would directly test the thesis's LPB-expansion leg — headline gives no specifics on magnitude or which loan category is slowing, so this folds into the standing /dig SOFI queued this morning for the short-seller allegation rather than opening a second investigation.
 
+- **2026-09-04 (evening)** — SoFi and Kraken's parent Payward link stablecoin and dollar-settlement networks, pushing SoFiUSD onto Kraken for 24/7 settlement (finance.biggo.com / bloomingbit / TradingView / CoinLaw).
+  **Why it matters:** First concrete distribution deal for the SoFi USD stablecoin named in the catalyst timeline — a live exchange partner and 24/7 settlement rail is the "timing and initial use cases" question starting to resolve, directly extending the Galileo/rails leg of the thesis.
+
 ---
 
 ## Social Mentions
@@ -57,3 +60,4 @@
 - **2026-09-01** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, drift flagged (not moved) — short-seller "Enron-esque" accounting claims + CEO $500K personal buy escalated to /dig queue
 - **2026-09-01** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — slower-loan-expansion headline folds into the standing /dig SOFI queue; rest was opinion/technical noise
 - **2026-09-02** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — valuation-multiple and momentum-trader commentary, all recapping the standing 09-01 /dig items; no new fact
+- **2026-09-04** — 📰 BRIEF (evening) | 5 items triaged, 1 logged, conviction ↑ — Kraken/Payward stablecoin partnership is the first live SoFiUSD distribution deal; all 5 headlines covered the same event across different outlets

@@ -39,3 +39,4 @@
 - **2026-06-18** — 📊 MONITOR --deep 6451.TW | Migrated legacy 6451.TW.md → three-layer structure. FY2025 earnings logged (NT$7.53B +45% YoY, net margin 0.4%); CPO TAM Goldman Sachs $164M→$91B logged; TSMC COUPE mass production confirmed; analyst consensus "Taiwan NVDA CPO supply chain #1" logged. Next earnings est. 2026-07-31. Score 5.5/10 Average (low-confidence); re-score after Q2 2026 earnings.
 - **2026-08-28** — 📰 BRIEF (Run 2 — post-open) | 2 items triaged, 1 logged — $65M Vietnam packaging-line investment, not confirmed CPO-specific
 - **2026-08-31** — 📰 BRIEF (post-open) | 2 items + 1 topic hit triaged, 1 logged, drift confirmed — TSMC publicly confirms CPO mass production H2 2026 and >50% silicon photonics penetration by 2027
+- **2026-09-04** — 📰 BRIEF (evening) | 1 item triaged, 0 new logged — Taiwan-market close recap, not company-specific

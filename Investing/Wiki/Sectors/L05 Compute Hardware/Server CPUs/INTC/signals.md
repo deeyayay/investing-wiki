@@ -73,3 +73,4 @@
 - **2026-09-01** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — CEO Lip-Bu Tan's ~$12M open-market share purchase confirmed at headline level for the first time
 - **2026-09-01** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — Xeon 6 launch overshadowed by Nvidia's new PC processor unveiling; $20B offering-dilution headlines recap the already-logged $23B raise, Clear Harbor 13F filing routine
 - **2026-09-02** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — Xeon 6/Nvidia-PC-processor headline recaps the 09-01 evening item; dilution-concerns and 13F-holdings headlines are routine sentiment/ownership noise
+- **2026-09-04** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — retrospective Nvidia-stake and JPMorgan-target pieces, routine institutional-position headline, unconfirmed Nova Lake leak, and a valuation-based PT cut — none touch the EMIB/photonics packaging thesis leg

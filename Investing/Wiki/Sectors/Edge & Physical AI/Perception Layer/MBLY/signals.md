@@ -23,3 +23,4 @@ _None yet — seeded on onboarding._
 | 2026-08-25 | 📰 BRIEF | 5 items triaged, 1 logged — flagged for /dig |
 | 2026-08-26 | 📰 BRIEF (Run 2) | 2 items triaged, 1 logged — earnings beat/estimate-cut mixed signal, deep-pass carried forward |
 | 2026-09-02 | 📰 BRIEF (evening) | 5 items triaged, 0 new logged — technical-reaction commentary, an unrelated Apple-CEO-succession item, and undervalued-stock listicles; no MBLY-specific fact |
+| 2026-09-04 | 📰 BRIEF (evening) | 5 items + 1 topic hit triaged, 0 new logged — undervalued-stock listicles and a robotaxi-market-size report, no MBLY-specific fact; physical-ai topic hit had no MBLY-specific development |

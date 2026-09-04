@@ -49,3 +49,4 @@
 - **2026-08-28** — 📰 BRIEF | 5 items + 1 topic hit triaged, 2 logged — SK hynix Indiana HBM groundbreaking noted as competitive context (2030 timeline, not near-term)
 - **2026-09-01** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — first bearish analyst take (Seeking Alpha downgrade) logged as a counter-signal; $31B Japan investment recap not re-logged
 - **2026-09-02** — 📰 BRIEF (evening) | 5 items + 1 topic hit triaged, 1 logged — SK Chairman weighs Kioxia partnership on Japan plant (early-stage) + JV partner SanDisk's HBF bandwidth-parity claim; rest was stock-move/listicle noise
+- **2026-09-04** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — "Kioxia plans new chip fab in Japan" headlines recap the 09-02 SK Hynix/Kioxia partnership item; rest was analyst-opinion/macro noise
