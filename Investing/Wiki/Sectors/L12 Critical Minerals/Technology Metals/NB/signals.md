@@ -18,6 +18,7 @@
 | 2026-08-29 | CEO Mark Smith detail on updated feasibility study: 8 products from one ore body, $560/ton margin | YouTube | Granular margin figure behind the 08-24 "economic assessment raised, PT $12" upgrade — no change to the verdict, adds the number underneath it. |
 | 2026-09-01 | William Blair adds NioCorp to its stock Conviction List | Seeking Alpha | A second sell-side analyst action (following Freedom Broker's 08-24 PT raise to $12) — reinforces the Elk Creek economics upgrade with a new institutional voice, no new detail at headline level. |
 | 2026-09-02 | Jefferies initiates coverage with a Hold rating, citing financing uncertainty | Investing.com India | First cautionary sell-side action, contrasting with Freedom Broker/William Blair's bullish stance — the stated reason (financing uncertainty) names the exact EXIM-financing gate the thesis is already built around, so it's confirmation of a known risk from a new voice rather than a new one. |
+| 2026-09-04 | Chinese rare-earth suppliers reportedly halt shipments to the US, fearing Beijing retribution | finance.biggo.com | First concrete supply-halt action (vs. the 06-01 op-ed's "curbs are a permanent shift" framing) — directly confirms the China-export-tightening leg the reshoring thesis rests on. |
 
 ---
 
@@ -38,3 +39,4 @@ _None yet — seeded on onboarding._
 | 2026-09-02 | 📰 BRIEF (post-open) | 2 items triaged, 1 logged, conviction → — Jefferies initiates Hold on financing uncertainty, the first cautionary analyst action; Lockheed Martin "obscure metal" headline too vague to confirm as NB-specific, not logged |
 | 2026-09-02 | 📰 BRIEF (evening) | 5 items triaged, 0 new logged — Jefferies Hold initiation recaps the post-open item across more outlets (USA Rare Earth, other critical-minerals names initiated alongside); Lockheed "obscure metal" headline still too vague to confirm as NB-specific |
 | 2026-09-04 | 📰 BRIEF (evening) | 4 items triaged, 0 new logged — Jefferies Hold initiation and sector-bottleneck commentary recap the 09-02 items across further outlets; USA Rare Earth Buy initiation is not an NB-specific action |
+| 2026-09-04 | 📰 BRIEF (evening) | 2 items triaged, 1 logged, drift confirmed — Chinese rare-earth shipment halt is the first concrete supply-side action confirming the export-tightening leg of the thesis |

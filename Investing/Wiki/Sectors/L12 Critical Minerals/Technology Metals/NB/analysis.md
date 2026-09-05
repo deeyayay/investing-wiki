@@ -39,6 +39,7 @@ _Not yet scored — run `/score-ticker NB`. (Expect a low composite: the thesis 
 | 2026-08-24 | Elk Creek economic assessment raised, PT increased to $12 | ↑ Strengthened | Upgraded project economics directly improves the underlying asset value the financing-gated thesis is optioned on. |
 | 2026-08-26 | Railveyor automated haulage system embedded in Elk Creek mine plan | ↑ | Incremental engineering derisking of the construction plan — another physical-progress step ahead of the EXIM financing decision that gates the whole thesis. |
 | 2026-09-02 | Jefferies initiates Hold, citing financing uncertainty | → | First cautionary sell-side action; names the same EXIM-financing gate the thesis is already built around rather than a new risk — confirmation, not a change in the underlying picture. |
+| 2026-09-04 | Chinese rare-earth suppliers reportedly halt shipments to the US | ↑ Strengthened | First concrete supply-halt action confirming the China-export-tightening premise the reshoring thesis is built on, beyond the 06-01 op-ed framing. |
 
 ---
 

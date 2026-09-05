@@ -14,6 +14,7 @@
 | 2026-08-24 | 5 separate Form 4 insider ownership-change filings same day | SEC EDGAR | Unusual density of insider activity; direction/size not disclosed at headline level — worth a follow-up check if it recurs, not actionable today. |
 | 2026-08-26 | Director James C. Lee sells $3.35M in shares | Benzinga | Partially resolves the 08-24 Form 4 cluster — at least one filing was a sell; single-director sale of this size is routine, not treated as thesis-moving. |
 | 2026-08-27 | Coverage frames STX's AI-driven rally as continuing "as guidance and record 2026 results lift expectations"; rising institutional interest reported | Ad-hoc-news.de / simplywall.st | First real earnings-level validation since onboarding — record results + raised guidance is direct evidence the HAMR/cold-archive exabyte-tier demand thesis is playing out, not just a capacity-roadmap story. |
+| 2026-09-04 | 8-K (item 5.02 — officer/director departure, election, or compensatory arrangement) filed | SEC EDGAR | Specifics not disclosed at headline level; a leadership-change filing warrants confirmation before assessing thesis relevance — queued for /dig. |
 
 ---
 
@@ -32,3 +33,4 @@ _None yet — seeded on onboarding._
 | 2026-08-27 | 📰 BRIEF | 5 items triaged, 1 logged, drift flagged — record 2026 results + raised guidance is the first earnings-level confirmation of the thesis since onboarding |
 | 2026-09-02 | 📰 BRIEF (evening) | 5 items + 1 filing triaged, 0 new logged — earnings-reaction/competitor-comparison commentary and a routine Rule 144 pre-set-plan sale filing; no new fact beyond the already-logged record results |
 | 2026-09-04 | 📰 BRIEF (evening) | 1 filing + 4 items triaged, 0 new logged — routine Form 4 insider filing, Supermicro-partner recap, and stock-underperformance/insider-sale commentary; no new fact |
+| 2026-09-04 | 📰 BRIEF (evening) | 1 filing + 4 items triaged, 1 logged — new 8-K (item 5.02, officer/director change) filed same-day, content unconfirmed; insider-sale/underperformance commentary was noise |
