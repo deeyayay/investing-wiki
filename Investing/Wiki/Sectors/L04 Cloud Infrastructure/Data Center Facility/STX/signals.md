@@ -34,3 +34,4 @@ _None yet — seeded on onboarding._
 | 2026-09-02 | 📰 BRIEF (evening) | 5 items + 1 filing triaged, 0 new logged — earnings-reaction/competitor-comparison commentary and a routine Rule 144 pre-set-plan sale filing; no new fact beyond the already-logged record results |
 | 2026-09-04 | 📰 BRIEF (evening) | 1 filing + 4 items triaged, 0 new logged — routine Form 4 insider filing, Supermicro-partner recap, and stock-underperformance/insider-sale commentary; no new fact |
 | 2026-09-04 | 📰 BRIEF (evening) | 1 filing + 4 items triaged, 1 logged — new 8-K (item 5.02, officer/director change) filed same-day, content unconfirmed; insider-sale/underperformance commentary was noise |
+| 2026-09-07 | 📰 BRIEF (post-open) | 1 filing + 4 items triaged, 0 new logged — same 09-04 8-K (item 5.02) recirculating; record-earnings/PT-raise and comparison-listicle headlines were repeats/noise |

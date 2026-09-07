@@ -35,6 +35,9 @@
 - **2026-09-04 (evening)** — CrowdStrike launches Agentic SOC and Falcon Guardian, betting big on AI security (TradingView).
   **Why it matters:** A new named product line extends the Falcon flywheel into autonomous SOC operations — the same platform-consolidation mechanism as the Google Cloud/Cerebras/OpenAI wins already logged, now as a shipped product rather than a partnership. DA Davidson, Piper Sandler, RBC reiterations and Raymond James's PT raise (no rating change) were routine and not logged.
 
+- **2026-09-06/07 (post-open)** — Headlines report CrowdStrike beating "Q1" estimates but sinking 13% after-hours on "modest guidance" (Stocktwits), conflicting with the already-confirmed Q2 FY2027 beat-and-raise logged 08-27.
+  **Why it matters:** Ambiguous — either a mislabeled recap of the known Q2 print, or a genuinely new guidance data point touching the standing "billings watch" concern. Escalated to /dig to resolve the Q1/Q2 mismatch and confirm whether the -13% reaction reflects a real guidance deceleration.
+
 ---
 
 ## Social Mentions
@@ -58,3 +61,4 @@
 - **2026-09-02** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — $2B TCV, Truist $300 PT, and TD Cowen agentic-AI-risk flag all recap items already logged 09-01 evening / 09-02 post-open; DA Davidson reiteration was routine
 - **2026-09-03** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, conviction ↑ — OpenAI partnership expansion extends the AI-native platform flywheel; 3 analyst reiterations (DA Davidson, TD Cowen, Jefferies) were routine, no rating/PT change
 - **2026-09-04** — 📰 BRIEF (evening) | 5 items triaged, 1 logged, conviction ↑ — Agentic SOC/Falcon Guardian launch extends the platform flywheel into shipped product; 4 analyst reiterations/PT raise were routine, no rating change
+- **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, drift flagged — "Q1 beat, -13% AH on modest guidance" headline conflicts with the confirmed Q2 print, escalated to /dig; rest was recap of the already-logged AI-security momentum

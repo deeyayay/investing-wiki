@@ -67,6 +67,9 @@
 - **2026-09-04 (post-open)** — digitimes/trendforce (hbm-supply topic feed): Micron reportedly adding 60K HBM wafers/month, reaching 100K by year-end, to narrow the capacity gap with Samsung and SK hynix, who still hold the scale edge.
   **Why it matters:** A harder, numbers-backed capacity-execution data point on the HBM4 ramp than the "post-HBM race" R&D signal logged 09-04 evening — confirms Micron is scaling output, not just roadmap, though the framing (two secondary sources, Samsung/SK hynix still ahead on scale) keeps this a competitive-context item rather than a drift-moving one.
 
+- **2026-09-06/07 (post-open)** — Goldman Sachs doubles its Micron price target but keeps a Neutral rating (Stocktwits); separately, Invezz asks whether doubling HBM capacity could create an oversupply headwind — the first bearish oversupply framing logged against the standing supply-tightness narrative.
+  **Why it matters:** A doubled PT with an unchanged Neutral rating is a mixed signal worth tracking, not a clear conviction move. The oversupply question is a genuinely new counter-narrative to the supply-tightness thesis leg — thin at headline level, folded into the standing /dig queue alongside the NVHBM/zHBM competitive watch items rather than treated as a fact.
+
 ---
 
 ## Social Mentions
@@ -98,3 +101,4 @@
 | 2026-09-02 | BRIEF (evening) | 📰 5 items + 1 topic hit triaged, 1 logged — Taiwan union strike threat (new operational risk) + TSMC hybrid-bonding delay (sector packaging context); $100B backlog headline was a repeat of the post-open item, still unconfirmed |
 | 2026-09-04 | BRIEF (evening) | 📰 5 items + 1 topic hit triaged, 1 logged — "post-HBM" R&D race headline is thin, logged as context; ticker headlines (guidance-gain recap, pre-earnings opinion pieces, Fed-decision framing) were all noise |
 | 2026-09-04 | BRIEF (post-open) | 📰 5 items + 1 topic hit triaged, 1 logged — 60K→100K HBM wafers/month capacity-ramp detail (digitimes/trendforce) is a harder confirmation than the 09-04 evening "post-HBM race" item; ticker headlines (guidance recap, Fed-decision framing, "impossible expectations" opinion piece) were noise |
+| 2026-09-07 | BRIEF (post-open) | 📰 5 items + 1 topic hit triaged, 1 logged — Goldman doubles PT but stays Neutral, and a new oversupply-headwind question is the first bearish counter-narrative logged, added to the standing /dig queue |

@@ -18,6 +18,9 @@
   **Why it matters:** HBM is a shared input across the whole AI-accelerator cohort — a supply constraint here is a production-ramp risk to MI300/MI350, not yet a confirmed fact at headline level. Watch item, not yet material enough to move the thesis.
 
 - **2026-08-31 (post-open)** — AMD flagged as exposed to proposed US chip tariffs (Yahoo Finance); separately, a board/governance headline asks what Tim Ryan's appointment could mean for AMD.
+
+- **2026-09-07 (post-open)** — AMD posts record Q2 revenue, up ~50% YoY, and raises its CPU market outlook (Pluang, via wire recap).
+  **Why it matters:** A quantified, above-trend revenue print directly confirms the data-center compute-share-capture leg the thesis is built on — the first hard number logged against the "$14-15B CY2026 AI GPU revenue" tracking claim.
   **Why it matters:** Tariff exposure is a regulatory risk factor common to the whole semiconductor group, not AMD-specific — logged as MATERIAL but ambiguous impact (could raise input costs or protect US-based competitiveness depending on scope, which the headline doesn't specify). The appointment headline lacks role/board detail at this level — logged for the audit trail, not yet confirmed as a governance fact.
 
 - **2026-08-31 (evening)** — AMD Stock Alert: Advanced Micro Devices teams up with Cisco on AI infrastructure (Barchart.com).
@@ -50,3 +53,4 @@
 - **2026-09-01** — 📰 BRIEF (evening) | 5 items triaged, 1 logged, conviction ↑ — Saudi Arabia sovereign AI platform launch extends international footprint; Cisco partnership headline was a repeat, wealth-mgmt 13F and NVDA-earnings headlines were noise
 - **2026-09-02** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — 13F holdings acquisition, NVDA-comparison and bear/bull opinion pieces, and an unverified startup benchmark claim were all noise; no new operating fact
 - **2026-09-04** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — routine institutional-position headline, earnings-recap opinion pieces, and a speculative Saudi-buildout piece; no new operating fact
+- **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, conviction ↑ — record Q2 revenue (+50% YoY) is the first hard number against the $14-15B CY2026 tracking claim; rest was routine 13F/institutional-position noise

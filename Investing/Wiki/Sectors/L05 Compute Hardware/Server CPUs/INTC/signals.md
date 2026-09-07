@@ -50,6 +50,9 @@
 - **2026-09-01 (evening)** — Stocktwits: Intel's Xeon 6 data-center CPU launch gets overshadowed after Nvidia unveils a new PC processor; INTC and AMD both slide premarket.
   **Why it matters:** A genuine product launch (Xeon 6) getting drowned out by a competitor announcement is a market-attention/competitive-narrative data point, not a change to the EMIB/foundry thesis directly — logged as MATERIAL context, not thesis-moving.
 
+- **2026-09-06/07 (post-open)** — Intel's Q2 revenue beat is overshadowed by an $11B net loss (TradingKey); separately, Trump confirms the Apple chip-manufacturing deal, upgrading it from the previously-logged "preliminary" IFS framing, and shares rip ~6% overnight.
+  **Why it matters:** The $11B loss is a large, unexplained fact against a revenue beat — needs /dig to confirm whether it's a one-time charge (e.g., impairment, restructuring) or an operating problem before it can be read against the IFS thesis. The Apple deal confirmation (vs. prior "preliminary") is a genuine escalation of the foundry-customer leg.
+
 ## Social Mentions
 
 | Date | Signal | Source |
@@ -74,3 +77,4 @@
 - **2026-09-01** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — Xeon 6 launch overshadowed by Nvidia's new PC processor unveiling; $20B offering-dilution headlines recap the already-logged $23B raise, Clear Harbor 13F filing routine
 - **2026-09-02** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — Xeon 6/Nvidia-PC-processor headline recaps the 09-01 evening item; dilution-concerns and 13F-holdings headlines are routine sentiment/ownership noise
 - **2026-09-04** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — retrospective Nvidia-stake and JPMorgan-target pieces, routine institutional-position headline, unconfirmed Nova Lake leak, and a valuation-based PT cut — none touch the EMIB/photonics packaging thesis leg
+- **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, drift flagged — $11B net loss despite Q2 revenue beat needs /dig to confirm cause; Apple deal now confirmed by Trump (escalation from "preliminary"); Xeon 6/Nvidia-PC-processor headline repeats 09-01

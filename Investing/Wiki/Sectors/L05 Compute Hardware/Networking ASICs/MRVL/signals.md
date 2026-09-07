@@ -63,3 +63,4 @@
 | 2026-09-02 | BRIEF (post-open) | 📰 5 items + 1 topic hit triaged, 1 logged — silicon photonics scaling from late 2027 (TSMC-centered) adds a timeline detail to the optics leg; earnings-recap and Form 144 headlines were repeats/routine |
 | 2026-09-02 | BRIEF (evening) | 📰 5 items triaged, 0 new logged — post-earnings malaise/bear-case commentary and a Credo/Broadcom earnings-recap mix; EDGAR timed out, no new fact |
 | 2026-09-04 | BRIEF (evening) | 📰 5 items triaged, 0 new logged — guidance-lift/post-earnings-drift recaps of the already-logged record quarter, plus a reiterated Strong Sell and comparative-valuation opinion pieces |
+| 2026-09-07 | BRIEF (post-open) | 📰 5 items triaged, 0 new logged — outgoing-CFO $65M share-sale headline repeats the already-logged 08-31 item; Bernstein memory-demand comment and 52-week-high listicle were noise |

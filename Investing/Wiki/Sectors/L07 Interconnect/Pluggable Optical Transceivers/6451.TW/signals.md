@@ -40,3 +40,4 @@
 - **2026-08-28** — 📰 BRIEF (Run 2 — post-open) | 2 items triaged, 1 logged — $65M Vietnam packaging-line investment, not confirmed CPO-specific
 - **2026-08-31** — 📰 BRIEF (post-open) | 2 items + 1 topic hit triaged, 1 logged, drift confirmed — TSMC publicly confirms CPO mass production H2 2026 and >50% silicon photonics penetration by 2027
 - **2026-09-04** — 📰 BRIEF (evening) | 1 item triaged, 0 new logged — Taiwan-market close recap, not company-specific
+- **2026-09-07** — 📰 BRIEF (post-open) | 1 item triaged, 0 new logged — Selangor semiconductor-hub rebrand headline, not company-specific

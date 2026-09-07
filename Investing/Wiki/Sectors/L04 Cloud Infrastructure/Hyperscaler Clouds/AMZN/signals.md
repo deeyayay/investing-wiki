@@ -32,6 +32,9 @@
 - **2026-09-03 (post-open)** — DOJ broadens its retail beef-pricing inquiry, seeking data from Amazon and Walmart (Seeking Alpha, Benzinga); separately, Amazon Teamsters stage a one-day strike at a California warehouse.
   **Why it matters:** Both are new regulatory/labor facts about Amazon's core retail and logistics operations, distinct from the FTC ad-fee case already tracked — neither touches the AWS/Trainium cloud-infrastructure thesis leg, logged as company-level material only.
 
+- **2026-09-06/07 (post-open)** — Amazon earnings crush expectations after-hours, with capex fears not materializing (Stocktwits); separately, a new consumer class-action suit over Trump tariff charges and a reported FTC ad-price lawsuit both hit the stock, and Amazon hits a satellite milestone toward a Starlink-rival internet launch.
+  **Why it matters:** The earnings beat with capex fears not materializing is a direct confirming data point for the AWS $44B/quarter capex thesis leg. The tariff class-action and ad-price suit are new regulatory/legal facts on the retail/ads side, outside the AWS thesis leg — logged as company-level material. The satellite milestone (Kuiper) is an adjacent business-line development, not core to the AWS thesis.
+
 ---
 
 ## Social Mentions
@@ -55,3 +58,4 @@
 - **2026-09-02** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — all three items were the same FTC $20B ad-lawsuit story already logged post-open, recirculated across additional outlets
 - **2026-09-03** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — DOJ beef-pricing inquiry + Teamsters warehouse strike logged as company-level material; FTC ad-fee item was a repeat of 09-02
 - **2026-09-04** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — DOJ beef-pricing headline recirculated across 4 outlets, repeat of 09-03; Chinese-AI-IPO investment mention was capital-markets noise, not an AWS/Trainium fact
+- **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, conviction ↑ — earnings beat with capex fears not materializing confirms the AWS capex thesis leg; new tariff class-action suit and satellite/Kuiper milestone logged as company-level context

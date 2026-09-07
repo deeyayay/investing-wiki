@@ -26,6 +26,9 @@
 - **2026-09-04 (evening)** — Alphabet drops new Gemini 3.8 models and wins a major antitrust ruling in the same session (TIKR.com / fool.com / TipRanks / Traders Union).
   **Why it matters:** Two thesis-relevant facts in one event: a new Gemini model generation directly extends the "deepest proprietary inference stack" leg, and the antitrust win removes near-term weight on the standing "DOJ antitrust remedy risk" listed in Key Risks — the first favorable court outcome logged on that item.
 
+- **2026-09-06/07 (post-open)** — Alphabet prices an upsized $84.75B capital raise (Stocktwits); separately, earnings coverage frames Q2 as strong revenue growth but a muted outlook, with shares edging lower.
+  **Why it matters:** An $84.75B raise is a direct funding vehicle for the $180-190B CapEx commitment the thesis depends on — confirms Alphabet can finance the buildout at the scale the Google Cloud growth story requires, independent of the muted near-term outlook framing.
+
 ---
 
 ## Social Mentions
@@ -46,3 +49,4 @@
 - **2026-09-02** — 📰 BRIEF (post-open) | 5 items + 1 topic hit triaged, 1 logged — Gemini Enterprise for Financial Services launch (adjacent product, not core Cloud thesis); Meta-focused headline was a company mismatch, rest was market-move noise
 - **2026-09-02** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — Gemini Enterprise for Financial Services headline recaps the item already logged post-open; rest was stock-commentary/listicle noise
 - **2026-09-04** — 📰 BRIEF (evening) | 5 items triaged, 1 logged, conviction ↑ — Gemini 3.8 launch + DOJ antitrust ruling win, same session; all 5 headlines covered the same event across different outlets
+- **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, conviction ↑ — $84.75B upsized capital raise funds the standing CapEx commitment; muted-outlook earnings-reaction headlines noted as context, not thesis-moving

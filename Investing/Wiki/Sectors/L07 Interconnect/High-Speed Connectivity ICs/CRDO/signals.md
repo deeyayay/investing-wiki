@@ -35,6 +35,9 @@
 - **2026-05-19** — NVDA Q1 FY2027 earnings day. Infographic names CRDO as Copper Interconnect supplier in NVDA earnings shockwave map alongside Amphenol.
   **Why it matters:** NVDA Blackwell cluster density increase drives copper AEC demand — more GPUs per rack = more intra-rack high-speed connections = more CRDO AEC and SerDes revenue.
 
+- **2026-09-06/07 (post-open)** — Two analyst upgrades to Buy (Pluang recap; Seeking Alpha's "Credo's Meltdown Is A Gift As Durable Capex Meets Cooling AI Trade") frame the post-earnings selloff as a buying opportunity now that the DustPhotonics-amortization explanation is public.
+  **Why it matters:** Analyst action with explicit reasoning tied to the already-resolved 09-02 /dig finding (the -11.8% drop was non-operational purchase-accounting amortization, not demand weakness) — corroborates the dig's conclusion from the sell-side rather than adding a new fact.
+
 ---
 
 ## Social Mentions
@@ -59,3 +62,4 @@
 - **2026-09-02** — 🔬 DIG | 4 filings read (09-01 8-K + EX-99.1, 04-13 8-K + EX-99.1, balance sheet across 2 quarters), 6 claims tested, verdict: 5 CONFIRMED, 1 INTACT — resolves the 09-01 margin scare as non-cash DustPhotonics purchase-accounting amortization, and surfaces a previously unlogged $750M DustPhotonics acquisition (closed 2026-05-28) as the real story behind the 04-13 ATM raise. Drift: Drifting → On track, evolving.
 - **2026-09-02** — 📰 BRIEF (evening) | 5 items + 1 topic hit triaged, 1 logged — TradingView's $600M+ sizing of the DustPhotonics/Hyperlume optical opportunity is a new sell-side data point; 8-K/10-Q/S-8/earnings-call headlines all recap facts the same-day DIG already captured
 - **2026-09-04** — 📰 BRIEF (evening) | 3 filings + 2 items triaged, 0 new logged — same 8-K/10-Q/S-8 filings and "plunges 20-21%" headlines recirculating, all recap facts the 09-02 DIG already resolved
+- **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — two analyst Buy upgrades corroborate the 09-02 DIG's DustPhotonics-amortization explanation; rest was recap of the already-resolved earnings reaction

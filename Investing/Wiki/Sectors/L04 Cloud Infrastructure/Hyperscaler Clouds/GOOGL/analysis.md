@@ -53,6 +53,7 @@ _Last scored: — | [[Scoring Rubric]]_
 |------|-------|-------------|-----|
 | 2026-08-25 | Reports of new "Frozen" custom inference chip to boost Gemini efficiency | ↑ Strengthened | Extends the proprietary silicon-to-inference stack the thesis depends on — another purpose-built chip beyond Ironwood TPU. |
 | 2026-09-04 | Gemini 3.8 launch + DOJ antitrust ruling win | ↑ Strengthened | New model generation extends the proprietary inference-stack leg; the antitrust win is the first favorable outcome logged against the standing "DOJ antitrust remedy" key risk. |
+| 2026-09-07 | Upsized $84.75B capital raise | ↑ Strengthened | Direct funding vehicle for the $180-190B CapEx commitment leg — confirms the buildout can be financed at scale. |
 
 ---
 

@@ -26,6 +26,9 @@
 - **2026-09-01 (evening)** — Palo Alto Networks beats Q4 earnings estimates and acquires Console, an agentic-AI security platform (Reuters, PR Newswire, SecurityWeek, Seeking Alpha, marketscreener.com).
   **Why it matters:** A direct acquisition into the agentic-AI security space is exactly the "unified AI-native platform" consolidation the thesis rests on — not adjacent tooling, but the core moat-building pattern (buy vs. build into AI-native categories), landing alongside the Q4 beat that resolves the morning's "ahead of earnings" framing.
 
+- **2026-09-06/07 (post-open)** — Shares plunge/tumble ~10% despite beating Q4 estimates and issuing upbeat FY27 guidance (Blockonomi, moneycheck.com); Citizens JMP raises PT to $415 on a record high the same week.
+  **Why it matters:** A -10% reaction despite a beat-and-raise is a valuation/positioning move, not new evidence against the consolidation thesis — the already-logged Console acquisition and raised guidance stand; logged for the audit trail as the market's reaction to the 09-01 print.
+
 ---
 
 ## Social Mentions
@@ -48,3 +51,4 @@
 - **2026-09-02** — 📰 BRIEF (evening) | 5 items + 1 filing triaged, 0 new logged — Console acquisition + Q4-beat 8-K (items 2.02/9.01) all recap the 09-01 evening entry, now carried across more outlets
 - **2026-09-03** — 📰 BRIEF (post-open) | 1 filing triaged, 0 new logged — same Q4-beat 8-K (items 2.02/9.01) filed 09-01, still recapping the already-logged Console acquisition/earnings entry
 - **2026-09-04** — 📰 BRIEF (evening) | 1 filing + 4 items triaged, 0 new logged — same Q4-beat 8-K and Console-acquisition headlines recirculating across more outlets, both already logged 09-01/09-02; Zendesk Startup Program partnership is minor, not logged
+- **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — -10% reaction despite beat-and-raise logged as market context, not thesis-moving; Citizens JMP PT raise to $415 was routine

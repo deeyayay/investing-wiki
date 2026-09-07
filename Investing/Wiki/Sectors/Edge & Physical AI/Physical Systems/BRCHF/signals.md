@@ -30,3 +30,4 @@ _None yet — seeded on onboarding._
 | 2026-08-31 | 📰 BRIEF (post-open) | 4 items triaged, 1 logged — cash position reported halved, a harder runway data point; unrelated ARK drone video skipped again |
 | 2026-09-02 | 📰 BRIEF (evening) | 2 items triaged, 0 new logged — "in focus" commentary and an ASX new-shares quotation notice, both low-value/routine |
 | 2026-09-04 | 📰 BRIEF (evening) | 2 items triaged, 0 new logged — generic ASX-chip-stock listicle and a Q2 investor-webinar calendar announcement, both low-value/routine |
+| 2026-09-07 | 📰 BRIEF (post-open) | 1 item triaged, 0 new logged — generic "edge AI progress" media piece, no new fact |

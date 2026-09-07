@@ -38,6 +38,7 @@
 | 2026-09-02 (evening) | SanDisk says its HBF (High Bandwidth Flash) tech can match HBM bandwidth at up to 16x the capacity | digitimes (hbm-supply topic feed) | First specific bandwidth-parity claim seen for HBF — directly extends the 09-01 evening's 512GB HBF spec entry with a competitive comparison against HBM itself. Company claim, no primary source or independent benchmark yet. |
 | 2026-09-04 (evening) | Data centers now deliver a third of SanDisk's revenue — $2.98B in a single quarter | fool.com | First quantified data-center revenue mix seen for SNDK — supports the "agentic-AI and brain-scale data wave" thesis leg with a hard number, independent of the still-unresolved Apple/Samsung price-decline question. |
 | 2026-09-04 (evening) | Coverage reframes the selloff as "losing NAND share to China" — a third causal narrative alongside the standing Apple-sourcing and Samsung-headwinds stories | Yahoo Finance | Adds a third competing explanation to the still-open /dig question rather than resolving it; magnitude and cause remain unconfirmed at headline level. |
+| 2026-09-06/07 (post-open) | MU/SNDK/DRAM all dip overnight as memory stocks feel the weight of Samsung's post-earnings selloff | Stocktwits | A fourth thread on the same still-open /dig question, but the most specific yet — directly ties SNDK's decline to a named, dated event (Samsung's earnings reaction) rather than a general "headwinds" framing, strengthening the case for the Samsung-driven narrative over the Apple/China threads. |
 
 ---
 
@@ -73,3 +74,4 @@
 | 2026-09-02 | 📰 BRIEF (evening) | 5 items + 1 topic hit triaged, 1 logged — HBF-vs-HBM bandwidth-parity claim (16x capacity) extends the 09-01 512GB spec entry; "Dirt Cheap" SA upgrade headline was a repeat of the post-open item |
 | 2026-09-04 | 📰 BRIEF (evening) | 5 items triaged, 1 logged — $2.98B data-center revenue quarter is a new quantified demand-mix fact; Buy/Sell/Hold and "market is wrong" opinion pieces, margin-collateral item were noise; /dig still queued on the price-decline cause |
 | 2026-09-04 | 📰 BRIEF (evening) | 5 items triaged, 1 logged — "losing NAND share to China" adds a third narrative to the standing price-decline question; tariff/Mizuho and conference-appearance headlines were repeats; /dig still queued |
+| 2026-09-07 | 📰 BRIEF (post-open) | 5 items triaged, 1 logged — Samsung post-earnings selloff is the most specific thread yet on the standing price-decline question; earnings-recap and valuation-opinion headlines were noise; /dig still queued |

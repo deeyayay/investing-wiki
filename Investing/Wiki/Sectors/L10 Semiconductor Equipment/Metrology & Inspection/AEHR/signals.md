@@ -36,3 +36,4 @@
 - **2026-08-28** — 📰 BRIEF (Run 2 — post-open) | 3 items triaged, 1 logged — 38% 8-day decline flagged, no causal fact in headlines; queued for /dig
 - **2026-09-02** — 📰 BRIEF (evening) | 3 items triaged, 0 new logged — stock-move commentary and a Cohu (competitor) sell-off headline; routine Form 4 insider filing not logged; /dig item still open
 - **2026-09-04** — 📰 BRIEF (evening) | 1 filing + 4 items triaged, 0 new logged — Broadcom-guidance sentiment recap, valuation opinion, conference-attendance announcement, and a routine exec tax-withholding sale; Form 4 not logged (routine)
+- **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — memory-earnings/52-week-high listicles, no AEHR-specific fact; /dig item still open
