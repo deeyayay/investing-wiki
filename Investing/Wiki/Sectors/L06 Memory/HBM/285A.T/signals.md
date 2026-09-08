@@ -29,6 +29,9 @@
 - **2026-09-02 (evening)** — SK Group Chairman Chey Tae-won is weighing a Kioxia partnership on a Japan plant (Businesskorea); separately, JV partner SanDisk claims its HBF (High Bandwidth Flash) tech can match HBM bandwidth at up to 16x the capacity (digitimes, hbm-supply topic feed).
   **Why it matters:** A prospective SK–Kioxia tie-up is early-stage ("weighs") but notable given SK hynix is Kioxia's chief HBM-era rival — worth a watch item, not yet a fact. The HBF bandwidth-parity claim is JV-partner (SanDisk) tech news that bears directly on the Flash Ventures/BiCS thesis leg if it holds up; no primary source yet.
 
+- **2026-09-08 (post-open)** — XenoSpectrum: reports Apple has signed a long-term NAND supply deal, with Kioxia "seen as likely partner" (unconfirmed); separately, SK hynix declines to confirm pre-IPO rumors about spinning off Solidigm.
+  **Why it matters:** An Apple supply relationship would be a major new demand-side confirmation of the AI-storage thesis, but the sourcing is speculative ("seen as likely") with no primary confirmation — flagged for /dig rather than logged as fact. The Solidigm pre-IPO story is a competitor capital-structure item, not a Kioxia-specific fact.
+
 ---
 
 ## Social Mentions
@@ -52,3 +55,4 @@
 - **2026-09-04** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — "Kioxia plans new chip fab in Japan" headlines recap the 09-02 SK Hynix/Kioxia partnership item; rest was analyst-opinion/macro noise
 - **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — price/derivatives listicles and a Japan-market-rally recap, no Kioxia-specific fact
 - **2026-09-07** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — same price/derivatives and Nikkei-rally recap, no Kioxia-specific fact
+- **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, drift flagged — Apple long-term NAND supply deal rumor names Kioxia as likely partner (unconfirmed), added to /dig queue; SK hynix Solidigm pre-IPO comment and fund-review recaps were noise

@@ -55,3 +55,4 @@
 | 2026-09-02 | BRIEF (evening) | 5 items triaged, 0 new logged — earnings-call announcement (no numbers), unrelated Palo Alto Networks headline, minor stake filing, and a Deutsche Bank pick naming Lumentum/Coherent (not ANET) — all noise |
 | 2026-09-04 | BRIEF (evening) | 5 items triaged, 0 new logged — Ciena-guidance/Arista-edges-higher recap, earnings-recap opinion pieces, and a vague pre-disclosure security-advisory headline too thin to log |
 | 2026-09-07 | BRIEF (evening) | 5 items triaged, 0 new logged — IBM-comparison listicle, S&P 100 inclusion, and 52-week-high commentary, all sentiment/index noise, no ANET-specific fact; EDGAR 503 |
+| 2026-09-08 | BRIEF (post-open) | 5 items triaged, 0 new logged — S&P-index-reshuffle mentions (Bloom Energy in, Nike out) and a "stock looks pricey" opinion piece, no ANET-specific fact |

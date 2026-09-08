@@ -70,6 +70,9 @@
 - **2026-09-06/07 (post-open)** — Goldman Sachs doubles its Micron price target but keeps a Neutral rating (Stocktwits); separately, Invezz asks whether doubling HBM capacity could create an oversupply headwind — the first bearish oversupply framing logged against the standing supply-tightness narrative.
   **Why it matters:** A doubled PT with an unchanged Neutral rating is a mixed signal worth tracking, not a clear conviction move. The oversupply question is a genuinely new counter-narrative to the supply-tightness thesis leg — thin at headline level, folded into the standing /dig queue alongside the NVHBM/zHBM competitive watch items rather than treated as a fact.
 
+- **2026-09-08 (post-open)** — Seeking Alpha questions "what's actually inside Micron's $100 billion" framing and issues a rating downgrade; separately, Bernstein maintains a Buy rating with a $1,300 price target. Via the hbm-supply topic feed: Nvidia is reportedly shifting its Rubin Ultra platform toward 8-high HBM stacks as memory costs rise (digitimes).
+  **Why it matters:** The downgrade is a second bearish counter-narrative after 09-07's Goldman-Neutral item, folded into the standing /dig queue rather than treated as fact. The Rubin Ultra 8-high-HBM detail is the first concrete specification behind the standing "Nvidia alternative HBM tech" watch item on the "stacked on every NVDA GPU" thesis leg — still not enough to move drift, but sharpens what /dig needs to confirm.
+
 ---
 
 ## Social Mentions
@@ -103,3 +106,4 @@
 | 2026-09-04 | BRIEF (post-open) | 📰 5 items + 1 topic hit triaged, 1 logged — 60K→100K HBM wafers/month capacity-ramp detail (digitimes/trendforce) is a harder confirmation than the 09-04 evening "post-HBM race" item; ticker headlines (guidance recap, Fed-decision framing, "impossible expectations" opinion piece) were noise |
 | 2026-09-07 | BRIEF (post-open) | 📰 5 items + 1 topic hit triaged, 1 logged — Goldman doubles PT but stays Neutral, and a new oversupply-headwind question is the first bearish counter-narrative logged, added to the standing /dig queue |
 | 2026-09-07 | BRIEF (evening) | 📰 5 items + 1 topic hit triaged, 0 new logged — JPMorgan/Goldman PT and Samsung-disruption headlines recap items already logged post-open; hbm-supply topic hit (Samsung/SK hynix 4nm capacity) is industry context, no new MU-specific fact |
+| 2026-09-08 | BRIEF (post-open) | 📰 5 items + 1 topic hit triaged, 1 logged — new bearish Seeking Alpha downgrade questions the "$100B" framing, second counter-narrative after 09-07's Goldman-Neutral item; Bernstein reiterates Buy $1,300 PT; hbm-supply topic hit (Nvidia Rubin Ultra shift toward 8-high HBM) sharpens the standing Nvidia-alt-HBM /dig watch item |

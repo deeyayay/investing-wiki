@@ -29,6 +29,9 @@
 - **2026-09-01 (post-open)** — simplywall.st: AMD launches a Sovereign AI Platform in Saudi Arabia.
   **Why it matters:** Extends AMD's AI infrastructure footprint into a new international sovereign-AI deployment channel, reinforcing the "credible alternative to NVIDIA" positioning beyond the hyperscaler MI300/MI350 ramp already tracked.
 
+- **2026-09-08 (post-open)** — AMD launches a new AI-focused workstation line (simplywall.st); separately, Riot Platforms reports $33.2M in data-center revenue as it doubles AMD-based compute capacity.
+  **Why it matters:** The workstation launch is a prosumer product-line extension, tangential to the core data-center GPU thesis. Riot's buildout is a smaller, non-hyperscaler channel adopting AMD compute — a minor diversification data point, not a hyperscaler-share confirmation.
+
 ---
 
 ## Social Mentions
@@ -55,3 +58,4 @@
 - **2026-09-04** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — routine institutional-position headline, earnings-recap opinion pieces, and a speculative Saudi-buildout piece; no new operating fact
 - **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, conviction ↑ — record Q2 revenue (+50% YoY) is the first hard number against the $14-15B CY2026 tracking claim; rest was routine 13F/institutional-position noise
 - **2026-09-07** — 📰 BRIEF (evening) | 1 item triaged, 0 new logged — same record-Q2-revenue headline recirculating, already logged post-open
+- **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — AI workstation launch + Riot Platforms' AMD-powered data-center buildout; rest was routine institutional-position noise

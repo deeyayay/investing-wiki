@@ -105,3 +105,4 @@
 - **2026-06-19** — 📊 MONITOR | --deep pass: CPO waveguide equipment shipped (April 28 Seoul conference), SDAX inclusion June 22 confirmed, Q2 earnings July 23, analyst PTs stale vs €27 stock; AGM strategy rift noted; June 30 LIDE order binary approaching.
 - **2026-06-19** — Scored — Composite 6.5/10 Strong | P:5 PP:3 L:2 FH:2 ME:4 FP:4
 - **2026-09-04** — 📰 BRIEF (evening) | 2 items triaged, 0 new logged — generic sector market-research reports (micromachining equipment, industrial laser market sizing), not LPK-specific
+- **2026-09-08** — 📰 BRIEF (post-open) | 1 item triaged, 0 new logged — generic Laser Direct Imaging market-sizing press release, not LPK-specific

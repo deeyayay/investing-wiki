@@ -38,6 +38,9 @@
 - **2026-09-07 (evening)** — Consumers file a class-action suit alleging Amazon "greenwashed" its sustainability claims on seafood labels (Stocktwits); separately, the FTC ad-price and tariff-charge suits continue recirculating.
   **Why it matters:** A third distinct legal matter (following the FTC ad-fee and tariff suits) — retail-side reputational/legal risk, outside the AWS/Trainium thesis leg. Logged as company-level material for the audit trail, not thesis-moving.
 
+- **2026-09-08 (post-open)** — Three new legal/operational matters: the FTC is reportedly preparing an ad-price lawsuit (shares on track for their worst day in a month on the report); a pregnancy-discrimination lawsuit was filed against Amazon; and an investigation has launched into the Amazon Air cargo-plane crash at Miami International.
+  **Why it matters:** All three are company-level legal/operational risk, outside the AWS/Trainium cloud-infrastructure thesis leg — logged for the audit trail, not thesis-moving.
+
 ---
 
 ## Social Mentions
@@ -63,3 +66,4 @@
 - **2026-09-04** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — DOJ beef-pricing headline recirculated across 4 outlets, repeat of 09-03; Chinese-AI-IPO investment mention was capital-markets noise, not an AWS/Trainium fact
 - **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, conviction ↑ — earnings beat with capex fears not materializing confirms the AWS capex thesis leg; new tariff class-action suit and satellite/Kuiper milestone logged as company-level context
 - **2026-09-07** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — new seafood "greenwashing" class-action suit is a third distinct legal matter, logged as company-level material; FTC ad-price and tariff-suit headlines were repeats of 09-06/07 post-open
+- **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — three new legal/operational matters (FTC ad-price lawsuit prep, pregnancy-discrimination suit, Amazon Air crash investigation) logged as company-level context, not thesis-moving

@@ -53,6 +53,11 @@
 - **2026-09-06/07 (post-open)** — Intel's Q2 revenue beat is overshadowed by an $11B net loss (TradingKey); separately, Trump confirms the Apple chip-manufacturing deal, upgrading it from the previously-logged "preliminary" IFS framing, and shares rip ~6% overnight.
   **Why it matters:** The $11B loss is a large, unexplained fact against a revenue beat — needs /dig to confirm whether it's a one-time charge (e.g., impairment, restructuring) or an operating problem before it can be read against the IFS thesis. The Apple deal confirmation (vs. prior "preliminary") is a genuine escalation of the foundry-customer leg.
 
+- **2026-09-08 (post-open)** — Conflicting analyst actions same day: an unnamed upgrade (TipRanks) against a price-target cut to $92 (Blockonomi), with INTC down 32% from its recent peak.
+  **Why it matters:** No new fundamental fact behind either action — the standing /dig item on the $11B net loss remains the real open question; logged as MATERIAL context only.
+
+---
+
 ## Social Mentions
 
 | Date | Signal | Source |
@@ -79,3 +84,4 @@
 - **2026-09-04** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — retrospective Nvidia-stake and JPMorgan-target pieces, routine institutional-position headline, unconfirmed Nova Lake leak, and a valuation-based PT cut — none touch the EMIB/photonics packaging thesis leg
 - **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, drift flagged — $11B net loss despite Q2 revenue beat needs /dig to confirm cause; Apple deal now confirmed by Trump (escalation from "preliminary"); Xeon 6/Nvidia-PC-processor headline repeats 09-01
 - **2026-09-07** — 📰 BRIEF (evening) | 3 items triaged, 0 new logged — $11B-loss recap and a generic "5-star analyst resets PT" headline (no firm/figure named), no new fact; /dig item still open
+- **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — conflicting analyst actions (unnamed upgrade vs. PT cut to $92) logged as context; Trump AI-image/rally headlines were noise; /dig item ($11B loss cause) still open

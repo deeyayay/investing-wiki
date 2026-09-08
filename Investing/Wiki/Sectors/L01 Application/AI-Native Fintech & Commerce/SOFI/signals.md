@@ -63,3 +63,4 @@
 - **2026-09-04** — 📰 BRIEF (evening) | 5 items triaged, 1 logged, conviction ↑ — Kraken/Payward stablecoin partnership is the first live SoFiUSD distribution deal; all 5 headlines covered the same event across different outlets
 - **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — Kraken-partnership follow-up commentary repeats the already-logged 09-04 item; Cramer opinion and institutional 13F headlines were routine
 - **2026-09-07** — 📰 BRIEF (evening) | 1 item triaged, 0 new logged — same Kraken-stablecoin-partnership framing recirculating, already logged 09-04
+- **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — valuation-opinion and crypto-listing-question pieces, no new fact; standing short-seller-accounting /dig item still open

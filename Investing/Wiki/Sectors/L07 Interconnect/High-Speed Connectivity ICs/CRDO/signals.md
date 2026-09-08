@@ -64,3 +64,4 @@
 - **2026-09-04** — 📰 BRIEF (evening) | 3 filings + 2 items triaged, 0 new logged — same 8-K/10-Q/S-8 filings and "plunges 20-21%" headlines recirculating, all recap facts the 09-02 DIG already resolved
 - **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — two analyst Buy upgrades corroborate the 09-02 DIG's DustPhotonics-amortization explanation; rest was recap of the already-resolved earnings reaction
 - **2026-09-07** — 📰 BRIEF (evening) | 3 items triaged, 0 new logged — Buy-upgrade and "hidden moat" pieces recap items already logged post-open/09-02; 2 unrelated prediction-market headlines were false-positive matches
+- **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — CalSTRS position-increase and "buy the pullback" opinion pieces recap the already-resolved 09-02 DIG findings; no new operating fact

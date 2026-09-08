@@ -36,3 +36,4 @@ _None yet — seeded on onboarding._
 | 2026-09-04 | 📰 BRIEF (evening) | 1 filing + 4 items triaged, 1 logged — new 8-K (item 5.02, officer/director change) filed same-day, content unconfirmed; insider-sale/underperformance commentary was noise |
 | 2026-09-07 | 📰 BRIEF (post-open) | 1 filing + 4 items triaged, 0 new logged — same 09-04 8-K (item 5.02) recirculating; record-earnings/PT-raise and comparison-listicle headlines were repeats/noise |
 | 2026-09-07 | 📰 BRIEF (evening) | 1 filing triaged, 0 new logged — same 09-04 8-K (item 5.02) recirculating, content still unconfirmed |
+| 2026-09-08 | 📰 BRIEF (post-open) | 1 filing + 4 items triaged, 0 new logged — same 09-04 8-K (item 5.02) recirculating, content still unconfirmed; record-earnings recap headlines were noise |

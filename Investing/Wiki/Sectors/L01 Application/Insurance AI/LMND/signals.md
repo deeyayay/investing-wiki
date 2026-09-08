@@ -35,6 +35,9 @@
 - **2026-09-07 (evening)** — Lemonade reaches a $10.5M settlement over a data breach (CNBC).
   **Why it matters:** A material legal/reputational cost tied directly to customer data — relevant given the thesis rests on a proprietary claims-data flywheel, though the settlement itself is a cost item, not evidence the flywheel or underwriting model is compromised. Logged as company-level material, not thesis-moving.
 
+- **2026-09-08 (post-open)** — Lemonade expands renters insurance to Kentucky (marketscreener.com).
+  **Why it matters:** Another state added to the geographic-expansion trajectory the growth thesis leans on; doesn't touch the loss-ratio/EBITDA-timeline leg still pending /dig.
+
 ---
 
 ## Social Mentions
@@ -57,3 +60,4 @@
 - **2026-09-04** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — Missouri Tesla-discount headlines recap the already-logged 09-02 item; routine exec share sale and institutional 13F not logged; EDGAR timed out
 - **2026-09-07** — 📰 BRIEF (post-open) | 3 items triaged, 0 new logged — Florida/Missouri auto-launch headline recaps items already logged; rest was unrelated-ticker noise
 - **2026-09-07** — 📰 BRIEF (evening) | 1 filing + 4 items triaged, 1 logged — $10.5M data breach settlement logged as company-level material, not thesis-moving; routine Form 4 not logged
+- **2026-09-08** — 📰 BRIEF (post-open) | 4 items + 1 filing triaged, 1 logged — Kentucky renters-insurance launch continues the state-count growth trajectory; routine Form 4 not logged

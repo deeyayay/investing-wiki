@@ -105,3 +105,4 @@
 - **2026-09-04** — 📰 BRIEF (post-open) | 2 items + 1 topic hit triaged, 1 logged, conviction ↑ — $99B aggregate AI-investment figure + $2.5B Thinking Machines Lab stake extend the ecosystem-investment pattern; 8-K/Form 4/144 filings repeat 09-03, Hugging Face coverage repeats 09-02
 - **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — 09-03 8-K and Form 3 filings repeat the already-resolved Hugging Face disclosure; FLNC-partnership and "70% growth guidance" headlines recap known items
 - **2026-09-07** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — FLNC-partnership, "70% growth" bull case, and IREN capex-commitment headlines all recap items already logged; "SpaceX IPO hype" framing is sentiment/opinion, not a new fact
+- **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — all pre-earnings preview/valuation commentary ahead of Nvidia's upcoming print, no new fact; standing items resolved in prior runs

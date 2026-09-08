@@ -76,3 +76,4 @@
 | 2026-09-04 | 📰 BRIEF (evening) | 5 items triaged, 1 logged — "losing NAND share to China" adds a third narrative to the standing price-decline question; tariff/Mizuho and conference-appearance headlines were repeats; /dig still queued |
 | 2026-09-07 | 📰 BRIEF (post-open) | 5 items triaged, 1 logged — Samsung post-earnings selloff is the most specific thread yet on the standing price-decline question; earnings-recap and valuation-opinion headlines were noise; /dig still queued |
 | 2026-09-07 | 📰 BRIEF (evening) | 5 items triaged, 0 new logged — Samsung-selloff and Citigroup-beneficiary headlines recap items already logged post-open; valuation-opinion and week-ahead-earnings-calendar pieces were noise; /dig still queued |
+| 2026-09-08 | 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — Goldman-breakout-signal and "2,440%-in-12-months" recap headlines, no new fact; /dig still queued on the price-decline cause |

@@ -38,3 +38,4 @@
 - **2026-09-04** — 📰 BRIEF (evening) | 1 filing + 4 items triaged, 0 new logged — Broadcom-guidance sentiment recap, valuation opinion, conference-attendance announcement, and a routine exec tax-withholding sale; Form 4 not logged (routine)
 - **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — memory-earnings/52-week-high listicles, no AEHR-specific fact; /dig item still open
 - **2026-09-07** — 📰 BRIEF (evening) | 1 item triaged, 0 new logged — Oracle AI-earnings-cash-flow piece is a company mismatch, no AEHR-specific fact; /dig item still open
+- **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — eBay gender-test-kit probe, Heru VR headset, and Dogecoin/OECD headlines are all company mismatches; /dig item (38%-decline cause) still open

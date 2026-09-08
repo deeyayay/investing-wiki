@@ -63,3 +63,4 @@
 - **2026-09-04** — 📰 BRIEF (evening) | 5 items triaged, 1 logged, conviction ↑ — Agentic SOC/Falcon Guardian launch extends the platform flywheel into shipped product; 4 analyst reiterations/PT raise were routine, no rating change
 - **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, drift flagged — "Q1 beat, -13% AH on modest guidance" headline conflicts with the confirmed Q2 print, escalated to /dig; rest was recap of the already-logged AI-security momentum
 - **2026-09-07** — 📰 BRIEF (evening) | 1 item triaged, 0 new logged — same "Q1 beat, -13% AH" headline recirculating, already logged post-open and queued for /dig
+- **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — Fal.Con-inspired "how will partnership X affect competitor Y" listicles (Clear, Rubrik, Commvault) are speculative framings, not new CRWD facts; standing Q1/Q2 guidance-reaction mismatch still queued for /dig

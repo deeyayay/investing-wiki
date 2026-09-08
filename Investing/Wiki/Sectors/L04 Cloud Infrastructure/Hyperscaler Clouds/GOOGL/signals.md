@@ -29,6 +29,9 @@
 - **2026-09-06/07 (post-open)** — Alphabet prices an upsized $84.75B capital raise (Stocktwits); separately, earnings coverage frames Q2 as strong revenue growth but a muted outlook, with shares edging lower.
   **Why it matters:** An $84.75B raise is a direct funding vehicle for the $180-190B CapEx commitment the thesis depends on — confirms Alphabet can finance the buildout at the scale the Google Cloud growth story requires, independent of the muted near-term outlook framing.
 
+- **2026-09-08 (post-open)** — Google is fully funding PG&E's SHARE virtual power plant experiment (simplywall.st).
+  **Why it matters:** An adjacent energy-infrastructure initiative, not the Cloud/inference-stack leg the thesis rests on — logged as company-level context.
+
 ---
 
 ## Social Mentions
@@ -51,3 +54,4 @@
 - **2026-09-04** — 📰 BRIEF (evening) | 5 items triaged, 1 logged, conviction ↑ — Gemini 3.8 launch + DOJ antitrust ruling win, same session; all 5 headlines covered the same event across different outlets
 - **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, conviction ↑ — $84.75B upsized capital raise funds the standing CapEx commitment; muted-outlook earnings-reaction headlines noted as context, not thesis-moving
 - **2026-09-07** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — $84.75B raise and muted-outlook-earnings headlines recirculating, already logged post-open; futures/Apple-event mentions were company mismatches
+- **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — Google fully funds PG&E virtual power plant experiment (adjacent energy initiative, not core Cloud thesis); rest was valuation/tokenized-stock noise

@@ -31,6 +31,9 @@
 - **2026-08-31** — TSMC executive publicly confirms silicon photonics will surpass 50% of the transceiver market by 2027, with CPO mass production beginning H2 2026 (TrendForce, finance.biggo.com, GuruFocus), via the co-packaged-optics topic feed.
   **Why it matters:** Independent, foundry-level confirmation of the CPO adoption curve from the industry's largest player — directly corroborates the photonixFAB thesis (NVIDIA + Nokia consortium) with a concrete industry timeline, not just XFAB's own consortium participation.
 
+- **2026-09-08 (co-packaged-optics topic feed)** — Samsung is reportedly building in-house silicon photonics PIC testing capability using TSMC-qualified probe tools (TrendForce, digitimes, finance.biggo.com), ahead of a CPO foundry push.
+  **Why it matters:** A new competitive entrant into silicon-photonics/CPO testing capacity — worth tracking alongside XFAB's own photonixFAB (NVIDIA + Nokia consortium) angle as a capacity/competitive-dynamics watch item, not yet a threat to the thesis.
+
 ---
 
 ## Social Mentions
@@ -52,3 +55,4 @@
 - **2026-08-31** — 📰 BRIEF (post-open) | 1 item + 1 topic hit triaged, 1 logged, drift confirmed — TSMC publicly confirms CPO mass production H2 2026 and >50% silicon photonics penetration by 2027
 - **2026-09-07** — 📰 BRIEF (post-open) | 1 item triaged, 0 new logged — WDP (logistics) headline is a company mismatch, no XFAB-specific fact
 - **2026-09-07** — 📰 BRIEF (evening) | 1 item + 1 topic hit triaged, 0 new logged — same WDP company mismatch; silicon-photonics topic hit (TSMC/Taiwan alliance) recaps industry context already logged 08-31
+- **2026-09-08** — 📰 BRIEF (post-open) | 0 items + 1 topic hit triaged, 1 logged — co-packaged-optics topic feed surfaces Samsung's new in-house silicon-photonics PIC-testing push, a fresh competitive-dynamics item
