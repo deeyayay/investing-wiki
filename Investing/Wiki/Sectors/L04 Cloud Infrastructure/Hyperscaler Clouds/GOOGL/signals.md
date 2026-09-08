@@ -50,3 +50,4 @@
 - **2026-09-02** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — Gemini Enterprise for Financial Services headline recaps the item already logged post-open; rest was stock-commentary/listicle noise
 - **2026-09-04** — 📰 BRIEF (evening) | 5 items triaged, 1 logged, conviction ↑ — Gemini 3.8 launch + DOJ antitrust ruling win, same session; all 5 headlines covered the same event across different outlets
 - **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, conviction ↑ — $84.75B upsized capital raise funds the standing CapEx commitment; muted-outlook earnings-reaction headlines noted as context, not thesis-moving
+- **2026-09-07** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — $84.75B raise and muted-outlook-earnings headlines recirculating, already logged post-open; futures/Apple-event mentions were company mismatches

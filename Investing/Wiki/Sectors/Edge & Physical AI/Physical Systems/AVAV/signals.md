@@ -45,3 +45,4 @@ _None yet — seeded on onboarding._
 | 2026-09-04 | 📰 BRIEF (evening) | 5 items triaged, 1 logged — 100% drone-import tariff takes effect, resolving the 08-31 ambiguity bullish for AVAV; laser-contract/E-HEL headlines were repeats of 09-02/03, earnings-move-size and price-quote items were noise |
 | 2026-09-04 | 📰 BRIEF (post-open) | 5 items triaged, 1 logged — RBC downgrade to Sector Perform ($180 PT) is the first rating cut on file; tariff and laser-contract headlines repeated 09-03/09-02 |
 | 2026-09-07 | 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — "$500M Army contract/133% revenue beat," ManTech CFO board appointment, and laser-deal headlines all recirculate items already logged 08-31/08-26/09-02-03 |
+| 2026-09-07 | 📰 BRIEF (evening) | 2 items + 1 topic hit triaged, 0 new logged — same $500M Army contract and RBC downgrade headlines recirculating, already logged 09-04; humanoid-robotics topic hit had no AVAV-specific development |

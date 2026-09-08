@@ -51,3 +51,4 @@
 - **2026-06-19** — Scored — Composite 6.5/10 Strong | P:4 PP:3 L:2 FH:3 ME:4 FP:4
 - **2026-08-31** — 📰 BRIEF (post-open) | 1 item + 1 topic hit triaged, 1 logged, drift confirmed — TSMC publicly confirms CPO mass production H2 2026 and >50% silicon photonics penetration by 2027
 - **2026-09-07** — 📰 BRIEF (post-open) | 1 item triaged, 0 new logged — WDP (logistics) headline is a company mismatch, no XFAB-specific fact
+- **2026-09-07** — 📰 BRIEF (evening) | 1 item + 1 topic hit triaged, 0 new logged — same WDP company mismatch; silicon-photonics topic hit (TSMC/Taiwan alliance) recaps industry context already logged 08-31

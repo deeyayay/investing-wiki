@@ -51,3 +51,4 @@
 - **2026-09-02** — 📰 BRIEF (evening) | 5 items + 1 topic hit triaged, 1 logged — SK Chairman weighs Kioxia partnership on Japan plant (early-stage) + JV partner SanDisk's HBF bandwidth-parity claim; rest was stock-move/listicle noise
 - **2026-09-04** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — "Kioxia plans new chip fab in Japan" headlines recap the 09-02 SK Hynix/Kioxia partnership item; rest was analyst-opinion/macro noise
 - **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — price/derivatives listicles and a Japan-market-rally recap, no Kioxia-specific fact
+- **2026-09-07** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — same price/derivatives and Nikkei-rally recap, no Kioxia-specific fact

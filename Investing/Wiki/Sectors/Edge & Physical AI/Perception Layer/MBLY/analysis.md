@@ -25,6 +25,7 @@ _Not yet scored — run `/score-ticker MBLY`._
 |------|-------|--------------|-----|
 | 2026-06-15 | Onboarded to wiki | New | Closes the Edge-surface "Autonomous Vehicles" box; anchors new AV & ADAS tier with volume production today. |
 | 2026-08-26 | Earnings beat on bottom line; shares fell 4.32% on a downward estimate revision | → Neutral | Mixed: fundamental beat is a positive data point, but the estimate cut and price reaction alongside the 08-25 robotaxi-skepticism headline keep this in deep-pass territory rather than a clean confirmation |
+| 2026-09-07 | New design win with a major US automaker (unnamed) | ↑ | Direct confirmation of the "high-volume production economics" leg — a fresh commercial deal on top of the shipping ADAS base; automaker/program details unconfirmed pending further coverage |
 
 ## Cross-Ticker Signals
 

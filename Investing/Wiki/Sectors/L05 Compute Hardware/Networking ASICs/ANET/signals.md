@@ -54,3 +54,4 @@
 | 2026-09-01 | BRIEF (post-open) | 5 items triaged, 1 logged — Deutsche Bank Buy initiation + $60.78M director share sale (routine) |
 | 2026-09-02 | BRIEF (evening) | 5 items triaged, 0 new logged — earnings-call announcement (no numbers), unrelated Palo Alto Networks headline, minor stake filing, and a Deutsche Bank pick naming Lumentum/Coherent (not ANET) — all noise |
 | 2026-09-04 | BRIEF (evening) | 5 items triaged, 0 new logged — Ciena-guidance/Arista-edges-higher recap, earnings-recap opinion pieces, and a vague pre-disclosure security-advisory headline too thin to log |
+| 2026-09-07 | BRIEF (evening) | 5 items triaged, 0 new logged — IBM-comparison listicle, S&P 100 inclusion, and 52-week-high commentary, all sentiment/index noise, no ANET-specific fact; EDGAR 503 |

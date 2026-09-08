@@ -11,6 +11,7 @@
 | 2022 | IPO; Intel retains controlling stake | filings | Stability anchor + potential secondary-sale overhang. |
 | 2026-08-25 | "Intel-Backed Mobileye Faces Fresh Analyst Skepticism Over Robotaxi Ambitions – But Retail Remains Bullish" | Stocktwits | Directly touches the robotaxi/full self-drive leg of the thesis; no specifics given on which analyst or why — needs /dig to assess whether this is a real thesis test. |
 | 2026-08-26 | Earnings report: bottom-line figure beats estimates; shares move 4.32% lower on the day (downward estimate revision noted) | vinanet.vn | First hard earnings data point since onboarding — a bottom-line beat alongside a negative price reaction and forward estimate cut is a mixed signal; worth reading against the 08-25 robotaxi-skepticism item once /dig runs. |
+| 2026-09-07 | Mobileye secures a deal with a major US automaker (unnamed in headline) | Stocktwits | New commercial design win — directly confirms the "high-volume production economics" leg of the thesis; automaker and program details unconfirmed, worth a /dig follow-up if more specifics surface. |
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -25,3 +26,4 @@ _None yet — seeded on onboarding._
 | 2026-09-02 | 📰 BRIEF (evening) | 5 items triaged, 0 new logged — technical-reaction commentary, an unrelated Apple-CEO-succession item, and undervalued-stock listicles; no MBLY-specific fact |
 | 2026-09-04 | 📰 BRIEF (evening) | 5 items + 1 topic hit triaged, 0 new logged — undervalued-stock listicles and a robotaxi-market-size report, no MBLY-specific fact; physical-ai topic hit had no MBLY-specific development |
 | 2026-09-07 | 📰 BRIEF (post-open) | 2 items triaged, 0 new logged — Nasdaq-attention and sensor-fusion-market-size listicles, no MBLY-specific fact |
+| 2026-09-07 | 📰 BRIEF (evening) | 3 items triaged, 1 logged, conviction ↑ — new automaker design win confirms the production-economics leg; Nasdaq-attention and sensor-fusion listicles were repeats |

@@ -32,6 +32,9 @@
 - **2026-09-02 (evening)** — Lemonade launches car insurance in Missouri with a Tesla discount; separately, expands renters insurance to Kansas.
   **Why it matters:** Two more state-expansion moves in the same week — auto now explicitly pairs with the Tesla-FSD data-moat angle again (Missouri), and renters adds another state to the base-business geographic footprint. Both extend the growth trajectory the thesis leans on; neither touches the loss-ratio/EBITDA-timeline leg still pending /dig.
 
+- **2026-09-07 (evening)** — Lemonade reaches a $10.5M settlement over a data breach (CNBC).
+  **Why it matters:** A material legal/reputational cost tied directly to customer data — relevant given the thesis rests on a proprietary claims-data flywheel, though the settlement itself is a cost item, not evidence the flywheel or underwriting model is compromised. Logged as company-level material, not thesis-moving.
+
 ---
 
 ## Social Mentions
@@ -53,3 +56,4 @@
 - **2026-09-02** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — Missouri auto (Tesla discount) + Kansas renters expansion continue the state-count growth trajectory; Q2-earnings-figures /dig item still open
 - **2026-09-04** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — Missouri Tesla-discount headlines recap the already-logged 09-02 item; routine exec share sale and institutional 13F not logged; EDGAR timed out
 - **2026-09-07** — 📰 BRIEF (post-open) | 3 items triaged, 0 new logged — Florida/Missouri auto-launch headline recaps items already logged; rest was unrelated-ticker noise
+- **2026-09-07** — 📰 BRIEF (evening) | 1 filing + 4 items triaged, 1 logged — $10.5M data breach settlement logged as company-level material, not thesis-moving; routine Form 4 not logged

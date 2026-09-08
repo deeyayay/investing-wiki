@@ -29,6 +29,9 @@
 - **2026-09-06/07 (post-open)** — Shares plunge/tumble ~10% despite beating Q4 estimates and issuing upbeat FY27 guidance (Blockonomi, moneycheck.com); Citizens JMP raises PT to $415 on a record high the same week.
   **Why it matters:** A -10% reaction despite a beat-and-raise is a valuation/positioning move, not new evidence against the consolidation thesis — the already-logged Console acquisition and raised guidance stand; logged for the audit trail as the market's reaction to the 09-01 print.
 
+- **2026-09-07 (evening)** — An unnamed bank downgrades PANW after earnings (GuruFocus); no PT or reasoning given in the headline.
+  **Why it matters:** A second bearish data point alongside the -10% post-earnings reaction — still no fundamental detail contradicting the beat-and-raise, logged as market-context for the audit trail, not thesis-moving.
+
 ---
 
 ## Social Mentions
@@ -52,3 +55,4 @@
 - **2026-09-03** — 📰 BRIEF (post-open) | 1 filing triaged, 0 new logged — same Q4-beat 8-K (items 2.02/9.01) filed 09-01, still recapping the already-logged Console acquisition/earnings entry
 - **2026-09-04** — 📰 BRIEF (evening) | 1 filing + 4 items triaged, 0 new logged — same Q4-beat 8-K and Console-acquisition headlines recirculating across more outlets, both already logged 09-01/09-02; Zendesk Startup Program partnership is minor, not logged
 - **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — -10% reaction despite beat-and-raise logged as market context, not thesis-moving; Citizens JMP PT raise to $415 was routine
+- **2026-09-07** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — unnamed-bank downgrade after earnings is a second bearish data point on the post-earnings reaction, no new fundamental detail; rest recapped the 09-06/07 -10% reaction
