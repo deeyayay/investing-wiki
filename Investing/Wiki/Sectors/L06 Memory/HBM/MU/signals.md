@@ -73,6 +73,9 @@
 - **2026-09-08 (post-open)** — Seeking Alpha questions "what's actually inside Micron's $100 billion" framing and issues a rating downgrade; separately, Bernstein maintains a Buy rating with a $1,300 price target. Via the hbm-supply topic feed: Nvidia is reportedly shifting its Rubin Ultra platform toward 8-high HBM stacks as memory costs rise (digitimes).
   **Why it matters:** The downgrade is a second bearish counter-narrative after 09-07's Goldman-Neutral item, folded into the standing /dig queue rather than treated as fact. The Rubin Ultra 8-high-HBM detail is the first concrete specification behind the standing "Nvidia alternative HBM tech" watch item on the "stacked on every NVDA GPU" thesis leg — still not enough to move drift, but sharpens what /dig needs to confirm.
 
+- **2026-09-08 (evening)** — Pluang: Micron is downgraded to Hold after its 23% rally, citing contract risks and Chinese competition capping further upside. Separately, the hbm-supply topic feed reports CXMT now ranks #4 globally in HBM (AI: Reset to Zero).
+  **Why it matters:** A third, now formal, bearish counter-narrative (after 09-07's Goldman-Neutral and 09-08's Seeking Alpha downgrade) — and the first to name a specific cause (contract risk, Chinese competition) rather than just valuation. The CXMT #4 ranking is a concrete data point behind the "Chinese competition" claim, sharpening the standing /dig queue on the Nvidia-alt-HBM/competitive-moat watch items rather than resolving it.
+
 ---
 
 ## Social Mentions
@@ -107,3 +110,4 @@
 | 2026-09-07 | BRIEF (post-open) | 📰 5 items + 1 topic hit triaged, 1 logged — Goldman doubles PT but stays Neutral, and a new oversupply-headwind question is the first bearish counter-narrative logged, added to the standing /dig queue |
 | 2026-09-07 | BRIEF (evening) | 📰 5 items + 1 topic hit triaged, 0 new logged — JPMorgan/Goldman PT and Samsung-disruption headlines recap items already logged post-open; hbm-supply topic hit (Samsung/SK hynix 4nm capacity) is industry context, no new MU-specific fact |
 | 2026-09-08 | BRIEF (post-open) | 📰 5 items + 1 topic hit triaged, 1 logged — new bearish Seeking Alpha downgrade questions the "$100B" framing, second counter-narrative after 09-07's Goldman-Neutral item; Bernstein reiterates Buy $1,300 PT; hbm-supply topic hit (Nvidia Rubin Ultra shift toward 8-high HBM) sharpens the standing Nvidia-alt-HBM /dig watch item |
+| 2026-09-08 (evening) | BRIEF | 📰 5 items + 1 topic hit triaged, 1 logged, conviction ↓ — formal downgrade to Hold citing contract risk + Chinese competition is the third bearish counter-narrative on file; hbm-supply topic hit (CXMT #4 global HBM rank) corroborates the Chinese-competition claim; rally/valuation-opinion and Bernstein-reiterate headlines were repeats |

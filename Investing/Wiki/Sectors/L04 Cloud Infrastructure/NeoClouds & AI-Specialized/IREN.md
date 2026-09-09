@@ -92,6 +92,9 @@ The structural edge is the 3GW permitted power pipeline — grid-connected land 
 - **2026-05-19** — IREN acquired Awaken (AI software team, May 18) and Mirantis (Kubernetes cloud orchestration); $3B convertible notes offering closed. Three simultaneous moves signal vertical expansion from infrastructure to managed AI cloud platform.
   **Why it matters:** Awaken + Mirantis add the software layers (AI workload management, container orchestration) that sit between raw GPU capacity and end customers — IREN is building toward an integrated AI cloud stack, not just a GPU leasing business.
 
+- **2026-09-08 (evening, topic feed)** — IREN surges 7% on conditional ERCOT status for its 2GW Sweetwater Hub; Applied Digital also climbs on the same grid-interconnection news (24/7 Wall St.).
+  **Why it matters:** ERCOT interconnection approval is a real regulatory/infrastructure milestone for the same Sweetwater Campus already designated NVIDIA's DSX flagship deployment (2026-05-07) — it's a gating step toward actually energizing that capacity, not just a demand signal.
+
 ---
 
 ## Cross-Ticker Signals
@@ -114,3 +117,4 @@ The structural edge is the 3GW permitted power pipeline — grid-connected land 
 - **2026-05-12** — 🔥 FILING | IREN Q3 FY2026 8-K: Revenue $144.8M (AI Cloud $33.6M, +94% QoQ), Adj EBITDA $59.5M, net loss $(247.8)M (incl. $140.4M impairments). NVIDIA partnership: 5-yr right to purchase 30M shares @ $70 ($2.1B) for 5GW AI DC pipeline. Cash $2.6B at Apr 30. Source: SEC/GlobeNewswire. [[IREN_8K_2026-05-07]]
 - **2026-05-14** — stock-research run (--refresh). Investment thesis, Management & Leadership populated from web research and SEC proxy metadata (EDGAR CIK 0001878848). DEF 14A direct fetch returned 403 — insider % sourced from proxy metadata and public filings.
 - **2026-05-19** — 📰 DAILY-NEWS | Awaken acquisition + Mirantis acquisition + $3B convertible offering signal vertical AI cloud expansion (impact 4)
+- **2026-09-08 (evening)** — 📰 BRIEF (topic feed) | power-constraint topic hit: conditional ERCOT status for the 2GW Sweetwater Hub — this morning's pass surfaced the same headline only in the digest-level Themes summary without writing it to IREN's own page; logged here for the first time as the direct infrastructure milestone it is on the already-tracked NVIDIA DSX-flagship campus. Not on today's Watchlist ticker scan, picked up via topic-feed cross-check.

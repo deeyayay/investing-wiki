@@ -39,6 +39,9 @@
 - **2026-09-04 (evening)** — SoFi and Kraken's parent Payward link stablecoin and dollar-settlement networks, pushing SoFiUSD onto Kraken for 24/7 settlement (finance.biggo.com / bloomingbit / TradingView / CoinLaw).
   **Why it matters:** First concrete distribution deal for the SoFi USD stablecoin named in the catalyst timeline — a live exchange partner and 24/7 settlement rail is the "timing and initial use cases" question starting to resolve, directly extending the Galileo/rails leg of the thesis.
 
+- **2026-09-08 (evening)** — SoFi stock surges on a new Notre Dame partnership deal (eciks.org); Kraken/Payward stablecoin coverage recirculates the already-logged 09-04 item.
+  **Why it matters:** The Notre Dame deal is a new institutional/university partnership not previously logged — no deal-terms detail yet, logged for the audit trail as a new distribution/brand channel outside the core LPB/Galileo thesis legs. The Kraken/Payward reference is a repeat, not re-logged.
+
 ---
 
 ## Social Mentions
@@ -64,3 +67,4 @@
 - **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — Kraken-partnership follow-up commentary repeats the already-logged 09-04 item; Cramer opinion and institutional 13F headlines were routine
 - **2026-09-07** — 📰 BRIEF (evening) | 1 item triaged, 0 new logged — same Kraken-stablecoin-partnership framing recirculating, already logged 09-04
 - **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — valuation-opinion and crypto-listing-question pieces, no new fact; standing short-seller-accounting /dig item still open
+- **2026-09-08 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — new Notre Dame partnership deal; Kraken/Payward stablecoin headline repeats 09-04; standing short-seller-accounting /dig item still open

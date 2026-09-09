@@ -54,6 +54,7 @@ _Last scored: — | [[Scoring Rubric]]_
 | 2026-08-27 | CEO held acquisition talks with Okta and Datadog; signals more deals coming | ↑ | Concrete evidence of the active platform-consolidation strategy central to the thesis — PANW pursuing M&A, not just organic cross-sell. |
 | 2026-08-28 (post-open) | Stock soars on an Okta takeover-talks report; market pricing in the consolidation story | ↑ | The market is now actively pricing the 08-27 M&A talks as a live deal possibility — reinforces the platform-consolidation thesis, though the deal itself is still unconfirmed. |
 | 2026-09-01 | Acquires Console (agentic-AI security platform), beats Q4 earnings | ↑ | Direct M&A into the AI-native consolidation thesis; joins the Okta/Datadog talks already logged as evidence of an active buy-side strategy |
+| 2026-09-08 (evening) | Q4 2026 earnings call: RPO surpasses $20B on nearly $1B net new NGS ARR | ↑ | A large, growing contracted-backlog number is direct evidence the cross-sell/consolidation flywheel is converting into booked revenue, beyond the already-logged $8.1B NGS ARR and $11.42B FY2026 guide |
 
 ---
 

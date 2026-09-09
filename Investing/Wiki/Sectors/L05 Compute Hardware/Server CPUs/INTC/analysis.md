@@ -62,6 +62,7 @@ _Last scored: 2026-06-07 | [[Scoring Rubric]]_
 | 2026-06-07 | Intel repurchases Apollo's 49% Fab 34 Ireland stake for $14.2B (cash + $6.5B bridge loan) | ↑ | Full fab ownership strengthens IFS vertical control; large debt load is tail risk but shows conviction |
 | 2026-06-07 | Mizuho ↑ $128, Wells Fargo ↑ $110, Barclays ↑ $100 (all June 2, 2026) | ↑ | Tier-1 analyst upgrades reflect improving IFS credibility; PT dispersion narrowing bullishly |
 | 2026-08-31 | HSBC: foundry business "Too Good to Ignore," sees another 60% upside | ↑ | Escalation from Buy-reiteration to a quantified upside call; sell-side raising conviction on the rerate through the post-raise pullback |
+| 2026-09-08 (evening) | Northland upgrades Intel, explicitly citing the foundry partnership; separate report of a CPU price hike | ↑ | First named-firm upgrade to tie its rating directly to the foundry-partnership leg, rather than a generic PT reset; a reported price hike adds a pricing-power data point alongside the still-open $11B-net-loss /dig question |
 
 ---
 

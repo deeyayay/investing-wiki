@@ -38,6 +38,9 @@
 - **2026-09-06/07 (post-open)** — Two analyst upgrades to Buy (Pluang recap; Seeking Alpha's "Credo's Meltdown Is A Gift As Durable Capex Meets Cooling AI Trade") frame the post-earnings selloff as a buying opportunity now that the DustPhotonics-amortization explanation is public.
   **Why it matters:** Analyst action with explicit reasoning tied to the already-resolved 09-02 /dig finding (the -11.8% drop was non-operational purchase-accounting amortization, not demand weakness) — corroborates the dig's conclusion from the sell-side rather than adding a new fact.
 
+- **2026-09-08 (evening, earnings call)** — Credo's Q1 FY2027 earnings call: guides to $530M for the next quarter as the Optics segment is guided to top $600M (finance.biggo.com, The Globe and Mail).
+  **Why it matters:** The first forward-quarter guidance figures since the 09-02 /dig resolved the margin scare — a $530M guide and an Optics segment guided above $600M are new, harder data points on top of the already-confirmed $479.0M/68.0% non-GAAP print, and specifically size the DustPhotonics-driven optical-expansion leg the 09-02 dig flagged as underweighted in the original Hyperlume framing.
+
 ---
 
 ## Social Mentions
@@ -65,3 +68,4 @@
 - **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — two analyst Buy upgrades corroborate the 09-02 DIG's DustPhotonics-amortization explanation; rest was recap of the already-resolved earnings reaction
 - **2026-09-07** — 📰 BRIEF (evening) | 3 items triaged, 0 new logged — Buy-upgrade and "hidden moat" pieces recap items already logged post-open/09-02; 2 unrelated prediction-market headlines were false-positive matches
 - **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — CalSTRS position-increase and "buy the pullback" opinion pieces recap the already-resolved 09-02 DIG findings; no new operating fact
+- **2026-09-08 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — earnings-call guide of $530M with Optics guided to top $600M is the first forward-quarter figure logged; meme-coin listicle was noise

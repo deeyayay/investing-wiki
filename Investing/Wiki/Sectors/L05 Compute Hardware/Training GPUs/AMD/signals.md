@@ -59,3 +59,4 @@
 - **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, conviction ↑ — record Q2 revenue (+50% YoY) is the first hard number against the $14-15B CY2026 tracking claim; rest was routine 13F/institutional-position noise
 - **2026-09-07** — 📰 BRIEF (evening) | 1 item triaged, 0 new logged — same record-Q2-revenue headline recirculating, already logged post-open
 - **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — AI workstation launch + Riot Platforms' AMD-powered data-center buildout; rest was routine institutional-position noise
+- **2026-09-08 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — AI-workstation-launch headline recirculates the already-logged 09-08 item; generic "Advanced Micro Devices Upgraded" blue-chip-ranking listicle names neither firm nor target, treated as noise; insider-sale and "why up today" headlines were routine

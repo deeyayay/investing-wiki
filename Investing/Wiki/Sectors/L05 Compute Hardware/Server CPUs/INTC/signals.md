@@ -56,6 +56,9 @@
 - **2026-09-08 (post-open)** — Conflicting analyst actions same day: an unnamed upgrade (TipRanks) against a price-target cut to $92 (Blockonomi), with INTC down 32% from its recent peak.
   **Why it matters:** No new fundamental fact behind either action — the standing /dig item on the $11B net loss remains the real open question; logged as MATERIAL context only.
 
+- **2026-09-08 (evening)** — Northland upgrades Intel, explicitly citing the foundry partnership (Investing.com Canada); separately, coverage reports a CPU price-hike alongside the upgrade (eciks.org).
+  **Why it matters:** Unlike the 09-08 "unnamed upgrade," this names the firm and ties the rating action directly to the foundry-partnership leg of the thesis — a more concrete confirming data point. A reported CPU price hike is a new pricing-power signal, worth tracking alongside the standing $11B-net-loss /dig item.
+
 ---
 
 ## Social Mentions
@@ -85,3 +88,4 @@
 - **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, drift flagged — $11B net loss despite Q2 revenue beat needs /dig to confirm cause; Apple deal now confirmed by Trump (escalation from "preliminary"); Xeon 6/Nvidia-PC-processor headline repeats 09-01
 - **2026-09-07** — 📰 BRIEF (evening) | 3 items triaged, 0 new logged — $11B-loss recap and a generic "5-star analyst resets PT" headline (no firm/figure named), no new fact; /dig item still open
 - **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — conflicting analyst actions (unnamed upgrade vs. PT cut to $92) logged as context; Trump AI-image/rally headlines were noise; /dig item ($11B loss cause) still open
+- **2026-09-08 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged, conviction ↑ — Northland's named upgrade explicitly cites the foundry partnership, plus a CPU price-hike report; other analyst-upgrade headlines were repeats of the same Northland action across outlets; /dig item ($11B loss cause) still open

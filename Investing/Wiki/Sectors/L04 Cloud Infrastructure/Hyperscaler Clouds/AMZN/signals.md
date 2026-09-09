@@ -41,6 +41,9 @@
 - **2026-09-08 (post-open)** — Three new legal/operational matters: the FTC is reportedly preparing an ad-price lawsuit (shares on track for their worst day in a month on the report); a pregnancy-discrimination lawsuit was filed against Amazon; and an investigation has launched into the Amazon Air cargo-plane crash at Miami International.
   **Why it matters:** All three are company-level legal/operational risk, outside the AWS/Trainium cloud-infrastructure thesis leg — logged for the audit trail, not thesis-moving.
 
+- **2026-09-08 (evening)** — Qualcomm issues Amazon a share warrant, per a midday markets roundup (marketscreener.com); Bryn Mawr Trust discloses a new AMZN position. EDGAR timed out for AMZN again tonight.
+  **Why it matters:** A share warrant from Qualcomm to Amazon is a new capital/commercial-tie fact between the two companies — no deal detail yet on the underlying commercial arrangement, logged for the audit trail; outside the AWS/Trainium thesis leg. The FTC ad-price lawsuit headline recirculating tonight repeats 09-08 post-open; not re-logged.
+
 ---
 
 ## Social Mentions
@@ -67,3 +70,4 @@
 - **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, conviction ↑ — earnings beat with capex fears not materializing confirms the AWS capex thesis leg; new tariff class-action suit and satellite/Kuiper milestone logged as company-level context
 - **2026-09-07** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — new seafood "greenwashing" class-action suit is a third distinct legal matter, logged as company-level material; FTC ad-price and tariff-suit headlines were repeats of 09-06/07 post-open
 - **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — three new legal/operational matters (FTC ad-price lawsuit prep, pregnancy-discrimination suit, Amazon Air crash investigation) logged as company-level context, not thesis-moving
+- **2026-09-08 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — Qualcomm share warrant to Amazon is a new capital/commercial fact; FTC ad-price lawsuit and Prime Air-crash-scrutiny headlines repeat 09-08; EDGAR timed out again
