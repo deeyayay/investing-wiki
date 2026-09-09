@@ -32,6 +32,9 @@
 - **2026-09-08 (post-open)** — XenoSpectrum: reports Apple has signed a long-term NAND supply deal, with Kioxia "seen as likely partner" (unconfirmed); separately, SK hynix declines to confirm pre-IPO rumors about spinning off Solidigm.
   **Why it matters:** An Apple supply relationship would be a major new demand-side confirmation of the AI-storage thesis, but the sourcing is speculative ("seen as likely") with no primary confirmation — flagged for /dig rather than logged as fact. The Solidigm pre-IPO story is a competitor capital-structure item, not a Kioxia-specific fact.
 
+- **2026-09-09 (post-open)** — Kioxia CEO downplays deeper SK hynix ties and warns that rapid NAND price hikes could dampen AI investment appetite (TradingKey).
+  **Why it matters:** First management-sourced caution on the demand leg — a counterweight to the 09-08 "sold out through 2027" confirmation from Kioxia's own memory-business MD. Not thesis-breaking on its own, but worth tracking if the price-hike/demand-destruction framing recurs.
+
 ---
 
 ## Social Mentions
@@ -57,3 +60,4 @@
 - **2026-09-07** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — same price/derivatives and Nikkei-rally recap, no Kioxia-specific fact
 - **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, drift flagged — Apple long-term NAND supply deal rumor names Kioxia as likely partner (unconfirmed), added to /dig queue; SK hynix Solidigm pre-IPO comment and fund-review recaps were noise
 - **2026-09-08** — 🔬 DIG | 0 filings read (cik: null, not an SEC filer), 5 claims tested, verdict: 2 CONFIRMED, 3 INTACT — Apple NAND-LTA-with-Kioxia rumor stays unconfirmed by either company; Kioxia exec's "sold out through 2027" statement and Apple's earlier acceptance of a ~2x NAND price hike both independently confirm the demand/pricing-power thesis legs without settling the specific rumor
+- **2026-09-09 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Kioxia CEO's own caution on NAND price-hike risk to AI investment is the first management-sourced counterweight to the demand thesis; rest was fund-commentary/listicle noise

@@ -44,6 +44,9 @@
 - **2026-09-08 (evening)** — Qualcomm issues Amazon a share warrant, per a midday markets roundup (marketscreener.com); Bryn Mawr Trust discloses a new AMZN position. EDGAR timed out for AMZN again tonight.
   **Why it matters:** A share warrant from Qualcomm to Amazon is a new capital/commercial-tie fact between the two companies — no deal detail yet on the underlying commercial arrangement, logged for the audit trail; outside the AWS/Trainium thesis leg. The FTC ad-price lawsuit headline recirculating tonight repeats 09-08 post-open; not re-logged.
 
+- **2026-09-09 (post-open)** — 424B5 prospectus filed on EDGAR (shelf registration/offering document); separately, KeyBanc reiterates its Qualcomm rating citing an Amazon-Qualcomm chip deal, with Qualcomm shares climbing on the news (Investing.com, MarketWatch).
+  **Why it matters:** The 424B5 is a routine shelf-registration filing, logged for the audit trail. The Qualcomm chip-deal reaction extends the 09-08 share-warrant item into an actual commercial tie — still no deal detail at headline level, but a chip relationship with Qualcomm is potentially relevant to the Trainium custom-silicon moat framing if it signals diversified sourcing rather than pure in-house build; flagged for /dig.
+
 ---
 
 ## Social Mentions
@@ -71,3 +74,4 @@
 - **2026-09-07** — 📰 BRIEF (evening) | 5 items triaged, 1 logged — new seafood "greenwashing" class-action suit is a third distinct legal matter, logged as company-level material; FTC ad-price and tariff-suit headlines were repeats of 09-06/07 post-open
 - **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — three new legal/operational matters (FTC ad-price lawsuit prep, pregnancy-discrimination suit, Amazon Air crash investigation) logged as company-level context, not thesis-moving
 - **2026-09-08 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — Qualcomm share warrant to Amazon is a new capital/commercial fact; FTC ad-price lawsuit and Prime Air-crash-scrutiny headlines repeat 09-08; EDGAR timed out again
+- **2026-09-09 (post-open)** — 📰 BRIEF | 5 items + 1 filing triaged, 1 logged, deep-pass flagged — Qualcomm chip-deal reaction extends the 09-08 share-warrant item into a commercial tie, escalated to /dig for relevance to the Trainium moat framing; 424B5 shelf filing logged as routine

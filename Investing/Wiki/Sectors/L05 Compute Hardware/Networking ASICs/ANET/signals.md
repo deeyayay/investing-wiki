@@ -29,6 +29,9 @@
 **2026-09-01 (post-open)** — Deutsche Bank initiates coverage with a Buy rating; separately, an ANET director sold $60.78M in shares (Investing.com).
 *Why it matters:* A new sell-side initiation with a Buy rating is a fresh confirming data point, though the headline gives no valuation reasoning. The director sale is large but logged as a routine insider transaction absent any 10b5-1/timing red flag in the headline.
 
+**2026-09-09 (post-open)** — Goldman Sachs initiates coverage with a Buy rating and $225 price target (moomoo.com).
+*Why it matters:* A second new sell-side initiation in as many weeks (after Deutsche Bank's 09-01 Buy), with a specific price target this time — a fresh confirming data point on the Ethernet-at-hyperscaler-scale thesis, though headline-level detail gives no valuation reasoning.
+
 ---
 
 ## Social Mentions
@@ -56,3 +59,4 @@
 | 2026-09-04 | BRIEF (evening) | 5 items triaged, 0 new logged — Ciena-guidance/Arista-edges-higher recap, earnings-recap opinion pieces, and a vague pre-disclosure security-advisory headline too thin to log |
 | 2026-09-07 | BRIEF (evening) | 5 items triaged, 0 new logged — IBM-comparison listicle, S&P 100 inclusion, and 52-week-high commentary, all sentiment/index noise, no ANET-specific fact; EDGAR 503 |
 | 2026-09-08 | BRIEF (post-open) | 5 items triaged, 0 new logged — S&P-index-reshuffle mentions (Bloom Energy in, Nike out) and a "stock looks pricey" opinion piece, no ANET-specific fact |
+| 2026-09-09 | BRIEF (post-open) | 5 items triaged, 1 logged — Goldman Buy initiation ($225 PT) is a new analyst data point; rest was earnings-call-live-stream noise and valuation-opinion recap |

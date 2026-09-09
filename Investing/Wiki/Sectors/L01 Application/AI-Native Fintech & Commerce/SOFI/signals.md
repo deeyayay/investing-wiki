@@ -42,6 +42,9 @@
 - **2026-09-08 (evening)** — SoFi stock surges on a new Notre Dame partnership deal (eciks.org); Kraken/Payward stablecoin coverage recirculates the already-logged 09-04 item.
   **Why it matters:** The Notre Dame deal is a new institutional/university partnership not previously logged — no deal-terms detail yet, logged for the audit trail as a new distribution/brand channel outside the core LPB/Galileo thesis legs. The Kraken/Payward reference is a repeat, not re-logged.
 
+- **2026-09-09 (post-open)** — Loop Capital initiates coverage at Hold with a $22 price target (marketscreener.com, TipRanks).
+  **Why it matters:** A new analyst initiating at Hold (not Buy) is a mixed, neutral data point — logged for the audit trail as new coverage, not a thesis-moving event either direction.
+
 ---
 
 ## Social Mentions
@@ -68,3 +71,4 @@
 - **2026-09-07** — 📰 BRIEF (evening) | 1 item triaged, 0 new logged — same Kraken-stablecoin-partnership framing recirculating, already logged 09-04
 - **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — valuation-opinion and crypto-listing-question pieces, no new fact; standing short-seller-accounting /dig item still open
 - **2026-09-08 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — new Notre Dame partnership deal; Kraken/Payward stablecoin headline repeats 09-04; standing short-seller-accounting /dig item still open
+- **2026-09-09 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Loop Capital Hold initiation ($22 PT) is new but neutral coverage; Notre Dame/Kraken headline repeats 09-08 evening; standing short-seller-accounting /dig item still open

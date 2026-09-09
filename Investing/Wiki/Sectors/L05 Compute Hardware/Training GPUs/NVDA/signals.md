@@ -60,6 +60,9 @@
 - **2026-09-04 (post-open)** — CNBC/The Tech Buzz/TradingKey: Nvidia's total AI-company investments now total $99B; separately in discussions for a $2.5B stake in Mira Murati's Thinking Machines Lab.
   **Why it matters:** Another concrete entry in the balance-sheet-backed ecosystem-investment pattern (OpenAI, Nebius, SpaceX, Cloverleaf, MediaTek, SB Energy, Hugging Face) — the $99B aggregate figure is the first headline-level total for the whole pattern, and Thinking Machines Lab extends it into another frontier-lab stake.
 
+- **2026-09-09 (post-open)** — Nvidia invests $1.5B in SB Energy to support an OpenAI data center, and pushes back publicly on "circular financing" concerns (Stocktwits).
+  **Why it matters:** Extends the same balance-sheet-backed ecosystem-investment pattern already flagged (OpenAI, Nebius, SpaceX, Cloverleaf, MediaTek, SB Energy, Hugging Face, Thinking Machines) — the explicit circular-financing pushback is new framing addressing the bear narrative directly, though it doesn't resolve the underlying question.
+
 ---
 
 ## Social Mentions
@@ -107,3 +110,4 @@
 - **2026-09-07** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — FLNC-partnership, "70% growth" bull case, and IREN capex-commitment headlines all recap items already logged; "SpaceX IPO hype" framing is sentiment/opinion, not a new fact
 - **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — all pre-earnings preview/valuation commentary ahead of Nvidia's upcoming print, no new fact; standing items resolved in prior runs
 - **2026-09-08 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — vague "AI stock 30x faster than Nvidia's GPUs" competitive-claim piece names no company and is unverifiable at headline level, treated as hype not fact; "Mocha Thread IPO" headline is unclear/low-confidence; rest was pre-earnings preview/valuation commentary, no new fact
+- **2026-09-09 (post-open)** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged — $1.5B SB Energy investment (OpenAI data center) with an explicit circular-financing pushback extends the balance-sheet-backed ecosystem-investment pattern already flagged 09-01; "30x faster rack-scale system" and "Mocha Thread IPO" headlines repeat the already-dismissed 09-08 hype items

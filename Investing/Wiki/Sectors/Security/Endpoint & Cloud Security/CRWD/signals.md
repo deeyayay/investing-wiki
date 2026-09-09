@@ -38,6 +38,9 @@
 - **2026-09-06/07 (post-open)** — Headlines report CrowdStrike beating "Q1" estimates but sinking 13% after-hours on "modest guidance" (Stocktwits), conflicting with the already-confirmed Q2 FY2027 beat-and-raise logged 08-27.
   **Why it matters:** Ambiguous — either a mislabeled recap of the known Q2 print, or a genuinely new guidance data point touching the standing "billings watch" concern. Escalated to /dig to resolve the Q1/Q2 mismatch and confirm whether the -13% reaction reflects a real guidance deceleration.
 
+- **2026-09-09 (post-open)** — Wipro and CrowdStrike launch a new AI-driven cyber defense center (Stock Titan).
+  **Why it matters:** A new named product/services partnership extends the Falcon platform's AI-native positioning into managed-defense delivery via a systems-integrator channel — the same consolidation/cross-sell mechanism as the Google Cloud/Cerebras/OpenAI wins already logged.
+
 ---
 
 ## Social Mentions
@@ -65,3 +68,4 @@
 - **2026-09-07** — 📰 BRIEF (evening) | 1 item triaged, 0 new logged — same "Q1 beat, -13% AH" headline recirculating, already logged post-open and queued for /dig
 - **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — Fal.Con-inspired "how will partnership X affect competitor Y" listicles (Clear, Rubrik, Commvault) are speculative framings, not new CRWD facts; standing Q1/Q2 guidance-reaction mismatch still queued for /dig
 - **2026-09-08 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — "Could CrowdStrike Partnership Shift Clear's Narrative?" repeats the same speculative-framing pattern dismissed 09-08; Fal.con slideshow and earnings-beat-impact pieces recap known info; Union Pacific/Norfolk Southern headline is a ticker mismatch; standing Q1/Q2 guidance-reaction mismatch still queued for /dig
+- **2026-09-09 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Wipro/CrowdStrike AI defense-center partnership extends the platform-consolidation flywheel; "Could Partnership Shift Clear's Narrative?" and Union Pacific/Norfolk Southern headlines repeat 09-08's dismissed noise; standing Q1/Q2 guidance-reaction mismatch still queued for /dig

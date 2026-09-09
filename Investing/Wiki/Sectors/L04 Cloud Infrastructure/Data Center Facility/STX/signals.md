@@ -15,6 +15,7 @@
 | 2026-08-26 | Director James C. Lee sells $3.35M in shares | Benzinga | Partially resolves the 08-24 Form 4 cluster — at least one filing was a sell; single-director sale of this size is routine, not treated as thesis-moving. |
 | 2026-08-27 | Coverage frames STX's AI-driven rally as continuing "as guidance and record 2026 results lift expectations"; rising institutional interest reported | Ad-hoc-news.de / simplywall.st | First real earnings-level validation since onboarding — record results + raised guidance is direct evidence the HAMR/cold-archive exabyte-tier demand thesis is playing out, not just a capacity-roadmap story. |
 | 2026-09-04 | 8-K (item 5.02 — officer/director departure, election, or compensatory arrangement) filed | SEC EDGAR | Specifics not disclosed at headline level; a leadership-change filing warrants confirmation before assessing thesis relevance — queued for /dig. |
+| 2026-09-09 | 8-K (items 3.02, 7.01, 8.01, 9.01) filed; separately DEF 14A, ARS, and DEFA14A (annual-meeting proxy materials) filed same window | SEC EDGAR | Distinct from the still-unresolved 09-04 item-5.02 filing — item 3.02 (unregistered equity sale) is unusual and not yet explained at headline level; the proxy/annual-report cluster (DEF 14A/ARS/DEFA14A) is routine. Both 8-Ks now queued for /dig. |
 
 ---
 
@@ -37,3 +38,4 @@ _None yet — seeded on onboarding._
 | 2026-09-07 | 📰 BRIEF (post-open) | 1 filing + 4 items triaged, 0 new logged — same 09-04 8-K (item 5.02) recirculating; record-earnings/PT-raise and comparison-listicle headlines were repeats/noise |
 | 2026-09-07 | 📰 BRIEF (evening) | 1 filing triaged, 0 new logged — same 09-04 8-K (item 5.02) recirculating, content still unconfirmed |
 | 2026-09-08 | 📰 BRIEF (post-open) | 1 filing + 4 items triaged, 0 new logged — same 09-04 8-K (item 5.02) recirculating, content still unconfirmed; record-earnings recap headlines were noise |
+| 2026-09-09 | 📰 BRIEF (post-open) | 4 filings + 1 item triaged, 1 logged — new 8-K (items 3.02/7.01/8.01/9.01) distinct from the standing 09-04 item-5.02 filing, unregistered-equity-sale item unexplained, added to /dig queue; DEF 14A/ARS/DEFA14A proxy cluster logged as routine; earnings-recap headline was noise |
