@@ -55,3 +55,4 @@
 - **2026-09-07** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged, conviction ↑ — $84.75B upsized capital raise funds the standing CapEx commitment; muted-outlook earnings-reaction headlines noted as context, not thesis-moving
 - **2026-09-07** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — $84.75B raise and muted-outlook-earnings headlines recirculating, already logged post-open; futures/Apple-event mentions were company mismatches
 - **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — Google fully funds PG&E virtual power plant experiment (adjacent energy initiative, not core Cloud thesis); rest was valuation/tokenized-stock noise
+- **2026-09-10** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — "Buy 8 stocks before Anthropic IPO" listicle names no new fact about GOOGL specifically; earnings-recap, Waymo-vs-Tesla, and "chips it sells" pieces were opinion/recap noise

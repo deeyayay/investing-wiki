@@ -32,6 +32,9 @@
 - **2026-09-08 (post-open)** — AMD launches a new AI-focused workstation line (simplywall.st); separately, Riot Platforms reports $33.2M in data-center revenue as it doubles AMD-based compute capacity.
   **Why it matters:** The workstation launch is a prosumer product-line extension, tangential to the core data-center GPU thesis. Riot's buildout is a smaller, non-hyperscaler channel adopting AMD compute — a minor diversification data point, not a hyperscaler-share confirmation.
 
+- **2026-09-10 (post-open)** — Xanadu Quantum Technologies and AMD launch "Backline" to streamline CPU/GPU/FPGA integration for quantum hardware (marketscreener.com).
+  **Why it matters:** A new named collaboration extending AMD's silicon into a quantum-computing integration layer — tangential to the core data-center GPU-share thesis, logged for the audit trail.
+
 ---
 
 ## Social Mentions
@@ -60,3 +63,4 @@
 - **2026-09-07** — 📰 BRIEF (evening) | 1 item triaged, 0 new logged — same record-Q2-revenue headline recirculating, already logged post-open
 - **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — AI workstation launch + Riot Platforms' AMD-powered data-center buildout; rest was routine institutional-position noise
 - **2026-09-08 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — AI-workstation-launch headline recirculates the already-logged 09-08 item; generic "Advanced Micro Devices Upgraded" blue-chip-ranking listicle names neither firm nor target, treated as noise; insider-sale and "why up today" headlines were routine
+- **2026-09-10 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Xanadu/AMD "Backline" quantum-integration collaboration is new; Cisco Middle East reframing and guidance-upside headlines recap the already-logged 08-31 Cisco partnership and 09-07 record-revenue print; Citi Buy reiteration ($575) was routine

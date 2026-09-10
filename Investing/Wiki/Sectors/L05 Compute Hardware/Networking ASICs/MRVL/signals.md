@@ -66,3 +66,4 @@
 | 2026-09-07 | BRIEF (post-open) | 📰 5 items triaged, 0 new logged — outgoing-CFO $65M share-sale headline repeats the already-logged 08-31 item; Bernstein memory-demand comment and 52-week-high listicle were noise |
 | 2026-09-07 | BRIEF (evening) | 📰 4 items triaged, 0 new logged — record-DC-quarter and 5M-photonic-chips headlines recap items already logged 08-31/09-01; Bernstein sector-demand quote is generic, not MRVL-specific |
 | 2026-09-08 | BRIEF (post-open) | 📰 3 items triaged, 0 new logged — 5M-photonic-chips and S&P 500-entry headlines recap the already-logged 09-01 item; stock-gain commentary was noise |
+| 2026-09-10 | BRIEF (post-open) | 📰 5 items triaged, 0 new logged — "shares surge 6%" / "guidance jumps 11.7%" headlines recap the already-logged 08-31 record-DC-quarter print; 5M-photonic-chips/S&P 500 headline repeats 09-01; no new figure |

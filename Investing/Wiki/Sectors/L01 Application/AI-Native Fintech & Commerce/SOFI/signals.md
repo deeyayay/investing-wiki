@@ -72,3 +72,4 @@
 - **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — valuation-opinion and crypto-listing-question pieces, no new fact; standing short-seller-accounting /dig item still open
 - **2026-09-08 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — new Notre Dame partnership deal; Kraken/Payward stablecoin headline repeats 09-04; standing short-seller-accounting /dig item still open
 - **2026-09-09 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Loop Capital Hold initiation ($22 PT) is new but neutral coverage; Notre Dame/Kraken headline repeats 09-08 evening; standing short-seller-accounting /dig item still open
+- **2026-09-10 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — Loop Capital Hold ($22 PT) repeats 09-09; Kraken/Payward stablecoin-settlement coverage recirculates the already-logged 09-04 item; standing short-seller-accounting /dig item still open

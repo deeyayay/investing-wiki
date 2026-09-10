@@ -33,3 +33,4 @@ _None yet — seeded on onboarding._
 | 2026-09-07 | 📰 BRIEF (post-open) | 1 item triaged, 0 new logged — generic "edge AI progress" media piece, no new fact |
 | 2026-09-07 | 📰 BRIEF (evening) | 2 items triaged, 0 new logged — archTIS and Synertec ASX headlines are company-name mismatches, no BRCHF-specific fact |
 | 2026-09-08 | 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — BRN half-year-loss-widens-to-$12M headline recirculates the already-logged 08-26 H1 earnings event with a specific figure; Synertec/Etherstack ASX headlines are company-name mismatches |
+| 2026-09-10 | 📰 BRIEF (post-open) | 4 items triaged, 0 new logged — "gains attention," "top ASX gainers," and "can edge progress convert" pieces are sentiment/listicle noise; "licence wins" headline names no new fact |

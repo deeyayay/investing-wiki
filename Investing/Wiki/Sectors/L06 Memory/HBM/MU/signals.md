@@ -79,6 +79,9 @@
 - **2026-09-09 (post-open)** — scanx.trade: Micron faces an antitrust lawsuit and a director investigation. Separately, the hbm-supply topic feed reports China's CXMT is suffering an HBM yield collapse — around 25% yields with close to 80 of 100 HBM3 chips failing final tests (Wccftech).
   **Why it matters:** The antitrust suit and director investigation are a new legal/governance risk with no detail at headline level — flagged for /dig to establish scope and materiality before assessing thesis impact. The CXMT yield collapse is a concrete data point cutting against the "Chinese competition" risk cited in the 09-08 downgrade — if China's leading HBM challenger can't get HBM3 yields above 25%, the near-term competitive threat implied by that downgrade looks overstated.
 
+- **2026-09-10 (post-open)** — ad-hoc-news.de: "Micron's September 30 Reckoning" frames a Taiwan "labor standoff" alongside the record guidance and stock-priced-for-AI narrative.
+  **Why it matters:** Escalates the 09-02 Taiwan-union strike-threat item from "threat" to "standoff" — a harder operational-risk data point on Micron's own fab/assembly capacity ahead of the September 30 print, though still no confirmation of an actual work stoppage at headline level.
+
 ---
 
 ## Social Mentions
@@ -115,3 +118,4 @@
 | 2026-09-08 | BRIEF (post-open) | 📰 5 items + 1 topic hit triaged, 1 logged — new bearish Seeking Alpha downgrade questions the "$100B" framing, second counter-narrative after 09-07's Goldman-Neutral item; Bernstein reiterates Buy $1,300 PT; hbm-supply topic hit (Nvidia Rubin Ultra shift toward 8-high HBM) sharpens the standing Nvidia-alt-HBM /dig watch item |
 | 2026-09-08 (evening) | BRIEF | 📰 5 items + 1 topic hit triaged, 1 logged, conviction ↓ — formal downgrade to Hold citing contract risk + Chinese competition is the third bearish counter-narrative on file; hbm-supply topic hit (CXMT #4 global HBM rank) corroborates the Chinese-competition claim; rally/valuation-opinion and Bernstein-reiterate headlines were repeats |
 | 2026-09-09 (post-open) | BRIEF | 📰 5 items + 1 topic hit triaged, 2 logged, conviction mixed — new antitrust lawsuit + director investigation escalated to /dig; CXMT's 25% HBM3 yield collapse partially rebuts the 09-08 downgrade's Chinese-competition claim; NVDA-earnings-demand-recap headlines were repeats |
+| 2026-09-10 (post-open) | BRIEF | 📰 5 items triaged, 1 logged — Taiwan labor dispute escalates from "threat" to "standoff"; antitrust-lawsuit and $50B-guidance headlines were repeats of the already-logged 09-09 items |

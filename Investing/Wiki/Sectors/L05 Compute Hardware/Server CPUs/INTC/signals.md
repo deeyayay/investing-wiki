@@ -59,6 +59,9 @@
 - **2026-09-08 (evening)** — Northland upgrades Intel, explicitly citing the foundry partnership (Investing.com Canada); separately, coverage reports a CPU price-hike alongside the upgrade (eciks.org).
   **Why it matters:** Unlike the 09-08 "unnamed upgrade," this names the firm and ties the rating action directly to the foundry-partnership leg of the thesis — a more concrete confirming data point. A reported CPU price hike is a new pricing-power signal, worth tracking alongside the standing $11B-net-loss /dig item.
 
+- **2026-09-09 (post-open)** — tikr.com: Intel rallies on the Northland upgrade alongside a new SpaceX "Terafab" manufacturing deal; separately, timothysykes.com reports the stock pulling back after a $20B equity offering and a "Mac setback" (2026-09-10).
+  **Why it matters:** SpaceX as a named IFS customer is a genuine new external foundry win — distinct from Apple/NVIDIA/SK Hynix already logged — directly confirming the "IDM-foundry platform" thesis leg. The $20B offering figure conflicts with the already-logged $23B raise (08-28), and "Mac setback" is unexplained and sits in tension with the 09-06/07 Trump-confirmed Apple deal — both flagged for /dig rather than taken at face value.
+
 ---
 
 ## Social Mentions
@@ -89,3 +92,4 @@
 - **2026-09-07** — 📰 BRIEF (evening) | 3 items triaged, 0 new logged — $11B-loss recap and a generic "5-star analyst resets PT" headline (no firm/figure named), no new fact; /dig item still open
 - **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — conflicting analyst actions (unnamed upgrade vs. PT cut to $92) logged as context; Trump AI-image/rally headlines were noise; /dig item ($11B loss cause) still open
 - **2026-09-08 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged, conviction ↑ — Northland's named upgrade explicitly cites the foundry partnership, plus a CPU price-hike report; other analyst-upgrade headlines were repeats of the same Northland action across outlets; /dig item ($11B loss cause) still open
+- **2026-09-10 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged, conviction ↑, deep-pass flagged — new SpaceX Terafab manufacturing deal confirms a fresh IFS external customer; $20B-offering/"Mac setback" headline conflicts with the logged $23B raise and the confirmed Apple deal, added to /dig queue; Northland-upgrade recap was a repeat

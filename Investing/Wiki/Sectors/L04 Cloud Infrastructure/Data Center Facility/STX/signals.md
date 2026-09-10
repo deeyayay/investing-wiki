@@ -39,3 +39,4 @@ _None yet — seeded on onboarding._
 | 2026-09-07 | 📰 BRIEF (evening) | 1 filing triaged, 0 new logged — same 09-04 8-K (item 5.02) recirculating, content still unconfirmed |
 | 2026-09-08 | 📰 BRIEF (post-open) | 1 filing + 4 items triaged, 0 new logged — same 09-04 8-K (item 5.02) recirculating, content still unconfirmed; record-earnings recap headlines were noise |
 | 2026-09-09 | 📰 BRIEF (post-open) | 4 filings + 1 item triaged, 1 logged — new 8-K (items 3.02/7.01/8.01/9.01) distinct from the standing 09-04 item-5.02 filing, unregistered-equity-sale item unexplained, added to /dig queue; DEF 14A/ARS/DEFA14A proxy cluster logged as routine; earnings-recap headline was noise |
+| 2026-09-10 | 📰 BRIEF (post-open) | 4 filings + 1 item triaged, 0 new logged — same 8-K (items 3.02/7.01/8.01/9.01) and DEF 14A/ARS/DEFA14A cluster recirculating, already logged 09-09; Citi Buy reiteration ($1,300 PT) was routine; /dig item still open |

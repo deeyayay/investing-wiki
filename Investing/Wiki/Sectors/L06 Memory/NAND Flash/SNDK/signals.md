@@ -39,6 +39,7 @@
 | 2026-09-04 (evening) | Data centers now deliver a third of SanDisk's revenue — $2.98B in a single quarter | fool.com | First quantified data-center revenue mix seen for SNDK — supports the "agentic-AI and brain-scale data wave" thesis leg with a hard number, independent of the still-unresolved Apple/Samsung price-decline question. |
 | 2026-09-04 (evening) | Coverage reframes the selloff as "losing NAND share to China" — a third causal narrative alongside the standing Apple-sourcing and Samsung-headwinds stories | Yahoo Finance | Adds a third competing explanation to the still-open /dig question rather than resolving it; magnitude and cause remain unconfirmed at headline level. |
 | 2026-09-06/07 (post-open) | MU/SNDK/DRAM all dip overnight as memory stocks feel the weight of Samsung's post-earnings selloff | Stocktwits | A fourth thread on the same still-open /dig question, but the most specific yet — directly ties SNDK's decline to a named, dated event (Samsung's earnings reaction) rather than a general "headwinds" framing, strengthening the case for the Samsung-driven narrative over the Apple/China threads. |
+| 2026-09-09 | SanDisk's CTO sells nearly $8 million in stock after a huge run | TradingView | A large insider sale is worth noting for the audit trail; no 10b5-1/timing detail at headline level to assess whether it's routine profit-taking or a signal, logged as context only — doesn't touch the standing Apple/Samsung price-decline question. |
 
 ---
 
@@ -77,3 +78,4 @@
 | 2026-09-07 | 📰 BRIEF (post-open) | 5 items triaged, 1 logged — Samsung post-earnings selloff is the most specific thread yet on the standing price-decline question; earnings-recap and valuation-opinion headlines were noise; /dig still queued |
 | 2026-09-07 | 📰 BRIEF (evening) | 5 items triaged, 0 new logged — Samsung-selloff and Citigroup-beneficiary headlines recap items already logged post-open; valuation-opinion and week-ahead-earnings-calendar pieces were noise; /dig still queued |
 | 2026-09-08 | 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — Goldman-breakout-signal and "2,440%-in-12-months" recap headlines, no new fact; /dig still queued on the price-decline cause |
+| 2026-09-10 | 📰 BRIEF (post-open) | 5 items triaged, 1 logged — CTO's ~$8M share sale logged as insider context; Citi "top Micron beneficiary" call repeats the already-logged 09-01 item; S&P 500-inclusion listicle and price-move recaps were noise; /dig still queued on the price-decline cause |

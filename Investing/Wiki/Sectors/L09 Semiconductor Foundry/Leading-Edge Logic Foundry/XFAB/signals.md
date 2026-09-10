@@ -60,3 +60,4 @@
 - **2026-09-07** — 📰 BRIEF (evening) | 1 item + 1 topic hit triaged, 0 new logged — same WDP company mismatch; silicon-photonics topic hit (TSMC/Taiwan alliance) recaps industry context already logged 08-31
 - **2026-09-08** — 📰 BRIEF (post-open) | 0 items + 1 topic hit triaged, 1 logged — co-packaged-optics topic feed surfaces Samsung's new in-house silicon-photonics PIC-testing push, a fresh competitive-dynamics item
 - **2026-09-09 (evening)** — 📰 BRIEF | 1 item + 1 topic hit triaged, 1 logged — co-packaged-optics topic feed surfaces an InP supply-scarcity signal (>70% supply-demand gap); WDP company-mismatch headline recurs, no XFAB-specific fact
+- **2026-09-10 (post-open)** — 📰 BRIEF | 2 items triaged, 0 new logged — same WDP (logistics) company-mismatch headlines recurring, no XFAB-specific fact

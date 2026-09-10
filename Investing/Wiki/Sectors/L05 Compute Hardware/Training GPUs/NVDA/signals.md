@@ -63,6 +63,9 @@
 - **2026-09-09 (post-open)** — Nvidia invests $1.5B in SB Energy to support an OpenAI data center, and pushes back publicly on "circular financing" concerns (Stocktwits).
   **Why it matters:** Extends the same balance-sheet-backed ecosystem-investment pattern already flagged (OpenAI, Nebius, SpaceX, Cloverleaf, MediaTek, SB Energy, Hugging Face, Thinking Machines) — the explicit circular-financing pushback is new framing addressing the bear narrative directly, though it doesn't resolve the underlying question.
 
+- **2026-09-10 (post-open)** — Yahoo Finance / ad-hoc-news.de: the DOJ is probing NVIDIA's $20B Groq licensing deal, shares dip on the report; separately, barrons.com reports NVIDIA expanding its AI partnership with Palantir, and Rackspace stock surges 13% on a new NVIDIA Blackwell cloud-partner announcement (Investing.com, x2 outlets).
+  **Why it matters:** The DOJ Groq probe is a new, named antitrust/regulatory risk — the first federal scrutiny logged on a specific NVIDIA deal rather than general "circular financing" commentary; escalated to /dig to establish scope. The Palantir partnership expansion and Rackspace Blackwell-partner win are further breadth-of-demand confirmation, consistent with the nvda-downstream topic feed's Nemotron/supply-chain coverage.
+
 ---
 
 ## Social Mentions
@@ -111,3 +114,4 @@
 - **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — all pre-earnings preview/valuation commentary ahead of Nvidia's upcoming print, no new fact; standing items resolved in prior runs
 - **2026-09-08 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — vague "AI stock 30x faster than Nvidia's GPUs" competitive-claim piece names no company and is unverifiable at headline level, treated as hype not fact; "Mocha Thread IPO" headline is unclear/low-confidence; rest was pre-earnings preview/valuation commentary, no new fact
 - **2026-09-09 (post-open)** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged — $1.5B SB Energy investment (OpenAI data center) with an explicit circular-financing pushback extends the balance-sheet-backed ecosystem-investment pattern already flagged 09-01; "30x faster rack-scale system" and "Mocha Thread IPO" headlines repeat the already-dismissed 09-08 hype items
+- **2026-09-10 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged, deep-pass flagged — DOJ probes the $20B Groq deal (new regulatory risk, escalated to /dig); Palantir partnership expansion and Rackspace Blackwell-partner surge logged as further demand-breadth confirmation

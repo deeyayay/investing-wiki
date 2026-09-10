@@ -41,6 +41,9 @@
 - **2026-09-08 (evening, earnings call)** — Credo's Q1 FY2027 earnings call: guides to $530M for the next quarter as the Optics segment is guided to top $600M (finance.biggo.com, The Globe and Mail).
   **Why it matters:** The first forward-quarter guidance figures since the 09-02 /dig resolved the margin scare — a $530M guide and an Optics segment guided above $600M are new, harder data points on top of the already-confirmed $479.0M/68.0% non-GAAP print, and specifically size the DustPhotonics-driven optical-expansion leg the 09-02 dig flagged as underweighted in the original Hyperlume framing.
 
+- **2026-09-09 (post-open)** — Seeking Alpha: "Credo: Market Is Mispricing A $1 Trillion AI Infra Catalyst" (upgrade); separately, simplywall.st asks whether a new shelf-registration filing "raises questions" about valuation.
+  **Why it matters:** A fresh bullish analyst call with explicit reasoning is a confirming data point, though headline-level only. The shelf-filing mention is new — not the already-logged S-8 employee-plan registration — and could be a new capital-raise vehicle; no detail on size or purpose at headline level, logged as a watch item.
+
 ---
 
 ## Social Mentions
@@ -69,3 +72,4 @@
 - **2026-09-07** — 📰 BRIEF (evening) | 3 items triaged, 0 new logged — Buy-upgrade and "hidden moat" pieces recap items already logged post-open/09-02; 2 unrelated prediction-market headlines were false-positive matches
 - **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — CalSTRS position-increase and "buy the pullback" opinion pieces recap the already-resolved 09-02 DIG findings; no new operating fact
 - **2026-09-08 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — earnings-call guide of $530M with Optics guided to top $600M is the first forward-quarter figure logged; meme-coin listicle was noise
+- **2026-09-10 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Seeking Alpha "$1T AI Infra Catalyst" upgrade + a new shelf-filing mention (watch item, size/purpose unconfirmed); "Q1 Outlook Disappoints" and Broadcom/Snowflake-earnings headlines recap the already-resolved 09-02 DIG findings; ALAB-comparison headline was noise

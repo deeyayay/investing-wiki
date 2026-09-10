@@ -65,3 +65,4 @@
 - **2026-09-02** — 📰 BRIEF (evening) | 2 items triaged, 0 new logged — both headlines (Texans NFL roster, Cal football transfer) were company-name mismatches, no BRUN-specific content
 - **2026-09-04** — 📰 BRIEF (evening) | 2 items triaged, 0 new logged — both headlines (Cal football transfer, Gold Coast real estate listing) were company-name mismatches, no BRUN-specific content
 - **2026-09-07** — 📰 BRIEF (evening) | 2 items triaged, 0 new logged — "This Week's AI Neocloud Winner" is sentiment/listicle noise; online-casino headline is a company-name mismatch
+- **2026-09-10** — 📰 BRIEF (post-open) | 1 item triaged, 0 new logged — "Top Boost Run Competitors 2026" is a listicle, no BRUN-specific fact
