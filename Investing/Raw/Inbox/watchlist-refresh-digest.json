@@ -1,14 +1,21 @@
 {
- "generated": "2026-09-09T14:19:44Z",
+ "generated": "2026-09-10T01:32:09Z",
  "window_hours": 36,
  "scanned": 25,
- "with_news": 24,
+ "with_news": 22,
  "quiet": [
-  "6451.TW"
+  "6451.TW",
+  "LPK",
+  "NB"
  ],
  "errors": [
   {
-   "ticker": "MRVL",
+   "ticker": "AEHR",
+   "provider": "edgar",
+   "error": "The read operation timed out"
+  },
+  {
+   "ticker": "MU",
    "provider": "edgar",
    "error": "The read operation timed out"
   }
@@ -17,18 +24,18 @@
   "googlenews": {
    "attempts": 25,
    "failures": 0,
-   "items": 712
+   "items": 768
   },
   "edgar": {
    "attempts": 25,
-   "failures": 1,
-   "items": 9
+   "failures": 2,
+   "items": 17
   }
  },
  "topic_stats": {
   "attempts": 7,
   "failures": 0,
-  "items": 339
+  "items": 294
  },
  "not_in_registry": [],
  "drift_index": {
@@ -77,15 +84,6 @@
      "impact_tier": "medium"
     },
     {
-     "t": "Columbia Select Mid Cap Growth Fund Q2 2026 Portfolio Review",
-     "src": "Seeking Alpha",
-     "d": "2026-09-08",
-     "kind": "news",
-     "impact": 30,
-     "impact_tag": "unclassified",
-     "impact_tier": "low"
-    },
-    {
      "t": "Goldman Sachs Flags Early Breakout in Micron, SanDisk as AI Memory Demand Climbs",
      "src": "finance.biggo.com",
      "d": "2026-09-08",
@@ -95,9 +93,18 @@
      "impact_tier": "low"
     },
     {
-     "t": "Columbia Select Mid Cap Growth Fund Q2 2026 Commentary",
+     "t": "Kioxia chief rules out deeper ties with rival SK Hynix - report (SKHY:NASDAQ)",
      "src": "Seeking Alpha",
-     "d": "2026-09-08",
+     "d": "2026-09-09",
+     "kind": "news",
+     "impact": 30,
+     "impact_tag": "unclassified",
+     "impact_tier": "low"
+    },
+    {
+     "t": "Kioxia Denies Joint Production with SK Hynix, Says NAND Prices Have Risen Enough",
+     "src": "finance.biggo.com",
+     "d": "2026-09-09",
      "kind": "news",
      "impact": 30,
      "impact_tag": "unclassified",
@@ -123,6 +130,15 @@
    "folder": "Investing/Wiki/Sectors/L10 Semiconductor Equipment/Metrology & Inspection/AEHR",
    "headlines": [
     {
+     "t": "Americase International Regulatory Expert Contributes to OCP Guidance on Data Center Energy Storage Safety",
+     "src": "Yahoo Finance",
+     "d": "2026-09-08",
+     "kind": "news",
+     "impact": 78,
+     "impact_tag": "guidance",
+     "impact_tier": "high"
+    },
+    {
      "t": "Caleres Posts Upbeat Q2 Earnings, Joins Opus Genetics, Flotek Industries And Other Big Stocks Moving High",
      "src": "Benzinga",
      "d": "2026-09-09",
@@ -132,26 +148,8 @@
      "impact_tier": "medium"
     },
     {
-     "t": "DSS, Inc. Launches DSS Robotics to Bring AI-Powered Automation to Enterprise Operations",
-     "src": "Yahoo Finance",
-     "d": "2026-09-08",
-     "kind": "news",
-     "impact": 52,
-     "impact_tag": "product",
-     "impact_tier": "medium"
-    },
-    {
-     "t": "Flyttr Announces Launch of Nation's First Pest Biosecurity Platform, Located in San Antonio, with New World Screwworm as First Target",
-     "src": "Yahoo Finance",
-     "d": "2026-09-08",
-     "kind": "news",
-     "impact": 52,
-     "impact_tag": "product",
-     "impact_tier": "medium"
-    },
-    {
-     "t": "Aehr Test Systems Tokenized Stock (Ondo) Price (AEHRon/USD) Today | Live Price, Market Cap & Chart",
-     "src": "Binance",
+     "t": "AEHR Stock Surged 15% Pre-Market Today — What’s Fueling The Rally?",
+     "src": "Stocktwits",
      "d": "2026-09-08",
      "kind": "news",
      "impact": 30,
@@ -159,8 +157,17 @@
      "impact_tier": "low"
     },
     {
-     "t": "Market Movers | Winners: NX, BBCP, TYRA | Losers: ALTI, GWRE, LULU",
-     "src": "Trefis",
+     "t": "Rocket Lab Corp: Record Backlog and Space Systems Expansion Strengthen Its Integrated Growth Story",
+     "src": "Kalkine",
+     "d": "2026-09-08",
+     "kind": "news",
+     "impact": 30,
+     "impact_tag": "unclassified",
+     "impact_tier": "low"
+    },
+    {
+     "t": "Roivant Sciences, Pharvaris, IonQ And Other Big Stocks Moving Higher On Tuesday",
+     "src": "Benzinga",
      "d": "2026-09-08",
      "kind": "news",
      "impact": 30,
@@ -178,13 +185,22 @@
    "folder": "Investing/Wiki/Sectors/L05 Compute Hardware/Training GPUs/AMD",
    "headlines": [
     {
-     "t": "What AMD's AI Workstation Launch Means For Shareholders",
-     "src": "simplywall.st",
-     "d": "2026-09-08",
+     "t": "Could Advanced Micro Devices (AMD)’s Partnership With Cisco Systems (CSCO) Unlock a Massive Middle East AI Opportunity?",
+     "src": "Yahoo Finance",
+     "d": "2026-09-09",
      "kind": "news",
-     "impact": 52,
-     "impact_tag": "product",
-     "impact_tier": "medium"
+     "impact": 80,
+     "impact_tag": "deal",
+     "impact_tier": "high"
+    },
+    {
+     "t": "Guidance Upside Drives Advanced Micro Devices (AMD) Higher, Hurting Non Owners",
+     "src": "Yahoo Finance",
+     "d": "2026-09-09",
+     "kind": "news",
+     "impact": 78,
+     "impact_tag": "guidance",
+     "impact_tier": "high"
     },
     {
      "t": "Advanced Micro Devices Upgraded, Eli Lilly Downgraded: Updated Rankings on Top Blue-Chip Stocks",
@@ -212,15 +228,6 @@
      "impact": 30,
      "impact_tag": "unclassified",
      "impact_tier": "low"
-    },
-    {
-     "t": "Why Advanced Micro Devices (AMD) Stock Is Up Today",
-     "src": "Quiver Quantitative",
-     "d": "2026-09-08",
-     "kind": "news",
-     "impact": 30,
-     "impact_tag": "unclassified",
-     "impact_tier": "low"
     }
    ]
   },
@@ -233,13 +240,34 @@
    "folder": "Investing/Wiki/Sectors/L04 Cloud Infrastructure/Hyperscaler Clouds/AMZN",
    "headlines": [
     {
-     "t": "Bryn Mawr Trust Advisors LLC Acquires New Shares in Amazon.com, Inc. $AMZN",
-     "src": "MarketBeat",
-     "d": "2026-09-08",
-     "kind": "news",
-     "impact": 80,
-     "impact_tag": "deal",
+     "t": "8-K — Current report (item 5.02)",
+     "src": "SEC EDGAR",
+     "d": "2026-09-09",
+     "kind": "filing",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000036/0001018724-26-000036-index.htm",
+     "impact": 100,
+     "impact_tag": "filing",
      "impact_tier": "high"
+    },
+    {
+     "t": "3 — Initial statement of beneficial ownership of securities",
+     "src": "SEC EDGAR",
+     "d": "2026-09-09",
+     "kind": "filing",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000159560226000005/0001595602-26-000005-index.htm",
+     "impact": 58,
+     "impact_tag": "filing",
+     "impact_tier": "medium"
+    },
+    {
+     "t": "FWP — Filing under Securities Act Rules 163/433 of free writing prospectuses",
+     "src": "SEC EDGAR",
+     "d": "2026-09-09",
+     "kind": "filing",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926106322/0001104659-26-106322-index.htm",
+     "impact": 58,
+     "impact_tag": "filing",
+     "impact_tier": "medium"
     },
     {
      "t": "424B5 — Prospectus [Rule 424(b)(5)]",
@@ -252,31 +280,13 @@
      "impact_tier": "medium"
     },
     {
-     "t": "KeyBanc reiterates Qualcomm stock rating on Amazon chip deal By Investing.com",
-     "src": "Investing.com UK",
+     "t": "KeyBanc reiterates Qualcomm stock rating on Amazon chip deal",
+     "src": "Investing.com",
      "d": "2026-09-09",
      "kind": "news",
      "impact": 45,
      "impact_tag": "analyst",
      "impact_tier": "medium"
-    },
-    {
-     "t": "Qualcomm’s stock climbs as Amazon chip deal offers investors much-needed good news",
-     "src": "MarketWatch",
-     "d": "2026-09-08",
-     "kind": "news",
-     "impact": 30,
-     "impact_tag": "unclassified",
-     "impact_tier": "low"
-    },
-    {
-     "t": "Amazon (AMZN) Stock Price Today, September 8, 2026: Steady at $258.51",
-     "src": "pintu.co.id",
-     "d": "2026-09-08",
-     "kind": "news",
-     "impact": 30,
-     "impact_tag": "unclassified",
-     "impact_tier": "low"
     }
    ]
   },
@@ -307,15 +317,6 @@
      "impact_tier": "medium"
     },
     {
-     "t": "Arista Networks (ANET) Stock Looks Pricey Even Near Fair Value",
-     "src": "simplywall.st",
-     "d": "2026-09-08",
-     "kind": "news",
-     "impact": 30,
-     "impact_tag": "unclassified",
-     "impact_tier": "low"
-    },
-    {
      "t": "$100 Invested In Arista Networks 5 Years Ago Would Be Worth This Much Today",
      "src": "Benzinga",
      "d": "2026-09-08",
@@ -326,7 +327,16 @@
     },
     {
      "t": "Arista Networks at Goldman Sachs conference: AI demand drives growth By Investing.com",
-     "src": "Investing.com Canada",
+     "src": "Investing.com UK",
+     "d": "2026-09-08",
+     "kind": "news",
+     "impact": 30,
+     "impact_tag": "unclassified",
+     "impact_tier": "low"
+    },
+    {
+     "t": "Arista Networks hits $3B revenue in a quarter, focusing on AI, data center, and network software growth.",
+     "src": "Pluang",
      "d": "2026-09-08",
      "kind": "news",
      "impact": 30,
@@ -353,16 +363,7 @@
      "impact_tier": "high"
     },
     {
-     "t": "AeroVironment (AVAV) Q2 Earnings: What To Expect",
-     "src": "Yahoo Finance",
-     "d": "2026-09-08",
-     "kind": "news",
-     "impact": 55,
-     "impact_tag": "earnings",
-     "impact_tier": "medium"
-    },
-    {
-     "t": "AeroVironment Earnings Are Imminent; These Most Accurate Analysts Revise Forecasts Ahead Of Earnings Call",
+     "t": "AeroVironment Stock Rises After Q1 Earnings Beat",
      "src": "Benzinga",
      "d": "2026-09-09",
      "kind": "news",
@@ -371,22 +372,31 @@
      "impact_tier": "medium"
     },
     {
-     "t": "AeroVironment (NASDAQ:AVAV) Shares Sold Off Rep. Gilbert Ray Cisneros, Jr.",
-     "src": "MarketBeat",
-     "d": "2026-09-08",
-     "kind": "news",
-     "impact": 30,
-     "impact_tag": "unclassified",
-     "impact_tier": "low"
-    },
-    {
-     "t": "3 Drone Stocks Riding The Push For Non Chinese Precision Agriculture Tech",
-     "src": "simplywall.st",
+     "t": "AeroVironment beats EPS expectations but misses revenue estimates amid stock decline.",
+     "src": "Pluang",
      "d": "2026-09-09",
      "kind": "news",
-     "impact": 30,
-     "impact_tag": "unclassified",
-     "impact_tier": "low"
+     "impact": 55,
+     "impact_tag": "earnings",
+     "impact_tier": "medium"
+    },
+    {
+     "t": "AeroVironment Q1 Earnings Call Highlights",
+     "src": "Yahoo Finance",
+     "d": "2026-09-09",
+     "kind": "news",
+     "impact": 55,
+     "impact_tag": "earnings",
+     "impact_tier": "medium"
+    },
+    {
+     "t": "AeroVironment earnings beat by $0.29, revenue topped estimates",
+     "src": "Investing.com",
+     "d": "2026-09-09",
+     "kind": "news",
+     "impact": 55,
+     "impact_tag": "earnings",
+     "impact_tier": "medium"
     }
    ]
   },
@@ -398,15 +408,6 @@
    "drift": "New — onboarded as the speculative \"brain-mimicking compute\" leg of the memory & storage thesis (Technology Preferences Race 4). **Watch / starter only.**",
    "folder": "Investing/Wiki/Sectors/Edge & Physical AI/Physical Systems/BRCHF",
    "headlines": [
-    {
-     "t": "Etherstack (ASX:ESK): Can Its Mission-Critical Communications Niche Scale?",
-     "src": "Kalkine",
-     "d": "2026-09-08",
-     "kind": "news",
-     "impact": 30,
-     "impact_tag": "unclassified",
-     "impact_tier": "low"
-    },
     {
      "t": "BrainChip Puts Software Delivery in Focus (ASX:BRN)",
      "src": "Kalkine Media",
@@ -443,6 +444,15 @@
      "impact": 85,
      "impact_tag": "regulatory",
      "impact_tier": "high"
+    },
+    {
+     "t": "Top Boost Run (BRUN) Competitors 2026",
+     "src": "MarketBeat",
+     "d": "2026-09-09",
+     "kind": "news",
+     "impact": 30,
+     "impact_tag": "unclassified",
+     "impact_tier": "low"
     }
    ]
   },
@@ -482,8 +492,8 @@
      "impact_tier": "medium"
     },
     {
-     "t": "Credo (CRDO) Q1 2027 Earnings Call",
-     "src": "finance.biggo.com",
+     "t": "ALAB Gains From Aries and Taurus Strength: Can It Beat MRVL & CRDO?",
+     "src": "TradingView",
      "d": "2026-09-09",
      "kind": "news",
      "impact": 55,
@@ -491,12 +501,12 @@
      "impact_tier": "medium"
     },
     {
-     "t": "Credo: Market Is Mispricing A $1 Trillion AI Infra Catalyst (Upgrade)",
-     "src": "Seeking Alpha",
+     "t": "Credo (CRDO) Q1 2027 Earnings Call",
+     "src": "finance.biggo.com",
      "d": "2026-09-09",
      "kind": "news",
-     "impact": 45,
-     "impact_tag": "analyst",
+     "impact": 55,
+     "impact_tag": "earnings",
      "impact_tier": "medium"
     }
    ]
@@ -510,15 +520,6 @@
    "folder": "Investing/Wiki/Sectors/Security/Endpoint & Cloud Security/CRWD",
    "headlines": [
     {
-     "t": "Could CrowdStrike Partnership Shift Clear's (YOU) Investment Narrative?",
-     "src": "simplywall.st",
-     "d": "2026-09-08",
-     "kind": "news",
-     "impact": 80,
-     "impact_tag": "deal",
-     "impact_tier": "high"
-    },
-    {
      "t": "Union Pacific Stock $85 Billion Norfolk Southern Merger Just Entered Merits Review. Here’s What Jim Vena Told Investors",
      "src": "TIKR.com",
      "d": "2026-09-08",
@@ -528,9 +529,18 @@
      "impact_tier": "high"
     },
     {
-     "t": "How Earnings Beat Will Impact CrowdStrike (CRWD) Investors",
-     "src": "simplywall.st",
-     "d": "2026-09-08",
+     "t": "Cloudflare Surges 9% on OpenAI Security Partnership, Zscaler Rises 3%",
+     "src": "24/7 Wall St.",
+     "d": "2026-09-09",
+     "kind": "news",
+     "impact": 80,
+     "impact_tag": "deal",
+     "impact_tier": "high"
+    },
+    {
+     "t": "Here’s How Much Oracle Stock Is Expected to Move After Earnings",
+     "src": "Investopedia",
+     "d": "2026-09-09",
      "kind": "news",
      "impact": 55,
      "impact_tag": "earnings",
@@ -574,6 +584,15 @@
      "impact_tier": "high"
     },
     {
+     "t": "Want in on Anthropic Before the IPO? Buy These 8 Stocks",
+     "src": "TradingView",
+     "d": "2026-09-09",
+     "kind": "news",
+     "impact": 72,
+     "impact_tag": "capital",
+     "impact_tier": "high"
+    },
+    {
      "t": "Alphabet stock dips 10% despite strong earnings, seen as a buying opportunity with 28% upside potential.",
      "src": "Pluang",
      "d": "2026-09-08",
@@ -583,26 +602,17 @@
      "impact_tier": "medium"
     },
     {
+     "t": "Tesla Vs. Alphabet's Waymo: Battle Of The Robotaxi Behemoths Post Cybercab Launch (TSLA)",
+     "src": "Seeking Alpha",
+     "d": "2026-09-09",
+     "kind": "news",
+     "impact": 52,
+     "impact_tag": "product",
+     "impact_tier": "medium"
+    },
+    {
      "t": "Bill Ackman Sold His Remaining Alphabet Shares and Bought This Streaming Stock",
      "src": "Yahoo Finance",
-     "d": "2026-09-08",
-     "kind": "news",
-     "impact": 30,
-     "impact_tag": "unclassified",
-     "impact_tier": "low"
-    },
-    {
-     "t": "Alphabet (GOOGL) Stock Quotes, Company News And Chart Analysis",
-     "src": "Investor's Business Daily",
-     "d": "2026-09-08",
-     "kind": "news",
-     "impact": 30,
-     "impact_tag": "unclassified",
-     "impact_tier": "low"
-    },
-    {
-     "t": "Is Alphabet Stock Undervalued?",
-     "src": "The Motley Fool",
      "d": "2026-09-08",
      "kind": "news",
      "impact": 30,
@@ -620,31 +630,13 @@
    "folder": "Investing/Wiki/Sectors/L05 Compute Hardware/Server CPUs/INTC",
    "headlines": [
     {
-     "t": "Northland upgrades Intel stock rating on foundry partnership",
-     "src": "Investing.com",
-     "d": "2026-09-08",
-     "kind": "news",
-     "impact": 80,
-     "impact_tag": "deal",
-     "impact_tier": "high"
-    },
-    {
      "t": "Northland upgrades Intel stock rating on foundry partnership By Investing.com",
-     "src": "Investing.com Australia",
+     "src": "Investing.com India",
      "d": "2026-09-08",
      "kind": "news",
      "impact": 80,
      "impact_tag": "deal",
      "impact_tier": "high"
-    },
-    {
-     "t": "Why Is Intel (INTC) Stock Volatile After Earnings? Revenue Beat Overshadowed by $11 Billion Loss",
-     "src": "TradingKey",
-     "d": "2026-09-08",
-     "kind": "news",
-     "impact": 55,
-     "impact_tag": "earnings",
-     "impact_tier": "medium"
     },
     {
      "t": "5-star analyst resets Intel stock price target",
@@ -663,6 +655,24 @@
      "impact": 45,
      "impact_tag": "analyst",
      "impact_tier": "medium"
+    },
+    {
+     "t": "SpaceX initiated, Intel upgraded: Wall Street's top analyst calls",
+     "src": "Yahoo Finance",
+     "d": "2026-09-08",
+     "kind": "news",
+     "impact": 45,
+     "impact_tag": "analyst",
+     "impact_tier": "medium"
+    },
+    {
+     "t": "Intel stock surges on analyst upgrade and CPU price hike report",
+     "src": "eciks.org",
+     "d": "2026-09-08",
+     "kind": "news",
+     "impact": 45,
+     "impact_tag": "analyst",
+     "impact_tier": "medium"
     }
    ]
   },
@@ -675,26 +685,17 @@
    "folder": "Investing/Wiki/Sectors/L01 Application/Insurance AI/LMND",
    "headlines": [
     {
+     "t": "Lemonade CBO Maya Prosor sells $56,815 in common stock",
+     "src": "Investing.com",
+     "d": "2026-09-08",
+     "kind": "news",
+     "impact": 30,
+     "impact_tag": "unclassified",
+     "impact_tier": "low"
+    },
+    {
      "t": "Most Drivers Are Overpaying. Lemonade CEO Says Two-Thirds Subsidize the Highest-Mileage Third.",
      "src": "24/7 Wall St.",
-     "d": "2026-09-08",
-     "kind": "news",
-     "impact": 30,
-     "impact_tag": "unclassified",
-     "impact_tier": "low"
-    },
-    {
-     "t": "Lemonade CFO Timothy Bixby sells $103,414 in stock By Investing.com",
-     "src": "Investing.com Canada",
-     "d": "2026-09-08",
-     "kind": "news",
-     "impact": 30,
-     "impact_tag": "unclassified",
-     "impact_tier": "low"
-    },
-    {
-     "t": "Lemonade chief insurance officer Peters sells $169k in shares By Investing.com",
-     "src": "Investing.com Canada",
      "d": "2026-09-08",
      "kind": "news",
      "impact": 30,
@@ -711,28 +712,18 @@
      "impact_tier": "low"
     },
     {
-     "t": "Lemonade CBO Maya Prosor sells $56,815 in common stock By Investing.com",
-     "src": "Investing.com UK",
+     "t": "Lemonade Chief Insurance Officer John Sheldon Peters reports disposal of 3,108 common shares worth $169,055.32",
+     "src": "Bitget",
      "d": "2026-09-08",
      "kind": "news",
      "impact": 30,
      "impact_tag": "unclassified",
      "impact_tier": "low"
-    }
-   ]
-  },
-  {
-   "ticker": "LPK",
-   "company": "LPKF Laser & Electronics SE",
-   "sector": "Advanced Packaging",
-   "thesis": "LPKF owns the sole industrial process for glass substrate via drilling, making it indispensable infrastructure for next-generation AI chip packaging.",
-   "drift": "On track — CPO waveguide equipment already shipped to customer; SDAX inclusion confirmed; adjacent TAM materializing ahead of schedule",
-   "folder": "Investing/Wiki/Sectors/L08 Advanced Packaging/FC-BGA Substrates/LPK",
-   "headlines": [
+    },
     {
-     "t": "Laser Direct Imaging (LDI) in PCB Manufacturing Market Set to Hit USD 1.5 Billion by 2033 - SRI",
-     "src": "openPR.com",
-     "d": "2026-09-08",
+     "t": "Lemonade Stock In Focus As Insurance Expansion Reaches More States",
+     "src": "simplywall.st",
+     "d": "2026-09-09",
      "kind": "news",
      "impact": 30,
      "impact_tag": "unclassified",
@@ -749,8 +740,8 @@
    "folder": "Investing/Wiki/Sectors/Edge & Physical AI/Perception Layer/MBLY",
    "headlines": [
     {
-     "t": "Press Release: BEEP CLOSES SERIES B TO ACCELERATE COMMERCIAL DEPLOYMENT OF AUTONOMOUS MOBILITY NETWORKS",
-     "src": "moomoo.com",
+     "t": "Beep, Inc. announced that it has received $130 million in funding from Mobileye Global Inc.",
+     "src": "marketscreener.com",
      "d": "2026-09-09",
      "kind": "news",
      "impact": 30,
@@ -758,9 +749,18 @@
      "impact_tier": "low"
     },
     {
-     "t": "Analysts’ Opinions Are Mixed on These Consumer Cyclical Stocks: Tesla (TSLA) and Service International (SCI)",
-     "src": "The Globe and Mail",
+     "t": "BEEP CLOSES SERIES B TO ACCELERATE COMMERCIAL DEPLOYMENT OF AUTONOMOUS MOBILITY NETWORKS – Company Announcement - FT.com",
+     "src": "Financial Times",
      "d": "2026-09-09",
+     "kind": "news",
+     "impact": 30,
+     "impact_tag": "unclassified",
+     "impact_tier": "low"
+    },
+    {
+     "t": "Does Beep Funding Round Change The Bull Case For Mobileye (MBLY)?",
+     "src": "simplywall.st",
+     "d": "2026-09-10",
      "kind": "news",
      "impact": 30,
      "impact_tag": "unclassified",
@@ -777,13 +777,13 @@
    "folder": "Investing/Wiki/Sectors/L05 Compute Hardware/Networking ASICs/MRVL",
    "headlines": [
     {
-     "t": "MRVL Stock Quote Price and Forecast",
-     "src": "CNN",
-     "d": "2026-09-08",
+     "t": "Marvell Technology shares surge nearly 6% as strong data center demand lifts outlook",
+     "src": "Traders Union",
+     "d": "2026-09-09",
      "kind": "news",
-     "impact": 30,
-     "impact_tag": "unclassified",
-     "impact_tier": "low"
+     "impact": 78,
+     "impact_tag": "guidance",
+     "impact_tier": "high"
     },
     {
      "t": "Marvell shares have soared 241% in a year. CEO says this is a key reason why",
@@ -795,26 +795,26 @@
      "impact_tier": "low"
     },
     {
-     "t": "Marvell Is Growing Faster And Its Margin Guide Is Standing Still",
-     "src": "Trefis",
-     "d": "2026-09-08",
-     "kind": "news",
-     "impact": 30,
-     "impact_tag": "unclassified",
-     "impact_tier": "low"
-    },
-    {
-     "t": "Marvell Tokenized Stock price today, MRVLX to USD chart, marketcap and volume",
-     "src": "CryptoSlate",
-     "d": "2026-09-08",
-     "kind": "news",
-     "impact": 30,
-     "impact_tag": "unclassified",
-     "impact_tier": "low"
-    },
-    {
      "t": "$Marvell Technology (MRVL.US)$",
      "src": "moomoo.com",
+     "d": "2026-09-08",
+     "kind": "news",
+     "impact": 30,
+     "impact_tag": "unclassified",
+     "impact_tier": "low"
+    },
+    {
+     "t": "$Coherent (COHR.US)$$Marvell Technology (MRVL.US)$$Credo Technology (CRDO.US)$ A rare day of profits",
+     "src": "moomoo.com",
+     "d": "2026-09-08",
+     "kind": "news",
+     "impact": 30,
+     "impact_tag": "unclassified",
+     "impact_tier": "low"
+    },
+    {
+     "t": "Marvell Is Growing Faster And Its Margin Guide Is Standing Still",
+     "src": "Trefis",
      "d": "2026-09-08",
      "kind": "news",
      "impact": 30,
@@ -850,45 +850,26 @@
      "impact_tier": "high"
     },
     {
-     "t": "Micron Jumps After NVIDIA Earnings as AI Memory Demand Holds - Can MU Break $977?",
-     "src": "TradingKey",
-     "d": "2026-09-08",
+     "t": "Micron's $50 Billion Bet: Record Guidance Meets a Market Wrestling With Its Own Exuberance",
+     "src": "AD HOC NEWS",
+     "d": "2026-09-09",
      "kind": "news",
-     "impact": 55,
-     "impact_tag": "earnings",
-     "impact_tier": "medium"
+     "impact": 78,
+     "impact_tag": "guidance",
+     "impact_tier": "high"
     },
     {
-     "t": "Micron stock surges 256% in 2026 ahead of Sept. 30 earnings",
-     "src": "eciks.org",
-     "d": "2026-09-08",
+     "t": "Micron's Memory Supercycle Hits a Fork in the Road: Downgrades, Record Guidance, and the September 3",
+     "src": "AD HOC NEWS",
+     "d": "2026-09-09",
      "kind": "news",
-     "impact": 55,
-     "impact_tag": "earnings",
-     "impact_tier": "medium"
+     "impact": 78,
+     "impact_tag": "guidance",
+     "impact_tier": "high"
     },
     {
      "t": "Micron Technology stock extends 256% 2026 rally as AI memory boom lifts earnings outlook",
      "src": "AD HOC NEWS",
-     "d": "2026-09-08",
-     "kind": "news",
-     "impact": 55,
-     "impact_tag": "earnings",
-     "impact_tier": "medium"
-    }
-   ]
-  },
-  {
-   "ticker": "NB",
-   "company": "NioCorp Developments Ltd.",
-   "sector": "Critical Minerals",
-   "thesis": "The leading US development-stage source of niobium, scandium, titanium, and magnetic rare earths (Elk Creek, Nebraska) — a financing-gated call option on reshored critical-mineral supply as China tightens rare-earth and gallium/germanium exports.",
-   "drift": "On track — Elk Creek economic assessment raised, price target increased to $12",
-   "folder": "Investing/Wiki/Sectors/L12 Critical Minerals/Technology Metals/NB",
-   "headlines": [
-    {
-     "t": "NB Q4'26 Earnings: EPS estimate is (0.04) USD",
-     "src": "TradingView",
      "d": "2026-09-08",
      "kind": "news",
      "impact": 55,
@@ -905,6 +886,15 @@
    "drift": "On track — Blackwell demand intact; IREN $2.1B investment signals hyperscaler-level AI capex commitment",
    "folder": "Investing/Wiki/Sectors/L05 Compute Hardware/Training GPUs/NVDA",
    "headlines": [
+    {
+     "t": "Guidance Capital Inc. Has $1.32 Million Position in NVIDIA Corporation $NVDA",
+     "src": "MarketBeat",
+     "d": "2026-09-09",
+     "kind": "news",
+     "impact": 78,
+     "impact_tag": "guidance",
+     "impact_tier": "high"
+    },
     {
      "t": "NVIDIA (NVDA) Stock Drops as Mocha Thread Submits IPO Applicatio",
      "src": "GuruFocus",
@@ -940,15 +930,6 @@
      "impact": 55,
      "impact_tag": "earnings",
      "impact_tier": "medium"
-    },
-    {
-     "t": "An AI Stock Launched a Rack-Scale System 30x Faster Than Nvidia’s GPUs. Here’s Why It Is Still a Risky Buy.",
-     "src": "Barchart.com",
-     "d": "2026-09-08",
-     "kind": "news",
-     "impact": 52,
-     "impact_tag": "product",
-     "impact_tier": "medium"
     }
    ]
   },
@@ -963,6 +944,15 @@
     {
      "t": "Palo Alto Networks (PANW) Q4 2026 Earnings Call Transcript",
      "src": "The Globe and Mail",
+     "d": "2026-09-08",
+     "kind": "news",
+     "impact": 55,
+     "impact_tag": "earnings",
+     "impact_tier": "medium"
+    },
+    {
+     "t": "PANW Stock Gains After Revenue Forecast Beat As AI Usage Drives Cybersecurity Demand",
+     "src": "Stocktwits",
      "d": "2026-09-08",
      "kind": "news",
      "impact": 55,
@@ -988,17 +978,8 @@
      "impact_tier": "medium"
     },
     {
-     "t": "Cantor Fitzgerald reiterates Palo Alto Networks stock Overweight rating",
-     "src": "Investing.com",
-     "d": "2026-09-08",
-     "kind": "news",
-     "impact": 45,
-     "impact_tag": "analyst",
-     "impact_tier": "medium"
-    },
-    {
-     "t": "Phillip Securities Downgrades Palo Alto Networks to Neutral From Accumulate, Adjusts PT to $346 From $320",
-     "src": "moomoo.com",
+     "t": "Cantor Fitzgerald reiterates Palo Alto Networks stock Overweight rating By Investing.com",
+     "src": "Investing.com India",
      "d": "2026-09-08",
      "kind": "news",
      "impact": 45,
@@ -1015,24 +996,6 @@
    "drift": "Drifting — three consecutive sessions of sharp decline (08-23 WSJ Apple/Chinese-chips report; 08-25/26 coverage reframes it as \"Samsung headwinds,\" cumulative decline cited up to -37%) with the causal story still unresolved between competing narratives; still needs /dig to verify magnitude and cause. NBM contracts and HBF roadmap unaffected by headline evidence so far — Q3 FY2026 beat, Kioxia JV extension to 2034, and the 09-01 512GB HBF spec release strengthen the fundamental baseline further, independent of the still-open price-decline question.",
    "folder": "Investing/Wiki/Sectors/L06 Memory/NAND Flash/SNDK",
    "headlines": [
-    {
-     "t": "Sandisk Stock Forecast: Can AI Storage Demand Justify SNDK's Premium Valuation Ahead of Earnings?",
-     "src": "TradingKey",
-     "d": "2026-09-08",
-     "kind": "news",
-     "impact": 55,
-     "impact_tag": "earnings",
-     "impact_tier": "medium"
-    },
-    {
-     "t": "SanDisk Stock Has Soared More Than 500% in 2026. Can the Rally Possibly Continue?",
-     "src": "Yahoo Finance",
-     "d": "2026-09-08",
-     "kind": "news",
-     "impact": 30,
-     "impact_tag": "unclassified",
-     "impact_tier": "low"
-    },
     {
      "t": "Can SanDisk Stock Keep Climbing When It Cannot Make Enough To Sell?",
      "src": "Trefis",
@@ -1052,8 +1015,26 @@
      "impact_tier": "low"
     },
     {
-     "t": "How to Buy SanDisk (SNDK) Stock in Canada",
-     "src": "moomoo.com",
+     "t": "SanDisk Stock Has Soared More Than 500% in 2026. Can the Rally Possibly Continue?",
+     "src": "Yahoo Finance",
+     "d": "2026-09-08",
+     "kind": "news",
+     "impact": 30,
+     "impact_tag": "unclassified",
+     "impact_tier": "low"
+    },
+    {
+     "t": "Sandisk Is The Only Memory Bet That Makes Sense (NASDAQ:SNDK)",
+     "src": "Seeking Alpha",
+     "d": "2026-09-08",
+     "kind": "news",
+     "impact": 30,
+     "impact_tag": "unclassified",
+     "impact_tier": "low"
+    },
+    {
+     "t": "Micron and Sandisk Soar as Goldman Sees New Memory Stock Rally",
+     "src": "Yahoo Finance",
      "d": "2026-09-08",
      "kind": "news",
      "impact": 30,
@@ -1071,6 +1052,15 @@
    "folder": "Investing/Wiki/Sectors/L01 Application/AI-Native Fintech & Commerce/SOFI",
    "headlines": [
     {
+     "t": "SoFi Dips 3% Despite Reported Kraken Crypto Settlement Tie-Up; Affirm Drops 5%, Robinhood Holds Steady",
+     "src": "24/7 Wall St.",
+     "d": "2026-09-09",
+     "kind": "news",
+     "impact": 85,
+     "impact_tag": "regulatory",
+     "impact_tier": "high"
+    },
+    {
      "t": "SoFi stock surges on Notre Dame deal, Kraken partnership",
      "src": "eciks.org",
      "d": "2026-09-08",
@@ -1081,7 +1071,7 @@
     },
     {
      "t": "SoFi Partners With Payward to Expand Stablecoin Reach",
-     "src": "suaragarut.id",
+     "src": "SuaraGarut.ID",
      "d": "2026-09-08",
      "kind": "news",
      "impact": 80,
@@ -1089,9 +1079,9 @@
      "impact_tier": "high"
     },
     {
-     "t": "SoFi Technologies: Assessing investment appeal as growth significantly boosts earnings",
-     "src": "moomoo.com",
-     "d": "2026-09-08",
+     "t": "SoFi Technologies Stock (SOFI) Opinions on Recent Earnings and Partnerships",
+     "src": "Quiver Quantitative",
+     "d": "2026-09-09",
      "kind": "news",
      "impact": 55,
      "impact_tag": "earnings",
@@ -1099,16 +1089,7 @@
     },
     {
      "t": "Loop Capital Initiates SoFi Technologies at Hold With $22 Price Target",
-     "src": "marketscreener.com",
-     "d": "2026-09-09",
-     "kind": "news",
-     "impact": 45,
-     "impact_tag": "analyst",
-     "impact_tier": "medium"
-    },
-    {
-     "t": "SoFi Technologies initiated with a Hold at Loop Capital",
-     "src": "TipRanks",
+     "src": "moomoo.com",
      "d": "2026-09-09",
      "kind": "news",
      "impact": 45,
@@ -1166,13 +1147,13 @@
      "impact_tier": "medium"
     },
     {
-     "t": "Seagate (STX) Stock Looks Below Fair Value as Earnings Run Hot",
-     "src": "simplywall.st",
+     "t": "Seagate Technology Holdings plc ($STX) Chairman and CEO 2026 Pay Revealed",
+     "src": "Quiver Quantitative",
      "d": "2026-09-08",
      "kind": "news",
-     "impact": 55,
-     "impact_tag": "earnings",
-     "impact_tier": "medium"
+     "impact": 30,
+     "impact_tag": "unclassified",
+     "impact_tier": "low"
     }
    ]
   },
@@ -1213,29 +1194,29 @@
    ],
    "headlines": [
     {
+     "t": "EXCLUSIVE: After outrunning Bolt, China's robot champion races towards real-world work",
+     "src": "Reuters",
+     "d": "2026-09-10"
+    },
+    {
+     "t": "AI controller translates VR, video and language commands into humanoid robot actions",
+     "src": "Tech Xplore",
+     "d": "2026-09-09"
+    },
+    {
+     "t": "Wall Street Sees a Multibillion-Dollar Humanoid Robot Market. These 2 Suppliers Get Paid Either Way.",
+     "src": "The Motley Fool",
+     "d": "2026-09-09"
+    },
+    {
      "t": "Chinese Regulators Seek Higher Bar for Humanoid-Robotics Listings",
-     "src": "wsj.com",
+     "src": "WSJ",
      "d": "2026-09-09"
     },
     {
-     "t": "34,000 Pre-Orders, $2.4 Billion Pipeline: Inside Europe’s Newest Humanoid Robot Unicorn",
-     "src": "forbes.com",
-     "d": "2026-09-08"
-    },
-    {
-     "t": "NEURA Robotics and SECO partner to scale humanoid robot production in Europe",
-     "src": "evertiq.com",
-     "d": "2026-09-09"
-    },
-    {
-     "t": "XPeng puts humanoid robot production line into operation as first IRON robot walks off autonomously",
-     "src": "TechNode",
-     "d": "2026-09-09"
-    },
-    {
-     "t": "Chinese EV companies venture into humanoid robotics amid market pressures",
-     "src": "Global Sources",
-     "d": "2026-09-09"
+     "t": "Meet Tiangong Ultra, the fastest humanoid robot",
+     "src": "Yahoo",
+     "d": "2026-09-10"
     }
    ]
   },
@@ -1255,29 +1236,29 @@
    ],
    "headlines": [
     {
+     "t": "Vention opens Physical AI Lab for manufacturing in Montreal",
+     "src": "The Robot Report",
+     "d": "2026-09-09"
+    },
+    {
      "t": "Vention Opens Physical AI Lab to Bridge AI Research and Scalable Industrial Deployment",
      "src": "PR Newswire",
      "d": "2026-09-09"
     },
     {
-     "t": "Miracle Automation Embodied AI Robotics Industrial Project Breaks Ground",
-     "src": "Gasgoo",
+     "t": "OnLogic to Demonstrate Physical AI Hardware and Manufacturing Solutions at IMTS 2026",
+     "src": "Robotics Tomorrow",
      "d": "2026-09-09"
     },
     {
-     "t": "Mercari Selected for GENIAC Robotics Foundation Model R&D Project, Implemented by METI and NEDO",
-     "src": "株式会社メルカリ",
+     "t": "FANUC America in Rochester Hills Showcases Physical AI to Boost Productivity",
+     "src": "DBusiness Magazine",
      "d": "2026-09-09"
     },
     {
-     "t": "Ainos Secures Three Japanese Robotics Patents, Advancing Chemical Perception for the Physical AI Era",
-     "src": "Newswire.com",
+     "t": "To justify physical AI costs, choose high-value use cases",
+     "src": "TechTarget",
      "d": "2026-09-09"
-    },
-    {
-     "t": "Introducing Antioch: The Simulation Platform for Physical AI",
-     "src": "greylock.com",
-     "d": "2026-09-08"
     }
    ]
   },
@@ -1299,29 +1280,29 @@
    ],
    "headlines": [
     {
-     "t": "CXMT Faces HBM Memory Chip Shock As Yields Sink To 25% With Close To 80 Out Of 100 HBM3 Chips Failing Final Tests, Says Report",
-     "src": "Wccftech",
+     "t": "Key facts: SK hynix Inc. (000660) HBM4 expansion; large cash payout",
+     "src": "TradingView",
+     "d": "2026-09-10"
+    },
+    {
+     "t": "Nvidia and Meta Are Hungry for HBM. SK Hynix Is on the Menu — These ETFs Could Cash In",
+     "src": "Benzinga",
      "d": "2026-09-09"
     },
     {
-     "t": "A mining company's shares rose 427% in three years. Hudbay ranked among Canada's top 30 stocks.",
+     "t": "Intel, Softbank Announce Z-Angle Memory to Compete with HBM",
+     "src": "techinsights.com",
+     "d": "2026-09-09"
+    },
+    {
+     "t": "A 12.5% voting block lines up at Chemomab (NASDAQ: CMMB). Who’s behind it?",
      "src": "Stock Titan",
      "d": "2026-09-09"
     },
     {
-     "t": "Samsung turns to Japan for packaging edge, narrows HBM gap with SK Hynix",
-     "src": "digitimes",
+     "t": "CXMT Faces HBM Memory Chip Shock As Yields Sink To 25% With Close To 80 Out Of 100 HBM3 Chips Failing Final Tests, Says Report",
+     "src": "Wccftech",
      "d": "2026-09-09"
-    },
-    {
-     "t": "SK Hynix Moves Beyond HBM to HBF in Full-Stack AI Memory Push, Racing Against Nvidia",
-     "src": "finance.biggo.com",
-     "d": "2026-09-09"
-    },
-    {
-     "t": "Micron Technology (MU) Rose on Elevated Demand for High-Bandwidth Memory",
-     "src": "Yahoo Finance",
-     "d": "2026-09-08"
     }
    ]
   },
@@ -1339,29 +1320,29 @@
    ],
    "headlines": [
     {
-     "t": "Revenue grew about ninefold. 25 customers took shipments.",
-     "src": "Stock Titan",
+     "t": "Zeta Mobility Expands 4D Radar AI Into Senior Care",
+     "src": "thelec.net",
      "d": "2026-09-09"
     },
     {
-     "t": "DJI says FCC is going too far with its latest drone ban proposal",
-     "src": "DroneDJ",
+     "t": "MEMS Scanning Mirrors Market 14.2% CAGR to 2035 Fueled by Automotive Lidar Demand - News and Statistics",
+     "src": "IndexBox",
      "d": "2026-09-09"
     },
     {
-     "t": "AEye’s Apollo lidar wins Pegasus lunar vehicle contract",
-     "src": "Electronics Weekly",
-     "d": "2026-09-08"
+     "t": "From Power Lines to Mine Shafts: Lidar Expands the Reach of Drone Mapping",
+     "src": "Dronelife",
+     "d": "2026-09-09"
     },
     {
-     "t": "Tesla Wants a Self-Driving Semi. Are Cameras Enough?",
-     "src": "Heavy Duty Trucking",
-     "d": "2026-09-08"
+     "t": "What Is the Tesla Cybercab? Vehicle Specs, Business Model and Autonomous Strategy",
+     "src": "Built In",
+     "d": "2026-09-09"
     },
     {
-     "t": "Cleaner Crash Data Could Prove That Human Drivers Are the Risky Ones",
-     "src": "IEEE Spectrum",
-     "d": "2026-09-08"
+     "t": "AEye’s CEO Issues Letter to Stockholders",
+     "src": "Business Wire",
+     "d": "2026-09-09"
     }
    ]
   },
@@ -1384,29 +1365,29 @@
    ],
    "headlines": [
     {
-     "t": "Nvidia supplier Wistron's shares drop after it announces $1.5 billion global stock sale",
-     "src": "CNBC",
-     "d": "2026-09-08"
+     "t": "Verily Health Secures New Investment From NVIDIA and CU Healthcare Innovation Fund",
+     "src": "Business Wire",
+     "d": "2026-09-09"
+    },
+    {
+     "t": "Could IREN Become the Next Nvidia-Backed AI Winner?",
+     "src": "24/7 Wall St.",
+     "d": "2026-09-09"
+    },
+    {
+     "t": "Verily Secures Strategic Investment from NVIDIA to Accelerate Precision Health AI Platform",
+     "src": "HIT Consultant",
+     "d": "2026-09-09"
+    },
+    {
+     "t": "AI Semiconductor Supply Chain Explained: Nvidia, TSMC, ASML, Micron and SK Hynix",
+     "src": "MEXC",
+     "d": "2026-09-09"
     },
     {
      "t": "Egypt to build $1b AI data center with Nvidia tech as US squeezes out China",
      "src": "The Times of Israel",
      "d": "2026-09-09"
-    },
-    {
-     "t": "Nvidia’s New Partner Says Banks Want AI on Machines They Can Unplug",
-     "src": "Yahoo Finance",
-     "d": "2026-09-08"
-    },
-    {
-     "t": "Nvidia Invests $1.5B In SB Energy For OpenAI Data Center, Pushes Back On 'Circular Financing' Concerns",
-     "src": "Stocktwits",
-     "d": "2026-09-08"
-    },
-    {
-     "t": "How Nvidia's investment juggernaut can jump from big to enormous",
-     "src": "TradingView",
-     "d": "2026-09-08"
     }
    ]
   },
@@ -1428,13 +1409,13 @@
    "gaps": [],
    "headlines": [
     {
-     "t": "Is Tower Semiconductor (TSEM) Undervalued Or Fully Valued Following Its Silicon Photonics Ramp?",
-     "src": "simplywall.st",
+     "t": "Silicon photonics boom could push InP supply-demand gap above 70%, triggering race for strategic optical resources",
+     "src": "digitimes",
      "d": "2026-09-09"
     },
     {
-     "t": "Crealights, GlobalFoundries expand 6.4T photonics work",
-     "src": "TNGlobal",
+     "t": "Is Tower Semiconductor (TSEM) Undervalued Or Fully Valued Following Its Silicon Photonics Ramp?",
+     "src": "simplywall.st",
      "d": "2026-09-09"
     },
     {
@@ -1444,12 +1425,12 @@
     },
     {
      "t": "India set to see 1-2 industry-led silicon photonics pilot projects: IPA DG",
-     "src": "ANI News",
+     "src": "The Tribune",
      "d": "2026-09-09"
     },
     {
-     "t": "MIT Scientists Pioneer Flexible, Transparent Chips that can Withstand Many Bends",
-     "src": "CXOToday.com",
+     "t": "NTT IOWN AI Fund Joins NVIDIA in $125 Million iPronics Round",
+     "src": "jp.ibtimes.com",
      "d": "2026-09-09"
     }
    ]
@@ -1472,69 +1453,52 @@
    ],
    "headlines": [
     {
+     "t": "‘Ghost Demand’ Prompts Texas to Halt New Data Center Grid Connections",
+     "src": "HPCwire",
+     "d": "2026-09-09"
+    },
+    {
      "t": "The Texas Brake: Why the Most Permissive Grid in America Just Froze 474 GW",
      "src": "Substack",
      "d": "2026-09-08"
     },
     {
-     "t": "Five Texas data center projects get conditional grid status as ERCOT audit continues",
-     "src": "Stock Titan",
+     "t": "Galaxy Provides Update on ERCOT Batch Zero Large Load Classifications",
+     "src": "PR Newswire Canada",
      "d": "2026-09-08"
     },
     {
-     "t": "Global Data Center Market Projected to Reach $517 Billion By 2030",
-     "src": "TradingView",
-     "d": "2026-09-08"
+     "t": "Lubbock City Council Moves To Regulate Data Center Construction",
+     "src": "Texas Scorecard",
+     "d": "2026-09-09"
     },
     {
-     "t": "THE AI DATA CENTRE OPPORTUNITY: How Will Alberta Approve the Incredible Demand for Electricity From AI Data Centres? - Yogi Schulz",
-     "src": "EnergyNow",
-     "d": "2026-09-08"
-    },
-    {
-     "t": "IREN Surges 7% on Conditional ERCOT Status for 2GW Sweetwater Hub, Applied Digital Climbs 6%",
-     "src": "24/7 Wall St.",
-     "d": "2026-09-08"
+     "t": "Mass. Data Center Proposals Must Secure Clean Energy or Pay into Fund",
+     "src": "RTO Insider",
+     "d": "2026-09-09"
     }
    ]
   }
  ],
  "discovered": [
   {
-   "ticker": "AERA",
+   "ticker": "CMMB",
    "seen_in": [
-    "Ainos Secures Three Japanese Robotics Patents, Advancing Chemical Perception for the Physical AI Era"
+    "A 12.5% voting block lines up at Chemomab (NASDAQ: CMMB). Who’s behind it?"
    ]
   },
   {
-   "ticker": "APLD",
+   "ticker": "MSTR",
    "seen_in": [
-    "IREN Surges 7% on Conditional ERCOT Status for 2GW Sweetwater Hub, Applied Digital Climbs 6%"
-   ]
-  },
-  {
-   "ticker": "BAND",
-   "seen_in": [
-    "Micron Technology (MU) Rose on Elevated Demand for High-Bandwidth Memory"
-   ]
-  },
-  {
-   "ticker": "GFS",
-   "seen_in": [
-    "Crealights, GlobalFoundries expand 6.4T photonics work"
-   ]
-  },
-  {
-   "ticker": "SBE",
-   "seen_in": [
-    "Nvidia Invests $1.5B In SB Energy For OpenAI Data Center, Pushes Back On 'Circular Financing' Concer"
+    "What Is the Tesla Cybercab? Vehicle Specs, Business Model and Autonomous Strategy"
    ]
   },
   {
    "ticker": "SKHY",
    "seen_in": [
-    "SK Hynix Moves Beyond HBM to HBF in Full-Stack AI Memory Push, Racing Against Nvidia",
-    "Samsung turns to Japan for packaging edge, narrows HBM gap with SK Hynix"
+    "AI Semiconductor Supply Chain Explained: Nvidia, TSMC, ASML, Micron and SK Hynix",
+    "Key facts: SK hynix Inc. (000660) HBM4 expansion; large cash payout",
+    "Nvidia and Meta Are Hungry for HBM. SK Hynix Is on the Menu — These ETFs Could Cash In"
    ]
   },
   {

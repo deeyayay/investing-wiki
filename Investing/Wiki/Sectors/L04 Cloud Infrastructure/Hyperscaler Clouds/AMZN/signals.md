@@ -47,6 +47,9 @@
 - **2026-09-09 (post-open)** — 424B5 prospectus filed on EDGAR (shelf registration/offering document); separately, KeyBanc reiterates its Qualcomm rating citing an Amazon-Qualcomm chip deal, with Qualcomm shares climbing on the news (Investing.com, MarketWatch).
   **Why it matters:** The 424B5 is a routine shelf-registration filing, logged for the audit trail. The Qualcomm chip-deal reaction extends the 09-08 share-warrant item into an actual commercial tie — still no deal detail at headline level, but a chip relationship with Qualcomm is potentially relevant to the Trainium custom-silicon moat framing if it signals diversified sourcing rather than pure in-house build; flagged for /dig.
 
+- **2026-09-09 (evening)** — New 8-K filed on EDGAR, item 5.02 (departure/election of directors or officers); a Form 3 (initial beneficial-ownership statement) and an FWP (free-writing prospectus) also filed same day, alongside a repeat of the 424B5 already logged post-open.
+  **Why it matters:** An officer/director change is company-level governance context, not a fact about the AWS/Trainium thesis leg — logged for the audit trail; the filing does not name who is departing or arriving at headline-metadata level, so severity is unknown. Form 3 and FWP are routine and not independently logged.
+
 ---
 
 ## Social Mentions
@@ -75,3 +78,4 @@
 - **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — three new legal/operational matters (FTC ad-price lawsuit prep, pregnancy-discrimination suit, Amazon Air crash investigation) logged as company-level context, not thesis-moving
 - **2026-09-08 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — Qualcomm share warrant to Amazon is a new capital/commercial fact; FTC ad-price lawsuit and Prime Air-crash-scrutiny headlines repeat 09-08; EDGAR timed out again
 - **2026-09-09 (post-open)** — 📰 BRIEF | 5 items + 1 filing triaged, 1 logged, deep-pass flagged — Qualcomm chip-deal reaction extends the 09-08 share-warrant item into a commercial tie, escalated to /dig for relevance to the Trainium moat framing; 424B5 shelf filing logged as routine
+- **2026-09-09 (evening)** — 📰 BRIEF | 5 items + 3 filings triaged, 1 logged — new 8-K item 5.02 officer/director-change filing logged for the audit trail (no thesis relevance); Form 3, FWP, and a repeat 424B5 were routine; Qualcomm-deal analyst headline repeats 09-09 post-open

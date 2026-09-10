@@ -34,6 +34,9 @@
 - **2026-09-08 (co-packaged-optics topic feed)** — Samsung is reportedly building in-house silicon photonics PIC testing capability using TSMC-qualified probe tools (TrendForce, digitimes, finance.biggo.com), ahead of a CPO foundry push.
   **Why it matters:** A new competitive entrant into silicon-photonics/CPO testing capacity — worth tracking alongside XFAB's own photonixFAB (NVIDIA + Nokia consortium) angle as a capacity/competitive-dynamics watch item, not yet a threat to the thesis.
 
+- **2026-09-09 (co-packaged-optics topic feed)** — Silicon photonics boom could push the InP (indium phosphide) supply-demand gap above 70%, triggering a race for strategic optical-materials resources (digitimes).
+  **Why it matters:** A materials-scarcity signal for the entire silicon-photonics supply chain XFAB sits in — supportive of the photonixFAB TAM thesis (scarcity favors incumbent/qualified foundries) but industry-wide, not an XFAB-specific fact; no company detail yet.
+
 ---
 
 ## Social Mentions
@@ -56,3 +59,4 @@
 - **2026-09-07** — 📰 BRIEF (post-open) | 1 item triaged, 0 new logged — WDP (logistics) headline is a company mismatch, no XFAB-specific fact
 - **2026-09-07** — 📰 BRIEF (evening) | 1 item + 1 topic hit triaged, 0 new logged — same WDP company mismatch; silicon-photonics topic hit (TSMC/Taiwan alliance) recaps industry context already logged 08-31
 - **2026-09-08** — 📰 BRIEF (post-open) | 0 items + 1 topic hit triaged, 1 logged — co-packaged-optics topic feed surfaces Samsung's new in-house silicon-photonics PIC-testing push, a fresh competitive-dynamics item
+- **2026-09-09 (evening)** — 📰 BRIEF | 1 item + 1 topic hit triaged, 1 logged — co-packaged-optics topic feed surfaces an InP supply-scarcity signal (>70% supply-demand gap); WDP company-mismatch headline recurs, no XFAB-specific fact
