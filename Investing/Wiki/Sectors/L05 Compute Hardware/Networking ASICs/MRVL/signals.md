@@ -32,6 +32,9 @@
 - **2026-09-02 (post-open)** — co-packaged-optics topic feed: digitimes reports Marvell sees silicon photonics scaling from late 2027, with Taiwan and TSMC at the center.
   **Why it matters:** A forward timeline detail on the same interconnect/optics leg as the 09-01 photonic-chip shipment item — names TSMC as a manufacturing partner, worth tracking alongside the standing Google-deal /dig queue but not itself a new demand data point.
 
+- **2026-09-11 (post-open)** — Piper Sandler initiates coverage with a Buy rating, $270 price target, citing the Google partnership as "transformative" (Blockonomi, moomoo.com).
+  **Why it matters:** A new sell-side initiation with a specific price target is a fresh confirming data point on the custom-ASIC/hyperscaler leg, now that the Google relationship's real $12B sizing is on file (vs. the earlier unverified $120B framing).
+
 ---
 
 ## Social Mentions
@@ -68,3 +71,4 @@
 | 2026-09-08 | BRIEF (post-open) | 📰 3 items triaged, 0 new logged — 5M-photonic-chips and S&P 500-entry headlines recap the already-logged 09-01 item; stock-gain commentary was noise |
 | 2026-09-10 | BRIEF (post-open) | 📰 5 items triaged, 0 new logged — "shares surge 6%" / "guidance jumps 11.7%" headlines recap the already-logged 08-31 record-DC-quarter print; 5M-photonic-chips/S&P 500 headline repeats 09-01; no new figure |
 | 2026-09-10 (evening) | BRIEF | 📰 5 items triaged, 0 new logged — "shares surge/guidance jumps" headlines recap the already-logged 08-31 record-DC-quarter print for a third cycle; no new figure |
+| 2026-09-11 (post-open) | BRIEF | 📰 5 items triaged, 1 logged — Piper Sandler initiates Buy ($270 PT), citing the Google partnership; AMD-comparison and "make money before Google deal pays off" pieces were opinion/noise |

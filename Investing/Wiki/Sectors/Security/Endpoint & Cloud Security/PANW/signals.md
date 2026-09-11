@@ -41,6 +41,9 @@
 - **2026-09-10 (evening)** — 10-K annual report filed on EDGAR (SEC EDGAR).
   **Why it matters:** Routine annual-report filing following the already-logged Q4 print and FY2026 guide — no new figure beyond what's on file; logged for the audit trail.
 
+- **2026-09-11 (post-open)** — Palo Alto Networks named a Leader in the 2026 Gartner Magic Quadrant for Hybrid Mesh Firewall (company release).
+  **Why it matters:** A named third-party industry-analyst recognition is a fresh confirming data point on the platform-consolidation thesis, independent of the already-logged RPO/NGS ARR figures.
+
 ---
 
 ## Social Mentions
@@ -69,3 +72,4 @@
 - **2026-09-08 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged, conviction ↑ — Q4 earnings call: RPO surpasses $20B on nearly $1B net new NGS ARR, a new hard confirming number; "Top Bank Downgrades" and "stock edges lower" headlines repeat the already-resolved 09-08 Phillip Securities item
 - **2026-09-10 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — Q3 earnings-call-transcript recaps and "SaaSpocalypse Is Dead" CEO-quote piece recap items already logged; analyst target-raise-to-$391 headline was routine
 - **2026-09-10 (evening)** — 📰 BRIEF | 2 filings + 3 items triaged, 1 logged — 10-K annual report filed, logged for the audit trail (no new figure); S-8 not logged (routine); FY2026-guidance-slip and earnings-transcript headlines recap items already logged
+- **2026-09-11 (post-open)** — 📰 BRIEF | 2 filings + 3 items triaged, 1 logged — Gartner Magic Quadrant Leader designation (Hybrid Mesh Firewall) is new; 10-K filing and FY2026-guidance-reaction headlines repeat items already logged; S-8 not logged (routine)

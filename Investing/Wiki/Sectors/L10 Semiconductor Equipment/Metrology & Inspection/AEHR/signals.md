@@ -17,6 +17,9 @@
 - **2026-08-28 (post-open)** — Trefis: "Aehr Test Systems Stock 8-Day Losing Spree: Stock Falls 38%."
   **Why it matters:** A large, sustained drawdown with no causal headline attached — no new fact about bookings, backlog, or the SiC/EV drag already named in the thesis. Logged as a flag rather than a triaged fact; magnitude alone (38% over 8 sessions) is enough to queue for /dig to check against the Q4 FY2026 print and backlog trajectory.
 
+- **2026-09-11 (post-open)** — Oppenheimer initiates coverage with a Buy rating, $120 price target (moomoo.com, Seeking Alpha).
+  **Why it matters:** A new sell-side initiation at a specific price target is a fresh confirming data point on the AI-pivot thesis, landing alongside the standing 38%-decline /dig item still unresolved.
+
 ---
 
 ## Social Mentions
@@ -41,3 +44,4 @@
 - **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — eBay gender-test-kit probe, Heru VR headset, and Dogecoin/OECD headlines are all company mismatches; /dig item (38%-decline cause) still open
 - **2026-09-10** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — DEF 14A/ARS routine proxy-and-annual-report filings; "AI orders build" and 52-week-high recap headlines add no new fact; Caleres earnings-listicle mention was a company mismatch; /dig item (38%-decline cause) still open
 - **2026-09-10 (evening)** — 📰 BRIEF | 2 filings + 3 items triaged, 0 new logged — same DEF 14A/ARS routine filings and AI-orders/Wall-Street-support recap recirculating; Caleres listicle mismatch repeats; /dig item (38%-decline cause) still open
+- **2026-09-11 (post-open)** — 📰 BRIEF | 2 filings + 3 items triaged, 1 logged — Oppenheimer initiates Buy ($120 PT); DEF 14A/ARS filings routine; /dig item (38%-decline cause) still open

@@ -85,6 +85,9 @@
 - **2026-09-10 (evening)** — Reuters/Modern Diplomacy (hbm-supply topic feed): China's AI chipmakers are raising prices as the HBM shortage bites, with supply squeezed by hyperscaler demand.
   **Why it matters:** Independent, geography-diverse confirmation of the HBM-shortage/pricing-power leg of the thesis — Chinese buyers being forced to pay up corroborates the "CY2026 supply contracted" demand story from a source with no incentive to talk Micron's book up.
 
+- **2026-09-11 (post-open)** — moomoo.com (hbm-supply topic feed): a report claims DeepSeek cut HBM cache needs by 75% (and SSD needs 87.5%); separately, techpowerup.com reports Kepler Computing emerging to build an HBM alternative using FeRAM.
+  **Why it matters:** The DeepSeek claim is a new, unconfirmed demand-side counter-signal — if inference-efficiency gains reduce HBM cache requirements at scale, it cuts against the supply-tightness thesis leg, though a single unconfirmed technical claim doesn't move drift on its own. Kepler's FeRAM approach is a third named alternative-HBM-tech thread (after Nvidia's NVHBM and Samsung's zHBM), sharpening the standing "stacked on every NVDA GPU" /dig watch item.
+
 ---
 
 ## Social Mentions
@@ -123,3 +126,4 @@
 | 2026-09-09 (post-open) | BRIEF | 📰 5 items + 1 topic hit triaged, 2 logged, conviction mixed — new antitrust lawsuit + director investigation escalated to /dig; CXMT's 25% HBM3 yield collapse partially rebuts the 09-08 downgrade's Chinese-competition claim; NVDA-earnings-demand-recap headlines were repeats |
 | 2026-09-10 (post-open) | BRIEF | 📰 5 items triaged, 1 logged — Taiwan labor dispute escalates from "threat" to "standoff"; antitrust-lawsuit and $50B-guidance headlines were repeats of the already-logged 09-09 items |
 | 2026-09-10 (evening) | BRIEF | 📰 5 items + 1 topic hit triaged, 1 logged — hbm-supply topic feed (China AI chipmakers raising prices on HBM shortage) reinforces the demand/pricing-power leg; $50B-guidance and Taiwan-standoff headlines recap 09-09/09-10; "$1 Trillion Micron" piece was hype/noise |
+| 2026-09-11 (post-open) | BRIEF | 📰 5 items + 1 topic hit triaged, 1 logged — DeepSeek HBM-cache-reduction claim (demand-side counter-signal) + Kepler Computing FeRAM alternative (third alt-HBM-tech thread) both folded into the standing /dig queue; Taiwan-standoff and "$1 Trillion Micron" headlines repeat 09-10; Oracle-earnings read-through was indirect, not MU-specific |

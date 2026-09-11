@@ -66,6 +66,9 @@
 - **2026-09-10 (post-open)** — Yahoo Finance / ad-hoc-news.de: the DOJ is probing NVIDIA's $20B Groq licensing deal, shares dip on the report; separately, barrons.com reports NVIDIA expanding its AI partnership with Palantir, and Rackspace stock surges 13% on a new NVIDIA Blackwell cloud-partner announcement (Investing.com, x2 outlets).
   **Why it matters:** The DOJ Groq probe is a new, named antitrust/regulatory risk — the first federal scrutiny logged on a specific NVIDIA deal rather than general "circular financing" commentary; escalated to /dig to establish scope. The Palantir partnership expansion and Rackspace Blackwell-partner win are further breadth-of-demand confirmation, consistent with the nvda-downstream topic feed's Nemotron/supply-chain coverage.
 
+- **2026-09-11 (post-open)** — rdworldonline.com (nvda-downstream topic feed): Verily secures a new investment from NVIDIA.
+  **Why it matters:** Another entry in the balance-sheet-backed ecosystem-investment pattern already flagged (OpenAI, Nebius, SpaceX, Cloverleaf, MediaTek, SB Energy, Hugging Face, Thinking Machines) — extends the demand-durability thesis into life-sciences/health-data infrastructure; headline alone doesn't give deal size.
+
 ---
 
 ## Social Mentions
@@ -116,3 +119,4 @@
 - **2026-09-09 (post-open)** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged — $1.5B SB Energy investment (OpenAI data center) with an explicit circular-financing pushback extends the balance-sheet-backed ecosystem-investment pattern already flagged 09-01; "30x faster rack-scale system" and "Mocha Thread IPO" headlines repeat the already-dismissed 09-08 hype items
 - **2026-09-10 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged, deep-pass flagged — DOJ probes the $20B Groq deal (new regulatory risk, escalated to /dig); Palantir partnership expansion and Rackspace Blackwell-partner surge logged as further demand-breadth confirmation
 - **2026-09-10 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — DOJ Groq-probe headline recirculates across 5 outlets (figures now inconsistent, $17B vs $20B), already logged 09-10 post-open and still on the /dig queue
+- **2026-09-11 (post-open)** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged — Verily investment extends the balance-sheet-backed ecosystem-investment pattern; DOJ Groq-probe headlines and Palantir/Nemotron supply-chain coverage repeat 09-10; Latham GPU-server purchase was too minor to log

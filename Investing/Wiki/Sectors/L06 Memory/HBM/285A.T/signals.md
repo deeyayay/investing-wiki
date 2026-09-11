@@ -35,6 +35,9 @@
 - **2026-09-09 (post-open)** — Kioxia CEO downplays deeper SK hynix ties and warns that rapid NAND price hikes could dampen AI investment appetite (TradingKey).
   **Why it matters:** First management-sourced caution on the demand leg — a counterweight to the 09-08 "sold out through 2027" confirmation from Kioxia's own memory-business MD. Not thesis-breaking on its own, but worth tracking if the price-hike/demand-destruction framing recurs.
 
+- **2026-09-11 (post-open)** — moomoo.com: Kioxia's US IPO framed as a potential new funding channel, with shares surging 456% year-to-date as it aims to become the "focal point of global NAND allocation."
+  **Why it matters:** A US listing would be a new capital-access channel distinct from the JV/holdco capital-structure story already tracked — worth flagging, though the headline gives no specifics on filing status or timeline.
+
 ---
 
 ## Social Mentions
@@ -63,3 +66,4 @@
 - **2026-09-09 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Kioxia CEO's own caution on NAND price-hike risk to AI investment is the first management-sourced counterweight to the demand thesis; rest was fund-commentary/listicle noise
 - **2026-09-10 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — same Kioxia CEO SK Hynix-ties/NAND-pricing comments recirculating across 5 outlets, already logged 09-09
 - **2026-09-10 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — same Kioxia CEO SK Hynix-ties/NAND-pricing-cap comments recirculating for a third cycle, already logged 09-09
+- **2026-09-11 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Kioxia US IPO funding-channel framing is new; SK hynix stock-slide and NPS-inaction headlines were noise
