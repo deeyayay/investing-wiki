@@ -50,6 +50,9 @@
 - **2026-09-09 (evening)** — New 8-K filed on EDGAR, item 5.02 (departure/election of directors or officers); a Form 3 (initial beneficial-ownership statement) and an FWP (free-writing prospectus) also filed same day, alongside a repeat of the 424B5 already logged post-open.
   **Why it matters:** An officer/director change is company-level governance context, not a fact about the AWS/Trainium thesis leg — logged for the audit trail; the filing does not name who is departing or arriving at headline-metadata level, so severity is unknown. Form 3 and FWP are routine and not independently logged.
 
+- **2026-09-10 (evening)** — Amazon's Kuiper satellite unit adds 6 new Arianespace launches to its deployment schedule (marketscreener.com); separately, a proposed consumer class-action suit over Trump-era tariff charges and the standing 8-K item 5.02 officer-change filing both recirculate from prior runs.
+  **Why it matters:** The Kuiper/Arianespace launch expansion is a new operational fact for Amazon's satellite-broadband unit — adjacent to, not part of, the AWS/Trainium cloud-margin thesis leg, logged as company-level context. The tariff suit and 8-K are unchanged from 09-09.
+
 ---
 
 ## Social Mentions
@@ -80,3 +83,4 @@
 - **2026-09-09 (post-open)** — 📰 BRIEF | 5 items + 1 filing triaged, 1 logged, deep-pass flagged — Qualcomm chip-deal reaction extends the 09-08 share-warrant item into a commercial tie, escalated to /dig for relevance to the Trainium moat framing; 424B5 shelf filing logged as routine
 - **2026-09-09 (evening)** — 📰 BRIEF | 5 items + 3 filings triaged, 1 logged — new 8-K item 5.02 officer/director-change filing logged for the audit trail (no thesis relevance); Form 3, FWP, and a repeat 424B5 were routine; Qualcomm-deal analyst headline repeats 09-09 post-open
 - **2026-09-10 (post-open)** — 📰 BRIEF | 5 items + 4 filings triaged, 0 new logged — same 8-K item 5.02, FWP, 424B5, and Form 3 filings recirculating, already logged 09-09 evening; KeyBanc-Qualcomm analyst headline repeats 09-09 post-open
+- **2026-09-10 (evening)** — 📰 BRIEF | 5 items + 2 filings triaged, 1 logged — Kuiper adds 6 Arianespace launches (company-level context, not thesis-moving); 8-K item 5.02 and tariff class-action suit repeat 09-09

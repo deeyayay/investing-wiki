@@ -62,3 +62,4 @@
 - **2026-09-07** — 📰 BRIEF (evening) | 1 filing + 4 items triaged, 1 logged — $10.5M data breach settlement logged as company-level material, not thesis-moving; routine Form 4 not logged
 - **2026-09-08** — 📰 BRIEF (post-open) | 4 items + 1 filing triaged, 1 logged — Kentucky renters-insurance launch continues the state-count growth trajectory; routine Form 4 not logged
 - **2026-09-10** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — ROOT partnership-strategy piece is about a competitor, not LMND; CFO stock sale, Hold-rating recap, and Oddity-Tech mismatch were routine/noise; Q2-earnings-figures /dig item still open
+- **2026-09-10 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — ROOT partnership-strategy piece repeats the 09-10 competitor mismatch; CFO stock sale, Kalkine rebound piece, and vague multi-state-expansion mention were routine/noise; Q2-earnings-figures /dig item still open

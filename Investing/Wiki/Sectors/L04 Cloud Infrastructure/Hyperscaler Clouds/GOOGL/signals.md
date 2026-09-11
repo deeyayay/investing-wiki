@@ -32,6 +32,9 @@
 - **2026-09-08 (post-open)** — Google is fully funding PG&E's SHARE virtual power plant experiment (simplywall.st).
   **Why it matters:** An adjacent energy-infrastructure initiative, not the Cloud/inference-stack leg the thesis rests on — logged as company-level context.
 
+- **2026-09-10 (evening)** — Alphabet forges an AI partnership with Morgan State University, standing up an AI campus (TipRanks, Blockonomi).
+  **Why it matters:** An adjacent education/AI-goodwill initiative, not the Cloud/inference-stack leg the thesis rests on — logged as company-level context, consistent with the 09-08 PG&E item.
+
 ---
 
 ## Social Mentions
@@ -56,3 +59,4 @@
 - **2026-09-07** — 📰 BRIEF (evening) | 5 items triaged, 0 new logged — $84.75B raise and muted-outlook-earnings headlines recirculating, already logged post-open; futures/Apple-event mentions were company mismatches
 - **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — Google fully funds PG&E virtual power plant experiment (adjacent energy initiative, not core Cloud thesis); rest was valuation/tokenized-stock noise
 - **2026-09-10** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — "Buy 8 stocks before Anthropic IPO" listicle names no new fact about GOOGL specifically; earnings-recap, Waymo-vs-Tesla, and "chips it sells" pieces were opinion/recap noise
+- **2026-09-10 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — Morgan State University AI-campus partnership logged as adjacent company-level context; Anthropic-IPO listicle, earnings-dip recap, and Tesla/Waymo headlines were noise

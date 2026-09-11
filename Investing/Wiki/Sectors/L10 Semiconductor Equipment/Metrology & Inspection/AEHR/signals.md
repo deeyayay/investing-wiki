@@ -40,3 +40,4 @@
 - **2026-09-07** — 📰 BRIEF (evening) | 1 item triaged, 0 new logged — Oracle AI-earnings-cash-flow piece is a company mismatch, no AEHR-specific fact; /dig item still open
 - **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — eBay gender-test-kit probe, Heru VR headset, and Dogecoin/OECD headlines are all company mismatches; /dig item (38%-decline cause) still open
 - **2026-09-10** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — DEF 14A/ARS routine proxy-and-annual-report filings; "AI orders build" and 52-week-high recap headlines add no new fact; Caleres earnings-listicle mention was a company mismatch; /dig item (38%-decline cause) still open
+- **2026-09-10 (evening)** — 📰 BRIEF | 2 filings + 3 items triaged, 0 new logged — same DEF 14A/ARS routine filings and AI-orders/Wall-Street-support recap recirculating; Caleres listicle mismatch repeats; /dig item (38%-decline cause) still open

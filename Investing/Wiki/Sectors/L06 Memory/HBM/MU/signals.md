@@ -82,6 +82,9 @@
 - **2026-09-10 (post-open)** — ad-hoc-news.de: "Micron's September 30 Reckoning" frames a Taiwan "labor standoff" alongside the record guidance and stock-priced-for-AI narrative.
   **Why it matters:** Escalates the 09-02 Taiwan-union strike-threat item from "threat" to "standoff" — a harder operational-risk data point on Micron's own fab/assembly capacity ahead of the September 30 print, though still no confirmation of an actual work stoppage at headline level.
 
+- **2026-09-10 (evening)** — Reuters/Modern Diplomacy (hbm-supply topic feed): China's AI chipmakers are raising prices as the HBM shortage bites, with supply squeezed by hyperscaler demand.
+  **Why it matters:** Independent, geography-diverse confirmation of the HBM-shortage/pricing-power leg of the thesis — Chinese buyers being forced to pay up corroborates the "CY2026 supply contracted" demand story from a source with no incentive to talk Micron's book up.
+
 ---
 
 ## Social Mentions
@@ -119,3 +122,4 @@
 | 2026-09-08 (evening) | BRIEF | 📰 5 items + 1 topic hit triaged, 1 logged, conviction ↓ — formal downgrade to Hold citing contract risk + Chinese competition is the third bearish counter-narrative on file; hbm-supply topic hit (CXMT #4 global HBM rank) corroborates the Chinese-competition claim; rally/valuation-opinion and Bernstein-reiterate headlines were repeats |
 | 2026-09-09 (post-open) | BRIEF | 📰 5 items + 1 topic hit triaged, 2 logged, conviction mixed — new antitrust lawsuit + director investigation escalated to /dig; CXMT's 25% HBM3 yield collapse partially rebuts the 09-08 downgrade's Chinese-competition claim; NVDA-earnings-demand-recap headlines were repeats |
 | 2026-09-10 (post-open) | BRIEF | 📰 5 items triaged, 1 logged — Taiwan labor dispute escalates from "threat" to "standoff"; antitrust-lawsuit and $50B-guidance headlines were repeats of the already-logged 09-09 items |
+| 2026-09-10 (evening) | BRIEF | 📰 5 items + 1 topic hit triaged, 1 logged — hbm-supply topic feed (China AI chipmakers raising prices on HBM shortage) reinforces the demand/pricing-power leg; $50B-guidance and Taiwan-standoff headlines recap 09-09/09-10; "$1 Trillion Micron" piece was hype/noise |

@@ -12,6 +12,7 @@
 | 2026-08-26 | H1 CY2026 results: revenue up, loss widens | marketscreener.com / The Motley Fool Australia | First earnings data point since onboarding — continues the pre-scale, heavy-burn profile; commercial traction (revenue growth) is the gating variable for the speculative thesis, still watch/starter only. |
 | 2026-08-29 | First production batch arrives, but the loss ledger grows faster | Ad-hoc-news.de | First real production milestone since onboarding — a positive execution signal — paired with worsening burn, consistent with the pre-scale profile already flagged; still watch/starter only. |
 | 2026-08-31 | "Ecosystem Offensive" coverage: awards and open-source wins stacking up against a cash position reported halved | AD HOC NEWS | New, more specific cash-runway data point (halved, not just "burn widening" as logged 08-29) — the gating variable for the speculative thesis just got a harder number; still watch/starter only, but worth flagging for a runway check next time this ticker is deep-dived. |
+| 2026-09-10 (evening) | BrainChip Q2 2026 earnings call: loss narrows as chip demand builds | Investing.com Canada | First quarter-specific commentary tying a narrowing loss to building chip demand — directly conflicts with the 08-26 "H1 CY2026: revenue up, loss widens" framing; unclear whether this is a later, better quarter or a mislabeled recap of the same print, needs verification before treating as an inflection. |
 
 ---
 
@@ -34,3 +35,4 @@ _None yet — seeded on onboarding._
 | 2026-09-07 | 📰 BRIEF (evening) | 2 items triaged, 0 new logged — archTIS and Synertec ASX headlines are company-name mismatches, no BRCHF-specific fact |
 | 2026-09-08 | 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — BRN half-year-loss-widens-to-$12M headline recirculates the already-logged 08-26 H1 earnings event with a specific figure; Synertec/Etherstack ASX headlines are company-name mismatches |
 | 2026-09-10 | 📰 BRIEF (post-open) | 4 items triaged, 0 new logged — "gains attention," "top ASX gainers," and "can edge progress convert" pieces are sentiment/listicle noise; "licence wins" headline names no new fact |
+| 2026-09-10 (evening) | 📰 BRIEF | 5 items triaged, 1 logged, conviction → | Q2 2026 earnings-call transcript ("loss narrows as chip demand builds") conflicts with the 08-26 "loss widens" H1 print — logged as an unresolved conflict, not treated as a positive inflection; rest was ASX sentiment/listicle noise |

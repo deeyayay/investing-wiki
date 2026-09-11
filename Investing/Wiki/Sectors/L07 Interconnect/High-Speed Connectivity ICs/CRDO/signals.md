@@ -73,3 +73,4 @@
 - **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 0 new logged — CalSTRS position-increase and "buy the pullback" opinion pieces recap the already-resolved 09-02 DIG findings; no new operating fact
 - **2026-09-08 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — earnings-call guide of $530M with Optics guided to top $600M is the first forward-quarter figure logged; meme-coin listicle was noise
 - **2026-09-10 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Seeking Alpha "$1T AI Infra Catalyst" upgrade + a new shelf-filing mention (watch item, size/purpose unconfirmed); "Q1 Outlook Disappoints" and Broadcom/Snowflake-earnings headlines recap the already-resolved 09-02 DIG findings; ALAB-comparison headline was noise
+- **2026-09-10 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — shelf-filing valuation question, insider-sale, and buying-opportunity opinion pieces all recap items already logged 09-10 post-open

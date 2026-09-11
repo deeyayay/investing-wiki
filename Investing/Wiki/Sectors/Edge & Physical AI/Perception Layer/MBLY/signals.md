@@ -14,6 +14,7 @@
 | 2026-09-07 | Mobileye secures a deal with a major US automaker (unnamed in headline) | Stocktwits | New commercial design win — directly confirms the "high-volume production economics" leg of the thesis; automaker and program details unconfirmed, worth a /dig follow-up if more specifics surface. |
 | 2026-09-09 | Mobileye invests $130M in Beep, Inc.'s Series B to accelerate commercial deployment of autonomous mobility networks | marketscreener.com / Financial Times | New capital-allocation fact — an equity stake in a third-party autonomous-shuttle operator extends the robotaxi/full-autonomy optionality leg beyond Mobileye's own EyeQ/REM stack; deal terms and ownership stake unconfirmed at headline level. |
 | 2026-09-09/10 | Mobileye hires a new VP to lead business development; separately announces unspecified "Executive Changes," effective 2026-09-03 | Stock Titan / marketscreener.com | Two distinct personnel facts — a new BD hire (commercial-expansion signal) and an unnamed executive change already effective a week prior — governance context, no detail on who departed/arrived or role seniority at headline level. |
+| 2026-09-10 (evening) | Mobileye names Yaacov Kobi Ohayon as Principal Operating Officer | marketscreener.com | Resolves the 09-10 "unnamed executive-changes announcement" placeholder with a name and title — governance context, not a thesis-moving fact on its own. |
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -31,3 +32,4 @@ _None yet — seeded on onboarding._
 | 2026-09-07 | 📰 BRIEF (evening) | 3 items triaged, 1 logged, conviction ↑ — new automaker design win confirms the production-economics leg; Nasdaq-attention and sensor-fusion listicles were repeats |
 | 2026-09-09 (evening) | 📰 BRIEF | 3 items triaged, 1 logged — $130M Beep, Inc. investment is a new capital-allocation fact extending the autonomy-optionality leg |
 | 2026-09-10 (post-open) | 📰 BRIEF | 5 items triaged, 1 logged — new VP business-development hire + unnamed executive-changes announcement (effective 09-03) logged as governance context; Beep/Series B headlines recap the already-logged 09-09 item; institutional-holdings-cut headline was routine |
+| 2026-09-10 (evening) | 📰 BRIEF | 5 items triaged, 1 logged — new Principal Operating Officer named (Ohayon), resolving the 09-10 unnamed-exec-change item; Beep $130M funding and VP business-development hire headlines repeat 09-09/09-10; Engineers Gate holdings-trim was routine |

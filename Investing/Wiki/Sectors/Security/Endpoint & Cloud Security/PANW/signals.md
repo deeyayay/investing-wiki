@@ -38,6 +38,9 @@
 - **2026-09-08 (evening, earnings call)** — Q4 2026 earnings call: Palo Alto adds nearly $1B in net new NGS ARR as RPO surpasses $20B (finance.biggo.com).
   **Why it matters:** RPO crossing $20B is a new, harder confirming number for the platform-consolidation thesis beyond the already-logged $8.1B NGS ARR and $11.42B FY2026 revenue guide — a large forward-booked-revenue base is direct evidence of the cross-sell/consolidation flywheel converting into contracted backlog. A separate "Top Bank Downgrades" headline names no new firm or figure and likely repeats the already-resolved Phillip Securities action logged 09-08.
 
+- **2026-09-10 (evening)** — 10-K annual report filed on EDGAR (SEC EDGAR).
+  **Why it matters:** Routine annual-report filing following the already-logged Q4 print and FY2026 guide — no new figure beyond what's on file; logged for the audit trail.
+
 ---
 
 ## Social Mentions
@@ -65,3 +68,4 @@
 - **2026-09-08** — 📰 BRIEF (post-open) | 5 items triaged, 1 logged — Phillip Securities named as the source of the 09-07 downgrade (PT actually raised to $346); WSJ double-digit-growth guidance story reinforces the NGS ARR thesis leg; Cantor reiterate was routine
 - **2026-09-08 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged, conviction ↑ — Q4 earnings call: RPO surpasses $20B on nearly $1B net new NGS ARR, a new hard confirming number; "Top Bank Downgrades" and "stock edges lower" headlines repeat the already-resolved 09-08 Phillip Securities item
 - **2026-09-10 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — Q3 earnings-call-transcript recaps and "SaaSpocalypse Is Dead" CEO-quote piece recap items already logged; analyst target-raise-to-$391 headline was routine
+- **2026-09-10 (evening)** — 📰 BRIEF | 2 filings + 3 items triaged, 1 logged — 10-K annual report filed, logged for the audit trail (no new figure); S-8 not logged (routine); FY2026-guidance-slip and earnings-transcript headlines recap items already logged
