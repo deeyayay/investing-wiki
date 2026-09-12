@@ -42,3 +42,4 @@ _None yet — seeded on onboarding._
 | 2026-09-04 | 📰 BRIEF (evening) | 2 items triaged, 1 logged, drift confirmed — Chinese rare-earth shipment halt is the first concrete supply-side action confirming the export-tightening leg of the thesis |
 | 2026-09-07 | 📰 BRIEF (evening) | 1 item triaged, 0 new logged — USAR Stillwater-facility headline is an adjacent competitor, not NB-specific |
 | 2026-09-08 | 📰 BRIEF (post-open) | 1 item triaged, 0 new logged — Q4 EPS consensus-estimate preview, not an actual result |
+| 2026-09-11 (evening) | 📰 BRIEF | 1 item triaged, 0 new logged — "Tungsten Tripled in 2026" headline names no niobium/NB-specific fact, a topic-query mismatch |

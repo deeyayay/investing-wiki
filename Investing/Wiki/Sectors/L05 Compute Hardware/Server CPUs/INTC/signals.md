@@ -68,6 +68,9 @@
 - **2026-09-11 (post-open)** — MarketBeat: Piper Sandler upgrades Intel's stock rating.
   **Why it matters:** A new named sell-side rating action, distinct from the standing Northland/HSBC coverage already logged — folds into the same rerate narrative; headline gives no PT or reasoning detail.
 
+- **2026-09-11 (evening)** — TipRanks/Reuters: Intel-backed Altera (FPGA subsidiary) readies an IPO that could raise over $2B.
+  **Why it matters:** A fresh monetization event for a non-core Intel asset — echoes the 2025 51%-to-Silver-Lake Altera sale — surfaces capital optionality distinct from, and not a test of, the EMIB/photonics foundry thesis leg itself.
+
 ---
 
 ## Social Mentions
@@ -101,3 +104,4 @@
 - **2026-09-10 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged, conviction ↑, deep-pass flagged — new SpaceX Terafab manufacturing deal confirms a fresh IFS external customer; $20B-offering/"Mac setback" headline conflicts with the logged $23B raise and the confirmed Apple deal, added to /dig queue; Northland-upgrade recap was a repeat
 - **2026-09-10 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — Tesla (not SpaceX) named as the 14A/Terafab customer, conflicting with 09-09's attribution, added to the standing /dig queue; $20B-offering/Mac-setback and Xeon-6/Nvidia-PC-processor headlines recap 09-10/09-01; analyst PT-trim was routine
 - **2026-09-11 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Piper Sandler upgrade is a new named analyst action; $20B-offering/"Mac setback" and generic-PT-trim headlines repeat 09-10; standing /dig queue (net-loss cause, Terafab customer conflict, offering/Apple-deal tension) unchanged
+- **2026-09-11 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — Intel-backed Altera IPO (could raise $2B+) is a new capital-markets fact; earnings-beat/technical-rebound recap and a generic analyst PT-trim were noise; standing /dig queue unchanged

@@ -53,3 +53,4 @@ _None yet — seeded on onboarding._
 | 2026-09-09 (evening) | 📰 BRIEF | 5 items triaged, 1 logged, conviction → | actual Q1 FY2027 earnings print (EPS beat/revenue miss) supersedes the 09-08 preview; "Laser Contract Wins" recaps 09-02/03 |
 | 2026-09-10 (post-open) | 📰 BRIEF | 5 items triaged, 1 logged, deep-pass flagged | same Q1 FY2027 print now reported as a revenue beat with shares rising — directly conflicts with the 09-09 "miss/decline" framing; escalated to /dig to resolve which is accurate |
 | 2026-09-10 (evening) | 📰 BRIEF | 5 items triaged, 0 new logged | five more outlets confirm the "revenue tops estimates, shares rise" framing already logged 09-10 post-open; /dig still queued for the primary print |
+| 2026-09-11 (evening) | 📰 BRIEF | 5 items triaged, 0 new logged | five more outlets recap the earnings-beat/analyst-target framing already logged 09-09/09-10; /dig still queued for the primary print |

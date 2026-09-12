@@ -67,3 +67,4 @@
 - **2026-09-07** — 📰 BRIEF (evening) | 2 items triaged, 0 new logged — "This Week's AI Neocloud Winner" is sentiment/listicle noise; online-casino headline is a company-name mismatch
 - **2026-09-10** — 📰 BRIEF (post-open) | 1 item triaged, 0 new logged — "Top Boost Run Competitors 2026" is a listicle, no BRUN-specific fact
 - **2026-09-10 (evening)** — 📰 BRIEF | 2 items triaged, 0 new logged — "Top Boost Run Competitors" listicle repeats 09-10 post-open; Lincoln Park real-estate headline is a company-name mismatch
+- **2026-09-11 (evening)** — 📰 BRIEF | 4 items triaged, 0 new logged — generic price-target/forecast piece was noise; Lincoln Park spec-home, Harley Clarke Mansion, and Ocean Power reverse-split headlines are all company-name mismatches

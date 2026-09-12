@@ -67,3 +67,4 @@
 - **2026-09-10 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — same Kioxia CEO SK Hynix-ties/NAND-pricing comments recirculating across 5 outlets, already logged 09-09
 - **2026-09-10 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — same Kioxia CEO SK Hynix-ties/NAND-pricing-cap comments recirculating for a third cycle, already logged 09-09
 - **2026-09-11 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Kioxia US IPO funding-channel framing is new; SK hynix stock-slide and NPS-inaction headlines were noise
+- **2026-09-11 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — US-listing/IPO framing recirculates across more outlets (moomoo, Voya's Thomas via two outlets, Economic Times, 매일경제), already logged 09-11 post-open; fair-value-comparison listicle was noise

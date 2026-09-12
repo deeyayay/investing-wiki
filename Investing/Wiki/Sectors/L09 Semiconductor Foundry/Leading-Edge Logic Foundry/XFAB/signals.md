@@ -62,3 +62,4 @@
 - **2026-09-09 (evening)** — 📰 BRIEF | 1 item + 1 topic hit triaged, 1 logged — co-packaged-optics topic feed surfaces an InP supply-scarcity signal (>70% supply-demand gap); WDP company-mismatch headline recurs, no XFAB-specific fact
 - **2026-09-10 (post-open)** — 📰 BRIEF | 2 items triaged, 0 new logged — same WDP (logistics) company-mismatch headlines recurring, no XFAB-specific fact
 - **2026-09-10 (evening)** — 📰 BRIEF | 2 items triaged, 0 new logged — same WDP (logistics) company-mismatch headlines recurring, no XFAB-specific fact
+- **2026-09-11 (evening)** — 📰 BRIEF | 1 item triaged, 0 new logged — same WDP (logistics/Euronext) company-mismatch headline recurring, no XFAB-specific fact

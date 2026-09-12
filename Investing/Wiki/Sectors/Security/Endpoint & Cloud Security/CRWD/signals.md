@@ -44,6 +44,9 @@
 - **2026-09-11 (post-open)** — Wedbush initiates coverage with an Outperform rating, naming CrowdStrike its top cybersecurity pick while downgrading Check Point, Fortinet, Varonis, and Telos (Stocktwits, Investing.com).
   **Why it matters:** A new sell-side initiation framed as a relative call against named peers is a fresh confirming data point on the platform-consolidation thesis, distinct from the recurring Wipro/CISO Command Center and Jensen Huang items already on file.
 
+- **2026-09-11 (evening)** — SEC EDGAR: S-3ASR automatic shelf registration statement filed (well-known seasoned issuer).
+  **Why it matters:** Standing capacity to raise capital on short notice is a routine capital-markets filing, not itself a change to the platform-consolidation thesis — logged for the audit trail.
+
 ---
 
 ## Social Mentions
@@ -75,3 +78,4 @@
 - **2026-09-10 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — Wipro/CrowdStrike defense-center headline repeats 09-09 across two more outlets; Cloudflare/OpenAI and Oracle-earnings headlines are about other companies, not CRWD; Morningstar PANW-vs-CRWD comparison named no new rating; standing Q1/Q2 guidance-reaction mismatch still queued for /dig
 - **2026-09-10 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — Wipro/CrowdStrike CISO Command Center headline repeats 09-09/09-10 for a third cycle; Cloudflare/OpenAI and Zscaler headlines are competitor mismatches; standing Q1/Q2 guidance-reaction mismatch still queued for /dig
 - **2026-09-11 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Wedbush initiates Outperform, naming CRWD its top pick vs. downgraded peers; Wipro/CISO Command Center and Jensen Huang "top partner" headlines repeat items already logged; standing Q1/Q2 guidance-reaction mismatch still queued for /dig
+- **2026-09-11 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — new S-3ASR shelf registration filed, logged for the audit trail; Wedbush Outperform initiation vs. downgraded peers repeats 09-11 post-open; standing Q1/Q2 guidance-reaction mismatch still queued for /dig

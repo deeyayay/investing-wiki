@@ -16,6 +16,7 @@
 | 2026-09-09/10 | Mobileye hires a new VP to lead business development; separately announces unspecified "Executive Changes," effective 2026-09-03 | Stock Titan / marketscreener.com | Two distinct personnel facts — a new BD hire (commercial-expansion signal) and an unnamed executive change already effective a week prior — governance context, no detail on who departed/arrived or role seniority at headline level. |
 | 2026-09-10 (evening) | Mobileye names Yaacov Kobi Ohayon as Principal Operating Officer | marketscreener.com | Resolves the 09-10 "unnamed executive-changes announcement" placeholder with a name and title — governance context, not a thesis-moving fact on its own. |
 | 2026-09-10 | Mobileye EVP Nimrod Nehushtan shifts to a part-time corporate strategy role, effective 2026-09-03 | kalkinemedia.com | A second, separately-named executive-transition fact alongside the already-logged Ohayon POO appointment — governance context, no detail on scope or reason at headline level. |
+| 2026-09-11 | 8-K filed (items 8.01 "other events" and 9.01 "financial statements and exhibits") | SEC EDGAR | New filing, content unresolved at headline level — item 8.01 can carry anything from a routine update to a material disclosure; worth a /dig check if a follow-up story surfaces. |
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -35,3 +36,4 @@ _None yet — seeded on onboarding._
 | 2026-09-10 (post-open) | 📰 BRIEF | 5 items triaged, 1 logged — new VP business-development hire + unnamed executive-changes announcement (effective 09-03) logged as governance context; Beep/Series B headlines recap the already-logged 09-09 item; institutional-holdings-cut headline was routine |
 | 2026-09-10 (evening) | 📰 BRIEF | 5 items triaged, 1 logged — new Principal Operating Officer named (Ohayon), resolving the 09-10 unnamed-exec-change item; Beep $130M funding and VP business-development hire headlines repeat 09-09/09-10; Engineers Gate holdings-trim was routine |
 | 2026-09-11 (post-open) | 📰 BRIEF | 5 items triaged, 1 logged — EVP Nehushtan's part-time shift is a distinct named fact from the already-logged Ohayon POO appointment; VP business-development hire and Ohayon POO headlines repeat 09-10; Engineers Gate holdings-trim was routine |
+| 2026-09-11 (evening) | 📰 BRIEF | 5 items triaged, 1 logged — new 8-K (items 8.01/9.01) filed, content unresolved at headline level; Ohayon POO and Nehushtan part-time-role headlines repeat 09-10/09-11 post-open |
