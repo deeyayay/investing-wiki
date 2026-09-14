@@ -16,6 +16,7 @@
 | 2026-08-27 | Coverage frames STX's AI-driven rally as continuing "as guidance and record 2026 results lift expectations"; rising institutional interest reported | Ad-hoc-news.de / simplywall.st | First real earnings-level validation since onboarding — record results + raised guidance is direct evidence the HAMR/cold-archive exabyte-tier demand thesis is playing out, not just a capacity-roadmap story. |
 | 2026-09-04 | 8-K (item 5.02 — officer/director departure, election, or compensatory arrangement) filed | SEC EDGAR | Specifics not disclosed at headline level; a leadership-change filing warrants confirmation before assessing thesis relevance — queued for /dig. |
 | 2026-09-09 | 8-K (items 3.02, 7.01, 8.01, 9.01) filed; separately DEF 14A, ARS, and DEFA14A (annual-meeting proxy materials) filed same window | SEC EDGAR | Distinct from the still-unresolved 09-04 item-5.02 filing — item 3.02 (unregistered equity sale) is unusual and not yet explained at headline level; the proxy/annual-report cluster (DEF 14A/ARS/DEFA14A) is routine. Both 8-Ks now queued for /dig. |
+| 2026-09-14 | Weekly recap: 30–40TB HAMR deployment underway, nearline capacity locked to 2028 | TradingView | Concrete multi-year demand-visibility data point — capacity contracted out to 2028 directly confirms the exabyte-tier cold/nearline archive thesis leg beyond the current up-cycle. |
 
 ---
 
@@ -42,3 +43,4 @@ _None yet — seeded on onboarding._
 | 2026-09-10 | 📰 BRIEF (post-open) | 4 filings + 1 item triaged, 0 new logged — same 8-K (items 3.02/7.01/8.01/9.01) and DEF 14A/ARS/DEFA14A cluster recirculating, already logged 09-09; Citi Buy reiteration ($1,300 PT) was routine; /dig item still open |
 | 2026-09-10 (evening) | 📰 BRIEF | 4 filings + 1 item triaged, 0 new logged — same 8-K (items 3.02/7.01/8.01/9.01) and DEF 14A/ARS/DEFA14A cluster recirculating for a third cycle, already logged 09-09; Citi Buy reiteration repeats 09-10; /dig item still open |
 | 2026-09-11 (evening) | 📰 BRIEF | 5 items triaged, 0 new logged — "SeaGate's new owners"/HQ-relocation headline is a company-name mismatch (unrelated business), underperform-vs-peers recap was noise, three RSU-tax-sale officer 10b5-1 headlines were routine; /dig item still open |
+| 2026-09-14 (post-open) | 📰 BRIEF | 5 items triaged, 1 logged, conviction ↑ — nearline HDD capacity locked to 2028 confirms the exabyte-tier archive demand thesis beyond the current cycle; record-results/edge-IoT recap headlines were noise |

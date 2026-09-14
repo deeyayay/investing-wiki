@@ -38,6 +38,9 @@
 - **2026-09-11 (post-open)** — moomoo.com: Kioxia's US IPO framed as a potential new funding channel, with shares surging 456% year-to-date as it aims to become the "focal point of global NAND allocation."
   **Why it matters:** A US listing would be a new capital-access channel distinct from the JV/holdco capital-structure story already tracked — worth flagging, though the headline gives no specifics on filing status or timeline.
 
+- **2026-09-14 (post-open)** — Seeking Alpha: Kioxia is reportedly considering raising $10B in its US listing; separately, ad-hoc-news.de reports SK hynix declining alongside a "denied Kioxia tie-up."
+  **Why it matters:** First specific dollar figure attached to the standing 09-11 US-listing/funding-channel item — sizes the capital-access channel, though still headline-level with no filing confirmation. The denial closes out the 09-02 "SK Chairman weighs Kioxia partnership" watch item as not materializing.
+
 ---
 
 ## Social Mentions
@@ -68,3 +71,4 @@
 - **2026-09-10 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — same Kioxia CEO SK Hynix-ties/NAND-pricing-cap comments recirculating for a third cycle, already logged 09-09
 - **2026-09-11 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Kioxia US IPO funding-channel framing is new; SK hynix stock-slide and NPS-inaction headlines were noise
 - **2026-09-11 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — US-listing/IPO framing recirculates across more outlets (moomoo, Voya's Thomas via two outlets, Economic Times, 매일경제), already logged 09-11 post-open; fair-value-comparison listicle was noise
+- **2026-09-14 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Kioxia's $10B US-listing figure sizes the standing funding-channel item; SK hynix-Kioxia tie-up rumor now denied; rest was price/derivatives listicle noise

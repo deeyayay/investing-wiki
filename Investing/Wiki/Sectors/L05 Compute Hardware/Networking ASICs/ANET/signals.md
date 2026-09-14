@@ -63,3 +63,4 @@
 | 2026-09-10 | BRIEF (post-open) | 5 items triaged, 0 new logged — Goldman Buy ($225 PT) repeats 09-09; earnings-call-transcript recaps and an Evercore reiterate (no PT/rating change) were routine |
 | 2026-09-10 (evening) | BRIEF | 5 items triaged, 0 new logged — Evercore reiteration, Goldman-conference-transcript recap, and "hides an 18-month wait" opinion piece were noise; no new fact |
 | 2026-09-11 (evening) | BRIEF | 5 items triaged, 0 new logged — Deutsche Bank Buy-initiation headline repeats the already-logged 09-01 item; Q1 earnings-call-transcript and Ciena/Cisco sympathy-rally recap known earnings; TPx-VeloCloud support dispute and director 10b5-1 sale were routine/low-impact |
+| 2026-09-14 (post-open) | BRIEF | 4 items triaged, 0 new logged — security-advisory and Celestica-comparison pieces were noise; cash-flow puff piece and "bullish Wall Street views" question were opinion, no new fact |

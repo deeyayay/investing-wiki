@@ -73,3 +73,4 @@
 | 2026-09-10 (evening) | BRIEF | 📰 5 items triaged, 0 new logged — "shares surge/guidance jumps" headlines recap the already-logged 08-31 record-DC-quarter print for a third cycle; no new figure |
 | 2026-09-11 (post-open) | BRIEF | 📰 5 items triaged, 1 logged — Piper Sandler initiates Buy ($270 PT), citing the Google partnership; AMD-comparison and "make money before Google deal pays off" pieces were opinion/noise |
 | 2026-09-11 (evening) | BRIEF | 📰 5 items triaged, 0 new logged — Piper Sandler Google-partnership headline repeats 09-11 post-open; BofA Buy reiteration was routine; Broadcom-revenue-comparison, "stocks making big moves," and AMD-comparison pieces were noise |
+| 2026-09-14 (post-open) | BRIEF | 📰 5 items triaged, 0 new logged — "four straight guidance raises" and "MRVL drops premarket despite strong Q1" headlines recap the already-logged 08-31 record-DC-quarter print; 5M-photonic-chips/S&P 500 headline repeats 09-01; no new figure |

@@ -69,6 +69,9 @@
 - **2026-09-11 (post-open)** — rdworldonline.com (nvda-downstream topic feed): Verily secures a new investment from NVIDIA.
   **Why it matters:** Another entry in the balance-sheet-backed ecosystem-investment pattern already flagged (OpenAI, Nebius, SpaceX, Cloverleaf, MediaTek, SB Energy, Hugging Face, Thinking Machines) — extends the demand-durability thesis into life-sciences/health-data infrastructure; headline alone doesn't give deal size.
 
+- **2026-09-14 (post-open)** — ad-hoc-news.de: "Nvidia's Regulatory Crossroads" ties DOJ scrutiny to a potential $10B Nvidia stake in Anthropic's IPO; separately, Reuters/calcalistech (nvda-downstream topic feed, 5 outlets) report Nvidia in talks to anchor Anthropic's ~$2T IPO.
+  **Why it matters:** The $10B figure is the first sized number on the Anthropic side of the balance-sheet-backed ecosystem-investment pattern already on file (OpenAI, Nebius, SpaceX, SB Energy, Verily, etc.) — extends the same circular-financing question to the largest name yet. The DOJ framing groups it with the standing Groq-probe /dig item rather than adding a new regulatory fact.
+
 ---
 
 ## Social Mentions
@@ -121,3 +124,4 @@
 - **2026-09-10 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — DOJ Groq-probe headline recirculates across 5 outlets (figures now inconsistent, $17B vs $20B), already logged 09-10 post-open and still on the /dig queue
 - **2026-09-11 (post-open)** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged — Verily investment extends the balance-sheet-backed ecosystem-investment pattern; DOJ Groq-probe headlines and Palantir/Nemotron supply-chain coverage repeat 09-10; Latham GPU-server purchase was too minor to log
 - **2026-09-11 (evening)** — 📰 BRIEF | 5 items + 1 topic hit triaged, 0 new logged — DOJ Groq-probe headlines (5 outlets, figures still inconsistent $17B/$20B) repeat 09-10/09-11, still on the standing /dig queue; nvda-downstream topic hit ("Nvidia may anchor Anthropic's IPO. It is also the supplier") is speculative framing on the already-logged circular-financing pattern, not a new fact; Palantir-supply-chain and Rackspace-sovereign-AI mentions were context/noise
+- **2026-09-14 (post-open)** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged — $10B Nvidia-Anthropic stake talks are the first sized figure on that leg of the ecosystem-investment pattern; DOJ Groq-probe framing repeats 09-10/09-11; tariff-fears and Lumentum-optics-partnership headlines were noise

@@ -45,6 +45,9 @@
 - **2026-09-09 (post-open)** — Loop Capital initiates coverage at Hold with a $22 price target (marketscreener.com, TipRanks).
   **Why it matters:** A new analyst initiating at Hold (not Buy) is a mixed, neutral data point — logged for the audit trail as new coverage, not a thesis-moving event either direction.
 
+- **2026-09-14 (post-open)** — Yellow.com: a US banking regulator clears a path for banks to engage in crypto activities.
+  **Why it matters:** A sector-wide regulatory tailwind, not SOFI-specific, but directly relevant to SoFi's own USD-stablecoin/crypto-payments ambitions named in the catalyst timeline — logged for context, not thesis-moving on its own.
+
 ---
 
 ## Social Mentions
@@ -75,3 +78,4 @@
 - **2026-09-10 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — Loop Capital Hold ($22 PT) repeats 09-09; Kraken/Payward stablecoin-settlement coverage recirculates the already-logged 09-04 item; standing short-seller-accounting /dig item still open
 - **2026-09-10 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — Kraken "settlement tie-up" framing and Loop Capital Hold ($22 PT) both recirculate items already logged 09-04/09-09; standing short-seller-accounting /dig item still open
 - **2026-09-11 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — all five items (Seeking Alpha, TheStreet Pro, SoFi-vs-Nu comparison, Kalkine, Cramer "too cheap to ignore") were opinion/sentiment noise, no new fact; standing short-seller-accounting /dig item still open
+- **2026-09-14 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — US bank-crypto regulatory clearance is a sector tailwind relevant to SoFi's stablecoin plans; institutional-position and real-time-signal headlines were routine/noise; standing short-seller-accounting /dig item still open

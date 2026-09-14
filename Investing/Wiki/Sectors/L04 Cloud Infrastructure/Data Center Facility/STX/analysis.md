@@ -37,6 +37,7 @@ _Not yet scored — run `/score-ticker STX`._
 | 2026-06-15 | Onboarded as the HAMR cold-archive exposure for the memory/storage thesis | → | Establishes coverage; HAMR ramp + nearline pricing are the watch items. |
 | 2026-03-03 | Seagate ships 44TB Mozaic 4+ in volume to hyperscalers | ↑ | Areal-density lead extends; supports capacity-led margin expansion. |
 | 2026-08-27 | Record 2026 results + raised guidance reported | ↑ | First earnings-level confirmation of the HAMR cold-archive thesis since onboarding — supports the areal-density margin story beyond capacity announcements alone. |
+| 2026-09-14 | Nearline HDD capacity reported locked through 2028 | ↑ | Extends demand visibility a year beyond the prior "sold out through 2026, visibility into 2027" framing — multi-year capacity contracts confirm the exabyte-tier archive demand persists beyond the current up-cycle. |
 
 ---
 
