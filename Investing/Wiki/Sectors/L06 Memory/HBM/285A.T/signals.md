@@ -72,3 +72,4 @@
 - **2026-09-11 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Kioxia US IPO funding-channel framing is new; SK hynix stock-slide and NPS-inaction headlines were noise
 - **2026-09-11 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — US-listing/IPO framing recirculates across more outlets (moomoo, Voya's Thomas via two outlets, Economic Times, 매일경제), already logged 09-11 post-open; fair-value-comparison listicle was noise
 - **2026-09-14 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Kioxia's $10B US-listing figure sizes the standing funding-channel item; SK hynix-Kioxia tie-up rumor now denied; rest was price/derivatives listicle noise
+- **2026-09-14 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — Kioxia's $10B US-listing figure (Reuters/Bloomberg) recirculates the already-logged 09-14 post-open item across more outlets; rest was bear-market/derivatives listicle noise

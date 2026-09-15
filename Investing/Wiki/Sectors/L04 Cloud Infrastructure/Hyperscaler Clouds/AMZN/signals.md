@@ -53,6 +53,9 @@
 - **2026-09-10 (evening)** — Amazon's Kuiper satellite unit adds 6 new Arianespace launches to its deployment schedule (marketscreener.com); separately, a proposed consumer class-action suit over Trump-era tariff charges and the standing 8-K item 5.02 officer-change filing both recirculate from prior runs.
   **Why it matters:** The Kuiper/Arianespace launch expansion is a new operational fact for Amazon's satellite-broadband unit — adjacent to, not part of, the AWS/Trainium cloud-margin thesis leg, logged as company-level context. The tariff suit and 8-K are unchanged from 09-09.
 
+- **2026-09-14 (evening)** — New 8-K filed on EDGAR (items 8.01 "other events" and 9.01 "financial statements and exhibits"), distinct from the already-logged 09-09 item-5.02 officer-change filing; content unresolved at headline level. Separately, two institutional 13F-aggregator "new position" stories (Hurlow Wealth, Danica Pension) and a market-wide "bloodbath" sentiment piece tied to AI-safety jitters.
+  **Why it matters:** Item 8.01 is a catch-all disclosure category that can range from routine to material — flagged for /dig if a follow-up story surfaces. The 424B5 shelf filing recirculating tonight (dated 09-11) repeats the already-logged filing. Institutional 13F stories and the AI-safety sentiment piece were routine/macro noise, not AWS/Trainium-specific.
+
 ---
 
 ## Social Mentions
@@ -86,3 +89,4 @@
 - **2026-09-10 (evening)** — 📰 BRIEF | 5 items + 2 filings triaged, 1 logged — Kuiper adds 6 Arianespace launches (company-level context, not thesis-moving); 8-K item 5.02 and tariff class-action suit repeat 09-09
 - **2026-09-11 (evening)** — 📰 BRIEF | 5 items + 2 filings triaged, 0 new logged — same 8-K item 5.02 (dated 09-09) and Form 3 filings recirculating; Kuiper/Arianespace launch-count item repeats 09-10 evening; Wealthspan 13F-aggregator and Anthropic-IPO-"game changer" opinion pieces were noise
 - **2026-09-14 (post-open)** — 📰 BRIEF | 4 items + 1 filing triaged, 0 new logged — tariff class-action headline repeats 09-07/09-09; 424B5 shelf filing (dated 09-11) repeats already-logged filings; two institutional 13F-aggregator "new position" stories were routine; NVDA-earnings-bar headline was indirect
+- **2026-09-14 (evening)** — 📰 BRIEF | 5 items + 2 filings triaged, 1 logged — new 8-K (items 8.01/9.01, dated 09-14) filed, content unresolved at headline level; 424B5 shelf filing (dated 09-11) repeats already-logged filings; institutional 13F-aggregator stories and AI-safety-jitters sentiment piece were noise
