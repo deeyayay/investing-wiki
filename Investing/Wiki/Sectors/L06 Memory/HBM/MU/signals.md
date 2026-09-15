@@ -94,6 +94,9 @@
 - **2026-09-14 (post-open)** — TradingKey: Micron shares crash below $910 as China's CXMT plans an $8.5B IPO, reviving "is the DRAM bull cycle cracking?" framing; separately, the hbm-supply topic feed reports Anthropic and OpenAI chiefs publicly urging slower AI development, with Micron and SanDisk both sinking ~6% and SK hynix down 7% in the same session (24/7 Wall St.).
   **Why it matters:** CXMT's IPO plan is a fourth distinct data point in the standing Chinese-competition thread (after the breakthrough, #4-global-ranking, and yield-collapse items) — a funding event, not a technical one, so it doesn't resolve the yield question either way. The AI-safety-driven selloff is a new, sentiment-only risk-off catalyst hitting the whole memory complex simultaneously — no fundamental change to the HBM4 ramp or CY2026 supply-contract legs, but notable since all three HBM suppliers moved together on the same headline.
 
+- **2026-09-15 (post-open)** — Micron declares a 30%+ dividend raise (Crypto Briefing, alongside Nvidia's own dividend raise).
+  **Why it matters:** A capital-return increase of this size is a management-confidence signal on cash-flow durability, consistent with (but not a new fact on) the HBM4-ramp/supply-contract demand thesis — logged as a minor confirming data point, not thesis-moving on its own.
+
 ---
 
 ## Social Mentions
@@ -136,3 +139,4 @@
 | 2026-09-11 (evening) | BRIEF | 📰 5 items + 1 topic hit triaged, 1 logged — hbm-supply topic feed ("AI's HBM Shortage Strengthens Micron's Hand—and Pressures Nvidia's GPU Economics") reinforces the demand/pricing-power leg; an "Intel-backed startup" framing on the standing alt-HBM-tech thread adds an ownership detail, folded into the /dig queue; "$1 Trillion Micron" and long-term-SCA-deals pieces were noise |
 | 2026-09-14 (post-open) | BRIEF | 📰 5 items + 1 topic hit triaged, 1 logged — CXMT's $8.5B IPO plan extends the Chinese-competition thread; AI-safety-jitters selloff hit MU/SNDK/SK hynix together same session, sentiment not fundamentals; Taiwan-pay-dispute headlines repeat 09-02/09-10 |
 | 2026-09-14 (evening) | BRIEF | 📰 5 items triaged, 0 new logged — Taiwan pay-dispute framing repeats the standing 09-02/09-10 labor-dispute thread; "stock slips ahead of earnings" sentiment and price-prediction listicles were noise |
+| 2026-09-15 (post-open) | BRIEF | 📰 5 items triaged, 1 logged — 30%+ dividend raise is a new minor capital-return data point; Taiwan strike-threat framing repeats the standing 09-02/09-10/09-14 labor-dispute thread (still a threat, not escalated); AI-demand-worries price-move headlines recap known sentiment |

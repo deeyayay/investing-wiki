@@ -72,6 +72,9 @@
 - **2026-09-14 (post-open)** — ad-hoc-news.de: "Nvidia's Regulatory Crossroads" ties DOJ scrutiny to a potential $10B Nvidia stake in Anthropic's IPO; separately, Reuters/calcalistech (nvda-downstream topic feed, 5 outlets) report Nvidia in talks to anchor Anthropic's ~$2T IPO.
   **Why it matters:** The $10B figure is the first sized number on the Anthropic side of the balance-sheet-backed ecosystem-investment pattern already on file (OpenAI, Nebius, SpaceX, SB Energy, Verily, etc.) — extends the same circular-financing question to the largest name yet. The DOJ framing groups it with the standing Groq-probe /dig item rather than adding a new regulatory fact.
 
+- **2026-09-15 (post-open)** — CNBC (nvda-downstream topic feed): Samsung backs an Nvidia AI-chip rival in a $230M funding round.
+  **Why it matters:** First named instance of Samsung — a major supply-chain partner — funding a direct competitor to Nvidia's GPU platform; $230M is small relative to Nvidia's scale, so logged as a competitive watch item, not a moat-level threat yet.
+
 ---
 
 ## Social Mentions
@@ -126,3 +129,4 @@
 - **2026-09-11 (evening)** — 📰 BRIEF | 5 items + 1 topic hit triaged, 0 new logged — DOJ Groq-probe headlines (5 outlets, figures still inconsistent $17B/$20B) repeat 09-10/09-11, still on the standing /dig queue; nvda-downstream topic hit ("Nvidia may anchor Anthropic's IPO. It is also the supplier") is speculative framing on the already-logged circular-financing pattern, not a new fact; Palantir-supply-chain and Rackspace-sovereign-AI mentions were context/noise
 - **2026-09-14 (post-open)** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged — $10B Nvidia-Anthropic stake talks are the first sized figure on that leg of the ecosystem-investment pattern; DOJ Groq-probe framing repeats 09-10/09-11; tariff-fears and Lumentum-optics-partnership headlines were noise
 - **2026-09-14 (evening)** — 📰 BRIEF | 5 items + 1 topic hit triaged, 0 new logged — tariff-fears headline repeats the 09-14 post-open dismissal; the nvda-downstream topic feed's "$10B Anthropic investment" item repeats the already-logged 09-14 post-open item; Broadcom/Oracle earnings-comparison listicles were noise
+- **2026-09-15 (post-open)** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged — Samsung-backed $230M funding round for an Nvidia rival is a new named competitive watch item; "$12.9B Historic Largest Acquisition Nears Finalization" recaps the already-logged 09-02/09-04 Hugging Face deal (closing-status update); Palantir supply-chain partnership repeats 09-10/09-11; NVDA-vs-Oracle/Broadcom comparison listicles were noise

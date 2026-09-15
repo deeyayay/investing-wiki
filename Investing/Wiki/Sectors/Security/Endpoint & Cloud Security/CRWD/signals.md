@@ -47,6 +47,9 @@
 - **2026-09-11 (evening)** — SEC EDGAR: S-3ASR automatic shelf registration statement filed (well-known seasoned issuer).
   **Why it matters:** Standing capacity to raise capital on short notice is a routine capital-markets filing, not itself a change to the platform-consolidation thesis — logged for the audit trail.
 
+- **2026-09-15 (post-open)** — HCL Technologies shares surge 7% on an expanding partnership with CrowdStrike (Upstox).
+  **Why it matters:** A new named systems-integrator partnership extends the Falcon platform's cross-sell/consolidation flywheel into HCL's enterprise channel, the same mechanism as the Wipro/Google Cloud/Cerebras/OpenAI wins already logged.
+
 ---
 
 ## Social Mentions
@@ -81,3 +84,4 @@
 - **2026-09-11 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — new S-3ASR shelf registration filed, logged for the audit trail; Wedbush Outperform initiation vs. downgraded peers repeats 09-11 post-open; standing Q1/Q2 guidance-reaction mismatch still queued for /dig
 - **2026-09-14 (post-open)** — 📰 BRIEF | 1 filing + 4 items triaged, 0 new logged — S-3ASR filing (dated 09-11) repeats already-logged filing; "Autonomous Product Launch" AI-capabilities headlines recap the 09-04 Agentic SOC/Falcon Guardian launch; Wedbush cybersecurity-bets headline repeats 09-11's Outperform initiation; standing Q1/Q2 guidance-reaction mismatch still queued for /dig
 - **2026-09-14 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — S-3ASR filing (dated 09-11) repeats the already-logged filing; SailPoint "CrowdStrike Deal" mention is too thin/unspecific to log as a new partnership fact; post-earnings-rally and "fresh AI Security launches" headlines recap already-logged items; standing Q1/Q2 guidance-reaction mismatch still queued for /dig
+- **2026-09-15 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged, conviction ↑ — HCL Technologies partnership expansion extends the platform-consolidation flywheel; S-3ASR shelf-filing recap, "AI Security launches" and post-earnings-rally headlines were noise; standing Q1/Q2 guidance-reaction mismatch still queued for /dig

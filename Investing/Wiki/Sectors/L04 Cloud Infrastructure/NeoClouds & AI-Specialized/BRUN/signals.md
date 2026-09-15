@@ -69,3 +69,4 @@
 - **2026-09-10 (evening)** — 📰 BRIEF | 2 items triaged, 0 new logged — "Top Boost Run Competitors" listicle repeats 09-10 post-open; Lincoln Park real-estate headline is a company-name mismatch
 - **2026-09-11 (evening)** — 📰 BRIEF | 4 items triaged, 0 new logged — generic price-target/forecast piece was noise; Lincoln Park spec-home, Harley Clarke Mansion, and Ocean Power reverse-split headlines are all company-name mismatches
 - **2026-09-14 (evening)** — 📰 BRIEF | 1 item triaged, 0 new logged — Hinsdale, IL mansion-sale real-estate headline is a company-name mismatch, no BRUN-specific content
+- **2026-09-15 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — all five headlines (Hinsdale mansions, KO, Exxon/Guyana, Caterpillar, HPE) are company-name mismatches, no BRUN-specific content

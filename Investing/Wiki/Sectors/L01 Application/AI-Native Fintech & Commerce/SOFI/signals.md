@@ -48,6 +48,9 @@
 - **2026-09-14 (post-open)** — Yellow.com: a US banking regulator clears a path for banks to engage in crypto activities.
   **Why it matters:** A sector-wide regulatory tailwind, not SOFI-specific, but directly relevant to SoFi's own USD-stablecoin/crypto-payments ambitions named in the catalyst timeline — logged for context, not thesis-moving on its own.
 
+- **2026-09-15 (post-open)** — Yahoo Finance: SoFi Technologies faces a lawsuit over 30 mortgage-team hires and alleged trade-secrets misappropriation.
+  **Why it matters:** A new legal risk with unknown financial/reputational exposure — headline alone can't size the damages claim or assess impact on the mortgage-origination business; added to the deep-pass queue alongside the standing short-seller-accounting question.
+
 ---
 
 ## Social Mentions
@@ -80,3 +83,4 @@
 - **2026-09-11 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — all five items (Seeking Alpha, TheStreet Pro, SoFi-vs-Nu comparison, Kalkine, Cramer "too cheap to ignore") were opinion/sentiment noise, no new fact; standing short-seller-accounting /dig item still open
 - **2026-09-14 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — US bank-crypto regulatory clearance is a sector tailwind relevant to SoFi's stablecoin plans; institutional-position and real-time-signal headlines were routine/noise; standing short-seller-accounting /dig item still open
 - **2026-09-14 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — NU-stock comparison, market-dip recap, eToro payment-metrics, and SoFi Stadium naming-rights headlines were all company mismatches or irrelevant to the financial thesis; "$1B to $100B in 5 years" CEO growth target is unsubstantiated hype, not logged; standing short-seller-accounting /dig item still open
+- **2026-09-15 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged, deep-pass flagged — new lawsuit over 30 mortgage-team hires and trade secrets, exposure unknown at headline level, added to /dig queue; market-dip, eToro, institutional-13F, and sentiment headlines were noise; standing short-seller-accounting /dig item still open

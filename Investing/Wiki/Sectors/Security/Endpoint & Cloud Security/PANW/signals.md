@@ -44,6 +44,9 @@
 - **2026-09-11 (post-open)** — Palo Alto Networks named a Leader in the 2026 Gartner Magic Quadrant for Hybrid Mesh Firewall (company release).
   **Why it matters:** A named third-party industry-analyst recognition is a fresh confirming data point on the platform-consolidation thesis, independent of the already-logged RPO/NGS ARR figures.
 
+- **2026-09-15 (post-open)** — "Secure AI Coding Security for AI Agents" — new product announcement (company release).
+  **Why it matters:** Incremental AI-native product surface extending the already-logged 09-01 Console/agentic-AI-security acquisition; logged for the audit trail, not a fresh conviction move on its own.
+
 ---
 
 ## Social Mentions
@@ -76,3 +79,4 @@
 - **2026-09-11 (evening)** — 📰 BRIEF | 2 filings + 3 items triaged, 0 new logged — 10-K filing (dated 09-10) and Gartner Magic Quadrant Leader recognition both repeat items already logged; Omdia OT-Cybersecurity Leader recognition is a second, lower-materiality award, treated as noise; Goldman Sachs conference recap was noise; S-8 not logged (routine)
 - **2026-09-14 (post-open)** — 📰 BRIEF | 2 filings + 3 items triaged, 0 new logged — 10-K/S-8 filings (dated 09-10) repeat already-logged filings; "stock tumble 8% AH" headline recaps the already-known 09-06/07 post-earnings reaction; stock-outlook and AI-regulation pieces were opinion, no new fact
 - **2026-09-14 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — EDGAR timed out (no filing this run); "AI leaders warn of new cyber threats" sector-wide reaction and Q4-beat/bullish-targets recap headlines were noise, no new PANW-specific fact
+- **2026-09-15 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — "Secure AI Coding Security for AI Agents" product announcement is incremental, logged for the audit trail; sector-wide cyber-threat reaction, Q4-beat/bullish-targets recap, and "never-before-seen feat" headlines were noise

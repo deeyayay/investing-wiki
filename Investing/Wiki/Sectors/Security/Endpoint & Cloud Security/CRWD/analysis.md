@@ -56,6 +56,7 @@ _Last scored: — | [[Scoring Rubric]]_
 | 2026-09-01 | Fal.Con cluster: Google Cloud + Cerebras partnerships, $2B TCV, Q2 beat-and-raise | ↑ | Multiple simultaneous confirmations of the platform-consolidation/cross-sell thesis; Jensen Huang's "No.1 cybersecurity partner" comment is independent third-party validation |
 | 2026-09-02 | OpenAI partnership expansion | ↑ | Distribution/integration win with the most prominent foundation-model provider extends the same AI-native flywheel mechanism as the Google Cloud/Cerebras wins |
 | 2026-09-04 | Agentic SOC + Falcon Guardian launch | ↑ | New shipped product extends the Falcon platform-consolidation flywheel into autonomous SOC operations, the same mechanism behind the Google Cloud/Cerebras/OpenAI wins already logged |
+| 2026-09-15 | HCL Technologies partnership expansion | ↑ | New systems-integrator channel win, same cross-sell mechanism as the Wipro/Google Cloud/Cerebras/OpenAI wins already logged |
 
 ---
 
