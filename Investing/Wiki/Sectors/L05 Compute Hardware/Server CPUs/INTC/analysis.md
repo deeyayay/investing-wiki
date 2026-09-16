@@ -65,6 +65,7 @@ _Last scored: 2026-06-07 | [[Scoring Rubric]]_
 | 2026-09-08 (evening) | Northland upgrades Intel, explicitly citing the foundry partnership; separate report of a CPU price hike | ↑ | First named-firm upgrade to tie its rating directly to the foundry-partnership leg, rather than a generic PT reset; a reported price hike adds a pricing-power data point alongside the still-open $11B-net-loss /dig question |
 | 2026-09-10 | New SpaceX "Terafab" manufacturing deal reported alongside the Northland upgrade | ↑ | A named external IFS customer beyond Apple/NVIDIA/SK Hynix — directly confirms the IDM-foundry platform thesis; deal terms unconfirmed at headline level, flagged for /dig |
 | 2026-09-10 (evening) | Tesla, not SpaceX, named as the Terafab 14A-chip customer | → | Conflicts with the same-week SpaceX attribution for the "Terafab" project — the external-customer thesis leg stands either way, but which company it is remains unresolved; added to the standing /dig queue rather than revising the entry |
+| 2026-09-16 (post-open) | SK Hynix reportedly considering US production partnership with Intel at Ohio facility | ↑ | Another named potential external foundry customer beyond Apple/SpaceX-or-Tesla — still "considering"/speculation at headline level, not a signed deal; added to the standing /dig queue for confirmation |
 
 ---
 

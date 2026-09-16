@@ -71,6 +71,9 @@
 - **2026-09-11 (evening)** — TipRanks/Reuters: Intel-backed Altera (FPGA subsidiary) readies an IPO that could raise over $2B.
   **Why it matters:** A fresh monetization event for a non-core Intel asset — echoes the 2025 51%-to-Silver-Lake Altera sale — surfaces capital optionality distinct from, and not a test of, the EMIB/photonics foundry thesis leg itself.
 
+- **2026-09-16 (post-open)** — Traders Union/Blockonomi (3 outlets): SK Hynix is reportedly considering a US production partnership with Intel at the Ohio facility, stock up 3% on the speculation.
+  **Why it matters:** A named external foundry customer at a specific US site — directly tests the "only IDM-foundry platform... manufacturing on US soil" leg, alongside the standing Apple/SpaceX-or-Tesla Terafab customers. Still framed as "considering"/speculation at headline level, not a signed deal; folded into the standing /dig queue for confirmation.
+
 ---
 
 ## Social Mentions
@@ -109,3 +112,4 @@
 - **2026-09-14 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — Piper Sandler PT-cut recap, "forget Intel" and "is Intel worth it" opinion pieces, and AMD/Intel shared-instructions headline were all noise; standing /dig queue unchanged
 - **2026-09-15 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — "Wall Street warns on AI rally," Piper Sandler $110 PT (no new reasoning), "Stark Warning," Trump-investment commentary, and premarket-movers roundup were all noise/opinion; standing /dig queue unchanged
 - **2026-09-16 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — Tigress Financial PT-raise citing the already-logged Terafab partnership, an Altera-IPO progress update, and a Seeking Alpha rating-downgrade opinion piece were recap/opinion, no new fact; standing /dig queue unchanged
+- **2026-09-16 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged, conviction ↑ — SK Hynix considering a US production partnership at Intel's Ohio facility is a new named potential foundry customer, still speculative; Tigress PT-raise recap (Terafab) and a "Wall Street warns on AI rally" macro-caution piece were noise

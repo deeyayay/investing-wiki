@@ -72,6 +72,7 @@ _Evaluated: 2026-06-17_
 | 2026-08-28 (post-open) | Micron doubles capex as AI memory shortage deepens (TradingView) | ↑ Strengthened | A capital commitment is a stronger confirmation of the demand-crunch thesis than executive commentary alone — management is putting money behind the shortage claim. |
 | 2026-08-31 (post-open) | "$50B quarter sets higher bar" for Sept 30 print; Samsung locks 70% of memory capacity into 2031 deals; HBM spot prices spike to 5× long-term contract levels | ↑ Strengthened | Independent, sector-wide confirmation of supply tightness (competitor capacity lock, spot-price spike) reinforces the demand-crunch thesis from the market-structure side, not just company commentary |
 | 2026-09-08 (evening) | Formal downgrade to Hold citing contract risk + Chinese competition; CXMT confirmed #4 globally in HBM | ↓ | Third bearish counter-narrative on file (after Goldman-Neutral 09-07, Seeking Alpha downgrade 09-08) and the first to name a specific cause; CXMT's #4 ranking is the most concrete evidence yet behind the Chinese-competition thread — not enough alone to move Drift, but sharpens the standing /dig queue |
+| 2026-09-16 (post-open) | SK Hynix reportedly considering US production partnership with Intel at Ohio facility | → Neutral | A second, sooner-sounding potential US HBM-production site beyond the 2030-horizon SK hynix Indiana plant already on file — still "considering"/speculation at headline level, sharpens rather than resolves the "only US-domiciled HBM supplier" watch item |
 
 ---
 

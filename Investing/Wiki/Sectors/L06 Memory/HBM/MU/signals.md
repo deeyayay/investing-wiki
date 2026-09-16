@@ -100,6 +100,12 @@
 - **2026-09-16 (evening)** — Micron launches a new memory module addressing AI workloads (Barron's); separately, the hbm-supply topic feed reports SK hynix already shipping 16-layer HBM4 for Nvidia's Rubin platform, prompting "where do Micron and Samsung stand?" comparisons (Benzinga). EDGAR timed out this run — the standing $50B-guidance and Taiwan-strike-threat items recirculate without new filing content.
   **Why it matters:** The new module is a minor execution data point. More consequential: a named competitor already commercially shipping HBM4 for the next-gen Nvidia platform sharpens the standing "is Micron still the pace-setter" watch item (already flagged for /dig alongside Nvidia's alternative-HBM-tech and SK hynix's Indiana plant) — folded into that queue rather than treated as a fresh drift-moving fact.
 
+- **2026-09-16 (post-open)** — Syracuse.com: the Trump administration joins Micron's fight against an environmental lawsuit.
+  **Why it matters:** A new legal/regulatory development — federal intervention on Micron's side reduces litigation risk, but is a legal-defense fact, not a test of any specific thesis leg (demand, HBM4 ramp, US-domiciled claim); logged for the audit trail.
+
+- **2026-09-16 (post-open)** — Blockonomi: "Micron (MU) Stock: Can It Hold Its Ground Against Intel-SK Hynix Partnership?" — ties to the same reported SK Hynix/Intel Ohio production-partnership story logged on INTC today.
+  **Why it matters:** Sharpens the standing "SK hynix's Indiana HBM plant" long-horizon watch item on the "only US-domiciled HBM supplier" thesis leg with a second, sooner-sounding US site (Ohio, via Intel) — still "considering"/speculation at headline level, folded into the standing /dig queue rather than treated as confirmed.
+
 ---
 
 ## Social Mentions
@@ -144,3 +150,4 @@
 | 2026-09-14 (evening) | BRIEF | 📰 5 items triaged, 0 new logged — Taiwan pay-dispute framing repeats the standing 09-02/09-10 labor-dispute thread; "stock slips ahead of earnings" sentiment and price-prediction listicles were noise |
 | 2026-09-15 (post-open) | BRIEF | 📰 5 items triaged, 1 logged — 30%+ dividend raise is a new minor capital-return data point; Taiwan strike-threat framing repeats the standing 09-02/09-10/09-14 labor-dispute thread (still a threat, not escalated); AI-demand-worries price-move headlines recap known sentiment |
 | 2026-09-16 (evening) | BRIEF | 📰 5 items + 1 topic hit triaged, 2 logged — new memory-module launch; hbm-supply topic feed's SK hynix HBM4-for-Rubin shipping news sharpens the standing competitive-pace-setter /dig queue; EDGAR timed out; $50B-guidance and Taiwan-strike headlines recirculate |
+| 2026-09-16 (post-open) | BRIEF | 📰 5 items triaged, 2 logged — Trump administration joins Micron's environmental-lawsuit defense (new legal fact); Intel-SK Hynix Ohio partnership sharpens the standing "only US-domiciled" /dig watch item; $50B-guidance and Taiwan-strike headlines repeat the standing thread |
