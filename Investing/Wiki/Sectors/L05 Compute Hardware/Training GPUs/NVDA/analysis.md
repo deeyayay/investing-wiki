@@ -58,6 +58,7 @@ _Last scored: 2026-05-22 | [[Scoring Rubric]]_
 | 2026-09-01 | Nvidia expands AI partnership with AWS | ↑ | AWS deepening its Nvidia relationship even while building Trainium is evidence GPU demand isn't being displaced by custom silicon yet — reinforces the CUDA-moat switching-cost thesis |
 | 2026-09-02 | $12.9B Hugging Face deal (reported); Equinix/Together AI inference partnership deepened; Korea sovereign-AI investment names NVIDIA the winner | ↑ | Another large demand data point on the balance-sheet-backed ecosystem-investment pattern, plus breadth confirmation (inference-layer partnership, sovereign-AI win) — the demand leg keeps widening, not just deepening with existing hyperscalers. |
 | 2026-09-04 | $99B aggregate AI-investment total disclosed; $2.5B stake in Thinking Machines Lab in discussion | ↑ | First headline-level total for the whole balance-sheet-backed investment pattern (OpenAI, Nebius, SpaceX, Cloverleaf, MediaTek, SB Energy, Hugging Face) — quantifies the scale of the pattern rather than adding an isolated data point; Thinking Machines Lab extends it to another frontier-lab stake. |
+| 2026-09-16 | New Cisco/Splunk agentic-AI and Nvidia/Pinterest AI-shopping partnerships | ↑ | Ecosystem-integration deals in enterprise security-ops and consumer retail extend CUDA/software-moat penetration into verticals beyond hyperscaler training/inference — breadth evidence for the "switching nearly impossible" thesis leg |
 
 ---
 

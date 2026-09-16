@@ -56,6 +56,9 @@
 - **2026-09-14 (evening)** — New 8-K filed on EDGAR (items 8.01 "other events" and 9.01 "financial statements and exhibits"), distinct from the already-logged 09-09 item-5.02 officer-change filing; content unresolved at headline level. Separately, two institutional 13F-aggregator "new position" stories (Hurlow Wealth, Danica Pension) and a market-wide "bloodbath" sentiment piece tied to AI-safety jitters.
   **Why it matters:** Item 8.01 is a catch-all disclosure category that can range from routine to material — flagged for /dig if a follow-up story surfaces. The 424B5 shelf filing recirculating tonight (dated 09-11) repeats the already-logged filing. Institutional 13F stories and the AI-safety sentiment piece were routine/macro noise, not AWS/Trainium-specific.
 
+- **2026-09-16 (evening)** — AT&T and Amazon Leo (formerly Kuiper) partner to expand satellite broadband for businesses (Stocktwits); the 09-14 8-K (items 8.01/9.01) recirculates as a bare news mention with no new detail, and EDGAR timed out this run so the item 8.01 flag stays unresolved rather than newly escalated.
+  **Why it matters:** A new commercial tie-up for the Leo satellite-broadband unit is company-level context adjacent to, not part of, the AWS/Trainium cloud-margin thesis leg — logged for the audit trail alongside Kuiper/Leo's other operational milestones already on file.
+
 ---
 
 ## Social Mentions
@@ -91,3 +94,4 @@
 - **2026-09-14 (post-open)** — 📰 BRIEF | 4 items + 1 filing triaged, 0 new logged — tariff class-action headline repeats 09-07/09-09; 424B5 shelf filing (dated 09-11) repeats already-logged filings; two institutional 13F-aggregator "new position" stories were routine; NVDA-earnings-bar headline was indirect
 - **2026-09-14 (evening)** — 📰 BRIEF | 5 items + 2 filings triaged, 1 logged — new 8-K (items 8.01/9.01, dated 09-14) filed, content unresolved at headline level; 424B5 shelf filing (dated 09-11) repeats already-logged filings; institutional 13F-aggregator stories and AI-safety-jitters sentiment piece were noise
 - **2026-09-15 (post-open)** — 📰 BRIEF | 5 items + 2 filings triaged, 0 new logged — same 8-K (items 8.01/9.01, dated 09-14) and 424B5 (dated 09-11) filings recirculating, already logged 09-14 evening; three institutional 13F-aggregator "new position" stories were routine noise
+- **2026-09-16 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — AT&T/Amazon Leo satellite-broadband partnership is new; the 09-14 8-K recirculates as a bare mention with no new detail; EDGAR timed out (item 8.01 flag unresolved, not escalated); institutional-position and opinion headlines were noise

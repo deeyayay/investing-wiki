@@ -75,6 +75,9 @@
 - **2026-09-15 (post-open)** — CNBC (nvda-downstream topic feed): Samsung backs an Nvidia AI-chip rival in a $230M funding round.
   **Why it matters:** First named instance of Samsung — a major supply-chain partner — funding a direct competitor to Nvidia's GPU platform; $230M is small relative to Nvidia's scale, so logged as a competitive watch item, not a moat-level threat yet.
 
+- **2026-09-16 (evening)** — Cisco and Nvidia expand their partnership to bring agentic AI to Splunk customers (Stocktwits); separately, Nvidia and Pinterest partner to boost AI-powered shopping and search (MediaPost).
+  **Why it matters:** Two new ecosystem-integration deals in enterprise security-ops and consumer retail extend the CUDA/software-moat penetration pattern into verticals beyond hyperscaler training/inference — breadth-of-adoption evidence for the "switching nearly impossible" thesis leg, distinct from the balance-sheet-investment pattern already tracked (OpenAI, Anthropic, Verily, etc.).
+
 ---
 
 ## Social Mentions
@@ -130,3 +133,4 @@
 - **2026-09-14 (post-open)** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged — $10B Nvidia-Anthropic stake talks are the first sized figure on that leg of the ecosystem-investment pattern; DOJ Groq-probe framing repeats 09-10/09-11; tariff-fears and Lumentum-optics-partnership headlines were noise
 - **2026-09-14 (evening)** — 📰 BRIEF | 5 items + 1 topic hit triaged, 0 new logged — tariff-fears headline repeats the 09-14 post-open dismissal; the nvda-downstream topic feed's "$10B Anthropic investment" item repeats the already-logged 09-14 post-open item; Broadcom/Oracle earnings-comparison listicles were noise
 - **2026-09-15 (post-open)** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged — Samsung-backed $230M funding round for an Nvidia rival is a new named competitive watch item; "$12.9B Historic Largest Acquisition Nears Finalization" recaps the already-logged 09-02/09-04 Hugging Face deal (closing-status update); Palantir supply-chain partnership repeats 09-10/09-11; NVDA-vs-Oracle/Broadcom comparison listicles were noise
+- **2026-09-16 (evening)** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged, conviction ↑ — new Cisco/Splunk agentic-AI and Pinterest AI-shopping partnerships extend ecosystem breadth; nvda-downstream Anthropic-investment item repeats 09-14; NVDA-vs-Oracle/Broadcom listicles and a Melania Trump AI-investment mention were noise

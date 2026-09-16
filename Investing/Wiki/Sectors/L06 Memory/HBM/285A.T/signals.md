@@ -41,6 +41,9 @@
 - **2026-09-14 (post-open)** — Seeking Alpha: Kioxia is reportedly considering raising $10B in its US listing; separately, ad-hoc-news.de reports SK hynix declining alongside a "denied Kioxia tie-up."
   **Why it matters:** First specific dollar figure attached to the standing 09-11 US-listing/funding-channel item — sizes the capital-access channel, though still headline-level with no filing confirmation. The denial closes out the 09-02 "SK Chairman weighs Kioxia partnership" watch item as not materializing.
 
+- **2026-09-16 (evening)** — Toshiba sells ¥360B of Kioxia shares, ceding its position as Kioxia's largest shareholder (Dealroom); the $10B US ADR-listing story (Briefs Finance, finance.biggo.com, pro.thestreet.com) recirculates the already-logged 09-14 item.
+  **Why it matters:** A material ownership-structure shift — Toshiba stepping back as top shareholder ahead of a prospective US listing — is a new fact on the capital-structure side of the standing funding-channel thread, though it doesn't touch the BiCS FLASH/NAND-demand thesis leg directly.
+
 ---
 
 ## Social Mentions
@@ -74,3 +77,4 @@
 - **2026-09-14 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Kioxia's $10B US-listing figure sizes the standing funding-channel item; SK hynix-Kioxia tie-up rumor now denied; rest was price/derivatives listicle noise
 - **2026-09-14 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — Kioxia's $10B US-listing figure (Reuters/Bloomberg) recirculates the already-logged 09-14 post-open item across more outlets; rest was bear-market/derivatives listicle noise
 - **2026-09-15 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — Kioxia's $10B US-listing story (4 outlets) recirculates the already-logged 09-14 item again; "stuck in a bear market" opinion piece was noise
+- **2026-09-16 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — Toshiba's ¥360B Kioxia share sale ceding top-shareholder spot is new; ADR-listing and "why rallying" headlines recirculate/recap

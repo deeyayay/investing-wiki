@@ -44,6 +44,9 @@
 - **2026-09-09 (post-open)** — Seeking Alpha: "Credo: Market Is Mispricing A $1 Trillion AI Infra Catalyst" (upgrade); separately, simplywall.st asks whether a new shelf-registration filing "raises questions" about valuation.
   **Why it matters:** A fresh bullish analyst call with explicit reasoning is a confirming data point, though headline-level only. The shelf-filing mention is new — not the already-logged S-8 employee-plan registration — and could be a new capital-raise vehicle; no detail on size or purpose at headline level, logged as a watch item.
 
+- **2026-09-16 (evening)** — Credo expands its ZeroFlap portfolio with 224G-based 1.6T optical transceivers, addressing AI network-infrastructure demand (company IR); the "32% upside" Q1-outlook headline and a $4.475M insider stock sale both recirculate/repeat already-logged or routine items.
+  **Why it matters:** A concrete new optical-transceiver product at the 1.6T/224G tier is the first product-level confirmation since the DustPhotonics acquisition that the optical vertical-integration leg is shipping real hardware, not just accounting — directly supports the thesis's "vertically integrating into optical" claim.
+
 ---
 
 ## Social Mentions
@@ -78,3 +81,4 @@
 - **2026-09-14 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — "32% upside" analyst-reaction and DustPhotonics "soars post-market" headlines recap the already-resolved 09-01 findings; Marvell-comparison piece and Sept-15-17 trade-show mention were noise
 - **2026-09-14 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — "32% upside" analyst-reaction headline repeats the 09-14 post-open item, recapping the already-resolved 09-01 8-K/DustPhotonics-amortization findings; insider stock-sale and Marvell-comparison headlines were routine/noise
 - **2026-09-15 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — "32% upside" headline repeats the already-resolved 09-01 8-K/DustPhotonics findings; insider stock sale, Marvell-comparison, and AI Infra Summit showcase mentions (x2, marketing/PR) were routine/noise
+- **2026-09-16 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged, conviction ↑ — ZeroFlap 1.6T optical-transceiver launch is a new product-level fact; "32% upside" recap and a $4.475M insider sale were repeat/routine

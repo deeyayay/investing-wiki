@@ -40,3 +40,4 @@ _None yet — seeded on onboarding._
 | 2026-09-14 (post-open) | 📰 BRIEF + 1 topic hit | 2 items triaged, 0 new logged | "what could BrainChip's edge-computing platform mean" and "why could edge shift AI matter" listicle pieces named no new fact; humanoid-robotics topic hit had no BRCHF-specific development |
 | 2026-09-14 (evening) | 📰 BRIEF | 3 items triaged, 0 new logged | three Kalkine Media "edge-computing platform" explainer pieces named no new fact, same pattern dismissed 09-14 post-open |
 | 2026-09-15 (post-open) | 📰 BRIEF | 5 items triaged, 0 new logged | five Kalkine Media "why/could edge shift AI matter" explainer pieces are the same generic-explainer pattern dismissed 09-14 |
+| 2026-09-16 (evening) | 📰 BRIEF | 5 items triaged, 0 new logged | five more Kalkine Media "could BrainChip..." explainer pieces are the same generic-explainer pattern dismissed 09-14/09-15 |

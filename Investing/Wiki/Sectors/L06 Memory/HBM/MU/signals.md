@@ -97,6 +97,9 @@
 - **2026-09-15 (post-open)** — Micron declares a 30%+ dividend raise (Crypto Briefing, alongside Nvidia's own dividend raise).
   **Why it matters:** A capital-return increase of this size is a management-confidence signal on cash-flow durability, consistent with (but not a new fact on) the HBM4-ramp/supply-contract demand thesis — logged as a minor confirming data point, not thesis-moving on its own.
 
+- **2026-09-16 (evening)** — Micron launches a new memory module addressing AI workloads (Barron's); separately, the hbm-supply topic feed reports SK hynix already shipping 16-layer HBM4 for Nvidia's Rubin platform, prompting "where do Micron and Samsung stand?" comparisons (Benzinga). EDGAR timed out this run — the standing $50B-guidance and Taiwan-strike-threat items recirculate without new filing content.
+  **Why it matters:** The new module is a minor execution data point. More consequential: a named competitor already commercially shipping HBM4 for the next-gen Nvidia platform sharpens the standing "is Micron still the pace-setter" watch item (already flagged for /dig alongside Nvidia's alternative-HBM-tech and SK hynix's Indiana plant) — folded into that queue rather than treated as a fresh drift-moving fact.
+
 ---
 
 ## Social Mentions
@@ -140,3 +143,4 @@
 | 2026-09-14 (post-open) | BRIEF | 📰 5 items + 1 topic hit triaged, 1 logged — CXMT's $8.5B IPO plan extends the Chinese-competition thread; AI-safety-jitters selloff hit MU/SNDK/SK hynix together same session, sentiment not fundamentals; Taiwan-pay-dispute headlines repeat 09-02/09-10 |
 | 2026-09-14 (evening) | BRIEF | 📰 5 items triaged, 0 new logged — Taiwan pay-dispute framing repeats the standing 09-02/09-10 labor-dispute thread; "stock slips ahead of earnings" sentiment and price-prediction listicles were noise |
 | 2026-09-15 (post-open) | BRIEF | 📰 5 items triaged, 1 logged — 30%+ dividend raise is a new minor capital-return data point; Taiwan strike-threat framing repeats the standing 09-02/09-10/09-14 labor-dispute thread (still a threat, not escalated); AI-demand-worries price-move headlines recap known sentiment |
+| 2026-09-16 (evening) | BRIEF | 📰 5 items + 1 topic hit triaged, 2 logged — new memory-module launch; hbm-supply topic feed's SK hynix HBM4-for-Rubin shipping news sharpens the standing competitive-pace-setter /dig queue; EDGAR timed out; $50B-guidance and Taiwan-strike headlines recirculate |
