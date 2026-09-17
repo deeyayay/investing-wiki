@@ -60,6 +60,7 @@ _Evaluated: 2026-06-17_
 
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
+| 2026-09-17 | GlobalFoundries expands SiGe capacity for Marvell's AI data-center optical networking (Vermont) | ↑ Strengthened | A named foundry-capacity commitment behind the optical/interconnect leg — supply-side confirmation that demand for Marvell's photonic/DSP silicon is scaling faster than existing capacity, distinct from the 09-01 photonic-chip shipment milestone. |
 | 2026-09-01 | Shipped over 5M photonic chips ahead of S&P 500 index entry | ↑ Strengthened | Concrete execution proof point on the interconnect/optics leg of the dual-angle thesis, distinct from the custom-ASIC/Google leg already tracked |
 | 2026-08-31 | Record $2.74B DC quarter (+46% YoY), $18B-by-2028 guide, Google deal sized at $12B; shares fell 10.3% on news Google AI revenue is delayed beyond 2029 | ↑ Strengthened | Hard numbers resolve the standing Google-deal ambiguity in the thesis's favor; the delay is a specific, narrower risk than the prior open-ended uncertainty, and doesn't touch the confirmed DC growth rate or 2028 guide |
 | 2026-05-07 | Note initialized from NVDA ecosystem map | → Neutral | Dual-angle thesis identified: custom ASICs + interconnect DSPs |

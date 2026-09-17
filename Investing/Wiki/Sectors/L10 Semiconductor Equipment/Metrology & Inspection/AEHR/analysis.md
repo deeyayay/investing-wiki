@@ -62,6 +62,7 @@ _Evaluated: 2026-06-17_
 | 2025-11-03 | ISE Labs/ASE partnership: WLBI for AI processors, HPC, CoWoS announced | ↑ | World's largest OSAT co-marketing WLBI validates technology fit beyond SiC; TAM expansion confirmed |
 | 2026-03-02 | William Blair upgraded to Outperform | ↑ | Leading growth-stock specialist citing AI processor burn-in opportunity as next demand wave |
 | 2026-04-07 | Q3 FY2026: Revenue $10.3M (-44% YoY); bookings $37.2M (3.5x BTB); backlog $38.7M | ↑ | Soft revenue expected (EV cycle); bookings inflection is the signal — 3.5x BTB is extraordinary for AEHR; FY2027 setup is compelling |
+| 2026-09-17 | Shares slip on soft Q1 FY2027 guidance | → | Headline-only, no figures given yet — consistent with the known bookings-to-revenue recognition lag rather than a new contradicting fact, but possibly the cause behind the standing 38%-decline /dig item; needs the actual guide numbers before treating as thesis-moving. |
 
 ---
 

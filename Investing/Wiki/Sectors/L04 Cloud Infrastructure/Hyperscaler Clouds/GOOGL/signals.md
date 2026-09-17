@@ -35,6 +35,9 @@
 - **2026-09-10 (evening)** — Alphabet forges an AI partnership with Morgan State University, standing up an AI campus (TipRanks, Blockonomi).
   **Why it matters:** An adjacent education/AI-goodwill initiative, not the Cloud/inference-stack leg the thesis rests on — logged as company-level context, consistent with the 09-08 PG&E item.
 
+- **2026-09-17 (post-open)** — Google reportedly ordered to relax ad-tech rules and appoint an antitrust monitor; coverage frames the ruling as easing breakup risk (Benzinga, ad-hoc-news.de).
+  **Why it matters:** A separate antitrust matter from the 09-04 Search-monopoly win — this is the ad-tech case. A monitor + rule changes is a materially lighter remedy than the divestiture some feared, which is the outcome that would have threatened the ad-revenue engine funding the CapEx buildout. Not the Cloud-growth leg itself, but removes a tail risk to the capital behind it.
+
 ---
 
 ## Social Mentions
@@ -65,3 +68,4 @@
 - **2026-09-14 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — "$84.75B capital raise" headline repeats the already-logged 09-07/09-14 post-open pricing; Anthropic-IPO-stake explainer names no new GOOGL-specific fact; AI-slowdown-could-crimp-earnings and streaming-alliance headlines were sector/company mismatches
 - **2026-09-15 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — market-"bloodbath" commentary, Anthropic-IPO piece, 15x-earnings valuation listicle, and Netflix/streaming-alliance headlines were noise/opinion; Waymo-Tokyo-launch item is Other Bets, not core Cloud thesis
 - **2026-09-16 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — 15x-earnings valuation listicle and Waymo-Tokyo-launch item repeat the already-dismissed 09-15 post-open items; Netflix/streaming-alliance and technical-correction headlines were noise/opinion
+- **2026-09-17 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged, conviction ↑ — ad-tech antitrust ruling (monitor + rule changes, no breakup) is a distinct case from the 09-04 Search-monopoly win; Anthropic-IPO-implications piece and earnings-valuation recap headlines were noise/opinion

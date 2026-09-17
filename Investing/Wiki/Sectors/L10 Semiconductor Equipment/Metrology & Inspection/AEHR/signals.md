@@ -20,6 +20,9 @@
 - **2026-09-11 (post-open)** — Oppenheimer initiates coverage with a Buy rating, $120 price target (moomoo.com, Seeking Alpha).
   **Why it matters:** A new sell-side initiation at a specific price target is a fresh confirming data point on the AI-pivot thesis, landing alongside the standing 38%-decline /dig item still unresolved.
 
+- **2026-09-17 (post-open)** — tipranks.com: "Aehr Test Systems Slips After Soft Q1 Guidance."
+  **Why it matters:** First causal headline attached to a stock move since the standing 38%-decline /dig item was opened 08-28 — no figures given, but soft guidance is consistent with the known bookings-to-revenue lag risk. Escalated to /dig to pull the actual guide numbers.
+
 ---
 
 ## Social Mentions
@@ -49,3 +52,4 @@
 - **2026-09-14 (post-open)** — 📰 BRIEF | 1 filing + 4 items triaged, 0 new logged — ARS filing routine; Anthropic-IPO-valuation and BlueQubit-quantum-grant headlines were company mismatches; chip-stocks-under-pressure listicle was noise; /dig item (38%-decline cause) still open
 - **2026-09-15 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — Anthropic-valuation piece and "chip stocks under pressure" listicle repeat the 09-14 company-mismatch pattern; diversification and pre-market-movers pieces named no new fact; /dig item (38%-decline cause) still open
 - **2026-09-16 (evening)** — 📰 BRIEF | 3 items triaged, 0 new logged — diversification and AI-orders-repricing opinion pieces recap the known bookings/BTB thesis with no new fact; CrowdStrike/Palo Alto market-cap-movers listicle was a company mismatch; /dig item (38%-decline cause) still open
+- **2026-09-17 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged, deep-pass flagged — soft Q1 FY2027 guidance headline is the first causal attachment to the standing 38%-decline /dig item; overvaluation opinion, a tokenized-stock (rStock) explainer, and a mid-cap-momentum listicle (company mismatch) were noise

@@ -50,6 +50,9 @@
 - **2026-09-16 (evening)** — Wedbush upgrades Palo Alto Networks, citing the broader AI-cybersecurity rally (ad-hoc-news.de); "new AI guidance," Q4-beat/bullish-targets, and sector-wide "AI leaders warn of new threats" headlines all recirculate already-logged or already-dismissed items.
   **Why it matters:** A new named analyst upgrade is a fresh, if incremental, confirming data point on sell-side sentiment; the underlying Q4/NGS-ARR facts are unchanged from what's already on file.
 
+- **2026-09-17 (post-open)** — Palo Alto Networks closes its share buyback program (simplywall.st).
+  **Why it matters:** First buyback-related fact logged for this ticker — a capital-allocation data point, not a platform-consolidation/ARR fact; logged for the audit trail only.
+
 ---
 
 ## Social Mentions
@@ -84,3 +87,4 @@
 - **2026-09-14 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — EDGAR timed out (no filing this run); "AI leaders warn of new cyber threats" sector-wide reaction and Q4-beat/bullish-targets recap headlines were noise, no new PANW-specific fact
 - **2026-09-15 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — "Secure AI Coding Security for AI Agents" product announcement is incremental, logged for the audit trail; sector-wide cyber-threat reaction, Q4-beat/bullish-targets recap, and "never-before-seen feat" headlines were noise
 - **2026-09-16 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — Wedbush upgrade is a new named analyst action; "new AI guidance," Q4-beat recap, and sector-wide cyber-threat-warning headlines were repeat/dismissed
+- **2026-09-17 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — buyback-program closure logged as capital-allocation context; Zscaler-comparison and a Lennar-earnings company mismatch were noise; Q4-beat recap and a container-remediation product-blog mention were routine

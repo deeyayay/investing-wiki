@@ -38,6 +38,7 @@ _Not yet scored — run `/score-ticker BRCHF`. (Expect a low composite given pre
 | 2026-08-26 | H1 CY2026 results: revenue up, loss widens | → Neutral | First earnings data point since onboarding; revenue growth continues but no scale/profitability signal yet — still watch/starter only. |
 | 2026-08-29 | First production batch arrives; loss ledger grows faster | → Neutral | Execution milestone (product shipping) offset by widening losses — mixed, no change to the speculative watch/starter stance. |
 | 2026-09-10 | Q2 2026 transcript: loss narrows as chip demand builds | → | Directly conflicts with the 08-26 "loss widens" H1 print — unclear whether this is a later, better quarter or a mislabeled recap; flagged for verification before treating as a positive inflection. |
+| 2026-09-17 | AKD1500 PCIe evaluation card launched for edge AI | ↑ | First new hardware SKU since onboarding — makes Akida-based neuromorphic compute accessible via a standard PCIe eval card rather than a bespoke dev kit, a real (if small) commercialization/accessibility step for the speculative watch/starter thesis. |
 
 ---
 

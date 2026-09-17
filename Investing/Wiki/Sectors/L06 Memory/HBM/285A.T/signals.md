@@ -78,3 +78,4 @@
 - **2026-09-14 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — Kioxia's $10B US-listing figure (Reuters/Bloomberg) recirculates the already-logged 09-14 post-open item across more outlets; rest was bear-market/derivatives listicle noise
 - **2026-09-15 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — Kioxia's $10B US-listing story (4 outlets) recirculates the already-logged 09-14 item again; "stuck in a bear market" opinion piece was noise
 - **2026-09-16 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — Toshiba's ¥360B Kioxia share sale ceding top-shareholder spot is new; ADR-listing and "why rallying" headlines recirculate/recap
+- **2026-09-17 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — ADS-plan clarification, KI50 stock-quote page, moomoo active-trades snapshot, and Fed-rate-decision macro pieces were all noise, no new company fact

@@ -35,6 +35,9 @@
 - **2026-09-11 (post-open)** — Piper Sandler initiates coverage with a Buy rating, $270 price target, citing the Google partnership as "transformative" (Blockonomi, moomoo.com).
   **Why it matters:** A new sell-side initiation with a specific price target is a fresh confirming data point on the custom-ASIC/hyperscaler leg, now that the Google relationship's real $12B sizing is on file (vs. the earlier unverified $120B framing).
 
+- **2026-09-17 (post-open)** — GlobalFoundries and Marvell expand SiGe capacity for AI data-center optical networking, adding capacity in Vermont (StreetInsider, Investing.com, The Mighty 790 KFGO).
+  **Why it matters:** A named foundry-capacity expansion behind the optics/interconnect leg — supply-side confirmation distinct from the 09-01 photonic-chip shipment milestone, suggesting Marvell is scaling ahead of demand rather than being capacity-constrained.
+
 ---
 
 ## Social Mentions
@@ -77,3 +80,4 @@
 | 2026-09-14 (evening) | BRIEF | 📰 5 items triaged, 0 new logged — "$297 — Four Straight Guidance Raises and a $1B AI Capacity Bet" repeats the already-logged 08-31 record-DC-quarter print (same pattern dismissed 09-14 post-open); BofA reiteration, POET-comparison, and CNBC "biggest moves" listicle were noise |
 | 2026-09-15 (post-open) | BRIEF | 📰 5 items triaged, 0 new logged — "biggest movers"/"AI safety warnings"/"why sliding" price-move headlines (x3-4) recap sentiment already covered; NVDA-vs-MRVL comparison listicle was noise |
 | 2026-09-16 (evening) | BRIEF | 📰 5 items triaged, 0 new logged — AI-safety-warnings and "why falling"/"stock slips" price-move headlines (x3) recap sentiment already covered; NVDA-vs-MRVL comparison listicle repeats 09-15 |
+| 2026-09-17 (post-open) | BRIEF | 📰 5 items triaged, 1 logged, conviction ↑ — new GlobalFoundries SiGe capacity-expansion deal (Vermont) is distinct from the already-logged 5M-photonic-chips/S&P 500 milestone; the photonic-chips headline recirculating today repeats 09-01 |

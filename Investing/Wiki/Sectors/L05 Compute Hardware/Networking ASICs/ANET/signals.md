@@ -67,3 +67,4 @@
 | 2026-09-14 (evening) | BRIEF | 5 items triaged, 0 new logged — security-advisory, chart/technical, underperform-vs-peers, bullish-views, and insider-reshuffle headlines were all noise, no ANET-specific fact |
 | 2026-09-15 (post-open) | BRIEF | 5 items triaged, 0 new logged — "Third Guidance Raise" recaps the already-logged 08-26 guidance-raise event; chart/technical, underperform-vs-peers, and insider-family-trust-reshuffle headlines were noise |
 | 2026-09-16 (evening) | BRIEF | 5 items triaged, 0 new logged — "Third Guidance Raise" headline repeats the already-dismissed 09-15 post-open item; stock-underperform, insider-family-trust-reshuffle, and 5.9%-decline recap headlines were noise |
+| 2026-09-17 (post-open) | BRIEF | 5 items triaged, 0 new logged — Q1/Q2 earnings-transcript and "robust earnings" gain headlines recap the already-known earnings beat; Bull-of-the-Day and decade-return listicles were noise |
