@@ -42,6 +42,9 @@
   **Why it matters:** Ties back to the already-confirmed 08-26 warrant-redemption event — this is one holder's resulting stake percentage, not a new dilutive event. Worth a line for the ownership-concentration audit trail; no change to the financing-risk thesis leg.
   **Why it matters:** No new fact; corroborates the $130M warrant-exercise liquidity event already logged.
 
+- **2026-09-16 (evening, EOD)** — SEC EDGAR: SCHEDULE 13D/A filed 2026-09-16. Stock Titan, same day: a director's LLC sells 500,000 shares of BRUN in a single trade.
+  **Why it matters:** First genuinely BRUN-specific item in weeks of otherwise all-mismatch runs (Hinsdale mansions, KO, HPE, etc.) — a director-affiliated entity reducing a beneficial-ownership stake this size, filed same-day as a 13D/A amendment, is a real ownership-concentration data point but headline level gives no reason for the sale. No read yet on whether this touches the backlog/financing/certification thesis legs. Added to the /dig queue.
+
 ---
 
 ## Social Mentions
@@ -71,3 +74,4 @@
 - **2026-09-14 (evening)** — 📰 BRIEF | 1 item triaged, 0 new logged — Hinsdale, IL mansion-sale real-estate headline is a company-name mismatch, no BRUN-specific content
 - **2026-09-15 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — all five headlines (Hinsdale mansions, KO, Exxon/Guyana, Caterpillar, HPE) are company-name mismatches, no BRUN-specific content
 - **2026-09-16 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — Hinsdale mansions, KO, HPE, market-movers-listicle, and research-roundup headlines are all company-name mismatches, no BRUN-specific content
+- **2026-09-16 (evening, EOD)** — 📰 BRIEF | 4 items + 1 filing triaged, 1 logged, deep-pass flagged — Schedule 13D/A filing + director's-LLC 500,000-share sale is the first BRUN-specific fact in weeks of mismatch runs; Qualcomm and Caterpillar pieces were the standing company-name-mismatch pattern; generic stock-quote page was noise

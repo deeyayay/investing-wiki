@@ -81,6 +81,9 @@
 - **2026-09-16 (post-open)** — TIKR.com: Jensen Huang publicly criticizes proposed AI antitrust exemptions and AI-slowdown plans.
   **Why it matters:** A new, distinct regulatory-policy topic from CEO commentary — separate from the standing DOJ Groq-deal probe already on the /dig queue — logged as a second regulatory thread to watch, not yet a fact that moves the thesis either way.
 
+- **2026-09-16 (evening, EOD)** — nvda-downstream topic feed: OpenAI's CFO reportedly explained why Nvidia is "no longer the only option" for AI compute (24/7 Wall St.).
+  **Why it matters:** First headline naming NVIDIA's own largest customer as the source of a switching-cost/alternatives narrative, rather than a third-party competitor claim — directly tests the "CUDA moat makes switching nearly impossible" thesis leg. No deal, contract, or dollar figure cited; opinion/paraphrase-level sourcing, not a confirmed defection. Added to the /dig queue for verification.
+
 ---
 
 ## Social Mentions
@@ -138,3 +141,4 @@
 - **2026-09-15 (post-open)** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged — Samsung-backed $230M funding round for an Nvidia rival is a new named competitive watch item; "$12.9B Historic Largest Acquisition Nears Finalization" recaps the already-logged 09-02/09-04 Hugging Face deal (closing-status update); Palantir supply-chain partnership repeats 09-10/09-11; NVDA-vs-Oracle/Broadcom comparison listicles were noise
 - **2026-09-16 (evening)** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged, conviction ↑ — new Cisco/Splunk agentic-AI and Pinterest AI-shopping partnerships extend ecosystem breadth; nvda-downstream Anthropic-investment item repeats 09-14; NVDA-vs-Oracle/Broadcom listicles and a Melania Trump AI-investment mention were noise
 - **2026-09-16 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Jensen Huang's AI-antitrust-exemption comments are a new, distinct regulatory thread from the standing DOJ Groq-probe /dig item; Cisco/Splunk and Pinterest partnership headlines repeat 09-16 evening; NVDA-vs-Broadcom opinion and earnings-roundup recap headlines were noise
+- **2026-09-16 (evening, EOD)** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged, conviction ↓ (watch) — nvda-downstream topic feed's OpenAI-CFO "no longer the only option" commentary is a new competitive-narrative thread from NVIDIA's largest customer, added to the /dig queue; SoundHound/Broadcom comparison listicles and earnings-recap opinion pieces were noise

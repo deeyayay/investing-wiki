@@ -13,6 +13,7 @@
 | 2026-08-29 | First production batch arrives, but the loss ledger grows faster | Ad-hoc-news.de | First real production milestone since onboarding — a positive execution signal — paired with worsening burn, consistent with the pre-scale profile already flagged; still watch/starter only. |
 | 2026-08-31 | "Ecosystem Offensive" coverage: awards and open-source wins stacking up against a cash position reported halved | AD HOC NEWS | New, more specific cash-runway data point (halved, not just "burn widening" as logged 08-29) — the gating variable for the speculative thesis just got a harder number; still watch/starter only, but worth flagging for a runway check next time this ticker is deep-dived. |
 | 2026-09-10 (evening) | BrainChip Q2 2026 earnings call: loss narrows as chip demand builds | Investing.com Canada | First quarter-specific commentary tying a narrowing loss to building chip demand — directly conflicts with the 08-26 "H1 CY2026: revenue up, loss widens" framing; unclear whether this is a later, better quarter or a mislabeled recap of the same print, needs verification before treating as an inflection. |
+| 2026-09-16 (evening, EOD) | A palm-sized device using BrainChip's Akida detects falls in real time at a live demo | Stock Titan | First concrete product-demo fact in weeks of generic "could BrainChip mean X" explainer noise — a real-world use case (fall detection) is a practical proof point for the event-based edge-compute thesis, though still a demo, not a signed commercial deployment. |
 
 ---
 
@@ -41,3 +42,4 @@ _None yet — seeded on onboarding._
 | 2026-09-14 (evening) | 📰 BRIEF | 3 items triaged, 0 new logged | three Kalkine Media "edge-computing platform" explainer pieces named no new fact, same pattern dismissed 09-14 post-open |
 | 2026-09-15 (post-open) | 📰 BRIEF | 5 items triaged, 0 new logged | five Kalkine Media "why/could edge shift AI matter" explainer pieces are the same generic-explainer pattern dismissed 09-14 |
 | 2026-09-16 (evening) | 📰 BRIEF | 5 items triaged, 0 new logged | five more Kalkine Media "could BrainChip..." explainer pieces are the same generic-explainer pattern dismissed 09-14/09-15 |
+| 2026-09-16 (evening, EOD) | 📰 BRIEF | 5 items triaged, 1 logged | palm-sized fall-detection device demo breaks the generic-explainer pattern with a concrete product fact; Nokia-UK-defense (unrelated company) and two more Kalkine "cash/AI test" explainer pieces were noise |
