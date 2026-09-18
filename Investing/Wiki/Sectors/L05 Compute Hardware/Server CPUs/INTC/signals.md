@@ -77,6 +77,9 @@
 - **2026-09-17 (evening)** — Barron's: Intel CEO warns of a deepening memory-chip shortage, cited as the driver behind Micron shares jumping 5.5% the same session.
   **Why it matters:** Management-sourced commentary on industry-wide memory tightness is a cost/supply input for Intel's own manufacturing (and cross-references MU's HBM/NAND demand thesis) — not a direct test of the EMIB/foundry leg, logged as company-level context.
 
+- **2026-09-18 (post-open)** — Blockonomi: Barclays upgrades Intel to Overweight; stock +4% on the action.
+  **Why it matters:** A new named sell-side rating action distinct from the standing Northland/Piper Sandler/Tigress coverage already logged — another data point in the accelerating-rerate pattern, though the headline gives no PT or reasoning detail.
+
 ---
 
 ## Social Mentions
@@ -118,3 +121,4 @@
 - **2026-09-16 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged, conviction ↑ — SK Hynix considering a US production partnership at Intel's Ohio facility is a new named potential foundry customer, still speculative; Tigress PT-raise recap (Terafab) and a "Wall Street warns on AI rally" macro-caution piece were noise
 - **2026-09-17 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — SK Hynix Ohio-partnership headlines (4 outlets) repeat the already-logged 09-16 post-open item; "Q3 outlook soars"/12%-after-hours-rally headline recirculates the already-resolved 09-07 Q2-beat print, same recap pattern dismissed 09-14
 - **2026-09-17 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — Intel CEO's memory-shortage warning (cross-ref MU) is new; SK Hynix Ohio-partnership headlines (2 outlets) repeat the standing 09-16 item; generic analyst PT-update/upgrade headlines (no firm/reasoning) were noise
+- **2026-09-18 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Barclays Overweight upgrade (+4%) is a new named analyst action; Intel CEO memory-shortage-warning headline repeats the already-logged 09-17 evening item; SK Hynix Ohio-partnership recap was routine

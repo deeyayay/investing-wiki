@@ -38,6 +38,9 @@
 - **2026-09-08 (post-open)** — Lemonade expands renters insurance to Kentucky (marketscreener.com).
   **Why it matters:** Another state added to the geographic-expansion trajectory the growth thesis leans on; doesn't touch the loss-ratio/EBITDA-timeline leg still pending /dig.
 
+- **2026-09-18 (post-open)** — CFO Tim Bixby transitions off the CFO role to join the Board; company reaffirms it is targeting its first EBITDA-positive quarter (Yahoo Finance).
+  **Why it matters:** A CFO change at a company whose thesis rests on a specific Q4 2026 adj.-EBITDA-positive target is a leadership-continuity question worth tracking into that print, even though the reaffirmed target itself is not new information; the standing Q2-earnings-figures /dig item still covers the underlying loss-ratio/EBITDA numbers.
+
 ---
 
 ## Social Mentions
@@ -70,3 +73,4 @@
 - **2026-09-16 (evening)** — 📰 BRIEF | 3 items triaged, 0 new logged — Arizona lemonade-stand fundraiser and lemonade-joke headlines are keyword false-positives again; trading-systems-volatility piece named no new fact; Q2-earnings-figures /dig item still open
 - **2026-09-17 (post-open)** — 📰 BRIEF | 1 item triaged, 0 new logged — Baird 54,257-share institutional purchase is a routine 13F-type filing, no thesis-relevant fact; Q2-earnings-figures /dig item still open
 - **2026-09-17 (evening)** — 📰 BRIEF | 1 item triaged, 0 new logged — "Wall Street Caution As Core Profit Growth Comes Into Focus" (Stocktwits) is a vague sentiment piece, no new fact; Q2-earnings-figures /dig item still open
+- **2026-09-18 (post-open)** — 📰 BRIEF | 2 items triaged, 1 logged — CFO Tim Bixby's transition to the Board is a new leadership fact; "2 Growth Stocks I Plan to Buy if the Stock Market Crashes" listicle was noise; Q2-earnings-figures /dig item still open

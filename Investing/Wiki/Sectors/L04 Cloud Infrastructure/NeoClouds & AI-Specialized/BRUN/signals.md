@@ -45,6 +45,9 @@
 - **2026-09-16 (evening, EOD)** — SEC EDGAR: SCHEDULE 13D/A filed 2026-09-16. Stock Titan, same day: a director's LLC sells 500,000 shares of BRUN in a single trade.
   **Why it matters:** First genuinely BRUN-specific item in weeks of otherwise all-mismatch runs (Hinsdale mansions, KO, HPE, etc.) — a director-affiliated entity reducing a beneficial-ownership stake this size, filed same-day as a 13D/A amendment, is a real ownership-concentration data point but headline level gives no reason for the sale. No read yet on whether this touches the backlog/financing/certification thesis legs. Added to the /dig queue.
 
+- **2026-09-18 (post-open)** — BRUN added to the Russell 2000 and Russell 3000 indexes (Investing.com India, marketscreener.com); shares rose on the news.
+  **Why it matters:** Mechanical index-fund buying from passive Russell trackers is a new, real demand-side flow for the stock, independent of the fundamentals thesis — worth logging as market-structure context, not a thesis-moving fact.
+
 ---
 
 ## Social Mentions
@@ -77,3 +80,4 @@
 - **2026-09-16 (evening, EOD)** — 📰 BRIEF | 4 items + 1 filing triaged, 1 logged, deep-pass flagged — Schedule 13D/A filing + director's-LLC 500,000-share sale is the first BRUN-specific fact in weeks of mismatch runs; Qualcomm and Caterpillar pieces were the standing company-name-mismatch pattern; generic stock-quote page was noise
 - **2026-09-17 (post-open)** — 📰 BRIEF + 1 filing triaged, 0 new logged — same Schedule 13D/A filing and director's-LLC 500,000-share sale recirculating across 2 more outlets, already logged/flagged 09-16 evening EOD; "stock rebounds" recap was noise; standing deep-pass flag unchanged
 - **2026-09-17 (evening)** — 📰 BRIEF + 1 filing triaged, 0 new logged — same Schedule 13D/A filing and director's-LLC 500,000-share sale recirculating for a third+ cycle, already logged/flagged 09-16 evening EOD; "stock rebounds" and stock-quote-page headlines repeat 09-17 post-open; standing deep-pass flag unchanged
+- **2026-09-18 (post-open)** — 📰 BRIEF | 5 items + 1 filing triaged, 1 logged — Russell 2000/3000 index inclusion is new; same Schedule 13D/A filing (dated 09-16) recirculating again; Seeking Alpha thesis-recap piece was opinion, no new fact
