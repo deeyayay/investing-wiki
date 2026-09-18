@@ -107,3 +107,4 @@
 - **2026-09-04** — 📰 BRIEF (evening) | 2 items triaged, 0 new logged — generic sector market-research reports (micromachining equipment, industrial laser market sizing), not LPK-specific
 - **2026-09-08** — 📰 BRIEF (post-open) | 1 item triaged, 0 new logged — generic Laser Direct Imaging market-sizing press release, not LPK-specific
 - **2026-09-17** — 📰 BRIEF (post-open) | 1 item triaged, 0 new logged — SDAX AGM-speeches commentary piece is unrelated, no LPK-specific fact
+- **2026-09-17 (evening)** — 📰 BRIEF | 1 item triaged, 0 new logged — same SDAX AGM-speeches commentary piece (TradingView) repeats 09-17 post-open, no LPK-specific fact

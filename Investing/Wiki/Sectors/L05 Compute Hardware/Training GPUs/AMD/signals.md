@@ -71,3 +71,4 @@
 - **2026-09-15 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — AI-2026-roadmap recap, Bernstein Buy reiteration (no PT change), officer stock sale, and trending-stock/GF-Value listicles were all noise/routine
 - **2026-09-16 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — Nvidia-vs-AMD opinion piece, Truist Buy maintain and a Bernstein Buy rating (no new PT/reasoning), GF-Value comparison, and a routine CEO stock-sale headline were all noise/routine
 - **2026-09-17 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — Broadcom-earnings-comparison listicle and Samsung-foundry-capacity-crunch piece name no AMD-specific fact; rest were stock-pop recap/opinion, no new fact
+- **2026-09-17 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — "why AMD popped"/"stock climbed"/"caught between AI strength and chip weakness" recap headlines (5 outlets) repeat the standing price-move-noise pattern, no new operating fact

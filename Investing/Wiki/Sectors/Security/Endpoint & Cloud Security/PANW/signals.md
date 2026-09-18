@@ -53,6 +53,12 @@
 - **2026-09-17 (post-open)** — Palo Alto Networks closes its share buyback program (simplywall.st).
   **Why it matters:** First buyback-related fact logged for this ticker — a capital-allocation data point, not a platform-consolidation/ARR fact; logged for the audit trail only.
 
+- **2026-09-17 (evening)** — REANNZ (New Zealand research/education network) launches an enterprise cybersecurity offering built on Palo Alto Networks (Reseller News).
+  **Why it matters:** A new named customer deployment extends the platform-consolidation thesis into a new geography/vertical (national research-network infrastructure) — incremental confirming evidence, not a hard ARR number.
+
+- **2026-09-17 (evening)** — Bernstein downgrades Palo Alto Networks to Market Perform from Outperform, while raising its price target to $351 from $253 (marketscreener.com).
+  **Why it matters:** First rating cut on file, but paired with a raised price target — a valuation-driven "priced in" call rather than a fundamentals concern; directly tests the "compounding cash flows" thesis leg on valuation grounds without contradicting the underlying growth numbers.
+
 ---
 
 ## Social Mentions
@@ -88,3 +94,4 @@
 - **2026-09-15 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — "Secure AI Coding Security for AI Agents" product announcement is incremental, logged for the audit trail; sector-wide cyber-threat reaction, Q4-beat/bullish-targets recap, and "never-before-seen feat" headlines were noise
 - **2026-09-16 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — Wedbush upgrade is a new named analyst action; "new AI guidance," Q4-beat recap, and sector-wide cyber-threat-warning headlines were repeat/dismissed
 - **2026-09-17 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — buyback-program closure logged as capital-allocation context; Zscaler-comparison and a Lennar-earnings company mismatch were noise; Q4-beat recap and a container-remediation product-blog mention were routine
+- **2026-09-17 (evening)** — 📰 BRIEF | 5 items triaged, 2 logged, conviction → — REANNZ customer deployment is a new geography/vertical win; Bernstein's downgrade-with-raised-PT is a valuation-driven call, not a fundamentals concern; Lennar-earnings mismatch and Q4-results recap were noise

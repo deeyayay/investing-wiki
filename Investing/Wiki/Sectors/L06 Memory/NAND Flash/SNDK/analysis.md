@@ -70,6 +70,7 @@ _Evaluated: 2026-06-17_
 | 2026-08-28 (post-open) | Stock reverses to 52-week highs, +5% premarket, on NVDA memory-price read-through — one day after the Citron bear note | → Neutral | Market isn't (yet) siding with the commodity thesis, but a price bounce doesn't resolve the underlying NBM/HBF-vs-commodity question either — /dig SNDK remains the item that actually settles this. |
 | 2026-08-29 | SanDisk-Kioxia $31B Japan investment; NVIDIA's $279B memory commitment cited as sector context | → Neutral | Both weigh against the Citron "commodity" bear case (capacity + demand tailwinds), but neither addresses the still-open Apple-vs-Samsung causal question behind the price decline — /dig SNDK remains the item that resolves this. |
 | 2026-09-01 | SK hynix/SanDisk unveil 512GB HBF spec | ↑ | First concrete published HBF spec (not just a roadmap target) since thesis onboarding — direct confirmation of the second thesis leg and the strongest counter yet to the Citron "commodity" claim, independent of the unresolved price-decline question. |
+| 2026-09-17 (evening) | New buyback authorization + robust revenue figures, confirming the 09-15/09-16 unconfirmed buyback-retirement mention | → | Reinforces the fundamental baseline (capital-return capacity, revenue strength) independent of the still-unresolved price-decline question — doesn't itself move Drift out of "Drifting" |
 
 ---
 

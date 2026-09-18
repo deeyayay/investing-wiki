@@ -109,6 +109,9 @@
 - **2026-09-16 (evening, EOD)** — hbm-supply topic feed: Samsung shifts HBM strategy, reportedly opening custom base-die manufacturing to TSMC's foundry (finance.biggo.com, digitimes).
   **Why it matters:** A third, distinct competitive-landscape thread (Samsung outsourcing to TSMC) alongside the standing SK hynix HBM4-for-Rubin and Nvidia-alternative-HBM watch items — sharpens the same "is Micron still the pace-setter" /dig queue rather than adding a new stand-alone question.
 
+- **2026-09-17 (evening)** — kobaran.com: Micron shares jump 5.5% as Intel's CEO warns of a deepening memory-chip shortage (cross-ref INTC); separately, finance.biggo.com reports the AI supply crunch stays unresolved, with meaningful new capacity not ramping until 2028.
+  **Why it matters:** A second vendor's CEO independently corroborating tight memory supply, paired with a specific timeline (no material capacity relief before 2028), directly reinforces the structural AI-demand-tailwind thesis leg — strengthens the "On track" read without yet resolving the standing pace-setter/alt-HBM-tech /dig queue.
+
 ---
 
 ## Social Mentions
@@ -155,3 +158,4 @@
 | 2026-09-16 (evening) | BRIEF | 📰 5 items + 1 topic hit triaged, 2 logged — new memory-module launch; hbm-supply topic feed's SK hynix HBM4-for-Rubin shipping news sharpens the standing competitive-pace-setter /dig queue; EDGAR timed out; $50B-guidance and Taiwan-strike headlines recirculate |
 | 2026-09-16 (post-open) | BRIEF | 📰 5 items triaged, 2 logged — Trump administration joins Micron's environmental-lawsuit defense (new legal fact); Intel-SK Hynix Ohio partnership sharpens the standing "only US-domiciled" /dig watch item; $50B-guidance and Taiwan-strike headlines repeat the standing thread |
 | 2026-09-16 (evening, EOD) | BRIEF | 📰 5 items + 1 topic hit triaged, 1 logged — hbm-supply topic feed's Samsung-shifts-base-die-to-TSMC report sharpens the standing competitive-pace-setter /dig queue; $50B-guidance, Taiwan-strike, and Trump-administration-lawsuit items recirculate as already-logged |
+| 2026-09-17 (evening) | BRIEF | 📰 5 items triaged, 1 logged, conviction ↑ — Intel CEO's memory-shortage warning (cross-ref INTC) + new-capacity-not-until-2028 timeline reinforce the structural demand-tailwind thesis leg; three earnings-preview recaps ahead of Sept 30 print were noise |
