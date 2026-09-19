@@ -69,3 +69,4 @@
 - **2026-09-16 (evening)** — 📰 BRIEF | 3 items triaged, 0 new logged — same WDP (Brussels-listed logistics) company-mismatch headlines recurring for a seventh+ cycle; France CAC 40 index-move headline was market-wide noise, not XFAB-specific
 - **2026-09-17 (post-open)** — 📰 BRIEF + 1 topic hit | 1 item triaged, 0 new logged — same WDP (Brussels-listed logistics) company-mismatch headline recurring for an eighth+ cycle; co-packaged-optics topic hit named no XFAB-specific development
 - **2026-09-17 (evening)** — 📰 BRIEF | 2 items triaged, 0 new logged — STMicroelectronics in-cabin-sensor piece is a competitor mismatch, not XFAB-specific; WDP (Brussels-listed logistics) company-mismatch headline recurs for a ninth+ cycle
+- **2026-09-18 (evening)** — 📰 BRIEF | 3 items triaged, 0 new logged — STMicroelectronics in-cabin-sensor piece repeats the 09-17 competitor mismatch; WDP (Brussels-listed logistics) company-mismatch headline recurs for a tenth+ cycle

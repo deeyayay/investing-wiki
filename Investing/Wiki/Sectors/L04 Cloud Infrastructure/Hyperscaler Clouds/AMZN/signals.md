@@ -59,6 +59,9 @@
 - **2026-09-16 (evening)** — AT&T and Amazon Leo (formerly Kuiper) partner to expand satellite broadband for businesses (Stocktwits); the 09-14 8-K (items 8.01/9.01) recirculates as a bare news mention with no new detail, and EDGAR timed out this run so the item 8.01 flag stays unresolved rather than newly escalated.
   **Why it matters:** A new commercial tie-up for the Leo satellite-broadband unit is company-level context adjacent to, not part of, the AWS/Trainium cloud-margin thesis leg — logged for the audit trail alongside Kuiper/Leo's other operational milestones already on file.
 
+- **2026-09-18 (evening)** — Citi reaffirms Amazon as a top pick despite FTC regulatory pressure (AD HOC NEWS).
+  **Why it matters:** A sell-side desk holding its top-pick call through an active FTC overhang is a mild de-risking signal, but the FTC matter itself is a company-level legal/regulatory thread, not a fact about the AWS/Trainium thesis leg — logged for the audit trail; Jefferies-Generac-partnership and 13F-aggregator headlines repeat 09-17.
+
 ---
 
 ## Social Mentions
@@ -97,3 +100,4 @@
 - **2026-09-16 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — AT&T/Amazon Leo satellite-broadband partnership is new; the 09-14 8-K recirculates as a bare mention with no new detail; EDGAR timed out (item 8.01 flag unresolved, not escalated); institutional-position and opinion headlines were noise
 - **2026-09-17 (post-open)** — 📰 BRIEF | 5 items + 1 filing triaged, 0 new logged — same 8-K (items 8.01/9.01, dated 09-14) recirculating again, content still unresolved; PCM Encore institutional-position and Jefferies-Generac-partnership headlines were routine/mismatch; earnings-listicle mention and PT-reiteration were noise
 - **2026-09-17 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — Jefferies-Generac-partnership and PCM-Encore institutional-position headlines repeat 09-17 post-open; grocery-discount/bank-benefit employee news was a retail-segment mismatch (not AWS/Trainium); a market-distrust rating downgrade was macro-sentiment, not a company fact; EDGAR timed out again
+- **2026-09-18 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — Citi top-pick reaffirmation despite FTC pressure is new; Jefferies-Generac-partnership headline repeats 09-17; institutional 13F-aggregator and price-move recap headlines were routine/noise; EDGAR timed out again

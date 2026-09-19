@@ -38,6 +38,9 @@
 - **2026-09-17 (post-open)** — Google reportedly ordered to relax ad-tech rules and appoint an antitrust monitor; coverage frames the ruling as easing breakup risk (Benzinga, ad-hoc-news.de).
   **Why it matters:** A separate antitrust matter from the 09-04 Search-monopoly win — this is the ad-tech case. A monitor + rule changes is a materially lighter remedy than the divestiture some feared, which is the outcome that would have threatened the ad-revenue engine funding the CapEx buildout. Not the Cloud-growth leg itself, but removes a tail risk to the capital behind it.
 
+- **2026-09-18/19** — Evercore raises its Alphabet price target to $450; Tigress Financial also raises its target, both citing AI growth (TipRanks, Investing.com India).
+  **Why it matters:** Two named analyst price-target raises with AI-growth reasoning are fresh confirming data points, not a new fact on the Cloud-growth leg itself; the "ad business got a lift from the antitrust ruling" framing recirculating today repeats the already-logged 09-17 item; a trivial 4-share board grant was noise.
+
 ---
 
 ## Social Mentions
@@ -70,3 +73,4 @@
 - **2026-09-16 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — 15x-earnings valuation listicle and Waymo-Tokyo-launch item repeat the already-dismissed 09-15 post-open items; Netflix/streaming-alliance and technical-correction headlines were noise/opinion
 - **2026-09-17 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged, conviction ↑ — ad-tech antitrust ruling (monitor + rule changes, no breakup) is a distinct case from the 09-04 Search-monopoly win; Anthropic-IPO-implications piece and earnings-valuation recap headlines were noise/opinion
 - **2026-09-17 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — ad-tech antitrust ruling and "breakup risk eases" framing (Benzinga, ad-hoc-news.de) repeat the already-logged 09-17 post-open item; trivial 4-share board grant, earnings-anticipation recap, and a technical-upgrade opinion piece were noise
+- **2026-09-18/19 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — Evercore ($450 PT) and Tigress Financial analyst raises are new; "ad business got a lift from antitrust ruling" headline repeats 09-17; trivial board-grant recap was noise

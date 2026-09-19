@@ -80,3 +80,4 @@
 - **2026-09-16 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — Toshiba's ¥360B Kioxia share sale ceding top-shareholder spot is new; ADR-listing and "why rallying" headlines recirculate/recap
 - **2026-09-17 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — ADS-plan clarification, KI50 stock-quote page, moomoo active-trades snapshot, and Fed-rate-decision macro pieces were all noise, no new company fact
 - **2026-09-17 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — ADS-plan clarification (TechStock²) and KI50 stock-quote-page headlines repeat 09-17 post-open; AI-slump-sentiment and "quality stocks to own" listicle were noise
+- **2026-09-18 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — $10B ADR/US-listing story (AD HOC NEWS, x3 outlets) recirculates the already-logged 09-14 item; PS5 Pro supply and AI-slump-sentiment headlines were noise

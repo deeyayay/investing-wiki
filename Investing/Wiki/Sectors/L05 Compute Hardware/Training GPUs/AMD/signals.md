@@ -35,6 +35,9 @@
 - **2026-09-10 (post-open)** — Xanadu Quantum Technologies and AMD launch "Backline" to streamline CPU/GPU/FPGA integration for quantum hardware (marketscreener.com).
   **Why it matters:** A new named collaboration extending AMD's silicon into a quantum-computing integration layer — tangential to the core data-center GPU-share thesis, logged for the audit trail.
 
+- **2026-09-18 (evening)** — AMD brings ROCm software support to RISC-V servers for AI workloads (simplywall.st, Yahoo Finance).
+  **Why it matters:** Extends the open-source ROCm stack to a new CPU architecture, broadening the "credible open-source alternative" ecosystem play beyond x86/hyperscaler deployments — a software-moat data point, not a revenue one; logged for the audit trail.
+
 ---
 
 ## Social Mentions
@@ -72,3 +75,4 @@
 - **2026-09-16 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — Nvidia-vs-AMD opinion piece, Truist Buy maintain and a Bernstein Buy rating (no new PT/reasoning), GF-Value comparison, and a routine CEO stock-sale headline were all noise/routine
 - **2026-09-17 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — Broadcom-earnings-comparison listicle and Samsung-foundry-capacity-crunch piece name no AMD-specific fact; rest were stock-pop recap/opinion, no new fact
 - **2026-09-17 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — "why AMD popped"/"stock climbed"/"caught between AI strength and chip weakness" recap headlines (5 outlets) repeat the standing price-move-noise pattern, no new operating fact
+- **2026-09-18 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — ROCm-to-RISC-V server support is a new ecosystem-extension fact; "why AMD jumped/rallying" recap headlines and a routine data-center-chief 10b5-1 sale were noise/routine

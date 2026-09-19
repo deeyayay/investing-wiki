@@ -87,6 +87,9 @@
 - **2026-09-17 (evening)** — ad-hoc-news.de: Jensen Huang promises to ship twice the chips even as "Washington circles" the company.
   **Why it matters:** A production-ramp commitment (doubling shipments) affirms demand fulfillment on the Blackwell leg, but the "Washington circles" framing introduces a third distinct regulatory thread (alongside the DOJ Groq probe and the antitrust-exemption comments) — no specific policy or action named at headline level, logged as a new watch item rather than a drift-moving fact.
 
+- **2026-09-18 (evening)** — Nvidia-backed neocloud Nscale files for an IPO (Stocktwits, Seeking Alpha).
+  **Why it matters:** Another downstream ecosystem-investment vehicle reaching public markets is the same capital-formation pattern already logged for Anthropic/Hugging Face — demand-breadth confirmation, not itself a change to the Blackwell/CUDA-moat thesis legs.
+
 ---
 
 ## Social Mentions
@@ -147,3 +150,4 @@
 - **2026-09-16 (evening, EOD)** — 📰 BRIEF | 5 items + 1 topic hit triaged, 1 logged, conviction ↓ (watch) — nvda-downstream topic feed's OpenAI-CFO "no longer the only option" commentary is a new competitive-narrative thread from NVIDIA's largest customer, added to the /dig queue; SoundHound/Broadcom comparison listicles and earnings-recap opinion pieces were noise
 - **2026-09-17 (post-open)** — 📰 BRIEF + 1 topic hit | 5 items triaged, 0 new logged — "SpaceX IPO hype" framing for the weekly-loss narrative repeats the already-dismissed 09-07 sentiment pattern; Snap-partnership mention (Nvidia named as one of several partners) was too tangential to log; $46B cumulative shareholder-return figure recaps the standing capital-return context (09-01/09-02)
 - **2026-09-17 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — Huang's chip-doubling promise + "Washington circles" opens a third distinct regulatory watch thread; Snap-partnership mention repeats 09-17 post-open (still too tangential); $46B shareholder-return and SoundHound/Broadcom comparison listicles recap known context/noise
+- **2026-09-18 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — Nscale (Nvidia-backed neocloud) IPO filing is a new capital-formation data point; "$5 trillion bargain," 2027-prediction, and Damodaran valuation-opinion headlines were noise
