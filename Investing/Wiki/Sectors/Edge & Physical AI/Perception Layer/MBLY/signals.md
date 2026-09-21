@@ -17,6 +17,7 @@
 | 2026-09-10 (evening) | Mobileye names Yaacov Kobi Ohayon as Principal Operating Officer | marketscreener.com | Resolves the 09-10 "unnamed executive-changes announcement" placeholder with a name and title — governance context, not a thesis-moving fact on its own. |
 | 2026-09-10 | Mobileye EVP Nimrod Nehushtan shifts to a part-time corporate strategy role, effective 2026-09-03 | kalkinemedia.com | A second, separately-named executive-transition fact alongside the already-logged Ohayon POO appointment — governance context, no detail on scope or reason at headline level. |
 | 2026-09-11 | 8-K filed (items 8.01 "other events" and 9.01 "financial statements and exhibits") | SEC EDGAR | New filing, content unresolved at headline level — item 8.01 can carry anything from a routine update to a material disclosure; worth a /dig check if a follow-up story surfaces. |
+| 2026-09-21 | Mobileye receives an average "Hold" recommendation from covering brokerages | MarketBeat | First consensus-rating snapshot logged for MBLY — generic aggregator content, no firm-level detail, logged for the audit trail only. |
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -44,3 +45,4 @@ _None yet — seeded on onboarding._
 | 2026-09-17 (post-open) | 📰 BRIEF + 2 topic hits | 4 items triaged, 0 new logged | "Mobility Global (MBGL)" headline is a company-name mismatch; self-driving-market and IoT/AV-stock-ranking roundups name no MBLY-specific fact; physical-ai and lidar-vs-radar topic hits had no MBLY-specific development |
 | 2026-09-17 (evening) | 📰 BRIEF | 3 items triaged, 0 new logged | self-driving-market-investment and IoT-stock-roundup headlines repeat the 09-17 post-open company-mismatch/roundup pattern; "BlackBerry climbs, Mobileye rises" is a bare price-move mention, no new fact |
 | 2026-09-18 (evening) | 📰 BRIEF | 1 item triaged, 0 new logged | "BlackBerry climbs 6%, Mobileye rises 5%" repeats the already-logged 09-17 evening price-move mention, no new fact |
+| 2026-09-21 (post-open) | 📰 BRIEF | 3 items triaged, 1 logged | "Hold" consensus-rating snapshot is a first for the ticker, logged as minor context; Nissan-Rogue-production and Lyft-price-target headlines name no MBLY-specific fact |

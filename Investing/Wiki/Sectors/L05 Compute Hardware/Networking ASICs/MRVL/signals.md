@@ -38,6 +38,9 @@
 - **2026-09-17 (post-open)** — GlobalFoundries and Marvell expand SiGe capacity for AI data-center optical networking, adding capacity in Vermont (StreetInsider, Investing.com, The Mighty 790 KFGO).
   **Why it matters:** A named foundry-capacity expansion behind the optics/interconnect leg — supply-side confirmation distinct from the 09-01 photonic-chip shipment milestone, suggesting Marvell is scaling ahead of demand rather than being capacity-constrained.
 
+- **2026-09-20/21** — AD HOC NEWS bundles three items under "Marvell Wires the Cloud": the already-logged GlobalFoundries SiGe deal, a new Azure security-product launch, and a "$30 billion roadmap" figure.
+  **Why it matters:** The SiGe capacity item repeats 09-17; the Azure security launch is a genuinely new product/partnership fact, but the $30B roadmap figure is ~1.7x the standing $18B-by-2028 DC chip guide — given this same outlet previously mis-sized the Google relationship ($120B, later resolved to $12B via /dig), the figure needs verification before treating it as a guidance change; flagged for /dig.
+
 ---
 
 ## Social Mentions
@@ -83,3 +86,4 @@
 | 2026-09-17 (post-open) | BRIEF | 📰 5 items triaged, 1 logged, conviction ↑ — new GlobalFoundries SiGe capacity-expansion deal (Vermont) is distinct from the already-logged 5M-photonic-chips/S&P 500 milestone; the photonic-chips headline recirculating today repeats 09-01
 | 2026-09-17 (evening) | BRIEF | 📰 5 items triaged, 0 new logged — GlobalFoundries SiGe capacity-expansion deal headlines (TradingKey, marketscreener.com, Reuters) repeat the already-logged 09-17 post-open item across more outlets, no new figure | |
 | 2026-09-18 (evening) | BRIEF | 📰 5 items triaged, 0 new logged — GlobalFoundries SiGe capacity-expansion deal headlines (TradingKey, marketscreener.com, Reuters, Yahoo Finance, Globe and Mail) recirculate the already-logged 09-17 item across still more outlets, no new figure | |
+| 2026-09-20/21 (post-open) | BRIEF | 📰 5 items triaged, 1 logged, deep-pass flagged — "$30B roadmap"/Azure-security-launch bundle is new but unverified given this outlet's prior $120B-Google mis-sizing; the $297/"four straight guidance raises" and GF-SiGe-capacity headlines repeat the already-logged 08-31/09-17 items |

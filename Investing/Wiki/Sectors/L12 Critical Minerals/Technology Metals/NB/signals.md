@@ -47,3 +47,4 @@ _None yet — seeded on onboarding._
 | 2026-09-15 (post-open) | 📰 BRIEF | 1 item triaged, 0 new logged — "Will Heavy Expansion Costs Slow USAR's Growth" is again an adjacent competitor (USAR), not NB-specific |
 | 2026-09-16 (evening) | 📰 BRIEF | 1 item triaged, 0 new logged — "Will Heavy Expansion Costs Slow USAR's Growth" repeats the already-dismissed adjacent-competitor (USAR) mismatch for a third cycle |
 | 2026-09-18 (evening) | 📰 BRIEF | 5 items triaged, 0 new logged — economic-assessment/price-target-raise headline recaps the already-logged thesis-confirming event; earnings-preview, S&P-500-direction, and small-cap-momentum-listicle headlines were noise/routine |
+| 2026-09-21 (post-open) | 📰 BRIEF | 1 item triaged, 0 new logged — "Stock Whisper Index" listicle names no NB-specific fact |

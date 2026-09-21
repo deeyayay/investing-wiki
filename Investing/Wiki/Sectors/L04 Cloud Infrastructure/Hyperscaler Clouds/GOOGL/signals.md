@@ -41,6 +41,9 @@
 - **2026-09-18/19** — Evercore raises its Alphabet price target to $450; Tigress Financial also raises its target, both citing AI growth (TipRanks, Investing.com India).
   **Why it matters:** Two named analyst price-target raises with AI-growth reasoning are fresh confirming data points, not a new fact on the Cloud-growth leg itself; the "ad business got a lift from the antitrust ruling" framing recirculating today repeats the already-logged 09-17 item; a trivial 4-share board grant was noise.
 
+- **2026-09-21** — FTC opens a probe into YouTube over account-suspension policies, with a potential lawsuit (scanx.trade).
+  **Why it matters:** A new, distinct regulatory matter from the 09-04 Search-monopoly and 09-17 ad-tech antitrust cases already on file — targets YouTube's consumer-platform practices, not the Cloud/AI-infrastructure thesis leg directly, but worth tracking as a third open regulatory thread.
+
 ---
 
 ## Social Mentions
@@ -74,3 +77,4 @@
 - **2026-09-17 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged, conviction ↑ — ad-tech antitrust ruling (monitor + rule changes, no breakup) is a distinct case from the 09-04 Search-monopoly win; Anthropic-IPO-implications piece and earnings-valuation recap headlines were noise/opinion
 - **2026-09-17 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — ad-tech antitrust ruling and "breakup risk eases" framing (Benzinga, ad-hoc-news.de) repeat the already-logged 09-17 post-open item; trivial 4-share board grant, earnings-anticipation recap, and a technical-upgrade opinion piece were noise
 - **2026-09-18/19 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — Evercore ($450 PT) and Tigress Financial analyst raises are new; "ad business got a lift from antitrust ruling" headline repeats 09-17; trivial board-grant recap was noise
+- **2026-09-21 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — FTC YouTube-suspension probe is a new, distinct regulatory thread; ARK-Invest-buying and three recirculating "Alphabet stock gains on Q2 earnings" headlines recap the already-known earnings print

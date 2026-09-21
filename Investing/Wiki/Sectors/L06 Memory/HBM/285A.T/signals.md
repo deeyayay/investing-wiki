@@ -44,6 +44,9 @@
 - **2026-09-16 (evening)** — Toshiba sells ¥360B of Kioxia shares, ceding its position as Kioxia's largest shareholder (Dealroom); the $10B US ADR-listing story (Briefs Finance, finance.biggo.com, pro.thestreet.com) recirculates the already-logged 09-14 item.
   **Why it matters:** A material ownership-structure shift — Toshiba stepping back as top shareholder ahead of a prospective US listing — is a new fact on the capital-structure side of the standing funding-channel thread, though it doesn't touch the BiCS FLASH/NAND-demand thesis leg directly.
 
+- **2026-09-21 (post-open)** — Kioxia reportedly tells its sales force to ease off as its $10B US listing takes shape (AD HOC NEWS).
+  **Why it matters:** Consistent with the 09-08 /dig confirmation that 2026 capacity is sold out through 2027 — easing a sales push ahead of a listing reads as allocation discipline rather than softening demand, though the headline gives no specifics on scope or duration.
+
 ---
 
 ## Social Mentions
@@ -81,3 +84,4 @@
 - **2026-09-17 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — ADS-plan clarification, KI50 stock-quote page, moomoo active-trades snapshot, and Fed-rate-decision macro pieces were all noise, no new company fact
 - **2026-09-17 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — ADS-plan clarification (TechStock²) and KI50 stock-quote-page headlines repeat 09-17 post-open; AI-slump-sentiment and "quality stocks to own" listicle were noise
 - **2026-09-18 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — $10B ADR/US-listing story (AD HOC NEWS, x3 outlets) recirculates the already-logged 09-14 item; PS5 Pro supply and AI-slump-sentiment headlines were noise
+- **2026-09-21 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Kioxia easing off sales force ahead of $10B US listing is new; SanDisk-valuation, generic AI-semi-sentiment, Saudi-oil, and a recycled "memory stocks falling" (dated Sept 10) headline were noise/mismatches

@@ -53,6 +53,9 @@
 - **2026-09-18 (evening)** — Stephens raises its CrowdStrike price target to $280, citing AI growth (Investing.com Australia).
   **Why it matters:** A new named analyst price-target raise with AI-growth reasoning is a fresh confirming data point on the platform-consolidation thesis; CEO share-sale-after-earnings and Q2-results-recap headlines were routine/repeat.
 
+- **2026-09-20** — Citi "warns of rising AI risks" even as CrowdStrike shares have doubled this year (TradingKey); separately, valuation-debate commentary recirculates.
+  **Why it matters:** First analyst caution specifically framed around AI risk — distinct from the 09-17 Jensen-Huang antitrust/"AI safety" sentiment pieces already dismissed as indirect. The headline doesn't specify whether "AI risks" means valuation froth or agentic-AI security exposure, which cut in opposite directions for the platform-consolidation thesis; flagged for /dig.
+
 ---
 
 ## Social Mentions
@@ -92,3 +95,4 @@
 - **2026-09-17 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — Jensen-Huang antitrust-comments and "AI safety concerns" headlines are indirect/sentiment, no CRWD-specific fact; "priced for perfection" and "case for selling" opinion pieces were noise; standing Q1/Q2 guidance-reaction mismatch still queued for /dig
 - **2026-09-17 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — "$235 stock" price-recap, Okta-rally-comparison, "priced for perfection," CEO-share-sale (routine), and "ARR climbs" recap headlines were all noise/routine, no new CRWD-specific fact; standing Q1/Q2 guidance-reaction mismatch still queued for /dig
 - **2026-09-18 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — Stephens $280 PT raise (AI growth) is a new analyst action; CEO share-sale-after-earnings, Q2-results-selloff recap, and cybersecurity-listicle headlines were noise/routine; standing Q1/Q2 guidance-reaction mismatch still queued for /dig
+- **2026-09-20** — 📰 BRIEF | 5 items triaged, 1 logged, deep-pass flagged — Citi's AI-risk warning is a new analyst caution, ambiguous on valuation vs. security framing; valuation-debate, historical-quotes, cybersecurity-sector-surge, and 52-week-high recap headlines were noise; standing Q1/Q2 guidance-reaction mismatch still queued for /dig

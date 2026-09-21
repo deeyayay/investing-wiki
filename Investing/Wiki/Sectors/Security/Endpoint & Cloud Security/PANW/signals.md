@@ -59,6 +59,9 @@
 - **2026-09-17 (evening)** — Bernstein downgrades Palo Alto Networks to Market Perform from Outperform, while raising its price target to $351 from $253 (marketscreener.com).
   **Why it matters:** First rating cut on file, but paired with a raised price target — a valuation-driven "priced in" call rather than a fundamentals concern; directly tests the "compounding cash flows" thesis leg on valuation grounds without contradicting the underlying growth numbers.
 
+- **2026-09-21** — Morgan Stanley raises its Palo Alto Networks price target to $410 from $394, citing AI security demand (Yahoo Finance, Investing.com, Moomoo, TipRanks, AD HOC NEWS — 5 outlets, same action).
+  **Why it matters:** A new named analyst target raise with AI-security-demand reasoning is a fresh confirming data point on the platform-consolidation/NGS-ARR thesis leg, distinct from the 09-17 Bernstein downgrade-with-raised-PT valuation call.
+
 ---
 
 ## Social Mentions
@@ -96,3 +99,4 @@
 - **2026-09-17 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — buyback-program closure logged as capital-allocation context; Zscaler-comparison and a Lennar-earnings company mismatch were noise; Q4-beat recap and a container-remediation product-blog mention were routine
 - **2026-09-17 (evening)** — 📰 BRIEF | 5 items triaged, 2 logged, conviction → — REANNZ customer deployment is a new geography/vertical win; Bernstein's downgrade-with-raised-PT is a valuation-driven call, not a fundamentals concern; Lennar-earnings mismatch and Q4-results recap were noise
 - **2026-09-18 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — REANNZ deployment and Bernstein downgrade-with-raised-PT headlines both repeat the already-logged 09-17 evening items; "confident AI push" earnings-call recap and an SOC-defense blog mention were noise/recap
+- **2026-09-21** — 📰 BRIEF | 5 items triaged, 1 logged — Morgan Stanley $410 PT raise (AI security demand) is a new named analyst action, recirculating across 5 outlets as the same action; no other new fact
