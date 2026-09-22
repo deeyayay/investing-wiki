@@ -62,6 +62,9 @@
 - **2026-09-21** — Morgan Stanley raises its Palo Alto Networks price target to $410 from $394, citing AI security demand (Yahoo Finance, Investing.com, Moomoo, TipRanks, AD HOC NEWS — 5 outlets, same action).
   **Why it matters:** A new named analyst target raise with AI-security-demand reasoning is a fresh confirming data point on the platform-consolidation/NGS-ARR thesis leg, distinct from the 09-17 Bernstein downgrade-with-raised-PT valuation call.
 
+- **2026-09-22** — Palo Alto Networks launches an AI-powered continuous security testing service built on Anthropic and OpenAI models (Moomoo, Yahoo Finance, Investing.com — 3 outlets, same launch).
+  **Why it matters:** A new, named AI-native product — distinct from the 09-01 Console acquisition and the 09-15 "Secure AI Coding" item — extends the platform-consolidation/AI-native thesis leg via organic product development, not just M&A.
+
 ---
 
 ## Social Mentions
@@ -101,3 +104,4 @@
 - **2026-09-18 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — REANNZ deployment and Bernstein downgrade-with-raised-PT headlines both repeat the already-logged 09-17 evening items; "confident AI push" earnings-call recap and an SOC-defense blog mention were noise/recap
 - **2026-09-21** — 📰 BRIEF | 5 items triaged, 1 logged — Morgan Stanley $410 PT raise (AI security demand) is a new named analyst action, recirculating across 5 outlets as the same action; no other new fact
 - **2026-09-21 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — Morgan Stanley $410 PT raise recirculates across the same 5 outlets already logged this morning, no new fact
+- **2026-09-22 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged, conviction ↑ — new AI-powered continuous security testing service (Anthropic/OpenAI models) is a genuine new product launch, distinct from the 09-01 Console acquisition and 09-15 Secure-AI-Coding item; Morgan Stanley $410 PT recirculates the already-logged 09-21 item

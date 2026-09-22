@@ -11,6 +11,9 @@
 - **2026-08-25** — Barron's: "Marvell's $120 Billion Google Deal Changes Everything Ahead of Earnings" (MRVL reports Q2 earnings 2026-08-27).
   **Why it matters:** Directly touches the custom-ASIC/Google leg of the thesis, but the $120B figure is unverified (likely a multi-year TAM/roadmap estimate rather than a signed contract value) — needs /dig before earnings to confirm what was actually announced.
 
+- **2026-09-22 (post-open)** — Marvell to showcase industry-first 2nm optical technology demos for AI data center infrastructure at ECOC 2026 (Marvell press release); separately, Morgan Stanley maintains Hold, raises PT to $268 (Moomoo).
+  **Why it matters:** Gives concrete substance (named node, named venue) to the vague "new chip tech" chatter dismissed as noise on 09-21 evening — a named next-gen optical/interconnect product directly extends the SerDes/DSP leg of the dual-angle thesis, distinct from the GlobalFoundries SiGe capacity deal already on file.
+
 - **2026-08-25** — Susquehanna raises price target ahead of Q2 results (reports 2026-08-27).
   **Why it matters:** Pre-earnings analyst positioning — directionally bullish but routine ahead of tomorrow's print; the still-unverified "$120B Google deal" framing from the same news cycle remains the bigger open question.
 
@@ -88,3 +91,4 @@
 | 2026-09-18 (evening) | BRIEF | 📰 5 items triaged, 0 new logged — GlobalFoundries SiGe capacity-expansion deal headlines (TradingKey, marketscreener.com, Reuters, Yahoo Finance, Globe and Mail) recirculate the already-logged 09-17 item across still more outlets, no new figure | |
 | 2026-09-20/21 (post-open) | BRIEF | 📰 5 items triaged, 1 logged, deep-pass flagged — "$30B roadmap"/Azure-security-launch bundle is new but unverified given this outlet's prior $120B-Google mis-sizing; the $297/"four straight guidance raises" and GF-SiGe-capacity headlines repeat the already-logged 08-31/09-17 items |
 | 2026-09-21 (evening) | BRIEF | 📰 5 items triaged, 0 new logged — "$297 — Four Straight Guidance Raises" headline recirculates the same TradingKey piece dismissed repeatedly since 09-14; a vague "new chip tech and upgrade" mention (kobaran.com) names no firm or spec, treated as noise; crypto-exchange price-ticker boilerplate (CryptoRank, Binance) and a POET-Technologies mismatch were noise; standing /dig queue ($30B roadmap) unchanged |
+| 2026-09-22 (post-open) | BRIEF | 📰 5 items triaged, 1 logged, conviction ↑ — 2nm optical tech demo (ECOC 2026) sharpens the vague "new chip tech" mention dismissed 09-21 evening into a named node/venue; Morgan Stanley Hold/$268 PT is a new named analyst action; "why rallying"/PT-rising recap headlines were noise |

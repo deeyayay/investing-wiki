@@ -56,6 +56,7 @@ _Last scored: — | [[Scoring Rubric]]_
 | 2026-09-01 | Acquires Console (agentic-AI security platform), beats Q4 earnings | ↑ | Direct M&A into the AI-native consolidation thesis; joins the Okta/Datadog talks already logged as evidence of an active buy-side strategy |
 | 2026-09-08 (evening) | Q4 2026 earnings call: RPO surpasses $20B on nearly $1B net new NGS ARR | ↑ | A large, growing contracted-backlog number is direct evidence the cross-sell/consolidation flywheel is converting into booked revenue, beyond the already-logged $8.1B NGS ARR and $11.42B FY2026 guide |
 | 2026-09-17 (evening) | Bernstein downgrades to Market Perform while raising PT to $351 from $253 | → | A valuation-driven "priced in" call, not a challenge to the underlying ARR/RPO growth already on file — logged as a mixed signal, not a drift change |
+| 2026-09-22 | Launches AI-powered continuous security testing service built on Anthropic/OpenAI models | ↑ | A new, named AI-native product (not an acquisition) directly extends the platform-consolidation thesis with organic product development alongside the M&A track already on file. |
 
 ---
 

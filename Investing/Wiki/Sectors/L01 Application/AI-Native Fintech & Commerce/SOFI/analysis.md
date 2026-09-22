@@ -52,6 +52,7 @@ _Last scored: 2026-05-18 | [[Scoring Rubric]]_
 | 2026-04-29 | Q1 2026: record $1.1B rev (+43%), 10th GAAP quarter, 1,055K members, LPB $3B third-party originations, $3.6B partner expansion | ↑ | Every core pillar delivered simultaneously — member flywheel, FSPL cross-sell, LPB expansion, GAAP profitability; this is thesis confirmation, not just continuation |
 | 2026-09-01 | Short seller levels "Enron-esque" accounting fraud claims; CEO puts $500K of personal money against it | ↓ Flag, unresolved | Potentially thesis-breaking if the underlying allegation holds, but nothing in the headline specifies what's being alleged — not enough to move drift off On track. Escalated to /dig SOFI to read the actual report against the filed financials. |
 | 2026-09-04 | Kraken/Payward stablecoin partnership — SoFiUSD live on Kraken for 24/7 dollar settlement | ↑ | First concrete distribution deal for the stablecoin named in the catalyst timeline, directly extending the Galileo/rails leg of the thesis |
+| 2026-09-22 | First national bank to go live with stablecoin settlement on Mastercard's network, covering the $25B card program | ↑ | Extends the 09-04 Kraken distribution deal into a bank-charter-backed, network-scale settlement rail — the strongest confirmation yet of the Galileo/stablecoin leg, corroborated by SoFi's own IR release and a same-day +3% market reaction. |
 
 ---
 

@@ -51,6 +51,9 @@
 - **2026-09-15 (post-open)** — Yahoo Finance: SoFi Technologies faces a lawsuit over 30 mortgage-team hires and alleged trade-secrets misappropriation.
   **Why it matters:** A new legal risk with unknown financial/reputational exposure — headline alone can't size the damages claim or assess impact on the mortgage-origination business; added to the deep-pass queue alongside the standing short-seller-accounting question.
 
+- **2026-09-22** — SoFi becomes the first national bank to go live with stablecoin settlement across Mastercard's global payments network, covering its $25B card program (SoFi Investor Relations, Yahoo Finance, Seeking Alpha, TradingView, marketscreener.com — 5 outlets, same launch); shares +3%.
+  **Why it matters:** First-mover, bank-charter-backed stablecoin settlement at network scale is the clearest confirmation yet of the Galileo/rails leg of the thesis — a live, revenue-bearing deployment (not a pilot or exchange-side tie-up like the 09-04 Kraken deal), sourced directly from SoFi's own IR.
+
 ---
 
 ## Social Mentions
@@ -90,3 +93,4 @@
 - **2026-09-18 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — "record quarter and raises guidance" (Pluang) recaps the already-verified Q1 2026 print for a second cycle; cross-buy-acceleration, executive share-surrender (routine), and a new-institutional-position headline were noise/routine; standing short-seller-accounting and mortgage-lawsuit /dig items still open
 - **2026-09-21** — 📰 BRIEF | 5 items triaged, 0 new logged — rate-hike retail-sentiment pieces (x2), a FMPay company-mismatch, a "record lending/cross-selling" piece recapping the already-verified Q1 2026 print, and a SoFi/Upstart/Affirm comparison were all noise/recap; standing short-seller-accounting and mortgage-lawsuit /dig items still open
 - **2026-09-21 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — rate-hike retail-sentiment recap repeats 09-21 post-open; a routine six-figure executive stock sale, a Bitcoin-price-comparison mention, and a FMPay company-mismatch were noise; standing short-seller-accounting and mortgage-lawsuit /dig items still open
+- **2026-09-22 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged, conviction ↑ — first-national-bank stablecoin settlement live on Mastercard's network ($25B card program), sourced from SoFi's own IR, is the strongest confirmation yet of the Galileo/rails leg; standing short-seller-accounting and mortgage-lawsuit /dig items still open
