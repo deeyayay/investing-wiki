@@ -62,6 +62,9 @@
 - **2026-09-18 (evening)** — Citi reaffirms Amazon as a top pick despite FTC regulatory pressure (AD HOC NEWS).
   **Why it matters:** A sell-side desk holding its top-pick call through an active FTC overhang is a mild de-risking signal, but the FTC matter itself is a company-level legal/regulatory thread, not a fact about the AWS/Trainium thesis leg — logged for the audit trail; Jefferies-Generac-partnership and 13F-aggregator headlines repeat 09-17.
 
+- **2026-09-21 (evening)** — Amazon and Kuehne+Nagel announce a seven-year logistics partnership, with stock options tied to service performance (finance.biggo.com); separately, an FTC ad-lawsuit headline recirculates the standing 09-01/09-02 $20B ad-fee suit.
+  **Why it matters:** A new multi-year commercial partnership in the logistics/freight-forwarding segment — company-level context adjacent to, not part of, the AWS/Trainium cloud-margin thesis leg, logged for the audit trail alongside similar non-AWS commercial ties (Qualcomm warrant, AT&T Leo).
+
 ---
 
 ## Social Mentions
@@ -102,3 +105,4 @@
 - **2026-09-17 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — Jefferies-Generac-partnership and PCM-Encore institutional-position headlines repeat 09-17 post-open; grocery-discount/bank-benefit employee news was a retail-segment mismatch (not AWS/Trainium); a market-distrust rating downgrade was macro-sentiment, not a company fact; EDGAR timed out again
 - **2026-09-18 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — Citi top-pick reaffirmation despite FTC pressure is new; Jefferies-Generac-partnership headline repeats 09-17; institutional 13F-aggregator and price-move recap headlines were routine/noise; EDGAR timed out again
 - **2026-09-21 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — five MarketBeat institutional-position stories (Pinnacle Holdings, Erste Group, Quantbot, CFO4Life, Vista) were routine 13F-type filings, no thesis-relevant fact
+- **2026-09-21 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — Kuehne+Nagel seven-year logistics partnership is new company-level context; FTC ad-lawsuit headline repeats the standing 09-01/09-02 suit; a routine 13F-aggregator item and an unrelated-ticker (IDCC) dividend mismatch were noise

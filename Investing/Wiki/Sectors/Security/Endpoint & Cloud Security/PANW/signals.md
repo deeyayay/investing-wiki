@@ -100,3 +100,4 @@
 - **2026-09-17 (evening)** — 📰 BRIEF | 5 items triaged, 2 logged, conviction → — REANNZ customer deployment is a new geography/vertical win; Bernstein's downgrade-with-raised-PT is a valuation-driven call, not a fundamentals concern; Lennar-earnings mismatch and Q4-results recap were noise
 - **2026-09-18 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — REANNZ deployment and Bernstein downgrade-with-raised-PT headlines both repeat the already-logged 09-17 evening items; "confident AI push" earnings-call recap and an SOC-defense blog mention were noise/recap
 - **2026-09-21** — 📰 BRIEF | 5 items triaged, 1 logged — Morgan Stanley $410 PT raise (AI security demand) is a new named analyst action, recirculating across 5 outlets as the same action; no other new fact
+- **2026-09-21 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — Morgan Stanley $410 PT raise recirculates across the same 5 outlets already logged this morning, no new fact

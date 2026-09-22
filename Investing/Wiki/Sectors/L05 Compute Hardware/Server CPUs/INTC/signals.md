@@ -80,6 +80,9 @@
 - **2026-09-18 (post-open)** — Blockonomi: Barclays upgrades Intel to Overweight; stock +4% on the action.
   **Why it matters:** A new named sell-side rating action distinct from the standing Northland/Piper Sandler/Tigress coverage already logged — another data point in the accelerating-rerate pattern, though the headline gives no PT or reasoning detail.
 
+- **2026-09-21 (evening)** — tradersunion.com: Intel stock rises over 12% on a reported "strategic Micro LED partnership" and memory-chip talks.
+  **Why it matters:** Genuinely new claim, but thin — single lower-quality source, no partner named, and a Micro LED display-tech tie-up doesn't obviously touch the EMIB/photonics interconnect leg the thesis rests on; "memory chip talks" is similarly unspecified. Flagged for /dig rather than treated as confirmed given the outsized reported stock move on vague sourcing.
+
 ---
 
 ## Social Mentions
@@ -124,3 +127,4 @@
 - **2026-09-18 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Barclays Overweight upgrade (+4%) is a new named analyst action; Intel CEO memory-shortage-warning headline repeats the already-logged 09-17 evening item; SK Hynix Ohio-partnership recap was routine
 - **2026-09-18 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — SK Hynix US-expansion/Intel-partnership-discussions headline repeats the standing 09-16/09-17 Ohio-partnership thread; Intel-CEO memory-shortage-warning recap repeats 09-17 evening; a vague "outrageous" analyst-target headline (no firm named) and a StockInvest.us algo-rating change were noise
 - **2026-09-21 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — "12% after-hours rally/Q3 outlook soars" headlines repeat the already-resolved 09-07 Q2-beat print (same recap pattern dismissed 09-14/09-17); "$11B loss" headline repeats the standing, already-open /dig item; RBC-Q2-beat-prediction/data-center-layoffs and Apple-foundry-deal-justifies-rally pieces were recap/opinion, no new fact; standing /dig queue unchanged
+- **2026-09-21 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged, deep-pass flagged — new "strategic Micro LED partnership" + memory-chip-talks claim (single vague source) escalated to /dig; RBC-Q2-beat/data-center-layoffs and "$11B loss"/AMD-trillion-dollar-club headlines repeat 09-21 post-open and the standing open /dig item; Apple-foundry-rally-justification recap was opinion
