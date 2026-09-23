@@ -12,8 +12,8 @@ The only publicly listed neuromorphic pure-play — a high-risk, high-optionalit
 ## Investment Thesis
 
 > **Thesis established:** 2026-06-15
-> **Last validated:** 2026-06-15
-> **Drift status:** New — onboarded as the speculative "brain-mimicking compute" leg of the memory & storage thesis (Technology Preferences Race 4). **Watch / starter only.**
+> **Last validated:** 2026-09-22
+> **Drift status:** Watch/starter — speculative neuromorphic leg of the memory & storage thesis (Technology Preferences Race 4). 09-22: new dev-board shipment surfaced fab yield problems pushing the volume ramp to late 2026 — first concrete execution setback since onboarding; unconfirmed at headline level, flagged for /dig. **Watch / starter only.**
 
 A literal "artificial brain" is not von-Neumann — it co-locates memory and compute the way synapses do. The hardware expression of that is **neuromorphic / in-memory compute** (spiking neural networks, memristor/ReRAM/PCM crossbars). BrainChip's **Akida** is a fully digital, event-based processor that computes only when sensory events occur, targeting milliwatt-class always-on edge inference. It is, today, the **sole investable public pure-play** in neuromorphic — Intel (Loihi 2) and IBM (NorthPole/TrueNorth) are research programs inside larger companies, and the other credible players (SynSense, Innatera) are private.
 
@@ -39,6 +39,7 @@ _Not yet scored — run `/score-ticker BRCHF`. (Expect a low composite given pre
 | 2026-08-29 | First production batch arrives; loss ledger grows faster | → Neutral | Execution milestone (product shipping) offset by widening losses — mixed, no change to the speculative watch/starter stance. |
 | 2026-09-10 | Q2 2026 transcript: loss narrows as chip demand builds | → | Directly conflicts with the 08-26 "loss widens" H1 print — unclear whether this is a later, better quarter or a mislabeled recap; flagged for verification before treating as a positive inflection. |
 | 2026-09-17 | AKD1500 PCIe evaluation card launched for edge AI | ↑ | First new hardware SKU since onboarding — makes Akida-based neuromorphic compute accessible via a standard PCIe eval card rather than a bespoke dev kit, a real (if small) commercialization/accessibility step for the speculative watch/starter thesis. |
+| 2026-09-22 | New dev board ships alongside disclosed fab yield problems pushing volume ramp to late 2026 | ↓ | First concrete execution setback since onboarding — a fab-yield claim is exactly the kind of thing a headline can't settle; unconfirmed at headline level, escalated to /dig. |
 
 ---
 
