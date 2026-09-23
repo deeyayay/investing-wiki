@@ -12,8 +12,8 @@ LPKF owns the sole industrial process for glass substrate via drilling, making i
 ## Investment Thesis
 
 > **Thesis established:** 2026-06-19
-> **Last validated:** 2026-06-19
-> **Drift status:** On track — CPO waveguide equipment already shipped to customer; SDAX inclusion confirmed; adjacent TAM materializing ahead of schedule
+> **Last validated:** 2026-09-23
+> **Drift status:** On track, strengthening — purchase LOI from a major Asian advanced-packaging manufacturer confirms glass-processing equipment selection for production ramp-up, alongside the already-shipped CPO waveguide equipment and confirmed SDAX inclusion; adjacent TAM materializing ahead of schedule
 
 LPKF Laser & Electronics SE makes the LIDE (Laser-Induced Deep Etching) system — currently the only commercially viable method for drilling precision through-glass vias (TGVs) in glass core substrates. Glass substrates are the next frontier in AI chip packaging: superior electrical performance, dimensional stability, and thermal properties vs. silicon interposers make them the preferred substrate for co-packaged AI accelerators and co-packaged optics. With the supply chain moving from R&D into commercial production in 2026-2027, LPKF is the sole gatekeeper to this transition.
 
@@ -68,6 +68,7 @@ _Evaluated: 2026-06-19_
 | 2026-06-19 | LPKF Korea disclosed CPO waveguide equipment shipped to customer (April 28 Seoul conference) | ↑ Strengthened | "Adjacent revenue" thesis materializing earlier than expected (was 2029-2030); Direct Light technology adds a 3rd product line beyond LIDE and NEXAR |
 | 2026-06-19 | SDAX index inclusion confirmed from June 22, 2026 | ↑ Strengthened | Forces passive index-fund buying; material liquidity improvement for a small-cap; institutional legitimacy signal |
 | 2026-06-19 | Analyst consensus PT ~€10.65-€15.81 vs stock at €27 (+330% YTD) | → Neutral | Analyst coverage hasn't repriced the glass substrate optionality or CPO expansion; stale targets, not a thesis signal |
+| 2026-09-23 | Purchase LOI from a major Asian advanced-packaging manufacturer, confirming glass-processing equipment selection for production ramp-up | ↑ Strengthened | A second, larger named commercial win beyond the Q1 2026 first production order — direct evidence the 4-5-buyer HVM pipeline is converting from evaluation to selection |
 | 2026-06-19 | AGM shareholder strategy rift reported; short sellers active during peak rally | ↓ Slightly | Some governance friction and active short interest warrant monitoring; doesn't change thesis but adds execution risk overlay |
 
 ---

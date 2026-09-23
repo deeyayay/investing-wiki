@@ -75,6 +75,7 @@ _Evaluated: 2026-06-17_
 | 2026-09-08 (evening) | Formal downgrade to Hold citing contract risk + Chinese competition; CXMT confirmed #4 globally in HBM | ↓ | Third bearish counter-narrative on file (after Goldman-Neutral 09-07, Seeking Alpha downgrade 09-08) and the first to name a specific cause; CXMT's #4 ranking is the most concrete evidence yet behind the Chinese-competition thread — not enough alone to move Drift, but sharpens the standing /dig queue |
 | 2026-09-16 (post-open) | SK Hynix reportedly considering US production partnership with Intel at Ohio facility | → Neutral | A second, sooner-sounding potential US HBM-production site beyond the 2030-horizon SK hynix Indiana plant already on file — still "considering"/speculation at headline level, sharpens rather than resolves the "only US-domiciled HBM supplier" watch item |
 | 2026-09-17 (evening) | Intel CEO independently warns of deepening memory shortage; new capacity not ramping until 2028 | ↑ | Cross-vendor corroboration of the 08-25 CEO-sourced "supply may not catch up until 2028" claim — this time from Intel's own CEO rather than Micron's, an independent-source confirmation of the same structural tightness |
+| 2026-09-23 | JPMorgan: HBM spec downgrade doesn't alter the underlying shortage; demand still projected at 63% CAGR 2026-2028 | ↑ | A new, named sell-side figure reinforcing the structural demand-tailwind leg, and the spec-downgrade-doesn't-change-shortage framing pre-empts a bear read on future HBM spec news |
 
 ---
 

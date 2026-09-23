@@ -23,6 +23,9 @@
 - **2026-09-17 (post-open)** — tipranks.com: "Aehr Test Systems Slips After Soft Q1 Guidance."
   **Why it matters:** First causal headline attached to a stock move since the standing 38%-decline /dig item was opened 08-28 — no figures given, but soft guidance is consistent with the known bookings-to-revenue lag risk. Escalated to /dig to pull the actual guide numbers.
 
+- **2026-09-23 (post-open)** — Stocktwits: AEHR stock pops 40% after-hours on an earnings beat, with retail bulls pointing to upbeat FY2027 guidance.
+  **Why it matters:** Directly conflicts with the 09-17 "slips after soft Q1 guidance" headline — this is a real print with a strong market reaction, not a repeat, and the "upbeat FY27 guidance" framing runs counter to the standing soft-guidance concern. No hard revenue/bookings figures at headline level; escalated to /dig to pull the actual print and resolve which read is accurate.
+
 ---
 
 ## Social Mentions
@@ -58,3 +61,4 @@
 - **2026-09-21 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — SMCI-vs-AEHR "stronger AI stock" comparison, a Turkish-lira forex-converter page, TSLA/SpaceX, Dow-gains/Morgan-Stanley, and a HOST-earnings headline (company mismatch) were all noise; /dig item (38%-decline cause) still open
 - **2026-09-21 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — Turkish-lira forex-converter page repeats 09-21 post-open; IBM/mainframe, HOST-earnings, and a Kalshi-vs-Polymarket mention were all company mismatches, no AEHR-specific fact; /dig item (38%-decline cause) still open
 - **2026-09-22 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — "18.59x sales" valuation-opinion piece, IBM/mainframe and HOST-earnings mismatches, and a Kalshi-vs-Polymarket mention were all noise/company mismatches; /dig item (38%-decline cause) still open
+- **2026-09-23 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged, deep-pass flagged — 40% after-hours pop on an earnings beat + upbeat FY27 guidance directly conflicts with the 09-17 "soft Q1 guidance" headline, escalated to /dig to resolve; a Teradata product-launch mismatch, tokenized-stock listing, "3 AI stocks to triple" listicle, and a post-rally-stumble recap were noise

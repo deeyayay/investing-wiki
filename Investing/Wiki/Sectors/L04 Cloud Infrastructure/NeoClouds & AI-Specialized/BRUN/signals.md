@@ -85,3 +85,4 @@
 - **2026-09-21 (post-open)** — 📰 BRIEF | 2 items triaged, 0 new logged — "looks undervalued" opinion piece and a "top competitors 2026" listicle were noise/opinion, no new fact
 - **2026-09-21 (evening)** — 📰 BRIEF | 3 items triaged, 0 new logged — "looks undervalued" opinion piece repeats 09-21 post-open; two Lake Forest/River North real-estate headlines were BRUN-keyword mismatches (unrelated property listings), not company news
 - **2026-09-22 (post-open)** — 📰 BRIEF | 4 items triaged, 0 new logged — Lake Forest real-estate listing is a BRUN-keyword mismatch (unrelated property); "top competitors 2026" listicle and two "betting on AI expansion"/"customer growth" opinion pieces were noise, no new fact
+- **2026-09-23 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — "top competitors 2026" listicle and "betting on further AI expansion" opinion piece repeat the 09-22 pattern; Lake Forest real-estate and SharonAI (SHAZ) headlines were company mismatches

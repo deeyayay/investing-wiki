@@ -27,6 +27,11 @@
 
 ---
 
+### 2026-09-23 — LOI from major Asian advanced-packaging manufacturer
+
+- **2026-09-23** — LPKF receives a purchase LOI from a leading Asian advanced semiconductor packaging manufacturer, confirming equipment selection for production ramp-up; shares surge on the multi-million-euro order expectation (marketscreener.com, x2 outlets).
+  **Why it matters:** Directly confirms the core thesis — a named (if unnamed-by-ticker) major Asian packaging manufacturer selecting LPKF's glass processing equipment for production, not just evaluation. Extends the 04-28 CPO-waveguide-shipped and Q1 2026 "first production-scale order" data points into a second, larger commercial win — evidence the HVM ramp pipeline (4-5 buyer base case per the 06-19 investor notes) is materializing.
+
 ### 2026-05-14 — Q1 2026 Earnings
 - Revenue €17.1M (−32% YoY); Solar segment −€9.3M YoY to €1.3M
 - **First production-scale LIDE capacity expansion order booked**; management "in talks for additional units"
@@ -108,3 +113,4 @@
 - **2026-09-08** — 📰 BRIEF (post-open) | 1 item triaged, 0 new logged — generic Laser Direct Imaging market-sizing press release, not LPK-specific
 - **2026-09-17** — 📰 BRIEF (post-open) | 1 item triaged, 0 new logged — SDAX AGM-speeches commentary piece is unrelated, no LPK-specific fact
 - **2026-09-17 (evening)** — 📰 BRIEF | 1 item triaged, 0 new logged — same SDAX AGM-speeches commentary piece (TradingView) repeats 09-17 post-open, no LPK-specific fact
+- **2026-09-23 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged, conviction ↑ — purchase LOI from a major Asian advanced-packaging manufacturer confirms glass-processing equipment selection for production ramp-up, directly confirming the core thesis; an unrelated Enablence Technologies stock-quote headline was a company mismatch, rest was recirculation of the same LOI story across outlets

@@ -72,3 +72,4 @@
 - **2026-09-18 (evening)** — 📰 BRIEF | 3 items triaged, 0 new logged — STMicroelectronics in-cabin-sensor piece repeats the 09-17 competitor mismatch; WDP (Brussels-listed logistics) company-mismatch headline recurs for a tenth+ cycle
 - **2026-09-21 (evening)** — 📰 BRIEF | 2 items triaged, 0 new logged — both items were France CAC 40 index-close headlines, market-wide noise not XFAB-specific; quiet on 09-21 post-open
 - **2026-09-22 (post-open)** — 📰 BRIEF | 4 items triaged, 0 new logged — "3 Chip Stocks/EU-Philippines trade deal" listicle names no XFAB-specific fact; WDP (Brussels-listed logistics) and France CAC-40 index-close headlines (x2) were company/market mismatches, recurring pattern
+- **2026-09-23 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — "3 Chip Stocks/EU-Philippines trade deal" listicle repeats 09-22; WDP-stock headlines (x2, unrelated Belgian REIT) and a microscopic-robots (Nature) headline were noise/mismatches, no XFAB-specific fact

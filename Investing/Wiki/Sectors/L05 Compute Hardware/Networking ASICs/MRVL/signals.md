@@ -14,6 +14,9 @@
 - **2026-09-22 (post-open)** — Marvell to showcase industry-first 2nm optical technology demos for AI data center infrastructure at ECOC 2026 (Marvell press release); separately, Morgan Stanley maintains Hold, raises PT to $268 (Moomoo).
   **Why it matters:** Gives concrete substance (named node, named venue) to the vague "new chip tech" chatter dismissed as noise on 09-21 evening — a named next-gen optical/interconnect product directly extends the SerDes/DSP leg of the dual-angle thesis, distinct from the GlobalFoundries SiGe capacity deal already on file.
 
+- **2026-09-23 (post-open)** — Seaport Global initiates coverage of Marvell at Buy with a $270 price target (marketscreener.com); separately, Stifel maintains Buy, $350 PT (富途牛牛).
+  **Why it matters:** A new sell-side initiation (Seaport) plus a first-seen Stifel Buy/$350 mention are fresh named data points alongside the standing Morgan Stanley Hold/$268 coverage — routine analyst-coverage-breadth context, not thesis-moving on its own.
+
 - **2026-08-25** — Susquehanna raises price target ahead of Q2 results (reports 2026-08-27).
   **Why it matters:** Pre-earnings analyst positioning — directionally bullish but routine ahead of tomorrow's print; the still-unverified "$120B Google deal" framing from the same news cycle remains the bigger open question.
 
@@ -93,3 +96,4 @@
 | 2026-09-21 (evening) | BRIEF | 📰 5 items triaged, 0 new logged — "$297 — Four Straight Guidance Raises" headline recirculates the same TradingKey piece dismissed repeatedly since 09-14; a vague "new chip tech and upgrade" mention (kobaran.com) names no firm or spec, treated as noise; crypto-exchange price-ticker boilerplate (CryptoRank, Binance) and a POET-Technologies mismatch were noise; standing /dig queue ($30B roadmap) unchanged |
 | 2026-09-22 (post-open) | BRIEF | 📰 5 items triaged, 1 logged, conviction ↑ — 2nm optical tech demo (ECOC 2026) sharpens the vague "new chip tech" mention dismissed 09-21 evening into a named node/venue; Morgan Stanley Hold/$268 PT is a new named analyst action; "why rallying"/PT-rising recap headlines were noise |
 | 2026-09-22 (evening) | BRIEF | 📰 5 items triaged, 0 new logged — the GlobalFoundries SiGe capacity-expansion deal and the 1.6T/2nm optical-tech story both recirculate already-logged items (09-17 and 09-22 post-open respectively) across more outlets, no new figure; rally-recap and "overvalued after rally" opinion headlines were noise |
+| 2026-09-23 (post-open) | BRIEF | 📰 5 items triaged, 1 logged — Seaport Global's new Buy initiation ($270 PT) plus a first-seen Stifel Buy/$350 mention are new named analyst data points; the GFS SiGe deal and 5M-photonic-chips/S&P 500 headlines recirculate already-logged items (09-17 and 09-01); "52-week highs" recap was noise |
