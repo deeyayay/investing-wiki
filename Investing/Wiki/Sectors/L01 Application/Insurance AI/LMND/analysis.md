@@ -12,8 +12,8 @@ AI-native full-stack insurer using a proprietary claims data flywheel to compres
 ## Investment Thesis
 
 > **Thesis established:** 2026-06-25
-> **Last validated:** 2026-06-25
-> **Drift status:** On track — Q1 2026 revenue +71% YoY; gross loss ratio structurally improving; adj. EBITDA target Q4 2026 on track
+> **Last validated:** 2026-09-23
+> **Drift status:** On track — Q2 2026 revenue +79% YoY; FY guidance arithmetically implies positive Q4 adj. EBITDA (~+$8M); watch Pet mix shift, the one leg that weakened
 
 Lemonade is a full-stack P&C + life insurer built from scratch on AI — no legacy policy admin system, no agent network, no manual underwriting. It writes renters, homeowners, car, pet, and term life across the US and Europe, and it is the only carrier that owns every layer of the stack from pricing model to claims resolution. The "why now" is twofold: first, the AI underwriting has demonstrably improved — the gross loss ratio fell to 52% in Q4 2025 from 63% a year prior, the kind of attritional improvement that incumbents do not generate this quickly. Second, management cut reinsurance cession from ~55% to ~20% in mid-2025, retaining 80% of premium economics vs. 45% before. That cession cut drove a 159% increase in gross profit in Q1 2026 despite "only" 71% revenue growth — it is the single biggest forward lever in the P&L.
 
@@ -30,20 +30,20 @@ The primary financial risk is catastrophe exposure on the retained homeowners bo
 ---
 
 ## Scoring Summary
-_Last scored: — | Run /score-ticker LMND_
+_Last scored: 2026-09-23 | /dig LMND --score_
 
 | Criterion | Score | Evidence |
 |-----------|-------|----------|
-| Product (Love Factor) | —/5 | |
-| Pricing Power | —/5 | |
-| Leadership & Alignment | —/5 | |
-| Financial Health | —/5 | |
-| Macro Environment | —/5 | |
-| Future Potential | —/5 | |
-| **Composite** | **—/10** | |
+| Product (Love Factor) | 3/5 | Genuine differentiation — sub-3-second claims, 3.31M customers (+23%), premium/customer +8% — but personal-lines insurance renews annually and switching costs are low. Differentiated, not irreplaceable |
+| Pricing Power | 4/5 | Premium per customer +8% *while* customers grew 23%; adj. gross profit / GEP improved 26% → 34%. Capped below 5 because rate is regulator-gated, and part of the +8% is mix toward Car and Pet |
+| Leadership & Alignment | 4/5 | Founder-led (Schreiber, co-founder); 11 consecutive quarters of IFP acceleration; insider selling immaterial (~$330K). Held at 4 rather than 5 because insider ownership % was not verified in this pass and the CFO seat changes 2027-01-01 |
+| Financial Health | 4/5 | ~$1.2B cash and investments against a ~$50M FY adj. EBITDA loss; adjusted FCF positive at $18.8M; no maturity risk. Short of 5: still GAAP lossmaking at ($43.4)M/quarter and adj. FCF *fell* YoY from $25.0M |
+| Macro Environment | 3/5 | Higher rates help float income and personal-lines rate adequacy has improved, but CAT frequency and severity are rising against a book that now retains ~82% of premium, and personal lines remain intensely price-competitive |
+| Future Potential | 4/5 | 3.3M customers against ~130M US households; Car at $239M IFP is the largest headroom; AV insurance is a genuine first-mover position. Not 5 — profitability is only just arriving and Europe remains sub-scale |
+| **Composite** | **7.5/10** | (3+4+4+4+3+4) = 22/30 × 10 = 7.33 → **7.5**, bucket: **Strong** — solid hold, size appropriately |
 
-**Valuation:** — (not yet scored)
-**Growth Potential:** — (pending)
+**Valuation:** ~$4.2B market cap at $54.63 (77M weighted avg shares) ≈ 3.5× FY2026 guided revenue of $1.21–1.22B. Not scored into the composite per rubric.
+**Growth Potential:** High — FY2026 IFP guided to $1.63B, and management expects IFP growth to outpace growth spend from 2027, the operating-leverage inflection.
 
 ## Risk Flags
 _Evaluated: 2026-06-25_
@@ -65,6 +65,29 @@ _Evaluated: 2026-06-25_
 |------|-------|-------------|-----|
 | 2026-06-25 | Initial thesis established | → Neutral | First look; strong thesis but needs score and CAT exposure analysis |
 | 2026-08-26 | Morgan Stanley backs LMND's early bet on autonomous vehicle insurance | ↑ Strengthened | Sell-side validation of the AV-insurance data-moat leg established at the January 2026 Tesla FSD launch |
+| 2026-09-23 | Deep pass on Q2 2026: 8 claims tested, 5 confirmed | ↑ Strengthened | FY guidance implies Q4 adj. EBITDA of +$8M across the whole range; LAE ratio 5% vs ~9% industry is the hardest evidence yet for the Jim cost moat; cession cut further to ~18% |
+| 2026-09-23 | Pet becomes the loss-ratio problem, not homeowners | ↓ New risk | Pet IFP $543M (+55%) is about to pass Homeowners as the largest line while its gross loss ratio worsened to 74%; attritional GLR rose 54%→59% on that mix |
+| 2026-09-23 | CFO transition — Bixby to Board, Nick Stead promoted | → Neutral | Orderly internal succession announced with results; Bixby stays through 2026-12-31 then joins the Board |
+
+### Deep Pass — 2026-09-23
+*8 claims tested against the Q2 2026 8-K (item 2.02) shareholder letter, the Q2 10-Q, the item 5.02 8-K, and September Form 4/144 filings.*
+
+| Claim | Verdict | What settled it |
+|-------|---------|-----------------|
+| Revenue growth compounding | `CONFIRMED` | Q2 revenue $294M, **+79% YoY** — accelerating from +71% in Q1. IFP $1.43B, +32.4%, 11th consecutive quarter of acceleration |
+| Adj. EBITDA profitable by Q4 2026 | `CONFIRMED` | FY guide ($51)–($47)M less H1 actual ($35.8)M less Q3 guide ($23)–($20)M implies **Q4 of +$7.8M to +$8.8M — positive across the entire range**, not just at the favourable end |
+| Jim / AI claims cost advantage | `CONFIRMED` | LAE ratio hit a **record-low 5%** (from 13% at the $1B IFP mark) against an industry average of ~9%. The hardest number yet behind the cost-moat claim |
+| Reinsurance cession cut, retaining ~80% | `CONFIRMED` | New 12-month program effective 2026-07-01 cuts effective quota share from ~20% to **~18%** — retention improves to ~82%, beyond what the thesis assumed |
+| Lemonade Car hitting its stride | `CONFIRMED` | Car IFP $150M → **$239M, +59% YoY** (accelerating from +53%), with Car gross loss ratio improving 82% → 61% |
+| Loss ratios structurally improving | `WEAKENED` | True on trend — TTM gross loss ratio 70% → **59%**. But Q2's headline 60% leaned on 7pts of favourable prior-period development and a light 3% CAT quarter; **attritional GLR rose to 59%, the worst of the last five quarters** (54% in Q1) |
+| CAT concentration is the primary risk | `INTACT` | Risk is real but materially mitigated: the renewed program **expands CAT protection to up to $40M recovery per event**. Untested — Q3 is peak hurricane season and those results are not yet filed |
+| AI-native full-stack structural advantage | `INTACT` | Nothing in the quarter contradicts it; no fresh independent confirmation either |
+
+**The one thing that matters:** the profitability milestone is confirmed by arithmetic rather than promise — but the quality of the loss-ratio improvement has slipped. **Pet is now the problem line**: IFP $543M (+55% YoY) is about to overtake Homeowners as the largest book while its gross loss ratio *deteriorated* to 74%, against Homeowners at 44% and Car at 61%. The flywheel thesis says scale improves loss ratios; the fastest-growing large line is moving the wrong way, and mix shift toward it works against the thesis. Homeowners — the line the thesis flagged as the risk — is now the best performer.
+
+**Management:** CFO Tim Bixby transitions to a Class III Board seat effective 2027-01-01; Nick Stead (SVP Finance) is promoted internally. Orderly and pre-announced, with Bixby staying through the milestone quarter. Not a red flag, but the CFO who architected the cession strategy leaves the operating seat one quarter after the profitability target lands.
+
+**Insider activity:** September Form 4s show three officers selling ~6,041 shares combined at $54.63 (~$330K), one explicitly under a 10b5-1. Immaterial against ~77M shares outstanding — not a signal.
 
 ---
 
@@ -79,7 +102,10 @@ _Evaluated: 2026-06-25_
 ---
 
 ## Catalyst Timeline
-- [ ] Q2 2026 earnings — watch gross loss ratio trend and Lemonade Car IFP growth
+- [x] Q2 2026 earnings (2026-07-29) — GLR 60%/TTM 59%; Car IFP +59%. Settled by the 2026-09-23 deep pass
+- [ ] Q3 2026 earnings — the CAT test: peak hurricane season against a book retaining ~82% of premium
+- [ ] Pet loss ratio — 74% and rising while the line approaches largest-book status; the key thing to watch
+- [ ] CFO handover 2027-01-01 — Nick Stead takes the seat one quarter after the profitability milestone
 - [ ] Hurricane season 2026 (Jun–Nov) — primary CAT risk window for retained homeowners book
 - [ ] Positive adj. EBITDA — target Q4 2026 (management guided)
 - [ ] Lemonade Car expansion — "overwhelming majority" of US population coverage by 2027
