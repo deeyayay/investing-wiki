@@ -44,6 +44,9 @@
 - **2026-09-21** — FTC opens a probe into YouTube over account-suspension policies, with a potential lawsuit (scanx.trade).
   **Why it matters:** A new, distinct regulatory matter from the 09-04 Search-monopoly and 09-17 ad-tech antitrust cases already on file — targets YouTube's consumer-platform practices, not the Cloud/AI-infrastructure thesis leg directly, but worth tracking as a third open regulatory thread.
 
+- **2026-09-23 (evening)** — A new antitrust lawsuit specifically targeting Alphabet's AI business sends the stock down 2.45% (Traders Union) — a fourth, distinct regulatory thread from the 09-04 Search-monopoly win, 09-17 ad-tech ruling, and 09-21 FTC YouTube probe already on file.
+  **Why it matters:** Unconfirmed at headline level whether this targets Gemini/AI-model practices directly or is an adjacent case; ambiguous enough that it could bear on the AI-infrastructure thesis leg if it escalates — flagged for /dig rather than assumed serious.
+
 ---
 
 ## Social Mentions
@@ -82,3 +85,4 @@
 - **2026-09-22 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — FTC YouTube-probe, "can nuclear power fuel gains?" question-piece, and Googlebook hardware pre-order headlines all repeat the already-dismissed 09-21 evening items; two recirculating Q2-earnings-estimate-lift headlines were noise
 - **2026-09-22 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — the nuclear-power-contract question-piece, Googlebook hardware pre-order, and an Anthropic-IPO listicle headline all recirculate already-dismissed 09-21/09-22 items; a Meta/Wells-Fargo PT mention was a company mismatch
 - **2026-09-23 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — "$84.75B capital raise" headline recirculates the already-logged 09-07 item; Googlebook hardware pre-order and an Anthropic-IPO listicle repeat already-dismissed items; "Bill Ackman ditches a major AI stock" names no company, too vague to log
+- **2026-09-23 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged, deep-pass flagged — a new antitrust lawsuit against Alphabet's AI business (distinct from the standing Search/ad-tech/YouTube threads) escalated to /dig; "$84.75B capital raise" recirculates the already-logged 09-07 item; the Googlebook hardware launch repeats the standing "retail, not cloud/AI-infra" dismissal; an Anthropic-IPO comparison piece was opinion
