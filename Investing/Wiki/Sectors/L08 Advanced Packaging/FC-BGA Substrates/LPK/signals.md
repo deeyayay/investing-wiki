@@ -114,3 +114,4 @@
 - **2026-09-17** — 📰 BRIEF (post-open) | 1 item triaged, 0 new logged — SDAX AGM-speeches commentary piece is unrelated, no LPK-specific fact
 - **2026-09-17 (evening)** — 📰 BRIEF | 1 item triaged, 0 new logged — same SDAX AGM-speeches commentary piece (TradingView) repeats 09-17 post-open, no LPK-specific fact
 - **2026-09-23 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged, conviction ↑ — purchase LOI from a major Asian advanced-packaging manufacturer confirms glass-processing equipment selection for production ramp-up, directly confirming the core thesis; an unrelated Enablence Technologies stock-quote headline was a company mismatch, rest was recirculation of the same LOI story across outlets
+- **2026-09-24 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — H1 FY2026 earnings-call transcript and the purchase-LOI/glass-processing-equipment story (3 more outlets) all recirculate the already-logged 09-23 item, no new figure

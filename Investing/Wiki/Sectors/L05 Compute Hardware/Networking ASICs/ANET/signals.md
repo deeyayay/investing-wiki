@@ -32,6 +32,9 @@
 **2026-09-09 (post-open)** — Goldman Sachs initiates coverage with a Buy rating and $225 price target (moomoo.com).
 *Why it matters:* A second new sell-side initiation in as many weeks (after Deutsche Bank's 09-01 Buy), with a specific price target this time — a fresh confirming data point on the Ethernet-at-hyperscaler-scale thesis, though headline-level detail gives no valuation reasoning.
 
+**2026-09-24 (post-open)** — Arista patches an actively-exploited zero-day in VeloCloud Orchestrator (BleepingComputer).
+*Why it matters:* A security incident in a product line, not the core Ethernet switching business — no evidence yet it touches the AI-networking demand thesis, logged for the audit trail.
+
 ---
 
 ## Social Mentions
@@ -75,3 +78,4 @@
 | 2026-09-22 (post-open) | BRIEF | 5 items triaged, 0 new logged — "surpasses market returns"/"too risky"/"underperforms competitors" opinion pieces, a GF-Value comparison, and a routine insider-trust share sale under a preset trading plan repeat the same noise/routine pattern dismissed 09-21 |
 | 2026-09-23 (post-open) | BRIEF | 5 items triaged, 0 new logged — Q1 2026 earnings-call transcript (Fortune) recaps the already-known earnings beat, repeat pattern since 09-11; "42% revenue from two clients" explainer and an insider-sale-per-SEC-filing headline were noise/routine; decade-return listicle was noise |
 | 2026-09-23 (evening) | BRIEF | 5 items triaged, 0 new logged — Q1 2026 earnings-call transcript (Fortune) recaps the already-known earnings beat, same repeat pattern since 09-11/09-23; "quietly become a different bet," decade-return, and HPE-networking-orders headlines were opinion/noise |
+| 2026-09-24 (post-open) | BRIEF | 5 items triaged, 1 logged — actively-exploited VeloCloud Orchestrator zero-day patched is a new security fact, logged for audit trail only, no thesis linkage; Q1 2026 earnings-call transcript repeats 09-23; two routine insider option-exercise/share-sale headlines and a Madison-fund-realizing-gains 13F mention were noise/routine |
