@@ -76,3 +76,4 @@
 - **2026-09-23 (evening)** — 📰 BRIEF | 3 items triaged, 0 new logged — a microscopic-robots (Nature) headline and two WDP (Brussels-listed logistics) headlines repeat the standing company/topic mismatches recurring since 09-17
 - **2026-09-24 (post-open)** — 📰 BRIEF | 1 item triaged, 0 new logged — WDP (Brussels-listed logistics) stock-quote headline repeats the standing company mismatch recurring since 09-17
 - **2026-09-24 (evening)** — 📰 BRIEF | 1 item triaged, 0 new logged — WDP (Brussels-listed logistics) stock-quote headline repeats the standing company mismatch recurring since 09-17
+- **2026-09-25 (post-open)** — 📰 BRIEF | 3 items triaged, 0 new logged — a Soitec (SOI.PA) stock-quote headline, a Europe-semiconductor-market-size report, and a WDP (Brussels-listed logistics) stock-quote headline repeat the standing company/market mismatches recurring since 09-17
