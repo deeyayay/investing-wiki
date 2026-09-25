@@ -48,6 +48,7 @@ _Last scored: 2026-05-18 | [[Scoring Rubric]]_
 
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
+| 2026-09-24 | Q2-earnings price-target cuts reported, contrarian take says market missing bigger story | → | Inconsistent with the standing Q1 2026-verified note — unclear if this is a genuine Q2 print or a mislabeled recap of Q1; unresolved at headline level, escalated to /dig |
 | 2026-05-16 | Thesis established on add-ticker run | → Neutral | Initial entry; no prior conviction baseline to compare against |
 | 2026-04-29 | Q1 2026: record $1.1B rev (+43%), 10th GAAP quarter, 1,055K members, LPB $3B third-party originations, $3.6B partner expansion | ↑ | Every core pillar delivered simultaneously — member flywheel, FSPL cross-sell, LPB expansion, GAAP profitability; this is thesis confirmation, not just continuation |
 | 2026-09-01 | Short seller levels "Enron-esque" accounting fraud claims; CEO puts $500K of personal money against it | ↓ Flag, unresolved | Potentially thesis-breaking if the underlying allegation holds, but nothing in the headline specifies what's being alleged — not enough to move drift off On track. Escalated to /dig SOFI to read the actual report against the filed financials. |

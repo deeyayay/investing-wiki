@@ -12,8 +12,8 @@ Kioxia's BiCS FLASH 3D NAND IP and Flash Ventures fab scale make it the pure-pla
 ## Investment Thesis
 
 > **Thesis established:** 2026-06-16
-> **Last validated:** 2026-09-08
-> **Drift status:** On track — AI storage demand accelerating; NAND ASPs spiking; BiCS10 in mass production ramp. /dig 2026-09-08: Kioxia's own memory-business MD confirms 2026 capacity fully sold out with tightness into 2027 (Feb 2026 interview) — the clearest primary-adjacent confirmation of the demand leg to date. The 09-07 "Apple signs long-term NAND deal, Kioxia seen as likely partner" report remains unconfirmed by either company as of this pass.
+> **Last validated:** 2026-09-24
+> **Drift status:** On track — AI storage demand accelerating; NAND ASPs spiking; BiCS10 in mass production ramp. /dig 2026-09-08: Kioxia's own memory-business MD confirms 2026 capacity fully sold out with tightness into 2027 (Feb 2026 interview) — the clearest primary-adjacent confirmation of the demand leg to date. The 09-07 "Apple signs long-term NAND deal, Kioxia seen as likely partner" report remains unconfirmed by either company as of this pass. 09-25: CEO "taps the brakes" on NAND pricing — recurrence of the 09-09 pricing-caution watch item, not yet enough to move drift — flagged for /dig.
 
 Kioxia Holdings is the world's #3 NAND flash memory manufacturer and the only pure-play, publicly listed large-scale NAND company. It traces its lineage to Toshiba's 1987 invention of NAND flash and today operates nine fabs in Japan through Flash Ventures — a joint venture with SanDisk that splits capex 51/49, giving Kioxia cost parity with Korean competitors while retaining IP independence. The company IPO'd on the Tokyo Stock Exchange in December 2024 and has re-rated sharply as AI data infrastructure demand clarified. Revenue for FY2025 (year ended March 2025) was approximately ¥1.71 trillion (~$11.4B), with forward guidance of ¥2.18–2.27 trillion for FY2026.
 
@@ -74,6 +74,7 @@ _Last scored: — | [[Scoring Rubric]]_
 | 2026-08-27 | Kioxia commits $31.4B to boost AI chip production (Iwate facility) | ↑ | Second major capex commitment in two runs; further confirms the AI-driven NAND demand thesis. |
 | 2026-08-28 | SK hynix breaks ground on first US HBM plant (Indiana), targeting 2030 | → | Competitive/onshoring context, not a direct threat to Kioxia's Japan-based NAND scale — timeline is multi-year out. |
 | 2026-09-08 | /dig: Apple-Kioxia NAND LTA rumor unconfirmed; Kioxia exec reaffirms 2026 sold-out / 2027 tightness | → | The specific 09-07 rumor (Apple LTA, Kioxia "likely" partner) has no primary confirmation from either company — treated as an open watch item, not a fact. Independently, Kioxia's own memory-business MD (Digital Daily interview, Feb 2026) stated 2026 capacity is fully sold out with tightness expected into 2027, and Apple separately accepted a ~2x NAND price increase from Kioxia starting Q1 2026 with quarterly repricing — both reaffirm the demand/pricing-power thesis legs without resolving the specific rumor. |
+| 2026-09-24 | CEO "taps the brakes" on NAND pricing (AD HOC NEWS) | ↓ Nuance | The 09-09 pricing-caution item recurs, this time framed as active CEO restraint rather than a warning about demand — unresolved whether this is disciplined long-term-contract strategy or early spot-pricing softness; flagged for /dig. |
 
 ---
 

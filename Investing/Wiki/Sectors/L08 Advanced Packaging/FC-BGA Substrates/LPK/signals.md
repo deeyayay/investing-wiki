@@ -32,6 +32,11 @@
 - **2026-09-23** — LPKF receives a purchase LOI from a leading Asian advanced semiconductor packaging manufacturer, confirming equipment selection for production ramp-up; shares surge on the multi-million-euro order expectation (marketscreener.com, x2 outlets).
   **Why it matters:** Directly confirms the core thesis — a named (if unnamed-by-ticker) major Asian packaging manufacturer selecting LPKF's glass processing equipment for production, not just evaluation. Extends the 04-28 CPO-waveguide-shipped and Q1 2026 "first production-scale order" data points into a second, larger commercial win — evidence the HVM ramp pipeline (4-5 buyer base case per the 06-19 investor notes) is materializing.
 
+### 2026-09-24 — Market reprices the Asian packaging deal against dilution risk
+
+- **2026-09-24 (evening)** — Shares slip 12% as investors weigh the Asian chip-packaging deal against dilution risk (AD HOC NEWS); separately, iconnect007.com's own write-up of the equipment-selection story recirculates without new detail.
+  **Why it matters:** The first negative market reaction to the 09-23 LOI — the fundamental confirmation stands, but the sell-off signals investors expect the production ramp-up to be funded partly through new share issuance. A genuinely new risk dimension on top of an otherwise strengthening thesis, unresolved at headline level (size/timing of any raise unconfirmed) — flagged for /dig.
+
 ### 2026-05-14 — Q1 2026 Earnings
 - Revenue €17.1M (−32% YoY); Solar segment −€9.3M YoY to €1.3M
 - **First production-scale LIDE capacity expansion order booked**; management "in talks for additional units"
@@ -115,3 +120,4 @@
 - **2026-09-17 (evening)** — 📰 BRIEF | 1 item triaged, 0 new logged — same SDAX AGM-speeches commentary piece (TradingView) repeats 09-17 post-open, no LPK-specific fact
 - **2026-09-23 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged, conviction ↑ — purchase LOI from a major Asian advanced-packaging manufacturer confirms glass-processing equipment selection for production ramp-up, directly confirming the core thesis; an unrelated Enablence Technologies stock-quote headline was a company mismatch, rest was recirculation of the same LOI story across outlets
 - **2026-09-24 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — H1 FY2026 earnings-call transcript and the purchase-LOI/glass-processing-equipment story (3 more outlets) all recirculate the already-logged 09-23 item, no new figure
+- **2026-09-24 (evening)** — 📰 BRIEF | 3 items triaged, 1 logged, deep-pass flagged, conviction → — shares slip 12% on dilution-risk concerns tied to the 09-23 Asian packaging LOI, a new risk dimension on top of the strengthening fundamentals; the glass-processing-equipment-selection story and a Soitec stock-quote headline recirculate/mismatch

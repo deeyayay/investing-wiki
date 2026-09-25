@@ -51,6 +51,7 @@ _Last scored: — | [[Scoring Rubric]]_
 
 | Date | Event | Δ Conviction | Why |
 |------|-------|-------------|-----|
+| 2026-09-24 | Snowflake partnership floated as a new AI-growth-engine/cross-sell vector | ↑ | Unconfirmed at headline level but directly on the platform-consolidation/cross-sell-economics thesis leg if it materializes — a data-warehouse partner extends the Falcon flywheel's reach beyond endpoint/cloud telemetry |
 | 2026-08-26 | Q2 FY2027 earnings 8-K filed (items 2.02, 9.01); headlines report a "cybersecurity rout" stock reaction but carry no hard ARR/billings numbers | → | Earnings landed but the digest can't confirm whether the standing billings-deceleration risk resolved or worsened — /dig CRWD needed before this moves conviction either way. |
 | 2026-08-27 | Q2 FY2027 confirmed: record quarter, +$333M net-new ARR, raised FY guidance | ↑ | Resolves the 08-26 open question — hard numbers confirm ARR/billings accelerating rather than decelerating; directly strengthens the platform-consolidation thesis. |
 | 2026-09-01 | Fal.Con cluster: Google Cloud + Cerebras partnerships, $2B TCV, Q2 beat-and-raise | ↑ | Multiple simultaneous confirmations of the platform-consolidation/cross-sell thesis; Jensen Huang's "No.1 cybersecurity partner" comment is independent third-party validation |
