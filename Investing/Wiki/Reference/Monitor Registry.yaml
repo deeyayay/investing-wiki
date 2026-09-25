@@ -8,7 +8,7 @@
 # To add a ticker: /track TICKER [--sector "Sector Name"]
 # To add a candidate: append to the sector's candidates list below.
 
-last_updated: "2026-08-23"
+last_updated: "2026-09-25"
 
 tickers:
   # ── Insurance AI (L01 sub) ───────────────────────────────────────────────
@@ -809,6 +809,17 @@ tickers:
     score: null
     next_earnings: null
     notes: "Broad-line passives + discretes; tantalum capacitors. Closes L12 Tantalum + Power-rail MLCC/passives boxes."
+
+  VPG:
+    company: "Vishay Precision Group, Inc."
+    cik: "0001487952"
+    exchange: NYSE
+    sector: "Advanced Packaging"
+    path: "Investing/Wiki/Sectors/L08 Advanced Packaging/Passive Components/VPG.md"
+    layout: legacy
+    score: null
+    next_earnings: null
+    notes: "Precision foil resistors, strain gages, force/weighing sensors. 2010 spin-off from VSH — related lineage, separate filer (SIC 3670). Tracked 2026-09-25; reason for watching not yet recorded."
 
 # ── Candidates (not yet onboarded) ────────────────────────────────────────
 # Run /track TICKER --sector "Sector" to onboard any candidate.

@@ -51,11 +51,12 @@ subjects the KB has no ticker for yet. Both feed one digest.
 
 ## Active Coverage
 
-*Thesis established, not yet high-conviction. 23 names.*
+*Thesis established, not yet high-conviction — plus newly tracked names awaiting their first `/dig`. 18 names.*
 
 | Ticker | Name | Sector | Score | One-Line Thesis |
 |--------|------|--------|-------|-----------------|
 | LPK | LPKF Laser & Electronics… | Advanced Packaging | 6.5 | LPKF owns the sole industrial process for glass substrate via drilling, making it indispensabl… |
+| VPG | Vishay Precision Group, I… | Advanced Packaging | — | _No thesis yet — /dig VPG_ |
 | LMND | Lemonade, Inc. | Application | — | AI-native full-stack insurer using a proprietary claims data flywheel to compress loss ratios… |
 | AMZN | Amazon.com, Inc. | Cloud Infrastructure | — | AWS is the dominant AI cloud infrastructure platform, accelerating at 28% growth as proprietar… |
 | GOOGL | Alphabet Inc. | Cloud Infrastructure | — | Google Cloud's 63% revenue growth and $462B backlog make Alphabet the vertically-integrated AI… |
@@ -77,8 +78,8 @@ subjects the KB has no ticker for yet. Both feed one digest.
 
 ## Not yet covered
 
-42 of the 77 registered tickers have no One-Line Thesis, so they are absent above and
-invisible to thesis-drift triage. A further 56 ticker pages exist on disk that the
+43 of the 78 registered tickers have no One-Line Thesis, so `/brief` cannot triage them
+for drift — it can log material news against them, but has nothing to test it against. A further 56 ticker pages exist on disk that the
 registry does not claim at all (`python3 scripts/check_registry.py` lists them).
 Run `/dig TICKER` to establish a thesis, or `/track TICKER` to register an unclaimed page.
 
