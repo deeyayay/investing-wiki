@@ -65,6 +65,9 @@
 - **2026-09-21 (evening)** — Amazon and Kuehne+Nagel announce a seven-year logistics partnership, with stock options tied to service performance (finance.biggo.com); separately, an FTC ad-lawsuit headline recirculates the standing 09-01/09-02 $20B ad-fee suit.
   **Why it matters:** A new multi-year commercial partnership in the logistics/freight-forwarding segment — company-level context adjacent to, not part of, the AWS/Trainium cloud-margin thesis leg, logged for the audit trail alongside similar non-AWS commercial ties (Qualcomm warrant, AT&T Leo).
 
+- **2026-09-25 (evening)** — Amazon acquires Globalstar (GSAT) at a 23%+ premium (Stocktwits).
+  **Why it matters:** Resolves the standing 09-24-evening CERT/8-A12B filing-content-unresolved item — those were almost certainly the exchange-listing and Section-12(b) registration steps for the stock consideration in this deal. Satellite-communications M&A is company-level context adjacent to, not part of, the AWS/Trainium cloud-margin thesis leg — logged for the audit trail alongside Kuiper/Leo and the AT&T Leo tie-up.
+
 ---
 
 ## Social Mentions
@@ -113,3 +116,4 @@
 - **2026-09-24 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — "holds above $254 as earnings beat estimates" and Kelly Lawrence institutional-position mention repeat the already-dismissed 09-23 pattern; "41% undervalued as AI spending climbs" was opinion; EDGAR timed out
 - **2026-09-24 (evening)** — 📰 BRIEF | 3 items + 2 filings triaged, 2 logged — new CERT (exchange listing certification) and 8-A12B (Section 12(b) securities registration) filings, first of these types on file, content unresolved at headline level; Seeking Alpha rating upgrade argues the market misjudges the Meta Muse competitive threat; FTC ad-lawsuit headline repeats the standing 09-01/09-02 suit; a third-party-seller AI-agent product headline was a retail-segment mismatch (not AWS/Trainium)
 - **2026-09-25 (post-open)** — 📰 BRIEF | 4 items triaged, 0 new logged — UBS's Generac-rating reiteration "on Amazon data center deal" repeats the standing Jefferies-Generac-partnership mismatch pattern (Generac-specific, not an AWS/Trainium fact); the $100M Indiana manufacturing-push headline is a retail/fulfillment investment, not AWS-specific; a Pingora Partners institutional-position story and an Amazon-vs-Meta AI-stock comparison were routine/noise; EDGAR timed out again
+- **2026-09-25 (evening)** — 📰 BRIEF | 3 items + 2 filings triaged, 1 logged — Amazon-acquires-Globalstar (23%+ premium) headline resolves the standing 09-24-evening CERT/8-A12B filing-content-unresolved item; a Pingora Partners institutional-position story repeats the routine 13F-type pattern; EDGAR timed out again

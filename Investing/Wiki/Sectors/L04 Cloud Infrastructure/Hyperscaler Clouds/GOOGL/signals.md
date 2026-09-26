@@ -47,6 +47,9 @@
 - **2026-09-23 (evening)** — A new antitrust lawsuit specifically targeting Alphabet's AI business sends the stock down 2.45% (Traders Union) — a fourth, distinct regulatory thread from the 09-04 Search-monopoly win, 09-17 ad-tech ruling, and 09-21 FTC YouTube probe already on file.
   **Why it matters:** Unconfirmed at headline level whether this targets Gemini/AI-model practices directly or is an adjacent case; ambiguous enough that it could bear on the AI-infrastructure thesis leg if it escalates — flagged for /dig rather than assumed serious.
 
+- **2026-09-25 (evening)** — Google moves up its Project Suncatcher space-based data center timeline, targeting an Oct. 1 launch (Benzinga).
+  **Why it matters:** A specific accelerated date on a moonshot space-compute initiative — adjacent to, not part of, the Google Cloud growth/CapEx thesis leg, logged for the audit trail alongside the standing $180-190B CapEx commitment.
+
 ---
 
 ## Social Mentions
@@ -89,3 +92,4 @@
 - **2026-09-24 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — the antitrust-lawsuit headline recirculates the already-logged/flagged 09-23 evening item, no new detail; ARK-loads-up, Alphabet-vs-Amazon-IPO-benefit, and Spark-vs-Muse pieces were 13F-noise/opinion; "Trump TV launches on YouTube" was unrelated; standing antitrust /dig flag unchanged
 - **2026-09-24 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — the AI-business antitrust-lawsuit headline again recirculates the already-flagged 09-23 evening item; "Alphabet vs. Amazon"/"$124B Anthropic stake" and ARK-loads-up pieces repeat the standing Anthropic-IPO opinion pattern dismissed since 09-14; "Spark will beat Muse" was opinion; standing antitrust /dig flag unchanged
 - **2026-09-25 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — the $124B Anthropic-stake/$2T-IPO framing and the $84.75B capital-raise headline both recirculate already-dismissed items (09-14/09-07); ARK-loads-up-before-earnings and "cheap at 17x earnings" pieces (x2) were opinion/recap; standing antitrust /dig flag unchanged
+- **2026-09-25 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — Project Suncatcher's moved-up Oct. 1 launch date is a new specific fact, logged for the audit trail (not part of the Cloud-growth thesis leg); the $124B Anthropic-stake/$2T-IPO framing and $84.75B capital-raise headline again recirculate already-dismissed items (09-14/09-07); "17x earnings" valuation pieces (x2) repeat the standing recap pattern; standing antitrust /dig flag unchanged

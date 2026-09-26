@@ -56,6 +56,9 @@
 - **2026-09-20** — Citi "warns of rising AI risks" even as CrowdStrike shares have doubled this year (TradingKey); separately, valuation-debate commentary recirculates.
   **Why it matters:** First analyst caution specifically framed around AI risk — distinct from the 09-17 Jensen-Huang antitrust/"AI safety" sentiment pieces already dismissed as indirect. The headline doesn't specify whether "AI risks" means valuation froth or agentic-AI security exposure, which cut in opposite directions for the platform-consolidation thesis; flagged for /dig.
 
+- **2026-09-25 (evening)** — DOJ ends its investigation into CrowdStrike's government contracts with no charges (GuruFocus).
+  **Why it matters:** Removes a standing legal/regulatory overhang rather than confirming a specific platform-consolidation thesis leg — logged for the audit trail; the Snowflake-partnership "AI growth engine" framing continues to recirculate with no new detail since 09-24 evening.
+
 ---
 
 ## Social Mentions
@@ -103,3 +106,4 @@
 - **2026-09-24 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — "draws upgrades"/"jumps as Wall Street hikes AI-security targets" headlines (x3, no firm named) repeat the already-dismissed 09-23 opinion/listicle pattern; standing Q1/Q2 guidance-reaction /dig item unchanged
 - **2026-09-24 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged, conviction ↑ — a Snowflake partnership is floated as a new AI-growth-engine/cross-sell vector, extending the Falcon-flywheel platform-consolidation thesis; "draws upgrades as AI security momentum builds" (timothysykes.com, StocksToTrade) again repeats the dismissed 09-23/09-24 opinion pattern; "why CRWD stock is up today" was noise; standing Q1/Q2 guidance-reaction /dig item unchanged
 - **2026-09-25 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — the Snowflake-partnership "AI growth engine" framing recirculates the already-logged 09-24 evening item; a stock-underperform recap, CrowdStrike-vs-Figma comparison, Forrester-ranking piece, and a retail-investor-sentiment mention were noise/routine; standing Q1/Q2 guidance-reaction /dig item unchanged
+- **2026-09-25 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — DOJ ends its investigation into CrowdStrike's government contracts, no charges, a new regulatory-overhang-removal fact; the Snowflake-partnership framing again recirculates the already-logged 09-24 evening item; CrowdStrike-vs-Figma comparison and a Forrester-ranking recap repeat the standing pattern; standing Q1/Q2 guidance-reaction /dig item unchanged
