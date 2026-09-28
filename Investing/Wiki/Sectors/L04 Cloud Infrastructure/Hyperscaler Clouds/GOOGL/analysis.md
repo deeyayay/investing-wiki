@@ -55,6 +55,8 @@ _Last scored: — | [[Scoring Rubric]]_
 | 2026-09-04 | Gemini 3.8 launch + DOJ antitrust ruling win | ↑ Strengthened | New model generation extends the proprietary inference-stack leg; the antitrust win is the first favorable outcome logged against the standing "DOJ antitrust remedy" key risk. |
 | 2026-09-07 | Upsized $84.75B capital raise | ↑ Strengthened | Direct funding vehicle for the $180-190B CapEx commitment leg — confirms the buildout can be financed at scale. |
 | 2026-09-17 | Ad-tech antitrust case: ordered to relax rules and appoint a monitor (no breakup) | ↑ Strengthened | A distinct case from the 09-04 Search-monopoly win — the remedy here is rule changes + oversight, not structural divestiture, which is the outcome that would have threatened the ad-revenue engine funding the buildout. Coverage frames it as easing breakup risk. |
+| 2026-09-28 | MediaTek next-gen AI chip report + Piper Sandler TPU-driven PT raise | ↑ Strengthened | New custom-silicon breadth (MediaTek collaboration) plus sell-side confirmation of TPU demand both extend the "deepest proprietary inference stack" leg — headline-level, no spec/deal detail yet. |
+| 2026-09-28 | €403M EU fine | ↓ Weakened (minor) | A fifth distinct regulatory thread (Search monopoly, ad-tech, YouTube FTC, AI-business suit, now this) — individually small relative to Alphabet's scale, but the accumulation is worth a /dig check on whether any single thread is escalating toward the CapEx-funding advertising flywheel. |
 
 ---
 

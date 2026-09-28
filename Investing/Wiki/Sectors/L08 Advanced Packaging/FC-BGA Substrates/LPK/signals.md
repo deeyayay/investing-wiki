@@ -37,6 +37,11 @@
 - **2026-09-24 (evening)** — Shares slip 12% as investors weigh the Asian chip-packaging deal against dilution risk (AD HOC NEWS); separately, iconnect007.com's own write-up of the equipment-selection story recirculates without new detail.
   **Why it matters:** The first negative market reaction to the 09-23 LOI — the fundamental confirmation stands, but the sell-off signals investors expect the production ramp-up to be funded partly through new share issuance. A genuinely new risk dimension on top of an otherwise strengthening thesis, unresolved at headline level (size/timing of any raise unconfirmed) — flagged for /dig.
 
+### 2026-09-28 — WpHG Article 40 disclosure notice
+
+- **2026-09-28 (post-open)** — LPKF publishes a "Release according to Article 40, Section 1 of the WpHG [German Securities Trading Act]" for Europe-wide distribution (TradingView); content not given at headline level.
+  **Why it matters:** §40 WpHG governs voting-rights/major-shareholding notifications under German securities law — exactly the kind of disclosure that would confirm or rule out the standing 09-24 dilution-risk question (a new share issuance would typically trigger this notification requirement). Ambiguous at headline level whether this is the resolution of that question or an unrelated shareholding change; escalated to the standing /dig LPK flag rather than assumed either way.
+
 ### 2026-05-14 — Q1 2026 Earnings
 - Revenue €17.1M (−32% YoY); Solar segment −€9.3M YoY to €1.3M
 - **First production-scale LIDE capacity expansion order booked**; management "in talks for additional units"
@@ -122,3 +127,4 @@
 - **2026-09-24 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — H1 FY2026 earnings-call transcript and the purchase-LOI/glass-processing-equipment story (3 more outlets) all recirculate the already-logged 09-23 item, no new figure
 - **2026-09-24 (evening)** — 📰 BRIEF | 3 items triaged, 1 logged, deep-pass flagged, conviction → — shares slip 12% on dilution-risk concerns tied to the 09-23 Asian packaging LOI, a new risk dimension on top of the strengthening fundamentals; the glass-processing-equipment-selection story and a Soitec stock-quote headline recirculate/mismatch
 - **2026-09-25 (post-open)** — 📰 BRIEF | 4 items triaged, 0 new logged — "LPKF Laser Slips 12%" and the glass-processing-equipment-selection story recirculate the already-logged 09-24 evening dilution-risk item; Soitec and Sivers Semiconductors stock-quote headlines were company mismatches; standing /dig flag (dilution-risk vs. commercial win) unchanged
+- **2026-09-28 (post-open)** — 📰 BRIEF | 1 item triaged, 1 logged, deep-pass flagged — new WpHG Article 40 voting-rights/major-shareholding disclosure notice, content unread at headline level — could resolve or be unrelated to the standing dilution-risk question, added to the /dig flag

@@ -38,6 +38,9 @@
 - **2026-09-18 (evening)** — AMD brings ROCm software support to RISC-V servers for AI workloads (simplywall.st, Yahoo Finance).
   **Why it matters:** Extends the open-source ROCm stack to a new CPU architecture, broadening the "credible open-source alternative" ecosystem play beyond x86/hyperscaler deployments — a software-moat data point, not a revenue one; logged for the audit trail.
 
+- **2026-09-28 (post-open)** — Cerebras Systems partners with AMD to deliver accelerated AI performance (Stocktwits, via CBRS stock move).
+  **Why it matters:** A new named ecosystem partnership with another AI-silicon player extends AMD's platform reach beyond its own GPU line — breadth-of-adoption evidence for the "credible alternative" thesis leg, though headline gives no deal specifics (compute commitment, integration depth).
+
 ---
 
 ## Social Mentions
@@ -84,3 +87,4 @@
 - **2026-09-24 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — "Advanced Micro Jumps as Agentic AI Arrives," "$100 invested 20 years ago," and a QRG-Capital institutional-position mention repeat the already-dismissed pattern; "AMD hits $1 trillion, can Oracle's 50K-GPU deployment justify it" recaps the standing trillion-dollar-milestone recap; "dot-com and subprime merged" bear framing was opinion
 - **2026-09-25 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — BofA's $720 PT raise repeats the standing analyst-PT-reiteration pattern (no stated reasoning) dismissed since 09-14; a tokenized-stock (Binance) price page, "beyond cloud AI workloads," "what's going on Thursday," and an Nvidia-alternative-framing piece were noise/recap
 - **2026-09-25 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — BofA's $720 PT (now with an "Agentic AI CPUs" framing across 4 outlets) recirculates the same 09-25-post-open note, still no distinct new reasoning beyond a headline-writer's framing; "$1 trillion stock" milestone recap repeats the standing pattern
+- **2026-09-28 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Cerebras partners with AMD to deliver accelerated AI performance, a new named ecosystem partnership; "AI Momentum Train... Pausing Accumulation" (Seeking Alpha) is a single contributor's opinion, not an institutional analyst action; "Beat on Revenue, Profit, and Guidance — So Why Did the Stock Drop 7%" and the SK hynix/Solidigm-IPO weekly roundup recap known earnings context, no new figure

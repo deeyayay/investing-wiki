@@ -17,6 +17,7 @@
 | 2026-09-04 | 8-K (item 5.02 — officer/director departure, election, or compensatory arrangement) filed | SEC EDGAR | Specifics not disclosed at headline level; a leadership-change filing warrants confirmation before assessing thesis relevance — queued for /dig. |
 | 2026-09-09 | 8-K (items 3.02, 7.01, 8.01, 9.01) filed; separately DEF 14A, ARS, and DEFA14A (annual-meeting proxy materials) filed same window | SEC EDGAR | Distinct from the still-unresolved 09-04 item-5.02 filing — item 3.02 (unregistered equity sale) is unusual and not yet explained at headline level; the proxy/annual-report cluster (DEF 14A/ARS/DEFA14A) is routine. Both 8-Ks now queued for /dig. |
 | 2026-09-14 | Weekly recap: 30–40TB HAMR deployment underway, nearline capacity locked to 2028 | TradingView | Concrete multi-year demand-visibility data point — capacity contracted out to 2028 directly confirms the exabyte-tier cold/nearline archive thesis leg beyond the current up-cycle. |
+| 2026-09-28 (post-open) | Seagate says smarter storage unlocks Nvidia GPU efficiency | scanx.trade | A direct company-sourced claim tying Seagate's storage architecture to Nvidia GPU efficiency — distinct from the "bigger AI connection than you think" opinion piece dismissed 09-25, this is Seagate itself framing the cold/nearline-tier thesis leg in GPU-efficiency terms; headline gives no technical detail. |
 
 ---
 
@@ -59,3 +60,4 @@ _None yet — seeded on onboarding._
 | 2026-09-24 (evening) | 📰 BRIEF | 5 items triaged, 0 new logged — "retired 2028 notes, buybacks next" repeats the already-dismissed 09-17/09-24 pattern; ex-dividend notice, "STX breaks trendline" PT piece, "stock rises 4.85%," and a competitor-underperform recap were noise/routine |
 | 2026-09-25 (post-open) | 📰 BRIEF | 5 items triaged, 0 new logged — "guidance rises" repeats the already-known record-2026-results/raised-guidance print, dismissed repeatedly; a competitor-underperform recap, "bigger AI connection than you think," and an rStock/Saudi-Riyal price-conversion page were noise/routine |
 | 2026-09-25 (evening) | 📰 BRIEF | 1 filing triaged, 0 new logged — a Form 4 (beneficial-ownership change) is routine, same pattern dismissed since 08-25 |
+| 2026-09-28 (post-open) | 📰 BRIEF | 5 items triaged, 1 logged — Seagate's own GPU-efficiency/smarter-storage framing is a new company-sourced thesis-confirming claim; "Buy Hold or Sell Above $900" and rStock currency-conversion pages, a Form 4 mention, and a competitor recap were noise/routine |

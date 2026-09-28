@@ -65,6 +65,9 @@
 - **2026-09-22** — Palo Alto Networks launches an AI-powered continuous security testing service built on Anthropic and OpenAI models (Moomoo, Yahoo Finance, Investing.com — 3 outlets, same launch).
   **Why it matters:** A new, named AI-native product — distinct from the 09-01 Console acquisition and the 09-15 "Secure AI Coding" item — extends the platform-consolidation/AI-native thesis leg via organic product development, not just M&A.
 
+- **2026-09-28 (post-open)** — BTIG maintains its Buy rating and raises its Palo Alto Networks price target to $425 from $404 (富途牛牛, TradingView, marketscreener.com — 3 outlets, same action).
+  **Why it matters:** A new named analyst target raise, distinct from the 09-21 Morgan Stanley $410 raise — a second sell-side voice moving its target higher within the same week, incremental confirmation of the platform-consolidation/NGS-ARR thesis leg.
+
 ---
 
 ## Social Mentions
@@ -112,3 +115,4 @@
 - **2026-09-24 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — Q4 2026 earnings-call transcript and the Unit 42/AI-defense-launch headlines (Claude/GPT framing) again recirculate already-logged items, no new figure; "resistance levels in focus" recap was noise
 - **2026-09-25 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — the AI-driven-cybersecurity-platform-with-Anthropic/OpenAI-models launch and Q4 2026 earnings-call transcript recirculate already-logged items (09-22/09-24); Unit 42 AI Defense and "AI agent security moves into runtime" pieces recap the same launch; an IBD Stock-of-the-Day piece was opinion
 - **2026-09-25 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — the AI-driven-cybersecurity-platform-with-Anthropic/OpenAI-models launch and "AI agent security moves into runtime" again recirculate already-logged items; CEO "SaaSpocalypse Is Dead" quote cites unnamed "analyst upgrades," treated as opinion consistent with the standing unnamed-analyst-action dismissal pattern; two "Strengthening from Enterprise Security Consolidation"/Unit 42 recap headlines repeat the standing launch coverage
+- **2026-09-28 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — BTIG raises its PT to $425 from $404, a new named analyst action distinct from the 09-21 Morgan Stanley raise; the AI Defense/AI-agent-security-launch coverage again recirculates already-logged items; an NVIDIA Agent Safety Platform piece was primarily about NVIDIA, not PANW-specific
