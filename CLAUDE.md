@@ -232,7 +232,7 @@ python3 scripts/check_registry.py    # verify; exit 1 on any error
 
 ## Taxonomy (12-Layer AI Buildout Stack)
 
-The AI buildout is modeled as a **single vertical dependency stack** — 12 layers from Application (top) down to Critical Minerals (bedrock) — wrapped by 3 cross-cutting rails and capped by the Edge & Physical AI deployment surface. Each layer *runs on* the layer below it. The taxonomy is mapped **word-for-word from the *AI Buildout Supply Chain* blueprint graphic**. See `Investing/Wiki/Reference/AI Buildout Stack.md` for the authoritative layer definitions + the machine-readable JSON the dashboard consumes.
+The AI buildout is modeled as a **single vertical dependency stack** — 12 layers from Application (top) down to Critical Minerals (bedrock) — wrapped by 3 cross-cutting rails and capped by the Edge & Physical AI deployment surface, plus a Space & Comms connectivity rail. That rail is a wiki addition and is not in the blueprint. Each layer *runs on* the layer below it. The taxonomy is mapped **word-for-word from the *AI Buildout Supply Chain* blueprint graphic**. See `Investing/Wiki/Reference/AI Buildout Stack.md` for the authoritative layer definitions + the machine-readable JSON the dashboard consumes.
 
 ```
 L01 Application              ← AI assistants · agentic platforms · enterprise SaaS · vertical apps

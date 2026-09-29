@@ -6,7 +6,7 @@ allowed-tools: Bash(git:*), Bash(python3 scripts/check_registry.py:*), Read, Edi
 # Daily Dashboard — AI Buildout Stack Viewer
 
 Deploys the dashboard to GitHub Pages via `gh-pages`. The HTML lives in `Investing/Output/Dashboard/index.html`. It embeds two objects:
-- **`STACK`** — the canonical 12-layer vertical map (Application → Critical Minerals), mapped word-for-word from the *AI Buildout Supply Chain* blueprint graphic, wrapped by 3 cross-cutting rails (Power / Thermal / Security) + the Edge & Physical AI deployment surface, rendered as the full supply-chain map under the Stocks tab. Source of truth: the JSON block in `Investing/Wiki/Reference/AI Buildout Stack.md`.
+- **`STACK`** — the canonical 12-layer vertical map (Application → Critical Minerals), mapped word-for-word from the *AI Buildout Supply Chain* blueprint graphic, wrapped by 3 cross-cutting rails (Power / Thermal / Security), a Space & Comms connectivity rail (a wiki addition, not in the blueprint; flow `link`), and the Edge & Physical AI deployment surface, rendered as the full supply-chain map under the Stocks tab. Source of truth: the JSON block in `Investing/Wiki/Reference/AI Buildout Stack.md`.
 - **`DATA`** — the per-sector tier/company backbone (`sectors`, `tech_races`) used by the drill-down, ticker-wiki, and search. Each `STACK` sub-box maps to a `(sector, tier)` in `DATA.sectors`.
 
 **Dashboard URL:** `https://deeyayay.github.io/investing-wiki/`

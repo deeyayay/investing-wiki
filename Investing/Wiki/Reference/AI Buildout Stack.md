@@ -1,7 +1,7 @@
 # AI Buildout Stack — Canonical Layer Map
-*Last updated: 2026-06-10 — adopted the 12-layer vertical model as the canonical taxonomy*
+*Last updated: 2026-09-29. Added the Space & Comms rail, a wiki addition beyond the blueprint. Previously 2026-06-10: adopted the 12-layer vertical model as the canonical taxonomy.*
 
-This file is the **authoritative taxonomy** for the wiki, mapped word-for-word from the *AI Buildout Supply Chain* blueprint graphic. The AI buildout is modeled as a single vertical dependency stack — **12 layers** from Application (top) down to Critical Minerals (bedrock), wrapped by **3 cross-cutting rails** (Power Infrastructure, Thermal Management, Security) and capped by the **Edge & Physical AI deployment surface**.
+This file is the **authoritative taxonomy** for the wiki, mapped word-for-word from the *AI Buildout Supply Chain* blueprint graphic. The AI buildout is modeled as a single vertical dependency stack — **12 layers** from Application (top) down to Critical Minerals (bedrock), wrapped by **3 cross-cutting rails** (Power Infrastructure, Thermal Management, Security) and capped by the **Edge & Physical AI deployment surface**. A fourth rail, **Space & Comms**, is a wiki addition that is not in the blueprint graphic (see below).
 
 > *Cross-cutting at every layer: **Power comes in**, **Heat comes out**, **Security wraps around** the whole stack. **Edge & Physical AI** is the deployment paradigm — where the stack meets the physical world.*
 
@@ -37,9 +37,12 @@ The `daily-dashboard` skill reads the JSON block below to regenerate the dashboa
 | **Power Infrastructure** | left | power in | Powers the entire stack: generation → grid → rack → board | Energy & Power, Semiconductors (power devices) |
 | **Thermal Management** | right | heat out | Cools compute & memory (cross-cuts L4–L9) | Compute Infrastructure (cooling) |
 | **Security** | right | wraps | Secures every layer of the stack | Cybersecurity |
+| **Space & Comms** *(wiki addition)* | left | links the edge | Orbit-to-ground connectivity (LEO/GEO broadband, ground gateways, terminals, spectrum) plus the launch and satellite supply chain behind it | Space & Comms |
 | **Edge & Physical AI** | right | *deployment surface* | Where the stack deploys into the physical world — plus the parallel-compute paradigms (quantum, neuromorphic, photonic) that sit beside it | Robotics & Edge AI |
 
 Power, Thermal and Security are true **cross-cutting rails** — they touch every layer. **Edge & Physical AI** is reclassified as the stack's **deployment surface** (the physical-world counterpart to L01's software output), carrying two tag groups: *Edge & Physical AI* and *Parallel Compute Paradigms*. It is folded into the single ecosystem view — not a separate tab.
+
+**Space & Comms** (added 2026-09-29) is not in the blueprint. It was added so the Space & Comms sector (RKLB, ASTS and the other names in its `_Supply Chain Map.md`) has a place on the stack. It is a connectivity rail, not a "touches every layer" rail: it reaches the stack at the edge (satellite backhaul for edge AI beyond fiber, robot telemetry uplink) and at the data-center edge (gateway backhaul). It has two groups, *Orbit to Ground* and *Launch & Build*, each box wired to a Space & Comms tier. Its flow badge is `link` ("⇄ links the edge").
 
 ---
 
@@ -204,6 +207,20 @@ The previous five-dimension stack is superseded but maps cleanly onto the layers
         {"label":"SiC (high-voltage)","sector":"Compute Hardware","slug":"compute-hardware","tier":"Compound Semiconductor & SiC Substrate","chips":["WOLF","STM"]},
         {"label":"Power Management ICs","sector":"Electronic Components","slug":"electronic-components","tier":"Power Management ICs & Gate Drivers","chips":["MPWR"]},
         {"label":"MLCC and Passive Components","sector":"Electronic Components","slug":"electronic-components","tier":"MLCC Manufacturing","chips":["VSH"]}
+      ]}
+    ]},
+    {"id":"space","side":"left","flow":"link","title":"Space & Comms","cap":"Links the edge — orbit-to-ground connectivity carries AI where fiber doesn't reach.","groups":[
+      {"label":"Orbit to Ground","boxes":[
+        {"label":"LEO / GEO Connectivity","sector":"Space & Comms","slug":"space-comms","tier":"Satellite Connectivity Services","chips":["ASTS","IRDM","GSAT","VSAT"]},
+        {"label":"Ground Stations & Gateways","sector":"Space & Comms","slug":"space-comms","tier":"Ground Segment & Network Operations","chips":["VSAT","GSAT","KTOS"]},
+        {"label":"User Terminals","sector":"Space & Comms","slug":"space-comms","tier":"User Terminal Manufacturing","chips":["VSAT"]},
+        {"label":"Spectrum & Orbital Slots","sector":"Space & Comms","slug":"space-comms","tier":"Spectrum & Orbital Operations","chips":["IRDM","GSAT"]}
+      ]},
+      {"label":"Launch & Build","boxes":[
+        {"label":"Launch Vehicles","sector":"Space & Comms","slug":"space-comms","tier":"Launch Services","chips":["RKLB","KTOS"]},
+        {"label":"Satellite Buses","sector":"Space & Comms","slug":"space-comms","tier":"Satellite Bus Manufacturing","chips":["RKLB"]},
+        {"label":"Payloads (RF, optical, sensing)","sector":"Space & Comms","slug":"space-comms","tier":"Payload Manufacturing","chips":["KTOS"]},
+        {"label":"Rad-Hard Parts & Environmental Test","sector":"Space & Comms","slug":"space-comms","tier":"Satellite Manufacturing Support & Testing","chips":["KTOS"]}
       ]}
     ]},
     {"id":"thermal","side":"right","flow":"out","title":"Thermal Management","cap":"Heat comes out — cools compute & memory across L4–L9.","groups":[
