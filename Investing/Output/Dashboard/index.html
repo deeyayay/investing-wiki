@@ -518,12 +518,12 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
   <span class="gen-date">Generated: 2026-06-27</span>
 </header>
 <div id="tab-nav">
-  <button class="tab-btn active" data-tab="supply-chain" onclick="showTab('supply-chain')">Supply Chain</button>
-  <button class="tab-btn" data-tab="tech-races" onclick="showTab('tech-races')">Tech Races</button>
+  <button class="tab-btn active" data-tab="news" onclick="showTab('news')">AI &amp; Robotics News</button>
   <button class="tab-btn" data-tab="watchlist" onclick="showTab('watchlist')">Watchlist</button>
-  <button class="tab-btn" data-tab="news" onclick="showTab('news')">AI &amp; Robotics News</button>
+  <button class="tab-btn" data-tab="tech-races" onclick="showTab('tech-races')">Tech Races</button>
+  <button class="tab-btn" data-tab="supply-chain" onclick="showTab('supply-chain')">Supply Chain</button>
 </div>
-<div id="l0"></div>
+<div id="l0" hidden></div>
 <div id="l1" hidden></div>
 <div id="l2" hidden></div>
 <div id="l3" hidden></div>
@@ -1196,6 +1196,7 @@ function showLayer(n){
   document.getElementById("tech-races").hidden=true;
   document.getElementById("tech-race-detail").hidden=true;
   document.getElementById("watchlist").hidden=true;
+  document.getElementById("news").hidden=true;
   document.querySelectorAll(".tab-btn").forEach(b=>b.classList.toggle("active",b.dataset.tab==="supply-chain"));
 }
 
@@ -3017,6 +3018,9 @@ async function initNewsTab(force){
   _newsInitialized=true;
   renderNewsTab(_wlRefresh);
 }
+
+// News is the landing tab — the daily check-in starts from headlines.
+showTab('news');
 </script>
 </body>
 </html>
