@@ -2651,14 +2651,27 @@ async function fetchWatchlistRefresh(){
 let _wlSha=null;
 let _wlInitialized=false;
 
-function wlPat(){return localStorage.getItem('gh-pat')||'';}
-function wlSetPat(p){localStorage.setItem('gh-pat',p.trim());}
-function wlClearPat(){localStorage.removeItem('gh-pat');}
+// The editing token lives in localStorage, which private windows, some
+// webviews and file/data previews block — and there even *reading* it throws.
+// Every access is guarded so a blocked store means "read-only", never a tab
+// stuck on "Loading…". Reading the watchlist needs no token (public repo).
+let _wlStorageOk=null;
+let _wlTokenRejected=false;
+function wlStorageOk(){
+  if(_wlStorageOk===null){
+    try{const k='__wl_probe';localStorage.setItem(k,'1');localStorage.removeItem(k);_wlStorageOk=true;}
+    catch(e){_wlStorageOk=false;}
+  }
+  return _wlStorageOk;
+}
+function wlPat(){try{return localStorage.getItem('gh-pat')||'';}catch(e){return '';}}
+function wlSetPat(p){try{localStorage.setItem('gh-pat',p.trim());return true;}catch(e){_wlStorageOk=false;return false;}}
+function wlClearPat(){try{localStorage.removeItem('gh-pat');}catch(e){}}
 
 function wlSavePat(){
   const v=(document.getElementById('wl-pat-input')?.value||'').trim();
   if(!v){alert('Please enter a PAT.');return;}
-  wlSetPat(v);
+  if(!wlSetPat(v)){alert('This browser is blocking local storage, so the token can\'t be saved here. Editing needs a normal (non-private) browser window.');initWatchlistTab(true);return;}
   initWatchlistTab(true);
 }
 
@@ -2682,10 +2695,18 @@ function daysUntil(dateStr){
 }
 
 async function fetchWatchlistMd(){
+  _wlTokenRejected=false;
   const pat=wlPat();
   const headers={'Accept':'application/vnd.github.v3+json'};
   if(pat)headers['Authorization']='Bearer '+pat;
-  const res=await fetch(WL_API,{headers,cache:'no-store'});
+  let res=await fetch(WL_API,{headers,cache:'no-store'});
+  // An expired or revoked token gets 401/403 even though the public read needs
+  // none — retry anonymously so a stale token costs editing, not the live list.
+  if(pat&&(res.status===401||res.status===403)){
+    delete headers['Authorization'];
+    res=await fetch(WL_API,{headers,cache:'no-store'});
+    if(res.ok)_wlTokenRejected=true;
+  }
   if(!res.ok)throw new Error('GitHub API: HTTP '+res.status);
   const json=await res.json();
   _wlSha=json.sha;
@@ -2929,12 +2950,17 @@ function wlCardClick(ev,tk,sector){
 
 function renderWatchlist(entries,fallback){
   const container=document.getElementById('watchlist');
-  const pat=wlPat();
+  const pat=_wlTokenRejected?'':wlPat();
   const canEdit=!!pat&&!fallback;
+  const rejectedHtml=_wlTokenRejected
+    ?'<div class="wl-refresh-warn">⚠️ GitHub rejected your saved token (expired or revoked), so editing is off. The list below is live — enter a new token to edit again.</div>'
+    :'';
   const headerAuthHtml=pat&&!fallback
     ?'<div class="wl-auth-ok"><span>🔓 Editing enabled</span><button class="wl-btn" style="margin-left:8px" onclick="wlClearPat();initWatchlistTab(true)">Sign out</button></div>'
     :'';
-  const patPromptHtml=!pat||fallback
+  const patPromptHtml=!wlStorageOk()
+    ?'<div class="wl-pat-prompt"><strong>Read-only here</strong> — this browser is blocking local storage (a private window or an embedded preview), so an editing token can\'t be saved. The watchlist below is live; open the dashboard in a normal browser window to add or remove tickers.</div>'
+    :!pat||fallback
     ?'<div class="wl-pat-prompt"><strong>Enable editing</strong> — enter a GitHub PAT with <code>contents:write</code> scope on this repo to add/remove tickers from the dashboard.<br><div class="wl-pat-row"><input id="wl-pat-input" class="wl-pat-input" type="password" placeholder="github_pat_…" /><button class="wl-btn primary" onclick="wlSavePat()">Save &amp; Reload</button></div><div class="wl-pat-note">Token stored in your browser\'s localStorage only — it never leaves your device.</div></div>'
     :'';
   const addRowHtml=canEdit
@@ -2985,7 +3011,7 @@ function renderWatchlist(entries,fallback){
     :'';
   container.innerHTML=
     '<div class="wl-page-hdr"><div class="wl-title">Watchlist</div>'+headerAuthHtml+'</div>'
-    +refreshBanner+patPromptHtml+addRowHtml+body+emptyHtml+topicsHtml+discHtml;
+    +refreshBanner+rejectedHtml+patPromptHtml+addRowHtml+body+emptyHtml+topicsHtml+discHtml;
 }
 
 async function initWatchlistTab(force){
