@@ -100,10 +100,11 @@ stock, not a destination of its own.
   opens on a click anywhere except its own controls (Dig, remove, filing
   links) or at the end of a text selection. The ticker itself is a real link,
   so it also works from the keyboard.
-- **Up/down comes from the stack's layer order, not `DATA.edges`.** Those edges
-  still use pre-rename sector names ("Semiconductors", "Photonics & Optical")
-  and match none of the current sectors. Repair them in
-  `Ecosystem Interrelationships.md` before using them anywhere.
+- **Up/down comes from the stack's layer order, not `DATA.edges`.** The layer
+  order covers every placed stock. The edges are only ~12 sector-level
+  chokepoint flows, too sparse for most tiers. The edges were remapped to the
+  current sector and tier names on 2026-09-29. Every one resolves against
+  `DATA.sectors`, so they are safe to use.
 - **Views:** every top-level container is listed in `VIEWS` and switched with
   `showView()`. Add a new view there. Don't hand-hide containers, because a
   view left off a hide-list renders underneath the next one.
@@ -276,6 +277,11 @@ Run all reads in parallel.
 - From `## Dependency Graph` extract: `from`, `from_tier`, `to`, `to_tier`, `flow`, `product`, `chokepoint`
 - Keep only rows where `chokepoint === "Y"` (after normalizing "Yes" → "Y")
 - Deduplicate by `(from, to)` sector pair — keep first occurrence
+- Skip self-loops (`from === to`); they're intra-sector and carry no cross-sector signal
+- **Validate before writing:** every `from`/`to` must be a `DATA.sectors[].name`, and every
+  ` + `-separated part of `from_tier`/`to_tier` must be one of that sector's tiers
+  (`Demand Signal` is an allowed pseudo-tier). A miss means the table drifted from the
+  taxonomy again — fix the table, don't write names the dashboard can't resolve
 
 ### Phase 2 — Update STACK + DATA in index.html
 
