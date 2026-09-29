@@ -384,8 +384,28 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 /* Tech-race tags: teal, the one hue not already carrying meaning in the feed. */
 .nw-race{font-size:10px;padding:1px 8px;border-radius:99px;background:oklch(94% .045 200);color:oklch(38% .09 200);border:1px solid oklch(80% .07 200);font-weight:600;text-decoration:none;white-space:nowrap;max-width:100%;overflow:hidden;text-overflow:ellipsis}
 .nw-race:hover{background:oklch(38% .09 200);color:#fff;border-color:oklch(38% .09 200)}
-.nw-chip.race{border-color:oklch(80% .07 200);color:oklch(38% .09 200)}
-.nw-chip.race.on{background:oklch(38% .09 200);border-color:oklch(38% .09 200);color:#fff}
+.nw-races{margin:18px 0 0}
+.nw-races-hdr{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:oklch(38% .09 200);margin-bottom:8px}
+.nw-races-quiet{font-size:12px;color:var(--muted);padding:8px 12px;border:1px dashed var(--border);border-radius:8px}
+.nw-races-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.nw-rcard{display:flex;flex-direction:column;gap:5px;padding:12px 14px;border-radius:10px;background:oklch(97% .02 200);border:1px solid oklch(85% .05 200);border-left:3px solid oklch(45% .09 200);cursor:pointer;min-width:0}
+.nw-rcard:hover{border-color:oklch(45% .09 200)}
+.nw-rcard:focus-visible{outline:2px solid oklch(45% .09 200);outline-offset:2px}
+.nw-rcard.on{background:oklch(93% .045 200);box-shadow:inset 0 0 0 1px oklch(45% .09 200)}
+.nw-rcard-top{display:flex;align-items:center;gap:8px;min-width:0}
+.nw-rcard-n{font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nw-rcard-name{font-size:14px;font-weight:700;line-height:1.3}
+.nw-rcard-pref{font-size:12px;color:var(--muted);line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.nw-rcard-lead{font-size:12px;line-height:1.45;padding-top:6px;border-top:1px solid oklch(88% .03 200);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.nw-rcard-lead b{font-family:monospace;color:oklch(38% .09 200);margin-right:3px}
+.nw-rcard-link{font-size:11px;font-weight:600;color:oklch(38% .09 200);text-decoration:none;align-self:flex-start;margin-top:auto}
+.nw-rcard-link:hover{text-decoration:underline}
+/* Phone: a swipeable row, so three cards don't push the feed off the first screen. */
+@media(max-width:600px){
+  .nw-races-row{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -16px;padding:0 16px 4px;scrollbar-width:none}
+  .nw-races-row::-webkit-scrollbar{display:none}
+  .nw-rcard{flex:0 0 82%;scroll-snap-align:start}
+}
 .nw-kind{font-size:9px;font-weight:700;letter-spacing:.06em;padding:1px 5px;border-radius:3px;background:oklch(89% .14 258);color:var(--d3);vertical-align:1px}
 .nw-drift{font-size:10px;padding:1px 7px;border-radius:99px;background:var(--amber-bg);color:var(--amber);border:1px solid oklch(82% .14 62)}
 .nw-empty{text-align:center;padding:60px 20px;color:var(--muted);font-size:13px;line-height:2}
@@ -2948,16 +2968,8 @@ function renderNewsChips(){
   const counts={};
   _newsItems.forEach(it=>it.themes.forEach(t=>{counts[t]=(counts[t]||0)+1;}));
   const ids=['filing'].concat(NEWS_THEMES.map(t=>t.id),['other']).filter(id=>counts[id]);
-  // Race filters lead the row: only races with news today appear, so the row
-  // doubles as a "which races moved" readout.
-  const rc={};
-  _newsItems.forEach(it=>it.races.forEach(r=>{rc[r]=(rc[r]||0)+1;}));
-  const raceChips=NW_RACES.filter(r=>rc[r.id]).map(r=>{
-    const key='race:'+r.id;
-    return '<button class="nw-chip race'+(_newsFilter.themes.has(key)?' on':'')+'" onclick="newsToggleTheme(\''+key+'\')" title="Tech race">'
-      +'&#9873; '+esc(r.name)+'<span class="nw-chip-n">'+rc[r.id]+'</span></button>';
-  }).join('');
-  el.innerHTML=raceChips+ids.map(id=>{
+  renderNewsRaces();
+  el.innerHTML=ids.map(id=>{
     const th=NEWS_THEME_BY_ID[id];
     const cls='nw-chip'+(th&&th.robo?' robo':'')+(_newsFilter.themes.has(id)?' on':'');
     return '<button class="'+cls+'" onclick="newsToggleTheme(\''+id+'\')">'+esc(newsThemeLabel(id))
@@ -2965,6 +2977,42 @@ function renderNewsChips(){
   }).join('')
   +((_newsFilter.themes.size||_newsFilter.q||_newsFilter.sector)
     ?'<button class="nw-clear" onclick="newsClearFilters()">Clear filters</button>':'');
+}
+
+// Races in play: one card per race that drew headlines in this digest, ranked
+// by its strongest headline. Quiet races are left out, so the strip answers
+// "which races moved" before the feed is read. A card toggles the same filter
+// the theme chips use; the race page is one link away.
+function renderNewsRaces(){
+  const el=document.getElementById('nw-races');
+  if(!el)return;
+  const by={};
+  _newsItems.forEach(it=>it.races.forEach(id=>{(by[id]=by[id]||[]).push(it);}));
+  const ids=Object.keys(by).sort((a,b)=>
+    Math.max(...by[b].map(i=>i.impact))-Math.max(...by[a].map(i=>i.impact))
+    ||by[b].length-by[a].length);
+  if(!ids.length){
+    el.innerHTML='<div class="nw-races-quiet">&#9873; No tech-race news in this digest — every race is quiet.</div>';
+    return;
+  }
+  el.innerHTML='<div class="nw-races-hdr">&#9873; Races in play <span class="nw-chip-n">'+ids.length+' of '+NW_RACES.length+'</span></div>'
+    +'<div class="nw-races-row">'+ids.map(id=>{
+      const r=DATA.tech_races.find(x=>x.id===id);
+      const items=by[id].slice().sort((a,b)=>b.impact-a.impact);
+      const lead=items[0];
+      const tks=[...new Set(items.map(i=>i.ticker))];
+      const key='race:'+id;
+      return '<div class="nw-rcard'+(_newsFilter.themes.has(key)?' on':'')+'" role="button" tabindex="0"'
+        +' onclick="newsToggleTheme(\''+key+'\')" onkeydown="if(event.key===\'Enter\'||event.key===\' \'){event.preventDefault();newsToggleTheme(\''+key+'\')}"'
+        +' title="Show only this race\'s headlines">'
+        +'<div class="nw-rcard-top"><span class="conviction-badge '+esc(r.conviction.toLowerCase())+'">'+esc(r.conviction)+'</span>'
+        +'<span class="nw-rcard-n">'+items.length+' headline'+(items.length>1?'s':'')+' · '+esc(tks.join(' · '))+'</span></div>'
+        +'<div class="nw-rcard-name">'+esc(r.name)+'</div>'
+        +'<div class="nw-rcard-pref">'+esc(r.preference)+'</div>'
+        +'<div class="nw-rcard-lead"><b>'+esc(lead.ticker)+'</b> '+esc(lead.title)+'</div>'
+        +'<a class="nw-rcard-link" href="#" onclick="event.stopPropagation();newsOpenRace(\''+id+'\');return false">Race page &rarr;</a>'
+        +'</div>';
+    }).join('')+'</div>';
 }
 
 function renderNewsItem(it){
@@ -3034,6 +3082,7 @@ function renderNewsTab(digest){
     +'<div class="nw-sub">Every headline from the latest <code>/brief</code> pass, rolled up across tickers and tagged by theme. '
     +'Generated '+esc(gen)+' UTC · '+(digest.window_hours||'?')+'h window · '+(digest.scanned||0)+' tickers scanned'
     +((digest.errors||[]).length?' · '+digest.errors.length+' fetch errors':'')+'.</div>'
+    +'<div id="nw-races" class="nw-races"></div>'
     +'<div class="nw-stats">'
     +'<div class="nw-stat"><div class="nw-stat-val">'+_newsItems.length+'</div><div class="nw-stat-lbl">Headlines</div></div>'
     +'<div class="nw-stat"><div class="nw-stat-val">'+(digest.with_news||0)+'</div><div class="nw-stat-lbl">Tickers</div></div>'
