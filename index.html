@@ -1050,18 +1050,18 @@ const DATA = {
     }
   ],
   edges: [
-    { from: "Materials & Mining", from_tier: "Silicon Refining", to: "Semiconductors", to_tier: "Wafer Production", flow: "Material", product: "Polysilicon ingot → CZ-grown boule", chokepoint: "Y" },
-    { from: "Semiconductors", from_tier: "Power Devices", to: "Energy & Power", to_tier: "Power Conversion", flow: "Component", product: "SiC MOSFET / GaN HEMT → inverter and rectifier modules", chokepoint: "Y" },
-    { from: "Semiconductors", from_tier: "Design (Compute)", to: "Compute Infrastructure", to_tier: "Server Assembly", flow: "Component", product: "GPU / CPU / ASIC → compute node PCB", chokepoint: "Y" },
-    { from: "Photonics & Optical", from_tier: "Laser Sources", to: "Semiconductors", to_tier: "Lithography Equipment", flow: "Component", product: "EUV light source → ASML scanner", chokepoint: "Y" },
-    { from: "Photonics & Optical", from_tier: "Transceiver Mfg", to: "Compute Infrastructure", to_tier: "Networking", flow: "Component", product: "400G / 800G optical transceiver → spine switch port", chokepoint: "Y" },
-    { from: "Electronic Components", from_tier: "Substrates (ABF)", to: "Semiconductors", to_tier: "Packaging (OSAT)", flow: "Material", product: "ABF substrate → flip-chip BGA package", chokepoint: "Y" },
-    { from: "Energy & Power", from_tier: "Power Conversion", to: "Compute Infrastructure", to_tier: "Power Distribution", flow: "Service", product: "800VDC bus → rack-level DC-DC", chokepoint: "Y" },
-    { from: "Materials & Mining", from_tier: "Rare Earth Separation", to: "Robotics & Edge AI", to_tier: "Actuators & Motors", flow: "Material", product: "Nd₂O₃ → NdFeB alloy → servo motor", chokepoint: "Y" },
-    { from: "Materials & Mining", from_tier: "Rare Earth Separation", to: "Energy & Power", to_tier: "Primary Generation", flow: "Material", product: "NdFeB permanent magnet → wind turbine PMSG", chokepoint: "Y" },
-    { from: "Semiconductors", from_tier: "Design (Edge AI)", to: "Robotics & Edge AI", to_tier: "Edge Compute Module", flow: "Component", product: "Nvidia Jetson Orin / Ambarella CV3 → edge inference module", chokepoint: "Y" },
-    { from: "Compute Infrastructure", from_tier: "Server Assembly", to: "AI Model Infrastructure", to_tier: "Distributed Training Orchestration", flow: "Service", product: "GPU compute hours (H100/B200 DGX clusters) → model pre-training runs", chokepoint: "Y" },
-    { from: "Semiconductors", from_tier: "Design (Compute)", to: "AI Model Infrastructure", to_tier: "Distributed Training Orchestration", flow: "Component", product: "GPU die (H100/B200) + packaged HBM → training accelerator module", chokepoint: "Y" }
+    { from: "Critical Minerals", from_tier: "Silicon & SiC Precursor Production", to: "Compute Hardware", to_tier: "Silicon Wafer Production", flow: "Material", product: "Polysilicon ingot → CZ-grown boule", chokepoint: "Y" },
+    { from: "Compute Hardware", from_tier: "Compound Semiconductor & SiC Substrate", to: "Power Infrastructure", to_tier: "Power Electronics & Conversion", flow: "Component", product: "SiC MOSFET / GaN HEMT → inverter and rectifier modules", chokepoint: "Y" },
+    { from: "Compute Hardware", from_tier: "Chip Design (Fabless & IDM)", to: "Cloud Infrastructure", to_tier: "Compute Node Design & ODM Assembly", flow: "Component", product: "GPU / CPU / ASIC (packaged) → compute node PCB", chokepoint: "Y" },
+    { from: "Interconnect", from_tier: "Photonic Device Fabrication", to: "Compute Hardware", to_tier: "Lithography Equipment", flow: "Component", product: "EUV light source (CO2 laser-driven tin plasma) → ASML scanner", chokepoint: "Y" },
+    { from: "Interconnect", from_tier: "Transceiver & Module Integration", to: "Cloud Infrastructure", to_tier: "High-Speed Networking", flow: "Component", product: "400G / 800G / 1.6T optical transceiver → spine switch port", chokepoint: "Y" },
+    { from: "Electronic Components", from_tier: "IC Substrate Manufacturing", to: "Compute Hardware", to_tier: "Advanced Packaging (CoWoS / SoIC)", flow: "Material", product: "ABF (Ajinomoto build-up film) substrate → flip-chip BGA package", chokepoint: "Y" },
+    { from: "Power Infrastructure", from_tier: "Power Electronics & Conversion", to: "Cloud Infrastructure", to_tier: "Data Center Power Infrastructure", flow: "Service", product: "800VDC bus → rack-level DC-DC → board power rail", chokepoint: "Y" },
+    { from: "Critical Minerals", from_tier: "Rare Earth Separation & Critical Mineral Refining", to: "Edge & Physical AI", to_tier: "Actuators & Motors", flow: "Material", product: "Nd₂O₃, Pr₆O₁₁, Dy₂O₃ → NdFeB alloy → sintered permanent magnet → BLDC servo motor, traction motor, voice coil actuator", chokepoint: "Y" },
+    { from: "Critical Minerals", from_tier: "Rare Earth Separation & Critical Mineral Refining", to: "Power Infrastructure", to_tier: "Primary Power Generation", flow: "Material", product: "NdFeB permanent magnet (Nd, Pr, Dy alloy) → PMSG rotor in direct-drive wind turbine → wind generation", chokepoint: "Y" },
+    { from: "Compute Hardware", from_tier: "Chip Design (Fabless & IDM)", to: "Edge & Physical AI", to_tier: "Edge Compute Module", flow: "Component", product: "Nvidia Jetson Orin / Ambarella CV3 / Hailo-8 NPU SoC → robot edge inference module", chokepoint: "Y" },
+    { from: "Cloud Infrastructure", from_tier: "Compute Node Design & ODM Assembly + Hyperscaler Cloud Platforms", to: "AI Model", to_tier: "Distributed Training Orchestration", flow: "Service", product: "GPU compute hours (H100/B200 DGX/HGX clusters, NVLink fabric) → model pre-training and large-scale fine-tuning runs", chokepoint: "Y" },
+    { from: "Compute Hardware", from_tier: "Chip Design (Fabless & IDM)", to: "AI Model", to_tier: "Distributed Training Orchestration", flow: "Component", product: "GPU die (H100 / B200 / MI300X) + packaged HBM → training accelerator module (SXM, OAM)", chokepoint: "Y" }
   ],
   tech_races: [
     {
@@ -2185,9 +2185,10 @@ function renderL3(ticker,sName){
 // The supply-chain map is context for a stock, not a destination of its own:
 // the Stocks tab lands on every tracked name grouped by stack layer, and each
 // stock page carries a panel placing it on the stack. The full map is one link
-// away from both. DATA.edges is not used here — its sector names predate the
-// layer rename and match nothing — so up/down comes from the stack's own layer
-// order and connector labels, which are current by construction.
+// away from both. Up/down comes from the stack's own layer order and connector
+// labels, which cover every placed stock. DATA.edges (renamed to current
+// sectors 2026-09-29) holds only ~12 sector-level chokepoint flows, too sparse
+// to describe most tiers.
 let _stockPos=null;
 function stockPositions(){
   if(_stockPos)return _stockPos;
