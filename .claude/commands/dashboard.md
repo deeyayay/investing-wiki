@@ -95,6 +95,11 @@ stock, not a destination of its own.
   - peers in the same tier
   The panel leads with the placement whose KB tier supplies the facts, so
   every line describes the same box.
+- **Every way into a stock goes through `openStockPage()`:** Stocks chips,
+  peer chips, search, news ticker chips and Watchlist cards. A Watchlist card
+  opens on a click anywhere except its own controls (Dig, remove, filing
+  links) or at the end of a text selection. The ticker itself is a real link,
+  so it also works from the keyboard.
 - **Up/down comes from the stack's layer order, not `DATA.edges`.** Those edges
   still use pre-rename sector names ("Semiconductors", "Photonics & Optical")
   and match none of the current sectors. Repair them in
