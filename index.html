@@ -381,6 +381,11 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 .nw-line2{font-size:10px;color:var(--muted);margin-top:5px;display:flex;gap:7px;flex-wrap:wrap;align-items:center}
 .nw-tag{font-size:10px;padding:1px 7px;border-radius:99px;background:var(--bg3);color:var(--muted)}
 .nw-tag.robo{background:oklch(93% .06 310);color:var(--d4);font-weight:600}
+/* Tech-race tags: teal, the one hue not already carrying meaning in the feed. */
+.nw-race{font-size:10px;padding:1px 8px;border-radius:99px;background:oklch(94% .045 200);color:oklch(38% .09 200);border:1px solid oklch(80% .07 200);font-weight:600;text-decoration:none;white-space:nowrap;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+.nw-race:hover{background:oklch(38% .09 200);color:#fff;border-color:oklch(38% .09 200)}
+.nw-chip.race{border-color:oklch(80% .07 200);color:oklch(38% .09 200)}
+.nw-chip.race.on{background:oklch(38% .09 200);border-color:oklch(38% .09 200);color:#fff}
 .nw-kind{font-size:9px;font-weight:700;letter-spacing:.06em;padding:1px 5px;border-radius:3px;background:oklch(89% .14 258);color:var(--d3);vertical-align:1px}
 .nw-drift{font-size:10px;padding:1px 7px;border-radius:99px;background:var(--amber-bg);color:var(--amber);border:1px solid oklch(82% .14 62)}
 .nw-empty{text-align:center;padding:60px 20px;color:var(--muted);font-size:13px;line-height:2}
@@ -990,6 +995,8 @@ const DATA = {
   tech_races: [
     {
       id: "nand-vs-hbm4",
+      keywords: ["nand", "flash", "ssd", "enterprise ssd", "qlc", "hbm", "hbm4", "memory pricing", "nand pricing", "memory prices", "ymtc", "kioxia"],
+      signature: ["hbm4", "enterprise ssd", "nand pricing"],
       name: "NAND vs. HBM4",
       sector_group: "AI Ecosystem",
       preference: "NAND over HBM4 for the agentic AI demand wave",
@@ -1021,6 +1028,8 @@ const DATA = {
     },
     {
       id: "compute-architecture",
+      keywords: ["ai chip", "ai chips", "custom chip", "custom chips", "custom silicon", "asic", "asics", "xpu", "tpu", "trainium", "mtia", "maia", "cpu", "cpus", "npu", "arm-based", "graviton", "neoverse", "x86", "risc-v", "cuda"],
+      signature: ["custom asic", "custom ai chip", "trainium", "mtia", "risc-v"],
       name: "Compute Architecture Bifurcation",
       sector_group: "AI Ecosystem",
       preference: "CPU (orchestration) + Custom ASIC (training/inference) — GPU dominant but bifurcating",
@@ -1054,6 +1063,8 @@ const DATA = {
     },
     {
       id: "optical-interconnect",
+      keywords: ["co-packaged", "cpo", "pluggable", "transceiver", "transceivers", "optical engine", "silicon photonics", "800g", "1.6t", "3.2t", "eml", "laser", "optical interconnect"],
+      signature: ["co-packaged optics", "cpo", "silicon photonics", "1.6t", "3.2t"],
       name: "Optical Interconnect",
       sector_group: "AI Ecosystem",
       preference: "CPO (co-packaged optics) is the structural winner — pluggable extends 2–3 more years",
@@ -1086,6 +1097,8 @@ const DATA = {
     },
     {
       id: "connectomics-storage",
+      keywords: ["hbf", "high bandwidth flash", "hamr", "hdd", "hdds", "hard drive", "hard drives", "nearline", "cold storage", "archive", "ai storage", "cxl", "neuromorphic", "akida", "edge ai", "connectome", "connectomics", "exabyte"],
+      signature: ["hbf", "high bandwidth flash", "hamr", "connectomics", "neuromorphic"],
       name: "Memory & Storage for Connectomics & Artificial-Brain Workloads",
       sector_group: "AI Ecosystem",
       preference: "A tiered 'petabytes + speed' stack — HBF & QLC NAND for capacity-at-bandwidth, HAMR HDD for cold archive, photonic interconnect to move it — not a single HBM play",
@@ -2286,8 +2299,9 @@ function openRace(id) {
     +'<div class="race-section"><div class="race-section-hdr">Investment Cases</div>'
     +'<div class="race-two-col"><div class="race-col"><div class="race-col-hdr bull">Bull Case</div>'+bullHtml+'</div>'
     +'<div class="race-col"><div class="race-col-hdr bear">Bear / Risk</div>'+bearHtml+'</div></div></div>';
-  ["l0","l1","l2","l3","tech-races"].forEach(id=>document.getElementById(id).hidden=true);
+  ["l0","l1","l2","l3","tech-races","watchlist","news"].forEach(id=>document.getElementById(id).hidden=true);
   document.getElementById("tech-race-detail").hidden=false;
+  window.scrollTo(0,0);
 }
 
 function openTickerFromRace(raceId, ticker) {
@@ -2773,12 +2787,38 @@ const NEWS_THEMES=[
   {id:'earnings',label:'Earnings & Guidance',kw:['earnings','guidance','revenue','results','beats','misses','outlook','forecast','eps','margin','margins','quarter','quarterly','q1','q2','q3','q4','backlog','bookings']},
   {id:'analyst',label:'Analyst Moves',kw:['upgrade','upgrades','downgrade','downgrades','price target','initiates coverage','initiated coverage','rating','overweight','underweight','outperform','buy rating','sell rating']}
 ];
-NEWS_THEMES.forEach(t=>{
-  const alts=t.kw.slice().sort((a,b)=>b.length-a.length)
+function nwKeywordRe(kw){
+  if(!kw||!kw.length)return null;
+  const alts=kw.slice().sort((a,b)=>b.length-a.length)
     .map(k=>k.replace(/[.*+?^${}()|[\]\\]/g,'\\$&').replace(/[-\s]+/g,'[-\\s]+'));
-  t.re=new RegExp('(^|[^\\w])(?:'+alts.join('|')+')(?![\\w])','i');
-});
+  return new RegExp('(^|[^\\w])(?:'+alts.join('|')+')(?![\\w])','i');
+}
+NEWS_THEMES.forEach(t=>{t.re=nwKeywordRe(t.kw);});
 const NEWS_THEME_BY_ID={};NEWS_THEMES.forEach(t=>{NEWS_THEME_BY_ID[t.id]=t;});
+
+// ---- tech-race tags ------------------------------------------------------
+// A headline joins a race when it names one of the race's technologies AND is
+// about a ticker in the race's exposure map — ticker alone is too noisy (most
+// NVDA news has nothing to do with a compute-architecture race). `signature`
+// terms are specific enough to tag a headline under ANY ticker, so a TSMC story
+// about co-packaged optics still lands on the optics race. Both lists live in
+// Technology Preferences.md next to each race.
+const NW_RACES=(DATA.tech_races||[]).filter(r=>r.status!=='Resolved').map(r=>({
+  id:r.id,name:r.name,
+  tickers:new Set((r.tickers||[]).map(t=>t.ticker)),
+  re:nwKeywordRe(r.keywords),sig:nwKeywordRe(r.signature)
+}));
+const NW_RACE_BY_ID={};NW_RACES.forEach(r=>{NW_RACE_BY_ID[r.id]=r;});
+function newsRacesFor(title,ticker,kind){
+  if(kind==='filing')return [];
+  return NW_RACES.filter(r=>(r.sig&&r.sig.test(title))
+    ||(r.re&&r.tickers.has(ticker)&&r.re.test(title))).map(r=>r.id);
+}
+function newsOpenRace(id){
+  document.getElementById('news').hidden=true;
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.toggle('active',b.dataset.tab==='tech-races'));
+  openRace(id);
+}
 
 function newsThemesFor(title,kind){
   const hits=NEWS_THEMES.filter(t=>t.re.test(title)).map(t=>t.id);
@@ -2850,6 +2890,7 @@ function buildNewsItems(digest){
       out.push({ticker:t.ticker,company:t.company||'',sector:t.sector||'',
         drift:t.drift||'',date:h.d||'',title:h.t,src:h.src||'',
         kind:h.kind||'news',url:h.url||'',themes:newsThemesFor(h.t,h.kind),
+        races:newsRacesFor(h.t,t.ticker,h.kind||'news'),
         impact:sc[0],impactTag:sc[1],impactTier:nwTier(sc[0])});
     });
   });
@@ -2864,7 +2905,8 @@ function newsFiltered(){
   return _newsItems.filter(it=>{
     if(NW_TIER_RANK[it.impactTier]<minTier)return false;
     if(_newsFilter.sector&&it.sector!==_newsFilter.sector)return false;
-    if(_newsFilter.themes.size&&!it.themes.some(t=>_newsFilter.themes.has(t)))return false;
+    if(_newsFilter.themes.size&&!it.themes.some(t=>_newsFilter.themes.has(t))
+      &&!it.races.some(r=>_newsFilter.themes.has('race:'+r)))return false;
     if(q&&!(it.title.toLowerCase().includes(q)||it.ticker.toLowerCase().includes(q)
       ||it.company.toLowerCase().includes(q)||it.src.toLowerCase().includes(q)))return false;
     return true;
@@ -2906,7 +2948,16 @@ function renderNewsChips(){
   const counts={};
   _newsItems.forEach(it=>it.themes.forEach(t=>{counts[t]=(counts[t]||0)+1;}));
   const ids=['filing'].concat(NEWS_THEMES.map(t=>t.id),['other']).filter(id=>counts[id]);
-  el.innerHTML=ids.map(id=>{
+  // Race filters lead the row: only races with news today appear, so the row
+  // doubles as a "which races moved" readout.
+  const rc={};
+  _newsItems.forEach(it=>it.races.forEach(r=>{rc[r]=(rc[r]||0)+1;}));
+  const raceChips=NW_RACES.filter(r=>rc[r.id]).map(r=>{
+    const key='race:'+r.id;
+    return '<button class="nw-chip race'+(_newsFilter.themes.has(key)?' on':'')+'" onclick="newsToggleTheme(\''+key+'\')" title="Tech race">'
+      +'&#9873; '+esc(r.name)+'<span class="nw-chip-n">'+rc[r.id]+'</span></button>';
+  }).join('');
+  el.innerHTML=raceChips+ids.map(id=>{
     const th=NEWS_THEME_BY_ID[id];
     const cls='nw-chip'+(th&&th.robo?' robo':'')+(_newsFilter.themes.has(id)?' on':'');
     return '<button class="'+cls+'" onclick="newsToggleTheme(\''+id+'\')">'+esc(newsThemeLabel(id))
@@ -2919,6 +2970,8 @@ function renderNewsChips(){
 function renderNewsItem(it){
   const tags=it.themes.map(t=>'<span class="nw-tag'+(NEWS_THEME_BY_ID[t]&&NEWS_THEME_BY_ID[t].robo?' robo':'')+'">'
     +esc(newsThemeLabel(t))+'</span>').join('');
+  const races=it.races.map(id=>'<a class="nw-race" href="#" title="Open this tech race" onclick="newsOpenRace(\''+id+'\');return false">&#9873; '
+    +esc(NW_RACE_BY_ID[id].name)+'</a>').join('');
   // Ticker-level thesis state. The full text goes in the tooltip — dumping it
   // inline made every row a three-line amber blob with no state distinction.
   const dSt=driftState(it.drift);
@@ -2939,7 +2992,7 @@ function renderNewsItem(it){
     +'<div class="nw-line2">'
     +(it.src?'<span>'+esc(it.src)+'</span>':'')
     +(it.sector?'<span>· '+esc(it.sector)+'</span>':'')
-    +impact+drift+tags
+    +impact+drift+races+tags
     +'</div></div></div>';
 }
 
