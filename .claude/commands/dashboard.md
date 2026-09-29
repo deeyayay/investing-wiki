@@ -6,7 +6,7 @@ allowed-tools: Bash(git:*), Bash(python3 scripts/check_registry.py:*), Read, Edi
 # Daily Dashboard — AI Buildout Stack Viewer
 
 Deploys the dashboard to GitHub Pages via `gh-pages`. The HTML lives in `Investing/Output/Dashboard/index.html`. It embeds two objects:
-- **`STACK`** — the canonical 12-layer vertical map (Application → Critical Minerals), mapped word-for-word from the *AI Buildout Supply Chain* blueprint graphic, wrapped by 3 cross-cutting rails (Power / Thermal / Security) + the Edge & Physical AI deployment surface, rendered as the homepage. Source of truth: the JSON block in `Investing/Wiki/Reference/AI Buildout Stack.md`.
+- **`STACK`** — the canonical 12-layer vertical map (Application → Critical Minerals), mapped word-for-word from the *AI Buildout Supply Chain* blueprint graphic, wrapped by 3 cross-cutting rails (Power / Thermal / Security) + the Edge & Physical AI deployment surface, rendered as the full supply-chain map under the Stocks tab. Source of truth: the JSON block in `Investing/Wiki/Reference/AI Buildout Stack.md`.
 - **`DATA`** — the per-sector tier/company backbone (`sectors`, `tech_races`) used by the drill-down, ticker-wiki, and search. Each `STACK` sub-box maps to a `(sector, tier)` in `DATA.sectors`.
 
 **Dashboard URL:** `https://deeyayay.github.io/investing-wiki/`
@@ -73,6 +73,35 @@ before the classifier existed. Keep the two in step when editing either.
 headline, not the ticker's thesis, so it cannot know that a routine-looking item
 matters to one specific name. `/brief`'s triage is the real verdict; this is the
 floor that exists on every item of every run.
+
+### Tab order and the Stocks tab
+
+Tabs follow the use-case order: **News** (landing) → **Watchlist** → **Tech
+Races** → **Stocks**. There is no Supply Chain tab; the map is context for a
+stock, not a destination of its own.
+
+- **Stocks landing** lists every ticker in `TICKER_MAP` or on a stack, grouped
+  by AI Buildout layer, then the rails, then names only on the Robotics /
+  Healthcare stacks, then "Not on a stack yet". Solid chips have a KB tier;
+  dashed chips are on the map but not onboarded. A filter matches symbol or
+  company name. "Browse the full supply-chain map →" opens the stack (l0).
+- **Supply chain position panel** sits at the top of every stock page:
+  - where the stock sits, up to 3 placements: layer › box, with a chokepoint mark
+  - its role (the company `notes` from its tier)
+  - Moat, Capital intensity, Margins and Chokepoint for the tier
+  - what the tier does, cut to its first sentence
+  - Feeds ↑ / Depends on ↓: the neighbouring layers, with the stack's
+    connector labels quoted
+  - peers in the same tier
+  The panel leads with the placement whose KB tier supplies the facts, so
+  every line describes the same box.
+- **Up/down comes from the stack's layer order, not `DATA.edges`.** Those edges
+  still use pre-rename sector names ("Semiconductors", "Photonics & Optical")
+  and match none of the current sectors. Repair them in
+  `Ecosystem Interrelationships.md` before using them anywhere.
+- **Views:** every top-level container is listed in `VIEWS` and switched with
+  `showView()`. Add a new view there. Don't hand-hide containers, because a
+  view left off a hide-list renders underneath the next one.
 
 ### Tech-race tags on the news feed
 
