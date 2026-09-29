@@ -78,8 +78,16 @@ floor that exists on every item of every run.
 
 News is the landing tab. Each headline is checked against every non-Resolved
 race in `DATA.tech_races`, and a match adds a teal ⚑ chip to the row that opens
-the race page. The filter row also gets one chip per race that had news that
-day, so it shows at a glance which races moved.
+the race page.
+
+A **Races in play** strip sits at the top of News: one card per race that drew
+headlines in this digest (quiet races are left out), ranked by its strongest
+headline. Each card shows conviction, headline count and tickers, the race's
+preference, and its lead headline. Clicking a card filters the feed to that
+race, and its "Race page →" link opens the race. If no race matched, the strip
+collapses to a one-line "every race is quiet" note rather than disappearing,
+so an empty strip still means something. On phones the cards become a
+swipeable row so they don't push the feed off the first screen.
 
 A headline joins a race when **either** of these holds:
 - it contains one of the race's `signature` terms, under any ticker (the terms
