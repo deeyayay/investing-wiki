@@ -186,6 +186,7 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 .rail-card.thermal{--rail-accent:oklch(62% .12 215);background:oklch(97% .03 215)}
 .rail-card.security{--rail-accent:oklch(55% .17 300);background:oklch(97% .035 300)}
 .rail-card.edge{--rail-accent:oklch(60% .18 350);background:oklch(97% .04 350)}
+.rail-card.space{--rail-accent:oklch(48% .15 265);background:oklch(97% .025 265)}
 .rail-title{font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
 .rail-cap{font-size:10px;color:var(--muted);margin:2px 0 10px;line-height:1.4}
 .rail-group{margin-bottom:9px}
@@ -1436,6 +1437,20 @@ const STACKS={
         {"label":"MLCC and Passive Components","sector":"Electronic Components","slug":"electronic-components","tier":"MLCC Manufacturing","chips":["VSH"]}
       ]}
     ]},
+    {"id":"space","side":"left","flow":"link","title":"Space & Comms","cap":"Links the edge — orbit-to-ground connectivity carries AI where fiber doesn't reach.","groups":[
+      {"label":"Orbit to Ground","boxes":[
+        {"label":"LEO / GEO Connectivity","sector":"Space & Comms","slug":"space-comms","tier":"Satellite Connectivity Services","chips":["ASTS","IRDM","GSAT","VSAT"]},
+        {"label":"Ground Stations & Gateways","sector":"Space & Comms","slug":"space-comms","tier":"Ground Segment & Network Operations","chips":["VSAT","GSAT","KTOS"]},
+        {"label":"User Terminals","sector":"Space & Comms","slug":"space-comms","tier":"User Terminal Manufacturing","chips":["VSAT"]},
+        {"label":"Spectrum & Orbital Slots","sector":"Space & Comms","slug":"space-comms","tier":"Spectrum & Orbital Operations","chips":["IRDM","GSAT"]}
+      ]},
+      {"label":"Launch & Build","boxes":[
+        {"label":"Launch Vehicles","sector":"Space & Comms","slug":"space-comms","tier":"Launch Services","chips":["RKLB","KTOS"]},
+        {"label":"Satellite Buses","sector":"Space & Comms","slug":"space-comms","tier":"Satellite Bus Manufacturing","chips":["RKLB"]},
+        {"label":"Payloads (RF, optical, sensing)","sector":"Space & Comms","slug":"space-comms","tier":"Payload Manufacturing","chips":["KTOS"]},
+        {"label":"Rad-Hard Parts & Environmental Test","sector":"Space & Comms","slug":"space-comms","tier":"Satellite Manufacturing Support & Testing","chips":["KTOS"]}
+      ]}
+    ]},
     {"id":"thermal","side":"right","flow":"out","title":"Thermal Management","cap":"Heat comes out — cools compute & memory across L4–L9.","groups":[
       {"label":"Cooling Stack","boxes":[
         {"label":"Air Cooling (legacy)","sector":"Cloud Infrastructure","slug":"cloud-infrastructure","tier":"Thermal Management & Cooling","chips":[]},
@@ -1591,7 +1606,7 @@ function _chipHtml(tk,fallbackSector,ctxLabel,ctxFn){
   const args="'"+tk+"','"+sName+"'"+(ctxLabel?",'"+String(ctxLabel).replace(/'/g,"\\'")+"','"+String(ctxFn||"").replace(/'/g,"\\'")+"'":"");
   return '<span class="chip" onclick="event.stopPropagation();openStackTicker('+args+')">'+esc(tk)+'</span>';
 }
-function _railFlow(f){return f==="in"?"\u2193 power in":f==="out"?"\u2191 heat out":f==="wrap"?"\u21bb wraps every layer":"";}
+function _railFlow(f){return f==="in"?"\u2193 power in":f==="out"?"\u2191 heat out":f==="wrap"?"\u21bb wraps every layer":f==="link"?"\u21c4 links the edge":"";}
 // One compact rail sub-box card — wired to its KB tier (clickable) or a muted gap.
 function _railBoxCard(b,railTitle){
   if(b.gap){
@@ -1670,7 +1685,7 @@ function renderL0(){
     }
     return html;
   }).join("");
-  const defaultIntro='The AI buildout as a single dependency stack — each layer <strong>runs on</strong> the one below it, all the way down to the critical minerals at the bedrock. The rails frame it: <strong>Power</strong> comes in (left), <strong>Heat</strong> comes out &amp; <strong>Security</strong> wraps around (right), and <strong>Edge &amp; Physical AI</strong> is where it all deploys into the world. Amber <span style="color:var(--amber)">⧫</span> marks chokepoints; hatched boxes are <strong>unmapped</strong> coverage gaps. Click a <strong>layer header</strong>, a <strong>sub-box</strong>, or a <strong>ticker</strong> to drill in.';
+  const defaultIntro='The AI buildout as a single dependency stack — each layer <strong>runs on</strong> the one below it, all the way down to the critical minerals at the bedrock. The rails frame it: <strong>Power</strong> comes in and <strong>Space &amp; Comms</strong> links the edge beyond fiber (left), <strong>Heat</strong> comes out &amp; <strong>Security</strong> wraps around (right), and <strong>Edge &amp; Physical AI</strong> is where it all deploys into the world. Amber <span style="color:var(--amber)">⧫</span> marks chokepoints; hatched boxes are <strong>unmapped</strong> coverage gaps. Click a <strong>layer header</strong>, a <strong>sub-box</strong>, or a <strong>ticker</strong> to drill in.';
   const grid=(leftRail||rightRail)
     ? '<div class="stack-grid"><div class="rail">'+leftRail+'</div><div class="stack">'+stack+'</div><div class="rail">'+rightRail+'</div></div>'
     : '<div class="stack-grid solo"><div class="stack">'+stack+'</div></div>';
