@@ -47,6 +47,8 @@ Technology preference alignment is expressed through the **Macro Environment (cr
 **Conviction: High**
 **Last validated: 2026-06-07**
 **Status: Active**
+**News keywords: nand, flash, ssd, enterprise ssd, qlc, hbm, hbm4, memory pricing, nand pricing, memory prices, ymtc, kioxia**
+**Signature terms: hbm4, enterprise ssd, nand pricing**
 
 #### Application-Layer Driver
 
@@ -107,6 +109,8 @@ Every enterprise deploying agentic workflows adds NVMe enterprise SSDs (knowledg
 **Conviction: Medium**
 **Last validated: 2026-06-07**
 **Status: Active**
+**News keywords: ai chip, ai chips, custom chip, custom chips, custom silicon, asic, asics, xpu, tpu, trainium, mtia, maia, cpu, cpus, npu, arm-based, graviton, neoverse, x86, risc-v, cuda**
+**Signature terms: custom asic, custom ai chip, trainium, mtia, risc-v**
 
 #### Application-Layer Driver
 
@@ -156,6 +160,8 @@ The pure-GPU narrative oversimplifies. CPU-bound orchestration layers mean high-
 **Conviction: Medium**
 **Last validated: 2026-06-07**
 **Status: Active**
+**News keywords: co-packaged, cpo, pluggable, transceiver, transceivers, optical engine, silicon photonics, 800g, 1.6t, 3.2t, eml, laser, optical interconnect**
+**Signature terms: co-packaged optics, cpo, silicon photonics, 1.6t, 3.2t**
 
 #### Application-Layer Driver
 
@@ -201,6 +207,8 @@ The investable asymmetry: pluggable pure-plays generate strong free cash flow *n
 **Conviction: Watch**
 **Last validated: 2026-06-15**
 **Status: Active (Watch)**
+**News keywords: hbf, high bandwidth flash, hamr, hdd, hdds, hard drive, hard drives, nearline, cold storage, archive, ai storage, cxl, neuromorphic, akida, edge ai, connectome, connectomics, exabyte**
+**Signature terms: hbf, high bandwidth flash, hamr, connectomics, neuromorphic**
 
 #### Application-Layer Driver
 

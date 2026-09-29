@@ -74,6 +74,25 @@ headline, not the ticker's thesis, so it cannot know that a routine-looking item
 matters to one specific name. `/brief`'s triage is the real verdict; this is the
 floor that exists on every item of every run.
 
+### Tech-race tags on the news feed
+
+News is the landing tab. Each headline is checked against every non-Resolved
+race in `DATA.tech_races`, and a match adds a teal ⚑ chip to the row that opens
+the race page. The filter row also gets one chip per race that had news that
+day, so it shows at a glance which races moved.
+
+A headline joins a race when **either** of these holds:
+- it contains one of the race's `signature` terms, under any ticker (the terms
+  are specific enough that a TSMC story about co-packaged optics still counts), or
+- it contains one of the race's `keywords` **and** its ticker is in that race's
+  Ticker Exposure Map.
+
+Matching on ticker alone is deliberately not enough: most NVDA headlines have
+nothing to do with the compute-architecture race. Both lists live in
+`Technology Preferences.md` under each race's `**Status:**` line. Tune them
+there, then run `--refresh-data`. A race with no keywords gets no tags. That
+is how a new race starts, not an error.
+
 ### Thesis drift flags
 
 Each ticker card carries a flag derived from its `**Drift status:**` line in `analysis.md`:
@@ -193,6 +212,8 @@ Run all reads in parallel.
   - `conviction` — text after `**Conviction:**` (High / Medium / Low / Watch)
   - `last_validated` — text after `**Last validated:**`
   - `status` — text after `**Status:**` (Active / Resolved)
+  - `keywords[]` — comma-split text after `**News keywords:**`, trimmed, lowercase
+  - `signature[]` — comma-split text after `**Signature terms:**`, trimmed, lowercase
   - `tickers[]` — rows from the `#### Ticker Exposure Map` markdown table: `{ ticker, technology, exposure, weighting }`
   - `application_driver` — paragraph(s) below `#### Application-Layer Driver` (plain text, not table headers)
   - `consensus_gap` — rows from the table below `#### Consensus vs. Reality Gap` as `[[belief, reality], ...]`
@@ -244,6 +265,7 @@ const DATA = {
     { id: "nand-vs-hbm4", name: "NAND vs. HBM4", sector_group: "AI Ecosystem",
       preference: "NAND over HBM4 for the agentic AI demand wave",
       conviction: "High", last_validated: "YYYY-MM-DD", status: "Active",
+      keywords: ["nand", "ssd", "hbm", ...], signature: ["hbm4", "enterprise ssd"],
       tickers: [
         { ticker: "SNDK", technology: "NAND Flash", exposure: "Primary", weighting: "Overweight vs. memory peers" }
         // ... one entry per row in the Ticker Exposure Map table
