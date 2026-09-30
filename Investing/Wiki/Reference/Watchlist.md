@@ -1,5 +1,5 @@
 # Investment Watchlist
-*Last updated: 2026-08-23*
+*Last updated: 2026-09-30*
 
 **This file is the scope input for the daily pass.** `scripts/watchlist_refresh_fetch.py`
 reads every ticker named in a table below and scans it for news and filings; `--all`
@@ -51,7 +51,7 @@ subjects the KB has no ticker for yet. Both feed one digest.
 
 ## Active Coverage
 
-*Thesis established, not yet high-conviction — plus newly tracked names awaiting their first `/dig`. 18 names.*
+*Thesis established, not yet high-conviction — plus newly tracked names awaiting their first `/dig`. 17 names.*
 
 | Ticker | Name | Sector | Score | One-Line Thesis |
 |--------|------|--------|-------|-----------------|
@@ -65,7 +65,6 @@ subjects the KB has no ticker for yet. Both feed one digest.
 | INTC | Intel Corporation | Compute Hardware | 6.5 | Intel's EMIB packaging + 25-year in-house silicon photonics stack is the only IDM-foundry plat… |
 | NB | NioCorp Developments Ltd. | Critical Minerals | — | The leading US development-stage source of niobium, scandium, titanium, and magnetic rare eart… |
 | AVAV | AeroVironment, Inc. | Edge & Physical AI | — | The US military's primary small-drone and loitering-munitions supplier (Puma, Raven, Switchbla… |
-| BRCHF | BrainChip Holdings Ltd | Edge & Physical AI | — | The only publicly listed neuromorphic pure-play — a high-risk, high-optionality call option on… |
 | MBLY | Mobileye Global Inc. | Edge & Physical AI | — | Intel-controlled autonomous-driving and ADAS pure-play — the EyeQ system-on-chip, REM crowdsou… |
 | 6451.TW | ShunSin Technology Holdin… | Interconnect | 5.5 | Foxconn's precision optical packaging arm — positioned to capture a structural margin step-up… |
 | 285A.T | KIOXIA Holdings Corporati… | Memory | — | Kioxia's BiCS FLASH 3D NAND IP and Flash Ventures fab scale make it the pure-play beneficiary… |
