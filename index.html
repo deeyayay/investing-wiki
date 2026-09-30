@@ -302,16 +302,17 @@ a.co-ticker:hover{color:var(--d3);text-decoration:underline}
 #watchlist{padding:40px 32px;max-width:1200px;margin:0 auto}
 .wl-page-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:12px}
 .wl-title{font-size:22px;font-weight:700}
-.wl-auth-ok{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted)}
 .wl-btn{padding:6px 12px;border:1px solid var(--border);border-radius:6px;font-size:12px;background:var(--bg2);cursor:pointer;color:var(--text);font-family:inherit}
 .wl-btn:hover{background:var(--bg3)}
 .wl-btn.primary{background:oklch(92% .10 278);color:var(--d1);border-color:oklch(80% .08 278)}
-.wl-pat-prompt{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:18px 20px;margin-bottom:24px}
-.wl-pat-prompt strong{font-size:13px}
-.wl-pat-row{display:flex;gap:8px;margin-top:10px;align-items:center;flex-wrap:wrap}
-.wl-pat-input{padding:7px 10px;border:1px solid var(--border);border-radius:6px;font-size:12px;background:var(--bg);color:var(--text);width:260px;font-family:monospace}
-.wl-pat-note{font-size:11px;color:var(--muted);margin-top:6px}
-.wl-add-row{display:flex;gap:8px;align-items:center;margin-bottom:32px;flex-wrap:wrap}
+.wl-add-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.wl-track{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px 16px;margin-bottom:28px}
+.wl-track-hd{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.wl-track-msg{font-size:12px;color:var(--muted);margin-top:8px;min-height:1em}
+.wl-track-msg.bad{color:oklch(45% .17 25)}
+.wl-track-note{font-size:11px;color:var(--muted);margin-top:6px;line-height:1.5}
+.wl-untrack{background:none;border:1px solid var(--border);border-radius:6px;cursor:pointer;font:600 10.5px/1 inherit;color:var(--muted);padding:4px 8px;flex-shrink:0}
+.wl-untrack:hover{color:var(--text);border-color:var(--text)}
 .wl-add-input{padding:7px 12px;border:1px solid var(--border);border-radius:6px;font-size:13px;background:var(--bg);color:var(--text);width:140px;font-family:inherit}
 .wl-add-input::placeholder{color:var(--muted)}
 .wl-section-hdr{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:14px;margin-top:36px;padding-bottom:6px;border-bottom:1px solid var(--border)}
@@ -328,8 +329,6 @@ a.wl-ticker:hover{text-decoration:underline}
 .wl-score-badge.high{background:oklch(91% .12 142);color:oklch(30% .18 142)}
 .wl-score-badge.mid{background:var(--amber-bg);color:var(--amber)}
 .wl-score-badge.none{background:var(--bg3);color:var(--muted)}
-.wl-remove{background:none;border:none;cursor:pointer;font-size:18px;color:var(--muted);padding:0 4px;line-height:1;flex-shrink:0}
-.wl-remove:hover{color:var(--text)}
 .wl-meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
 .wl-pill{font-size:11px;padding:2px 8px;border-radius:99px;background:var(--bg3);color:var(--muted)}
 .wl-pill.soon{background:oklch(97% .07 75);color:var(--amber);border:1px solid oklch(82% .14 62)}
@@ -2373,21 +2372,22 @@ function digButtonHtml(ticker){
     +'<span class="dig-ico" aria-hidden="true">\u2318</span>Dig</button>';
 }
 
-function digCopy(btn){
-  const ticker=btn.getAttribute('data-ticker');
-  const text=digCmd(ticker);
+// Copies `text`, flashes "Copied" on the button, then restores `idleHtml`.
+// Prefers the async clipboard API; falls back to a hidden textarea plus
+// execCommand, still the only path in some mobile webviews. If both fail the
+// button shows the command so it can be copied by hand. `cb(ok)` is optional.
+function copyCommand(btn,text,idleHtml,cb){
   const done=function(ok){
     btn.classList.toggle('done',ok); btn.classList.toggle('failed',!ok);
-    btn.innerHTML=ok?'<span class="dig-ico" aria-hidden="true">\u2713</span>Copied'
+    btn.innerHTML=ok?'<span class="dig-ico" aria-hidden="true">✓</span>Copied'
                     :'<span class="dig-ico" aria-hidden="true">!</span>'+esc(text);
     if(ok) setTimeout(function(){
       btn.classList.remove('done');
-      btn.innerHTML='<span class="dig-ico" aria-hidden="true">\u2318</span>Dig';
+      btn.innerHTML=idleHtml;
     },2000);
+    if(cb)cb(ok);
   };
   const fallback=function(){
-    // execCommand is deprecated but still the only path in some mobile webviews
-    // and any non-secure context; on failure we show the command to copy by hand.
     try{
       const ta=document.createElement('textarea');
       ta.value=text; ta.setAttribute('readonly','');
@@ -2399,6 +2399,10 @@ function digCopy(btn){
   if(navigator.clipboard&&navigator.clipboard.writeText&&window.isSecureContext){
     navigator.clipboard.writeText(text).then(function(){done(true);},fallback);
   } else { fallback(); }
+}
+
+function digCopy(btn){
+  copyCommand(btn,digCmd(btn.getAttribute('data-ticker')),'<span class="dig-ico" aria-hidden="true">⌘</span>Dig');
 }
 
 // Hierarchical breadcrumb trail. parts: [{label, fn?}, …]; an item without fn is the current (non-clickable) crumb.
@@ -2664,42 +2668,37 @@ async function fetchWatchlistRefresh(){
     return await res.json();
   }catch(e){return null;}
 }
-let _wlSha=null;
 let _wlInitialized=false;
+let _wlTickers=new Set();
+const WL_TICKER_RE=/^[A-Z0-9][A-Z0-9.\-]{0,9}$/;
 
-// The editing token lives in localStorage, which private windows, some
-// webviews and file/data previews block — and there even *reading* it throws.
-// Every access is guarded so a blocked store means "read-only", never a tab
-// stuck on "Loading…". Reading the watchlist needs no token (public repo).
-let _wlStorageOk=null;
-let _wlTokenRejected=false;
-function wlStorageOk(){
-  if(_wlStorageOk===null){
-    try{const k='__wl_probe';localStorage.setItem(k,'1');localStorage.removeItem(k);_wlStorageOk=true;}
-    catch(e){_wlStorageOk=false;}
-  }
-  return _wlStorageOk;
+// The watchlist is managed from Claude Code (/track, /untrack), not from this
+// page: the source of truth is Watchlist.md in the repo, and a static page with
+// no backend can only write to it by holding a GitHub token. So the page reads
+// the list live (public repo, no token) and hands you the command to run.
+function wlTrackCopy(){
+  const inp=document.getElementById('wl-track-input');
+  const msg=document.getElementById('wl-track-msg');
+  const btn=document.getElementById('wl-track-btn');
+  if(!inp||!msg||!btn)return;
+  const say=(s,bad)=>{msg.textContent=s;msg.className='wl-track-msg'+(bad?' bad':'');};
+  const tk=(inp.value||'').trim().toUpperCase();
+  // The symbol ends up in a command you paste into Claude Code, so only a real
+  // ticker shape gets through.
+  if(!WL_TICKER_RE.test(tk)){say('Enter a ticker symbol, e.g. NVDA or 6451.TW.',true);return;}
+  if(_wlTickers.has(tk)){say(tk+' is already on the watchlist.',true);return;}
+  copyCommand(btn,'/track '+tk,'Copy /track command',function(ok){
+    say(ok?'Copied “/track '+tk+'”. Paste it into Claude Code in this repo.'
+          :'Copy failed — type “/track '+tk+'” into Claude Code yourself.',!ok);
+  });
 }
-function wlPat(){try{return localStorage.getItem('gh-pat')||'';}catch(e){return '';}}
-function wlSetPat(p){try{localStorage.setItem('gh-pat',p.trim());return true;}catch(e){_wlStorageOk=false;return false;}}
-function wlClearPat(){try{localStorage.removeItem('gh-pat');}catch(e){}}
-
-function wlSavePat(){
-  const v=(document.getElementById('wl-pat-input')?.value||'').trim();
-  if(!v){alert('Please enter a PAT.');return;}
-  if(!wlSetPat(v)){alert('This browser is blocking local storage, so the token can\'t be saved here. Editing needs a normal (non-private) browser window.');initWatchlistTab(true);return;}
-  initWatchlistTab(true);
+function wlUntrackCopy(btn){
+  const tk=btn.getAttribute('data-ticker');
+  copyCommand(btn,'/untrack '+tk,'Untrack');
 }
-
-function wlAddFromInput(){
-  const ticker=(document.getElementById('wl-add-ticker')?.value||'').trim().toUpperCase();
-  if(!ticker)return;
-  addToWatchlist(ticker);
-}
-
-function wlConfirmRemove(ticker){
-  if(!confirm('Remove '+ticker+' from watchlist?'))return;
-  removeFromWatchlist(ticker);
+function wlDiscCopy(btn){
+  const tk=btn.getAttribute('data-ticker');
+  copyCommand(btn,'/track '+tk,'/track '+tk);
 }
 
 function daysUntil(dateStr){
@@ -2711,41 +2710,13 @@ function daysUntil(dateStr){
 }
 
 async function fetchWatchlistMd(){
-  _wlTokenRejected=false;
-  const pat=wlPat();
-  const headers={'Accept':'application/vnd.github.v3+json'};
-  if(pat)headers['Authorization']='Bearer '+pat;
-  let res=await fetch(WL_API,{headers,cache:'no-store'});
-  // An expired or revoked token gets 401/403 even though the public read needs
-  // none — retry anonymously so a stale token costs editing, not the live list.
-  if(pat&&(res.status===401||res.status===403)){
-    delete headers['Authorization'];
-    res=await fetch(WL_API,{headers,cache:'no-store'});
-    if(res.ok)_wlTokenRejected=true;
-  }
+  // The repo is public, so reading Watchlist.md needs no credentials.
+  const res=await fetch(WL_API,{headers:{'Accept':'application/vnd.github.v3+json'},cache:'no-store'});
   if(!res.ok)throw new Error('GitHub API: HTTP '+res.status);
   const json=await res.json();
-  _wlSha=json.sha;
   const b64=json.content.replace(/\n/g,'');
   const bytes=Uint8Array.from(atob(b64),c=>c.charCodeAt(0));
   return new TextDecoder().decode(bytes);
-}
-
-async function writeWatchlistMd(content){
-  const pat=wlPat();
-  if(!pat)throw new Error('No GitHub PAT stored.');
-  const enc=new TextEncoder().encode(content);
-  let raw='';
-  for(let i=0;i<enc.length;i+=32768)raw+=String.fromCharCode(...enc.subarray(i,i+32768));
-  const b64=btoa(raw);
-  const res=await fetch(WL_API,{
-    method:'PUT',
-    headers:{'Authorization':'Bearer '+pat,'Content-Type':'application/json'},
-    body:JSON.stringify({message:'Watchlist update via dashboard',content:b64,sha:_wlSha})
-  });
-  if(!res.ok){const d=await res.json().catch(()=>({}));throw new Error(d.message||'HTTP '+res.status);}
-  const d=await res.json();
-  if(d.content?.sha)_wlSha=d.content.sha;
 }
 
 function parseWatchlistMd(md){
@@ -2817,61 +2788,6 @@ function mergeWithDataWatchlist(liveEntries){
   });
 }
 
-function _buildAddMd(md,ticker){
-  const WATCH_HDR='## Watching';
-  const WATCH_TABLE_HDR='| Ticker | Notes |\n|--------|-------|';
-  let lines=md.split('\n');
-  const si=lines.findIndex(l=>l.startsWith(WATCH_HDR));
-  if(si===-1){
-    lines=lines.concat(['','---','',WATCH_HDR,'',WATCH_TABLE_HDR,'| '+ticker+' |  |']);
-  } else {
-    let lastRow=-1;
-    for(let i=si+1;i<lines.length;i++){
-      if(lines[i].startsWith('## ')||lines[i].trim()==='---')break;
-      if(lines[i].startsWith('|')&&!lines[i].includes('---'))lastRow=i;
-    }
-    if(lastRow===-1){
-      const thi=lines.findIndex((l,idx)=>idx>si&&l.startsWith('| Ticker'));
-      const ins=thi!==-1?thi+2:si+1;
-      lines.splice(ins,0,'| '+ticker+' |  |');
-    } else {
-      lines.splice(lastRow+1,0,'| '+ticker+' |  |');
-    }
-  }
-  return lines.join('\n');
-}
-
-async function addToWatchlist(ticker){
-  for(let attempt=0;attempt<3;attempt++){
-    let md;
-    try{md=await fetchWatchlistMd();}catch(err){alert('Failed to read Watchlist.md: '+err.message);return;}
-    const existing=parseWatchlistMd(md);
-    if(existing.find(e=>e.ticker===ticker)){alert(ticker+' is already in the watchlist.');return;}
-    try{await writeWatchlistMd(_buildAddMd(md,ticker));await initWatchlistTab(true);return;}
-    catch(err){
-      if(attempt<2&&String(err.message).includes('does not match'))continue;
-      alert('Failed to save: '+err.message);return;
-    }
-  }
-}
-
-async function removeFromWatchlist(ticker){
-  for(let attempt=0;attempt<3;attempt++){
-    let md;
-    try{md=await fetchWatchlistMd();}catch(err){alert('Failed to read Watchlist.md: '+err.message);return;}
-    const filtered=md.split('\n').filter(line=>{
-      if(!line.startsWith('|'))return true;
-      const cols=line.split('|').map(c=>c.trim()).filter(c=>c!=='');
-      return cols[0]!==ticker;
-    });
-    try{await writeWatchlistMd(filtered.join('\n'));await initWatchlistTab(true);return;}
-    catch(err){
-      if(attempt<2&&String(err.message).includes('does not match'))continue;
-      alert('Failed to save: '+err.message);return;
-    }
-  }
-}
-
 // Thesis drift -> a status state, shared by the watchlist cards and the news feed.
 // This is DRIFT (is the thesis holding?), not price direction: "On track" is not
 // the same as bullish and would be wrong for a cautious thesis.
@@ -2900,10 +2816,11 @@ function driftFlagHtml(text,cls){
     +'<span class="flag-glyph" aria-hidden="true">'+st.glyph+'</span>'+esc(st.label)+'</span>';
 }
 
-function renderWatchlistCard(e,canEdit){
+function renderWatchlistCard(e){
   const scoreCls=e.score==null?'none':e.score>=8?'high':'mid';
   const scoreLabel=e.score!=null?e.score.toFixed(1)+'/10':'Unscored';
-  const removeBtn=canEdit?'<button class="wl-remove" onclick="wlConfirmRemove(\''+esc(e.ticker)+'\')" title="Remove">×</button>':'';
+  const untrackBtn='<button class="wl-untrack" data-ticker="'+esc(e.ticker)+'" onclick="wlUntrackCopy(this);return false"'
+    +' title="Copy /untrack '+esc(e.ticker)+' — paste it into Claude Code to stop watching this name">Untrack</button>';
   const days=daysUntil(e.next_earnings);
   const soon=days!=null&&days>=0&&days<=14;
   const earningsText=e.next_earnings?(soon?'⚡ ':'')+'Earnings '+e.next_earnings+(days!=null?' ('+(days===0?'today':days+'d')+')':''):'';
@@ -2933,7 +2850,7 @@ function renderWatchlistCard(e,canEdit){
     rows.push('<tr><td><strong>Composite</strong></td><td class="wl-score-val"><strong>'+comp+'/10</strong></td></tr>');
     scoringHtml='<div class="wl-block-hdr">Scoring</div><div class="wiki-table-wrap"><table class="wl-score-table"><tbody>'+rows.join('')+'</tbody></table></div>';
   } else if(!e.hasRichData){
-    scoringHtml='<p class="wl-stub">Run <code>/daily-dashboard --refresh-data</code> to populate scoring &amp; catalysts for this ticker.</p>';
+    scoringHtml='<p class="wl-stub">Run <code>/dashboard --refresh-data</code> to populate scoring &amp; catalysts for this ticker.</p>';
   }
   let catalystsHtml='';
   if(e.catalysts&&e.catalysts.length){
@@ -2951,12 +2868,12 @@ function renderWatchlistCard(e,canEdit){
     +'<span class="wl-score-badge '+scoreCls+'">'+esc(scoreLabel)+'</span>'
     +driftFlagHtml(driftText)
     +digButtonHtml(e.ticker)
-    +removeBtn+'</div>'
+    +untrackBtn+'</div>'
     +metaHtml+thesisHtml+newsHtml+scoringHtml+catalystsHtml+'</div>';
 }
 
 // A card opens its stock page — unless the click was on one of its own
-// controls (Dig, remove, a filing link) or ended a text selection.
+// controls (Dig, Untrack, a filing link) or ended a text selection.
 function wlCardClick(ev,tk,sector){
   if(ev.target.closest('a,button,input'))return;
   const sel=window.getSelection&&window.getSelection();
@@ -2966,31 +2883,28 @@ function wlCardClick(ev,tk,sector){
 
 function renderWatchlist(entries,fallback){
   const container=document.getElementById('watchlist');
-  const pat=_wlTokenRejected?'':wlPat();
-  const canEdit=!!pat&&!fallback;
-  const rejectedHtml=_wlTokenRejected
-    ?'<div class="wl-refresh-warn">⚠️ GitHub rejected your saved token (expired or revoked), so editing is off. The list below is live — enter a new token to edit again.</div>'
+  _wlTickers=fallback?new Set():new Set(entries.map(e=>e.ticker));
+  // fallback = the live read failed, so this is the copy saved inside the page,
+  // which can be stale or hold only a handful of names. Say so.
+  const fallbackHtml=fallback
+    ?'<div class="wl-refresh-warn">⚠️ Couldn\'t load the live watchlist from GitHub, so this is the copy saved in the page ('+entries.length+' names) and may be out of date. Reload to try again.</div>'
     :'';
-  const headerAuthHtml=pat&&!fallback
-    ?'<div class="wl-auth-ok"><span>🔓 Editing enabled</span><button class="wl-btn" style="margin-left:8px" onclick="wlClearPat();initWatchlistTab(true)">Sign out</button></div>'
-    :'';
-  const patPromptHtml=!wlStorageOk()
-    ?'<div class="wl-pat-prompt"><strong>Read-only here</strong> — this browser is blocking local storage (a private window or an embedded preview), so an editing token can\'t be saved. The watchlist below is live; open the dashboard in a normal browser window to add or remove tickers.</div>'
-    :!pat||fallback
-    ?'<div class="wl-pat-prompt"><strong>Enable editing</strong> — enter a GitHub PAT with <code>contents:write</code> scope on this repo to add/remove tickers from the dashboard.<br><div class="wl-pat-row"><input id="wl-pat-input" class="wl-pat-input" type="password" placeholder="github_pat_…" /><button class="wl-btn primary" onclick="wlSavePat()">Save &amp; Reload</button></div><div class="wl-pat-note">Token stored in your browser\'s localStorage only — it never leaves your device.</div></div>'
-    :'';
-  const addRowHtml=canEdit
-    ?'<div class="wl-add-row"><input id="wl-add-ticker" class="wl-add-input" type="text" placeholder="Add ticker…" onkeydown="if(event.key===\'Enter\')wlAddFromInput()" /><button class="wl-btn primary" onclick="wlAddFromInput()">Add</button></div>'
-    :'';
+  const trackHtml='<div class="wl-track">'
+    +'<div class="wl-track-hd">Track a ticker</div>'
+    +'<div class="wl-add-row"><input id="wl-track-input" class="wl-add-input" type="text" placeholder="Ticker, e.g. NVDA" autocomplete="off" autocapitalize="characters" spellcheck="false" onkeydown="if(event.key===\'Enter\')wlTrackCopy()" />'
+    +'<button id="wl-track-btn" class="wl-btn primary" onclick="wlTrackCopy()">Copy /track command</button></div>'
+    +'<div id="wl-track-msg" class="wl-track-msg" aria-live="polite"></div>'
+    +'<div class="wl-track-note">Paste the command into Claude Code in this repo: it registers the name, adds it here and pushes, and this page shows it on the next load. '
+    +'To stop watching a name, use <strong>Untrack</strong> on its card.</div></div>';
   const cats=['Core Holdings','Drift Watch','High Conviction','Active Coverage','Watching','Rockets','Compounders'];
   const catLabels={'Core Holdings':'Core Holdings — Active Positions','Drift Watch':'Drift Watch — thesis moved, look here first','High Conviction':'High Conviction — scored 7.5+','Active Coverage':'Active Coverage — thesis established','Watching':'Watching','Rockets':'High Upside Rockets — Speculative','Compounders':'Compounders Watchlist'};
   const body=cats.map(cat=>{
     const items=entries.filter(e=>e.category===cat);
     if(!items.length)return'';
-    return'<div class="wl-section-hdr">'+esc(catLabels[cat])+'</div><div class="wl-cards">'+items.map(e=>renderWatchlistCard(e,canEdit)).join('')+'</div>';
+    return'<div class="wl-section-hdr">'+esc(catLabels[cat])+'</div><div class="wl-cards">'+items.map(renderWatchlistCard).join('')+'</div>';
   }).join('');
   const emptyHtml=entries.length?''
-    :'<div class="wl-empty">Watchlist is empty.<br>Add a ticker above, or edit <code>Watchlist.md</code> and re-run <code>/daily-dashboard --refresh-data</code>.</div>';
+    :'<div class="wl-empty">Watchlist is empty.<br>Use the box above to copy a <code>/track</code> command, or add rows to <code>Watchlist.md</code>.</div>';
   // A provider that answered but returned nothing is the failure mode that hid a
   // seven-week outage — surface it here rather than letting it look like a quiet day.
   const provStats=(_wlRefresh&&_wlRefresh.providers)||{};
@@ -3022,12 +2936,12 @@ function renderWatchlist(entries,fallback){
   const disc=(_wlRefresh&&_wlRefresh.discovered)||[];
   const discHtml=disc.length
     ?'<div class="wl-section-hdr">Discovered — untracked names in theme coverage</div>'
-      +'<div class="wl-disc">'+disc.map(d=>'<div class="wl-disc-row"><span class="wl-chip wl-chip-new">'+esc(d.ticker)+'</span><span class="wl-disc-ctx">'+esc((d.seen_in||[])[0]||'')+'</span><code>/track '+esc(d.ticker)+'</code></div>').join('')
+      +'<div class="wl-disc">'+disc.map(d=>'<div class="wl-disc-row"><span class="wl-chip wl-chip-new">'+esc(d.ticker)+'</span><span class="wl-disc-ctx">'+esc((d.seen_in||[])[0]||'')+'</span><button class="wl-btn" data-ticker="'+esc(d.ticker)+'" onclick="wlDiscCopy(this)" title="Copy this command">/track '+esc(d.ticker)+'</button></div>').join('')
       +'<div class="wl-disc-note">Matched from a company name in a headline — verify before tracking.</div></div>'
     :'';
   container.innerHTML=
-    '<div class="wl-page-hdr"><div class="wl-title">Watchlist</div>'+headerAuthHtml+'</div>'
-    +refreshBanner+rejectedHtml+patPromptHtml+addRowHtml+body+emptyHtml+topicsHtml+discHtml;
+    '<div class="wl-page-hdr"><div class="wl-title">Watchlist</div></div>'
+    +fallbackHtml+refreshBanner+trackHtml+body+emptyHtml+topicsHtml+discHtml;
 }
 
 async function initWatchlistTab(force){
