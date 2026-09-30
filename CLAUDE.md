@@ -46,7 +46,7 @@ gemini-scribe/
   Prompts/                   ← reusable prompt templates
   Scheduled-Tasks/           ← scheduled task state (JSON)
 .claude/
-  commands/                  ← the three loaded skills (brief, dig, track)
+  commands/                  ← the loaded skills (brief, dig, track, untrack, dashboard)
   archived-commands/         ← 13 unloaded skills kept for reference
   settings.json              ← project-level permission allowlist
 ```
@@ -67,7 +67,7 @@ Each ticker has three files in a dedicated folder. Skills read only the layers t
 
 ## Available Skills
 
-Four skills — three for the loop, one for the surface you read it on. Everything else was
+Five skills — four for the loop, one for the surface you read it on. Everything else was
 archived on 2026-08-23 to `.claude/archived-commands/` — unloaded, not deleted; see the README.
 
 | Skill | Usage | When |
@@ -75,6 +75,7 @@ archived on 2026-08-23 to `.claude/archived-commands/` — unloaded, not deleted
 | `/brief` | `/brief [--all] [--hours H] [--tickers CSV] [--no-topics] [--no-push]` | **The daily pass.** Script fetches news + SEC filings + topic themes at zero model tokens; Claude triages the digest against each One-Line Thesis. Material → signals.md, drift → analysis.md, summary → Output/Digest. Also files social signals staged in Tweets.md. Never searches. |
 | `/dig` | `/dig TICKER [--filings-only] [--score] [--no-push]` | On-demand deep dive when `/brief` flags something a headline cannot settle. Reads actual filings, re-tests the thesis leg by leg. The expensive one — use it on a handful of names. |
 | `/track` | `/track TICKER [--sector "S"] [--tier core\|rocket\|compounder] [--note "why"]` | Put a name on the watchlist: registry entry + one-file page + Watchlist row. No three-layer scaffolding, no research pass. |
+| `/untrack` | `/untrack TICKER [--no-push]` | Take a name off the watchlist: deletes its `Watchlist.md` rows so `/brief` stops scanning it. Non-destructive — registry entry, page and history stay, so `/track` undoes it. Asks before removing a Core Holdings row. |
 | `/dashboard` | `/dashboard [--refresh-data] [--stack-only]` | Deploy/refresh the GitHub Pages dashboard — **the read surface.** The 12-layer stack map, sector drill-downs, ticker pages, and the brief's digest. Phone-friendly. |
 
 ### Output — where this gets read
@@ -82,6 +83,12 @@ archived on 2026-08-23 to `.claude/archived-commands/` — unloaded, not deleted
 `https://deeyayay.github.io/investing-wiki/` is the single destination. The Watchlist tab fetches
 the digest from `master` at page load, so **a `/brief` push updates the deployed dashboard with no
 redeploy.** There is no Slack/Notion/Obsidian mirror by design — one surface, nothing to sync.
+
+**The dashboard is read-only, and holds no GitHub token.** `Watchlist.md` is the source of truth
+and a static page can only write to it by carrying a token, so the Watchlist tab shows the list
+live and instead *copies the command*: "Track a ticker" copies `/track TICKER`, each card's
+**Untrack** copies `/untrack TICKER`. Run it in Claude Code; the push it makes is what the page
+reads. Adding or removing names is therefore a desk action, not a phone one.
 
 Consequence: changing the digest schema in `scripts/watchlist_refresh_fetch.py` without updating
 the tab in `index.html` makes a section *silently vanish* rather than error. Keep them in step.
@@ -150,6 +157,7 @@ brief that runs on a branch is invisible.
   ├─ discovered: TICK   → /track TICK      (a lead worth watching)
   └─ deep-pass: TICK    → /dig TICK        (a question headlines can't answer)
 /dig TICKER --score     → establishes a thesis, scores it, updates the registry
+/untrack TICKER         → stops the daily scan; keeps the page and history (undo: /track)
 ```
 
 A name earns depth rather than starting with it: `/track` costs a row, `/dig`

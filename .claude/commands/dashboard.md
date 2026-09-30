@@ -74,6 +74,28 @@ headline, not the ticker's thesis, so it cannot know that a routine-looking item
 matters to one specific name. `/brief`'s triage is the real verdict; this is the
 floor that exists on every item of every run.
 
+### The Watchlist tab is read-only
+
+There is no GitHub token anywhere in the page, by design. `Watchlist.md` is the
+source of truth, and a static page can write to it only by holding a token, so
+the tab reads it anonymously (the repo is public) and hands you commands instead:
+
+- **Track a ticker** box → copies `/track TICKER`. The symbol is checked against
+  a ticker pattern first, and refused if it is already on the list, because it
+  ends up in a command you paste into Claude Code.
+- **Untrack** on each card → copies `/untrack TICKER`.
+- **Discovered** leads → their `/track` command is a copy button.
+- All of them go through `copyCommand()`, which is also what the Dig button uses.
+
+If the live read fails, the tab falls back to the copy embedded in the page and
+**says so** (that copy can hold only a handful of names). In that mode the
+"already on the watchlist" check is skipped, since the list it would check is
+stale.
+
+Do not reintroduce a write path here. If managing the list from a phone ever
+matters, the route is a server-side proxy that holds the token behind a login,
+not a token in the page.
+
 ### Tab order and the Stocks tab
 
 Tabs follow the use-case order: **News** (landing) → **Watchlist** → **Tech
