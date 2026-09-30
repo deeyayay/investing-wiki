@@ -12,8 +12,8 @@ LPKF owns the sole industrial process for glass substrate via drilling, making i
 ## Investment Thesis
 
 > **Thesis established:** 2026-06-19
-> **Last validated:** 2026-09-24
-> **Drift status:** On track, strengthening — purchase LOI from a major Asian advanced-packaging manufacturer confirms glass-processing equipment selection for production ramp-up, alongside the already-shipped CPO waveguide equipment and confirmed SDAX inclusion; adjacent TAM materializing ahead of schedule. 09-24: shares slipped 12% on dilution-risk concerns tied to funding the ramp-up — a new financing-path question, not a reversal of the commercial win, flagged for /dig.
+> **Last validated:** 2026-09-30
+> **Drift status:** Drifting — 09-30 FY26 guidance cut on delayed orders (headline-level; /dig to size). Prior: On track, strengthening — purchase LOI from a major Asian advanced-packaging manufacturer confirms glass-processing equipment selection for production ramp-up, alongside the already-shipped CPO waveguide equipment and confirmed SDAX inclusion; adjacent TAM materializing ahead of schedule. 09-24: shares slipped 12% on dilution-risk concerns tied to funding the ramp-up — a new financing-path question, not a reversal of the commercial win, flagged for /dig.
 
 LPKF Laser & Electronics SE makes the LIDE (Laser-Induced Deep Etching) system — currently the only commercially viable method for drilling precision through-glass vias (TGVs) in glass core substrates. Glass substrates are the next frontier in AI chip packaging: superior electrical performance, dimensional stability, and thermal properties vs. silicon interposers make them the preferred substrate for co-packaged AI accelerators and co-packaged optics. With the supply chain moving from R&D into commercial production in 2026-2027, LPKF is the sole gatekeeper to this transition.
 
@@ -108,6 +108,7 @@ _Evaluated: 2026-06-19_
 | 2026-03-27 | Warburg Research | Hold | 10.70 | Cautious; PT implies ~32% downside from ~€15.65 at time of note |
 | 2026-06-19 | UBS | Positive (details TBC) | n/a | "Double lifeline" alongside SDAX inclusion per headline; exact PT not confirmed in public sources |
 | 2026-06-19 | Consensus (2 analysts) | Neutral | ~10.65 | PT range €9-€12.30; severely stale vs €27 stock price — does not reflect CPO or HVM optionality |
+| 2026-09-30 | FY26 guidance cut; orders delayed (headlines only) | ↓ Weakened | Delayed orders cut against the 'ramp ahead of schedule' leg after the 09-23 LOI; guidance detail not yet read — /dig to size the slip and the financing need. |
 
 ---
 
