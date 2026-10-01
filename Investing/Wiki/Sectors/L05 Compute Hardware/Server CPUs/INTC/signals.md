@@ -84,6 +84,7 @@
   **Why it matters:** Genuinely new claim, but thin — single lower-quality source, no partner named, and a Micro LED display-tech tie-up doesn't obviously touch the EMIB/photonics interconnect leg the thesis rests on; "memory chip talks" is similarly unspecified. Flagged for /dig rather than treated as confirmed given the outsized reported stock move on vague sourcing.
 
 ---
+- **2026-10-01** — Intel among chip names at 52-week highs on Micron read-through; one upgrade to hold, Erste lifts EPS forecast (Stocktwits / TradingView / AD HOC NEWS). Price confirms the 09-30 after-hours +12% report is holding into the open (still no filing); analyst moves are marginal.
 
 ## Social Mentions
 
@@ -140,3 +141,4 @@
 - **2026-09-29 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — kobaran.com "Arizona Fab Partnership Trades Funding Relief for Production and Inventory Limits": terms of a fab-funding partnership carry production/inventory caps — unverified at headline level, flagged for /dig; Yahoo 09-28 tape had INTC -4% on oil-driven rate fears (macro, not company); SKHY-partnership speculation is opinion
 - **2026-09-29 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged, deep-pass flagged — investingLive: "Intel dilutes shareholders: will launch $15 billion secondary" — a new capital-raise fact (headline only, no filing seen in this run; EDGAR clean, no 424B/8-K surfaced) that cuts against the buyback-free rerate leg via dilution; kobaran Arizona-fab partnership item recirculates; Yahoo tape INTC -4% on oil/rate fears (macro). Verify offer size/terms via /dig INTC before the next session
 - **2026-09-30 (end-of-day)** — 📰 5 items triaged, 1 logged, deep-pass flagged — Stocktwits: shares +12% after-hours on a Q3 outlook above estimates and the strongest Q2 revenue growth in 15 years; single-source, headline-only, no filing in this run — would confirm the rerate leg if borne out, but verify before moving drift → /dig INTC
+- **2026-10-01 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — +12% after-hours move persisting in the open

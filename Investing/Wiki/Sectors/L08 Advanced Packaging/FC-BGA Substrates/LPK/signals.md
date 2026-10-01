@@ -52,6 +52,9 @@
 
 ---
 
+### 2026-10-01 — Insider purchase after guidance cut
+- **2026-10-01** — Insider/PDMR share purchase by Dr. Klaus Fiedler; Warburg Research reiterates Buy after the guidance cut (TradingView / MarketScreener). Insider buying and a held Buy after the 09-30 guidance cut is a modest counterweight to the Drifting flag; the financing-need question stays open.
+
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
 
@@ -129,3 +132,4 @@
 - **2026-09-25 (post-open)** — 📰 BRIEF | 4 items triaged, 0 new logged — "LPKF Laser Slips 12%" and the glass-processing-equipment-selection story recirculate the already-logged 09-24 evening dilution-risk item; Soitec and Sivers Semiconductors stock-quote headlines were company mismatches; standing /dig flag (dilution-risk vs. commercial win) unchanged
 - **2026-09-28 (post-open)** — 📰 BRIEF | 1 item triaged, 1 logged, deep-pass flagged — new WpHG Article 40 voting-rights/major-shareholding disclosure notice, content unread at headline level — could resolve or be unrelated to the standing dilution-risk question, added to the /dig flag
 - **2026-09-30 (post-open)** — 📰 BRIEF | 3 items triaged, 1 logged, drift flagged, deep-pass flagged — LPKF cuts FY26 guidance, citing delayed orders (TradingView, MarketScreener "Orders delayed: Laser specialist LPKF cuts forecast"); lands a week after the 09-23 Asian-packaging LOI and the 09-24 dilution-risk slide, so the commercial win has not yet converted to booked orders on the timeline the market assumed. Headline-level only — magnitude and which product line slipped unread; opening price reaction not in the digest.
+- **2026-10-01 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — insider buy + Buy reiterated post guidance cut

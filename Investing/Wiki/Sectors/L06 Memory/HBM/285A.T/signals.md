@@ -48,6 +48,7 @@
   **Why it matters:** Consistent with the 09-08 /dig confirmation that 2026 capacity is sold out through 2027 — easing a sales push ahead of a listing reads as allocation discipline rather than softening demand, though the headline gives no specifics on scope or duration.
 
 ---
+- **2026-10-01** — Kioxia rallies on Micron's blowout quarter; Bernstein lifts target while flagging a Chinese NAND threat (Investing.com / AD HOC NEWS). Micron read-through supports the sold-out-NAND leg; Bernstein's China-competition caveat is the first named risk to the pure-play framing.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -97,3 +98,4 @@
 - **2026-09-25 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — a Buy&Ship TSE-listing headline and a Vietnam-market macro piece were company/market mismatches; a Kioxia stock-quote page and a Sandisk buy-rating headline were noise/mismatch; a TradeXYZ tokenized-perpetuals trading-halt notice (1-for-3 split adjustment) is a synthetic-derivatives-platform mechanic, not a company-sourced corporate action, treated as noise
 - **2026-09-28 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — KuCoin/Pluang Hyperliquid stock-split chain-settlement headlines are the same synthetic-derivatives-platform mechanic already dismissed 09-25 evening (TradeXYZ split-adjustment notice), not a company-sourced fact; "Samsung, SK Hynix Start Weak... Micron Earnings Seen as Key Catalyst" is about competitors, not Kioxia; two SNDK-specific headlines were a company mismatch
 - **2026-09-29 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — Kioxia 3-for-1 stock split effective 09-29 (Moomoo, company corporate action); this is distinct from the Hyperliquid synthetic-perp settlement noise dismissed earlier. Cosmetic to BiCS/Flash Ventures thesis but widens retail access; competitor-memory weakness (Samsung/SK Hynix) and quote pages were noise
+- **2026-10-01 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — sector read-through up, China competition caveat

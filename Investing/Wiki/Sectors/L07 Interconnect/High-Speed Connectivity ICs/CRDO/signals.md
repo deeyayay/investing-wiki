@@ -48,6 +48,7 @@
   **Why it matters:** A concrete new optical-transceiver product at the 1.6T/224G tier is the first product-level confirmation since the DustPhotonics acquisition that the optical vertical-integration leg is shipping real hardware, not just accounting — directly supports the thesis's "vertically integrating into optical" claim.
 
 ---
+- **2026-10-01** — Credo CEO sells ~$2.5M of shares (The Motley Fool). Insider sale near highs; size and 10b5-1 status unread at headline level, low thesis weight alone.
 
 ## Social Mentions
 
@@ -95,3 +96,4 @@
 - **2026-09-25 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — "Launches New AI Transceivers" and "Photonics And Optics Are In Shortage" pieces recirculate the already-logged 09-16 ZeroFlap 1.6T optics-launch item; Maxlinear/Lumentum/Coherent and Fifth Third/Elastic analyst-roundup pieces, plus an AXT stock-quote headline, were noise/mismatch
 - **2026-09-25 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — "CRDO Stock Rallies/Jumps As AI Earnings Beat Fuels Fresh Momentum" recaps the already-resolved 09-01 8-K non-operational-miss finding; "Launches New AI Transceivers" again recirculates the already-logged 09-16 ZeroFlap item; Maxlinear/Lumentum/Coherent analyst-roundup and a Coherent stock-quote headline were noise/mismatch
 - **2026-09-28 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — two Form 4 filings (routine, no amount given) and a "1.6T Optical Transceivers" analysis piece recap known themes; two "Founder Led Stocks" listicles were noise
+- **2026-10-01 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL (minor) — CEO share sale

@@ -134,6 +134,7 @@
   **Why it matters:** The 86% margin figure is the first hard guidance number on file for the margin-sustainability question — an aggressive number that raises the execution bar ahead of the Sept 30 print, similar in kind to the 08-31 $50B-quarter framing. The Taiwan strike *vote* is a formal escalation from "threat" (09-02) → "standoff" (09-10) → vote — the clearest operational-risk data point yet on Micron's own fab/assembly capacity. The patent fight is a new, unspecified legal-risk thread with no detail at headline level. Three simultaneous risk items (margin execution, labor, litigation) layered onto the pre-earnings window — flagged for /dig rather than treated as thesis-moving on headlines alone.
 
 ---
+- **2026-10-01** — Stocktwits: MU drops after hours as a heightened capex forecast overpowers the FQ4 beat and above-estimate FQ1 guide (Stocktwits). Reaction splits from the beat: fundamentals confirm the HBM leg but higher capex is what the tape is pricing; pairs with the 8-K 2.02 already logged 09-30.
 
 ## Social Mentions
 
@@ -197,3 +198,4 @@
 | 2026-09-29 (end-of-day) | BRIEF | 📰 Reuters / Idaho Business Review: Netlist now seeks a U.S. **import ban** on Micron chips used in Google/Nvidia AI computing — escalates the 09-29 ITC filing from damages to an exclusion remedy touching the HBM supply chain the thesis rests on; ITC remedies are slow and uncertain, not a thesis break, but size it in /dig on the Sept 30 print. 24/7 Wall St "guidance may look weak tomorrow, buy anyway" is opinion; earnings-preview pieces dismissed as before |
 | 2026-09-30 (post-open) | BRIEF | 📰 5 items triaged, 0 new logged — Netlist import-ban story recirculates in 4 more outlets (already logged 09-29 end-of-day); FQ4 print is due today, so the ITC exclusion sizing and HBM-mix questions stay queued for /dig after the numbers |
 | 2026-09-30 (end-of-day) | BRIEF | 📰 5 items triaged, 2 logged — **8-K items 2.02/9.01 filed 09-30 (primary)** plus CNBC/Yahoo/Seeking Alpha: FQ4 beat on revenue and EPS, FQ1'27 guidance above estimates, data-center revenue up 11-fold — the FQ4 print confirms the HBM/AI-demand leg; HBM mix, margins and Netlist import-ban sizing still need the release itself → /dig MU |
+| 2026-10-01 (post-open) | 📰 BRIEF | 1 item logged — MATERIAL — print confirmed (logged 09-30) but the stock sells the capex guide; capex/FCF question for /dig |

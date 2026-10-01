@@ -48,6 +48,7 @@
   **Why it matters:** The SiGe capacity item repeats 09-17; the Azure security launch is a genuinely new product/partnership fact, but the $30B roadmap figure is ~1.7x the standing $18B-by-2028 DC chip guide — given this same outlet previously mis-sized the Google relationship ($120B, later resolved to $12B via /dig), the figure needs verification before treating it as a guidance change; flagged for /dig.
 
 ---
+- **2026-10-01** — Marvell confirms October 6 Investor Day; shares +2.19% (AD HOC NEWS). Converts the Oct. 6 date flagged 09-29 into a confirmed catalyst; custom-ASIC and interconnect targets are the thing to watch.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -104,3 +105,4 @@
 | 2026-09-25 (evening) | BRIEF | 📰 5 items triaged, 0 new logged — quarterly dividend declaration ($0.06/share, 3 outlets) is routine capital-return, not thesis-relevant; "Ships Over 5M Photonic Chips Ahead Of S&P 500 Entry" again recirculates the already-logged 09-01 item; Oppenheimer's Buy-maintain repeats 09-25 post-open |
 | 2026-09-28 (post-open) | BRIEF | 📰 5 items triaged, 0 new logged — the AD HOC NEWS dividend/2nm-roadmap/Azure-Security bundle recirculates three already-logged/dismissed items (routine dividend, 09-22 2nm demo, 09-20/21 Azure-security mention); RBC's Buy-maintain at $360 (no change) was routine; "$297 — Four Straight Guidance Raises" recap repeats the standing dismissed pattern |
 | 2026-09-29 (evening) | BRIEF | 📰 5 items triaged, 1 logged — Barchart flags Oct. 6 as the next Marvell catalyst date (event details not in headline; treat as calendar marker to verify); TradingKey "four straight guidance raises" and RBC $360 Buy-maintain recirculate dismissed items; Broadcom-vs-Marvell pieces were opinion |
+| 2026-10-01 (post-open) | 📰 BRIEF | 1 item logged — MATERIAL — Investor Day confirmed Oct 6 |

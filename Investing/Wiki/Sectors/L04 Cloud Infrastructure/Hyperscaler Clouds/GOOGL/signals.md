@@ -54,6 +54,7 @@
   **Why it matters:** The €403M fine is a fifth distinct regulatory thread (after Search-monopoly, ad-tech, YouTube, and the 09-23 AI-business suit) — a hard cost, though small relative to Alphabet's scale, and the coverage frames Cloud as still driving the story despite it. The MediaTek chip-development report and Piper Sandler's TPU-driven target raise both bear directly on the "deepest proprietary inference stack" thesis leg — new custom-silicon breadth plus sell-side confirmation of TPU demand — even though the stock's premarket reaction tracked the fine, not the chip news, illustrating that regulatory overhang is still the market's dominant read on GOOGL this morning.
 
 ---
+- **2026-10-01** — Google launches Gemini 4 Argon; shares up pre-market, KeyBanc reiterates, JPMorgan says Google must still reclaim AI leadership (Morningstar / Investing.com). Headline and pre-market move agree: frontier-model relaunch lifts the stack-ownership leg; JPMorgan's caveat keeps it a catch-up, not a lead.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -97,3 +98,4 @@
 - **2026-09-25 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — the $124B Anthropic-stake/$2T-IPO framing and the $84.75B capital-raise headline both recirculate already-dismissed items (09-14/09-07); ARK-loads-up-before-earnings and "cheap at 17x earnings" pieces (x2) were opinion/recap; standing antitrust /dig flag unchanged
 - **2026-09-25 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — Project Suncatcher's moved-up Oct. 1 launch date is a new specific fact, logged for the audit trail (not part of the Cloud-growth thesis leg); the $124B Anthropic-stake/$2T-IPO framing and $84.75B capital-raise headline again recirculate already-dismissed items (09-14/09-07); "17x earnings" valuation pieces (x2) repeat the standing recap pattern; standing antitrust /dig flag unchanged
 - **2026-09-28 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged, drift flagged — €403M EU fine (fifth regulatory thread) paired with a MediaTek next-gen-AI-chip report and Piper Sandler's TPU-driven PT raise; stock dipped premarket on the fine, not the chip news; pre-earnings GOOGL/TSLA-futures headline was noise
+- **2026-10-01 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — model launch, positive opening reaction

@@ -50,6 +50,7 @@
 | 2026-09-22 | Rosenblatt initiates coverage with a Buy rating and $2,400 price target | TipRanks / TradingView | First coverage from this firm, and one of the more bullish targets on file — a new bullish sell-side voice arriving during the still-unresolved price-decline question, but doesn't itself address magnitude or cause. |
 
 ---
+- **2026-10-01** — Stocktwits: SNDK rebounds after a 35% drop this week; Citi calls it top beneficiary of Micron's results (Stocktwits / Investing.com). Rebound on the Micron read-through eases but does not explain the week's 35% slide; the price/fundamental disconnect stays open.
 
 ## Social Mentions
 
@@ -109,3 +110,4 @@
 | 2026-09-25 (evening) | 📰 BRIEF | 5 items triaged, 0 new logged — "Citigroup Sees SanDisk As Top Beneficiary Of Strong Micron Earnings" recirculates the already-logged 09-20/21 Citigroup read-through item; "shows strong earnings growth" (Pluang), stock-split speculation, "still look reasonable after AI slowdown fears," and a Micron-comparison piece all repeat already-logged items; /dig still queued on the price-decline cause |
 | 2026-09-28 (post-open) | 📰 BRIEF | 5 items triaged, 0 new logged — "$14 Billion Buyback Announcement" recirculates the already-logged 09-17/09-18 buyback item; "MU, SNDK, DRAM Dip Overnight... Samsung's Post-Earnings Selloff" recirculates the identical 09-06/07 item; valuation-opinion and earnings-calendar-listicle pieces were noise; /dig still queued on the price-decline cause |
 | 2026-09-30 (post-open) | 📰 BRIEF | 5 items triaged, 1 logged — Stocktwits: SNDK and SK hynix gain after launching a new AI memory standard, with Wall Street PT hikes (details unread; likely HBF-standardization follow-on to 09-01 spec); a rare positive price reaction against the standing 'beats don't lift the stock' drift. Buyback pieces recirculate |
+| 2026-10-01 (post-open) | 📰 BRIEF | 1 item logged — MATERIAL — 35% weekly drawdown now quantified; rebound on Micron read-through |
