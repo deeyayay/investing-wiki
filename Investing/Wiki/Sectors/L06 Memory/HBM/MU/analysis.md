@@ -78,6 +78,7 @@ _Evaluated: 2026-06-17_
 | 2026-09-17 (evening) | Intel CEO independently warns of deepening memory shortage; new capacity not ramping until 2028 | ↑ | Cross-vendor corroboration of the 08-25 CEO-sourced "supply may not catch up until 2028" claim — this time from Intel's own CEO rather than Micron's, an independent-source confirmation of the same structural tightness |
 | 2026-09-23 | JPMorgan: HBM spec downgrade doesn't alter the underlying shortage; demand still projected at 63% CAGR 2026-2028 | ↑ | A new, named sell-side figure reinforcing the structural demand-tailwind leg, and the spec-downgrade-doesn't-change-shortage framing pre-empts a bear read on future HBM spec news |
 | 2026-09-24 | "Micron Is Winning By Losing The HBM Race" — contrarian framing argues limited HBM exposure (vs. DRAM mix) is a strength | → Neutral | First counter-narrative to directly contradict the "stacked on every NVDA GPU" HBM-centric framing rather than just questioning valuation or citing Chinese competition; unconfirmed at headline level, folded into the standing pace-setter/alt-HBM-tech /dig queue |
+| 2026-09-30 | FQ4 beat, FQ1'27 guide above estimates, data-center revenue +11x | ↑ | 8-K 2.02 filed; headline-level confirmation of AI/HBM demand leg. HBM mix, margins and Netlist ITC risk unverified — /dig MU |
 
 ---
 
