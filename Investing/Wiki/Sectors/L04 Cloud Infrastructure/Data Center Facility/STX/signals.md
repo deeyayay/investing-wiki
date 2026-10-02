@@ -20,6 +20,8 @@
 | 2026-09-28 (post-open) | Seagate says smarter storage unlocks Nvidia GPU efficiency | scanx.trade | A direct company-sourced claim tying Seagate's storage architecture to Nvidia GPU efficiency — distinct from the "bigger AI connection than you think" opinion piece dismissed 09-25, this is Seagate itself framing the cold/nearline-tier thesis leg in GPU-efficiency terms; headline gives no technical detail. |
 
 ---
+- **2026-10-02 (post-open)** — Toshiba to invest ¥60B to double HDD capacity for AI data centers (biggo, 富途牛牛); Seagate/WDC noted as having suffered sharp declines.
+  **Why it matters:** A duopoly-plus-one capacity expansion is a long-dated supply-side risk to HDD pricing power underpinning the HAMR/exabyte thesis; the doubling is multi-year and does not yet touch near-term areal-density lead.
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -61,3 +63,4 @@ _None yet — seeded on onboarding._
 | 2026-09-25 (post-open) | 📰 BRIEF | 5 items triaged, 0 new logged — "guidance rises" repeats the already-known record-2026-results/raised-guidance print, dismissed repeatedly; a competitor-underperform recap, "bigger AI connection than you think," and an rStock/Saudi-Riyal price-conversion page were noise/routine |
 | 2026-09-25 (evening) | 📰 BRIEF | 1 filing triaged, 0 new logged — a Form 4 (beneficial-ownership change) is routine, same pattern dismissed since 08-25 |
 | 2026-09-28 (post-open) | 📰 BRIEF | 5 items triaged, 1 logged — Seagate's own GPU-efficiency/smarter-storage framing is a new company-sourced thesis-confirming claim; "Buy Hold or Sell Above $900" and rStock currency-conversion pages, a Form 4 mention, and a competitor recap were noise/routine |
+- **2026-10-02 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Toshiba HDD capacity doubling is a new competitive-supply fact

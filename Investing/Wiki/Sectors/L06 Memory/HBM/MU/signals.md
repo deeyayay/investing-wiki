@@ -135,6 +135,8 @@
 
 ---
 - **2026-10-01** — Stocktwits: MU drops after hours as a heightened capex forecast overpowers the FQ4 beat and above-estimate FQ1 guide (Stocktwits). Reaction splits from the beat: fundamentals confirm the HBM leg but higher capex is what the tape is pricing; pairs with the 8-K 2.02 already logged 09-30.
+- **2026-10-02 (post-open)** — Benzinga: Micron's contract book (~$150B) now exceeds annual revenue.
+  **Why it matters:** Multi-year contracted demand supports the structural-AI-demand leg and visibility beyond spot pricing; equity still sold the capex guide on 10-01, so market reaction is the open question.
 
 ## Social Mentions
 
@@ -200,3 +202,4 @@
 | 2026-09-30 (end-of-day) | BRIEF | 📰 5 items triaged, 2 logged — **8-K items 2.02/9.01 filed 09-30 (primary)** plus CNBC/Yahoo/Seeking Alpha: FQ4 beat on revenue and EPS, FQ1'27 guidance above estimates, data-center revenue up 11-fold — the FQ4 print confirms the HBM/AI-demand leg; HBM mix, margins and Netlist import-ban sizing still need the release itself → /dig MU |
 | 2026-10-01 (post-open) | 📰 BRIEF | 1 item logged — MATERIAL — print confirmed (logged 09-30) but the stock sells the capex guide; capex/FCF question for /dig |
 | 2026-10-01 (end-of-day) | 📰 BRIEF | 4 items triaged, 3 logged — MATERIAL — stock fell ~3% after-hours/midday despite record FQ4 and above-consensus FQ1 guide: heightened capex forecast overpowers the beat (Stocktwits, 24/7 Wall St); Benzinga: ~$150B contract book exceeds annual revenue (demand-visibility leg); NVHBM base die to be outsourced to a foundry process (margin-accretive per MU) — capex/FCF sizing and Netlist exclusion risk still → /dig MU |
+- **2026-10-02 (post-open)** — 📰 BRIEF | 4 items triaged, 1 logged — $150B contract-book framing is new; print/stock-reaction items recirculate 09-30/10-01 logs

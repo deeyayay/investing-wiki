@@ -72,6 +72,7 @@ _Evaluated: 2026-06-17_
 | 2026-09-01 | SK hynix/SanDisk unveil 512GB HBF spec | ↑ | First concrete published HBF spec (not just a roadmap target) since thesis onboarding — direct confirmation of the second thesis leg and the strongest counter yet to the Citron "commodity" claim, independent of the unresolved price-decline question. |
 | 2026-09-17 (evening) | New buyback authorization + robust revenue figures, confirming the 09-15/09-16 unconfirmed buyback-retirement mention | → | Reinforces the fundamental baseline (capital-return capacity, revenue strength) independent of the still-unresolved price-decline question — doesn't itself move Drift out of "Drifting" |
 | 2026-09-24 | "SNDK, WDC Stocks Topple As Blowout Memory Earnings Don't Surprise Enough" | ↓ Weakened | Another beat, another sell-off — deepens rather than resolves the standing price-action-vs-fundamentals disconnect that the open /dig item exists to settle; no NBM/HBF fact has moved |
+| 2026-10-02 (post-open) | Premarket plunge on "muted pricing" guidance despite record revenue + $14B buyback | ↓ | Headline and opening move agree: pricing-durability concern persists after a fifth beat that fails to lift the stock; drift stays Drifting, /dig to settle |
 
 ---
 

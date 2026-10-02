@@ -51,6 +51,8 @@
 
 ---
 - **2026-10-01** — Stocktwits: SNDK rebounds after a 35% drop this week; Citi calls it top beneficiary of Micron's results (Stocktwits / Investing.com). Rebound on the Micron read-through eases but does not explain the week's 35% slide; the price/fundamental disconnect stays open.
+- **2026-10-02 (post-open)** — Stocktwits: SNDK "plummets premarket" as analysts cite "muted pricing" guidance despite record revenue and a $14B buyback.
+  **Why it matters:** Opening reaction runs *against* the 10-01 Micron read-through (NAND +30%): the market is again selling the pricing leg despite a beat — the fourth straight print where fundamentals and price disagree. Premarket move only; magnitude unread.
 
 ## Social Mentions
 
@@ -112,3 +114,4 @@
 | 2026-09-30 (post-open) | 📰 BRIEF | 5 items triaged, 1 logged — Stocktwits: SNDK and SK hynix gain after launching a new AI memory standard, with Wall Street PT hikes (details unread; likely HBF-standardization follow-on to 09-01 spec); a rare positive price reaction against the standing 'beats don't lift the stock' drift. Buyback pieces recirculate |
 | 2026-10-01 (post-open) | 📰 BRIEF | 1 item logged — MATERIAL — 35% weekly drawdown now quantified; rebound on Micron read-through |
 | 2026-10-01 (end-of-day) | 📰 BRIEF | 4 items triaged, 1 logged — MATERIAL — Micron read-through: NAND prices reported up ~30% with a tight market; Citi stays Buy (biggo, Invezz) — supports the NAND-pricing leg and the rebound from the 35% drawdown, though the drift cause remains unresolved → /dig SNDK |
+- **2026-10-02 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged, drift flagged — premarket plunge on "muted pricing" guidance paired with the same headline direction; /dig still open
