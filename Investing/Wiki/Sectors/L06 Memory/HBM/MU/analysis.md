@@ -81,6 +81,7 @@ _Evaluated: 2026-06-17_
 | 2026-09-30 | FQ4 beat, FQ1'27 guide above estimates, data-center revenue +11x | ↑ | 8-K 2.02 filed; headline-level confirmation of AI/HBM demand leg. HBM mix, margins and Netlist ITC risk unverified — /dig MU |
 
 ---
+| 2026-10-01 | FQ4 beat, ~$150B contract book; capex guide sold off | → | Demand and visibility legs confirmed by the print and a contract book above annual revenue; market is pricing higher capex as an FCF drag. Headline-only — /dig MU to size it. |
 
 ## Cross-Ticker Signals
 
