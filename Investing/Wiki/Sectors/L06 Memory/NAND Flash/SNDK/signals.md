@@ -115,3 +115,4 @@
 | 2026-10-01 (post-open) | 📰 BRIEF | 1 item logged — MATERIAL — 35% weekly drawdown now quantified; rebound on Micron read-through |
 | 2026-10-01 (end-of-day) | 📰 BRIEF | 4 items triaged, 1 logged — MATERIAL — Micron read-through: NAND prices reported up ~30% with a tight market; Citi stays Buy (biggo, Invezz) — supports the NAND-pricing leg and the rebound from the 35% drawdown, though the drift cause remains unresolved → /dig SNDK |
 - **2026-10-02 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged, drift flagged — premarket plunge on "muted pricing" guidance paired with the same headline direction; /dig still open
+- **2026-10-02 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — Citi names SanDisk top beneficiary of Micron's print, cites NAND prices +30% (Invezz, biggo); supports NAND-upcycle leg, partly offset by Samsung post-earnings memory dip

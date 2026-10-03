@@ -203,3 +203,4 @@
 | 2026-10-01 (post-open) | 📰 BRIEF | 1 item logged — MATERIAL — print confirmed (logged 09-30) but the stock sells the capex guide; capex/FCF question for /dig |
 | 2026-10-01 (end-of-day) | 📰 BRIEF | 4 items triaged, 3 logged — MATERIAL — stock fell ~3% after-hours/midday despite record FQ4 and above-consensus FQ1 guide: heightened capex forecast overpowers the beat (Stocktwits, 24/7 Wall St); Benzinga: ~$150B contract book exceeds annual revenue (demand-visibility leg); NVHBM base die to be outsourced to a foundry process (margin-accretive per MU) — capex/FCF sizing and Netlist exclusion risk still → /dig MU |
 - **2026-10-02 (post-open)** — 📰 BRIEF | 4 items triaged, 1 logged — $150B contract-book framing is new; print/stock-reaction items recirculate 09-30/10-01 logs
+- **2026-10-02 (end-of-day)** — 📰 BRIEF | 4 items triaged, 0 new logged — FQ4 print / sell-the-capex reaction / $150B contract book all recirculate 09-30..10-02 logs
