@@ -64,3 +64,4 @@ _None yet — seeded on onboarding._
 | 2026-09-25 (evening) | 📰 BRIEF | 1 filing triaged, 0 new logged — a Form 4 (beneficial-ownership change) is routine, same pattern dismissed since 08-25 |
 | 2026-09-28 (post-open) | 📰 BRIEF | 5 items triaged, 1 logged — Seagate's own GPU-efficiency/smarter-storage framing is a new company-sourced thesis-confirming claim; "Buy Hold or Sell Above $900" and rStock currency-conversion pages, a Form 4 mention, and a competitor recap were noise/routine |
 - **2026-10-02 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Toshiba HDD capacity doubling is a new competitive-supply fact
+- **2026-10-05 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — WDC/STX rebound premarket as analysts downplay Toshiba's capacity-doubling fears (TradingView) — headline and opening move agree the 2027 supply threat is long-dated; Toshiba doubling itself recirculates 10-02 log
