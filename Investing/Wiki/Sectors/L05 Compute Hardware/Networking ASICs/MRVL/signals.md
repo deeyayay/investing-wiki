@@ -107,3 +107,4 @@
 | 2026-09-29 (evening) | BRIEF | 📰 5 items triaged, 1 logged — Barchart flags Oct. 6 as the next Marvell catalyst date (event details not in headline; treat as calendar marker to verify); TradingKey "four straight guidance raises" and RBC $360 Buy-maintain recirculate dismissed items; Broadcom-vs-Marvell pieces were opinion |
 | 2026-10-01 (post-open) | 📰 BRIEF | 1 item logged — MATERIAL — Investor Day confirmed Oct 6 |
 | 2026-10-02 (end-of-day) | 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — record revenue + raised guidance (Pluang); HSBC PT $325→$450 Buy, Piper $270 Buy; 2nm optical links/capacity lock-in. Confirms custom-ASIC leg; stock lagging on sector pullback |
+| 2026-10-05 (end-of-day) | 📰 BRIEF | 5 items triaged, 1 logged | MATERIAL — setup for next session: Investor Day Oct 6; headline says beat but fell after hours (TradingKey, undated), HSBC PT $450 already logged 10-02 |
