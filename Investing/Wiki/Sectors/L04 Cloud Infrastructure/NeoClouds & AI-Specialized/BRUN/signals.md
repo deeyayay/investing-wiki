@@ -49,6 +49,8 @@
   **Why it matters:** Mechanical index-fund buying from passive Russell trackers is a new, real demand-side flow for the stock, independent of the fundamentals thesis — worth logging as market-structure context, not a thesis-moving fact.
 
 ---
+- **2026-10-06 (post-open)** — SEC EDGAR 8-K items 1.01 + 9.01 filed 10-06 — a material definitive agreement; counterparty and terms not visible at metadata level. The 10-05 8-K (5.02/9.01) is already logged.
+  **Why it matters:** Item 1.01 on a neocloud with a $1.45B take-or-pay backlog could be a new customer contract or a financing facility — the two read opposite ways for the thesis, so it needs the document.
 
 ## Social Mentions
 
@@ -93,3 +95,4 @@
 - **2026-09-25 (evening)** — 📰 BRIEF | 2 items triaged, 0 new logged — an Information-Technology-stocks-moving-Thursday roundup repeats the 09-25 post-open mention; a Diane Keaton real-estate listing was an unrelated BRUN-keyword mismatch
 - **2026-09-28 (post-open)** — 📰 BRIEF | 4 items triaged, 0 new logged — "Top Competitors 2026" and "Oct Market Outlook" were routine/listicle; Binance's Sept 28 stock-trading-debut announcements (2 outlets) are a new listing-venue mention, not a fundamental fact about BRUN
 - **2026-10-05 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — 8-K items 5.02 + 9.01 (SEC EDGAR): executive RSU awards with 24-month clawback on resignation (TipRanks/Stock Titan corroborate); retention positive, not thesis-moving
+- **2026-10-06 (post-open)** — 📰 BRIEF | 2 items triaged, 1 logged, deep-pass flagged — MATERIAL — 8-K 1.01 + 9.01 (10-06), terms unread

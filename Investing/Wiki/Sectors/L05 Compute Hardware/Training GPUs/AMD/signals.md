@@ -42,6 +42,8 @@
   **Why it matters:** A new named ecosystem partnership with another AI-silicon player extends AMD's platform reach beyond its own GPU line — breadth-of-adoption evidence for the "credible alternative" thesis leg, though headline gives no deal specifics (compute commitment, integration depth).
 
 ---
+- **2026-10-06 (post-open)** — TradingView: AMD reportedly sees AI chip demand outrunning supply, Lisa Su planning a 'substantial' 2027 ramp; Citigroup raises PT to $800 from $575 (Buy), Stifel to $700 (Buy). Q3 preview pieces expect beat-and-raise.
+  **Why it matters:** Supply-over-demand and a bigger 2027 ramp support the MI-series share-capture leg; sourcing is 'reportedly' and no company statement yet — earnings will settle it.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -91,3 +93,4 @@
 - **2026-09-29 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged, drift flagged — AMD to acquire Fei-Fei Li's World Labs (world-model / spatial-AI startup) in an $8.2B all-stock deal (GlobeNewswire release, MarketScreener); 8-K item 3.02 (unregistered equity issuance) filed 09-28 is consistent with the stock consideration. Dilution and a software/model-layer move outside the GPU-share thesis; index-selloff macro recap was noise. Queued for /dig.
 - **2026-09-30 (end-of-day)** — 📰 5 items triaged, 2 logged — 8-K item 3.02 (filed 09-28, unregistered equity sales) is consistent with the all-stock World Labs deal already logged, no new terms at metadata level; PT raised to $1,000 (GuruFocus) and a Seeking Alpha rating upgrade add analyst momentum, thesis-neutral
 - **2026-10-02 (end-of-day)** — 📰 BRIEF | 2 items triaged, 0 new logged — World Labs deal recirculates 09-29 log
+- **2026-10-06 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — demand-outruns-supply / 2027 ramp report + Citi PT $800 (supports data-center share leg, unconfirmed)

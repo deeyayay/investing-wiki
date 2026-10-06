@@ -103,6 +103,8 @@
   **Why it matters:** Dwarfs the $20B buyback logged 09-01 as routine — a $150B authorization is one of the largest single buyback moves on record and a hard capital-allocation confidence signal from management ("AI boom fuels growth" framing across every outlet), consistent with but not itself new information on the Blackwell-demand/CUDA-moat thesis legs.
 
 ---
+- **2026-10-06 (post-open)** — Reports that Nvidia weighs lower-memory Rubin Ultra GPU designs to ease the HBM bottleneck (retail-watch framing around Micron). Also: Rubin ramp / $108B Q3 outlook explainer and PT hikes recirculate; a Seeking Alpha "inventory says downgrade" is a single contributor.
+  **Why it matters:** Supply-constrained, not demand-constrained — consistent with the GPU-dominance leg, but a design shift toward less HBM per GPU is a second-order risk to the HBM-attach read for MU/SNDK (single report, unconfirmed).
 
 ## Social Mentions
 
@@ -178,3 +180,4 @@
 - **2026-10-01 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — Nvidia and SoftBank make a final $20B investment in OpenAI's last private round (The Information); deepens customer-financing circularity, and Anthropic IPO talk ($2T target vs. $1T-or-less skeptics) frames the demand-side valuation debate; no thesis leg changed
 - **2026-10-02 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — record high on a mega share buyback (outlets cite $150B and $235B — unreconciled); Cerebras post-IPO low on Nvidia pressure. Supports GPU-dominance leg
 - **2026-10-05 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — market chatter that the $20B Nvidia–Groq licensing deal faces a lawsuit (Yahoo, unconfirmed); legal/headline risk only, no thesis leg touched. Buyback/record-high items recirculate 10-02 log
+- **2026-10-06 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — lower-memory Rubin Ultra report (HBM bottleneck); rest recirculates
