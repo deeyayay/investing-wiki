@@ -53,6 +53,8 @@
 - **2026-10-01** — Stocktwits: SNDK rebounds after a 35% drop this week; Citi calls it top beneficiary of Micron's results (Stocktwits / Investing.com). Rebound on the Micron read-through eases but does not explain the week's 35% slide; the price/fundamental disconnect stays open.
 - **2026-10-02 (post-open)** — Stocktwits: SNDK "plummets premarket" as analysts cite "muted pricing" guidance despite record revenue and a $14B buyback.
   **Why it matters:** Opening reaction runs *against* the 10-01 Micron read-through (NAND +30%): the market is again selling the pricing leg despite a beat — the fourth straight print where fundamentals and price disagree. Premarket move only; magnitude unread.
+- **2026-10-07 (end-of-day)** — Memory complex dips on Samsung's post-earnings selloff; SK Hynix -4% on earnings caution; Sandisk -2% (Stocktwits, 24/7 Wall St.). Sandisk heads into 10-29 earnings after >600% gain (AD HOC NEWS).
+  **Why it matters:** Sector sentiment around Samsung's print, not a Sandisk fact; sets up 10-29 as the next hard test. Drift (Drifting) unchanged.
 
 ## Social Mentions
 
@@ -117,3 +119,4 @@
 - **2026-10-02 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged, drift flagged — premarket plunge on "muted pricing" guidance paired with the same headline direction; /dig still open
 - **2026-10-02 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — Citi names SanDisk top beneficiary of Micron's print, cites NAND prices +30% (Invezz, biggo); supports NAND-upcycle leg, partly offset by Samsung post-earnings memory dip
 - **2026-10-05 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — overnight "memory pump fades" slide (MU, SNDK, STX, WDC) is sector sentiment, not a company fact; earnings previews ($8B rev, 80% margins) and Citi $2,100 target recirculate. /dig SNDK still open
+- **2026-10-07 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — memory-sector selloff, earnings date 10-29; 'Q1 FY27 outlook misses' Stocktwits item looks stale, not logged

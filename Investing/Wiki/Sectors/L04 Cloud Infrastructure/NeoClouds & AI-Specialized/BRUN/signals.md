@@ -51,6 +51,8 @@
 ---
 - **2026-10-06 (post-open)** — SEC EDGAR 8-K items 1.01 + 9.01 filed 10-06 — a material definitive agreement; counterparty and terms not visible at metadata level. The 10-05 8-K (5.02/9.01) is already logged.
   **Why it matters:** Item 1.01 on a neocloud with a $1.45B take-or-pay backlog could be a new customer contract or a financing facility — the two read opposite ways for the thesis, so it needs the document.
+- **2026-10-07 (end-of-day)** — Boost Run signs $525.6M sovereign-AI cloud contract with Cohere, total contract value past $2.6B (BigGo, Crypto Briefing, Benzinga); stock +9.5%. Almost certainly the counterparty behind the 10-06 8-K item 1.01 (inferred from timing; 8-K text unread). A 10-06 Form 3 also filed.
+  **Why it matters:** Backlog up from the $1.45B take-or-pay base logged in the thesis to >$2.6B total contract value — directly strengthens the contracted-revenue leg; a new sovereign customer also diversifies away from the TML concentration.
 
 ## Social Mentions
 
@@ -96,3 +98,4 @@
 - **2026-09-28 (post-open)** — 📰 BRIEF | 4 items triaged, 0 new logged — "Top Competitors 2026" and "Oct Market Outlook" were routine/listicle; Binance's Sept 28 stock-trading-debut announcements (2 outlets) are a new listing-venue mention, not a fundamental fact about BRUN
 - **2026-10-05 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — 8-K items 5.02 + 9.01 (SEC EDGAR): executive RSU awards with 24-month clawback on resignation (TipRanks/Stock Titan corroborate); retention positive, not thesis-moving
 - **2026-10-06 (post-open)** — 📰 BRIEF | 2 items triaged, 1 logged, deep-pass flagged — MATERIAL — 8-K 1.01 + 9.01 (10-06), terms unread
+- **2026-10-07 (end-of-day)** — 📰 BRIEF | 5 items triaged, 2 logged, deep-pass flagged — Cohere $525.6M contract (MATERIAL/THESIS, ties to 10-06 8-K 1.01); Form 3 routine

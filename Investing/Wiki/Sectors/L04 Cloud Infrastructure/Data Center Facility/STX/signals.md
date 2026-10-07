@@ -22,6 +22,8 @@
 ---
 - **2026-10-02 (post-open)** — Toshiba to invest ¥60B to double HDD capacity for AI data centers (biggo, 富途牛牛); Seagate/WDC noted as having suffered sharp declines.
   **Why it matters:** A duopoly-plus-one capacity expansion is a long-dated supply-side risk to HDD pricing power underpinning the HAMR/exabyte thesis; the doubling is multi-year and does not yet touch near-term areal-density lead.
+- **2026-10-07 (end-of-day)** — Seagate plunges 9%+ amid HDD capacity concerns and acquisition talks (GuruFocus); Simply Wall Street frames the bull case as 'changing' after HDD capacity expansion. IBD/Barron's frame the same days as a rebound on Toshiba competition worries.
+  **Why it matters:** The 'acquisition talks' piece is new and unspecified (target or acquirer unknown) and sits on top of the Toshiba capacity-doubling risk logged 10-02; headline-only and conflicting direction, so no thesis verdict — needs a source.
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -65,3 +67,4 @@ _None yet — seeded on onboarding._
 | 2026-09-28 (post-open) | 📰 BRIEF | 5 items triaged, 1 logged — Seagate's own GPU-efficiency/smarter-storage framing is a new company-sourced thesis-confirming claim; "Buy Hold or Sell Above $900" and rStock currency-conversion pages, a Form 4 mention, and a competitor recap were noise/routine |
 - **2026-10-02 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Toshiba HDD capacity doubling is a new competitive-supply fact
 - **2026-10-05 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — WDC/STX rebound premarket as analysts downplay Toshiba's capacity-doubling fears (TradingView) — headline and opening move agree the 2027 supply threat is long-dated; Toshiba doubling itself recirculates 10-02 log
+- **2026-10-07 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged, deep-pass flagged — -9% on capacity concerns + unspecified 'acquisition talks' (MATERIAL, ambiguous)

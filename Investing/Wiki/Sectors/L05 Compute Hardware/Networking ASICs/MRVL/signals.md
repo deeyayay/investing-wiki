@@ -49,6 +49,8 @@
 
 ---
 - **2026-10-01** — Marvell confirms October 6 Investor Day; shares +2.19% (AD HOC NEWS). Converts the Oct. 6 date flagged 09-29 into a confirmed catalyst; custom-ASIC and interconnect targets are the thing to watch.
+- **2026-10-07 (end-of-day)** — Investor Day (10-06): Marvell raises long-term guidance, revenue framing to ~$30B combined for 2026-27; stock jumps toward $300 (Barchart, MarketScreener, Seeking Alpha, TradingView midday).
+  **Why it matters:** Resolves the 10-05 'fell after hours' ambiguity upward — the market took the Investor Day as a raise. Combined-year $30B framing needs checking against the standing $18B-by-2028 DC chip guide (earlier outlet mis-sized a $30B figure), so confirm via the deck before treating as a new target.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -108,3 +110,4 @@
 | 2026-10-01 (post-open) | 📰 BRIEF | 1 item logged — MATERIAL — Investor Day confirmed Oct 6 |
 | 2026-10-02 (end-of-day) | 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — record revenue + raised guidance (Pluang); HSBC PT $325→$450 Buy, Piper $270 Buy; 2nm optical links/capacity lock-in. Confirms custom-ASIC leg; stock lagging on sector pullback |
 | 2026-10-05 (end-of-day) | 📰 BRIEF | 5 items triaged, 1 logged | MATERIAL — setup for next session: Investor Day Oct 6; headline says beat but fell after hours (TradingKey, undated), HSBC PT $450 already logged 10-02 |
+| 2026-10-07 (end-of-day) | 📰 BRIEF | 5 items triaged, 1 logged, deep-pass flagged — Investor Day guidance raise (THESIS); rest are roundups |

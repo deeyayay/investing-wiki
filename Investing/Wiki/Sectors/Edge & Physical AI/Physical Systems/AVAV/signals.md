@@ -29,6 +29,8 @@
 | 2026-09-15 | "AeroVironment's Cash Burn Clouds a Record Order Book as Wall Street Splits on Valuation" — new bear-case data point against the record-backlog framing | ad-hoc-news.de | A genuinely new specific concern (cash burn) distinct from the standing valuation-caution/PT-trim thread already on file — logged as a watch item, not yet a challenge to the order-flow/platform thesis itself since the backlog/order-flow legs are unaffected. |
 | 2026-09-21 (evening) | Wedbush calls AeroVironment and Kratos "long-term winners" in defense tech | Stocktwits | First named Wedbush commentary on file — directly reinforces the "go-to battlefield-proven autonomous-drone platform" framing at the center of the thesis, distinct from the standing 09-03 RBC downgrade and 09-14 PT-trim valuation-caution thread. |
 | 2026-10-06 | AeroVironment stock gains 1.15% after earnings beat (AD HOC NEWS) | ad-hoc-news.de | Headline and move agree, but the headline is thin on figures and the beat date is unclear — no new thesis evidence beyond the standing record-backlog framing. |
+- **2026-10-07 (end-of-day)** — Rothschild Redburn initiates at Neutral; CEO cites 'unprecedented' defense demand over next two years (Stocktwits, Investing.com). The $464.8M laser contract recaps the already-logged Army award.
+  **Why it matters:** Neutral initiation tempers the valuation debate but adds no fundamental fact; CEO demand comment is management talk, consistent with the record-backlog framing.
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -76,3 +78,4 @@ _None yet — seeded on onboarding._
 | 2026-09-25 (evening) | 📰 BRIEF + 1 topic hit | 5 items + 1 topic hit triaged, 0 new logged | "$464.8 Million Laser Contract" (insidermonkey) recaps the already-logged 09-02/03 $465M Army contract; "6 percent revenue growth" repeats the 09-25 post-open dismissal; "slips as investors weigh unchanged outlook and recent target cuts" recaps the known 09-14 PT-trim thread; an L3Harris-contract-cost-control piece was a company mismatch; humanoid-robotics topic hit had no AVAV-specific development; /dig still queued for the primary print |
 | 2026-09-28 (post-open) | 📰 BRIEF | 2 items triaged, 0 new logged | "$500M Army Contract" recaps the already-logged $465M Army laser contract; an NBCUniversal-video-games headline was a keyword mismatch |
 | 2026-10-06 (post-open) | 📰 BRIEF | 2 items triaged, 1 logged — earnings-beat headline, +1.15%; thin |
+| 2026-10-07 (end-of-day) | 📰 BRIEF | 5 items triaged, 1 logged — initiation + CEO demand comment; laser-contract headline is a recap, skipped |

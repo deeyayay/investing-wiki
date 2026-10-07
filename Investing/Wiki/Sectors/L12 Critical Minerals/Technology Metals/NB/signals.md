@@ -21,6 +21,8 @@
 | 2026-09-23 | H.C. Wainwright maintains Buy, $10 price target | Moomoo | A fourth sell-side voice on file (after Freedom Broker $12, William Blair Conviction List, Jefferies Hold) — a lower target than Freedom Broker's but still bullish; routine coverage-breadth context, no new detail. |
 | 2026-09-04 | Chinese rare-earth suppliers reportedly halt shipments to the US, fearing Beijing retribution | finance.biggo.com | First concrete supply-halt action (vs. the 06-01 op-ed's "curbs are a permanent shift" framing) — directly confirms the China-export-tightening leg the reshoring thesis rests on. |
 | 2026-09-25 | FY2026 10-K (year ended June 30, 2026): revenue $0, net loss $(48.6)M, EPS $(0.41) | TradingView | First actual annual financial print on file — a pre-revenue development-stage company's burn rate is the direct input to the EXIM-financing gate the thesis is optioned on; EDGAR timed out this run, so the filing itself hasn't been read yet, worth a /dig check against cash-runway assumptions. |
+- **2026-10-07 (end-of-day)** — Freedom Broker cuts NioCorp PT to $8.40 from $12 on funding dilution (Investing.com, TipRanks).
+  **Why it matters:** Second-day recirculation of the 10-05 dilution call with a stated figure; sharpens the financing-gap watch, headline only.
 
 ---
 
@@ -59,3 +61,4 @@ _None yet — seeded on onboarding._
 | 2026-09-25 (evening) | 📰 BRIEF | 5 items triaged, 1 logged, deep-pass flagged | FY2026 10-K first actual print (revenue $0, net loss $(48.6)M, EPS $(0.41)) — first hard burn-rate figure on file for the financing-gated thesis; EDGAR timed out so the filing itself is unread, added to /dig queue; USA Rare Earth (Blacksburg) and Idaho Strategic Resources headlines repeat the standing company-mismatch pattern |
 | 2026-09-28 (post-open) | 📰 BRIEF | 3 items triaged, 0 new logged | the FY2026 10-K filing recirculates the already-logged 09-25 evening item (first hard burn-rate print), still unread pending /dig; "5 companies building America's rare earth supply chain" and a market-futures macro piece named no NB-specific fact |
 | 2026-10-05 (end-of-day) | 📰 BRIEF | 3 items triaged, 1 logged | MATERIAL — Freedom Broker cuts NB price target on funding dilution (Investing.com); reinforces financing-gap watch, headline only, no /dig trigger |
+| 2026-10-07 (end-of-day) | 📰 BRIEF | 5 items triaged, 1 logged — PT cut with figure; other items are quote pages / peers |

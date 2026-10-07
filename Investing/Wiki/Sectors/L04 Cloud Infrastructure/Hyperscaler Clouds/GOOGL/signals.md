@@ -57,6 +57,8 @@
 - **2026-10-01** — Google launches Gemini 4 Argon; shares up pre-market, KeyBanc reiterates, JPMorgan says Google must still reclaim AI leadership (Morningstar / Investing.com). Headline and pre-market move agree: frontier-model relaunch lifts the stack-ownership leg; JPMorgan's caveat keeps it a catch-up, not a lead.
 - **2026-10-06 (post-open)** — Securities-fraud class actions filed over the delayed AI model launch and July 2026 ~4% stock drop (PR Newswire, Pluang); Poland's antitrust regulator threatens a fine of up to 10% of turnover (Traders Union).
   **Why it matters:** Plaintiff-firm solicitations are boilerplate and the Poland fine is a threat not a ruling — legal noise around the stack-ownership leg, but the delayed-launch premise is the same one the 10-01 Gemini 4 relaunch answered.
+- **2026-10-07 (end-of-day)** — Securities class action filed over the delayed AI model launch / July stock drop; Poland antitrust regulator threatens 10% turnover fine (PR Newswire, Pluang, Traders Union).
+  **Why it matters:** Mostly law-firm solicitation repeats of the 10-06 entry; the lawsuit's premise (delayed model) is consistent with the Gemini 4 reception already logged — no thesis leg moved.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -104,3 +106,4 @@
 - **2026-10-01 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — Gemini 4 Argon launch reversed the positive open: shares slid as CNBC reports the launch disappointed the Street, Morningstar frames it as a return to the frontier race; model-layer, not the Cloud-growth leg; watch tomorrow's follow-through
 - **2026-10-02 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — Alphabet prices upsized $84.75B capital raise (Stocktwits), on top of Gemini 4 slide logged 10-01; funding-need vs capex-cash-flow question. Class-action notices are noise
 - **2026-10-06 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL (low) — class-action solicitations + Poland antitrust fine threat; no thesis leg moved
+- **2026-10-07 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (low) — litigation solicitations recur; Poland fine threat already logged 10-06

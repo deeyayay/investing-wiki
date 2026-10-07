@@ -85,6 +85,8 @@
 
 ---
 - **2026-10-01** — Intel among chip names at 52-week highs on Micron read-through; one upgrade to hold, Erste lifts EPS forecast (Stocktwits / TradingView / AD HOC NEWS). Price confirms the 09-30 after-hours +12% report is holding into the open (still no filing); analyst moves are marginal.
+- **2026-10-07 (end-of-day)** — Musk mentions 'Terafab' partnership discussions with TSMC; Intel shares shake (news.sbs.co.kr). Mizuho raises PT $92→$114; Intel -2.63% into the 10-29 earnings (AD HOC NEWS, InteractiveCrypto).
+  **Why it matters:** Terafab was the external-customer thread (Tesla/SpaceX) for IFS; TSMC involvement would cut against Intel being the sole US foundry partner — single foreign-language source, unverified; no verdict.
 
 ## Social Mentions
 
@@ -142,3 +144,4 @@
 - **2026-09-29 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged, deep-pass flagged — investingLive: "Intel dilutes shareholders: will launch $15 billion secondary" — a new capital-raise fact (headline only, no filing seen in this run; EDGAR clean, no 424B/8-K surfaced) that cuts against the buyback-free rerate leg via dilution; kobaran Arizona-fab partnership item recirculates; Yahoo tape INTC -4% on oil/rate fears (macro). Verify offer size/terms via /dig INTC before the next session
 - **2026-09-30 (end-of-day)** — 📰 5 items triaged, 1 logged, deep-pass flagged — Stocktwits: shares +12% after-hours on a Q3 outlook above estimates and the strongest Q2 revenue growth in 15 years; single-source, headline-only, no filing in this run — would confirm the rerate leg if borne out, but verify before moving drift → /dig INTC
 - **2026-10-01 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — +12% after-hours move persisting in the open
+- **2026-10-07 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — Terafab/TSMC mention (MATERIAL, unverified); Mizuho PT raise and earnings-date items skipped as noise
