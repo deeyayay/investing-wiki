@@ -24,6 +24,8 @@
   **Why it matters:** A duopoly-plus-one capacity expansion is a long-dated supply-side risk to HDD pricing power underpinning the HAMR/exabyte thesis; the doubling is multi-year and does not yet touch near-term areal-density lead.
 - **2026-10-07 (end-of-day)** — Seagate plunges 9%+ amid HDD capacity concerns and acquisition talks (GuruFocus); Simply Wall Street frames the bull case as 'changing' after HDD capacity expansion. IBD/Barron's frame the same days as a rebound on Toshiba competition worries.
   **Why it matters:** The 'acquisition talks' piece is new and unspecified (target or acquirer unknown) and sits on top of the Toshiba capacity-doubling risk logged 10-02; headline-only and conflicting direction, so no thesis verdict — needs a source.
+- **2026-10-07 (post-open)** — Bloomberg: Seagate said to vie with Toshiba for TDK's hard-drive magnetic heads unit (10-06). Likely the "acquisition talks" behind the -9% headlines.
+  **Why it matters:** Heads are a HAMR-critical component; winning the unit would vertically integrate supply for Seagate, while Toshiba winning it tightens a competitor's capacity path. Single-source, unconfirmed — no verdict.
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -68,3 +70,4 @@ _None yet — seeded on onboarding._
 - **2026-10-02 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Toshiba HDD capacity doubling is a new competitive-supply fact
 - **2026-10-05 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — WDC/STX rebound premarket as analysts downplay Toshiba's capacity-doubling fears (TradingView) — headline and opening move agree the 2027 supply threat is long-dated; Toshiba doubling itself recirculates 10-02 log
 - **2026-10-07 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged, deep-pass flagged — -9% on capacity concerns + unspecified 'acquisition talks' (MATERIAL, ambiguous)
+- **2026-10-07 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Bloomberg: STX vs Toshiba for TDK heads unit (explains 'acquisition talks'); rest recirculates
