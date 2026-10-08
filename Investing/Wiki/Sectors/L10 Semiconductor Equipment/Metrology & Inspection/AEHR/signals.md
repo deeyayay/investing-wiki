@@ -26,6 +26,9 @@
 - **2026-09-23 (post-open)** — Stocktwits: AEHR stock pops 40% after-hours on an earnings beat, with retail bulls pointing to upbeat FY2027 guidance.
   **Why it matters:** Directly conflicts with the 09-17 "slips after soft Q1 guidance" headline — this is a real print with a strong market reaction, not a repeat, and the "upbeat FY27 guidance" framing runs counter to the standing soft-guidance concern. No hard revenue/bookings figures at headline level; escalated to /dig to pull the actual print and resolve which read is accurate.
 
+- **2026-10-07** — Aehr announces ~$6M follow-on Sonoma production orders adding test capacity for the lead hyperscale customer's next-generation AI processor (company release via Stock Titan, TradingView, MarketScreener)
+  **Why it matters:** A repeat order from the same hyperscale customer for a second AI chip is the clearest evidence yet that AI burn-in is recurring volume, not a one-off qualification — supports the AI-pivot leg, though $6M is small against the FQ1 (10-06) results still not seen.
+
 ---
 
 ## Social Mentions
@@ -70,3 +73,4 @@
 - **2026-09-28 (post-open)** — 📰 BRIEF | 4 items triaged, 0 new logged — earnings-date announcement (Monday), CEO Investor Summit conference mention, and a Dow-slides macro recap were noise/routine; /dig item (earnings-beat vs. soft-guidance conflict) still open
 - **2026-09-29 (end-of-day)** — 📰 BRIEF | 4 items triaged, 1 logged — fiscal Q1 FY27 earnings confirmed for **Oct 6**; options imply an ~8.4% move (Investing.com, Business Upturn) — calendar marker for the AI-pivot / book-to-bill leg; Quiver preview is content-mill; /dig item (earnings-beat vs. soft-guidance conflict) still open
 - **2026-10-02 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL, ambiguous — TipRanks 'soars after earnings shock' conflicts with the 10-06 FQ1 date logged 09-29 (previews still ran 10-02); date/headline unresolved, /dig before 10-06
+- **2026-10-08 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — THESIS ↑ (modest): ~$6M follow-on Sonoma orders for lead hyperscale customer's next-gen AI processor; no filing seen, FQ1 results still unread — /dig AEHR

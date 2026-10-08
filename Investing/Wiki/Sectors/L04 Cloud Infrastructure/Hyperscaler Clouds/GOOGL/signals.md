@@ -60,6 +60,9 @@
 - **2026-10-07 (end-of-day)** — Securities class action filed over the delayed AI model launch / July stock drop; Poland antitrust regulator threatens 10% turnover fine (PR Newswire, Pluang, Traders Union).
   **Why it matters:** Mostly law-firm solicitation repeats of the 10-06 entry; the lawsuit's premise (delayed model) is consistent with the Gemini 4 reception already logged — no thesis leg moved.
 
+- **2026-10-07** — Yellow.com: GOOG slides after Alphabet raises AI spending by ~$15B despite Cloud beat; Traders Union asks whether $342.3 support holds with buyback suspended (headline-level)
+  **Why it matters:** Capex raise supports the AI-demand leg but, alongside the upsized $84.75B raise (10-02) and a reportedly suspended buyback, sharpens the capex-vs-cash-flow question — verify the figures before treating as fact.
+
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
 
@@ -107,3 +110,4 @@
 - **2026-10-02 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — Alphabet prices upsized $84.75B capital raise (Stocktwits), on top of Gemini 4 slide logged 10-01; funding-need vs capex-cash-flow question. Class-action notices are noise
 - **2026-10-06 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL (low) — class-action solicitations + Poland antitrust fine threat; no thesis leg moved
 - **2026-10-07 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (low) — litigation solicitations recur; Poland fine threat already logged 10-06
+- **2026-10-08 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — capex +~$15B / buyback-suspended headlines (unverified); litigation solicitations skipped
