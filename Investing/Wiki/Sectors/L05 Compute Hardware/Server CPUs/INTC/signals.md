@@ -87,6 +87,10 @@
 - **2026-10-01** — Intel among chip names at 52-week highs on Micron read-through; one upgrade to hold, Erste lifts EPS forecast (Stocktwits / TradingView / AD HOC NEWS). Price confirms the 09-30 after-hours +12% report is holding into the open (still no filing); analyst moves are marginal.
 - **2026-10-07 (end-of-day)** — Musk mentions 'Terafab' partnership discussions with TSMC; Intel shares shake (news.sbs.co.kr). Mizuho raises PT $92→$114; Intel -2.63% into the 10-29 earnings (AD HOC NEWS, InteractiveCrypto).
   **Why it matters:** Terafab was the external-customer thread (Tesla/SpaceX) for IFS; TSMC involvement would cut against Intel being the sole US foundry partner — single foreign-language source, unverified; no verdict.
+- **2026-10-08 (post-open)** — Terafab/TSMC thread widens to three outlets: Musk talks 'shift toward TSMC' and stock drops (Timothy Sykes, Motley Fool 'bad news for Intel shareholders'); TIKR counters that Musk reaffirms Terafab control with Intel 'remains involved'.
+  **Why it matters:** Escalates the 10-07 single-source item — the external-foundry-customer leg of the IFS thesis is now contested, but nothing is confirmed and Intel's role is described as ongoing. Headline and pre-market move point the same way (down). No verdict until sourced; /dig INTC.
+
+---
 
 ## Social Mentions
 
@@ -145,3 +149,4 @@
 - **2026-09-30 (end-of-day)** — 📰 5 items triaged, 1 logged, deep-pass flagged — Stocktwits: shares +12% after-hours on a Q3 outlook above estimates and the strongest Q2 revenue growth in 15 years; single-source, headline-only, no filing in this run — would confirm the rerate leg if borne out, but verify before moving drift → /dig INTC
 - **2026-10-01 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — +12% after-hours move persisting in the open
 - **2026-10-07 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — Terafab/TSMC mention (MATERIAL, unverified); Mizuho PT raise and earnings-date items skipped as noise
+- **2026-10-08 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — Terafab shifting toward TSMC now in 3 outlets, Intel stock lower; role 'remains involved' per TIKR; unverified

@@ -70,6 +70,7 @@ _Evaluated: 2026-06-17_
 | 2026-08-27 | Q2 FY2027 beat-and-raise confirmed; shares fell as "Google deal questions linger" (Reuters) | → Mixed | Revenue/earnings beat and raised forecast confirm the custom-ASIC demand leg, but the market's reaction signals the pre-earnings $120B Google framing was never resolved — flagged for /dig before treating the Google leg of the dual-angle thesis as intact. |
 | 2026-08-29 | Second outlet (CNBC) frames the same selloff as "outlook underwhelms despite 37% revenue growth" | ↓ Weakened | A second, distinct causal story on top of the Google-deal ambiguity — now two open questions (Google relationship, forward guidance) instead of one. Revenue growth itself remains strong; the standing /dig item needs to settle both threads before the custom-ASIC leg can be called intact. |
 | 2026-10-07 | Investor Day raises long-term guidance (~$30B combined 2026-27 per headlines); stock jumps | ↑ | Confirms custom-ASIC/interconnect growth leg and reverses the 08-29 'outlook underwhelms' concern; figure basis unverified — /dig. |
+| 2026-10-08 | Investor Day detail: connectivity outlook $20B; MS cites FY31 EPS >$30 | ↑ Strengthened | Names the interconnect leg inside the 10-07 raise, supporting the SerDes/DSP half of the thesis alongside custom ASICs. Headline-level; deck basis unverified (/dig MRVL). |
 
 ## Cross-Ticker Signals
 <!-- Log signals this ticker emits to or receives from other monitored names. -->

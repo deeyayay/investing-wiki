@@ -62,6 +62,10 @@
 
 - **2026-10-07** — Yellow.com: GOOG slides after Alphabet raises AI spending by ~$15B despite Cloud beat; Traders Union asks whether $342.3 support holds with buyback suspended (headline-level)
   **Why it matters:** Capex raise supports the AI-demand leg but, alongside the upsized $84.75B raise (10-02) and a reportedly suspended buyback, sharpens the capex-vs-cash-flow question — verify the figures before treating as fact.
+- **2026-10-08 (post-open)** — IBD: utility merger pair surges on an Alphabet AI deal; TD Cowen raises PT on cloud growth (target $485).
+  **Why it matters:** Alphabet contracting power for AI via a utility partner supports the capex-conversion leg; deal terms unseen.
+
+---
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -111,3 +115,4 @@
 - **2026-10-06 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL (low) — class-action solicitations + Poland antitrust fine threat; no thesis leg moved
 - **2026-10-07 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (low) — litigation solicitations recur; Poland fine threat already logged 10-06
 - **2026-10-08 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — capex +~$15B / buyback-suspended headlines (unverified); litigation solicitations skipped
+- **2026-10-08 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — Alphabet AI power deal lifts utility merger pair; TD Cowen PT $485

@@ -31,6 +31,10 @@
 | 2026-10-06 | AeroVironment stock gains 1.15% after earnings beat (AD HOC NEWS) | ad-hoc-news.de | Headline and move agree, but the headline is thin on figures and the beat date is unclear — no new thesis evidence beyond the standing record-backlog framing. |
 - **2026-10-07 (end-of-day)** — Rothschild Redburn initiates at Neutral; CEO cites 'unprecedented' defense demand over next two years (Stocktwits, Investing.com). The $464.8M laser contract recaps the already-logged Army award.
   **Why it matters:** Neutral initiation tempers the valuation debate but adds no fundamental fact; CEO demand comment is management talk, consistent with the record-backlog framing.
+- **2026-10-08 (post-open)** — VideoRay (AeroVironment) selected for US Navy mine-countermeasure prototype program (Stockhouse); ARK adds AVAV and Kratos; AD HOC NEWS flags a 52-week low.
+  **Why it matters:** Navy selection widens the multi-domain leg into maritime; ARK buying against a 52-week-low print shows the tape and the news disagree — valuation/sentiment, not a fundamental break.
+
+---
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -79,3 +83,4 @@ _None yet — seeded on onboarding._
 | 2026-09-28 (post-open) | 📰 BRIEF | 2 items triaged, 0 new logged | "$500M Army Contract" recaps the already-logged $465M Army laser contract; an NBCUniversal-video-games headline was a keyword mismatch |
 | 2026-10-06 (post-open) | 📰 BRIEF | 2 items triaged, 1 logged — earnings-beat headline, +1.15%; thin |
 | 2026-10-07 (end-of-day) | 📰 BRIEF | 5 items triaged, 1 logged — initiation + CEO demand comment; laser-contract headline is a recap, skipped |
+| 2026-10-08 (post-open) | 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — VideoRay Navy MCM prototype selection; ARK adds while stock at 52-week low |

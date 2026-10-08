@@ -34,6 +34,8 @@
 
 **2026-09-24 (post-open)** — Arista patches an actively-exploited zero-day in VeloCloud Orchestrator (BleepingComputer).
 *Why it matters:* A security incident in a product line, not the core Ethernet switching business — no evidence yet it touches the AI-networking demand thesis, logged for the audit trail.
+- **2026-10-08 (post-open)** — Arista debuts open Ethernet solutions for rack-scale systems and scale-up (Telecompaper, Konsulteer); Citigroup lifts PT $215→$248 (MarketScreener).
+  **Why it matters:** Scale-up Ethernet product expansion extends the 'Ethernet displaces proprietary fabrics' leg into the rack; Citi move is marginal.
 
 ---
 
@@ -85,3 +87,4 @@
 | 2026-09-28 (post-open) | BRIEF | 5 items triaged, 0 new logged — Flex networking-momentum, Arbitrum, Fortinet stock-quote, "AI Stocks Top Of The Class" listicle, and an Innovorbs hardware-refresh mention (Cisco/HPE/Arista keyword match) were noise/mismatch |
 | 2026-09-30 (end-of-day) | BRIEF | 📰 5 items triaged, 1 logged — Bernstein initiates at Outperform, $250 PT (MarketScreener), a new named analyst action; Q1 transcript recaps are noise |
 | 2026-10-02 (end-of-day) | 📰 BRIEF | 4 items triaged, 1 logged — MATERIAL — raised revenue guidance with outsized earnings beat (Simply Wall Street, Yahoo Finance); shares up. Confirms hyperscaler-AI-Ethernet leg; no filing in digest to confirm figures, /dig to verify |
+| 2026-10-08 (post-open) | 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — open Ethernet rack-scale/scale-up portfolio; Citi PT $215→$248 |

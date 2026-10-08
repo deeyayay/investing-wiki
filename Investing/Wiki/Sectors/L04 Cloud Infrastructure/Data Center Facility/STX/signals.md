@@ -26,6 +26,10 @@
   **Why it matters:** The 'acquisition talks' piece is new and unspecified (target or acquirer unknown) and sits on top of the Toshiba capacity-doubling risk logged 10-02; headline-only and conflicting direction, so no thesis verdict — needs a source.
 - **2026-10-07 (post-open)** — Bloomberg: Seagate said to vie with Toshiba for TDK's hard-drive magnetic heads unit (10-06). Likely the "acquisition talks" behind the -9% headlines.
   **Why it matters:** Heads are a HAMR-critical component; winning the unit would vertically integrate supply for Seagate, while Toshiba winning it tightens a competitor's capacity path. Single-source, unconfirmed — no verdict.
+- **2026-10-08 (post-open)** — Moomoo: Seagate and Western Digital tumble as 'AI shortage shows signs of easing'; AD HOC NEWS shows pre-market unchanged. Bloomberg TDK heads bidding-war item recirculates.
+  **Why it matters:** Headline-level read that tightness in storage may be easing cuts at the demand-scarcity premise behind the HAMR exabyte leg; the pre-market tape is flat, so the market has not extended the fall. Unverified.
+
+---
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -71,3 +75,4 @@ _None yet — seeded on onboarding._
 - **2026-10-05 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — WDC/STX rebound premarket as analysts downplay Toshiba's capacity-doubling fears (TradingView) — headline and opening move agree the 2027 supply threat is long-dated; Toshiba doubling itself recirculates 10-02 log
 - **2026-10-07 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged, deep-pass flagged — -9% on capacity concerns + unspecified 'acquisition talks' (MATERIAL, ambiguous)
 - **2026-10-07 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Bloomberg: STX vs Toshiba for TDK heads unit (explains 'acquisition talks'); rest recirculates
+- **2026-10-08 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — STX/WDC fall on 'AI shortage easing' framing; pre-market flat; headline-level

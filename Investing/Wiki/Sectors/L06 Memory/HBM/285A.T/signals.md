@@ -51,6 +51,10 @@
 - **2026-10-01** — Kioxia rallies on Micron's blowout quarter; Bernstein lifts target while flagging a Chinese NAND threat (Investing.com / AD HOC NEWS). Micron read-through supports the sold-out-NAND leg; Bernstein's China-competition caveat is the first named risk to the pure-play framing.
 - **2026-10-07 (end-of-day)** — Japanese retail margin-sell deadline looms for Kioxia; reported ~$280M of retail margin losses; stock falling (Nikkei Asia, Seoul Economic Daily, Investing.com).
   **Why it matters:** Positioning/flow risk (forced margin selling), not an operating change — NAND demand thesis untouched but near-term volatility rises.
+- **2026-10-08 (post-open)** — JPX review lifts Kioxia's Topix weighting; passive funds face a large inflow (Bloomberg, AD HOC NEWS, streamlinefeed). BigGo: Kioxia drops out of the top-four NAND ranking as SanDisk margin sustainability is debated.
+  **Why it matters:** Index inflow is a technical offset to the 10-07 margin-sell overhang — flow, not operating change. Rank slippage is a share data point, not a demand signal; NAND thesis untouched.
+
+---
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -102,3 +106,4 @@
 - **2026-09-29 (evening)** — 📰 BRIEF | 5 items triaged, 1 logged — Kioxia 3-for-1 stock split effective 09-29 (Moomoo, company corporate action); this is distinct from the Hyperliquid synthetic-perp settlement noise dismissed earlier. Cosmetic to BiCS/Flash Ventures thesis but widens retail access; competitor-memory weakness (Samsung/SK Hynix) and quote pages were noise
 - **2026-10-01 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — sector read-through up, China competition caveat
 - **2026-10-07 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — margin-sell overhang
+- **2026-10-08 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — Topix weighting rise brings passive inflow, offsets margin-sell overhang; flow only

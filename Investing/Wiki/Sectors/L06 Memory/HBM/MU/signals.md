@@ -139,6 +139,10 @@
   **Why it matters:** Multi-year contracted demand supports the structural-AI-demand leg and visibility beyond spot pricing; equity still sold the capex guide on 10-01, so market reaction is the open question.
 - **2026-10-06 (post-open)** — Reuters: Micron enters a $600M settlement of the Netlist patent dispute; separately, Micron says a Chinese rival poached engineers and then sued it using Micron's own technology (24/7 Wall St.). Settlement caps a long-running IP overhang at a known cost; the poaching suit is the CXMT-adjacent competitive-IP thread (headline-level). HBM 2027 surcharge framing (AD HOC NEWS) recirculates the 10-05 TrendForce item.
   **Why it matters:** Neither touches the HBM-supply/demand legs directly; the settlement removes tail risk, the rival-suit story is the CXMT thread already in the deep-pass queue.
+- **2026-10-08 (post-open)** — Morgan Stanley upgrade and DA Davidson target raise on AI-memory demand; 'memory pricing tightens' (AD HOC NEWS, Futu). Offsetting: Taiwan workers authorize a strike over a bonus dispute (Yahoo Finance).
+  **Why it matters:** Analyst reasoning cites tightening pricing — consistent with the supply-contracted/HBM leg. Strike authorization is a small supply-continuity watch item for Taiwan fabs; no stoppage reported.
+
+---
 
 ## Social Mentions
 
@@ -209,3 +213,4 @@
 - **2026-10-05 (post-open)** — 📰 BRIEF | 5 items triaged, 2 logged — MATERIAL — China's CXMT plans an ~$8.5B IPO; headline pairs it with MU "crashing below $910" and a "DRAM bull cycle cracking?" frame (Stocktwits-style, headline-level only) — funds a Chinese DRAM competitor, though HBM exposure is unconfirmed. Samsung reportedly seeks >3× HBM prices for 2027 as HBM4 ramps (hbm-supply topic) — supports HBM pricing power, but Samsung re-entering Nvidia supply cuts against the "stacked on every GPU" exclusivity framing. Overnight "memory pump fades" slide across MU/SNDK/STX/WDC agrees with the CXMT headline direction. → /dig MU
 - **2026-10-05 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — TrendForce raises its 2027 HBM price forecast, citing persistent supply constraints (EE Times Asia); supports the structural-demand leg and cuts against the 10-05 'DRAM cycle cracking' framing. 4 other items recirculate; Form 4s routine
 - **2026-10-06 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — Netlist $600M settlement + China-rival engineer-poaching suit; no thesis leg moved
+- **2026-10-08 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — Morgan Stanley upgrade + DA Davidson PT raise on memory pricing; Taiwan strike authorization (no stoppage)
