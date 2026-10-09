@@ -55,6 +55,8 @@
   **Why it matters:** First-mover, bank-charter-backed stablecoin settlement at network scale is the clearest confirmation yet of the Galileo/rails leg of the thesis — a live, revenue-bearing deployment (not a pilot or exchange-side tie-up like the 09-04 Kraken deal), sourced directly from SoFi's own IR.
 - **2026-10-08 (post-open)** — SoFi, Mastercard and Orbi plan a crypto-linked card for Mexico (Seeking Alpha, Stock Titan); 'SoFiUSD settlement of $25B annual card volume' (Intellectia) recirculates the 09-22 stablecoin item; Stocktwits notes PT cuts after Q2.
   **Why it matters:** Mexico card extends the rails/stablecoin leg into cross-border; the $25B figure is unsourced to IR and should not be treated as new.
+- **2026-10-09 (post-open)** — SoFiUSD enters live settlement; SoFi moves ~$25B annual card volume to it (Intellectia, AD HOC NEWS, 10-08); stock -1.57%.
+  **Why it matters:** Stablecoin settlement going live supports the Galileo/Financial Services flywheel cost leg, but the shares fell on the news — headline up, move down. $25B volume framing is secondary-sourced.
 
 ---
 
@@ -105,3 +107,4 @@
 - **2026-09-25 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — the SoFi/Mastercard stablecoin-settlement-live headlines (3 more outlets) again recirculate the already-logged 09-22 item; "Trades At A Discount Ahead Of October 27 Earnings" is pre-earnings anticipation, no figure; "Built a Bank, a Card, a Stablecoin, but Stock Struggles" was opinion/recap; standing short-seller-accounting, mortgage-lawsuit, and Q2-PT-cut /dig items still open
 - **2026-09-28 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — a small-cap fintech comparison piece and "Could SoFi Finally Be The Next S&P 500 Addition?" were opinion; a Form 144 mention was routine; stock-quote-page and digital-payment-listicle headlines were noise; standing short-seller-accounting, mortgage-lawsuit, and Q2-PT-cut /dig items still open
 - **2026-10-08 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL (low) — SoFi/Mastercard/Orbi Mexico crypto-linked card; $25B volume framing unsourced
+- **2026-10-09 (post-open)** — 📰 BRIEF | 1 logged — MATERIAL — SoFiUSD live settlement; stock lower on the day

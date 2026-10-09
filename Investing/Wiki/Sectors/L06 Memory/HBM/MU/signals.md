@@ -141,6 +141,8 @@
   **Why it matters:** Neither touches the HBM-supply/demand legs directly; the settlement removes tail risk, the rival-suit story is the CXMT thread already in the deep-pass queue.
 - **2026-10-08 (post-open)** — Morgan Stanley upgrade and DA Davidson target raise on AI-memory demand; 'memory pricing tightens' (AD HOC NEWS, Futu). Offsetting: Taiwan workers authorize a strike over a bonus dispute (Yahoo Finance).
   **Why it matters:** Analyst reasoning cites tightening pricing — consistent with the supply-contracted/HBM leg. Strike authorization is a small supply-continuity watch item for Taiwan fabs; no stoppage reported.
+- **2026-10-09 (post-open)** — Micron files its annual 10-K (SEC EDGAR, 10-09); Yahoo notes shares -5.6% after Netlist deal, earnings and dividend affirmation.
+  **Why it matters:** Primary-source filing lands the day after memory-complex weakness — headline and move agree (down) but no new fact is read yet. 10-K risk factors / HBM capacity commentary are worth one filings pass.
 
 ---
 
@@ -214,3 +216,4 @@
 - **2026-10-05 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — TrendForce raises its 2027 HBM price forecast, citing persistent supply constraints (EE Times Asia); supports the structural-demand leg and cuts against the 10-05 'DRAM cycle cracking' framing. 4 other items recirculate; Form 4s routine
 - **2026-10-06 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — Netlist $600M settlement + China-rival engineer-poaching suit; no thesis leg moved
 - **2026-10-08 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — Morgan Stanley upgrade + DA Davidson PT raise on memory pricing; Taiwan strike authorization (no stoppage)
+- **2026-10-09 (post-open)** — 📰 BRIEF | 2 items logged — MATERIAL — 10-K filed, unread; deep-pass flagged

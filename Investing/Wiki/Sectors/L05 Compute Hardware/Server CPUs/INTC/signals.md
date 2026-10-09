@@ -89,6 +89,8 @@
   **Why it matters:** Terafab was the external-customer thread (Tesla/SpaceX) for IFS; TSMC involvement would cut against Intel being the sole US foundry partner — single foreign-language source, unverified; no verdict.
 - **2026-10-08 (post-open)** — Terafab/TSMC thread widens to three outlets: Musk talks 'shift toward TSMC' and stock drops (Timothy Sykes, Motley Fool 'bad news for Intel shareholders'); TIKR counters that Musk reaffirms Terafab control with Intel 'remains involved'.
   **Why it matters:** Escalates the 10-07 single-source item — the external-foundry-customer leg of the IFS thesis is now contested, but nothing is confirmed and Intel's role is described as ongoing. Headline and pre-market move point the same way (down). No verdict until sourced; /dig INTC.
+- **2026-10-09 (post-open)** — Intel reportedly launching a ~$15B secondary share offering (investingLive, 10-08); separate pieces report a deeper AI-chip R&D partnership (10-09).
+  **Why it matters:** Dilution is a capital-structure fact that cuts against the 'funded by strength' read; single source, not confirmed by filing in this digest. Funding need vs. IFS/EMIB build-out is the question for /dig INTC.
 
 ---
 
@@ -150,3 +152,4 @@
 - **2026-10-01 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — +12% after-hours move persisting in the open
 - **2026-10-07 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — Terafab/TSMC mention (MATERIAL, unverified); Mizuho PT raise and earnings-date items skipped as noise
 - **2026-10-08 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — Terafab shifting toward TSMC now in 3 outlets, Intel stock lower; role 'remains involved' per TIKR; unverified
+- **2026-10-09 (post-open)** — 📰 BRIEF | 1 logged, deep-pass flagged — MATERIAL — $15B secondary report (single-source, unverified)

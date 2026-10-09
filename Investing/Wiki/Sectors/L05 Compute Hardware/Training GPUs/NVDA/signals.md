@@ -110,6 +110,8 @@
   **Why it matters:** Another debt-financed, balance-sheet-backed demand data point — large unit demand, but financed by third parties rather than NVDA, so it feeds the circular-financing watch item less than the equity-stake deals do (headline-level, unconfirmed).
 - **2026-10-08 (post-open)** — BNP Paribas lifts PT $285→$345 citing TSMC's record quarter (AD HOC NEWS); buyback war chest reported at $235B with lenders questioning collateral.
   **Why it matters:** TSMC record quarter is upstream corroboration of Blackwell demand; the buyback/collateral angle is financing commentary, not an operating fact.
+- **2026-10-09 (post-open)** — Bloomberg: 'Nvidia-Backed IPO's Cratering Demand Sends Warning on AI Funding' (10-08); Barron's 10-09: Nvidia rises even as IPO fears hit the AI market.
+  **Why it matters:** Tests the circular-financing risk in the demand leg: ecosystem funding appetite is wobbling while NVDA itself holds up — headline and the stock reaction diverge. Name of the IPO not in headlines.
 
 ---
 
@@ -190,3 +192,4 @@
 - **2026-10-06 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — lower-memory Rubin Ultra report (HBM bottleneck); rest recirculates
 - **2026-10-08 (end-of-day)** — 📰 BRIEF + topic hit | 5 items triaged, 1 logged — SpaceX ~$40B GPU purchase financing (Apollo/banks); demand-positive, third-party financed
 - **2026-10-08 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — BNP PT $285→$345 on TSMC record quarter; buyback financing questioned
+- **2026-10-09 (post-open)** — 📰 BRIEF | 1 logged — MATERIAL — AI-funding / Nvidia-backed IPO demand warning; NVDA price holding

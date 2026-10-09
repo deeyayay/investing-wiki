@@ -55,6 +55,8 @@
   **Why it matters:** Opening reaction runs *against* the 10-01 Micron read-through (NAND +30%): the market is again selling the pricing leg despite a beat — the fourth straight print where fundamentals and price disagree. Premarket move only; magnitude unread.
 - **2026-10-07 (end-of-day)** — Memory complex dips on Samsung's post-earnings selloff; SK Hynix -4% on earnings caution; Sandisk -2% (Stocktwits, 24/7 Wall St.). Sandisk heads into 10-29 earnings after >600% gain (AD HOC NEWS).
   **Why it matters:** Sector sentiment around Samsung's print, not a Sandisk fact; sets up 10-29 as the next hard test. Drift (Drifting) unchanged.
+- **2026-10-09 (post-open)** — Sandisk -5% as 'AI storage jitters' outweigh a Mizuho upgrade (Crypto Briefing, 10-08); Mizuho target $2,050 (AD HOC NEWS, 10-09).
+  **Why it matters:** Another session where a bullish analyst action does not hold the stock — consistent with the Drifting status (price vs. fundamentals), headline and move both point down on the day. Next hard test 10-29 earnings.
 
 ## Social Mentions
 
@@ -120,3 +122,4 @@
 - **2026-10-02 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — Citi names SanDisk top beneficiary of Micron's print, cites NAND prices +30% (Invezz, biggo); supports NAND-upcycle leg, partly offset by Samsung post-earnings memory dip
 - **2026-10-05 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — overnight "memory pump fades" slide (MU, SNDK, STX, WDC) is sector sentiment, not a company fact; earnings previews ($8B rev, 80% margins) and Citi $2,100 target recirculate. /dig SNDK still open
 - **2026-10-07 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — memory-sector selloff, earnings date 10-29; 'Q1 FY27 outlook misses' Stocktwits item looks stale, not logged
+- **2026-10-09 (post-open)** — 📰 BRIEF | 1 logged — MATERIAL — Mizuho upgrade/PT $2,050 fails to hold the stock; Drift unchanged
