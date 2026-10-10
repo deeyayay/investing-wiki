@@ -193,3 +193,4 @@
 - **2026-10-08 (end-of-day)** — 📰 BRIEF + topic hit | 5 items triaged, 1 logged — SpaceX ~$40B GPU purchase financing (Apollo/banks); demand-positive, third-party financed
 - **2026-10-08 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — BNP PT $285→$345 on TSMC record quarter; buyback financing questioned
 - **2026-10-09 (post-open)** — 📰 BRIEF | 1 logged — MATERIAL — AI-funding / Nvidia-backed IPO demand warning; NVDA price holding
+- **2026-10-09 (end-of-day)** — 📰 BRIEF | 5 items triaged, 2 logged — MATERIAL — reported investment in rival d-Matrix and Perplexity valuation talks (>$30B): NVDA seeding customers/ecosystem; Barron's 'IPO fears, OpenAI/Firmus red flags' echoes the AI-funding warning logged post-open. No leg moved

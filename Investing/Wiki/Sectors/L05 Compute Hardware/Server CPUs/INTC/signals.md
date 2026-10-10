@@ -153,3 +153,4 @@
 - **2026-10-07 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — Terafab/TSMC mention (MATERIAL, unverified); Mizuho PT raise and earnings-date items skipped as noise
 - **2026-10-08 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — Terafab shifting toward TSMC now in 3 outlets, Intel stock lower; role 'remains involved' per TIKR; unverified
 - **2026-10-09 (post-open)** — 📰 BRIEF | 1 logged, deep-pass flagged — MATERIAL — $15B secondary report (single-source, unverified)
+- **2026-10-09 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL (low) — Applied Materials EPIC Center now hosts Intel and TSMC side by side, 'AI bottlenecks' partnership; stock −1.0%. $15B secondary still unverified; no new filing
