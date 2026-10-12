@@ -77,3 +77,4 @@
 - **2026-10-02 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL, ambiguous — TipRanks 'soars after earnings shock' conflicts with the 10-06 FQ1 date logged 09-29 (previews still ran 10-02); date/headline unresolved, /dig before 10-06
 - **2026-10-08 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — THESIS ↑ (modest): ~$6M follow-on Sonoma orders for lead hyperscale customer's next-gen AI processor; no filing seen, FQ1 results still unread — /dig AEHR
 - **2026-10-08 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — FQ1 FY27 earnings set for 11-02 (primary); prior 10-06 date wrong
+- **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL, ambiguous — Stocktwits: stock +40% after-hours on earnings beat, upbeat FY27 guide; conflicts with FQ1 date of 11-02 logged 10-08 (single retail source, no filing seen); /dig AEHR flagged

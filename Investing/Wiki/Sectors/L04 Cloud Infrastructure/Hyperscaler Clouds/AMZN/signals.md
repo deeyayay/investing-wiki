@@ -122,3 +122,4 @@
 - **2026-09-30 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Benzinga on Anthropic's IPO filing: nearly 50% of its sales flow through Amazon and Google (as channel); frames Anthropic-AWS concentration as mutual dependency — supports Trainium/Bedrock demand leg but ties AWS growth to one customer. Rosenblatt $360 Buy-maintain routine.
 - **2026-10-02 (end-of-day)** — 📰 BRIEF | 2 items triaged, 0 new logged — Globalstar acquisition recirculates 09-25 log
 - **2026-10-05 (end-of-day)** — 📰 BRIEF | 5 items triaged, 0 new logged — 0 new logged — Globalstar acquisition (23% premium) recirculates 09-25 log; analyst PT reiterations noise
+- **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL — WSJ: Amazon in talks to acquire AI startup Decart for ~$7B (unconfirmed); Cantor/Wells PT cuts on cost pressure, one downgrade — AWS growth leg untouched

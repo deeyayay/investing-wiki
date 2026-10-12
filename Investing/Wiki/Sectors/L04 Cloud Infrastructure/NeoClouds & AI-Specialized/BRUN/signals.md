@@ -102,3 +102,4 @@
 - **2026-10-06 (post-open)** — 📰 BRIEF | 2 items triaged, 1 logged, deep-pass flagged — MATERIAL — 8-K 1.01 + 9.01 (10-06), terms unread
 - **2026-10-07 (end-of-day)** — 📰 BRIEF | 5 items triaged, 2 logged, deep-pass flagged — Cohere $525.6M contract (MATERIAL/THESIS, ties to 10-06 8-K 1.01); Form 3 routine
 - **2026-10-09 (post-open)** — 📰 BRIEF | 1 logged — MATERIAL (low) — POS AM shelf amendment; 10-05/10-06 8-Ks and Cohere contract already logged
+- **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL (low) — POS AM (10-08) registration amendment surfaces again; already logged 10-09

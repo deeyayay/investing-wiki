@@ -123,3 +123,4 @@
 - **2026-10-05 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — overnight "memory pump fades" slide (MU, SNDK, STX, WDC) is sector sentiment, not a company fact; earnings previews ($8B rev, 80% margins) and Citi $2,100 target recirculate. /dig SNDK still open
 - **2026-10-07 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — memory-sector selloff, earnings date 10-29; 'Q1 FY27 outlook misses' Stocktwits item looks stale, not logged
 - **2026-10-09 (post-open)** — 📰 BRIEF | 1 logged — MATERIAL — Mizuho upgrade/PT $2,050 fails to hold the stock; Drift unchanged
+- **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL — Citi names SNDK top beneficiary of strong Micron earnings vs 'crashes over 50%' China-threat framing ahead of 10-29 earnings; Drift unchanged, /dig still open

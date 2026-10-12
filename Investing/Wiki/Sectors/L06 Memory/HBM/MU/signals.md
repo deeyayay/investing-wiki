@@ -218,3 +218,4 @@
 - **2026-10-08 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — Morgan Stanley upgrade + DA Davidson PT raise on memory pricing; Taiwan strike authorization (no stoppage)
 - **2026-10-09 (post-open)** — 📰 BRIEF | 2 items logged — MATERIAL — 10-K filed, unread; deep-pass flagged
 - **2026-10-09 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — $35B buyback framed against a Munich sales ban (Netlist-related) and a Taiwan strike threat (AD HOC NEWS, headline-only, unverified); 10-K still unread. No thesis leg moved → /dig MU --filings-only stands
+- **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL — 10-K (10-09) still unread; Micron blowout-quarter/guidance coverage lifts memory peers after-hours; Taiwan strike mandate + $600M patent bill recur; hbm-supply theme: NVDA reportedly weighing lower-memory Rubin Ultra designs (retail-sourced, unconfirmed) — escalates existing 'stacked on every NVDA GPU' watch item; /dig flagged

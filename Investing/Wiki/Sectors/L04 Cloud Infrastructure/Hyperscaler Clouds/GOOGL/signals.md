@@ -116,3 +116,4 @@
 - **2026-10-07 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (low) — litigation solicitations recur; Poland fine threat already logged 10-06
 - **2026-10-08 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — capex +~$15B / buyback-suspended headlines (unverified); litigation solicitations skipped
 - **2026-10-08 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — Alphabet AI power deal lifts utility merger pair; TD Cowen PT $485
+- **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL — Alphabet prices upsized $84.75B capital raise (Stocktwits headline, terms unverified); funds capex leg, dilution/leverage question; /dig flagged to verify
