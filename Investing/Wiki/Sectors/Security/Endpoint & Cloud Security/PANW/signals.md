@@ -67,6 +67,7 @@
 
 - **2026-09-28 (post-open)** — BTIG maintains its Buy rating and raises its Palo Alto Networks price target to $425 from $404 (富途牛牛, TradingView, marketscreener.com — 3 outlets, same action).
   **Why it matters:** A new named analyst target raise, distinct from the 09-21 Morgan Stanley $410 raise — a second sell-side voice moving its target higher within the same week, incremental confirmation of the platform-consolidation/NGS-ARR thesis leg.
+- **2026-10-12** — Wells Fargo raises PT to $525 from $475; Phillip Securities downgrades to Reduce (TipRanks / Moomoo). Split analyst read ahead of the print; no thesis-leg fact.
 
 ---
 
@@ -117,3 +118,4 @@
 - **2026-09-25 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — the AI-driven-cybersecurity-platform-with-Anthropic/OpenAI-models launch and "AI agent security moves into runtime" again recirculate already-logged items; CEO "SaaSpocalypse Is Dead" quote cites unnamed "analyst upgrades," treated as opinion consistent with the standing unnamed-analyst-action dismissal pattern; two "Strengthening from Enterprise Security Consolidation"/Unit 42 recap headlines repeat the standing launch coverage
 - **2026-09-28 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — BTIG raises its PT to $425 from $404, a new named analyst action distinct from the 09-21 Morgan Stanley raise; the AI Defense/AI-agent-security-launch coverage again recirculates already-logged items; an NVIDIA Agent Safety Platform piece was primarily about NVIDIA, not PANW-specific
 - **2026-09-30 (end-of-day)** — 📰 5 items triaged, 1 logged — Simply Wall St: PANW acquires an AI-native platform to extend Cortex; stock +~5% as Nvidia launches an agent-safety platform (competitive overlap vs platform-consolidation leg, unconfirmed); acquirer/price not in headline
+- **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Wells PT $525 vs Phillip downgrade

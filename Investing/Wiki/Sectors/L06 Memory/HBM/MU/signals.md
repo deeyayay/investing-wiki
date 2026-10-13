@@ -143,6 +143,7 @@
   **Why it matters:** Analyst reasoning cites tightening pricing — consistent with the supply-contracted/HBM leg. Strike authorization is a small supply-continuity watch item for Taiwan fabs; no stoppage reported.
 - **2026-10-09 (post-open)** — Micron files its annual 10-K (SEC EDGAR, 10-09); Yahoo notes shares -5.6% after Netlist deal, earnings and dividend affirmation.
   **Why it matters:** Primary-source filing lands the day after memory-complex weakness — headline and move agree (down) but no new fact is read yet. 10-K risk factors / HBM capacity commentary are worth one filings pass.
+- **2026-10-12** — 10-K filed (FY annual report); board raises buyback ceiling to $35.16B; Microsoft Maia 300 specs 288GB HBM4 per accelerator (SEC EDGAR / Yahoo Finance / TradingView). 10-K is the primary source for the blowout quarter and still needs a read; Maia 300 HBM4 content is demand-side confirmation.
 
 ---
 
@@ -219,3 +220,4 @@
 - **2026-10-09 (post-open)** — 📰 BRIEF | 2 items logged — MATERIAL — 10-K filed, unread; deep-pass flagged
 - **2026-10-09 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — $35B buyback framed against a Munich sales ban (Netlist-related) and a Taiwan strike threat (AD HOC NEWS, headline-only, unverified); 10-K still unread. No thesis leg moved → /dig MU --filings-only stands
 - **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL — 10-K (10-09) still unread; Micron blowout-quarter/guidance coverage lifts memory peers after-hours; Taiwan strike mandate + $600M patent bill recur; hbm-supply theme: NVDA reportedly weighing lower-memory Rubin Ultra designs (retail-sourced, unconfirmed) — escalates existing 'stacked on every NVDA GPU' watch item; /dig flagged
+- **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL — 10-K (10-09) now in digest as primary; buyback $35.16B; Maia 300 HBM4 content

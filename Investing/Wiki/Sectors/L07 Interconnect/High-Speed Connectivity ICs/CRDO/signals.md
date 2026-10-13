@@ -49,6 +49,7 @@
 
 ---
 - **2026-10-01** — Credo CEO sells ~$2.5M of shares (The Motley Fool). Insider sale near highs; size and 10b5-1 status unread at headline level, low thesis weight alone.
+- **2026-10-12** — Credo launches OCP SRMO optical-interconnect standards workstream with optics suppliers; unveils 1.6T ZeroFlap Active Light Cable; stock -6.5% on muted response (Credo IR / Traders Union). Extends AEC leadership toward optics/scale-up; market read the launches as muted.
 
 ## Social Mentions
 
@@ -97,3 +98,4 @@
 - **2026-09-25 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — "CRDO Stock Rallies/Jumps As AI Earnings Beat Fuels Fresh Momentum" recaps the already-resolved 09-01 8-K non-operational-miss finding; "Launches New AI Transceivers" again recirculates the already-logged 09-16 ZeroFlap item; Maxlinear/Lumentum/Coherent analyst-roundup and a Coherent stock-quote headline were noise/mismatch
 - **2026-09-28 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — two Form 4 filings (routine, no amount given) and a "1.6T Optical Transceivers" analysis piece recap known themes; two "Founder Led Stocks" listicles were noise
 - **2026-10-01 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL (minor) — CEO share sale
+- **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL — SRMO standards push + 1.6T ZeroFlap ALC; stock -6.5%

@@ -55,6 +55,7 @@
   **Why it matters:** Gives the 10-07 'combined ~$30B' framing a component: a $20B connectivity/interconnect leg alongside custom ASICs — strengthens the interconnect half of the thesis. Basis still unverified against the deck; /dig MRVL stays queued.
 - **2026-10-09 (post-open)** — Seeking Alpha downgrades Marvell on valuation after Investor Day: 'Trillion-Dollar Math Comes With A Catch' (10-08); Freedom Broker calls new guidance supportive (10-09).
   **Why it matters:** Counterweight to the 10-08 THESIS ↑: bulls and bears now argue price, not the $20B connectivity / FY31 EPS framing itself. No thesis leg moved; deck basis still unverified.
+- **2026-10-12** — Morningstar/Benzinga: bullish long-term guidance; analyst sees MRVL beating its own LT earnings target (Morningstar / Benzinga). Reinforces the 10-08 Investor Day framing; no new company data.
 
 ---
 
@@ -119,3 +120,4 @@
 | 2026-10-07 (end-of-day) | 📰 BRIEF | 5 items triaged, 1 logged, deep-pass flagged — Investor Day guidance raise (THESIS); rest are roundups |
 | 2026-10-08 (post-open) | 📰 BRIEF | 5 items triaged, 1 logged — THESIS ↑ — Investor Day detail: connectivity outlook $20B, FY31 EPS >$30 per MS; PTs raised; deck basis still unread |
 | 2026-10-09 (post-open) | 📰 BRIEF | 1 logged — MATERIAL (low) — valuation downgrade vs guidance-supportive notes; THESIS ↑ from 10-08 stands |
+| 2026-10-12 (end-of-day) | 📰 BRIEF | MATERIAL (low) — LT guidance commentary, recirculates 10-08 THESIS ↑ |

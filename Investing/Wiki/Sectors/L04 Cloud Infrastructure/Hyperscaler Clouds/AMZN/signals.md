@@ -67,6 +67,7 @@
 
 - **2026-09-25 (evening)** — Amazon acquires Globalstar (GSAT) at a 23%+ premium (Stocktwits).
   **Why it matters:** Resolves the standing 09-24-evening CERT/8-A12B filing-content-unresolved item — those were almost certainly the exchange-listing and Section-12(b) registration steps for the stock consideration in this deal. Satellite-communications M&A is company-level context adjacent to, not part of, the AWS/Trainium cloud-margin thesis leg — logged for the audit trail alongside Kuiper/Leo and the AT&T Leo tie-up.
+- **2026-10-12** — Cantor and Wells Fargo cut PTs (cost pressures); an analyst downgrade (MarketBeat / Investing.com). Margin-side caution on AI capex; AWS growth leg not contradicted.
 
 ---
 
@@ -123,3 +124,4 @@
 - **2026-10-02 (end-of-day)** — 📰 BRIEF | 2 items triaged, 0 new logged — Globalstar acquisition recirculates 09-25 log
 - **2026-10-05 (end-of-day)** — 📰 BRIEF | 5 items triaged, 0 new logged — 0 new logged — Globalstar acquisition (23% premium) recirculates 09-25 log; analyst PT reiterations noise
 - **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL — WSJ: Amazon in talks to acquire AI startup Decart for ~$7B (unconfirmed); Cantor/Wells PT cuts on cost pressure, one downgrade — AWS growth leg untouched
+- **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — PT cuts / downgrade on cost pressure

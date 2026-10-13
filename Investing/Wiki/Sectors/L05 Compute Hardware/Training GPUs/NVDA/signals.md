@@ -112,6 +112,7 @@
   **Why it matters:** TSMC record quarter is upstream corroboration of Blackwell demand; the buyback/collateral angle is financing commentary, not an operating fact.
 - **2026-10-09 (post-open)** — Bloomberg: 'Nvidia-Backed IPO's Cratering Demand Sends Warning on AI Funding' (10-08); Barron's 10-09: Nvidia rises even as IPO fears hit the AI market.
   **Why it matters:** Tests the circular-financing risk in the demand leg: ecosystem funding appetite is wobbling while NVDA itself holds up — headline and the stock reaction diverge. Name of the IPO not in headlines.
+- **2026-10-12** — Earnings beat; $150B buyback plan; reported new Trump tariff plans; further talks on Reflection AI stake/acquisition; 'circular financing' pushback (Stocktwits / GuruFocus / IBD). Demand leg confirmed by results; capital return is large. Circular-financing and tariff risks are the offsets. Figures are headline-reported.
 
 ---
 
@@ -195,3 +196,4 @@
 - **2026-10-09 (post-open)** — 📰 BRIEF | 1 logged — MATERIAL — AI-funding / Nvidia-backed IPO demand warning; NVDA price holding
 - **2026-10-09 (end-of-day)** — 📰 BRIEF | 5 items triaged, 2 logged — MATERIAL — reported investment in rival d-Matrix and Perplexity valuation talks (>$30B): NVDA seeding customers/ecosystem; Barron's 'IPO fears, OpenAI/Firmus red flags' echoes the AI-funding warning logged post-open. No leg moved
 - **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL — reported talks to acquire Reflection AI, ~$7B Poolside licensing/investment deal, first bond offering in 5 yrs, new tariff-plan report; all unconfirmed headlines. NVDA seeding ecosystem/customers (pattern with 10-09 d-Matrix/Perplexity)
+- **2026-10-12 (end-of-day)** — 📰 BRIEF | THESIS ↑ — earnings beat + $150B buyback; tariff and circular-financing watch

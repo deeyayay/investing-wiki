@@ -21,6 +21,7 @@
 | 2026-09-23 | Three outlets (Yahoo Finance x2, Simply Wall St) frame MBLY as "overvalued"/"fully priced" following "fresh autonomous mobility/robotaxi fleet funding news" | Yahoo Finance, Simply Wall St | New funding event referenced but not named at headline level — unclear whether this is a Mobileye-specific capital raise/deal or industry-wide (e.g. a competitor or Beep-adjacent) funding news moving the stock by sympathy; directly touches the robotaxi/full-autonomy leg either way. Escalated to /dig. |
 | 2026-09-24 | 8-K filed (items 7.01 "Reg FD Disclosure" and 9.01 "financial statements and exhibits") | SEC EDGAR | New filing, distinct from the already-logged 09-11 8-K (items 8.01/9.01) — item 7.01 typically carries a public disclosure (investor materials, press release) rather than a material event; content unresolved at headline level, worth a /dig check. |
 | 2026-09-24 | SCHEDULE 13D/A filed — amendment to a beneficial-ownership statement | SEC EDGAR | New filing; filer and stake-size change unresolved at headline level — MBLY's controlling shareholder is Intel, so this could be a routine ownership-report update or a more significant stake change; worth a /dig check if a follow-up story surfaces. |
+| 2026-10-12 | Deutsche Bank trims PT to $12 from $13, keeps Buy | MarketScreener | Minor target change; no thesis fact. |
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -59,3 +60,4 @@ _None yet — seeded on onboarding._
 | 2026-09-25 (evening) | 📰 BRIEF | 5 items triaged, 0 new logged | "Leadership Shake Up Could Change The Case For Mobileye Stock" gives no specifics beyond the already-logged 09-10 Ohayon POO/Nehushtan part-time-role transitions, treated as opinion recap; three stock-quote-page headlines were noise; standing 8-K/13D-A and robotaxi-funding /dig items unchanged |
 | 2026-09-28 (post-open) | 📰 BRIEF | 4 items triaged, 0 new logged | the 8-K (items 7.01/9.01) and SCHEDULE 13D/A filings recirculate the already-logged 09-24 filings dated the same day, still unresolved at headline level; two Coinbase prediction-market headlines were unrelated; standing 8-K/13D-A /dig item unchanged |
 | 2026-09-30 (post-open) | 📰 BRIEF | 5 items triaged, 1 logged | Barclays downgrades Mobileye citing lack of progress on advanced (non-ADAS) wins — attacks the self-drive/robotaxi leg of the thesis; analyst action with reasoning, headline-level only. Standing 8-K/13D-A /dig item unchanged (new 09-29 SCHEDULE 13D, holder unresolved) |
+| 2026-10-12 (end-of-day) | 📰 BRIEF | MATERIAL (low) — DB PT $13→$12 | |

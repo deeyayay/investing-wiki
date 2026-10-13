@@ -30,6 +30,7 @@
   **Why it matters:** A repeat order from the same hyperscale customer for a second AI chip is the clearest evidence yet that AI burn-in is recurring volume, not a one-off qualification — supports the AI-pivot leg, though $6M is small against the FQ1 (10-06) results still not seen.
 - **2026-10-08 (post-open)** — Aehr announces FQ1 FY2027 results for November 2, 2026 (company release).
   **Why it matters:** Resolves the open date conflict: the 10-06 FQ1 date logged 09-29 was wrong and the 'earnings shock' headline (10-02) is not Aehr's print. FQ1 results are still ahead, so the ~$6M Sonoma follow-on stays the latest evidence on the AI-pivot leg.
+- **2026-10-12** — Stock crashes on earnings shock (TipRanks/Quiver); conflicts with 10-12 post-open +40% after-hours report (TipRanks / Quiver Quantitative). Headlines contradict each other on the print; book-to-bill/guide leg untested from headlines alone. Resolve with the filing, not the stories.
 
 ---
 
@@ -78,3 +79,4 @@
 - **2026-10-08 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — THESIS ↑ (modest): ~$6M follow-on Sonoma orders for lead hyperscale customer's next-gen AI processor; no filing seen, FQ1 results still unread — /dig AEHR
 - **2026-10-08 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — FQ1 FY27 earnings set for 11-02 (primary); prior 10-06 date wrong
 - **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL, ambiguous — Stocktwits: stock +40% after-hours on earnings beat, upbeat FY27 guide; conflicts with FQ1 date of 11-02 logged 10-08 (single retail source, no filing seen); /dig AEHR flagged
+- **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL, ambiguous — earnings reaction reported as a crash; prior report said +40% AH; /dig queued

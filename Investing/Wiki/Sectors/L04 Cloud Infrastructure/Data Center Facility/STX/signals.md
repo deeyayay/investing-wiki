@@ -28,6 +28,7 @@
   **Why it matters:** Heads are a HAMR-critical component; winning the unit would vertically integrate supply for Seagate, while Toshiba winning it tightens a competitor's capacity path. Single-source, unconfirmed — no verdict.
 - **2026-10-08 (post-open)** — Moomoo: Seagate and Western Digital tumble as 'AI shortage shows signs of easing'; AD HOC NEWS shows pre-market unchanged. Bloomberg TDK heads bidding-war item recirculates.
   **Why it matters:** Headline-level read that tightness in storage may be easing cuts at the demand-scarcity premise behind the HAMR exabyte leg; the pre-market tape is flat, so the market has not extended the fall. Unverified.
+- **2026-10-12** — Slides on capacity-expansion news and a recent downgrade (Quiver Quantitative). Capacity expansion is a mild supply-discipline question for the duopoly thesis; headline only.
 
 ---
 
@@ -76,3 +77,4 @@ _None yet — seeded on onboarding._
 - **2026-10-07 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged, deep-pass flagged — -9% on capacity concerns + unspecified 'acquisition talks' (MATERIAL, ambiguous)
 - **2026-10-07 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Bloomberg: STX vs Toshiba for TDK heads unit (explains 'acquisition talks'); rest recirculates
 - **2026-10-08 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — STX/WDC fall on 'AI shortage easing' framing; pre-market flat; headline-level
+- **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — capacity expansion + downgrade weigh on shares

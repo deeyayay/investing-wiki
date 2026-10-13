@@ -23,6 +23,7 @@
 | 2026-09-25 | FY2026 10-K (year ended June 30, 2026): revenue $0, net loss $(48.6)M, EPS $(0.41) | TradingView | First actual annual financial print on file — a pre-revenue development-stage company's burn rate is the direct input to the EXIM-financing gate the thesis is optioned on; EDGAR timed out this run, so the filing itself hasn't been read yet, worth a /dig check against cash-runway assumptions. |
 - **2026-10-07 (end-of-day)** — Freedom Broker cuts NioCorp PT to $8.40 from $12 on funding dilution (Investing.com, TipRanks).
   **Why it matters:** Second-day recirculation of the 10-05 dilution call with a stated figure; sharpens the financing-gap watch, headline only.
+- **2026-10-12** — US Energy Secretary, EXIM chairman, Nebraska governor and senators to tour Elk Creek; EXIM financing referenced (NioCorp / Yahoo Finance / Metal Tech News). Senior federal attention on the financing path; no commitment announced. Financing is the binding constraint.
 
 ---
 
@@ -62,3 +63,4 @@ _None yet — seeded on onboarding._
 | 2026-09-28 (post-open) | 📰 BRIEF | 3 items triaged, 0 new logged | the FY2026 10-K filing recirculates the already-logged 09-25 evening item (first hard burn-rate print), still unread pending /dig; "5 companies building America's rare earth supply chain" and a market-futures macro piece named no NB-specific fact |
 | 2026-10-05 (end-of-day) | 📰 BRIEF | 3 items triaged, 1 logged | MATERIAL — Freedom Broker cuts NB price target on funding dilution (Investing.com); reinforces financing-gap watch, headline only, no /dig trigger |
 | 2026-10-07 (end-of-day) | 📰 BRIEF | 5 items triaged, 1 logged — PT cut with figure; other items are quote pages / peers |
+| 2026-10-12 (end-of-day) | 📰 BRIEF | MATERIAL — federal-official Elk Creek visit tied to EXIM financing |

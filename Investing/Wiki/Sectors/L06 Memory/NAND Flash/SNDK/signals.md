@@ -57,6 +57,7 @@
   **Why it matters:** Sector sentiment around Samsung's print, not a Sandisk fact; sets up 10-29 as the next hard test. Drift (Drifting) unchanged.
 - **2026-10-09 (post-open)** — Sandisk -5% as 'AI storage jitters' outweigh a Mizuho upgrade (Crypto Briefing, 10-08); Mizuho target $2,050 (AD HOC NEWS, 10-09).
   **Why it matters:** Another session where a bullish analyst action does not hold the stock — consistent with the Drifting status (price vs. fundamentals), headline and move both point down on the day. Next hard test 10-29 earnings.
+- **2026-10-12** — Falls 6-8% over three sessions pre-earnings on memory-sector weakness, Seoul selloff and Chinese rivalry (Quiver Quantitative / ad-hoc-news.de / Invezz). Extends the Drifting pattern: positive news not holding the stock into earnings.
 
 ## Social Mentions
 
@@ -124,3 +125,4 @@
 - **2026-10-07 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — memory-sector selloff, earnings date 10-29; 'Q1 FY27 outlook misses' Stocktwits item looks stale, not logged
 - **2026-10-09 (post-open)** — 📰 BRIEF | 1 logged — MATERIAL — Mizuho upgrade/PT $2,050 fails to hold the stock; Drift unchanged
 - **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL — Citi names SNDK top beneficiary of strong Micron earnings vs 'crashes over 50%' China-threat framing ahead of 10-29 earnings; Drift unchanged, /dig still open
+- **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL — 3-session pre-earnings selloff; Chinese competition framing; Drift unchanged

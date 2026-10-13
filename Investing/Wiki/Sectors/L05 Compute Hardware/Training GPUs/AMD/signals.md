@@ -44,6 +44,7 @@
 ---
 - **2026-10-06 (post-open)** — TradingView: AMD reportedly sees AI chip demand outrunning supply, Lisa Su planning a 'substantial' 2027 ramp; Citigroup raises PT to $800 from $575 (Buy), Stifel to $700 (Buy). Q3 preview pieces expect beat-and-raise.
   **Why it matters:** Supply-over-demand and a bigger 2027 ramp support the MI-series share-capture leg; sourcing is 'reportedly' and no company statement yet — earnings will settle it.
+- **2026-10-12** — Reports of an 'AI revenue reset' / customer reset (OpenAI revenue-gap framing); stock -6% in 3 sessions after record close; Helion rack launched for agentic AI (Yahoo Finance / Simply Wall St / ET Telecom). Customer-concentration risk to the MI-series share-capture leg; sourcing is commentary, no company statement. Helion rack is a product-side positive.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -94,3 +95,4 @@
 - **2026-09-30 (end-of-day)** — 📰 5 items triaged, 2 logged — 8-K item 3.02 (filed 09-28, unregistered equity sales) is consistent with the all-stock World Labs deal already logged, no new terms at metadata level; PT raised to $1,000 (GuruFocus) and a Seeking Alpha rating upgrade add analyst momentum, thesis-neutral
 - **2026-10-02 (end-of-day)** — 📰 BRIEF | 2 items triaged, 0 new logged — World Labs deal recirculates 09-29 log
 - **2026-10-06 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — demand-outruns-supply / 2027 ramp report + Citi PT $800 (supports data-center share leg, unconfirmed)
+- **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL — customer-reset demand-risk coverage vs Helion rack launch; /dig queued

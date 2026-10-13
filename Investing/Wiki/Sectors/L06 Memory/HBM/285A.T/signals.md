@@ -53,6 +53,7 @@
   **Why it matters:** Positioning/flow risk (forced margin selling), not an operating change — NAND demand thesis untouched but near-term volatility rises.
 - **2026-10-08 (post-open)** — JPX review lifts Kioxia's Topix weighting; passive funds face a large inflow (Bloomberg, AD HOC NEWS, streamlinefeed). BigGo: Kioxia drops out of the top-four NAND ranking as SanDisk margin sustainability is debated.
   **Why it matters:** Index inflow is a technical offset to the 10-07 margin-sell overhang — flow, not operating change. Rank slippage is a share data point, not a demand signal; NAND thesis untouched.
+- **2026-10-12** — Toshiba trims Kioxia stake; free float set to roughly triple (ad-hoc-news.de). Supply overhang vs. liquidity/index-inclusion tailwind; no change to the demand leg. Stock ~EUR 95-105, volume light.
 
 ---
 
@@ -107,3 +108,4 @@
 - **2026-10-01 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — sector read-through up, China competition caveat
 - **2026-10-07 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — margin-sell overhang
 - **2026-10-08 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — Topix weighting rise brings passive inflow, offsets margin-sell overhang; flow only
+- **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL — Toshiba stake trim / free-float tripling; LD4 SSD launch minor

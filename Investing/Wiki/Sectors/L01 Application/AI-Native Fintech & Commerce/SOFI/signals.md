@@ -57,6 +57,7 @@
   **Why it matters:** Mexico card extends the rails/stablecoin leg into cross-border; the $25B figure is unsourced to IR and should not be treated as new.
 - **2026-10-09 (post-open)** — SoFiUSD enters live settlement; SoFi moves ~$25B annual card volume to it (Intellectia, AD HOC NEWS, 10-08); stock -1.57%.
   **Why it matters:** Stablecoin settlement going live supports the Galileo/Financial Services flywheel cost leg, but the shares fell on the news — headline up, move down. $25B volume framing is secondary-sourced.
+- **2026-10-12** — PT cut on capital concerns; KBW stays bearish ahead of Q3 earnings Oct 27 (Quiver Quantitative / TipRanks). Capital-adequacy framing ahead of earnings; no company data.
 
 ---
 
@@ -108,3 +109,4 @@
 - **2026-09-28 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — a small-cap fintech comparison piece and "Could SoFi Finally Be The Next S&P 500 Addition?" were opinion; a Form 144 mention was routine; stock-quote-page and digital-payment-listicle headlines were noise; standing short-seller-accounting, mortgage-lawsuit, and Q2-PT-cut /dig items still open
 - **2026-10-08 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL (low) — SoFi/Mastercard/Orbi Mexico crypto-linked card; $25B volume framing unsourced
 - **2026-10-09 (post-open)** — 📰 BRIEF | 1 logged — MATERIAL — SoFiUSD live settlement; stock lower on the day
+- **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — PT cut / KBW bearish ahead of 10-27 print
