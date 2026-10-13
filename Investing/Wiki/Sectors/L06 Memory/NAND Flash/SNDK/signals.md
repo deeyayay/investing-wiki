@@ -58,6 +58,8 @@
 - **2026-10-09 (post-open)** — Sandisk -5% as 'AI storage jitters' outweigh a Mizuho upgrade (Crypto Briefing, 10-08); Mizuho target $2,050 (AD HOC NEWS, 10-09).
   **Why it matters:** Another session where a bullish analyst action does not hold the stock — consistent with the Drifting status (price vs. fundamentals), headline and move both point down on the day. Next hard test 10-29 earnings.
 - **2026-10-12** — Falls 6-8% over three sessions pre-earnings on memory-sector weakness, Seoul selloff and Chinese rivalry (Quiver Quantitative / ad-hoc-news.de / Invezz). Extends the Drifting pattern: positive news not holding the stock into earnings.
+- **2026-10-13 (post-open)** — Stocktwits: SNDK 'plummets premarket' on 'muted pricing' guidance despite record revenue and a $14B buyback plan (Stocktwits, 10-13).
+  **Why it matters:** Headline and move point the same way (down) and hit the NAND-pricing bear leg of the Drifting status, but 10-29 is the logged earnings date, so this reads like a recycled prior-quarter story, not new guidance. Single retail source, unverified; Drift unchanged, /dig still open.
 
 ## Social Mentions
 
@@ -126,3 +128,4 @@
 - **2026-10-09 (post-open)** — 📰 BRIEF | 1 logged — MATERIAL — Mizuho upgrade/PT $2,050 fails to hold the stock; Drift unchanged
 - **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL — Citi names SNDK top beneficiary of strong Micron earnings vs 'crashes over 50%' China-threat framing ahead of 10-29 earnings; Drift unchanged, /dig still open
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL — 3-session pre-earnings selloff; Chinese competition framing; Drift unchanged
+- **2026-10-13 (post-open)** — 📰 BRIEF | MATERIAL, unverified — 'muted pricing' guidance premarket-plunge item conflicts with 10-29 earnings date; Drift unchanged, /dig still open

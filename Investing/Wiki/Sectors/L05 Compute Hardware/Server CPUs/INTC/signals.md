@@ -92,6 +92,8 @@
 - **2026-10-09 (post-open)** — Intel reportedly launching a ~$15B secondary share offering (investingLive, 10-08); separate pieces report a deeper AI-chip R&D partnership (10-09).
   **Why it matters:** Dilution is a capital-structure fact that cuts against the 'funded by strength' read; single source, not confirmed by filing in this digest. Funding need vs. IFS/EMIB build-out is the question for /dig INTC.
 - **2026-10-12** — Preliminary Apple chip deal and SK hynix packaging partnership; Mizuho PT $92→$114; Microsoft 18A order cited (TradingKey / ad-hoc-news.de). Foundry/packaging customer-validation leg strengthens; Apple deal remains 'preliminary'.
+- **2026-10-13 (post-open)** — Stocktwits: INTC +12% after-hours on Q3 outlook above estimates; same-window pieces show RSI 27 oversold and 'chip stocks fall as Broadcom, Intel CEOs warn about AI funding' (Stocktwits, Investing.com, Investor's Business Daily).
+  **Why it matters:** Rally story conflicts with the oversold and AI-funding-warning items from the same window, and no Intel results filing is in the digest, so the +12% is unconfirmed; do not read it as thesis confirmation. Drift unchanged.
 
 ---
 
@@ -157,3 +159,4 @@
 - **2026-10-09 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL (low) — Applied Materials EPIC Center now hosts Intel and TSMC side by side, 'AI bottlenecks' partnership; stock −1.0%. $15B secondary still unverified; no new filing
 - **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL — Terafab collaboration continues per CEO despite TSMC buzz; Applied Materials partnership recurs; data-center layoff report vs RBC Q2 beat expectation; Mizuho PT $114 (unverified)
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL — Apple prelim deal + SK hynix packaging + Mizuho PT $114
+- **2026-10-13 (post-open)** — 📰 BRIEF | MATERIAL, ambiguous — +12% AH 'Q3 outlook' rally unconfirmed by filing and contradicted by oversold/AI-funding-warning items
