@@ -57,6 +57,10 @@
 - **2026-10-13 (end-of-day)** — S&P upgrades Kioxia to BBB on AI-driven growth and outlook; shares reported -13.3% ahead of the upgrade (Investing.com / Yahoo Finance, 10-13).
   **Why it matters:** Credit-quality upgrade supports the balance-sheet/Flash Ventures funding leg; the pre-upgrade drop fits the 10-12 free-float supply overhang, not a demand change. Demand leg untouched.
 
+- **2026-10-14 (post-open)** — Shares retreat with Asian chip peers in sector-wide selloff after S&P BBB upgrade; liquid-cooled SSD line launched (ad-hoc-news, 10-14).
+
+  **Why it matters:** Upgrade did not hold the stock — sector beta dominates; credit profile improving is a modest positive.
+
 ---
 
 ## Social Mentions
@@ -112,3 +116,4 @@
 - **2026-10-08 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — Topix weighting rise brings passive inflow, offsets margin-sell overhang; flow only
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL — Toshiba stake trim / free-float tripling; LD4 SSD launch minor
 - **2026-10-13 (end-of-day)** — 📰 BRIEF | MATERIAL — S&P upgrade to BBB; -13.3% pre-upgrade move
+- **2026-10-14 (post-open)** — 📰 BRIEF | MATERIAL (low) — upgrade overwhelmed by Asian chip selloff; TAIEX <49,000; Drift unchanged

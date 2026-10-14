@@ -46,6 +46,10 @@
   **Why it matters:** Supply-over-demand and a bigger 2027 ramp support the MI-series share-capture leg; sourcing is 'reportedly' and no company statement yet — earnings will settle it.
 - **2026-10-12** — Reports of an 'AI revenue reset' / customer reset (OpenAI revenue-gap framing); stock -6% in 3 sessions after record close; Helion rack launched for agentic AI (Yahoo Finance / Simply Wall St / ET Telecom). Customer-concentration risk to the MI-series share-capture leg; sourcing is commentary, no company statement. Helion rack is a product-side positive.
 
+- **2026-10-14 (post-open)** — AMD slides pre-market after Nvidia's new PC processor (Stocktwits); nVent collaborates with AMD on cooling for Helios rack (Yahoo Finance); 'dilution and AI caution' commentary (Traders Union, unverified).
+
+  **Why it matters:** Helios ecosystem support is a mild positive for the rack-scale leg; dilution claim lacks a filing — not acted on.
+
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
 
@@ -96,3 +100,4 @@
 - **2026-10-02 (end-of-day)** — 📰 BRIEF | 2 items triaged, 0 new logged — World Labs deal recirculates 09-29 log
 - **2026-10-06 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — demand-outruns-supply / 2027 ramp report + Citi PT $800 (supports data-center share leg, unconfirmed)
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL — customer-reset demand-risk coverage vs Helion rack launch; /dig queued
+- **2026-10-14 (post-open)** — 📰 BRIEF | MATERIAL (low) — nVent Helios cooling tie-up; NVDA PC chip pre-market pressure; dilution claim unverified; Drift unchanged

@@ -114,6 +114,10 @@
   **Why it matters:** Tests the circular-financing risk in the demand leg: ecosystem funding appetite is wobbling while NVDA itself holds up — headline and the stock reaction diverge. Name of the IPO not in headlines.
 - **2026-10-12** — Earnings beat; $150B buyback plan; reported new Trump tariff plans; further talks on Reflection AI stake/acquisition; 'circular financing' pushback (Stocktwits / GuruFocus / IBD). Demand leg confirmed by results; capital return is large. Circular-financing and tariff risks are the offsets. Figures are headline-reported.
 
+- **2026-10-14 (post-open)** — Unveils new PC processor; reportedly weighs $1B in Figure AI; investment book tops $51B with Doctolib/Genesis AI stakes; LSEG partnership on tick-history analytics; Firmus cancels IPO (Stocktwits / Barchart / marketscreener, 10-13/14).
+
+  **Why it matters:** Ecosystem-investing pattern continues (circular-financing watch); Firmus IPO pull is a funding-appetite data point. No thesis leg broken.
+
 ---
 
 ## Social Mentions
@@ -197,3 +201,4 @@
 - **2026-10-09 (end-of-day)** — 📰 BRIEF | 5 items triaged, 2 logged — MATERIAL — reported investment in rival d-Matrix and Perplexity valuation talks (>$30B): NVDA seeding customers/ecosystem; Barron's 'IPO fears, OpenAI/Firmus red flags' echoes the AI-funding warning logged post-open. No leg moved
 - **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL — reported talks to acquire Reflection AI, ~$7B Poolside licensing/investment deal, first bond offering in 5 yrs, new tariff-plan report; all unconfirmed headlines. NVDA seeding ecosystem/customers (pattern with 10-09 d-Matrix/Perplexity)
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | THESIS ↑ — earnings beat + $150B buyback; tariff and circular-financing watch
+- **2026-10-14 (post-open)** — 📰 BRIEF | MATERIAL — new PC processor, $51B investment book, Figure AI $1B report; circular-financing watch persists; Drift unchanged

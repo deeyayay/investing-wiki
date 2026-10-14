@@ -95,6 +95,10 @@
 - **2026-10-13 (post-open)** — Stocktwits: INTC +12% after-hours on Q3 outlook above estimates; same-window pieces show RSI 27 oversold and 'chip stocks fall as Broadcom, Intel CEOs warn about AI funding' (Stocktwits, Investing.com, Investor's Business Daily).
   **Why it matters:** Rally story conflicts with the oversold and AI-funding-warning items from the same window, and no Intel results filing is in the digest, so the +12% is unconfirmed; do not read it as thesis confirmation. Drift unchanged.
 
+- **2026-10-14 (post-open)** — INTC and AMD slide pre-market after Nvidia unveils new PC processor; Xeon 6 data-center CPU launch overshadowed (Stocktwits, 10-14).
+
+  **Why it matters:** Headline and tape agree: new NVDA PC silicon is a competitive negative for the client leg; data-center leg untouched.
+
 ---
 
 ## Social Mentions
@@ -160,3 +164,4 @@
 - **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL — Terafab collaboration continues per CEO despite TSMC buzz; Applied Materials partnership recurs; data-center layoff report vs RBC Q2 beat expectation; Mizuho PT $114 (unverified)
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL — Apple prelim deal + SK hynix packaging + Mizuho PT $114
 - **2026-10-13 (post-open)** — 📰 BRIEF | MATERIAL, ambiguous — +12% AH 'Q3 outlook' rally unconfirmed by filing and contradicted by oversold/AI-funding-warning items
+- **2026-10-14 (post-open)** — 📰 BRIEF | MATERIAL — NVDA PC processor pressures INTC pre-market; 10-22 earnings next; Drift unchanged

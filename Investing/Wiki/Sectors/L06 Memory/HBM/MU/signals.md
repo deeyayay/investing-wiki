@@ -145,6 +145,10 @@
   **Why it matters:** Primary-source filing lands the day after memory-complex weakness — headline and move agree (down) but no new fact is read yet. 10-K risk factors / HBM capacity commentary are worth one filings pass.
 - **2026-10-12** — 10-K filed (FY annual report); board raises buyback ceiling to $35.16B; Microsoft Maia 300 specs 288GB HBM4 per accelerator (SEC EDGAR / Yahoo Finance / TradingView). 10-K is the primary source for the blowout quarter and still needs a read; Maia 300 HBM4 content is demand-side confirmation.
 
+- **2026-10-14 (post-open)** — SK Hynix delays HBM4 equipment orders, partial install deferral to 2027, stock down 5 straight days; HBM4 price reportedly +117% on shortage; MU falls pre-market with peers (hbm-supply topic headlines / TipRanks, 10-14).
+
+  **Why it matters:** Supply-side deferral plus tight HBM4 pricing supports the supply-contracted leg; pre-market tape ignores it. Headline-only, unverified.
+
 ---
 
 ## Social Mentions
@@ -221,3 +225,4 @@
 - **2026-10-09 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — $35B buyback framed against a Munich sales ban (Netlist-related) and a Taiwan strike threat (AD HOC NEWS, headline-only, unverified); 10-K still unread. No thesis leg moved → /dig MU --filings-only stands
 - **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL — 10-K (10-09) still unread; Micron blowout-quarter/guidance coverage lifts memory peers after-hours; Taiwan strike mandate + $600M patent bill recur; hbm-supply theme: NVDA reportedly weighing lower-memory Rubin Ultra designs (retail-sourced, unconfirmed) — escalates existing 'stacked on every NVDA GPU' watch item; /dig flagged
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL — 10-K (10-09) now in digest as primary; buyback $35.16B; Maia 300 HBM4 content
+- **2026-10-14 (post-open)** — 📰 BRIEF | MATERIAL — SK Hynix HBM4 equipment deferral + HBM4 shortage pricing vs. weak pre-market tape; 10-K still unread; Drift unchanged

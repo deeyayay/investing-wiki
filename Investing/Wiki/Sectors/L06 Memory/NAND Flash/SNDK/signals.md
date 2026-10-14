@@ -63,6 +63,10 @@
 - **2026-10-13 (post-open)** — Stocktwits: SNDK 'plummets premarket' on 'muted pricing' guidance despite record revenue and a $14B buyback plan (Stocktwits, 10-13).
   **Why it matters:** Headline and move point the same way (down) and hit the NAND-pricing bear leg of the Drifting status, but 10-29 is the logged earnings date, so this reads like a recycled prior-quarter story, not new guidance. Single retail source, unverified; Drift unchanged, /dig still open.
 
+- **2026-10-14 (post-open)** — TipRanks: SNDK, Micron and SK Hynix fall pre-market despite ASML's strong Q3; SNDK slips below key technical level on CXMT threat ahead of 10-29 earnings (TipRanks / ad-hoc-news, 10-13/14).
+
+  **Why it matters:** Headline and tape agree — memory-complex weakness, not SNDK-specific; 10-13 8-K (1.01/2.03/9.01) still unread.
+
 ## Social Mentions
 
 | Date | Author | Platform | Sentiment | Key Claims | Source |
@@ -132,3 +136,4 @@
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL — 3-session pre-earnings selloff; Chinese competition framing; Drift unchanged
 - **2026-10-13 (post-open)** — 📰 BRIEF | MATERIAL, unverified — 'muted pricing' guidance premarket-plunge item conflicts with 10-29 earnings date; Drift unchanged, /dig still open
 - **2026-10-13 (end-of-day)** — 📰 BRIEF | MATERIAL — 8-K items 1.01/2.03/9.01 unread; Drift unchanged
+- **2026-10-14 (post-open)** — 📰 BRIEF | MATERIAL — memory-complex selloff pre-market despite ASML beat; 8-K still unread; Drift unchanged, /dig still open
