@@ -58,6 +58,8 @@
 - **2026-10-09 (post-open)** — SoFiUSD enters live settlement; SoFi moves ~$25B annual card volume to it (Intellectia, AD HOC NEWS, 10-08); stock -1.57%.
   **Why it matters:** Stablecoin settlement going live supports the Galileo/Financial Services flywheel cost leg, but the shares fell on the news — headline up, move down. $25B volume framing is secondary-sourced.
 - **2026-10-12** — PT cut on capital concerns; KBW stays bearish ahead of Q3 earnings Oct 27 (Quiver Quantitative / TipRanks). Capital-adequacy framing ahead of earnings; no company data.
+- **2026-10-13 (end-of-day)** — Goldman Sachs cuts price target to $15 from $18 (TipRanks, 10-13).
+  **Why it matters:** Second PT cut in two days ahead of the 10-27 print; no company data.
 
 ---
 
@@ -110,3 +112,4 @@
 - **2026-10-08 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL (low) — SoFi/Mastercard/Orbi Mexico crypto-linked card; $25B volume framing unsourced
 - **2026-10-09 (post-open)** — 📰 BRIEF | 1 logged — MATERIAL — SoFiUSD live settlement; stock lower on the day
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — PT cut / KBW bearish ahead of 10-27 print
+- **2026-10-13 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Goldman PT $18→$15

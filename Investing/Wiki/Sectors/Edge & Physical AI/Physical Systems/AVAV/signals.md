@@ -33,6 +33,8 @@
   **Why it matters:** Neutral initiation tempers the valuation debate but adds no fundamental fact; CEO demand comment is management talk, consistent with the record-backlog framing.
 - **2026-10-08 (post-open)** — VideoRay (AeroVironment) selected for US Navy mine-countermeasure prototype program (Stockhouse); ARK adds AVAV and Kratos; AD HOC NEWS flags a 52-week low.
   **Why it matters:** Navy selection widens the multi-domain leg into maritime; ARK buying against a 52-week-low print shows the tape and the news disagree — valuation/sentiment, not a fundamental break.
+- **2026-10-13 (end-of-day)** — Q4 beat sends AVAV to best single-day gain in 2+ years, though Wall Street reception is mixed (Stocktwits, 10-13).
+  **Why it matters:** Headline-only; supports the 'strengthening' status but no guidance or backlog figures seen. Drift unchanged; the 10-12 Wedbush 'long-term winners' note is the same narrative.
 
 ---
 
@@ -84,3 +86,4 @@ _None yet — seeded on onboarding._
 | 2026-10-06 (post-open) | 📰 BRIEF | 2 items triaged, 1 logged — earnings-beat headline, +1.15%; thin |
 | 2026-10-07 (end-of-day) | 📰 BRIEF | 5 items triaged, 1 logged — initiation + CEO demand comment; laser-contract headline is a recap, skipped |
 | 2026-10-08 (post-open) | 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — VideoRay Navy MCM prototype selection; ARK adds while stock at 52-week low |
+| 2026-10-13 (end-of-day) | 📰 BRIEF | MATERIAL — Q4 beat, best day in 2+ yrs; details unseen |

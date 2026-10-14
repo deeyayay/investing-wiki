@@ -24,6 +24,8 @@
 - **2026-10-07 (end-of-day)** — Freedom Broker cuts NioCorp PT to $8.40 from $12 on funding dilution (Investing.com, TipRanks).
   **Why it matters:** Second-day recirculation of the 10-05 dilution call with a stated figure; sharpens the financing-gap watch, headline only.
 - **2026-10-12** — US Energy Secretary, EXIM chairman, Nebraska governor and senators to tour Elk Creek; EXIM financing referenced (NioCorp / Yahoo Finance / Metal Tech News). Senior federal attention on the financing path; no commitment announced. Financing is the binding constraint.
+- **2026-10-13 (end-of-day)** — NioCorp signs 15-year critical-minerals sales agreement with Traxys to support Elk Creek financing (Yahoo Finance, 10-13).
+  **Why it matters:** Converts the earlier non-binding ~10-year Traxys offtake into a longer sales agreement — offtake is a financing prerequisite for EXIM, so this advances the financing-gated leg. Terms (binding? volumes?) not in headline.
 
 ---
 
@@ -64,3 +66,4 @@ _None yet — seeded on onboarding._
 | 2026-10-05 (end-of-day) | 📰 BRIEF | 3 items triaged, 1 logged | MATERIAL — Freedom Broker cuts NB price target on funding dilution (Investing.com); reinforces financing-gap watch, headline only, no /dig trigger |
 | 2026-10-07 (end-of-day) | 📰 BRIEF | 5 items triaged, 1 logged — PT cut with figure; other items are quote pages / peers |
 | 2026-10-12 (end-of-day) | 📰 BRIEF | MATERIAL — federal-official Elk Creek visit tied to EXIM financing |
+| 2026-10-13 (end-of-day) | 📰 BRIEF | MATERIAL — 15-yr Traxys sales agreement for Elk Creek financing |

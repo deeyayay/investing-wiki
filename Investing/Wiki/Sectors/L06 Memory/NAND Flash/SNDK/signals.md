@@ -48,6 +48,8 @@
 | 2026-09-18 (post-open) | The Motley Fool sizes the 09-17 buyback authorization at $14 billion | The Motley Fool | First hard dollar figure on the buyback already logged 09-17 evening — sizes rather than changes the fact; doesn't itself resolve the standing price-decline question. |
 | 2026-09-20/21 | Citigroup names SanDisk the top beneficiary of Micron's strong earnings | Stocktwits | A bullish read-through tying MU's fundamental strength to SNDK — reinforces the fundamental baseline (NBM/HBF roadmap unaffected) already noted in drift, but doesn't resolve the standing price-decline/causal-story question. |
 | 2026-09-22 | Rosenblatt initiates coverage with a Buy rating and $2,400 price target | TipRanks / TradingView | First coverage from this firm, and one of the more bullish targets on file — a new bullish sell-side voice arriving during the still-unresolved price-decline question, but doesn't itself address magnitude or cause. |
+- **2026-10-13 (end-of-day)** — 8-K filed 10-13 (items 1.01 material agreement, 2.03 direct financial obligation, 9.01 exhibits) (SEC EDGAR).
+  **Why it matters:** Primary source, content not read: 1.01 + 2.03 together read like a new credit agreement or financing, consistent with the 09-16 refinancing item — but headline metadata cannot say terms or purpose. Drift (Drifting) unchanged; /dig SNDK --filings-only before 10-29.
 
 ---
 - **2026-10-01** — Stocktwits: SNDK rebounds after a 35% drop this week; Citi calls it top beneficiary of Micron's results (Stocktwits / Investing.com). Rebound on the Micron read-through eases but does not explain the week's 35% slide; the price/fundamental disconnect stays open.
@@ -129,3 +131,4 @@
 - **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL — Citi names SNDK top beneficiary of strong Micron earnings vs 'crashes over 50%' China-threat framing ahead of 10-29 earnings; Drift unchanged, /dig still open
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL — 3-session pre-earnings selloff; Chinese competition framing; Drift unchanged
 - **2026-10-13 (post-open)** — 📰 BRIEF | MATERIAL, unverified — 'muted pricing' guidance premarket-plunge item conflicts with 10-29 earnings date; Drift unchanged, /dig still open
+- **2026-10-13 (end-of-day)** — 📰 BRIEF | MATERIAL — 8-K items 1.01/2.03/9.01 unread; Drift unchanged

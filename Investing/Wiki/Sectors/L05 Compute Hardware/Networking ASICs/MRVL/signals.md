@@ -56,6 +56,8 @@
 - **2026-10-09 (post-open)** — Seeking Alpha downgrades Marvell on valuation after Investor Day: 'Trillion-Dollar Math Comes With A Catch' (10-08); Freedom Broker calls new guidance supportive (10-09).
   **Why it matters:** Counterweight to the 10-08 THESIS ↑: bulls and bears now argue price, not the $20B connectivity / FY31 EPS framing itself. No thesis leg moved; deck basis still unverified.
 - **2026-10-12** — Morningstar/Benzinga: bullish long-term guidance; analyst sees MRVL beating its own LT earnings target (Morningstar / Benzinga). Reinforces the 10-08 Investor Day framing; no new company data.
+- **2026-10-13 (end-of-day)** — Second-generation Structera X launched, stock falls anyway (TipRanks); GF Securities says Google TPU v9 slightly delayed while MRVL stays solid (Moomoo), 10-13.
+  **Why it matters:** TPU v9 delay touches the custom-ASIC pipeline leg only indirectly; sell-side note, no company confirmation.
 
 ---
 
@@ -121,3 +123,4 @@
 | 2026-10-08 (post-open) | 📰 BRIEF | 5 items triaged, 1 logged — THESIS ↑ — Investor Day detail: connectivity outlook $20B, FY31 EPS >$30 per MS; PTs raised; deck basis still unread |
 | 2026-10-09 (post-open) | 📰 BRIEF | 1 logged — MATERIAL (low) — valuation downgrade vs guidance-supportive notes; THESIS ↑ from 10-08 stands |
 | 2026-10-12 (end-of-day) | 📰 BRIEF | MATERIAL (low) — LT guidance commentary, recirculates 10-08 THESIS ↑ |
+| 2026-10-13 (end-of-day) | 📰 BRIEF | MATERIAL (low) — Structera X gen-2; TPU v9 delay note |
