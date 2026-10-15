@@ -226,3 +226,4 @@
 - **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL — 10-K (10-09) still unread; Micron blowout-quarter/guidance coverage lifts memory peers after-hours; Taiwan strike mandate + $600M patent bill recur; hbm-supply theme: NVDA reportedly weighing lower-memory Rubin Ultra designs (retail-sourced, unconfirmed) — escalates existing 'stacked on every NVDA GPU' watch item; /dig flagged
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL — 10-K (10-09) now in digest as primary; buyback $35.16B; Maia 300 HBM4 content
 - **2026-10-14 (post-open)** — 📰 BRIEF | MATERIAL — SK Hynix HBM4 equipment deferral + HBM4 shortage pricing vs. weak pre-market tape; 10-K still unread; Drift unchanged
+- **2026-10-14 (end-of-day)** — 📰 BRIEF | MATERIAL — $35B buyback starts December; NVDA reportedly weighing lower-memory Rubin Ultra (HBM-demand risk, unconfirmed) vs Rubin mostly 12-layer HBM4; Drift unchanged

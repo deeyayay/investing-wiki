@@ -165,3 +165,4 @@
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL — Apple prelim deal + SK hynix packaging + Mizuho PT $114
 - **2026-10-13 (post-open)** — 📰 BRIEF | MATERIAL, ambiguous — +12% AH 'Q3 outlook' rally unconfirmed by filing and contradicted by oversold/AI-funding-warning items
 - **2026-10-14 (post-open)** — 📰 BRIEF | MATERIAL — NVDA PC processor pressures INTC pre-market; 10-22 earnings next; Drift unchanged
+- **2026-10-14 (end-of-day)** — 📰 BRIEF | MATERIAL, ambiguous — chip selloff on ASML upgrade/CXMT progress vs unconfirmed +12% AH 'Q3 outlook' item; no filing, earnings 10-22; Drift unchanged

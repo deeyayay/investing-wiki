@@ -137,3 +137,4 @@
 - **2026-10-13 (post-open)** — 📰 BRIEF | MATERIAL, unverified — 'muted pricing' guidance premarket-plunge item conflicts with 10-29 earnings date; Drift unchanged, /dig still open
 - **2026-10-13 (end-of-day)** — 📰 BRIEF | MATERIAL — 8-K items 1.01/2.03/9.01 unread; Drift unchanged
 - **2026-10-14 (post-open)** — 📰 BRIEF | MATERIAL — memory-complex selloff pre-market despite ASML beat; 8-K still unread; Drift unchanged, /dig still open
+- **2026-10-14 (end-of-day)** — 📰 BRIEF | MATERIAL — 8-K items 1.01/2.03/9.01 (10-13) still unread; stocks 'Muted Pricing' guidance + $14B buyback, Meta storage partnership, -4% as blowout memory prints (WDC too) fail to lift; Drift unchanged, /dig --filings-only open

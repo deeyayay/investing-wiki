@@ -67,3 +67,4 @@ _None yet — seeded on onboarding._
 | 2026-10-07 (end-of-day) | 📰 BRIEF | 5 items triaged, 1 logged — PT cut with figure; other items are quote pages / peers |
 | 2026-10-12 (end-of-day) | 📰 BRIEF | MATERIAL — federal-official Elk Creek visit tied to EXIM financing |
 | 2026-10-13 (end-of-day) | 📰 BRIEF | MATERIAL — 15-yr Traxys sales agreement for Elk Creek financing |
+| 2026-10-14 (end-of-day) | 📰 BRIEF | MATERIAL — Traxys 15-yr sales agreement recirculates, now tied to Project Vault link / Elk Creek financing; no new filing |

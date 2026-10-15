@@ -202,3 +202,4 @@
 - **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL — reported talks to acquire Reflection AI, ~$7B Poolside licensing/investment deal, first bond offering in 5 yrs, new tariff-plan report; all unconfirmed headlines. NVDA seeding ecosystem/customers (pattern with 10-09 d-Matrix/Perplexity)
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | THESIS ↑ — earnings beat + $150B buyback; tariff and circular-financing watch
 - **2026-10-14 (post-open)** — 📰 BRIEF | MATERIAL — new PC processor, $51B investment book, Figure AI $1B report; circular-financing watch persists; Drift unchanged
+- **2026-10-14 (end-of-day)** — 📰 BRIEF | MATERIAL — buyback authorization expanded; $51B investment book, reported ~$1B Figure AI stake; LSEG partnership; Drift unchanged

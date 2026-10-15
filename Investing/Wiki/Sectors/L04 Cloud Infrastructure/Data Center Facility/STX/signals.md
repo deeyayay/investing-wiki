@@ -78,3 +78,4 @@ _None yet — seeded on onboarding._
 - **2026-10-07 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — Bloomberg: STX vs Toshiba for TDK heads unit (explains 'acquisition talks'); rest recirculates
 - **2026-10-08 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — STX/WDC fall on 'AI shortage easing' framing; pre-market flat; headline-level
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — capacity expansion + downgrade weigh on shares
+- **2026-10-14 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — -15% despite earnings growth/+43% estimate surge; Q1 FY27 report set 10-27; Drift unchanged

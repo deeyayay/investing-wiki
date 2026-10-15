@@ -119,3 +119,4 @@
 - **2026-09-28 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — BTIG raises its PT to $425 from $404, a new named analyst action distinct from the 09-21 Morgan Stanley raise; the AI Defense/AI-agent-security-launch coverage again recirculates already-logged items; an NVIDIA Agent Safety Platform piece was primarily about NVIDIA, not PANW-specific
 - **2026-09-30 (end-of-day)** — 📰 5 items triaged, 1 logged — Simply Wall St: PANW acquires an AI-native platform to extend Cortex; stock +~5% as Nvidia launches an agent-safety platform (competitive overlap vs platform-consolidation leg, unconfirmed); acquirer/price not in headline
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Wells PT $525 vs Phillip downgrade
+- **2026-10-14 (end-of-day)** — 📰 BRIEF | MATERIAL — PAN-OS RCE flaw exploited in attacks (BleepingComputer); product-security event, no thesis leg broken; Wells PT $525
