@@ -66,6 +66,7 @@
 - **2026-10-14 (post-open)** — TipRanks: SNDK, Micron and SK Hynix fall pre-market despite ASML's strong Q3; SNDK slips below key technical level on CXMT threat ahead of 10-29 earnings (TipRanks / ad-hoc-news, 10-13/14).
 
   **Why it matters:** Headline and tape agree — memory-complex weakness, not SNDK-specific; 10-13 8-K (1.01/2.03/9.01) still unread.
+- **2026-10-15 (post-open)** — Falling again Thursday; Mizuho PT $2,050; Meta VR-glasses storage partnership; 10-13 8-K (items 1.01/2.03/9.01) still unread (Benzinga / Times of India / SEC EDGAR).
 
 ## Social Mentions
 
@@ -138,3 +139,4 @@
 - **2026-10-13 (end-of-day)** — 📰 BRIEF | MATERIAL — 8-K items 1.01/2.03/9.01 unread; Drift unchanged
 - **2026-10-14 (post-open)** — 📰 BRIEF | MATERIAL — memory-complex selloff pre-market despite ASML beat; 8-K still unread; Drift unchanged, /dig still open
 - **2026-10-14 (end-of-day)** — 📰 BRIEF | MATERIAL — 8-K items 1.01/2.03/9.01 (10-13) still unread; stocks 'Muted Pricing' guidance + $14B buyback, Meta storage partnership, -4% as blowout memory prints (WDC too) fail to lift; Drift unchanged, /dig --filings-only open
+- **2026-10-15 (post-open)** — 📰 BRIEF | MATERIAL — 8-K now 2 days unread; falls with memory complex on CoreWeave shock; Drift unchanged, /dig --filings-only SNDK still open

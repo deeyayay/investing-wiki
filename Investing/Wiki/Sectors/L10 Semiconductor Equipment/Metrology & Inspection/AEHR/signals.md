@@ -33,6 +33,7 @@
 - **2026-10-12** — Stock crashes on earnings shock (TipRanks/Quiver); conflicts with 10-12 post-open +40% after-hours report (TipRanks / Quiver Quantitative). Headlines contradict each other on the print; book-to-bill/guide leg untested from headlines alone. Resolve with the filing, not the stories.
 
 ---
+- **2026-10-15 (post-open)** — TipRanks: 'Sinks As Earnings Jolt AI Darling' — again conflicts with the FQ1 date of 11-02 logged 10-08; no filing seen (TipRanks, 10-15).
 
 ## Social Mentions
 
@@ -80,3 +81,4 @@
 - **2026-10-08 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — FQ1 FY27 earnings set for 11-02 (primary); prior 10-06 date wrong
 - **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL, ambiguous — Stocktwits: stock +40% after-hours on earnings beat, upbeat FY27 guide; conflicts with FQ1 date of 11-02 logged 10-08 (single retail source, no filing seen); /dig AEHR flagged
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL, ambiguous — earnings reaction reported as a crash; prior report said +40% AH; /dig queued
+- **2026-10-15 (post-open)** — 📰 BRIEF | MATERIAL, ambiguous — third conflicting earnings-reaction story; Drift unchanged, /dig AEHR still open

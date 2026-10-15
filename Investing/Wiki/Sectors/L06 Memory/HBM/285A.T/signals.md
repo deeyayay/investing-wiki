@@ -62,6 +62,7 @@
   **Why it matters:** Upgrade did not hold the stock — sector beta dominates; credit profile improving is a modest positive.
 
 ---
+- **2026-10-15 (post-open)** — Plunges another 12% as Nikkei falls ~5% on 'CoreWeave Shock' despite TSMC's strong earnings; S&P BBB upgrade and product launches overwhelmed; Korea rout echoes (Moomoo / ad-hoc-news / Business Insider, 10-15). Headline and tape agree.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -117,3 +118,4 @@
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL — Toshiba stake trim / free-float tripling; LD4 SSD launch minor
 - **2026-10-13 (end-of-day)** — 📰 BRIEF | MATERIAL — S&P upgrade to BBB; -13.3% pre-upgrade move
 - **2026-10-14 (post-open)** — 📰 BRIEF | MATERIAL (low) — upgrade overwhelmed by Asian chip selloff; TAIEX <49,000; Drift unchanged
+- **2026-10-15 (post-open)** — 📰 BRIEF | MATERIAL (low) — AI-credit contagion selloff, not a NAND demand fact; sold-out-2026 leg untouched; Drift unchanged

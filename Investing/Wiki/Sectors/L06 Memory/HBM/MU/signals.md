@@ -150,6 +150,7 @@
   **Why it matters:** Supply-side deferral plus tight HBM4 pricing supports the supply-contracted leg; pre-market tape ignores it. Headline-only, unverified.
 
 ---
+- **2026-10-15 (post-open)** — Contract book cited at ~$150B; second Taichung packaging/test site opens, 2027 HBM capacity fully sold out; Rubin expected mostly 12-Hi HBM4 (not 8-Hi), HBM prices could rise 121% in 2027; shares -3.6% (Benzinga / Cleanroom Technology / hbm-supply theme, 10-15).
 
 ## Social Mentions
 
@@ -227,3 +228,4 @@
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL — 10-K (10-09) now in digest as primary; buyback $35.16B; Maia 300 HBM4 content
 - **2026-10-14 (post-open)** — 📰 BRIEF | MATERIAL — SK Hynix HBM4 equipment deferral + HBM4 shortage pricing vs. weak pre-market tape; 10-K still unread; Drift unchanged
 - **2026-10-14 (end-of-day)** — 📰 BRIEF | MATERIAL — $35B buyback starts December; NVDA reportedly weighing lower-memory Rubin Ultra (HBM-demand risk, unconfirmed) vs Rubin mostly 12-layer HBM4; Drift unchanged
+- **2026-10-15 (post-open)** — 📰 BRIEF | MATERIAL — headline bullish (demand, sold-out), tape bearish: diverge; 12-Hi Rubin report eases the 10-14 lower-memory risk, unconfirmed; 10-K still unread; Drift unchanged

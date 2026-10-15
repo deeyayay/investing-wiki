@@ -100,6 +100,7 @@
   **Why it matters:** Headline and tape agree: new NVDA PC silicon is a competitive negative for the client leg; data-center leg untouched.
 
 ---
+- **2026-10-15 (post-open)** — Drops as Musk 'Terafab' talks reportedly favor TSMC; Mizuho PT raised $92→$114; AMD/INTC/NVDA fall despite TSMC Q3 beat (Benzinga-sourced aggregators, 10-15).
 
 ## Social Mentions
 
@@ -166,3 +167,4 @@
 - **2026-10-13 (post-open)** — 📰 BRIEF | MATERIAL, ambiguous — +12% AH 'Q3 outlook' rally unconfirmed by filing and contradicted by oversold/AI-funding-warning items
 - **2026-10-14 (post-open)** — 📰 BRIEF | MATERIAL — NVDA PC processor pressures INTC pre-market; 10-22 earnings next; Drift unchanged
 - **2026-10-14 (end-of-day)** — 📰 BRIEF | MATERIAL, ambiguous — chip selloff on ASML upgrade/CXMT progress vs unconfirmed +12% AH 'Q3 outlook' item; no filing, earnings 10-22; Drift unchanged
+- **2026-10-15 (post-open)** — 📰 BRIEF | MATERIAL — Terafab leaning TSMC weakens the foundry-customer leg at headline level; Drift unchanged, unverified
