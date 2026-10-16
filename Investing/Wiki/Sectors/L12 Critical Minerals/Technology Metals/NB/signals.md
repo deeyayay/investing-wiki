@@ -26,7 +26,8 @@
 - **2026-10-12** — US Energy Secretary, EXIM chairman, Nebraska governor and senators to tour Elk Creek; EXIM financing referenced (NioCorp / Yahoo Finance / Metal Tech News). Senior federal attention on the financing path; no commitment announced. Financing is the binding constraint.
 - **2026-10-13 (end-of-day)** — NioCorp signs 15-year critical-minerals sales agreement with Traxys to support Elk Creek financing (Yahoo Finance, 10-13).
   **Why it matters:** Converts the earlier non-binding ~10-year Traxys offtake into a longer sales agreement — offtake is a financing prerequisite for EXIM, so this advances the financing-gated leg. Terms (binding? volumes?) not in headline.
-
+- **2026-10-15 (end-of-day)** — EXIM reiterates target to finance ~65% of Elk Creek upfront capex; NioCorp places 50% of ferroniobium and 100% of remaining output under the Traxys sales agreement (NioCorp / Fastmarkets / EXIM.gov, 10-15).
+  **Why it matters:** Puts a number on the EXIM share and shows offtake covering the full output slate — both are financing prerequisites. Still a target, not a commitment; no loan close.
 ---
 
 ## Social Mentions
@@ -68,3 +69,4 @@ _None yet — seeded on onboarding._
 | 2026-10-12 (end-of-day) | 📰 BRIEF | MATERIAL — federal-official Elk Creek visit tied to EXIM financing |
 | 2026-10-13 (end-of-day) | 📰 BRIEF | MATERIAL — 15-yr Traxys sales agreement for Elk Creek financing |
 | 2026-10-14 (end-of-day) | 📰 BRIEF | MATERIAL — Traxys 15-yr sales agreement recirculates, now tied to Project Vault link / Elk Creek financing; no new filing |
+| 2026-10-15 (end-of-day) | 📰 BRIEF | MATERIAL — EXIM ~65% capex target + Traxys offtake detail; supports financing-gated leg |

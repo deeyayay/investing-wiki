@@ -119,3 +119,4 @@
 - **2026-10-13 (end-of-day)** — 📰 BRIEF | MATERIAL — S&P upgrade to BBB; -13.3% pre-upgrade move
 - **2026-10-14 (post-open)** — 📰 BRIEF | MATERIAL (low) — upgrade overwhelmed by Asian chip selloff; TAIEX <49,000; Drift unchanged
 - **2026-10-15 (post-open)** — 📰 BRIEF | MATERIAL (low) — AI-credit contagion selloff, not a NAND demand fact; sold-out-2026 leg untouched; Drift unchanged
+- **2026-10-15 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — recirculates CoreWeave-shock selloff and S&P BBB upgrade (10-15); demand leg untouched; Drift unchanged

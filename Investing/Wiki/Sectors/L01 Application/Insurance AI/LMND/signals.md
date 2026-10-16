@@ -40,7 +40,8 @@
 
 - **2026-09-18 (post-open)** — CFO Tim Bixby transitions off the CFO role to join the Board; company reaffirms it is targeting its first EBITDA-positive quarter (Yahoo Finance).
   **Why it matters:** A CFO change at a company whose thesis rests on a specific Q4 2026 adj.-EBITDA-positive target is a leadership-continuity question worth tracking into that print, even though the reaffirmed target itself is not new information; the standing Q2-earnings-figures /dig item still covers the underlying loss-ratio/EBITDA numbers.
-
+- **2026-10-15 (end-of-day)** — 8-K/A filed 10-15 under item 5.02 (officer/director change) — amends the earlier CFO-change 8-K; contents unread (SEC EDGAR).
+  **Why it matters:** The thesis rests on a Q4 2026 adj.-EBITDA-positive target, so any update to the CFO transition terms is a continuity question; only the item number is known, not the substance.
 ---
 
 ## Social Mentions
@@ -88,3 +89,4 @@
 - **2026-09-25 (evening)** — 📰 BRIEF | 5 items triaged, 0 new logged — "Stock Still Looks Stretched After Kentucky Pet Insurance Launch" recaps the already-logged 09-08 state-launch item; "topple Berkshire Hathaway" recirculates the 09-25 post-open item; a KTOS mismatch, "Wall Street's favorite stocks" listicle, and a Mercury General earnings-recap piece were noise/mismatch
 - **2026-09-28 (post-open)** — 📰 BRIEF | 2 items triaged, 0 new logged — an Onco micro-cap premarket-surge headline was an unrelated-ticker mismatch; "3 Growth Stocks with Warning Signs" listicle was noise
 - **2026-10-14 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — stock at 52-week low ($43.27), trading below key averages; no company-specific fact
+- **2026-10-15 (end-of-day)** — 📰 BRIEF | MATERIAL — 8-K/A item 5.02 (10-15) unread; Drift unchanged, /dig --filings-only LMND suggested

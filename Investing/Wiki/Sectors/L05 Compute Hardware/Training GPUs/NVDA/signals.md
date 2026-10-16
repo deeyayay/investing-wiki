@@ -120,6 +120,8 @@
 
 ---
 - **2026-10-15 (post-open)** — 'CoreWeave panic' drags chip stocks; NVDA leads decliners on higher AI funding-cost worries; Danaher partnership announced (Barron's / Yahoo Finance / ad-hoc-news, 10-15).
+- **2026-10-15 (end-of-day)** — NVDA 13F-style disclosure reportedly shows ~$21B SpaceX stake, now its No. 2 holding (Stocktwits, 10-15); headlines also cite Germany AI cooperation talks (Reuters).
+  **Why it matters:** Another large equity position in a customer/ecosystem name feeds the circular-financing watch item; unverified against a filing, so headline-level only.
 
 ## Social Mentions
 
@@ -205,3 +207,4 @@
 - **2026-10-14 (post-open)** — 📰 BRIEF | MATERIAL — new PC processor, $51B investment book, Figure AI $1B report; circular-financing watch persists; Drift unchanged
 - **2026-10-14 (end-of-day)** — 📰 BRIEF | MATERIAL — buyback authorization expanded; $51B investment book, reported ~$1B Figure AI stake; LSEG partnership; Drift unchanged
 - **2026-10-15 (post-open)** — 📰 BRIEF | MATERIAL — customer-financing stress is the circular-financing watch item showing up in the tape; headline and tape agree (down); Drift unchanged
+- **2026-10-15 (end-of-day)** — 📰 BRIEF | MATERIAL (unverified) — $21B SpaceX stake headline adds to circular-financing watch; Drift unchanged
