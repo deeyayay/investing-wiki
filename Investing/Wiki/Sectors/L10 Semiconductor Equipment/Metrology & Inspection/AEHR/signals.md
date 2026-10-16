@@ -82,3 +82,4 @@
 - **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL, ambiguous — Stocktwits: stock +40% after-hours on earnings beat, upbeat FY27 guide; conflicts with FQ1 date of 11-02 logged 10-08 (single retail source, no filing seen); /dig AEHR flagged
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL, ambiguous — earnings reaction reported as a crash; prior report said +40% AH; /dig queued
 - **2026-10-15 (post-open)** — 📰 BRIEF | MATERIAL, ambiguous — third conflicting earnings-reaction story; Drift unchanged, /dig AEHR still open
+- **2026-10-16 (post-open)** — 📰 BRIEF | MATERIAL, ambiguous — Stocktwits +40% AH earnings-beat story recirculates vs TipRanks 'sinks'; still conflicts with 11-02 earnings date; Drift unchanged, /dig AEHR still open

@@ -229,3 +229,4 @@
 - **2026-10-14 (post-open)** — 📰 BRIEF | MATERIAL — SK Hynix HBM4 equipment deferral + HBM4 shortage pricing vs. weak pre-market tape; 10-K still unread; Drift unchanged
 - **2026-10-14 (end-of-day)** — 📰 BRIEF | MATERIAL — $35B buyback starts December; NVDA reportedly weighing lower-memory Rubin Ultra (HBM-demand risk, unconfirmed) vs Rubin mostly 12-layer HBM4; Drift unchanged
 - **2026-10-15 (post-open)** — 📰 BRIEF | MATERIAL — headline bullish (demand, sold-out), tape bearish: diverge; 12-Hi Rubin report eases the 10-14 lower-memory risk, unconfirmed; 10-K still unread; Drift unchanged
+- **2026-10-16 (post-open)** — 📰 BRIEF | MATERIAL — 2027 capacity sold out, $600M patent truce, union standoff (ad-hoc-news); HBM price-hike bets rising (Moomoo); NVDA reportedly weighing lower-memory Rubin Ultra to ease HBM bottleneck (Stocktwits, unconfirmed, recurs 10-14 risk); insider RSA awards routine; Drift unchanged

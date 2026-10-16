@@ -90,3 +90,4 @@
 - **2026-09-28 (post-open)** — 📰 BRIEF | 2 items triaged, 0 new logged — an Onco micro-cap premarket-surge headline was an unrelated-ticker mismatch; "3 Growth Stocks with Warning Signs" listicle was noise
 - **2026-10-14 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — stock at 52-week low ($43.27), trading below key averages; no company-specific fact
 - **2026-10-15 (end-of-day)** — 📰 BRIEF | MATERIAL — 8-K/A item 5.02 (10-15) unread; Drift unchanged, /dig --filings-only LMND suggested
+- **2026-10-16 (post-open)** — 📰 BRIEF | MATERIAL — headlines explain 10-15 8-K/A (5.02): Nick Stead appointed CFO, Tim Bixby moves to board; filing itself unread; CFO handoff during run to Q4 EBITDA target is a watch item; Drift unchanged

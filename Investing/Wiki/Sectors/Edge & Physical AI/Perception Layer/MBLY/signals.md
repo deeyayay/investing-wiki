@@ -61,3 +61,4 @@ _None yet — seeded on onboarding._
 | 2026-09-28 (post-open) | 📰 BRIEF | 4 items triaged, 0 new logged | the 8-K (items 7.01/9.01) and SCHEDULE 13D/A filings recirculate the already-logged 09-24 filings dated the same day, still unresolved at headline level; two Coinbase prediction-market headlines were unrelated; standing 8-K/13D-A /dig item unchanged |
 | 2026-09-30 (post-open) | 📰 BRIEF | 5 items triaged, 1 logged | Barclays downgrades Mobileye citing lack of progress on advanced (non-ADAS) wins — attacks the self-drive/robotaxi leg of the thesis; analyst action with reasoning, headline-level only. Standing 8-K/13D-A /dig item unchanged (new 09-29 SCHEDULE 13D, holder unresolved) |
 | 2026-10-12 (end-of-day) | 📰 BRIEF | MATERIAL (low) — DB PT $13→$12 | |
+| 2026-10-16 (post-open) | 📰 BRIEF | MATERIAL (low) — Citi initiates Buy, $11 PT; shares +4.3% (Yahoo) — headline and move agree; MS Hold maintained |

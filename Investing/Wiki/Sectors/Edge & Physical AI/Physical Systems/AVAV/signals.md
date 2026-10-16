@@ -88,3 +88,4 @@ _None yet — seeded on onboarding._
 | 2026-10-08 (post-open) | 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — VideoRay Navy MCM prototype selection; ARK adds while stock at 52-week low |
 | 2026-10-13 (end-of-day) | 📰 BRIEF | MATERIAL — Q4 beat, best day in 2+ yrs; details unseen |
 | 2026-10-14 (end-of-day) | 📰 BRIEF | MATERIAL — AV/NIOA one-way attack localization + co-production agreement in Australia; Elsight comms partnership; supports multi-domain platform leg |
+| 2026-10-16 (post-open) | 📰 BRIEF | MATERIAL (low) — Macquarie initiates Outperform, $210 PT |

@@ -208,3 +208,4 @@
 - **2026-10-14 (end-of-day)** — 📰 BRIEF | MATERIAL — buyback authorization expanded; $51B investment book, reported ~$1B Figure AI stake; LSEG partnership; Drift unchanged
 - **2026-10-15 (post-open)** — 📰 BRIEF | MATERIAL — customer-financing stress is the circular-financing watch item showing up in the tape; headline and tape agree (down); Drift unchanged
 - **2026-10-15 (end-of-day)** — 📰 BRIEF | MATERIAL (unverified) — $21B SpaceX stake headline adds to circular-financing watch; Drift unchanged
+- **2026-10-16 (post-open)** — 📰 BRIEF | MATERIAL — FXLeaders: slide toward $200 as ASML warns on chipmaking capacity; GMI Cloud calls CoreWeave's 15% yield 'insane' (circular-financing watch); Taiwan $4B Texas supplier park, Volvo partnership; headline and tape agree (down); Drift unchanged

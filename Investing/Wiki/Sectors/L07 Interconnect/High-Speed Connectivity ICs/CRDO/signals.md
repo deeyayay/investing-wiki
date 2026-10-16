@@ -99,3 +99,4 @@
 - **2026-09-28 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — two Form 4 filings (routine, no amount given) and a "1.6T Optical Transceivers" analysis piece recap known themes; two "Founder Led Stocks" listicles were noise
 - **2026-10-01 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL (minor) — CEO share sale
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL — SRMO standards push + 1.6T ZeroFlap ALC; stock -6.5%
+- **2026-10-16 (post-open)** — 📰 BRIEF | MATERIAL (low) — starts new optical connectivity standards group; Rosenblatt Neutral $235; Drift unchanged

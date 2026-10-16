@@ -141,3 +141,4 @@
 - **2026-10-14 (end-of-day)** — 📰 BRIEF | MATERIAL — 8-K items 1.01/2.03/9.01 (10-13) still unread; stocks 'Muted Pricing' guidance + $14B buyback, Meta storage partnership, -4% as blowout memory prints (WDC too) fail to lift; Drift unchanged, /dig --filings-only open
 - **2026-10-15 (post-open)** — 📰 BRIEF | MATERIAL — 8-K now 2 days unread; falls with memory complex on CoreWeave shock; Drift unchanged, /dig --filings-only SNDK still open
 - **2026-10-15 (end-of-day)** — 📰 BRIEF | MATERIAL — 8-K (1.01/2.03/9.01, 10-13) now 3 days unread; no new company fact in today's headlines; Drift unchanged, /dig --filings-only SNDK still open
+- **2026-10-16 (post-open)** — 📰 BRIEF | MATERIAL — 8-K (1.01/2.03/9.01, 10-13) now 4 days unread; Benzinga frames falling-on-AI-fears vs $93.9B contract book; Drift unchanged, /dig --filings-only SNDK still open

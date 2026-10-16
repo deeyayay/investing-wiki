@@ -168,3 +168,4 @@
 - **2026-10-14 (post-open)** — 📰 BRIEF | MATERIAL — NVDA PC processor pressures INTC pre-market; 10-22 earnings next; Drift unchanged
 - **2026-10-14 (end-of-day)** — 📰 BRIEF | MATERIAL, ambiguous — chip selloff on ASML upgrade/CXMT progress vs unconfirmed +12% AH 'Q3 outlook' item; no filing, earnings 10-22; Drift unchanged
 - **2026-10-15 (post-open)** — 📰 BRIEF | MATERIAL — Terafab leaning TSMC weakens the foundry-customer leg at headline level; Drift unchanged, unverified
+- **2026-10-16 (post-open)** — 📰 BRIEF | MATERIAL (unverified) — TSMC CEO reportedly hints it could back up customers if Intel's advanced-packaging ramp falls short (EMIB leg, Stocktwits 10-15); Mizuho PT $92→$114; earnings date conflict (Traders Union says 10-29, earlier logged 10-22); Drift unchanged
