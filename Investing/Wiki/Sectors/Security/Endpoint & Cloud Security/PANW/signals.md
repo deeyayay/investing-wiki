@@ -68,6 +68,7 @@
 - **2026-09-28 (post-open)** — BTIG maintains its Buy rating and raises its Palo Alto Networks price target to $425 from $404 (富途牛牛, TradingView, marketscreener.com — 3 outlets, same action).
   **Why it matters:** A new named analyst target raise, distinct from the 09-21 Morgan Stanley $410 raise — a second sell-side voice moving its target higher within the same week, incremental confirmation of the platform-consolidation/NGS-ARR thesis leg.
 - **2026-10-12** — Wells Fargo raises PT to $525 from $475; Phillip Securities downgrades to Reduce (TipRanks / Moomoo). Split analyst read ahead of the print; no thesis-leg fact.
+- **2026-10-16** — CISA warns PAN-OS code-injection flaw is exploited in attacks (CyberSecurityNews); PANW also announces Anthropic partnership on AI-coding risk (Traders Union). Continues the 10-14 PAN-OS RCE thread; partnership aligns with AI-native platform leg. Headline-level only.
 
 ---
 
@@ -120,3 +121,4 @@
 - **2026-09-30 (end-of-day)** — 📰 5 items triaged, 1 logged — Simply Wall St: PANW acquires an AI-native platform to extend Cortex; stock +~5% as Nvidia launches an agent-safety platform (competitive overlap vs platform-consolidation leg, unconfirmed); acquirer/price not in headline
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Wells PT $525 vs Phillip downgrade
 - **2026-10-14 (end-of-day)** — 📰 BRIEF | MATERIAL — PAN-OS RCE flaw exploited in attacks (BleepingComputer); product-security event, no thesis leg broken; Wells PT $525
+- **2026-10-16 (end-of-day)** — 📰 BRIEF | MATERIAL — CISA flags PAN-OS flaw exploited (product-security, 2nd day); Anthropic partnership; Drift unchanged

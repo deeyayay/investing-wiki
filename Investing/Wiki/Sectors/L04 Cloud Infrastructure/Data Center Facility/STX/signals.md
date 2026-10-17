@@ -80,3 +80,4 @@ _None yet — seeded on onboarding._
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — capacity expansion + downgrade weigh on shares
 - **2026-10-14 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — -15% despite earnings growth/+43% estimate surge; Q1 FY27 report set 10-27; Drift unchanged
 - **2026-10-16 (post-open)** — 📰 BRIEF | MATERIAL (low) — Wells Fargo PT $1,180→$865 (reasoning unseen); Q1 FY27 report 10-27; Drift unchanged
+- **2026-10-16 (end-of-day)** — 📰 BRIEF | MATERIAL, ambiguous — Stocktwits 'Q4 beat, raised guidance, +9% AH' story conflicts with 10-27 report date and 'slump into earnings' coverage; unverified, Drift unchanged

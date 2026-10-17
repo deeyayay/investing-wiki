@@ -28,6 +28,8 @@
   **Why it matters:** Converts the earlier non-binding ~10-year Traxys offtake into a longer sales agreement — offtake is a financing prerequisite for EXIM, so this advances the financing-gated leg. Terms (binding? volumes?) not in headline.
 - **2026-10-15 (end-of-day)** — EXIM reiterates target to finance ~65% of Elk Creek upfront capex; NioCorp places 50% of ferroniobium and 100% of remaining output under the Traxys sales agreement (NioCorp / Fastmarkets / EXIM.gov, 10-15).
   **Why it matters:** Puts a number on the EXIM share and shows offtake covering the full output slate — both are financing prerequisites. Still a target, not a commitment; no loan close.
+- **2026-10-16 (end-of-day)** — Two 8-Ks: items 1.01 + 1.02 (entry into / termination of a material agreement) and 2.02 (preliminary Q3 results; GuruFocus/TradingView report ~$3.7M net income) (SEC EDGAR). Content unread.
+  **Why it matters:** A 1.01/1.02 pair means a material agreement was swapped — could be financing-stack restructuring, the gating leg. Profit on a pre-revenue developer is likely non-operating. `/dig --filings-only NB`.
 ---
 
 ## Social Mentions
@@ -70,3 +72,4 @@ _None yet — seeded on onboarding._
 | 2026-10-13 (end-of-day) | 📰 BRIEF | MATERIAL — 15-yr Traxys sales agreement for Elk Creek financing |
 | 2026-10-14 (end-of-day) | 📰 BRIEF | MATERIAL — Traxys 15-yr sales agreement recirculates, now tied to Project Vault link / Elk Creek financing; no new filing |
 | 2026-10-15 (end-of-day) | 📰 BRIEF | MATERIAL — EXIM ~65% capex target + Traxys offtake detail; supports financing-gated leg |
+| 2026-10-16 (end-of-day) | 📰 BRIEF | MATERIAL — 8-Ks 1.01/1.02 + 2.02 unread; agreement swap may touch financing leg; /dig --filings-only NB queued |
