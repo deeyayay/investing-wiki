@@ -71,6 +71,7 @@
 - **2026-10-16** — CISA warns PAN-OS code-injection flaw is exploited in attacks (CyberSecurityNews); PANW also announces Anthropic partnership on AI-coding risk (Traders Union). Continues the 10-14 PAN-OS RCE thread; partnership aligns with AI-native platform leg. Headline-level only.
 
 ---
+- **2026-10-19** — Palo Alto to acquire Embrace (digital experience monitoring); Wells Fargo PT $525 (scanx.trade / ad-hoc-news) — Tuck-in extends platform-consolidation leg; terms unseen
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -122,3 +123,4 @@
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Wells PT $525 vs Phillip downgrade
 - **2026-10-14 (end-of-day)** — 📰 BRIEF | MATERIAL — PAN-OS RCE flaw exploited in attacks (BleepingComputer); product-security event, no thesis leg broken; Wells PT $525
 - **2026-10-16 (end-of-day)** — 📰 BRIEF | MATERIAL — CISA flags PAN-OS flaw exploited (product-security, 2nd day); Anthropic partnership; Drift unchanged
+- **2026-10-19 (post-open)** — 📰 BRIEF | MATERIAL — Embrace tuck-in supports consolidator leg; terms unseen; Drift unchanged

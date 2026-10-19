@@ -43,6 +43,7 @@
 - **2026-10-15 (end-of-day)** — 8-K/A filed 10-15 under item 5.02 (officer/director change) — amends the earlier CFO-change 8-K; contents unread (SEC EDGAR).
   **Why it matters:** The thesis rests on a Q4 2026 adj.-EBITDA-positive target, so any update to the CFO transition terms is a continuity question; only the item number is known, not the substance.
 ---
+- **2026-10-19** — 8-K/A item 5.02 (10-15) CFO transition; MoneyWeek 'investors will sour on AI-insurer Lemonade' (SEC EDGAR / MoneyWeek) — CFO handoff during run to Q4 EBITDA target; filing unread; commentary is opinion
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -91,3 +92,4 @@
 - **2026-10-14 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — stock at 52-week low ($43.27), trading below key averages; no company-specific fact
 - **2026-10-15 (end-of-day)** — 📰 BRIEF | MATERIAL — 8-K/A item 5.02 (10-15) unread; Drift unchanged, /dig --filings-only LMND suggested
 - **2026-10-16 (post-open)** — 📰 BRIEF | MATERIAL — headlines explain 10-15 8-K/A (5.02): Nick Stead appointed CFO, Tim Bixby moves to board; filing itself unread; CFO handoff during run to Q4 EBITDA target is a watch item; Drift unchanged
+- **2026-10-19 (post-open)** — 📰 BRIEF | MATERIAL — 8-K/A 5.02 still unread; bearish opinion piece only; Drift unchanged

@@ -66,6 +66,7 @@
   **Why it matters:** Alphabet contracting power for AI via a utility partner supports the capex-conversion leg; deal terms unseen.
 
 ---
+- **2026-10-19** — Securities class-action solicitations over alleged Gemini AI delay recur (Kaplan Fox; TipRanks) (ad-hoc-news / TipRanks) — Litigation noise; no impact on cloud-growth leg unless allegations bear on Gemini timing
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -117,3 +118,4 @@
 - **2026-10-08 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — capex +~$15B / buyback-suspended headlines (unverified); litigation solicitations skipped
 - **2026-10-08 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — Alphabet AI power deal lifts utility merger pair; TD Cowen PT $485
 - **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL — Alphabet prices upsized $84.75B capital raise (Stocktwits headline, terms unverified); funds capex leg, dilution/leverage question; /dig flagged to verify
+- **2026-10-19 (post-open)** — 📰 BRIEF | MATERIAL — litigation solicitations recur; low; Drift unchanged

@@ -31,6 +31,7 @@
 - **2026-10-16 (end-of-day)** — Two 8-Ks: items 1.01 + 1.02 (entry into / termination of a material agreement) and 2.02 (preliminary Q3 results; GuruFocus/TradingView report ~$3.7M net income) (SEC EDGAR). Content unread.
   **Why it matters:** A 1.01/1.02 pair means a material agreement was swapped — could be financing-stack restructuring, the gating leg. Profit on a pre-revenue developer is likely non-operating. `/dig --filings-only NB`.
 ---
+- **2026-10-19** — 8-Ks filed 10-16: items 1.01+1.02 (agreement entered/terminated) and 2.02/7.01/9.01 (SEC EDGAR) — Agreement swap may touch the financing-gated leg; filings still unread
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -73,3 +74,4 @@ _None yet — seeded on onboarding._
 | 2026-10-14 (end-of-day) | 📰 BRIEF | MATERIAL — Traxys 15-yr sales agreement recirculates, now tied to Project Vault link / Elk Creek financing; no new filing |
 | 2026-10-15 (end-of-day) | 📰 BRIEF | MATERIAL — EXIM ~65% capex target + Traxys offtake detail; supports financing-gated leg |
 | 2026-10-16 (end-of-day) | 📰 BRIEF | MATERIAL — 8-Ks 1.01/1.02 + 2.02 unread; agreement swap may touch financing leg; /dig --filings-only NB queued |
+| 2026-10-19 (post-open) | 📰 BRIEF | MATERIAL — 8-Ks 1.01/1.02 + 2.02 still unread; /dig --filings-only NB queued |

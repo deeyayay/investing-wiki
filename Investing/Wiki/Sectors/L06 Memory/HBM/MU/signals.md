@@ -151,6 +151,7 @@
 
 ---
 - **2026-10-15 (post-open)** — Contract book cited at ~$150B; second Taichung packaging/test site opens, 2027 HBM capacity fully sold out; Rubin expected mostly 12-Hi HBM4 (not 8-Hi), HBM prices could rise 121% in 2027; shares -3.6% (Benzinga / Cleanroom Technology / hbm-supply theme, 10-15).
+- **2026-10-19** — Micron 2027 book sold out; $35B buyback (starts Dec) met with 'show proof' market skepticism (ad-hoc-news / Pluang) — Demand leg confirmed again at headline level; market wants proof — no new fact, Drift unchanged
 
 ## Social Mentions
 
@@ -230,3 +231,4 @@
 - **2026-10-14 (end-of-day)** — 📰 BRIEF | MATERIAL — $35B buyback starts December; NVDA reportedly weighing lower-memory Rubin Ultra (HBM-demand risk, unconfirmed) vs Rubin mostly 12-layer HBM4; Drift unchanged
 - **2026-10-15 (post-open)** — 📰 BRIEF | MATERIAL — headline bullish (demand, sold-out), tape bearish: diverge; 12-Hi Rubin report eases the 10-14 lower-memory risk, unconfirmed; 10-K still unread; Drift unchanged
 - **2026-10-16 (post-open)** — 📰 BRIEF | MATERIAL — 2027 capacity sold out, $600M patent truce, union standoff (ad-hoc-news); HBM price-hike bets rising (Moomoo); NVDA reportedly weighing lower-memory Rubin Ultra to ease HBM bottleneck (Stocktwits, unconfirmed, recurs 10-14 risk); insider RSA awards routine; Drift unchanged
+- **2026-10-19 (post-open)** — 📰 BRIEF | MATERIAL — headline bullish (sold-out 2027, buyback), tone sceptical; no new company fact

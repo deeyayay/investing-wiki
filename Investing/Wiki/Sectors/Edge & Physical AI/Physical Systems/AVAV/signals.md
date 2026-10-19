@@ -37,6 +37,7 @@
   **Why it matters:** Headline-only; supports the 'strengthening' status but no guidance or backlog figures seen. Drift unchanged; the 10-12 Wedbush 'long-term winners' note is the same narrative.
 
 ---
+- **2026-10-19** — Citizens JMP cuts PT to $170 on defense budget uncertainty (MarketBeat / Investing.com) — Budget-risk to the Army/drone demand leg; analyst view only
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -89,3 +90,4 @@ _None yet — seeded on onboarding._
 | 2026-10-13 (end-of-day) | 📰 BRIEF | MATERIAL — Q4 beat, best day in 2+ yrs; details unseen |
 | 2026-10-14 (end-of-day) | 📰 BRIEF | MATERIAL — AV/NIOA one-way attack localization + co-production agreement in Australia; Elsight comms partnership; supports multi-domain platform leg |
 | 2026-10-16 (post-open) | 📰 BRIEF | MATERIAL (low) — Macquarie initiates Outperform, $210 PT |
+| 2026-10-19 (post-open) | 📰 BRIEF | MATERIAL — Citizens JMP PT $170 on budget uncertainty (MarketBeat); Drift unchanged |

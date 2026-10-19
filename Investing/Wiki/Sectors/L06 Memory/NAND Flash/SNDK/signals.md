@@ -67,6 +67,7 @@
 
   **Why it matters:** Headline and tape agree — memory-complex weakness, not SNDK-specific; 10-13 8-K (1.01/2.03/9.01) still unread.
 - **2026-10-15 (post-open)** — Falling again Thursday; Mizuho PT $2,050; Meta VR-glasses storage partnership; 10-13 8-K (items 1.01/2.03/9.01) still unread (Benzinga / Times of India / SEC EDGAR).
+- **2026-10-19** — Stocktwits: premarket drop on 'muted pricing' guidance despite record revenue and $14B buyback; Mizuho keeps Outperform (Stocktwits / scanx) — Pricing-caution echo of Kioxia CEO comments; 8-K (10-13) still unread
 
 ## Social Mentions
 
@@ -142,3 +143,4 @@
 - **2026-10-15 (post-open)** — 📰 BRIEF | MATERIAL — 8-K now 2 days unread; falls with memory complex on CoreWeave shock; Drift unchanged, /dig --filings-only SNDK still open
 - **2026-10-15 (end-of-day)** — 📰 BRIEF | MATERIAL — 8-K (1.01/2.03/9.01, 10-13) now 3 days unread; no new company fact in today's headlines; Drift unchanged, /dig --filings-only SNDK still open
 - **2026-10-16 (post-open)** — 📰 BRIEF | MATERIAL — 8-K (1.01/2.03/9.01, 10-13) now 4 days unread; Benzinga frames falling-on-AI-fears vs $93.9B contract book; Drift unchanged, /dig --filings-only SNDK still open
+- **2026-10-19 (post-open)** — 📰 BRIEF | MATERIAL — 8-K 1.01/2.03/9.01 now 6 days unread; /dig --filings-only SNDK still open; Drift unchanged

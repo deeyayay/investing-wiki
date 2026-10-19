@@ -101,6 +101,7 @@
 
 ---
 - **2026-10-15 (post-open)** — Drops as Musk 'Terafab' talks reportedly favor TSMC; Mizuho PT raised $92→$114; AMD/INTC/NVDA fall despite TSMC Q3 beat (Benzinga-sourced aggregators, 10-15).
+- **2026-10-19** — JPMorgan upgrades Intel to Neutral on AI-workload earnings; Tesla foundry deal headline; Q3 earnings 10-22/29 (sources differ) (Seeking Alpha / TradingPedia) — Tesla foundry deal would support the IFS-customer leg but is unverified; upgrade is analyst, not fact
 
 ## Social Mentions
 
@@ -169,3 +170,4 @@
 - **2026-10-14 (end-of-day)** — 📰 BRIEF | MATERIAL, ambiguous — chip selloff on ASML upgrade/CXMT progress vs unconfirmed +12% AH 'Q3 outlook' item; no filing, earnings 10-22; Drift unchanged
 - **2026-10-15 (post-open)** — 📰 BRIEF | MATERIAL — Terafab leaning TSMC weakens the foundry-customer leg at headline level; Drift unchanged, unverified
 - **2026-10-16 (post-open)** — 📰 BRIEF | MATERIAL (unverified) — TSMC CEO reportedly hints it could back up customers if Intel's advanced-packaging ramp falls short (EMIB leg, Stocktwits 10-15); Mizuho PT $92→$114; earnings date conflict (Traders Union says 10-29, earlier logged 10-22); Drift unchanged
+- **2026-10-19 (post-open)** — 📰 BRIEF | MATERIAL — analyst upgrade + unverified Tesla foundry deal (foundry leg); earnings date conflicts across sources; Drift unchanged
