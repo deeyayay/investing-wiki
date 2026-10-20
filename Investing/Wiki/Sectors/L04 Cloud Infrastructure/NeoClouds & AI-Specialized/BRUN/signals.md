@@ -104,3 +104,4 @@
 - **2026-10-09 (post-open)** — 📰 BRIEF | 1 logged — MATERIAL (low) — POS AM shelf amendment; 10-05/10-06 8-Ks and Cohere contract already logged
 - **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL (low) — POS AM (10-08) registration amendment surfaces again; already logged 10-09
 - **2026-10-20 (end-of-day)** — 📰 BRIEF | MATERIAL (indirect) — neocloud sentiment hit: Nscale IPO pushback / 'neoclouds plunge' (KuCoin) and Nscale reportedly losing Microsoft deal on power delay; BRUN-specific facts unchanged (take-or-pay backlog, Exemplar); Drift unchanged, headline-level
+- **2026-10-20 (post-open)** — 📰 BRIEF | MATERIAL (low) — SEC EFFECT notice (10-19): a registration statement declared effective, form not named in metadata (likely follows the 10-08 POS AM; shelf/resale supply overhang, dilution watch). Neocloud-stress tape from last night's Nscale news unchanged; no new BRUN-specific fact; Drift unchanged

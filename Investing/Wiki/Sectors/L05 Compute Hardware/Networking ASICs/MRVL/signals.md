@@ -124,3 +124,4 @@
 | 2026-10-09 (post-open) | 📰 BRIEF | 1 logged — MATERIAL (low) — valuation downgrade vs guidance-supportive notes; THESIS ↑ from 10-08 stands |
 | 2026-10-12 (end-of-day) | 📰 BRIEF | MATERIAL (low) — LT guidance commentary, recirculates 10-08 THESIS ↑ |
 | 2026-10-13 (end-of-day) | 📰 BRIEF | MATERIAL (low) — Structera X gen-2; TPU v9 delay note |
+| 2026-10-20 (post-open) | 📰 BRIEF | MATERIAL (low) — 3.2T retimer launch plus CXL/connectivity launches; extends the interconnect leg, no thesis change |

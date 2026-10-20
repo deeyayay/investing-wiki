@@ -128,3 +128,4 @@
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — PT cuts / downgrade on cost pressure
 - **2026-10-16 (end-of-day)** — 📰 BRIEF | MATERIAL — Anthropic IPO chatter (unconfirmed); Q3 call 10-29; Drift unchanged
 - **2026-10-20 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Morgan Stanley top pick, PT $350, stock pops; Cantor PT cut to $310; Q3 call ahead; AWS growth leg untouched; Drift unchanged
+- **2026-10-20 (post-open)** — 📰 BRIEF | MATERIAL (low) — Benzinga/Barron's: 3M expands data-center partnership with Amazon (fiber-optic pact) after 3M Q3 beat; supports capex-build leg. Q3 call 10-29; AWS growth leg untouched; Drift unchanged
