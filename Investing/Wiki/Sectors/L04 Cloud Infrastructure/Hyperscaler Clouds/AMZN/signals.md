@@ -127,3 +127,4 @@
 - **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL — WSJ: Amazon in talks to acquire AI startup Decart for ~$7B (unconfirmed); Cantor/Wells PT cuts on cost pressure, one downgrade — AWS growth leg untouched
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — PT cuts / downgrade on cost pressure
 - **2026-10-16 (end-of-day)** — 📰 BRIEF | MATERIAL — Anthropic IPO chatter (unconfirmed); Q3 call 10-29; Drift unchanged
+- **2026-10-20 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Morgan Stanley top pick, PT $350, stock pops; Cantor PT cut to $310; Q3 call ahead; AWS growth leg untouched; Drift unchanged

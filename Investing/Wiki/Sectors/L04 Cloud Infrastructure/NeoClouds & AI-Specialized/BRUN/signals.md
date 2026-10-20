@@ -103,3 +103,4 @@
 - **2026-10-07 (end-of-day)** — 📰 BRIEF | 5 items triaged, 2 logged, deep-pass flagged — Cohere $525.6M contract (MATERIAL/THESIS, ties to 10-06 8-K 1.01); Form 3 routine
 - **2026-10-09 (post-open)** — 📰 BRIEF | 1 logged — MATERIAL (low) — POS AM shelf amendment; 10-05/10-06 8-Ks and Cohere contract already logged
 - **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL (low) — POS AM (10-08) registration amendment surfaces again; already logged 10-09
+- **2026-10-20 (end-of-day)** — 📰 BRIEF | MATERIAL (indirect) — neocloud sentiment hit: Nscale IPO pushback / 'neoclouds plunge' (KuCoin) and Nscale reportedly losing Microsoft deal on power delay; BRUN-specific facts unchanged (take-or-pay backlog, Exemplar); Drift unchanged, headline-level

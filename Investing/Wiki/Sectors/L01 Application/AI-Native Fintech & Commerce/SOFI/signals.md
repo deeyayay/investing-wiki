@@ -113,3 +113,4 @@
 - **2026-10-09 (post-open)** — 📰 BRIEF | 1 logged — MATERIAL — SoFiUSD live settlement; stock lower on the day
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — PT cut / KBW bearish ahead of 10-27 print
 - **2026-10-13 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Goldman PT $18→$15
+- **2026-10-20 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — 'SoFi launches 1st bank-issued stablecoin in a consumer app' (CoinMarketCap) recirculates SoFiUSD item; earnings 10-27; Drift unchanged

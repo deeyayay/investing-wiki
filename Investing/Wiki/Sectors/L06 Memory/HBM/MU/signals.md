@@ -232,3 +232,4 @@
 - **2026-10-15 (post-open)** — 📰 BRIEF | MATERIAL — headline bullish (demand, sold-out), tape bearish: diverge; 12-Hi Rubin report eases the 10-14 lower-memory risk, unconfirmed; 10-K still unread; Drift unchanged
 - **2026-10-16 (post-open)** — 📰 BRIEF | MATERIAL — 2027 capacity sold out, $600M patent truce, union standoff (ad-hoc-news); HBM price-hike bets rising (Moomoo); NVDA reportedly weighing lower-memory Rubin Ultra to ease HBM bottleneck (Stocktwits, unconfirmed, recurs 10-14 risk); insider RSA awards routine; Drift unchanged
 - **2026-10-19 (post-open)** — 📰 BRIEF | MATERIAL — headline bullish (sold-out 2027, buyback), tone sceptical; no new company fact
+- **2026-10-20 (end-of-day)** — 📰 BRIEF | MATERIAL — reported NVDA ask that Samsung/SK Hynix/Micron use TSMC 3nm for HBM base die (unconfirmed, Stocktwits-tier); CXMT competition fear vs 5x forward earnings; no company filing; Drift unchanged
