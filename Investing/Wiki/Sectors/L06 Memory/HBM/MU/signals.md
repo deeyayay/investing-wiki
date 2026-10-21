@@ -152,6 +152,7 @@
 ---
 - **2026-10-15 (post-open)** — Contract book cited at ~$150B; second Taichung packaging/test site opens, 2027 HBM capacity fully sold out; Rubin expected mostly 12-Hi HBM4 (not 8-Hi), HBM prices could rise 121% in 2027; shares -3.6% (Benzinga / Cleanroom Technology / hbm-supply theme, 10-15).
 - **2026-10-19** — Micron 2027 book sold out; $35B buyback (starts Dec) met with 'show proof' market skepticism (ad-hoc-news / Pluang) — Demand leg confirmed again at headline level; market wants proof — no new fact, Drift unchanged
+- **2026-10-21** — Micron Taiwan union signs deal, withdraws from mediation (Reuters); Q4 memory contract prices seen up to +28% (Reuters / BigGo). Labor-disruption risk to Taiwan output eases; contract-price outlook supports the HBM/DRAM pricing leg.
 
 ## Social Mentions
 
@@ -234,3 +235,4 @@
 - **2026-10-19 (post-open)** — 📰 BRIEF | MATERIAL — headline bullish (sold-out 2027, buyback), tone sceptical; no new company fact
 - **2026-10-20 (end-of-day)** — 📰 BRIEF | MATERIAL — reported NVDA ask that Samsung/SK Hynix/Micron use TSMC 3nm for HBM base die (unconfirmed, Stocktwits-tier); CXMT competition fear vs 5x forward earnings; no company filing; Drift unchanged
 - **2026-10-20 (post-open)** — 📰 BRIEF | MATERIAL — Reuters: Micron Taiwan union to launch one-day strike over bonus dispute (escalation of the 10-16 standoff; Taiwan is a core DRAM/HBM site, one day so output impact likely small, unquantified). Samsung reportedly locked 80% of 2027 memory orders and HBM4 supply (competitor share, not a MU fact). TSMC 3nm base-die ask still unconfirmed. Drift unchanged
+- **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged

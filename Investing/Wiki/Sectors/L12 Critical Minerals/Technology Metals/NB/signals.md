@@ -32,6 +32,7 @@
   **Why it matters:** A 1.01/1.02 pair means a material agreement was swapped — could be financing-stack restructuring, the gating leg. Profit on a pre-revenue developer is likely non-operating. `/dig --filings-only NB`.
 ---
 - **2026-10-19** — 8-Ks filed 10-16: items 1.01+1.02 (agreement entered/terminated) and 2.02/7.01/9.01 (SEC EDGAR) — Agreement swap may touch the financing-gated leg; filings still unread
+- **2026-10-21** — EXIM Chairman signs letter of support for NioCorp Elk Creek Mine (Global Mining Review). Advances the EXIM (~$780M) financing gate; a letter of support is not a final commitment.
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -77,3 +78,4 @@ _None yet — seeded on onboarding._
 | 2026-10-19 (post-open) | 📰 BRIEF | MATERIAL — 8-Ks 1.01/1.02 + 2.02 still unread; /dig --filings-only NB queued |
 | 2026-10-20 (end-of-day) | 📰 BRIEF | MATERIAL — 8-Ks 1.01/1.02 + 2.02 (10-16) still unread after 3 passes; /dig --filings-only NB still queued |
 | 2026-10-21 (end-of-day) | 📰 BRIEF | MATERIAL (low) — Texas Capital initiates Buy; Energy Sec. Wright/EXIM leaders tour Elk Creek; EXIM 65% target restated (supports financing-gated leg); 8-Ks 1.01/1.02 + 2.02 still unread, /dig --filings-only NB queued |
+- **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged

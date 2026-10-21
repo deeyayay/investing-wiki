@@ -49,6 +49,7 @@
 - **2026-10-14 (post-open)** — AMD slides pre-market after Nvidia's new PC processor (Stocktwits); nVent collaborates with AMD on cooling for Helios rack (Yahoo Finance); 'dilution and AI caution' commentary (Traders Union, unverified).
 
   **Why it matters:** Helios ecosystem support is a mild positive for the rack-scale leg; dilution claim lacks a filing — not acted on.
+- **2026-10-21** — Susquehanna lifts PT to $620 from $550; AMD -13% last week; AMD-Vultr India capacity expansion; earnings Nov 3 (MarketBeat / Yahoo / Moomoo). Upgrade against a sharp drawdown into earnings; watch Nov 3 for the MI350 ramp.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -101,3 +102,4 @@
 - **2026-10-06 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — demand-outruns-supply / 2027 ramp report + Citi PT $800 (supports data-center share leg, unconfirmed)
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL — customer-reset demand-risk coverage vs Helion rack launch; /dig queued
 - **2026-10-14 (post-open)** — 📰 BRIEF | MATERIAL (low) — nVent Helios cooling tie-up; NVDA PC chip pre-market pressure; dilution claim unverified; Drift unchanged
+- **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged

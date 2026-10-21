@@ -102,6 +102,7 @@
 ---
 - **2026-10-15 (post-open)** — Drops as Musk 'Terafab' talks reportedly favor TSMC; Mizuho PT raised $92→$114; AMD/INTC/NVDA fall despite TSMC Q3 beat (Benzinga-sourced aggregators, 10-15).
 - **2026-10-19** — JPMorgan upgrades Intel to Neutral on AI-workload earnings; Tesla foundry deal headline; Q3 earnings 10-22/29 (sources differ) (Seeking Alpha / TradingPedia) — Tesla foundry deal would support the IFS-customer leg but is unverified; upgrade is analyst, not fact
+- **2026-10-21** — JPMorgan upgrades Intel to Neutral; Intel claims only high-volume 300mm InP silicon photonics capability; Musk signals Terafab breakthrough (AD HOC NEWS / LEDinside / Barron's). Photonics claim supports the interconnect leg; upgrade is sentiment only, Terafab claim unverified.
 
 ## Social Mentions
 
@@ -173,3 +174,4 @@
 - **2026-10-19 (post-open)** — 📰 BRIEF | MATERIAL — analyst upgrade + unverified Tesla foundry deal (foundry leg); earnings date conflicts across sources; Drift unchanged
 - **2026-10-20 (end-of-day)** — 📰 BRIEF | MATERIAL — Intel claims only high-volume 300mm InP silicon-photonics capability as CPO gains momentum (supports photonics leg, company claim, unverified); JPM upgrade logged 10-19; earnings 10-29 per Yahoo (dates conflict across sources); Drift unchanged
 - **2026-10-20 (post-open)** — 📰 BRIEF | MATERIAL (unverified) — TradingKey: stock falls below $90 on a 'robotics ban' hitting chipmaking and a Kiryat Gat (Israel fab) blast; headline-level, cause and fab impact unsized. Bearish tape vs the 10-19 JPM upgrade; earnings 10-29. Drift unchanged; /dig if the Kiryat Gat damage is confirmed
+- **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged

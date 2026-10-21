@@ -63,6 +63,7 @@
 
 ---
 - **2026-10-15 (post-open)** — Plunges another 12% as Nikkei falls ~5% on 'CoreWeave Shock' despite TSMC's strong earnings; S&P BBB upgrade and product launches overwhelmed; Korea rout echoes (Moomoo / ad-hoc-news / Business Insider, 10-15). Headline and tape agree.
+- **2026-10-21** — S&P upgrades Kioxia to BBB; shares up ~3% as Kospi +3%, SK hynix/Samsung +5% (AD HOC NEWS / TradingKey). Credit improvement eases the leverage concern; moves with memory-sector sentiment.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -120,3 +121,4 @@
 - **2026-10-14 (post-open)** — 📰 BRIEF | MATERIAL (low) — upgrade overwhelmed by Asian chip selloff; TAIEX <49,000; Drift unchanged
 - **2026-10-15 (post-open)** — 📰 BRIEF | MATERIAL (low) — AI-credit contagion selloff, not a NAND demand fact; sold-out-2026 leg untouched; Drift unchanged
 - **2026-10-15 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — recirculates CoreWeave-shock selloff and S&P BBB upgrade (10-15); demand leg untouched; Drift unchanged
+- **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged

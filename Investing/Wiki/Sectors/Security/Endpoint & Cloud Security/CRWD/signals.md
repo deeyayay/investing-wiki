@@ -60,6 +60,7 @@
   **Why it matters:** Removes a standing legal/regulatory overhang rather than confirming a specific platform-consolidation thesis leg — logged for the audit trail; the Snowflake-partnership "AI growth engine" framing continues to recirculate with no new detail since 09-24 evening.
 
 ---
+- **2026-10-21** — CrowdStrike expands AI security partnership with NVIDIA (agent security, OpenShell); shares +1.25% (Yahoo Finance / GuruFocus). Platform-consolidator leg: ties Falcon into NVIDIA agentic-AI stack.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -110,3 +111,4 @@
 - **2026-09-28 (post-open)** — 📰 BRIEF | 5 items triaged, 0 new logged — "DOJ Reportedly Closes Investigation" recirculates the already-logged 09-25 evening item; Q1-beat-recap and PANW/AVGO comparison pieces were noise/recap; standing Q1/Q2 guidance-reaction /dig item unchanged
 - **2026-10-02 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — Q1 beat on revenue/EPS but stock −13% after-hours on modest guidance (Stocktwits); TD Cowen PT $250→$280 Buy. Beat intact, guide is the debate — watch ARR/FY guide leg; /dig to size
 - **2026-10-09 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL (low) — Needham PT to $310; stock up Friday per MarketWatch; unsolicited mini-tender offer noted. Supports post-Q1 recovery; guide debate unchanged
+- **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged

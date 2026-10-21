@@ -32,6 +32,7 @@
 
 ---
 - **2026-10-19** — JPMorgan PT cut $1,240→$1,050; Wells Fargo PT $865 (MarketScreener / ad-hoc-news) — Second sell-side PT cut in a week into 10-27 report; reasoning unseen
+- **2026-10-21** — Barclays Buy PT $1,250; BofA and Morgan Stanley raise PT to $1,200 (Moomoo / AD HOC NEWS). Sell-side momentum on HAMR/Mozaic leadership; PT moves only, no new company fact.
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -83,3 +84,4 @@ _None yet — seeded on onboarding._
 - **2026-10-16 (post-open)** — 📰 BRIEF | MATERIAL (low) — Wells Fargo PT $1,180→$865 (reasoning unseen); Q1 FY27 report 10-27; Drift unchanged
 - **2026-10-16 (end-of-day)** — 📰 BRIEF | MATERIAL, ambiguous — Stocktwits 'Q4 beat, raised guidance, +9% AH' story conflicts with 10-27 report date and 'slump into earnings' coverage; unverified, Drift unchanged
 - **2026-10-19 (post-open)** — 📰 BRIEF | MATERIAL — JPM PT $1,240→$1,050 and Wells $865 (reasoning unseen); Drift unchanged
+- **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged
