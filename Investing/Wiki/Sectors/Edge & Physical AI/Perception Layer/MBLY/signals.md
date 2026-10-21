@@ -62,3 +62,4 @@ _None yet — seeded on onboarding._
 | 2026-09-30 (post-open) | 📰 BRIEF | 5 items triaged, 1 logged | Barclays downgrades Mobileye citing lack of progress on advanced (non-ADAS) wins — attacks the self-drive/robotaxi leg of the thesis; analyst action with reasoning, headline-level only. Standing 8-K/13D-A /dig item unchanged (new 09-29 SCHEDULE 13D, holder unresolved) |
 | 2026-10-12 (end-of-day) | 📰 BRIEF | MATERIAL (low) — DB PT $13→$12 | |
 | 2026-10-16 (post-open) | 📰 BRIEF | MATERIAL (low) — Citi initiates Buy, $11 PT; shares +4.3% (Yahoo) — headline and move agree; MS Hold maintained |
+| 2026-10-20 (end-of-day) | 📰 BRIEF | MATERIAL (low) — Evercore PT $16→$11, TD Cowen cut; analyst-led de-rating, no new company fact; Drift unchanged |

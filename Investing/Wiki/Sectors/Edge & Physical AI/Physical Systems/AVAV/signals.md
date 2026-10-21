@@ -91,3 +91,4 @@ _None yet — seeded on onboarding._
 | 2026-10-14 (end-of-day) | 📰 BRIEF | MATERIAL — AV/NIOA one-way attack localization + co-production agreement in Australia; Elsight comms partnership; supports multi-domain platform leg |
 | 2026-10-16 (post-open) | 📰 BRIEF | MATERIAL (low) — Macquarie initiates Outperform, $210 PT |
 | 2026-10-19 (post-open) | 📰 BRIEF | MATERIAL — Citizens JMP PT $170 on budget uncertainty (MarketBeat); Drift unchanged |
+| 2026-10-21 (end-of-day) | 📰 BRIEF | MATERIAL (low) — Citizens PT cut, MarketBeat 12-month low on downgrade; budget-uncertainty overhang on Army/laser leg; Drift unchanged |
