@@ -122,3 +122,4 @@
 - **2026-10-15 (post-open)** — 📰 BRIEF | MATERIAL (low) — AI-credit contagion selloff, not a NAND demand fact; sold-out-2026 leg untouched; Drift unchanged
 - **2026-10-15 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — recirculates CoreWeave-shock selloff and S&P BBB upgrade (10-15); demand leg untouched; Drift unchanged
 - **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged
+- **2026-10-21 (end-of-day)** — 📰 BRIEF | MATERIAL — convertible-bond structure gives a rival leverage over control (AD HOC NEWS), ¥920B leverage overhang despite S&P BBB; Samsung/SK Hynix upgrading China plants; stock rebounds with AI semis; not a demand fact; Drift unchanged

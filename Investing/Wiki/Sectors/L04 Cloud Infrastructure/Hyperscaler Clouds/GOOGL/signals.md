@@ -119,3 +119,4 @@
 - **2026-10-08 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — Alphabet AI power deal lifts utility merger pair; TD Cowen PT $485
 - **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL — Alphabet prices upsized $84.75B capital raise (Stocktwits headline, terms unverified); funds capex leg, dilution/leverage question; /dig flagged to verify
 - **2026-10-19 (post-open)** — 📰 BRIEF | MATERIAL — litigation solicitations recur; low; Drift unchanged
+- **2026-10-21 (end-of-day)** — 📰 BRIEF | MATERIAL — UK cloud outage, stock -2.5% (BigGo, Traders Union); Xcel Energy clean-power deal for new AI data center (TIKR); securities-fraud solicitations recur (low); outage is a reliability watch item, Cloud growth/backlog legs untouched; Drift unchanged

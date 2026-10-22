@@ -102,3 +102,4 @@
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL — SRMO standards push + 1.6T ZeroFlap ALC; stock -6.5%
 - **2026-10-16 (post-open)** — 📰 BRIEF | MATERIAL (low) — starts new optical connectivity standards group; Rosenblatt Neutral $235; Drift unchanged
 - **2026-10-16 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — 8-K 5.07 routine; Drift unchanged
+- **2026-10-21 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — shares +7% on new AI interconnect launch and earnings-beat framing (Traders Union; recaps the resolved 09-01 8-K finding); Rosenblatt Neutral $235 recurs; Drift unchanged
