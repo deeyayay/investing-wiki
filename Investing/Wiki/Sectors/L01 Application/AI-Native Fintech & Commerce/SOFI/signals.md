@@ -114,3 +114,4 @@
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — PT cut / KBW bearish ahead of 10-27 print
 - **2026-10-13 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Goldman PT $18→$15
 - **2026-10-20 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — 'SoFi launches 1st bank-issued stablecoin in a consumer app' (CoinMarketCap) recirculates SoFiUSD item; earnings 10-27; Drift unchanged
+- **2026-10-22 (post-open)** — 📰 BRIEF | MATERIAL — SoFi launches SoFi Earn (SOFIE), an interest-bearing, FDIC-insured bank-issued tokenized deposit for consumers (company release / TradingView); extends the 10-20 bank-issued stablecoin push on the rails leg. Earnings 10-27. Drift unchanged

@@ -92,3 +92,4 @@ _None yet — seeded on onboarding._
 | 2026-10-16 (post-open) | 📰 BRIEF | MATERIAL (low) — Macquarie initiates Outperform, $210 PT |
 | 2026-10-19 (post-open) | 📰 BRIEF | MATERIAL — Citizens JMP PT $170 on budget uncertainty (MarketBeat); Drift unchanged |
 | 2026-10-21 (end-of-day) | 📰 BRIEF | MATERIAL (low) — Citizens PT cut, MarketBeat 12-month low on downgrade; budget-uncertainty overhang on Army/laser leg; Drift unchanged |
+- **2026-10-22 (post-open)** — 📰 BRIEF | MATERIAL (low) — Oppenheimer initiates coverage with Outperform (Investing.com / MarketBeat); analyst action, no reasoning or new company fact in headline. Drift unchanged
