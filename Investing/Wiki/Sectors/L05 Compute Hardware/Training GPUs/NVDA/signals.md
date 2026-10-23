@@ -122,6 +122,8 @@
 - **2026-10-15 (post-open)** — 'CoreWeave panic' drags chip stocks; NVDA leads decliners on higher AI funding-cost worries; Danaher partnership announced (Barron's / Yahoo Finance / ad-hoc-news, 10-15).
 - **2026-10-15 (end-of-day)** — NVDA 13F-style disclosure reportedly shows ~$21B SpaceX stake, now its No. 2 holding (Stocktwits, 10-15); headlines also cite Germany AI cooperation talks (Reuters).
   **Why it matters:** Another large equity position in a customer/ecosystem name feeds the circular-financing watch item; unverified against a filing, so headline-level only.
+- **2026-10-23 (end-of-day)** — Telegraph: Nvidia CEO warns of an AI funding slowdown; tech stocks fall (The Telegraph, 10-22). Barron's separately flags a stock dip on another potential AI investment.
+  **Why it matters:** A warning from the company itself that AI funding is tightening bears directly on the circular-financing/customer-financing watch; headline-level, wording unseen.
 
 ## Social Mentions
 
@@ -211,3 +213,4 @@
 - **2026-10-16 (post-open)** — 📰 BRIEF | MATERIAL — FXLeaders: slide toward $200 as ASML warns on chipmaking capacity; GMI Cloud calls CoreWeave's 15% yield 'insane' (circular-financing watch); Taiwan $4B Texas supplier park, Volvo partnership; headline and tape agree (down); Drift unchanged
 - **2026-10-20 (end-of-day)** — 📰 BRIEF | MATERIAL — Nscale IPO pushback and neocloud selloff pressure NVDA (customer-financing/circular-financing watch); $235B buyback and Berlin GTC/German AI partnership are demand-side positives; Drift unchanged
 - **2026-10-21 (end-of-day)** — 📰 BRIEF | MATERIAL — The Information: Nvidia in talks to invest in Firmus Grid after scrapped Australian IPO (circular-financing watch persists); containerized DSX Pod launched and supply-chain capacity expansion (demand-side positive); Drift unchanged
+- **2026-10-23 (end-of-day)** — 📰 BRIEF | MATERIAL — Telegraph: CEO warns of AI funding slowdown (circular-financing/customer-financing watch); drift unchanged, wording unread

@@ -153,6 +153,8 @@
 - **2026-10-15 (post-open)** — Contract book cited at ~$150B; second Taichung packaging/test site opens, 2027 HBM capacity fully sold out; Rubin expected mostly 12-Hi HBM4 (not 8-Hi), HBM prices could rise 121% in 2027; shares -3.6% (Benzinga / Cleanroom Technology / hbm-supply theme, 10-15).
 - **2026-10-19** — Micron 2027 book sold out; $35B buyback (starts Dec) met with 'show proof' market skepticism (ad-hoc-news / Pluang) — Demand leg confirmed again at headline level; market wants proof — no new fact, Drift unchanged
 - **2026-10-21** — Micron Taiwan union signs deal, withdraws from mediation (Reuters); Q4 memory contract prices seen up to +28% (Reuters / BigGo). Labor-disruption risk to Taiwan output eases; contract-price outlook supports the HBM/DRAM pricing leg.
+- **2026-10-23 (end-of-day)** — Bernstein: Samsung overtook SK hynix in HBM revenue in 3Q26 as the HBM4 race tightens (Investing.com / BigGo); Micron also showed DDR6/LPDDR6/HBM/NAND roadmap (TweakTown). MU Form 4 filed 10-20 (routine, unread).
+  **Why it matters:** Samsung regaining HBM share tests the 'only US-domiciled HBM supplier' share leg; Micron's roadmap supports the demand leg. Headline-level.
 
 ## Social Mentions
 
@@ -236,3 +238,4 @@
 - **2026-10-20 (end-of-day)** — 📰 BRIEF | MATERIAL — reported NVDA ask that Samsung/SK Hynix/Micron use TSMC 3nm for HBM base die (unconfirmed, Stocktwits-tier); CXMT competition fear vs 5x forward earnings; no company filing; Drift unchanged
 - **2026-10-20 (post-open)** — 📰 BRIEF | MATERIAL — Reuters: Micron Taiwan union to launch one-day strike over bonus dispute (escalation of the 10-16 standoff; Taiwan is a core DRAM/HBM site, one day so output impact likely small, unquantified). Samsung reportedly locked 80% of 2027 memory orders and HBM4 supply (competitor share, not a MU fact). TSMC 3nm base-die ask still unconfirmed. Drift unchanged
 - **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged
+- **2026-10-23 (end-of-day)** — 📰 BRIEF | MATERIAL — Bernstein: Samsung passes SK hynix in HBM revenue 3Q26 (competitive-share watch); Micron roadmap; drift unchanged; MU news fetch 503'd, covered via topic only

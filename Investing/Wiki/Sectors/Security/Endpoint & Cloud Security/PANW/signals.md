@@ -73,6 +73,8 @@
 ---
 - **2026-10-19** — Palo Alto to acquire Embrace (digital experience monitoring); Wells Fargo PT $525 (scanx.trade / ad-hoc-news) — Tuck-in extends platform-consolidation leg; terms unseen
 - **2026-10-21** — Unit 42 threat brief: active exploitation of PAN-OS CVE-2026-0257; ransomware gangs exploiting GlobalProtect VPN flaw since June (Unit 42 / Help Net Security). Product-vulnerability headline risk to platform-trust leg; no financial impact stated yet.
+- **2026-10-23 (end-of-day)** — PANW launches Cortex XDR One for AI agents (SecurityBrief); Citigroup raises PT to $440 from $410 (AD HOC NEWS); Seeking Alpha bear note on 'real' growth (~15%) at 84x earnings.
+  **Why it matters:** Agent-security product supports the platform-consolidation leg; valuation/growth-quality bear case is opinion, not a thesis fact.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -126,3 +128,4 @@
 - **2026-10-16 (end-of-day)** — 📰 BRIEF | MATERIAL — CISA flags PAN-OS flaw exploited (product-security, 2nd day); Anthropic partnership; Drift unchanged
 - **2026-10-19 (post-open)** — 📰 BRIEF | MATERIAL — Embrace tuck-in supports consolidator leg; terms unseen; Drift unchanged
 - **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged
+- **2026-10-23 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Cortex XDR One for AI agents (platform leg); Citi PT $440; drift unchanged
