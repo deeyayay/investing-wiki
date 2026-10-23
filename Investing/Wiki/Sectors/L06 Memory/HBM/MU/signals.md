@@ -155,6 +155,8 @@
 - **2026-10-21** — Micron Taiwan union signs deal, withdraws from mediation (Reuters); Q4 memory contract prices seen up to +28% (Reuters / BigGo). Labor-disruption risk to Taiwan output eases; contract-price outlook supports the HBM/DRAM pricing leg.
 - **2026-10-23 (end-of-day)** — Bernstein: Samsung overtook SK hynix in HBM revenue in 3Q26 as the HBM4 race tightens (Investing.com / BigGo); Micron also showed DDR6/LPDDR6/HBM/NAND roadmap (TweakTown). MU Form 4 filed 10-20 (routine, unread).
   **Why it matters:** Samsung regaining HBM share tests the 'only US-domiciled HBM supplier' share leg; Micron's roadmap supports the demand leg. Headline-level.
+- **2026-10-23 (post-open)** — Memory selloff 10-22 (SanDisk -8%, WDC -7%, Micron -6%) ahead of earnings; 10-23 SK hynix +4% on scrapping Solidigm's US IPO, Micron/SanDisk edge higher (24/7 Wall St.). Micron also reported to launch a global profit-linked bonus plan from FY2027 (Economic Times).
+  **Why it matters:** Sector-wide de-risking, not an MU-specific fact; the pared Solidigm IPO removes a competitor-side supply/capital overhang and early rebound pairs with the headline. Bonus plan eases the Taiwan labor thread. Headline-level, Drift unchanged.
 
 ## Social Mentions
 
@@ -239,3 +241,4 @@
 - **2026-10-20 (post-open)** — 📰 BRIEF | MATERIAL — Reuters: Micron Taiwan union to launch one-day strike over bonus dispute (escalation of the 10-16 standoff; Taiwan is a core DRAM/HBM site, one day so output impact likely small, unquantified). Samsung reportedly locked 80% of 2027 memory orders and HBM4 supply (competitor share, not a MU fact). TSMC 3nm base-die ask still unconfirmed. Drift unchanged
 - **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged
 - **2026-10-23 (end-of-day)** — 📰 BRIEF | MATERIAL — Bernstein: Samsung passes SK hynix in HBM revenue 3Q26 (competitive-share watch); Micron roadmap; drift unchanged; MU news fetch 503'd, covered via topic only
+- **2026-10-23 (post-open)** — 📰 BRIEF | MATERIAL — memory selloff then SK hynix/Solidigm IPO scrapped, early bounce; profit-linked bonus plan; Drift unchanged
