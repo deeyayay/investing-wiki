@@ -58,6 +58,8 @@
 - **2026-10-12** — Morningstar/Benzinga: bullish long-term guidance; analyst sees MRVL beating its own LT earnings target (Morningstar / Benzinga). Reinforces the 10-08 Investor Day framing; no new company data.
 - **2026-10-13 (end-of-day)** — Second-generation Structera X launched, stock falls anyway (TipRanks); GF Securities says Google TPU v9 slightly delayed while MRVL stays solid (Moomoo), 10-13.
   **Why it matters:** TPU v9 delay touches the custom-ASIC pipeline leg only indirectly; sell-side note, no company confirmation.
+- **2026-10-24** — AD HOC NEWS: "Marvell lifts outlook as supply concerns pressure stock"; Arete raises PT to $300 from $143, Evercore cuts to $275 (AD HOC NEWS).
+  **Why it matters:** Outlook-raise framing supports the custom-ASIC/interconnect demand legs; supply constraints are the offsetting risk. Headline-level, unverified against a company release; Drift unchanged.
 
 ---
 
@@ -125,3 +127,4 @@
 | 2026-10-12 (end-of-day) | 📰 BRIEF | MATERIAL (low) — LT guidance commentary, recirculates 10-08 THESIS ↑ |
 | 2026-10-13 (end-of-day) | 📰 BRIEF | MATERIAL (low) — Structera X gen-2; TPU v9 delay note |
 | 2026-10-20 (post-open) | 📰 BRIEF | MATERIAL (low) — 3.2T retimer launch plus CXL/connectivity launches; extends the interconnect leg, no thesis change |
+| 2026-10-24 (end-of-day) | 📰 BRIEF | MATERIAL (low, unverified) — outlook-lift vs supply-concern headline, split PT moves; Drift unchanged |

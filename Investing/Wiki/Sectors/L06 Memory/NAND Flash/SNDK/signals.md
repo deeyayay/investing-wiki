@@ -69,6 +69,8 @@
 - **2026-10-15 (post-open)** — Falling again Thursday; Mizuho PT $2,050; Meta VR-glasses storage partnership; 10-13 8-K (items 1.01/2.03/9.01) still unread (Benzinga / Times of India / SEC EDGAR).
 - **2026-10-19** — Stocktwits: premarket drop on 'muted pricing' guidance despite record revenue and $14B buyback; Mizuho keeps Outperform (Stocktwits / scanx) — Pricing-caution echo of Kioxia CEO comments; 8-K (10-13) still unread
 - **2026-10-21** — Mizuho reiterates rating ahead of earnings; memory stocks surge pre-market on SK hynix +4% but SNDK -3.6% on Lang & Schwarz (Investing.com / AD HOC NEWS). Sector bid is not lifting SNDK; consistent with the Drifting status, earnings is the test.
+- **2026-10-24** — Memory selloff on China-competition fears (SNDK -8% on 10-22), partial rebound 10-23 into 10-29 earnings (Pluang / TradingView / Investing.com: implied move ±7.7%).
+  **Why it matters:** Sentiment-led, no new company fact; reinforces that 10-29 is the decisive event for the Drifting status. Drift unchanged.
 
 ## Social Mentions
 
@@ -146,3 +148,4 @@
 - **2026-10-16 (post-open)** — 📰 BRIEF | MATERIAL — 8-K (1.01/2.03/9.01, 10-13) now 4 days unread; Benzinga frames falling-on-AI-fears vs $93.9B contract book; Drift unchanged, /dig --filings-only SNDK still open
 - **2026-10-19 (post-open)** — 📰 BRIEF | MATERIAL — 8-K 1.01/2.03/9.01 now 6 days unread; /dig --filings-only SNDK still open; Drift unchanged
 - **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged
+- **2026-10-24 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — selloff/rebound into 10-29 earnings; Drift unchanged, /dig --filings-only SNDK still open

@@ -60,6 +60,8 @@
 - **2026-10-12** — PT cut on capital concerns; KBW stays bearish ahead of Q3 earnings Oct 27 (Quiver Quantitative / TipRanks). Capital-adequacy framing ahead of earnings; no company data.
 - **2026-10-13 (end-of-day)** — Goldman Sachs cuts price target to $15 from $18 (TipRanks, 10-13).
   **Why it matters:** Second PT cut in two days ahead of the 10-27 print; no company data.
+- **2026-10-24** — SoFi partners with Prudential to sell term life insurance in-app to ~15M members (Life Insurance International / secondary outlets).
+  **Why it matters:** Another product on the Financial Services Productivity Loop — cross-sell into the member base at little CAC; supports the flywheel leg ahead of the 10-27 print. Terms and economics unseen; Drift unchanged.
 
 ---
 
@@ -115,3 +117,4 @@
 - **2026-10-13 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Goldman PT $18→$15
 - **2026-10-20 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — 'SoFi launches 1st bank-issued stablecoin in a consumer app' (CoinMarketCap) recirculates SoFiUSD item; earnings 10-27; Drift unchanged
 - **2026-10-22 (post-open)** — 📰 BRIEF | MATERIAL — SoFi launches SoFi Earn (SOFIE), an interest-bearing, FDIC-insured bank-issued tokenized deposit for consumers (company release / TradingView); extends the 10-20 bank-issued stablecoin push on the rails leg. Earnings 10-27. Drift unchanged
+- **2026-10-24 (end-of-day)** — 📰 BRIEF | MATERIAL — Prudential term-life partnership (flywheel/cross-sell leg); earnings 10-27 pre-market; Drift unchanged

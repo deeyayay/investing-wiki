@@ -157,6 +157,8 @@
   **Why it matters:** Samsung regaining HBM share tests the 'only US-domiciled HBM supplier' share leg; Micron's roadmap supports the demand leg. Headline-level.
 - **2026-10-23 (post-open)** — Memory selloff 10-22 (SanDisk -8%, WDC -7%, Micron -6%) ahead of earnings; 10-23 SK hynix +4% on scrapping Solidigm's US IPO, Micron/SanDisk edge higher (24/7 Wall St.). Micron also reported to launch a global profit-linked bonus plan from FY2027 (Economic Times).
   **Why it matters:** Sector-wide de-risking, not an MU-specific fact; the pared Solidigm IPO removes a competitor-side supply/capital overhang and early rebound pairs with the headline. Bonus plan eases the Taiwan labor thread. Headline-level, Drift unchanged.
+- **2026-10-24** — TradingKey: MU CEO reaffirms tight supply for the next two years; HBM4 mass-production ramp (hbm-supply topic); Seeking Alpha frames HBM margin drag flipping to a profit driver in 2027.
+  **Why it matters:** Supports the HBM-demand leg; the CEO's own tight-supply statement is a company claim, secondary-sourced. Samsung share-gain watch from the 10-23 Bernstein item stands. Drift unchanged.
 
 ## Social Mentions
 
@@ -242,3 +244,4 @@
 - **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged
 - **2026-10-23 (end-of-day)** — 📰 BRIEF | MATERIAL — Bernstein: Samsung passes SK hynix in HBM revenue 3Q26 (competitive-share watch); Micron roadmap; drift unchanged; MU news fetch 503'd, covered via topic only
 - **2026-10-23 (post-open)** — 📰 BRIEF | MATERIAL — memory selloff then SK hynix/Solidigm IPO scrapped, early bounce; profit-linked bonus plan; Drift unchanged
+- **2026-10-24 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — CEO tight-supply reaffirmation (secondary-sourced), HBM4 ramp; Drift unchanged
