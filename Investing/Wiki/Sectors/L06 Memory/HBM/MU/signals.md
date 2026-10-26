@@ -245,3 +245,4 @@
 - **2026-10-23 (end-of-day)** — 📰 BRIEF | MATERIAL — Bernstein: Samsung passes SK hynix in HBM revenue 3Q26 (competitive-share watch); Micron roadmap; drift unchanged; MU news fetch 503'd, covered via topic only
 - **2026-10-23 (post-open)** — 📰 BRIEF | MATERIAL — memory selloff then SK hynix/Solidigm IPO scrapped, early bounce; profit-linked bonus plan; Drift unchanged
 - **2026-10-24 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — CEO tight-supply reaffirmation (secondary-sourced), HBM4 ramp; Drift unchanged
+- **2026-10-26 (post-open)** — 📰 BRIEF | MATERIAL, ambiguous — TechPowerUp: Nvidia cuts HBM4 speed/NVLink bandwidth targets for Vera Rubin; Wccftech: 8-layer HBM4 for Rubin Ultra Q2 2027 amid heat/yield issues; Korea Herald: Samsung may have passed SK hynix in HBM revenue; BofA Buy PT $1,550 reiterated; Drift unchanged, /dig queued

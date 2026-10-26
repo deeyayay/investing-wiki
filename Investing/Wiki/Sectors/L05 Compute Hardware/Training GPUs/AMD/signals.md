@@ -103,3 +103,4 @@
 - **2026-10-12 (end-of-day)** — 📰 BRIEF | MATERIAL — customer-reset demand-risk coverage vs Helion rack launch; /dig queued
 - **2026-10-14 (post-open)** — 📰 BRIEF | MATERIAL (low) — nVent Helios cooling tie-up; NVDA PC chip pre-market pressure; dilution claim unverified; Drift unchanged
 - **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged
+- **2026-10-26 (post-open)** — 📰 BRIEF | MATERIAL — Meta launches $35B equity offering (more in 2027); NVDA/AMD/AVGO reportedly weighing up to $5B each (TipRanks/StreetInsider, unverified); demand-side positive but circular-financing watch; no price reaction data; Drift unchanged

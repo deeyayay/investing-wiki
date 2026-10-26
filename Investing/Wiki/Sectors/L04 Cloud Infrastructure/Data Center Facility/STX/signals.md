@@ -85,3 +85,4 @@ _None yet — seeded on onboarding._
 - **2026-10-16 (end-of-day)** — 📰 BRIEF | MATERIAL, ambiguous — Stocktwits 'Q4 beat, raised guidance, +9% AH' story conflicts with 10-27 report date and 'slump into earnings' coverage; unverified, Drift unchanged
 - **2026-10-19 (post-open)** — 📰 BRIEF | MATERIAL — JPM PT $1,240→$1,050 and Wells $865 (reasoning unseen); Drift unchanged
 - **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged
+- **2026-10-26 (post-open)** — 📰 BRIEF | MATERIAL (low) — Seagate/Broadcom/Microsoft high-capacity storage deployment (BusinessWire); Evercore Buy PT $1,000; earnings 10-27; Drift unchanged
