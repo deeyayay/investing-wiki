@@ -34,6 +34,8 @@
 - **2026-10-19** — JPMorgan PT cut $1,240→$1,050; Wells Fargo PT $865 (MarketScreener / ad-hoc-news) — Second sell-side PT cut in a week into 10-27 report; reasoning unseen
 - **2026-10-21** — Barclays Buy PT $1,250; BofA and Morgan Stanley raise PT to $1,200 (Moomoo / AD HOC NEWS). Sell-side momentum on HAMR/Mozaic leadership; PT moves only, no new company fact.
 
+- **2026-10-27 (post-open)** — Director acquires 1,580 Seagate shares plus 345-share grant (Form 4 via Stock Titan); Q1 earnings previews call for beat on HDD demand (Seeking Alpha / GuruFocus) — report date varies by source.
+
 ## Social Mentions
 _None yet — seeded on onboarding._
 
@@ -86,3 +88,4 @@ _None yet — seeded on onboarding._
 - **2026-10-19 (post-open)** — 📰 BRIEF | MATERIAL — JPM PT $1,240→$1,050 and Wells $865 (reasoning unseen); Drift unchanged
 - **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged
 - **2026-10-26 (post-open)** — 📰 BRIEF | MATERIAL (low) — Seagate/Broadcom/Microsoft high-capacity storage deployment (BusinessWire); Evercore Buy PT $1,000; earnings 10-27; Drift unchanged
+- **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL (low) — director open-market buy 1,580 sh; Q1 earnings previews, date varies by source; Drift unchanged

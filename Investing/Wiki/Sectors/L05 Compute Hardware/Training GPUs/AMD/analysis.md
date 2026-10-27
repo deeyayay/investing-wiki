@@ -57,6 +57,7 @@ _Last scored: — | [[Scoring Rubric]]_
 | 2026-09-01 | AMD launches a Sovereign AI Platform in Saudi Arabia | ↑ Strengthened | New international deployment channel outside the core hyperscaler MI300/MI350 ramp — supports the data-center compute-share-capture thesis with a distinct growth vector |
 | 2026-09-07 | Record Q2 revenue, up ~50% YoY; raised CPU market outlook | ↑ Strengthened | First hard revenue print logged against the "$14-15B CY2026 AI GPU revenue" tracking claim |
 | 2026-10-12 | 'Customer reset' / OpenAI revenue-gap demand-risk coverage | → Watch | Headline-only; no AMD or customer confirmation. Pairs with Helion launch. Flag for /dig before moving drift. |
+| 2026-10-27 | AMD–Meta strategic partnership advances (terms unseen) | ↑ Modest | Supports the credible-alternative leg with a top hyperscaler; headline-level, confirm on earnings. |
 
 ---
 

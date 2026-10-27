@@ -160,6 +160,8 @@
 - **2026-10-24** — TradingKey: MU CEO reaffirms tight supply for the next two years; HBM4 mass-production ramp (hbm-supply topic); Seeking Alpha frames HBM margin drag flipping to a profit driver in 2027.
   **Why it matters:** Supports the HBM-demand leg; the CEO's own tight-supply statement is a company claim, secondary-sourced. Samsung share-gain watch from the 10-23 Bernstein item stands. Drift unchanged.
 
+- **2026-10-27 (post-open)** — Rubin Ultra reportedly rethinks 12-Hi HBM4E for 8-Hi HBM4 and Vera Rubin bandwidth cut ~13% (industry news, recurring from 10-26); Samsung seen topping SK Hynix in HBM revenue for first time (Q4 share ~40%); ad-hoc-news: $1,550 PT meets a downgrade. Fewer HBM stacks per GPU would bear on content per GPU; unverified.
+
 ## Social Mentions
 
 | Date | Signal | Source |
@@ -246,3 +248,4 @@
 - **2026-10-23 (post-open)** — 📰 BRIEF | MATERIAL — memory selloff then SK hynix/Solidigm IPO scrapped, early bounce; profit-linked bonus plan; Drift unchanged
 - **2026-10-24 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — CEO tight-supply reaffirmation (secondary-sourced), HBM4 ramp; Drift unchanged
 - **2026-10-26 (post-open)** — 📰 BRIEF | MATERIAL, ambiguous — TechPowerUp: Nvidia cuts HBM4 speed/NVLink bandwidth targets for Vera Rubin; Wccftech: 8-layer HBM4 for Rubin Ultra Q2 2027 amid heat/yield issues; Korea Herald: Samsung may have passed SK hynix in HBM revenue; BofA Buy PT $1,550 reiterated; Drift unchanged, /dig queued
+- **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL, ambiguous — Rubin HBM spec cut (8-Hi) recurs + Samsung HBM share gain; both press down on HBM content/share leg; headline-level, flagged for /dig; Drift unchanged

@@ -65,6 +65,8 @@
 
 ---
 
+- **2026-10-27 (post-open)** — 8-K (items 2.02, 9.01) with Q3 2026 results: record net revenue $1.4B, net income $241M, 2026 outlook raised, first 2027 outlook (SoFi IR / WSJ / Seeking Alpha). Primary source confirms the flywheel/profitability legs; stock jumps on the print.
+
 ## Social Mentions
 
 | Date | Signal | Source |
@@ -118,3 +120,4 @@
 - **2026-10-20 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — 'SoFi launches 1st bank-issued stablecoin in a consumer app' (CoinMarketCap) recirculates SoFiUSD item; earnings 10-27; Drift unchanged
 - **2026-10-22 (post-open)** — 📰 BRIEF | MATERIAL — SoFi launches SoFi Earn (SOFIE), an interest-bearing, FDIC-insured bank-issued tokenized deposit for consumers (company release / TradingView); extends the 10-20 bank-issued stablecoin push on the rails leg. Earnings 10-27. Drift unchanged
 - **2026-10-24 (end-of-day)** — 📰 BRIEF | MATERIAL — Prudential term-life partnership (flywheel/cross-sell leg); earnings 10-27 pre-market; Drift unchanged
+- **2026-10-27 (post-open)** — 📰 BRIEF | THESIS — Q3 record $1.4B rev, $241M NI, FY26 guide raised + 2027 outlook (8-K 2.02); Drift on track, strengthened

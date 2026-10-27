@@ -61,6 +61,7 @@ _Last scored: 2026-05-22 | [[Scoring Rubric]]_
 | 2026-09-16 | New Cisco/Splunk agentic-AI and Nvidia/Pinterest AI-shopping partnerships | ↑ | Ecosystem-integration deals in enterprise security-ops and consumer retail extend CUDA/software-moat penetration into verticals beyond hyperscaler training/inference — breadth evidence for the "switching nearly impossible" thesis leg |
 | 2026-09-16 (evening) | OpenAI CFO reportedly says Nvidia "no longer the only option" for AI compute | ↓ Watch | First switching-cost pushback sourced to NVIDIA's own largest customer rather than a competitor; headline-level only, no contract or dollar figure — not enough to move drift, flagged for /dig |
 | 2026-10-12 | Earnings beat; $150B buyback reported; Reflection AI talks | ↑ Strengthened | Headline-level confirmation of Blackwell demand and capital return; circular-financing and tariff risks persist. Buyback figure from GuruFocus, unverified against 8-K. |
+| 2026-10-27 | NVDA commits $3B to Meta share offering; Muse partnership expands | → Mixed | Confirms hyperscaler demand and ecosystem pull, but vendor-funded customer capex deepens the circular-financing watch. Drift unchanged. |
 
 ---
 

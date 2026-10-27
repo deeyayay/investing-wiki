@@ -72,6 +72,8 @@
 
 ---
 
+- **2026-10-27 (post-open)** — Anthropic publicly files for IPO; Amazon and Alphabet are early backers betting more (Benzinga / Barron's). Mark-up and capital-return optionality on the stake; Mizuho reiterates Outperform $330, Morgan Stanley PT $350; Q3 call 10-29.
+
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
 
@@ -129,3 +131,4 @@
 - **2026-10-16 (end-of-day)** — 📰 BRIEF | MATERIAL — Anthropic IPO chatter (unconfirmed); Q3 call 10-29; Drift unchanged
 - **2026-10-20 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Morgan Stanley top pick, PT $350, stock pops; Cantor PT cut to $310; Q3 call ahead; AWS growth leg untouched; Drift unchanged
 - **2026-10-20 (post-open)** — 📰 BRIEF | MATERIAL (low) — Benzinga/Barron's: 3M expands data-center partnership with Amazon (fiber-optic pact) after 3M Q3 beat; supports capex-build leg. Q3 call 10-29; AWS growth leg untouched; Drift unchanged
+- **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL — Anthropic IPO filing: AMZN stake gains a public mark (Trainium-customer link); Q3 call 10-29; Drift unchanged

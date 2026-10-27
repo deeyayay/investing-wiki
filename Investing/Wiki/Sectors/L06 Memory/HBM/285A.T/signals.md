@@ -68,6 +68,8 @@
   **Why it matters:** First print since the BiCS10 ramp and the sold-out-2026 commentary — the next hard test of the NAND demand leg and the pricing-caution watch item. Drift unchanged.
 - **2026-10-27** — S&P upgrades Kioxia to BBB ahead of 10-30 results (ad-hoc-news.de) — Credit improvement eases the leveraged-balance-sheet overhang; demand leg untouched.
 
+- **2026-10-27 (post-open)** — SK Hynix reportedly weighs a $12B special dividend funded by Kioxia gains (TradingView / Yahoo Finance): validates the value of Kioxia stake, and raises sell-down/overhang question for the shares; unconfirmed.
+
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
 
@@ -128,3 +130,4 @@
 - **2026-10-21 (end-of-day)** — 📰 BRIEF | MATERIAL — convertible-bond structure gives a rival leverage over control (AD HOC NEWS), ¥920B leverage overhang despite S&P BBB; Samsung/SK Hynix upgrading China plants; stock rebounds with AI semis; not a demand fact; Drift unchanged
 - **2026-10-24 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — results date 10-30 is the next catalyst; Drift unchanged
 - **2026-10-27 (end-of-day)** — 📰 BRIEF | MATERIAL — S&P upgrades Kioxia to BBB ahead of 10-30 results; Drift unchanged
+- **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL (low) — SK Hynix $12B dividend from Kioxia gains (report): stake-value validation, possible overhang; results 10-30; Drift unchanged

@@ -73,6 +73,8 @@
   **Why it matters:** Sentiment-led, no new company fact; reinforces that 10-29 is the decisive event for the Drifting status. Drift unchanged.
 - **2026-10-27** — SNDK plummets premarket as analysts cite 'muted pricing' guidance despite record revenue and $14B buyback (Stocktwits) — Re-states the 'beats don't lift the stock' drift ahead of 10-29 earnings; dating unclear (may recap last print). Pricing leg is the one to watch.
 
+- **2026-10-27 (post-open)** — Sandisk partners with Meta for VR storage; stock +1.33% (AD HOC NEWS). Minor partnership, thin source; earnings 10-29 preview coverage heavy ('another blowout' vs muted-pricing worry).
+
 ## Social Mentions
 
 | Date | Author | Platform | Sentiment | Key Claims | Source |
@@ -151,3 +153,4 @@
 - **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged
 - **2026-10-24 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — selloff/rebound into 10-29 earnings; Drift unchanged, /dig --filings-only SNDK still open
 - **2026-10-27 (end-of-day)** — 📰 BRIEF | MATERIAL — SNDK plummets premarket as analysts cite 'muted pricing' guidance desp; Drift unchanged
+- **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL (low) — Meta VR storage partnership (thin source); earnings 10-29 stand; Drift unchanged

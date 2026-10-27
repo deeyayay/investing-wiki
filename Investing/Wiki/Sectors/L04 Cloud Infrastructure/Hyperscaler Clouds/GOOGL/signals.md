@@ -68,6 +68,8 @@
 ---
 - **2026-10-19** — Securities class-action solicitations over alleged Gemini AI delay recur (Kaplan Fox; TipRanks) (ad-hoc-news / TipRanks) — Litigation noise; no impact on cloud-growth leg unless allegations bear on Gemini timing
 
+- **2026-10-27 (post-open)** — Anthropic IPO filing — Alphabet an early backer (Barron's); securities-fraud lawsuit solicitations recur (PR Newswire, deadline Dec 1); Barron's compares Meta's $95B equity deal to Alphabet's own offering.
+
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
 
@@ -120,3 +122,4 @@
 - **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL — Alphabet prices upsized $84.75B capital raise (Stocktwits headline, terms unverified); funds capex leg, dilution/leverage question; /dig flagged to verify
 - **2026-10-19 (post-open)** — 📰 BRIEF | MATERIAL — litigation solicitations recur; low; Drift unchanged
 - **2026-10-21 (end-of-day)** — 📰 BRIEF | MATERIAL — UK cloud outage, stock -2.5% (BigGo, Traders Union); Xcel Energy clean-power deal for new AI data center (TIKR); securities-fraud solicitations recur (low); outage is a reliability watch item, Cloud growth/backlog legs untouched; Drift unchanged
+- **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL — Anthropic IPO filing marks Alphabet's stake; litigation solicitations recur (low); Drift unchanged

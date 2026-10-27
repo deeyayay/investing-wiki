@@ -51,6 +51,8 @@
   **Why it matters:** Helios ecosystem support is a mild positive for the rack-scale leg; dilution claim lacks a filing — not acted on.
 - **2026-10-21** — Susquehanna lifts PT to $620 from $550; AMD -13% last week; AMD-Vultr India capacity expansion; earnings Nov 3 (MarketBeat / Yahoo / Moomoo). Upgrade against a sharp drawdown into earnings; watch Nov 3 for the MI350 ramp.
 
+- **2026-10-27 (post-open)** — AMD and Meta advance strategic partnership for Meta's Superintelligence Infrastructure (Economic Times); earnings flagged for today by MarketBeat/Investing.com vs Nov 3 in this log — date conflict. Headline-level; terms unseen.
+
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
 
@@ -104,3 +106,4 @@
 - **2026-10-14 (post-open)** — 📰 BRIEF | MATERIAL (low) — nVent Helios cooling tie-up; NVDA PC chip pre-market pressure; dilution claim unverified; Drift unchanged
 - **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged
 - **2026-10-26 (post-open)** — 📰 BRIEF | MATERIAL — Meta launches $35B equity offering (more in 2027); NVDA/AMD/AVGO reportedly weighing up to $5B each (TipRanks/StreetInsider, unverified); demand-side positive but circular-financing watch; no price reaction data; Drift unchanged
+- **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL — Meta strategic partnership (terms unseen); supports open-alternative leg; earnings-date conflict (today vs Nov 3) to confirm; Drift unchanged
