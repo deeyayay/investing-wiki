@@ -71,6 +71,7 @@
 - **2026-10-21** — Mizuho reiterates rating ahead of earnings; memory stocks surge pre-market on SK hynix +4% but SNDK -3.6% on Lang & Schwarz (Investing.com / AD HOC NEWS). Sector bid is not lifting SNDK; consistent with the Drifting status, earnings is the test.
 - **2026-10-24** — Memory selloff on China-competition fears (SNDK -8% on 10-22), partial rebound 10-23 into 10-29 earnings (Pluang / TradingView / Investing.com: implied move ±7.7%).
   **Why it matters:** Sentiment-led, no new company fact; reinforces that 10-29 is the decisive event for the Drifting status. Drift unchanged.
+- **2026-10-27** — SNDK plummets premarket as analysts cite 'muted pricing' guidance despite record revenue and $14B buyback (Stocktwits) — Re-states the 'beats don't lift the stock' drift ahead of 10-29 earnings; dating unclear (may recap last print). Pricing leg is the one to watch.
 
 ## Social Mentions
 
@@ -149,3 +150,4 @@
 - **2026-10-19 (post-open)** — 📰 BRIEF | MATERIAL — 8-K 1.01/2.03/9.01 now 6 days unread; /dig --filings-only SNDK still open; Drift unchanged
 - **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged
 - **2026-10-24 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — selloff/rebound into 10-29 earnings; Drift unchanged, /dig --filings-only SNDK still open
+- **2026-10-27 (end-of-day)** — 📰 BRIEF | MATERIAL — SNDK plummets premarket as analysts cite 'muted pricing' guidance desp; Drift unchanged

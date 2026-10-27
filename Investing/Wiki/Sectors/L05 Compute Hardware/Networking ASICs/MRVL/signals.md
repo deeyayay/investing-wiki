@@ -62,6 +62,7 @@
   **Why it matters:** Outlook-raise framing supports the custom-ASIC/interconnect demand legs; supply constraints are the offsetting risk. Headline-level, unverified against a company release; Drift unchanged.
 
 ---
+- **2026-10-27** — Marvell doubles revolving credit facility to $3B (GuruFocus) — Balance-sheet flexibility for the custom-ASIC ramp; no thesis change.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -128,3 +129,4 @@
 | 2026-10-13 (end-of-day) | 📰 BRIEF | MATERIAL (low) — Structera X gen-2; TPU v9 delay note |
 | 2026-10-20 (post-open) | 📰 BRIEF | MATERIAL (low) — 3.2T retimer launch plus CXL/connectivity launches; extends the interconnect leg, no thesis change |
 | 2026-10-24 (end-of-day) | 📰 BRIEF | MATERIAL (low, unverified) — outlook-lift vs supply-concern headline, split PT moves; Drift unchanged |
+| 2026-10-27 (end-of-day) | 📰 BRIEF | MATERIAL — Marvell doubles revolving credit facility to $3B; Drift unchanged |

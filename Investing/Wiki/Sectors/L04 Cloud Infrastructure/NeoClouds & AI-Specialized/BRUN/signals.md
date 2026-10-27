@@ -55,6 +55,7 @@
   **Why it matters:** Backlog up from the $1.45B take-or-pay base logged in the thesis to >$2.6B total contract value — directly strengthens the contracted-revenue leg; a new sovereign customer also diversifies away from the TML concentration.
 - **2026-10-09 (post-open)** — Post-effective amendment (POS AM) to a registration statement filed 10-08 (SEC EDGAR); contents unread.
   **Why it matters:** A POS AM on a neocloud that just added $525.6M of contracts usually means shelf/ATM capacity being refreshed — a financing-overhang watch item, not yet a thesis fact. Pairs with the 10-06 8-K 1.01 funding question.
+- **2026-10-27** — Boost Run converts backlog to recurring revenue as deployments go live; $600M non-dilutive project financing (Business Wire / StreetInsider) — Supports the backlog-conversion and Dell DFS financing legs; company PR, figures unverified. Stock still at a 12-month low per MarketBeat.
 
 ## Social Mentions
 
@@ -105,3 +106,4 @@
 - **2026-10-12 (post-open)** — 📰 BRIEF | MATERIAL (low) — POS AM (10-08) registration amendment surfaces again; already logged 10-09
 - **2026-10-20 (end-of-day)** — 📰 BRIEF | MATERIAL (indirect) — neocloud sentiment hit: Nscale IPO pushback / 'neoclouds plunge' (KuCoin) and Nscale reportedly losing Microsoft deal on power delay; BRUN-specific facts unchanged (take-or-pay backlog, Exemplar); Drift unchanged, headline-level
 - **2026-10-20 (post-open)** — 📰 BRIEF | MATERIAL (low) — SEC EFFECT notice (10-19): a registration statement declared effective, form not named in metadata (likely follows the 10-08 POS AM; shelf/resale supply overhang, dilution watch). Neocloud-stress tape from last night's Nscale news unchanged; no new BRUN-specific fact; Drift unchanged
+- **2026-10-27 (end-of-day)** — 📰 BRIEF | MATERIAL — Boost Run converts backlog to recurring revenue as deployments go live; Drift unchanged

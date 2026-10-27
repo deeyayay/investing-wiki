@@ -39,6 +39,7 @@
 - **2026-10-12** — CEO Jayshree Ullal sells ~$21M of ANET stock (Investing.com). Large insider sale; planned-sale status not visible at headline level. Sentiment tell, not thesis.
 
 ---
+- **2026-10-27** — TD Cowen cuts Arista price target to $205 (ad-hoc-news.de) — Analyst cut with no stated reasoning in headline; Ethernet-share leg unchanged.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -90,3 +91,4 @@
 | 2026-10-02 (end-of-day) | 📰 BRIEF | 4 items triaged, 1 logged — MATERIAL — raised revenue guidance with outsized earnings beat (Simply Wall Street, Yahoo Finance); shares up. Confirms hyperscaler-AI-Ethernet leg; no filing in digest to confirm figures, /dig to verify |
 | 2026-10-08 (post-open) | 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — open Ethernet rack-scale/scale-up portfolio; Citi PT $215→$248 |
 | 2026-10-12 (end-of-day) | 📰 BRIEF | MATERIAL (low) — CEO ~$21M share sale |
+| 2026-10-27 (end-of-day) | 📰 BRIEF | MATERIAL — TD Cowen cuts Arista price target to $205; Drift unchanged |
