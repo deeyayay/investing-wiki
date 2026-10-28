@@ -35,6 +35,7 @@
 - **2026-10-21** — Barclays Buy PT $1,250; BofA and Morgan Stanley raise PT to $1,200 (Moomoo / AD HOC NEWS). Sell-side momentum on HAMR/Mozaic leadership; PT moves only, no new company fact.
 
 - **2026-10-27 (post-open)** — Director acquires 1,580 Seagate shares plus 345-share grant (Form 4 via Stock Titan); Q1 earnings previews call for beat on HDD demand (Seeking Alpha / GuruFocus) — report date varies by source.
+- **2026-10-27 (end-of-day)** — 8-K (items 2.02, 7.01, 9.01) filed after the close; Investing.com/ChartMill: Q1 beat, above-consensus guidance, strong margins, yet shares -6% after hours — Primary-source earnings release confirms the HAMR/exabyte demand leg; the after-hours fall is a positioning/expectations read, not a thesis break. Release text unread; figures unverified — flagged for /dig --filings-only.
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -89,3 +90,4 @@ _None yet — seeded on onboarding._
 - **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged
 - **2026-10-26 (post-open)** — 📰 BRIEF | MATERIAL (low) — Seagate/Broadcom/Microsoft high-capacity storage deployment (BusinessWire); Evercore Buy PT $1,000; earnings 10-27; Drift unchanged
 - **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL (low) — director open-market buy 1,580 sh; Q1 earnings previews, date varies by source; Drift unchanged
+- **2026-10-27 (end-of-day)** — 📰 BRIEF | THESIS — Q1 earnings 8-K (2.02): beat + raised guide per press, stock -6% AH; supports HAMR leg, release unread; Drift unchanged
