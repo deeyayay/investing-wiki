@@ -52,6 +52,7 @@
 - **2026-10-21** — Susquehanna lifts PT to $620 from $550; AMD -13% last week; AMD-Vultr India capacity expansion; earnings Nov 3 (MarketBeat / Yahoo / Moomoo). Upgrade against a sharp drawdown into earnings; watch Nov 3 for the MI350 ramp.
 
 - **2026-10-27 (post-open)** — AMD and Meta advance strategic partnership for Meta's Superintelligence Infrastructure (Economic Times); earnings flagged for today by MarketBeat/Investing.com vs Nov 3 in this log — date conflict. Headline-level; terms unseen.
+- **2026-10-28 (post-open)** — AMD to invest $1B in Meta's equity offering as partnership expands; Helios systems begin testing (digital terminal); Susquehanna PT $650 from $620; ARK trims AMD. — Supports open-alternative/Helios ramp leg; vendor-financing (circularity) pattern same as NVDA — terms unverified.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -107,3 +108,4 @@
 - **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged
 - **2026-10-26 (post-open)** — 📰 BRIEF | MATERIAL — Meta launches $35B equity offering (more in 2027); NVDA/AMD/AVGO reportedly weighing up to $5B each (TipRanks/StreetInsider, unverified); demand-side positive but circular-financing watch; no price reaction data; Drift unchanged
 - **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL — Meta strategic partnership (terms unseen); supports open-alternative leg; earnings-date conflict (today vs Nov 3) to confirm; Drift unchanged
+- **2026-10-28 (post-open)** — 📰 BRIEF | MATERIAL — $1B Meta equity stake, Helios testing; circular-financing watch; Drift unchanged

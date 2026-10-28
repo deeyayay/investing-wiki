@@ -75,6 +75,7 @@ _Last scored: — | [[Scoring Rubric]]_
 | 2026-08-28 | SK hynix breaks ground on first US HBM plant (Indiana), targeting 2030 | → | Competitive/onshoring context, not a direct threat to Kioxia's Japan-based NAND scale — timeline is multi-year out. |
 | 2026-09-08 | /dig: Apple-Kioxia NAND LTA rumor unconfirmed; Kioxia exec reaffirms 2026 sold-out / 2027 tightness | → | The specific 09-07 rumor (Apple LTA, Kioxia "likely" partner) has no primary confirmation from either company — treated as an open watch item, not a fact. Independently, Kioxia's own memory-business MD (Digital Daily interview, Feb 2026) stated 2026 capacity is fully sold out with tightness expected into 2027, and Apple separately accepted a ~2x NAND price increase from Kioxia starting Q1 2026 with quarterly repricing — both reaffirm the demand/pricing-power thesis legs without resolving the specific rumor. |
 | 2026-09-24 | CEO "taps the brakes" on NAND pricing (AD HOC NEWS) | ↓ Nuance | The 09-09 pricing-caution item recurs, this time framed as active CEO restraint rather than a warning about demand — unresolved whether this is disciplined long-term-contract strategy or early spot-pricing softness; flagged for /dig. |
+| 2026-10-28 | Kioxia rallies on SK Hynix Q3 beat and sold-out-to-2029 call | ↑ Strengthened | Sector tightness reinforces the demand leg; headline-level until 10-30 results. |
 
 ---
 

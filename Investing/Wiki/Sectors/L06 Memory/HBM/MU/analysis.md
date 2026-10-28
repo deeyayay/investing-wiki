@@ -83,6 +83,7 @@ _Evaluated: 2026-06-17_
 ---
 | 2026-10-01 | FQ4 beat, ~$150B contract book; capex guide sold off | → | Demand and visibility legs confirmed by the print and a contract book above annual revenue; market is pricing higher capex as an FCF drag. Headline-only — /dig MU to size it. |
 | 2026-10-12 | 10-K filed; buyback ceiling to $35.16B; Maia 300 uses 288GB HBM4 | ↑ Strengthened | HBM4 content on a hyperscaler accelerator plus capital return confirm the demand leg; Netlist-related Munich ban remains the offset. 10-K unread — /dig MU --filings-only. |
+| 2026-10-28 | SK Hynix Q3: DRAM/HBM sold out through 2029; MU +3% in sympathy | ↑ Strengthened | Peer primary-source claim of multi-year sold-out supply backs the contracted-supply leg; Samsung share and Rubin 8-Hi questions remain open for /dig. |
 
 ## Cross-Ticker Signals
 

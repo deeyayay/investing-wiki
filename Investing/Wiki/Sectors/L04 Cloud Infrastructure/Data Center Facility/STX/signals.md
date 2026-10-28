@@ -36,6 +36,7 @@
 
 - **2026-10-27 (post-open)** — Director acquires 1,580 Seagate shares plus 345-share grant (Form 4 via Stock Titan); Q1 earnings previews call for beat on HDD demand (Seeking Alpha / GuruFocus) — report date varies by source.
 - **2026-10-27 (end-of-day)** — 8-K (items 2.02, 7.01, 9.01) filed after the close; Investing.com/ChartMill: Q1 beat, above-consensus guidance, strong margins, yet shares -6% after hours — Primary-source earnings release confirms the HAMR/exabyte demand leg; the after-hours fall is a positioning/expectations read, not a thesis break. Release text unread; figures unverified — flagged for /dig --filings-only.
+- **2026-10-28 (post-open)** — Stock slips despite Q1 beat and dividend hike; analyst flags slowing margin growth (TradingView, StreetInsider); falls while SK Hynix/MU rally (24/7 Wall St, Moomoo). 8-K item 5.07 (shareholder vote results) filed 10-28. — Fundamental legs intact but market is pricing margin-growth deceleration; /dig --filings-only STX to read the 10-27 8-K.
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -91,3 +92,4 @@ _None yet — seeded on onboarding._
 - **2026-10-26 (post-open)** — 📰 BRIEF | MATERIAL (low) — Seagate/Broadcom/Microsoft high-capacity storage deployment (BusinessWire); Evercore Buy PT $1,000; earnings 10-27; Drift unchanged
 - **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL (low) — director open-market buy 1,580 sh; Q1 earnings previews, date varies by source; Drift unchanged
 - **2026-10-27 (end-of-day)** — 📰 BRIEF | THESIS — Q1 earnings 8-K (2.02): beat + raised guide per press, stock -6% AH; supports HAMR leg, release unread; Drift unchanged
+- **2026-10-28 (post-open)** — 📰 BRIEF | MATERIAL — STX falls vs rising memory peers after Q1 beat; margin-growth slowdown flagged; 8-K 5.07 routine; Drift unchanged; /dig --filings-only STX

@@ -69,6 +69,7 @@
 - **2026-10-27** — S&P upgrades Kioxia to BBB ahead of 10-30 results (ad-hoc-news.de) — Credit improvement eases the leveraged-balance-sheet overhang; demand leg untouched.
 
 - **2026-10-27 (post-open)** — SK Hynix reportedly weighs a $12B special dividend funded by Kioxia gains (TradingView / Yahoo Finance): validates the value of Kioxia stake, and raises sell-down/overhang question for the shares; unconfirmed.
+- **2026-10-28 (post-open)** — Kioxia surging on SK Hynix Q3 beat and Asia memory rally (Investing.com, Invezz); SK Hynix $12B special-dividend idea tied to Kioxia stake still floated. — Demand-tightness leg reinforced by SK Hynix 'sold out to 2029'; results 10-30 are the next primary-source test.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -131,3 +132,4 @@
 - **2026-10-24 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — results date 10-30 is the next catalyst; Drift unchanged
 - **2026-10-27 (end-of-day)** — 📰 BRIEF | MATERIAL — S&P upgrades Kioxia to BBB ahead of 10-30 results; Drift unchanged
 - **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL (low) — SK Hynix $12B dividend from Kioxia gains (report): stake-value validation, possible overhang; results 10-30; Drift unchanged
+- **2026-10-28 (post-open)** — 📰 BRIEF | THESIS ↑ (low) — Kioxia rallies on SK Hynix print, supports sold-out/tightness leg; results 10-30; Drift unchanged

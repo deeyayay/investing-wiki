@@ -63,6 +63,7 @@
 - **2026-10-21** — CrowdStrike expands AI security partnership with NVIDIA (agent security, OpenShell); shares +1.25% (Yahoo Finance / GuruFocus). Platform-consolidator leg: ties Falcon into NVIDIA agentic-AI stack.
 
 - **2026-10-27 (post-open)** — BofA raises PT to $290 from $260 (TipRanks / AD HOC NEWS); Morgan Stanley notes CRWD among winners as open-weight model usage rises. PT move only, no new company fact.
+- **2026-10-28 (post-open)** — CEO Kurtz sells ~$5.11M of stock (Form 4, trade of 10-23; Investing.com, MarketScreener). — Insider sale, routine in size relative to holdings; no thesis impact.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -115,3 +116,4 @@
 - **2026-10-09 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL (low) — Needham PT to $310; stock up Friday per MarketWatch; unsolicited mini-tender offer noted. Supports post-Q1 recovery; guide debate unchanged
 - **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged
 - **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL (low) — BofA PT $260→$290; Drift unchanged
+- **2026-10-28 (post-open)** — 📰 BRIEF | MATERIAL (low) — CEO $5.1M Form 4 sale; Drift unchanged

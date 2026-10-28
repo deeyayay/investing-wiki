@@ -74,6 +74,7 @@
 - **2026-10-27** — SNDK plummets premarket as analysts cite 'muted pricing' guidance despite record revenue and $14B buyback (Stocktwits) — Re-states the 'beats don't lift the stock' drift ahead of 10-29 earnings; dating unclear (may recap last print). Pricing leg is the one to watch.
 
 - **2026-10-27 (post-open)** — Sandisk partners with Meta for VR storage; stock +1.33% (AD HOC NEWS). Minor partnership, thin source; earnings 10-29 preview coverage heavy ('another blowout' vs muted-pricing worry).
+- **2026-10-28 (post-open)** — SK Hynix results lift memory complex; SNDK +4.4% to ~$1,362 (FXLeaders), >4% pre-market (TradingKey) into Q1 earnings after close 10-29; Street high target $3,000. — Tape confirms read-through bid; the decline-cause question remains open and 10-29 print is the test.
 
 ## Social Mentions
 
@@ -154,3 +155,4 @@
 - **2026-10-24 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — selloff/rebound into 10-29 earnings; Drift unchanged, /dig --filings-only SNDK still open
 - **2026-10-27 (end-of-day)** — 📰 BRIEF | MATERIAL — SNDK plummets premarket as analysts cite 'muted pricing' guidance desp; Drift unchanged
 - **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL (low) — Meta VR storage partnership (thin source); earnings 10-29 stand; Drift unchanged
+- **2026-10-28 (post-open)** — 📰 BRIEF | MATERIAL — memory read-through bid, SNDK +4% ahead of 10-29 earnings; Drift unchanged

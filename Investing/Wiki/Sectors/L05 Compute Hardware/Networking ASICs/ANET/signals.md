@@ -40,6 +40,7 @@
 
 ---
 - **2026-10-27** — TD Cowen cuts Arista price target to $205 (ad-hoc-news.de) — Analyst cut with no stated reasoning in headline; Ethernet-share leg unchanged.
+- **2026-10-28 (post-open)** — Meta taps Arista and Broadcom Jericho3 for Prometheus supercluster (SDxCentral); Q3 earnings preview pieces. — Hyperscaler AI-Ethernet leg confirmed by named deployment; headline-level.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -92,3 +93,4 @@
 | 2026-10-08 (post-open) | 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — open Ethernet rack-scale/scale-up portfolio; Citi PT $215→$248 |
 | 2026-10-12 (end-of-day) | 📰 BRIEF | MATERIAL (low) — CEO ~$21M share sale |
 | 2026-10-27 (end-of-day) | 📰 BRIEF | MATERIAL — TD Cowen cuts Arista price target to $205; Drift unchanged |
+| 2026-10-28 (post-open) | 📰 BRIEF | MATERIAL — Meta Prometheus supercluster uses Arista; Drift unchanged |
