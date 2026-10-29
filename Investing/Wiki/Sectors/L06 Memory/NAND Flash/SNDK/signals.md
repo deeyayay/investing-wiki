@@ -156,3 +156,4 @@
 - **2026-10-27 (end-of-day)** — 📰 BRIEF | MATERIAL — SNDK plummets premarket as analysts cite 'muted pricing' guidance desp; Drift unchanged
 - **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL (low) — Meta VR storage partnership (thin source); earnings 10-29 stand; Drift unchanged
 - **2026-10-28 (post-open)** — 📰 BRIEF | MATERIAL — memory read-through bid, SNDK +4% ahead of 10-29 earnings; Drift unchanged
+- **2026-10-29 (post-open)** — 📰 BRIEF | MATERIAL — Q1 FY27 earnings due today; SK Hynix beat lifted SNDK ahead of print; 'is NAND the bigger risk' framing recurs; Drift unchanged (Drifting stands); results next brief

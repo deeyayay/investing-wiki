@@ -126,3 +126,4 @@
 - **2026-10-21 (end-of-day)** — 📰 BRIEF | MATERIAL — UK cloud outage, stock -2.5% (BigGo, Traders Union); Xcel Energy clean-power deal for new AI data center (TIKR); securities-fraud solicitations recur (low); outage is a reliability watch item, Cloud growth/backlog legs untouched; Drift unchanged
 - **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL — Anthropic IPO filing marks Alphabet's stake; litigation solicitations recur (low); Drift unchanged
 - **2026-10-28 (end-of-day)** — 📰 BRIEF | MATERIAL — Q3 8-K 2.02: revenue miss, Cloud strong, AH -8.5%; Drift unchanged; /dig GOOGL to read the release for Cloud growth/backlog
+- **2026-10-29 (post-open)** — 📰 BRIEF | MATERIAL — 10-Q filed; IBD/CNBC frame Q3 as EPS miss with Cloud booming, stock sliding after hours; Drift unchanged; /dig GOOGL --filings-only for Cloud growth/backlog

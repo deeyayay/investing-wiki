@@ -117,3 +117,4 @@
 - **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged
 - **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL (low) — BofA PT $260→$290; Drift unchanged
 - **2026-10-28 (post-open)** — 📰 BRIEF | MATERIAL (low) — CEO $5.1M Form 4 sale; Drift unchanged
+- **2026-10-29 (post-open)** — 📰 BRIEF | MATERIAL (low) — Fortinet -20% on service-revenue guide cut drags CRWD -4% in sympathy; sector read-through, no CRWD-specific fact; Drift unchanged

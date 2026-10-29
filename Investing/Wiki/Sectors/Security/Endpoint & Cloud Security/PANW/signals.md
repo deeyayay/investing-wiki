@@ -129,3 +129,4 @@
 - **2026-10-19 (post-open)** — 📰 BRIEF | MATERIAL — Embrace tuck-in supports consolidator leg; terms unseen; Drift unchanged
 - **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged
 - **2026-10-23 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Cortex XDR One for AI agents (platform leg); Citi PT $440; drift unchanged
+- **2026-10-29 (post-open)** — 📰 BRIEF | MATERIAL (low) — PANW -5% on Fortinet guide-cut read-through; proxy filings (DEF 14A/ARS) routine; Drift unchanged

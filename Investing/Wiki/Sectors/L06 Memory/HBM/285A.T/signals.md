@@ -133,3 +133,4 @@
 - **2026-10-27 (end-of-day)** — 📰 BRIEF | MATERIAL — S&P upgrades Kioxia to BBB ahead of 10-30 results; Drift unchanged
 - **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL (low) — SK Hynix $12B dividend from Kioxia gains (report): stake-value validation, possible overhang; results 10-30; Drift unchanged
 - **2026-10-28 (post-open)** — 📰 BRIEF | THESIS ↑ (low) — Kioxia rallies on SK Hynix print, supports sold-out/tightness leg; results 10-30; Drift unchanged
+- **2026-10-29 (post-open)** — 📰 BRIEF | MATERIAL (low) — Samsung supply-tight-through-2028 supports sold-out leg; Kioxia results 10-30 (~10% implied move); Drift unchanged
