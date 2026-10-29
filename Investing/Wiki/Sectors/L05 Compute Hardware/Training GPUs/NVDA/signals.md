@@ -127,6 +127,8 @@
 
 - **2026-10-27 (post-open)** — Nvidia commits $3B to Meta's share offering, expanding Muse partnership (Investing.com / Yahoo / GuruFocus) — confirms the unverified 10-26 report for NVDA's leg; demand from a top hyperscaler, but vendor-funded customer capex feeds the circular-financing watch.
 
+- **2026-10-28 (end-of-day)** — US DOJ is inquiring about Nvidia's $12.9B Hugging Face acquisition (Reuters via Investing.com; Yahoo) — Regulatory risk on the CUDA/software-moat expansion leg; inquiry only, no challenge filed; stock edged down.
+
 ## Social Mentions
 
 | Date | Signal | Source |
@@ -218,3 +220,4 @@
 - **2026-10-23 (end-of-day)** — 📰 BRIEF | MATERIAL — Telegraph: CEO warns of AI funding slowdown (circular-financing/customer-financing watch); drift unchanged, wording unread
 - **2026-10-26 (post-open)** — 📰 BRIEF | MATERIAL — Meta $35B equity offering with NVDA/AMD/AVGO reportedly eyeing up to $5B (unverified): hyperscaler capex demand vs circular-financing watch; TechPowerUp: NVDA cuts HBM4 speed/NVLink targets for Vera Rubin (headline only, topic hbm-supply); Drift unchanged
 - **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL — $3B Meta equity commitment confirmed (Muse partnership); demand leg up, circular-financing watch up; Drift unchanged
+- **2026-10-28 (end-of-day)** — 📰 BRIEF | MATERIAL — DOJ inquiry into $12.9B Hugging Face deal (Reuters); software-moat leg regulatory watch; Drift unchanged

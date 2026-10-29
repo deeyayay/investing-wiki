@@ -23,6 +23,7 @@
 | 2026-09-24 | SCHEDULE 13D/A filed — amendment to a beneficial-ownership statement | SEC EDGAR | New filing; filer and stake-size change unresolved at headline level — MBLY's controlling shareholder is Intel, so this could be a routine ownership-report update or a more significant stake change; worth a /dig check if a follow-up story surfaces. |
 | 2026-10-12 | Deutsche Bank trims PT to $12 from $13, keeps Buy | MarketScreener | Minor target change; no thesis fact. |
 | 2026-10-21 | RBC downgrades Mobileye to Underperform, PT $5 from $7; cites Nvidia/Qualcomm ADAS processors | Investing.com / marketscreener | Bear case of EyeQ base erosion from merchant-silicon rivals; headline-only, queued for /dig. |
+| 2026-10-28 | 8-K (items 8.01, 9.01) and SCHEDULE 13D/A filed | SEC EDGAR | Item 8.01 is an "other events" disclosure; contents unread at metadata level. 13D/A again suggests an Intel (controlling holder) ownership update — read both before Q3 results. |
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -65,3 +66,4 @@ _None yet — seeded on onboarding._
 | 2026-10-16 (post-open) | 📰 BRIEF | MATERIAL (low) — Citi initiates Buy, $11 PT; shares +4.3% (Yahoo) — headline and move agree; MS Hold maintained |
 | 2026-10-20 (end-of-day) | 📰 BRIEF | MATERIAL (low) — Evercore PT $16→$11, TD Cowen cut; analyst-led de-rating, no new company fact; Drift unchanged |
 - **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged
+| 2026-10-28 (end-of-day) | 📰 BRIEF | MATERIAL — 8-K 8.01 + 13D/A; contents unread, /dig --filings-only MBLY |

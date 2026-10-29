@@ -64,6 +64,8 @@
 ---
 - **2026-10-27** — Marvell doubles revolving credit facility to $3B (GuruFocus) — Balance-sheet flexibility for the custom-ASIC ramp; no thesis change.
 
+- **2026-10-28 (end-of-day)** — Bloomberg (via Benzinga, TipRanks): Marvell in advanced talks to acquire optical-module maker Lumentum, announcement possibly next week; LITE +17% (unconfirmed by either company) — Would extend MRVL from SerDes/DSP into optical modules (interconnect leg) but at a large price; deal size and financing unknown.
+
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
 
@@ -130,3 +132,4 @@
 | 2026-10-20 (post-open) | 📰 BRIEF | MATERIAL (low) — 3.2T retimer launch plus CXL/connectivity launches; extends the interconnect leg, no thesis change |
 | 2026-10-24 (end-of-day) | 📰 BRIEF | MATERIAL (low, unverified) — outlook-lift vs supply-concern headline, split PT moves; Drift unchanged |
 | 2026-10-27 (end-of-day) | 📰 BRIEF | MATERIAL — Marvell doubles revolving credit facility to $3B; Drift unchanged |
+- **2026-10-28 (end-of-day)** — 📰 BRIEF | MATERIAL (unverified) — Lumentum takeover talks (Bloomberg); Drift unchanged; watch for announcement next week

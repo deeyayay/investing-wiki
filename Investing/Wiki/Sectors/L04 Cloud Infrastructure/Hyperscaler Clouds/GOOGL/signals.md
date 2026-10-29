@@ -70,6 +70,8 @@
 
 - **2026-10-27 (post-open)** — Anthropic IPO filing — Alphabet an early backer (Barron's); securities-fraud lawsuit solicitations recur (PR Newswire, deadline Dec 1); Barron's compares Meta's $95B equity deal to Alphabet's own offering.
 
+- **2026-10-28 (end-of-day)** — Q3 earnings 8-K (items 2.02/9.01, SEC EDGAR): headlines (CNBC, Yahoo, IBD, Investing.com) say revenue missed, search growth slowed, Cloud "boomed"; stock -8.5% after hours. Cloud leg reads intact; the sell-off is search/revenue. Cloud growth rate and backlog unverified at headline level.
+
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
 
@@ -123,3 +125,4 @@
 - **2026-10-19 (post-open)** — 📰 BRIEF | MATERIAL — litigation solicitations recur; low; Drift unchanged
 - **2026-10-21 (end-of-day)** — 📰 BRIEF | MATERIAL — UK cloud outage, stock -2.5% (BigGo, Traders Union); Xcel Energy clean-power deal for new AI data center (TIKR); securities-fraud solicitations recur (low); outage is a reliability watch item, Cloud growth/backlog legs untouched; Drift unchanged
 - **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL — Anthropic IPO filing marks Alphabet's stake; litigation solicitations recur (low); Drift unchanged
+- **2026-10-28 (end-of-day)** — 📰 BRIEF | MATERIAL — Q3 8-K 2.02: revenue miss, Cloud strong, AH -8.5%; Drift unchanged; /dig GOOGL to read the release for Cloud growth/backlog
