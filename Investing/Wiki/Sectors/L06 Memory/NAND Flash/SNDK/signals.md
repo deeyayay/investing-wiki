@@ -158,3 +158,4 @@
 - **2026-10-28 (post-open)** — 📰 BRIEF | MATERIAL — memory read-through bid, SNDK +4% ahead of 10-29 earnings; Drift unchanged
 - **2026-10-29 (post-open)** — 📰 BRIEF | MATERIAL — Q1 FY27 earnings due today; SK Hynix beat lifted SNDK ahead of print; 'is NAND the bigger risk' framing recurs; Drift unchanged (Drifting stands); results next brief
 - **2026-10-29 (end-of-day)** — 📰 BRIEF | MATERIAL — Q1 FY27 8-K (2.02): beat, guidance raised, 8-for-1 split announced; stock still slipped (Samsung miss spillover); confirms NAND demand leg, price action is the Drifting driver; Drift unchanged — /dig to validate
+- **2026-10-30 (post-open)** — 📰 BRIEF | MATERIAL — 24/7 Wall St: SNDK -9% despite beat, raised guide and 8-for-1 split; WDC -8%, STX also lower. Headline and tape agree: fundamentals confirmed, price still falling — the Drifting driver is valuation/price, not demand. Drift unchanged (Drifting stands) — /dig SNDK still open

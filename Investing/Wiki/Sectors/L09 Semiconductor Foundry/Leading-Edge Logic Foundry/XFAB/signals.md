@@ -80,3 +80,4 @@
 - **2026-09-25 (evening)** — 📰 BRIEF | 2 items triaged, 0 new logged — a Europe-semiconductor-market-size report recirculates the 09-25 post-open item; a WDP (Brussels-listed logistics) stock-quote headline repeats the standing company mismatch recurring since 09-17
 - **2026-09-28 (post-open)** — 📰 BRIEF | 1 item triaged, 0 new logged — "WDP stock trades at EUR 20.54 after a Krefeld deal" repeats the standing WDP (Brussels-listed logistics) company-mismatch pattern recurring since 09-17
 - **2026-09-29 (end-of-day)** — 📰 BRIEF | 1 item triaged, 0 logged — Invezz "European chip stocks rise on Anthropic's $518B IPO spending plan" is a sector-sentiment piece with no X-FAB fact; photonixFAB/CPO leg untouched
+- **2026-10-30 (post-open)** — 📰 BRIEF | MATERIAL (low) — Q3 2026 results and call published 10-29/30 (headline-level; figures unread); photonixFAB leg not addressed in headlines; Drift unchanged — /dig XFAB if photonics commentary matters

@@ -134,3 +134,4 @@
 - **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL (low) — SK Hynix $12B dividend from Kioxia gains (report): stake-value validation, possible overhang; results 10-30; Drift unchanged
 - **2026-10-28 (post-open)** — 📰 BRIEF | THESIS ↑ (low) — Kioxia rallies on SK Hynix print, supports sold-out/tightness leg; results 10-30; Drift unchanged
 - **2026-10-29 (post-open)** — 📰 BRIEF | MATERIAL (low) — Samsung supply-tight-through-2028 supports sold-out leg; Kioxia results 10-30 (~10% implied move); Drift unchanged
+- **2026-10-30 (post-open)** — 📰 BRIEF | MATERIAL — FQ results due today; Bloomberg: stock down ~60% from peak, 'earnings test'; consensus +447% YoY rev (TradingKey); read-through today is SNDK -9% on a beat-and-raise (below), so the print bar is high; Drift unchanged — results next brief

@@ -253,3 +253,4 @@
 - **2026-10-28 (post-open)** — 📰 BRIEF | THESIS ↑ — SK Hynix says HBM sold out to 2029; MU +3% in sympathy; Drift unchanged; share/Rubin-spec watch → /dig MU
 - **2026-10-29 (post-open)** — 📰 BRIEF | THESIS ↑ — Samsung says 2027 HBM sold out, memory tight through 2028 (KED/TrendForce); SK Hynix 'shortage to 2030' call; Samsung HBM share gain remains the watch; Drift unchanged
 - **2026-10-29 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Samsung earnings miss dragged memory peers (MU -2.6%); Samsung says 2027 HBM sold out, tight through 2028 (supports demand leg); Drift unchanged
+- **2026-10-30 (post-open)** — 📰 BRIEF | MATERIAL (low) — storage/NAND names sold off after SNDK print (SNDK -9%, WDC -8%); MU not named; Samsung 'shortages not improving' supports demand leg; Drift unchanged
