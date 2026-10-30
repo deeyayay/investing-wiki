@@ -178,3 +178,4 @@
 - **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged
 - **2026-10-27 (end-of-day)** — 📰 BRIEF | MATERIAL — Intel to acquire Israeli quantum startup Classiq for $2.3B (CTech; Tip; Drift unchanged
 - **2026-10-29 (post-open)** — 📰 BRIEF | MATERIAL (low) — Q3 earnings today after close (~9% implied move); no thesis fact yet; Drift unchanged
+- **2026-10-29 (end-of-day)** — 📰 BRIEF | MATERIAL — Q3 8-K (2.02); stock -21% on weak Q4 guide blamed on PC slowdown; thesis (EMIB/photonics foundry) not directly hit but sentiment/financing risk up; Drift unchanged — /dig

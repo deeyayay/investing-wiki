@@ -252,3 +252,4 @@
 - **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL, ambiguous — Rubin HBM spec cut (8-Hi) recurs + Samsung HBM share gain; both press down on HBM content/share leg; headline-level, flagged for /dig; Drift unchanged
 - **2026-10-28 (post-open)** — 📰 BRIEF | THESIS ↑ — SK Hynix says HBM sold out to 2029; MU +3% in sympathy; Drift unchanged; share/Rubin-spec watch → /dig MU
 - **2026-10-29 (post-open)** — 📰 BRIEF | THESIS ↑ — Samsung says 2027 HBM sold out, memory tight through 2028 (KED/TrendForce); SK Hynix 'shortage to 2030' call; Samsung HBM share gain remains the watch; Drift unchanged
+- **2026-10-29 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Samsung earnings miss dragged memory peers (MU -2.6%); Samsung says 2027 HBM sold out, tight through 2028 (supports demand leg); Drift unchanged

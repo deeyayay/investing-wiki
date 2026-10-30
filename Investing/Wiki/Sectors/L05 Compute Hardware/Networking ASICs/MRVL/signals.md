@@ -133,3 +133,4 @@
 | 2026-10-24 (end-of-day) | 📰 BRIEF | MATERIAL (low, unverified) — outlook-lift vs supply-concern headline, split PT moves; Drift unchanged |
 | 2026-10-27 (end-of-day) | 📰 BRIEF | MATERIAL — Marvell doubles revolving credit facility to $3B; Drift unchanged |
 - **2026-10-28 (end-of-day)** — 📰 BRIEF | MATERIAL (unverified) — Lumentum takeover talks (Bloomberg); Drift unchanged; watch for announcement next week
+- **2026-10-29 (end-of-day)** — 📰 BRIEF | MATERIAL — Bloomberg: Marvell reportedly set to acquire Lumentum (optical); LITE +17%; unconfirmed by company; would extend interconnect/optics leg; Drift unchanged

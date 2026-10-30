@@ -121,3 +121,4 @@
 - **2026-10-22 (post-open)** — 📰 BRIEF | MATERIAL — SoFi launches SoFi Earn (SOFIE), an interest-bearing, FDIC-insured bank-issued tokenized deposit for consumers (company release / TradingView); extends the 10-20 bank-issued stablecoin push on the rails leg. Earnings 10-27. Drift unchanged
 - **2026-10-24 (end-of-day)** — 📰 BRIEF | MATERIAL — Prudential term-life partnership (flywheel/cross-sell leg); earnings 10-27 pre-market; Drift unchanged
 - **2026-10-27 (post-open)** — 📰 BRIEF | THESIS — Q3 record $1.4B rev, $241M NI, FY26 guide raised + 2027 outlook (8-K 2.02); Drift on track, strengthened
+- **2026-10-29 (end-of-day)** — 📰 BRIEF | MATERIAL — Q3 8-K 2.02 (10-27): beat and upgraded guidance, stock +13% (10-28); supports profitability-streak leg; Drift unchanged

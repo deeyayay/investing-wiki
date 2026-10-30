@@ -85,3 +85,4 @@
 - **2026-10-16 (post-open)** — 📰 BRIEF | MATERIAL, ambiguous — Stocktwits +40% AH earnings-beat story recirculates vs TipRanks 'sinks'; still conflicts with 11-02 earnings date; Drift unchanged, /dig AEHR still open
 - **2026-10-16 (end-of-day)** — 📰 BRIEF | MATERIAL, ambiguous — Stocktwits +40% AH earnings-beat story recirculates (4th time), still conflicts with 11-02 earnings date; nothing new; Drift unchanged, /dig AEHR still open
 - **2026-10-21 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — 8-K item 5.07 (annual meeting vote results, filed 10-20; routine) plus director option exercise; no earnings fact; FQ1 date 11-02 stands; Drift unchanged, /dig AEHR still open
+- **2026-10-29 (end-of-day)** — 📰 BRIEF | MATERIAL — 8-K item 5.02 (officer/director change) filed 10-29 ahead of Q1 earnings; details not in digest; Drift unchanged — /dig --filings-only

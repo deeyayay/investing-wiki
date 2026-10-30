@@ -221,3 +221,4 @@
 - **2026-10-26 (post-open)** — 📰 BRIEF | MATERIAL — Meta $35B equity offering with NVDA/AMD/AVGO reportedly eyeing up to $5B (unverified): hyperscaler capex demand vs circular-financing watch; TechPowerUp: NVDA cuts HBM4 speed/NVLink targets for Vera Rubin (headline only, topic hbm-supply); Drift unchanged
 - **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL — $3B Meta equity commitment confirmed (Muse partnership); demand leg up, circular-financing watch up; Drift unchanged
 - **2026-10-28 (end-of-day)** — 📰 BRIEF | MATERIAL — DOJ inquiry into $12.9B Hugging Face deal (Reuters); software-moat leg regulatory watch; Drift unchanged
+- **2026-10-29 (end-of-day)** — 📰 BRIEF | MATERIAL — Reuters: DOJ inquiring into $12.9B Hugging Face acquisition (software-moat leg); stock -1%; inquiry only, no action; Drift unchanged — watch

@@ -127,3 +127,4 @@
 - **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL — Anthropic IPO filing marks Alphabet's stake; litigation solicitations recur (low); Drift unchanged
 - **2026-10-28 (end-of-day)** — 📰 BRIEF | MATERIAL — Q3 8-K 2.02: revenue miss, Cloud strong, AH -8.5%; Drift unchanged; /dig GOOGL to read the release for Cloud growth/backlog
 - **2026-10-29 (post-open)** — 📰 BRIEF | MATERIAL — 10-Q filed; IBD/CNBC frame Q3 as EPS miss with Cloud booming, stock sliding after hours; Drift unchanged; /dig GOOGL --filings-only for Cloud growth/backlog
+- **2026-10-29 (end-of-day)** — 📰 BRIEF | MATERIAL — Q3 8-K (2.02) + 10-Q filed; headlines say EPS/revenue missed, stock sank after-hours; Cloud growth/backlog leg not yet verified from filing; Drift unchanged — /dig to read 10-Q

@@ -132,3 +132,4 @@
 - **2026-10-20 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Morgan Stanley top pick, PT $350, stock pops; Cantor PT cut to $310; Q3 call ahead; AWS growth leg untouched; Drift unchanged
 - **2026-10-20 (post-open)** — 📰 BRIEF | MATERIAL (low) — Benzinga/Barron's: 3M expands data-center partnership with Amazon (fiber-optic pact) after 3M Q3 beat; supports capex-build leg. Q3 call 10-29; AWS growth leg untouched; Drift unchanged
 - **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL — Anthropic IPO filing: AMZN stake gains a public mark (Trainium-customer link); Q3 call 10-29; Drift unchanged
+- **2026-10-29 (end-of-day)** — 📰 BRIEF | MATERIAL — Q3 8-K (2.02): stock slid on capex/sales guide overshadowing accelerating AWS growth; Investing.com says EPS/revenue missed (unverified); capex-intensity watch, AWS growth leg intact; Drift unchanged — /dig for AWS growth vs capex
