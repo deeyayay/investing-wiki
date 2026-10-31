@@ -118,3 +118,4 @@
 - **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL (low) — BofA PT $260→$290; Drift unchanged
 - **2026-10-28 (post-open)** — 📰 BRIEF | MATERIAL (low) — CEO $5.1M Form 4 sale; Drift unchanged
 - **2026-10-29 (post-open)** — 📰 BRIEF | MATERIAL (low) — Fortinet -20% on service-revenue guide cut drags CRWD -4% in sympathy; sector read-through, no CRWD-specific fact; Drift unchanged
+- **2026-10-30 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Fortinet -20% on service-revenue guide cut dragged CRWD -4%, PANW -5%; Mizuho raises on Guardian launch; sector read-through only; Drift unchanged

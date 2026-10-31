@@ -94,3 +94,4 @@
 | 2026-10-12 (end-of-day) | 📰 BRIEF | MATERIAL (low) — CEO ~$21M share sale |
 | 2026-10-27 (end-of-day) | 📰 BRIEF | MATERIAL — TD Cowen cuts Arista price target to $205; Drift unchanged |
 | 2026-10-28 (post-open) | 📰 BRIEF | MATERIAL — Meta Prometheus supercluster uses Arista; Drift unchanged |
+- **2026-10-30 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — earnings imminent: ad-hoc-news 'earnings test after guidance boost'; recycled Fortune transcript pages; no new fact; Drift unchanged

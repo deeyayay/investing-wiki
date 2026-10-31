@@ -109,3 +109,4 @@
 - **2026-10-26 (post-open)** — 📰 BRIEF | MATERIAL — Meta launches $35B equity offering (more in 2027); NVDA/AMD/AVGO reportedly weighing up to $5B each (TipRanks/StreetInsider, unverified); demand-side positive but circular-financing watch; no price reaction data; Drift unchanged
 - **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL — Meta strategic partnership (terms unseen); supports open-alternative leg; earnings-date conflict (today vs Nov 3) to confirm; Drift unchanged
 - **2026-10-28 (post-open)** — 📰 BRIEF | MATERIAL — $1B Meta equity stake, Helios testing; circular-financing watch; Drift unchanged
+- **2026-10-30 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — MarketWatch/24-7: AMD -10% in Intel-print sell-off (Intel 'two big issues': PC weakness); Meta tie-up framed as beyond $1B; data-center thesis untouched; Drift unchanged

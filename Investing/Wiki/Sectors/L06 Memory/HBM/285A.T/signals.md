@@ -135,3 +135,4 @@
 - **2026-10-28 (post-open)** — 📰 BRIEF | THESIS ↑ (low) — Kioxia rallies on SK Hynix print, supports sold-out/tightness leg; results 10-30; Drift unchanged
 - **2026-10-29 (post-open)** — 📰 BRIEF | MATERIAL (low) — Samsung supply-tight-through-2028 supports sold-out leg; Kioxia results 10-30 (~10% implied move); Drift unchanged
 - **2026-10-30 (post-open)** — 📰 BRIEF | MATERIAL — FQ results due today; Bloomberg: stock down ~60% from peak, 'earnings test'; consensus +447% YoY rev (TradingKey); read-through today is SNDK -9% on a beat-and-raise (below), so the print bar is high; Drift unchanged — results next brief
+- **2026-10-30 (end-of-day)** — 📰 BRIEF | MATERIAL — FQ results 10-30: Bloomberg 'profit jumps on AI storage needs' but 'outlook misses estimates, shares drop'; Investing.com: Kioxia warns on NAND price surge (hit SNDK). Demand leg intact, pricing-caution recurs (09-09, 09-25); Drift unchanged — /dig 285A.T for guide and ASP commentary

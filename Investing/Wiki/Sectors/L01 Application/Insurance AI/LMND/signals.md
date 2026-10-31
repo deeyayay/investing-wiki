@@ -93,3 +93,4 @@
 - **2026-10-15 (end-of-day)** — 📰 BRIEF | MATERIAL — 8-K/A item 5.02 (10-15) unread; Drift unchanged, /dig --filings-only LMND suggested
 - **2026-10-16 (post-open)** — 📰 BRIEF | MATERIAL — headlines explain 10-15 8-K/A (5.02): Nick Stead appointed CFO, Tim Bixby moves to board; filing itself unread; CFO handoff during run to Q4 EBITDA target is a watch item; Drift unchanged
 - **2026-10-19 (post-open)** — 📰 BRIEF | MATERIAL — 8-K/A 5.02 still unread; bearish opinion piece only; Drift unchanged
+- **2026-10-30 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — stock at 52-week low ($42.65); options imply ~14% move on 11-05 earnings; no thesis fact; Drift unchanged — watch Q3 loss ratio

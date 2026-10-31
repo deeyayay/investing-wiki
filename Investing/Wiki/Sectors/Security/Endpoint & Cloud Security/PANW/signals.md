@@ -131,3 +131,4 @@
 - **2026-10-23 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Cortex XDR One for AI agents (platform leg); Citi PT $440; drift unchanged
 - **2026-10-29 (post-open)** — 📰 BRIEF | MATERIAL (low) — PANW -5% on Fortinet guide-cut read-through; proxy filings (DEF 14A/ARS) routine; Drift unchanged
 - **2026-10-29 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Fortinet guide cut sold off security peers (PANW -5%); proxy filings 10-27; read-through only; Drift unchanged
+- **2026-10-30 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Fortinet guide cut spooked peers (-5%) but PANW +14% on the week after CEO AI-risk warning; DEF 14A/ARS routine proxy filings; Drift unchanged

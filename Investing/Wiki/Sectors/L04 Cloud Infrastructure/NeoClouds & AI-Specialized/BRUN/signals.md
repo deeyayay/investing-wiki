@@ -107,3 +107,4 @@
 - **2026-10-20 (end-of-day)** — 📰 BRIEF | MATERIAL (indirect) — neocloud sentiment hit: Nscale IPO pushback / 'neoclouds plunge' (KuCoin) and Nscale reportedly losing Microsoft deal on power delay; BRUN-specific facts unchanged (take-or-pay backlog, Exemplar); Drift unchanged, headline-level
 - **2026-10-20 (post-open)** — 📰 BRIEF | MATERIAL (low) — SEC EFFECT notice (10-19): a registration statement declared effective, form not named in metadata (likely follows the 10-08 POS AM; shelf/resale supply overhang, dilution watch). Neocloud-stress tape from last night's Nscale news unchanged; no new BRUN-specific fact; Drift unchanged
 - **2026-10-27 (end-of-day)** — 📰 BRIEF | MATERIAL — Boost Run converts backlog to recurring revenue as deployments go live; Drift unchanged
+- **2026-10-30 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — MarketBeat: BRUN gapped down, -9% on 10-29; no company news found; backlog leg untouched; Drift unchanged
