@@ -105,6 +105,9 @@
 - **2026-10-21** — JPMorgan upgrades Intel to Neutral; Intel claims only high-volume 300mm InP silicon photonics capability; Musk signals Terafab breakthrough (AD HOC NEWS / LEDinside / Barron's). Photonics claim supports the interconnect leg; upgrade is sentiment only, Terafab claim unverified.
 - **2026-10-27** — Intel to acquire Israeli quantum startup Classiq for $2.3B (CTech; TipRanks says terms not stated) (CTech / TipRanks) — M&A outside the EMIB/photonics thesis legs and a capital-allocation call after the $11B Q3-loss narrative; deal size unconfirmed, no filing seen. Earnings 10-29.
 
+- **2026-11-02 (post-open)** — Fallout from Intel's weak Q4 outlook: shares reported -28.6% on 10-30 (Gotrade), AMD -10.9% in sympathy; INTC rebounding to ~$67.34 pre-market (FXLeaders). 8-K (2.02) and 10-Q on file, unread.
+  **Why it matters:** The 'rerate' leg of the thesis (Apple IFS deal, Q1 beat, upgrades) takes a heavy hit on guidance; the rebound is partial. Cause (PC/demand vs foundry) unsettled from headlines — /dig INTC.
+
 ## Social Mentions
 
 | Date | Signal | Source |
@@ -180,3 +183,4 @@
 - **2026-10-29 (post-open)** — 📰 BRIEF | MATERIAL (low) — Q3 earnings today after close (~9% implied move); no thesis fact yet; Drift unchanged
 - **2026-10-29 (end-of-day)** — 📰 BRIEF | MATERIAL — Q3 8-K (2.02); stock -21% on weak Q4 guide blamed on PC slowdown; thesis (EMIB/photonics foundry) not directly hit but sentiment/financing risk up; Drift unchanged — /dig
 - **2026-10-30 (post-open)** — 📰 BRIEF | MATERIAL (low) — 10-Q filed 10-30 (unread); after -21% on Q4 guide; no new thesis fact; Drift unchanged
+- **2026-11-02 (post-open)** — 📰 BRIEF | MATERIAL (THESIS) — Q4-guide selloff -28.6%, partial pre-market bounce; filings unread; /dig queued

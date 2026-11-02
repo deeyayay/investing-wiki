@@ -71,6 +71,9 @@
 - **2026-10-27 (post-open)** — SK Hynix reportedly weighs a $12B special dividend funded by Kioxia gains (TradingView / Yahoo Finance): validates the value of Kioxia stake, and raises sell-down/overhang question for the shares; unconfirmed.
 - **2026-10-28 (post-open)** — Kioxia surging on SK Hynix Q3 beat and Asia memory rally (Investing.com, Invezz); SK Hynix $12B special-dividend idea tied to Kioxia stake still floated. — Demand-tightness leg reinforced by SK Hynix 'sold out to 2029'; results 10-30 are the next primary-source test.
 
+- **2026-11-02 (post-open)** — Tokyo open: Kioxia -17% intraday after FQ2 guidance missed estimates despite record Q2 revenue; Iwate merger and ¥90 payout noted; Screen also down while Tokyo Electron rebounds on buyback (BigGo, Invezz, Investing.com). Headline and tape agree: market reads the guide as cooling NAND momentum.
+  **Why it matters:** Tests the 'sold-out into 2027' demand leg against a soft guide; price reaction, not new operating data — /dig 285A.T still open.
+
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
 
@@ -136,3 +139,4 @@
 - **2026-10-29 (post-open)** — 📰 BRIEF | MATERIAL (low) — Samsung supply-tight-through-2028 supports sold-out leg; Kioxia results 10-30 (~10% implied move); Drift unchanged
 - **2026-10-30 (post-open)** — 📰 BRIEF | MATERIAL — FQ results due today; Bloomberg: stock down ~60% from peak, 'earnings test'; consensus +447% YoY rev (TradingKey); read-through today is SNDK -9% on a beat-and-raise (below), so the print bar is high; Drift unchanged — results next brief
 - **2026-10-30 (end-of-day)** — 📰 BRIEF | MATERIAL — FQ results 10-30: Bloomberg 'profit jumps on AI storage needs' but 'outlook misses estimates, shares drop'; Investing.com: Kioxia warns on NAND price surge (hit SNDK). Demand leg intact, pricing-caution recurs (09-09, 09-25); Drift unchanged — /dig 285A.T for guide and ASP commentary
+- **2026-11-02 (post-open)** — 📰 BRIEF | MATERIAL — guide-miss follow-through, -17% intraday; Drift unchanged, /dig queued

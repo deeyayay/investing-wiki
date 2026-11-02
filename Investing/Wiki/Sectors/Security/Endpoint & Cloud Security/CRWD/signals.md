@@ -65,6 +65,9 @@
 - **2026-10-27 (post-open)** — BofA raises PT to $290 from $260 (TipRanks / AD HOC NEWS); Morgan Stanley notes CRWD among winners as open-weight model usage rises. PT move only, no new company fact.
 - **2026-10-28 (post-open)** — CEO Kurtz sells ~$5.11M of stock (Form 4, trade of 10-23; Investing.com, MarketScreener). — Insider sale, routine in size relative to holdings; no thesis impact.
 
+- **2026-11-02 (post-open)** — CrowdStrike expands CoreWeave partnership to bring Falcon to AI cloud workloads; Deutsche Bank upgrades to Buy, shares +3.4% pre-market (Benzinga, TradingPedia, JKN). Headline and tape agree.
+  **Why it matters:** Extends platform-consolidator reach into neocloud AI workloads; upgrade is analyst sentiment only.
+
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
 
@@ -119,3 +122,4 @@
 - **2026-10-28 (post-open)** — 📰 BRIEF | MATERIAL (low) — CEO $5.1M Form 4 sale; Drift unchanged
 - **2026-10-29 (post-open)** — 📰 BRIEF | MATERIAL (low) — Fortinet -20% on service-revenue guide cut drags CRWD -4% in sympathy; sector read-through, no CRWD-specific fact; Drift unchanged
 - **2026-10-30 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Fortinet -20% on service-revenue guide cut dragged CRWD -4%, PANW -5%; Mizuho raises on Guardian launch; sector read-through only; Drift unchanged
+- **2026-11-02 (post-open)** — 📰 BRIEF | MATERIAL (low) — CoreWeave expansion + DB upgrade, +3.4% pre-market; Drift unchanged

@@ -66,6 +66,9 @@
 
 - **2026-10-28 (end-of-day)** — Bloomberg (via Benzinga, TipRanks): Marvell in advanced talks to acquire optical-module maker Lumentum, announcement possibly next week; LITE +17% (unconfirmed by either company) — Would extend MRVL from SerDes/DSP into optical modules (interconnect leg) but at a large price; deal size and financing unknown.
 
+- **2026-11-02 (post-open)** — Marvell agrees to acquire Lumentum in an all-stock deal, sized $80B (WSJ) to $115B (Calcalist/24-7 Wall St) — headlines disagree on value. MRVL -3%, LITE -6%, COHR +2% (24/7 Wall St); one aggregator cites MRVL -13% on the rumor leg. Converts the 10-28 Bloomberg talks report into a definitive deal; headline and tape agree on a sceptical reception.
+  **Why it matters:** Takes MRVL from SerDes/DSP into optical modules (interconnect leg) at very large size and dilution; no filing seen, terms unverified — /dig MRVL.
+
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
 
@@ -135,3 +138,4 @@
 - **2026-10-28 (end-of-day)** — 📰 BRIEF | MATERIAL (unverified) — Lumentum takeover talks (Bloomberg); Drift unchanged; watch for announcement next week
 - **2026-10-29 (end-of-day)** — 📰 BRIEF | MATERIAL — Bloomberg: Marvell reportedly set to acquire Lumentum (optical); LITE +17%; unconfirmed by company; would extend interconnect/optics leg; Drift unchanged
 - **2026-10-30 (end-of-day)** — 📰 BRIEF | MATERIAL — Lumentum takeover talks now repeated by multiple outlets (Counterpoint: 'major challenge to Broadcom'); still no company confirmation, no filing; Drift unchanged
+- **2026-11-02 (post-open)** — 📰 BRIEF | MATERIAL (THESIS) — Lumentum all-stock deal announced; MRVL -3% on open; Drift unchanged
