@@ -87,3 +87,4 @@
 - **2026-10-21 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — 8-K item 5.07 (annual meeting vote results, filed 10-20; routine) plus director option exercise; no earnings fact; FQ1 date 11-02 stands; Drift unchanged, /dig AEHR still open
 - **2026-10-29 (end-of-day)** — 📰 BRIEF | MATERIAL — 8-K item 5.02 (officer/director change) filed 10-29 ahead of Q1 earnings; details not in digest; Drift unchanged — /dig --filings-only
 - **2026-11-02 (end-of-day)** — 📰 BRIEF | THESIS — FQ1 FY27 earnings: 8-K item 2.02 filed; Investing.com 'beats estimates, raises outlook', shares +15% after hours. **Why it matters:** first print since the 3.5x book-to-bill supports the AI-processor burn-in pivot; figures unread — /dig --filings-only.
+- **2026-11-03 (post-open)** — 📰 BRIEF | MATERIAL — follow-through on FQ1: record $33M revenue, guidance reported tripled (ABC Money); no new fact beyond 11-02 8-K 2.02. Headline and after-hours +15% agree; Drift unchanged

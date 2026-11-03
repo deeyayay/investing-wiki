@@ -129,3 +129,4 @@
 - **2026-10-29 (post-open)** — 📰 BRIEF | MATERIAL — 10-Q filed; IBD/CNBC frame Q3 as EPS miss with Cloud booming, stock sliding after hours; Drift unchanged; /dig GOOGL --filings-only for Cloud growth/backlog
 - **2026-10-29 (end-of-day)** — 📰 BRIEF | MATERIAL — Q3 8-K (2.02) + 10-Q filed; headlines say EPS/revenue missed, stock sank after-hours; Cloud growth/backlog leg not yet verified from filing; Drift unchanged — /dig to read 10-Q
 - **2026-11-02 (end-of-day)** — 📰 BRIEF | MATERIAL — SEC: FWP and 424B5 filed 11-02; Barron's: convertible preferred yielding over 7.5%; Yahoo: stock 'plummets after earnings'. **Why it matters:** a capital raise alongside a $180-190B capex plan; size and terms unread — /dig GOOGL --filings-only.
+- **2026-11-03 (post-open)** — 📰 BRIEF | MATERIAL (low) — FWP and 424B5 prospectus filed 11-02 (a securities offering; terms unread); class-action solicitation noise. Drift unchanged — /dig GOOGL --filings-only
