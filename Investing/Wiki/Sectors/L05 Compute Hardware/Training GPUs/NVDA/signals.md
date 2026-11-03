@@ -223,3 +223,4 @@
 - **2026-10-28 (end-of-day)** — 📰 BRIEF | MATERIAL — DOJ inquiry into $12.9B Hugging Face deal (Reuters); software-moat leg regulatory watch; Drift unchanged
 - **2026-10-29 (end-of-day)** — 📰 BRIEF | MATERIAL — Reuters: DOJ inquiring into $12.9B Hugging Face acquisition (software-moat leg); stock -1%; inquiry only, no action; Drift unchanged — watch
 - **2026-10-30 (post-open)** — 📰 BRIEF | MATERIAL (low, unverified) — TradingView: DOJ probe plus a Chinese-spy report weigh on shares after hours; AM Intelligence (NVDA chip buyer) seeking up to $3B raise (circular-financing watch); Drift unchanged
+- **2026-11-02 (end-of-day)** — 📰 BRIEF | MATERIAL — Stocktwits: Huang calls AI data centers 'investable assets' after a Wall Street partnership for a ~$500B financing venture (secondary, unconfirmed). **Why it matters:** if real, financing capacity for the buildout widens, supporting demand durability.

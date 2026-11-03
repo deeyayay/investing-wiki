@@ -134,3 +134,4 @@
 - **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL — Anthropic IPO filing: AMZN stake gains a public mark (Trainium-customer link); Q3 call 10-29; Drift unchanged
 - **2026-10-29 (end-of-day)** — 📰 BRIEF | MATERIAL — Q3 8-K (2.02): stock slid on capex/sales guide overshadowing accelerating AWS growth; Investing.com says EPS/revenue missed (unverified); capex-intensity watch, AWS growth leg intact; Drift unchanged — /dig for AWS growth vs capex
 - **2026-10-30 (post-open)** — 📰 BRIEF | MATERIAL (low) — 10-Q filed 10-30 (unread); capex/AWS read per 10-29 entry stands; Drift unchanged — /dig AMZN --filings-only if capex detail needed
+- **2026-11-02 (end-of-day)** — 📰 BRIEF | MATERIAL — 10-Q filed 10-30 (unread); headlines split between Q3 'miss' slip and AWS-driven Phillip Securities upgrade ($330 PT). **Why it matters:** AWS growth leg looks intact; the mixed tape needs the filing.

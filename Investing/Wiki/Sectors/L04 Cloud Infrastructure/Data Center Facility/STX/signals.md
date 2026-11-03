@@ -94,3 +94,4 @@ _None yet — seeded on onboarding._
 - **2026-10-27 (end-of-day)** — 📰 BRIEF | THESIS — Q1 earnings 8-K (2.02): beat + raised guide per press, stock -6% AH; supports HAMR leg, release unread; Drift unchanged
 - **2026-10-28 (post-open)** — 📰 BRIEF | MATERIAL — STX falls vs rising memory peers after Q1 beat; margin-growth slowdown flagged; 8-K 5.07 routine; Drift unchanged; /dig --filings-only STX
 - **2026-10-29 (end-of-day)** — 📰 BRIEF | MATERIAL — 10-Q (10-29) plus 8-K 2.02/7.01 and 5.07; Benzinga: Q1 'falls short of high expectations', guide implies steep slowdown; Mozaic margin gain and dividend raise noted; Drift unchanged
+- **2026-11-02** — Q2 outlook stronger after record Q1; HAMR ramp accelerating (Globe and Mail, ad-hoc-news). **Why it matters:** confirms the HAMR/Mozaic exabyte-tier demand leg.

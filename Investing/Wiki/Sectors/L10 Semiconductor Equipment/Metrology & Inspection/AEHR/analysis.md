@@ -65,6 +65,7 @@ _Evaluated: 2026-06-17_
 | 2026-09-17 | Shares slip on soft Q1 FY2027 guidance | → | Headline-only, no figures given yet — consistent with the known bookings-to-revenue recognition lag rather than a new contradicting fact, but possibly the cause behind the standing 38%-decline /dig item; needs the actual guide numbers before treating as thesis-moving. |
 | 2026-10-07 | ~$6M follow-on Sonoma orders, lead hyperscale AI customer | ↑ | Repeat order for a second AI chip supports recurring AI burn-in volume; small size, FQ1 results still to verify |
 | 2026-10-12 | Earnings reaction reported as 'crash' (headline-only; conflicts with 10-12 AH report) | → Unresolved | Cannot tell from headlines whether book-to-bill / FY27 guide held. Drift unchanged; /dig AEHR --filings-only to settle. |
+| 2026-11-02 | FQ1 FY27 earnings beat, outlook raised; +15% after hours | ↑ | 8-K item 2.02 filed plus Investing.com headlines confirm the AI-pivot demand leg; numbers not read — /dig --filings-only to size bookings and the guide. |
 
 ---
 
