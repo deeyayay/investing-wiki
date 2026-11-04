@@ -54,6 +54,9 @@
 - **2026-10-27 (post-open)** — AMD and Meta advance strategic partnership for Meta's Superintelligence Infrastructure (Economic Times); earnings flagged for today by MarketBeat/Investing.com vs Nov 3 in this log — date conflict. Headline-level; terms unseen.
 - **2026-10-28 (post-open)** — AMD to invest $1B in Meta's equity offering as partnership expands; Helios systems begin testing (digital terminal); Susquehanna PT $650 from $620; ARK trims AMD. — Supports open-alternative/Helios ramp leg; vendor-financing (circularity) pattern same as NVDA — terms unverified.
 
+- **2026-11-04 (post-open)** — 10-Q filed 11-04 (unread); Korea science ministry and AMD hold first AI-chip partnership steering meeting (Korea Times); AMD warns of double-digit PC market decline in 2027 (Yahoo Finance).
+  **Why it matters:** 10-Q will carry the data-center detail behind the 11-03 print; PC warning is a segment headwind, not a data-center thesis leg. Drift unchanged.
+
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
 
@@ -111,3 +114,4 @@
 - **2026-10-28 (post-open)** — 📰 BRIEF | MATERIAL — $1B Meta equity stake, Helios testing; circular-financing watch; Drift unchanged
 - **2026-10-30 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — MarketWatch/24-7: AMD -10% in Intel-print sell-off (Intel 'two big issues': PC weakness); Meta tie-up framed as beyond $1B; data-center thesis untouched; Drift unchanged
 - **2026-11-03 (end-of-day)** — 📰 BRIEF | THESIS — AMD Q3 2026: 8-K items 2.02/7.01 filed 11-03 (unread); StreetInsider/ChartMill/Proactive: data-center revenue nearly doubled, EPS +15c beat, Q4 guide above consensus. **Why it matters:** first primary-source print since the Meta tie-up; supports the data-center share-capture leg — figures unverified until /dig reads the 8-K.
+- **2026-11-04 (post-open)** — 📰 BRIEF | MATERIAL — 10-Q filed (unread); 2027 PC decline warning; Korea AI-chip partnership; Drift unchanged

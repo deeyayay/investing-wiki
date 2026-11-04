@@ -163,6 +163,9 @@
 - **2026-10-27 (post-open)** — Rubin Ultra reportedly rethinks 12-Hi HBM4E for 8-Hi HBM4 and Vera Rubin bandwidth cut ~13% (industry news, recurring from 10-26); Samsung seen topping SK Hynix in HBM revenue for first time (Q4 share ~40%); ad-hoc-news: $1,550 PT meets a downgrade. Fewer HBM stacks per GPU would bear on content per GPU; unverified.
 - **2026-10-28 (post-open)** — SK Hynix Q3 record (OPM 80%, ~$62B profit): DRAM/HBM booked through 2029, shortage call through 2030, $75B shareholder returns (Invezz, 24/7 Wall St, Stock Titan). Opening reaction: SK Hynix +7%, MU +3% — headline and tape agree. — THESIS ↑ — peer's own sold-out-to-2029 claim backs the contracted-supply/HBM-demand legs; Samsung-leads-HBM-2027 view (expert) keeps share watch open; /dig MU still queued.
 
+- **2026-11-04 (post-open)** — GlobalWafers board approves up-to-$500M convertible bond with Micron as sole subscriber (Taiwan News, TokenPost) — confirms the 11-03 wafer-supply lock; ad-hoc-news asks about a margin test after the AI earnings surge.
+  **Why it matters:** Board approval firms up the supply-security leg; second-hand sourcing. Drift unchanged.
+
 ## Social Mentions
 
 | Date | Signal | Source |
@@ -257,3 +260,4 @@
 - **2026-10-30 (end-of-day)** — 📰 BRIEF | MATERIAL — TradingKey: Nvidia Rubin Ultra reportedly cuts an HBM layer, lower per-unit memory usage (content-per-GPU risk to HBM leg; unverified); Moomoo: MU -5.7% premarket with heavy put activity. Samsung 'entire 2027 HBM booked' supports demand leg; Drift unchanged — /dig MU on Rubin Ultra HBM spec
 - **2026-11-02 (end-of-day)** — 📰 BRIEF | MATERIAL — MU reported near $840 on the Kioxia outlook (FXLeaders); Barron's: large buyback expected in December. **Why it matters:** Kioxia's guide is spilling into MU sentiment while the buyback expectation supports the supply-contracted leg; no thesis fact.
 - **2026-11-03 (post-open)** — 📰 BRIEF | MATERIAL — GlobalWafers issues NT$16B private convertible to Micron under a 10-year supply agreement (BigGo): long-term wafer-supply lock; separately Samsung reportedly to make AMD/Nvidia HBM at a second Texas fab. **Why it matters:** supply lock supports the ramp, but US-based Samsung HBM erodes the 'only US-domiciled HBM supplier' leg if confirmed; unconfirmed, Drift unchanged — /dig MU
+- **2026-11-04 (post-open)** — 📰 BRIEF | MATERIAL — GlobalWafers board approves Micron convertible (up to $500M); supply lock firmer; Drift unchanged

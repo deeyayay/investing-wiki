@@ -74,6 +74,9 @@
 - **2026-11-02 (post-open)** — Tokyo open: Kioxia -17% intraday after FQ2 guidance missed estimates despite record Q2 revenue; Iwate merger and ¥90 payout noted; Screen also down while Tokyo Electron rebounds on buyback (BigGo, Invezz, Investing.com). Headline and tape agree: market reads the guide as cooling NAND momentum.
   **Why it matters:** Tests the 'sold-out into 2027' demand leg against a soft guide; price reaction, not new operating data — /dig 285A.T still open.
 
+- **2026-11-04 (post-open)** — Kioxia -13% at the Tokyo open, SoftBank -7% in a broad 'blue wave' sell-off (Yahoo Finance, Investing.com); Smartkarma: 'weakest hand sold hardest'; ad-hoc-news frames SanDisk's NAND deceleration as pricing, not profit.
+  **Why it matters:** Headline and tape agree, but the move is market-wide and follows the 11-02 guide miss; no new operating fact. /dig 285A.T still open.
+
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
 
@@ -142,3 +145,4 @@
 - **2026-11-02 (post-open)** — 📰 BRIEF | MATERIAL — guide-miss follow-through, -17% intraday; Drift unchanged, /dig queued
 - **2026-11-02 (end-of-day)** — 📰 BRIEF | MATERIAL — Morningstar: guide miss leaves 'long-term outlook softer'; BigGo: market fears cooling AI storage demand; Screen also fell while Tokyo Electron rose on a buyback. **Why it matters:** a second source frames the guide as demand-cooling, against the sold-out-into-2027 leg; Drift unchanged, /dig queued.
 - **2026-11-03 (end-of-day)** — 📰 BRIEF | MATERIAL — Simply Wall St: Kioxia missed EPS by ~30%, analysts revising forecasts; ad-hoc-news: flat December guidance for a stock priced for momentum. **Why it matters:** repeats the 11-02 guide-miss; the pricing-caution watch item on the NAND demand leg persists. Drift unchanged; /dig queued.
+- **2026-11-04 (post-open)** — 📰 BRIEF | MATERIAL (low) — -13% at open on market-wide sell-off atop guide-miss overhang; no new fact; Drift unchanged

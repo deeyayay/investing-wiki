@@ -76,6 +76,9 @@
 - **2026-10-27 (post-open)** — Sandisk partners with Meta for VR storage; stock +1.33% (AD HOC NEWS). Minor partnership, thin source; earnings 10-29 preview coverage heavy ('another blowout' vs muted-pricing worry).
 - **2026-10-28 (post-open)** — SK Hynix results lift memory complex; SNDK +4.4% to ~$1,362 (FXLeaders), >4% pre-market (TradingKey) into Q1 earnings after close 10-29; Street high target $3,000. — Tape confirms read-through bid; the decline-cause question remains open and 10-29 print is the test.
 
+- **2026-11-04 (post-open)** — SanDisk -6.3% on Seoul sell-off, Chinese-rivalry worry and pre-earnings jitters (ad-hoc-news); Simply Wall St: caught in a broad hedge-fund AI exit; other outlets note a memory-sector rebound.
+  **Why it matters:** Sentiment/positioning move, not a fundamental one; 'beat-and-fade' pattern persists. Drift (Drifting) unchanged.
+
 ## Social Mentions
 
 | Date | Author | Platform | Sentiment | Key Claims | Source |
@@ -160,3 +163,4 @@
 - **2026-10-29 (end-of-day)** — 📰 BRIEF | MATERIAL — Q1 FY27 8-K (2.02): beat, guidance raised, 8-for-1 split announced; stock still slipped (Samsung miss spillover); confirms NAND demand leg, price action is the Drifting driver; Drift unchanged — /dig to validate
 - **2026-10-30 (post-open)** — 📰 BRIEF | MATERIAL — 24/7 Wall St: SNDK -9% despite beat, raised guide and 8-for-1 split; WDC -8%, STX also lower. Headline and tape agree: fundamentals confirmed, price still falling — the Drifting driver is valuation/price, not demand. Drift unchanged (Drifting stands) — /dig SNDK still open
 - **2026-11-02 (end-of-day)** — 📰 BRIEF | MATERIAL — 10-Q filed 10-30 (unread); post-earnings dip then premarket rebound to ~$1,180 (FXLeaders). **Why it matters:** the 'blowout beat, stock falls' disconnect persists and Kioxia's guide miss adds a read-through; Drift stays Drifting, /dig still open.
+- **2026-11-04 (post-open)** — 📰 BRIEF | MATERIAL (low) — -6.3% on Seoul sell-off and hedge-fund AI exit, mixed memory-sector tape; Drift unchanged
