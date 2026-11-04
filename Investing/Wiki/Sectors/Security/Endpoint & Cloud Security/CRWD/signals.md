@@ -123,3 +123,4 @@
 - **2026-10-29 (post-open)** — 📰 BRIEF | MATERIAL (low) — Fortinet -20% on service-revenue guide cut drags CRWD -4% in sympathy; sector read-through, no CRWD-specific fact; Drift unchanged
 - **2026-10-30 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Fortinet -20% on service-revenue guide cut dragged CRWD -4%, PANW -5%; Mizuho raises on Guardian launch; sector read-through only; Drift unchanged
 - **2026-11-02 (post-open)** — 📰 BRIEF | MATERIAL (low) — CoreWeave expansion + DB upgrade, +3.4% pre-market; Drift unchanged
+- **2026-11-03 (end-of-day)** — 📰 BRIEF | MATERIAL — CrowdStrike to acquire 2 AI-security companies (Yahoo, names not in digest); Dynatrace partnership; CoreWeave partnership expanded 11-02. **Why it matters:** M&A adds AI-native platform breadth, consistent with the consolidator thesis; sizes unknown.

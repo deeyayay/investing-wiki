@@ -79,6 +79,7 @@ _Evaluated: 2026-06-17_
 | Date | Direction | Other Ticker | Signal | Implication |
 |------|-----------|-------------|--------|-------------|
 | 2026-05-19 | Receives | NVDA | NVDA Q1 FY2027 earnings; MRVL named in earnings shockwave as interconnect chip supplier | Marvell's SerDes and DSP chips are in the switching fabric of every large GPU cluster — strong NVDA guidance extends the interconnect design-win cycle |
+| 2026-11-03 | Both shareholder bases pan Lumentum all-stock deal; Huang reportedly supportive | → Neutral | Raises completion/terms risk on the optical pivot; deal value still disputed ($80B vs $115B) — /dig MRVL |
 
 ---
 

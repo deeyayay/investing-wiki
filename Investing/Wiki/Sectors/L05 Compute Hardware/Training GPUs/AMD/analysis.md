@@ -100,3 +100,4 @@ _Last scored: — | [[Scoring Rubric]]_
 - [[Interconnect/CRDO/analysis.md]] — AMD EPYC servers use high-speed SerDes interconnect
 - [[Semiconductor Foundry/TSM]] — AMD fabless; fully dependent on TSMC for leading-edge nodes
 | 2026-09-29 | AMD to acquire World Labs, $8.2B all-stock; 8-K item 3.02 | → | Extends AMD into world-model/spatial-AI software, away from the Nvidia-alternative GPU-share leg; all-stock means dilution. Direction unclear pending /dig on rationale and share count. |
+| 2026-11-03 | Q3 print: data center ~2x, Q4 guide above consensus (headline-level) | ↑ Strengthened | Backs the data-center share-capture leg; 8-K unread, so no drift change — /dig AMD |

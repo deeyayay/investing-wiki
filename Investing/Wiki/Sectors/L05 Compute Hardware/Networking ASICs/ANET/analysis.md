@@ -72,6 +72,7 @@ _Evaluated: 2026-06-17_
 | 2026-05-07 | Receives | NVDA | NVDA-IREN $2.1B AI infrastructure deal | Hyperscale AI cluster buildout drives ANET networking demand pull-through |
 | 2026-05-07 | Receives | IREN | Sweetwater campus expansion | Hyperscale AI DC at this power density requires AI-grade Ethernet fabric |
 | 2026-06-17 | Receives | COHR/LITE | Optical demand signals | Co-packaged optics adoption pace at switch ASICs is an ANET adjacency catalyst |
+| 2026-11-03 | Q3 revenue +58%, Q4 guide above consensus | ↑ Strengthened | Confirms AI Ethernet demand leg; one outlet flags slowing Q4 growth — watch |
 
 ---
 

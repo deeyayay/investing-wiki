@@ -110,3 +110,4 @@
 - **2026-10-27 (post-open)** — 📰 BRIEF | MATERIAL — Meta strategic partnership (terms unseen); supports open-alternative leg; earnings-date conflict (today vs Nov 3) to confirm; Drift unchanged
 - **2026-10-28 (post-open)** — 📰 BRIEF | MATERIAL — $1B Meta equity stake, Helios testing; circular-financing watch; Drift unchanged
 - **2026-10-30 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — MarketWatch/24-7: AMD -10% in Intel-print sell-off (Intel 'two big issues': PC weakness); Meta tie-up framed as beyond $1B; data-center thesis untouched; Drift unchanged
+- **2026-11-03 (end-of-day)** — 📰 BRIEF | THESIS — AMD Q3 2026: 8-K items 2.02/7.01 filed 11-03 (unread); StreetInsider/ChartMill/Proactive: data-center revenue nearly doubled, EPS +15c beat, Q4 guide above consensus. **Why it matters:** first primary-source print since the Meta tie-up; supports the data-center share-capture leg — figures unverified until /dig reads the 8-K.

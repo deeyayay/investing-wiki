@@ -123,3 +123,4 @@
 - **2026-10-27 (post-open)** — 📰 BRIEF | THESIS — Q3 record $1.4B rev, $241M NI, FY26 guide raised + 2027 outlook (8-K 2.02); Drift on track, strengthened
 - **2026-10-29 (end-of-day)** — 📰 BRIEF | MATERIAL — Q3 8-K 2.02 (10-27): beat and upgraded guidance, stock +13% (10-28); supports profitability-streak leg; Drift unchanged
 - **2026-11-02** — Operating margin nearly doubles, record originations, guidance raised. **Why it matters:** confirms the core executing-on-all-pillars thesis.
+- **2026-11-03 (end-of-day)** — 📰 BRIEF | MATERIAL — Mastercard to accept SoFiUSD for global card settlement (CoinMarketCap). **Why it matters:** first network-level acceptance of SoFi's stablecoin; strengthens the Galileo/B2B infrastructure leg beyond the member flywheel. Single secondary source — confirm.
