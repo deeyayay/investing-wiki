@@ -103,3 +103,4 @@
 - **2026-10-16 (post-open)** — 📰 BRIEF | MATERIAL (low) — starts new optical connectivity standards group; Rosenblatt Neutral $235; Drift unchanged
 - **2026-10-16 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — 8-K 5.07 routine; Drift unchanged
 - **2026-10-21 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — shares +7% on new AI interconnect launch and earnings-beat framing (Traders Union; recaps the resolved 09-01 8-K finding); Rosenblatt Neutral $235 recurs; Drift unchanged
+- **2026-11-05 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Credo and Oracle win OCP approval for two optical-transceiver telemetry standards (company release). **Why it matters:** standards-setting supports the optical-expansion leg; no revenue effect. Drift unchanged
