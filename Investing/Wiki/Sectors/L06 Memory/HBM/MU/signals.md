@@ -166,6 +166,9 @@
 - **2026-11-04 (post-open)** — GlobalWafers board approves up-to-$500M convertible bond with Micron as sole subscriber (Taiwan News, TokenPost) — confirms the 11-03 wafer-supply lock; ad-hoc-news asks about a margin test after the AI earnings surge.
   **Why it matters:** Board approval firms up the supply-security leg; second-hand sourcing. Drift unchanged.
 
+- **2026-11-05** — HBM prices seen up 121% as buyers shift to SK Hynix 8-Hi; SK Hynix leads HBM4 yield at 60%; Samsung Taylor HBM plant tied to AMD/Nvidia orders.
+  **Why it matters:** Pricing confirms the HBM tailwind but SK Hynix yield lead and Samsung US capacity pressure the 'only US-domiciled / on every NVDA GPU' legs; the watch item stays open.
+
 ## Social Mentions
 
 | Date | Signal | Source |
@@ -261,3 +264,4 @@
 - **2026-11-02 (end-of-day)** — 📰 BRIEF | MATERIAL — MU reported near $840 on the Kioxia outlook (FXLeaders); Barron's: large buyback expected in December. **Why it matters:** Kioxia's guide is spilling into MU sentiment while the buyback expectation supports the supply-contracted leg; no thesis fact.
 - **2026-11-03 (post-open)** — 📰 BRIEF | MATERIAL — GlobalWafers issues NT$16B private convertible to Micron under a 10-year supply agreement (BigGo): long-term wafer-supply lock; separately Samsung reportedly to make AMD/Nvidia HBM at a second Texas fab. **Why it matters:** supply lock supports the ramp, but US-based Samsung HBM erodes the 'only US-domiciled HBM supplier' leg if confirmed; unconfirmed, Drift unchanged — /dig MU
 - **2026-11-04 (post-open)** — 📰 BRIEF | MATERIAL — GlobalWafers board approves Micron convertible (up to $500M); supply lock firmer; Drift unchanged
+- **2026-11-05 (post-open)** — 📰 BRIEF | MATERIAL — HBM competition (SK Hynix 60% HBM4 yield, Samsung Taylor); Drift unchanged — /dig MU

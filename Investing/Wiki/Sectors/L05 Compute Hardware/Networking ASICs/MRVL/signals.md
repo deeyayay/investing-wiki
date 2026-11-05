@@ -69,6 +69,9 @@
 - **2026-11-02 (post-open)** — Marvell agrees to acquire Lumentum in an all-stock deal, sized $80B (WSJ) to $115B (Calcalist/24-7 Wall St) — headlines disagree on value. MRVL -3%, LITE -6%, COHR +2% (24/7 Wall St); one aggregator cites MRVL -13% on the rumor leg. Converts the 10-28 Bloomberg talks report into a definitive deal; headline and tape agree on a sceptical reception.
   **Why it matters:** Takes MRVL from SerDes/DSP into optical modules (interconnect leg) at very large size and dilution; no filing seen, terms unverified — /dig MRVL.
 
+- **2026-11-05** — Coverage: Lumentum acquisition bill being repriced; guidance holds firm, dilution questioned (ad-hoc-news).
+  **Why it matters:** Optical expansion adds interconnect scope but a large financing/dilution question hangs over the custom-ASIC thesis; needs terms from filings.
+
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
 
@@ -142,3 +145,4 @@
 - **2026-11-02 (end-of-day)** — 📰 BRIEF | MATERIAL — Yahoo headline: MRVL 'plunges 13%' on the Lumentum deal; deal size still reported as $80B (WSJ) vs $115B (Bloomberg/NYT). **Why it matters:** sceptical tape deepens versus the -3% open; the size gap and all-stock dilution are open — /dig MRVL. Close figure unverified.
 - **2026-11-03 (end-of-day)** — 📰 BRIEF | THESIS — Lumentum deal reaction: MarketWatch reports Marvell and Lumentum holders both panning the all-stock terms ('trash offer'); Nvidia CEO reportedly backs the merger (bloomingbit); Lumentum separately won a ~$5B CPO order. **Why it matters:** shareholder pushback raises completion/terms risk on the optical-vertical-integration pivot; deal size still $80B vs $115B across outlets. /dig MRVL.
 - **2026-11-05 (end-of-day)** — 📰 BRIEF | MATERIAL — Barron's: MRVL and Lumentum have together lost ~$91B of market value since the all-stock deal (headline size now $115B); Seeking Alpha 'doesn't make any sense'. **Why it matters:** market is pricing the merger as dilutive/execution risk; deal-break chatter is new, but no filing or company statement. Drift unchanged — /dig MRVL --filings-only
+- **2026-11-05 (post-open)** — 📰 BRIEF | MATERIAL — Lumentum deal repricing, dilution; Drift unchanged — /dig --filings-only MRVL

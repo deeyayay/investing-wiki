@@ -111,6 +111,9 @@
 - **2026-11-04 (post-open)** — Intel signs Oracle deal and rebounds; weak Q4/PC outlook still weighs, Northland cuts estimates (TradingView, ad-hoc-news, MarketBeat). AMD also guides a 'double-digit' PC market decline in 2027 (Yahoo Finance).
   **Why it matters:** Oracle deal supports server/foundry credibility; the AMD PC warning corroborates Intel's PC-weakness guide, so the 10-29 selloff reason is industry-wide. Terms of the Oracle deal unseen — potential /dig item. Drift unchanged.
 
+- **2026-11-05** — Weak Q4 guidance and PC-demand warning knock the stock down; legal probes announced; Oracle server deal signed 11-04.
+  **Why it matters:** Server momentum (Oracle) supports the foundry/AI leg, but weak PC guide undercuts the 'rerate' leg of drift; reaction negative at open.
+
 ## Social Mentions
 
 | Date | Signal | Source |
@@ -188,3 +191,4 @@
 - **2026-10-30 (post-open)** — 📰 BRIEF | MATERIAL (low) — 10-Q filed 10-30 (unread); after -21% on Q4 guide; no new thesis fact; Drift unchanged
 - **2026-11-02 (post-open)** — 📰 BRIEF | MATERIAL (THESIS) — Q4-guide selloff -28.6%, partial pre-market bounce; filings unread; /dig queued
 - **2026-11-04 (post-open)** — 📰 BRIEF | MATERIAL (THESIS-adjacent) — Oracle deal signed, shares rebound; AMD corroborates PC weakness; deal terms unseen; Drift unchanged
+- **2026-11-05 (post-open)** — 📰 BRIEF | MATERIAL — weak Q4 guide + PC slump vs Oracle deal; Drift unchanged

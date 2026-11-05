@@ -76,6 +76,9 @@
 - **2026-10-23 (end-of-day)** — PANW launches Cortex XDR One for AI agents (SecurityBrief); Citigroup raises PT to $440 from $410 (AD HOC NEWS); Seeking Alpha bear note on 'real' growth (~15%) at 84x earnings.
   **Why it matters:** Agent-security product supports the platform-consolidation leg; valuation/growth-quality bear case is opinion, not a thesis fact.
 
+- **2026-11-05** — Reported in talks to acquire Israeli startup Clutch Security for ~$500M (CTech, GuruFocus); unconfirmed.
+  **Why it matters:** Platform-consolidation leg: another tuck-in extends NGS surface if confirmed; not yet announced.
+
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
 
@@ -133,3 +136,4 @@
 - **2026-10-29 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Fortinet guide cut sold off security peers (PANW -5%); proxy filings 10-27; read-through only; Drift unchanged
 - **2026-10-30 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Fortinet guide cut spooked peers (-5%) but PANW +14% on the week after CEO AI-risk warning; DEF 14A/ARS routine proxy filings; Drift unchanged
 - **2026-11-02** — Guardz partnership (Prisma Browser into SMB security) and a unified SaaS cloud-security launch. **Why it matters:** platform consolidation and cross-sell leg; small.
+- **2026-11-05 (post-open)** — 📰 BRIEF | MATERIAL (low) — Clutch Security ~$500M talks (unconfirmed); Drift unchanged

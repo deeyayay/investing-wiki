@@ -45,6 +45,9 @@
 ---
 - **2026-10-19** — 8-K/A item 5.02 (10-15) CFO transition; MoneyWeek 'investors will sour on AI-insurer Lemonade' (SEC EDGAR / MoneyWeek) — CFO handoff during run to Q4 EBITDA target; filing unread; commentary is opinion
 
+- **2026-11-05** — Q3 results (8-K 2.02, 11-05): reported loss, beat revenue estimates; shares rise on upbeat Q4 outlook.
+  **Why it matters:** The test of the Q4 positive-EBITDA leg and the loss-ratio watch item; headline-level only, 8-K unread.
+
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
 
@@ -94,3 +97,4 @@
 - **2026-10-16 (post-open)** — 📰 BRIEF | MATERIAL — headlines explain 10-15 8-K/A (5.02): Nick Stead appointed CFO, Tim Bixby moves to board; filing itself unread; CFO handoff during run to Q4 EBITDA target is a watch item; Drift unchanged
 - **2026-10-19 (post-open)** — 📰 BRIEF | MATERIAL — 8-K/A 5.02 still unread; bearish opinion piece only; Drift unchanged
 - **2026-10-30 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — stock at 52-week low ($42.65); options imply ~14% move on 11-05 earnings; no thesis fact; Drift unchanged — watch Q3 loss ratio
+- **2026-11-05 (post-open)** — 📰 BRIEF | MATERIAL — Q3 8-K 2.02 + upbeat Q4 outlook; Drift unchanged — /dig --filings-only LMND to verify EBITDA guide
