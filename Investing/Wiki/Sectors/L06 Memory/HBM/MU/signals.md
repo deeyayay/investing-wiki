@@ -168,6 +168,7 @@
 
 - **2026-11-05** — HBM prices seen up 121% as buyers shift to SK Hynix 8-Hi; SK Hynix leads HBM4 yield at 60%; Samsung Taylor HBM plant tied to AMD/Nvidia orders.
   **Why it matters:** Pricing confirms the HBM tailwind but SK Hynix yield lead and Samsung US capacity pressure the 'only US-domiciled / on every NVDA GPU' legs; the watch item stays open.
+- **2026-11-06 (end-of-day)** — MU -11.8% on 11-05 as the $61.5B guidance comes under scrutiny (TradingView); 8-K items 5.02 + 9.01 filed 11-05 (officer/director change; contents unread) [SEC](https://www.sec.gov/Archives/edgar/data/723125/000110465926123389/0001104659-26-123389-index.htm). So-what: second straight memory leg down despite the beat; an unread 5.02 is worth a look.
 
 ## Social Mentions
 
@@ -265,3 +266,4 @@
 - **2026-11-03 (post-open)** — 📰 BRIEF | MATERIAL — GlobalWafers issues NT$16B private convertible to Micron under a 10-year supply agreement (BigGo): long-term wafer-supply lock; separately Samsung reportedly to make AMD/Nvidia HBM at a second Texas fab. **Why it matters:** supply lock supports the ramp, but US-based Samsung HBM erodes the 'only US-domiciled HBM supplier' leg if confirmed; unconfirmed, Drift unchanged — /dig MU
 - **2026-11-04 (post-open)** — 📰 BRIEF | MATERIAL — GlobalWafers board approves Micron convertible (up to $500M); supply lock firmer; Drift unchanged
 - **2026-11-05 (post-open)** — 📰 BRIEF | MATERIAL — HBM competition (SK Hynix 60% HBM4 yield, Samsung Taylor); Drift unchanged — /dig MU
+- **2026-11-06 (end-of-day)** — 📰 BRIEF | MATERIAL — 8-K 5.02 filed 11-05 (executive/director change, unread); shares -11.8% in the memory sell-off. **Why it matters:** price action is the only new fact on the thesis; the 5.02 could be routine or not. Drift unchanged — /dig MU --filings-only

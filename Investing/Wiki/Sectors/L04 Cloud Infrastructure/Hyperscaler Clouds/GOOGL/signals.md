@@ -71,6 +71,7 @@
 - **2026-10-27 (post-open)** — Anthropic IPO filing — Alphabet an early backer (Barron's); securities-fraud lawsuit solicitations recur (PR Newswire, deadline Dec 1); Barron's compares Meta's $95B equity deal to Alphabet's own offering.
 
 - **2026-10-28 (end-of-day)** — Q3 earnings 8-K (items 2.02/9.01, SEC EDGAR): headlines (CNBC, Yahoo, IBD, Investing.com) say revenue missed, search growth slowed, Cloud "boomed"; stock -8.5% after hours. Cloud leg reads intact; the sell-off is search/revenue. Cloud growth rate and backlog unverified at headline level.
+- **2026-11-06 (end-of-day)** — 8-K items 8.01 + 9.01 filed 11-05 (other events; contents unread) [SEC](https://www.sec.gov/Archives/edgar/data/1652044/000119312526449835/0001193125-26-449835-index.htm); 24/7 Wall St: worst day since 2004 IPO, ~half a trillion in value lost; securities class-action solicitations continue. So-what: a third filing in four days alongside the offerings, likely tied to the raise.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -131,3 +132,4 @@
 - **2026-11-02 (end-of-day)** — 📰 BRIEF | MATERIAL — SEC: FWP and 424B5 filed 11-02; Barron's: convertible preferred yielding over 7.5%; Yahoo: stock 'plummets after earnings'. **Why it matters:** a capital raise alongside a $180-190B capex plan; size and terms unread — /dig GOOGL --filings-only.
 - **2026-11-03 (post-open)** — 📰 BRIEF | MATERIAL (low) — FWP and 424B5 prospectus filed 11-02 (a securities offering; terms unread); class-action solicitation noise. Drift unchanged — /dig GOOGL --filings-only
 - **2026-11-05 (end-of-day)** — 📰 BRIEF | MATERIAL — SEC: 424B2 prospectus filed 11-04 (another securities offering after the 11-02 FWP/424B5; terms unread); MarketWatch: Big Tech issuing more shares dilutes holders. **Why it matters:** repeated capital raising alongside a $180-190B capex plan is a financing-intensity watch item. Drift unchanged — /dig GOOGL --filings-only
+- **2026-11-06 (end-of-day)** — 📰 BRIEF | MATERIAL — 8-K 8.01 filed 11-05 (unread) after the 11-02/11-04 offerings; stock had its worst day since IPO. **Why it matters:** financing-intensity watch is now a pattern, and the market is repricing it. Drift unchanged — /dig GOOGL --filings-only (now overdue)
