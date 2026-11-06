@@ -170,6 +170,9 @@
   **Why it matters:** Pricing confirms the HBM tailwind but SK Hynix yield lead and Samsung US capacity pressure the 'only US-domiciled / on every NVDA GPU' legs; the watch item stays open.
 - **2026-11-06 (end-of-day)** — MU -11.8% on 11-05 as the $61.5B guidance comes under scrutiny (TradingView); 8-K items 5.02 + 9.01 filed 11-05 (officer/director change; contents unread) [SEC](https://www.sec.gov/Archives/edgar/data/723125/000110465926123389/0001104659-26-123389-index.htm). So-what: second straight memory leg down despite the beat; an unread 5.02 is worth a look.
 
+- **2026-11-06 (post-open)** — Micron pauses work on its $4.5B Taiwan plant after a labor dispute (Bloomberg); board shrinks as Taoyuan talks put Taiwan capacity plans on the line (ad-hoc-news).
+  **Why it matters:** a delayed Taiwan build could limit future HBM/DRAM capacity adds, though the CY2026 supply is already contracted; paired with the unread 5.02 board change. Headline-level, unconfirmed — /dig MU --filings-only.
+
 ## Social Mentions
 
 | Date | Signal | Source |
@@ -267,3 +270,4 @@
 - **2026-11-04 (post-open)** — 📰 BRIEF | MATERIAL — GlobalWafers board approves Micron convertible (up to $500M); supply lock firmer; Drift unchanged
 - **2026-11-05 (post-open)** — 📰 BRIEF | MATERIAL — HBM competition (SK Hynix 60% HBM4 yield, Samsung Taylor); Drift unchanged — /dig MU
 - **2026-11-06 (end-of-day)** — 📰 BRIEF | MATERIAL — 8-K 5.02 filed 11-05 (executive/director change, unread); shares -11.8% in the memory sell-off. **Why it matters:** price action is the only new fact on the thesis; the 5.02 could be routine or not. Drift unchanged — /dig MU --filings-only
+- **2026-11-06 (post-open)** — 📰 BRIEF | MATERIAL — $4.5B Taiwan plant paused over labor dispute; board shrinks (5.02 unread). Capacity-timing watch item; Drift unchanged — /dig MU --filings-only

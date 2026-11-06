@@ -42,6 +42,9 @@
 - **2026-10-27** — TD Cowen cuts Arista price target to $205 (ad-hoc-news.de) — Analyst cut with no stated reasoning in headline; Ethernet-share leg unchanged.
 - **2026-10-28 (post-open)** — Meta taps Arista and Broadcom Jericho3 for Prometheus supercluster (SDxCentral); Q3 earnings preview pieces. — Hyperscaler AI-Ethernet leg confirmed by named deployment; headline-level.
 
+- **2026-11-06 (post-open)** — Arista Q3 beat, but CEO sees no material scale-up Ethernet revenue next year (Tech Times); ANET -10% on 11-05 with Cisco -7% and Ciena -15% after a Morgan Stanley downgrade (24/7 Wall St.); MS keeps ANET Buy, PT $230 (Moomoo).
+  **Why it matters:** the scale-up Ethernet extension of the 'Ethernet displaces proprietary fabrics' leg is pushed out beyond 2027, while the scale-out core is intact; the -10% looks sector-driven. Headline-level.
+
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
 
@@ -96,3 +99,4 @@
 | 2026-10-28 (post-open) | 📰 BRIEF | MATERIAL — Meta Prometheus supercluster uses Arista; Drift unchanged |
 - **2026-10-30 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — earnings imminent: ad-hoc-news 'earnings test after guidance boost'; recycled Fortune transcript pages; no new fact; Drift unchanged
 - **2026-11-03 (end-of-day)** — 📰 BRIEF | THESIS — Arista Q3: revenue +58% YoY, beat and above-consensus Q4 guide, after-hours pop (Benzinga/ChartMill/Yahoo); one Yahoo piece frames Q4 growth as slowing. **Why it matters:** hyperscaler AI-Ethernet demand leg confirmed by headline; the decelerating-growth framing is the margin/growth watch item. No 8-K in digest.
+- **2026-11-06 (post-open)** — 📰 BRIEF | MATERIAL — CEO: no material scale-up Ethernet revenue next year; ANET -10% in sector rout. Scale-up timing leg softer, core intact; Drift unchanged
