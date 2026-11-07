@@ -115,3 +115,4 @@
 - **2026-10-30 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — MarketWatch/24-7: AMD -10% in Intel-print sell-off (Intel 'two big issues': PC weakness); Meta tie-up framed as beyond $1B; data-center thesis untouched; Drift unchanged
 - **2026-11-03 (end-of-day)** — 📰 BRIEF | THESIS — AMD Q3 2026: 8-K items 2.02/7.01 filed 11-03 (unread); StreetInsider/ChartMill/Proactive: data-center revenue nearly doubled, EPS +15c beat, Q4 guide above consensus. **Why it matters:** first primary-source print since the Meta tie-up; supports the data-center share-capture leg — figures unverified until /dig reads the 8-K.
 - **2026-11-04 (post-open)** — 📰 BRIEF | MATERIAL — 10-Q filed (unread); 2027 PC decline warning; Korea AI-chip partnership; Drift unchanged
+- **2026-11-07 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — 8-K 2.02 (11-03) and 10-Q (11-04) filed; earnings beat, stock +5% premarket 11-06; DBS Buy, PT $570. Filings unread. Drift unchanged

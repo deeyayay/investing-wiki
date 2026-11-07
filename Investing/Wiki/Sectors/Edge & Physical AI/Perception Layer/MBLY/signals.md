@@ -69,3 +69,4 @@ _None yet — seeded on onboarding._
 | 2026-10-28 (end-of-day) | 📰 BRIEF | MATERIAL — 8-K 8.01 + 13D/A; contents unread, /dig --filings-only MBLY |
 - **2026-10-29 (end-of-day)** — 📰 BRIEF | MATERIAL — 8-K (8.01/9.01) 10-28; Q3 FY26 guidance raised on EyeQ/SuperVision strength though stock slid; supports thesis; thesis newly onboarded, Drift unchanged
 - **2026-11-02** | 8-K (2.02) and 10-Q filed; Barclays cuts PT to $7, JPM to $7.5 (both Hold/Equal-Weight) | SEC / TradingView | Q3 print drew PT cuts; filings unread, thesis still 'New' — /dig MBLY.
+- **2026-11-07 (end-of-day)** — 📰 BRIEF | MATERIAL — Simply Wall St says Mobileye lifted guidance after earnings (11-07). Secondary source only; no 8-K in the digest. Drift status is 'New' and the thesis is unvalidated — /dig MBLY

@@ -98,3 +98,4 @@
 - **2026-10-19 (post-open)** — 📰 BRIEF | MATERIAL — 8-K/A 5.02 still unread; bearish opinion piece only; Drift unchanged
 - **2026-10-30 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — stock at 52-week low ($42.65); options imply ~14% move on 11-05 earnings; no thesis fact; Drift unchanged — watch Q3 loss ratio
 - **2026-11-05 (post-open)** — 📰 BRIEF | MATERIAL — Q3 8-K 2.02 + upbeat Q4 outlook; Drift unchanged — /dig --filings-only LMND to verify EBITDA guide
+- **2026-11-07 (end-of-day)** — 📰 BRIEF | MATERIAL — 10-Q filed 11-05 and an S-3ASR automatic shelf filed 11-06 (unread). A shelf from a well-known seasoned issuer is a dilution option just as the Q4 EBITDA leg gets tested; stock fell ~8% on earnings day. Drift unchanged — /dig LMND --filings-only

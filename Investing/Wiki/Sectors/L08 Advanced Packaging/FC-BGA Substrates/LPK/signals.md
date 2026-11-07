@@ -135,3 +135,4 @@
 - **2026-10-01 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged — MATERIAL — insider buy + Buy reiterated post guidance cut
 - **2026-10-22 (post-open)** — 📰 BRIEF | MATERIAL — AD HOC NEWS: "LPKF cuts 2026 guidance", stock -3.5%. Unclear if a second cut or a recirculation of the 09-30 cut (headline-level, no filing seen); would deepen the Drifting flag — /dig LPK to size. Drift unchanged
 - **2026-10-29 (end-of-day)** — 📰 BRIEF | MATERIAL — Q3: FY2026 outlook cut again; glass-packaging ramp pushed to 2027; consistent with Drifting status; Drift unchanged — /dig
+- **2026-11-07 (end-of-day)** — 📰 BRIEF | MATERIAL — TipRanks on the earnings call: 'painful reset, strategic progress'. This is consistent with the 10-29 outlook cut and the glass-packaging ramp slipping to 2027. Drift unchanged (Drifting) — /dig LPK
