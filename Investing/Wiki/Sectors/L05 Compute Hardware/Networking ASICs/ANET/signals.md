@@ -100,3 +100,4 @@
 - **2026-10-30 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — earnings imminent: ad-hoc-news 'earnings test after guidance boost'; recycled Fortune transcript pages; no new fact; Drift unchanged
 - **2026-11-03 (end-of-day)** — 📰 BRIEF | THESIS — Arista Q3: revenue +58% YoY, beat and above-consensus Q4 guide, after-hours pop (Benzinga/ChartMill/Yahoo); one Yahoo piece frames Q4 growth as slowing. **Why it matters:** hyperscaler AI-Ethernet demand leg confirmed by headline; the decelerating-growth framing is the margin/growth watch item. No 8-K in digest.
 - **2026-11-06 (post-open)** — 📰 BRIEF | MATERIAL — CEO: no material scale-up Ethernet revenue next year; ANET -10% in sector rout. Scale-up timing leg softer, core intact; Drift unchanged
+- **2026-11-10 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — UBS Buy, Bernstein PT $270, shares +9.2%. **Why it matters:** post-earnings analyst follow-through; no new fact. Drift unchanged.

@@ -148,3 +148,4 @@
 - **2026-11-05 (post-open)** — 📰 BRIEF | MATERIAL — Lumentum deal repricing, dilution; Drift unchanged — /dig --filings-only MRVL
 - **2026-11-07 (end-of-day)** — 📰 BRIEF | MATERIAL — Lumentum deal coverage continues: $115B all-stock, ~14% slide, analyst PT halved, 1 Dec shareholder event. No new fact beyond 11-05. Drift unchanged — /dig --filings-only MRVL
 - **2026-11-09 (post-open)** — 📰 BRIEF | MATERIAL (low) — ad-hoc-news: Lumentum acquisition raises dilution questions; Kalkine: data-center demand lifts earnings but gross margin under pressure. **Why it matters:** the optical roll-up is the open question on the custom-ASIC/interconnect leg; commentary, no primary source. Drift unchanged
+- **2026-11-10 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Lumentum dilution and 'meltdown' framing continues (ad-hoc-news, Foreign Policy Journal); stock rebounded 6.2%. **Why it matters:** no new fact beyond the 11-05 deal. Drift unchanged.

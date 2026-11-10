@@ -117,3 +117,4 @@
 - **2026-11-04 (post-open)** — 📰 BRIEF | MATERIAL — 10-Q filed (unread); 2027 PC decline warning; Korea AI-chip partnership; Drift unchanged
 - **2026-11-07 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — 8-K 2.02 (11-03) and 10-Q (11-04) filed; earnings beat, stock +5% premarket 11-06; DBS Buy, PT $570. Filings unread. Drift unchanged
 - **2026-11-09 (post-open)** — 📰 BRIEF | MATERIAL — Oppenheimer upgrades to Outperform, PT $600 (TradingView, Quantisnow). **Why it matters:** analyst action following the Q3 data-center beat supports the share-capture leg; sell-side, not a company fact. Drift unchanged
+- **2026-11-10 (end-of-day)** — 📰 BRIEF | MATERIAL — stock +8% on Oppenheimer upgrade and Google Cloud chip selection (Globe and Mail); heavy call activity. **Why it matters:** Google Cloud selection, if confirmed, supports the data-center share-gain leg; unverified from headlines. Drift unchanged.
