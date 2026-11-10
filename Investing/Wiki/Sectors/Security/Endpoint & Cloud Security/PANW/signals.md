@@ -139,3 +139,4 @@
 - **2026-11-05 (post-open)** — 📰 BRIEF | MATERIAL (low) — Clutch Security ~$500M talks (unconfirmed); Drift unchanged
 - **2026-11-07 (end-of-day)** — 📰 BRIEF | MATERIAL — Clutch Security deal is now reported as a ~$500M acquisition (11-05 headlines said talks); CaixaBank AI-security partnership extended to 2030. Fits the platform-consolidation leg; no company confirmation seen. Drift unchanged
 - **2026-11-10 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Clutch Security (~$500M) re-reported as talks (AI Insider); Barclays Buy, PT $375. **Why it matters:** status unchanged since 11-07 coverage; Drift unchanged.
+- **2026-11-10 (post-open)** — 📰 BRIEF | MATERIAL — reported talks to buy AI-agent security startup Clutch Security for ~$500M (AI Insider, SDxCentral); earnings approaching on a 'narrow EPS bar'. **Why it matters:** another tuck-in on the platform-consolidation leg; unconfirmed. Drift unchanged

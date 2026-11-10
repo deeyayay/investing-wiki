@@ -192,3 +192,4 @@
 - **2026-11-02 (post-open)** — 📰 BRIEF | MATERIAL (THESIS) — Q4-guide selloff -28.6%, partial pre-market bounce; filings unread; /dig queued
 - **2026-11-04 (post-open)** — 📰 BRIEF | MATERIAL (THESIS-adjacent) — Oracle deal signed, shares rebound; AMD corroborates PC weakness; deal terms unseen; Drift unchanged
 - **2026-11-05 (post-open)** — 📰 BRIEF | MATERIAL — weak Q4 guide + PC slump vs Oracle deal; Drift unchanged
+- **2026-11-10 (post-open)** — 📰 BRIEF | MATERIAL (low) — -2% pre-market with chips on the Nvidia CEO row; ad-hoc-news frames the Oracle cloud pact as the 'concrete yardstick' ahead of Q4 guidance. No new fact; Drift unchanged
