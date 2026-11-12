@@ -31,6 +31,7 @@ _Not yet scored — run `/score-ticker AVAV`._
 | 2026-09-02/03 | $465M Army contract for laser weapons | ↑ Strengthened | Converts the 08-30 CUAS laser test demo into a funded program — directed energy is now a confirmed, funded revenue leg of the post-BlueHalo platform, not just a capability demo; largest single order logged to date. |
 | 2026-09-04 | 100% tariff on drone imports takes effect | ↑ Strengthened | Resolves the 08-31 ambiguous-impact flag bullish — a tariff wall against cheap foreign drone imports protects AVAV's domestic-supplier position rather than raising its own import costs. |
 | 2026-09-09 | Q1 FY2027 earnings: EPS beats by $0.29, revenue misses estimates | → Neutral | Mixed print — margin/EPS strength alongside a top-line miss, no segment detail yet at headline level. Order-flow (Switchblade) and directed-energy ($465M laser contract) legs are unaffected by a revenue-line miss alone; not enough to move drift off "strengthening." |
+| 2026-11-12 | $405M Middle East laser-defense order; Raymond James Outperform | ↑ Strengthened | A second funded directed-energy program, and the first export customer at scale, shows the laser leg repeating beyond the Army contract. |
 
 ## Cross-Ticker Signals
 

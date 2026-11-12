@@ -108,3 +108,4 @@
 - **2026-10-20 (post-open)** — 📰 BRIEF | MATERIAL (low) — SEC EFFECT notice (10-19): a registration statement declared effective, form not named in metadata (likely follows the 10-08 POS AM; shelf/resale supply overhang, dilution watch). Neocloud-stress tape from last night's Nscale news unchanged; no new BRUN-specific fact; Drift unchanged
 - **2026-10-27 (end-of-day)** — 📰 BRIEF | MATERIAL — Boost Run converts backlog to recurring revenue as deployments go live; Drift unchanged
 - **2026-10-30 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — MarketBeat: BRUN gapped down, -9% on 10-29; no company news found; backlog leg untouched; Drift unchanged
+- **2026-11-12 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — FMR trims its BRUN stake 7.72% per a 13G amendment (GuruFocus); Q3 earnings previewed as upcoming. **Why it matters:** a passive-holder trim, not a company fact; watch the Q3 print for backlog conversion. Drift unchanged.
