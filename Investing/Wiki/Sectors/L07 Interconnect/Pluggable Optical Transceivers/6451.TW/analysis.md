@@ -12,8 +12,8 @@ Foxconn's precision optical packaging arm — positioned to capture a structural
 ## Investment Thesis
 
 > **Thesis established:** 2026-05-31
-> **Last validated:** 2026-06-18
-> **Drift status:** On track, accelerating — CPO TAM $164M→$91B (Goldman Sachs, 2026–2028); FY2025 revenue +45% YoY confirms ramp; net margin collapse to 0.4% is expected trough before CPO economics kick in
+> **Last validated:** 2026-11-13
+> **Drift status:** Drifting — 11-13: revenue and profit reported to have fallen sharply with margin pressure and a planned bond issue (TradingView, headline-level; /dig to size). Prior: On track, accelerating — CPO TAM $164M→$91B (Goldman Sachs, 2026–2028); FY2025 revenue +45% YoY confirms ramp; net margin collapse to 0.4% is expected trough before CPO economics kick in
 
 ShunSin Technology is the optical packaging and assembly arm of the Foxconn industrial ecosystem, listed on the Taiwan Stock Exchange. FY 2025 revenue was NT$7.53B (+45% YoY, ~USD$232M), with net income collapsing to NT$27.5M (-36%) as margin compression hit 0.4% net — a classic transition-year pattern where volume ramps ahead of pricing power. Analysts project 1,240% EPS growth for 2026 as CPO manufacturing economics normalize.
 
@@ -67,6 +67,7 @@ _Evaluated: 2026-06-18_
 | 2026-05-05 | FY2025: Revenue NT$7.53B (+45% YoY); net margin collapses to 0.4% | ↑ | Volume ramp confirmed; margin trough is expected CPO transition pattern; 1,240% EPS growth forecast for 2026 signals inflection ahead |
 | 2026-02-28 | Goldman Sachs CPO TAM: $164M (2026) → $91B (2028); TSMC COUPE enters mass production | ↑ | 55× TAM expansion in 2 years with foundry enablement confirmed; ShunSin is directly upstream of COUPE integration layer |
 | 2026-08-31 | TSMC exec confirms silicon photonics >50% of transceiver market by 2027, CPO mass production starts H2 2026 | ↑ | Foundry-level public timeline is a harder confirmation than the prior TAM projection — ShunSin sits directly upstream of TSMC's CPO ramp |
+| 2026-11-13 | TradingView: revenue and profit fell sharply; margin pressure; new bond issuance planned | ↓ | Contradicts the revenue-ramp evidence the thesis leaned on and extends the margin trough it called temporary. Single secondary headline, no figures — /dig to size. |
 
 ---
 

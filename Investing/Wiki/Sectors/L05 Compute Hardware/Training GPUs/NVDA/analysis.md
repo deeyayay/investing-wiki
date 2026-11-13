@@ -12,8 +12,8 @@ The dominant AI compute platform company; GPU monopoly in model training and inf
 ## Investment Thesis
 
 > **Thesis established:** 2026-05-07
-> **Last validated:** 2026-05-14
-> **Drift status:** On track — Blackwell demand intact; IREN $2.1B investment signals hyperscaler-level AI capex commitment
+> **Last validated:** 2026-11-13
+> **Drift status:** Drifting — 11-13: headlines report CEO Huang's resignation, matching the 11-12 8-K item 5.02 (unread); successor and terms unknown, FQ3 print 17 Nov. Leadership risk, not a demand fact — /dig NVDA --filings-only to confirm. Prior: On track — Blackwell demand intact; IREN $2.1B investment signals hyperscaler-level AI capex commitment
 
 NVIDIA is the picks-and-shovels king of the AI era. Every major hyperscaler (Microsoft, Google, Amazon, Meta), every frontier AI lab (OpenAI, Anthropic, xAI), and every sovereign AI initiative is building on NVIDIA GPUs. The hardware lead (H100, H200, Blackwell) is real but arguably secondary to the true moat: CUDA. CUDA is a parallel computing platform with 15+ years of developer adoption, optimized libraries, and tooling that the entire AI software stack is built on top of. Switching to AMD, Intel, or custom silicon requires rewriting years of optimized code — an enormous barrier. The thesis is that AI capex supercycle spending continues at scale for years, NVIDIA captures an outsized share of that spend, and the software/platform layer (NIM microservices, NEMO, DGX Cloud) compounds margins over time.
 
@@ -62,6 +62,7 @@ _Last scored: 2026-05-22 | [[Scoring Rubric]]_
 | 2026-09-16 (evening) | OpenAI CFO reportedly says Nvidia "no longer the only option" for AI compute | ↓ Watch | First switching-cost pushback sourced to NVIDIA's own largest customer rather than a competitor; headline-level only, no contract or dollar figure — not enough to move drift, flagged for /dig |
 | 2026-10-12 | Earnings beat; $150B buyback reported; Reflection AI talks | ↑ Strengthened | Headline-level confirmation of Blackwell demand and capital return; circular-financing and tariff risks persist. Buyback figure from GuruFocus, unverified against 8-K. |
 | 2026-10-27 | NVDA commits $3B to Meta share offering; Muse partnership expands | → Mixed | Confirms hyperscaler demand and ecosystem pull, but vendor-funded customer capex deepens the circular-financing watch. Drift unchanged. |
+| 2026-11-13 | CEO Jensen Huang resigns (headlines); 8-K item 5.02 filed 11-12, unread | ↓ | Founder-CEO exit amid a board investigation, DOJ probe and shareholder suit. Demand and CUDA legs are untouched by any fact, but leadership and the relationship-driven ecosystem strategy are now open questions ahead of the 17 Nov print. Headline-level on who and why — /dig to read the 8-K. |
 
 ---
 
