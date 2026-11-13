@@ -79,3 +79,4 @@ _None yet — seeded on onboarding._
 | 2026-10-20 (end-of-day) | 📰 BRIEF | MATERIAL — 8-Ks 1.01/1.02 + 2.02 (10-16) still unread after 3 passes; /dig --filings-only NB still queued |
 | 2026-10-21 (end-of-day) | 📰 BRIEF | MATERIAL (low) — Texas Capital initiates Buy; Energy Sec. Wright/EXIM leaders tour Elk Creek; EXIM 65% target restated (supports financing-gated leg); 8-Ks 1.01/1.02 + 2.02 still unread, /dig --filings-only NB queued |
 - **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged
+- **2026-11-13 (post-open)** — 📰 BRIEF | MATERIAL (low) — EXIM publishes 'Factory Floor Fridays: Chairman Jovanovic Tours NioCorp's Elk Creek Mine' (EXIM.gov, 11-13). **Why it matters:** the lender behind the gating ~$780M financing is publicly promoting the project, after the 10-21 letter of support; still no loan commitment. Drift unchanged. 5 items triaged, 1 logged; the other 4 are quote pages for other companies.
