@@ -77,6 +77,9 @@
 - **2026-11-04 (post-open)** — Kioxia -13% at the Tokyo open, SoftBank -7% in a broad 'blue wave' sell-off (Yahoo Finance, Investing.com); Smartkarma: 'weakest hand sold hardest'; ad-hoc-news frames SanDisk's NAND deceleration as pricing, not profit.
   **Why it matters:** Headline and tape agree, but the move is market-wide and follows the 11-02 guide miss; no new operating fact. /dig 285A.T still open.
 
+- **2026-11-16 (post-open)** — Kioxia falls below ¥8,500, down more than 70% from its post-IPO high; BigGo calls Nvidia's earnings the 'bottom-line inflection point'. Simply Wall St says Entegris's Kioxia partnership is expanding, with no terms given.
+  **Why it matters:** the decline is still tape driven and tied to NVDA; there is no new operating fact. The Entegris item is a small supplier-side positive. Drift unchanged; /dig 285A.T still open.
+
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
 
@@ -150,3 +153,4 @@
 - **2026-11-11 (post-open)** — 📰 BRIEF | MATERIAL (low) — YMTC targets a Shanghai IPO in early 2027 as the memory shortage persists (Startup Fortune); Kitakami ships new NAND samples (ad-hoc-news); Nikkei +500 as AI-investment fears ease; ORIX's call flags 'rising Kioxia risk' (TipRanks). **Why it matters:** a funded Chinese NAND challenger is the NAND analogue of the 11-09 CXMT item on MU, long-dated pressure on the pricing leg. The guide-miss overhang and the /dig remain. Drift unchanged.
 - **2026-11-13 (end-of-day)** — 📰 BRIEF | MATERIAL — 'Earnings strength meets a skeptical market as guidance and Toshiba sales weigh' (ad-hoc-news, 11-12); shares slip as profit-taking hits Japanese chip names. **Why it matters:** two overhangs in one headline — the guide-miss already logged, and Toshiba selling down its stake, which is a supply-of-stock issue rather than a NAND-demand one. No figures. Drift unchanged; both belong in the standing /dig 285A.T.
 - **2026-11-14 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — 'Kioxia's Dell rack and Iwate merger face the same verdict: show us the earnings' (ad-hoc-news, 11-13). This is the first mention of a Dell rack tie-in. The Iwate merger and the guidance letdown are already logged. **Why it matters:** a Dell rack design-in would be a direct AI-storage channel for the demand leg, but the only source is a low-credibility aggregator and it gives no terms. Drift unchanged; folded into the standing /dig 285A.T. 5 items triaged, 1 logged.
+- **2026-11-16 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (−70% from high; Entegris partnership, low).

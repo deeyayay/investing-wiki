@@ -173,6 +173,9 @@
 - **2026-11-06 (post-open)** — Micron pauses work on its $4.5B Taiwan plant after a labor dispute (Bloomberg); board shrinks as Taoyuan talks put Taiwan capacity plans on the line (ad-hoc-news).
   **Why it matters:** a delayed Taiwan build could limit future HBM/DRAM capacity adds, though the CY2026 supply is already contracted; paired with the unread 5.02 board change. Headline-level, unconfirmed — /dig MU --filings-only.
 
+- **2026-11-16 (post-open)** — A judge allows the DRAM price-fixing class action against Samsung, Micron and SK hynix to proceed (Dataconomy). MU is down 6.4% pre-market with heavy put activity (Moomoo), and TradingView ties the Micron and SanDisk drop to positioning before Nvidia's earnings.
+  **Why it matters:** the headline and the tape point the same way. The lawsuit is new legal exposure, but it is a claim and not a demand fact. The selloff tracks the NVDA-print risk across memory. The Taiwan HBM plant 'pause' in the hbm-supply topic repeats the 11-06 labor-dispute item and is not new. Drift unchanged.
+
 ## Social Mentions
 
 | Date | Signal | Source |
@@ -279,3 +282,4 @@
 - **2026-11-12 (post-open)** — 📰 BRIEF | MATERIAL — MU -5.1% pre-market with heavy put activity (Moomoo), giving back part of yesterday's +10–12%. Hbm-supply topic: Samsung reportedly plans a KRW 46T, five-line Onyang HBM hub and pulls operations forward a year to 2028; Samsung lifts its Chungcheong chip plan to $98B 'as the HBM race heats up'. **Why it matters:** Samsung capacity arriving a year early adds to the 70% SK hynix yield logged last night. The competitive-supply side of the HBM leg moved twice in a day, and the tape faded with it, so headline and opening move point the same way (down). Drift unchanged; belongs in the open /dig MU HBM-competition item.
 - **2026-11-13 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — hbm-supply topic: Sen. Cotton urges Commerce Secretary Lutnick to ban Chinese memory maker CXMT from the US (CNBC); 'Micron drops 5% amid Nvidia CEO resignation fallout' (Crypto Briefing) puts a cause on this morning's pre-market drop. **Why it matters:** a CXMT ban would protect the US-domiciled leg against the 11-09 CXMT item; it is a senator's letter, not a rule. The Samsung Onyang hub was logged this morning. Drift unchanged.
 - **2026-11-13 (post-open)** — 📰 BRIEF | MATERIAL (low) — hbm-supply topic: the Korea Herald says Huang's exit could give Korean HBM makers more leverage over Nvidia; SK hynix and Solidigm pitch AI memory 'beyond HBM' at the OCP Global Summit. **Why it matters:** more supplier leverage on HBM terms would help Micron as much as the Korean makers, but it is one outlet's speculation, not a pricing fact. Other MU items repeat last night's -5% story. Drift unchanged. 5 items triaged, 1 logged.
+- **2026-11-16 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (DRAM price-fixing suit proceeds; -6.4% pre-market). Taiwan plant pause is a repeat of 11-06.
