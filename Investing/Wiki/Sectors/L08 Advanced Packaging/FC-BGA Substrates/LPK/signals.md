@@ -55,6 +55,9 @@
 ### 2026-10-01 — Insider purchase after guidance cut
 - **2026-10-01** — Insider/PDMR share purchase by Dr. Klaus Fiedler; Warburg Research reiterates Buy after the guidance cut (TradingView / MarketScreener). Insider buying and a held Buy after the 09-30 guidance cut is a modest counterweight to the Drifting flag; the financing-need question stays open.
 
+- **2026-11-17 (post-open)** — LPKF receives a further order for production equipment in advanced packaging (EQS-News, MarketScreener). Customer, value and product line are not in the headlines.
+  **Why it matters:** this is the first booked advanced-packaging order since the 10-29 outlook cut pushed the glass ramp to 2027. It is a small counterweight to Drifting, but a 'further' order may be LIDE R&D or pilot tools rather than HVM. Drift unchanged (Drifting).
+
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
 
@@ -136,3 +139,4 @@
 - **2026-10-22 (post-open)** — 📰 BRIEF | MATERIAL — AD HOC NEWS: "LPKF cuts 2026 guidance", stock -3.5%. Unclear if a second cut or a recirculation of the 09-30 cut (headline-level, no filing seen); would deepen the Drifting flag — /dig LPK to size. Drift unchanged
 - **2026-10-29 (end-of-day)** — 📰 BRIEF | MATERIAL — Q3: FY2026 outlook cut again; glass-packaging ramp pushed to 2027; consistent with Drifting status; Drift unchanged — /dig
 - **2026-11-07 (end-of-day)** — 📰 BRIEF | MATERIAL — TipRanks on the earnings call: 'painful reset, strategic progress'. This is consistent with the 10-29 outlook cut and the glass-packaging ramp slipping to 2027. Drift unchanged (Drifting) — /dig LPK
+- **2026-11-17 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (further advanced-packaging equipment order); Drift unchanged (Drifting)

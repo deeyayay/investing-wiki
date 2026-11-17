@@ -74,6 +74,9 @@
 
 - **2026-10-27 (post-open)** — Anthropic publicly files for IPO; Amazon and Alphabet are early backers betting more (Benzinga / Barron's). Mark-up and capital-return optionality on the stake; Mizuho reiterates Outperform $330, Morgan Stanley PT $350; Q3 call 10-29.
 
+- **2026-11-17 (post-open)** — Amazon falls on the new US AI-chip export rule and an Amazon Leo satellite launch failure (Motley Fool, 11-16). Anthropic's IPO lands this week, which marks the value of Amazon's stake (Benzinga).
+  **Why it matters:** the export rule bears on Trainium and AWS-region sales abroad, though its scope isn't in the headline. The Leo failure is a setback for the satellite unit, not the AWS thesis. Drift unchanged.
+
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
 
@@ -135,3 +138,4 @@
 - **2026-10-29 (end-of-day)** — 📰 BRIEF | MATERIAL — Q3 8-K (2.02): stock slid on capex/sales guide overshadowing accelerating AWS growth; Investing.com says EPS/revenue missed (unverified); capex-intensity watch, AWS growth leg intact; Drift unchanged — /dig for AWS growth vs capex
 - **2026-10-30 (post-open)** — 📰 BRIEF | MATERIAL (low) — 10-Q filed 10-30 (unread); capex/AWS read per 10-29 entry stands; Drift unchanged — /dig AMZN --filings-only if capex detail needed
 - **2026-11-02 (end-of-day)** — 📰 BRIEF | MATERIAL — 10-Q filed 10-30 (unread); headlines split between Q3 'miss' slip and AWS-driven Phillip Securities upgrade ($330 PT). **Why it matters:** AWS growth leg looks intact; the mixed tape needs the filing.
+- **2026-11-17 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (export rule + Leo launch failure); Drift unchanged

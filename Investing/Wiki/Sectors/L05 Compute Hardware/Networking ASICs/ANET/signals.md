@@ -45,6 +45,9 @@
 - **2026-11-06 (post-open)** — Arista Q3 beat, but CEO sees no material scale-up Ethernet revenue next year (Tech Times); ANET -10% on 11-05 with Cisco -7% and Ciena -15% after a Morgan Stanley downgrade (24/7 Wall St.); MS keeps ANET Buy, PT $230 (Moomoo).
   **Why it matters:** the scale-up Ethernet extension of the 'Ethernet displaces proprietary fabrics' leg is pushed out beyond 2027, while the scale-out core is intact; the -10% looks sector-driven. Headline-level.
 
+- **2026-11-17 (post-open)** — Arista launches its R4 platforms for distributed AI inferencing (StreetInsider). Bernstein holds its Buy rating and $270 PT (Moomoo).
+  **Why it matters:** a product aimed at inference fabrics extends the Ethernet-for-AI leg beyond training clusters. It is a launch, not a booked customer. Drift unchanged.
+
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
 
@@ -102,3 +105,4 @@
 - **2026-11-06 (post-open)** — 📰 BRIEF | MATERIAL — CEO: no material scale-up Ethernet revenue next year; ANET -10% in sector rout. Scale-up timing leg softer, core intact; Drift unchanged
 - **2026-11-10 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — UBS Buy, Bernstein PT $270, shares +9.2%. **Why it matters:** post-earnings analyst follow-through; no new fact. Drift unchanged.
 - **2026-11-10 (post-open)** — 📰 BRIEF | MATERIAL (low) — +9.2% on 11-09 as UBS holds Buy and Bernstein raises PT to $270; KeyCorp issues Q4 forecast. Analyst follow-through, no new company fact; Drift unchanged
+- **2026-11-17 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (R4 inference platform launch); Drift unchanged
