@@ -136,6 +136,8 @@
   **Why it matters:** a board committee for export control makes the China/export leg a governance-level risk. A director publicly asking for Huang's return says the succession is unsettled two days before the first post-Jensen print. Headline and tape both point down. The 8-K 5.02 is still unread. Drift stays Drifting.
 - **2026-11-17 (end-of-day)** — FQ3 FY27 earnings 8-K (items 2.02/9.01, filed 11-17) [SEC](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/0001045810-26-000088-index.htm): headlines call it a beat that lifted AMD, AVGO and TSMC after hours, but say the call's 'optics were another story' (Yahoo). 13F-HR (11-16): Nvidia sold a quarter of its Intel shares and more than half its Nokia stake; SpaceX is now its biggest holding (topic). It also expanded commitments with supply-chain partners (company release).
   **Why it matters:** the print confirms the demand leg; the open questions are leadership and governance, which the beat does not settle. Drift stays Drifting.
+- **2026-11-18 (post-open)** — Nvidia raises its outlook and says it can thrive without Huang (Bloomberg). Coverage puts the quarter at $115.8B, with Vera Rubin delivering nearly $20B in its first shipping quarter (Kalkine) and a $390B supply pledge to partners (ad-hoc-news). The tape disagrees: futures are mixed as Fed's Waller warns of a 'shock' rate hike (IBD), stocks slip as investors weigh the print (Reuters), and 'strong earnings fail to sustain buying' (BigGo).
+  **Why it matters:** a guidance raise plus a Rubin ramp in its first quarter confirms the demand leg harder than last night's beat did. The opening reaction is flat-to-down for NVDA itself while suppliers rally, so the headline and the tape point opposite ways. The market is pricing the leadership and rates questions, not demand. Drift stays Drifting until /dig reads the 8-K 5.02.
 
 ## Social Mentions
 
@@ -246,3 +248,4 @@
 - **2026-11-16 (post-open)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (Megaspeed raid, CPO roadmap, print date conflict 17 vs 18 Nov).
 - **2026-11-17 (post-open)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (export-control committee, director's 'bring back Huang' push, Megaspeed probe dated to 2024); Drift stays Drifting; /dig NVDA --filings-only before the 18 Nov print
 - **2026-11-17 (end-of-day)** — 📰 BRIEF | 8 items + topic triaged, 1 logged (FQ3 8-K 2.02 beat, 13F stake sales, supply-chain commitments); Drift stays Drifting; /dig NVDA --filings-only now covers the 8-K 2.02 and the 5.02
+- **2026-11-18 (post-open)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (outlook raised, $115.8B quarter, Rubin ~$20B, $390B supply pledge; tape fails to follow); Conviction ↑ on demand; Drift stays Drifting

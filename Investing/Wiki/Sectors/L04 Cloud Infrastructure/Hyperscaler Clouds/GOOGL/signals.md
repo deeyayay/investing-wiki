@@ -74,6 +74,8 @@
 - **2026-11-06 (end-of-day)** — 8-K items 8.01 + 9.01 filed 11-05 (other events; contents unread) [SEC](https://www.sec.gov/Archives/edgar/data/1652044/000119312526449835/0001193125-26-449835-index.htm); 24/7 Wall St: worst day since 2004 IPO, ~half a trillion in value lost; securities class-action solicitations continue. So-what: a third filing in four days alongside the offerings, likely tied to the raise.
 - **2026-11-17 (end-of-day)** — Anthropic's IPO filing shows a $121.3B commitment to Google (TradingView). Amazon and Google will own about 28% of Anthropic after the IPO (Bloomberg), and Google, Nvidia and AMD will take part in a $26B concurrent private placement (MarketScreener). The stock fell 3.1% on 11-16 after a $10B buy lifted its stake.
   **Why it matters:** the first external figure for how much of the backlog one customer holds. It confirms the backlog leg and raises concentration risk on Anthropic.
+- **2026-11-18 (post-open)** — Waymo pulls its robotaxis off US freeways after a California ban; the unit is 0.3% of Alphabet's sales (Techi).
+  **Why it matters:** a regulatory setback for Other Bets, not the Cloud-growth or backlog legs. The Anthropic commitment items repeat last night's. Drift unchanged.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -144,3 +146,4 @@
 - **2026-11-12 (post-open)** — 📰 BRIEF | MATERIAL (low) — Alphabet sets initial price guidance for Hong Kong and Singapore bond sales (Business Times term sheet); the stock rises on the $10B Anthropic commitment logged last night (Blockonomi). **Why it matters:** more debt issuance in new markets is how the $180–190B CapEx commitment is being funded, which bears on the capex leg's financing rather than its demand. Headline and tape point the same way on Anthropic (up). Drift unchanged.
 - **2026-11-14 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Gemini 4 Hydrogen launches alongside $395 AI glasses; the stock is up 1.2% (Yahoo Canada, 11-13). This is the third Gemini 4 variant in six weeks, after Argon (10-01) and Carbon (11-11). The $10B Anthropic commitment and the Asian bond sale repeat earlier entries. **Why it matters:** the model cadence and a consumer hardware surface extend the inference stack's reach, but neither touches the Cloud-growth or backlog legs. Headline and tape agree (up). Drift unchanged. 5 items triaged, 1 logged.
 - **2026-11-17 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (Anthropic $121.3B commitment, ~28% joint stake); Conviction ↑; Drift unchanged
+- **2026-11-18 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (Waymo freeway pullback after California ban). Anthropic items are repeats.
