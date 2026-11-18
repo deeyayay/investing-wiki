@@ -60,6 +60,7 @@ _Last scored: — | [[Scoring Rubric]]_
 
 ---
 
+| 2026-11-17 | Anthropic IPO filing shows a $121.3B Google commitment; joint ~28% stake | ↑ | A single customer accounts for roughly a quarter of the $462B backlog: that confirms the backlog leg and makes concentration on Anthropic a new watch item. |
 ## Cross-Ticker Signals
 
 | Date | Direction | Other Ticker | Signal | Implication |

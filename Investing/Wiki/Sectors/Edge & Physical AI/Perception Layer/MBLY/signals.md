@@ -24,6 +24,7 @@
 | 2026-10-12 | Deutsche Bank trims PT to $12 from $13, keeps Buy | MarketScreener | Minor target change; no thesis fact. |
 | 2026-10-21 | RBC downgrades Mobileye to Underperform, PT $5 from $7; cites Nvidia/Qualcomm ADAS processors | Investing.com / marketscreener | Bear case of EyeQ base erosion from merchant-silicon rivals; headline-only, queued for /dig. |
 | 2026-10-28 | 8-K (items 8.01, 9.01) and SCHEDULE 13D/A filed | SEC EDGAR | Item 8.01 is an "other events" disclosure; contents unread at metadata level. 13D/A again suggests an Intel (controlling holder) ownership update — read both before Q3 results. |
+| 2026-11-17 | Citi keeps Buy but cuts PT to $10 from $11; the earnings call signals growth despite near-term pressures | Moomoo / MarketBeat / TipRanks | A second PT trim in a month after RBC's downgrade; the near-term pressure is unspecified. |
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -72,3 +73,4 @@ _None yet — seeded on onboarding._
 - **2026-11-07 (end-of-day)** — 📰 BRIEF | MATERIAL — Simply Wall St says Mobileye lifted guidance after earnings (11-07). Secondary source only; no 8-K in the digest. Drift status is 'New' and the thesis is unvalidated — /dig MBLY
 - **2026-11-11 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — earnings-call read-through: growth signalled despite near-term pressures (TipRanks); SCHEDULE 13G/A filed 11-09; consensus still 'Hold' (MarketBeat). **Why it matters:** this repeats the raised-guide/PT-cut split; no new primary fact. The thesis is still 'New' and unvalidated, so /dig MBLY stays queued.
 - **2026-11-13 (end-of-day)** — 📰 BRIEF | MATERIAL — lidar-vs-radar topic: 'JPMorgan downgrades self-driving technology supplier as Volkswagen faces delays' (TradingView, 11-12). The headline does not name the supplier; Mobileye is a Volkswagen ADAS/self-driving supplier, so it is the likely subject — unconfirmed. **Why it matters:** a customer-program delay would hit the high-volume production-economics leg. Thesis is still 'New' and unvalidated — /dig MBLY moves up the queue.
+- **2026-11-17 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (Citi PT cut to $10); 13G is passive

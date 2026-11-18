@@ -47,6 +47,8 @@
 
 - **2026-11-05** — Q3 results (8-K 2.02, 11-05): reported loss, beat revenue estimates; shares rise on upbeat Q4 outlook.
   **Why it matters:** The test of the Q4 positive-EBITDA leg and the loss-ratio watch item; headline-level only, 8-K unread.
+- **2026-11-17 (end-of-day)** — Lemonade falls 6.9% on an analyst downgrade; Morgan Stanley lowers its price target (MarketBeat, 11-16/17). The reasoning is not given in the headline.
+  **Why it matters:** this is the first sell-side step back since the Q3 beat; the drivers are unknown at headline level.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -102,3 +104,4 @@
 - **2026-11-10 (post-open)** — 📰 BRIEF | MATERIAL — S-3ASR automatic shelf filed 11-06 (contents unread); KBW cuts PT to $45; stock at 52-week low ~$39. **Why it matters:** shelf adds dilution capacity while the stock sags; weighs on the loss-ratio-to-EBITDA story only via funding risk. Drift unchanged
 - **2026-11-12 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — 2026 Investor Day held; a Motley Fool teaser says the company is 'about to do something it's never done before' (read: first profitable quarter, unconfirmed). **Why it matters:** this bears on the Q4 adj. EBITDA leg, but nothing in the headlines states the targets — check the Investor Day deck alongside the S-3ASR on /dig LMND --filings-only. Drift unchanged.
 - **2026-11-13 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Simply Wall St on a Nationwide renters rollout and its impact on Lemonade; Barchart P&C Q3 teardown. (The 'Ravi Kumar Distilleries' item in the digest is a mis-match, skipped.) **Why it matters:** a distribution or competitive development in renters, Lemonade's entry product — the headline does not say whether Nationwide is a partner or a rival, so direction is unknown. Drift unchanged; add to /dig LMND --filings-only.
+- **2026-11-17 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (downgrade / MS PT cut)

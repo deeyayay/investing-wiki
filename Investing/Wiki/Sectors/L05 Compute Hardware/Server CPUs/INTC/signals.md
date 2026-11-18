@@ -116,6 +116,8 @@
 
 - **2026-11-16 (post-open)** — Shareholders sue Intel for securities fraud after the ~29% plunge that erased about $140B (Reuters, WSJ, 11-15/16).
   **Why it matters:** this is the litigation follow-on to the Q4 guide miss and the Nvidia-stake uncertainty, not a new operating fact. It adds legal overhang to the rerate leg. The standing 'On track' drift line predates a 29% drawdown and is stale, which /dig INTC --filings-only should settle.
+- **2026-11-17 (end-of-day)** — Nvidia's 13F shows it sold about a quarter of its Intel shares (topic: nvda-downstream, 11-17).
+  **Why it matters:** this partly unwinds the strategic investor's stake behind the NVDA–Intel partnership. Whether the product collaboration is affected is unknown; add it to the /dig INTC questions.
 
 ## Social Mentions
 
@@ -199,3 +201,4 @@
 - **2026-11-11 (post-open)** — 📰 BRIEF | MATERIAL (low) — Barchart: CEO Lip-Bu Tan bought 150,000 shares and that 'wasn't enough to stop the slide'; Pluang puts the drop since the weak Q4 guide at 39%; Trefis/Forbes frame a longer PC slump. **Why it matters:** if this is a new purchase, it is a second insider buy after the ~$12M one on 09-01. The Form 4 has not been read, and the 39% figure is a headline number. Selling pressure and the PC-weakness narrative point the same way. Drift unchanged; the standing /dig still applies.
 - **2026-11-13 (end-of-day)** — 📰 BRIEF | MATERIAL — Intel -3.49% as the Nvidia CEO exit 'clouds a $13 billion partnership stake' (Yahoo); BofA trims its 2027 price target (TradingView). The 11-11 +9% CoreWeave-led rebound is a recap. **Why it matters:** the Nvidia partnership/stake is part of the rerate behind the Drift line, and its sponsor at Nvidia is gone; no headline says the terms change. Headline and tape point the same way (down). Drift unchanged; add the Nvidia stake to the standing /dig INTC --filings-only.
 - **2026-11-16 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (shareholder fraud suit); drift line flagged stale for /dig.
+- **2026-11-17 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (NVDA trims its Intel stake); fraud suits are repeats; drift line still stale for /dig

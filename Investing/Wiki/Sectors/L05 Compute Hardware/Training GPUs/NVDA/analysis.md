@@ -66,6 +66,7 @@ _Last scored: 2026-05-22 | [[Scoring Rubric]]_
 
 ---
 
+| 2026-11-17 | FQ3 FY27 8-K 2.02: headlines report a beat; call optics questioned | → | The demand leg holds, and peers rallied on it after hours. Leadership and governance are still unresolved, so drift stays Drifting until /dig reads the 8-K 2.02 and 5.02. |
 ## Cross-Ticker Signals
 
 | Date | Direction | Other Ticker | Signal | Implication |

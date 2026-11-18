@@ -51,6 +51,8 @@
 - **2026-10-01** — Credo CEO sells ~$2.5M of shares (The Motley Fool). Insider sale near highs; size and 10b5-1 status unread at headline level, low thesis weight alone.
 - **2026-10-12** — Credo launches OCP SRMO optical-interconnect standards workstream with optics suppliers; unveils 1.6T ZeroFlap Active Light Cable; stock -6.5% on muted response (Credo IR / Traders Union). Extends AEC leadership toward optics/scale-up; market read the launches as muted.
 - **2026-10-16** — 8-K item 5.07 (shareholder-vote results) (SEC EDGAR). Routine annual-meeting filing; no thesis-leg fact.
+- **2026-11-17 (end-of-day)** — Credo and Marvell settle their patent dispute over AEC technology (MarketScreener, TokenPost, 11-17). Terms are not disclosed, and the stock popped (Benzinga).
+  **Why it matters:** this removes a litigation overhang on the core AEC/SerDes IP. The terms (royalty or cross-license) are unknown until a filing.
 
 ## Social Mentions
 
@@ -104,3 +106,4 @@
 - **2026-10-16 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — 8-K 5.07 routine; Drift unchanged
 - **2026-10-21 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — shares +7% on new AI interconnect launch and earnings-beat framing (Traders Union; recaps the resolved 09-01 8-K finding); Rosenblatt Neutral $235 recurs; Drift unchanged
 - **2026-11-05 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Credo and Oracle win OCP approval for two optical-transceiver telemetry standards (company release). **Why it matters:** standards-setting supports the optical-expansion leg; no revenue effect. Drift unchanged
+- **2026-11-17 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (Marvell patent settlement); Drift unchanged

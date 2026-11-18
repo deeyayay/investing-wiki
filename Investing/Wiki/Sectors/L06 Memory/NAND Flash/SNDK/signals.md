@@ -79,6 +79,8 @@
 - **2026-11-04 (post-open)** — SanDisk -6.3% on Seoul sell-off, Chinese-rivalry worry and pre-earnings jitters (ad-hoc-news); Simply Wall St: caught in a broad hedge-fund AI exit; other outlets note a memory-sector rebound.
   **Why it matters:** Sentiment/positioning move, not a fundamental one; 'beat-and-fade' pattern persists. Drift (Drifting) unchanged.
 - **2026-11-06 (end-of-day)** — SanDisk -20% on 11-05 as the AI sell-off deepens despite strong earnings (TheStreet); trades near 5x earnings alongside MU (Wealth Advisor).
+- **2026-11-17 (end-of-day)** — GF Securities cuts its NAND price forecast and warns of a glut; SNDK and MU each fall 4% (Yahoo, 11-17). This reverses GF's 09-14 stabilization view. A memory topic headline the same night says 'NAND prices rise' (11-18).
+  **Why it matters:** this is a named-analyst reversal aimed directly at the pricing leg, and it is the most specific bear argument since 10-02. Drift stays Drifting.
 
 ## Social Mentions
 
@@ -168,3 +170,4 @@
 - **2026-11-05 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — ad-hoc-news: NAND boom 'decelerating — a pricing question, not a profit warning'; Pluang: upgraded to Buy after Q1 FY27 beat. **Why it matters:** repeats the pricing-cap watch (same framing as Kioxia's flat guide); demand leg untouched. Drift unchanged — /dig still open
 - **2026-11-06 (end-of-day)** — 📰 BRIEF | MATERIAL — -20% in a day on sector de-rating, no company-specific news. **Why it matters:** third straight down session, valuation de-rating not a demand break; keeps Drifting status, no change — /dig SNDK still open
 - **2026-11-10 (post-open)** — 📰 BRIEF | MATERIAL (low) — 8-for-1 split effective 20 Nov; ad-hoc-news: a downgrade and a 'shrinking NAND share' note collide with Seeking Alpha upgrades after a ~60% decline. Cosmetic split, mixed analysts. Keeps Drifting status
+- **2026-11-17 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (GF Securities NAND glut call); Conviction ↓; Drift stays Drifting
