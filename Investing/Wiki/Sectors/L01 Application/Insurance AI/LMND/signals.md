@@ -49,6 +49,8 @@
   **Why it matters:** The test of the Q4 positive-EBITDA leg and the loss-ratio watch item; headline-level only, 8-K unread.
 - **2026-11-17 (end-of-day)** — Lemonade falls 6.9% on an analyst downgrade; Morgan Stanley lowers its price target (MarketBeat, 11-16/17). The reasoning is not given in the headline.
   **Why it matters:** this is the first sell-side step back since the Q3 beat; the drivers are unknown at headline level.
+- **2026-11-19 (post-open)** — Lemonade targets a 2028 profit, with AI and car insurance named as the growth drivers (Yahoo Finance, 11-19, likely from the 11-12 Investor Day).
+  **Why it matters:** the thesis leg is EBITDA profitability by Q4 2026. A 2028 *profit* target may be GAAP net income, which would be consistent, or a pushed-out timeline, which would weaken the leg. The headline cannot tell which → /dig LMND.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -105,3 +107,4 @@
 - **2026-11-12 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — 2026 Investor Day held; a Motley Fool teaser says the company is 'about to do something it's never done before' (read: first profitable quarter, unconfirmed). **Why it matters:** this bears on the Q4 adj. EBITDA leg, but nothing in the headlines states the targets — check the Investor Day deck alongside the S-3ASR on /dig LMND --filings-only. Drift unchanged.
 - **2026-11-13 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Simply Wall St on a Nationwide renters rollout and its impact on Lemonade; Barchart P&C Q3 teardown. (The 'Ravi Kumar Distilleries' item in the digest is a mis-match, skipped.) **Why it matters:** a distribution or competitive development in renters, Lemonade's entry product — the headline does not say whether Nationwide is a partner or a rival, so direction is unknown. Drift unchanged; add to /dig LMND --filings-only.
 - **2026-11-17 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (downgrade / MS PT cut)
+- **2026-11-19 (post-open)** — 📰 BRIEF | 4 items triaged, 1 logged (2028 profit target, ambiguous vs Q4'26 EBITDA leg → /dig); Drift unchanged

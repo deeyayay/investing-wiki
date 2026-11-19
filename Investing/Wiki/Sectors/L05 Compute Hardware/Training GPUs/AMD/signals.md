@@ -58,6 +58,8 @@
   **Why it matters:** 10-Q will carry the data-center detail behind the 11-03 print; PC warning is a segment headwind, not a data-center thesis leg. Drift unchanged.
 - **2026-11-17 (end-of-day)** — AMD will take part in Anthropic's $26B private placement alongside Google and Nvidia (MarketScreener, 11-17). AMD rose after hours on Nvidia's beat (Yahoo).
   **Why it matters:** this is a strategic equity tie to a frontier lab, likely linked to compute supply. Terms are not given in the headline.
+- **2026-11-19 (post-open)** — AMD finalizes its Taalas buyout (Traders Union, 11-18). Simply Wall St cites 'fresh AI partnership news' without naming it. Chips lead the open higher on Anthropic IPO optimism (Yahoo).
+  **Why it matters:** Taalas (hard-wired inference silicon) adds to the custom-inference leg; the deal terms and the 'partnership' are not in the headlines.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -125,3 +127,4 @@
 - **2026-11-13 (end-of-day)** — 📰 BRIEF | MATERIAL — AMD takes a stake in PsiQuantum and expands the partnership on quantum-computing infrastructure (Finimize, The Quantum Insider); the William Blair upgrade logged this morning is now framed as 'main rival Nvidia spirals' (Benzinga), stock +5.9% (MarketBeat). **Why it matters:** the upgrade now has a stated reason — Nvidia's leadership crisis — which bears on the 'credible alternative' leg as sentiment, not as a share-gain fact. The PsiQuantum stake is a long-dated option outside the thesis; size undisclosed. Drift unchanged.
 - **2026-11-16 (end-of-day)** — 📰 BRIEF | MATERIAL — 8-K/A filed 11-16 amending an item 3.02 (unregistered equity sales) report ([SEC](https://www.sec.gov/Archives/edgar/data/2488/000119312526462340/0001193125-26-462340-index.htm)); 13F-HR also filed. **Why it matters:** the only prior 3.02 is the 09-28 filing behind the $8.2B all-stock World Labs deal, so this most likely amends that share issuance (count or terms), but the content is unread. Repricing during the AI-chip selloff would change the dilution math. Queued /dig AMD --filings-only. Drift unchanged. 5 items triaged, 1 logged.
 - **2026-11-17 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (Anthropic placement participation); Drift unchanged
+- **2026-11-19 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (Taalas close); insider sale and rally stories skipped; Drift unchanged

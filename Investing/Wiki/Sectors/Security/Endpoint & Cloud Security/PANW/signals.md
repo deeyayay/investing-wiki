@@ -81,6 +81,8 @@
 
 - **2026-11-18 (end-of-day)** — 8-K items 2.02/3.02/7.01/8.01/9.01 filed 11-18: the FQ1'27 print, plus an unregistered equity issuance [SEC](https://www.sec.gov/Archives/edgar/data/1327567/000132756726000030/0001327567-26-000030-index.htm). The same night PANW announced it will acquire Applied Compute for $4.5B to bring "secure open-weight AI" to the enterprise (Palo Alto Networks, The Information, Constellation Research).
   **Why it matters:** this is the largest AI-native deal on file, after Console and Embrace, so it confirms the platform-consolidation leg directly. Item 3.02 suggests part of the price is paid in stock, which means dilution. The digest's headlines don't give the print's numbers (NGS ARR, guide), so the quarter itself is unread → /dig PANW.
+- **2026-11-19 (post-open)** — The FQ1'27 10-Q was filed 11-19 [SEC](https://www.sec.gov/Archives/edgar/data/1327567/000132756726000033/0001327567-26-000033-index.htm). Constellation Research reports management 'outlined the moving parts behind outages' alongside the $4.5B all-stock Applied Compute deal.
+  **Why it matters:** the 10-Q is the primary source for NGS ARR, the guide and the 3.02 share count. The outage commentary is a new operational question the headline does not size.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -146,3 +148,4 @@
 - **2026-11-12 (end-of-day)** — 📰 BRIEF | MATERIAL — the earnings print landed, and a call transcript is published (Fortune), but the digest carries no numbers. Options implied an ~8.7% move, and BofA said a 3% beat was needed to justify the valuation. The EDGAR fetch for PANW timed out this run, so the 8-K 2.02 is unread. **Why it matters:** the NGS ARR and FY guide legs can't be scored from headlines — /dig PANW --filings-only.
 - **2026-11-14 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — KeyBanc upgrades PANW ahead of fiscal Q1 results, which several headlines date to **18 Nov** (Seeking Alpha, BigGo); the CEO issues a 'blunt warning' before the print (TheStreet). PANW and CRWD reversed lower on 11-13 despite the upgrades (Benzinga). **Correction:** this dates the print to 18 Nov, so the 11-12 entry above, which said 'the earnings print landed', is most likely wrong. That would explain why no numbers or 8-K 2.02 ever appeared. **Why it matters:** the NGS ARR and FY-guide legs get tested on Tuesday rather than sitting unread. Drift unchanged. 5 items triaged, 1 logged.
 - **2026-11-18 (end-of-day)** — 📰 BRIEF | 5 items + 1 filing triaged, 1 logged — FQ1 8-K (2.02/3.02) + $4.5B Applied Compute acquisition; print numbers unread → /dig PANW
+- **2026-11-19 (post-open)** — 📰 BRIEF | 2 filings + 3 items triaged, 1 logged (10-Q; outage commentary); Drift unchanged → /dig PANW --filings-only
