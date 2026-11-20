@@ -82,6 +82,9 @@
 - **2026-11-17 (end-of-day)** — GF Securities warns of a NAND glut and cuts its price forecast (via SNDK coverage, 11-17). Kioxia rebounds sharply on 11-18 after Nvidia's earnings (Moomoo).
   **Why it matters:** the glut call bears on the same pricing leg as the CEO's 09-25 'taps the brakes' remark. The rebound is price action, not a fact.
 
+- **2026-11-20 (post-open)** — SK hynix will convert the Kioxia-linked convertible bonds it holds into shares, securing a ~14.1% stake, and says it has "no plans to buy additional stake" (bloomingbit, Maeil Business, Financial News, 11-20).
+  **Why it matters:** this settles the 10-21 convertible-bond overhang. A memory rival becomes a >14% direct shareholder in the NAND pure-play, and the conversion adds share supply. The no-further-buying line caps the control worry for now. It is not an operating fact, so Drift is unchanged.
+
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
 
@@ -157,3 +160,4 @@
 - **2026-11-14 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — 'Kioxia's Dell rack and Iwate merger face the same verdict: show us the earnings' (ad-hoc-news, 11-13). This is the first mention of a Dell rack tie-in. The Iwate merger and the guidance letdown are already logged. **Why it matters:** a Dell rack design-in would be a direct AI-storage channel for the demand leg, but the only source is a low-credibility aggregator and it gives no terms. Drift unchanged; folded into the standing /dig 285A.T. 5 items triaged, 1 logged.
 - **2026-11-16 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (−70% from high; Entegris partnership, low).
 - **2026-11-17 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (NAND glut call; post-NVDA rebound)
+- **2026-11-20 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (SK hynix CB conversion → 14.1% stake); valuation and Huang-selloff stories skipped

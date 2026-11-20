@@ -57,6 +57,9 @@
   **Why it matters:** A POS AM on a neocloud that just added $525.6M of contracts usually means shelf/ATM capacity being refreshed — a financing-overhang watch item, not yet a thesis fact. Pairs with the 10-06 8-K 1.01 funding question.
 - **2026-10-27** — Boost Run converts backlog to recurring revenue as deployments go live; $600M non-dilutive project financing (Business Wire / StreetInsider) — Supports the backlog-conversion and Dell DFS financing legs; company PR, figures unverified. Stock still at a 12-month low per MarketBeat.
 
+- **2026-11-20 (post-open)** — Northland Securities lowers its earnings forecasts for Boost Run (MarketBeat, 11-20).
+  **Why it matters:** this is consistent with the 11-13 Georgia-site delay read. An estimate cut, not a contract fact, so the take-or-pay backlog leg is untouched. Drift unchanged.
+
 ## Social Mentions
 
 | Date | Source | Ticker | Signal | Sentiment | Link |
@@ -112,3 +115,4 @@
 - **2026-11-12 (post-open)** — 📰 BRIEF | THESIS → — Q3 2026 results: $82M revenue (+496% YoY), $2.7B total contract value (Yahoo, GuruFocus); nine-month net loss widened (Stock Titan); 10-Q filed 11-12 [SEC](https://www.sec.gov/Archives/edgar/data/2090646/000149315226051227/0001493152-26-051227-index.htm). **Why it matters:** revenue is arriving off the contracted backlog, which confirms the conversion leg. TCV barely moved from the >$2.6B logged 10-07, and the wider loss shifts focus to margins and the financing path. No opening-move headline yet. Drift unchanged; /dig BRUN --filings-only to read the 10-Q.
 - **2026-11-13 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — 8-K items 2.02 + 7.01 + 9.01 filed 11-12 [SEC](https://www.sec.gov/Archives/edgar/data/2090646/000149315226051247/0001493152-26-051247-index.htm), the earnings-release companion to the 10-Q logged this morning; headlines repeat $2.7B TCV and +496% revenue. **Why it matters:** no new fact — the 8-K gives /dig BRUN --filings-only a second primary document (press release + Reg FD material). Drift unchanged.
 - **2026-11-13 (post-open)** — 📰 BRIEF | THESIS ↓ — Finviz reads the Q3 print the other way: EPS in line but revenue 'misses badly', with a delay at the Georgia site undercutting the $400M exit-ARR target despite the $2.7B backlog. **Why it matters:** the first evidence against the backlog-conversion leg — contracted value is intact but the timing of turning it into revenue has slipped; one headline, no figures for the miss or the length of the delay. Conviction Log ↓; drift unchanged pending the 10-Q. 5 items triaged, 1 logged; /dig BRUN --filings-only.
+- **2026-11-20 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (Northland estimate cut); 13G/A and off-topic matches skipped

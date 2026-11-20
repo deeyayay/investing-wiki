@@ -72,6 +72,9 @@
 - **2026-11-05** — Coverage: Lumentum acquisition bill being repriced; guidance holds firm, dilution questioned (ad-hoc-news).
   **Why it matters:** Optical expansion adds interconnect scope but a large financing/dilution question hangs over the custom-ASIC thesis; needs terms from filings.
 
+- **2026-11-20 (post-open)** — Marvell is reported down ~45% and Lumentum ~42% since the merger announcement (Jaekyung Ilbo, 11-20). Lumentum's CEO defends the deal on CNBC, saying "results will prove it".
+  **Why it matters:** this is the market's verdict on the $115B all-stock deal, and it is now larger than any dilution math. The 45% figure comes from one Korean outlet and is unverified. The custom-ASIC and interconnect legs have no new fact against them. The 1 Dec FQ3 print is the first test. Price alone never sets Broken, so Drift is unchanged and /dig MRVL is flagged.
+
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
 
@@ -153,3 +156,4 @@
 - **2026-11-13 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Marvell adds three independent directors as investors weigh the Lumentum deal (ad-hoc-news); deal terms (all-stock, fixed 4.5-for-1 ratio, shareholder votes, 2028 close) and the 1 Dec FQ3 date are repeats. **Why it matters:** board expansion during a $115B all-stock deal is governance housekeeping, not a thesis fact; no 8-K 5.02 in the digest to confirm names. Drift unchanged.
 - **2026-11-13 (post-open)** — 📰 BRIEF | MATERIAL — TD Cowen downgrades Marvell ahead of the 1 Dec FQ3 print (ad-hoc-news); the headline gives no reason or new target. **Why it matters:** the first downgrade since the $115B all-stock Lumentum deal; if the reasoning is dilution it adds nothing new, if it is the custom-ASIC pipeline it touches the thesis — unknown from the headline. Drift unchanged. 5 items triaged, 1 logged.
 - **2026-11-16 (end-of-day)** — 📰 BRIEF | MATERIAL — Marvell partners with Penguin Solutions on a photonic memory fabric aimed at the 'RAMpocalypse' (The Register, GuruFocus); Arete lifts its PT to $323 from $300 (MarketScreener); the stock fell ~8% with Arm in the pre-NVDA AI-chip selloff (24/7 Wall St). **Why it matters:** optical memory disaggregation pushes the interconnect leg past SerDes/DSP into memory pooling, a natural use for the Lumentum optics. It is a partnership with no revenue terms. The 8% drop is positioning, not a company fact. Drift unchanged. 5 items triaged, 1 logged.
+- **2026-11-20 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (−45% since Lumentum deal, Lumentum CEO defends); Q3 previews and AVGO FCF comparison skipped; /dig flagged

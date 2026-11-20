@@ -142,6 +142,9 @@
 - **2026-11-19 (end-of-day)** — Trump floats allowing Blackwell sales to China (24/7 Wall St.); NVDA +4% on the day alongside the Anthropic IPO rally. Separately, Hunterbrook Media raises export-control concerns that hit AMD (Yahoo).
   **Why it matters:** this is the first headline pointing toward *loosening* rather than tightening, after the 11-14 Altman/Amodei export-ban push. It is only a floated idea, with no policy, licence or filing behind it. The regulatory thread now runs both ways, so treat it as unresolved. Drift stays Drifting on the succession question.
 
+- **2026-11-20 (post-open)** — Treasury Secretary Bessent calls for a "dramatic shakeup" at Nvidia (TIKR, 11-19), and BigGo says Huang's departure is reversing Japanese chip valuation premiums. Pre-market 11-20, an AI selloff drags NVDA and AMD as Anthropic slips on day two (Quartz, Barron's, TipRanks).
+  **Why it matters:** a cabinet official weighing in on leadership turns the succession question from governance into policy, alongside the China-sales thread. Here the headline and the opening tape point the same way, down, and the Anthropic-IPO bounce is unwinding. Drift stays Drifting.
+
 ## Social Mentions
 
 | Date | Signal | Source |
@@ -253,3 +256,4 @@
 - **2026-11-17 (end-of-day)** — 📰 BRIEF | 8 items + topic triaged, 1 logged (FQ3 8-K 2.02 beat, 13F stake sales, supply-chain commitments); Drift stays Drifting; /dig NVDA --filings-only now covers the 8-K 2.02 and the 5.02
 - **2026-11-18 (post-open)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (outlook raised, $115.8B quarter, Rubin ~$20B, $390B supply pledge; tape fails to follow); Conviction ↑ on demand; Drift stays Drifting
 - **2026-11-19 (end-of-day)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (Trump floats Blackwell-to-China sales; Hunterbrook export probe on AMD); 8-K 2.02 is a repeat; Drift stays Drifting
+- **2026-11-20 (post-open)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (Bessent 'dramatic shakeup' call; day-2 AI selloff); Anthropic-stake and 8-K 2.02 repeats skipped; Drift stays Drifting

@@ -34,6 +34,9 @@
 - **2026-10-19** — 8-Ks filed 10-16: items 1.01+1.02 (agreement entered/terminated) and 2.02/7.01/9.01 (SEC EDGAR) — Agreement swap may touch the financing-gated leg; filings still unread
 - **2026-10-21** — EXIM Chairman signs letter of support for NioCorp Elk Creek Mine (Global Mining Review). Advances the EXIM (~$780M) financing gate; a letter of support is not a final commitment.
 
+- **2026-11-20 (post-open)** — B. Riley cuts its NioCorp price target to $8 from $12 and keeps Buy (MarketScreener, 11-20).
+  **Why it matters:** a one-third cut with the rating kept points to financing timing or dilution rather than the Elk Creek resource. The headline gives no reason. The EXIM gate is still the leg to watch. Drift unchanged.
+
 ## Social Mentions
 _None yet — seeded on onboarding._
 
@@ -81,3 +84,4 @@ _None yet — seeded on onboarding._
 - **2026-10-21** — 📰 BRIEF | post-open pass, 1 logged
 - **2026-11-13 (post-open)** — 📰 BRIEF | MATERIAL (low) — EXIM publishes 'Factory Floor Fridays: Chairman Jovanovic Tours NioCorp's Elk Creek Mine' (EXIM.gov, 11-13). **Why it matters:** the lender behind the gating ~$780M financing is publicly promoting the project, after the 10-21 letter of support; still no loan commitment. Drift unchanged. 5 items triaged, 1 logged; the other 4 are quote pages for other companies.
 - **2026-11-16 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — SC 13G filed 11-16: Brevan Howard entities report shared voting power over 7.68M shares ([SEC](https://www.sec.gov/Archives/edgar/data/1512228/000090514826004938/0000905148-26-004938-index.htm); Stock Titan). Director Kehler also filed a Form 4 for 11-13. **Why it matters:** a new passive institutional holder above 5% follows the Traxys offtake. It signals interest from capital but does not move the EXIM financing gate. The Form 4 direction is unread. Drift unchanged. 5 items triaged, 1 logged.
+- **2026-11-20 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (B. Riley PT $12→$8, Buy kept); 13G/Form 4 repeats skipped
