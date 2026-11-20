@@ -119,6 +119,9 @@
 - **2026-11-17 (end-of-day)** — Nvidia's 13F shows it sold about a quarter of its Intel shares (topic: nvda-downstream, 11-17).
   **Why it matters:** this partly unwinds the strategic investor's stake behind the NVDA–Intel partnership. Whether the product collaboration is affected is unknown; add it to the /dig INTC questions.
 
+- **2026-11-19 (end-of-day)** — Intel climbs 7% on its first 18A customer (24/7 Wall St.); Quiver ties the move to an Azure partnership. The headlines do not name the customer, but the Azure link points to Microsoft, whose 18A order was cited on 10-12.
+  **Why it matters:** if this is a formal announcement and not a recirculation, it is the first confirmed external 18A customer. That would directly back the IDM-foundry leg that the 11-02 outlook miss had put in doubt. The customer, the terms and the volume are unconfirmed, so add this to the /dig INTC questions.
+
 ## Social Mentions
 
 | Date | Signal | Source |
@@ -202,3 +205,4 @@
 - **2026-11-13 (end-of-day)** — 📰 BRIEF | MATERIAL — Intel -3.49% as the Nvidia CEO exit 'clouds a $13 billion partnership stake' (Yahoo); BofA trims its 2027 price target (TradingView). The 11-11 +9% CoreWeave-led rebound is a recap. **Why it matters:** the Nvidia partnership/stake is part of the rerate behind the Drift line, and its sponsor at Nvidia is gone; no headline says the terms change. Headline and tape point the same way (down). Drift unchanged; add the Nvidia stake to the standing /dig INTC --filings-only.
 - **2026-11-16 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (shareholder fraud suit); drift line flagged stale for /dig.
 - **2026-11-17 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (NVDA trims its Intel stake); fraud suits are repeats; drift line still stale for /dig
+- **2026-11-19 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (first 18A customer / Azure partnership, +7%); Conviction ↑ on foundry leg; Drift unchanged, line still stale for /dig

@@ -139,6 +139,9 @@
 - **2026-11-18 (post-open)** — Nvidia raises its outlook and says it can thrive without Huang (Bloomberg). Coverage puts the quarter at $115.8B, with Vera Rubin delivering nearly $20B in its first shipping quarter (Kalkine) and a $390B supply pledge to partners (ad-hoc-news). The tape disagrees: futures are mixed as Fed's Waller warns of a 'shock' rate hike (IBD), stocks slip as investors weigh the print (Reuters), and 'strong earnings fail to sustain buying' (BigGo).
   **Why it matters:** a guidance raise plus a Rubin ramp in its first quarter confirms the demand leg harder than last night's beat did. The opening reaction is flat-to-down for NVDA itself while suppliers rally, so the headline and the tape point opposite ways. The market is pricing the leadership and rates questions, not demand. Drift stays Drifting until /dig reads the 8-K 5.02.
 
+- **2026-11-19 (end-of-day)** — Trump floats allowing Blackwell sales to China (24/7 Wall St.); NVDA +4% on the day alongside the Anthropic IPO rally. Separately, Hunterbrook Media raises export-control concerns that hit AMD (Yahoo).
+  **Why it matters:** this is the first headline pointing toward *loosening* rather than tightening, after the 11-14 Altman/Amodei export-ban push. It is only a floated idea, with no policy, licence or filing behind it. The regulatory thread now runs both ways, so treat it as unresolved. Drift stays Drifting on the succession question.
+
 ## Social Mentions
 
 | Date | Signal | Source |
@@ -249,3 +252,4 @@
 - **2026-11-17 (post-open)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (export-control committee, director's 'bring back Huang' push, Megaspeed probe dated to 2024); Drift stays Drifting; /dig NVDA --filings-only before the 18 Nov print
 - **2026-11-17 (end-of-day)** — 📰 BRIEF | 8 items + topic triaged, 1 logged (FQ3 8-K 2.02 beat, 13F stake sales, supply-chain commitments); Drift stays Drifting; /dig NVDA --filings-only now covers the 8-K 2.02 and the 5.02
 - **2026-11-18 (post-open)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (outlook raised, $115.8B quarter, Rubin ~$20B, $390B supply pledge; tape fails to follow); Conviction ↑ on demand; Drift stays Drifting
+- **2026-11-19 (end-of-day)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (Trump floats Blackwell-to-China sales; Hunterbrook export probe on AMD); 8-K 2.02 is a repeat; Drift stays Drifting

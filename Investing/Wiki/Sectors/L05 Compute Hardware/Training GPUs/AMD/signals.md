@@ -61,6 +61,9 @@
 - **2026-11-19 (post-open)** — AMD finalizes its Taalas buyout (Traders Union, 11-18). Simply Wall St cites 'fresh AI partnership news' without naming it. Chips lead the open higher on Anthropic IPO optimism (Yahoo).
   **Why it matters:** Taalas (hard-wired inference silicon) adds to the custom-inference leg; the deal terms and the 'partnership' are not in the headlines.
 
+- **2026-11-19 (end-of-day)** — AMD stock drops after Hunterbrook Media raises export-control concerns (Yahoo); IBD notes an 'AMD short' weighing on chips on Anthropic IPO day.
+  **Why it matters:** Hunterbrook is an activist short-research shop, so a published export-control allegation is a named, specific compliance risk and not generic China exposure. The substance is not in the headline. This is a new /dig AMD item: what is alleged, whether it involves MI-series shipments, and whether there is any regulatory response.
+
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
 
@@ -128,3 +131,4 @@
 - **2026-11-16 (end-of-day)** — 📰 BRIEF | MATERIAL — 8-K/A filed 11-16 amending an item 3.02 (unregistered equity sales) report ([SEC](https://www.sec.gov/Archives/edgar/data/2488/000119312526462340/0001193125-26-462340-index.htm)); 13F-HR also filed. **Why it matters:** the only prior 3.02 is the 09-28 filing behind the $8.2B all-stock World Labs deal, so this most likely amends that share issuance (count or terms), but the content is unread. Repricing during the AI-chip selloff would change the dilution math. Queued /dig AMD --filings-only. Drift unchanged. 5 items triaged, 1 logged.
 - **2026-11-17 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (Anthropic placement participation); Drift unchanged
 - **2026-11-19 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (Taalas close); insider sale and rally stories skipped; Drift unchanged
+- **2026-11-19 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (Hunterbrook export-control short report); insider sale and Taalas close are repeats; Drift unchanged, /dig flagged

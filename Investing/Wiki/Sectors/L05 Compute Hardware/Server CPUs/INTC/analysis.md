@@ -67,6 +67,7 @@ _Last scored: 2026-06-07 | [[Scoring Rubric]]_
 | 2026-09-10 (evening) | Tesla, not SpaceX, named as the Terafab 14A-chip customer | → | Conflicts with the same-week SpaceX attribution for the "Terafab" project — the external-customer thesis leg stands either way, but which company it is remains unresolved; added to the standing /dig queue rather than revising the entry |
 | 2026-09-16 (post-open) | SK Hynix reportedly considering US production partnership with Intel at Ohio facility | ↑ | Another named potential external foundry customer beyond Apple/SpaceX-or-Tesla — still "considering"/speculation at headline level, not a signed deal; added to the standing /dig queue for confirmation |
 | 2026-11-02 | Q4 outlook miss: INTC -28.6%, partial pre-market rebound | ↓ | Hits the rerate leg; cause unsettled from headlines, drift unchanged pending /dig INTC. |
+| 2026-11-19 (end-of-day) | First 18A customer reported (Azure partnership); stock +7% | ↑ | This is the first external-customer confirmation on 18A since the 11-02 miss. It backs the foundry leg, but the customer and terms are unconfirmed at headline level, so it goes to /dig INTC. |
 
 ---
 

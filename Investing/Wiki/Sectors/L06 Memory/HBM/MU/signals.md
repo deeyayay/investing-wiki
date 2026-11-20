@@ -180,6 +180,9 @@
 - **2026-11-18 (end-of-day)** — In the hbm-supply topic, TrendForce sees HBM4 at $3.00–5.50 per gigabit next year, up from $2.05 now (Tech Times). SK hynix is sourcing HBM4 packaging equipment for early-2027 delivery (Digitimes).
   **Why it matters:** a 46–170% HBM4 price step-up backs the pricing side of the HBM demand leg. SK hynix's tool orders mean competitor capacity arrives in 2027, so that watch item stays open. This is a forecast, not a contract. Drift unchanged.
 
+- **2026-11-19 (end-of-day)** — Seeking Alpha stress-tests Micron's '$89 billion contract book' for a 2027 NAND glut; ad-hoc-news says Micron is turning memory supply into a contract business 'with strings attached'.
+  **Why it matters:** $89B is well below the ~$150B book cited on 10-02 and 10-15. It may count a different scope (MU vs. SNDK combined, or firm vs. total), but the gap needs reconciling in /dig MU. The 'strings' framing suggests the contracts carry conditions such as prepayment, capex co-funding or price collars, which would bear on how firm the demand leg is. Commentary only, so Drift is unchanged.
+
 ## Social Mentions
 
 | Date | Signal | Source |
@@ -289,3 +292,4 @@
 - **2026-11-16 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (DRAM price-fixing suit proceeds; -6.4% pre-market). Taiwan plant pause is a repeat of 11-06.
 - **2026-11-18 (post-open)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (NVDA $390B supply pledge; Google eyes direct HBM buys; post-print rally). Lawsuit is a repeat.
 - **2026-11-18 (end-of-day)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (TrendForce HBM4 price forecast; SK hynix HBM4 tool orders). Lawsuit, $390B pledge and post-print rally are repeats.
+- **2026-11-19 (end-of-day)** — 📰 BRIEF | 5 items + topic triaged, 1 logged ($89B contract-book figure conflicts with ~$150B; contract 'strings'). Price-fixing suit and Anthropic rally are repeats.
