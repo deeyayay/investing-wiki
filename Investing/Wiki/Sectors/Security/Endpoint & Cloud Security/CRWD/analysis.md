@@ -58,6 +58,7 @@ _Last scored: — | [[Scoring Rubric]]_
 | 2026-09-02 | OpenAI partnership expansion | ↑ | Distribution/integration win with the most prominent foundation-model provider extends the same AI-native flywheel mechanism as the Google Cloud/Cerebras wins |
 | 2026-09-04 | Agentic SOC + Falcon Guardian launch | ↑ | New shipped product extends the Falcon platform-consolidation flywheel into autonomous SOC operations, the same mechanism behind the Google Cloud/Cerebras/OpenAI wins already logged |
 | 2026-09-15 | HCL Technologies partnership expansion | ↑ | New systems-integrator channel win, same cross-sell mechanism as the Wipro/Google Cloud/Cerebras/OpenAI wins already logged |
+| 2026-11-20 | Reuters: in talks to acquire Zscaler | → | Strategically on-thesis (consolidation into SASE) but unconfirmed, and price and dilution are unknown; held flat until terms exist. |
 
 ---
 

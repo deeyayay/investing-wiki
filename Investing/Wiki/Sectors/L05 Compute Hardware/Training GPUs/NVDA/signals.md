@@ -144,6 +144,9 @@
 
 - **2026-11-20 (post-open)** — Treasury Secretary Bessent calls for a "dramatic shakeup" at Nvidia (TIKR, 11-19), and BigGo says Huang's departure is reversing Japanese chip valuation premiums. Pre-market 11-20, an AI selloff drags NVDA and AMD as Anthropic slips on day two (Quartz, Barron's, TipRanks).
   **Why it matters:** a cabinet official weighing in on leadership turns the succession question from governance into policy, alongside the China-sales thread. Here the headline and the opening tape point the same way, down, and the Anthropic-IPO bounce is unwinding. Drift stays Drifting.
+- **2026-11-20 (end-of-day)** — Reuters reports an SEC probe into Nvidia's accounting; the stock falls ~12%, its worst day since DeepSeek, extending a reported $2.7T drawdown (Yahoo, 24/7 Wall St., 11-20). Separately, California subpoenas Nvidia over China chip sales (Fox Business), and Nvidia says it is investigating a possible security incident at a third-party partner (topic feed).
+  **Why it matters:** an accounting probe is the first allegation aimed at the numbers rather than leadership or policy, and it lands three days after the FQ3 beat the demand leg rests on. It is reported, not confirmed by a filing. Watch for an 8-K or 10-Q disclosure. Drift stays Drifting; Broken is not set on headlines → /dig NVDA --filings-only.
+
 
 ## Social Mentions
 
@@ -257,3 +260,4 @@
 - **2026-11-18 (post-open)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (outlook raised, $115.8B quarter, Rubin ~$20B, $390B supply pledge; tape fails to follow); Conviction ↑ on demand; Drift stays Drifting
 - **2026-11-19 (end-of-day)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (Trump floats Blackwell-to-China sales; Hunterbrook export probe on AMD); 8-K 2.02 is a repeat; Drift stays Drifting
 - **2026-11-20 (post-open)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (Bessent 'dramatic shakeup' call; day-2 AI selloff); Anthropic-stake and 8-K 2.02 repeats skipped; Drift stays Drifting
+- **2026-11-20 (end-of-day)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (Reuters: SEC accounting probe, −12%; California China-sales subpoena; partner security incident); 8-K 2.02 repeat; Conviction ↓; Drift stays Drifting → /dig NVDA --filings-only

@@ -84,6 +84,9 @@
 
 - **2026-11-20 (post-open)** — SK hynix will convert the Kioxia-linked convertible bonds it holds into shares, securing a ~14.1% stake, and says it has "no plans to buy additional stake" (bloomingbit, Maeil Business, Financial News, 11-20).
   **Why it matters:** this settles the 10-21 convertible-bond overhang. A memory rival becomes a >14% direct shareholder in the NAND pure-play, and the conversion adds share supply. The no-further-buying line caps the control worry for now. It is not an operating fact, so Drift is unchanged.
+- **2026-11-20 (end-of-day)** — TrendForce sees 1Q27 NAND contract prices flat to down 5% (TradingKey via the SNDK feed, 11-20).
+  **Why it matters:** the same pricing call that hits SNDK bears on Kioxia's NAND-ASP leg and adds to the CEO's 09-25 pricing caution. It is a forecast and not a demand fact, so Drift is unchanged.
+
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -161,3 +164,4 @@
 - **2026-11-16 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (−70% from high; Entegris partnership, low).
 - **2026-11-17 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (NAND glut call; post-NVDA rebound)
 - **2026-11-20 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (SK hynix CB conversion → 14.1% stake); valuation and Huang-selloff stories skipped
+- **2026-11-20 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (TrendForce 1Q27 NAND contract flat to −5%); CB conversion repeat; customs-approval item skipped

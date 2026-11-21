@@ -67,6 +67,9 @@
 
 - **2026-11-02 (post-open)** — CrowdStrike expands CoreWeave partnership to bring Falcon to AI cloud workloads; Deutsche Bank upgrades to Buy, shares +3.4% pre-market (Benzinga, TradingPedia, JKN). Headline and tape agree.
   **Why it matters:** Extends platform-consolidator reach into neocloud AI workloads; upgrade is analyst sentiment only.
+- **2026-11-20 (end-of-day)** — Reuters reports CrowdStrike is in talks to acquire Zscaler (Reuters, IBD, Techzine, 11-20). Crypto Briefing notes the sourcing is thin, and neither company has confirmed.
+  **Why it matters:** a Zscaler deal would be the largest test yet of the consolidator leg, adding SASE/zero-trust to Falcon. It would also be a mega-cap stock-heavy deal with integration and dilution risk that the cross-sell flywheel does not price. It is talks only, so Drift is unchanged.
+
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -131,3 +134,4 @@
 - **2026-11-13 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — new AI-security product launches draw 'bull case could change' coverage (Yahoo, Simply Wall St); CEO Kurtz comments publicly on the Anthropic IPO's risk warnings. **Why it matters:** product launches support the platform-consolidation leg, but the headlines name no product or revenue. Drift unchanged.
 - **2026-11-13 (post-open)** — 📰 BRIEF | MATERIAL (low) — Rosenblatt raises its price target to $275 'on demand' (Investing.com); Blockonomi reports the stock up 9% after the target hike. Headline and tape point the same way. **Why it matters:** an analyst citing demand supports the platform leg but adds no company figure. Drift unchanged. 5 items triaged, 1 logged.
 - **2026-11-16 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Cantor Fitzgerald raises its PT to $275 and TD Cowen reiterates Buy, citing strong momentum (Investing.com). **Why it matters:** a second firm at $275 after Rosenblatt on 11-13. That is sell-side sentiment with no company figure attached. Drift unchanged. 5 items triaged, 1 logged.
+- **2026-11-20 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (Reuters: talks to acquire Zscaler); Conviction →; Drift unchanged

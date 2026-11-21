@@ -78,6 +78,9 @@
   **Why it matters:** the export rule bears on Trainium and AWS-region sales abroad, though its scope isn't in the headline. The Leo failure is a setback for the satellite unit, not the AWS thesis. Drift unchanged.
 - **2026-11-17 (end-of-day)** — Anthropic's IPO filing shows a $110B compute pledge to Amazon; shares edged higher (TradingView, 11-17). Amazon and Google will hold about 28% of Anthropic after the IPO (Bloomberg).
   **Why it matters:** the pledge is a quantified forward demand commitment for AWS and Trainium, putting a number on the AWS-accelerates leg.
+- **2026-11-20 (end-of-day)** — Oppenheimer raises its Amazon price target to $310, citing the value of the Anthropic stake (Investing.com, MarketBeat, 11-20).
+  **Why it matters:** the IPO now marks the stake to market, so a named analyst is adding it to the sum-of-parts on top of the $110B AWS compute pledge logged on 11-17. This is valuation, not a new AWS demand fact.
+
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -142,3 +145,4 @@
 - **2026-11-02 (end-of-day)** — 📰 BRIEF | MATERIAL — 10-Q filed 10-30 (unread); headlines split between Q3 'miss' slip and AWS-driven Phillip Securities upgrade ($330 PT). **Why it matters:** AWS growth leg looks intact; the mixed tape needs the filing.
 - **2026-11-17 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (export rule + Leo launch failure); Drift unchanged
 - **2026-11-17 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (Anthropic $110B compute pledge); Drift unchanged
+- **2026-11-20 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (Oppenheimer PT → $310 on Anthropic stake)

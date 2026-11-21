@@ -53,6 +53,9 @@
 - **2026-10-16** — 8-K item 5.07 (shareholder-vote results) (SEC EDGAR). Routine annual-meeting filing; no thesis-leg fact.
 - **2026-11-17 (end-of-day)** — Credo and Marvell settle their patent dispute over AEC technology (MarketScreener, TokenPost, 11-17). Terms are not disclosed, and the stock popped (Benzinga).
   **Why it matters:** this removes a litigation overhang on the core AEC/SerDes IP. The terms (royalty or cross-license) are unknown until a filing.
+- **2026-11-20 (end-of-day)** — Stifel keeps Buy and cuts its price target to $250 from $310 (TradingView, GuruFocus, 11-20).
+  **Why it matters:** a valuation reset in the sector-wide AI selloff rather than a fundamental downgrade, because the rating is held. No thesis leg moves.
+
 
 ## Social Mentions
 
@@ -107,3 +110,4 @@
 - **2026-10-21 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — shares +7% on new AI interconnect launch and earnings-beat framing (Traders Union; recaps the resolved 09-01 8-K finding); Rosenblatt Neutral $235 recurs; Drift unchanged
 - **2026-11-05 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Credo and Oracle win OCP approval for two optical-transceiver telemetry standards (company release). **Why it matters:** standards-setting supports the optical-expansion leg; no revenue effect. Drift unchanged
 - **2026-11-17 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (Marvell patent settlement); Drift unchanged
+- **2026-11-20 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (Stifel PT $310→$250, Buy kept); patent settlement repeat
