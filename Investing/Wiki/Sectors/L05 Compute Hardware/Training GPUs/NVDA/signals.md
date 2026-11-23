@@ -146,7 +146,8 @@
   **Why it matters:** a cabinet official weighing in on leadership turns the succession question from governance into policy, alongside the China-sales thread. Here the headline and the opening tape point the same way, down, and the Anthropic-IPO bounce is unwinding. Drift stays Drifting.
 - **2026-11-20 (end-of-day)** — Reuters reports an SEC probe into Nvidia's accounting; the stock falls ~12%, its worst day since DeepSeek, extending a reported $2.7T drawdown (Yahoo, 24/7 Wall St., 11-20). Separately, California subpoenas Nvidia over China chip sales (Fox Business), and Nvidia says it is investigating a possible security incident at a third-party partner (topic feed).
   **Why it matters:** an accounting probe is the first allegation aimed at the numbers rather than leadership or policy, and it lands three days after the FQ3 beat the demand leg rests on. It is reported, not confirmed by a filing. Watch for an 8-K or 10-Q disclosure. Drift stays Drifting; Broken is not set on headlines → /dig NVDA --filings-only.
-
+- **2026-11-23 (post-open)** — A new 8-K with items 5.02 and 9.01 was filed 11-23 [SEC](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/0001045810-26-000090-index.htm). It is a second officer-change filing after 11-12, and it was not read. Separately, Arm's CEO extends his contract through 2033 'after Nvidia approach' (Yahoo), BofA reiterates Buy despite the SEC-probe uncertainty (Investing.com), and Trefis floats a $92 downside case. Topic feed: 'Can Nvidia preserve Jensen Huang's handshake deals after his departure?' and a reported financing rethink that 'raises risks for banks funding AI infrastructure'.
+  **Why it matters:** the new 5.02 may name the successor or terms, which is the question that has kept Drift at Drifting since 11-13. Read the filing before reading the coverage.
 
 ## Social Mentions
 
@@ -261,3 +262,4 @@
 - **2026-11-19 (end-of-day)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (Trump floats Blackwell-to-China sales; Hunterbrook export probe on AMD); 8-K 2.02 is a repeat; Drift stays Drifting
 - **2026-11-20 (post-open)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (Bessent 'dramatic shakeup' call; day-2 AI selloff); Anthropic-stake and 8-K 2.02 repeats skipped; Drift stays Drifting
 - **2026-11-20 (end-of-day)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (Reuters: SEC accounting probe, −12%; California China-sales subpoena; partner security incident); 8-K 2.02 repeat; Conviction ↓; Drift stays Drifting → /dig NVDA --filings-only
+- **2026-11-23 (post-open)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (new 8-K 5.02 filed 11-23, unread; Arm CEO extension after Nvidia approach; BofA Buy reiterated); Drift stays Drifting → /dig NVDA --filings-only

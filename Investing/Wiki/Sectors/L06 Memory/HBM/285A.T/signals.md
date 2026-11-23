@@ -86,7 +86,8 @@
   **Why it matters:** this settles the 10-21 convertible-bond overhang. A memory rival becomes a >14% direct shareholder in the NAND pure-play, and the conversion adds share supply. The no-further-buying line caps the control worry for now. It is not an operating fact, so Drift is unchanged.
 - **2026-11-20 (end-of-day)** — TrendForce sees 1Q27 NAND contract prices flat to down 5% (TradingKey via the SNDK feed, 11-20).
   **Why it matters:** the same pricing call that hits SNDK bears on Kioxia's NAND-ASP leg and adds to the CEO's 09-25 pricing caution. It is a forecast and not a demand fact, so Drift is unchanged.
-
+- **2026-11-23 (post-open)** — Goldman Sachs says buy Kioxia after the slump. It sees total shareholder return above 50% and calls the valuation near the cycle trough (BigGo Finance, 11-23). The stock is cited as 80% off its high (FourWeekMBA). UPI frames the SK hynix CB conversion as making SK hynix Kioxia's largest shareholder.
+  **Why it matters:** this is a named-bank call against the 11-20 TrendForce NAND pricing caution. The SK hynix 'largest shareholder' framing goes further than the 11-20 'no plans to buy additional stake', and a memory rival as the top holder bears on the pure-play leg.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -165,3 +166,4 @@
 - **2026-11-17 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (NAND glut call; post-NVDA rebound)
 - **2026-11-20 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (SK hynix CB conversion → 14.1% stake); valuation and Huang-selloff stories skipped
 - **2026-11-20 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (TrendForce 1Q27 NAND contract flat to −5%); CB conversion repeat; customs-approval item skipped
+- **2026-11-23 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (Goldman Buy at cycle trough; SK hynix 'largest shareholder' framing); CB conversion repeat

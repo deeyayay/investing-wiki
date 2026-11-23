@@ -69,7 +69,8 @@
   **Why it matters:** Extends platform-consolidator reach into neocloud AI workloads; upgrade is analyst sentiment only.
 - **2026-11-20 (end-of-day)** — Reuters reports CrowdStrike is in talks to acquire Zscaler (Reuters, IBD, Techzine, 11-20). Crypto Briefing notes the sourcing is thin, and neither company has confirmed.
   **Why it matters:** a Zscaler deal would be the largest test yet of the consolidator leg, adding SASE/zero-trust to Falcon. It would also be a mega-cap stock-heavy deal with integration and dilution risk that the cross-sell flywheel does not price. It is talks only, so Drift is unchanged.
-
+- **2026-11-23 (post-open)** — CrowdStrike agrees to acquire Zscaler for $43.9B (Help Net Security, SDxCentral). Three filings landed on 11-23: an 8-K with items 1.01, 7.01 and 9.01 (definitive agreement) [SEC](https://www.sec.gov/Archives/edgar/data/1535527/000110465926130785/0001104659-26-130785-index.htm), a 425 deal communication [SEC](https://www.sec.gov/Archives/edgar/data/1535527/000110465926130801/0001104659-26-130801-index.htm), and an 8-K 2.02 with the FQ3 print [SEC](https://www.sec.gov/Archives/edgar/data/1535527/000153552726000035/0001535527-26-000035-index.htm). Jefferies says the combination is 'more formidable' against Palo Alto.
+  **Why it matters:** this turns the 11-20 talks report into a signed deal, and the consolidator leg now has its largest test. A 425 filing implies stock consideration, so dilution, financing and ZS integration are the open questions. The print numbers were not read.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -135,3 +136,4 @@
 - **2026-11-13 (post-open)** — 📰 BRIEF | MATERIAL (low) — Rosenblatt raises its price target to $275 'on demand' (Investing.com); Blockonomi reports the stock up 9% after the target hike. Headline and tape point the same way. **Why it matters:** an analyst citing demand supports the platform leg but adds no company figure. Drift unchanged. 5 items triaged, 1 logged.
 - **2026-11-16 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Cantor Fitzgerald raises its PT to $275 and TD Cowen reiterates Buy, citing strong momentum (Investing.com). **Why it matters:** a second firm at $275 after Rosenblatt on 11-13. That is sell-side sentiment with no company figure attached. Drift unchanged. 5 items triaged, 1 logged.
 - **2026-11-20 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (Reuters: talks to acquire Zscaler); Conviction →; Drift unchanged
+- **2026-11-23 (post-open)** — 📰 BRIEF | 3 filings + 2 items triaged, 1 logged (signed $43.9B Zscaler deal: 8-K 1.01 + 425; FQ3 8-K 2.02 unread); Conviction →; Drift unchanged → /dig CRWD

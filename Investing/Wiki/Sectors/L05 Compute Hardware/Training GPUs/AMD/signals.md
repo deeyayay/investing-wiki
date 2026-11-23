@@ -65,7 +65,8 @@
   **Why it matters:** Hunterbrook is an activist short-research shop, so a published export-control allegation is a named, specific compliance risk and not generic China exposure. The substance is not in the headline. This is a new /dig AMD item: what is alleged, whether it involves MI-series shipments, and whether there is any regulatory response.
 - **2026-11-20 (end-of-day)** — 8-K items 5.03 + 9.01 filed 11-20, an amendment to the articles or bylaws ([SEC](https://www.sec.gov/Archives/edgar/data/2488/000000248826000218/0000002488-26-000218-index.htm)).
   **Why it matters:** this is a governance housekeeping filing with no thesis-leg fact unless the amendment is defensive, which the item number cannot tell. Read it in the next /dig AMD, which is already queued for Hunterbrook.
-
+- **2026-11-23 (post-open)** — AMD 'faces firmware allegations and class action scrutiny' (Yahoo Finance, 11-22). The headline does not specify the allegation.
+  **Why it matters:** a product-integrity claim on firmware could reach the data-center share leg if it involves EPYC or Instinct. It is unspecified, so it adds to the existing /dig AMD queue alongside Hunterbrook.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -136,3 +137,4 @@
 - **2026-11-19 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (Taalas close); insider sale and rally stories skipped; Drift unchanged
 - **2026-11-19 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (Hunterbrook export-control short report); insider sale and Taalas close are repeats; Drift unchanged, /dig flagged
 - **2026-11-20 (end-of-day)** — 📰 BRIEF | 1 filing + 4 items triaged, 1 logged (8-K 5.03 bylaw amendment); Hunterbrook short repeat
+- **2026-11-23 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (firmware allegations + class action); 8-K 5.03 repeat; 13F and Form 4 noise

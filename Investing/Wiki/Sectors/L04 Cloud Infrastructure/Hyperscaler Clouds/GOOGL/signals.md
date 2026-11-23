@@ -76,6 +76,8 @@
   **Why it matters:** the first external figure for how much of the backlog one customer holds. It confirms the backlog leg and raises concentration risk on Anthropic.
 - **2026-11-18 (post-open)** — Waymo pulls its robotaxis off US freeways after a California ban; the unit is 0.3% of Alphabet's sales (Techi).
   **Why it matters:** a regulatory setback for Other Bets, not the Cloud-growth or backlog legs. The Anthropic commitment items repeat last night's. Drift unchanged.
+- **2026-11-23 (post-open)** — A debt offering is in the filings: a 424B5 (11-19), an FWP and an 8-A12B exchange listing of the new securities (11-20), and a 424B2 (11-23) [SEC](https://www.sec.gov/Archives/edgar/data/1652044/000119312526470750/0001193125-26-470750-index.htm). Separately, a truncated Pluang headline says 'Alphabet shares plunge over 30% amid earnings m…'. No other feed corroborates it, so it is **unverified**.
+  **Why it matters:** bond funding of the $180–190B capex is a financing fact, not a demand one. A 30% plunge would be thesis-level, but one truncated aggregator line is not evidence. /dig GOOGL to check it.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -147,3 +149,4 @@
 - **2026-11-14 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Gemini 4 Hydrogen launches alongside $395 AI glasses; the stock is up 1.2% (Yahoo Canada, 11-13). This is the third Gemini 4 variant in six weeks, after Argon (10-01) and Carbon (11-11). The $10B Anthropic commitment and the Asian bond sale repeat earlier entries. **Why it matters:** the model cadence and a consumer hardware surface extend the inference stack's reach, but neither touches the Cloud-growth or backlog legs. Headline and tape agree (up). Drift unchanged. 5 items triaged, 1 logged.
 - **2026-11-17 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (Anthropic $121.3B commitment, ~28% joint stake); Conviction ↑; Drift unchanged
 - **2026-11-18 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (Waymo freeway pullback after California ban). Anthropic items are repeats.
+- **2026-11-23 (post-open)** — 📰 BRIEF | 4 filings + 1 item triaged, 1 logged (debt-offering prospectuses; unverified Pluang '30% plunge' line); Drift unchanged → /dig GOOGL

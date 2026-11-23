@@ -59,6 +59,7 @@ _Last scored: — | [[Scoring Rubric]]_
 | 2026-09-04 | Agentic SOC + Falcon Guardian launch | ↑ | New shipped product extends the Falcon platform-consolidation flywheel into autonomous SOC operations, the same mechanism behind the Google Cloud/Cerebras/OpenAI wins already logged |
 | 2026-09-15 | HCL Technologies partnership expansion | ↑ | New systems-integrator channel win, same cross-sell mechanism as the Wipro/Google Cloud/Cerebras/OpenAI wins already logged |
 | 2026-11-20 | Reuters: in talks to acquire Zscaler | → | Strategically on-thesis (consolidation into SASE) but unconfirmed, and price and dilution are unknown; held flat until terms exist. |
+| 2026-11-23 | Signed $43.9B Zscaler acquisition (8-K 1.01 + 425) | → | The deal is on-thesis: it adds SASE/zero-trust to Falcon. A 425 filing signals stock consideration, so dilution and integration risk offset the strategic fit until /dig reads the terms. |
 
 ---
 

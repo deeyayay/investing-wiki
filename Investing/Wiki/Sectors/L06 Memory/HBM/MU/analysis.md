@@ -79,6 +79,7 @@ _Evaluated: 2026-06-17_
 | 2026-09-23 | JPMorgan: HBM spec downgrade doesn't alter the underlying shortage; demand still projected at 63% CAGR 2026-2028 | ↑ | A new, named sell-side figure reinforcing the structural demand-tailwind leg, and the spec-downgrade-doesn't-change-shortage framing pre-empts a bear read on future HBM spec news |
 | 2026-09-24 | "Micron Is Winning By Losing The HBM Race" — contrarian framing argues limited HBM exposure (vs. DRAM mix) is a strength | → Neutral | First counter-narrative to directly contradict the "stacked on every NVDA GPU" HBM-centric framing rather than just questioning valuation or citing Chinese competition; unconfirmed at headline level, folded into the standing pace-setter/alt-HBM-tech /dig queue |
 | 2026-09-30 | FQ4 beat, FQ1'27 guide above estimates, data-center revenue +11x | ↑ | 8-K 2.02 filed; headline-level confirmation of AI/HBM demand leg. HBM mix, margins and Netlist ITC risk unverified — /dig MU |
+| 2026-11-23 | $32B customer commitments; 2027 capacity near sellout; Samsung sold out to 2029 | ↑ | This extends contracted demand into 2027 and shows the supply squeeze is industry-wide, which supports pricing. The figure comes from one aggregator and conflicts with earlier book sizes, and the stock fell 14% Friday regardless. |
 
 ---
 | 2026-10-01 | FQ4 beat, ~$150B contract book; capex guide sold off | → | Demand and visibility legs confirmed by the print and a contract book above annual revenue; market is pricing higher capex as an FCF drag. Headline-only — /dig MU to size it. |

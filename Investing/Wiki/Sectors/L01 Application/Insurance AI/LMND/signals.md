@@ -51,6 +51,8 @@
   **Why it matters:** this is the first sell-side step back since the Q3 beat; the drivers are unknown at headline level.
 - **2026-11-19 (post-open)** — Lemonade targets a 2028 profit, with AI and car insurance named as the growth drivers (Yahoo Finance, 11-19, likely from the 11-12 Investor Day).
   **Why it matters:** the thesis leg is EBITDA profitability by Q4 2026. A 2028 *profit* target may be GAAP net income, which would be consistent, or a pushed-out timeline, which would weaken the leg. The headline cannot tell which → /dig LMND.
+- **2026-11-23 (post-open)** — Piper Sandler cuts its LMND price target to $37 'on growth concerns' (Investing.com, MarketBeat, GuruFocus). MarketBeat puts the consensus target at $60.12.
+  **Why it matters:** this is a named cut that cites growth, and it lands on the revenue-growth leg while the Q4'26 EBITDA question from 11-19 is still open.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -108,3 +110,4 @@
 - **2026-11-13 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — Simply Wall St on a Nationwide renters rollout and its impact on Lemonade; Barchart P&C Q3 teardown. (The 'Ravi Kumar Distilleries' item in the digest is a mis-match, skipped.) **Why it matters:** a distribution or competitive development in renters, Lemonade's entry product — the headline does not say whether Nationwide is a partner or a rival, so direction is unknown. Drift unchanged; add to /dig LMND --filings-only.
 - **2026-11-17 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (downgrade / MS PT cut)
 - **2026-11-19 (post-open)** — 📰 BRIEF | 4 items triaged, 1 logged (2028 profit target, ambiguous vs Q4'26 EBITDA leg → /dig); Drift unchanged
+- **2026-11-23 (post-open)** — 📰 BRIEF | 4 items triaged, 1 logged (Piper PT cut to $37 on growth); Drift unchanged

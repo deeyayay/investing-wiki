@@ -182,6 +182,8 @@
 
 - **2026-11-19 (end-of-day)** — Seeking Alpha stress-tests Micron's '$89 billion contract book' for a 2027 NAND glut; ad-hoc-news says Micron is turning memory supply into a contract business 'with strings attached'.
   **Why it matters:** $89B is well below the ~$150B book cited on 10-02 and 10-15. It may count a different scope (MU vs. SNDK combined, or firm vs. total), but the gap needs reconciling in /dig MU. The 'strings' framing suggests the contracts carry conditions such as prepayment, capex co-funding or price collars, which would bear on how firm the demand leg is. Commentary only, so Drift is unchanged.
+- **2026-11-23 (post-open)** — Micron 'locks in $32 billion of customer commitments as 2027 capacity nears sellout' (ad-hoc-news, 11-23). This follows a 14% Friday slide that also revived an antitrust case (ad-hoc-news, 11-22). Bernstein keeps Buy with a $1,300 target. Topic feed: 'Samsung memory sold out to 2029'.
+  **Why it matters:** headline and tape diverge. The demand leg strengthens (2027 nearly contracted, and the largest rival is sold out to 2029) while the stock fell on Friday. The $32B figure adds to the contract-book numbers that already disagree ($22B, $89B, ~$150B). It is a single aggregator source, so /dig MU stays queued.
 
 ## Social Mentions
 
@@ -293,3 +295,4 @@
 - **2026-11-18 (post-open)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (NVDA $390B supply pledge; Google eyes direct HBM buys; post-print rally). Lawsuit is a repeat.
 - **2026-11-18 (end-of-day)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (TrendForce HBM4 price forecast; SK hynix HBM4 tool orders). Lawsuit, $390B pledge and post-print rally are repeats.
 - **2026-11-19 (end-of-day)** — 📰 BRIEF | 5 items + topic triaged, 1 logged ($89B contract-book figure conflicts with ~$150B; contract 'strings'). Price-fixing suit and Anthropic rally are repeats.
+- **2026-11-23 (post-open)** — 📰 BRIEF | 5 items + topic triaged, 1 logged ($32B commitments, 2027 near sellout, against a −14% Friday); Conviction ↑; Drift unchanged
