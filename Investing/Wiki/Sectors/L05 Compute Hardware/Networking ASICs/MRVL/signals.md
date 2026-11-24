@@ -74,6 +74,8 @@
 
 - **2026-11-20 (post-open)** — Marvell is reported down ~45% and Lumentum ~42% since the merger announcement (Jaekyung Ilbo, 11-20). Lumentum's CEO defends the deal on CNBC, saying "results will prove it".
   **Why it matters:** this is the market's verdict on the $115B all-stock deal, and it is now larger than any dilution math. The 45% figure comes from one Korean outlet and is unverified. The custom-ASIC and interconnect legs have no new fact against them. The 1 Dec FQ3 print is the first test. Price alone never sets Broken, so Drift is unchanged and /dig MRVL is flagged.
+- **2026-11-23 (end-of-day)** — Susquehanna lowers its Marvell target ahead of earnings (Seeking Alpha, 11-23), after a Stifel cut. Benzinga reports Marvell soaring after Huang's return to Nvidia. Lumentum-merger scrutiny coverage is a repeat.
+  **Why it matters:** two sell-side cuts before the 1 Dec FQ3 print set a lower bar, and the Huang rebound is sector beta. Neither adds a fact on the custom-ASIC leg. Drift unchanged; /dig MRVL stays queued before the print.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -157,3 +159,4 @@
 - **2026-11-13 (post-open)** — 📰 BRIEF | MATERIAL — TD Cowen downgrades Marvell ahead of the 1 Dec FQ3 print (ad-hoc-news); the headline gives no reason or new target. **Why it matters:** the first downgrade since the $115B all-stock Lumentum deal; if the reasoning is dilution it adds nothing new, if it is the custom-ASIC pipeline it touches the thesis — unknown from the headline. Drift unchanged. 5 items triaged, 1 logged.
 - **2026-11-16 (end-of-day)** — 📰 BRIEF | MATERIAL — Marvell partners with Penguin Solutions on a photonic memory fabric aimed at the 'RAMpocalypse' (The Register, GuruFocus); Arete lifts its PT to $323 from $300 (MarketScreener); the stock fell ~8% with Arm in the pre-NVDA AI-chip selloff (24/7 Wall St). **Why it matters:** optical memory disaggregation pushes the interconnect leg past SerDes/DSP into memory pooling, a natural use for the Lumentum optics. It is a partnership with no revenue terms. The 8% drop is positioning, not a company fact. Drift unchanged. 5 items triaged, 1 logged.
 - **2026-11-20 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (−45% since Lumentum deal, Lumentum CEO defends); Q3 previews and AVGO FCF comparison skipped; /dig flagged
+- **2026-11-23 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (Susquehanna and Stifel cuts before 1 Dec print); merger-scrutiny repeat; Drift unchanged

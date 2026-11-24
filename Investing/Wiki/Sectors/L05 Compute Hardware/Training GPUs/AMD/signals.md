@@ -67,6 +67,8 @@
   **Why it matters:** this is a governance housekeeping filing with no thesis-leg fact unless the amendment is defensive, which the item number cannot tell. Read it in the next /dig AMD, which is already queued for Hunterbrook.
 - **2026-11-23 (post-open)** — AMD 'faces firmware allegations and class action scrutiny' (Yahoo Finance, 11-22). The headline does not specify the allegation.
   **Why it matters:** a product-integrity claim on firmware could reach the data-center share leg if it involves EPYC or Instinct. It is unspecified, so it adds to the existing /dig AMD queue alongside Hunterbrook.
+- **2026-11-23 (end-of-day)** — AMD filed an S-3ASR automatic shelf registration on 11-23 [SEC](https://www.sec.gov/Archives/edgar/data/2488/000119312526472370/0001193125-26-472370-index.htm). Bernstein reiterates Buy (marketscreener). The 8-K 5.03 from 11-20 is a repeat.
+  **Why it matters:** a WKSI shelf lets AMD issue debt or equity at short notice. It is often routine renewal, but it lands days after Google's and others' debt raises. Read the base prospectus for any stated use before calling it a capital need. Drift unchanged.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -138,3 +140,4 @@
 - **2026-11-19 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (Hunterbrook export-control short report); insider sale and Taalas close are repeats; Drift unchanged, /dig flagged
 - **2026-11-20 (end-of-day)** — 📰 BRIEF | 1 filing + 4 items triaged, 1 logged (8-K 5.03 bylaw amendment); Hunterbrook short repeat
 - **2026-11-23 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (firmware allegations + class action); 8-K 5.03 repeat; 13F and Form 4 noise
+- **2026-11-23 (end-of-day)** — 📰 BRIEF | 2 filings + 3 items triaged, 1 logged (S-3ASR shelf; Bernstein Buy); 8-K 5.03 repeat; Drift unchanged

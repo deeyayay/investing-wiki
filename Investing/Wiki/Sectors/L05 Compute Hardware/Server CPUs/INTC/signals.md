@@ -121,6 +121,8 @@
 
 - **2026-11-19 (end-of-day)** — Intel climbs 7% on its first 18A customer (24/7 Wall St.); Quiver ties the move to an Azure partnership. The headlines do not name the customer, but the Azure link points to Microsoft, whose 18A order was cited on 10-12.
   **Why it matters:** if this is a formal announcement and not a recirculation, it is the first confirmed external 18A customer. That would directly back the IDM-foundry leg that the 11-02 outlook miss had put in doubt. The customer, the terms and the volume are unconfirmed, so add this to the /dig INTC questions.
+- **2026-11-23 (end-of-day)** — Willamette Week reports a lawsuit that 'adds insult to injury for struggling Intel' (11-24). The headline does not name the plaintiff or the claim.
+  **Why it matters:** Oregon is where Intel's main fab and R&D sites are, so this may be a labor or site claim and not a product one. It is unspecified, so it goes into the existing /dig INTC questions. The 18A-P customer and Xeon 6 items are repeats. Drift unchanged.
 
 ## Social Mentions
 
@@ -206,3 +208,4 @@
 - **2026-11-16 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (shareholder fraud suit); drift line flagged stale for /dig.
 - **2026-11-17 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (NVDA trims its Intel stake); fraud suits are repeats; drift line still stale for /dig
 - **2026-11-19 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (first 18A customer / Azure partnership, +7%); Conviction ↑ on foundry leg; Drift unchanged, line still stale for /dig
+- **2026-11-23 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (unspecified Oregon lawsuit); 18A-P and Xeon 6 repeats; Drift unchanged

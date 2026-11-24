@@ -38,6 +38,8 @@
 
 ---
 - **2026-10-19** — Citizens JMP cuts PT to $170 on defense budget uncertainty (MarketBeat / Investing.com) — Budget-risk to the Army/drone demand leg; analyst view only
+- **2026-11-23 (end-of-day)** — Mizuho initiates AeroVironment at Outperform (TipRanks, 11-23). Drone stocks bounce with the market.
+  **Why it matters:** a new bullish initiation adds to Raymond James's Outperform. It is analyst sentiment with no figure attached. Drift unchanged.
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -99,3 +101,4 @@ _None yet — seeded on onboarding._
 - **2026-11-07 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — revolving credit facility expanded by amendment (11-05); drone stocks rebounded 11-06. Liquidity positive; Drift unchanged
 - **2026-11-10 (end-of-day)** — 📰 BRIEF | MATERIAL — $315M award, shares +10% (24/7 Wall St). **Why it matters:** order flow confirms the defense-demand leg after the 52-week-low stretch; award details not in digest. Drift unchanged.
 - **2026-11-12 (end-of-day)** — 📰 BRIEF | THESIS ↑ — a $405M order expands AVAV laser defenses against drones in the Middle East (Stock Titan, 24/7 Wall St), and Raymond James reiterates Outperform. **Why it matters:** this is the second funded directed-energy program after the $465M Army contract, and the first export customer at scale, so the laser leg is now repeating rather than one-off. Drift unchanged (On track, strengthening).
+- **2026-11-23 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (Mizuho Outperform initiation); EDGAR 503 so filings not checked; Drift unchanged

@@ -80,7 +80,8 @@
   **Why it matters:** the pledge is a quantified forward demand commitment for AWS and Trainium, putting a number on the AWS-accelerates leg.
 - **2026-11-20 (end-of-day)** — Oppenheimer raises its Amazon price target to $310, citing the value of the Anthropic stake (Investing.com, MarketBeat, 11-20).
   **Why it matters:** the IPO now marks the stake to market, so a named analyst is adding it to the sum-of-parts on top of the $110B AWS compute pledge logged on 11-17. This is valuation, not a new AWS demand fact.
-
+- **2026-11-23 (end-of-day)** — Amazon agrees to acquire Decart AI Ltd for an estimated $7.5B (marketscreener, ad-hoc-news, 11-23). Shares rose 3.5% after an analyst upgrade (MarketBeat).
+  **Why it matters:** Decart is a real-time generative video and world-model startup. Buying model capability outright adds to the Anthropic stake on the AI-model side of the AWS thesis. At $7.5B it is not material to capex, but it is the largest AI tuck-in on file. Drift unchanged.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -146,3 +147,4 @@
 - **2026-11-17 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (export rule + Leo launch failure); Drift unchanged
 - **2026-11-17 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (Anthropic $110B compute pledge); Drift unchanged
 - **2026-11-20 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (Oppenheimer PT → $310 on Anthropic stake)
+- **2026-11-23 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (Decart AI $7.5B acquisition; upgrade +3.5%); Drift unchanged
