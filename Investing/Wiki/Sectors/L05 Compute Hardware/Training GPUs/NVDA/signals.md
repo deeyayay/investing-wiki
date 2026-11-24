@@ -150,6 +150,8 @@
   **Why it matters:** the new 5.02 may name the successor or terms, which is the question that has kept Drift at Drifting since 11-13. Read the filing before reading the coverage.
 - **2026-11-23 (end-of-day)** — Jensen Huang is reinstated as CEO (CNBC, NBC, 11-23). CNBC reports Trump 'sealed the deal'. The board, advised by a former Kirkland partner, reinstated him without telling management (topic feed, 11-24). Analysts scramble to upgrade, and Asian partner and supplier stocks jump. The 11-23 8-K 5.02 [SEC](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/0001045810-26-000090-index.htm) is the filing behind it.
   **Why it matters:** the leadership leg that set Drift to Drifting on 11-13 reverses. The SEC accounting probe (11-20) is still open, and a board that bypasses management under White House involvement is a new governance question. Conviction ↑, but Drift stays Drifting until /dig reads the 5.02 and the probe status.
+- **2026-11-24 (post-open)** — Backlash after Trump says he 'convinced' Nvidia to reinstate Huang (BBC); The Guardian reports Trump made up to $15M on Nvidia stock after the return. Asian tech stocks recover from the 'collateral damage' of the departure (CNBC).
+  **Why it matters:** last night's governance flag now carries a conflict-of-interest angle that can draw political and regulatory scrutiny on top of the open SEC probe. Overnight Asia confirms Monday's rebound carried. Drift stays Drifting.
 
 ## Social Mentions
 
@@ -266,3 +268,4 @@
 - **2026-11-20 (end-of-day)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (Reuters: SEC accounting probe, −12%; California China-sales subpoena; partner security incident); 8-K 2.02 repeat; Conviction ↓; Drift stays Drifting → /dig NVDA --filings-only
 - **2026-11-23 (post-open)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (new 8-K 5.02 filed 11-23, unread; Arm CEO extension after Nvidia approach; BofA Buy reiterated); Drift stays Drifting → /dig NVDA --filings-only
 - **2026-11-23 (end-of-day)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (Huang reinstated via 8-K 5.02; Trump-brokered, board bypassed management; upgrades); Conviction ↑; Drift stays Drifting → /dig NVDA --filings-only
+- **2026-11-24 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (Trump 'convinced' backlash; $15M stock-gain report); SEC-probe and 5.02 repeats; Drift stays Drifting → /dig NVDA --filings-only

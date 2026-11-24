@@ -68,6 +68,8 @@
 - **2026-10-27 (post-open)** — 8-K (items 2.02, 9.01) with Q3 2026 results: record net revenue $1.4B, net income $241M, 2026 outlook raised, first 2027 outlook (SoFi IR / WSJ / Seeking Alpha). Primary source confirms the flywheel/profitability legs; stock jumps on the print.
 - **2026-11-23 (post-open)** — SoFi is reported to be expanding stablecoin payments as analysts upgrade the stock (bsinews, Kalkine). No firm is named.
   **Why it matters:** this extends the 11-13 stablecoin launch into payments. The upgrade is unnamed, so it adds sentiment and no figure.
+- **2026-11-24 (post-open)** — SoFi picks BitGo to power its bank-issued stablecoin (CoinMarketCap, 11-23).
+  **Why it matters:** names the infrastructure vendor behind SoFiUSD — detail on the B2B/stablecoin thread, no revenue figure. The 52-week-low story repeats last night.
 
 ## Social Mentions
 
@@ -128,3 +130,4 @@
 - **2026-11-03 (end-of-day)** — 📰 BRIEF | MATERIAL — Mastercard to accept SoFiUSD for global card settlement (CoinMarketCap). **Why it matters:** first network-level acceptance of SoFi's stablecoin; strengthens the Galileo/B2B infrastructure leg beyond the member flywheel. Single secondary source — confirm.
 - **2026-11-13 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — SoFi launches its dollar stablecoin on Polygon for its 17M members, framed as a tokenized-deposit launch (24/7 Wall St., Simply Wall St); SoFi joins the Anthropic IPO retail allocation (FinanceFeeds). Raised-guidance story is a recap of the 10-27 print. **Why it matters:** extends the SoFiUSD thread from the 11-03 Mastercard item to a public chain, and IPO access is a member-engagement product; neither changes the profitability or member-growth legs. Drift unchanged.
 - **2026-11-23 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (stablecoin payments expansion; unnamed upgrade)
+- **2026-11-24 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (BitGo picked for SoFiUSD); 52-week low repeat

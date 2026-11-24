@@ -38,6 +38,7 @@
 - **2026-10-27 (end-of-day)** — 8-K (items 2.02, 7.01, 9.01) filed after the close; Investing.com/ChartMill: Q1 beat, above-consensus guidance, strong margins, yet shares -6% after hours — Primary-source earnings release confirms the HAMR/exabyte demand leg; the after-hours fall is a positioning/expectations read, not a thesis break. Release text unread; figures unverified — flagged for /dig --filings-only.
 - **2026-10-28 (post-open)** — Stock slips despite Q1 beat and dividend hike; analyst flags slowing margin growth (TradingView, StreetInsider); falls while SK Hynix/MU rally (24/7 Wall St, Moomoo). 8-K item 5.07 (shareholder vote results) filed 10-28. — Fundamental legs intact but market is pricing margin-growth deceleration; /dig --filings-only STX to read the 10-27 8-K.
 - **2026-11-19 (post-open)** — A judge gives final approval to a $175M investor class settlement (Law360, ad-hoc-news). Yahoo flags an 'Adaptive Storage' launch as a possible game changer; product details are not in the headline. — The settlement closes a legal overhang at an immaterial size; the launch is unread and may bear on the nearline tier.
+- **2026-11-24 (post-open)** — Evercore ISI keeps Outperform but cuts its PT to $700 from $1,000; BNP Paribas cuts to $835 from $1,275; Rosenblatt holds Buy at $1,100 (TradingView, MarketScreener). — Two 30%+ target resets with ratings held: the sell-side is marking to price after the AI-storage selloff, not questioning the HAMR leg. Monday's rebound and today's cuts point opposite ways.
 
 ## Social Mentions
 _None yet — seeded on onboarding._
@@ -98,3 +99,4 @@ _None yet — seeded on onboarding._
 - **2026-11-02** — Q2 outlook stronger after record Q1; HAMR ramp accelerating (Globe and Mail, ad-hoc-news). **Why it matters:** confirms the HAMR/Mozaic exabyte-tier demand leg.
 - **2026-11-05 (end-of-day)** — 📰 BRIEF | MATERIAL (low) — BofA upgrades on valuation; insider sales ($1.7M, $4.2M) disclosed; TradingView: $1.2B debt paydown. **Why it matters:** balance-sheet repair and an upgrade after the post-earnings dip; insider selling is routine-size. Drift unchanged
 - **2026-11-19 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged ($175M settlement approved; Adaptive Storage launch); Drift unchanged
+- **2026-11-24 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (Evercore and BNP PT cuts, ratings held)

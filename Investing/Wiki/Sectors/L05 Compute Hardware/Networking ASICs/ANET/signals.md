@@ -49,6 +49,8 @@
   **Why it matters:** a product aimed at inference fabrics extends the Ethernet-for-AI leg beyond training clusters. It is a launch, not a booked customer. Drift unchanged.
 - **2026-11-23 (post-open)** — ANET lost 15% in a week (TIKR). A Seeking Alpha contributor downgrades it, saying 'the AI pullback may hammer this stock hard'. Rosenblatt sees 67% upside.
   **Why it matters:** there is no company fact here. The sell-side split tracks the AI-capex sentiment swing, not a change in the Ethernet-for-AI leg.
+- **2026-11-24 (post-open)** — BNP Paribas cuts its PT to $260 from $290 (MarketScreener).
+  **Why it matters:** another post-selloff target reset with no rating change and no company fact; the Ethernet-for-AI leg is untouched.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -109,3 +111,4 @@
 - **2026-11-10 (post-open)** — 📰 BRIEF | MATERIAL (low) — +9.2% on 11-09 as UBS holds Buy and Bernstein raises PT to $270; KeyCorp issues Q4 forecast. Analyst follow-through, no new company fact; Drift unchanged
 - **2026-11-17 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (R4 inference platform launch); Drift unchanged
 - **2026-11-23 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (−15% week; SA downgrade vs Rosenblatt 67% upside); Drift unchanged
+- **2026-11-24 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (BNP PT $290→$260)
