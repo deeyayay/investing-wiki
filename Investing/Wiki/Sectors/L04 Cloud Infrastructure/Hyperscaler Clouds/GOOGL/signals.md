@@ -77,6 +77,7 @@
 - **2026-11-18 (post-open)** — Waymo pulls its robotaxis off US freeways after a California ban; the unit is 0.3% of Alphabet's sales (Techi).
   **Why it matters:** a regulatory setback for Other Bets, not the Cloud-growth or backlog legs. The Anthropic commitment items repeat last night's. Drift unchanged.
 - **2026-11-23 (post-open)** — A debt offering is in the filings: a 424B5 (11-19), an FWP and an 8-A12B exchange listing of the new securities (11-20), and a 424B2 (11-23) [SEC](https://www.sec.gov/Archives/edgar/data/1652044/000119312526470750/0001193125-26-470750-index.htm). Separately, a truncated Pluang headline says 'Alphabet shares plunge over 30% amid earnings m…'. No other feed corroborates it, so it is **unverified**.
+- **2026-11-24 (end-of-day)** — 8-K, items 8.01/9.01, filed 11-24 (unread). It follows the 424B2 (11-23) and the CERT exchange listing, so it most likely files the underwriting agreement and note exhibits that close the offering. **Why it matters:** if confirmed, this is another closed debt raise funding the $180–190B CapEx, the financing-intensity watch item. It does not touch the Cloud-growth or backlog legs. Drift unchanged — /dig GOOGL --filings-only.
   **Why it matters:** bond funding of the $180–190B capex is a financing fact, not a demand one. A 30% plunge would be thesis-level, but one truncated aggregator line is not evidence. /dig GOOGL to check it.
 
 ## Social Mentions
@@ -150,3 +151,4 @@
 - **2026-11-17 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (Anthropic $121.3B commitment, ~28% joint stake); Conviction ↑; Drift unchanged
 - **2026-11-18 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (Waymo freeway pullback after California ban). Anthropic items are repeats.
 - **2026-11-23 (post-open)** — 📰 BRIEF | 4 filings + 1 item triaged, 1 logged (debt-offering prospectuses; unverified Pluang '30% plunge' line); Drift unchanged → /dig GOOGL
+- **2026-11-24 (end-of-day)** — 📰 BRIEF | 1 filing + 4 items triaged, 1 logged (8-K 8.01/9.01, likely the offering's closing exhibits); Anthropic-IPO and Pluang '30%' lines are repeats; Drift unchanged

@@ -187,6 +187,7 @@
 - **2026-11-23 (end-of-day)** — China's CXMT plans an $8.5B IPO (TradingKey, 11-22), framed as the trigger for a drop below $910. Micron rebounds 13.7% on Monday (TradingView). A Seeking Alpha contributor downgrades to Sell, calling 'the long-awaited cyclical downturn'.
   **Why it matters:** CXMT IPO proceeds would fund Chinese DRAM capacity, which is the supply-side risk to the pricing leg, though CXMT trails on HBM. The rebound and the 2027-sellout headline logged this morning point the other way. Contributor opinion only. Drift unchanged.
 - **2026-11-24 (post-open)** — hbm-supply topic: HBM takes 23% of DRAM wafers, nearing 30% by 2027 (shattered.io); Samsung elevates HBM4 engineers in its promotion round (Korea Herald).
+- **2026-11-24 (end-of-day)** — Annual proxy package filed: DEF 14A, DEFA14A and ARS (SEC EDGAR, 11-24). Barron's: the stock is 'counting on a buyback bounce', with the 9 Dec window already logged. **Why it matters:** the proxy is routine, but it is the first filing to carry FY26 pay and board composition after the 11-05 8-K 5.02 departure. Read it alongside that 8-K on the next /dig. No thesis fact. Drift unchanged.
   **Why it matters:** wafer diversion to HBM tightens conventional DRAM supply, supporting the pricing leg against last night's CXMT risk. Secondary source. Drift unchanged.
 
 ## Social Mentions
@@ -302,3 +303,4 @@
 - **2026-11-23 (post-open)** — 📰 BRIEF | 5 items + topic triaged, 1 logged ($32B commitments, 2027 near sellout, against a −14% Friday); Conviction ↑; Drift unchanged
 - **2026-11-23 (end-of-day)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (CXMT $8.5B IPO supply risk; +13.7% rebound); $32B commitments and Bernstein repeats; Drift unchanged
 - **2026-11-24 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (HBM 23% of DRAM wafers → ~30% by 2027); $32B, Citi and rebound repeats; Drift unchanged
+- **2026-11-24 (end-of-day)** — 📰 BRIEF | 3 filings + 2 items triaged, 1 logged (annual proxy/ARS filed); 13.7% rebound repeat; Drift unchanged
