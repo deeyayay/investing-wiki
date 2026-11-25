@@ -85,6 +85,8 @@
   **Why it matters:** the 10-Q is the primary source for NGS ARR, the guide and the 3.02 share count. The outage commentary is a new operational question the headline does not size.
 - **2026-11-23 (post-open)** — Palo Alto is reported in talks to acquire Israeli AI-security startup Terra for over $500M (CTech, 11-22). This would come a week after the $4.5B Applied Compute deal. CrowdStrike's signed $43.9B Zscaler deal is framed as building a rival to Palo Alto (SDxCentral, Jefferies).
   **Why it matters:** PANW is adding tuck-ins while its main consolidation rival makes a mega-deal. The platform leg now faces a larger CRWD+ZS competitor in SASE, which is where PANW's NGS ARR growth comes from.
+- **2026-11-25 (post-open)** — Palo Alto warns of an unauthenticated code-execution risk in an NGINX component (The 420.in, 11-25).
+  **Why it matters:** a product-security advisory at a security vendor is a reputational watch item, not a thesis fact. The source is low-tier and the affected products are not named. Drift unchanged.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -152,3 +154,4 @@
 - **2026-11-18 (end-of-day)** — 📰 BRIEF | 5 items + 1 filing triaged, 1 logged — FQ1 8-K (2.02/3.02) + $4.5B Applied Compute acquisition; print numbers unread → /dig PANW
 - **2026-11-19 (post-open)** — 📰 BRIEF | 2 filings + 3 items triaged, 1 logged (10-Q; outage commentary); Drift unchanged → /dig PANW --filings-only
 - **2026-11-23 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (Terra talks; CRWD–ZS competitive framing); 10-Q, Applied Compute and FQ1 guide repeats; Drift unchanged
+- **2026-11-25 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (NGINX code-execution advisory); Applied Compute, Terra, CRWD–ZS and guidance repeats

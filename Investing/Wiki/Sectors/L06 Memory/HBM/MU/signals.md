@@ -189,6 +189,8 @@
 - **2026-11-24 (post-open)** — hbm-supply topic: HBM takes 23% of DRAM wafers, nearing 30% by 2027 (shattered.io); Samsung elevates HBM4 engineers in its promotion round (Korea Herald).
 - **2026-11-24 (end-of-day)** — Annual proxy package filed: DEF 14A, DEFA14A and ARS (SEC EDGAR, 11-24). Barron's: the stock is 'counting on a buyback bounce', with the 9 Dec window already logged. **Why it matters:** the proxy is routine, but it is the first filing to carry FY26 pay and board composition after the 11-05 8-K 5.02 departure. Read it alongside that 8-K on the next /dig. No thesis fact. Drift unchanged.
   **Why it matters:** wafer diversion to HBM tightens conventional DRAM supply, supporting the pricing leg against last night's CXMT risk. Secondary source. Drift unchanged.
+- **2026-11-25 (post-open)** — Overnight memory selloff: SK Hynix −11% on 'AI jitters and US tariff threats' (ad-hoc-news, 11-25). BNP Paribas slashes its MU target 54% (TradingView, 11-25); ad-hoc says the supply outlook 'splits Wall Street' as the DRAM antitrust case advances. Topic feed: Micron halts its new Taiwan plant ahead of the Singapore HBM line start-up (BigGo); Chosun says HBM prices could 'more than double' as Big Tech enters.
+  **Why it matters:** headline and tape agree: the Asia selloff and the BNP cut both point to a pricing-peak call. The HBM price and wafer-shift items point the other way. Neither breaks the HBM leg, but a 54% target cut is the largest on file, so /dig to read its reasoning. The Taiwan-to-Singapore shift repeats the 11-06 pause but adds HBM framing. Drift unchanged.
 
 ## Social Mentions
 
@@ -304,3 +306,4 @@
 - **2026-11-23 (end-of-day)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (CXMT $8.5B IPO supply risk; +13.7% rebound); $32B commitments and Bernstein repeats; Drift unchanged
 - **2026-11-24 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (HBM 23% of DRAM wafers → ~30% by 2027); $32B, Citi and rebound repeats; Drift unchanged
 - **2026-11-24 (end-of-day)** — 📰 BRIEF | 3 filings + 2 items triaged, 1 logged (annual proxy/ARS filed); 13.7% rebound repeat; Drift unchanged
+- **2026-11-25 (post-open)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (SK Hynix −11% on tariff threat; BNP −54% PT; Taiwan halt → Singapore HBM); proxy/ARS repeats; Drift unchanged → /dig MU

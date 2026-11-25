@@ -83,7 +83,8 @@
   **Why it matters:** this is a named-analyst reversal aimed directly at the pricing leg, and it is the most specific bear argument since 10-02. Drift stays Drifting.
 - **2026-11-20 (end-of-day)** — TrendForce sees 1Q27 NAND contract prices flat to down 5% (TradingKey, 11-20). SNDK trades below $80 after the 8-for-1 split took effect on 11-20, despite record earnings and raised guidance (FXLeaders).
   **Why it matters:** this is the second named NAND-pricing downgrade in four days after GF Securities on 11-17, and TrendForce is the industry's reference contract-price tracker. It hits the pricing-durability leg directly. Drift stays Drifting.
-
+- **2026-11-25 (post-open)** — Evercore cuts its target after the 8-for-1 split; shares −12% (BigGo, 11-24). Investing.com: 'trades at 4.6x earnings and still got cut in half'. ad-hoc-news says the contract-price floor is 'the real story' behind two days of memory whiplash.
+  **Why it matters:** this is the third sell-side or pricing caution since 11-17. The demand leg is untouched, so price action stays the Drifting driver. Drift stays Drifting.
 
 ## Social Mentions
 
@@ -175,3 +176,4 @@
 - **2026-11-10 (post-open)** — 📰 BRIEF | MATERIAL (low) — 8-for-1 split effective 20 Nov; ad-hoc-news: a downgrade and a 'shrinking NAND share' note collide with Seeking Alpha upgrades after a ~60% decline. Cosmetic split, mixed analysts. Keeps Drifting status
 - **2026-11-17 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (GF Securities NAND glut call); Conviction ↓; Drift stays Drifting
 - **2026-11-20 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (TrendForce 1Q27 NAND contract flat to −5%; post-split sub-$80); Conviction ↓; Drift stays Drifting
+- **2026-11-25 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (Evercore cut, −12%; contract-floor framing); IBD/FXLeaders recaps skipped; Drift stays Drifting
