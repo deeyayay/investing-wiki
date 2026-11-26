@@ -78,6 +78,8 @@
   **Why it matters:** two sell-side cuts before the 1 Dec FQ3 print set a lower bar, and the Huang rebound is sector beta. Neither adds a fact on the custom-ASIC leg. Drift unchanged; /dig MRVL stays queued before the print.
 - **2026-11-25 (post-open)** — Oppenheimer cuts its target to $325 before the 1 Dec print; MRVL −6%, with Arm −6% and AMAT −5% (24/7 Wall St, 11-24). This follows Monday's 18% Huang-sympathy jump.
   **Why it matters:** this is the third pre-print cut, after Susquehanna and Stifel. It lowers the bar and adds no custom-ASIC fact. Drift unchanged.
+- **2026-11-26 (post-open)** — MLex reports that Marvell and Lumentum face supply-concentration concerns in the merger review and have prepared answers to the objections (11-25). Susquehanna's cut to $225 and the FQ3 previews (options imply ±16%) are repeats.
+  **Why it matters:** this is the first sign that regulators are probing the optics supply chain behind the $115B all-stock deal. It adds completion risk to the vertical-integration leg, but the headline names no regulator and no remedy. Drift unchanged. The 1 Dec print comes first.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -163,3 +165,4 @@
 - **2026-11-20 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (−45% since Lumentum deal, Lumentum CEO defends); Q3 previews and AVGO FCF comparison skipped; /dig flagged
 - **2026-11-23 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (Susquehanna and Stifel cuts before 1 Dec print); merger-scrutiny repeat; Drift unchanged
 - **2026-11-25 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (Oppenheimer PT $325, −6%); Susquehanna, RBC and the 18% sympathy rally are repeats; Drift unchanged
+- **2026-11-26 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (MLex merger-review supply concerns); Susquehanna and preview repeats; Drift unchanged
