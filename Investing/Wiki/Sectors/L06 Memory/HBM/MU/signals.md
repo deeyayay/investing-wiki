@@ -191,6 +191,8 @@
   **Why it matters:** wafer diversion to HBM tightens conventional DRAM supply, supporting the pricing leg against last night's CXMT risk. Secondary source. Drift unchanged.
 - **2026-11-25 (post-open)** — Overnight memory selloff: SK Hynix −11% on 'AI jitters and US tariff threats' (ad-hoc-news, 11-25). BNP Paribas slashes its MU target 54% (TradingView, 11-25); ad-hoc says the supply outlook 'splits Wall Street' as the DRAM antitrust case advances. Topic feed: Micron halts its new Taiwan plant ahead of the Singapore HBM line start-up (BigGo); Chosun says HBM prices could 'more than double' as Big Tech enters.
   **Why it matters:** headline and tape agree: the Asia selloff and the BNP cut both point to a pricing-peak call. The HBM price and wafer-shift items point the other way. Neither breaks the HBM leg, but a 54% target cut is the largest on file, so /dig to read its reasoning. The Taiwan-to-Singapore shift repeats the 11-06 pause but adds HBM framing. Drift unchanged.
+- **2026-11-25 (end-of-day)** — Micron drops 10% as TrendForce warns of NAND oversupply (Crypto Briefing, 11-25). Tech closes well off the lows on hot PCE inflation and new tariff proposals (CNBC, Motley Fool, 11-25).
+  **Why it matters:** the pressure now comes from a named NAND-oversupply call by the reference price tracker, not only sell-side targets. NAND is Micron's smaller exposure; the HBM leg is untouched. Drift unchanged.
 
 ## Social Mentions
 
@@ -307,3 +309,4 @@
 - **2026-11-24 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (HBM 23% of DRAM wafers → ~30% by 2027); $32B, Citi and rebound repeats; Drift unchanged
 - **2026-11-24 (end-of-day)** — 📰 BRIEF | 3 filings + 2 items triaged, 1 logged (annual proxy/ARS filed); 13.7% rebound repeat; Drift unchanged
 - **2026-11-25 (post-open)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (SK Hynix −11% on tariff threat; BNP −54% PT; Taiwan halt → Singapore HBM); proxy/ARS repeats; Drift unchanged → /dig MU
+- **2026-11-25 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (TrendForce NAND oversupply, −10%); proxy/ARS and buyback repeats; Drift unchanged

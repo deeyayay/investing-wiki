@@ -78,6 +78,7 @@ _Evaluated: 2026-06-17_
 
 | 2026-11-17 (end-of-day) | GF Securities cuts its NAND price forecast and warns of a glut; SNDK −4% | ↓ | A named analyst has reversed its 09-14 stabilization call; this hits the pricing-durability leg directly. Headline-only, so drift stays Drifting. |
 | 2026-11-20 (end-of-day) | TrendForce: 1Q27 NAND contract flat to −5% | ↓ | Second named pricing downgrade in four days (after GF 11-17), from the reference tracker; pricing leg weakening, drift stays Drifting. |
+| 2026-11-25 (end-of-day) | TrendForce escalates to a NAND oversupply warning; MU −10% | ↓ | The reference tracker went from "flat to −5%" to oversupply in five days, the third pricing downgrade since 11-17. The pricing leg is weakening further. Headline-only, so drift stays Drifting. |
 ## Cross-Ticker Signals
 
 | Date | Direction | Other Ticker | Signal | Implication |

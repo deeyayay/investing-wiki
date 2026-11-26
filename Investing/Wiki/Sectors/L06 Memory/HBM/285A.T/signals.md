@@ -90,6 +90,8 @@
   **Why it matters:** this is a named-bank call against the 11-20 TrendForce NAND pricing caution. The SK hynix 'largest shareholder' framing goes further than the 11-20 'no plans to buy additional stake', and a memory rival as the top holder bears on the pure-play leg.
 - **2026-11-25 (post-open)** — SK Hynix, Kioxia's largest shareholder (14.1%), falls 11% overnight on 'AI jitters and US tariff threats' (ad-hoc-news, 11-25). BNP slashes its Micron target 54% the same morning.
   **Why it matters:** memory-sector beta, not a Kioxia fact. A US chip-tariff threat is a regulatory risk to the export-heavy NAND leg, and the BNP cut is a peer read-through. Drift unchanged.
+- **2026-11-25 (end-of-day)** — TrendForce warns of NAND oversupply; Micron −10% (Crypto Briefing, 11-25). Morgan Stanley keeps Overweight on Kioxia with a ¥24,000 target (ad-hoc-news).
+  **Why it matters:** an oversupply call bears on the pure-play NAND thesis more than on any other name, and it recurs the 09-25 pricing-caution watch item. MS holding Overweight is a counterweight. Drift unchanged; it belongs in /dig 285A.T.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -170,3 +172,4 @@
 - **2026-11-20 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (TrendForce 1Q27 NAND contract flat to −5%); CB conversion repeat; customs-approval item skipped
 - **2026-11-23 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (Goldman Buy at cycle trough; SK hynix 'largest shareholder' framing); CB conversion repeat
 - **2026-11-25 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (SK Hynix −11% on tariff threat, memory read-through); Tesla/SpaceX, ADI and ETF items skipped
+- **2026-11-25 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (TrendForce NAND oversupply; MS Overweight held); quote pages and unrelated items skipped

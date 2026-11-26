@@ -87,6 +87,8 @@
   **Why it matters:** PANW is adding tuck-ins while its main consolidation rival makes a mega-deal. The platform leg now faces a larger CRWD+ZS competitor in SASE, which is where PANW's NGS ARR growth comes from.
 - **2026-11-25 (post-open)** — Palo Alto warns of an unauthenticated code-execution risk in an NGINX component (The 420.in, 11-25).
   **Why it matters:** a product-security advisory at a security vendor is a reputational watch item, not a thesis fact. The source is low-tier and the affected products are not named. Drift unchanged.
+- **2026-11-25 (end-of-day)** — An ex-executive sues Palo Alto Networks in a whistleblower suit alleging sales-accounting fraud (Investing.com, marketscreener, Finimize, 11-25).
+  **Why it matters:** the claim goes at how sales are booked, and NGS ARR and platformization are the metrics the thesis rests on. It is an allegation in a complaint, not a finding. It needs /dig to read the complaint and any 8-K. Drift unchanged pending that.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -155,3 +157,4 @@
 - **2026-11-19 (post-open)** — 📰 BRIEF | 2 filings + 3 items triaged, 1 logged (10-Q; outage commentary); Drift unchanged → /dig PANW --filings-only
 - **2026-11-23 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (Terra talks; CRWD–ZS competitive framing); 10-Q, Applied Compute and FQ1 guide repeats; Drift unchanged
 - **2026-11-25 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (NGINX code-execution advisory); Applied Compute, Terra, CRWD–ZS and guidance repeats
+- **2026-11-25 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (whistleblower accounting-fraud suit → /dig); Terra repeat; Drift unchanged

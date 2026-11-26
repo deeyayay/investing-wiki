@@ -152,6 +152,8 @@
   **Why it matters:** the leadership leg that set Drift to Drifting on 11-13 reverses. The SEC accounting probe (11-20) is still open, and a board that bypasses management under White House involvement is a new governance question. Conviction ↑, but Drift stays Drifting until /dig reads the 5.02 and the probe status.
 - **2026-11-24 (post-open)** — Backlash after Trump says he 'convinced' Nvidia to reinstate Huang (BBC); The Guardian reports Trump made up to $15M on Nvidia stock after the return. Asian tech stocks recover from the 'collateral damage' of the departure (CNBC).
   **Why it matters:** last night's governance flag now carries a conflict-of-interest angle that can draw political and regulatory scrutiny on top of the open SEC probe. Overnight Asia confirms Monday's rebound carried. Drift stays Drifting.
+- **2026-11-25 (end-of-day)** — S&P Global warns Nvidia's credit rating could be downgraded over governance risks (Business Insider, 11-25). Records show Trump's accounts traded Nvidia shares 44 times this year (topic feed). Nvidia −3.9% on hot PCE and new tariff proposals (Motley Fool).
+  **Why it matters:** a rating agency is the first outside party to price the governance question that has held Drift at Drifting since 11-13. It is no longer only commentary. Drift stays Drifting until /dig reads the 5.02.
 
 ## Social Mentions
 
@@ -269,3 +271,4 @@
 - **2026-11-23 (post-open)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (new 8-K 5.02 filed 11-23, unread; Arm CEO extension after Nvidia approach; BofA Buy reiterated); Drift stays Drifting → /dig NVDA --filings-only
 - **2026-11-23 (end-of-day)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (Huang reinstated via 8-K 5.02; Trump-brokered, board bypassed management; upgrades); Conviction ↑; Drift stays Drifting → /dig NVDA --filings-only
 - **2026-11-24 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (Trump 'convinced' backlash; $15M stock-gain report); SEC-probe and 5.02 repeats; Drift stays Drifting → /dig NVDA --filings-only
+- **2026-11-25 (end-of-day)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (S&P governance credit warning; Trump trading records); 8-K 5.02 and Anthropic-IPO repeats; Drift stays Drifting
