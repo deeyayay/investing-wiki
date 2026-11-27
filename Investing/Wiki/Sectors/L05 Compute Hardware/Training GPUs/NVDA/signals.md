@@ -156,6 +156,8 @@
   **Why it matters:** a rating agency is the first outside party to price the governance question that has held Drift at Drifting since 11-13. It is no longer only commentary. Drift stays Drifting until /dig reads the 5.02.
 - **2026-11-26 (post-open)** — The FT reports Nvidia has stopped shipping AI servers to four Southeast Asian countries (Yahoo Finance, 11-26). Nvidia will also pay $290M to settle the long-running crypto-mining revenue lawsuit (Yahoo Finance, 11-25). Digitimes says the leadership turmoil is putting customer due diligence in the spotlight across the AI supply chain.
   **Why it matters:** halting shipments to a region is the first company-side response to the Megaspeed / diversion story. It trades some Southeast Asian revenue for export-compliance cover. The settlement closes an old legal overhang at a known cost. Neither touches the CUDA or GPU-leadership legs. Drift stays Drifting until /dig reads the 5.02.
+- **2026-11-26 (end-of-day)** — Nvidia expects physical AI revenue to exceed $25 billion in fiscal 2027 (physical-ai topic feed, 11-26). Separately, Nvidia is reported to have halted GPU exports to Malaysia, Singapore, Thailand and Indonesia, which adds the country list to this morning's FT item.
+  **Why it matters:** a $25B figure would be the first number put on the physical-AI platform declared in May. It widens the platform leg beyond the data center. The source is a single topic headline, and it is unclear whether this is guidance or a commentary estimate. Drift stays Drifting until /dig reads the 5.02.
 
 ## Social Mentions
 
@@ -275,3 +277,4 @@
 - **2026-11-24 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (Trump 'convinced' backlash; $15M stock-gain report); SEC-probe and 5.02 repeats; Drift stays Drifting → /dig NVDA --filings-only
 - **2026-11-25 (end-of-day)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (S&P governance credit warning; Trump trading records); 8-K 5.02 and Anthropic-IPO repeats; Drift stays Drifting
 - **2026-11-26 (post-open)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (FT: SE Asia server shipments halted; $290M crypto settlement); 8-K 5.02 and Anthropic-IPO repeats; Drift stays Drifting
+- **2026-11-26 (end-of-day)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (physical AI >$25B FY27; SE Asia country list); 8-K 5.02, settlement and IPO-tape repeats; Drift stays Drifting

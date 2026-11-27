@@ -92,6 +92,8 @@
   **Why it matters:** memory-sector beta, not a Kioxia fact. A US chip-tariff threat is a regulatory risk to the export-heavy NAND leg, and the BNP cut is a peer read-through. Drift unchanged.
 - **2026-11-25 (end-of-day)** — TrendForce warns of NAND oversupply; Micron −10% (Crypto Briefing, 11-25). Morgan Stanley keeps Overweight on Kioxia with a ¥24,000 target (ad-hoc-news).
   **Why it matters:** an oversupply call bears on the pure-play NAND thesis more than on any other name, and it recurs the 09-25 pricing-caution watch item. MS holding Overweight is a counterweight. Drift unchanged; it belongs in /dig 285A.T.
+- **2026-11-26 (end-of-day)** — Kioxia and NVIDIA announce a collaboration to expand effective high-bandwidth memory capacity with SSDs (topic feed, 11-26). Kioxia launches the GP2 SSD for AI memory expansion (ad-hoc-news, 11-26).
+  **Why it matters:** positioning flash as an HBM-capacity extension in NVIDIA systems is a new AI demand channel for the NAND leg. It is the first company-side fact in a week of oversupply headlines. The sources are a release headline and an aggregator, with no volumes or terms. Drift unchanged; folded into /dig 285A.T.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -173,3 +175,4 @@
 - **2026-11-23 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (Goldman Buy at cycle trough; SK hynix 'largest shareholder' framing); CB conversion repeat
 - **2026-11-25 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (SK Hynix −11% on tariff threat, memory read-through); Tesla/SpaceX, ADI and ETF items skipped
 - **2026-11-25 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (TrendForce NAND oversupply; MS Overweight held); quote pages and unrelated items skipped
+- **2026-11-26 (end-of-day)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (NVIDIA SSD-as-HBM collaboration; GP2 SSD launch); Bain/SK Hynix history and quote pages skipped
