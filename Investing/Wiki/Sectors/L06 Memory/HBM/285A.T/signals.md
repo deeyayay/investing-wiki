@@ -94,6 +94,8 @@
   **Why it matters:** an oversupply call bears on the pure-play NAND thesis more than on any other name, and it recurs the 09-25 pricing-caution watch item. MS holding Overweight is a counterweight. Drift unchanged; it belongs in /dig 285A.T.
 - **2026-11-26 (end-of-day)** — Kioxia and NVIDIA announce a collaboration to expand effective high-bandwidth memory capacity with SSDs (topic feed, 11-26). Kioxia launches the GP2 SSD for AI memory expansion (ad-hoc-news, 11-26).
   **Why it matters:** positioning flash as an HBM-capacity extension in NVIDIA systems is a new AI demand channel for the NAND leg. It is the first company-side fact in a week of oversupply headlines. The sources are a release headline and an aggregator, with no volumes or terms. Drift unchanged; folded into /dig 285A.T.
+- **2026-11-27 (post-open)** — Chosunbiz reports Asian chip stocks plunged overnight despite record earnings as AI fears grow (11-27). Bloomberg says the AI rout has made Kioxia Japan's cheapest blue chip, backing the bulls (11-26). The Korea Herald puts Huawei and Kioxia up as challengers to Samsung's and SK hynix's HBM dominance (hbm-supply topic, 11-27).
+  **Why it matters:** the headlines and the tape point in opposite directions. The company-side news this week is constructive: the NVIDIA SSD-as-HBM collaboration and GP2. Yet the Asian session sold memory anyway, so price is being driven by sector AI-fear and not by Kioxia's fundamentals. That is a valuation-compression read, not a demand-leg break. Drift unchanged; still folded into /dig 285A.T.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -176,3 +178,4 @@
 - **2026-11-25 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (SK Hynix −11% on tariff threat, memory read-through); Tesla/SpaceX, ADI and ETF items skipped
 - **2026-11-25 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (TrendForce NAND oversupply; MS Overweight held); quote pages and unrelated items skipped
 - **2026-11-26 (end-of-day)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (NVIDIA SSD-as-HBM collaboration; GP2 SSD launch); Bain/SK Hynix history and quote pages skipped
+- **2026-11-27 (post-open)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (Asian chip selloff vs cheapest-blue-chip read; Korea Herald HBM-challenger framing); GP2 and NVIDIA-fix repeats; MRVL options piece off-topic

@@ -71,6 +71,8 @@
   **Why it matters:** a WKSI shelf lets AMD issue debt or equity at short notice. It is often routine renewal, but it lands days after Google's and others' debt raises. Read the base prospectus for any stated use before calling it a capital need. Drift unchanged.
 - **2026-11-26 (post-open)** — Kalkine reports AMD fell 6% pre-market on 11-25 after a resale share filing revived dilution worries. Benzinga says short interest climbed after Q3. The S-3ASR is the one filed 11-23.
   **Why it matters:** if the shelf registers resale by existing holders, it is a supply overhang and not new issuance by AMD. That would revise the 11-23 reading of a capital-raising shelf. Read the prospectus for the selling holder in /dig AMD. Drift unchanged.
+- **2026-11-27 (post-open)** — Erste Group downgrades AMD to Hold (Quantisnow, MarketBeat, 11-27). The headlines carry no reasoning or price target.
+  **Why it matters:** a second negative tape item this week, after the resale-filing dilution story. It is a mid-tier European house and no thesis leg is named, so it is sentiment and not evidence. Drift unchanged.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -144,3 +146,4 @@
 - **2026-11-23 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (firmware allegations + class action); 8-K 5.03 repeat; 13F and Form 4 noise
 - **2026-11-23 (end-of-day)** — 📰 BRIEF | 2 filings + 3 items triaged, 1 logged (S-3ASR shelf; Bernstein Buy); 8-K 5.03 repeat; Drift unchanged
 - **2026-11-26 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (resale-filing dilution, −6% pre-market 11-25); S-3ASR repeat; quantum-AI PR skipped; Drift unchanged
+- **2026-11-27 (post-open)** — 📰 BRIEF | 1 filing + 4 items triaged, 1 logged (Erste downgrade to Hold); S-3ASR repeat; quote-page and Form 4 noise; Drift unchanged

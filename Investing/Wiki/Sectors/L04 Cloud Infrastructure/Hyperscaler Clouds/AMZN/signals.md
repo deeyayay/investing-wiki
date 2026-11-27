@@ -84,6 +84,8 @@
   **Why it matters:** Decart is a real-time generative video and world-model startup. Buying model capability outright adds to the Anthropic stake on the AI-model side of the AWS thesis. At $7.5B it is not material to capex, but it is the largest AI tuck-in on file. Drift unchanged.
 - **2026-11-26 (post-open)** — A court backs the CPSC, so Amazon must carry recall duties for products sold by third-party sellers on its marketplace (ad-hoc-news, 11-26). The CEO, CFO and AWS chief sales are plan sales.
   **Why it matters:** this is a retail compliance cost and does not touch the AWS or Trainium thesis. Logged as a regulatory fact. Drift unchanged.
+- **2026-11-27 (post-open)** — TradingKey says AMZN held $235.98 after a Bernstein 'cloud warning', capped at $247.46; the stock fell 3.1% on Wednesday 11-25 (TradingKey, JKN). The headline does not say what the warning is.
+  **Why it matters:** an analyst warning aimed at cloud goes at the AWS-growth leg directly, unlike the 11-26 retail recall ruling. With no content in the headline it cannot move drift. Watch for Bernstein's note at re:Invent next week. Drift unchanged.
 
 ## Social Mentions
 *(Populated by /ingest-sentiment from Tweets.md staging)*
@@ -151,3 +153,4 @@
 - **2026-11-20 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (Oppenheimer PT → $310 on Anthropic stake)
 - **2026-11-23 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (Decart AI $7.5B acquisition; upgrade +3.5%); Drift unchanged
 - **2026-11-26 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (CPSC recall ruling); exec plan sales and short-interest pieces skipped; Drift unchanged
+- **2026-11-27 (post-open)** — 📰 BRIEF | 5 items triaged, 1 logged (Bernstein cloud warning; −3.1% Wed); CPSC recall repeat; advent-calendar and outperformance pieces skipped; Drift unchanged
