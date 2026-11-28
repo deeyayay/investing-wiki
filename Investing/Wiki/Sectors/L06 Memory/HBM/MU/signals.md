@@ -193,6 +193,8 @@
   **Why it matters:** headline and tape agree: the Asia selloff and the BNP cut both point to a pricing-peak call. The HBM price and wafer-shift items point the other way. Neither breaks the HBM leg, but a 54% target cut is the largest on file, so /dig to read its reasoning. The Taiwan-to-Singapore shift repeats the 11-06 pause but adds HBM framing. Drift unchanged.
 - **2026-11-25 (end-of-day)** — Micron drops 10% as TrendForce warns of NAND oversupply (Crypto Briefing, 11-25). Tech closes well off the lows on hot PCE inflation and new tariff proposals (CNBC, Motley Fool, 11-25).
   **Why it matters:** the pressure now comes from a named NAND-oversupply call by the reference price tracker, not only sell-side targets. NAND is Micron's smaller exposure; the HBM leg is untouched. Drift unchanged.
+- **2026-11-27 (end-of-day)** — Micron +3.7% as the Netlist patent dispute is reported ended while the DRAM antitrust case advances (ad-hoc-news, 11-27); same outlet pairs the $134B backlog with a halved price target.
+  **Why it matters:** removes the Netlist overhang that drove the October Munich sales-ban headlines; the antitrust suit is now the live legal thread. Secondary source, terms not stated. HBM leg untouched; Drift unchanged.
 
 ## Social Mentions
 
@@ -310,3 +312,4 @@
 - **2026-11-24 (end-of-day)** — 📰 BRIEF | 3 filings + 2 items triaged, 1 logged (annual proxy/ARS filed); 13.7% rebound repeat; Drift unchanged
 - **2026-11-25 (post-open)** — 📰 BRIEF | 5 items + topic triaged, 1 logged (SK Hynix −11% on tariff threat; BNP −54% PT; Taiwan halt → Singapore HBM); proxy/ARS repeats; Drift unchanged → /dig MU
 - **2026-11-25 (end-of-day)** — 📰 BRIEF | 5 items triaged, 1 logged (TrendForce NAND oversupply, −10%); proxy/ARS and buyback repeats; Drift unchanged
+- **2026-11-27 (end-of-day)** — 📰 BRIEF | 3 filings + 2 items triaged, 1 logged (Netlist dispute ended; antitrust advances); proxy/ARS repeats; Drift unchanged
